@@ -1,0 +1,67 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fr-core-encounter-identifier-type" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2> Encounter Identifier Type Codes</h2>
+      <div>
+        <p> A coded type for an identifier that can be used to determine which identifier to use for
+           a specific purpose (encounter).</p>
+      </div>
+      <p> This value set includes codes from the following code systems:</p>
+      <ul>
+        <li> Include these codes as defined in 
+          <a href="pam-fr/identifier-types/index.html"><code> http://www.interopsante.org/pam-fr/valuesets/identifier-types</code></a><table class="none"><tr><td><b> Code</b></td><td><b> Display</b></td></tr><tr><td><a href="pam-fr/identifier-types/index.html-VN">VN</a></td><td> Visit Number</td></tr><tr><td><a href="pam-fr/identifier-types/index.html-MN">MN</a></td><td> Movement Number</td></tr></table></li>
+        <li> Include all these codes in 
+          <a href="pam-fr-identifier-type.html"><code> http://interopsante.org/fhir/ValueSet/fr-encounter-identifier-type</code></a></li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+    <valueMarkdown value="Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir" />
+  </extension>
+  <url value="http://interopsante.org/fhir/ValueSet/fr-core-encounter-identifier-type" />
+  <identifier>
+    <system value="2.16.840.1.113883.2.8.1.3" />
+    <value value="urn:oid:2.16.840.1.113883.2.8.1.3.9" />
+  </identifier>
+  <version value="1.1.0" />
+  <name value="FR Core ValueSet Encounter identifier type" />
+  <status value="active" />
+  <experimental value="true" />
+  <date value="2023-01-02" />
+  <publisher value="InteropSanté" />
+  <contact>
+    <name value="InteropSanté" />
+    <telecom>
+      <system value="email" />
+      <value value="fhir@interopsante.org" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters)." />
+  <immutable value="true" />
+  <compose>
+    <include>
+      <system value="http://interopsante.org/fhir/CodeSystem/fr-identifier-type" />
+      <version value="1.1.0" />
+      <concept>
+        <code value="VN" />
+        <display value="Visit Number" />
+      </concept>
+      <concept>
+        <code value="MN" />
+        <display value="Movement Number" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
