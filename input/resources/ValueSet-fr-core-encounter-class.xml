@@ -1,0 +1,61 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fr-core-encounter-class" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa" />
+  </extension>
+  <url value="http://interopsante.org/fhir/ValueSet/fr-core-encounter-class" />
+  <identifier>
+    <system value="2.16.840.1.113883.2.8.1.3" />
+    <value value="urn:oid:2.16.840.1.113883.2.8.1.3.23" />
+  </identifier>
+  <version value="1.1.0" />
+  <name value="FR Core ValueSet Encounter class" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2023-01-04" />
+  <publisher value="InteropSanté" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://interopsante.org" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="vs@interopsante.org" />
+    </telecom>
+  </contact>
+  <description value="A set of codes that can be used to indicate the class of the encounter." />
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" />
+      <!-- qu'est-ce qu'il faut mettre dans la version?-->
+      <version value="2.0.0" />
+      <concept>
+        <code value="ACUTE" />
+        <display value="Inpatient acute" />
+      </concept>
+      <concept>
+        <code value="NONAC" />
+        <display value="Inpatient non acute" />
+      </concept>
+      <concept>
+        <code value="PRENC" />
+        <display value="Pre-admission" />
+      </concept>
+      <concept>
+        <code value="SS" />
+        <display value="Short stay" />
+      </concept>
+      <concept>
+        <code value="VR" />
+        <display value="Virtual" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
