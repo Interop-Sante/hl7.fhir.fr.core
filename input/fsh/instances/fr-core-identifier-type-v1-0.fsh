@@ -19,7 +19,7 @@ Usage: #definition
 * contact.telecom.use = #work
 * description = "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient)."
 * immutable = false
-* compose.include[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203 "
+* compose.include[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * compose.include[=].version = "2.9.0"
 * compose.include[=].concept[0].code = #PPN
 * compose.include[=].concept[=].display = "Passport Number"

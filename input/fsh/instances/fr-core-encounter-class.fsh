@@ -24,7 +24,6 @@ Usage: #definition
 * description = "A set of codes that can be used to indicate the class of the encounter."
 * compose.include.system = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
 * compose.include.version = "2.0.0"
-* compose.include.version.fhir_comments = "qu'est-ce qu'il faut mettre dans la version?"
 * compose.include.concept[0].code = #ACUTE
 * compose.include.concept[=].display = "Inpatient acute"
 * compose.include.concept[+].code = #NONAC
