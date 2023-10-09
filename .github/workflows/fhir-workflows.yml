@@ -1,0 +1,11 @@
+name: Workflow Init
+
+on:
+  workflow_call:
+  push:
+      
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  Call-Fhir-Workflows :
+    uses: ansforge/FIG_ans.workflows/.github/workflows/fhir-worklows.yml@main
