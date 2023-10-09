@@ -1,17 +1,45 @@
-This project is owned by **HL7 France and IHE France**, folded in the non-profit association [Interop'Santé](http://www.interopsante.org/).
+Lien vers l'intégration continue : https://interop-sante.github.io/FHIR-FR-Core/ig/main
+/!\ Cette version est soumise à des changements réguliers et ne doit pas être utilisée telle quelle, elle est uniquement publiée pour consultation.
 
-The **FR Core Implementation Guide is based on FHIR Version R4** and defines the minimum set of constraints on the FHIR resources to create the FR Core Profiles. It also defines the minimum set of FHIR RESTful interactions for each of the FR Core Profiles to access patient data. By establishing the “floor” of standards to promote interoperability and adoption through common implementation, it allows for further standards development evolution for specific uses cases.
+# Description
 
-The project builds, approves and maintains over time the FHIR artifacts standardizing administrative data about patients, healthcare professionals and organizations, appointments, encounters and clinical data.
+Ceci est exemple d'ImplementationGuide très simplifié qui servira de template pour les prochains développement d'IGs. Pour créer un nouvel IG, il suffit de forker ce document et de mettre à jour :
 
-The project was triggered by the publication of [FHIR R4](http://hl7.org/fhir/index.html). The production and maintenance is broken down into **functional topics** such as: 
-* Patient Identity, Administrative Data and Encounters 
-* Organizations, Locations, Healtcare Professionals
-* Scheduling and Appointments
-* Vital signs
+* sushi-config.yaml
+* ig.ini
+* input/fsh pour indiquer vos instances, profils, extensions, exemples...
+* pagecontent pour créer la documentation en markdown.
 
-The profiling activities prioritize resources with a sufficient (>=3) [maturity level](http://hl7.org/fhir/versions.html#maturity). Each **functional topic** is handled by a dedicated work group of Interop'Santé, convening software vendors, professionals from healthcare institutions and representatives from governmental agencies. Consensus on the profiled FHIR artefacts is established first at the work group level, and then at membership level.
+# IG publisher
 
-These activities are currently led by Yohann Poiron (OpenXtrem, technical lead IHE PAM France), François Macary (Phast, chair HL7 France), Eric Dufour (SELIC, technical lead H'xml). Isabelle Gibaud (co-chair IHE-France and chair HL7-france) initiated these activities in France in 2017 on behalf of InteropSanté and created these initial French profiles.
+Après avoir créé les profil et mis à jour sushi-config, voici la démarche à suivre pour générer l'IG en html.
 
-Participants to the Work Groups: [FHIR Profiling](http://www.interopsante.org/412_p_51701/contributions-fhir.html)
+## Prérequis : sushi, java, ruby et jekyll
+
+Sushi permet de convertir la [grammaire FSH](https://build.fhir.org/ig/HL7/fhir-shorthand/) pour générer des profils, extensions (StructureDefinition) et des exemples / instances FHIR. La prise en main est relativement facile lorsque l'on connaît bien FHIR.
+Sushi est développé en javascript sous forme de module npm. 
+
+```
+npm install -g fsh-sushi
+```
+
+Pour information, [GoFSH](https://github.com/FHIR/GoFSH) permet de faire la transformation inverse : transformer une StructureDefinition au format FSH.
+
+Une fois ses outils installés, il faut installer les dépendances de l'IG publisher :
+Installation de [java](https://www.java.com/fr/download/help/download_options.html), [ruby](https://www.ruby-lang.org/fr/documentation/installation/) et [jekyll](https://jekyllrb.com/docs/installation/).
+
+```
+brew install ruby (sur mac)
+gem install bundler jekyll
+```
+
+Vous trouverez davantage d'informations sur le [confluence d'hl7](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)
+
+Des difficultés pour installer ruby et jekyll peuvent survenir sur mac M1, M2: lancer le [terminal avec rosetta](https://apple.stackexchange.com/questions/428768/on-apple-m1-with-rosetta-how-to-open-entire-terminal-iterm-in-x86-64-architec) et suivre [cette procédure](https://github.com/jekyll/jekyll/issues/8576#issuecomment-798080994) permet de régler les problèmes.
+
+## Générer l'IG
+
+```
+bash _updatePublisher.sh // Mise à jour du publisher java
+bash _genonce.sh // Génère l'IG
+```
