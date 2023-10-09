@@ -15,11 +15,6 @@ This profile specifies the patient's identifiers for France. It uses internation
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
     $patient-birthPlace named birthPlace 0..1
 
-* extension[identityReliability].extension ^slicing.discriminator.type = #value
-* extension[identityReliability].extension ^slicing.discriminator.path = "url"
-* extension[identityReliability].extension ^slicing.rules = #open
-* extension[identityReliability].extension[validationMode] ^short = "Mode de validation de l'identité (avec quelle pièce officielle?)"
-
 * extension[birthPlace].value[x].district from FRCoreValueSetCOGCommunePays (extensible)
 * extension[birthPlace].value[x].district ^binding.description = "Code COG town or country"
 
