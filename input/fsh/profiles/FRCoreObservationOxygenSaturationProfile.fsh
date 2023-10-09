@@ -21,7 +21,6 @@ Description: "Oxygen saturation in Arterial blood  | Saturation en oxygène du s
 * subject only Reference(Patient or FRCorePatientProfile)
 * encounter only Reference(Encounter or FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
-* interpretation from $fr-core-obervation-interpretation (extensible)
 * bodySite from $ValueSet-sPO2BodyLocationVS.html (example)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * bodySite ^binding.extension.valueString = "BodySite"

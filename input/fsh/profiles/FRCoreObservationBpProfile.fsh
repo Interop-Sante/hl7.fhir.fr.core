@@ -20,8 +20,6 @@ Description: "French profil Blood pressure panel with all children optional - Th
 * value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * value[x] ..0
 
-* interpretation from $fr-core-obervation-interpretation (extensible)
-
 * bodySite from $bpMeasBodyLocationPrecoordVS (example)
 * method from $fr-core-bp-measurement-method (example)
 
