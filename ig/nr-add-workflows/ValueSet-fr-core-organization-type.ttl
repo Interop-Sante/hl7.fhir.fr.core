@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-organization-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://interopsante.org/fhir/CodeSystem/fr-v2-3307</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>GHT</td><td>Groupement hospitalier de territoire</td></tr><tr><td>LEGAL-ENTITY</td><td>Entité juridique</td></tr><tr><td>GEOGRAPHICAL-ENTITY</td><td>Entité géographique</td></tr><tr><td>GROUP</td><td>Groupe privé / hospitalier</td></tr><tr><td>HEBERGEMENT</td><td>Hébergement</td></tr><tr><td>SOIN</td><td>Soin</td></tr><tr><td>ADMINISTRATIF</td><td>Administration</td></tr><tr><td>MEDICAL</td><td>Médical</td></tr><tr><td>TECHNIQUE</td><td>Technique</td></tr><tr><td>MEDICOTEC</td><td>medico technique (radio, scanner …)</td></tr><tr><td>UF</td><td>Unité fonctionnelle</td></tr><tr><td>SERVICE</td><td>Service</td></tr><tr><td>UM</td><td>Unité médicale</td></tr><tr><td>UAC</td><td>Unité d'activité</td></tr><tr><td>POLE</td><td>Pole</td></tr><tr><td>CENTRE-RESP</td><td>Centre de responsabilité</td></tr><tr><td>CENTRE-ACTIVITE</td><td>Centre d'activité</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetOrganizationType"] ; # 
+  fhir:title [ fhir:v "FR Core ValueSet Organization type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-10-09T09:24:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Organization types | Types de structures"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://interopsante.org/fhir/CodeSystem/fr-v2-3307"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "GHT" ] ;
+         fhir:display [ fhir:v "Groupement hospitalier de territoire" ]
+       ] [
+         fhir:code [ fhir:v "LEGAL-ENTITY" ] ;
+         fhir:display [ fhir:v "Entité juridique" ]
+       ] [
+         fhir:code [ fhir:v "GEOGRAPHICAL-ENTITY" ] ;
+         fhir:display [ fhir:v "Entité géographique" ]
+       ] [
+         fhir:code [ fhir:v "GROUP" ] ;
+         fhir:display [ fhir:v "Groupe privé / hospitalier" ]
+       ] [
+         fhir:code [ fhir:v "HEBERGEMENT" ] ;
+         fhir:display [ fhir:v "Hébergement" ]
+       ] [
+         fhir:code [ fhir:v "SOIN" ] ;
+         fhir:display [ fhir:v "Soin" ]
+       ] [
+         fhir:code [ fhir:v "ADMINISTRATIF" ] ;
+         fhir:display [ fhir:v "Administration" ]
+       ] [
+         fhir:code [ fhir:v "MEDICAL" ] ;
+         fhir:display [ fhir:v "Médical" ]
+       ] [
+         fhir:code [ fhir:v "TECHNIQUE" ] ;
+         fhir:display [ fhir:v "Technique" ]
+       ] [
+         fhir:code [ fhir:v "MEDICOTEC" ] ;
+         fhir:display [ fhir:v "medico technique (radio, scanner …)" ]
+       ] [
+         fhir:code [ fhir:v "UF" ] ;
+         fhir:display [ fhir:v "Unité fonctionnelle" ]
+       ] [
+         fhir:code [ fhir:v "SERVICE" ] ;
+         fhir:display [ fhir:v "Service" ]
+       ] [
+         fhir:code [ fhir:v "UM" ] ;
+         fhir:display [ fhir:v "Unité médicale" ]
+       ] [
+         fhir:code [ fhir:v "UAC" ] ;
+         fhir:display [ fhir:v "Unité d'activité" ]
+       ] [
+         fhir:code [ fhir:v "POLE" ] ;
+         fhir:display [ fhir:v "Pole" ]
+       ] [
+         fhir:code [ fhir:v "CENTRE-RESP" ] ;
+         fhir:display [ fhir:v "Centre de responsabilité" ]
+       ] [
+         fhir:code [ fhir:v "CENTRE-ACTIVITE" ] ;
+         fhir:display [ fhir:v "Centre d'activité" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
