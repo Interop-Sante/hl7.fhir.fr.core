@@ -34,11 +34,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[INS-NIR] ^short = "The patient's health national identifier INS coming from the INSi teleservice| Identifiant national de santé du patient INS provenant du téléservice INSi"
 * identifier[INS-NIR] ^definition = "patient's national identifier obtained by requesting the national patient identification service (CNAM) | Identifiant NIR du patient récupéré à partir de l'interrogation du service national d'identification des patients (CNAM)"
 * identifier[INS-NIR].use = #official
-* identifier[INS-NIR].type 1..
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR "NIR"
-* identifier[INS-NIR].type from $fr-core-patient-identifier-type (extensible)
-* identifier[INS-NIR].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier[INS-NIR].type ^binding.extension[=].valueBoolean = true
 * identifier[INS-NIR].system 1..
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].system ^definition = "Establishes the namespace for the value - that is, a OID that describes a set values that are unique. | Autorité d'affectation des INS-NIR"
@@ -47,11 +43,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[INS-NIA] ^short = "INS-NIA"
 * identifier[INS-NIA] ^definition = "The temporary patient's health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
 * identifier[INS-NIA].use = #temp
-* identifier[INS-NIA].type 1..
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA "NIA"
-* identifier[INS-NIA].type from $fr-core-patient-identifier-type (extensible)
-* identifier[INS-NIA].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier[INS-NIA].type ^binding.extension[=].valueBoolean = true
 * identifier[INS-NIA].system 1..
 * identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
 * identifier[INS-NIA].system ^definition = "Establishes the namespace for the value - that is, a OID that describes a set values that are unique. | Autorité d'affectation des INS-NIA"
@@ -59,12 +51,8 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * identifier[INS-C] ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use = #secondary
-* identifier[INS-C].type 1..
 * identifier[INS-C].type = $fr-core-v2-0203#INS-C "INS calculé"
-* identifier[INS-C].type from $fr-core-patient-identifier-type (extensible)
 * identifier[INS-C].type ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
-* identifier[INS-C].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier[INS-C].type ^binding.extension[=].valueBoolean = true
 * identifier[INS-C].system 1..
 * identifier[INS-C].system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier[INS-C].value 1..
@@ -72,11 +60,8 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français"
 * identifier[NDP] ^definition = "Pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique"
 * identifier[NDP].use = #secondary
-* identifier[NDP].type 1..
 * identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant au dossier pharmaceutique"
 * identifier[NDP].type from $fr-core-patient-identifier-type (extensible)
-* identifier[NDP].type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* identifier[NDP].type ^binding.extension[=].valueString = "IdentifierType"
 * identifier[NDP].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * identifier[NDP].type ^binding.extension[=].valueBoolean = true
 * identifier[NDP].system 1..
@@ -86,23 +71,14 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
 * identifier[PI] ^definition = "Hospital assigned patient identifier | IPP"
 * identifier[PI].use = #usual
-* identifier[PI].type 1..
-* identifier[PI].type = $fr-core-v2-0203#PI "Patient internal identifier"
-* identifier[PI].type from $fr-core-patient-identifier-type (extensible)
-* identifier[PI].type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* identifier[PI].type ^binding.extension[=].valueString = "IdentifierType"
-* identifier[PI].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier[PI].type ^binding.extension[=].valueBoolean = true
+* identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..
 * identifier[PI].value 1..
+
 * identifier[RRI] ^short = "Regional Registry ID | Identifiant régional"
 * identifier[RRI] ^definition = "Regional Registry ID | Identifiant régional"
 * identifier[RRI].use = #secondary
-* identifier[RRI].type 1..
-* identifier[RRI].type = $fr-core-v2-0203#RRI "Regional registry ID"
-* identifier[RRI].type from $fr-core-patient-identifier-type (extensible)
-* identifier[RRI].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier[RRI].type ^binding.extension[=].valueBoolean = true
+* identifier[RRI].type = http://terminology.hl7.org/CodeSystem/v2-0203#RRI "Regional registry ID"
 * identifier[RRI].system 1..
 * identifier[RRI].value 1..
 
