@@ -3,6 +3,14 @@ Parent: $heartrate
 Id: fr-core-observation-heartrate
 Title: "FR Core Observation Heart Rate Profile"
 Description: "French profiling of the FHIR Vital Sign Heart Rate Profile | Profilage français du profil Vital Signs Heart rate"
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-observation-heartrate)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

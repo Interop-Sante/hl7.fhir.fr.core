@@ -5,6 +5,13 @@ Title: "FR Core Healthcare Service Profile"
 Description: """Profile of the HealthcareService resource for France | Profil de la ressource HealthcareService pour l'usage en France.
 This profile adds the element serviceTypeDuration to associate the service with the duration of this service | Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service."""
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-healthcare-service)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

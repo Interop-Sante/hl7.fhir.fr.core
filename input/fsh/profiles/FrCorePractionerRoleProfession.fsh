@@ -6,6 +6,14 @@ Id: fr-core-practitioner-role-profession
 Title: "FR Core Practitioner Role Profession"
 Description: "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France| Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France."
 * ^status = #draft
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-practitioner-role-profession)
+
 * practitioner only Reference(FRCorePractitionerProfile)
 * organization only Reference(FRCoreOrganizationProfile)
 * code from $fr-practioner-role-profession (required)

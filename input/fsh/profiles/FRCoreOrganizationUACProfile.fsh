@@ -3,6 +3,14 @@ Parent: Organization
 Id: fr-core-organization-uac
 Title: "FR Core Organization UAC Profile"
 Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-organization-uac)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

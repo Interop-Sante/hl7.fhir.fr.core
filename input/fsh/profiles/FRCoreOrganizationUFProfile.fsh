@@ -4,6 +4,13 @@ Id: fr-core-organization-uf
 Title: "FR Core Organization UF Profile"
 Description: "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-organization-uf)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
