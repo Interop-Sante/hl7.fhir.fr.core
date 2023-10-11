@@ -5,7 +5,7 @@ Title: "FR Core Observation Body Temperature Profile"
 Description: "French profil body temperature | Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"
 
 * meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile ^slicing.description = "Slice based on the canonical url value"
 * meta.profile contains fr-canonical 0..1

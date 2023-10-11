@@ -8,7 +8,7 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 * ^status = #draft
 
 * meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile ^slicing.description = "Slice based on the canonical url value"
 * meta.profile contains fr-canonical 0..1

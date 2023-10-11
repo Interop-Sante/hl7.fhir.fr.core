@@ -5,7 +5,7 @@ Title: "FR Core Related Person Profile"
 Description: "Profile of the RelatedPerson resource for France | Profil de la ressource RelatedPerson pour l'usage en France"
 
 * meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile ^slicing.description = "Slice based on the canonical url value"
 * meta.profile contains fr-canonical 0..1

@@ -5,7 +5,7 @@ Title: "FR Core Observation Body Weight Profile"
 Description: "French profil Body weight based on the FHIR profil BodyWeightMeas. | Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."
 
 * meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile ^slicing.description = "Slice based on the canonical url value"
 * meta.profile contains fr-canonical 0..1
