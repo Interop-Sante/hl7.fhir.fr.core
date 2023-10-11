@@ -20,8 +20,6 @@ Description: "French profil Blood pressure panel with all children optional - Th
 * value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * value[x] ..0
 
-* interpretation from $fr-core-obervation-interpretation (extensible)
-
 * bodySite from $bpMeasBodyLocationPrecoordVS (example)
 * method from $fr-core-bp-measurement-method (example)
 
@@ -35,14 +33,12 @@ Description: "French profil Blood pressure panel with all children optional - Th
 * component contains
     MeanBP 0..1
 
-* component[SystolicBP].interpretation from $fr-core-obervation-interpretation (extensible)
 * component[SystolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[SystolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 
 
 * component[DiastolicBP] ^short = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP] ^definition = "Used when reporting diastolic blood pressure."
-* component[DiastolicBP].interpretation from $fr-core-obervation-interpretation (extensible)
 * component[DiastolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[DiastolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 
@@ -61,5 +57,4 @@ Description: "French profil Blood pressure panel with all children optional - Th
 * component[MeanBP].code.coding[MBPCode].code = #8478-0 (exactly)
 * component[MeanBP].code.coding[MBPCode].code ^short = "Mean blood pressure"
 * component[MeanBP].code.coding[MBPCode].code ^definition = "Mean blood pressure"
-* component[MeanBP].interpretation from $fr-core-obervation-interpretation (extensible)
 * component[MeanBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"

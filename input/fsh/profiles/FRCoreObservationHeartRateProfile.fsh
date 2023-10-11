@@ -14,7 +14,6 @@ Description: "French profiling of the FHIR Vital Sign Heart Rate Profile | Profi
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)
-* interpretation from $fr-core-obervation-interpretation (extensible)
 
 * bodySite from $ValueSet-heartRateMeasBodyLocationPrecoordVS.html (example)
 * bodySite.coding from $fr-core-heart-rate-body-position (example)

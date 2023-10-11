@@ -12,7 +12,6 @@ Description: "French profil body temperature | Profil français de la mesure de 
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreOrganizationProfile or PractitionerRole)
-* interpretation from $fr-core-obervation-interpretation (extensible)
 * bodySite from $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html (example)
 
 * value[x] ^slicing.rules = #open

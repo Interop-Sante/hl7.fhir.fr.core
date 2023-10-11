@@ -12,7 +12,6 @@ Description: "French profil Body weight based on the FHIR profil BodyWeightMeas.
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
-* interpretation from $fr-core-obervation-interpretation (extensible)
 
 * method from $fr-core-weight-measurement-method (example)
 
