@@ -8,7 +8,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    $patient-nationality named nationality 0..1 and
+    fr-core-nationality named nationality 0..1 and
     FRCorePatientIdentReliabilityExtension named identityReliability 1..1 and
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientIdentityMethodCollectionExtension named identityMethodCollection 0..1 and
