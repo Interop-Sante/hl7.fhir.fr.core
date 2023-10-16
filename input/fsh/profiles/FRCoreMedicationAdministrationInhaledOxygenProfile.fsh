@@ -2,6 +2,14 @@ Profile: FRCoreMedicationAdministrationInhaledOxygenProfile
 Parent: MedicationAdministration
 Id: fr-core-medication-administration-inhaled-oxygen
 Title: "FR Core Medication Administration Inhaled Oxygen Profile"
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-medication-administration-inhaled-oxygen)
+
 * medication[x] only CodeableConcept
 * medication[x].coding 1..1
 * medication[x].coding.system 1..
