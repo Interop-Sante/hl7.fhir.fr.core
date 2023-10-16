@@ -8,7 +8,7 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * . ^definition = "A person who is directly or indirectly involved in the provisioning of healthcare | Un professionnel impliqué directement ou indirectement dans la prise en charge d'une personne."
 
 * meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile ^slicing.description = "Slice based on the canonical url value"
 * meta.profile contains fr-canonical 0..1

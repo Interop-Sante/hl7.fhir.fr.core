@@ -3,6 +3,14 @@ Parent: http://hl7.org/fhir/StructureDefinition/bodyheight
 Id: fr-core-observation-body-height
 Title: "FR Core Observation Body Height Profile"
 * . ^short = "French Body Height Profile based on FHIR Body height profile"
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-observation-body-height)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
