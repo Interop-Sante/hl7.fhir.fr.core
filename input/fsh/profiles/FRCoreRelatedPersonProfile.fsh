@@ -3,6 +3,14 @@ Parent: RelatedPerson
 Id: fr-core-related-person
 Title: "FR Core Related Person Profile"
 Description: "Profile of the RelatedPerson resource for France | Profil de la ressource RelatedPerson pour l'usage en France"
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-related-person)
+
 * identifier 1..1
 * patient only Reference(FRCorePatientProfile)
 * relationship 1..

@@ -25,6 +25,3 @@ Description: "Reliabilility of the patient's identity | Précision sur le degré
 * extension[validationMode] ^short = "Code de validation de l'identité (avec quelle pièce officielle?)"
 * extension[validationMode].value[x] only Coding
 * extension[validationMode].value[x] from $fr-core-mode-validation-identite (required)
-
-
-// TODO : doublon INSI identity reliability & identreliability ?
