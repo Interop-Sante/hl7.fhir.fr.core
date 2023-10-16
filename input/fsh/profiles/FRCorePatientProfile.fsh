@@ -13,10 +13,9 @@ This profile specifies the patient's identifiers for France. It uses internation
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientIdentityMethodCollectionExtension named identityMethodCollection 0..1 and
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
-    $patient-birthPlace named birthPlace 0..1
+    http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1
 
-* extension[birthPlace].value[x].district from FRCoreValueSetCOGCommunePays (extensible)
-* extension[birthPlace].value[x].district ^binding.description = "Code COG town or country"
+* extension[birthPlace].valueAddress only FRCoreAddressProfile
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
