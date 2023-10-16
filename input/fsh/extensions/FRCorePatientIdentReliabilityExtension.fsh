@@ -5,7 +5,8 @@ Description: "Reliabilility of the patient's identity | Précision sur le degré
 * ^purpose = "Permet de préciser le degré de fiabilité de l'identité du patient\r\nReliabilility of the patient's identity"
 * ^context.type = #element
 * ^context.expression = "Patient"
-* . ^short = "Reliabilility of the identity | Degré de fiabilité de l'identité"
+
+* . ^short = "Reliabilility of the identity | Fiabilité de l'identité"
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
