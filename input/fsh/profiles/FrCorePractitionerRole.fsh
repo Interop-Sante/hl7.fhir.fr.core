@@ -14,10 +14,23 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 * identifier.system ^definition = "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nNamespace du RASS (inconnu à ce jour)"
 * practitioner only Reference(FRCorePractitionerProfile)
 * organization only Reference(FRCoreOrganizationProfile)
-* code from $fr-practioner-role-exercice (required) //TODO à créer
+
+
+//TODO à mettre à jour avec la fusion exercice-profession : créer VS ?
+* code from $fr-practioner-role-exercice (required) 
 * code ^short = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation"
 * code ^definition = "The role a person plays representing an organization | Situation d'exercice (Fonction dans le NOS)"
 * code ^binding.description = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS."
+
+// * code from $fr-practioner-role-profession (required)
+// * code ^short = "Professions which this practitioner may have"
+// * code ^definition = "Professions which this practitioner is authorized to perform in France. | Professions que le PS est autorisé à réaliser"
+// * code.extension ^slicing.discriminator.type = #value
+// * code.extension ^slicing.discriminator.path = "url"
+// * code.extension ^slicing.rules = #open
+// * code.extension contains FrCorePractitionerRoleCodeCategorieProfessionnelle named professionnalCategory 0..1
+
+
 * specialty from fr-practitioner-specialty (required)
 * specialty ^short = "Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation"
 * specialty ^definition = "Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation."
