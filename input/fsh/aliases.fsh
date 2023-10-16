@@ -51,7 +51,6 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $organization-period = http://hl7.org/fhir/StructureDefinition/organization-period
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
-Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
 Alias: $fr-core-obervation-interpretation = http://www.interopsante.org/fhir/structuredefinition/observation/fr-core-obervation-interpretation

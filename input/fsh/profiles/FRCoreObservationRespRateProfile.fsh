@@ -23,7 +23,6 @@ This profile specifies the patient's identifiers for France. It uses internation
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
-* interpretation from $fr-core-obervation-interpretation (extensible)
 
 * method from $ValueSet-respiratoryRateMeasMethodVS.html (example)
 
