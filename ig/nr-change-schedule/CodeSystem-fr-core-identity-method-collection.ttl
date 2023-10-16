@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-identity-method-collection> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-identity-method-collection"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-identity-method-collection</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SM<a name=\"fr-core-identity-method-collection-SM\"> </a></td><td>Saisie manuelle</td></tr><tr><td style=\"white-space:nowrap\">CV<a name=\"fr-core-identity-method-collection-CV\"> </a></td><td>Carte vitale</td></tr><tr><td style=\"white-space:nowrap\">INSI<a name=\"fr-core-identity-method-collection-INSI\"> </a></td><td>Téléservice INSI</td></tr><tr><td style=\"white-space:nowrap\">CB<a name=\"fr-core-identity-method-collection-CB\"> </a></td><td>Code à barre</td></tr><tr><td style=\"white-space:nowrap\">RFID<a name=\"fr-core-identity-method-collection-RFID\"> </a></td><td>Puce RFID</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-identity-method-collection"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemIdentityMethodCollection"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem Identity Method Collection"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-10-16T15:12:48+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "SM" ] ;
+     fhir:display [ fhir:v "Saisie manuelle" ]
+  ] [
+     fhir:code [ fhir:v "CV" ] ;
+     fhir:display [ fhir:v "Carte vitale" ]
+  ] [
+     fhir:code [ fhir:v "INSI" ] ;
+     fhir:display [ fhir:v "Téléservice INSI" ]
+  ] [
+     fhir:code [ fhir:v "CB" ] ;
+     fhir:display [ fhir:v "Code à barre" ]
+  ] [
+     fhir:code [ fhir:v "RFID" ] ;
+     fhir:display [ fhir:v "Puce RFID" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
