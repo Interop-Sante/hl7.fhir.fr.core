@@ -4,10 +4,12 @@ Id: fr-core-patient-ins
 Title: "FR Core Patient INS Profile"
 Description: """Profil FrPatient appliqué à l'INS."""
 
+* obeys fr-core-1
+
 * extension[identityReliability] 1..1
 
 * extension[birthPlace] 1..1
-* extension[birthPlace].extension[inseeCode] 1..1
+* extension[birthPlace].valueAddress.extension[inseeCode] 1..1
 
 * identifier contains
     INS-NIR 0..* and
@@ -43,3 +45,9 @@ Description: """Profil FrPatient appliqué à l'INS."""
 * name[officialName].given ^short = "Dans le cas d’une identité créée ou modifiée par un appel au téléservice INSi, il est nécessaire d’extraire le premier prénom de la liste des prénoms retournée par le téléservice et de l'inclure dans le champs given."
 
 * name[officialName].extension contains fr-core-patient-birth-list-given-name named birth-list-given-name 1..1
+
+
+Invariant:   fr-core-1
+Description: "Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or both SHALL be present"
+* severity = #error
+* expression = "identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists()"

@@ -14,7 +14,6 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * meta.profile contains fr-canonical 0..1
 * meta.profile[fr-canonical] = Canonical(fr-core-practitioner)
 
-* status = #active
 
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetPractionerIdentifierType (extensible)
