@@ -2,7 +2,7 @@ Lien vers l'intégration continue : https://interop-sante.github.io/FHIR-FR-Core
 /!\ Cette version est soumise à des changements réguliers et ne doit pas être utilisée telle quelle, elle est uniquement publiée pour consultation.
 
 
-[![Validation de l'IG]([https://github.com/ansforge/IG-fhir-gestion-agenda-partage](https://github.com/Interop-Sante/hl7.fhir.fr.core)/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/Interop-Sante/hl7.fhir.fr.core/actions/workflows/fhir-workflows.yml)
+[![Validation de l’IG](https://github.com/Interop-Sante/hl7.fhir.fr.core/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/Interop-Sante/hl7.fhir.fr.core/actions/workflows/fhir-workflows.yml)
 
 # Description
 
