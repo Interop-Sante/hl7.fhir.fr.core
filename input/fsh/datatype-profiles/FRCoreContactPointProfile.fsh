@@ -3,6 +3,7 @@ Parent: ContactPoint
 Id: fr-core-contact-point
 Title: "FR Core Contact Point Profile"
 
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
