@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "draft",
-  "date" : "2023-10-09T09:28:26+00:00",
+  "date" : "2023-10-16T13:03:47+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -638,7 +638,7 @@
         "reference" : "StructureDefinition/fr-core-address"
       },
       "name" : "FR Core Address Profile",
-      "description" : "French profile of Address datatype | Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse.",
+      "description" : "French profile of Address datatype | Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.",
       "exampleBoolean" : false
     },
     {
@@ -1335,6 +1335,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-core-patient-birth-list-given-name"
+      },
+      "name" : "FR Core Patient Birth List Given name Extension",
+      "description" : "Prénoms de l'acte de naissance",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-birth-place"
       },
       "name" : "FR Core Patient Birth Place Extension",
@@ -1398,6 +1410,30 @@
       },
       "name" : "FR Core Patient Identity Method Collection Extension",
       "description" : "This french extension specifies the way the identity is collected | Cette extension française spécifie la façon dont l'identité est obtenue",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-patient-ins"
+      },
+      "name" : "FR Core Patient INS Profile",
+      "description" : "Profil FrPatient appliqué à l'INS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-nationality"
+      },
+      "name" : "FR Core Patient Nationalité",
+      "description" : "Nationalité du patient",
       "exampleBoolean" : false
     },
     {

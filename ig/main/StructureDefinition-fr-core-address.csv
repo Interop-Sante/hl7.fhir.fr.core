@@ -12,7 +12,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Address.extension:inseeCode","Address.extension","inseeCode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code]]} {[]}
-","FR Core Address Insee Code Extension","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Code COG de la ville","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Address.use","Address.use","","","",0,1,"","Y","Y","code {[]} {[]}
@@ -33,7 +33,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)","n/a","AD.part[parttype = AL]","./StreetAddress (newline delimitted)","street"
 "Address.city","Address.city","","Municpality
 ","",0,1,"","","Y","string {[]} {[]}
-","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"ele-1
+","Les communes existantes sont définies ici : https://public.opendatasoft.com/explore/dataset/correspondance-code-insee-code-postal/table.","The name of the city, town, suburb, village or other community or delivery center.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.3","n/a","AD.part[parttype = CTY]","./Jurisdiction","locality"
 "Address.district","Address.district","","County
@@ -52,7 +52,7 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.5","n/a","AD.part[parttype = ZIP]","./PostalIdentificationCode","code"
 "Address.country","Address.country","","","",0,1,"","","Y","string {[]} {[]}
-","Country (will be ISO 3166 3 letter code; code=FRA for France)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a full country name. FRA for France.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"ele-1
+","Country (will be ISO 3166 3 letter code; code=FRA for France)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.6","n/a","AD.part[parttype = CNT]","./Country","country"
 "Address.period","Address.period","","","",0,1,"","","Y","Period {[]} {[]}

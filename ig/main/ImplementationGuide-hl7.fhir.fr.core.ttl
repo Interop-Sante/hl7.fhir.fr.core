@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-09T09:28:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-16T13:03:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -550,7 +550,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-address" ]
        ] ;
        fhir:name [ fhir:v "FR Core Address Profile" ] ;
-       fhir:description [ fhir:v "French profile of Address datatype | Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse." ] ;
+       fhir:description [ fhir:v "French profile of Address datatype | Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1246,6 +1246,18 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-birth-list-given-name" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Patient Birth List Given name Extension" ] ;
+       fhir:description [ fhir:v "Prénoms de l'acte de naissance" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-place> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-birth-place" ]
        ] ;
@@ -1310,6 +1322,30 @@
        ] ;
        fhir:name [ fhir:v "FR Core Patient Identity Method Collection Extension" ] ;
        fhir:description [ fhir:v "This french extension specifies the way the identity is collected | Cette extension française spécifie la façon dont l'identité est obtenue" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
+       fhir:description [ fhir:v "Profil FrPatient appliqué à l'INS." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-nationality" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Patient Nationalité" ] ;
+       fhir:description [ fhir:v "Nationalité du patient" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -120,6 +120,64 @@
       ]
     },
     {
+      "url": "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality",
+      "title": "FR Core Patient Nationalité",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext",
       "title": "FR Core Observation Body Position Ext Extension",
       "types": [
@@ -224,6 +282,13 @@
     {
       "url": "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name",
       "title": "FR Core Organization Short Name Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+      "title": "FR Core Patient Birth List Given name Extension",
       "types": [
         "string"
       ]
@@ -710,6 +775,10 @@
       {
         "url": "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
         "title": "FR Core Patient Profile"
+      },
+      {
+        "url": "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins",
+        "title": "FR Core Patient INS Profile"
       }
     ],
     "Practitioner": [
@@ -749,7 +818,8 @@
   },
   "usage": {
     "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
-      "Address"
+      "Address",
+      "Patient.extension.value[x]"
     ],
     "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator": [
       "Appointment"
@@ -769,6 +839,9 @@
     ],
     "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room": [
       "Location.partOf"
+    ],
+    "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality": [
+      "Patient"
     ],
     "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext": [
       "Observation"
@@ -811,6 +884,9 @@
     ],
     "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
       "Organization"
+    ],
+    "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Patient.name"
     ],
     "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
       "Patient"
@@ -865,9 +941,6 @@
       "Organization"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
-      "Patient"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
