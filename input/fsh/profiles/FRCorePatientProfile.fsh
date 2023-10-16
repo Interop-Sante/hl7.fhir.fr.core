@@ -4,12 +4,13 @@ Id: fr-core-patient
 Title: "FR Core Patient Profile"
 Description: """Profile of the Patient resource for France | Profil de la ressource Patient pour l'usage en France
 This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France."""
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
     fr-core-nationality named nationality 0..1 and
-    FRCorePatientIdentReliabilityExtension named identityReliability 1..1 and
+    FRCorePatientIdentReliabilityExtension named identityReliability 0..1 and
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientIdentityMethodCollectionExtension named identityMethodCollection 0..1 and
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
@@ -23,36 +24,15 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier ^slicing.rules = #open
 * identifier ^short = "National Health Identifier | Identifiant national de santé"
 * identifier contains
-    INS-NIR 0..* and
-    INS-NIA 0..* and
     INS-C 0..* and
     NDP 0..1 and
     PI 0..1 and
     RRI 0..1
 
-* identifier[INS-NIR] ^short = "The patient's health national identifier INS coming from the INSi teleservice| Identifiant national de santé du patient INS provenant du téléservice INSi"
-* identifier[INS-NIR] ^definition = "patient's national identifier obtained by requesting the national patient identification service (CNAM) | Identifiant NIR du patient récupéré à partir de l'interrogation du service national d'identification des patients (CNAM)"
-* identifier[INS-NIR].use = #official
-* identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR "NIR"
-* identifier[INS-NIR].system 1..
-* identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
-* identifier[INS-NIR].system ^definition = "Establishes the namespace for the value - that is, a OID that describes a set values that are unique. | Autorité d'affectation des INS-NIR"
-* identifier[INS-NIR].value 1..
-
-* identifier[INS-NIA] ^short = "INS-NIA"
-* identifier[INS-NIA] ^definition = "The temporary patient's health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
-* identifier[INS-NIA].use = #temp
-* identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA "NIA"
-* identifier[INS-NIA].system 1..
-* identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
-* identifier[INS-NIA].system ^definition = "Establishes the namespace for the value - that is, a OID that describes a set values that are unique. | Autorité d'affectation des INS-NIA"
-* identifier[INS-NIA].value 1..
-
 * identifier[INS-C] ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use = #secondary
 * identifier[INS-C].type = $fr-core-v2-0203#INS-C "INS calculé"
 * identifier[INS-C].type ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
-* identifier[INS-C].system 1..
 * identifier[INS-C].system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier[INS-C].value 1..
 
@@ -81,37 +61,37 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[RRI].system 1..
 * identifier[RRI].value 1..
 
-* name 1..
 * name only FRCoreHumanNameProfile
 * name ^slicing.discriminator.type = #value
 * name ^slicing.discriminator.path = "use"
 * name ^slicing.rules = #open
+
 * name contains
     usualName 0..* and
     officialName 0..*
 
-* name[usualName] only FRCoreHumanNameProfile
+// slice usualName laissée à titre d'information
 * name[usualName] ^short = "Name of a human | Nom utilisé"
 * name[usualName] ^definition = "A human's name with the ability to identify parts and usage | Le nom utilisé (usual) n’est transmis que s’il est défini (par exemple nom marital du conjoint)."
-* name[usualName].use 1..
 * name[usualName].use = #usual
 
-* name[officialName] only FRCoreHumanNameProfile
 * name[officialName] ^short = "Name of a human | Nom de naissance"
 * name[officialName] ^definition = "A human's name with the ability to identify parts and usage | Le nom de naissance (official) est obligatoire dans le cas où l’on véhicule l’INS et que l’identité est qualifiée (celui-ci ne doit pas être altéré)."
-* name[officialName].use 1..
 * name[officialName].use = #official
 * name[officialName].family 1..
 * name[officialName].given 1..1
+// TODO : rajouter l'extenion text
+
 
 * telecom only FRCoreContactPointProfile
-* gender 1..
+
 * gender ^definition = "French patient's gender checked with the INSi teleservice | Genre du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs sont M ou F"
-* birthDate 1..
+
 * birthDate ^short = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 * birthDate ^definition = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 
 * address only FRCoreAddressProfile
+
 * contact.extension ^slicing.discriminator.type = #value
 * contact.extension ^slicing.discriminator.path = "url"
 * contact.extension ^slicing.rules = #open
