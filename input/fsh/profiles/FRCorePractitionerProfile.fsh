@@ -7,7 +7,15 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * . ^short = "A person with a  formal responsibility in the provisioning of healthcare or related services | Prestataire de santé"
 * . ^definition = "A person who is directly or indirectly involved in the provisioning of healthcare | Un professionnel impliqué directement ou indirectement dans la prise en charge d'une personne."
 
-* ^status = #active
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "meta.profile"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-practitioner)
+
+* status = #active
+
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetPractionerIdentifierType (extensible)
 * identifier.type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"

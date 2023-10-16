@@ -11,6 +11,5 @@ Description: "HL7 Vital Signs Head Occipital-frontal circumference profil | Prof
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCorePatientProfile or FRCoreOrganizationProfile)
-* interpretation from $fr-core-obervation-interpretation (extensible)
 
 * value[x] ^slicing.rules = #open
