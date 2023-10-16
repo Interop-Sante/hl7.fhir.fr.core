@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-location-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FNTR<a name=\"fr-core-location-type-FNTR\"> </a></td><td>Coté fenetre</td></tr><tr><td style=\"white-space:nowrap\">CLR<a name=\"fr-core-location-type-CLR\"> </a></td><td>coté couloir</td></tr><tr><td style=\"white-space:nowrap\">ML<a name=\"fr-core-location-type-ML\"> </a></td><td>au mileu de la chambre</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemLocationType"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem Location Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-10-16T13:46:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Location type"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "FNTR" ] ;
+     fhir:display [ fhir:v "Coté fenetre" ]
+  ] [
+     fhir:code [ fhir:v "CLR" ] ;
+     fhir:display [ fhir:v "coté couloir" ]
+  ] [
+     fhir:code [ fhir:v "ML" ] ;
+     fhir:display [ fhir:v "au mileu de la chambre" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

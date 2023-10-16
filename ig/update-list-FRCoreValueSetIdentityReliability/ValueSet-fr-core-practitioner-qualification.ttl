@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-qualification> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-practitioner-qualification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu</code></li><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ</code></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "informative" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fhir" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-qualification"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetPractitionerQualification"] ; # 
+  fhir:title [ fhir:v "FR Core ValueSet Practitioner qualification"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-10-16T13:46:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A code classifying the qualification of the provider"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
