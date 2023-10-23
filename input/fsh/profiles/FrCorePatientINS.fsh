@@ -37,6 +37,8 @@ Description: """Profil FrPatient appliqué à l'INS."""
 // Identifier : soit INS-NIR, soit INS-NIA obligatoire
 
 * gender 1..1
+* gender from fr-core-patient-gender-INS (required)
+* gender ^short = "male | female | unknown"
 
 * birthDate 1..
 
