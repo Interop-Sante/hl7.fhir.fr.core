@@ -17,7 +17,7 @@ Description: "This profile specializes the fr-core-organization profile to repre
 * extension contains
     FRCoreOrganizationShortNameExtension named shortName 0..1 and
     FRCoreOrganizationDescriptionExtension named description 0..1 and
-    $organization-period named usePeriod 0..1
+    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
     
 * identifier.use from IdentifierUse (required)
 * identifier.type 1..

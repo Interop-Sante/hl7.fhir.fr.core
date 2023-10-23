@@ -1,4 +1,4 @@
-ValueSet: FRCoreValueSetIdentityReliability
+ValueSet: FRCoreValueSetIdentityReliabilityStatus
 Id: fr-core-identity-reliability
 Title: "FR Core ValueSet Identity reliability"
 Description: "The reliability of the identity."

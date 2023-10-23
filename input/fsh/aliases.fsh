@@ -49,7 +49,6 @@ Alias: $resprate = http://hl7.org/fhir/StructureDefinition/resprate
 Alias: $oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $organization-period = http://hl7.org/fhir/StructureDefinition/organization-period
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
@@ -72,7 +71,7 @@ Alias: $fr-practioner-role-exercice = http://interopsante.org/fhir/ValueSet/fr-p
 Alias: $fr-practitioner-specialty = http://interopsante.org/fhir/ValueSet/fr-practitioner-specialty
 Alias: $fr-practioner-role-profession = http://interopsante.org/fhir/ValueSet/fr-practioner-role-profession
 Alias: $JDV-J105-EnsembleDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS
-Alias: $fr-core-mode-validation-identite = http://interopsante.org/fhir/ValueSet/fr-core-mode-validation-identite
+
 Alias: $ValueSet-bodyPositionVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-bodyPositionVS.html
 Alias: $fr-core-height-body-position = http://interopsante.org/fhir/ValueSet/fr-core-height-body-position
 Alias: $fr-core-observation-level-of-exertion = http://interopsante.org/fhir/StructureDefinition/fr-core-observation-level-of-exertion

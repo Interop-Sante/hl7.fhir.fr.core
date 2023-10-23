@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetModeValidationIdentity
-Id: fr-core-identity-validation-mode
-Title: "FR Core ValueSet Mode validation identite"
+Id: fr-core-vs-mode-validation-identity
+Title: "FR Core ValueSet Mode validation identity"
 Description: "The validation mode of the identity."
-* include codes from system http://interopsante.org/fhir/CodeSystem/fr-cs-mode-validation-identite|1.1.0
+* include codes from system fr-core-cs-mode-validation-identity

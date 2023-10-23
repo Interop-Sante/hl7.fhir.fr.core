@@ -4,7 +4,7 @@ Title: "FR Core CodeSystem Fiabilité Identité"
 Description: "This code system  includes all the French Identity reliabilty codes (InteropSanté)."
 * ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.12.445"
-* ^status = #draft
+
 * ^caseSensitive = true
 * ^content = #complete
 * #VIDE "Identité non encore qualifiée"
@@ -24,5 +24,7 @@ Description: "This code system  includes all the French Identity reliabilty code
 * #IDRA "Identité rapprochée dans un autre domaine"
 * #USUR "Identité usurpée"
 * #HOMD "Homonyme détecté"
-* #HOMA "Homonyme avéré"
 * #INVA "Identité invalidée"
+* #HOMA "Homonyme avéré (attribut d'identité homonyme)"
+* #FICT "Identité fictive (attribut d'identité fictive)"
+* #DOUT "Identité douteuse (attribut d'identité douteuse)"
