@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Appointment</sch:title>
     <sch:rule context="f:Appointment">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator']) &lt;= 1">extension with URL = 'http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator']) &lt;= 1">extension with URL = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
