@@ -19,8 +19,6 @@ This profile redefines the element serviceType to associate the service with the
     FRCoreServiceTypeDurationExtension named serviceTypeDuration 0..* and
     FRCoreScheduleAvailabilityTimeExtension named availabilityTime 0..*
 
-* identifier.use from IdentifierUse (required)
-
 * serviceCategory ..1
 * serviceType ..0
 * specialty from FRCoreValueSetPractitionerSpecialty (required)
