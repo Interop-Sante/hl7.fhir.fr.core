@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-16T15:07:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-23T11:38:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -642,17 +642,6 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-identity-method-collection> ;
-         fhir:reference [ fhir:v "CodeSystem/fr-core-identity-method-collection" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core CodeSystem Identity Method Collection" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-identifier-type> ;
          fhir:reference [ fhir:v "CodeSystem/fr-core-location-identifier-type" ]
        ] ;
@@ -701,8 +690,19 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-mode-validation-identite> ;
-         fhir:reference [ fhir:v "CodeSystem/fr-core-mode-validation-identite" ]
+         fhir:link <http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-method-collection" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core CodeSystem Mode Validation Identite" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-mode-validation-identity" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Mode Validation Identite" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -1305,23 +1305,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-ident-reliability> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-ident-reliability" ]
+         fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-identity-reliability" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient Ident Reliability Extension" ] ;
-       fhir:description [ fhir:v "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-identity-method-collection> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-identity-method-collection" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Patient Identity Method Collection Extension" ] ;
-       fhir:description [ fhir:v "This french extension specifies the way the identity is collected | Cette extension française spécifie la façon dont l'identité est obtenue" ] ;
+       fhir:description [ fhir:v "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1736,10 +1724,10 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-validation-mode> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-identity-validation-mode" ]
+         fhir:link <http://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-mode-validation-identity" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Mode validation identite" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Mode validation identity" ] ;
        fhir:description [ fhir:v "The validation mode of the identity." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

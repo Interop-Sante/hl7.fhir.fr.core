@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "draft",
-  "date" : "2023-10-16T15:07:43+00:00",
+  "date" : "2023-10-23T11:38:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -731,17 +731,6 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/fr-core-identity-method-collection"
-      },
-      "name" : "FR Core CodeSystem Identity Method Collection",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
         "reference" : "CodeSystem/fr-core-location-identifier-type"
       },
       "name" : "FR Core CodeSystem Location Identifier Type",
@@ -790,7 +779,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/fr-core-mode-validation-identite"
+        "reference" : "CodeSystem/fr-core-cs-method-collection"
+      },
+      "name" : "FR Core CodeSystem Mode Validation Identite",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-mode-validation-identity"
       },
       "name" : "FR Core CodeSystem Mode Validation Identite",
       "exampleBoolean" : false
@@ -1394,22 +1394,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-ident-reliability"
+        "reference" : "StructureDefinition/fr-core-identity-reliability"
       },
       "name" : "FR Core Patient Ident Reliability Extension",
-      "description" : "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-patient-identity-method-collection"
-      },
-      "name" : "FR Core Patient Identity Method Collection Extension",
-      "description" : "This french extension specifies the way the identity is collected | Cette extension française spécifie la façon dont l'identité est obtenue",
+      "description" : "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection",
       "exampleBoolean" : false
     },
     {
@@ -1825,9 +1813,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-identity-validation-mode"
+        "reference" : "ValueSet/fr-core-vs-mode-validation-identity"
       },
-      "name" : "FR Core ValueSet Mode validation identite",
+      "name" : "FR Core ValueSet Mode validation identity",
       "description" : "The validation mode of the identity.",
       "exampleBoolean" : false
     },
