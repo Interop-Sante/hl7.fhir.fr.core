@@ -37,9 +37,6 @@ Description: """Profil FrPatient appliqué à l'INS avec identité validée. Pou
 * identifier[INS-NIA].system ^short = "Autorité d'affectation des INS-NIA"
 * identifier[INS-NIA].value 1..
 
-
-// Identifier : soit INS-NIR, soit INS-NIA obligatoire
-
 * gender 1..1
 
 * birthDate 1..
