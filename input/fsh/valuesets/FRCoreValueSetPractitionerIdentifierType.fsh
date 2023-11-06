@@ -1,4 +1,4 @@
-ValueSet: FRCoreValueSetPractitioonerIdentifierType
+ValueSet: FRCoreValueSetPractitionerIdentifierType
 Id: fr-core-practitioner-identifier-type
 Title: "FR Core ValueSet Practitioner identifier type"
 Description: "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)"
