@@ -1,9 +1,9 @@
 ﻿FrCore : Validation Results
 =========================================
 
-err = 137, warn = 278, info = 60
-IG Publisher Version: 1.4.16
-Generated Mon Oct 23 11:35:30 UTC 2023. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0 (canonical = https://hl7.fr/ig/fhir/core)
+err = 138, warn = 279, info = 60
+IG Publisher Version: 1.5.1
+Generated Mon Nov 06 10:18:39 UTC 2023. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0 (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 0 / 13 / 0
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/CodeSystem-fr-core-circonstances-sortie : 1 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/CodeSystem-fr-core-contact-relationship : 0 / 1 / 1
@@ -115,6 +115,7 @@ Generated Mon Oct 23 11:35:30 UTC 2023. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-organization-identifier-type : 1 / 3 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-organization-type : 1 / 3 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-organization-uf-activity-field : 1 / 3 / 1
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-patient-gender-INS : 1 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-practitioner-identifier-type : 1 / 4 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-practitioner-qualification : 1 / 2 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/ValueSet-fr-core-practitioner-specialty : 1 / 2 / 1
@@ -184,7 +185,7 @@ ERROR: CodeSystem/fr-core-v2-3311: CodeSystem: Published code systems SHALL conf
 WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.fr.core, jurisdiction = urn:iso:std:iso:3166#FR) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#FR "null"')
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core.json ==
 WARNING: ImplementationGuide/hl7.fhir.fr.core: ImplementationGuide.definition.resource[0].name: value should not start or finish with whitespace 'First day of the workweek | Premier jour de la semaine de travail '
-WARNING: ImplementationGuide/hl7.fhir.fr.core: ImplementationGuide.definition.resource[115].name: value should not start or finish with whitespace 'Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule '
+WARNING: ImplementationGuide/hl7.fhir.fr.core: ImplementationGuide.definition.resource[116].name: value should not start or finish with whitespace 'Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule '
 WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.fr.core, jurisdiction = urn:iso:std:iso:3166#FR instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#FR "null"')
 == fsh-generated/resources/StructureDefinition-fr-core-address.json ==
 INFORMATION: StructureDefinition/fr-core-address: StructureDefinition.snapshot.element[13].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
@@ -685,6 +686,9 @@ WARNING: ValueSet/fr-core-organization-uf-activity-field: ValueSet.compose.inclu
 ERROR: ValueSet/fr-core-organization-uf-activity-field: ValueSet: Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.fr.core, jurisdiction = urn:iso:std:iso:3166#FR) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#FR "null"')
 WARNING: ValueSet.where(id = 'fr-core-organization-uf-activity-field'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://interopsante.org/fhir/CodeSystem/fr-v2-3311
+== fsh-generated/resources/ValueSet-fr-core-patient-gender-INS.json ==
+ERROR: ValueSet/fr-core-patient-gender-INS: ValueSet: Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.fr.core, jurisdiction = urn:iso:std:iso:3166#FR) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#FR "null"')
 == fsh-generated/resources/ValueSet-fr-core-practitioner-identifier-type.json ==
 WARNING: ValueSet/fr-core-practitioner-identifier-type: ValueSet.compose.include[1]: Unknown System 'http://interopsante.org/fhir/CodeSystem/fr-v2-0203' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://interopsante.org/fhir/CodeSystem/fr-v2-0203' is unknown so the code cannot be validated)
 WARNING: ValueSet/fr-core-practitioner-identifier-type: ValueSet.compose.include[2]: Unknown System 'https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne is unknown (from Tx-Server))

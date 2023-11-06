@@ -10,7 +10,7 @@
   "name" : "FrCorePractionerRoleProfession",
   "title" : "FR Core Practitioner Role Profession",
   "status" : "draft",
-  "date" : "2023-10-23T11:28:06+00:00",
+  "date" : "2023-11-06T10:15:36+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1053,7 +1053,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+        "source" : "http://hl7.org/fhir/StructureDefinition/InsurancePlan"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1117,7 +1117,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DocumentManifest"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1165,7 +1165,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DocumentManifest"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1573,7 +1573,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DocumentManifest"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1629,7 +1629,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DocumentManifest"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -2303,7 +2303,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+        "source" : "http://hl7.org/fhir/StructureDefinition/InsurancePlan"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -2389,7 +2389,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DocumentManifest"
       }],
       "mapping" : [{
         "identity" : "rim",

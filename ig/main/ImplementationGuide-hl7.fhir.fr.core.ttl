@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-23T11:28:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-06T10:15:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -1789,6 +1789,18 @@
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Organization UF activity field" ] ;
        fhir:description [ fhir:v "Organization UF activity field | Champ d'activité des structures UF" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-gender-INS> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-patient-gender-INS" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient gender INS ValueSet" ] ;
+       fhir:description [ fhir:v "Patient Gender for INS : male | female | unknown" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
