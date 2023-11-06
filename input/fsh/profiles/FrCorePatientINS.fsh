@@ -2,7 +2,7 @@ Profile: FRCorePatientINSProfile
 Parent: fr-core-patient
 Id: fr-core-patient-ins
 Title: "FR Core Patient INS Profile"
-Description: """Profil FrPatient appliqué à l'INS avec identité validée."""
+Description: """Profil FrPatient appliqué à l'INS avec identité validée. Pour plus d'informations, consulter le référentiel national d'identitovigilance de l'ANS (RNIV)."""
 
 * obeys fr-core-1
 
