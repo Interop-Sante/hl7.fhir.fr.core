@@ -1,7 +1,7 @@
 CodeSystem: FRCoreCodeSystemReliabilityIdentity
 Id: fr-core-fiabilite-identite
 Title: "FR Core CodeSystem Fiabilité Identité"
-Description: "This code system  includes all the French Identity reliabilty codes (InteropSanté)."
+Description: "This code system includes all the French Identity reliabilty codes (InteropSanté)."
 * ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.12.445"
 
@@ -11,7 +11,7 @@ Description: "This code system  includes all the French Identity reliabilty code
 * #PROV "Identité provisoire"
 * #VALI "Identité validée"
 * #DOUB "Doublon"
-* #DESA "Identité ndésactivée"
+* #DESA "Identité désactivée"
 * #DPOT "Doublon potentiel"
 * #DOUA "Doublon avéré"
 * #COLP "Collision potentielle"
