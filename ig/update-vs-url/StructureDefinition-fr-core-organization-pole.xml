@@ -26,7 +26,7 @@
   <name value="FRCoreOrganizationPoleProfile"/>
   <title value="FR Core Organization Pole Profile"/>
   <status value="draft"/>
-  <date value="2023-10-30T11:02:30+00:00"/>
+  <date value="2023-11-06T10:17:56+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1385,7 +1385,7 @@
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1450,7 +1450,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DocumentManifest"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1721,7 +1721,7 @@
         <human value="A system is required if a value is provided."/>
         <expression value="value.empty() or system.exists()"/>
         <xpath value="not(exists(f:value)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Endpoint"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
       </constraint>
       <constraint>
         <key value="org-3"/>
@@ -1864,7 +1864,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DocumentManifest"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2468,7 +2468,7 @@
         <human value="A system is required if a value is provided."/>
         <expression value="value.empty() or system.exists()"/>
         <xpath value="not(exists(f:value)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Endpoint"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2589,7 +2589,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DocumentManifest"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
