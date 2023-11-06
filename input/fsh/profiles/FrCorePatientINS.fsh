@@ -19,7 +19,7 @@ Description: """Profil FrPatient appliqué à l'INS avec identité validée. Pou
     INS-NIR 0..* and
     INS-NIA 0..*
 
-// Slices mises dans PatientINS car ne peuvent pas être véhiculé si identité non qualifiée.
+// Slices définies dans PatientINS car ne peuvent pas être véhiculé si identité non qualifiée.
 
 * identifier[INS-NIR] ^short = "The patient's health national identifier INS coming from the INSi teleservice| Identifiant national de santé du patient INS provenant du téléservice INSi"
 * identifier[INS-NIR] ^definition = "patient's national identifier obtained by requesting the national patient identification service (CNAM) | Identifiant NIR du patient récupéré à partir de l'interrogation du service national d'identification des patients (CNAM)"
