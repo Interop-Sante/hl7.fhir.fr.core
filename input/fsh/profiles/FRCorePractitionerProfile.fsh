@@ -16,7 +16,7 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 
 
 * identifier.use from IdentifierUse (required)
-* identifier.type from FRCoreValueSetPractionerIdentifierType (extensible)
+* identifier.type from FRCoreValueSetPractitioonerIdentifierType (extensible)
 * identifier.type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * identifier.type ^binding.extension[=].valueBoolean = true
 * identifier.type.coding.system ^example[0].label = "CodeSystem HL7v2 (PAM) pour un type d'identifiant PS"
