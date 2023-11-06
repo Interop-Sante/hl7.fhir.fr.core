@@ -2,15 +2,18 @@ Profile: FRCorePatientINSProfile
 Parent: fr-core-patient
 Id: fr-core-patient-ins
 Title: "FR Core Patient INS Profile"
-Description: """Profil FrPatient appliqué à l'INS."""
+Description: """Profil FrPatient appliqué à l'INS avec identité validée."""
 
 * obeys fr-core-1
 
-* extension[identityReliability] 1..
+* extension[identityReliability] 1..1
 * extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-fiabilite-identite#VALI
 
 * extension[birthPlace] 1..1
 * extension[birthPlace].valueAddress.extension[inseeCode] 1..1
+
+
+* identifier 1..
 
 * identifier contains
     INS-NIR 0..* and
