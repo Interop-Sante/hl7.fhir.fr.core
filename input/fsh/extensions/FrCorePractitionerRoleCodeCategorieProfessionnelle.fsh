@@ -13,7 +13,7 @@ Description: "Catégorie professionnelle selon le MOS de l'ANS. Indispensable po
 * value[x] ^meaningWhenMissing = "une valeur de code est obligatoire"
 
 * value[x].coding 1..1
-* value[x].coding from $fr-practioner-role-categorie-professionnelle (required)
+* value[x].coding from $fr-practitioner-role-categorie-professionnelle (required)
 * value[x].coding ^short = "code de TRE_R09-CategorieProfessionnelle du MOS de l'ANS."
 * value[x].coding ^definition = "Le code de la catégorie professionnelle selon le système de codage TRE_R09-CategorieProfessionnelle du MOS de l'ANS."
 * value[x].coding ^comment = "Ce système de codage comporte 4 valeurs dont seule \"E\" est utile en production de soins pour discriminer les étudiants des différentes professions de santé réglementées."
