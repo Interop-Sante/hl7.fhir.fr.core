@@ -60,7 +60,6 @@ Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://models.opencim
 
 // FrCore link
 Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-schedule-type
-Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
 Alias: $fr-core-patient-identifier-type = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-identifier-type
 Alias: $fr-practitioner-role-exercice = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-role-exercice
 Alias: $fr-practitioner-specialty = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-specialty
@@ -76,14 +75,15 @@ Alias: $fr-contact-relationship = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core
 Alias: $fr-circonstances-sortie = https://hl7.fr/ig/fhir/core/CodeSystem/fr-circonstances-sortie
 Alias: $fr-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-identifier-type
 Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-type-admission
-Alias: $fr-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445
 Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-identifier-type
 Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-physical-type
 Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-position-room
 Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-type
-Alias: $fr-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0203
-Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
-Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3311
 Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-bp-measurement-method
 Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-weight-measurement-method
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-heart-rate-body-position
+Alias: $fr-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0203
+Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
+Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3311
+Alias: $fr-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445
+Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
