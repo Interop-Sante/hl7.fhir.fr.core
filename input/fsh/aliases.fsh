@@ -84,7 +84,6 @@ Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-ty
 Alias: $fr-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0203
 Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
 Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3311
-Alias: $fr-v2-0203_1 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0203
 Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-bp-measurement-method
 Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-weight-measurement-method
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-heart-rate-body-position
