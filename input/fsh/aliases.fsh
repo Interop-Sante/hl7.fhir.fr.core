@@ -48,6 +48,7 @@ Alias: $organization-period = http://hl7.org/fhir/StructureDefinition/organizati
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS
 
+
 // opencimi
 Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heartRateMeasBodyLocationPrecoordVS.html
 Alias: $ValueSet-heartRateMeasMethodVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heartRateMeasMethodVS.html
@@ -83,7 +84,6 @@ Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-
 Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-weight-measurement-method
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-heart-rate-body-position
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
-Alias: $fr-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0203
 Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
 Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3311
 Alias: $fr-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445
