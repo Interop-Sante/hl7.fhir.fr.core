@@ -5,4 +5,4 @@ Description: "French extension defined in the context of the Vital Signs Resprat
 * ^context.type = #element
 * ^context.expression = "Observation"
 * value[x] only CodeableConcept
-* value[x].coding from $fr-core-observation-level-of-exertion (preferred)  // TODO : ce VS n'existe pas
+* value[x].coding from $fr-core-observation-level-of-exertion (preferred)  // TODO : ce VS n'existe pas, renvoie sur cette extension
