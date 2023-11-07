@@ -238,7 +238,7 @@
         
           Draft
           
-            as of 2023-11-06
+            as of 2023-11-07
           
         
       </td>
@@ -443,7 +443,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
 <tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Observation.subject, Observation.encounter, Observation.performer</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
-<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: ($this as dateTime).toString().length() &gt;= 8</td><td></td></tr>
+<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: $this is dateTime implies $this.toString().length() &gt;= 10</td><td></td></tr>
 <tr><td>vs-2</td><td>error</td><td>Observation</td><td>If there is no component or hasMember element then either a value[x] or a data absent reason must be present.<br/>: (component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())</td><td></td></tr>
 <tr><td>vs-3</td><td>error</td><td>Observation.component</td><td>If there is no a value a data absent reason must be present<br/>: value.exists() or dataAbsentReason.exists()</td><td></td></tr>
 </table>
@@ -643,7 +643,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>ref-1</td><td>error</td><td>Observation.basedOn, Observation.partOf, Observation.subject, Observation.focus, Observation.encounter, Observation.performer, Observation.specimen, Observation.device, Observation.hasMember, Observation.derivedFrom</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 <tr><td>rng-2</td><td>error</td><td>Observation.referenceRange.age</td><td>If present, low SHALL have a lower value than high<br/>: low.empty() or high.empty() or (low &lt;= high)</td><td></td></tr>
 <tr><td>sqty-1</td><td>error</td><td>Observation.referenceRange.low, Observation.referenceRange.high</td><td>The comparator is not used on a SimpleQuantity<br/>: comparator.empty()</td><td></td></tr>
-<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: ($this as dateTime).toString().length() &gt;= 8</td><td></td></tr>
+<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: $this is dateTime implies $this.toString().length() &gt;= 10</td><td></td></tr>
 <tr><td>vs-2</td><td>error</td><td>Observation</td><td>If there is no component or hasMember element then either a value[x] or a data absent reason must be present.<br/>: (component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())</td><td></td></tr>
 <tr><td>vs-3</td><td>error</td><td>Observation.component</td><td>If there is no a value a data absent reason must be present<br/>: value.exists() or dataAbsentReason.exists()</td><td></td></tr>
 </table>
@@ -975,7 +975,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
 <tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Observation.subject, Observation.encounter, Observation.performer</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
-<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: ($this as dateTime).toString().length() &gt;= 8</td><td></td></tr>
+<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: $this is dateTime implies $this.toString().length() &gt;= 10</td><td></td></tr>
 <tr><td>vs-2</td><td>error</td><td>Observation</td><td>If there is no component or hasMember element then either a value[x] or a data absent reason must be present.<br/>: (component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())</td><td></td></tr>
 <tr><td>vs-3</td><td>error</td><td>Observation.component</td><td>If there is no a value a data absent reason must be present<br/>: value.exists() or dataAbsentReason.exists()</td><td></td></tr>
 </table>
@@ -1175,7 +1175,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>ref-1</td><td>error</td><td>Observation.basedOn, Observation.partOf, Observation.subject, Observation.focus, Observation.encounter, Observation.performer, Observation.specimen, Observation.device, Observation.hasMember, Observation.derivedFrom</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 <tr><td>rng-2</td><td>error</td><td>Observation.referenceRange.age</td><td>If present, low SHALL have a lower value than high<br/>: low.empty() or high.empty() or (low &lt;= high)</td><td></td></tr>
 <tr><td>sqty-1</td><td>error</td><td>Observation.referenceRange.low, Observation.referenceRange.high</td><td>The comparator is not used on a SimpleQuantity<br/>: comparator.empty()</td><td></td></tr>
-<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: ($this as dateTime).toString().length() &gt;= 8</td><td></td></tr>
+<tr><td>vs-1</td><td>error</td><td>Observation.effective[x]</td><td>if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day<br/>: $this is dateTime implies $this.toString().length() &gt;= 10</td><td></td></tr>
 <tr><td>vs-2</td><td>error</td><td>Observation</td><td>If there is no component or hasMember element then either a value[x] or a data absent reason must be present.<br/>: (component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())</td><td></td></tr>
 <tr><td>vs-3</td><td>error</td><td>Observation.component</td><td>If there is no a value a data absent reason must be present<br/>: value.exists() or dataAbsentReason.exists()</td><td></td></tr>
 </table>
@@ -1456,7 +1456,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 6, 2023 10:15+0000">2023-11-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 7, 2023 09:05+0000">2023-11-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

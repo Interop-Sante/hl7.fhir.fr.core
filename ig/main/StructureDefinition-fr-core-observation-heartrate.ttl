@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FRCoreObservationHeartRateProfile"] ; # 
   fhir:title [ fhir:v "FR Core Observation Heart Rate Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-06T10:15:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-07T09:05:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -3016,7 +3016,7 @@
          fhir:key [ fhir:v "vs-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day" ] ;
-         fhir:expression [ fhir:v "($this as dateTime).toString().length() >= 8" ] ;
+         fhir:expression [ fhir:v "$this is dateTime implies $this.toString().length() >= 10" ] ;
          fhir:xpath [ fhir:v "f:effectiveDateTime[matches(@value, '^\\d{4}-\\d{2}-\\d{2}')]" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/vitalsigns"^^xsd:anyURI ;

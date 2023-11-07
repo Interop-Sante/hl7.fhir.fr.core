@@ -10,7 +10,7 @@
   "name" : "FRCoreObservationBpProfile",
   "title" : "FR Core Observation Bp Profile",
   "status" : "draft",
-  "date" : "2023-11-06T10:15:36+00:00",
+  "date" : "2023-11-07T09:05:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2931,7 +2931,7 @@
         "key" : "vs-1",
         "severity" : "error",
         "human" : "if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day",
-        "expression" : "($this as dateTime).toString().length() >= 8",
+        "expression" : "$this is dateTime implies $this.toString().length() >= 10",
         "xpath" : "f:effectiveDateTime[matches(@value, '^\\d{4}-\\d{2}-\\d{2}')]",
         "source" : "http://hl7.org/fhir/StructureDefinition/vitalsigns"
       }],
