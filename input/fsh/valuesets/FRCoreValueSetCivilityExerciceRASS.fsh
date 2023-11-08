@@ -8,4 +8,4 @@ Description: "Civilités d'exercice d'un professionnel du RASS"
 * ^extension[=].valueInteger = 0
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
-* include codes from system $
+* include codes from system $JDV-J79-CiviliteExercice-RASS

@@ -23,7 +23,7 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 * identifier.system ^definition = "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nNamespace du RASS (inconnu à ce jour)"
 * practitioner only Reference(FRCorePractitionerProfile)
 * organization only Reference(FRCoreOrganizationProfile)
-* code from $fr-practioner-role-exercice (required)
+* code from $fr-practitioner-role-exercice (required)
 * code ^short = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation"
 * code ^definition = "The role a person plays representing an organization | Situation d'exercice (Fonction dans le NOS)"
 * code ^binding.description = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS."

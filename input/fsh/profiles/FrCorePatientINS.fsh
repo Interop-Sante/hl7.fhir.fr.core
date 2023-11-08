@@ -38,6 +38,8 @@ Description: """Profil FrPatient appliqué à l'INS avec identité validée. Pou
 * identifier[INS-NIA].value 1..
 
 * gender 1..1
+* gender from fr-core-patient-gender-INS (required)
+* gender ^short = "male | female | unknown"
 
 * birthDate 1..
 
