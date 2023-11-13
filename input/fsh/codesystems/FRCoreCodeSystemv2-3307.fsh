@@ -1,8 +1,10 @@
-CodeSystem: FRCoreCodeSystemTypesOrganisations
-Id: fr-core-type-organisation
-Title: "FR Core CodeSystem Types d'Organisations"
-Description: "This is an example code system that includes all the InteropSanté Organizations types codes."
-* ^status = #draft
+CodeSystem: FRCoreCodeSystemv2_3307
+Id: fr-core-v2-3307
+Title: "Types d'organisations"
+Description: "Code system includeing all the InteropSanté Organizations types codes."
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* ^identifier.system = "http://interopsante.org/identifiers/codesystems"
+* ^identifier.value = "types organisations"
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
