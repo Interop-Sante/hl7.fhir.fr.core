@@ -50,13 +50,13 @@ Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasB
 
 
 // opencimi
-Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heartRateMeasBodyLocationPrecoordVS.html
-Alias: $ValueSet-heartRateMeasMethodVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heartRateMeasMethodVS.html
-Alias: $ValueSet-respiratoryRateMeasMethodVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-respiratoryRateMeasMethodVS.html
-Alias: $ValueSet-sPO2BodyLocationVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-sPO2BodyLocationVS.html
-Alias: $ValueSet-bodyPositionVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-bodyPositionVS.html
+Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS.html = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS
+Alias: $ValueSet-heartRateMeasMethodVS.html = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS
+Alias: $ValueSet-respiratoryRateMeasMethodVS.html = http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS
+Alias: $ValueSet-sPO2BodyLocationVS.html = http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS
+Alias: $ValueSet-bodyPositionVS.html = http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS
 Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
-Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-bodyTempMeasBodyLocationPrecoordVS.html
+Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
 
 
 // FrCore link
@@ -70,7 +70,7 @@ Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-lo
 Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-position-room
 Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-type
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
-Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
+Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307 //CodeSystem à créer ici : https://simplifier.net/packages/hl7-france-fhir.administrative/10.2021.1/files/423971/~json
 Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
 Alias: $fr-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445
 
