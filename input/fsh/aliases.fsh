@@ -70,7 +70,7 @@ Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-lo
 Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-position-room
 Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-type
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
-Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307 //CodeSystem à créer ici : https://simplifier.net/packages/hl7-france-fhir.administrative/10.2021.1/files/423971/~json
+Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
 Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
 Alias: $fr-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445
 
