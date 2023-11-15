@@ -12,9 +12,9 @@ Description: "A set of codes that can be used to indicate the relationship betwe
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
-* $0131#O "Other"
-* $0131#U "Unknown"
-* $0131#N "Next of kin"
+* $v2-0131#O "Other"
+* $v2-0131#U "Unknown"
+* $v2-0131#N "Next of kin"
 * $fr-contact-relationship#WRD "Dépositaire de la tutelle judiciare"
 * $fr-contact-relationship#GRD "Tuteur"
 * $fr-contact-relationship#CUR "Représentant légal"

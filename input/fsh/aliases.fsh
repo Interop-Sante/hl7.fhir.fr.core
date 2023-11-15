@@ -39,8 +39,8 @@ Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-C
 Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 
 // HL7
-Alias: $0131 = http://terminology.hl7.org/CodeSystem/v2-0131
-Alias: $0007 = http://terminology.hl7.org/CodeSystem/v2-0007
+Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias: $v2-0007 = http://terminology.hl7.org/CodeSystem/v2-0007
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
 Alias: $bmi = http://hl7.org/fhir/StructureDefinition/bmi

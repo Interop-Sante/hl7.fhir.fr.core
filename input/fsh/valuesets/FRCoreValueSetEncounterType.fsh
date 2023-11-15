@@ -11,10 +11,10 @@ Description: "A coded type for an encounter | Jeu de valeurs des types de rencon
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 
-* $0007#C "Elective/Confort|Confort"
-* $0007#L "Labor and delivery|Accouchement maternité"
-* $0007#N "Newborn (Birth in healthcare facility)|Nouveau né"
-* $0007#R "Routine|Séance"
-* $0007#U "Emergency|Caractère d’urgence aigue du problème quel que soit le service d’entrée"
+* $v2-0007#C "Elective/Confort|Confort"
+* $v2-0007#L "Labor and delivery|Accouchement maternité"
+* $v2-0007#N "Newborn (Birth in healthcare facility)|Nouveau né"
+* $v2-0007#R "Routine|Séance"
+* $v2-0007#U "Emergency|Caractère d’urgence aigue du problème quel que soit le service d’entrée"
 * $fr-type-admission#RM "Rétrocession de médicament"
 * $fr-type-admission#IE "Prestation inter-établissements"
