@@ -11,6 +11,4 @@ Description: "position room | position physique de l'emplacement du lit"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 
-* $fr-location-position-room#FNTR "Coté fenetre"
-* $fr-location-position-room#CLR "coté couloir"
-* $fr-location-position-room#ML "au mileu de la chambre"
+* include codes from system $fr-location-position-room

@@ -25,6 +25,9 @@ Alias: $TRE-G15-ProfessionSante = https://mos.esante.gouv.fr/NOS/TRE_G15-Profess
 Alias: $TRE-R95-UsagerTitre = https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre
 Alias: $TRE-R94-ProfessionSocial = https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial
 Alias: $TRE-R291-AutreProfession = https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession
+Alias: $TRE-R21-Fonction = https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction
+Alias: $TRE-R96-AutreFonctionSanitaire = https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire
+Alias: $TRE-R85-RolePriseCharge = https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge
 
 
 Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
@@ -79,7 +82,6 @@ Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-locati
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
 Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
 Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307
-
 Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445
 
 // VS
