@@ -3,7 +3,7 @@ Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite
 Alias: $TRE-R256-TypeMessagerie = https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie
-Alias: $TRE-R13-CommuneOM = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM
+Alias: $TRE-R13-CommuneOM = https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune
 Alias: $TRE-R02-SecteurActivite = https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite
 Alias: $TRE-G08-TypeIdentifiantPersonne = https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne
 Alias: $TRE-R48-DiplomeEtatFrancais = https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais
