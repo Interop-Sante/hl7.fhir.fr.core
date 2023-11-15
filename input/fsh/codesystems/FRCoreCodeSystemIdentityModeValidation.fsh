@@ -1,5 +1,5 @@
 CodeSystem: FRCoreCodeSystemModeValidationIdentite
-Id: fr-core-mode-validation-identite
+Id: fr-core-cs-mode-validation-identity
 Title: "FR Core CodeSystem Mode Validation Identite"
 * ^caseSensitive = true
 * ^content = #complete
