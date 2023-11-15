@@ -58,7 +58,6 @@ Alias: $ValueSet-bodyPositionVS.html = http://hl7.org/fhir/hspc/ValueSet/bodyPos
 Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
 Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
 
-
 // FrCore link
 Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-schedule-type
 Alias: $fr-contact-relationship = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship
