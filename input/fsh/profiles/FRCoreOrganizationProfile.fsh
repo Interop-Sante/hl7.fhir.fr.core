@@ -41,9 +41,6 @@ This profile specifies the types of identifiers for organizations in France, and
 * type[organizationType] from FRCoreValueSetOrganizationType (required)
 * type[organizationType].coding 1..1
 * type[organizationType].coding.system 1..
-* type[organizationType].coding.system = "http://interopsante.org/fhir/CodeSystem/fr-core-v2-3307" (exactly)
-* type[organizationType].coding.system ^example.label = "CodeSystem des types d'organisations"
-* type[organizationType].coding.system ^example.valueUri = "http://interopsante.org/fhir/CodeSystem/fr-core-v2-3307"
 
 * type[secteurActiviteRASS] from $JDV-J101-SecteurActivite-RASS (required)
 * type[secteurActiviteRASS] ^binding.extension[+].valueString = "OrganizationType"
