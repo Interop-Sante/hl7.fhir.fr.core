@@ -62,22 +62,27 @@ Alias: $ValueSet-bodyPositionVS.html = http://models.opencimi.org/ig/vital-signs
 Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
 Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-bodyTempMeasBodyLocationPrecoordVS.html
 
+// ###############
+// # FrCore link #
+// ###############
 
-// FrCore link
-Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-schedule-type
+// CS
+Alias: $fr-circonstances-sortie = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie
 Alias: $fr-contact-relationship = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship
-Alias: $fr-circonstances-sortie = https://hl7.fr/ig/fhir/core/CodeSystem/fr-circonstances-sortie
-Alias: $fr-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-identifier-type
-Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-type-admission
-Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-identifier-type
-Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-physical-type
-Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-position-room
-Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-type
+Alias: $fr-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-coreidentifier-type
+Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type
+Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-type-admission
+Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-identifier-type
+Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type
+Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-position-room
+Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
-Alias: $fr-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307
-Alias: $fr-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
-Alias: $fr-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445
+Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
+//TODO : VS MANQUANTS
+Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307
+Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445
 
+// VS
 Alias: $fr-core-patient-identifier-type = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-identifier-type
 Alias: $fr-practitioner-role-exercice = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-role-exercice
 Alias: $fr-practitioner-specialty = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-specialty
@@ -92,4 +97,5 @@ Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-
 Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-weight-measurement-method
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-heart-rate-body-position
 
+// SD
 Alias: $fr-core-observation-level-of-exertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion // A corriger
