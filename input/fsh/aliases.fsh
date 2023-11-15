@@ -78,8 +78,8 @@ Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-co
 Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
 Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
-//TODO : VS MANQUANTS
 Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307
+
 Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445
 
 // VS
