@@ -105,7 +105,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * contact.extension ^slicing.discriminator.path = "url"
 * contact.extension ^slicing.rules = #open
 * contact.extension contains
-    FRCorePatientContactIdentifierExtension named contactIdentifier 1..1 and
+    FRCorePatientContactIdentifierExtension named contactIdentifier 0..1 and
     FRCoreCommentExtension named comment 0..1
 
 * contact.relationship 1..1
@@ -118,14 +118,10 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * contact.relationship[RolePerson] from FRCoreValueSetRelatedPersonRole (extensible) //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 * contact.relationship[RolePerson] ^short = "The nature of the relationship. Rôle de la personne"
-* contact.relationship[RolePerson] ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* contact.relationship[RolePerson] ^binding.extension[=].valueString = "ContactRelationship"
 * contact.relationship[RolePerson].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
 
 * contact.relationship[RelatedPerson] from FRCoreValueSetRelatedPerson (extensible) //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 * contact.relationship[RelatedPerson] ^short = "The nature of the relationship. Relation de la personne"
-* contact.relationship[RelatedPerson] ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* contact.relationship[RelatedPerson] ^binding.extension[=].valueString = "ContactRelationship"
 * contact.relationship[RelatedPerson].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
 
 * contact.name only FRCoreHumanNameProfile

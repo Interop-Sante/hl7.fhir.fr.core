@@ -12,11 +12,5 @@ Description: "This value set defines a set of codes that can be used to where th
 * ^extension[=].valueCode = #fhir
 
 * ^immutable = true
-* $fr-circonstances-sortie#2 "Mesure disciplinaire"
-* $fr-circonstances-sortie#3 "Décision médicale"
-* $fr-circonstances-sortie#4 "Contre avis médical"
-* $fr-circonstances-sortie#5 "en attente d'examen"
-* $fr-circonstances-sortie#6 "Convenance personnelle"
-* $fr-circonstances-sortie#R "Essai (contexte psychiatrique)"
-* $fr-circonstances-sortie#E "Evasion"
-* $fr-circonstances-sortie#F "Fugue"
+
+* include codes from system $fr-circonstances-sortie
