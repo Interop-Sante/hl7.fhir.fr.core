@@ -2,6 +2,8 @@ CodeSystem: FRCoreCodeSystemCirconstancesSortie
 Id: fr-core-circonstances-sortie
 Title: "FR Core CodeSystem Circonstances Sortie"
 Description: "Discharge Disposition"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete

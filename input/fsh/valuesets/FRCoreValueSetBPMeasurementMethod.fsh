@@ -2,6 +2,8 @@ ValueSet: FRCoreValueSetBPMeasurementMethod
 Id: fr-core-bp-method
 Title: "FR Core ValueSet BP measurement method"
 Description: "A coded type for the blood pressure measurement method"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"

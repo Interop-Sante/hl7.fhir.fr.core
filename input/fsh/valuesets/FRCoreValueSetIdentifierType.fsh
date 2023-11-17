@@ -2,6 +2,7 @@ ValueSet: FRCoreValueSetPatientIdentifierType
 Id: fr-core-identifier-type-v1-0
 Title: "FR Core ValueSet Patient identifier type"
 Description: "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient)."
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * http://terminology.hl7.org/CodeSystem/v2-0203#PPN "Passport Number" // v 2.9.0
 * http://terminology.hl7.org/CodeSystem/v2-0203#PN "Person Number"

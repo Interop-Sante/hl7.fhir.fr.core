@@ -2,6 +2,8 @@ CodeSystem: FRCoreCodeSystemv2_3311
 Id: fr-core-v2-3311
 Title: "FR Core CodeSystem v2-3311"
 Description: "HL7 v2 - Table 3311"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete

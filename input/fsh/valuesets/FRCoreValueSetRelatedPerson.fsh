@@ -2,6 +2,7 @@ ValueSet: FRCoreValueSetRelatedPerson
 Id: fr-core-related-person
 Title: "FR Core ValueSet Related person role"
 Description: "Value set related person role"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension.valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"

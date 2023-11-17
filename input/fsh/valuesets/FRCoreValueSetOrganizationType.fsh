@@ -2,6 +2,8 @@ ValueSet: FRCoreValueSetOrganizationType
 Id: fr-core-core-organization-type
 Title: "FR Core ValueSet Organization type"
 Description: "Organization types | Types de structures"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * $fr-core-v2-3307#GHT "Groupement hospitalier de territoire"
 * $fr-core-v2-3307#LEGAL-ENTITY "Entité juridique"
 * $fr-core-v2-3307#GEOGRAPHICAL-ENTITY "Entité géographique"

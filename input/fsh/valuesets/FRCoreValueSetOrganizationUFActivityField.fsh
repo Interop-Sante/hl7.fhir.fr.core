@@ -2,6 +2,8 @@ ValueSet: FRCoreValueSetOrganizationUFActivityField
 Id: fr-core-organization-uf-activity-field
 Title: "FR Core ValueSet Organization UF activity field"
 Description: "Organization UF activity field | Champ d'activité des structures UF"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"

@@ -1,6 +1,8 @@
 CodeSystem: FRCoreCodeSystemModeValidationIdentite
 Id: fr-core-cs-mode-validation-identity
 Title: "FR Core CodeSystem Mode Validation Identite"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+
 * ^caseSensitive = true
 * ^content = #complete
 * #AN "Extrait d'acte de naissance"
