@@ -22,3 +22,6 @@ Description: "HL7 v2 - Identifier type"
 * #IDNST "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
 * #INTRN "Identifiant interne"
 * #EXTRN "Identifiant externe"
+
+// SCS profile
+* ^experimental = false

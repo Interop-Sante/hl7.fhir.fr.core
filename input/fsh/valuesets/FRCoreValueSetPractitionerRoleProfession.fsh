@@ -11,3 +11,6 @@ Description: "The profession(s) of the practitioner."
 * include codes from system $TRE-R95-UsagerTitre
 * include codes from system $TRE-R94-ProfessionSocial
 * include codes from system $TRE-R291-AutreProfession
+
+// SVS profile
+* ^experimental = false

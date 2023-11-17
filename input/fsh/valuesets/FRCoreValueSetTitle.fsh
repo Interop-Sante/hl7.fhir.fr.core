@@ -12,3 +12,6 @@ Description: "The Patient or person civility"
 * ^status = #draft
 * ^immutable = true
 * include codes from system $TRE-R11-CiviliteExercice
+
+// SVS profile
+* ^experimental = false

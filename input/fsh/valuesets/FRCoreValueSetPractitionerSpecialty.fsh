@@ -16,3 +16,6 @@ Description: "The modalities of exercice of the practitioner, registered by an o
 
 * ^immutable = true
 * include codes from system $TRE-R38-SpecialiteOrdinale
+
+// SVS profile
+* ^experimental = false

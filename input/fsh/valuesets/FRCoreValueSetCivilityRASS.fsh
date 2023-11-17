@@ -13,3 +13,6 @@ Description: "Civilités des personnes physiques du RASS"
 * include codes from system $JDV-J78-Civilite-RASS
 
 // A remplacer ?
+
+// SVS profile
+* ^experimental = false

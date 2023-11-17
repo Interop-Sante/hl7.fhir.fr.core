@@ -19,3 +19,6 @@ Description: "Location type"
 * #SL_RN "Salle de réunion"
 * #SL_TRV "Salle de travail"
 * #ACC "Point d'accueil"
+
+// SCS profile
+* ^experimental = false

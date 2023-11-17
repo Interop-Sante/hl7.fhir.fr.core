@@ -5,7 +5,7 @@ Description: "A coded type for an encounter | Jeu de valeurs des types de rencon
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
-* ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
+* ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -20,3 +20,6 @@ Description: "A coded type for an encounter | Jeu de valeurs des types de rencon
 * $v2-0007#U "Emergency|Caractère d’urgence aigue du problème quel que soit le service d’entrée"
 * $fr-type-admission#RM "Rétrocession de médicament"
 * $fr-type-admission#IE "Prestation inter-établissements"
+
+// SVS profile
+* ^experimental = false

@@ -9,3 +9,6 @@ Description: "Identifier type"
 * ^content = #complete
 * #VN "Visit Number"
 * #MN "Movement Number"
+
+// SCS profile
+* ^experimental = false

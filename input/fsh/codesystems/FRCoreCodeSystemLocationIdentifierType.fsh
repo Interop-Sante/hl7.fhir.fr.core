@@ -11,3 +11,6 @@ Description: "Location identifier type"
 * #EXTRN "Identifiant externe"
 * #GLBL "Identifiant global"
 * #IDNST "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
+
+// SCS profile
+* ^experimental = false

@@ -19,3 +19,6 @@ Description: "Location physical type"
 * #B "Emplacement lit"
 * #BLC "Bloc"
 * #BR "Bureau"
+
+// SCS profile
+* ^experimental = false

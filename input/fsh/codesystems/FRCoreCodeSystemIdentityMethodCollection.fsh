@@ -10,3 +10,6 @@ Title: "FR Core CodeSystem Mode Validation Identite"
 * #INSI	"Téléservice INSI"
 * #CB	"Code à barre"
 * #RFID	"Puce RFID"
+
+// SCS profile
+* ^experimental = false

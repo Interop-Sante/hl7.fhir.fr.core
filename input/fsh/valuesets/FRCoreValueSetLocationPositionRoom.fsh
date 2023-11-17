@@ -14,3 +14,6 @@ Description: "position room | position physique de l'emplacement du lit"
 * ^extension[=].valueCode = #fhir
 
 * include codes from system $fr-location-position-room
+
+// SVS profile
+* ^experimental = false

@@ -22,3 +22,6 @@ Description: "Specifies the day on which the workweek starts. Valid values are M
 
 
 // Il doit déjà exister un VS à ce propos, à remplacer ?
+
+// SVS profile
+* ^experimental = false

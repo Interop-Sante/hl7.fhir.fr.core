@@ -24,3 +24,6 @@ Description: "HL7 v2 - Table 3307"
 * #POLE "Pôle"
 * #CENTRE-RESP "Centre de responsabilité"
 * #CENTRE-ACTIVITE "Centre d'activité"
+
+// SCS profile
+* ^experimental = false

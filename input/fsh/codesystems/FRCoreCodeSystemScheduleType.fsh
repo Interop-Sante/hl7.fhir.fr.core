@@ -9,3 +9,6 @@ Description: "Schedule type"
 * ^content = #complete
 * #busy-unavailable "Indisponibilité"
 * #free "Disponibilité"
+
+// SCS profile
+* ^experimental = false

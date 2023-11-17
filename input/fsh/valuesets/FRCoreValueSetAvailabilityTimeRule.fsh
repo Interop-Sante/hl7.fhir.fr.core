@@ -19,3 +19,6 @@ Description: "Specification of the recurrent periods | Spécifications des péri
 * $rfc2445#WEEKLY "Par semaine"
 * $rfc2445#MONTHLY "Par mois"
 * $rfc2445#YEARLY "Par an"
+
+// SVS profile
+* ^experimental = false

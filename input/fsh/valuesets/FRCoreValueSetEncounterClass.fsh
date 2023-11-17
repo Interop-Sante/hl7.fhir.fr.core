@@ -17,3 +17,6 @@ Description: "A set of codes that can be used to indicate the class of the encou
 * http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#PRENC "Pre-admission"
 * http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#SS "Short stay"
 * http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#VR "Virtual"
+
+// SVS profile
+* ^experimental = false

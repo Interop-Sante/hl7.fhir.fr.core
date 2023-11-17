@@ -14,3 +14,6 @@ Description: "A coded type for an identifier that can be used to determine which
 * $fr-core-v2-0203#INS-C "Identifiant National de Santé Calculé"
 * $fr-core-v2-0203#INS-NIA "NIR temporaire"
 * $fr-core-v2-0203#INS-NIR "NIR définitif"
+
+// SVS profile
+* ^experimental = false

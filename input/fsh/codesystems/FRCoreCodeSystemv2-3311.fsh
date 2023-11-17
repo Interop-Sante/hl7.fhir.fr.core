@@ -15,3 +15,6 @@ Description: "HL7 v2 - Table 3311"
 * #MSN_RTRT "Maison de retraite"
 * #PSY "Psy"
 * #URG "Urgence"
+
+// SCS profile
+* ^experimental = false

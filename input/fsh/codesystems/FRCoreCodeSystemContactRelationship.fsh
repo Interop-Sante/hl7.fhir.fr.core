@@ -89,3 +89,6 @@ Description: "Relationship"
 * #WIFE "wife"
 * #FRND "unrelated friend"
 * #NBOR "neighbor"
+
+// SCS profile
+* ^experimental = false

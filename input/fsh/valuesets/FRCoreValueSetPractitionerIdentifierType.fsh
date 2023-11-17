@@ -17,3 +17,6 @@ Description: "A coded type for an identifier that can be used to determine which
 * $TRE-G08-TypeIdentifiantPersonne#4 "SIREN/n° de registre"
 * $TRE-G08-TypeIdentifiantPersonne#5 "SIRET/n° de registre"
 * $TRE-G08-TypeIdentifiantPersonne#6 "Id cabinet RPPS/n° de registre"
+
+// SVS profile
+* ^experimental = false

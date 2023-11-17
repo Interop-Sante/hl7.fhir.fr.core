@@ -21,3 +21,6 @@ Description: "Discharge Disposition"
 * #B "Départ vers MCO"
 * #REO "Réorientation"
 * #PSA "Patient parti sans attendre les soins"
+
+// SCS profile
+* ^experimental = false

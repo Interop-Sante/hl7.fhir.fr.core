@@ -12,3 +12,6 @@ Description: "The type of email"
 * ^extension[=].valueCode = #fhir
 * ^status = #draft
 * include codes from system $TRE-R256-TypeMessagerie
+
+// SVS profile
+* ^experimental = false

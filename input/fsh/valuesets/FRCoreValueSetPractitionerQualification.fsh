@@ -25,3 +25,6 @@ Description: "A code classifying the qualification of the provider"
 * include codes from system $TRE-R58-AutreTypeDiplome
 * include codes from system $TRE-R36-AutreDiplomeObtenu
 * include codes from system $TRE-R226-Dip2iemeCycleNQ
+
+// SVS profile
+* ^experimental = false

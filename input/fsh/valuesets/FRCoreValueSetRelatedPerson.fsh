@@ -9,6 +9,10 @@ Description: "Value set related person role"
 
 * include codes from system https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20210326120000
 
+// SVS profile
+* ^experimental = false
+
+
 // Ajouté :
 // * include codes from system https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique
 // * http://terminology.hl7.org/CodeSystem/v2-0131#O

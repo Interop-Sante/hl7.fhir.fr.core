@@ -5,7 +5,7 @@ Description: "French location physical type | Types de lieux physiques pour la F
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
-* ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
+* ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -24,3 +24,6 @@ Description: "French location physical type | Types de lieux physiques pour la F
 * $fr-location-physical-type#B "Emplacement lit"
 * $fr-location-physical-type#BLC "Bloc"
 * $fr-location-physical-type#BR "Bureau"
+
+// SVS profile
+* ^experimental = false

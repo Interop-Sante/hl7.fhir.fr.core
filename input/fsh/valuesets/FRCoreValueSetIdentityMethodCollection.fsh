@@ -9,3 +9,6 @@ Description: "The validation mode of the identity."
 
 * ^immutable = true
 * include codes from system FRCoreCodeSystemMethodCollection
+
+// SVS profile
+* ^experimental = false

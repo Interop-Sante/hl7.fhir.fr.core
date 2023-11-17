@@ -16,3 +16,6 @@ Description: "This value set defines a set of codes that can be used to where th
 * ^immutable = true
 
 * include codes from system $fr-circonstances-sortie
+
+// SVS profile
+* ^experimental = false

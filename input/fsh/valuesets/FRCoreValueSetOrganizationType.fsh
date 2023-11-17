@@ -21,3 +21,6 @@ Description: "Organization types | Types de structures"
 * $fr-core-v2-3307#POLE "Pole"
 * $fr-core-v2-3307#CENTRE-RESP "Centre de responsabilité"
 * $fr-core-v2-3307#CENTRE-ACTIVITE "Centre d'activité"
+
+// SVS profile
+* ^experimental = false

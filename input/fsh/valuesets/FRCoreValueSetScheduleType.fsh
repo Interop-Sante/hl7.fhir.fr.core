@@ -15,3 +15,6 @@ Description: "A Schedule type | Jeu de valeurs des types de Schedule"
 
 * $fr-schedule-type#busy-unavailable "Indisponibilité"
 * $fr-schedule-type#free "Disponibilité"
+
+// SVS profile
+* ^experimental = false

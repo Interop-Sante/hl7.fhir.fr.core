@@ -8,3 +8,6 @@ Description: "the French Address Insee Codes"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.8.1.3.4"
 
 * include codes from system $TRE-R13-CommuneOM
+
+// SVS profile
+* ^experimental = false

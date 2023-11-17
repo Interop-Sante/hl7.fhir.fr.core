@@ -11,3 +11,6 @@ Description: "The Patient or person civility"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * include codes from system $TRE-R81-Civilite
+
+// SVS profile
+* ^experimental = false

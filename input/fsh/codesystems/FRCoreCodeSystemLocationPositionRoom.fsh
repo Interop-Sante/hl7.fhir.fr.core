@@ -10,3 +10,6 @@ Description: "Location position room"
 * #FNTR "Coté fenetre"
 * #CLR "coté couloir"
 * #ML "au mileu de la chambre"
+
+// SCS profile
+* ^experimental = false

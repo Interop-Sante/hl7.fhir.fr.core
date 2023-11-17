@@ -9,3 +9,6 @@ Description: "Admission type"
 * ^content = #complete
 * #RM "Rétrocession de médicament"
 * #IE "Prestation inter-établissements"
+
+// SCS profile
+* ^experimental = false

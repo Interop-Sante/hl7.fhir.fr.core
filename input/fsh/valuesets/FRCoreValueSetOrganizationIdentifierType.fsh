@@ -15,3 +15,6 @@ Description: "A coded type for an identifier that can be used to determine which
 * $fr-core-v2-0203#IDNST "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
 * $fr-core-v2-0203#INTRN "Identifiant interne"
 * $fr-core-v2-0203#EXTRN "Identifiant externe"
+
+// SVS profile
+* ^experimental = false

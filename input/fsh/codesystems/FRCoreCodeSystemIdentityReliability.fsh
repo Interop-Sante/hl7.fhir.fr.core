@@ -30,3 +30,6 @@ Description: "This code system includes all the French Identity reliabilty codes
 * #HOMA "Homonyme avéré (attribut d'identité homonyme)"
 * #FICT "Identité fictive (attribut d'identité fictive)"
 * #DOUT "Identité douteuse (attribut d'identité douteuse)"
+
+// SCS profile
+* ^experimental = false

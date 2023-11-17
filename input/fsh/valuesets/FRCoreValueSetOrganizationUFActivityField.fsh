@@ -21,3 +21,6 @@ Description: "Organization UF activity field | Champ d'activité des structures 
 * $fr-core-v2-3311#MSN_RTRT "Maison de retraite"
 * $fr-core-v2-3311#PSY "Psy"
 * $fr-core-v2-3311#URG "Urgence"
+
+// SVS profile
+* ^experimental = false

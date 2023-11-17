@@ -98,3 +98,6 @@ Description: "A set of codes that can be used to indicate the relationship betwe
 * $fr-contact-relationship#WIFE "wife"
 * $fr-contact-relationship#FRND "unrelated friend"
 * $fr-contact-relationship#NBOR "neighbor"
+
+// SVS profile
+* ^experimental = false

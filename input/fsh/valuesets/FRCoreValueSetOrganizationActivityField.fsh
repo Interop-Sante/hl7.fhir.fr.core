@@ -13,3 +13,6 @@ Description: "The activity field of the organization | Secteur d'activité de l'
 
 * ^immutable = true
 * include codes from system $TRE-R02-SecteurActivite
+
+// SVS profile
+* ^experimental = false

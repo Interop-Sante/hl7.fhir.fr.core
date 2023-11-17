@@ -15,3 +15,6 @@ Description: "A role for a location | Jeu de valeurs du rôle joué par un lieu"
 
 
 * include codes from system $fr-location-type
+
+// SVS profile
+* ^experimental = false

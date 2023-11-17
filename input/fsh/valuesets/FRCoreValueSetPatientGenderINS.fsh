@@ -7,3 +7,6 @@ Description: "Patient Gender for INS : male | female | unknown"
 * include http://hl7.org/fhir/administrative-gender#male
 * include http://hl7.org/fhir/administrative-gender#female
 * include http://hl7.org/fhir/administrative-gender#unknown
+
+// SVS profile
+* ^experimental = false

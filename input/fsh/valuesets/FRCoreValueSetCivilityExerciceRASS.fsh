@@ -11,3 +11,6 @@ Description: "Civilités d'exercice d'un professionnel du RASS"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * include codes from system $JDV-J79-CiviliteExercice-RASS
+
+// SVS profile
+* ^experimental = false

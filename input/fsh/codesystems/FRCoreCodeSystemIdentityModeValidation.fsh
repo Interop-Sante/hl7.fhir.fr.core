@@ -14,3 +14,6 @@ Title: "FR Core CodeSystem Mode Validation Identite"
 * #LE "Livret de famille"
 * #PA "Passeport"
 * #PC "Permis de conduire"
+
+// SCS profile
+* ^experimental = false
