@@ -60,7 +60,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
   <name value="FRCorePractitionerProfile"/>
   <title value="FR Core Practitioner Profile"/>
   <status value="draft"/>
-  <date value="2023-11-17T10:19:41+00:00"/>
+  <date value="2023-11-20T14:22:41+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -301,7 +301,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -760,7 +760,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -818,7 +818,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
@@ -958,7 +958,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1141,7 +1141,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1276,7 +1276,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -1689,7 +1689,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1748,7 +1748,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DocumentManifest"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1975,7 +1975,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2017,7 +2017,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
     </element>
     <element id="Practitioner.telecom.system">
@@ -2235,7 +2235,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2429,7 +2429,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="If the Attachment has data, it SHALL have a contentType"/>
         <expression value="data.empty() or contentType.exists()"/>
         <xpath value="not(exists(f:data)) or exists(f:contentType)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/SubstanceProtein"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2561,7 +2561,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2606,7 +2606,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
@@ -2791,7 +2791,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2993,7 +2993,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3351,7 +3351,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3709,7 +3709,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4067,7 +4067,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4425,7 +4425,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4783,7 +4783,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -5141,7 +5141,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -5499,7 +5499,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -5857,7 +5857,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -6215,7 +6215,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -6573,7 +6573,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -6931,7 +6931,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -7289,7 +7289,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -7647,7 +7647,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -7953,7 +7953,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/InsurancePlan"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -8007,7 +8007,7 @@ Pour un employé identifié au sein de sa structure, OID de l'établissement, br
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DocumentManifest"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
       </constraint>
       <mapping>
         <identity value="rim"/>

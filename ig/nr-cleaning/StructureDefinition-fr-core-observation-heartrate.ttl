@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FRCoreObservationHeartRateProfile"] ; # 
   fhir:title [ fhir:v "FR Core Observation Heart Rate Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-17T10:19:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-20T14:22:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -317,8 +317,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -820,8 +820,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -869,8 +869,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] )
      ] [
@@ -911,8 +911,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] )
      ] [
@@ -953,8 +953,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
@@ -1016,8 +1016,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
@@ -1138,8 +1138,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -1213,8 +1213,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -1524,8 +1524,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -1669,8 +1669,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -1682,13 +1682,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.category:VSCat.coding.system" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.category.coding.system" ] ;
        fhir:short [ fhir:v "Identity of the terminology system" ] ;
        fhir:definition [ fhir:v "The identification of the code system that defines the meaning of the symbol in the code." ] ;
@@ -1734,13 +1727,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.category:VSCat.coding.version" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.category.coding.version" ] ;
        fhir:short [ fhir:v "Version of the system - if relevant" ] ;
        fhir:definition [ fhir:v "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ] ;
@@ -1783,13 +1769,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.category:VSCat.coding.code" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.category.coding.code" ] ;
        fhir:short [ fhir:v "Symbol in syntax defined by the system" ] ;
        fhir:definition [ fhir:v "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ] ;
@@ -1836,12 +1815,6 @@
      ] [
        fhir:id [ fhir:v "Observation.category:VSCat.coding.display" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
@@ -1888,13 +1861,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.category:VSCat.coding.userSelected" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.category.coding.userSelected" ] ;
        fhir:short [ fhir:v "If this coding was chosen directly by the user" ] ;
        fhir:definition [ fhir:v "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." ] ;
@@ -1939,12 +1905,6 @@
      ] [
        fhir:id [ fhir:v "Observation.category:VSCat.text" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
@@ -2138,8 +2098,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2353,8 +2313,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2366,13 +2326,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.code.coding:HeartRateCode.system" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.code.coding.system" ] ;
        fhir:short [ fhir:v "Identity of the terminology system" ] ;
        fhir:definition [ fhir:v "The identification of the code system that defines the meaning of the symbol in the code." ] ;
@@ -2417,13 +2370,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.code.coding:HeartRateCode.version" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.code.coding.version" ] ;
        fhir:short [ fhir:v "Version of the system - if relevant" ] ;
        fhir:definition [ fhir:v "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ] ;
@@ -2466,13 +2412,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.code.coding:HeartRateCode.code" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.code.coding.code" ] ;
        fhir:short [ fhir:v "Symbol in syntax defined by the system" ] ;
        fhir:definition [ fhir:v "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ] ;
@@ -2518,12 +2457,6 @@
      ] [
        fhir:id [ fhir:v "Observation.code.coding:HeartRateCode.display" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] ) ;
@@ -2570,13 +2503,6 @@
        ] )
      ] [
        fhir:id [ fhir:v "Observation.code.coding:HeartRateCode.userSelected" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Observation.code.coding.userSelected" ] ;
        fhir:short [ fhir:v "If this coding was chosen directly by the user" ] ;
        fhir:definition [ fhir:v "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." ] ;
@@ -2704,8 +2630,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
@@ -2770,8 +2696,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -2834,8 +2760,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -3014,8 +2940,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -3235,8 +3161,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -3778,8 +3704,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4025,8 +3951,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4180,8 +4106,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4244,8 +4170,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4390,8 +4316,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4437,8 +4363,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
@@ -4489,8 +4415,8 @@
          fhir:expression [ fhir:v "code.empty() or system.exists()" ] ;
          fhir:xpath [ fhir:v "not(exists(f:code)) or exists(f:system)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationDispense"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationDispense>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ] [
          fhir:key [ fhir:v "sqty-1" ] ;
@@ -4499,8 +4425,8 @@
          fhir:expression [ fhir:v "comparator.empty()" ] ;
          fhir:xpath [ fhir:v "not(exists(f:comparator))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationDispense"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationDispense>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -4558,8 +4484,8 @@
          fhir:expression [ fhir:v "code.empty() or system.exists()" ] ;
          fhir:xpath [ fhir:v "not(exists(f:code)) or exists(f:system)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationDispense"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationDispense>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ] [
          fhir:key [ fhir:v "sqty-1" ] ;
@@ -4568,8 +4494,8 @@
          fhir:expression [ fhir:v "comparator.empty()" ] ;
          fhir:xpath [ fhir:v "not(exists(f:comparator))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationDispense"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationDispense>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
@@ -4849,8 +4775,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -4920,8 +4846,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentManifest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentManifest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -5063,8 +4989,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -5110,8 +5036,8 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;

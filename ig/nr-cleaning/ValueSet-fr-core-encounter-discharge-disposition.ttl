@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-fr-core-circonstances-sortie.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-fr-core-circonstances-sortie.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-discharge-disposition.html\"><code>http://terminology.hl7.org/CodeSystem/discharge-disposition</code></a></li></ul></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-warning"^^xsd:anyURI ] ;
@@ -37,7 +37,7 @@
   fhir:title [ fhir:v "FR Core ValueSet Encounter discharge disposition"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-11-17T10:19:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-20T14:22:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -58,6 +58,8 @@
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/discharge-disposition"^^xsd:anyURI ]
      ] )
   ] . # 
 
