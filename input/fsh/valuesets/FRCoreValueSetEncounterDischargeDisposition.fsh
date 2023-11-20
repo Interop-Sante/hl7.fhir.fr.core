@@ -16,6 +16,7 @@ Description: "This value set defines a set of codes that can be used to where th
 * ^immutable = true
 
 * include codes from system $fr-circonstances-sortie
+* include codes from system http://terminology.hl7.org/CodeSystem/discharge-disposition
 
 // SVS profile
 * ^experimental = false

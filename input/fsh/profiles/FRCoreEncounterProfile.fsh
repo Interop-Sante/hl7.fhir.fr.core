@@ -68,13 +68,9 @@ Description: "This profil constrains the Encounter resource to represent either 
 * hospitalization.reAdmission ^short = "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
 * hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
 * hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
-* hospitalization.dischargeDisposition ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* hospitalization.dischargeDisposition ^binding.extension[=].valueString = "DischargeDisp"
 * location.location only Reference(FRCoreLocationProfile)
 
 * location.physicalType from FRCoreValueSetLocationPhysicalType (example)
-* location.physicalType ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* location.physicalType ^binding.extension[=].valueString = "PhysicalType"
 
 * serviceProvider only Reference(FRCoreOrganizationProfile)
 
