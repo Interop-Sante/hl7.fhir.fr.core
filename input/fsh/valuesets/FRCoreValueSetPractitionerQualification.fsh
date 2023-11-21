@@ -2,6 +2,8 @@ ValueSet: FRCoreValueSetPractitionerQualification
 Id: fr-core-practitioner-qualification
 Title: "FR Core ValueSet Practitioner qualification"
 Description: "A code classifying the qualification of the provider"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -23,3 +25,6 @@ Description: "A code classifying the qualification of the provider"
 * include codes from system $TRE-R58-AutreTypeDiplome
 * include codes from system $TRE-R36-AutreDiplomeObtenu
 * include codes from system $TRE-R226-Dip2iemeCycleNQ
+
+// SVS profile
+* ^experimental = false

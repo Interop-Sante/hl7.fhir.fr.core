@@ -2,6 +2,8 @@ CodeSystem: FRCoreCodeSystemLocationPhysicalType
 Id: fr-core-location-physical-type
 Title: "FR Core CodeSystem Location Physical Type"
 Description: "Location physical type"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
@@ -17,3 +19,6 @@ Description: "Location physical type"
 * #B "Emplacement lit"
 * #BLC "Bloc"
 * #BR "Bureau"
+
+// SCS profile
+* ^experimental = false

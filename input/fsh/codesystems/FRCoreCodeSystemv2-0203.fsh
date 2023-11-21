@@ -2,6 +2,8 @@ CodeSystem: FRCoreCodeSystemv2_0203
 Id: fr-core-v2-0203
 Title: "FR Core CodeSystem v2-0203"
 Description: "HL7 v2 - Identifier type"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
@@ -20,3 +22,6 @@ Description: "HL7 v2 - Identifier type"
 * #IDNST "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
 * #INTRN "Identifiant interne"
 * #EXTRN "Identifiant externe"
+
+// SCS profile
+* ^experimental = false

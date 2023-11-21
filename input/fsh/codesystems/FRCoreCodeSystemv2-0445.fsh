@@ -1,19 +1,17 @@
-CodeSystem: FRCoreCodeSystemReliabilityIdentity
-Id: fr-core-fiabilite-identite
-Title: "FR Core CodeSystem Fiabilité Identité"
-Description: "This code system includes all the French Identity reliabilty codes (InteropSanté)."
+CodeSystem: FRCoreCodeSystemv2_0445
+Id: fr-core-v2-0445
+Title: "FR Core CodeSystem v2-0445"
+Description: "HL7 v2 - Table 0445"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
-* ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"
-* ^identifier.value = "urn:oid:2.16.840.1.113883.12.445"
-
+* ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
 * #VIDE "Identité non encore qualifiée"
 * #PROV "Identité provisoire"
 * #VALI "Identité validée"
 * #DOUB "Doublon"
-* #DESA "Identité désactivée"
+* #DESA "Identité ndésactivée"
 * #DPOT "Doublon potentiel"
 * #DOUA "Doublon avéré"
 * #COLP "Collision potentielle"
@@ -26,10 +24,10 @@ Description: "This code system includes all the French Identity reliabilty codes
 * #IDRA "Identité rapprochée dans un autre domaine"
 * #USUR "Identité usurpée"
 * #HOMD "Homonyme détecté"
+* #HOMA "Homonyme avéré"
 * #INVA "Identité invalidée"
-* #HOMA "Homonyme avéré (attribut d'identité homonyme)"
-* #FICT "Identité fictive (attribut d'identité fictive)"
-* #DOUT "Identité douteuse (attribut d'identité douteuse)"
+* #FICT "Identité fictive (Attribut d’identité « fictive »)"
+* #DOUT "Identité douteuse (Attribut d’identité « douteuse »)"
 
 // SCS profile
 * ^experimental = false

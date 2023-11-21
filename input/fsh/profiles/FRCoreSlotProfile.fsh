@@ -2,7 +2,7 @@ Profile: FRCoreSlotProfile
 Parent: Slot
 Id: fr-core-slot
 Title: "FR Core Slot Profile"
-Description: "http://interopsante.org/fhir/StructureDefinition/fr-core-slot"
+Description: "fr-core-slot ValueSet"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

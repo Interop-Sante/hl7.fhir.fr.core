@@ -2,6 +2,8 @@ ValueSet: FRCoreValueSetPractitionerIdentifierType
 Id: fr-core-practitioner-identifier-type
 Title: "FR Core ValueSet Practitioner identifier type"
 Description: "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension.valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
 
@@ -15,3 +17,6 @@ Description: "A coded type for an identifier that can be used to determine which
 * $TRE-G08-TypeIdentifiantPersonne#4 "SIREN/n° de registre"
 * $TRE-G08-TypeIdentifiantPersonne#5 "SIRET/n° de registre"
 * $TRE-G08-TypeIdentifiantPersonne#6 "Id cabinet RPPS/n° de registre"
+
+// SVS profile
+* ^experimental = false
