@@ -403,8 +403,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table>
   <tbody>
     <tr>
-      <td>New Profile of the Organization resource for France</td>
-      <td>New Profil de la ressource Organization pour la France</td>
+      <td>Profile of the Organization resource for France</td>
+      <td>Profil de la ressource Organization pour la France</td>
     </tr>
     <tr>
       <td>This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions.</td>
@@ -472,7 +472,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a>
                </td>
                <td>
-<p>Profil FrPatient appliqué à l’INS.</p>
+<p>Profil FrPatient appliqué à l’INS avec identité validée. Pour plus d’informations sur le contexte du patient INS, consultez le référentiel national d’identitovigilance (RNIV) et la documentation du référentiel INS de l’ANS .</p>
 </td>
             </tr>
             <tr>
@@ -589,7 +589,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/fr-core-slot">FR Core Slot Profile</a>
                </td>
                <td>
-<p>http://interopsante.org/fhir/StructureDefinition/fr-core-slot</p>
+<p>fr-core-slot ValueSet</p>
 </td>
             </tr>
          </tbody>
@@ -1069,31 +1069,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-fr-core-ident-reliability.html"
-                     title="StructureDefinition/fr-core-ident-reliability">FR Core Patient Ident Reliability Extension</a>
+                  <a href="StructureDefinition-fr-core-identity-reliability.html"
+                     title="StructureDefinition/fr-core-identity-reliability">FR Core Patient Ident Reliability Extension</a>
                </td>
                <td>
 <table>
   <tbody>
     <tr>
       <td>Reliabilility of the patient’s identity</td>
-      <td>Précision sur le degré de fiabilité de l’identité du patient.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-fr-core-patient-identity-method-collection.html"
-                     title="StructureDefinition/fr-core-patient-identity-method-collection">FR Core Patient Identity Method Collection Extension</a>
-               </td>
-               <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This french extension specifies the way the identity is collected</td>
-      <td>Cette extension française spécifie la façon dont l’identité est obtenue</td>
+      <td>Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) avec la méthode de collection</td>
     </tr>
   </tbody>
 </table>
@@ -1215,6 +1199,15 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
                </td>
                <td>
 <p>A coded type for the blood pressure measurement method</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-fr-core-height-body-position.html"
+                     title="ValueSet/fr-core-height-body-position">FR Core ValueSet BodyPosition</a>
+               </td>
+               <td>
+<p>ValueSet Body Position</p>
 </td>
             </tr>
             <tr>
@@ -1413,8 +1406,8 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-fr-core-identity-validation-mode.html"
-                     title="ValueSet/fr-core-identity-validation-mode">FR Core ValueSet Mode validation identite</a>
+                  <a href="ValueSet-fr-core-vs-mode-validation-identity.html"
+                     title="ValueSet/fr-core-vs-mode-validation-identity">FR Core ValueSet Mode validation identity</a>
                </td>
                <td>
 <p>The validation mode of the identity.</p>
@@ -1463,8 +1456,8 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-fr-core-organization-type.html"
-                     title="ValueSet/fr-core-organization-type">FR Core ValueSet Organization type</a>
+                  <a href="ValueSet-fr-core-core-organization-type.html"
+                     title="ValueSet/fr-core-core-organization-type">FR Core ValueSet Organization type</a>
                </td>
                <td>
 <table>
@@ -1533,10 +1526,10 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-fr-core-related-person.html"
-                     title="ValueSet/fr-core-related-person">FR Core ValueSet Related person</a>
+                     title="ValueSet/fr-core-related-person">FR Core ValueSet Related person role</a>
                </td>
                <td>
-<p>Value set related person</p>
+<p>Value set related person role</p>
 </td>
             </tr>
             <tr>
@@ -1570,6 +1563,24 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
                </td>
                <td>
 <p>The Patient or person civility</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-fr-core-practitioner-role-exercice.html"
+                     title="ValueSet/fr-core-practitioner-role-exercice">FRCoreValueSetPractitionerRoleExercice</a>
+               </td>
+               <td>
+<p>The exercice(s) of the practitioner.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-fr-core-practitioner-role-profession.html"
+                     title="ValueSet/fr-core-practitioner-role-profession">FRCoreValueSetPractitionerRoleProfession</a>
+               </td>
+               <td>
+<p>The profession(s) of the practitioner.</p>
 </td>
             </tr>
             <tr>
@@ -1640,7 +1651,7 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
                      title="CodeSystem/fr-core-fiabilite-identite">FR Core CodeSystem Fiabilité Identité</a>
                </td>
                <td>
-<p>This code system  includes all the French Identity reliabilty codes (InteropSanté).</p>
+<p>This code system includes all the French Identity reliabilty codes (InteropSanté).</p>
 </td>
             </tr>
             <tr>
@@ -1650,15 +1661,6 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
                </td>
                <td>
 <p>Identifier type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-fr-core-identity-method-collection.html"
-                     title="CodeSystem/fr-core-identity-method-collection">FR Core CodeSystem Identity Method Collection</a>
-               </td>
-               <td>
-
 </td>
             </tr>
             <tr>
@@ -1699,8 +1701,17 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-fr-core-mode-validation-identite.html"
-                     title="CodeSystem/fr-core-mode-validation-identite">FR Core CodeSystem Mode Validation Identite</a>
+                  <a href="CodeSystem-fr-core-cs-method-collection.html"
+                     title="CodeSystem/fr-core-cs-method-collection">FR Core CodeSystem Mode Validation Identite</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-fr-core-cs-mode-validation-identity.html"
+                     title="CodeSystem/fr-core-cs-mode-validation-identity">FR Core CodeSystem Mode Validation Identite</a>
                </td>
                <td>
 
@@ -1740,6 +1751,24 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
                </td>
                <td>
 <p>HL7 v2 - Identifier type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-fr-core-v2-0445.html"
+                     title="CodeSystem/fr-core-v2-0445">FR Core CodeSystem v2-0445</a>
+               </td>
+               <td>
+<p>HL7 v2 - Table 0445</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-fr-core-v2-3307.html"
+                     title="CodeSystem/fr-core-v2-3307">FR Core CodeSystem v2-3307</a>
+               </td>
+               <td>
+<p>HL7 v2 - Table 3307</p>
 </td>
             </tr>
             <tr>
@@ -1800,7 +1829,7 @@ http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 8, 2023 15:11+0000">2023-11-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 21, 2023 10:12+0000">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

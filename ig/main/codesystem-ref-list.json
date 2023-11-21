@@ -96,7 +96,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-fr-core-bp-method.html" : "FR Core ValueSet BP measurement method"
+      "ValueSet-fr-core-bp-method.html" : "FR Core ValueSet BP measurement method",
+      "ValueSet-fr-core-height-body-position.html" : "FR Core ValueSet BodyPosition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1093"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/name-assembly-order",
@@ -123,6 +136,31 @@
       "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0007",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "AdmissionType",
+      "title" : "admissionType",
+      "description" : "Code system of concepts specifying the circumstances under which the patient was or will be admitted.  Used in HL7 Version 2.x messaging in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.9"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-encounter-type.html" : "FR Core ValueSet Encounter type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-contact-relationship.html" : "FR Core ValueSet Contact relationship",
+      "ValueSet-fr-core-related-person-role.html" : "FR Core ValueSet Related person role"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "version" : "3.0.0",
       "status" : "active",
@@ -132,8 +170,8 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "ValueSet-fr-core-identifier-type-v1-0.html" : "FR Core ValueSet Patient identifier type",
-      "ValueSet-fr-core-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type"
+      "ValueSet-fr-core-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
+      "ValueSet-fr-core-identifier-type-v1-0.html" : "FR Core ValueSet Patient identifier type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0444",
@@ -160,6 +198,17 @@
       "http://hl7.org/fhir/R4/valueset-name-assembly-order.html" : "HumanNameAssemblyOrder"
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemCirconstancesSortie",
+      "title" : "FR Core CodeSystem Circonstances Sortie",
+      "description" : "Discharge Disposition",
+      "uses" : {
+      },
+      "ValueSet-fr-core-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship",
       "version" : "2.0.0",
       "status" : "draft",
@@ -171,6 +220,94 @@
       "ValueSet-fr-core-contact-relationship.html" : "FR Core ValueSet Contact relationship"
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemMethodCollection",
+      "title" : "FR Core CodeSystem Mode Validation Identite",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-fr-core-identity-method-collection.html" : "FR Core ValueSet Identity method collection"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemModeValidationIdentite",
+      "title" : "FR Core CodeSystem Mode Validation Identite",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-mode-validation-identity.html" : "FR Core ValueSet Mode validation identity"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-identifier-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemLocationIdentifierType",
+      "title" : "FR Core CodeSystem Location Identifier Type",
+      "description" : "Location identifier type",
+      "uses" : {
+      },
+      "ValueSet-fr-core-location-identifier-type.html" : "FR Core ValueSet Location identifier type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemLocationPhysicalType",
+      "title" : "FR Core CodeSystem Location Physical Type",
+      "description" : "Location physical type",
+      "uses" : {
+      },
+      "ValueSet-fr-core-location-physical-type.html" : "FR Core ValueSet Location physical type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-position-room",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemLocationPositionRoom",
+      "title" : "FR Core CodeSystem Location Position Room",
+      "description" : "Location position room",
+      "uses" : {
+      },
+      "ValueSet-fr-core-location-position-room.html" : "FR Core ValueSet Location position room"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemLocationType",
+      "title" : "FR Core CodeSystem Location Type",
+      "description" : "Location type",
+      "uses" : {
+      },
+      "ValueSet-fr-core-location-type.html" : "FR Core ValueSet Location type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemScheduleType",
+      "title" : "FR Core CodeSystem Schedule Type",
+      "description" : "Schedule type",
+      "uses" : {
+      },
+      "ValueSet-fr-core-schedule-type.html" : "FR Core ValueSet Schedule type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-type-admission",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemTypeAdmission",
+      "title" : "FR Core CodeSystem Type Admission",
+      "description" : "Admission type",
+      "uses" : {
+      },
+      "ValueSet-fr-core-encounter-type.html" : "FR Core ValueSet Encounter type"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203",
       "version" : "2.0.0",
       "status" : "draft",
@@ -180,7 +317,30 @@
       "uses" : {
       },
       "ValueSet-fr-core-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type",
-      "ValueSet-fr-core-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type"
+      "ValueSet-fr-core-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
+      "ValueSet-fr-core-identifier-type-v1-0.html" : "FR Core ValueSet Patient identifier type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemv2_0445",
+      "title" : "FR Core CodeSystem v2-0445",
+      "description" : "HL7 v2 - Table 0445",
+      "uses" : {
+      },
+      "ValueSet-fr-core-identity-reliability.html" : "FR Core ValueSet Identity reliability"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemv2_3307",
+      "title" : "FR Core CodeSystem v2-3307",
+      "description" : "HL7 v2 - Table 3307",
+      "uses" : {
+      },
+      "ValueSet-fr-core-core-organization-type.html" : "FR Core ValueSet Organization type"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311",

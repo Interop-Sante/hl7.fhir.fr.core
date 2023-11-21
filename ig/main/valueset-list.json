@@ -80,9 +80,18 @@
       "title" : "FR Core ValueSet Contact relationship",
       "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
       "systems" : [
-        "http://hl7.org/fhir/v2/0131",
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
       ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-core-organization-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetOrganizationType",
+      "title" : "FR Core ValueSet Organization type",
+      "description" : "Organization types | Types de structures",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307"]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-email-type",
@@ -112,7 +121,8 @@
       "title" : "FR Core ValueSet Encounter discharge disposition",
       "description" : "This value set defines a set of codes that can be used to where the patient left the hospital | Circonstances de sortie de l'hôpital.",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-circonstances-sortie"
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie"
       ]
     },
     {
@@ -122,7 +132,9 @@
       "name" : "FRCoreValueSetEncounterIdentifierType",
       "title" : "FR Core ValueSet Encounter identifier type",
       "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters).",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-identifier-type"]
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-coreidentifier-type"
+      ]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-encounter-type",
@@ -132,9 +144,18 @@
       "title" : "FR Core ValueSet Encounter type",
       "description" : "A coded type for an encounter | Jeu de valeurs des types de rencontre.",
       "systems" : [
-        "http://hl7.org/fhir/v2/0007",
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-type-admission"
+        "http://terminology.hl7.org/CodeSystem/v2-0007",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-type-admission"
       ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-height-body-position",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetHeightBodyPosition",
+      "title" : "FR Core ValueSet BodyPosition",
+      "description" : "ValueSet Body Position",
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identifier-type-v1-0",
@@ -144,7 +165,7 @@
       "title" : "FR Core ValueSet Patient identifier type",
       "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).",
       "systems" : [
-        "http://interopsante.org/fhir/CodeSystem/fr-v2-0203",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203",
         "http://terminology.hl7.org/CodeSystem/v2-0203"
       ]
     },
@@ -156,7 +177,7 @@
       "title" : "FR Core ValueSet Identity method collection",
       "description" : "The validation mode of the identity.",
       "systems" : [
-        "http://interopsante.org/fhir/CodeSystem/fr-cs-identity-method-collection"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection"
       ],
       "oids" : ["2.16.840.1.113883.2.8.1.3.31"],
       "sources" : ["2.16.840.1.113883.2.8.1.3.31"]
@@ -165,21 +186,10 @@
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-reliability",
       "version" : "2.0.0",
       "status" : "draft",
-      "name" : "FRCoreValueSetIdentityReliability",
+      "name" : "FRCoreValueSetIdentityReliabilityStatus",
       "title" : "FR Core ValueSet Identity reliability",
       "description" : "The reliability of the identity.",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-0445"]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-validation-mode",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetModeValidationIdentity",
-      "title" : "FR Core ValueSet Mode validation identite",
-      "description" : "The validation mode of the identity.",
-      "systems" : [
-        "http://interopsante.org/fhir/CodeSystem/fr-cs-mode-validation-identite"
-      ]
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445"]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-insee-code",
@@ -189,7 +199,7 @@
       "title" : "FR Core ValueSet INSEE code",
       "description" : "the French Address Insee Codes",
       "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
+        "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"
       ],
       "oids" : ["2.16.840.1.113883.2.8.1.3.4"],
       "sources" : ["2.16.840.1.113883.2.8.1.3.4"]
@@ -202,7 +212,7 @@
       "title" : "FR Core ValueSet Location identifier type",
       "description" : "A coded type for a location | Jeu de valeurs des types d'identifiant de lieu.",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-identifier-type"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-identifier-type"
       ]
     },
     {
@@ -213,7 +223,7 @@
       "title" : "FR Core ValueSet Location physical type",
       "description" : "French location physical type | Types de lieux physiques pour la France",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-physical-type"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type"
       ]
     },
     {
@@ -224,7 +234,7 @@
       "title" : "FR Core ValueSet Location position room",
       "description" : "position room | position physique de l'emplacement du lit",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-position-room"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-position-room"
       ]
     },
     {
@@ -234,7 +244,9 @@
       "name" : "FRCoreValueSetLocationType",
       "title" : "FR Core ValueSet Location type",
       "description" : "A role for a location | Jeu de valeurs du rôle joué par un lieu",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-location-type"]
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type"
+      ]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-activity-field",
@@ -255,15 +267,6 @@
       "title" : "FR Core ValueSet Organization identifier type",
       "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations).",
       "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203"]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-type",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetOrganizationType",
-      "title" : "FR Core ValueSet Organization type",
-      "description" : "Organization types | Types de structures",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-v2-3307"]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-uf-activity-field",
@@ -320,6 +323,37 @@
       ]
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-exercice",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerRoleExercice",
+      "title" : null,
+      "description" : "The exercice(s) of the practitioner.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
+      ],
+      "oids" : [" 2.16.840.1.113883.2.8.1.3.23"],
+      "sources" : [" 2.16.840.1.113883.2.8.1.3.23"]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-profession",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerRoleProfession",
+      "title" : null,
+      "description" : "The profession(s) of the practitioner.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
+        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+        "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      ],
+      "oids" : [" 2.16.840.1.113883.2.8.1.3.23"],
+      "sources" : [" 2.16.840.1.113883.2.8.1.3.23"]
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-specialty",
       "version" : "2.0.0",
       "status" : "draft",
@@ -335,10 +369,10 @@
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetRelatedPerson",
-      "title" : "FR Core ValueSet Related person",
-      "description" : "Value set related person",
+      "title" : "FR Core ValueSet Related person role",
+      "description" : "Value set related person role",
       "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
       ]
     },
     {
@@ -349,7 +383,9 @@
       "title" : "FR Core ValueSet Related person role",
       "description" : "Value set related person role",
       "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
       ]
     },
     {
@@ -359,7 +395,9 @@
       "name" : "FRCoreValueSetScheduleType",
       "title" : "FR Core ValueSet Schedule type",
       "description" : "A Schedule type | Jeu de valeurs des types de Schedule",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-schedule-type"]
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type"
+      ]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-title",
@@ -370,6 +408,17 @@
       "description" : "The Patient or person civility",
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetModeValidationIdentity",
+      "title" : "FR Core ValueSet Mode validation identity",
+      "description" : "The validation mode of the identity.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity"
       ]
     }
   ]

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-08T15:11:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-21T10:12:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -622,7 +622,7 @@
          fhir:reference [ fhir:v "CodeSystem/fr-core-fiabilite-identite" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Fiabilité Identité" ] ;
-       fhir:description [ fhir:v "This code system  includes all the French Identity reliabilty codes (InteropSanté)." ] ;
+       fhir:description [ fhir:v "This code system includes all the French Identity reliabilty codes (InteropSanté)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -635,17 +635,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Identifier Type" ] ;
        fhir:description [ fhir:v "Identifier type" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-identity-method-collection> ;
-         fhir:reference [ fhir:v "CodeSystem/fr-core-identity-method-collection" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core CodeSystem Identity Method Collection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -701,8 +690,19 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-mode-validation-identite> ;
-         fhir:reference [ fhir:v "CodeSystem/fr-core-mode-validation-identite" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-method-collection" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core CodeSystem Mode Validation Identite" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-mode-validation-identity" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Mode Validation Identite" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -753,6 +753,30 @@
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem v2-0203" ] ;
        fhir:description [ fhir:v "HL7 v2 - Identifier type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-v2-0445" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core CodeSystem v2-0445" ] ;
+       fhir:description [ fhir:v "HL7 v2 - Table 0445" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-v2-3307" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core CodeSystem v2-3307" ] ;
+       fhir:description [ fhir:v "HL7 v2 - Table 3307" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1179,7 +1203,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-organization" ]
        ] ;
        fhir:name [ fhir:v "FR Core Organization Profile" ] ;
-       fhir:description [ fhir:v "New Profile of the Organization resource for France | New Profil de la ressource Organization pour la France\nThis profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. | Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises." ] ;
+       fhir:description [ fhir:v "Profile of the Organization resource for France | Profil de la ressource Organization pour la France\nThis profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. | Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1305,23 +1329,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-ident-reliability> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-ident-reliability" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-identity-reliability" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient Ident Reliability Extension" ] ;
-       fhir:description [ fhir:v "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-identity-method-collection> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-identity-method-collection" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Patient Identity Method Collection Extension" ] ;
-       fhir:description [ fhir:v "This french extension specifies the way the identity is collected | Cette extension française spécifie la façon dont l'identité est obtenue" ] ;
+       fhir:description [ fhir:v "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1333,7 +1345,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
-       fhir:description [ fhir:v "Profil FrPatient appliqué à l'INS." ] ;
+       fhir:description [ fhir:v "Profil FrPatient appliqué à l'INS avec identité validée. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS ." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1501,7 +1513,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-slot" ]
        ] ;
        fhir:name [ fhir:v "FR Core Slot Profile" ] ;
-       fhir:description [ fhir:v "http://interopsante.org/fhir/StructureDefinition/fr-core-slot" ] ;
+       fhir:description [ fhir:v "fr-core-slot ValueSet" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1513,6 +1525,18 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-use-period" ]
        ] ;
        fhir:name [ fhir:v "FR Core Use Period Extension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-height-body-position> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-height-body-position" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet BodyPosition" ] ;
+       fhir:description [ fhir:v "ValueSet Body Position" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1736,10 +1760,10 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-validation-mode> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-identity-validation-mode" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-mode-validation-identity" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Mode validation identite" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Mode validation identity" ] ;
        fhir:description [ fhir:v "The validation mode of the identity." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1772,8 +1796,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-type> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-organization-type" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-core-organization-type> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-core-organization-type" ]
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Organization type" ] ;
        fhir:description [ fhir:v "Organization types | Types de structures" ] ;
@@ -1859,8 +1883,8 @@
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-related-person" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Related person" ] ;
-       fhir:description [ fhir:v "Value set related person" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Related person role" ] ;
+       fhir:description [ fhir:v "Value set related person role" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1897,6 +1921,30 @@
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Title" ] ;
        fhir:description [ fhir:v "The Patient or person civility" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-exercice> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-practitioner-role-exercice" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreValueSetPractitionerRoleExercice" ] ;
+       fhir:description [ fhir:v "The exercice(s) of the practitioner." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-profession> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-practitioner-role-profession" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreValueSetPractitionerRoleProfession" ] ;
+       fhir:description [ fhir:v "The profession(s) of the practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

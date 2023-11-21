@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "draft",
-  "date" : "2023-11-08T15:11:22+00:00",
+  "date" : "2023-11-21T10:12:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -710,7 +710,7 @@
         "reference" : "CodeSystem/fr-core-fiabilite-identite"
       },
       "name" : "FR Core CodeSystem Fiabilité Identité",
-      "description" : "This code system  includes all the French Identity reliabilty codes (InteropSanté).",
+      "description" : "This code system includes all the French Identity reliabilty codes (InteropSanté).",
       "exampleBoolean" : false
     },
     {
@@ -723,17 +723,6 @@
       },
       "name" : "FR Core CodeSystem Identifier Type",
       "description" : "Identifier type",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/fr-core-identity-method-collection"
-      },
-      "name" : "FR Core CodeSystem Identity Method Collection",
       "exampleBoolean" : false
     },
     {
@@ -790,7 +779,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/fr-core-mode-validation-identite"
+        "reference" : "CodeSystem/fr-core-cs-method-collection"
+      },
+      "name" : "FR Core CodeSystem Mode Validation Identite",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-mode-validation-identity"
       },
       "name" : "FR Core CodeSystem Mode Validation Identite",
       "exampleBoolean" : false
@@ -841,6 +841,30 @@
       },
       "name" : "FR Core CodeSystem v2-0203",
       "description" : "HL7 v2 - Identifier type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fr-core-v2-0445"
+      },
+      "name" : "FR Core CodeSystem v2-0445",
+      "description" : "HL7 v2 - Table 0445",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fr-core-v2-3307"
+      },
+      "name" : "FR Core CodeSystem v2-3307",
+      "description" : "HL7 v2 - Table 3307",
       "exampleBoolean" : false
     },
     {
@@ -1267,7 +1291,7 @@
         "reference" : "StructureDefinition/fr-core-organization"
       },
       "name" : "FR Core Organization Profile",
-      "description" : "New Profile of the Organization resource for France | New Profil de la ressource Organization pour la France\nThis profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. | Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises.",
+      "description" : "Profile of the Organization resource for France | Profil de la ressource Organization pour la France\nThis profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. | Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises.",
       "exampleBoolean" : false
     },
     {
@@ -1394,22 +1418,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-ident-reliability"
+        "reference" : "StructureDefinition/fr-core-identity-reliability"
       },
       "name" : "FR Core Patient Ident Reliability Extension",
-      "description" : "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-patient-identity-method-collection"
-      },
-      "name" : "FR Core Patient Identity Method Collection Extension",
-      "description" : "This french extension specifies the way the identity is collected | Cette extension française spécifie la façon dont l'identité est obtenue",
+      "description" : "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection",
       "exampleBoolean" : false
     },
     {
@@ -1421,7 +1433,7 @@
         "reference" : "StructureDefinition/fr-core-patient-ins"
       },
       "name" : "FR Core Patient INS Profile",
-      "description" : "Profil FrPatient appliqué à l'INS.",
+      "description" : "Profil FrPatient appliqué à l'INS avec identité validée. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS .",
       "exampleBoolean" : false
     },
     {
@@ -1589,7 +1601,7 @@
         "reference" : "StructureDefinition/fr-core-slot"
       },
       "name" : "FR Core Slot Profile",
-      "description" : "http://interopsante.org/fhir/StructureDefinition/fr-core-slot",
+      "description" : "fr-core-slot ValueSet",
       "exampleBoolean" : false
     },
     {
@@ -1601,6 +1613,18 @@
         "reference" : "StructureDefinition/fr-core-use-period"
       },
       "name" : "FR Core Use Period Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-height-body-position"
+      },
+      "name" : "FR Core ValueSet BodyPosition",
+      "description" : "ValueSet Body Position",
       "exampleBoolean" : false
     },
     {
@@ -1825,9 +1849,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-identity-validation-mode"
+        "reference" : "ValueSet/fr-core-vs-mode-validation-identity"
       },
-      "name" : "FR Core ValueSet Mode validation identite",
+      "name" : "FR Core ValueSet Mode validation identity",
       "description" : "The validation mode of the identity.",
       "exampleBoolean" : false
     },
@@ -1861,7 +1885,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-organization-type"
+        "reference" : "ValueSet/fr-core-core-organization-type"
       },
       "name" : "FR Core ValueSet Organization type",
       "description" : "Organization types | Types de structures",
@@ -1947,8 +1971,8 @@
       "reference" : {
         "reference" : "ValueSet/fr-core-related-person"
       },
-      "name" : "FR Core ValueSet Related person",
-      "description" : "Value set related person",
+      "name" : "FR Core ValueSet Related person role",
+      "description" : "Value set related person role",
       "exampleBoolean" : false
     },
     {
@@ -1985,6 +2009,30 @@
       },
       "name" : "FR Core ValueSet Title",
       "description" : "The Patient or person civility",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-practitioner-role-exercice"
+      },
+      "name" : "FRCoreValueSetPractitionerRoleExercice",
+      "description" : "The exercice(s) of the practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-practitioner-role-profession"
+      },
+      "name" : "FRCoreValueSetPractitionerRoleProfession",
+      "description" : "The profession(s) of the practitioner.",
       "exampleBoolean" : false
     },
     {

@@ -8,9 +8,15 @@
 <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-method-collection> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fr-core-identity-method-collection"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://interopsante.org/fhir/CodeSystem/fr-cs-identity-method-collection</code></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-fr-core-cs-method-collection.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-method-collection"^^xsd:anyURI] ; # 
   fhir:identifier ( [
@@ -21,7 +27,8 @@
   fhir:name [ fhir:v "FRCoreValueSetIdentityMethodCollection"] ; # 
   fhir:title [ fhir:v "FR Core ValueSet Identity method collection"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-08T15:11:22+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-21T10:12:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -41,8 +48,7 @@
   fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://interopsante.org/fhir/CodeSystem/fr-cs-identity-method-collection"^^xsd:anyURI ] ;
-       fhir:version [ fhir:v "1.1.0" ]
+       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection"^^xsd:anyURI ]
      ] )
   ] . # 
 
