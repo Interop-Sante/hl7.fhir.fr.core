@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-availability-time-day> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-availability-time-day"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html\"><code>http://hl7.org/fhir/days-of-week</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-MO\">MO</a></td><td>Monday</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-TU\">TU</a></td><td>Tuesday</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-WE\">WE</a></td><td>Wednesday</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-TH\">TH</a></td><td>Thursday</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-FR\">FR</a></td><td>Friday</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-SA\">SA</a></td><td>Saturday</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-SU\">SU</a></td><td>Sunday</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-warning"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Availability Time Day" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "informative" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fhir" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-availability-time-day"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetAvailabilityTimeDay"] ; # 
+  fhir:title [ fhir:v "First day of the workweek | Premier jour de la semaine de travail "] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-27T15:44:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Specifies the day on which the workweek starts. Valid values are MO, TU, WE, TH, FR, SA and SU. | Spécifie les jours à partir desquels la semaine de travail commence"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/days-of-week"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "MO" ] ;
+         fhir:display [ fhir:v "Monday" ]
+       ] [
+         fhir:code [ fhir:v "TU" ] ;
+         fhir:display [ fhir:v "Tuesday" ]
+       ] [
+         fhir:code [ fhir:v "WE" ] ;
+         fhir:display [ fhir:v "Wednesday" ]
+       ] [
+         fhir:code [ fhir:v "TH" ] ;
+         fhir:display [ fhir:v "Thursday" ]
+       ] [
+         fhir:code [ fhir:v "FR" ] ;
+         fhir:display [ fhir:v "Friday" ]
+       ] [
+         fhir:code [ fhir:v "SA" ] ;
+         fhir:display [ fhir:v "Saturday" ]
+       ] [
+         fhir:code [ fhir:v "SU" ] ;
+         fhir:display [ fhir:v "Sunday" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
