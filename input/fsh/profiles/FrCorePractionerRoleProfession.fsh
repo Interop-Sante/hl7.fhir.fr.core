@@ -1,6 +1,6 @@
 // A supprimer au profit de ceux de l'IG annuaire ?
 
-Profile: FrCorePractitionerRoleProfession
+Profile: FRCorePractitionerRoleProfession
 Parent: PractitionerRole
 Id: fr-core-practitioner-role-profession
 Title: "FR Core Practitioner Role Profession"

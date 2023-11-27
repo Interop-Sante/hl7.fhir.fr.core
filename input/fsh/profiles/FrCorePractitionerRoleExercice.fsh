@@ -1,6 +1,6 @@
 // A supprimer au profit de ceux de l'IG annuaire ?
 
-Profile: FrCorePractitionerRoleExercice
+Profile: FRCorePractitionerRoleExercice
 Parent: PractitionerRole
 Id: fr-core-practitioner-role-exercice
 Title: "FR Core Practitioner Role Exercice"
