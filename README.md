@@ -1,4 +1,4 @@
-Lien vers l'intégration continue : https://interop-sante.github.io/FHIR-FR-Core/ig/main
+Lien vers l'intégration continue : https://interop-sante.github.io/hl7.fhir.fr.core/ig/main/
 /!\ Cette version est soumise à des changements réguliers et ne doit pas être utilisée telle quelle, elle est uniquement publiée pour consultation.
 
 
