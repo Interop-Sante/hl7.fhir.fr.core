@@ -1,6 +1,7 @@
 CodeSystem: FRCoreCodeSystemMethodCollection
 Id: fr-core-cs-method-collection
 Title: "FR Core CodeSystem Mode Validation Identite"
+Description: "Méthode de collection de l'identité"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

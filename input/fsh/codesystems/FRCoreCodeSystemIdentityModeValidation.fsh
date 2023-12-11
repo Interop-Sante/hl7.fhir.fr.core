@@ -1,6 +1,7 @@
 CodeSystem: FRCoreCodeSystemModeValidationIdentite
 Id: fr-core-cs-mode-validation-identity
 Title: "FR Core CodeSystem Mode Validation Identite"
+Description: "Mode de validation de l'identité"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^caseSensitive = true

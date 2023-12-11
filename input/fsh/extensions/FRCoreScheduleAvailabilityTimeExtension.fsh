@@ -104,6 +104,7 @@ Description: "This extension specifies a list of periods of time (recurrent or n
 
 * extension[unavailabilityReason] ^short = "Non-availability resaon | Raison de l'indisponibilité"
 * extension[unavailabilityReason].value[x] only CodeableConcept
+// * extension[unavailabilityReason].value[x] from fr-core-schedule-unavailability-reason (example) 
 // * extension[unavailabilityReason].value[x] from $fr-core-schedule-unavailability-reason (extensible) // TODO : valueset à créer
 
 * extension[created] ^short = "The date/time the period was created | Date de création de la période"
