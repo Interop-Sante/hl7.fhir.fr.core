@@ -1,4 +1,4 @@
-## Description des changements
+## Description des changements | Description of changes
 
 * [changement 1]
 * [changement 2]
