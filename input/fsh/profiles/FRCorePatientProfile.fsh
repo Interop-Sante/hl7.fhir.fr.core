@@ -40,7 +40,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * identifier[INS-C] ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use = #secondary
-* identifier[INS-C].type = $fr-core-v2-0203#INS-C "INS calculé"
+* identifier[INS-C].type = $fr-core-v2-0203#INS-C "Identifiant National de Santé Calculé"
 * identifier[INS-C].type ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier[INS-C].value 1..
@@ -48,7 +48,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français"
 * identifier[NDP] ^definition = "Pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique"
 * identifier[NDP].use = #secondary
-* identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant au dossier pharmaceutique"
+* identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant du patient au Dossier Pharmaceutique"
 * identifier[NDP].type from $fr-core-patient-identifier-type (extensible)
 * identifier[NDP].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * identifier[NDP].type ^binding.extension[=].valueBoolean = true

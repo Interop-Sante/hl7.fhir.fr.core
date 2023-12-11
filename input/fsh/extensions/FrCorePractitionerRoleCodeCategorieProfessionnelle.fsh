@@ -10,7 +10,6 @@ Description: "Catégorie professionnelle selon le MOS de l'ANS. Indispensable po
 
 * value[x] only CodeableConcept
 * value[x] ^requirements = "code de la catégorie professionnelle selon le MOS de l'ANS"
-* value[x] ^meaningWhenMissing = "une valeur de code est obligatoire"
 
 * value[x].coding 1..1
 * value[x].coding from $fr-practitioner-role-categorie-professionnelle (required)
@@ -18,5 +17,4 @@ Description: "Catégorie professionnelle selon le MOS de l'ANS. Indispensable po
 * value[x].coding ^definition = "Le code de la catégorie professionnelle selon le système de codage TRE_R09-CategorieProfessionnelle du MOS de l'ANS."
 * value[x].coding ^comment = "Ce système de codage comporte 4 valeurs dont seule \"E\" est utile en production de soins pour discriminer les étudiants des différentes professions de santé réglementées."
 * value[x].coding ^requirements = "Le seul moyen de discriminer les étudiants dans le MOS qui traduit l'implémentation du système CPS et du RPPS."
-* value[x].coding ^meaningWhenMissing = "code obligatoire si l'extension est instanciée"
 * value[x].coding ^binding.description = "MOS ANS / TRE_R09-CategorieProfessionnelle"
