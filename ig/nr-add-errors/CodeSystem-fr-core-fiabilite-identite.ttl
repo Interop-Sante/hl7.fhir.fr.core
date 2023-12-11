@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-fiabilite-identite> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-fiabilite-identite"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-fiabilite-identite</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VIDE<a name=\"fr-core-fiabilite-identite-VIDE\"> </a></td><td>Identité non encore qualifiée</td></tr><tr><td style=\"white-space:nowrap\">PROV<a name=\"fr-core-fiabilite-identite-PROV\"> </a></td><td>Identité provisoire</td></tr><tr><td style=\"white-space:nowrap\">VALI<a name=\"fr-core-fiabilite-identite-VALI\"> </a></td><td>Identité validée</td></tr><tr><td style=\"white-space:nowrap\">DOUB<a name=\"fr-core-fiabilite-identite-DOUB\"> </a></td><td>Doublon</td></tr><tr><td style=\"white-space:nowrap\">DESA<a name=\"fr-core-fiabilite-identite-DESA\"> </a></td><td>Identité désactivée</td></tr><tr><td style=\"white-space:nowrap\">DPOT<a name=\"fr-core-fiabilite-identite-DPOT\"> </a></td><td>Doublon potentiel</td></tr><tr><td style=\"white-space:nowrap\">DOUA<a name=\"fr-core-fiabilite-identite-DOUA\"> </a></td><td>Doublon avéré</td></tr><tr><td style=\"white-space:nowrap\">COLP<a name=\"fr-core-fiabilite-identite-COLP\"> </a></td><td>Collision potentielle</td></tr><tr><td style=\"white-space:nowrap\">COLV<a name=\"fr-core-fiabilite-identite-COLV\"> </a></td><td>Collision avérée</td></tr><tr><td style=\"white-space:nowrap\">FILI<a name=\"fr-core-fiabilite-identite-FILI\"> </a></td><td>Filiation</td></tr><tr><td style=\"white-space:nowrap\">CACH<a name=\"fr-core-fiabilite-identite-CACH\"> </a></td><td>Identité cachée</td></tr><tr><td style=\"white-space:nowrap\">ANOM<a name=\"fr-core-fiabilite-identite-ANOM\"> </a></td><td>Anonyme</td></tr><tr><td style=\"white-space:nowrap\">IDVER<a name=\"fr-core-fiabilite-identite-IDVER\"> </a></td><td>Identité vérifiée par le patient</td></tr><tr><td style=\"white-space:nowrap\">RECD<a name=\"fr-core-fiabilite-identite-RECD\"> </a></td><td>Identité reçue d'un autre domaine</td></tr><tr><td style=\"white-space:nowrap\">IDRA<a name=\"fr-core-fiabilite-identite-IDRA\"> </a></td><td>Identité rapprochée dans un autre domaine</td></tr><tr><td style=\"white-space:nowrap\">USUR<a name=\"fr-core-fiabilite-identite-USUR\"> </a></td><td>Identité usurpée</td></tr><tr><td style=\"white-space:nowrap\">HOMD<a name=\"fr-core-fiabilite-identite-HOMD\"> </a></td><td>Homonyme détecté</td></tr><tr><td style=\"white-space:nowrap\">INVA<a name=\"fr-core-fiabilite-identite-INVA\"> </a></td><td>Identité invalidée</td></tr><tr><td style=\"white-space:nowrap\">HOMA<a name=\"fr-core-fiabilite-identite-HOMA\"> </a></td><td>Homonyme avéré (attribut d'identité homonyme)</td></tr><tr><td style=\"white-space:nowrap\">FICT<a name=\"fr-core-fiabilite-identite-FICT\"> </a></td><td>Identité fictive (attribut d'identité fictive)</td></tr><tr><td style=\"white-space:nowrap\">DOUT<a name=\"fr-core-fiabilite-identite-DOUT\"> </a></td><td>Identité douteuse (attribut d'identité douteuse)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-fiabilite-identite"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-tables"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.12.445" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemReliabilityIdentity"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem Fiabilité Identité"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-11T10:37:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This code system includes all the French Identity reliabilty codes (InteropSanté)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "VIDE" ] ;
+     fhir:display [ fhir:v "Identité non encore qualifiée" ]
+  ] [
+     fhir:code [ fhir:v "PROV" ] ;
+     fhir:display [ fhir:v "Identité provisoire" ]
+  ] [
+     fhir:code [ fhir:v "VALI" ] ;
+     fhir:display [ fhir:v "Identité validée" ]
+  ] [
+     fhir:code [ fhir:v "DOUB" ] ;
+     fhir:display [ fhir:v "Doublon" ]
+  ] [
+     fhir:code [ fhir:v "DESA" ] ;
+     fhir:display [ fhir:v "Identité désactivée" ]
+  ] [
+     fhir:code [ fhir:v "DPOT" ] ;
+     fhir:display [ fhir:v "Doublon potentiel" ]
+  ] [
+     fhir:code [ fhir:v "DOUA" ] ;
+     fhir:display [ fhir:v "Doublon avéré" ]
+  ] [
+     fhir:code [ fhir:v "COLP" ] ;
+     fhir:display [ fhir:v "Collision potentielle" ]
+  ] [
+     fhir:code [ fhir:v "COLV" ] ;
+     fhir:display [ fhir:v "Collision avérée" ]
+  ] [
+     fhir:code [ fhir:v "FILI" ] ;
+     fhir:display [ fhir:v "Filiation" ]
+  ] [
+     fhir:code [ fhir:v "CACH" ] ;
+     fhir:display [ fhir:v "Identité cachée" ]
+  ] [
+     fhir:code [ fhir:v "ANOM" ] ;
+     fhir:display [ fhir:v "Anonyme" ]
+  ] [
+     fhir:code [ fhir:v "IDVER" ] ;
+     fhir:display [ fhir:v "Identité vérifiée par le patient" ]
+  ] [
+     fhir:code [ fhir:v "RECD" ] ;
+     fhir:display [ fhir:v "Identité reçue d'un autre domaine" ]
+  ] [
+     fhir:code [ fhir:v "IDRA" ] ;
+     fhir:display [ fhir:v "Identité rapprochée dans un autre domaine" ]
+  ] [
+     fhir:code [ fhir:v "USUR" ] ;
+     fhir:display [ fhir:v "Identité usurpée" ]
+  ] [
+     fhir:code [ fhir:v "HOMD" ] ;
+     fhir:display [ fhir:v "Homonyme détecté" ]
+  ] [
+     fhir:code [ fhir:v "INVA" ] ;
+     fhir:display [ fhir:v "Identité invalidée" ]
+  ] [
+     fhir:code [ fhir:v "HOMA" ] ;
+     fhir:display [ fhir:v "Homonyme avéré (attribut d'identité homonyme)" ]
+  ] [
+     fhir:code [ fhir:v "FICT" ] ;
+     fhir:display [ fhir:v "Identité fictive (attribut d'identité fictive)" ]
+  ] [
+     fhir:code [ fhir:v "DOUT" ] ;
+     fhir:display [ fhir:v "Identité douteuse (attribut d'identité douteuse)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
