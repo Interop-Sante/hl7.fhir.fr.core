@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="draft"/>
-  <date value="2023-12-11T10:19:21+00:00"/>
+  <date value="2023-12-11T10:51:09+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -464,7 +464,7 @@
       <reference>
         <reference value="ValueSet/fr-core-availability-time-day"/>
       </reference>
-      <name value="First day of the workweek | Premier jour de la semaine de travail "/>
+      <name value="First day of the workweek | Premier jour de la semaine de travail"/>
       <description value="Specifies the day on which the workweek starts. Valid values are MO, TU, WE, TH, FR, SA and SU. | Spécifie les jours à partir desquels la semaine de travail commence"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -619,6 +619,7 @@
         <reference value="CodeSystem/fr-core-cs-method-collection"/>
       </reference>
       <name value="FR Core CodeSystem Mode Validation Identite"/>
+      <description value="Méthode de collection de l'identité"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -629,6 +630,7 @@
         <reference value="CodeSystem/fr-core-cs-mode-validation-identity"/>
       </reference>
       <name value="FR Core CodeSystem Mode Validation Identite"/>
+      <description value="Mode de validation de l'identité"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1706,6 +1708,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-practitioner-role-exercice"/>
+      </reference>
+      <name value="FR Core ValueSet PractitionerRole Exercice"/>
+      <description value="The exercice(s) of the practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-practitioner-role-profession"/>
+      </reference>
+      <name value="FR Core ValueSet PractitionerRole Profession"/>
+      <description value="The profession(s) of the practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-related-person"/>
       </reference>
       <name value="FR Core ValueSet Related person role"/>
@@ -1750,21 +1774,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-practitioner-role-exercice"/>
+        <reference value="ValueSet/fr-core-schedule-unavailability-reason"/>
       </reference>
-      <name value="FRCoreValueSetPractitionerRoleExercice"/>
-      <description value="The exercice(s) of the practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-practitioner-role-profession"/>
-      </reference>
-      <name value="FRCoreValueSetPractitionerRoleProfession"/>
-      <description value="The profession(s) of the practitioner."/>
+      <name value="FR Core ValueSet Unavailability Reason"/>
+      <description value="Raison d'indisponibilité"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1774,7 +1787,7 @@
       <reference>
         <reference value="ValueSet/fr-core-availability-time-rule"/>
       </reference>
-      <name value="Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule "/>
+      <name value="Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule"/>
       <description value="Specification of the recurrent periods | Spécifications des périodes récurrentes"/>
       <exampleBoolean value="false"/>
     </resource>

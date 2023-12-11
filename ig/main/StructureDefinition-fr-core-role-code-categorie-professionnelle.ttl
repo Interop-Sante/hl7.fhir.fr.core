@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCorePractitionerRoleCodeCategorieProfessionnelle"] ; # 
   fhir:title [ fhir:v "Fr Core Practitioner Role Code Categorie Professionnelle"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-11T10:19:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-11T10:51:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -441,8 +441,7 @@
        fhir:requirements [ fhir:v "code de la catégorie professionnelle selon le MOS de l'ANS" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
-       ] ) ;
-       fhir:meaningWhenMissing [ fhir:v "une valeur de code est obligatoire" ]
+       ] )
      ] [
        fhir:id [ fhir:v "Extension.value[x].coding" ] ;
        fhir:path [ fhir:v "Extension.value[x].coding" ] ;
@@ -452,7 +451,6 @@
        fhir:requirements [ fhir:v "Le seul moyen de discriminer les étudiants dans le MOS qui traduit l'implémentation du système CPS et du RPPS." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
-       fhir:meaningWhenMissing [ fhir:v "code obligatoire si l'extension est instanciée" ] ;
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "MOS ANS / TRE_R09-CategorieProfessionnelle" ] ;

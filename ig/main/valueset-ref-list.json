@@ -26,10 +26,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
       "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension",
-      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -44,14 +44,14 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
-      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
-      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
       "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
       "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile"
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -146,7 +146,7 @@
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetAvailabilityTimeDay",
-      "title" : "First day of the workweek | Premier jour de la semaine de travail ",
+      "title" : "First day of the workweek | Premier jour de la semaine de travail",
       "description" : "Specifies the day on which the workweek starts. Valid values are MO, TU, WE, TH, FR, SA and SU. | Spécifie les jours à partir desquels la semaine de travail commence",
       "systems" : ["http://hl7.org/fhir/days-of-week"]
     },
@@ -155,7 +155,7 @@
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetAvailabilityTimeRule",
-      "title" : "Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule ",
+      "title" : "Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule",
       "description" : "Specification of the recurrent periods | Spécifications des périodes récurrentes",
       "systems" : ["https://www.ietf.org/rfc/rfc2445"],
       "uses" : {
@@ -239,9 +239,9 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
       "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile"
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-email-type",
@@ -404,8 +404,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile",
-      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
+      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
+      "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-position-room",
@@ -460,9 +460,9 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
       "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile"
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-uf-activity-field",
@@ -529,7 +529,7 @@
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetPractitionerRoleExercice",
-      "title" : null,
+      "title" : "FR Core ValueSet PractitionerRole Exercice",
       "description" : "The exercice(s) of the practitioner.",
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
@@ -544,7 +544,7 @@
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetPractitionerRoleProfession",
-      "title" : null,
+      "title" : "FR Core ValueSet PractitionerRole Profession",
       "description" : "The profession(s) of the practitioner.",
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
@@ -570,11 +570,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
       "StructureDefinition-fr-core-practitioner-specialty.html" : "FR Core Practitioner Specialty Extension",
-      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile"
+      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
+      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person",
@@ -621,6 +621,17 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-schedule-unavailability-reason",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetUnavailabilityReason",
+      "title" : "FR Core ValueSet Unavailability Reason",
+      "description" : "Raison d'indisponibilité",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type"
+      ]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-title",
