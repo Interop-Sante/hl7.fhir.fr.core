@@ -47,7 +47,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
   <name value="FRCoreEncounterProfile"/>
   <title value="FR Core Encounter Profile"/>
   <status value="draft"/>
-  <date value="2023-12-04T12:32:37+00:00"/>
+  <date value="2023-12-11T10:19:21+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -65,6 +65,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
     </telecom>
   </contact>
   <description value="This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. | Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -1227,7 +1234,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1286,7 +1293,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1590,7 +1597,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2199,7 +2206,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2430,7 +2437,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2493,7 +2500,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2549,7 +2556,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2829,7 +2836,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2885,7 +2892,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2944,7 +2951,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2998,7 +3005,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -3213,7 +3220,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -3437,7 +3444,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -3578,7 +3585,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4116,7 +4123,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -4175,7 +4182,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -4231,7 +4238,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4560,7 +4567,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4824,7 +4831,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -4967,7 +4974,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -5017,7 +5024,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -5074,7 +5081,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>

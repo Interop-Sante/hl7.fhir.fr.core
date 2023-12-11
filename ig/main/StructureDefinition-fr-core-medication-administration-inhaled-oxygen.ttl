@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FRCoreMedicationAdministrationInhaledOxygenProfile"] ; # 
   fhir:title [ fhir:v "FR Core Medication Administration Inhaled Oxygen Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-04T12:32:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-11T10:19:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -31,6 +31,13 @@
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "fhir@interopsante.org" ] ;
        fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
      ] )
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
@@ -982,8 +989,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -1761,8 +1768,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -1829,8 +1836,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -1890,8 +1897,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2241,8 +2248,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -2365,8 +2372,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2426,8 +2433,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2484,8 +2491,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -3087,8 +3094,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Provenance"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Provenance>
          ]
        ] ) ;
        fhir:mapping ( [

@@ -28,7 +28,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
   <name value="FRCorePractitionerRoleExercice"/>
   <title value="FR Core Practitioner Role Exercice"/>
   <status value="draft"/>
-  <date value="2023-12-04T12:32:37+00:00"/>
+  <date value="2023-12-11T10:19:21+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -46,6 +46,13 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
     </telecom>
   </contact>
   <description value="Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>
@@ -1198,7 +1205,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1257,7 +1264,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1356,7 +1363,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1419,7 +1426,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1466,7 +1473,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1631,7 +1638,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1686,7 +1693,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2270,7 +2277,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2354,7 +2361,7 @@ Namespace du RASS (inconnu à ce jour)">system</a><a name="PractitionerRole.iden
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>

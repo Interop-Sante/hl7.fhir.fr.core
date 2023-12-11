@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "FRCorePatientBirthPlaceExtension"] ; # 
   fhir:title [ fhir:v "FR Core Patient Birth Place Extension"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-04T12:32:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-11T10:19:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -41,6 +41,13 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "rim" ] ;
@@ -802,8 +809,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Identifier"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Identifier>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;

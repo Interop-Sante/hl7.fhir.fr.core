@@ -25,7 +25,7 @@
   <name value="FRCoreOrganizationUACProfile"/>
   <title value="FR Core Organization UAC Profile"/>
   <status value="draft"/>
-  <date value="2023-12-04T12:32:37+00:00"/>
+  <date value="2023-12-11T10:19:21+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -43,6 +43,13 @@
     </telecom>
   </contact>
   <description value="This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>
@@ -1279,7 +1286,7 @@
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1338,7 +1345,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1585,7 +1592,7 @@
         <human value="A system is required if a value is provided."/>
         <expression value="value.empty() or system.exists()"/>
         <xpath value="not(exists(f:value)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </constraint>
       <constraint>
         <key value="org-3"/>
@@ -1722,7 +1729,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -2278,7 +2285,7 @@
         <human value="A system is required if a value is provided."/>
         <expression value="value.empty() or system.exists()"/>
         <xpath value="not(exists(f:value)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -2387,7 +2394,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
