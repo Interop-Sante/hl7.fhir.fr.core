@@ -14,8 +14,10 @@ Description: "HL7 Vital Signs Head Occipital-frontal circumference profil | Prof
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-
 * extension contains $workflow-supportingInfo named supportingInfo 0..1 MS
+
+* code.coding 1..
+
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCorePatientProfile or FRCoreOrganizationProfile)

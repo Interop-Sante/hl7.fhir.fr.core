@@ -19,6 +19,8 @@ Description: "French profiling of the FHIR Vital Sign Heart Rate Profile | Profi
     FRCoreObservationBodyPositionExtExtension named bodyPosition 0..1 and
     $workflow-supportingInfo named supportingInfo 0..1 MS
 
+* code.coding 1..
+
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)

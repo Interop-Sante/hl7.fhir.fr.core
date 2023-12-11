@@ -17,8 +17,9 @@ Description: "Oxygen saturation in Arterial blood  | Saturation en oxygène du s
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-
 * extension contains $workflow-supportingInfo named supportingInfoAdministrationOxygen 0..1
+
+* code.coding 1..
 
 * partOf ..1 MS
 * partOf only Reference(FRCoreMedicationAdministrationInhaledOxygenProfile)
