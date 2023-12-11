@@ -13,7 +13,7 @@ Description: "A coded type for the blood pressure measurement method"
 * SNOMED_CT#37931006 "Auscultation (procedure)"
 * SNOMED_CT#113011001 "Palpation (procedure)"
 * SNOMED_CT#61284002 "Machine, device (physical object)"
-* SNOMED_CT#10179008 " Invasive (qualifier value)"
+* SNOMED_CT#10179008 "Invasive (qualifier value)"
 
 // SVS profile
 * ^experimental = false
