@@ -17,6 +17,9 @@ Title: "FR Core Observation Body Height Profile"
 * extension contains
     FRCoreObservationHeightBodyPositionExtension named bodyposition 0..1 and
     $workflow-supportingInfo named supportingInfo 0..1 MS
+
+* code.coding 1..
+
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)

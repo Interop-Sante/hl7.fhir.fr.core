@@ -17,6 +17,9 @@ Description: "French profil body temperature | Profil français de la mesure de 
 * extension contains
     FRCoreObservationLevelOfExertionExtension named levelOfExertion 0..1 and
     $workflow-supportingInfo named supportingInfo 0..1 MS
+
+* code.coding 1..
+
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreOrganizationProfile or PractitionerRole)

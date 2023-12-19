@@ -17,6 +17,8 @@ Description: "French profil Blood pressure panel with all children optional - Th
 
 * extension contains $workflow-supportingInfo named supportingInfo 0..1
 
+* code.coding 1..
+
 * encounter only Reference(FRCoreEncounterProfile)
 * effective[x] 1..
 * effective[x] only dateTime or Period
@@ -42,12 +44,14 @@ Description: "French profil Blood pressure panel with all children optional - Th
 
 * component[SystolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[SystolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
+* component[SystolicBP].code.coding 1..
 
 
 * component[DiastolicBP] ^short = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP] ^definition = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[DiastolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
+* component[DiastolicBP].code.coding 1..
 
 * component[MeanBP] ^short = "Mean blood pressure"
 * component[MeanBP] ^definition = "Mean blood pressure"
