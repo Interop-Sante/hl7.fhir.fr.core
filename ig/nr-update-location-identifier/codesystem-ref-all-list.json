@@ -264,17 +264,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "ValueSet-fr-core-bp-method.html" : "FR Core ValueSet BP measurement method",
-      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "ValueSet-fr-core-bp-method.html" : "FR Core ValueSet BP measurement method",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "ValueSet-fr-core-height-body-position.html" : "FR Core ValueSet BodyPosition",
-      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes"
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -598,10 +598,10 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "ValueSet-fr-core-contact-relationship.html" : "FR Core ValueSet Contact relationship",
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
       "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-      "ValueSet-fr-core-related-person-role.html" : "FR Core ValueSet Related person role"
+      "ValueSet-fr-core-related-person-role.html" : "FR Core ValueSet Related person role",
+      "ValueSet-fr-core-contact-relationship.html" : "FR Core ValueSet Contact relationship",
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -699,9 +699,9 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
       "http://hl7.org/fhir/R4/valueset-name-assembly-order.html" : "HumanNameAssemblyOrder",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -749,10 +749,10 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-duration-units.html" : "Common UCUM Codes for Duration",
+      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
       "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
       "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
-      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
+      "http://hl7.org/fhir/R4/valueset-duration-units.html" : "Common UCUM Codes for Duration",
       "http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html" : "Body Temperature Units"
     },
     {
@@ -852,8 +852,8 @@
       "description" : "Schedule type",
       "uses" : {
       },
-      "ValueSet-fr-core-schedule-type.html" : "FR Core ValueSet Schedule type",
-      "ValueSet-fr-core-schedule-unavailability-reason.html" : "FR Core ValueSet Unavailability Reason"
+      "ValueSet-fr-core-schedule-unavailability-reason.html" : "FR Core ValueSet Unavailability Reason",
+      "ValueSet-fr-core-schedule-type.html" : "FR Core ValueSet Schedule type"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-type-admission",
@@ -911,6 +911,394 @@
       "uses" : {
       },
       "ValueSet-fr-core-organization-uf-activity-field.html" : "FR Core ValueSet Organization UF activity field"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_G08-TypeIdentifiantPersonne",
+      "title" : null,
+      "description" : "Type d'identifiant de personne",
+      "oids" : ["1.2.250.1.71.1.2.15"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_G15-ProfessionSante",
+      "title" : null,
+      "description" : "Professions de santé définies par le code de la santé publique",
+      "oids" : ["1.2.250.1.71.1.2.7"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-profession.html" : "FR Core ValueSet PractitionerRole Profession"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R02-SecteurActivite",
+      "title" : null,
+      "description" : "Secteur d'activité",
+      "oids" : ["1.2.250.1.71.4.2.4"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-organization-activity-field.html" : "FR Core ValueSet Organization activity field",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101-SecteurActivite-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R11-CiviliteExercice",
+      "title" : null,
+      "description" : "Civilité d'exercice",
+      "oids" : ["1.2.250.1.213.1.6.1.11"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-title.html" : "FR Core ValueSet Title",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79-CiviliteExercice-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R20-Pays",
+      "title" : null,
+      "description" : "Référentiel des codes pays provenant du COG INSEE",
+      "oids" : ["1.2.250.1.213.2.24"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-cog-commune-pays.html" : "FR Core ValueSet COG commune pays"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R21-Fonction",
+      "title" : null,
+      "description" : "Fonction",
+      "oids" : ["1.2.250.1.213.1.6.1.17"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R217-ProtectionJuridique",
+      "title" : null,
+      "description" : "Protection juridique",
+      "oids" : ["1.2.250.1.213.1.1.4.327"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-related-person-role.html" : "FR Core ValueSet Related person role"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R226-Dip2iemeCycleNQ",
+      "title" : null,
+      "description" : "Diplôme de 2ième cycle non qualifiant",
+      "oids" : ["1.2.250.1.213.1.6.1.118"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R256-TypeMessagerie",
+      "title" : null,
+      "description" : "Type de messagerie électronique",
+      "oids" : ["1.2.250.1.213.3.3.54"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-email-type.html" : "FR Core ValueSet Email type"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R260-HL7RoleClass",
+      "title" : null,
+      "description" : "Rôle de la personne point de contact auprès d'une autre personne repris de la terminologie HL7 v3 RoleClass (https://www.hl7.org/fhir/v3/RoleClass/cs.html)",
+      "oids" : ["2.16.840.1.113883.5.110"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-related-person.html" : "FR Core ValueSet Related person role",
+      "ValueSet-fr-core-related-person-role.html" : "FR Core ValueSet Related person role"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R291-AutreProfession",
+      "title" : null,
+      "description" : "Liste de professionnels non membres d'une profession réglementée",
+      "oids" : ["1.2.250.1.213.1.6.1.140"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-profession.html" : "FR Core ValueSet PractitionerRole Profession"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R348-FormationSpecialiseeTransversale/FHIR/TRE-R348-FormationSpecialiseeTransversale",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R348-FormationSpecialiseeTransversale",
+      "title" : null,
+      "description" : "Formation Spécialisée Transversale (FST)",
+      "oids" : ["1.2.250.1.213.1.6.1.251"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R36-AutreDiplomeObtenu",
+      "title" : null,
+      "description" : "Autre diplôme obtenu",
+      "oids" : ["1.2.250.1.213.1.6.1.54"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R38-SpecialiteOrdinale",
+      "title" : null,
+      "description" : "Spécialité ordinale",
+      "oids" : ["1.2.250.1.213.2.28"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-specialty.html" : "FR Core ValueSet Practitioner specialty"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R48-DiplomeEtatFrancais",
+      "title" : null,
+      "description" : "Diplôme de l'Etat français",
+      "oids" : ["1.2.250.1.213.1.6.1.31"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R49-DiplomeEtudeSpecialisee",
+      "title" : null,
+      "description" : "Diplôme d'Etudes Spécialisées",
+      "oids" : ["1.2.250.1.213.1.6.1.32"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R50-DESCGroupe1Diplome",
+      "title" : null,
+      "description" : "DESC Groupe 1 (diplôme)",
+      "oids" : ["1.2.250.1.213.1.6.1.48"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R51-DESCGroupe2Diplome",
+      "title" : null,
+      "description" : "DESC Groupe 2 (diplôme)",
+      "oids" : ["1.2.250.1.213.1.6.1.49"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R52-CapaciteDiplome",
+      "title" : null,
+      "description" : "Capacité (diplôme)",
+      "oids" : ["1.2.250.1.213.1.6.1.50"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R53-DiplomePaysEEE",
+      "title" : null,
+      "description" : "Diplôme d'un pays de l'EEE",
+      "oids" : ["1.2.250.1.213.1.6.1.51"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R54-DiplomeUniversiteInterUniversitaire",
+      "title" : null,
+      "description" : "Diplôme d'Université ou Inter-Universitaire",
+      "oids" : ["1.2.250.1.213.1.6.1.34"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R55-CertificatEtudeSpeciale",
+      "title" : null,
+      "description" : "Certificat d'Etude Spéciale",
+      "oids" : ["1.2.250.1.213.1.6.1.52"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R56-Attestation",
+      "title" : null,
+      "description" : "Attestation",
+      "oids" : ["1.2.250.1.213.1.6.1.27"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R57-DiplomeEuropeenEtudeSpecialisee",
+      "title" : null,
+      "description" : "Diplôme Européen d'Etudes Spécialisées",
+      "oids" : ["1.2.250.1.213.1.6.1.33"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R58-AutreTypeDiplome",
+      "title" : null,
+      "description" : "Autre type de diplôme",
+      "oids" : ["1.2.250.1.213.1.6.1.53"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-qualification.html" : "FR Core ValueSet Practitioner qualification",
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J105-EnsembleDiplome-RASS.html" : "JDV_J105-EnsembleDiplome-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R66-CategorieEtablissement",
+      "title" : null,
+      "description" : "Catégorie d'établissements",
+      "oids" : ["1.2.250.1.213.1.6.1.8"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129-CategorieEtablissement-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R81-Civilite",
+      "title" : null,
+      "description" : "Civilité",
+      "oids" : ["1.2.250.1.213.1.6.1.69"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J78-Civilite-RASS.html" : "JDV_J78-Civilite-RASS",
+      "ValueSet-fr-core-civility.html" : "FR Core ValueSet Civility"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R85-RolePriseCharge",
+      "title" : null,
+      "description" : "Rôle dans la prise en charge des patients ou des usagers",
+      "oids" : ["1.2.250.1.213.1.6.1.107"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R94-ProfessionSocial",
+      "title" : null,
+      "description" : "Profession du social",
+      "oids" : ["1.2.250.1.213.1.6.1.4"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-profession.html" : "FR Core ValueSet PractitionerRole Profession"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R95-UsagerTitre",
+      "title" : null,
+      "description" : "Usager de titre professionnel",
+      "oids" : ["1.2.250.1.213.1.6.1.109"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-profession.html" : "FR Core ValueSet PractitionerRole Profession"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R96-AutreFonctionSanitaire",
+      "title" : null,
+      "description" : "Autres fonctions du domaine sanitaire",
+      "oids" : ["1.2.250.1.213.1.6.1.110"],
+      "uses" : {
+      },
+      "ValueSet-fr-core-practitioner-role-exercice.html" : "FR Core ValueSet PractitionerRole Exercice"
     },
     {
       "url" : "urn:ietf:bcp:47",
