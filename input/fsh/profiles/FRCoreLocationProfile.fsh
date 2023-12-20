@@ -16,9 +16,10 @@ Description: "French profile of Location | Profil français de la ressource Loca
 * extension ^slicing.rules = #open
 * extension contains FRCoreUsePeriodExtension named usePeriod 0..1
 
-* identifier 1..
 * identifier.use from IdentifierUse (required)
+
 * identifier.type 1..
+* identifier ^short = "Identifiant fonctionnel du lieu. Il est recommandé de remplir ce champs pour faciliter l'identification des ressources."
 * identifier.type from FRCoreValueSetLocationIdentifierType (extensible)
 * identifier.type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * identifier.type ^binding.extension[=].valueString = "IdentifierType"
