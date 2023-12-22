@@ -27,8 +27,8 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
       "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension",
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
       "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice"
     },
     {
@@ -43,15 +43,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
+      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
       "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
       "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
       "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
       "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
-      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
-      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile"
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -238,10 +238,10 @@
       "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
       "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
-      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile"
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-email-type",
@@ -404,8 +404,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile",
-      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
+      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
+      "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-position-room",
@@ -459,10 +459,10 @@
       "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
       "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
-      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile"
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-uf-activity-field",
@@ -570,11 +570,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
       "StructureDefinition-fr-core-practitioner-specialty.html" : "FR Core Practitioner Specialty Extension",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
+      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
+      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
       "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile"
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person",
@@ -657,6 +657,99 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-identity-reliability.html" : "FR Core Patient Ident Reliability Extension"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "JDV_J101-SecteurActivite-RASS",
+      "title" : null,
+      "description" : "Secteurs d'activité des établissements avec la même activité dans le RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.169"],
+      "sources" : ["1.2.250.1.213.1.6.1.169"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "JDV_J105-EnsembleDiplome-RASS",
+      "title" : null,
+      "description" : "Ensemble des diplômes et qualifications du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+        "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire",
+        "https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ",
+        "https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee",
+        "https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu",
+        "https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R348-FormationSpecialiseeTransversale/FHIR/TRE-R348-FormationSpecialiseeTransversale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation",
+        "https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE",
+        "https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.173"],
+      "sources" : ["1.2.250.1.213.1.6.1.173"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "JDV_J129-CategorieEtablissement-RASS",
+      "title" : null,
+      "description" : "Catégorie d'établissement du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.215"],
+      "sources" : ["1.2.250.1.213.1.6.1.215"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "JDV_J78-Civilite-RASS",
+      "title" : null,
+      "description" : "Civilités des personnes physiques du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.146"],
+      "sources" : ["1.2.250.1.213.1.6.1.146"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-human-name.html" : "FR Core Human Name Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "JDV_J79-CiviliteExercice-RASS",
+      "title" : null,
+      "description" : "Civilités d'exercice d'un professionnel du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.147"],
+      "sources" : ["1.2.250.1.213.1.6.1.147"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-human-name.html" : "FR Core Human Name Profile"
     }
   ]
 }

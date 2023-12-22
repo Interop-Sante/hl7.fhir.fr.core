@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="draft"/>
-  <date value="2023-12-19T10:49:53+00:00"/>
+  <date value="2023-12-22T08:30:59+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -52,6 +52,11 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="ans_fr_nos">
+    <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
+    <packageId value="ans.fr.nos"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1804,6 +1809,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Accueil"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="bonnes_pratiques.html"/>
+        </extension>
+        <nameUrl value="bonnes_pratiques.html"/>
+        <title value="Bonnes pratiques"/>
         <generation value="markdown"/>
       </page>
       <page>
