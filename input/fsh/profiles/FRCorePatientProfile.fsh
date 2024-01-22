@@ -27,6 +27,10 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
 
+
+* identifier.type from $fr-core-patient-identifier-type (extensible)
+
+
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
@@ -49,7 +53,6 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[NDP] ^definition = "Pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique"
 * identifier[NDP].use = #secondary
 * identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant du patient au Dossier Pharmaceutique"
-* identifier[NDP].type from $fr-core-patient-identifier-type (extensible)
 * identifier[NDP].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * identifier[NDP].type ^binding.extension[=].valueBoolean = true
 * identifier[NDP].system 1..
