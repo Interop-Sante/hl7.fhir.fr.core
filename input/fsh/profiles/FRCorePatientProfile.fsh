@@ -18,7 +18,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * extension contains
     fr-core-nationality named nationality 0..1 and
-    FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and // Concertation : cardinalité à revoir ?
+    FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1
