@@ -47,7 +47,7 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 * name[officialName].given 1..1
 * name[officialName].given ^short = "Dans le cas d’une identité créée ou modifiée par un appel au téléservice INSi, il est nécessaire d’extraire le premier prénom de la liste des prénoms retournée par le téléservice et de l'inclure dans le champs given. En cas de prénom composé, given peut par exemple contenir 'Anne-sophie' ou 'Anne Sophie'."
 
-* name[officialName].extension contains fr-core-patient-birth-list-given-name named birth-list-given-name 1..1
+* name[officialName].extension[birth-list-given-name] 1..1
 
 
 Invariant:   fr-core-1

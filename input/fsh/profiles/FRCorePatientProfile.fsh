@@ -92,6 +92,9 @@ This profile specifies the patient's identifiers for France. It uses internation
 * name[officialName].use = #official
 * name[officialName].family 1..
 * name[officialName].given 1..1
+
+* name[officialName].extension contains fr-core-patient-birth-list-given-name named birth-list-given-name 0..1
+
 // TODO : rajouter l'extenion text
 
 
