@@ -35,12 +35,12 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
 * identifier ^slicing.rules = #open
-* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS"
+* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 * identifier contains
     INS-C 0..* and
     NDP 0..1 and
     PI 0..1 and
-    RRI 0..1
+    RRI 0..*
 
 * identifier[INS-C] ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use = #secondary
