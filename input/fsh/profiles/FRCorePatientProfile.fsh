@@ -38,7 +38,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 * identifier contains
     INS-C 0..* and
-    NDP 0..1 and
+    NDP 0..* and
     PI 0..1 and
     RRI 0..*
 
