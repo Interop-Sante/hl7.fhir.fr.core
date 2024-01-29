@@ -248,7 +248,7 @@
         
           Draft
           
-            as of 2024-01-22
+            as of 2024-01-29
           
         
       </td>
@@ -511,7 +511,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Practitioner</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Practitioner.modifierExtension, Practitioner.telecom.extension:emailType, Practitioner.qualification.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -787,7 +787,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Practitioner</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Practitioner.meta.extension, Practitioner.extension, Practitioner.modifierExtension, Practitioner.identifier.extension, Practitioner.identifier.type.extension, Practitioner.identifier.type.coding.extension, Practitioner.telecom.extension, Practitioner.telecom.extension:emailType, Practitioner.qualification.extension, Practitioner.qualification.modifierExtension, Practitioner.qualification.code.extension, Practitioner.qualification.code.coding:degreeR36.extension, Practitioner.qualification.code.coding:degreeR47.extension, Practitioner.qualification.code.coding:degreeR48.extension, Practitioner.qualification.code.coding:degreeR49.extension, Practitioner.qualification.code.coding:degreeR50.extension, Practitioner.qualification.code.coding:degreeR51.extension, Practitioner.qualification.code.coding:degreeR52.extension, Practitioner.qualification.code.coding:degreeR53.extension, Practitioner.qualification.code.coding:degreeR54.extension, Practitioner.qualification.code.coding:degreeR55.extension, Practitioner.qualification.code.coding:degreeR56.extension, Practitioner.qualification.code.coding:degreeR57.extension, Practitioner.qualification.code.coding:degreeR58.extension, Practitioner.qualification.code.coding:degreeR226.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Practitioner.identifier.period, Practitioner.telecom.period, Practitioner.qualification.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Practitioner.identifier.assigner, Practitioner.qualification.issuer</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -1253,7 +1253,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Practitioner</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Practitioner.modifierExtension, Practitioner.telecom.extension:emailType, Practitioner.qualification.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
 
           
@@ -1529,7 +1529,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Practitioner</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Practitioner.meta.extension, Practitioner.extension, Practitioner.modifierExtension, Practitioner.identifier.extension, Practitioner.identifier.type.extension, Practitioner.identifier.type.coding.extension, Practitioner.telecom.extension, Practitioner.telecom.extension:emailType, Practitioner.qualification.extension, Practitioner.qualification.modifierExtension, Practitioner.qualification.code.extension, Practitioner.qualification.code.coding:degreeR36.extension, Practitioner.qualification.code.coding:degreeR47.extension, Practitioner.qualification.code.coding:degreeR48.extension, Practitioner.qualification.code.coding:degreeR49.extension, Practitioner.qualification.code.coding:degreeR50.extension, Practitioner.qualification.code.coding:degreeR51.extension, Practitioner.qualification.code.coding:degreeR52.extension, Practitioner.qualification.code.coding:degreeR53.extension, Practitioner.qualification.code.coding:degreeR54.extension, Practitioner.qualification.code.coding:degreeR55.extension, Practitioner.qualification.code.coding:degreeR56.extension, Practitioner.qualification.code.coding:degreeR57.extension, Practitioner.qualification.code.coding:degreeR58.extension, Practitioner.qualification.code.coding:degreeR226.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Practitioner.identifier.period, Practitioner.telecom.period, Practitioner.qualification.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Practitioner.identifier.assigner, Practitioner.qualification.issuer</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -1890,7 +1890,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 22, 2024 11:10+0000">2024-01-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 29, 2024 10:14+0000">2024-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
