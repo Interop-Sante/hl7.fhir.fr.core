@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPatientGenderINS
-Id: fr-core-patient-gender-INS
+Id: fr-core-vs-patient-gender-INS
 Title: "FR Core ValueSet Patient gender INS ValueSet"
 Description: "Patient Gender for INS : male | female | unknown"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

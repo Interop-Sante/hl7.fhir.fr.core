@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPractitionerRoleProfession
-Id: fr-core-practitioner-role-profession
+Id: fr-core-vs-practitioner-role-profession
 Title: "FR Core ValueSet PractitionerRole Profession"
 Description: "The profession(s) of the practitioner."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

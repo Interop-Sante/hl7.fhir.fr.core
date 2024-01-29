@@ -1,5 +1,5 @@
 CodeSystem: FRCoreCodeSystemLocationPositionRoom
-Id: fr-core-location-position-room
+Id: fr-core-cs-location-position-room
 Title: "FR Core CodeSystem Location Position Room"
 Description: "Location position room"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"

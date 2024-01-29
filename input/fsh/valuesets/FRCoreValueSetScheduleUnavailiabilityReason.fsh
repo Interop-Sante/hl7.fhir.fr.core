@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetUnavailabilityReason
-Id: fr-core-schedule-unavailability-reason
+Id: fr-core-vs-schedule-unavailability-reason
 Title: "FR Core ValueSet Unavailability Reason"
 Description: "Raison d'indisponibilité"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

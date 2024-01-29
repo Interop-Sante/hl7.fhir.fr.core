@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetEncounterIdentifierType
-Id: fr-core-encounter-identifier-type
+Id: fr-core-vs-encounter-identifier-type
 Title: "FR Core ValueSet Encounter identifier type"
 Description: "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters)."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

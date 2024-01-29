@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetCivilityExerciceRASS
-Id: fr-core-civility-exercice-rass
+Id: fr-core-vs-civility-exercice-rass
 Title: "FR Core ValueSet Civility exercice RASS"
 Description: "Civilités d'exercice d'un professionnel du RASS"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

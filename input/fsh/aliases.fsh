@@ -70,34 +70,34 @@ Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://hl7.org/fhir/h
 // ###############
 
 // CS
-Alias: $fr-circonstances-sortie = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie
-Alias: $fr-contact-relationship = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship
+Alias: $fr-circonstances-sortie = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie
+Alias: $fr-contact-relationship = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship
 Alias: $fr-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-coreidentifier-type
-Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type
-Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-type-admission
-Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-identifier-type
-Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type
-Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-position-room
-Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type
-Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203
-Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311
-Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307
-Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445
+Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type
+Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission
+Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type
+Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type
+Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room
+Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type
+Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203
+Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311
+Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307
+Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445
 
 // VS
-Alias: $fr-core-patient-identifier-type = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-identifier-type
+Alias: $fr-core-patient-identifier-type = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type
 Alias: $fr-practitioner-role-exercice = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-role-exercice
 Alias: $fr-practitioner-specialty = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-specialty
-Alias: $fr-practitioner-role-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-profession
-Alias: $fr-core-mode-validation-identite = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-mode-validation-identite
-Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-height-body-position
-Alias: $fr-core-practitioner-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-profession
+Alias: $fr-practitioner-role-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession
+Alias: $fr-core-mode-validation-identite = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identite
+Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position
+Alias: $fr-core-practitioner-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession
 Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-role-categorie-professionnelle
-Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-schedule-unavailability-reason
-Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-heart-rate-method
-Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-bp-measurement-method
-Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-weight-measurement-method
-Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-heart-rate-body-position
+Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
+Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method
+Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method
+Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method
+Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position
 
 // SD
 Alias: $fr-core-observation-level-of-exertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion // A corriger

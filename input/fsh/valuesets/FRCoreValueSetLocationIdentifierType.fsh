@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetLocationIdentifierType
-Id: fr-core-location-identifier-type
+Id: fr-core-vs-location-identifier-type
 Title: "FR Core ValueSet Location identifier type"
 Description: "A coded type for a location | Jeu de valeurs des types d'identifiant de lieu."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

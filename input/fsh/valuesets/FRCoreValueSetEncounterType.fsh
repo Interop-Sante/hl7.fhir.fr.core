@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetEncounterType
-Id: fr-core-encounter-type
+Id: fr-core-vs-encounter-type
 Title: "FR Core ValueSet Encounter type"
 Description: "A coded type for an encounter | Jeu de valeurs des types de rencontre."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

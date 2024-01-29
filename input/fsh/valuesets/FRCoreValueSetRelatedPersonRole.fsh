@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetRelatedPersonRole
-Id: fr-core-related-person-role
+Id: fr-core-vs-related-person-role
 Title: "FR Core ValueSet Related person role"
 Description: "Value set related person role"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

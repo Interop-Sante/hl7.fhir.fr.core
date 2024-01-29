@@ -38,7 +38,7 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 * identifier[INS-NIA].value 1..
 
 * gender 1..1
-* gender from fr-core-patient-gender-INS (required)
+* gender from fr-core-vs-patient-gender-INS (required)
 * gender ^short = "male | female | unknown"
 
 * birthDate 1..

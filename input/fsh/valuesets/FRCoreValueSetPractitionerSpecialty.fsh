@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPractitionerSpecialty
-Id: fr-core-practitioner-specialty
+Id: fr-core-vs-practitioner-specialty
 Title: "FR Core ValueSet Practitioner specialty"
 Description: "The modalities of exercice of the practitioner, registered by an official organization for a period of time."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

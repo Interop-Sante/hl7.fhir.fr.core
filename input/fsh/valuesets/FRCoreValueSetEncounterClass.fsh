@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetEncounterClass
-Id: fr-core-encounter-class
+Id: fr-core-vs-encounter-class
 Title: "FR Core ValueSet Encounter class"
 Description: "A set of codes that can be used to indicate the class of the encounter."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

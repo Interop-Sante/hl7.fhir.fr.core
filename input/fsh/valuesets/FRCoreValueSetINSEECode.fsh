@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetINSEECode
-Id: fr-core-insee-code
+Id: fr-core-vs-insee-code
 Title: "FR Core ValueSet INSEE code"
 Description: "the French Address Insee Codes"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

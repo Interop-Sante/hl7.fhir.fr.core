@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetHeightBodyPosition
-Id: fr-core-height-body-position
+Id: fr-core-vs-height-body-position
 Title: "FR Core ValueSet BodyPosition"
 Description: "ValueSet Body Position"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

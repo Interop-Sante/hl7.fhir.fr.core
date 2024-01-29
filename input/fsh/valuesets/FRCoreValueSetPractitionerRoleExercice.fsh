@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPractitionerRoleExercice
-Id: fr-core-practitioner-role-exercice
+Id: fr-core-vs-practitioner-role-exercice
 Title: "FR Core ValueSet PractitionerRole Exercice"
 Description: "The exercice(s) of the practitioner."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
