@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-physical-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-location-physical-type"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-fr-core-location-physical-type.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-FTL\">FTL</a></td><td>Emplacement fauteuil</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-BTMNT\">BTMNT</a></td><td>Bâtiment</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-L\">L</a></td><td>Lieu non spécifié</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-ETG\">ETG</a></td><td>Etage</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-AL\">AL</a></td><td>Aile</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-CLR\">CLR</a></td><td>Couloir</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-R\">R</a></td><td>Chambre</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-BX\">BX</a></td><td>Box</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-PT\">PT</a></td><td>Point</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-B\">B</a></td><td>Emplacement lit</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-BLC\">BLC</a></td><td>Bloc</td></tr><tr><td><a href=\"CodeSystem-fr-core-location-physical-type.html#fr-core-location-physical-type-BR\">BR</a></td><td>Bureau</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-warning"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "informative" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fhir" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-physical-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetLocationPhysicalType"] ; # 
+  fhir:title [ fhir:v "FR Core ValueSet Location physical type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-29T15:44:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "French location physical type | Types de lieux physiques pour la France"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "FTL" ] ;
+         fhir:display [ fhir:v "Emplacement fauteuil" ]
+       ] [
+         fhir:code [ fhir:v "BTMNT" ] ;
+         fhir:display [ fhir:v "Bâtiment" ]
+       ] [
+         fhir:code [ fhir:v "L" ] ;
+         fhir:display [ fhir:v "Lieu non spécifié" ]
+       ] [
+         fhir:code [ fhir:v "ETG" ] ;
+         fhir:display [ fhir:v "Etage" ]
+       ] [
+         fhir:code [ fhir:v "AL" ] ;
+         fhir:display [ fhir:v "Aile" ]
+       ] [
+         fhir:code [ fhir:v "CLR" ] ;
+         fhir:display [ fhir:v "Couloir" ]
+       ] [
+         fhir:code [ fhir:v "R" ] ;
+         fhir:display [ fhir:v "Chambre" ]
+       ] [
+         fhir:code [ fhir:v "BX" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] [
+         fhir:code [ fhir:v "PT" ] ;
+         fhir:display [ fhir:v "Point" ]
+       ] [
+         fhir:code [ fhir:v "B" ] ;
+         fhir:display [ fhir:v "Emplacement lit" ]
+       ] [
+         fhir:code [ fhir:v "BLC" ] ;
+         fhir:display [ fhir:v "Bloc" ]
+       ] [
+         fhir:code [ fhir:v "BR" ] ;
+         fhir:display [ fhir:v "Bureau" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
