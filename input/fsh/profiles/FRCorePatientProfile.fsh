@@ -23,13 +23,9 @@ This profile specifies the patient's identifiers for France. It uses internation
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1
 
-
-
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
 
-
 * identifier.type from $fr-core-patient-identifier-type (extensible)
-
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
@@ -38,7 +34,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 * identifier contains
     INS-C 0..* and
-    NDP 0..* and
+    NDP 0..1 and
     PI 0..1 and
     RRI 0..*
 
@@ -49,8 +45,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[INS-C].system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier[INS-C].value 1..
 
-* identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français"
-* identifier[NDP] ^definition = "Pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique"
+* identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français. Celui-ci est unique."
 * identifier[NDP].use = #secondary
 * identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant du patient au Dossier Pharmaceutique"
 * identifier[NDP].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
