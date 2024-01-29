@@ -6,6 +6,7 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 
 * obeys fr-core-1
 
+
 * extension[identityReliability] 1..1
 * extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-fiabilite-identite#VALI
 
