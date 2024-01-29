@@ -52,7 +52,6 @@ Alias: $resprate = http://hl7.org/fhir/StructureDefinition/resprate
 Alias: $oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS
 
 
