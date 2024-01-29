@@ -26,6 +26,6 @@ This profile specifies the patient's identifiers for France. It uses internation
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
 
-* method from $ValueSet-respiratoryRateMeasMethodVS.html (example)
+* method from $ValueSet-respiratoryRateMeasMethodVS (example)
 
 * value[x] ^slicing.rules = #open

@@ -23,6 +23,6 @@ Description: "French profil body temperature | Profil français de la mesure de 
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreOrganizationProfile or PractitionerRole)
-* bodySite from $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html (example)
+* bodySite from $ValueSet-bodyTempMeasBodyLocationPrecoordVS (example)
 
 * value[x] ^slicing.rules = #open

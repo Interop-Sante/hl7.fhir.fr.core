@@ -57,13 +57,13 @@ Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasB
 
 
 // opencimi
-Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS.html = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heartRateMeasMethodVS.html = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS
-Alias: $ValueSet-respiratoryRateMeasMethodVS.html = http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS
-Alias: $ValueSet-sPO2BodyLocationVS.html = http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS
-Alias: $ValueSet-bodyPositionVS.html = http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS
+Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS
+Alias: $ValueSet-respiratoryRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS
+Alias: $ValueSet-sPO2BodyLocationVS = http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS
+Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS
+Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
+Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS
 Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
-Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS.html = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
 
 // ###############
 // # FrCore link #
