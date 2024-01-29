@@ -7,7 +7,7 @@ Description: "Identifier type"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #P "PACS"
+* #PACS "PACS"
 
 // SCS profile
 * ^experimental = false
