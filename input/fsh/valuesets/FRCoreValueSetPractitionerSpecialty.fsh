@@ -12,7 +12,7 @@ Description: "The modalities of exercice of the practitioner, registered by an o
 * ^extension[=].valueCode = #pc
 
 * ^identifier.system = "urn:oid:1.2.250.1.71.4.2.5"
-* ^identifier.value = "http://interopsante.org/fhir/ValueSet/fr-practitioner-specialty"
+* ^identifier.value = "http://interopsante.org/fhir/ValueSet/fr-core-vs-practitioner-specialty"
 
 * ^immutable = true
 * include codes from system $TRE-R38-SpecialiteOrdinale
