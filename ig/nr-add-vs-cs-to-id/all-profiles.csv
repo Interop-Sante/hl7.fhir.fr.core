@@ -7638,7 +7638,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.identifier","Patient.identifier","","","",1,*,"","","Y","Identifier {[]} {[]}
-","National Health Identifier | Identifiant national de santé","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"","value:type}
+","An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS.","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"","value:type}
 ","slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)",,"open","Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -7686,7 +7686,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
-"fr-core-patient-ins","Patient.identifier:NDP","Patient.identifier","NDP","","",0,1,"","","Y","Identifier {[]} {[]}
+"fr-core-patient-ins","Patient.identifier:NDP","Patient.identifier","NDP","","",0,*,"","","Y","Identifier {[]} {[]}
 ","French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français","Pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -7774,7 +7774,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
-"fr-core-patient-ins","Patient.identifier:RRI","Patient.identifier","RRI","","",0,1,"","","Y","Identifier {[]} {[]}
+"fr-core-patient-ins","Patient.identifier:RRI","Patient.identifier","RRI","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Regional Registry ID | Identifiant régional","Regional Registry ID | Identifiant régional","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8030,7 +8030,7 @@ dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient-ins","Patient.maritalStatus","Patient.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Marital (civil) status of a patient","This field contains a patient's most recent marital (civil) status.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Most, if not all systems capture it.","","","","","","","",,"extensible","The domestic partnership status of a person.","http://hl7.org/fhir/ValueSet/marital-status","",,,,"Patient.maritalStatus",0,1,"ele-1
+","Marital (civil) status of a patient","This field contains a patient's most recent marital (civil) status.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Most, if not all systems capture it.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status","",,,,"Patient.maritalStatus",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient-ins","Patient.multipleBirth[x]","Patient.multipleBirth[x]","","","",0,1,"","","","boolean {[]} {[]}
@@ -8306,7 +8306,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Nationality","The nationality of the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-patient","Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
+"fr-core-patient","Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
 ","Reliabilility of the identity | Fiabilité de l'identité","Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -8345,7 +8345,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.identifier","Patient.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
-","National Health Identifier | Identifiant national de santé","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"","value:type}
+","An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS.","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"","value:type}
 ","slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)",,"open","Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8427,7 +8427,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
-"fr-core-patient","Patient.identifier:NDP","Patient.identifier","NDP","","",0,1,"","","Y","Identifier {[]} {[]}
+"fr-core-patient","Patient.identifier:NDP","Patient.identifier","NDP","","",0,*,"","","Y","Identifier {[]} {[]}
 ","French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français","Pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8515,7 +8515,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
-"fr-core-patient","Patient.identifier:RRI","Patient.identifier","RRI","","",0,1,"","","Y","Identifier {[]} {[]}
+"fr-core-patient","Patient.identifier:RRI","Patient.identifier","RRI","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Regional Registry ID | Identifiant régional","Regional Registry ID | Identifiant régional","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -8686,7 +8686,7 @@ dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient","Patient.maritalStatus","Patient.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Marital (civil) status of a patient","This field contains a patient's most recent marital (civil) status.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Most, if not all systems capture it.","","","","","","","",,"extensible","The domestic partnership status of a person.","http://hl7.org/fhir/ValueSet/marital-status","",,,,"Patient.maritalStatus",0,1,"ele-1
+","Marital (civil) status of a patient","This field contains a patient's most recent marital (civil) status.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Most, if not all systems capture it.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status","",,,,"Patient.maritalStatus",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient","Patient.multipleBirth[x]","Patient.multipleBirth[x]","","","",0,1,"","","","boolean {[]} {[]}

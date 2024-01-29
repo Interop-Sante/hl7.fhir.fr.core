@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-29T12:33:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-29T12:36:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -698,6 +698,18 @@
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Location Type" ] ;
        fhir:description [ fhir:v "Location type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-marital-status" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core CodeSystem Marital Status" ] ;
+       fhir:description [ fhir:v "Identifier type" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1818,6 +1830,18 @@
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Organization UF activity field" ] ;
        fhir:description [ fhir:v "Organization UF activity field | Champ d'activité des structures UF" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-marital-status" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient gender INS ValueSet" ] ;
+       fhir:description [ fhir:v "Patient Gender for INS : male | female | unknown" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
