@@ -248,7 +248,7 @@
         
           Draft
           
-            as of 2024-01-25
+            as of 2024-01-29
           
         
       </td>
@@ -450,7 +450,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Encounter.extension:estimatedDischargeDate, Encounter.modifierExtension, Encounter.participant.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Encounter.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Encounter.identifier.assigner, Encounter.subject, Encounter.participant.individual, Encounter.appointment, Encounter.account, Encounter.serviceProvider, Encounter.partOf</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -666,7 +666,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>drt-1</td><td>error</td><td>Encounter.length</td><td>There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.<br/>: code.exists() implies ((system = %ucum) and value.exists())</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Encounter.meta.extension, Encounter.extension, Encounter.extension:estimatedDischargeDate, Encounter.modifierExtension, Encounter.identifier.extension, Encounter.statusHistory.extension, Encounter.statusHistory.modifierExtension, Encounter.class.extension, Encounter.classHistory.extension, Encounter.classHistory.modifierExtension, Encounter.participant.extension, Encounter.participant.modifierExtension, Encounter.diagnosis.extension, Encounter.diagnosis.modifierExtension, Encounter.hospitalization.extension, Encounter.hospitalization.modifierExtension, Encounter.hospitalization.preAdmissionIdentifier.extension, Encounter.location.extension, Encounter.location.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Encounter.identifier.period, Encounter.statusHistory.period, Encounter.classHistory.period, Encounter.participant.period, Encounter.period, Encounter.hospitalization.preAdmissionIdentifier.period, Encounter.location.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>qty-3</td><td>error</td><td>Encounter.length</td><td>If a code for the unit is present, the system SHALL also be present<br/>: code.empty() or system.exists()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Encounter.identifier.assigner, Encounter.subject, Encounter.episodeOfCare, Encounter.basedOn, Encounter.participant.individual, Encounter.appointment, Encounter.reasonReference, Encounter.diagnosis.condition, Encounter.account, Encounter.hospitalization.preAdmissionIdentifier.assigner, Encounter.hospitalization.origin, Encounter.hospitalization.destination, Encounter.location.location, Encounter.serviceProvider, Encounter.partOf</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
@@ -995,7 +995,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Encounter.extension:estimatedDischargeDate, Encounter.modifierExtension, Encounter.participant.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Encounter.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Encounter.identifier.assigner, Encounter.subject, Encounter.participant.individual, Encounter.appointment, Encounter.account, Encounter.serviceProvider, Encounter.partOf</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -1211,7 +1211,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>drt-1</td><td>error</td><td>Encounter.length</td><td>There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.<br/>: code.exists() implies ((system = %ucum) and value.exists())</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Encounter.meta.extension, Encounter.extension, Encounter.extension:estimatedDischargeDate, Encounter.modifierExtension, Encounter.identifier.extension, Encounter.statusHistory.extension, Encounter.statusHistory.modifierExtension, Encounter.class.extension, Encounter.classHistory.extension, Encounter.classHistory.modifierExtension, Encounter.participant.extension, Encounter.participant.modifierExtension, Encounter.diagnosis.extension, Encounter.diagnosis.modifierExtension, Encounter.hospitalization.extension, Encounter.hospitalization.modifierExtension, Encounter.hospitalization.preAdmissionIdentifier.extension, Encounter.location.extension, Encounter.location.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Encounter.identifier.period, Encounter.statusHistory.period, Encounter.classHistory.period, Encounter.participant.period, Encounter.period, Encounter.hospitalization.preAdmissionIdentifier.period, Encounter.location.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>qty-3</td><td>error</td><td>Encounter.length</td><td>If a code for the unit is present, the system SHALL also be present<br/>: code.empty() or system.exists()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Encounter.identifier.assigner, Encounter.subject, Encounter.episodeOfCare, Encounter.basedOn, Encounter.participant.individual, Encounter.appointment, Encounter.reasonReference, Encounter.diagnosis.condition, Encounter.account, Encounter.hospitalization.preAdmissionIdentifier.assigner, Encounter.hospitalization.origin, Encounter.hospitalization.destination, Encounter.location.location, Encounter.serviceProvider, Encounter.partOf</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
@@ -1492,7 +1492,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 25, 2024 10:58+0000">2024-01-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 29, 2024 09:41+0000">2024-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

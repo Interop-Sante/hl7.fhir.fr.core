@@ -21,7 +21,7 @@
   <name value="FRCorePatientBirthPlaceExtension"/>
   <title value="FR Core Patient Birth Place Extension"/>
   <status value="draft"/>
-  <date value="2024-01-25T10:58:01+00:00"/>
+  <date value="2024-01-29T09:41:10+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -151,7 +151,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
     <element id="Extension.url">
@@ -280,7 +280,7 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mapping>
         <identity value="rim"/>
@@ -777,7 +777,7 @@
         <human value="If present, start SHALL have a lower value than end"/>
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Contract"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
