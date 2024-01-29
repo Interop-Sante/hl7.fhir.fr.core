@@ -1911,61 +1911,6 @@ Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]
 ","A list of events of interest in the lifecycle","A summary of the events of interest that have occurred, such as when the administration was verified.","This might not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the Provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the Provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.","","","","","","","","",,,,,"",,,,"MedicationAdministration.eventHistory",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
-"fr-core-nationality","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Patient Nationalité","Nationalité du patient","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-nationality","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"fr-core-nationality","Extension.extension","Extension.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-nationality","Extension.extension:code","Extension.extension","code","","",0,1,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-nationality","Extension.extension:code.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"fr-core-nationality","Extension.extension:code.extension","Extension.extension.extension","","extensions
-user content","",0,0,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-nationality","Extension.extension:code.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""code""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"fr-core-nationality","Extension.extension:code.value[x]","Extension.extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","https://www.hl7.org/fhir/valueset-country.html","",,,,"Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"fr-core-nationality","Extension.extension:period","Extension.extension","period","extensions
-user content","",0,1,"","","","Extension {[]} {[]}
-","Nationality Period","Period when nationality was effective.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-nationality","Extension.extension:period.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"fr-core-nationality","Extension.extension:period.extension","Extension.extension.extension","","extensions
-user content","",0,0,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-nationality","Extension.extension:period.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""period""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"fr-core-nationality","Extension.extension:period.value[x]","Extension.extension.value[x]","","","",1,1,"","","","Period {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"fr-core-nationality","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/patient-nationality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"fr-core-nationality","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
-boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "fr-core-observation-bmi","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}
 ","FHIR Body Mass Index (BMI) Profile","This profile defines  how to represent Body Mass Index (BMI) observations in FHIR using a standard LOINC code and UCUM units of measure.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
@@ -7488,8 +7433,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-patient-ins","Patient.extension:nationality","Patient.extension","nationality","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality]]} {[]}
-","FR Core Patient Nationalité","Nationalité du patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"fr-core-patient-ins","Patient.extension:nationality","Patient.extension","nationality","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality]]} {[]}
+","Nationality","The nationality of the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.extension:identityReliability","Patient.extension","identityReliability","","",1,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
@@ -8260,7 +8205,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "fr-core-patient-nationality","Extension.extension:code.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""code""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "fr-core-patient-nationality","Extension.extension:code.value[x]","Extension.extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/country","",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient-nationality","Extension.extension:period","Extension.extension","period","","",0,1,"","","","Extension {[]} {[]}
@@ -8357,8 +8302,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"fr-core-patient","Patient.extension:nationality","Patient.extension","nationality","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality]]} {[]}
-","FR Core Patient Nationalité","Nationalité du patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"fr-core-patient","Patient.extension:nationality","Patient.extension","nationality","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality]]} {[]}
+","Nationality","The nationality of the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
@@ -9048,7 +8993,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "fr-core-practitioner-role-exercice","PractitionerRole.code","PractitionerRole.code","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation","The role a person plays representing an organization | Situation d'exercice (Fonction dans le NOS)","A person may have more than one role.","Need to know what authority the practitioner has - what can they do?","","","","","","","",,"required","The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS.","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vspractitioner-role-exercice","",,,,"PractitionerRole.code",0,*,"ele-1
+","The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation","The role a person plays representing an organization | Situation d'exercice (Fonction dans le NOS)","A person may have more than one role.","Need to know what authority the practitioner has - what can they do?","","","","","","","",,"required","The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS.","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice","",,,,"PractitionerRole.code",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-practitioner-role-exercice","PractitionerRole.specialty","PractitionerRole.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
@@ -10374,7 +10319,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-role-code-categorie-professionnelle","Extension.value[x].coding","Extension.value[x].coding","","","",1,1,"","","Y","Coding {[]} {[]}
-","code de TRE_R09-CategorieProfessionnelle du MOS de l'ANS.","Le code de la catégorie professionnelle selon le système de codage TRE_R09-CategorieProfessionnelle du MOS de l'ANS.","Ce système de codage comporte 4 valeurs dont seule ""E"" est utile en production de soins pour discriminer les étudiants des différentes professions de santé réglementées.","Le seul moyen de discriminer les étudiants dans le MOS qui traduit l'implémentation du système CPS et du RPPS.","","","","","","","",,"required","MOS ANS / TRE_R09-CategorieProfessionnelle","https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-role-categorie-professionnelle","",,,,"CodeableConcept.coding",0,*,"ele-1
+","code de TRE_R09-CategorieProfessionnelle du MOS de l'ANS.","Le code de la catégorie professionnelle selon le système de codage TRE_R09-CategorieProfessionnelle du MOS de l'ANS.","Ce système de codage comporte 4 valeurs dont seule ""E"" est utile en production de soins pour discriminer les étudiants des différentes professions de santé réglementées.","Le seul moyen de discriminer les étudiants dans le MOS qui traduit l'implémentation du système CPS et du RPPS.","","","","","","","",,"required","MOS ANS / TRE_R09-CategorieProfessionnelle","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-role-code-categorie-professionnelle","Extension.value[x].text","Extension.value[x].text","","","",0,1,"","","Y","string {[]} {[]}

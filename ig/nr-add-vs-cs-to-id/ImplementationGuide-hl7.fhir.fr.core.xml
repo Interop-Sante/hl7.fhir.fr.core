@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="draft"/>
-  <date value="2024-01-29T09:55:21+00:00"/>
+  <date value="2024-01-29T12:33:53+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1146,7 +1146,7 @@
         <reference value="StructureDefinition/fr-core-observation-resp-rate"/>
       </reference>
       <name value="FR Core Oservation Resp Rate Profile"/>
-      <description value="Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France&#xA;This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France."/>
+      <description value="Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1223,17 +1223,6 @@
       </reference>
       <name value="FR Core Patient INS Profile"/>
       <description value="Profil FRCorePatientProfile appliqué à l'INS avec identité validée, permettant d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec une INS validée. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS ."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-nationality"/>
-      </reference>
-      <name value="FR Core Patient Nationalité"/>
-      <description value="Nationalité du patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1669,7 +1658,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-identifier-type-v1-0"/>
+        <reference value="ValueSet/fr-core-vs-patient-identifier-type"/>
       </reference>
       <name value="FR Core ValueSet Patient identifier type"/>
       <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient)."/>

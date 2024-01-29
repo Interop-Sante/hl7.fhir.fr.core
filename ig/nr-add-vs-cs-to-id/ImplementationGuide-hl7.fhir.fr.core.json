@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "draft",
-  "date" : "2024-01-29T09:55:21+00:00",
+  "date" : "2024-01-29T12:33:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1365,7 +1365,7 @@
         "reference" : "StructureDefinition/fr-core-observation-resp-rate"
       },
       "name" : "FR Core Oservation Resp Rate Profile",
-      "description" : "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France\nThis profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.",
+      "description" : "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France",
       "exampleBoolean" : false
     },
     {
@@ -1449,18 +1449,6 @@
       },
       "name" : "FR Core Patient INS Profile",
       "description" : "Profil FRCorePatientProfile appliqué à l'INS avec identité validée, permettant d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec une INS validée. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS .",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-nationality"
-      },
-      "name" : "FR Core Patient Nationalité",
-      "description" : "Nationalité du patient",
       "exampleBoolean" : false
     },
     {
@@ -1936,7 +1924,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-identifier-type-v1-0"
+        "reference" : "ValueSet/fr-core-vs-patient-identifier-type"
       },
       "name" : "FR Core ValueSet Patient identifier type",
       "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).",

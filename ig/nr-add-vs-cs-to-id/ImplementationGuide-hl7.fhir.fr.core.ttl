@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-29T09:55:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-29T12:33:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -1279,7 +1279,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-resp-rate" ]
        ] ;
        fhir:name [ fhir:v "FR Core Oservation Resp Rate Profile" ] ;
-       fhir:description [ fhir:v "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France\nThis profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France." ] ;
+       fhir:description [ fhir:v "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1363,18 +1363,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
        fhir:description [ fhir:v "Profil FRCorePatientProfile appliqué à l'INS avec identité validée, permettant d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec une INS validée. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS ." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-nationality" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Patient Nationalité" ] ;
-       fhir:description [ fhir:v "Nationalité du patient" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1849,8 +1837,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identifier-type-v1-0> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-identifier-type-v1-0" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-identifier-type" ]
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Patient identifier type" ] ;
        fhir:description [ fhir:v "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient)." ] ;
