@@ -86,13 +86,13 @@ Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0
 
 // VS
 Alias: $fr-core-patient-identifier-type = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type
-Alias: $fr-practitioner-role-exercice = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vspractitioner-role-exercice
+Alias: $fr-practitioner-role-exercice = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice
 Alias: $fr-practitioner-specialty = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty
 Alias: $fr-practitioner-role-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession
 Alias: $fr-core-mode-validation-identite = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identite
 Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position
 Alias: $fr-core-practitioner-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession
-Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-practitioner-role-categorie-professionnelle
+Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle
 Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
 Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method
 Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method
