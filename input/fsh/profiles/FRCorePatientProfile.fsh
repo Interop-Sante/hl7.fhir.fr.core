@@ -107,7 +107,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * address only FRCoreAddressProfile
 
-* maritalStatus from fr-core-marital-status (extensible)
+* maritalStatus from fr-core-vs-marital-status (extensible)
 
 * contact.extension ^slicing.discriminator.type = #value
 * contact.extension ^slicing.discriminator.path = "url"
