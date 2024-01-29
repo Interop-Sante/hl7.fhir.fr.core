@@ -6,7 +6,7 @@ Description: "Patient Gender for INS : male | female | unknown"
 
 * include codes from system fr-core-cs-marital-status
 * include codes from system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
-* http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "FINESS d'entité juridique"
+* http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK "unknown"
 
 
 // SVS profile
