@@ -18,7 +18,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 
 * extension contains
     fr-core-nationality named nationality 0..1 and
-    FRCorePatientIdentityReliabilityExtension named identityReliability 0..1 and // Concertation : cardinalité à revoir ?
+    FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1
@@ -35,12 +35,12 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
 * identifier ^slicing.rules = #open
-* identifier ^short = "National Health Identifier | Identifiant national de santé"
+* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 * identifier contains
     INS-C 0..* and
-    NDP 0..1 and
+    NDP 0..* and
     PI 0..1 and
-    RRI 0..1
+    RRI 0..*
 
 * identifier[INS-C] ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use = #secondary
@@ -106,6 +106,8 @@ This profile specifies the patient's identifiers for France. It uses internation
 * birthDate ^definition = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 
 * address only FRCoreAddressProfile
+
+* maritalStatus from fr-core-vs-marital-status (extensible)
 
 * contact.extension ^slicing.discriminator.type = #value
 * contact.extension ^slicing.discriminator.path = "url"
