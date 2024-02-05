@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetCOGCommunePays
-Id: fr-core-cog-commune-pays
+Id: fr-core-vs-cog-commune-pays
 Title: "FR Core ValueSet COG commune pays"
 Description: "Value set town and country COG"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

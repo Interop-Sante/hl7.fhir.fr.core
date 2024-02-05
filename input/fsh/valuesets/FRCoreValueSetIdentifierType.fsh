@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPatientIdentifierType
-Id: fr-core-identifier-type-v1-0
+Id: fr-core-vs-patient-identifier-type
 Title: "FR Core ValueSet Patient identifier type"
 Description: "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient)."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

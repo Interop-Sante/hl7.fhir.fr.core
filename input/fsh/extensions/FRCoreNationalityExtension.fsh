@@ -20,6 +20,7 @@ Description: "The nationality of the patient."
 * extension[code] ^definition = "Code representing nationality of patient."
 * extension[code].value[x] 1..
 * extension[code].value[x] only CodeableConcept
+* extension[code].valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Country (extensible)
 * extension[period] ^short = "Nationality Period"
 * extension[period] ^definition = "Period when nationality was effective."
 * extension[period].value[x] 1..

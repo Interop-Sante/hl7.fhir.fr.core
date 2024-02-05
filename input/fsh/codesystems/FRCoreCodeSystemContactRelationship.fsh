@@ -1,5 +1,5 @@
 CodeSystem: FRCoreCodeSystemContactRelationship
-Id: fr-core-contact-relationship
+Id: fr-core-cs-contact-relationship
 Title: "FR Core CodeSystem Contact Relationship"
 Description: "Relationship"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"

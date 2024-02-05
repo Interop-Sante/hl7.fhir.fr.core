@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetOrganizationUFActivityField
-Id: fr-core-organization-uf-activity-field
+Id: fr-core-vs-organization-uf-activity-field
 Title: "FR Core ValueSet Organization UF activity field"
 Description: "Organization UF activity field | Champ d'activité des structures UF"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

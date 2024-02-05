@@ -8,7 +8,7 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 
 
 * extension[identityReliability] 1..1
-* extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-fiabilite-identite#VALI
+* extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite#VALI
 
 * extension[birthPlace] 1..1
 * extension[birthPlace].valueAddress.extension[inseeCode] 1..1
@@ -39,7 +39,7 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 * identifier[INS-NIA].value 1..
 
 * gender 1..1
-* gender from fr-core-patient-gender-INS (required)
+* gender from fr-core-vs-patient-gender-INS (required)
 * gender ^short = "male | female | unknown"
 
 * birthDate 1..

@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPractitionerIdentifierType
-Id: fr-core-practitioner-identifier-type
+Id: fr-core-vs-practitioner-identifier-type
 Title: "FR Core ValueSet Practitioner identifier type"
 Description: "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

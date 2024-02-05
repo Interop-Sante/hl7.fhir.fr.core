@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetTitle
-Id: fr-core-title
+Id: fr-core-vs-title
 Title: "FR Core ValueSet Title"
 Description: "The Patient or person civility"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

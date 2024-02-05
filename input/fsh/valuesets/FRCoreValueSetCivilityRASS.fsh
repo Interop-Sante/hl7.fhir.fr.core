@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetCivilityRASS
-Id: fr-core-civility-rass
+Id: fr-core-vs-civility-rass
 Title: "FR Core ValueSet Civility RASS"
 Description: "Civilités des personnes physiques du RASS"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

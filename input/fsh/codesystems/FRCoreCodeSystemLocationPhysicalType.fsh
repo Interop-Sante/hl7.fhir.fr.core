@@ -1,5 +1,5 @@
 CodeSystem: FRCoreCodeSystemLocationPhysicalType
-Id: fr-core-location-physical-type
+Id: fr-core-cs-location-physical-type
 Title: "FR Core CodeSystem Location Physical Type"
 Description: "Location physical type"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"

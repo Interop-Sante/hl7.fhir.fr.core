@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetOrganizationType
-Id: fr-core-core-organization-type
+Id: fr-core-vs-organization-type
 Title: "FR Core ValueSet Organization type"
 Description: "Organization types | Types de structures"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

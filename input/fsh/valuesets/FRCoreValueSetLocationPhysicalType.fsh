@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetLocationPhysicalType
-Id: fr-core-location-physical-type
+Id: fr-core-vs-location-physical-type
 Title: "FR Core ValueSet Location physical type"
 Description: "French location physical type | Types de lieux physiques pour la France"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

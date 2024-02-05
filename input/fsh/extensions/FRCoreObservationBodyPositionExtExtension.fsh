@@ -5,4 +5,4 @@ Description: "CIMI extension (in FHIR R4) defined in the context of the Respirat
 * ^context.type = #element
 * ^context.expression = "Observation"
 * value[x] only CodeableConcept
-* value[x] from $ValueSet-bodyPositionVS.html (example)
+* value[x] from $ValueSet-bodyPositionVS (example)

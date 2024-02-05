@@ -1,7 +1,7 @@
 
 
 ValueSet: FRCoreValueSetContactRelationship
-Id: fr-core-contact-relationship
+Id: fr-core-vs-contact-relationship
 Title: "FR Core ValueSet Contact relationship"
 Description: "A set of codes that can be used to indicate the relationship between a Patient and a Related Person."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetPractitionerQualification
-Id: fr-core-practitioner-qualification
+Id: fr-core-vs-practitioner-qualification
 Title: "FR Core ValueSet Practitioner qualification"
 Description: "A code classifying the qualification of the provider"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
