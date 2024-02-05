@@ -70,8 +70,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Patient.extension:nationality","Patient.extension","nationality","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-nationality]]} {[]}
-","FR Core Patient Nationalité","Nationalité du patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension:nationality","Patient.extension","nationality","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality]]} {[]}
+","Nationality","The nationality of the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
@@ -130,7 +130,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","Role.code or implied by context","N/A"
 "Patient.identifier.type","Patient.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-identifier-type","",,,,"Identifier.type",0,1,"ele-1
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","Role.code or implied by context","CE/CNE/CWE","CX.5"
 "Patient.identifier.system","Patient.identifier.system","","","",0,1,"","","Y","uri {[]} {[]}
@@ -170,7 +170,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.identifier:INS-C.type","Patient.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203""/>
+    <system value=""https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203""/>
     <code value=""INS-C""/>
     <display value=""Identifiant National de Santé Calculé""/>
   </coding>
@@ -214,11 +214,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.identifier:NDP.type","Patient.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203""/>
+    <system value=""https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203""/>
     <code value=""NDP""/>
     <display value=""Identifiant du patient au Dossier Pharmaceutique""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-identifier-type","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","Role.code or implied by context","CE/CNE/CWE","CX.5"
 "Patient.identifier:NDP.system","Patient.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -501,11 +501,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","code","n/a","CE/CNE/CWE","NK1-7, NK1-3"
 "Patient.contact.relationship:RolePerson","Patient.contact.relationship","RolePerson","","",0,1,"","","","CodeableConcept {[]} {[]}
-","The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...","The nature of the relationship between the patient and the contact person.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person-role","",,,,"Patient.contact.relationship",0,*,"ele-1
+","The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...","The nature of the relationship between the patient and the contact person.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role","",,,,"Patient.contact.relationship",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","code","n/a","CE/CNE/CWE","NK1-7, NK1-3"
 "Patient.contact.relationship:RelatedPerson","Patient.contact.relationship","RelatedPerson","","",0,1,"","","","CodeableConcept {[]} {[]}
-","The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ...","The nature of the relationship between the patient and the contact person.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person","",,,,"Patient.contact.relationship",0,*,"ele-1
+","The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ...","The nature of the relationship between the patient and the contact person.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person","",,,,"Patient.contact.relationship",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD","code","n/a","CE/CNE/CWE","NK1-7, NK1-3"
 "Patient.contact.name","Patient.contact.name","","","",0,1,"","","","HumanName {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name]]} {[]}

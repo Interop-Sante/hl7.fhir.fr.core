@@ -26,10 +26,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
+      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
       "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension",
-      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice"
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -43,15 +43,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
       "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
+      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
       "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
       "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
       "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
       "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile",
-      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
       "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
-      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile"
+      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -142,7 +142,21 @@
       "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-availability-time-day",
+      "url" : "http://terminology.hl7.org/ValueSet/v3-Country",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Country",
+      "title" : "Country",
+      "description" : "Countries of the world. ISO 3166, part 1, alpha-3 set.",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "oids" : ["2.16.840.1.113883.1.11.171"],
+      "sources" : ["2.16.840.1.113883.1.11.171"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-patient-nationality.html" : "FR Core Nationality Extension"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-day",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetAvailabilityTimeDay",
@@ -151,7 +165,7 @@
       "systems" : ["http://hl7.org/fhir/days-of-week"]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-availability-time-rule",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetAvailabilityTimeRule",
@@ -163,7 +177,7 @@
       "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-bp-method",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-method",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetBPMeasurementMethod",
@@ -172,7 +186,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-civility",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetCivility",
@@ -183,7 +197,7 @@
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-civility-exercice-rass",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-exercice-rass",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetCivilityExerciceRASS",
@@ -194,7 +208,7 @@
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-civility-rass",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-rass",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetCivilityRASS",
@@ -205,7 +219,7 @@
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-cog-commune-pays",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetCOGCommunePays",
@@ -217,34 +231,19 @@
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-contact-relationship",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-contact-relationship",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetContactRelationship",
       "title" : "FR Core ValueSet Contact relationship",
       "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-contact-relationship",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship",
         "http://terminology.hl7.org/CodeSystem/v2-0131"
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-core-organization-type",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetOrganizationType",
-      "title" : "FR Core ValueSet Organization type",
-      "description" : "Organization types | Types de structures",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3307"],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
-      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
-      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-email-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetEmailType",
@@ -258,7 +257,7 @@
       "StructureDefinition-fr-core-contact-point-email-type.html" : "FR Core Contact Point Email Type Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-encounter-class",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetEncounterClass",
@@ -267,22 +266,22 @@
       "systems" : ["http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-encounter-discharge-disposition",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetEncounterDischargeDisposition",
       "title" : "FR Core ValueSet Encounter discharge disposition",
       "description" : "This value set defines a set of codes that can be used to where the patient left the hospital | Circonstances de sortie de l'hôpital.",
       "systems" : [
-        "http://terminology.hl7.org/CodeSystem/discharge-disposition",
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-circonstances-sortie"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
       ],
       "uses" : {
       },
       "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-encounter-identifier-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetEncounterIdentifierType",
@@ -296,7 +295,7 @@
       "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-encounter-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetEncounterType",
@@ -304,14 +303,14 @@
       "description" : "A coded type for an encounter | Jeu de valeurs des types de rencontre.",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v2-0007",
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-type-admission"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission"
       ],
       "uses" : {
       },
       "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-height-body-position",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetHeightBodyPosition",
@@ -323,19 +322,7 @@
       "StructureDefinition-fr-core-observation-height-body-position.html" : "FR Core Observation Height Body Position Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identifier-type-v1-0",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPatientIdentifierType",
-      "title" : "FR Core ValueSet Patient identifier type",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).",
-      "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203",
-        "http://terminology.hl7.org/CodeSystem/v2-0203"
-      ]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-method-collection",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetIdentityMethodCollection",
@@ -351,19 +338,19 @@
       "StructureDefinition-fr-core-identity-reliability.html" : "FR Core Patient Ident Reliability Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-identity-reliability",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetIdentityReliabilityStatus",
       "title" : "FR Core ValueSet Identity reliability",
       "description" : "The reliability of the identity.",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0445"],
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"],
       "uses" : {
       },
       "StructureDefinition-fr-core-identity-reliability.html" : "FR Core Patient Ident Reliability Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-insee-code",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetINSEECode",
@@ -379,270 +366,61 @@
       "StructureDefinition-fr-core-address-insee-code.html" : "FR Core Address Insee Code Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-identifier-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-identifier-type",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetLocationIdentifierType",
       "title" : "FR Core ValueSet Location identifier type",
       "description" : "A coded type for a location | Jeu de valeurs des types d'identifiant de lieu.",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-identifier-type"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type"
       ],
       "uses" : {
       },
       "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-physical-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetLocationPhysicalType",
       "title" : "FR Core ValueSet Location physical type",
       "description" : "French location physical type | Types de lieux physiques pour la France",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-physical-type"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type"
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile",
-      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
+      "StructureDefinition-fr-core-location.html" : "FR Core Location Profile",
+      "StructureDefinition-fr-core-encounter.html" : "FR Core Encounter Profile"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-position-room",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-room",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetLocationPositionRoom",
       "title" : "FR Core ValueSet Location position room",
       "description" : "position room | position physique de l'emplacement du lit",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-position-room"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room"
       ],
       "uses" : {
       },
       "StructureDefinition-fr-core-location-position-room.html" : "FR Core Location Part Of Position Room Extension"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-location-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type",
       "version" : "2.0.0",
       "status" : "draft",
       "name" : "FRCoreValueSetLocationType",
       "title" : "FR Core ValueSet Location type",
       "description" : "A role for a location | Jeu de valeurs du rôle joué par un lieu",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-location-type"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type"
       ],
       "uses" : {
       },
       "StructureDefinition-fr-core-location.html" : "FR Core Location Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-activity-field",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetOrganizationActivityField",
-      "title" : "FR Core ValueSet Organization activity field",
-      "description" : "The activity field of the organization | Secteur d'activité de l'organisation.",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-organization-activity-field.html" : "FR Core Organization Activity Field Extension"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-identifier-type",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetOrganizationIdentifierType",
-      "title" : "FR Core ValueSet Organization identifier type",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations).",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203"],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
-      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
-      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile",
-      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-organization-uf-activity-field",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetOrganizationUFActivityField",
-      "title" : "FR Core ValueSet Organization UF activity field",
-      "description" : "Organization UF activity field | Champ d'activité des structures UF",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-3311"]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-patient-gender-INS",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPatientGenderINS",
-      "title" : "FR Core ValueSet Patient gender INS ValueSet",
-      "description" : "Patient Gender for INS : male | female | unknown",
-      "systems" : ["http://hl7.org/fhir/administrative-gender"],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient-ins.html" : "FR Core Patient INS Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-identifier-type",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPractitionerIdentifierType",
-      "title" : "FR Core ValueSet Practitioner identifier type",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)",
-      "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-v2-0203",
-        "https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne",
-        "http://terminology.hl7.org/CodeSystem/v2-0203"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-qualification",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPractitionerQualification",
-      "title" : "FR Core ValueSet Practitioner qualification",
-      "description" : "A code classifying the qualification of the provider",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
-        "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale",
-        "https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome",
-        "https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire",
-        "https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee",
-        "https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ",
-        "https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome",
-        "https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome",
-        "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu",
-        "https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome",
-        "https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation",
-        "https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE",
-        "https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification"
-      ]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-exercice",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPractitionerRoleExercice",
-      "title" : "FR Core ValueSet PractitionerRole Exercice",
-      "description" : "The exercice(s) of the practitioner.",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
-        "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
-        "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
-      ],
-      "oids" : [" 2.16.840.1.113883.2.8.1.3.23"],
-      "sources" : [" 2.16.840.1.113883.2.8.1.3.23"]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-role-profession",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPractitionerRoleProfession",
-      "title" : "FR Core ValueSet PractitionerRole Profession",
-      "description" : "The profession(s) of the practitioner.",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
-        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
-        "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
-        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
-      ],
-      "oids" : [" 2.16.840.1.113883.2.8.1.3.23"],
-      "sources" : [" 2.16.840.1.113883.2.8.1.3.23"],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-practitioner-role-profession.html" : "FR Core Practitioner Role Profession"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-practitioner-specialty",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetPractitionerSpecialty",
-      "title" : "FR Core ValueSet Practitioner specialty",
-      "description" : "The modalities of exercice of the practitioner, registered by an official organization for a period of time.",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
-      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
-      "StructureDefinition-fr-core-practitioner-specialty.html" : "FR Core Practitioner Specialty Extension"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetRelatedPerson",
-      "title" : "FR Core ValueSet Related person role",
-      "description" : "Value set related person role",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile",
-      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-related-person-role",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetRelatedPersonRole",
-      "title" : "FR Core ValueSet Related person role",
-      "description" : "Value set related person role",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v2-0131",
-        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
-        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile",
-      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-schedule-type",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetScheduleType",
-      "title" : "FR Core ValueSet Schedule type",
-      "description" : "A Schedule type | Jeu de valeurs des types de Schedule",
-      "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-schedule-unavailability-reason",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetUnavailabilityReason",
-      "title" : "FR Core ValueSet Unavailability Reason",
-      "description" : "Raison d'indisponibilité",
-      "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-schedule-type"
-      ]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-title",
-      "version" : "2.0.0",
-      "status" : "draft",
-      "name" : "FRCoreValueSetTitle",
-      "title" : "FR Core ValueSet Title",
-      "description" : "The Patient or person civility",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"
-      ]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status",
@@ -673,6 +451,246 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-identity-reliability.html" : "FR Core Patient Ident Reliability Extension"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-activity-field",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetOrganizationActivityField",
+      "title" : "FR Core ValueSet Organization activity field",
+      "description" : "The activity field of the organization | Secteur d'activité de l'organisation.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-organization-activity-field.html" : "FR Core Organization Activity Field Extension"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetOrganizationIdentifierType",
+      "title" : "FR Core ValueSet Organization identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations).",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetOrganizationType",
+      "title" : "FR Core ValueSet Organization type",
+      "description" : "Organization types | Types de structures",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-organization-pole.html" : "FR Core Organization Pole Profile",
+      "StructureDefinition-fr-core-organization-uf.html" : "FR Core Organization UF Profile",
+      "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile",
+      "StructureDefinition-fr-core-organization-uac.html" : "FR Core Organization UAC Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-activity-field",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetOrganizationUFActivityField",
+      "title" : "FR Core ValueSet Organization UF activity field",
+      "description" : "Organization UF activity field | Champ d'activité des structures UF",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311"]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPatientGenderINS",
+      "title" : "FR Core ValueSet Patient gender INS ValueSet",
+      "description" : "Patient Gender for INS : male | female | unknown",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-patient-ins.html" : "FR Core Patient INS Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPatientIdentifierType",
+      "title" : "FR Core ValueSet Patient identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerIdentifierType",
+      "title" : "FR Core ValueSet Practitioner identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne",
+        "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-qualification",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerQualification",
+      "title" : "FR Core ValueSet Practitioner qualification",
+      "description" : "A code classifying the qualification of the provider",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+        "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire",
+        "https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee",
+        "https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ",
+        "https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu",
+        "https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome",
+        "https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation",
+        "https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE",
+        "https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerRoleExercice",
+      "title" : "FR Core ValueSet PractitionerRole Exercice",
+      "description" : "The exercice(s) of the practitioner.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerRoleProfession",
+      "title" : "FR Core ValueSet PractitionerRole Profession",
+      "description" : "The profession(s) of the practitioner.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
+        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+        "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-practitioner-role-profession.html" : "FR Core Practitioner Role Profession"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetPractitionerSpecialty",
+      "title" : "FR Core ValueSet Practitioner specialty",
+      "description" : "The modalities of exercice of the practitioner, registered by an official organization for a period of time.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-practitioner-role-exercice.html" : "FR Core Practitioner Role Exercice",
+      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
+      "StructureDefinition-fr-core-practitioner-role-profession.html" : "FR Core Practitioner Role Profession",
+      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-practitioner-specialty.html" : "FR Core Practitioner Specialty Extension",
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetRelatedPerson",
+      "title" : "FR Core ValueSet Related person role",
+      "description" : "Value set related person role",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile",
+      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetRelatedPersonRole",
+      "title" : "FR Core ValueSet Related person role",
+      "description" : "Value set related person role",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile",
+      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetScheduleType",
+      "title" : "FR Core ValueSet Schedule type",
+      "description" : "A Schedule type | Jeu de valeurs des types de Schedule",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fr-core-schedule-availability-time.html" : "FR Core Schedule availability time Extension"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetUnavailabilityReason",
+      "title" : "FR Core ValueSet Unavailability Reason",
+      "description" : "Raison d'indisponibilité",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "FRCoreValueSetTitle",
+      "title" : "FR Core ValueSet Title",
+      "description" : "The Patient or person civility",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"
+      ]
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
