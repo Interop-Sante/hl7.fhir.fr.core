@@ -29,14 +29,11 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * identifier.system ^example[+].label = "Pour un employé identifié au sein de sa structure, OID de l'établissement suivi de la branche de gestion des employés ou"
 * identifier.system ^example[=].valueUri = "http://hopitalTest.fr/fhir/namingsystem/employes"
 * identifier.value 1..
+
 * name only FRCoreHumanNameProfile
 * telecom only FRCoreContactPointProfile
-* telecom.system ^example[0].label = "le CodeSystem associé au jeu de valeurs"
-* telecom.system ^example[=].valueCode = #http://hl7.org/fhir/contact-point-system
 * address only FRCoreAddressProfile
 * gender from AdministrativeGender (required)
-* gender ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* gender ^binding.extension[=].valueBoolean = true
 
 * qualification ^short = "Qualifications obtained by training and certification/Diplômes"
 * qualification ^definition = "Qualifications obtained by training and certification/Diplômes obtenus"
