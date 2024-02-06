@@ -14,8 +14,6 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * meta.profile contains fr-canonical 0..1
 * meta.profile[fr-canonical] = Canonical(fr-core-practitioner)
 
-
-* identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetPractitionerIdentifierType (extensible)
 * identifier.type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * identifier.type ^binding.extension[=].valueBoolean = true
