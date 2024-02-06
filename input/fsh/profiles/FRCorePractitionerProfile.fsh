@@ -31,7 +31,6 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * name only FRCoreHumanNameProfile
 * telecom only FRCoreContactPointProfile
 * address only FRCoreAddressProfile
-* gender from AdministrativeGender (required)
 
 * qualification ^short = "Qualifications obtained by training and certification/Diplômes"
 * qualification ^definition = "Qualifications obtained by training and certification/Diplômes obtenus"
