@@ -15,8 +15,6 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * meta.profile[fr-canonical] = Canonical(fr-core-practitioner)
 
 * identifier.type from FRCoreValueSetPractitionerIdentifierType (extensible)
-* identifier.type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier.type ^binding.extension[=].valueBoolean = true
 * identifier.type.coding.system ^example[0].label = "CodeSystem HL7v2 (PAM) pour un type d'identifiant PS"
 * identifier.type.coding.system ^example[=].valueUri = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier.type.coding.system ^example[+].label = "CodeSystem ASIP pour un type d'identifiant d'un employé dans une structure"
