@@ -22,8 +22,7 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 
 // Slices définies dans PatientINS car ne peuvent pas être véhiculé si identité non qualifiée.
 
-* identifier[INS-NIR] ^short = "The patient's health national identifier INS coming from the INSi teleservice| Identifiant national de santé du patient INS provenant du téléservice INSi"
-* identifier[INS-NIR] ^definition = "patient's national identifier obtained by requesting the national patient identification service (CNAM) | Identifiant NIR du patient récupéré à partir de l'interrogation du service national d'identification des patients (CNAM)"
+* identifier[INS-NIR] ^short = "The patient's health national identifier INS coming from the INSi teleservice| Numéro d'Inscription au Répertoire (NIR) ou numéro de sécurité sociale du patient INS provenant du téléservice INSi."
 * identifier[INS-NIR].use = #official
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
