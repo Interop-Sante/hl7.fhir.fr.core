@@ -22,15 +22,14 @@ Description: """Profil FRCorePatientProfile appliqué à l'INS avec identité va
 
 // Slices définies dans PatientINS car ne peuvent pas être véhiculé si identité non qualifiée.
 
-* identifier[INS-NIR] ^short = "The patient's health national identifier INS coming from the INSi teleservice| Numéro d'Inscription au Répertoire (NIR) ou numéro de sécurité sociale du patient INS provenant du téléservice INSi."
+* identifier[INS-NIR] ^short = "INS-NIR - The patient health national identifier INS coming from the INSi teleservice | Numéro d'Inscription au Répertoire (NIR) du patient INS provenant du téléservice INSi de la CNAM."
 * identifier[INS-NIR].use = #official
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].system ^short = "Autorité d'affectation des INS-NIR"
 * identifier[INS-NIR].value 1..
 
-* identifier[INS-NIA] ^short = "INS-NIA"
-* identifier[INS-NIA] ^definition = "The temporary patient's health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
+* identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM."
 * identifier[INS-NIA].use = #temp
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
 * identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
