@@ -33,12 +33,20 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier ^slicing.rules = #open
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 * identifier contains
+    NSS 0..1 and
     INS-C 0..* and
     NDP 0..1 and
     PI 0..1 and
     RRI 0..*
 
-* identifier[INS-C] ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
+
+* identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
+* identifier[NSS].use = #official
+* identifier[NSS].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+* identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.8"
+* identifier[NSS].value 1..
+
+* identifier[INS-C] ^short = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use = #secondary
 * identifier[INS-C].type = $fr-core-v2-0203#INS-C "Identifiant National de Santé Calculé"
 * identifier[INS-C].type ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
@@ -48,21 +56,17 @@ This profile specifies the patient's identifiers for France. It uses internation
 * identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français. Celui-ci est unique."
 * identifier[NDP].use = #secondary
 * identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant du patient au Dossier Pharmaceutique"
-* identifier[NDP].type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier[NDP].type ^binding.extension[=].valueBoolean = true
 * identifier[NDP].system 1..
 * identifier[NDP].system = "urn:oid:1.2.250.1.176.1.2"
 * identifier[NDP].value 1..
 
 * identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
-* identifier[PI] ^definition = "Hospital assigned patient identifier | IPP"
 * identifier[PI].use = #usual
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..
 * identifier[PI].value 1..
 
 * identifier[RRI] ^short = "Regional Registry ID | Identifiant régional"
-* identifier[RRI] ^definition = "Regional Registry ID | Identifiant régional"
 * identifier[RRI].use = #secondary
 * identifier[RRI].type = http://terminology.hl7.org/CodeSystem/v2-0203#RRI "Regional registry ID"
 * identifier[RRI].system 1..
