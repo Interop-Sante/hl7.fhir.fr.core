@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FRCoreEncounterProfile"] ; # 
   fhir:title [ fhir:v "FR Core Encounter Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-06T16:15:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-12T12:39:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -1287,8 +1287,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -1349,8 +1349,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -1674,8 +1674,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2307,8 +2307,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2547,8 +2547,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -2612,8 +2612,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -2672,8 +2672,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -2962,8 +2962,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -3026,8 +3026,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -3088,8 +3088,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -3143,8 +3143,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -3203,8 +3203,8 @@
          fhir:expression [ fhir:v "code.empty() or system.exists()" ] ;
          fhir:xpath [ fhir:v "not(exists(f:code)) or exists(f:system)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PlanDefinition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PlanDefinition>
          ]
        ] [
          fhir:key [ fhir:v "drt-1" ] ;
@@ -3213,8 +3213,8 @@
          fhir:expression [ fhir:v "code.exists() implies ((system = %ucum) and value.exists())" ] ;
          fhir:xpath [ fhir:v "(f:code or not(f:value)) and (not(exists(f:system)) or f:system/@value='http://unitsofmeasure.org')" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/EvidenceVariable"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/EvidenceVariable>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PlanDefinition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PlanDefinition>
          ]
        ] ) ;
        fhir:binding [
@@ -3372,8 +3372,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -3608,8 +3608,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -3758,8 +3758,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4318,8 +4318,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -4380,8 +4380,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
@@ -4442,8 +4442,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -4790,8 +4790,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -5069,8 +5069,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -5221,8 +5221,8 @@
          fhir:expression [ fhir:v "start.hasValue().not() or end.hasValue().not() or (start <= end)" ] ;
          fhir:xpath [ fhir:v "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -5276,8 +5276,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
@@ -5338,8 +5338,8 @@
          fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
          fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ResearchSubject"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchSubject>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
          ]
        ] ) ;
        fhir:mapping ( [
