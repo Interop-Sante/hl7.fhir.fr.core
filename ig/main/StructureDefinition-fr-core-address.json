@@ -10,7 +10,7 @@
   "name" : "FRCoreAddressProfile",
   "title" : "FR Core Address Profile",
   "status" : "draft",
-  "date" : "2024-02-05T11:48:42+00:00",
+  "date" : "2024-02-12T13:27:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -719,7 +719,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Measure"
       }],
       "isSummary" : true,
       "mapping" : [{
