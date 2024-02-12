@@ -32,7 +32,6 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * telecom only FRCoreContactPointProfile
 * address only FRCoreAddressProfile
 
-* qualification ^short = "Qualifications obtained by training and certification/Diplômes"
-* qualification ^definition = "Qualifications obtained by training and certification/Diplômes obtenus"
+* qualification ^short = "Qualifications obtained by training and certification | Diplômes. Les différents diplômes sont : les diplômes d'état français, les commissions de qualification, les diplômes d'études spécialisées, les DESC groupe 1 et 2, les capacités, les diplômes d'un pays de l'EEE, les diplômes d'université (DU) ou Inter-Universitaire, les certificats d'étude spéciale, les attestations, les diplômes européens d'études spécialisées, les diplômes de 2ème cycle non qualifiant et les autres types de diplômes. Pour plus d'informations, consulter le jeu de valeurs associé."
 
 * qualification.code from $JDV-J105-EnsembleDiplome-RASS (preferred)
