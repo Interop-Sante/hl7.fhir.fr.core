@@ -6,4 +6,4 @@
 
 ## Preview
 
-https://interop-sante.github.io/FHIR-FR-Core/ig/[ajouter_nom_de_la_branche] 
+https://interop-sante.github.io/hl7.fhir.fr.core/ig/[ajouter_nom_de_la_branche] 
