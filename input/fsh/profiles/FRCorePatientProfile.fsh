@@ -2,8 +2,7 @@ Profile: FRCorePatientProfile
 Parent: Patient
 Id: fr-core-patient
 Title: "FR Core Patient Profile"
-Description: """Profile of the Patient resource for France | Profil de la ressource Patient pour l'usage en France
-This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France."""
+Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. (fr: Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"""
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -86,7 +85,7 @@ This profile specifies the patient's identifiers for France. It uses internation
 * name[officialName] ^definition = "A human's name with the ability to identify parts and usage | Le nom de naissance (official) est obligatoire dans le cas où l’on véhicule l’INS et que l’identité est qualifiée (celui-ci ne doit pas être altéré)."
 * name[officialName].use = #official
 * name[officialName].family 1..
-* name[officialName].given 1..1
+* name[officialName].given 1..
 
 * name[officialName].extension contains fr-core-patient-birth-list-given-name named birth-list-given-name 0..1
 
@@ -98,7 +97,6 @@ This profile specifies the patient's identifiers for France. It uses internation
 * gender ^definition = "French patient's gender checked with the INSi teleservice | Genre du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs sont M ou F"
 
 * birthDate ^short = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
-* birthDate ^definition = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 
 * address only FRCoreAddressProfile
 
