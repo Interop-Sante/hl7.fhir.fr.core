@@ -6,7 +6,7 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 
 * obeys fr-core-1 
 
-* extension[identityReliability] 1..1
+* extension[identityReliability] 1..*
 
 * extension[birthPlace] 1..1
 * extension[birthPlace].valueAddress.extension[inseeCode] 1..1
