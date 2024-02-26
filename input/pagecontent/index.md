@@ -1,4 +1,4 @@
-<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6;">
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>
 Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.
 </b><br>
