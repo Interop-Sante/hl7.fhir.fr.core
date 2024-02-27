@@ -6,7 +6,7 @@
     <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Pierre Durand (OFFICIAL)</b> male, DoB: 1974-12-25 ( <code>urn:oid:1.2.250.1.213.1.4.8</code>/123456789012244 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 01 23 24 67 89(HOME)</li><li>ph: 01 99 88 77 66(WORK)</li><li>ph: 06 80 55 34 33(MOBILE)</li><li>367 rue Troussier, 45100 Orléans, France(HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place:</a></td><td colspan="3"><ul><li>Ambléon </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection">FR Core Patient Ident Reliability Extension:</td><td colspan="3"><ul><li>identityStatus: <a href="CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI">FR Core CodeSystem v2-0445</a> VALI: Identité validée</li></ul></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Pierre Durand (OFFICIAL)</b> male, DoB: 1974-12-25 ( NIR définitif/123456789012244 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 01 23 24 67 89(HOME)</li><li>ph: 01 99 88 77 66(WORK)</li><li>ph: 06 80 55 34 33(MOBILE)</li><li>367 rue Troussier, 45100 Orléans, France(HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place:</a></td><td colspan="3"><ul><li>Ambléon </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection">FR Core Patient Ident Reliability Extension:</td><td colspan="3"><ul><li>identityStatus: <a href="CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI">FR Core CodeSystem v2-0445</a> VALI: Identité validée</li></ul></td></tr></table></div>
   </text>
   <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">
     <extension url="identityStatus">
@@ -29,6 +29,12 @@
   </extension>
   <identifier>
     <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+        <code value="INS-NIR"/>
+      </coding>
+    </type>
     <system value="urn:oid:1.2.250.1.213.1.4.8"/>
     <value value="123456789012244"/>
   </identifier>
