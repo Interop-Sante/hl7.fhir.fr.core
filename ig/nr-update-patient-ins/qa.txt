@@ -1,9 +1,9 @@
 FrCore : Validation Results
 =========================================
 
-err = 20, warn = 97, info = 87
+err = 19, warn = 98, info = 87
 IG Publisher Version: 1.5.16
-Generated Tue Feb 27 11:16:09 UTC 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
+Generated Tue Feb 27 13:40:28 UTC 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 0 / 12 / 0
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/CodeSystem-fr-core-cs-contact-relationship : 0 / 0 / 1
@@ -75,7 +75,7 @@ Generated Tue Feb 27 11:16:09 UTC 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-patient-birthdate-update-indicator : 0 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-patient-contact-identifier : 0 / 2 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-patient-death-place : 0 / 1 / 1
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-patient-ins : 1 / 0 / 19
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-patient-ins : 0 / 1 / 19
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-patient-nationality : 0 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-practitioner : 0 / 1 / 12
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/fsh-generated/resources/StructureDefinition-fr-core-practitioner-profession : 0 / 1 / 1
@@ -346,7 +346,7 @@ INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapsh
 INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[149].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
 INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
-ERROR: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[0].constraint[5]: Error in constraint 'fr-core-1' with expression 'extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').valueCoding.code = VALI implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists())': Error evaluating FHIRPath expression: The name 'valueCoding' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Extension] (@char 14)
+WARNING: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[0].constraint[5]: fr-core-1: The left side is inherently a collection, and so the expression 'extension.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI'' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/StructureDefinition-fr-core-patient-nationality.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fr-core-practitioner.json ==
