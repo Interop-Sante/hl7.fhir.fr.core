@@ -47,6 +47,6 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 
 
 Invariant:   fr-core-1
-Description: "If identityReliability status = VALI, then Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or both SHALL be present"
+Description: "If identityReliability status = 'VALI', then Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or both SHALL be present"
 * severity = #error
-* expression = "extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').valueCoding.code = VALI implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists())"
+* expression = "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists())"
