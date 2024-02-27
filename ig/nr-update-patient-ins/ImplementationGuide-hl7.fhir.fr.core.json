@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "draft",
-  "date" : "2024-02-26T11:06:19+00:00",
+  "date" : "2024-02-27T11:09:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -619,6 +619,17 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExamplefrCorePatient001"
+      },
+      "name" : "ExamplefrCorePatient001",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
@@ -1390,18 +1401,6 @@
       },
       "name" : "FR Core Patient Birth List Given name Extension",
       "description" : "Prénoms de l'acte de naissance",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-patient-birth-place"
-      },
-      "name" : "FR Core Patient Birth Place Extension",
-      "description" : "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.",
       "exampleBoolean" : false
     },
     {

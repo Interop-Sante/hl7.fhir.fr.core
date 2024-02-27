@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="draft"/>
-  <date value="2024-02-26T11:06:19+00:00"/>
+  <date value="2024-02-27T11:09:52+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -462,6 +462,16 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExamplefrCorePatient001"/>
+      </reference>
+      <name value="ExamplefrCorePatient001"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
@@ -1169,17 +1179,6 @@
       </reference>
       <name value="FR Core Patient Birth List Given name Extension"/>
       <description value="Prénoms de l'acte de naissance"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-patient-birth-place"/>
-      </reference>
-      <name value="FR Core Patient Birth Place Extension"/>
-      <description value="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
