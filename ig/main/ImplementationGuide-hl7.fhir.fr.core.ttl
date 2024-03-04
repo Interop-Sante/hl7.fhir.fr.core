@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-26T11:03:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-04T10:55:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -532,6 +532,20 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExamplefrCorePatient001> ;
+         fhir:reference [ fhir:v "Patient/ExamplefrCorePatient001" ]
+       ] ;
+       fhir:name [ fhir:v "ExamplefrCorePatient001" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+       ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
@@ -1311,18 +1325,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-place> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-birth-place" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Patient Birth Place Extension" ] ;
-       fhir:description [ fhir:v "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-birthdate-update-indicator" ]
        ] ;
@@ -1374,7 +1376,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
-       fhir:description [ fhir:v "Profil FRCorePatientProfile appliqué à l'INS avec identité validée, permettant d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec une INS validée. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS ." ] ;
+       fhir:description [ fhir:v "Profil FRCorePatientProfile enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée. Ce profil permet d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1386,7 +1388,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient Profile" ] ;
-       fhir:description [ fhir:v "Profile of the Patient resource for France | Profil de la ressource Patient pour l'usage en France\nThis profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France." ] ;
+       fhir:description [ fhir:v "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. (fr: Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
