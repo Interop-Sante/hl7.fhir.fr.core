@@ -22,7 +22,8 @@ Description: "Profile of the PractitionerRole resource. This profile specifies t
 * code.extension ^slicing.discriminator.type = #value
 * code.extension ^slicing.discriminator.path = "url"
 * code.extension ^slicing.rules = #open
-* code.extension contains FrCorePractitionerRoleCodeCategorieProfessionnelle named professionnalCategory 0..1
+* code.extension contains FRCorePractitionerRoleCodeCategorieProfessionnelle named professionnalCategory 0..1
+
 * specialty from $fr-practitioner-specialty (required)
 * location ..0
 * healthcareService ..0
