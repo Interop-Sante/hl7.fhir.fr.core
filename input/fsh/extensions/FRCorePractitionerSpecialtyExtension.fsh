@@ -1,3 +1,5 @@
+// TODO - extension utilisée nulle part, à étudier 
+
 Extension: FRCorePractitionerSpecialtyExtension
 Id: fr-core-practitioner-specialty
 Title: "FR Core Practitioner Specialty Extension"

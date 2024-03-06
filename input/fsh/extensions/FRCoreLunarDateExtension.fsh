@@ -1,3 +1,5 @@
+// TODO - extension utilisée nulle part, à étudier 
+
 Extension: FRCoreLunarDateExtension
 Id: fr-core-lunar-date
 Title: "FR Core Lunar Date Extension"
