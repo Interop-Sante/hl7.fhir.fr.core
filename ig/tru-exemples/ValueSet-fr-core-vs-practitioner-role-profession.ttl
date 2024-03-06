@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-vs-practitioner-role-profession"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-G15-ProfessionSante.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante</code></a></li><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R95-UsagerTitre.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre</code></a></li><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R94-ProfessionSocial.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial</code></a></li><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R291-AutreProfession.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetPractitionerRoleProfession"] ; # 
+  fhir:title [ fhir:v "FR Core ValueSet PractitionerRole Profession"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-06T14:26:02+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The profession(s) of the practitioner."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
