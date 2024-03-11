@@ -16,6 +16,7 @@ Description: "Profile of the PractitionerRole resource. This profile specifies t
 
 * practitioner only Reference(FRCorePractitionerProfile)
 * organization only Reference(FRCoreOrganizationProfile)
+
 * code from $fr-practitioner-role-profession (required)
 * code ^short = "Professions which this practitioner may have"
 * code ^definition = "Professions which this practitioner is authorized to perform in France. | Professions que le PS est autorisé à réaliser"
@@ -23,6 +24,7 @@ Description: "Profile of the PractitionerRole resource. This profile specifies t
 * code.extension ^slicing.discriminator.path = "url"
 * code.extension ^slicing.rules = #open
 * code.extension contains FrCorePractitionerRoleCodeCategorieProfessionnelle named professionnalCategory 0..1
+
 * specialty from $fr-practitioner-specialty (required)
 * location ..0
 * healthcareService ..0

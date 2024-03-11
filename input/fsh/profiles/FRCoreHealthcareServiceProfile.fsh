@@ -22,7 +22,10 @@ This profile adds the element serviceTypeDuration to associate the service with 
 
 * providedBy only Reference(FRCoreOrganizationProfile)
 * category ..1
-* specialty from FRCoreValueSetPractitionerSpecialty (required)
+
+* specialty from FRCoreValueSetPractitionerSpecialty (preferred)
+// TODO - Une étude approfondie doit être faite sur les spécialités médicales : R38, R211, R266, R01 ...
+
 * location only Reference(FRCoreLocationProfile)
 * telecom only FRCoreContactPointProfile
 * coverageArea only Reference(FRCoreLocationProfile)
