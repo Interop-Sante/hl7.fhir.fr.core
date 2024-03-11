@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-coreidentifier-type</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>VN</td><td>Visit Number</td></tr><tr><td>MN</td><td>Movement Number</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-fr-core-cs-identifier-type.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type</code></a></li></ul></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-warning"^^xsd:anyURI ] ;
@@ -37,7 +37,7 @@
   fhir:title [ fhir:v "FR Core ValueSet Encounter identifier type"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-03-11T15:09:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-11T15:35:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -64,14 +64,7 @@
   fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-coreidentifier-type"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "VN" ] ;
-         fhir:display [ fhir:v "Visit Number" ]
-       ] [
-         fhir:code [ fhir:v "MN" ] ;
-         fhir:display [ fhir:v "Movement Number" ]
-       ] )
+       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"^^xsd:anyURI ]
      ] )
   ] . # 
 
