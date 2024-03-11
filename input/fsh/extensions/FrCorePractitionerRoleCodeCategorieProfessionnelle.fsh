@@ -1,6 +1,6 @@
-Extension: FrCorePractitionerRoleCodeCategorieProfessionnelle
+Extension: FRCorePractitionerRoleCodeCategorieProfessionnelle
 Id: fr-core-role-code-categorie-professionnelle
-Title: "Fr Core Practitioner Role Code Categorie Professionnelle"
+Title: "FR Core Practitioner Role Code Categorie Professionnelle"
 Description: "Catégorie professionnelle selon le MOS de l'ANS. Indispensable pour discriminer les étudiants (internes, élèves, etc.)"
 * ^purpose = "Discriminer les étudiants des professionnels de sa,nté diplômés."
 * ^context.type = #element
