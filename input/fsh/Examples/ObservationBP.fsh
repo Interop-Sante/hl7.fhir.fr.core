@@ -4,6 +4,7 @@ Usage: #example
 * status = #final
 * subject = Reference(ExamplefrPatient001) "Pierre Durand"
   * type = "Patient"
+* performer = Reference(ExamplefrCorePatient001) "Pierre Durand"
 * effectiveDateTime = "2012-09-17"
 * performer  = Reference(ExampleFrPractitionner001) "Jean Dupont"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
