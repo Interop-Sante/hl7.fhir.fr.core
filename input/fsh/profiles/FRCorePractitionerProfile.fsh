@@ -20,8 +20,7 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 
 * extension contains
     fr-core-practitioner-specialty named specialty 0..1
-
-
+    
 
 * identifier.type from FRCoreValueSetPractitionerIdentifierType (extensible)
 * identifier.type.coding.system ^example[0].label = "CodeSystem HL7v2 (PAM) pour un type d'identifiant PS"
