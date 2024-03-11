@@ -14,8 +14,7 @@ Description: "A coded type for an identifier that can be used to determine which
 * ^extension[=].valueCode = #fhir
 
 * ^immutable = true
-* $fr-identifier-type#VN "Visit Number"
-* $fr-identifier-type#MN "Movement Number"
+* include codes from system fr-core-cs-identifier-type
 
 // SVS profile
 * ^experimental = false

@@ -72,7 +72,6 @@ Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-
 // CS
 Alias: $fr-circonstances-sortie = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie
 Alias: $fr-contact-relationship = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship
-Alias: $fr-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-coreidentifier-type
 Alias: $fr-schedule-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type
 Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission
 Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type
