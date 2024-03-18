@@ -30,4 +30,3 @@ This profile adds the element serviceTypeDuration to associate the service with 
 * location only Reference(FRCoreLocationProfile)
 * telecom only FRCoreContactPointProfile
 * coverageArea only Reference(FRCoreLocationProfile)
-* availableTime.daysOfWeek from DaysOfWeek (required)
