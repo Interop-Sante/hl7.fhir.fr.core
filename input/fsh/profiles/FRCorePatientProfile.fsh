@@ -113,13 +113,13 @@ Description: """Profile of the Patient resource for France. This profile specifi
     FRCorePatientContactIdentifierExtension named contactIdentifier 0..1 and
     FRCoreCommentExtension named comment 0..1
 
-* contact.relationship 1..1
 * contact.relationship ^slicing.discriminator.type = #value
 * contact.relationship ^slicing.discriminator.path = "coding.system"
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
     RolePerson 0..1 and
     RelatedPerson 0..1
+// TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
 * contact.relationship[RolePerson] from FRCoreValueSetRelatedPersonRole (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
