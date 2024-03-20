@@ -1,0 +1,86 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ExamplefrCorePatient001",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Pierre Durand (OFFICIAL)</b> male, DoB: 1974-12-25 ( NIR définitif/123456789012244\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 01 23 24 67 89(HOME)</li><li>ph: 01 99 88 77 66(WORK)</li><li>ph: 06 80 55 34 33(MOBILE)</li><li>367 rue Troussier, 45100 Orléans, France(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-birthplace.html\">Birth Place:</a></td><td colspan=\"3\"><ul><li>Ambléon </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\">FR Core Patient Ident Reliability Extension:</td><td colspan=\"3\"><ul><li>identityStatus: <a href=\"CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">FR Core CodeSystem v2-0445</a> VALI: Identité validée</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "identityStatus",
+      "valueCoding" : {
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+        "code" : "VALI"
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress" : {
+      "extension" : [{
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+        "valueCoding" : {
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+          "code" : "01006"
+        }
+      }],
+      "city" : "Ambléon"
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "INS-NIR"
+      }]
+    },
+    "system" : "urn:oid:1.2.250.1.213.1.4.8",
+    "value" : "123456789012244"
+  }],
+  "active" : true,
+  "name" : [{
+    "extension" : [{
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+      "valueString" : "Pierre Yves"
+    }],
+    "use" : "official",
+    "family" : "Durand",
+    "given" : ["Pierre"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "01 23 24 67 89",
+    "use" : "home"
+  },
+  {
+    "system" : "phone",
+    "value" : "01 99 88 77 66",
+    "use" : "work",
+    "rank" : 1
+  },
+  {
+    "system" : "phone",
+    "value" : "06 80 55 34 33",
+    "use" : "mobile",
+    "rank" : 2
+  }],
+  "gender" : "male",
+  "birthDate" : "1974-12-25",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "use" : "home",
+    "type" : "both",
+    "text" : "367 rue Troussier, 45100 Orléans, France",
+    "line" : ["367 rue Troussier"],
+    "city" : "Orléans",
+    "postalCode" : "45100",
+    "period" : {
+      "start" : "2018-06-01"
+    }
+  }]
+}
