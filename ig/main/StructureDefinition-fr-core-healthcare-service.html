@@ -248,7 +248,7 @@
         
           Draft
           
-            as of 2024-03-11
+            as of 2024-03-20
           
         
       </td>
@@ -412,7 +412,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>HealthcareService</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>HealthcareService</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>HealthcareService.extension:serviceTypeDuration, HealthcareService.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>HealthcareService.providedBy, HealthcareService.location, HealthcareService.coverageArea</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
 
@@ -571,7 +571,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>HealthcareService</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>HealthcareService</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>HealthcareService.meta.extension, HealthcareService.extension, HealthcareService.extension:serviceTypeDuration, HealthcareService.modifierExtension, HealthcareService.identifier.extension, HealthcareService.eligibility.extension, HealthcareService.eligibility.modifierExtension, HealthcareService.availableTime.extension, HealthcareService.availableTime.modifierExtension, HealthcareService.notAvailable.extension, HealthcareService.notAvailable.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>HealthcareService.identifier.period, HealthcareService.notAvailable.during</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>HealthcareService.identifier.assigner, HealthcareService.providedBy, HealthcareService.location, HealthcareService.coverageArea, HealthcareService.endpoint</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -812,7 +812,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>HealthcareService</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>HealthcareService</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>HealthcareService.extension:serviceTypeDuration, HealthcareService.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>HealthcareService.providedBy, HealthcareService.location, HealthcareService.coverageArea</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
 
@@ -971,7 +971,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>HealthcareService</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>HealthcareService</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>HealthcareService.meta.extension, HealthcareService.extension, HealthcareService.extension:serviceTypeDuration, HealthcareService.modifierExtension, HealthcareService.identifier.extension, HealthcareService.eligibility.extension, HealthcareService.eligibility.modifierExtension, HealthcareService.availableTime.extension, HealthcareService.availableTime.modifierExtension, HealthcareService.notAvailable.extension, HealthcareService.notAvailable.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>HealthcareService.identifier.period, HealthcareService.notAvailable.during</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>HealthcareService.identifier.assigner, HealthcareService.providedBy, HealthcareService.location, HealthcareService.coverageArea, HealthcareService.endpoint</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
@@ -1206,7 +1206,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 11, 2024 10:34+0000">2024-03-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 20, 2024 14:49+0000">2024-03-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

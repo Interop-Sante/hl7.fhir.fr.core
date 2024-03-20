@@ -248,7 +248,7 @@
         
           Draft
           
-            as of 2024-03-11
+            as of 2024-03-20
           
         
       </td>
@@ -411,7 +411,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-5</td><td>error</td><td>Organization</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Organization</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Organization.extension:shortName, Organization.extension:description, Organization.extension:budgetLetter, Organization.extension:usePeriod, Organization.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>org-1</td><td>error</td><td>Organization</td><td>The organization SHALL at least have a name or an identifier, and possibly more than one<br/>: (identifier.count() + name.count()) &gt; 0</td><td></td></tr>
 <tr><td>org-2</td><td>error</td><td>Organization.address</td><td>An address of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
 <tr><td>org-3</td><td>error</td><td>Organization.telecom</td><td>The telecom of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
@@ -532,7 +532,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Organization</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Organization</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Organization.meta.extension, Organization.extension, Organization.extension:shortName, Organization.extension:description, Organization.extension:budgetLetter, Organization.extension:usePeriod, Organization.modifierExtension, Organization.identifier.extension, Organization.partOf.extension, Organization.contact.extension, Organization.contact.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>org-1</td><td>error</td><td>Organization</td><td>The organization SHALL at least have a name or an identifier, and possibly more than one<br/>: (identifier.count() + name.count()) &gt; 0</td><td></td></tr>
 <tr><td>org-2</td><td>error</td><td>Organization.address</td><td>An address of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
 <tr><td>org-3</td><td>error</td><td>Organization.telecom</td><td>The telecom of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
@@ -789,7 +789,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>dom-5</td><td>error</td><td>Organization</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Organization</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Organization.extension:shortName, Organization.extension:description, Organization.extension:budgetLetter, Organization.extension:usePeriod, Organization.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>org-1</td><td>error</td><td>Organization</td><td>The organization SHALL at least have a name or an identifier, and possibly more than one<br/>: (identifier.count() + name.count()) &gt; 0</td><td></td></tr>
 <tr><td>org-2</td><td>error</td><td>Organization.address</td><td>An address of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
 <tr><td>org-3</td><td>error</td><td>Organization.telecom</td><td>The telecom of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
@@ -910,7 +910,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Organization</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Organization</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Organization.meta.extension, Organization.extension, Organization.extension:shortName, Organization.extension:description, Organization.extension:budgetLetter, Organization.extension:usePeriod, Organization.modifierExtension, Organization.identifier.extension, Organization.partOf.extension, Organization.contact.extension, Organization.contact.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>org-1</td><td>error</td><td>Organization</td><td>The organization SHALL at least have a name or an identifier, and possibly more than one<br/>: (identifier.count() + name.count()) &gt; 0</td><td></td></tr>
 <tr><td>org-2</td><td>error</td><td>Organization.address</td><td>An address of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
 <tr><td>org-3</td><td>error</td><td>Organization.telecom</td><td>The telecom of an organization can never be of use 'home'<br/>: where(use = 'home').empty()</td><td></td></tr>
@@ -1146,7 +1146,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 11, 2024 10:34+0000">2024-03-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 20, 2024 14:49+0000">2024-03-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
