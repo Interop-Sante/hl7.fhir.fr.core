@@ -16,10 +16,9 @@ Description: "French profile of Location | Profil français de la ressource Loca
 * extension ^slicing.rules = #open
 * extension contains FRCoreUsePeriodExtension named usePeriod 0..1
 
-* identifier.use from IdentifierUse (required)
+* identifier ^short = "Identifiant fonctionnel du lieu. Il est recommandé de remplir ce champs pour faciliter l'identification des ressources."
 
 * identifier.type 1..
-* identifier ^short = "Identifiant fonctionnel du lieu. Il est recommandé de remplir ce champs pour faciliter l'identification des ressources."
 * identifier.type from FRCoreValueSetLocationIdentifierType (extensible)
 
 * identifier.system 1..
@@ -43,4 +42,3 @@ Description: "French profile of Location | Profil français de la ressource Loca
 * partOf.extension ^slicing.rules = #open
 
 * partOf.extension contains FRCoreLocationPartOfPositionRoomExtension named positionRoom 0..1
-* hoursOfOperation.daysOfWeek from DaysOfWeek (required)
