@@ -1,11 +1,23 @@
-name: Workflow Init
-
+name: Workflow Sushi Tests gitHubpages
 on:
   workflow_call:
   push:
-      
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-  Call-Fhir-Workflows :
-    uses: ansforge/FIG_ans.workflows/.github/workflows/fhir-worklows.yml@main
+  run-sushi-tests_gitHubPages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:      
+          path: igSource
+      - uses: ansforge/IG-workflows@v0.2.0
+        with:      
+          repo_ig: "./igSource"   
+          github_page: "true"
+          github_page_token: ${{ secrets.GITHUB_TOKEN }}
+          bake: "true"
+          nos: "true"
+          validator_cli: "true"
+          generate_testscript: "true"
+          generate_plantuml : "true"
