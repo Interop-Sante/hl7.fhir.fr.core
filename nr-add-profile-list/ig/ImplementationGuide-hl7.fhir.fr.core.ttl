@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-21T10:58:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-21T10:59:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -982,6 +982,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-bp" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Observation Blood Pressure Profile" ] ;
+       fhir:description [ fhir:v "French profile for blood pressure.\n\r\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-bmi" ]
        ] ;
@@ -1035,18 +1047,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core Observation Body Weight Profile" ] ;
        fhir:description [ fhir:v "French profil Body weight based on the FHIR profil BodyWeightMeas.\n\r\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-bp" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Observation Bp Profile" ] ;
-       fhir:description [ fhir:v "French profil Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component (systolic and/or diastolic and/or mean).\n\r\nProfil français de pression artérielle avec tous les éléments fils optionnels. Il s'agit d'une Observation avec l'élément Observation.valueQuantity n'est pas renseigné et qui contient au moins un composant Pression systolique, Pression diastolique, Pression moyenne." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

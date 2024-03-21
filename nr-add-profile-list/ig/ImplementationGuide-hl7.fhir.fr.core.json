@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "draft",
-  "date" : "2024-03-21T10:58:03+00:00",
+  "date" : "2024-03-21T10:59:21+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1066,6 +1066,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-core-observation-bp"
+      },
+      "name" : "FR Core Observation Blood Pressure Profile",
+      "description" : "French profile for blood pressure.\n\r\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-bmi"
       },
       "name" : "FR Core Observation Bmi Profile",
@@ -1118,18 +1130,6 @@
       },
       "name" : "FR Core Observation Body Weight Profile",
       "description" : "French profil Body weight based on the FHIR profil BodyWeightMeas.\n\r\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-observation-bp"
-      },
-      "name" : "FR Core Observation Bp Profile",
-      "description" : "French profil Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component (systolic and/or diastolic and/or mean).\n\r\nProfil français de pression artérielle avec tous les éléments fils optionnels. Il s'agit d'une Observation avec l'élément Observation.valueQuantity n'est pas renseigné et qui contient au moins un composant Pression systolique, Pression diastolique, Pression moyenne.",
       "exampleBoolean" : false
     },
     {
