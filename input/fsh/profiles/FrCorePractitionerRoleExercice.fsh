@@ -4,7 +4,10 @@ Profile: FRCorePractitionerRoleExercice
 Parent: PractitionerRole
 Id: fr-core-practitioner-role-exercice
 Title: "FR Core Practitioner Role Exercice"
-Description: "Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."
+Description: "Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization.\r\n
+Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."
+
+
 * ^status = #draft
 
 * meta.profile ^slicing.discriminator.type = #value

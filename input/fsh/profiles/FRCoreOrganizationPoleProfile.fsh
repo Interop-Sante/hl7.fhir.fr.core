@@ -2,6 +2,7 @@ Profile: FRCoreOrganizationPoleProfile
 Parent: Organization
 Id: fr-core-organization-pole
 Title: "FR Core Organization Pole Profile"
+Description: "FR Core Organization Pole Profile"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

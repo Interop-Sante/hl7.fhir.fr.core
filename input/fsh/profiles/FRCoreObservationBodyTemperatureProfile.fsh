@@ -2,7 +2,8 @@ Profile: FRCoreObservationBodyTemperatureProfile
 Parent: $bodytemp
 Id: fr-core-observation-body-temperature
 Title: "FR Core Observation Body Temperature Profile"
-Description: "French profil body temperature | Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"
+Description: "French profil body temperature.
+\r\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
