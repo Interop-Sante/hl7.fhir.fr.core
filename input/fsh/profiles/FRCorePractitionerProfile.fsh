@@ -14,6 +14,14 @@ This profile specifies the types of identifiers for practitioners in France | Ce
 * meta.profile contains fr-canonical 0..1
 * meta.profile[fr-canonical] = Canonical(fr-core-practitioner)
 
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+
+* extension contains
+    fr-core-practitioner-specialty named specialty 0..1
+    
+
 * identifier.type from FRCoreValueSetPractitionerIdentifierType (extensible)
 * identifier.type.coding.system ^example[0].label = "CodeSystem HL7v2 (PAM) pour un type d'identifiant PS"
 * identifier.type.coding.system ^example[=].valueUri = "http://terminology.hl7.org/CodeSystem/v2-0203"

@@ -27,9 +27,10 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 * code ^short = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation"
 * code ^definition = "The role a person plays representing an organization | Situation d'exercice (Fonction dans le NOS)"
 * code ^binding.description = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS."
+
 * specialty from $fr-practitioner-specialty (required)
 * specialty ^short = "Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation"
-* specialty ^definition = "Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation."
+
 * location only Reference(FRCoreLocationProfile)
 * healthcareService only Reference(FRCoreHealthcareServiceProfile)
 * telecom only FRCoreContactPointProfile
