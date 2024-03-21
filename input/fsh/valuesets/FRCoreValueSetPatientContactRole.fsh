@@ -1,7 +1,7 @@
-ValueSet: FRCoreValueSetRelatedPersonRole
-Id: fr-core-vs-related-person-role
-Title: "FR Core ValueSet Related person role"
-Description: "Value set related person role"
+ValueSet: FRCoreValueSetPatientContactRole
+Id: fr-core-vs-patient-contact-role
+Title: "FR Core ValueSet Patient contact role"
+Description: "ValueSet patient contact role"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
