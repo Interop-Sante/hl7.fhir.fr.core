@@ -41,7 +41,7 @@ Le guide d'implémentation FR Core est géré par HL7 France et IHE France au se
 | --- |---------------|--------------|
 | **Auteur**   | Nicolas Riss    | Agence du Numérique en Santé |
 | **Auteur**   | Yohann Poiron   | Xtrem Santé                  |
-| Contributeur | Marie Bruillard | Kereval                      |
+| Contributeur | Marie Brulliard | Kereval                      |
 | Contributeur | Sylvain Demey   | Agence du Numérique en Santé |
 | Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
