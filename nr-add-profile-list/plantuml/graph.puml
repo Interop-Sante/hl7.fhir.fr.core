@@ -77,7 +77,6 @@ package IG #DDDDDD{
              HealthcareService.location => [None..None]
              HealthcareService.telecom => [None..None]
              HealthcareService.coverageArea => [None..None]
-             HealthcareService.availableTime.daysOfWeek => [None..None]
         } 
 
         class FRCoreHumanNameProfile{
@@ -504,6 +503,7 @@ package IG #DDDDDD{
 
              Practitioner.meta.profile => [None..None]
              Practitioner.meta.profile:fr-canonical => [0..1]
+             Practitioner.extension:specialty => <&plus>[0..1]
              Practitioner.identifier => [None..None]
              Practitioner.identifier.type => [None..None]
              Practitioner.identifier.type.coding.system => [None..None]
@@ -609,6 +609,7 @@ package IG #DDDDDD{
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreCommentExtension
      FRCorePractitionerRoleExercice -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
      FRCorePractitionerRoleProfession -[#black,dashed,thickness=2]-> FRCorePractitionerRoleCodeCategorieProfessionnelle
+     FRCorePractitionerProfile -[#black,dashed,thickness=2]-> FRCorePractitionerSpecialtyExtension
      FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
      FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreScheduleAvailabilityTimeExtension
 

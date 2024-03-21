@@ -138,7 +138,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"
 "HealthcareService.specialty","HealthcareService.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Specialties handled by the HealthcareService","Collection of specialties handled by the service site. This is more of a medical term.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"HealthcareService.specialty",0,*,"ele-1
+","Specialties handled by the HealthcareService","Collection of specialties handled by the service site. This is more of a medical term.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"preferred","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"HealthcareService.specialty",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CD",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"
 "HealthcareService.location","HealthcareService.location","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location]]}
@@ -240,7 +240,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "HealthcareService.availableTime.daysOfWeek","HealthcareService.availableTime.daysOfWeek","","","",0,*,"","","","code {[]} {[]}
-","mon | tue | wed | thu | fri | sat | sun","Indicates which days of the week are available between the start and end Times.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/days-of-week","",,,,"HealthcareService.availableTime.daysOfWeek",0,*,"ele-1
+","mon | tue | wed | thu | fri | sat | sun","Indicates which days of the week are available between the start and end Times.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","The days of the week.","http://hl7.org/fhir/ValueSet/days-of-week|4.0.1","",,,,"HealthcareService.availableTime.daysOfWeek",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".effectiveTime"
 "HealthcareService.availableTime.allDay","HealthcareService.availableTime.allDay","","","",0,1,"","","","boolean {[]} {[]}

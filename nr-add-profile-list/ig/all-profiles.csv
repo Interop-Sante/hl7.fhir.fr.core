@@ -1013,7 +1013,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-healthcare-service","HealthcareService.specialty","HealthcareService.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Specialties handled by the HealthcareService","Collection of specialties handled by the service site. This is more of a medical term.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"HealthcareService.specialty",0,*,"ele-1
+","Specialties handled by the HealthcareService","Collection of specialties handled by the service site. This is more of a medical term.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"preferred","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"HealthcareService.specialty",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-healthcare-service","HealthcareService.location","HealthcareService.location","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location]]}
@@ -1115,7 +1115,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-healthcare-service","HealthcareService.availableTime.daysOfWeek","HealthcareService.availableTime.daysOfWeek","","","",0,*,"","","","code {[]} {[]}
-","mon | tue | wed | thu | fri | sat | sun","Indicates which days of the week are available between the start and end Times.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/days-of-week","",,,,"HealthcareService.availableTime.daysOfWeek",0,*,"ele-1
+","mon | tue | wed | thu | fri | sat | sun","Indicates which days of the week are available between the start and end Times.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","The days of the week.","http://hl7.org/fhir/ValueSet/days-of-week|4.0.1","",,,,"HealthcareService.availableTime.daysOfWeek",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-healthcare-service","HealthcareService.availableTime.allDay","HealthcareService.availableTime.allDay","","","",0,1,"","","","boolean {[]} {[]}
@@ -9201,7 +9201,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-practitioner-role-exercice","PractitionerRole.specialty","PractitionerRole.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation","Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"PractitionerRole.specialty",0,*,"ele-1
+","Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation","Specific specialty of the practitioner.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"required","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty","",,,,"PractitionerRole.specialty",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-practitioner-role-exercice","PractitionerRole.location","PractitionerRole.location","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location]]}
@@ -9586,6 +9586,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"fr-core-practitioner","Practitioner.extension:specialty","Practitioner.extension","specialty","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty]]} {[]}
+","FR Core Practitioner Specialty Extension","This extension adds the element ""specialty"" to the FHIR Practitioner resource.
+http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner","Practitioner.modifierExtension","Practitioner.modifierExtension","","extensions
