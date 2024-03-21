@@ -18,17 +18,17 @@ Description: "Profile of the RelatedPerson resource for France | Profil de la re
 * relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open
 * relationship contains
-    RolePerson 0..1 and
-    RelatedPerson 0..*
+    Role 0..1 and
+    RelationType 0..*
 
 // TODO : vérifier le system qui restreint les codes possibles proposés par le VS FRCoreValueSetRelatedPersonRole. Attention, il faut un discriminant.
-* relationship[RolePerson] from FRCoreValueSetRelatedPersonRole (preferred)
-* relationship[RolePerson] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
-* relationship[RolePerson].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
+* relationship[Role] from FRCoreValueSetPatientContactRole (preferred)
+* relationship[Role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
+* relationship[Role].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
 
-* relationship[RelatedPerson] from FRCoreValueSetRelatedPerson (preferred)
-* relationship[RelatedPerson] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
-* relationship[RelatedPerson].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+* relationship[RelationType] from FRCoreValueSetPatientRelationType (preferred)
+* relationship[RelationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
+* relationship[RelationType].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
 
 * name only FRCoreHumanNameProfile
 * telecom only FRCoreContactPointProfile
