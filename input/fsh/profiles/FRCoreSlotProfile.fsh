@@ -2,7 +2,7 @@ Profile: FRCoreSlotProfile
 Parent: Slot
 Id: fr-core-slot
 Title: "FR Core Slot Profile"
-Description: """Profil of the Slot resource for france.\r\n
+Description: """Profil of the Slot resource for France.\r\n
 Profil de la ressource Slot pour la France"""
 
 * meta.profile ^slicing.discriminator.type = #value
