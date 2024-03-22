@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FRCorePatientINSProfile"] ; # 
   fhir:title [ fhir:v "FR Core Patient INS Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-18T12:45:56+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-22T10:23:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -7047,9 +7047,9 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Patient.contact.relationship:RolePerson" ] ;
+       fhir:id [ fhir:v "Patient.contact.relationship:Role" ] ;
        fhir:path [ fhir:v "Patient.contact.relationship" ] ;
-       fhir:sliceName [ fhir:v "RolePerson" ] ;
+       fhir:sliceName [ fhir:v "Role" ] ;
        fhir:short [ fhir:v "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..." ] ;
        fhir:definition [ fhir:v "The nature of the relationship between the patient and the contact person." ] ;
        fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
@@ -7079,8 +7079,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role"^^xsd:anyURI ;
-           fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role>
+           fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"^^xsd:anyURI ;
+           fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role>
          ]
        ] ;
        fhir:mapping ( [
@@ -7106,9 +7106,9 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Patient.contact.relationship:RelatedPerson" ] ;
+       fhir:id [ fhir:v "Patient.contact.relationship:RelationType" ] ;
        fhir:path [ fhir:v "Patient.contact.relationship" ] ;
-       fhir:sliceName [ fhir:v "RelatedPerson" ] ;
+       fhir:sliceName [ fhir:v "RelationType" ] ;
        fhir:short [ fhir:v "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..." ] ;
        fhir:definition [ fhir:v "The nature of the relationship between the patient and the contact person." ] ;
        fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
@@ -7138,8 +7138,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person"^^xsd:anyURI ;
-           fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person>
+           fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type"^^xsd:anyURI ;
+           fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type>
          ]
        ] ;
        fhir:mapping ( [

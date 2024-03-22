@@ -10,7 +10,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "draft",
-  "date" : "2024-03-18T12:45:56+00:00",
+  "date" : "2024-03-22T10:23:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -6968,9 +6968,9 @@
       }]
     },
     {
-      "id" : "Patient.contact.relationship:RolePerson",
+      "id" : "Patient.contact.relationship:Role",
       "path" : "Patient.contact.relationship",
-      "sliceName" : "RolePerson",
+      "sliceName" : "Role",
       "short" : "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...",
       "definition" : "The nature of the relationship between the patient and the contact person.",
       "comment" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
@@ -6996,7 +6996,7 @@
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -7028,9 +7028,9 @@
       }]
     },
     {
-      "id" : "Patient.contact.relationship:RelatedPerson",
+      "id" : "Patient.contact.relationship:RelationType",
       "path" : "Patient.contact.relationship",
-      "sliceName" : "RelatedPerson",
+      "sliceName" : "RelationType",
       "short" : "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ...",
       "definition" : "The nature of the relationship between the patient and the contact person.",
       "comment" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
@@ -7056,7 +7056,7 @@
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type"
       },
       "mapping" : [{
         "identity" : "rim",

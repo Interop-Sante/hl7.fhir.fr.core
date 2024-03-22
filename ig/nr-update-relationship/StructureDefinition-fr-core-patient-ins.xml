@@ -41,7 +41,7 @@
   <name value="FRCorePatientINSProfile"/>
   <title value="FR Core Patient INS Profile"/>
   <status value="draft"/>
-  <date value="2024-03-18T12:45:56+00:00"/>
+  <date value="2024-03-22T10:23:50+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -6792,9 +6792,9 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.relationship:RolePerson">
+    <element id="Patient.contact.relationship:Role">
       <path value="Patient.contact.relationship"/>
-      <sliceName value="RolePerson"/>
+      <sliceName value="Role"/>
       <short value="The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."/>
       <definition value="The nature of the relationship between the patient and the contact person."/>
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
@@ -6820,7 +6820,7 @@
       </constraint>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role"/>
+        <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -6851,9 +6851,9 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.contact.relationship:RelatedPerson">
+    <element id="Patient.contact.relationship:RelationType">
       <path value="Patient.contact.relationship"/>
-      <sliceName value="RelatedPerson"/>
+      <sliceName value="RelationType"/>
       <short value="The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."/>
       <definition value="The nature of the relationship between the patient and the contact person."/>
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
@@ -6879,7 +6879,7 @@
       </constraint>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person"/>
+        <valueSet value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type"/>
       </binding>
       <mapping>
         <identity value="rim"/>
