@@ -93,13 +93,10 @@ package IG #DDDDDD{
              Location.meta.profile:fr-canonical => [0..1]
              Location.extension:usePeriod => <&plus>[0..1]
              Location.identifier => [None..None]
-             Location.identifier.use => [None..None]
              Location.identifier.type => [1..None]
              Location.identifier.system => [1..None]
              Location.identifier.value => [1..None]
              Location.identifier.assigner => [None..None]
-             Location.status => [None..None]
-             Location.mode => [None..None]
              Location.type => [None..1]
              Location.telecom => [None..None]
              Location.address => [None..None]
@@ -107,7 +104,6 @@ package IG #DDDDDD{
              Location.managingOrganization => [None..None]
              Location.partOf => [None..None]
              Location.partOf.extension:positionRoom => <&plus>[0..1]
-             Location.hoursOfOperation.daysOfWeek => [None..None]
         } 
 
         class FRCoreMedicationAdministrationInhaledOxygenProfile{
@@ -455,9 +451,9 @@ package IG #DDDDDD{
              Patient.maritalStatus => [None..None]
              Patient.contact.extension:contactIdentifier => <&plus>[0..1]
              Patient.contact.extension:comment => <&plus>[0..1]
-             Patient.contact.relationship => [1..1]
-             Patient.contact.relationship:RolePerson => [0..1]
-             Patient.contact.relationship:RelatedPerson => [0..1]
+             Patient.contact.relationship => [None..None]
+             Patient.contact.relationship:Role => [0..1]
+             Patient.contact.relationship:RelationType => [0..1]
              Patient.contact.name => [None..None]
              Patient.contact.telecom => [None..None]
              Patient.generalPractitioner => [None..None]
@@ -469,7 +465,6 @@ package IG #DDDDDD{
              PractitionerRole.meta.profile => [None..None]
              PractitionerRole.meta.profile:fr-canonical => [0..1]
              PractitionerRole.extension:serviceTypeDuration => <&plus>[0..*]
-             PractitionerRole.identifier.use => [None..None]
              PractitionerRole.identifier.system => [None..None]
              PractitionerRole.practitioner => [None..None]
              PractitionerRole.organization => [None..None]
@@ -478,7 +473,6 @@ package IG #DDDDDD{
              PractitionerRole.location => [None..None]
              PractitionerRole.healthcareService => [None..None]
              PractitionerRole.telecom => [None..None]
-             PractitionerRole.availableTime.daysOfWeek => [None..None]
         } 
 
         class FRCorePractitionerRoleProfession{
@@ -532,11 +526,11 @@ package IG #DDDDDD{
              RelatedPerson.meta.profile:fr-canonical => [0..1]
              RelatedPerson.identifier => [1..1]
              RelatedPerson.patient => [None..None]
-             RelatedPerson.relationship => [1..None]
-             RelatedPerson.relationship:RolePerson => [0..1]
-             RelatedPerson.relationship:RolePerson.coding.system => [1..None]
-             RelatedPerson.relationship:RelatedPerson => [0..*]
-             RelatedPerson.relationship:RelatedPerson.coding.system => [1..None]
+             RelatedPerson.relationship => [None..None]
+             RelatedPerson.relationship:Role => [0..1]
+             RelatedPerson.relationship:Role.coding.system => [1..None]
+             RelatedPerson.relationship:RelationType => [0..*]
+             RelatedPerson.relationship:RelationType.coding.system => [1..None]
              RelatedPerson.name => [None..None]
              RelatedPerson.telecom => [None..None]
              RelatedPerson.address => [None..None]
@@ -1081,13 +1075,13 @@ package IG #DDDDDD{
 
      FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetMaritalStatus
 
-        class FRCoreValueSetRelatedPersonRole  
+        class FRCoreValueSetPatientContactRole  
 
-     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetRelatedPersonRole
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientContactRole
 
-        class FRCoreValueSetRelatedPerson  
+        class FRCoreValueSetPatientRelationType  
 
-     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetRelatedPerson
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientRelationType
 
         class FRCoreValueSetPractitionerRoleExercice  
 
@@ -1113,13 +1107,13 @@ package IG #DDDDDD{
 
      FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerIdentifierType
 
-        class FRCoreValueSetRelatedPersonRole  
+        class FRCoreValueSetPatientContactRole  
 
-     FRCoreRelatedPersonProfile -[#black,dotted,thickness=2]-> FRCoreValueSetRelatedPersonRole
+     FRCoreRelatedPersonProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientContactRole
 
-        class FRCoreValueSetRelatedPerson  
+        class FRCoreValueSetPatientRelationType  
 
-     FRCoreRelatedPersonProfile -[#black,dotted,thickness=2]-> FRCoreValueSetRelatedPerson
+     FRCoreRelatedPersonProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientRelationType
 
         class FRCoreValueSetScheduleType  
 

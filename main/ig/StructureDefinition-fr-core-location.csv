@@ -94,7 +94,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Location.identifier.use","Location.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/identifier-use","",,,,"Identifier.use",0,1,"ele-1
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","Role.code or implied by context"
 "Location.identifier.type","Location.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
@@ -120,7 +120,7 @@ per-1:If present, start SHALL have a lower value than end {start.hasValue().not(
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
 "Location.status","Location.status","","","",0,1,"","Y","Y","code {[]} {[]}
-","active | suspended | inactive","The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/location-status","",,,,"Location.status",0,1,"ele-1
+","active | suspended | inactive","The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","Indicates whether the location is still in use.","http://hl7.org/fhir/ValueSet/location-status|4.0.1","",,,,"Location.status",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".statusCode","FiveWs.status"
 "Location.operationalStatus","Location.operationalStatus","","","",0,1,"","","Y","Coding {[]} {[]}
@@ -142,7 +142,7 @@ For searching knowing previous names that the location was known by can be very 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".playingEntity[classCode=PLC determinerCode=INSTANCE].desc"
 "Location.mode","Location.mode","","","",0,1,"","","Y","code {[]} {[]}
-","instance | kind","Indicates whether a resource instance represents a specific location or a class of locations.","This is labeled as a modifier because whether or not the location is a class of locations changes how it can be used and understood.","When using a Location resource for scheduling or orders, we need to be able to refer to a class of Locations instead of a specific Location.","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/location-mode","",,,,"Location.mode",0,1,"ele-1
+","instance | kind","Indicates whether a resource instance represents a specific location or a class of locations.","This is labeled as a modifier because whether or not the location is a class of locations changes how it can be used and understood.","When using a Location resource for scheduling or orders, we need to be able to refer to a class of Locations instead of a specific Location.","","","","","","","",,"required","Indicates whether a resource instance represents a specific location or a class of locations.","http://hl7.org/fhir/ValueSet/location-mode|4.0.1","",,,,"Location.mode",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".playingEntity[classCode=PLC].determinerCode","FiveWs.class"
 "Location.type","Location.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
@@ -258,7 +258,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Location.hoursOfOperation.daysOfWeek","Location.hoursOfOperation.daysOfWeek","","","",0,*,"","","","code {[]} {[]}
-","mon | tue | wed | thu | fri | sat | sun","Indicates which days of the week are available between the start and end Times.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/days-of-week","",,,,"Location.hoursOfOperation.daysOfWeek",0,*,"ele-1
+","mon | tue | wed | thu | fri | sat | sun","Indicates which days of the week are available between the start and end Times.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","The days of the week.","http://hl7.org/fhir/ValueSet/days-of-week|4.0.1","",,,,"Location.hoursOfOperation.daysOfWeek",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a",".effectiveTime"
 "Location.hoursOfOperation.allDay","Location.hoursOfOperation.allDay","","","",0,1,"","","","boolean {[]} {[]}

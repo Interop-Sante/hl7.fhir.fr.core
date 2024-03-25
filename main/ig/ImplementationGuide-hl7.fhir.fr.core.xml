@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
   </text>
   <url value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
-  <version value="2.0.0-ballot"/>
+  <version value="2.0.0"/>
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
-  <status value="draft"/>
-  <date value="2024-03-25T10:44:45+00:00"/>
+  <status value="active"/>
+  <date value="2024-03-25T10:59:40+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1660,6 +1660,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-patient-contact-role"/>
+      </reference>
+      <name value="FR Core ValueSet Patient contact role"/>
+      <description value="ValueSet patient contact role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-marital-status"/>
       </reference>
       <name value="FR Core ValueSet Patient gender INS ValueSet"/>
@@ -1748,21 +1759,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-related-person"/>
+        <reference value="ValueSet/fr-core-vs-relation-type"/>
       </reference>
-      <name value="FR Core ValueSet Related person role"/>
-      <description value="Value set related person role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-related-person-role"/>
-      </reference>
-      <name value="FR Core ValueSet Related person role"/>
-      <description value="Value set related person role"/>
+      <name value="FR Core ValueSet relation type"/>
+      <description value="ValueSet relation type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
