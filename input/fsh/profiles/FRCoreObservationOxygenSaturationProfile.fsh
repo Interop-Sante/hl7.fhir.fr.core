@@ -2,7 +2,7 @@ Profile: FRCoreObservationOxygenSaturationProfile
 Parent: $oxygensat
 Id: fr-core-observation-saturation-oxygen
 Title: "FR Core Observation Oxygen Saturation Profile"
-Description: "Oxygen saturation in Arterial blood  | Saturation en oxygène du sang artériel"
+Description: "Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel"
 * ^purpose = "Measurement of the oxygen saturation in the arterial blood | Mesure de la saturation en oxygène du sang artériel"
 * . ^short = "French FHIR Oxygen Saturation Profile"
 * . ^definition = "This french profile defines  how to represent Oxygen Saturation observations in FHIR using a standard LOINC code and UCUM units of measure | Ce profil français définit comment représenter la mesure de la saturation en oxygène au niveau su sang artériel, en utilisant LOINC et UCUM"

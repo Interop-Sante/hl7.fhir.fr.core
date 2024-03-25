@@ -37,11 +37,13 @@ En établissant la "base" des normes pour promouvoir l'interopérabilité et l'a
 Le guide d'implémentation FR Core est géré par HL7 France et IHE France au sein du comité technique FHIR de HL7 France.
 ### Auteurs et contributeurs
 
-| Role  | Nom           | Organisation | Contact                     |
-| --- |---------------|--------------|-----------------------------|
-| **Primary Editor** | Nicolas Riss  | Agence du Numérique en Santé  | nicolas.riss@esante.gouv.fr |
-| **Primary Editor** | Yohann Poiron | Xtrem Santé  | ypoiron@xtremsante.fr       |
-
+| Role  | Nom           | Organisation |
+| --- |---------------|--------------|
+| **Auteur**   | Nicolas Riss    | Agence du Numérique en Santé |
+| **Auteur**   | Yohann Poiron   | Xtrem Santé                  |
+| Contributeur | Marie Brulliard | Kereval                      |
+| Contributeur | Sylvain Demey   | Agence du Numérique en Santé |
+| Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
 ## Dépendances
 

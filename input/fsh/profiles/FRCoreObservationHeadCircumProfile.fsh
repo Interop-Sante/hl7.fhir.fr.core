@@ -2,7 +2,8 @@ Profile: FRCoreObservationHeadCircumProfile
 Parent: $headcircum
 Id: fr-core-observation-head-circum
 Title: "FR Core Observation Head Circum Profile"
-Description: "HL7 Vital Signs Head Occipital-frontal circumference profil | Profil HL7 Vital Signs Circonférence de la tête"
+Description: "HL7 Vital Signs Head Occipital-frontal circumference profil.
+\r\nProfil HL7 Vital Signs Circonférence de la tête"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
