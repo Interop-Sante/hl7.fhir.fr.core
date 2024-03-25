@@ -2,8 +2,8 @@ Profile: FRCorePractitionerProfile
 Parent: Practitioner
 Id: fr-core-practitioner
 Title: "FR Core Practitioner Profile"
-Description: """French profile of the Practitioner resource | Profil de la ressource Practitionner pour la France
-This profile specifies the types of identifiers for practitioners in France | Ce profil contraint les types d'identifiants du professionnel de santé en France"""
+Description: """French profile of the Practitioner resource. This profile specifies the types of identifiers for practitioners in France.\r\n
+Profil de la ressource Practitionner pour la France. Ce profil contraint les types d'identifiants du professionnel de santé en France"""
 * . ^short = "A person with a  formal responsibility in the provisioning of healthcare or related services | Prestataire de santé"
 * . ^definition = "A person who is directly or indirectly involved in the provisioning of healthcare | Un professionnel impliqué directement ou indirectement dans la prise en charge d'une personne."
 

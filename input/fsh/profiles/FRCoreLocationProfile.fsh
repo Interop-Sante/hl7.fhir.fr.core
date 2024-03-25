@@ -2,7 +2,8 @@ Profile: FRCoreLocationProfile
 Parent: Location
 Id: fr-core-location
 Title: "FR Core Location Profile"
-Description: "French profile of Location | Profil français de la ressource Location"
+Description: "French profile of Location.\r\n
+Profil français de la ressource Location"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

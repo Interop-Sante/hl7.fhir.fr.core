@@ -2,7 +2,8 @@ Profile: FRCoreRelatedPersonProfile
 Parent: RelatedPerson
 Id: fr-core-related-person
 Title: "FR Core Related Person Profile"
-Description: "Profile of the RelatedPerson resource for France | Profil de la ressource RelatedPerson pour l'usage en France"
+Description: """Profile of the RelatedPerson resource for France.\r\n
+Profil de la ressource RelatedPerson pour l'usage en France"""
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

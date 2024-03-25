@@ -4,7 +4,8 @@ Profile: FRCorePractitionerRoleProfession
 Parent: PractitionerRole
 Id: fr-core-practitioner-role-profession
 Title: "FR Core Practitioner Role Profession"
-Description: "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France| Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France."
+Description: "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France.\r\n
+Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France."
 * ^status = #draft
 
 * meta.profile ^slicing.discriminator.type = #value
