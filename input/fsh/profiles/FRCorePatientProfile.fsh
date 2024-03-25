@@ -114,23 +114,23 @@ Description: """Profile of the Patient resource for France. This profile specifi
     FRCorePatientContactIdentifierExtension named contactIdentifier 0..1 and
     FRCoreCommentExtension named comment 0..1
 
-* contact.relationship 1..1
 * contact.relationship ^slicing.discriminator.type = #value
 * contact.relationship ^slicing.discriminator.path = "coding.system"
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
-    RolePerson 0..1 and
-    RelatedPerson 0..1
+    Role 0..1 and
+    RelationType 0..1
+// TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
-* contact.relationship[RolePerson] from FRCoreValueSetRelatedPersonRole (extensible) 
+* contact.relationship[Role] from FRCoreValueSetPatientContactRole (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[RolePerson] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
+* contact.relationship[Role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
 
-* contact.relationship[RelatedPerson] from FRCoreValueSetRelatedPerson (extensible) 
+* contact.relationship[RelationType] from FRCoreValueSetPatientRelationType (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[RelatedPerson] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
+* contact.relationship[RelationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
 
 * contact.name only FRCoreHumanNameProfile
 * contact.telecom only FRCoreContactPointProfile
