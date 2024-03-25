@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Schedule xmlns="http://hl7.org/fhir">
+  <id value="FRCoreScheduleExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Schedule</b><a name="FRCoreScheduleExample"> </a><a name="hcFRCoreScheduleExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Schedule &quot;FRCoreScheduleExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fr-core-schedule.html">FR Core Schedule Profile</a></p></div><blockquote><p><b>FR Core Schedule availability time Extension</b></p><blockquote><p><b>url</b></p><code>identifier</code></blockquote><p><b>value</b>: dispo09112020</p><blockquote><p><b>url</b></p><code>type</code></blockquote><p><b>value</b>: Disponibilité (Details: https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type code free = 'Disponibilité', stated as 'Disponibilité')</p><blockquote><p><b>url</b></p><code>start</code></blockquote><p><b>value</b>: 2020-11-09 08:00:00+0100</p><blockquote><p><b>url</b></p><code>end</code></blockquote><p><b>value</b>: 2020-11-09 20:00:00+0100</p></blockquote><blockquote><p><b>FR Core Service Type Duration Extension</b></p><blockquote><p><b>url</b></p><code>serviceType</code></blockquote><p><b>value</b>: Hypnotherapy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-service-type.html">Service type</a>#22)</span></p><blockquote><p><b>url</b></p><code>duration</code></blockquote><p><b>value</b>: 15 minute<span style="background: LightGoldenRodYellow"> (Details: UCUM code min = 'min')</span></p></blockquote><p><b>identifier</b>: <code>http://frcore.org/scheduleid</code>/45 (use: USUAL)</p><p><b>active</b>: true</p><p><b>specialty</b>: Médecine générale (SM) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html">TRE_R38-SpecialiteOrdinale</a>#SM54)</span></p><p><b>actor</b>: </p><ul><li><a href="https://exampleserver.org/fhir/PractitionerRole/1">https://exampleserver.org/fhir/PractitionerRole/1: Dr Langdon, cabinet Paris</a></li><li><a href="https://exampleserver.org/fhir/Practitioner/1">https://exampleserver.org/fhir/Practitioner/1: Dr Langdon</a></li></ul><p><b>planningHorizon</b>: 2019-01-01 00:00:00+0000 --&gt; 2020-01-01 00:00:00+0000</p></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time">
+    <extension url="identifier">
+      <valueIdentifier>
+        <value value="dispo09112020"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="type">
+      <valueCoding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type"/>
+        <code value="free"/>
+        <display value="Disponibilité"/>
+      </valueCoding>
+    </extension>
+    <extension url="start">
+      <valueDateTime value="2020-11-09T08:00:00+01:00"/>
+    </extension>
+    <extension url="end">
+      <valueDateTime value="2020-11-09T20:00:00+01:00"/>
+    </extension>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration">
+    <extension url="serviceType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+          <code value="22"/>
+          <display value="Hypnotherapy"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="duration">
+      <valueDuration>
+        <value value="15"/>
+        <unit value="minute"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="min"/>
+      </valueDuration>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://frcore.org/scheduleid"/>
+    <value value="45"/>
+  </identifier>
+  <active value="true"/>
+  <specialty>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"/>
+      <code value="SM54"/>
+      <display value="Médecine générale (SM)"/>
+    </coding>
+  </specialty>
+  <actor>
+    <reference value="https://exampleserver.org/fhir/PractitionerRole/1"/>
+    <display value="Dr Langdon, cabinet Paris"/>
+  </actor>
+  <actor>
+    <reference value="https://exampleserver.org/fhir/Practitioner/1"/>
+    <display value="Dr Langdon"/>
+  </actor>
+  <planningHorizon>
+    <start value="2019-01-01T00:00:00Z"/>
+    <end value="2020-01-01T00:00:00Z"/>
+  </planningHorizon>
+</Schedule>
