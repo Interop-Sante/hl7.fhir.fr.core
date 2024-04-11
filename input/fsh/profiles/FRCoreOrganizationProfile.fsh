@@ -19,7 +19,7 @@ Description: """Profile of the Organization resource for France. This profile sp
 * extension contains
     FRCoreOrganizationShortNameExtension named shortName 0..1 and
     FRCoreOrganizationDescriptionExtension named description 0..1 and
-    https://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
+    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
     
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetOrganizationIdentifierType (extensible)
