@@ -19,7 +19,7 @@ Description: """Profile of the Organization resource for France. This profile sp
 * extension contains
     FRCoreOrganizationShortNameExtension named shortName 0..1 and
     FRCoreOrganizationDescriptionExtension named description 0..1 and
-    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
+    https://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
     
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetOrganizationIdentifierType (extensible)
@@ -42,12 +42,12 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier[sirene] ^short = "Identifiant SIREN (9 chiffres) ou SIRET (14 chiffres)"
 * identifier[sirene].type.coding.code ^short = "SIREN | SIRET"
 * identifier[sirene].type.coding.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
-* identifier[sirene].system = "http://sirene.fr"
+* identifier[sirene].system = "https://sirene.fr"
 
 * identifier[finess] ^short = "Identifiant FINESS Entité Géographique (EG) ou Entité Juridique (EJ)"
 * identifier[finess].type.coding.code ^short = "FINEJ | FINEG"
 * identifier[finess].type.coding.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
-* identifier[finess].system = "http://finess.esante.gouv.fr"
+* identifier[finess].system = "https://finess.esante.gouv.fr"
 
 * identifier[adeliRang] ^short = "Identifiant ADELI rang (9 chiffres ADELI + 2 chiffres RANG)"
 * identifier[adeliRang].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#INTRN

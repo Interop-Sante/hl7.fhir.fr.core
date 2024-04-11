@@ -51,12 +51,12 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 // Identifiant du Répertoire Partagé des Professionnels intervenant dans le système de Santé (RPPS). Celui-ci peut aussi être inclus dans l'idNatPs.
 * identifier[rpps] ^short = "Numéro RPPS (11 chiffres)"
 * identifier[rpps].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#RPPS
-* identifier[rpps].system = "http://rpps.esante.gouv.fr"
+* identifier[rpps].system = "https://rpps.esante.gouv.fr"
 
 // Identifiant ADELI. Celui-ci peut aussi être inclus dans l'idNatPs.
 * identifier[adeli] ^short = "Numéro ADELI (9 chiffres)"
 * identifier[adeli].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#ADELI
-* identifier[adeli].system = "http://adeli.esante.gouv.fr"
+* identifier[adeli].system = "https://adeli.esante.gouv.fr"
 
 
 
