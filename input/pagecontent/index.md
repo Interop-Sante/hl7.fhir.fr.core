@@ -7,6 +7,15 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 
 </p>
 
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b>
+  <br>
+ La version de l'Implementation Guide que vous êtes en train de consulter est en intégration continue et n'est pas à utiliser car soumise à des changements réguliers. La version à utiliser est accessible ici : http://hl7.fr/ig/fhir/core.
+</p>
+</blockquote>
+
+
 ### Introduction
 
 Ce guide de mise en œuvre est fourni pour **soutenir l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux**.
