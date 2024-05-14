@@ -31,7 +31,7 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier.system pattern"
 
-* identifier contains idNatSt 0..1 and sirene 0..* and finess 0..* and adeliRang 0..* and rppsRang 0..*
+* identifier contains idNatSt 0..1 and siren 0..* and siret 0..* and finess 0..* and adeliRang 0..* and rppsRang 0..*
 
 * identifier[idNatSt] ^short = "Identifiant idNat_Struct délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures."
 * identifier[idNatSt].use = #official
@@ -39,10 +39,13 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier[idNatSt].system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier[idNatSt].value ^short = "Identification nationale de la structure préfixé : 0 + ADELI rang, 1 + Numéro FINESS Etablissement, 2 + Numéro SIREN, 3 + Numéro SIRET, 4 + RPPS rang ou identifiant technique de la structure."
 
-* identifier[sirene] ^short = "Identifiant SIREN (9 chiffres) ou SIRET (14 chiffres)"
-* identifier[sirene].type.coding.code ^short = "SIREN | SIRET"
-* identifier[sirene].type.coding.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
-* identifier[sirene].system = "https://sirene.fr"
+* identifier[siren] ^short = "Identifiant SIREN (9 chiffres)"
+* identifier[siren].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#SIREN
+* identifier[siren].system = "https://sirene.fr"
+
+* identifier[siret] ^short = "Identifiant SIRET (14 chiffres)"
+* identifier[siret].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#SIRET
+* identifier[siret].system = "https://sirene.fr"
 
 * identifier[finess] ^short = "Identifiant FINESS Entité Géographique (EG) ou Entité Juridique (EJ)"
 * identifier[finess].type.coding.code ^short = "FINEJ | FINEG"
