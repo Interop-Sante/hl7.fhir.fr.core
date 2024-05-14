@@ -35,7 +35,7 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 * identifier[INS-NIR-TEST].system ^short = "Autorité d’affectation des INS-NIR de test"
 * identifier[INS-NIR-TEST].value 1..
 
-* identifier[INS-NIR-TEST] ^short = "Identifiant INS-NIR du patient fictif de démonstration"
+* identifier[INS-NIR-DEMO] ^short = "Identifiant INS-NIR du patient fictif de démonstration"
 * identifier[INS-NIR-DEMO].use = #official
 * identifier[INS-NIR-DEMO].type = $fr-core-v2-0203#INS-NIR-DEMO
 * identifier[INS-NIR-DEMO].system = "urn:oid:1.2.250.1.213.1.4.11"
