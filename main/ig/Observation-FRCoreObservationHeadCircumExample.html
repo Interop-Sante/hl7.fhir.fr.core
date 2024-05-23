@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7fr.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -44,12 +45,13 @@
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+  <a no-external="true" id="hl7-logo" href="http://interopsante.org/"><img src="assets/images/IS_LOGO.png" alt="Interop'Santé Logo" height="50"/></a>
+</div>
+
 <div id="family-nav">
-    <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
-  </div>
-  <div id="is-nav">
-    <a no-external="true" id="hl7-logo" href="http://interopsante.org/"><img src="assets/images/IS_LOGO.png" alt="Interop'Santé Logo" height="50"/></a>
-  </div>
+  <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guide d'implémentation Fr Core</span>
@@ -208,7 +210,7 @@
 
 
 
-  <div><p><b>Generated Narrative: Observation </b><a name="FRCoreObservationHeadCircumExample"> </a><a name="hcFRCoreObservationHeadCircumExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation "FRCoreObservationHeadCircumExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fr-core-observation-head-circum.html">FR Core Observation Head Circum Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Head Occipital-frontal circumference <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9843-4)</span></p><p><a name="l362">​</a><b>subject</b>: <a href="ExamplefrPatient001">ExamplefrPatient001: Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href="Patient-ExamplefrCorePatient001.html">Patient/ExamplefrCorePatient001: Pierre Durand</a> " DURAND"</p><p><b>value</b>: 61 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
+  <div><p><b>Generated Narrative: Observation </b><a name="FRCoreObservationHeadCircumExample"> </a><a name="hcFRCoreObservationHeadCircumExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation "FRCoreObservationHeadCircumExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fr-core-observation-head-circum.html">FR Core Observation Head Circum Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Head Occipital-frontal circumference <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9843-4)</span></p><p><a name="l364">​</a><b>subject</b>: <a href="ExamplefrPatient001">ExamplefrPatient001: Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href="Patient-ExamplefrCorePatient001.html">Patient/ExamplefrCorePatient001: Pierre Durand</a> " DURAND"</p><p><b>value</b>: 61 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></div>
 
   
 
@@ -255,10 +257,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 23, 2024 12:32+0000">2024-05-23</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 23, 2024 14:35+0000">2024-05-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/new" target="_blank">Issue</a>
+                
+          Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fr/ig/fhir/core/history.html" target="_blank">Historique des versions </a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/new" target="_blank">Issue</a>

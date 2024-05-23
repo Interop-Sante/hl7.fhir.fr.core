@@ -46,9 +46,9 @@ var(--publish-box-border); */
 :root {
 
   --ig-status-text-color: maroon; /* 1. IG Title and status text color */
-  --navbar-bg-color: #ad1f2f; /* 2. Header container color */
+  --navbar-bg-color: #7b1fad; /* 2. Header container color */
   --footer-bg-color: #707070; /* 3. Footer background color*/
-  --footer-container-bg-color: #ad1f2f; /* 4. Footer container color */
+  --footer-container-bg-color: #7b1fad; /* 4. Footer container color */
   --stripe-bg-color: #999999; /* 5. Header strip color */
 
   --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
@@ -178,16 +178,6 @@ body {
 }
 #logo img {
   max-width: 100%;
-}
-
-
-#is-nav {
-  line-height: 50px;
-  float: left;
-  margin-top: 4px;
-  margin-left: 4px;
-  margin-bottom: 8px;
-  color: #808080;
 }
 
 #project-nav {
@@ -619,7 +609,8 @@ div.markdown-toc p.link
 
 /* Fix to avoid truncating letter descenders in headings */
 h1, h2, h3, h4, h5, h6, .title {
-overflow: visible;
+  overflow: visible;
+  margin: 1em 0 0.4em 0;
 }
 
 /* Common content for section numbering */
@@ -671,6 +662,19 @@ li a[href^="http://"]:not([no-external^="true"]):after,li a[href^="https://"]:no
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
+}
+
+.modified-content::before {
+  white-space: pre;
+  content: "Modified Content\A ";
+  color: red;
+  font-weight: bold;}
+.modified-content{
+    margin: 5px;
+    padding: 10px;
+    color: #784212;
+    background-color: #fef9e7;
+    border-color: #f9e79f;
 }
 
 .bg-success{
