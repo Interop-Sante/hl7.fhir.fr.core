@@ -4,7 +4,6 @@ Title: "FR Core CodeSystem v2-0203"
 Description: "HL7 v2 - Identifier type"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
-* ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
 * #ADELI "N° ADELI"
@@ -15,6 +14,8 @@ Description: "HL7 v2 - Identifier type"
 * #INS-C "Identifiant National de Santé Calculé"
 * #INS-NIA "NIR temporaire"
 * #INS-NIR "NIR définitif"
+* #INS-NIR-TEST "NIR TEST"
+* #INS-NIR-DEMO "NIR DEMO"
 * #FINEJ "FINESS d'entité juridique"
 * #FINEG "FINESS d'entité géographique"
 * #SIREN "Identification de l'organisation au SIREN"

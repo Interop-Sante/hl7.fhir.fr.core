@@ -15,6 +15,8 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 
 * identifier contains
     INS-NIR 0..* and
+    INS-NIR-TEST 0..* and
+    INS-NIR-DEMO 0..* and
     INS-NIA 0..*
 
 // Slices définies dans PatientINS car ne peuvent pas être véhiculé si identité non qualifiée.
@@ -25,6 +27,20 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].system ^short = "Autorité d'affectation des INS-NIR"
 * identifier[INS-NIR].value 1..
+
+* identifier[INS-NIR-TEST] ^short = "Identifiant INS-NIR du patient fictif de test"
+* identifier[INS-NIR-TEST].use = #official
+* identifier[INS-NIR-TEST].type = $fr-core-v2-0203#INS-NIR-TEST
+* identifier[INS-NIR-TEST].system = "urn:oid:1.2.250.1.213.1.4.10"
+* identifier[INS-NIR-TEST].system ^short = "Autorité d’affectation des INS-NIR de test"
+* identifier[INS-NIR-TEST].value 1..
+
+* identifier[INS-NIR-DEMO] ^short = "Identifiant INS-NIR du patient fictif de démonstration"
+* identifier[INS-NIR-DEMO].use = #official
+* identifier[INS-NIR-DEMO].type = $fr-core-v2-0203#INS-NIR-DEMO
+* identifier[INS-NIR-DEMO].system = "urn:oid:1.2.250.1.213.1.4.11"
+* identifier[INS-NIR-DEMO].system ^short = "Autorité d’affectation des INS-NIR de démonstration"
+* identifier[INS-NIR-DEMO].value 1..
 
 * identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
 * identifier[INS-NIA].use = #temp
@@ -47,6 +63,6 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 
 
 Invariant:   fr-core-1
-Description: "If identityReliability status = 'VALI', then Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or both SHALL be present"
+Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
-* expression = "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists())"
+* expression = "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists())"
