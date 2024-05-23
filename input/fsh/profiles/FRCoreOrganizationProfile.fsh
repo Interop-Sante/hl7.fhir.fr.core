@@ -26,8 +26,10 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier.system 1..
 * identifier.value 1..
 
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator[0].type = #pattern
+* identifier ^slicing.discriminator[0].path = "system"
+* identifier ^slicing.discriminator[1].type = #pattern
+* identifier ^slicing.discriminator[1].path = "type"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier.system pattern"
 
