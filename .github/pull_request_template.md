@@ -6,5 +6,5 @@
 
 ## Preview
 
-https://interop-sante.github.io/hl7.fhir.fr.medication/[ajouter_nom_de_la_branche]/ig
+https://interop-sante.github.io/hl7.fhir.fr.core/[ajouter_nom_de_la_branche]/ig
 
