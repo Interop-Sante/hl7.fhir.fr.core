@@ -1,6 +1,8 @@
 Profile: FRCoreObservationBodyHeightProfile
 Parent: http://hl7.org/fhir/StructureDefinition/bodyheight
 Id: fr-core-observation-body-height
+Description: "French profile for body height.
+\r\nProfil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7"
 Title: "FR Core Observation Body Height Profile"
 * . ^short = "French Body Height Profile based on FHIR Body height profile"
 
@@ -17,6 +19,9 @@ Title: "FR Core Observation Body Height Profile"
 * extension contains
     FRCoreObservationHeightBodyPositionExtension named bodyposition 0..1 and
     $workflow-supportingInfo named supportingInfo 0..1 MS
+
+* code.coding 1..
+
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)

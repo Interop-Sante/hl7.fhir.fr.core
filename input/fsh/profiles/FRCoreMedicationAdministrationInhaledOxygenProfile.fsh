@@ -2,6 +2,7 @@ Profile: FRCoreMedicationAdministrationInhaledOxygenProfile
 Parent: MedicationAdministration
 Id: fr-core-medication-administration-inhaled-oxygen
 Title: "FR Core Medication Administration Inhaled Oxygen Profile"
+Description: "Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé."
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

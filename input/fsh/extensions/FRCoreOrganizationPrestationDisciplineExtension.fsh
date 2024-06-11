@@ -1,3 +1,5 @@
+// TODO - extension utilisée nulle part, à étudier 
+
 Extension: FRCoreOrganizationPrestationDisciplineExtension
 Id: fr-core-organization-prestation-discipline
 Title: "FR Core Organization Prestation Discipline Extension"

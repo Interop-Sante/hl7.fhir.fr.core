@@ -2,7 +2,8 @@ Profile: FRCoreOrganizationUFProfile
 Parent: Organization
 Id: fr-core-organization-uf
 Title: "FR Core Organization UF Profile"
-Description: "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"
+Description: "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.
+\r\nCe profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -27,7 +28,7 @@ Description: "This profile specializes the fr-core-organization profile to repre
     FRCoreOrganizationExecutantExtension named executantAct 0..1 and
     FRCoreOrganizationAnalysisSectionExtension named analysisSection 0..1 and
     FRCoreOrganizationActivityTypeExtension named activityType 0..1 and
-    $organization-period named usePeriod 0..1
+    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
     
 * identifier.use from IdentifierUse (required)
 * identifier.type 1..
@@ -37,6 +38,8 @@ Description: "This profile specializes the fr-core-organization profile to repre
 * identifier.system 1..
 * identifier.value 1..
 * type from FRCoreValueSetOrganizationType (extensible)
+
 * partOf only Reference(FRCoreOrganizationProfile)
+
 * partOf ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
 * partOf ^type.extension.valueBoolean = true

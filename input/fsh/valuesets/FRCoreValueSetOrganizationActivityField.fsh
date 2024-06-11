@@ -1,7 +1,9 @@
 ValueSet: FRCoreValueSetOrganizationActivityField
-Id: fr-core-organization-activity-field
+Id: fr-core-vs-organization-activity-field
 Title: "FR Core ValueSet Organization activity field"
 Description: "The activity field of the organization | Secteur d'activité de l'organisation."
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -11,3 +13,6 @@ Description: "The activity field of the organization | Secteur d'activité de l'
 
 * ^immutable = true
 * include codes from system $TRE-R02-SecteurActivite
+
+// SVS profile
+* ^experimental = false

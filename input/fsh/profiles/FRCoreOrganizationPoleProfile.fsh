@@ -2,6 +2,7 @@ Profile: FRCoreOrganizationPoleProfile
 Parent: Organization
 Id: fr-core-organization-pole
 Title: "FR Core Organization Pole Profile"
+Description: "FR Core Organization Pole Profile"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -17,7 +18,7 @@ Title: "FR Core Organization Pole Profile"
     FRCoreOrganizationShortNameExtension named shortName 0..1 and
     FRCoreOrganizationDescriptionExtension named description 0..1 and
     FRCoreOrganizationBudgetLetterExtension named budgetLetter 0..1 and
-    $organization-period named usePeriod 0..1
+    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
 
 * identifier.use from IdentifierUse (required)
 * identifier.type 1..

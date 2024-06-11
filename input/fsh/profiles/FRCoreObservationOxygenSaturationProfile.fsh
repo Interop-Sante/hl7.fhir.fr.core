@@ -2,7 +2,7 @@ Profile: FRCoreObservationOxygenSaturationProfile
 Parent: $oxygensat
 Id: fr-core-observation-saturation-oxygen
 Title: "FR Core Observation Oxygen Saturation Profile"
-Description: "Oxygen saturation in Arterial blood  | Saturation en oxygène du sang artériel"
+Description: "Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel"
 * ^purpose = "Measurement of the oxygen saturation in the arterial blood | Mesure de la saturation en oxygène du sang artériel"
 * . ^short = "French FHIR Oxygen Saturation Profile"
 * . ^definition = "This french profile defines  how to represent Oxygen Saturation observations in FHIR using a standard LOINC code and UCUM units of measure | Ce profil français définit comment représenter la mesure de la saturation en oxygène au niveau su sang artériel, en utilisant LOINC et UCUM"
@@ -17,8 +17,9 @@ Description: "Oxygen saturation in Arterial blood  | Saturation en oxygène du s
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-
 * extension contains $workflow-supportingInfo named supportingInfoAdministrationOxygen 0..1
+
+* code.coding 1..
 
 * partOf ..1 MS
 * partOf only Reference(FRCoreMedicationAdministrationInhaledOxygenProfile)
@@ -28,7 +29,7 @@ Description: "Oxygen saturation in Arterial blood  | Saturation en oxygène du s
 * subject only Reference(Patient or FRCorePatientProfile)
 * encounter only Reference(Encounter or FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
-* bodySite from $ValueSet-sPO2BodyLocationVS.html (example)
+* bodySite from $ValueSet-sPO2BodyLocationVS (example)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * bodySite ^binding.extension.valueString = "BodySite"
 

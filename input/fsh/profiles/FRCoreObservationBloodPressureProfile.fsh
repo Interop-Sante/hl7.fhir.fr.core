@@ -1,8 +1,9 @@
 Profile: FRCoreObservationBpProfile
 Parent: http://hl7.org/fhir/StructureDefinition/bp
 Id: fr-core-observation-bp
-Title: "FR Core Observation Bp Profile"
-Description: "French profil Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component (systolic and/or diastolic and/or mean) | Profil français de pression artérielle avec tous les éléments fils optionnels. Il s'agit d'une Observation avec l'élément Observation.valueQuantity n'est pas renseigné et qui contient au moins un composant Pression systolique, Pression diastolique, Pression moyenne."
+Title: "FR Core Observation Blood Pressure Profile"
+Description: "French profile for blood pressure.
+\r\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -16,6 +17,8 @@ Description: "French profil Blood pressure panel with all children optional - Th
 * extension ^slicing.rules = #open
 
 * extension contains $workflow-supportingInfo named supportingInfo 0..1
+
+* code.coding 1..
 
 * encounter only Reference(FRCoreEncounterProfile)
 * effective[x] 1..
@@ -42,12 +45,14 @@ Description: "French profil Blood pressure panel with all children optional - Th
 
 * component[SystolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[SystolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
+* component[SystolicBP].code.coding 1..
 
 
 * component[DiastolicBP] ^short = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP] ^definition = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[DiastolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
+* component[DiastolicBP].code.coding 1..
 
 * component[MeanBP] ^short = "Mean blood pressure"
 * component[MeanBP] ^definition = "Mean blood pressure"

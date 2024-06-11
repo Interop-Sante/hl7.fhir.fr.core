@@ -2,7 +2,8 @@ Profile: FRCoreSlotProfile
 Parent: Slot
 Id: fr-core-slot
 Title: "FR Core Slot Profile"
-Description: "http://interopsante.org/fhir/StructureDefinition/fr-core-slot"
+Description: """Profil of the Slot resource for France.\r\n
+Profil de la ressource Slot pour la France"""
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

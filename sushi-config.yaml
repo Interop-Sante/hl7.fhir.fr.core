@@ -1,5 +1,5 @@
 id: hl7.fhir.fr.core
-canonical: http://hl7.fr/ig/fhir/core
+canonical: https://hl7.fr/ig/fhir/core
 name: FrCore
 title: Guide d'implémentation Fr Core
 publisher:
@@ -11,11 +11,15 @@ contact:
       - system: email
         value: fhir@interopsante.org
         use: work
-status: draft
-version: 2.0.0
+status: active
+version: 2.0.1
 fhirVersion: 4.0.1
 copyrightYear: 2023+
 releaseLabel: ci-build
+jurisdiction: urn:iso:std:iso:3166#FR "France"
+
+dependencies:
+  ans.fr.nos: 1.2.0
 
 parameters:
     shownav: 'true'
@@ -24,6 +28,10 @@ parameters:
 pages:
     index.md:
         title: Accueil
+    profile_list.md:
+        title: Liste des profils
+    bonnes_pratiques.md:
+        title: Bonnes pratiques
     autres_ressources.md:
         title: Autres Ressources
         downloads.md:
@@ -31,8 +39,11 @@ pages:
 
 menu:
     Accueil: index.html
+    Liste des profils: profile_list.html
     Ressources de conformité: artifacts.html
+    Bonnes pratiques: bonnes_pratiques.html
     Autres ressources:
         Téléchargements et usage: downloads.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
+        "Catalogue des guides ANS": new-tab https://interop.esante.gouv.fr/ig/fhir/
         "Site Interop'Santé": new-tab http://www.interopsante.org

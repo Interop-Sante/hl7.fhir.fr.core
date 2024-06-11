@@ -1,18 +1,22 @@
+
+
 ValueSet: FRCoreValueSetContactRelationship
-Id: fr-core-contact-relationship
+Id: fr-core-vs-contact-relationship
 Title: "FR Core ValueSet Contact relationship"
 Description: "A set of codes that can be used to indicate the relationship between a Patient and a Related Person."
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
-* ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
+* ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
-* $0131#O "Other"
-* $0131#U "Unknown"
-* $0131#N "Next of kin"
+* $v2-0131#O "Other"
+* $v2-0131#U "Unknown"
+* $v2-0131#N "Next of kin"
 * $fr-contact-relationship#WRD "Dépositaire de la tutelle judiciare"
 * $fr-contact-relationship#GRD "Tuteur"
 * $fr-contact-relationship#CUR "Représentant légal"
@@ -94,3 +98,6 @@ Description: "A set of codes that can be used to indicate the relationship betwe
 * $fr-contact-relationship#WIFE "wife"
 * $fr-contact-relationship#FRND "unrelated friend"
 * $fr-contact-relationship#NBOR "neighbor"
+
+// SVS profile
+* ^experimental = false

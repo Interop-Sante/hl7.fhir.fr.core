@@ -2,7 +2,8 @@ Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
 Title: "FR Core Encounter Profile"
-Description: "This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. | Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue."
+Description: "This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.\r\n
+Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue."
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -68,13 +69,9 @@ Description: "This profil constrains the Encounter resource to represent either 
 * hospitalization.reAdmission ^short = "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
 * hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
 * hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
-* hospitalization.dischargeDisposition ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* hospitalization.dischargeDisposition ^binding.extension[=].valueString = "DischargeDisp"
 * location.location only Reference(FRCoreLocationProfile)
 
 * location.physicalType from FRCoreValueSetLocationPhysicalType (example)
-* location.physicalType ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* location.physicalType ^binding.extension[=].valueString = "PhysicalType"
 
 * serviceProvider only Reference(FRCoreOrganizationProfile)
 

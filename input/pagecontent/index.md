@@ -1,4 +1,4 @@
-<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6;">
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>
 Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.
 </b><br>
@@ -6,6 +6,15 @@ Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'
 Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France
 
 </p>
+
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b>
+  <br>
+ La version de l'Implementation Guide que vous êtes en train de consulter est en intégration continue et n'est pas à utiliser car soumise à des changements réguliers. La version à utiliser est accessible ici : http://hl7.fr/ig/fhir/core.
+</p>
+</blockquote>
+
 
 ### Introduction
 
@@ -37,11 +46,13 @@ En établissant la "base" des normes pour promouvoir l'interopérabilité et l'a
 Le guide d'implémentation FR Core est géré par HL7 France et IHE France au sein du comité technique FHIR de HL7 France.
 ### Auteurs et contributeurs
 
-| Role  | Nom           | Organisation | Contact                     |
-| --- |---------------|--------------|-----------------------------|
-| **Primary Editor** | Nicolas Riss  | Agence du Numérique en Santé  | nicolas.riss@esante.gouv.fr |
-| **Primary Editor** | Yohann Poiron | Xtrem Santé  | ypoiron@xtremsante.fr       |
-
+| Role  | Nom           | Organisation |
+| --- |---------------|--------------|
+| **Auteur**   | Nicolas Riss    | Agence du Numérique en Santé |
+| **Auteur**   | Yohann Poiron   | Xtrem Santé                  |
+| Contributeur | Marie Brulliard | Kereval                      |
+| Contributeur | Sylvain Demey   | Agence du Numérique en Santé |
+| Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
 ## Dépendances
 

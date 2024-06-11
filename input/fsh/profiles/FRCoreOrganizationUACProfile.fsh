@@ -2,7 +2,8 @@ Profile: FRCoreOrganizationUACProfile
 Parent: Organization
 Id: fr-core-organization-uac
 Title: "FR Core Organization UAC Profile"
-Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"
+Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.
+\r\nCe profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -17,7 +18,7 @@ Description: "This profile specializes the fr-core-organization profile to repre
 * extension contains
     FRCoreOrganizationShortNameExtension named shortName 0..1 and
     FRCoreOrganizationDescriptionExtension named description 0..1 and
-    $organization-period named usePeriod 0..1
+    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
     
 * identifier.use from IdentifierUse (required)
 * identifier.type 1..

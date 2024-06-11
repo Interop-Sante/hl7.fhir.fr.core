@@ -20,8 +20,7 @@ Description: "This extension specifies a list of periods of time (recurrent or n
 
 * extension[type].value[x] only Coding
 * extension[type].valueCoding from FRCoreValueSetScheduleType (extensible)
-// * extension[type].value[x].system = "http://interopsante.org/fhir/CodeSystem/fr-core-schedule-type" (exactly) 
-// TODO : supprimer le fixed system (défini dans le binding des VS - expliquer que c'est bien le système du CodeSystem qu'il faut mettre et pas le système du ValueSet) 
+
 
 * extension[rrule] ^short = "Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule"
 * extension[rrule] ^definition = "Specification of the recurrent periods | Spécifications des périodes récurrentes\r\nthe element's value sets come from iCalendar | les Jdv des éléments de rrule proviennent de iCalendar"
@@ -105,7 +104,8 @@ Description: "This extension specifies a list of periods of time (recurrent or n
 
 * extension[unavailabilityReason] ^short = "Non-availability resaon | Raison de l'indisponibilité"
 * extension[unavailabilityReason].value[x] only CodeableConcept
-* extension[unavailabilityReason].value[x] from $fr-core-schedule-unavailability-reason (extensible)
+// * extension[unavailabilityReason].value[x] from fr-core-schedule-unavailability-reason (example) 
+// * extension[unavailabilityReason].value[x] from $fr-core-schedule-unavailability-reason (extensible) // TODO : valueset à créer
 
 * extension[created] ^short = "The date/time the period was created | Date de création de la période"
 * extension[created] ^definition = "Date/time of the availabibility/non-availlabilty period was created | Date/time à laquelle la période de disponibilité/indisponibilité a été crée"

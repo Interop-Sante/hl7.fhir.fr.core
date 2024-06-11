@@ -1,3 +1,5 @@
+// TODO - extension utilisée nulle part, à étudier 
+
 Extension: FRCoreSlotDateExtension
 Id: fr-core-slot-date
 Title: "FR Core Slot Date Extension"

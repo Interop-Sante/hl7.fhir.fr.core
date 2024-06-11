@@ -1,7 +1,9 @@
 ValueSet: FRCoreValueSetAvailabilityTimeRule
-Id: fr-core-availability-time-rule
-Title: "Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule "
+Id: fr-core-vs-availability-time-rule
+Title: "Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule"
 Description: "Specification of the recurrent periods | Spécifications des périodes récurrentes"
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension[=].valueMarkdown = "Availability Time Rule"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
@@ -17,3 +19,6 @@ Description: "Specification of the recurrent periods | Spécifications des péri
 * $rfc2445#WEEKLY "Par semaine"
 * $rfc2445#MONTHLY "Par mois"
 * $rfc2445#YEARLY "Par an"
+
+// SVS profile
+* ^experimental = false
