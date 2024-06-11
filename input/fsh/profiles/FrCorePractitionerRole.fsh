@@ -16,24 +16,12 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 * extension ^slicing.rules = #open
 * extension contains FRCoreServiceTypeDurationExtension named serviceTypeDuration 0..*
 
-* identifier.system ^short = "The namespace for the identifier value | Namespace du RASS)"
-* identifier.system ^definition = "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nNamespace du RASS)"
-
 * practitioner only Reference(FRCorePractitionerProfile)
 * organization only Reference(FRCoreOrganizationProfile)
 
 
-//TODO à mettre à jour avec la fusion exercice-profession : créer VS ?
 * code from $fr-practitioner-role-exercice (preferred)
 * code ^short = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation"
-
-// * code from $fr-practioner-role-profession (required)
-// * code ^short = "Professions which this practitioner may have"
-// * code ^definition = "Professions which this practitioner is authorized to perform in France. | Professions que le PS est autorisé à réaliser"
-// * code.extension ^slicing.discriminator.type = #value
-// * code.extension ^slicing.discriminator.path = "url"
-// * code.extension ^slicing.rules = #open
-// * code.extension contains FrCorePractitionerRoleCodeCategorieProfessionnelle named professionnalCategory 0..1
 
 
 * specialty from $fr-practitioner-specialty (required)
