@@ -47,6 +47,14 @@ Alias: $JDV-J101-SecteurActivite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J101-
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
 Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 
+
+Alias: $JDV-J81-TypeDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS
+Alias: $JDV-J89-CategorieProfessionnelle-RASS = https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS
+Alias: $JDV-J91-TypeSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS
+Alias: $JDV-J106-EnsembleProfession-RASS = https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS
+Alias: $JDV-J107-EnsembleSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS
+
+
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0007 = http://terminology.hl7.org/CodeSystem/v2-0007
@@ -106,11 +114,7 @@ Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position
 
 
-Alias: $JDV-J81-TypeDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS
-Alias: $JDV-J89-CategorieProfessionnelle-RASS = https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS
-Alias: $JDV-J91-TypeSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS
-Alias: $JDV-J106-EnsembleProfession-RASS = https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS
-Alias: $JDV-J107-EnsembleSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS
+
 
 // SD
 Alias: $fr-core-observation-level-of-exertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion // A corriger
