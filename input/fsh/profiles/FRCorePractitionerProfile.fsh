@@ -97,17 +97,8 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 * qualification[degree].code.coding[degreeType] MS
 * qualification[degree].code.coding[degreeType] from $JDV-J81-TypeDiplome-RASS (required)
 
-// periodValidite
-* qualification[degree].period ^short = "[Donnée restreinte] : Période durant laquelle le niveau de formation est actif."
-* qualification[degree].period.start ^short = "dateDebut : Date d’obtention du diplôme (dateDiplome)\ncette date est renseignée par l’ordre à la clôture de l’exercice professionnel."
-* qualification[degree].period.end ^short = "dateFin : Date à laquelle le niveau de formation n’est plus actif (non visible hormis dans les données historisées)."
 
-// lieuFormation
-* qualification[degree].issuer ^short = "[Donnée restreinte] : Lieu de formation pour l'obtention du diplôme (lieuFormation)."
-* qualification[degree].issuer only Reference(AsOrganizationProfile or fr-core-organization)
 
-//
-* qualification[degree].extension contains AsEducationLevelExtension named as-ext-education-level 0..* MS
 
 // ##############
 // # PROFESSION #
@@ -133,9 +124,6 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 * qualification[exercicePro].code.coding[profession] ^short = "Profession exercée : de santé (professionSante) TRE G15, du social (professionSocial) TRE R94, à usage de titre professionnel (usagerTitre) TRE R95, ou autre profession (autreProfession) TRE R291"
 * qualification[exercicePro].code.coding[profession] from $JDV-J106-EnsembleProfession-RASS (required)
 
-* qualification[exercicePro].period MS
-* qualification[exercicePro].period.start ^short = "[Donnée restreinte] : Date à partir de laquelle le professionnel exerce cette profession (dateEffetExercice)."
-* qualification[exercicePro].period.end ^short = "[Donnée restreinte] : Date à partir de laquelle le professionnel n’exerce plus cette profession (dateFinEffetExercice)."
 
 // ################
 // # SAVOIR FAIRE #
