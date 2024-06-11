@@ -511,7 +511,18 @@ package IG #DDDDDD{
              Practitioner.telecom => [None..None]
              Practitioner.address => [None..None]
              Practitioner.qualification => [None..None]
-             Practitioner.qualification.code => [None..None]
+             Practitioner.qualification:degree => [0..*]
+             Practitioner.qualification:degree.code.coding => [None..None]
+             Practitioner.qualification:degree.code.coding:degreeType => [0..1]
+             Practitioner.qualification:degree.code.coding:degree => [0..1]
+             Practitioner.qualification:exercicePro => [0..1]
+             Practitioner.qualification:exercicePro.code.coding => [None..None]
+             Practitioner.qualification:exercicePro.code.coding:categorieProfession => [0..1]
+             Practitioner.qualification:exercicePro.code.coding:profession => [0..1]
+             Practitioner.qualification:savoirFaire => [0..*]
+             Practitioner.qualification:savoirFaire.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire.code.coding:typeSavoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire.code.coding:savoirFaire => [0..1]
         } 
 
         class FRCoreRelatedPersonProfile{
@@ -812,13 +823,6 @@ package IG #DDDDDD{
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
-        } 
-        class FRCorePractitionerRoleCodeCategorieProfessionnelle{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-          Extension.value[x].coding => [1..1]
         } 
         class FRCoreScheduleAvailabilityTimeExtension{
 
