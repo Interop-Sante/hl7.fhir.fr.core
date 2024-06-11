@@ -23,12 +23,9 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 * organization only Reference(FRCoreOrganizationProfile)
 
 
-<<<<<<< HEAD:input/fsh/profiles/FrCorePractitionerRole.fsh
 //TODO à mettre à jour avec la fusion exercice-profession : créer VS ?
-* code from $fr-practioner-role-exercice (required) 
+* code from $fr-practitioner-role-exercice (preferred)
 * code ^short = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation"
-* code ^definition = "The role a person plays representing an organization | Situation d'exercice (Fonction dans le NOS)"
-* code ^binding.description = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation. Correspond à la notion de Fonction dans le NOS."
 
 // * code from $fr-practioner-role-profession (required)
 // * code ^short = "Professions which this practitioner may have"
@@ -39,20 +36,8 @@ Description: "Profil of the PractitionerRole resource for France. This profil sp
 // * code.extension contains FrCorePractitionerRoleCodeCategorieProfessionnelle named professionnalCategory 0..1
 
 
-* specialty from fr-practitioner-specialty (required)
-* specialty ^short = "Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation"
-* specialty ^definition = "Specific specialty associated with the agency | spécialité du professionnel de santé au sein de l'organisation."
-=======
-* code from $fr-practitioner-role-exercice (preferred)
-* code ^short = "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation"
-
-
 * specialty from $fr-practitioner-specialty (required)
 * specialty ^short = "Specific specialty associated with the organization | spécialité ordinale du professionnel de santé au sein de l'organisation"
-
-
-
->>>>>>> main:input/fsh/profiles/FrCorePractitionerRoleExercice.fsh
 * location only Reference(FRCoreLocationProfile)
 * healthcareService only Reference(FRCoreHealthcareServiceProfile)
 
