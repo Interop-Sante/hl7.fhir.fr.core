@@ -63,8 +63,8 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier[rppsRang].system = "https://rppsrang.esante.gouv.fr"
 
 
-* type ^slicing.discriminator.type = #value
-* type ^slicing.discriminator.path = "coding.system"
+* type ^slicing.discriminator.type = #pattern
+* type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
 
 * type contains
