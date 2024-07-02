@@ -253,7 +253,7 @@
         
           Active
           
-            as of 2024-06-11
+            as of 2024-07-02
           
         
       </td>
@@ -1410,7 +1410,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Patient.extension:nationality, Patient.extension:identityReliability, Patient.extension:deathPlace, Patient.extension:birthdateUpdateIndicator, Patient.extension:birthPlace, Patient.modifierExtension, Patient.name:officialName.extension:birth-list-given-name, Patient.link.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Patient.generalPractitioner, Patient.managingOrganization, Patient.link.other</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
 
@@ -2729,7 +2729,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Patient.meta.extension, Patient.extension, Patient.extension:nationality, Patient.extension:identityReliability, Patient.extension:deathPlace, Patient.extension:birthdateUpdateIndicator, Patient.extension:birthPlace, Patient.modifierExtension, Patient.identifier.extension, Patient.identifier:NSS.extension, Patient.identifier:INS-C.extension, Patient.identifier:NDP.extension, Patient.identifier:PI.extension, Patient.identifier:RRI.extension, Patient.name:usualName.extension, Patient.name:officialName.extension, Patient.name:officialName.extension:birth-list-given-name, Patient.contact.extension, Patient.contact.extension:contactIdentifier, Patient.contact.extension:comment, Patient.contact.modifierExtension, Patient.communication.extension, Patient.communication.modifierExtension, Patient.link.extension, Patient.link.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>pat-1</td><td>error</td><td>Patient.contact</td><td>SHALL at least contain a contact's details or a reference to an organization<br/>: name.exists() or telecom.exists() or address.exists() or organization.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Patient.identifier.period, Patient.identifier:NSS.period, Patient.identifier:INS-C.period, Patient.identifier:NDP.period, Patient.identifier:PI.period, Patient.identifier:RRI.period, Patient.name:usualName.period, Patient.name:officialName.period, Patient.contact.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Patient.identifier.assigner, Patient.identifier:NSS.assigner, Patient.identifier:INS-C.assigner, Patient.identifier:NDP.assigner, Patient.identifier:PI.assigner, Patient.identifier:RRI.assigner, Patient.contact.organization, Patient.generalPractitioner, Patient.managingOrganization, Patient.link.other</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
@@ -4084,7 +4084,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Patient.extension:nationality, Patient.extension:identityReliability, Patient.extension:deathPlace, Patient.extension:birthdateUpdateIndicator, Patient.extension:birthPlace, Patient.modifierExtension, Patient.name:officialName.extension:birth-list-given-name, Patient.link.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Patient.generalPractitioner, Patient.managingOrganization, Patient.link.other</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
 </table>
 
@@ -5403,7 +5403,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
 <tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Patient.meta.extension, Patient.extension, Patient.extension:nationality, Patient.extension:identityReliability, Patient.extension:deathPlace, Patient.extension:birthdateUpdateIndicator, Patient.extension:birthPlace, Patient.modifierExtension, Patient.identifier.extension, Patient.identifier:NSS.extension, Patient.identifier:INS-C.extension, Patient.identifier:NDP.extension, Patient.identifier:PI.extension, Patient.identifier:RRI.extension, Patient.name:usualName.extension, Patient.name:officialName.extension, Patient.name:officialName.extension:birth-list-given-name, Patient.contact.extension, Patient.contact.extension:contactIdentifier, Patient.contact.extension:comment, Patient.contact.modifierExtension, Patient.communication.extension, Patient.communication.modifierExtension, Patient.link.extension, Patient.link.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** elements</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>pat-1</td><td>error</td><td>Patient.contact</td><td>SHALL at least contain a contact's details or a reference to an organization<br/>: name.exists() or telecom.exists() or address.exists() or organization.exists()</td><td></td></tr>
 <tr><td>per-1</td><td>error</td><td>Patient.identifier.period, Patient.identifier:NSS.period, Patient.identifier:INS-C.period, Patient.identifier:NDP.period, Patient.identifier:PI.period, Patient.identifier:RRI.period, Patient.name:usualName.period, Patient.name:officialName.period, Patient.contact.period</td><td>If present, start SHALL have a lower value than end<br/>: start.hasValue().not() or end.hasValue().not() or (start &lt;= end)</td><td></td></tr>
 <tr><td>ref-1</td><td>error</td><td>Patient.identifier.assigner, Patient.identifier:NSS.assigner, Patient.identifier:INS-C.assigner, Patient.identifier:NDP.assigner, Patient.identifier:PI.assigner, Patient.identifier:RRI.assigner, Patient.contact.organization, Patient.generalPractitioner, Patient.managingOrganization, Patient.link.other</td><td>SHALL have a contained resource if a local reference is provided<br/>: reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</td><td></td></tr>
@@ -5724,7 +5724,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 11, 2024 15:33+0000">2024-06-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 2, 2024 12:51+0000">2024-07-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
