@@ -20,7 +20,7 @@ Description: "HL7 v2 - Identifier type"
 * #FINEG "FINESS d'entité géographique"
 * #SIREN "Identification de l'organisation au SIREN"
 * #SIRET "Identification de l'organisation au SIRET"
-* #IDNST "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
+* #IDNST "Identification nationale de structure définie par l’ANS dans le CI_SIS"
 * #INTRN "Identifiant interne"
 * #EXTRN "Identifiant externe"
 
