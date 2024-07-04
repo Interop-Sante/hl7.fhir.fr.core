@@ -9,6 +9,7 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 * extension[identityReliability] 1..*
 
 * extension[birthPlace] 1..1
+* extension[birthPlace] MS
 * extension[birthPlace].valueAddress.extension[inseeCode] 1..1
 
 * identifier 1..
@@ -22,6 +23,7 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 // Slices définies dans PatientINS car ne peuvent pas être véhiculé si identité non qualifiée.
 
 * identifier[INS-NIR] ^short = "INS-NIR - The patient national health identifier INS obtained by requesting the national patient identification service (CNAM) called the INSi teleservice. Identifiant national de santé (NIR) du patient INS provenant du téléservice INSi (service national d'identification des patients (CNAM))"
+* identifier[INS-NIR] MS
 * identifier[INS-NIR].use = #official
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
@@ -43,6 +45,7 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 * identifier[INS-NIR-DEMO].value 1..
 
 * identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
+* identifier[INS-NIA] MS
 * identifier[INS-NIA].use = #temp
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
 * identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
@@ -50,16 +53,20 @@ Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupér
 * identifier[INS-NIA].value 1..
 
 * gender 1..1
+* gender MS
 * gender from fr-core-vs-patient-gender-INS (required)
 * gender ^short = "male | female | unknown"
 
 * birthDate 1..
+* birthDate MS
 
 * name[officialName] 1..1
+* name[officialName] MS
 * name[officialName].given 1..1
 * name[officialName].given ^short = "Dans le cas d’une identité créée ou modifiée par un appel au téléservice INSi, il est nécessaire d’extraire le premier prénom de la liste des prénoms retournée par le téléservice et de l'inclure dans le champs given. En cas de prénom composé, given peut par exemple contenir 'Anne-sophie' ou 'Anne Sophie'."
 
 * name[officialName].extension[birth-list-given-name] 1..1
+* name[officialName].extension[birth-list-given-name] MS
 
 
 Invariant:   fr-core-1
