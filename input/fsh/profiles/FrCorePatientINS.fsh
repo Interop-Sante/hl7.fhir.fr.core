@@ -2,7 +2,7 @@ Profile: FRCorePatientINSProfile
 Parent: fr-core-patient
 Id: fr-core-patient-ins
 Title: "FR Core Patient INS Profile"
-Description: """Profil Fr Core Patient surspécifié pour être conforme aux exigences de l'Identité Nationale de Santé (INS)."""
+Description: """Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS)."""
 
 * obeys fr-core-1 
 
