@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Appointment/FRCoreAppointmentExample> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreAppointmentExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment FRCoreAppointmentExample</b></p><a name=\"FRCoreAppointmentExample\"> </a><a name=\"hcFRCoreAppointmentExample\"> </a><a name=\"FRCoreAppointmentExample-fr-FR\"> </a><p><b>identifier</b>: <code>http://ans.org/sampleappointment-identifier</code>/123</p><p><b>status</b>: Proposed</p><p><b>serviceType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/service-type 1}\">Adoption/Permanent Care Info/Support</span></p><p><b>specialty</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM54}\">Médecine générale (SM)</span></p><p><b>priority</b>: 5</p><p><b>minutesDuration</b>: 15</p><p><b>slot</b>: <a href=\"https://exampleserver.org/fhir/Slot/example\">https://exampleserver.org/fhir/Slot/example</a></p><p><b>created</b>: 2019-01-02</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"https://exampleserver.org/fhir/Patient/1\">M Martin</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"https://exampleserver.org/fhir/PractitionerRole/1\">Dr Langdon, cabinet Paris</a></p><p><b>required</b>: Required</p><p><b>status</b>: Needs Action</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"https://exampleserver.org/fhir/Practitioner/1\">Dr Langdon</a></p><p><b>required</b>: Required</p><p><b>status</b>: Needs Action</p></blockquote><p><b>requestedPeriod</b>: 2019-01-04 09:15:00+0000 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://exampleserver.org/fhir/Patient/1> ;
+       fhir:reference [ fhir:v "https://exampleserver.org/fhir/Patient/1" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ans.org/sampleappointment-identifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "proposed"] ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Adoption/Permanent Care Info/Support" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SM54" ] ;
+       fhir:display [ fhir:v "Médecine générale (SM)" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:minutesDuration [ fhir:v "15"^^xsd:positiveInteger] ; # 
+  fhir:slot ( [
+     fhir:link <https://exampleserver.org/fhir/Slot/example> ;
+     fhir:reference [ fhir:v "https://exampleserver.org/fhir/Slot/example" ]
+  ] ) ; # 
+  fhir:created [ fhir:v "2019-01-02"^^xsd:date] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:link <https://exampleserver.org/fhir/Patient/1> ;
+       fhir:reference [ fhir:v "https://exampleserver.org/fhir/Patient/1" ] ;
+       fhir:display [ fhir:v "M Martin" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:link <https://exampleserver.org/fhir/PractitionerRole/1> ;
+       fhir:reference [ fhir:v "https://exampleserver.org/fhir/PractitionerRole/1" ] ;
+       fhir:display [ fhir:v "Dr Langdon, cabinet Paris" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "needs-action" ]
+  ] [
+     fhir:actor [
+       fhir:link <https://exampleserver.org/fhir/Practitioner/1> ;
+       fhir:reference [ fhir:v "https://exampleserver.org/fhir/Practitioner/1" ] ;
+       fhir:display [ fhir:v "Dr Langdon" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "needs-action" ]
+  ] ) ; # 
+  fhir:requestedPeriod ( [
+     fhir:start [ fhir:v "2019-01-04T09:15:00Z"^^xsd:dateTime ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

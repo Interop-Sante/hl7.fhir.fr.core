@@ -1,0 +1,875 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Guide d'implémentation Fr Core : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+<h1>HTA License Conformance Analysis for Guide d'implémentation Fr Core</h1>
+<p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
+The content of this page is being developed with the HTA committee, and is subject to further change. Editors are welcome to use this page to pick up errors in their definitions, but should not regard the analysis as final.
+</p>
+<ul>
+ <li><a href="#cs0">https://www.ietf.org/rfc/rfc2445</a>: To be resolved</li>
+ <li><a href="#cs1">http://snomed.info/sct</a>: Some uses are missing the appropriate copyright statement</li>
+ <li><a href="#cs2">https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS</a>: To be resolved</li>
+ <li><a href="#cs3">https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS</a>: To be resolved</li>
+ <li><a href="#cs4">https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite</a>: To be resolved</li>
+ <li><a href="#cs5">https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</a>: To be resolved</li>
+ <li><a href="#cs6">https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays</a>: To be resolved</li>
+ <li><a href="#cs7">https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie</a>: To be resolved</li>
+ <li><a href="#cs8">https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</a>: To be resolved</li>
+ <li><a href="#cs9">https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite</a>: To be resolved</li>
+ <li><a href="#cs10">https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</a>: To be resolved</li>
+ <li><a href="#cs11">https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique</a>: To be resolved</li>
+ <li><a href="#cs12">https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne</a>: To be resolved</li>
+ <li><a href="#cs13">https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais</a>: To be resolved</li>
+ <li><a href="#cs14">https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification</a>: To be resolved</li>
+ <li><a href="#cs15">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee</a>: To be resolved</li>
+ <li><a href="#cs16">https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome</a>: To be resolved</li>
+ <li><a href="#cs17">https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome</a>: To be resolved</li>
+ <li><a href="#cs18">https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE</a>: To be resolved</li>
+ <li><a href="#cs19">https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire</a>: To be resolved</li>
+ <li><a href="#cs20">https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale</a>: To be resolved</li>
+ <li><a href="#cs21">https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation</a>: To be resolved</li>
+ <li><a href="#cs22">https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome</a>: To be resolved</li>
+ <li><a href="#cs23">https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome</a>: To be resolved</li>
+ <li><a href="#cs24">https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu</a>: To be resolved</li>
+ <li><a href="#cs25">https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ</a>: To be resolved</li>
+ <li><a href="#cs26">https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction</a>: To be resolved</li>
+ <li><a href="#cs27">https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire</a>: To be resolved</li>
+ <li><a href="#cs28">https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge</a>: To be resolved</li>
+ <li><a href="#cs29">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite</a>: To be resolved</li>
+ <li><a href="#cs30">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice</a>: To be resolved</li>
+ <li><a href="#cs31">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale</a>: To be resolved</li>
+ <li><a href="#cs32">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier</a>: To be resolved</li>
+ <li><a href="#cs33">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP</a>: To be resolved</li>
+ <li><a href="#cs34">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP</a>: To be resolved</li>
+ <li><a href="#cs35">https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale</a>: To be resolved</li>
+ <li><a href="#cs36">https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode</a>: To be resolved</li>
+ <li><a href="#cs37">https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice</a>: To be resolved</li>
+</ul>
+<h2>https://www.ietf.org/rfc/rfc2445</h2><a name="cs0">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-availability-time-rule.html">fr-core-vs-availability-time-rule</a></td>
+  <td>Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>http://snomed.info/sct (SNOMED CT (all versions))</h2><a name="cs1">
+<table class="grid">
+ <tr><td>Uses</td><td>3</td></tr>
+ <tr><td>Expected Copyright</td><td><ul><li><p>This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement</p>
+</li><li><p>The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Public License</a>. For more information, see <a href="https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology">SNOMED IPS Terminology</a></p>
+</li><li><p>The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review <a href="https://www.snomed.org/get-snomed">usage terms</a> or directly contact SNOMED International: info@snomed.org</p>
+</li></ul></td></tr>
+ <tr><td>Approved:</td><td>Some uses are missing the appropriate copyright statement</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-bp-method.html">fr-core-vs-bp-method</a></td>
+  <td>FR Core ValueSet BP measurement method</td>
+  <td></td>
+  <td><li style="background-color: #fcf0cc">The copyright statement is missing</li>
+</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-height-body-position.html">fr-core-vs-height-body-position</a></td>
+  <td>FR Core ValueSet BodyPosition</td>
+  <td></td>
+  <td><li style="background-color: #fcf0cc">The copyright statement is missing</li>
+</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-height-body-position.html">fr-core-vs-height-body-position</a></td>
+  <td>FR Core ValueSet BodyPosition</td>
+  <td></td>
+  <td><li style="background-color: #fcf0cc">The copyright statement is missing</li>
+</td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS</h2><a name="cs2">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-civility-exercice-rass.html">fr-core-vs-civility-exercice-rass</a></td>
+  <td>FR Core ValueSet Civility exercice RASS</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS</h2><a name="cs3">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-civility-rass.html">fr-core-vs-civility-rass</a></td>
+  <td>FR Core ValueSet Civility RASS</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite (TRE_R81-Civilite)</h2><a name="cs4">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-civility.html">fr-core-vs-civility</a></td>
+  <td>FR Core ValueSet Civility</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</h2><a name="cs5">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-cog-commune-pays.html">fr-core-vs-cog-commune-pays</a></td>
+  <td>FR Core ValueSet COG commune pays</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays (TRE_R20-Pays)</h2><a name="cs6">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-cog-commune-pays.html">fr-core-vs-cog-commune-pays</a></td>
+  <td>FR Core ValueSet COG commune pays</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie (TRE_R256-TypeMessagerie)</h2><a name="cs7">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-email-type.html">fr-core-vs-email-type</a></td>
+  <td>FR Core ValueSet Email type</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</h2><a name="cs8">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-insee-code.html">fr-core-vs-insee-code</a></td>
+  <td>FR Core ValueSet INSEE code</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite (TRE_R02-SecteurActivite)</h2><a name="cs9">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-organization-activity-field.html">fr-core-vs-organization-activity-field</a></td>
+  <td>FR Core ValueSet Organization activity field</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass (TRE_R260-HL7RoleClass)</h2><a name="cs10">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-patient-contact-role.html">fr-core-vs-patient-contact-role</a></td>
+  <td>FR Core ValueSet Patient contact role</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique (TRE_R217-ProtectionJuridique)</h2><a name="cs11">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-patient-contact-role.html">fr-core-vs-patient-contact-role</a></td>
+  <td>FR Core ValueSet Patient contact role</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne (TRE_G08-TypeIdentifiantPersonne)</h2><a name="cs12">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-identifier-type.html">fr-core-vs-practitioner-identifier-type</a></td>
+  <td>FR Core ValueSet Practitioner identifier type</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais (TRE_R48-DiplomeEtatFrancais)</h2><a name="cs13">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification</h2><a name="cs14">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee (TRE_R49-DiplomeEtudeSpecialisee)</h2><a name="cs15">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R50-DESCGroupe1Diplome/FHIR/TRE-R50-DESCGroupe1Diplome (TRE_R50-DESCGroupe1Diplome)</h2><a name="cs16">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R51-DESCGroupe2Diplome/FHIR/TRE-R51-DESCGroupe2Diplome (TRE_R51-DESCGroupe2Diplome)</h2><a name="cs17">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R53-DiplomePaysEEE/FHIR/TRE-R53-DiplomePaysEEE (TRE_R53-DiplomePaysEEE)</h2><a name="cs18">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R54-DiplomeUniversiteInterUniversitaire/FHIR/TRE-R54-DiplomeUniversiteInterUniversitaire (TRE_R54-DiplomeUniversiteInterUniversitaire)</h2><a name="cs19">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale (TRE_R55-CertificatEtudeSpeciale)</h2><a name="cs20">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R56-Attestation/FHIR/TRE-R56-Attestation (TRE_R56-Attestation)</h2><a name="cs21">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R52-CapaciteDiplome/FHIR/TRE-R52-CapaciteDiplome (TRE_R52-CapaciteDiplome)</h2><a name="cs22">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R58-AutreTypeDiplome/FHIR/TRE-R58-AutreTypeDiplome (TRE_R58-AutreTypeDiplome)</h2><a name="cs23">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu (TRE_R36-AutreDiplomeObtenu)</h2><a name="cs24">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R226-Dip2iemeCycleNQ/FHIR/TRE-R226-Dip2iemeCycleNQ (TRE_R226-Dip2iemeCycleNQ)</h2><a name="cs25">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-qualification.html">fr-core-vs-practitioner-qualification</a></td>
+  <td>FR Core ValueSet Practitioner qualification</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction (TRE_R21-Fonction)</h2><a name="cs26">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire (TRE_R96-AutreFonctionSanitaire)</h2><a name="cs27">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge (TRE_R85-RolePriseCharge)</h2><a name="cs28">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite (TRE_R22-GenreActivite)</h2><a name="cs29">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice (TRE_R23-ModeExercice)</h2><a name="cs30">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale (TRE_R24-TypeActiviteLiberale)</h2><a name="cs31">
+<table class="grid">
+ <tr><td>Uses</td><td>2</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier (TRE_R32-StatutHospitalier)</h2><a name="cs32">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP (TRE_G05-SousSectionTableauCNOP)</h2><a name="cs33">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP (TRE_R06-SectionTableauCNOP)</h2><a name="cs34">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html">fr-core-vs-practitioner-role-exercice</a></td>
+  <td>FR Core ValueSet PractitionerRole Exercice</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale (TRE_R38-SpecialiteOrdinale)</h2><a name="cs35">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-practitioner-specialty.html">fr-core-vs-practitioner-specialty</a></td>
+  <td>FR Core ValueSet Practitioner specialty</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode (TRE_R216-HL7RoleCode)</h2><a name="cs36">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-relation-type.html">fr-core-vs-relation-type</a></td>
+  <td>FR Core ValueSet relation type</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<h2>https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice (TRE_R11-CiviliteExercice)</h2><a name="cs37">
+<table class="grid">
+ <tr><td>Uses</td><td>1</td></tr>
+ <tr><td>Expected Copyright</td><td><i>(copyright expectations unknown)</i></td></tr>
+ <tr><td>Approved:</td><td>To be resolved</td></tr>
+</table>
+<p></p>
+<table class="grid">
+ <tr>
+  <td>URL</td>
+  <td>Name</td>
+  <td>Copyright</td>
+  <td>Notes</td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-title.html">fr-core-vs-title</a></td>
+  <td>FR Core ValueSet Title</td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+</body>
+</html>
