@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.fr.core"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name="hl7.fhir.fr.core"> </a><a name="hchl7.fhir.fr.core"> </a><a name="hchl7.fhir.fr.core-fr-FR"> </a><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name="hl7.fhir.fr.core"> </a><a name="hchl7.fhir.fr.core"> </a><a name="hl7.fhir.fr.core-fr-FR"> </a><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
   </text>
   <url value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
   <version value="2.0.1"/>
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="active"/>
-  <date value="2024-07-08T11:39:28+00:00"/>
+  <date value="2024-07-17T12:13:27+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -43,7 +43,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -1289,35 +1289,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-role-code-categorie-professionnelle"/>
-      </reference>
-      <name value="FR Core Practitioner Role Code Categorie Professionnelle Extension"/>
-      <description value="Catégorie professionnelle selon le MOS de l'ANS. Indispensable pour discriminer les étudiants (internes, élèves, etc.)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-core-practitioner-role-exercice"/>
+        <reference value="StructureDefinition/fr-core-practitioner-role"/>
       </reference>
-      <name value="FR Core Practitioner Role Exercice"/>
-      <description value="Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization.&#xD;&#xA;&#xA;Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-practitioner-role-profession"/>
-      </reference>
-      <name value="FR Core Practitioner Role Profession"/>
-      <description value="Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France.&#xD;&#xA;&#xA;Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France."/>
+      <name value="FR Core Practitioner Role"/>
+      <description value="Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1757,17 +1735,6 @@
       </reference>
       <name value="FR Core ValueSet PractitionerRole Exercice"/>
       <description value="The exercice(s) of the practitioner."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-practitioner-role-profession"/>
-      </reference>
-      <name value="FR Core ValueSet PractitionerRole Profession"/>
-      <description value="The profession(s) of the practitioner."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "hl7.fhir.fr.core"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core-fr-FR\"> </a><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><a name=\"hl7.fhir.fr.core-fr-FR\"> </a><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.0.1"] ; # 
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-07-08T11:39:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-17T12:13:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -54,7 +54,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.5.0" ]
+     fhir:version [ fhir:v "6.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -1438,38 +1438,14 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-role-code-categorie-professionnelle" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Role Code Categorie Professionnelle Extension" ] ;
-       fhir:description [ fhir:v "Catégorie professionnelle selon le MOS de l'ANS. Indispensable pour discriminer les étudiants (internes, élèves, etc.)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role-exercice> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role-exercice" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role" ]
        ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Role Exercice" ] ;
-       fhir:description [ fhir:v "Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization.\r\n\nSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role-profession> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role-profession" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Role Profession" ] ;
-       fhir:description [ fhir:v "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France.\r\n\nSpécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France." ] ;
+       fhir:name [ fhir:v "FR Core Practitioner Role" ] ;
+       fhir:description [ fhir:v "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1949,18 +1925,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet PractitionerRole Exercice" ] ;
        fhir:description [ fhir:v "The exercice(s) of the practitioner." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-role-profession" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet PractitionerRole Profession" ] ;
-       fhir:description [ fhir:v "The profession(s) of the practitioner." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

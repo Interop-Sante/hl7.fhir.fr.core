@@ -472,12 +472,11 @@ package IG #DDDDDD{
              Patient.managingOrganization => [None..None]
         } 
 
-        class FRCorePractitionerRoleExercice{
+        class FrCorePractitionerRole{
 
              PractitionerRole.meta.profile => [None..None]
              PractitionerRole.meta.profile:fr-canonical => [0..1]
              PractitionerRole.extension:serviceTypeDuration => <&plus>[0..*]
-             PractitionerRole.identifier.system => [None..None]
              PractitionerRole.practitioner => [None..None]
              PractitionerRole.organization => [None..None]
              PractitionerRole.code => [None..None]
@@ -485,24 +484,6 @@ package IG #DDDDDD{
              PractitionerRole.location => [None..None]
              PractitionerRole.healthcareService => [None..None]
              PractitionerRole.telecom => [None..None]
-        } 
-
-        class FRCorePractitionerRoleProfession{
-
-             PractitionerRole.meta.profile => [None..None]
-             PractitionerRole.meta.profile:fr-canonical => [0..1]
-             PractitionerRole.practitioner => [None..None]
-             PractitionerRole.organization => [None..None]
-             PractitionerRole.code => [None..None]
-             PractitionerRole.code.extension:professionnalCategory => <&plus>[0..1]
-             PractitionerRole.specialty => [None..None]
-             PractitionerRole.location => [None..0]
-             PractitionerRole.healthcareService => [None..0]
-             PractitionerRole.telecom => [None..0]
-             PractitionerRole.availableTime => [None..0]
-             PractitionerRole.notAvailable => [None..0]
-             PractitionerRole.availabilityExceptions => [None..0]
-             PractitionerRole.endpoint => [None..0]
         } 
 
         class FRCorePractitionerProfile{
@@ -529,7 +510,18 @@ package IG #DDDDDD{
              Practitioner.telecom => [None..None]
              Practitioner.address => [None..None]
              Practitioner.qualification => [None..None]
-             Practitioner.qualification.code => [None..None]
+             Practitioner.qualification:degree => [0..*]
+             Practitioner.qualification:degree.code.coding => [None..None]
+             Practitioner.qualification:degree.code.coding:degreeType => [0..1]
+             Practitioner.qualification:degree.code.coding:degree => [0..1]
+             Practitioner.qualification:exercicePro => [0..1]
+             Practitioner.qualification:exercicePro.code.coding => [None..None]
+             Practitioner.qualification:exercicePro.code.coding:categorieProfession => [0..1]
+             Practitioner.qualification:exercicePro.code.coding:profession => [0..1]
+             Practitioner.qualification:savoirFaire => [0..*]
+             Practitioner.qualification:savoirFaire.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire.code.coding:typeSavoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire.code.coding:savoirFaire => [0..1]
         } 
 
         class FRCoreRelatedPersonProfile{
@@ -613,8 +605,7 @@ package IG #DDDDDD{
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientBirthListGivenName
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientContactIdentifierExtension
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreCommentExtension
-     FRCorePractitionerRoleExercice -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
-     FRCorePractitionerRoleProfession -[#black,dashed,thickness=2]-> FRCorePractitionerRoleCodeCategorieProfessionnelle
+     FrCorePractitionerRole -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
      FRCorePractitionerProfile -[#black,dashed,thickness=2]-> FRCorePractitionerSpecialtyExtension
      FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
      FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreScheduleAvailabilityTimeExtension
@@ -831,13 +822,6 @@ package IG #DDDDDD{
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
-        } 
-        class FRCorePractitionerRoleCodeCategorieProfessionnelle{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-          Extension.value[x].coding => [1..1]
         } 
         class FRCoreScheduleAvailabilityTimeExtension{
 
@@ -1097,19 +1081,11 @@ package IG #DDDDDD{
 
         class FRCoreValueSetPractitionerRoleExercice  
 
-     FRCorePractitionerRoleExercice -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerRoleExercice
+     FrCorePractitionerRole -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerRoleExercice
 
         class FRCoreValueSetPractitionerSpecialty  
 
-     FRCorePractitionerRoleExercice -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
-
-        class FRCoreValueSetPractitionerRoleProfession  
-
-     FRCorePractitionerRoleProfession -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerRoleProfession
-
-        class FRCoreValueSetPractitionerSpecialty  
-
-     FRCorePractitionerRoleProfession -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+     FrCorePractitionerRole -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
 
         class FRCoreValueSetPractitionerSpecialty  
 
@@ -1240,11 +1216,7 @@ package "Ressources de base" #palegreen {
 
  class "PractitionerRole" as  classa6482460b0b027d14fe848816788acb6 
 
-    classa6482460b0b027d14fe848816788acb6 --> FRCorePractitionerRoleExercice
-
- class "PractitionerRole" as  classa6482460b0b027d14fe848816788acb6 
-
-    classa6482460b0b027d14fe848816788acb6 --> FRCorePractitionerRoleProfession
+    classa6482460b0b027d14fe848816788acb6 --> FrCorePractitionerRole
 
  class "Practitioner" as  classe1fdce734a2fd9596ad930bdb139ca06 
 
