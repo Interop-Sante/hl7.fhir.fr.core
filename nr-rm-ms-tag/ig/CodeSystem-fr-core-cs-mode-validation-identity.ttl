@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-cs-mode-validation-identity"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fr-core-cs-mode-validation-identity</b></p><a name=\"fr-core-cs-mode-validation-identity\"> </a><a name=\"hcfr-core-cs-mode-validation-identity\"> </a><a name=\"fr-core-cs-mode-validation-identity-fr-FR\"> </a><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AN<a name=\"fr-core-cs-mode-validation-identity-AN\"> </a></td><td>Extrait d'acte de naissance</td></tr><tr><td style=\"white-space:nowrap\">CC<a name=\"fr-core-cs-mode-validation-identity-CC\"> </a></td><td>Carnet de circulation</td></tr><tr><td style=\"white-space:nowrap\">CE<a name=\"fr-core-cs-mode-validation-identity-CE\"> </a></td><td>Carte Européenne</td></tr><tr><td style=\"white-space:nowrap\">CM<a name=\"fr-core-cs-mode-validation-identity-CM\"> </a></td><td>Carte militaire</td></tr><tr><td style=\"white-space:nowrap\">CN<a name=\"fr-core-cs-mode-validation-identity-CN\"> </a></td><td>Carte nationale d'identité</td></tr><tr><td style=\"white-space:nowrap\">CS<a name=\"fr-core-cs-mode-validation-identity-CS\"> </a></td><td>Carte de séjour</td></tr><tr><td style=\"white-space:nowrap\">LE<a name=\"fr-core-cs-mode-validation-identity-LE\"> </a></td><td>Livret de famille</td></tr><tr><td style=\"white-space:nowrap\">PA<a name=\"fr-core-cs-mode-validation-identity-PA\"> </a></td><td>Passeport</td></tr><tr><td style=\"white-space:nowrap\">PC<a name=\"fr-core-cs-mode-validation-identity-PC\"> </a></td><td>Permis de conduire</td></tr><tr><td style=\"white-space:nowrap\">TC<a name=\"fr-core-cs-mode-validation-identity-TC\"> </a></td><td>Tiers de confiance</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemModeValidationIdentite"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem Mode Validation Identite"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-17T15:13:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mode de validation de l'identité"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AN" ] ;
+     fhir:display [ fhir:v "Extrait d'acte de naissance" ]
+  ] [
+     fhir:code [ fhir:v "CC" ] ;
+     fhir:display [ fhir:v "Carnet de circulation" ]
+  ] [
+     fhir:code [ fhir:v "CE" ] ;
+     fhir:display [ fhir:v "Carte Européenne" ]
+  ] [
+     fhir:code [ fhir:v "CM" ] ;
+     fhir:display [ fhir:v "Carte militaire" ]
+  ] [
+     fhir:code [ fhir:v "CN" ] ;
+     fhir:display [ fhir:v "Carte nationale d'identité" ]
+  ] [
+     fhir:code [ fhir:v "CS" ] ;
+     fhir:display [ fhir:v "Carte de séjour" ]
+  ] [
+     fhir:code [ fhir:v "LE" ] ;
+     fhir:display [ fhir:v "Livret de famille" ]
+  ] [
+     fhir:code [ fhir:v "PA" ] ;
+     fhir:display [ fhir:v "Passeport" ]
+  ] [
+     fhir:code [ fhir:v "PC" ] ;
+     fhir:display [ fhir:v "Permis de conduire" ]
+  ] [
+     fhir:code [ fhir:v "TC" ] ;
+     fhir:display [ fhir:v "Tiers de confiance" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

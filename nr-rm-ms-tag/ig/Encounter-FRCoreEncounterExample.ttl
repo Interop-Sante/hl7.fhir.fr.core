@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Encounter/FRCoreEncounterExample> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreEncounterExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter FRCoreEncounterExample</b></p><a name=\"FRCoreEncounterExample\"> </a><a name=\"hcFRCoreEncounterExample\"> </a><a name=\"FRCoreEncounterExample-fr-FR\"> </a><p><b>identifier</b>: Visit Number/123</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode</a> AMB: ambulatory</p><p><b>period</b>: 2019-01-02 --&gt; 2019-02-02</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2019-01-02"^^xsd:date ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "VN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hopitalTest.fr/fhir/namingsystem/encounters"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-01-02"^^xsd:date ] ;
+     fhir:end [ fhir:v "2019-02-02"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
