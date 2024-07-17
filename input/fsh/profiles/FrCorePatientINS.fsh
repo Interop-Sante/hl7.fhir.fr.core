@@ -2,7 +2,7 @@ Profile: FRCorePatientINSProfile
 Parent: fr-core-patient
 Id: fr-core-patient-ins
 Title: "FR Core Patient INS Profile"
-Description: """Profil FRCorePatientProfile enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée. Ce profil permet d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS."""
+Description: """Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS)."""
 
 * obeys fr-core-1 
 
