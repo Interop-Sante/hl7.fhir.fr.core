@@ -74,15 +74,12 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 // # DIPLOME #
 // ###########
 
-* qualification MS
-
 * qualification ^slicing.discriminator.type = #value
 * qualification ^slicing.discriminator.path = "code"
 * qualification ^slicing.rules = #open
 * qualification contains degree 0..*
 
 
-* qualification[degree] MS
 * qualification[degree] ^short = "Diplôme et type de diplôme, par exemple : DE, DES, CES, etc. (typeDiplome)"
 
 * qualification[degree].code.coding ^slicing.discriminator.type = #value
@@ -92,9 +89,7 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 * qualification[degree].code.coding contains degreeType 0..1 and degree 0..1 
 
 // Slice typeDiplome
-* qualification[degree].code.coding[degree] MS
 * qualification[degree].code.coding[degree] from $JDV-J105-EnsembleDiplome-RASS (required)
-* qualification[degree].code.coding[degreeType] MS
 * qualification[degree].code.coding[degreeType] from $JDV-J81-TypeDiplome-RASS (required)
 
 
@@ -113,8 +108,8 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 * qualification[exercicePro].code.coding ^slicing.rules = #closed
 
 * qualification[exercicePro].code.coding contains 
-    categorieProfession 0..1 MS and
-	profession 0..1 MS
+    categorieProfession 0..1 and
+	profession 0..1
 
 // Slice 1 : Catégorie professionnelle
 * qualification[exercicePro].code.coding[categorieProfession] ^short = "Catégorie professionnelle indiquant si le professionnel exerce sa profession en tant que Militaire, Civil, Fonctionnaire ou Etudiant (categorieProfessionnelle)."
@@ -139,8 +134,8 @@ Profil de la ressource Practitionner pour la France. Ce profil contraint les typ
 * qualification[savoirFaire].code.coding ^slicing.rules = #open
 
 * qualification[savoirFaire].code.coding contains
-    typeSavoirFaire 0..1 MS and
-    savoirFaire 0..1 MS 
+    typeSavoirFaire 0..1 and
+    savoirFaire 0..1 
 
 // Slice : typeSavoirFaire
 * qualification[savoirFaire].code.coding[typeSavoirFaire] ^short = "Le type de savoir-faire (qualifications/autres attributions).\ntypeSavoirFaire"
