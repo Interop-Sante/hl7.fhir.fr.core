@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBodyTemperatureExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreObservationBodyTemperatureExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FRCoreObservationBodyTemperatureExample</b></p><a name=\"FRCoreObservationBodyTemperatureExample\"> </a><a name=\"hcFRCoreObservationBodyTemperatureExample\"> </a><a name=\"FRCoreObservationBodyTemperatureExample-fr-FR\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"ExamplefrPatient001\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href=\"Patient-ExamplefrCorePatient001.html\">Pierre Durand</a></p><p><b>value</b>: 36.5 C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8310-5" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "ExamplefrPatient001" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Pierre Durand" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-11-06"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExamplefrCorePatient001> ;
+     fhir:reference [ fhir:v "Patient/ExamplefrCorePatient001" ] ;
+     fhir:display [ fhir:v "Pierre Durand" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "36.5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "C" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
