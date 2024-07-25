@@ -36,7 +36,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
     NSS 0..1 and
     INS-C 0..* and
     NDP 0..1 and
-    PI 0..1 and
+    PI 0..* and
     RRI 0..*
 
 
@@ -60,7 +60,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier[NDP].system = "urn:oid:1.2.250.1.176.1.2"
 * identifier[NDP].value 1..
 
-* identifier[PI] ^short = "Hospital assigned patient identifier | IPP. Contrairement aux standards v2 et CDA, le choix a été fait en FHIR d'avoir uniquement un IPP maximum par patient, en partant du principe que l'identification du patient pour un partage national se fait avec des identifiants nationaux tel que l'INS qui est obligatoire pour partager des données de santé. Si le besoin de partager plusieurs IPP est pressenti, merci de le communiquer via une issue GitHub."
+* identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
 * identifier[PI].use = #usual
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..
