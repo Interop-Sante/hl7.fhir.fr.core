@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="FRCoreAppointmentExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment FRCoreAppointmentExample</b></p><a name="FRCoreAppointmentExample"> </a><a name="hcFRCoreAppointmentExample"> </a><a name="FRCoreAppointmentExample-fr-FR"> </a><p><b>identifier</b>: <code>http://ans.org/sampleappointment-identifier</code>/123</p><p><b>status</b>: Proposed</p><p><b>serviceType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/service-type 1}">Adoption/Permanent Care Info/Support</span></p><p><b>specialty</b>: <span title="Codes:{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM54}">Médecine générale (SM)</span></p><p><b>priority</b>: 5</p><p><b>minutesDuration</b>: 15</p><p><b>slot</b>: <a href="https://exampleserver.org/fhir/Slot/example">https://exampleserver.org/fhir/Slot/example</a></p><p><b>created</b>: 2019-01-02</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="https://exampleserver.org/fhir/Patient/1">M Martin</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="https://exampleserver.org/fhir/PractitionerRole/1">Dr Langdon, cabinet Paris</a></p><p><b>required</b>: Required</p><p><b>status</b>: Needs Action</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="https://exampleserver.org/fhir/Practitioner/1">Dr Langdon</a></p><p><b>required</b>: Required</p><p><b>status</b>: Needs Action</p></blockquote><p><b>requestedPeriod</b>: 2019-01-04 09:15:00+0000 --&gt; (ongoing)</p></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator">
+    <valueReference>
+      <reference value="https://exampleserver.org/fhir/Patient/1"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://ans.org/sampleappointment-identifier"/>
+    <value value="123"/>
+  </identifier>
+  <status value="proposed"/>
+  <serviceType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+      <code value="1"/>
+      <display value="Adoption/Permanent Care Info/Support"/>
+    </coding>
+  </serviceType>
+  <specialty>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"/>
+      <code value="SM54"/>
+      <display value="Médecine générale (SM)"/>
+    </coding>
+  </specialty>
+  <priority value="5"/>
+  <minutesDuration value="15"/>
+  <slot>
+    <reference value="https://exampleserver.org/fhir/Slot/example"/>
+  </slot>
+  <created value="2019-01-02"/>
+  <participant>
+    <actor>
+      <reference value="https://exampleserver.org/fhir/Patient/1"/>
+      <display value="M Martin"/>
+    </actor>
+    <required value="required"/>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="https://exampleserver.org/fhir/PractitionerRole/1"/>
+      <display value="Dr Langdon, cabinet Paris"/>
+    </actor>
+    <required value="required"/>
+    <status value="needs-action"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="https://exampleserver.org/fhir/Practitioner/1"/>
+      <display value="Dr Langdon"/>
+    </actor>
+    <required value="required"/>
+    <status value="needs-action"/>
+  </participant>
+  <requestedPeriod>
+    <start value="2019-01-04T09:15:00Z"/>
+  </requestedPeriod>
+</Appointment>
