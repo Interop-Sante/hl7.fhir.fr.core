@@ -6,3 +6,5 @@
 * Correction du discriminant de Organization.type [166](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/166)
 * Ajout des tags MS sur les champs obligatoires dans le cadre de l'INS du PatientINS & ajout d'informations [167](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/167), [169](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169)
 * Fusion des deux profils PractitionerRole pour simplification [61](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/61)
+* Mise à jour de l'URL de la TRE R13 [176](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/176)
+* Ajout description du profil FrPractitioner [175](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/175)
