@@ -8,3 +8,4 @@
 * Fusion des deux profils PractitionerRole pour simplification [61](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/61)
 * Mise à jour de l'URL de la TRE R13 [176](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/176)
 * Ajout description du profil FrPractitioner [175](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/175)
+* FrPatient : relaxation de la cardinalité de l'IPP à 0..* au lieu de 0..1 [172](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/172)
