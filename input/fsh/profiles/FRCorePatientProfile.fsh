@@ -36,7 +36,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
     NSS 0..1 and
     INS-C 0..* and
     NDP 0..1 and
-    PI 0..1 and
+    PI 0..* and
     RRI 0..*
 
 
