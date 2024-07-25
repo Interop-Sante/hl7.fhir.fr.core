@@ -1,9 +1,9 @@
 FrCore : Validation Results
 =========================================
 
-err = 46, warn = 96, info = 75
+err = 45, warn = 95, info = 75
 IG Publisher Version: 1.6.18
-Generated Thu Jul 25 15:31:19 UTC 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.1.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
+Generated Thu Jul 25 15:31:37 UTC 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.1.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 75 / 20 / 0
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 5 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 0 / 1
@@ -33,7 +33,7 @@ Generated Thu Jul 25 15:31:19 UTC 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationBodyWeightExample : 2 / 2 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeadCircumExample : 2 / 1 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeartRateExample : 2 / 0 / 3
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Patient-ExamplefrCorePatient001 : 3 / 1 / 5
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Patient-ExamplefrCorePatient001 : 2 / 0 / 5
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Schedule-FRCoreScheduleExample : 2 / 0 / 2
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Slot-FRCoreSlotExample : 1 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-address : 0 / 0 / 2
@@ -301,10 +301,8 @@ ERROR: Observation.text.div: Hyperlink 'ExamplefrPatient001' at 'div/p/a' for 'P
 INFORMATION: Patient/ExamplefrCorePatient001: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/ExamplefrCorePatient001: Patient.extension[0].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.1.0-ballot
 ERROR: Patient/ExamplefrCorePatient001: Patient.extension[1].value.ofType(Address).extension[0].value.ofType(Coding).system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated (error because this is a required binding)
-WARNING: Patient/ExamplefrCorePatient001: Patient.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): Unable to check whether the code is in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0-ballot' because the code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune| was not found
-ERROR: Patient/ExamplefrCorePatient001: Patient.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#01006) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0-ballot), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0-ballot' because the code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune| was not found
+ERROR: Patient/ExamplefrCorePatient001: Patient.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#01006) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0-ballot), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated; The provided code 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#01006' was not found in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0-ballot'
 INFORMATION: Patient/ExamplefrCorePatient001: Patient.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated
-ERROR: Patient/ExamplefrCorePatient001: Patient.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#01006) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0-ballot), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated
 INFORMATION: Patient/ExamplefrCorePatient001: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Schedule-FRCoreScheduleExample.json ==
 INFORMATION: Schedule/FRCoreScheduleExample: Schedule.extension[0].extension[1].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type|2.1.0-ballot
@@ -540,7 +538,7 @@ WARNING: ValueSet/fr-core-vs-encounter-discharge-disposition: ValueSet.compose.i
 == fsh-generated/resources/ValueSet-fr-core-vs-identity-method-collection.json ==
 == fsh-generated/resources/ValueSet-fr-core-vs-identity-reliability.json ==
 == fsh-generated/resources/ValueSet-fr-core-vs-insee-code.json ==
-WARNING: ValueSet.where(id = 'fr-core-vs-insee-code'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune
+WARNING: ValueSet.where(id = 'fr-core-vs-insee-code'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM
 == fsh-generated/resources/ValueSet-fr-core-vs-location-identifier-type.json ==
 == fsh-generated/resources/ValueSet-fr-core-vs-location-physical-type.json ==
 == fsh-generated/resources/ValueSet-fr-core-vs-location-position-room.json ==
