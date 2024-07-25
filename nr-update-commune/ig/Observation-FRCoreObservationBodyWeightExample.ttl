@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBodyWeightExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreObservationBodyWeightExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FRCoreObservationBodyWeightExample</b></p><a name=\"FRCoreObservationBodyWeightExample\"> </a><a name=\"hcFRCoreObservationBodyWeightExample\"> </a><a name=\"FRCoreObservationBodyWeightExample-fr-FR\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"ExamplefrPatient001\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href=\"Patient-ExamplefrCorePatient001.html\">Pierre Durand</a></p><p><b>value</b>: 96 Kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>method</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED K50BI02}\">Balance</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "ExamplefrPatient001" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Pierre Durand" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-11-06"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExamplefrCorePatient001> ;
+     fhir:reference [ fhir:v "Patient/ExamplefrCorePatient001" ] ;
+     fhir:display [ fhir:v "Pierre Durand" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "96"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Kg" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R306-CLADIMED/FHIR/TRE-R306-CLADIMED"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "K50BI02" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
