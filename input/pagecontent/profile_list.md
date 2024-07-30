@@ -14,3 +14,7 @@ Cette page contient la liste des profils définis dans le cadre du guide d'impl�
 ### Les autres profils
 
 {% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Title not like "%Extension%" and Title like "FR Core Medication%"  %}
+
+### Les profils mesures de santé (vital signs)
+
+Les profils mesures ont été supprimés du guide FrCore afin de tout centraliser au niveau de l'IG https://interop.esante.gouv.fr/ig/fhir/mesures/
