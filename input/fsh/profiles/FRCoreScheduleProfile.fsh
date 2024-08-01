@@ -23,4 +23,4 @@ Description: """Profile of the Schedule resource for France. This profile redefi
 * serviceType ..0
 * specialty from FRCoreValueSetPractitionerSpecialty (required)
 
-* actor only Reference(Device or FRCorePractitionerRole or FRCoreRelatedPersonProfile or FRCoreHealthcareServiceProfile or FRCoreLocationProfile or FRCorePatientProfile or FRCorePractitionerProfile)
+* actor only Reference(Device or PractitionerRole or FRCoreRelatedPersonProfile or FRCoreHealthcareServiceProfile or FRCoreLocationProfile or FRCorePatientProfile or FRCorePractitionerProfile)
