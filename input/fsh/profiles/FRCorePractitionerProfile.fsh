@@ -124,7 +124,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification contains savoirFaire 0..*
 
 
-* qualification[savoirFaire] ^short = "savoirFAire : Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc."
+* qualification[savoirFaire] ^short = "savoirFaire : Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc."
 
 * qualification[savoirFaire].code.coding ^slicing.discriminator.type = #value
 * qualification[savoirFaire].code.coding ^slicing.discriminator.path = "system"
