@@ -71,7 +71,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 // # DIPLOME #
 // ###########
 
-* qualification ^slicing.discriminator.type = #value
+* qualification ^slicing.discriminator.type = #pattern
 * qualification ^slicing.discriminator.path = "$this"
 * qualification ^slicing.rules = #open
 * qualification contains degree 0..*
@@ -80,7 +80,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification[degree] ^short = "Diplôme et type de diplôme, par exemple : DE, DES, CES, etc. (typeDiplome)"
 
 * qualification[degree].code.coding ^slicing.discriminator.type = #value
-* qualification[degree].code.coding ^slicing.discriminator.path = "system"
+* qualification[degree].code.coding ^slicing.discriminator.path = "$this"
 * qualification[degree].code.coding ^slicing.rules = #closed
 
 * qualification[degree].code.coding contains degreeType 0..1 and degree 0..1 
@@ -101,7 +101,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 
 * qualification[exercicePro] ^short = "exercicePro : exercice professionnel décrivant la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, militaire, etc.)." 
 * qualification[exercicePro].code.coding ^slicing.discriminator.type = #value
-* qualification[exercicePro].code.coding ^slicing.discriminator.path = "system"
+* qualification[exercicePro].code.coding ^slicing.discriminator.path = "$this"
 * qualification[exercicePro].code.coding ^slicing.rules = #closed
 
 * qualification[exercicePro].code.coding contains 
@@ -127,7 +127,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification[savoirFaire] ^short = "savoirFaire : Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc."
 
 * qualification[savoirFaire].code.coding ^slicing.discriminator.type = #value
-* qualification[savoirFaire].code.coding ^slicing.discriminator.path = "system"
+* qualification[savoirFaire].code.coding ^slicing.discriminator.path = "$this"
 * qualification[savoirFaire].code.coding ^slicing.rules = #open
 
 * qualification[savoirFaire].code.coding contains
