@@ -101,7 +101,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 
 * qualification[exercicePro] ^short = "exercicePro : exercice professionnel décrivant la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, militaire, etc.)." 
 * qualification[exercicePro].code.coding ^slicing.discriminator.type = #value
-* qualification[exercicePro].code.coding ^slicing.discriminator.path = "$this"
+* qualification[exercicePro].code.coding ^slicing.discriminator.path = "code.coding"
 * qualification[exercicePro].code.coding ^slicing.rules = #closed
 
 * qualification[exercicePro].code.coding contains 
@@ -128,7 +128,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 
 * qualification[savoirFaire].code.coding ^slicing.discriminator.type = #value
 * qualification[savoirFaire].code.coding ^slicing.discriminator.path = "$this"
-* qualification[savoirFaire].code.coding ^slicing.rules = #open
+* qualification[savoirFaire].code.coding ^slicing.rules = #closed
 
 * qualification[savoirFaire].code.coding contains
     typeSavoirFaire 0..1 and
