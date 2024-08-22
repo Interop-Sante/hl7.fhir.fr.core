@@ -71,7 +71,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 // # DIPLOME #
 // ###########
 
-* qualification ^slicing.discriminator.type = #pattern
+* qualification ^slicing.discriminator.type = #value
 * qualification ^slicing.discriminator.path = "code.coding"
 * qualification ^slicing.rules = #open
 * qualification contains degree 0..*
