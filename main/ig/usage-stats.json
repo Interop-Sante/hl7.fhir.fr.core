@@ -1,0 +1,881 @@
+{
+  "package": "hl7.fhir.fr.core",
+  "version": "2.1.0-ballot",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FR",
+  "extensions": [
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+      "title": "FR Core Address Insee Code Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
+      "title": "FR Core Appointment Operator Extension",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment",
+      "title": "FR Core Comment Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type",
+      "title": "FR Core Contact Point Email Type Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date",
+      "title": "FR Core Encounter Estimated Discharge Date Extension",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order",
+      "title": "FR Core Assembly Order Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability",
+      "title": "FR Core Patient Ident Reliability Extension",
+      "types": [
+        "Coding",
+        "date",
+        "Coding",
+        "date",
+        "Coding",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room",
+      "title": "FR Core Location Part Of Position Room Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date",
+      "title": "FR Core Lunar Date Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext",
+      "title": "FR Core Observation Body Position Ext Extension",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position",
+      "title": "FR Core Observation Height Body Position Extension",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion",
+      "title": "FR Core Observation Level Of Exertion Extension",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field",
+      "title": "FR Core Organization Activity Field Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type",
+      "title": "FR Core Organization Activity Type Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-analysis-section",
+      "title": "FR Core Organization Analysis Section Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act",
+      "title": "FR Core Organization Applicant Act Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter",
+      "title": "FR Core Organization Budget Letter Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description",
+      "title": "FR Core Organization Description Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executant",
+      "title": "FR Core Organization Executant Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-external",
+      "title": "FR Core Organization External Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-field",
+      "title": "FR Core Organization Field Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space",
+      "title": "FR Core Organization Total Number Of Theorical Accomodation Space Extension",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-prestation-discipline",
+      "title": "FR Core Organization Prestation Discipline Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name",
+      "title": "FR Core Organization Short Name Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+      "title": "FR Core Patient Birth List Given name Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator",
+      "title": "FR Core Patient Birthdate Update Indicator Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier",
+      "title": "FR Core Patient Contact Identifier Extension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "title": "FR Core Patient Death Place Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality",
+      "title": "FR Core Nationality Extension",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession",
+      "title": "FR Core Practitioner Profession Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty",
+      "title": "FR Core Practitioner Specialty Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time",
+      "title": "FR Core Schedule availability time Extension",
+      "types": [
+        "Coding",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "dateTime",
+        "integer",
+        "integer",
+        "positiveInt",
+        "positiveInt",
+        "positiveInt",
+        "string",
+        "integer",
+        "string",
+        "integer",
+        "positiveInt",
+        "code",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "dateTime",
+        "dateTime",
+        "Identifier",
+        "CodeableConcept",
+        "dateTime",
+        "integer",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration",
+      "title": "FR Core Service Type Duration Extension",
+      "types": [
+        "CodeableConcept",
+        "Duration",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot-date",
+      "title": "FR Core Slot Date Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period",
+      "title": "FR Core Use Period Extension",
+      "types": [
+        "Period"
+      ]
+    }
+  ],
+  "profiles": {
+    "Appointment": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment",
+        "title": "FR Core Appointment Profile"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter",
+        "title": "FR Core Encounter Profile"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service",
+        "title": "FR Core Healthcare Service Profile"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location",
+        "title": "FR Core Location Profile"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen",
+        "title": "FR Core Medication Administration Inhaled Oxygen Profile"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi",
+        "title": "FR Core Observation Bmi Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height",
+        "title": "FR Core Observation Body Height Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature",
+        "title": "FR Core Observation Body Temperature Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight",
+        "title": "FR Core Observation Body Weight Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp",
+        "title": "FR Core Observation Blood Pressure Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum",
+        "title": "FR Core Observation Head Circum Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate",
+        "title": "FR Core Observation Heart Rate Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate",
+        "title": "FR Core Observation Respiratory Rate Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen",
+        "title": "FR Core Observation Oxygen Saturation Profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
+        "title": "FR Core Organization Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-pole",
+        "title": "FR Core Organization Pole Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac",
+        "title": "FR Core Organization UAC Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf",
+        "title": "FR Core Organization UF Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+        "title": "FR Core Patient Profile"
+      },
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins",
+        "title": "FR Core Patient INS Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+        "title": "FR Core Practitioner Profile"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role",
+        "title": "FR Core Practitioner Role"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+        "title": "FR Core Related Person Profile"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule",
+        "title": "FR Core Schedule Profile"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot",
+        "title": "FR Core Slot Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
+      "HumanName"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-warning": [
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
+      "Address",
+      "Patient.extension.value[x]"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator": [
+      "Appointment"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
+      "ContactPoint"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date": [
+      "Encounter"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room": [
+      "Location.partOf"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext": [
+      "Observation"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position": [
+      "Observation"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion": [
+      "Observation"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-analysis-section": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executant": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-external": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-field": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Patient.name"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
+      "Practitioner"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time": [
+      "Schedule"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
+      "HealthcareService",
+      "PractitionerRole",
+      "Schedule"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period": [
+      "Location"
+    ]
+  }
+}
