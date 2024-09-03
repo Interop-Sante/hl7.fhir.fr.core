@@ -11,13 +11,13 @@ jobs:
       - uses: actions/checkout@v3
         with:      
           path: igSource
-      - uses: ansforge/IG-workflows@v0.2.0
+      - uses: ansforge/IG-workflows@v0.3.0
         with:      
           repo_ig: "./igSource"   
           github_page: "true"
           github_page_token: ${{ secrets.GITHUB_TOKEN }}
-          bake: "true"
-          nos: "true"
-          validator_cli: "true"
+          bake: "false"
+          nos: "false"
+          validator_cli: "false"
           generate_testscript: "false"
           generate_plantuml : "true"
