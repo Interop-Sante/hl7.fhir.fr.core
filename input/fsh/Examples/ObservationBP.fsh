@@ -2,11 +2,11 @@ Instance: FRCoreObservationBPExample
 InstanceOf: fr-core-observation-bp
 Usage: #example
 * status = #final
-* subject = Reference(ExamplefrPatient001) "Pierre Durand"
+* subject = Reference(ExampleFRCorePatient001) "Pierre Durand"
   * type = "Patient"
-* performer = Reference(ExamplefrCorePatient001) "Pierre Durand"
+* performer = Reference(ExampleFRCorePatient001) "Pierre Durand"
 * effectiveDateTime = "2012-09-17"
-* performer  = Reference(ExampleFrPractitionner001) "Jean Dupont"
+* performer  = Reference(https://exampleserver.org/fhir/Practitioner/1) "Dr Langdon"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
