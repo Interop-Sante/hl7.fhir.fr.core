@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FRCoreObservationBodyTemperatureExample</b></p><a name=\"FRCoreObservationBodyTemperatureExample\"> </a><a name=\"hcFRCoreObservationBodyTemperatureExample\"> </a><a name=\"FRCoreObservationBodyTemperatureExample-fr-FR\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"ExamplefrPatient001\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href=\"Patient-ExamplefrCorePatient001.html\">Pierre Durand</a></p><p><b>value</b>: 36.5 C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FRCoreObservationBodyTemperatureExample</b></p><a name=\"FRCoreObservationBodyTemperatureExample\"> </a><a name=\"hcFRCoreObservationBodyTemperatureExample\"> </a><a name=\"FRCoreObservationBodyTemperatureExample-fr-FR\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-ExampleFRCorePatient001.html\">Pierre Durand</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href=\"Patient-ExampleFRCorePatient001.html\">Pierre Durand</a></p><p><b>value</b>: 36.5 C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -34,14 +34,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:reference [ fhir:v "ExamplefrPatient001" ] ;
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExampleFRCorePatient001> ;
+     fhir:reference [ fhir:v "Patient/ExampleFRCorePatient001" ] ;
      fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ; # 
   fhir:effective [ fhir:v "2022-11-06"^^xsd:date] ; # 
   fhir:performer ( [
-     fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExamplefrCorePatient001> ;
-     fhir:reference [ fhir:v "Patient/ExamplefrCorePatient001" ] ;
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExampleFRCorePatient001> ;
+     fhir:reference [ fhir:v "Patient/ExampleFRCorePatient001" ] ;
      fhir:display [ fhir:v "Pierre Durand" ]
   ] ) ; # 
   fhir:value [
