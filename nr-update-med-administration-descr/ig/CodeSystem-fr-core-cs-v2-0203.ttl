@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-cs-v2-0203"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fr-core-cs-v2-0203</b></p><a name=\"fr-core-cs-v2-0203\"> </a><a name=\"hcfr-core-cs-v2-0203\"> </a><a name=\"fr-core-cs-v2-0203-fr-FR\"> </a><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ADELI<a name=\"fr-core-cs-v2-0203-ADELI\"> </a></td><td>N° ADELI</td></tr><tr><td style=\"white-space:nowrap\">RPPS<a name=\"fr-core-cs-v2-0203-RPPS\"> </a></td><td>N° RPPS</td></tr><tr><td style=\"white-space:nowrap\">IDNPS<a name=\"fr-core-cs-v2-0203-IDNPS\"> </a></td><td>Identifiant National de Professionnel de Santé</td></tr><tr><td style=\"white-space:nowrap\">NNFRA<a name=\"fr-core-cs-v2-0203-NNFRA\"> </a></td><td>National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code</td></tr><tr><td style=\"white-space:nowrap\">NDP<a name=\"fr-core-cs-v2-0203-NDP\"> </a></td><td>Identifiant du patient au Dossier Pharmaceutique</td></tr><tr><td style=\"white-space:nowrap\">INS-C<a name=\"fr-core-cs-v2-0203-INS-C\"> </a></td><td>Identifiant National de Santé Calculé</td></tr><tr><td style=\"white-space:nowrap\">INS-NIA<a name=\"fr-core-cs-v2-0203-INS-NIA\"> </a></td><td>NIR temporaire</td></tr><tr><td style=\"white-space:nowrap\">INS-NIR<a name=\"fr-core-cs-v2-0203-INS-NIR\"> </a></td><td>NIR définitif</td></tr><tr><td style=\"white-space:nowrap\">INS-NIR-TEST<a name=\"fr-core-cs-v2-0203-INS-NIR-TEST\"> </a></td><td>NIR TEST</td></tr><tr><td style=\"white-space:nowrap\">INS-NIR-DEMO<a name=\"fr-core-cs-v2-0203-INS-NIR-DEMO\"> </a></td><td>NIR DEMO</td></tr><tr><td style=\"white-space:nowrap\">FINEJ<a name=\"fr-core-cs-v2-0203-FINEJ\"> </a></td><td>FINESS d'entité juridique</td></tr><tr><td style=\"white-space:nowrap\">FINEG<a name=\"fr-core-cs-v2-0203-FINEG\"> </a></td><td>FINESS d'entité géographique</td></tr><tr><td style=\"white-space:nowrap\">SIREN<a name=\"fr-core-cs-v2-0203-SIREN\"> </a></td><td>Identification de l'organisation au SIREN</td></tr><tr><td style=\"white-space:nowrap\">SIRET<a name=\"fr-core-cs-v2-0203-SIRET\"> </a></td><td>Identification de l'organisation au SIRET</td></tr><tr><td style=\"white-space:nowrap\">IDNST<a name=\"fr-core-cs-v2-0203-IDNST\"> </a></td><td>Identification nationale de structure définie par l’ANS dans le CI_SIS</td></tr><tr><td style=\"white-space:nowrap\">INTRN<a name=\"fr-core-cs-v2-0203-INTRN\"> </a></td><td>Identifiant interne</td></tr><tr><td style=\"white-space:nowrap\">EXTRN<a name=\"fr-core-cs-v2-0203-EXTRN\"> </a></td><td>Identifiant externe</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemv2_0203"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem v2-0203"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-09-09T09:28:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "HL7 v2 - Identifier type"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "17"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ADELI" ] ;
+     fhir:display [ fhir:v "N° ADELI" ]
+  ] [
+     fhir:code [ fhir:v "RPPS" ] ;
+     fhir:display [ fhir:v "N° RPPS" ]
+  ] [
+     fhir:code [ fhir:v "IDNPS" ] ;
+     fhir:display [ fhir:v "Identifiant National de Professionnel de Santé" ]
+  ] [
+     fhir:code [ fhir:v "NNFRA" ] ;
+     fhir:display [ fhir:v "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code" ]
+  ] [
+     fhir:code [ fhir:v "NDP" ] ;
+     fhir:display [ fhir:v "Identifiant du patient au Dossier Pharmaceutique" ]
+  ] [
+     fhir:code [ fhir:v "INS-C" ] ;
+     fhir:display [ fhir:v "Identifiant National de Santé Calculé" ]
+  ] [
+     fhir:code [ fhir:v "INS-NIA" ] ;
+     fhir:display [ fhir:v "NIR temporaire" ]
+  ] [
+     fhir:code [ fhir:v "INS-NIR" ] ;
+     fhir:display [ fhir:v "NIR définitif" ]
+  ] [
+     fhir:code [ fhir:v "INS-NIR-TEST" ] ;
+     fhir:display [ fhir:v "NIR TEST" ]
+  ] [
+     fhir:code [ fhir:v "INS-NIR-DEMO" ] ;
+     fhir:display [ fhir:v "NIR DEMO" ]
+  ] [
+     fhir:code [ fhir:v "FINEJ" ] ;
+     fhir:display [ fhir:v "FINESS d'entité juridique" ]
+  ] [
+     fhir:code [ fhir:v "FINEG" ] ;
+     fhir:display [ fhir:v "FINESS d'entité géographique" ]
+  ] [
+     fhir:code [ fhir:v "SIREN" ] ;
+     fhir:display [ fhir:v "Identification de l'organisation au SIREN" ]
+  ] [
+     fhir:code [ fhir:v "SIRET" ] ;
+     fhir:display [ fhir:v "Identification de l'organisation au SIRET" ]
+  ] [
+     fhir:code [ fhir:v "IDNST" ] ;
+     fhir:display [ fhir:v "Identification nationale de structure définie par l’ANS dans le CI_SIS" ]
+  ] [
+     fhir:code [ fhir:v "INTRN" ] ;
+     fhir:display [ fhir:v "Identifiant interne" ]
+  ] [
+     fhir:code [ fhir:v "EXTRN" ] ;
+     fhir:display [ fhir:v "Identifiant externe" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
