@@ -1,7 +1,7 @@
 ValueSet: FRCoreValueSetMaritalStatus
 Id: fr-core-vs-marital-status
-Title: "FR Core ValueSet Patient gender INS ValueSet"
-Description: "Patient Gender for INS : male | female | unknown"
+Title: "FR Core ValueSet Marital Status ValueSet"
+Description: "Patient Marital Status"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * include codes from system fr-core-cs-marital-status
