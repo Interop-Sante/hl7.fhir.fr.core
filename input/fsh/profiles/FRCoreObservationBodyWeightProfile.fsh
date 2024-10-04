@@ -2,7 +2,7 @@ Profile: FRCoreObservationBodyWeightProfile
 Parent: $bodyweight
 Id: fr-core-observation-body-weight
 Title: "FR Core Observation Body Weight Profile"
-Description: "French profil Body weight based on the FHIR profil BodyWeightMeas.
+Description: "French profile of body weight based on the FHIR profil BodyWeightMeas.
 \r\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."
 
 * meta.profile ^slicing.discriminator.type = #value
