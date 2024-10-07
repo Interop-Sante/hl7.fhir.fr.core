@@ -24,49 +24,57 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 
 * identifier[INS-NIR] ^short = "INS-NIR - The patient national health identifier INS obtained by requesting the national patient identification service (CNAM) called the INSi teleservice. Identifiant national de santé (NIR) du patient INS provenant du téléservice INSi (service national d'identification des patients (CNAM))"
 * identifier[INS-NIR] MS
+* identifier[INS-NIR].use 1..
 * identifier[INS-NIR].use = #official
+* identifier[INS-NIR].type 1..
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
+* identifier[INS-NIR].system 1..
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].system ^short = "Autorité d'affectation des INS-NIR"
 * identifier[INS-NIR].value 1..
 
 * identifier[INS-NIR-TEST] ^short = "Identifiant INS-NIR du patient fictif de test"
+* identifier[INS-NIR-TEST].use 1..
 * identifier[INS-NIR-TEST].use = #official
+* identifier[INS-NIR-TEST].type 1..
 * identifier[INS-NIR-TEST].type = $fr-core-v2-0203#INS-NIR-TEST
+* identifier[INS-NIR-TEST].system 1..
 * identifier[INS-NIR-TEST].system = "urn:oid:1.2.250.1.213.1.4.10"
 * identifier[INS-NIR-TEST].system ^short = "Autorité d’affectation des INS-NIR de test"
 * identifier[INS-NIR-TEST].value 1..
 
 * identifier[INS-NIR-DEMO] ^short = "Identifiant INS-NIR du patient fictif de démonstration"
+* identifier[INS-NIR-DEMO].use 1..
 * identifier[INS-NIR-DEMO].use = #official
+* identifier[INS-NIR-DEMO].type 1..
 * identifier[INS-NIR-DEMO].type = $fr-core-v2-0203#INS-NIR-DEMO
+* identifier[INS-NIR-DEMO].system 1..
 * identifier[INS-NIR-DEMO].system = "urn:oid:1.2.250.1.213.1.4.11"
 * identifier[INS-NIR-DEMO].system ^short = "Autorité d’affectation des INS-NIR de démonstration"
 * identifier[INS-NIR-DEMO].value 1..
 
 * identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
 * identifier[INS-NIA] MS
+* identifier[INS-NIA].use 1..
 * identifier[INS-NIA].use = #temp
+* identifier[INS-NIA].type 1..
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
+* identifier[INS-NIA].system 1..
 * identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
 * identifier[INS-NIA].system ^short = "Autorité d'affectation des INS-NIA"
 * identifier[INS-NIA].value 1..
 
-* gender 1..1
-* gender MS
+* gender 1..1 MS
 * gender from fr-core-vs-patient-gender-INS (required)
 * gender ^short = "male | female | unknown"
 
-* birthDate 1..
-* birthDate MS
+* birthDate 1.. MS
 
-* name[officialName] 1..1
-* name[officialName] MS
+* name[officialName] 1..1 MS
 * name[officialName].given 1..1
 * name[officialName].given ^short = "Dans le cas d’une identité créée ou modifiée par un appel au téléservice INSi, il est nécessaire d’extraire le premier prénom de la liste des prénoms retournée par le téléservice et de l'inclure dans le champs given. En cas de prénom composé, given peut par exemple contenir 'Anne-sophie' ou 'Anne Sophie'."
 
-* name[officialName].extension[birth-list-given-name] 1..1
-* name[officialName].extension[birth-list-given-name] MS
+* name[officialName].extension[birth-list-given-name] 1..1 MS
 
 
 Invariant:   fr-core-1
