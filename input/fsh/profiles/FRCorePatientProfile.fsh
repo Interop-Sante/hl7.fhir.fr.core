@@ -32,6 +32,9 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
 * identifier ^slicing.rules = #open
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
+
+
+
 * identifier contains
     NSS 0..1 and
     INS-C 0..* and
@@ -41,33 +44,44 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 
 * identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
+* identifier[NSS].use 1..
 * identifier[NSS].use = #official
+* identifier[NSS].type 1..
 * identifier[NSS].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+* identifier[NSS].system 1..
 * identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[NSS].value 1..
 
 * identifier[INS-C] ^short = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
+* identifier[INS-C].use 1..
 * identifier[INS-C].use = #secondary
+* identifier[INS-C].type 1..
 * identifier[INS-C].type = $fr-core-v2-0203#INS-C "Identifiant National de Santé Calculé"
-* identifier[INS-C].type ^definition = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
+* identifier[INS-C].system 1..
 * identifier[INS-C].system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier[INS-C].value 1..
 
 * identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français. Celui-ci est unique."
+* identifier[NDP].use 1..
 * identifier[NDP].use = #secondary
+* identifier[NDP].type 1..
 * identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant du patient au Dossier Pharmaceutique"
 * identifier[NDP].system 1..
 * identifier[NDP].system = "urn:oid:1.2.250.1.176.1.2"
 * identifier[NDP].value 1..
 
 * identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
+* identifier[PI].use 1..
 * identifier[PI].use = #usual
+* identifier[PI].type 1..
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..
 * identifier[PI].value 1..
 
 * identifier[RRI] ^short = "Regional Registry ID | Identifiant régional"
+* identifier[RRI].use 1..
 * identifier[RRI].use = #secondary
+* identifier[RRI].type 1..
 * identifier[RRI].type = http://terminology.hl7.org/CodeSystem/v2-0203#RRI "Regional registry ID"
 * identifier[RRI].system 1..
 * identifier[RRI].value 1..
@@ -84,10 +98,12 @@ Description: """Profile of the Patient resource for France. This profile specifi
 // slice usualName laissée à titre d'information
 * name[usualName] ^short = "Name of a human | Nom utilisé"
 * name[usualName] ^definition = "A human's name with the ability to identify parts and usage | Le nom utilisé (usual) n’est transmis que s’il est défini (par exemple nom marital du conjoint)."
+* name[usualName].use 1..
 * name[usualName].use = #usual
 
 * name[officialName] ^short = "Name of a human | Nom de naissance"
 * name[officialName] ^definition = "A human's name with the ability to identify parts and usage | Le nom de naissance (official) est obligatoire dans le cas où l’on véhicule l’INS et que l’identité est qualifiée (celui-ci ne doit pas être altéré)."
+* name[officialName] 1..
 * name[officialName].use = #official
 * name[officialName].family 1..
 * name[officialName].given 1..
