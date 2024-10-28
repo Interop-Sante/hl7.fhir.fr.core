@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2024-10-28T08:07:18+00:00",
+  "date" : "2024-10-28T08:08:30+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1103,7 +1103,7 @@
         "reference" : "StructureDefinition/fr-core-observation-bmi"
       },
       "name" : "FR Core Observation Bmi Profile",
-      "description" : "French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio].\n\r\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI",
+      "description" : "French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].\n\r\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI",
       "exampleBoolean" : false
     },
     {
@@ -1139,7 +1139,7 @@
         "reference" : "StructureDefinition/fr-core-observation-body-temperature"
       },
       "name" : "FR Core Observation Body Temperature Profile",
-      "description" : "French profil body temperature.\n\r\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7",
+      "description" : "French profile for body temperature.\n\r\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7",
       "exampleBoolean" : false
     },
     {
@@ -1151,7 +1151,7 @@
         "reference" : "StructureDefinition/fr-core-observation-body-weight"
       },
       "name" : "FR Core Observation Body Weight Profile",
-      "description" : "French profil Body weight based on the FHIR profil BodyWeightMeas.\n\r\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.",
+      "description" : "French profile of body weight based on the FHIR profil BodyWeightMeas.\n\r\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.",
       "exampleBoolean" : false
     },
     {
@@ -1163,7 +1163,7 @@
         "reference" : "StructureDefinition/fr-core-observation-head-circum"
       },
       "name" : "FR Core Observation Head Circum Profile",
-      "description" : "HL7 Vital Signs Head Occipital-frontal circumference profil.\n\r\nProfil HL7 Vital Signs Circonférence de la tête",
+      "description" : "French profile for Occipital-frontal circumference.\n\r\nProfil HL7 Vital Signs Circonférence de la tête",
       "exampleBoolean" : false
     },
     {
@@ -1175,7 +1175,7 @@
         "reference" : "StructureDefinition/fr-core-observation-heartrate"
       },
       "name" : "FR Core Observation Heart Rate Profile",
-      "description" : "French profiling of the FHIR Vital Sign Heart Rate Profile.\n\r\nProfilage français du profil Vital Signs Heart rate",
+      "description" : "French profile for the FHIR Vital Sign Heart Rate Profile.\n\r\nProfilage français du profil Vital Signs Heart rate",
       "exampleBoolean" : false
     },
     {
@@ -1211,7 +1211,7 @@
         "reference" : "StructureDefinition/fr-core-observation-saturation-oxygen"
       },
       "name" : "FR Core Observation Oxygen Saturation Profile",
-      "description" : "Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel",
+      "description" : "French profile for Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel",
       "exampleBoolean" : false
     },
     {
@@ -1223,7 +1223,7 @@
         "reference" : "StructureDefinition/fr-core-observation-resp-rate"
       },
       "name" : "FR Core Observation Respiratory Rate Profile",
-      "description" : "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.\n\r\nProfilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France",
+      "description" : "French profile for the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.\n\r\nProfilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France",
       "exampleBoolean" : false
     },
     {
@@ -1864,6 +1864,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/fr-core-vs-marital-status"
+      },
+      "name" : "FR Core ValueSet Marital Status ValueSet",
+      "description" : "Patient Marital Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/fr-core-vs-mode-validation-identity"
       },
       "name" : "FR Core ValueSet Mode validation identity",
@@ -1928,18 +1940,6 @@
       },
       "name" : "FR Core ValueSet Patient contact role",
       "description" : "ValueSet patient contact role",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-marital-status"
-      },
-      "name" : "FR Core ValueSet Patient gender INS ValueSet",
-      "description" : "Patient Gender for INS : male | female | unknown",
       "exampleBoolean" : false
     },
     {
