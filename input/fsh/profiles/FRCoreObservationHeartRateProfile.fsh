@@ -2,7 +2,7 @@ Profile: FRCoreObservationHeartRateProfile
 Parent: $heartrate
 Id: fr-core-observation-heartrate
 Title: "FR Core Observation Heart Rate Profile"
-Description: "French profiling of the FHIR Vital Sign Heart Rate Profile.
+Description: "French profile for the FHIR Vital Sign Heart Rate Profile.
 \r\nProfilage français du profil Vital Signs Heart rate"
 
 * meta.profile ^slicing.discriminator.type = #value

@@ -2,7 +2,7 @@ Profile: FRCoreObservationRespRateProfile
 Parent: $resprate
 Id: fr-core-observation-resp-rate
 Title: "FR Core Observation Respiratory Rate Profile"
-Description: """Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.
+Description: """French profile for the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.
 \r\nProfilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France"""
 
 * meta.profile ^slicing.discriminator.type = #value
