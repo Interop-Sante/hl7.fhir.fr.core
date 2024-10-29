@@ -23,8 +23,6 @@ Description: """Profile of the Organization resource for France. This profile sp
     
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetOrganizationIdentifierType (extensible)
-* identifier.system 1..
-* identifier.value 1..
 
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[0].path = "system"
@@ -36,10 +34,14 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier contains idNatSt 0..1 and siren 0..* and siret 0..* and finess 0..* and rppsRang 0..*
 
 * identifier[idNatSt] ^short = "Identifiant idNat_Struct délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures."
+* identifier[idNatSt].use 1..
 * identifier[idNatSt].use = #official
+* identifier[idNatSt].type 1..
 * identifier[idNatSt].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#IDNST
+* identifier[idNatSt].system 1..
 * identifier[idNatSt].system = "urn:oid:1.2.250.1.71.4.2.2"
 * identifier[idNatSt].value ^short = "Identification nationale de la structure préfixé : 0 + ADELI rang, 1 + Numéro FINESS Etablissement, 2 + Numéro SIREN, 3 + Numéro SIRET, 4 + RPPS rang ou identifiant technique de la structure."
+* identifier[idNatSt].value 1..
 
 * identifier[siren] ^short = "Identifiant SIREN (9 chiffres)"
 * identifier[siren].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#SIREN

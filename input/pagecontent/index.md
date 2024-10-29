@@ -7,13 +7,13 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 
 </p>
 
-<!-- <blockquote class="stu-note">
+<blockquote class="stu-note">
 <p>
   <b>Attention !</b>
   <br>
  La version de l'Implementation Guide que vous êtes en train de consulter est en intégration continue et n'est pas à utiliser car soumise à des changements réguliers. La version à utiliser est accessible ici : http://hl7.fr/ig/fhir/core.
 </p>
-</blockquote> -->
+</blockquote>
 
 ### Introduction
 
