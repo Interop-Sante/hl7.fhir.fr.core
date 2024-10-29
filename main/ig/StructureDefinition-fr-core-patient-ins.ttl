@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "FRCorePatientINSProfile"] ; # 
   fhir:title [ fhir:v "FR Core Patient INS Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-28T08:08:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-29T10:42:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -146,7 +146,7 @@
          fhir:key [ fhir:v "fr-core-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present" ] ;
-         fhir:expression [ fhir:v "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists())" ] ;
+         fhir:expression [ fhir:v "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11').exists())" ] ;
          fhir:source [
            fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
            fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
@@ -7918,7 +7918,7 @@
          fhir:key [ fhir:v "fr-core-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present" ] ;
-         fhir:expression [ fhir:v "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists())" ] ;
+         fhir:expression [ fhir:v "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11').exists())" ] ;
          fhir:source [
            fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
            fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>

@@ -10,7 +10,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2024-10-28T08:08:30+00:00",
+  "date" : "2024-10-29T10:42:21+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -132,7 +132,7 @@
         "key" : "fr-core-1",
         "severity" : "error",
         "human" : "If identityReliability status =\u00a0'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present",
-        "expression" : "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists())",
+        "expression" : "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11').exists())",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"
       }],
       "isModifier" : false,
@@ -7581,7 +7581,7 @@
         "key" : "fr-core-1",
         "severity" : "error",
         "human" : "If identityReliability status =\u00a0'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present",
-        "expression" : "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists())",
+        "expression" : "(extension.where(url= 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension.where(url = 'identityStatus').value.code = 'VALI') implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11').exists())",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"
       }]
     },
