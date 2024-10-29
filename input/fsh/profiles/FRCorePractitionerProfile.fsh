@@ -34,7 +34,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * identifier ^slicing.description = "Slice based on the identifier.system pattern"
 // Contains rule
 
-* identifier contains idNatPs 0..1 and rpps 0..* and adeli 0..* 
+* identifier contains idNatPs 0..1 and rpps 0..*
 
 // Identifiant national des professionels de santé
 * identifier[idNatPs] ^short = "Identifiant national des PS. Cet identifiant est notamment utilisé dans le cadre du DMP et de la CPS. Cet identifiant est préfixé selon source de provenance de l'identifiant (cf Annexe Transverse – Source des données métier pour les professionnels et les structures du CI-SIS.)"
@@ -53,18 +53,6 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * identifier[rpps].system 1..
 * identifier[rpps].system = "https://rpps.esante.gouv.fr"
 * identifier[rpps].value 1..
-
-// Identifiant ADELI. Celui-ci peut aussi être inclus dans l'idNatPs.
-* identifier[adeli] ^short = "Numéro ADELI (9 chiffres)"
-* identifier[adeli].type 1..
-* identifier[adeli].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#ADELI
-* identifier[adeli].system 1..
-* identifier[adeli].system = "https://adeli.esante.gouv.fr"
-* identifier[adeli].value 1..
-
-
-
-
 
 * name only FRCoreHumanNameProfile
 * telecom only FRCoreContactPointProfile

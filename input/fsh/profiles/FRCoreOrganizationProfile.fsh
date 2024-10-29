@@ -31,7 +31,7 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier.system pattern"
 
-* identifier contains idNatSt 0..1 and siren 0..* and siret 0..* and finess 0..* and adeliRang 0..* and rppsRang 0..*
+* identifier contains idNatSt 0..1 and siren 0..* and siret 0..* and finess 0..* and rppsRang 0..*
 
 * identifier[idNatSt] ^short = "Identifiant idNat_Struct délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures."
 * identifier[idNatSt].use 1..
@@ -55,10 +55,6 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier[finess].type.coding.code ^short = "FINEJ | FINEG"
 * identifier[finess].type.coding.system = "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
 * identifier[finess].system = "https://finess.esante.gouv.fr"
-
-* identifier[adeliRang] ^short = "Identifiant ADELI rang (9 chiffres ADELI + 2 chiffres RANG)"
-* identifier[adeliRang].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#INTRN
-* identifier[adeliRang].system = "https://adelirang.esante.gouv.fr"
 
 * identifier[rppsRang] ^short = "RPPS rang (11 chiffres RPPS + 2 chiffres RANG)"
 * identifier[rppsRang].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#INTRN
