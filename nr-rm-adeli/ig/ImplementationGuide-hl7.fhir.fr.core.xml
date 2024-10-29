@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="active"/>
-  <date value="2024-10-06T10:53:29+00:00"/>
+  <date value="2024-10-29T10:41:10+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -869,7 +869,7 @@
         <reference value="StructureDefinition/fr-core-medication-administration-inhaled-oxygen"/>
       </reference>
       <name value="FR Core Medication Administration Inhaled Oxygen Profile"/>
-      <description value="Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé."/>
+      <description value="Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -902,7 +902,7 @@
         <reference value="StructureDefinition/fr-core-observation-bmi"/>
       </reference>
       <name value="FR Core Observation Bmi Profile"/>
-      <description value="French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio].&#xA;&#xD;&#xA;Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"/>
+      <description value="French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].&#xA;&#xD;&#xA;Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -935,7 +935,7 @@
         <reference value="StructureDefinition/fr-core-observation-body-temperature"/>
       </reference>
       <name value="FR Core Observation Body Temperature Profile"/>
-      <description value="French profil body temperature.&#xA;&#xD;&#xA;Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"/>
+      <description value="French profile for body temperature.&#xA;&#xD;&#xA;Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -946,7 +946,7 @@
         <reference value="StructureDefinition/fr-core-observation-body-weight"/>
       </reference>
       <name value="FR Core Observation Body Weight Profile"/>
-      <description value="French profil Body weight based on the FHIR profil BodyWeightMeas.&#xA;&#xD;&#xA;Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."/>
+      <description value="French profile of body weight based on the FHIR profil BodyWeightMeas.&#xA;&#xD;&#xA;Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -957,7 +957,7 @@
         <reference value="StructureDefinition/fr-core-observation-head-circum"/>
       </reference>
       <name value="FR Core Observation Head Circum Profile"/>
-      <description value="HL7 Vital Signs Head Occipital-frontal circumference profil.&#xA;&#xD;&#xA;Profil HL7 Vital Signs Circonférence de la tête"/>
+      <description value="French profile for Occipital-frontal circumference.&#xA;&#xD;&#xA;Profil HL7 Vital Signs Circonférence de la tête"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -968,7 +968,7 @@
         <reference value="StructureDefinition/fr-core-observation-heartrate"/>
       </reference>
       <name value="FR Core Observation Heart Rate Profile"/>
-      <description value="French profiling of the FHIR Vital Sign Heart Rate Profile.&#xA;&#xD;&#xA;Profilage français du profil Vital Signs Heart rate"/>
+      <description value="French profile for the FHIR Vital Sign Heart Rate Profile.&#xA;&#xD;&#xA;Profilage français du profil Vital Signs Heart rate"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1001,7 +1001,7 @@
         <reference value="StructureDefinition/fr-core-observation-saturation-oxygen"/>
       </reference>
       <name value="FR Core Observation Oxygen Saturation Profile"/>
-      <description value="Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel"/>
+      <description value="French profile for Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1012,7 +1012,7 @@
         <reference value="StructureDefinition/fr-core-observation-resp-rate"/>
       </reference>
       <name value="FR Core Observation Respiratory Rate Profile"/>
-      <description value="Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.&#xA;&#xD;&#xA;Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France"/>
+      <description value="French profile for the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.&#xA;&#xD;&#xA;Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1599,6 +1599,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-marital-status"/>
+      </reference>
+      <name value="FR Core ValueSet Marital Status ValueSet"/>
+      <description value="Patient Marital Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-mode-validation-identity"/>
       </reference>
       <name value="FR Core ValueSet Mode validation identity"/>
@@ -1658,17 +1669,6 @@
       </reference>
       <name value="FR Core ValueSet Patient contact role"/>
       <description value="ValueSet patient contact role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-marital-status"/>
-      </reference>
-      <name value="FR Core ValueSet Patient gender INS ValueSet"/>
-      <description value="Patient Gender for INS : male | female | unknown"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
