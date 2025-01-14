@@ -7,7 +7,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * obeys fr-core-1 
 
 * meta.profile contains fr-ins-canonical 0..1
-* meta.profile[fr-ins-canonical] = fr-core-patient-ins)
+* meta.profile[fr-ins-canonical] = Canonical(fr-core-patient-ins)
 
 
 * extension[identityReliability] 1..*
