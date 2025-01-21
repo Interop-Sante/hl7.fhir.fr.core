@@ -7,6 +7,7 @@ Description: "French profile of datatype HumanName with constraints on prefix an
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
+
 * extension contains $humanname-assembly-order named assemblyOrder 0..1
 
 * use from NameUse (required)
