@@ -1,6 +1,6 @@
 ### Historique du guide FrCore
 
-Les profils français ont été initiés en 2017 sur [la plateforme simplifier](https://simplifier.net/frenchprofiledfhirar) (Participants : Yohann Poiron, François Macary, Eric Dufour et Isabelle Gibaud).
+Les profils français ont été initiés en 2017 sur [la plateforme simplifier](https://simplifier.net/frenchprofiledfhirar) (Participants : Eric Dufour, Isabelle Gibaud, François Macary et Yohann Poiron).
 
 En 2024, l'ensemble des ressources de conformité a été mis au sein de ce [guide d'implémentation](https://hl7.fr/ig/fhir/core) pour simplifier leur usage et leur accès, rendant les anciens profils simplifier obsolètes (Participants : Marie Brulliard, Sylvain Demey, Isabelle Gibaud, Yohann Poiron et Nicolas Riss).
 
