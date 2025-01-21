@@ -15,3 +15,7 @@ Plusieurs options vous permettent de contribuer à l'interopérabilité françai
 - Participer aux [groupes de travail d'InteropSanté](https://www.interopsante.org/groupe-de-travail)
 - Déclarer des erreurs ou des suggestions d'amélioration via des [GitHub issues](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues)
 - Proposer directement des changements via une [Pull Request](https://github.com/Interop-Sante/hl7.fhir.fr.core/pulls)
+
+### Profilage de nouvelles ressources
+
+Des nouvelles ressources peuvent être profilées pour l'écosystème français. Pour cela, il est nécessaire d'expliquer la nécessité de profiler les ressources : pour quelles raisons faut-il rajouter des contraintes propres à l'écosystème français plutôt que d'utiliser les ressources de base proposées par FHIR ?
