@@ -14,7 +14,6 @@ Cette page contient la liste des profils définis dans le cadre du guide d'impl�
 } %}
 </div>
 
-
 ### Les profils mesures de santé (vital signs)
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
