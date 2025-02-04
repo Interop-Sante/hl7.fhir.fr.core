@@ -40,7 +40,7 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier[idNatSt].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#IDNST
 * identifier[idNatSt].system 1..
 * identifier[idNatSt].system = "urn:oid:1.2.250.1.71.4.2.2"
-* identifier[idNatSt].value ^short = "Identifiant national de la structure"
+* identifier[idNatSt].value ^short = "Identifiant national de la structure. Cet identifiant ne doit pas être construit ni interprété, la donnée peut être trouvée dans l'annuaire santé."
 * identifier[idNatSt].value ^definition = "L'idNatStruct est construit, selon le cas, de cette manière : 0 + ADELI rang, 1 + Numéro FINESS Etablissement, 2 + Numéro SIREN, 3 + Numéro SIRET, 4 + RPPS rang ou identifiant technique de la structure"
 * identifier[idNatSt].value 1..
 
