@@ -43,7 +43,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * identifier[idNatPs].system = "urn:oid:1.2.250.1.71.4.2.1"
 * identifier[idNatPs].value 1..
 * identifier[idNatPs].value ^short = "Identifiant national unique du PS. Cet identifiant ne doit pas être construit, la donnée peut être trouvée dans l'annuaire santé, sur ProSantéConnect ou dans la carte CPx. Pour plus d'informations, cf Annexe Transverse – Source des données métier pour les professionnels et les structures du CI-SIS."
-* identifier[idNatPs].value ^description = "Cet identifiant est préfixé selon source de provenance de l'identifiant. Ces préfixes (1, 3, 4, 5, 6) proviennent du system : https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne."
+* identifier[idNatPs].value ^definition = "Cet identifiant est préfixé selon source de provenance de l'identifiant. Ces préfixes (1, 3, 4, 5, 6) proviennent du system : https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne."
 
 // Identifiant du Répertoire Partagé des Professionnels intervenant dans le système de Santé (RPPS). Celui-ci peut aussi être inclus dans l'idNatPs.
 * identifier[rpps] ^short = "Numéro RPPS (11 chiffres)"
