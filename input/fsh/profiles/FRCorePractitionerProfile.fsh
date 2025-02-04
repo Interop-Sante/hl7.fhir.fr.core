@@ -32,19 +32,18 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier.system pattern"
-// Contains rule
 
 * identifier contains idNatPs 0..1 and rpps 0..*
 
 // Identifiant national des professionels de santé
-* identifier[idNatPs] ^short = "Identifiant national des PS. Cet identifiant est notamment utilisé dans le cadre du DMP et de la CPS. Cet identifiant est préfixé selon source de provenance de l'identifiant (cf Annexe Transverse – Source des données métier pour les professionnels et les structures du CI-SIS.)"
+* identifier[idNatPs] ^short = "Identifiant national unique des PS. Cet identifiant est notamment utilisé dans le cadre du DMP et de la CPS. Cet identifiant est préfixé selon source de provenance de l'identifiant (cf Annexe Transverse – Source des données métier pour les professionnels et les structures du CI-SIS.)"
 * identifier[idNatPs].type 1..
-* identifier[idNatPs].type ^short = "Type d’identifiant national de la personne physique (typeIdNat_PP),\r\nLes codes ADELI, RPPS et IDNPS proviennent du system  https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 ; Les codes 1, 3, 4, 5, 6 proviennent du system : https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne"
+* identifier[idNatPs].type ^short = "Type d’identifiant national du PS,\r\nLes codes ADELI, RPPS et IDNPS proviennent du system  https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 ; Les préfixes 1, 3, 4, 5, 6 proviennent du system : https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne"
 * identifier[idNatPs].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#IDNPS
 * identifier[idNatPs].system 1..
 * identifier[idNatPs].system = "urn:oid:1.2.250.1.71.4.2.1"
 * identifier[idNatPs].value 1..
-* identifier[idNatPs].value ^short = "Identifiant national de la personne physique. 0 + ADELI ou 8 + RPPSidPP,\r\n Personne/Identifiant PP si l’instance correspond à un identifiant RPPS ou ADELI, sinon Personne/identification nationale PP."
+* identifier[idNatPs].value ^short = "Identifiant national unique du PS. Il est préfixé par un chiffre, par ex. 8 + RPPS. Cet identifiant ne doit pas être construit, la donnée peut être trouvée dans l'annuaire santé ou dans la carte CPx."
 
 // Identifiant du Répertoire Partagé des Professionnels intervenant dans le système de Santé (RPPS). Celui-ci peut aussi être inclus dans l'idNatPs.
 * identifier[rpps] ^short = "Numéro RPPS (11 chiffres)"
