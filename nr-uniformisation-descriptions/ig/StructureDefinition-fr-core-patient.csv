@@ -61,11 +61,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
-","Reliabilility of the identity | Fiabilité de l'identité","Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Reliabilility of the identity | Fiabilité de l'identité","Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
+Reliabilility of the patient's identity","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:deathPlace","Patient.extension","deathPlace","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place]]} {[]}
-","FR Core Patient Death Place Extension","Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Patient Death Place Extension","Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
+Carries the death place of the patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:birthdateUpdateIndicator","Patient.extension","birthdateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
@@ -410,11 +412,13 @@ pat-1:SHALL at least contain a contact's details or a reference to an organizati
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.extension:contactIdentifier","Patient.contact.extension","contactIdentifier","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier]]} {[]}
-","Contact identifier in the patient resource | Identifiant de contact dans la ressource Patient","This extension carries the contact identifier in the patient resource | Ajout d'un identifiant de contact dans la ressource Patient","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","FR Core Patient Contact Identifier Extension","Identifiant de contact dans la ressource Patient
+This extension carries the contact identifier in the patient resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.extension:comment","Patient.contact.extension","comment","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment]]} {[]}
-","Comment on a dataElement | Commentaire sur un dataElement","add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Comment on a dataElement | Commentaire sur un dataElement","Ajout d'un commentaire sur un dataElement d'une ressource.
+Add a comment on a dataElement  of a resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.modifierExtension","Patient.contact.modifierExtension","","extensions

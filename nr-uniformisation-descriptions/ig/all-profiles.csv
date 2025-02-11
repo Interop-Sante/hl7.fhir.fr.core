@@ -1,6 +1,7 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "fr-core-address-insee-code","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Address Insee Code Extension","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Address Insee Code Extension","Extension d'ajout du code insee (5 chiffres) à l'adresse postale.
+This extension adds the insee code (5 digits) to the address","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-address-insee-code","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -26,7 +27,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-address","Address.extension:inseeCode","Address.extension","inseeCode","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code]]} {[]}
-","Code COG de la ville","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Code COG de la ville","Extension d'ajout du code insee (5 chiffres) à l'adresse postale.
+This extension adds the insee code (5 digits) to the address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-address","Address.use","Address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -66,7 +68,8 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-appointment-operator","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Appointment Operator Extension","This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment | Cette extension ajoute l'élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Appointment Operator Extension","Cette extension ajoute l'élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). 
+This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-appointment-operator","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -141,7 +144,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-appointment","Appointment.extension:appointmentOperator","Appointment.extension","appointmentOperator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator]]} {[]}
-","FR Core Appointment Operator Extension","This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment | Cette extension ajoute l'élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Appointment Operator Extension","Cette extension ajoute l'élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). 
+This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-appointment","Appointment.modifierExtension","Appointment.modifierExtension","","extensions
@@ -249,7 +253,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 The duration (usually in minutes) could also be provided to indicate the length of the appointment to fill and populate the start/end times for the actual allocated time. However, in other situations the duration may be calculated by the scheduling system.","This does not introduce a capacity for recurring appointments.","","","","","","","","",,,,,"",,,,"Appointment.requestedPeriod",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-comment","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Comment on a dataElement | Commentaire sur un dataElement","add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Comment on a dataElement | Commentaire sur un dataElement","Ajout d'un commentaire sur un dataElement d'une ressource.
+Add a comment on a dataElement  of a resource","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-comment","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -738,7 +743,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-healthcare-service","HealthcareService.extension:serviceTypeDuration","HealthcareService.extension","serviceTypeDuration","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration]]} {[]}
-","FR Core Service Type Duration Extension","This French extension allows to associate the type of service with the duration of this service | Cette extension française permet d'associer le type de service avec la durée de ce service.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Service Type Duration Extension","Cette extension française permet d'associer le type de service avec la durée de ce service.
+This French extension allows to associate the type of service with the duration of this service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-healthcare-service","HealthcareService.modifierExtension","HealthcareService.modifierExtension","","extensions
@@ -959,7 +965,8 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-identity-reliability","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Reliabilility of the identity | Fiabilité de l'identité","Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Reliabilility of the identity | Fiabilité de l'identité","Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
+Reliabilility of the patient's identity","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-identity-reliability","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1045,7 +1052,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-location-position-room","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Location Part Of Position Room Extension","Position of the bed in the bedroom | Position du lit dans la chambre","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Location Part Of Position Room Extension","Position du lit dans la chambre.
+Position of the bed in the bedroom","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-location-position-room","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1223,7 +1231,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-location","Location.partOf.extension:positionRoom","Location.partOf.extension","positionRoom","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room]]} {[]}
-","FR Core Location Part Of Position Room Extension","Position of the bed in the bedroom | Position du lit dans la chambre","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","FR Core Location Part Of Position Room Extension","Position du lit dans la chambre.
+Position of the bed in the bedroom","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-location","Location.partOf.reference","Location.partOf.reference","","","",0,1,"","","Y","string {[]} {[]}
 ","Literal reference, Relative, internal or absolute URL","A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.","Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure ""/[type]/[id]"" then it should be assumed that the reference is to a FHIR RESTful server.","","","","","","","","",,,,,"",,,,"Reference.reference",0,1,"ref-1
@@ -1282,7 +1291,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Technical endpoints providing access to services operated for the location","Technical endpoints providing access to services operated for the location.","","Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Location.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-lunar-date","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Approximative birthdate | Date de naissance approximative","Approximate birthdate of the patient | Date de naissance approximative du patient.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Approximative birthdate | Date de naissance approximative","Date de naissance approximative du patient.
+Approximate birthdate of the patient","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-lunar-date","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1877,7 +1887,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-body-height","Observation.extension:bodyposition","Observation.extension","bodyposition","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position]]} {[]}
-","FR Core Observation Height Body Position Extension","Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height. | Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Observation Height Body Position Extension","Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing).
+Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-body-height","Observation.extension:supportingInfo","Observation.extension","supportingInfo","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo]]} {[]}
@@ -2145,7 +2156,8 @@ vs-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (ch
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-observation-body-position-ext","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Observation Body Position Ext Extension","CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation | Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Observation Body Position Ext Extension","Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.
+CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-body-position-ext","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -2217,7 +2229,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-body-temperature","Observation.extension:levelOfExertion","Observation.extension","levelOfExertion","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion]]} {[]}
-","FR Core Observation Level Of Exertion Extension","French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure | Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Observation Level Of Exertion Extension","Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort).
+French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-body-temperature","Observation.extension:supportingInfo","Observation.extension","supportingInfo","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo]]} {[]}
@@ -3754,11 +3767,13 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-heartrate","Observation.extension:levelOfExertion","Observation.extension","levelOfExertion","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion]]} {[]}
-","FR Core Observation Level Of Exertion Extension","French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure | Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Observation Level Of Exertion Extension","Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort).
+French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-heartrate","Observation.extension:bodyPosition","Observation.extension","bodyPosition","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext]]} {[]}
-","FR Core Observation Body Position Ext Extension","CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation | Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Observation Body Position Ext Extension","Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.
+CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-heartrate","Observation.extension:supportingInfo","Observation.extension","supportingInfo","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo]]} {[]}
@@ -4052,7 +4067,8 @@ vs-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (ch
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-observation-height-body-position","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Observation Height Body Position Extension","Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height. | Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Observation Height Body Position Extension","Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing).
+Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-height-body-position","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4067,7 +4083,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"example","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-observation-level-of-exertion","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Observation Level Of Exertion Extension","French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure | Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Observation Level Of Exertion Extension","Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort).
+French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-level-of-exertion","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4139,11 +4156,13 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-resp-rate","Observation.extension:bodyPosition","Observation.extension","bodyPosition","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext]]} {[]}
-","FR Core Observation Body Position Ext Extension","CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation | Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Observation Body Position Ext Extension","Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.
+CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-resp-rate","Observation.extension:levelOfExertion","Observation.extension","levelOfExertion","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion]]} {[]}
-","FR Core Observation Level Of Exertion Extension","French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure | Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Observation Level Of Exertion Extension","Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort).
+French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-observation-resp-rate","Observation.extension:supportingInfo","Observation.extension","supportingInfo","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo]]} {[]}
@@ -4760,7 +4779,8 @@ vs-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (ch
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-activity-field","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Activity Field Extension","Activity field of an organization | Champ d'activité d'une UF","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Activity Field Extension","Champ d'activité d'une UF.
+Activity field of an organization","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-activity-field","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4775,7 +4795,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-activity-field","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-activity-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Activity Type Extension","An organization activity type | type d'activité d'une UF","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Activity Type Extension","Type d'activité d'une UF
+An organization activity type","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-activity-type","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4790,7 +4811,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-analysis-section","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Analysis Section Extension","an oraganization analysis section | Section d'analyse d'une UF","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Analysis Section Extension","Section d'analyse d'une UF.
+An oraganization analysis section","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-analysis-section","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4805,7 +4827,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-applicant-act","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Applicant Act Extension","An organization that asks soma acts | UF demandeuse d'actes","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Applicant Act Extension","UF demandeuse d'actes
+An organization that asks soma acts","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-applicant-act","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4820,7 +4843,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-budget-letter","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Budget Letter Extension","An organization budget letter | Lettre budgétaire de l'UF","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Budget Letter Extension","Lettre budgétaire de l'UF
+An organization budget letter","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-budget-letter","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4835,7 +4859,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-description","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Description Extension","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Description Extension","Description textuelle d'une organisation
+Organization description","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-description","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4850,7 +4875,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-executant","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Executant Extension","An executant act organization | Une UF exécutante d'actes","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Executant Extension","Une UF exécutante d'actes
+An executant act organization","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-executant","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4865,7 +4891,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-external","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization External Extension","External ward of the facility | UF externe à l'établissement","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization External Extension","UF externe à l'établissement.
+External ward of the facility","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-external","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4880,7 +4907,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-field","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Field Extension","Equipment field | Discipline d'équipement","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Field Extension","Discipline d'équipement
+Equipment field","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-field","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4895,7 +4923,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-number-of-theorical-accomadation-space","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Total Number Of Theorical Accomodation Space Extension","Total number of theorical accomodation space | Nombre total de places d'hébergement théoriques","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Total Number Of Theorical Accomodation Space Extension","Nombre total de places d'hébergement théoriques
+Total number of theorical accomodation space","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-number-of-theorical-accomadation-space","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4966,15 +4995,18 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-pole","Organization.extension:shortName","Organization.extension","shortName","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name]]} {[]}
-","FR Core Organization Short Name Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Short Name Extension","Libellé court de l'organisation
+The Organization short name","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-pole","Organization.extension:description","Organization.extension","description","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description]]} {[]}
-","FR Core Organization Description Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Description Extension","Description textuelle d'une organisation
+Organization description","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-pole","Organization.extension:budgetLetter","Organization.extension","budgetLetter","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter]]} {[]}
-","FR Core Organization Budget Letter Extension","An organization budget letter | Lettre budgétaire de l'UF","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Budget Letter Extension","Lettre budgétaire de l'UF
+An organization budget letter","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-pole","Organization.extension:usePeriod","Organization.extension","usePeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
@@ -5106,7 +5138,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Technical endpoints providing access to services operated for the organization","Technical endpoints providing access to services operated for the organization.","","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Organization.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-prestation-discipline","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Prestation Discipline Extension","Discipline prestation of the organization | Prestation de discipline UAC for France","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Prestation Discipline Extension","Prestation de discipline UAC for France
+Discipline prestation of the organization","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-prestation-discipline","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -5121,7 +5154,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-organization-short-name","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Organization Short Name Extension","An Extension","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Organization Short Name Extension","Libellé court de l'organisation
+The Organization short name","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-short-name","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -5192,11 +5226,13 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uac","Organization.extension:shortName","Organization.extension","shortName","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name]]} {[]}
-","FR Core Organization Short Name Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Short Name Extension","Libellé court de l'organisation
+The Organization short name","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uac","Organization.extension:description","Organization.extension","description","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description]]} {[]}
-","FR Core Organization Description Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Description Extension","Description textuelle d'une organisation
+Organization description","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uac","Organization.extension:usePeriod","Organization.extension","usePeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
@@ -5384,47 +5420,58 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:shortName","Organization.extension","shortName","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name]]} {[]}
-","FR Core Organization Short Name Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Short Name Extension","Libellé court de l'organisation
+The Organization short name","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:description","Organization.extension","description","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description]]} {[]}
-","FR Core Organization Description Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Description Extension","Description textuelle d'une organisation
+Organization description","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:budgetLetter","Organization.extension","budgetLetter","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter]]} {[]}
-","FR Core Organization Budget Letter Extension","An organization budget letter | Lettre budgétaire de l'UF","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Budget Letter Extension","Lettre budgétaire de l'UF
+An organization budget letter","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:equipmentField","Organization.extension","equipmentField","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-field]]} {[]}
-","FR Core Organization Field Extension","Equipment field | Discipline d'équipement","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Field Extension","Discipline d'équipement
+Equipment field","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:activityField","Organization.extension","activityField","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field]]} {[]}
-","FR Core Organization Activity Field Extension","Activity field of an organization | Champ d'activité d'une UF","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Activity Field Extension","Champ d'activité d'une UF.
+Activity field of an organization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:external","Organization.extension","external","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-external]]} {[]}
-","FR Core Organization External Extension","External ward of the facility | UF externe à l'établissement","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization External Extension","UF externe à l'établissement.
+External ward of the facility","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:accomodationSpace","Organization.extension","accomodationSpace","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space]]} {[]}
-","FR Core Organization Total Number Of Theorical Accomodation Space Extension","Total number of theorical accomodation space | Nombre total de places d'hébergement théoriques","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Total Number Of Theorical Accomodation Space Extension","Nombre total de places d'hébergement théoriques
+Total number of theorical accomodation space","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:applicantAct","Organization.extension","applicantAct","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act]]} {[]}
-","FR Core Organization Applicant Act Extension","An organization that asks soma acts | UF demandeuse d'actes","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Applicant Act Extension","UF demandeuse d'actes
+An organization that asks soma acts","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:executantAct","Organization.extension","executantAct","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executant]]} {[]}
-","FR Core Organization Executant Extension","An executant act organization | Une UF exécutante d'actes","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Executant Extension","Une UF exécutante d'actes
+An executant act organization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:analysisSection","Organization.extension","analysisSection","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-analysis-section]]} {[]}
-","FR Core Organization Analysis Section Extension","an oraganization analysis section | Section d'analyse d'une UF","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Analysis Section Extension","Section d'analyse d'une UF.
+An oraganization analysis section","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:activityType","Organization.extension","activityType","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type]]} {[]}
-","FR Core Organization Activity Type Extension","An organization activity type | type d'activité d'une UF","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Activity Type Extension","Type d'activité d'une UF
+An organization activity type","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization-uf","Organization.extension:usePeriod","Organization.extension","usePeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
@@ -5584,11 +5631,13 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization","Organization.extension:shortName","Organization.extension","shortName","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name]]} {[]}
-","FR Core Organization Short Name Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Short Name Extension","Libellé court de l'organisation
+The Organization short name","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization","Organization.extension:description","Organization.extension","description","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description]]} {[]}
-","FR Core Organization Description Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Organization Description Extension","Description textuelle d'une organisation
+Organization description","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-organization","Organization.extension:usePeriod","Organization.extension","usePeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
@@ -6078,7 +6127,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient-contact-identifier","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Contact identifier in the patient resource | Identifiant de contact dans la ressource Patient","This extension carries the contact identifier in the patient resource | Ajout d'un identifiant de contact dans la ressource Patient","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Patient Contact Identifier Extension","Identifiant de contact dans la ressource Patient
+This extension carries the contact identifier in the patient resource","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-contact-identifier","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -6093,7 +6143,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-patient-death-place","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Patient Death Place Extension","Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Patient Death Place Extension","Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
+Carries the death place of the patient","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-death-place","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -6172,11 +6223,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.extension:identityReliability","Patient.extension","identityReliability","","",1,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
-","Reliabilility of the identity | Fiabilité de l'identité","Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Reliabilility of the identity | Fiabilité de l'identité","Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
+Reliabilility of the patient's identity","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.extension:deathPlace","Patient.extension","deathPlace","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place]]} {[]}
-","FR Core Patient Death Place Extension","Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Patient Death Place Extension","Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
+Carries the death place of the patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.extension:birthdateUpdateIndicator","Patient.extension","birthdateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
@@ -6206,7 +6259,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.extension:birthPlace.value[x].extension:inseeCode","Patient.extension.value[x].extension","inseeCode","","",1,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code]]} {[]}
-","FR Core Address Insee Code Extension","This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","FR Core Address Insee Code Extension","Extension d'ajout du code insee (5 chiffres) à l'adresse postale.
+This extension adds the insee code (5 digits) to the address","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.extension:birthPlace.value[x].use","Patient.extension.value[x].use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -6673,11 +6727,13 @@ pat-1:SHALL at least contain a contact's details or a reference to an organizati
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.contact.extension:contactIdentifier","Patient.contact.extension","contactIdentifier","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier]]} {[]}
-","Contact identifier in the patient resource | Identifiant de contact dans la ressource Patient","This extension carries the contact identifier in the patient resource | Ajout d'un identifiant de contact dans la ressource Patient","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","FR Core Patient Contact Identifier Extension","Identifiant de contact dans la ressource Patient
+This extension carries the contact identifier in the patient resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.contact.extension:comment","Patient.contact.extension","comment","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment]]} {[]}
-","Comment on a dataElement | Commentaire sur un dataElement","add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Comment on a dataElement | Commentaire sur un dataElement","Ajout d'un commentaire sur un dataElement d'une ressource.
+Add a comment on a dataElement  of a resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient-ins","Patient.contact.modifierExtension","Patient.contact.modifierExtension","","extensions
@@ -6876,11 +6932,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
-","Reliabilility of the identity | Fiabilité de l'identité","Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Reliabilility of the identity | Fiabilité de l'identité","Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
+Reliabilility of the patient's identity","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.extension:deathPlace","Patient.extension","deathPlace","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place]]} {[]}
-","FR Core Patient Death Place Extension","Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Patient Death Place Extension","Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
+Carries the death place of the patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.extension:birthdateUpdateIndicator","Patient.extension","birthdateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
@@ -7225,11 +7283,13 @@ pat-1:SHALL at least contain a contact's details or a reference to an organizati
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.contact.extension:contactIdentifier","Patient.contact.extension","contactIdentifier","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier]]} {[]}
-","Contact identifier in the patient resource | Identifiant de contact dans la ressource Patient","This extension carries the contact identifier in the patient resource | Ajout d'un identifiant de contact dans la ressource Patient","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","FR Core Patient Contact Identifier Extension","Identifiant de contact dans la ressource Patient
+This extension carries the contact identifier in the patient resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.contact.extension:comment","Patient.contact.extension","comment","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment]]} {[]}
-","Comment on a dataElement | Commentaire sur un dataElement","add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Comment on a dataElement | Commentaire sur un dataElement","Ajout d'un commentaire sur un dataElement d'une ressource.
+Add a comment on a dataElement  of a resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-patient","Patient.contact.modifierExtension","Patient.contact.modifierExtension","","extensions
@@ -7323,8 +7383,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","replaced-by | replaces | refer | seealso","The type of link between this patient resource and another patient resource.","","","","","","","","","",,"required","The type of link between this patient resource and another patient resource.","http://hl7.org/fhir/ValueSet/link-type|4.0.1","",,,,"Patient.link.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-practitioner-profession","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Practitioner Profession Extension","This extension adds the element ""profession"" to the FHIR Practitioner resource.
-ASIP valueSet http://esante.gouv.fr/sites/NOS/TABS/TRE_G15-ProfessionSante.tabs","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Practitioner Profession Extension","This extension adds the element ""profession"" to the FHIR Practitioner resource.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner-profession","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -7395,7 +7454,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner-role","PractitionerRole.extension:serviceTypeDuration","PractitionerRole.extension","serviceTypeDuration","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration]]} {[]}
-","FR Core Service Type Duration Extension","This French extension allows to associate the type of service with the duration of this service | Cette extension française permet d'associer le type de service avec la durée de ce service.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Service Type Duration Extension","Cette extension française permet d'associer le type de service avec la durée de ce service.
+This French extension allows to associate the type of service with the duration of this service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner-role","PractitionerRole.modifierExtension","PractitionerRole.modifierExtension","","extensions
@@ -7489,8 +7549,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Technical endpoints providing access to services operated for the practitioner with this role","Technical endpoints providing access to services operated for the practitioner with this role.","","Organizations have multiple systems that provide various services and ,ay also be different for practitioners too.So the endpoint satisfies the need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"PractitionerRole.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-practitioner-specialty","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Practitioner Specialty Extension","This extension adds the element ""specialty"" to the FHIR Practitioner resource.
-http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Practitioner Specialty Extension","This extension adds the element ""specialty"" to the FHIR Practitioner resource.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner-specialty","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -7561,8 +7620,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner","Practitioner.extension:specialty","Practitioner.extension","specialty","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty]]} {[]}
-","FR Core Practitioner Specialty Extension","This extension adds the element ""specialty"" to the FHIR Practitioner resource.
-http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Practitioner Specialty Extension","This extension adds the element ""specialty"" to the FHIR Practitioner resource.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-practitioner","Practitioner.modifierExtension","Practitioner.modifierExtension","","extensions
@@ -8094,7 +8152,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Language preference indicator","Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).","This language is specifically identified for communicating healthcare information.","People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.","","","","","","","",,,,,"",,,,"RelatedPerson.communication.preferred",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-schedule-availability-time","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Schedule availability time Extension","This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule (busy-unavailable|free), the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period | Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule (busy-unavailable|free), l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Schedule availability time Extension","Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité.
+This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-schedule-availability-time","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -8484,11 +8543,13 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-schedule","Schedule.extension:serviceTypeDuration","Schedule.extension","serviceTypeDuration","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration]]} {[]}
-","FR Core Service Type Duration Extension","This French extension allows to associate the type of service with the duration of this service | Cette extension française permet d'associer le type de service avec la durée de ce service.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Service Type Duration Extension","Cette extension française permet d'associer le type de service avec la durée de ce service.
+This French extension allows to associate the type of service with the duration of this service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-schedule","Schedule.extension:availabilityTime","Schedule.extension","availabilityTime","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time]]} {[]}
-","FR Core Schedule availability time Extension","This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule (busy-unavailable|free), the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period | Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule (busy-unavailable|free), l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Schedule availability time Extension","Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité.
+This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-schedule","Schedule.modifierExtension","Schedule.modifierExtension","","extensions
@@ -8522,7 +8583,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Comments on availability","Comments on the availability to describe any extended information. Such as custom constraints on the slots that may be associated.","","","","","","","","","",,,,,"",,,,"Schedule.comment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-service-type-duration","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Service Type Duration Extension","This French extension allows to associate the type of service with the duration of this service | Cette extension française permet d'associer le type de service avec la durée de ce service.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Service Type Duration Extension","Cette extension française permet d'associer le type de service avec la durée de ce service.
+This French extension allows to associate the type of service with the duration of this service","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-service-type-duration","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -8565,7 +8627,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-slot-date","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","FR Core Slot Date Extension","This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled. | Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","FR Core Slot Date Extension","Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.
+This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "fr-core-slot-date","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
