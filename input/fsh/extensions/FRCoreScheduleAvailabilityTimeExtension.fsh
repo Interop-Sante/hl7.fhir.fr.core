@@ -1,7 +1,7 @@
 Extension: FRCoreScheduleAvailabilityTimeExtension
 Id: fr-core-schedule-availability-time
 Title: "FR Core Schedule availability time Extension"
-Description: "This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule (busy-unavailable|free), the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period | Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule (busy-unavailable|free), l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité."
+Description: "Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité.\n\rThis extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period"
 * ^context.type = #element
 * ^context.expression = "Schedule"
 

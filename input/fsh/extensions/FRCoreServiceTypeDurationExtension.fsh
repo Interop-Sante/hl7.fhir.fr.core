@@ -1,7 +1,7 @@
 Extension: FRCoreServiceTypeDurationExtension
 Id: fr-core-service-type-duration
 Title: "FR Core Service Type Duration Extension"
-Description: "This French extension allows to associate the type of service with the duration of this service | Cette extension française permet d'associer le type de service avec la durée de ce service."
+Description: "Cette extension française permet d'associer le type de service avec la durée de ce service.\n\rThis French extension allows to associate the type of service with the duration of this service"
 * ^context[0].type = #element
 * ^context[=].expression = "PractitionerRole"
 * ^context[+].type = #element
