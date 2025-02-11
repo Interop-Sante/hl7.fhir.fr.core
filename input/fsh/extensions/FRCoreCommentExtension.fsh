@@ -1,7 +1,7 @@
 Extension: FRCoreCommentExtension
 Id: fr-core-comment
 Title: "FR Core Comment Extension"
-Description: "add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource"
+Description: "Ajout d'un commentaire sur un dataElement d'une ressource.\r\nAdd a comment on a dataElement  of a resource"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
