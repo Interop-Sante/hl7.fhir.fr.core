@@ -1,7 +1,7 @@
 ValueSet: FRCoreValueSetLocationPositionRoom
 Id: fr-core-vs-location-position-room
 Title: "FR Core ValueSet Location position room"
-Description: "position room | position physique de l'emplacement du lit"
+Description: "Position physique de l'emplacement du lit.\r\nPosition room"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"

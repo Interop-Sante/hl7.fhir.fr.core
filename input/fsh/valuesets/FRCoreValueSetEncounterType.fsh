@@ -1,7 +1,7 @@
 ValueSet: FRCoreValueSetEncounterType
 Id: fr-core-vs-encounter-type
 Title: "FR Core ValueSet Encounter type"
-Description: "A coded type for an encounter | Jeu de valeurs des types de rencontre."
+Description: "Jeu de valeurs des types de rencontre.\r\nA coded type for an encounter"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"

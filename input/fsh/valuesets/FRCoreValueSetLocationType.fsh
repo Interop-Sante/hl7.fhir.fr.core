@@ -1,7 +1,7 @@
 ValueSet: FRCoreValueSetLocationType
 Id: fr-core-vs-location-type
 Title: "FR Core ValueSet Location type"
-Description: "A role for a location | Jeu de valeurs du rôle joué par un lieu"
+Description: "Jeu de valeurs du rôle joué par un lieu.\n\rA role for a location"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
