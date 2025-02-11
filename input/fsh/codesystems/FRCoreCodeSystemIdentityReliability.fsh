@@ -1,7 +1,7 @@
 CodeSystem: FRCoreCodeSystemReliabilityIdentity
 Id: fr-core-cs-fiabilite-identite
 Title: "FR Core CodeSystem Fiabilité Identité"
-Description: "This code system includes all the French Identity reliabilty codes (InteropSanté)."
+Description: "French Identity reliabilty codes"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 
 * ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"
