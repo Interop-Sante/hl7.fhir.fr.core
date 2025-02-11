@@ -131,7 +131,8 @@ Description: """Profile of the Patient resource for France. This profile specifi
     FRCoreCommentExtension named comment 0..1
 
 * contact.relationship ^slicing.discriminator.type = #value
-* contact.relationship ^slicing.discriminator.path = "coding.system"
+* contact.relationship ^slicing.discriminator.path = "$this"
+
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
     Role 0..1 and
