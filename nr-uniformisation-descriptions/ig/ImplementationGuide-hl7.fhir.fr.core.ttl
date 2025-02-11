@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-02-11T12:08:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-11T15:31:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -1010,7 +1010,7 @@
          fhir:reference [ fhir:v "CodeSystem/fr-core-cs-contact-relationship" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Contact Relationship" ] ;
-       fhir:description [ fhir:v "Relationship" ] ;
+       fhir:description [ fhir:v "Relationship type" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1028,7 +1028,7 @@
          fhir:reference [ fhir:v "CodeSystem/fr-core-cs-fiabilite-identite" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Fiabilité Identité" ] ;
-       fhir:description [ fhir:v "This code system includes all the French Identity reliabilty codes (InteropSanté)." ] ;
+       fhir:description [ fhir:v "French Identity reliabilty codes" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1136,7 +1136,7 @@
          fhir:reference [ fhir:v "CodeSystem/fr-core-cs-marital-status" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Marital Status" ] ;
-       fhir:description [ fhir:v "Identifier type" ] ;
+       fhir:description [ fhir:v "Marital status" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1186,6 +1186,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-organisation> ;
+         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-type-organisation" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core CodeSystem Organization Type" ] ;
+       fhir:description [ fhir:v "Organization type" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type> ;
          fhir:reference [ fhir:v "CodeSystem/fr-core-cs-schedule-type" ]
        ] ;
@@ -1209,24 +1227,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Type Admission" ] ;
        fhir:description [ fhir:v "Admission type" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-organisation> ;
-         fhir:reference [ fhir:v "CodeSystem/fr-core-cs-type-organisation" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core CodeSystem Types d'Organisations" ] ;
-       fhir:description [ fhir:v "This is an example code system that includes all the InteropSanté Organizations types codes." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
