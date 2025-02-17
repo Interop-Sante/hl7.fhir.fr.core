@@ -63,7 +63,7 @@
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  <img alt=" flag" src="assets/images/zwe.svg" height="16" title=""/>
 
 
             </span>
@@ -144,7 +144,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ValueSet-fr-core-vs-availability-time-day.html">next&gt;</a>
+          | <a href="StructureDefinition-fr-core-appointment.html">next&gt;</a>
 
           </span>
 
@@ -178,16 +178,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Terminology: Value Sets</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Code Systems</a>
+         <a href="#2">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Other</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -196,6 +202,837 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-appointment.html"
+                  title="StructureDefinition/fr-core-appointment">FR Core Appointment Profile</a>
+            </td>
+            <td>
+<p>Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.</p>
+
+<p>Profil de la ressource Appointment pour la France. Ce profil ajoute l’opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-encounter.html"
+                  title="StructureDefinition/fr-core-encounter">FR Core Encounter Profile</a>
+            </td>
+            <td>
+<p>This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.</p>
+
+<p>Ce profil de la ressource Encounter sert à la fois à définir la venue dans l’établissement et à représenter les mouvements du patient qui découpent cette venue.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-healthcare-service.html"
+                  title="StructureDefinition/fr-core-healthcare-service">FR Core Healthcare Service Profile</a>
+            </td>
+            <td>
+<p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. 
+
+Profil de la ressource HealthcareService pour l’usage en France. Ce profil ajoute l’élément serviceTypeDuration de façon à associer le service avec la durée du service.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-location.html"
+                  title="StructureDefinition/fr-core-location">FR Core Location Profile</a>
+            </td>
+            <td>
+<p>French profile of Location.</p>
+
+<p>Profil français de la ressource Location</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html"
+                  title="StructureDefinition/fr-core-medication-administration-inhaled-oxygen">FR Core Medication Administration Inhaled Oxygen Profile</a>
+            </td>
+            <td>
+<p>Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d’oxygène via une ventilation mécanique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-bp.html"
+                  title="StructureDefinition/fr-core-observation-bp">FR Core Observation Blood Pressure Profile</a>
+            </td>
+            <td>
+<p>French profile for blood pressure.
+
+Profil français de la pression artérielle. Profil basé sur le profil bp d’HL7</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-bmi.html"
+                  title="StructureDefinition/fr-core-observation-bmi">FR Core Observation Bmi Profile</a>
+            </td>
+            <td>
+<p>French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].
+
+Profil français de l’indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-body-height.html"
+                  title="StructureDefinition/fr-core-observation-body-height">FR Core Observation Body Height Profile</a>
+            </td>
+            <td>
+<p>French profile for body height.
+
+Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d’HL7</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-body-temperature.html"
+                  title="StructureDefinition/fr-core-observation-body-temperature">FR Core Observation Body Temperature Profile</a>
+            </td>
+            <td>
+<p>French profile for body temperature.
+
+Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-body-weight.html"
+                  title="StructureDefinition/fr-core-observation-body-weight">FR Core Observation Body Weight Profile</a>
+            </td>
+            <td>
+<p>French profile of body weight based on the FHIR profil BodyWeightMeas.
+
+Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-head-circum.html"
+                  title="StructureDefinition/fr-core-observation-head-circum">FR Core Observation Head Circum Profile</a>
+            </td>
+            <td>
+<p>French profile for Occipital-frontal circumference.
+
+Profil HL7 Vital Signs Circonférence de la tête</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-heartrate.html"
+                  title="StructureDefinition/fr-core-observation-heartrate">FR Core Observation Heart Rate Profile</a>
+            </td>
+            <td>
+<p>French profile for the FHIR Vital Sign Heart Rate Profile.
+
+Profilage français du profil Vital Signs Heart rate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-saturation-oxygen.html"
+                  title="StructureDefinition/fr-core-observation-saturation-oxygen">FR Core Observation Oxygen Saturation Profile</a>
+            </td>
+            <td>
+<p>French profile for Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-resp-rate.html"
+                  title="StructureDefinition/fr-core-observation-resp-rate">FR Core Observation Respiratory Rate Profile</a>
+            </td>
+            <td>
+<p>French profile for the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.
+
+Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l’usage en France</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-pole.html"
+                  title="StructureDefinition/fr-core-organization-pole">FR Core Organization Pole Profile</a>
+            </td>
+            <td>
+<p>FR Core Organization Pole Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization.html"
+                  title="StructureDefinition/fr-core-organization">FR Core Organization Profile</a>
+            </td>
+            <td>
+<p>Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. 
+
+Profil de la ressource Organization pour la France. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-uac.html"
+                  title="StructureDefinition/fr-core-organization-uac">FR Core Organization UAC Profile</a>
+            </td>
+            <td>
+<p>This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.
+
+Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-uf.html"
+                  title="StructureDefinition/fr-core-organization-uf">FR Core Organization UF Profile</a>
+            </td>
+            <td>
+<p>This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.
+
+Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient-ins.html"
+                  title="StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a>
+            </td>
+            <td>
+<p>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient.html"
+                  title="StructureDefinition/fr-core-patient">FR Core Patient Profile</a>
+            </td>
+            <td>
+<p>Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.
+
+Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-practitioner.html"
+                  title="StructureDefinition/fr-core-practitioner">FR Core Practitioner Profile</a>
+            </td>
+            <td>
+<p>Profil de la ressource Practitionner pour la France.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-practitioner-role.html"
+                  title="StructureDefinition/fr-core-practitioner-role">FR Core Practitioner Role</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</td>
+      <td>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-related-person.html"
+                  title="StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a>
+            </td>
+            <td>
+<p>Profile of the RelatedPerson resource for France.</p>
+
+<p>Profil de la ressource RelatedPerson pour l’usage en France</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-schedule.html"
+                  title="StructureDefinition/fr-core-schedule">FR Core Schedule Profile</a>
+            </td>
+            <td>
+<p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule
+
+Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l’élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-slot.html"
+                  title="StructureDefinition/fr-core-slot">FR Core Slot Profile</a>
+            </td>
+            <td>
+<p>Profil of the Slot resource for France.</p>
+
+<p>Profil de la ressource Slot pour la France</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-address.html"
+                  title="StructureDefinition/fr-core-address">FR Core Address Profile</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>French profile of Address datatype</td>
+      <td>Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-contact-point.html"
+                  title="StructureDefinition/fr-core-contact-point">FR Core Contact Point Profile</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-human-name.html"
+                  title="StructureDefinition/fr-core-human-name">FR Core Human Name Profile</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>French profile of datatype HumanName with constraints on prefix and suffix</td>
+      <td>Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-address-insee-code.html"
+                  title="StructureDefinition/fr-core-address-insee-code">FR Core Address Insee Code Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension adds the insee code (5 digits) to the address</td>
+      <td>Ajout du code insee (5 chiffres) à l’adresse postale</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-appointment-operator.html"
+                  title="StructureDefinition/fr-core-appointment-operator">FR Core Appointment Operator Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment</td>
+      <td>Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-human-name-assembly-order.html"
+                  title="StructureDefinition/fr-core-human-name-assembly-order">FR Core Assembly Order Extension</a>
+            </td>
+            <td>
+<p>A code that represents the preferred display order of the components of this human name.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-comment.html"
+                  title="StructureDefinition/fr-core-comment">FR Core Comment Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>add a comment on a dataElement  of a resource</td>
+      <td>Ajout d’un commentaire sur un dataElement d’une ressource</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-contact-point-email-type.html"
+                  title="StructureDefinition/fr-core-contact-point-email-type">FR Core Contact Point Email Type Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Extension on the ContactPoint datatype. This extension allows to specify the type of mail used to contact the person (MSSsanté</td>
+      <td>Apicrypt</td>
+      <td>OSM</td>
+      <td>Autre).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-estimated-discharge-date.html"
+                  title="StructureDefinition/fr-core-estimated-discharge-date">FR Core Encounter Estimated Discharge Date Extension</a>
+            </td>
+            <td>
+<p>This extension is used to specify the estimated discharge date of the patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-location-position-room.html"
+                  title="StructureDefinition/fr-core-location-position-room">FR Core Location Part Of Position Room Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Position of the bed in the bedroom</td>
+      <td>Position du lit dans la chambre</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-lunar-date.html"
+                  title="StructureDefinition/fr-core-lunar-date">FR Core Lunar Date Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Approximate birthdate of the patient</td>
+      <td>Date de naissance approximative du patient.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient-nationality.html"
+                  title="StructureDefinition/fr-core-patient-nationality">FR Core Nationality Extension</a>
+            </td>
+            <td>
+<p>The nationality of the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-body-position-ext.html"
+                  title="StructureDefinition/fr-core-observation-body-position-ext">FR Core Observation Body Position Ext Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation</td>
+      <td>Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-height-body-position.html"
+                  title="StructureDefinition/fr-core-observation-height-body-position">FR Core Observation Height Body Position Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.</td>
+      <td>Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-observation-level-of-exertion.html"
+                  title="StructureDefinition/fr-core-observation-level-of-exertion">FR Core Observation Level Of Exertion Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure</td>
+      <td>Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-activity-field.html"
+                  title="StructureDefinition/fr-core-organization-activity-field">FR Core Organization Activity Field Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Activity field of an organization</td>
+      <td>Champ d’activité d’une UF</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-activity-type.html"
+                  title="StructureDefinition/fr-core-organization-activity-type">FR Core Organization Activity Type Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>An organization activity type</td>
+      <td>type d’activité d’une UF</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-analysis-section.html"
+                  title="StructureDefinition/fr-core-organization-analysis-section">FR Core Organization Analysis Section Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>an oraganization analysis section</td>
+      <td>Section d’analyse d’une UF</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-applicant-act.html"
+                  title="StructureDefinition/fr-core-organization-applicant-act">FR Core Organization Applicant Act Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>An organization that asks soma acts</td>
+      <td>UF demandeuse d’actes</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-budget-letter.html"
+                  title="StructureDefinition/fr-core-organization-budget-letter">FR Core Organization Budget Letter Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>An organization budget letter</td>
+      <td>Lettre budgétaire de l’UF</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-description.html"
+                  title="StructureDefinition/fr-core-organization-description">FR Core Organization Description Extension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-executant.html"
+                  title="StructureDefinition/fr-core-organization-executant">FR Core Organization Executant Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>An executant act organization</td>
+      <td>Une UF exécutante d’actes</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-external.html"
+                  title="StructureDefinition/fr-core-organization-external">FR Core Organization External Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>External ward of the facility</td>
+      <td>UF externe à l’établissement</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-field.html"
+                  title="StructureDefinition/fr-core-organization-field">FR Core Organization Field Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Equipment field</td>
+      <td>Discipline d’équipement</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-prestation-discipline.html"
+                  title="StructureDefinition/fr-core-organization-prestation-discipline">FR Core Organization Prestation Discipline Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Discipline prestation of the organization</td>
+      <td>Prestation de discipline UAC for France</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-short-name.html"
+                  title="StructureDefinition/fr-core-organization-short-name">FR Core Organization Short Name Extension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.html"
+                  title="StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space">FR Core Organization Total Number Of Theorical Accomodation Space Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Total number of theorical accomodation space</td>
+      <td>Nombre total de places d’hébergement théoriques</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient-birth-list-given-name.html"
+                  title="StructureDefinition/fr-core-patient-birth-list-given-name">FR Core Patient Birth List Given name Extension</a>
+            </td>
+            <td>
+<p>Prénoms de l’acte de naissance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient-birthdate-update-indicator.html"
+                  title="StructureDefinition/fr-core-patient-birthdate-update-indicator">FR Core Patient Birthdate Update Indicator Extension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient-contact-identifier.html"
+                  title="StructureDefinition/fr-core-patient-contact-identifier">FR Core Patient Contact Identifier Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension carries the contact identifier in the patient resource</td>
+      <td>Ajout d’un identifiant de contact dans la ressource Patient</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient-death-place.html"
+                  title="StructureDefinition/fr-core-patient-death-place">FR Core Patient Death Place Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Carries the death place of the patient</td>
+      <td>Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-identity-reliability.html"
+                  title="StructureDefinition/fr-core-identity-reliability">FR Core Patient Ident Reliability Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Reliabilility of the patient’s identity</td>
+      <td>Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) avec la méthode de collection</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-practitioner-profession.html"
+                  title="StructureDefinition/fr-core-practitioner-profession">FR Core Practitioner Profession Extension</a>
+            </td>
+            <td>
+<p>This extension adds the element “profession” to the FHIR Practitioner resource.
+ASIP valueSet http://esante.gouv.fr/sites/NOS/TABS/TRE_G15-ProfessionSante.tabs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-practitioner-specialty.html"
+                  title="StructureDefinition/fr-core-practitioner-specialty">FR Core Practitioner Specialty Extension</a>
+            </td>
+            <td>
+<p>This extension adds the element “specialty” to the FHIR Practitioner resource.
+http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-schedule-availability-time.html"
+                  title="StructureDefinition/fr-core-schedule-availability-time">FR Core Schedule availability time Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule (busy-unavailable</td>
+      <td>free), the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period</td>
+      <td>Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule (busy-unavailable</td>
+      <td>free), l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-service-type-duration.html"
+                  title="StructureDefinition/fr-core-service-type-duration">FR Core Service Type Duration Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This French extension allows to associate the type of service with the duration of this service</td>
+      <td>Cette extension française permet d’associer le type de service avec la durée de ce service.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-slot-date.html"
+                  title="StructureDefinition/fr-core-slot-date">FR Core Slot Date Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled.</td>
+      <td>Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-use-period.html"
+                  title="StructureDefinition/fr-core-use-period">FR Core Use Period Extension</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -636,7 +1473,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -806,7 +1643,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -885,821 +1722,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
-   <h3>Other </h3>
-    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-address-insee-code.html"
-                  title="StructureDefinition/fr-core-address-insee-code">FR Core Address Insee Code Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This extension adds the insee code (5 digits) to the address</td>
-      <td>Ajout du code insee (5 chiffres) à l’adresse postale</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-address.html"
-                  title="StructureDefinition/fr-core-address">FR Core Address Profile</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>French profile of Address datatype</td>
-      <td>Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-appointment-operator.html"
-                  title="StructureDefinition/fr-core-appointment-operator">FR Core Appointment Operator Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment</td>
-      <td>Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV)</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-appointment.html"
-                  title="StructureDefinition/fr-core-appointment">FR Core Appointment Profile</a>
-            </td>
-            <td>
-<p>Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.</p>
-
-<p>Profil de la ressource Appointment pour la France. Ce profil ajoute l’opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-human-name-assembly-order.html"
-                  title="StructureDefinition/fr-core-human-name-assembly-order">FR Core Assembly Order Extension</a>
-            </td>
-            <td>
-<p>A code that represents the preferred display order of the components of this human name.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-comment.html"
-                  title="StructureDefinition/fr-core-comment">FR Core Comment Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>add a comment on a dataElement  of a resource</td>
-      <td>Ajout d’un commentaire sur un dataElement d’une ressource</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-contact-point-email-type.html"
-                  title="StructureDefinition/fr-core-contact-point-email-type">FR Core Contact Point Email Type Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Extension on the ContactPoint datatype. This extension allows to specify the type of mail used to contact the person (MSSsanté</td>
-      <td>Apicrypt</td>
-      <td>OSM</td>
-      <td>Autre).</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-contact-point.html"
-                  title="StructureDefinition/fr-core-contact-point">FR Core Contact Point Profile</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-estimated-discharge-date.html"
-                  title="StructureDefinition/fr-core-estimated-discharge-date">FR Core Encounter Estimated Discharge Date Extension</a>
-            </td>
-            <td>
-<p>This extension is used to specify the estimated discharge date of the patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-encounter.html"
-                  title="StructureDefinition/fr-core-encounter">FR Core Encounter Profile</a>
-            </td>
-            <td>
-<p>This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.</p>
-
-<p>Ce profil de la ressource Encounter sert à la fois à définir la venue dans l’établissement et à représenter les mouvements du patient qui découpent cette venue.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-healthcare-service.html"
-                  title="StructureDefinition/fr-core-healthcare-service">FR Core Healthcare Service Profile</a>
-            </td>
-            <td>
-<p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. 
-
-Profil de la ressource HealthcareService pour l’usage en France. Ce profil ajoute l’élément serviceTypeDuration de façon à associer le service avec la durée du service.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-human-name.html"
-                  title="StructureDefinition/fr-core-human-name">FR Core Human Name Profile</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>French profile of datatype HumanName with constraints on prefix and suffix</td>
-      <td>Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-location-position-room.html"
-                  title="StructureDefinition/fr-core-location-position-room">FR Core Location Part Of Position Room Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Position of the bed in the bedroom</td>
-      <td>Position du lit dans la chambre</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-location.html"
-                  title="StructureDefinition/fr-core-location">FR Core Location Profile</a>
-            </td>
-            <td>
-<p>French profile of Location.</p>
-
-<p>Profil français de la ressource Location</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-lunar-date.html"
-                  title="StructureDefinition/fr-core-lunar-date">FR Core Lunar Date Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Approximate birthdate of the patient</td>
-      <td>Date de naissance approximative du patient.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html"
-                  title="StructureDefinition/fr-core-medication-administration-inhaled-oxygen">FR Core Medication Administration Inhaled Oxygen Profile</a>
-            </td>
-            <td>
-<p>Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d’oxygène via une ventilation mécanique.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient-nationality.html"
-                  title="StructureDefinition/fr-core-patient-nationality">FR Core Nationality Extension</a>
-            </td>
-            <td>
-<p>The nationality of the patient.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-bp.html"
-                  title="StructureDefinition/fr-core-observation-bp">FR Core Observation Blood Pressure Profile</a>
-            </td>
-            <td>
-<p>French profile for blood pressure.
-
-Profil français de la pression artérielle. Profil basé sur le profil bp d’HL7</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-bmi.html"
-                  title="StructureDefinition/fr-core-observation-bmi">FR Core Observation Bmi Profile</a>
-            </td>
-            <td>
-<p>French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].
-
-Profil français de l’indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-body-height.html"
-                  title="StructureDefinition/fr-core-observation-body-height">FR Core Observation Body Height Profile</a>
-            </td>
-            <td>
-<p>French profile for body height.
-
-Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d’HL7</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-body-position-ext.html"
-                  title="StructureDefinition/fr-core-observation-body-position-ext">FR Core Observation Body Position Ext Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation</td>
-      <td>Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-body-temperature.html"
-                  title="StructureDefinition/fr-core-observation-body-temperature">FR Core Observation Body Temperature Profile</a>
-            </td>
-            <td>
-<p>French profile for body temperature.
-
-Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-body-weight.html"
-                  title="StructureDefinition/fr-core-observation-body-weight">FR Core Observation Body Weight Profile</a>
-            </td>
-            <td>
-<p>French profile of body weight based on the FHIR profil BodyWeightMeas.
-
-Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-head-circum.html"
-                  title="StructureDefinition/fr-core-observation-head-circum">FR Core Observation Head Circum Profile</a>
-            </td>
-            <td>
-<p>French profile for Occipital-frontal circumference.
-
-Profil HL7 Vital Signs Circonférence de la tête</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-heartrate.html"
-                  title="StructureDefinition/fr-core-observation-heartrate">FR Core Observation Heart Rate Profile</a>
-            </td>
-            <td>
-<p>French profile for the FHIR Vital Sign Heart Rate Profile.
-
-Profilage français du profil Vital Signs Heart rate</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-height-body-position.html"
-                  title="StructureDefinition/fr-core-observation-height-body-position">FR Core Observation Height Body Position Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.</td>
-      <td>Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing)</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-level-of-exertion.html"
-                  title="StructureDefinition/fr-core-observation-level-of-exertion">FR Core Observation Level Of Exertion Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure</td>
-      <td>Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort)</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-saturation-oxygen.html"
-                  title="StructureDefinition/fr-core-observation-saturation-oxygen">FR Core Observation Oxygen Saturation Profile</a>
-            </td>
-            <td>
-<p>French profile for Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-observation-resp-rate.html"
-                  title="StructureDefinition/fr-core-observation-resp-rate">FR Core Observation Respiratory Rate Profile</a>
-            </td>
-            <td>
-<p>French profile for the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.
-
-Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l’usage en France</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-activity-field.html"
-                  title="StructureDefinition/fr-core-organization-activity-field">FR Core Organization Activity Field Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Activity field of an organization</td>
-      <td>Champ d’activité d’une UF</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-activity-type.html"
-                  title="StructureDefinition/fr-core-organization-activity-type">FR Core Organization Activity Type Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>An organization activity type</td>
-      <td>type d’activité d’une UF</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-analysis-section.html"
-                  title="StructureDefinition/fr-core-organization-analysis-section">FR Core Organization Analysis Section Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>an oraganization analysis section</td>
-      <td>Section d’analyse d’une UF</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-applicant-act.html"
-                  title="StructureDefinition/fr-core-organization-applicant-act">FR Core Organization Applicant Act Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>An organization that asks soma acts</td>
-      <td>UF demandeuse d’actes</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-budget-letter.html"
-                  title="StructureDefinition/fr-core-organization-budget-letter">FR Core Organization Budget Letter Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>An organization budget letter</td>
-      <td>Lettre budgétaire de l’UF</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-description.html"
-                  title="StructureDefinition/fr-core-organization-description">FR Core Organization Description Extension</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-executant.html"
-                  title="StructureDefinition/fr-core-organization-executant">FR Core Organization Executant Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>An executant act organization</td>
-      <td>Une UF exécutante d’actes</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-external.html"
-                  title="StructureDefinition/fr-core-organization-external">FR Core Organization External Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>External ward of the facility</td>
-      <td>UF externe à l’établissement</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-field.html"
-                  title="StructureDefinition/fr-core-organization-field">FR Core Organization Field Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Equipment field</td>
-      <td>Discipline d’équipement</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-pole.html"
-                  title="StructureDefinition/fr-core-organization-pole">FR Core Organization Pole Profile</a>
-            </td>
-            <td>
-<p>FR Core Organization Pole Profile</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-prestation-discipline.html"
-                  title="StructureDefinition/fr-core-organization-prestation-discipline">FR Core Organization Prestation Discipline Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Discipline prestation of the organization</td>
-      <td>Prestation de discipline UAC for France</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization.html"
-                  title="StructureDefinition/fr-core-organization">FR Core Organization Profile</a>
-            </td>
-            <td>
-<p>Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. 
-
-Profil de la ressource Organization pour la France. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-short-name.html"
-                  title="StructureDefinition/fr-core-organization-short-name">FR Core Organization Short Name Extension</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.html"
-                  title="StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space">FR Core Organization Total Number Of Theorical Accomodation Space Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Total number of theorical accomodation space</td>
-      <td>Nombre total de places d’hébergement théoriques</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-uac.html"
-                  title="StructureDefinition/fr-core-organization-uac">FR Core Organization UAC Profile</a>
-            </td>
-            <td>
-<p>This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.
-
-Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-uf.html"
-                  title="StructureDefinition/fr-core-organization-uf">FR Core Organization UF Profile</a>
-            </td>
-            <td>
-<p>This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.
-
-Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient-birth-list-given-name.html"
-                  title="StructureDefinition/fr-core-patient-birth-list-given-name">FR Core Patient Birth List Given name Extension</a>
-            </td>
-            <td>
-<p>Prénoms de l’acte de naissance</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient-birthdate-update-indicator.html"
-                  title="StructureDefinition/fr-core-patient-birthdate-update-indicator">FR Core Patient Birthdate Update Indicator Extension</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient-contact-identifier.html"
-                  title="StructureDefinition/fr-core-patient-contact-identifier">FR Core Patient Contact Identifier Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This extension carries the contact identifier in the patient resource</td>
-      <td>Ajout d’un identifiant de contact dans la ressource Patient</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient-death-place.html"
-                  title="StructureDefinition/fr-core-patient-death-place">FR Core Patient Death Place Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Carries the death place of the patient</td>
-      <td>Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient-ins.html"
-                  title="StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a>
-            </td>
-            <td>
-<p>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-identity-reliability.html"
-                  title="StructureDefinition/fr-core-identity-reliability">FR Core Patient Ident Reliability Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Reliabilility of the patient’s identity</td>
-      <td>Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) avec la méthode de collection</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-patient.html"
-                  title="StructureDefinition/fr-core-patient">FR Core Patient Profile</a>
-            </td>
-            <td>
-<p>Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.
-
-Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-practitioner-profession.html"
-                  title="StructureDefinition/fr-core-practitioner-profession">FR Core Practitioner Profession Extension</a>
-            </td>
-            <td>
-<p>This extension adds the element “profession” to the FHIR Practitioner resource.
-ASIP valueSet http://esante.gouv.fr/sites/NOS/TABS/TRE_G15-ProfessionSante.tabs</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-practitioner.html"
-                  title="StructureDefinition/fr-core-practitioner">FR Core Practitioner Profile</a>
-            </td>
-            <td>
-<p>Profil de la ressource Practitionner pour la France.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-practitioner-role.html"
-                  title="StructureDefinition/fr-core-practitioner-role">FR Core Practitioner Role</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</td>
-      <td>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-practitioner-specialty.html"
-                  title="StructureDefinition/fr-core-practitioner-specialty">FR Core Practitioner Specialty Extension</a>
-            </td>
-            <td>
-<p>This extension adds the element “specialty” to the FHIR Practitioner resource.
-http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-related-person.html"
-                  title="StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a>
-            </td>
-            <td>
-<p>Profile of the RelatedPerson resource for France.</p>
-
-<p>Profil de la ressource RelatedPerson pour l’usage en France</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-schedule.html"
-                  title="StructureDefinition/fr-core-schedule">FR Core Schedule Profile</a>
-            </td>
-            <td>
-<p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule
-
-Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l’élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-schedule-availability-time.html"
-                  title="StructureDefinition/fr-core-schedule-availability-time">FR Core Schedule availability time Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule (busy-unavailable</td>
-      <td>free), the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period</td>
-      <td>Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule (busy-unavailable</td>
-      <td>free), l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-service-type-duration.html"
-                  title="StructureDefinition/fr-core-service-type-duration">FR Core Service Type Duration Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This French extension allows to associate the type of service with the duration of this service</td>
-      <td>Cette extension française permet d’associer le type de service avec la durée de ce service.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-slot-date.html"
-                  title="StructureDefinition/fr-core-slot-date">FR Core Slot Date Extension</a>
-            </td>
-            <td>
-<table>
-  <tbody>
-    <tr>
-      <td>This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled.</td>
-      <td>Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.</td>
-    </tr>
-  </tbody>
-</table>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-slot.html"
-                  title="StructureDefinition/fr-core-slot">FR Core Slot Profile</a>
-            </td>
-            <td>
-<p>Profil of the Slot resource for France.</p>
-
-<p>Profil de la ressource Slot pour la France</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-use-period.html"
-                  title="StructureDefinition/fr-core-use-period">FR Core Use Period Extension</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-      </tbody>
-   </table>
 </div>
 
 </div>
@@ -1730,7 +1752,7 @@ Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="ValueSet-fr-core-vs-availability-time-day.html">next&gt;</a>
+                <a href="StructureDefinition-fr-core-appointment.html">next&gt;</a>
 
               </td>
             </tr>
@@ -1740,7 +1762,7 @@ Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 14, 2025 13:41+0000">2025-02-14</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 17, 2025 10:03+0000">2025-02-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
