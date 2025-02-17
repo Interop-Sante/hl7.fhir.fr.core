@@ -103,7 +103,6 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * name[officialName] ^short = "Name of a human | Nom de naissance"
 * name[officialName] ^definition = "A human's name with the ability to identify parts and usage | Le nom de naissance (official) est obligatoire dans le cas où l’on véhicule l’INS et que l’identité est qualifiée (celui-ci ne doit pas être altéré)."
-* name[officialName] 1..
 * name[officialName].use 1..1
 * name[officialName].use = #official
 * name[officialName].family 1..
