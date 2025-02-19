@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,11 +17,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter FRCoreEncounterExample</b></p><a name=\"FRCoreEncounterExample\"> </a><a name=\"hcFRCoreEncounterExample\"> </a><a name=\"FRCoreEncounterExample-fr-FR\"> </a><p><b>FR Core Encounter Estimated Discharge Date Extension</b>: 2019-01-02</p><p><b>identifier</b>: Visit Number/123</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>period</b>: 2019-01-02 --&gt; 2019-02-02</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter FRCoreEncounterExample</b></p><a name=\"FRCoreEncounterExample\"> </a><a name=\"hcFRCoreEncounterExample\"> </a><a name=\"FRCoreEncounterExample-fr-FR\"> </a><p><b>FR Core Encounter Estimated Discharge Date Extension</b>: 2019-01-02</p><p><b>identifier</b>: Visit Number/123</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>period</b>: 2019-01-02 --&gt; 2019-02-02</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2019-01-02"^^xsd:date ]
+     fhir:value [
+       a fhir:date ;
+       fhir:v "2019-01-02"^^xsd:date
+     ]
   ] ) ; # 
   fhir:identifier ( [
      fhir:type [

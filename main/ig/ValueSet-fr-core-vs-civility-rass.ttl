@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,17 +17,26 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-civility-rass</b></p><a name=\"fr-core-vs-civility-rass\"> </a><a name=\"hcfr-core-vs-civility-rass\"> </a><a name=\"fr-core-vs-civility-rass-fr-FR\"> </a><ul><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS</code></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-civility-rass</b></p><a name=\"fr-core-vs-civility-rass\"> </a><a name=\"hcfr-core-vs-civility-rass\"> </a><a name=\"fr-core-vs-civility-rass-fr-FR\"> </a><ul><li>Include all codes defined in <code>https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "informative" ]
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative"
+     ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "0"^^xsd:integer ]
+     fhir:value [
+       a fhir:integer ;
+       fhir:v "0"^^xsd:integer
+     ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "fhir" ]
+     fhir:value [
+       a fhir:code ;
+       fhir:v "fhir"
+     ]
   ] ) ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-rass"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.1.0"] ; # 
@@ -34,7 +44,7 @@
   fhir:title [ fhir:v "FR Core ValueSet Civility RASS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-04T09:30:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-19T13:47:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;

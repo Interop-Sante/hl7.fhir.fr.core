@@ -85,7 +85,6 @@ package IG #DDDDDD{
         class FRCoreHumanNameProfile{
 
              HumanName.extension:assemblyOrder => <&plus>[0..1]
-             HumanName.use => [None..None]
              HumanName.prefix => [None..1]
              HumanName.suffix => [None..None]
         } 
@@ -418,7 +417,8 @@ package IG #DDDDDD{
              Patient.identifier:INS-NIA.type => [1..None]
              Patient.identifier:INS-NIA.system => [1..None]
              Patient.identifier:INS-NIA.value => [1..None]
-             Patient.name:officialName => [None..1]
+             Patient.name => [1..None]
+             Patient.name:officialName => [1..1]
              Patient.name:officialName.extension => [1..None]
              Patient.name:officialName.extension:birth-list-given-name => <&plus>[1..None]
              Patient.name:officialName.given => [None..1]
@@ -464,10 +464,10 @@ package IG #DDDDDD{
              Patient.identifier:RRI.type => [1..None]
              Patient.identifier:RRI.system => [1..None]
              Patient.identifier:RRI.value => [1..None]
-             Patient.name => [1..None]
+             Patient.name => [None..None]
              Patient.name:usualName => [0..*]
              Patient.name:usualName.use => [1..None]
-             Patient.name:officialName => [1..*]
+             Patient.name:officialName => [0..*]
              Patient.name:officialName.extension:birth-list-given-name => <&plus>[0..1]
              Patient.name:officialName.use => [1..None]
              Patient.name:officialName.family => [1..None]

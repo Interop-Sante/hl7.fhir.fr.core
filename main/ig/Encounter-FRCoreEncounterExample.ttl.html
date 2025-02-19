@@ -65,7 +65,7 @@
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  <img alt=" flag" src="assets/images/zwe.svg" height="16" title=""/>
 
 
             </span>
@@ -220,6 +220,7 @@
   <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -235,11 +236,13 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter FRCoreEncounterExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;FRCoreEncounterExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcFRCoreEncounterExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;FRCoreEncounterExample-fr-FR\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;FR Core Encounter Estimated Discharge Date Extension&lt;/b&gt;: 2019-01-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Visit Number/123&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\&quot;&gt;ActCode AMB&lt;/a&gt;: ambulatory&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2019-01-02 --&amp;gt; 2019-02-02&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter FRCoreEncounterExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;FRCoreEncounterExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcFRCoreEncounterExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;FRCoreEncounterExample-fr-FR\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;FR Core Encounter Estimated Discharge Date Extension&lt;/b&gt;: 2019-01-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Visit Number/123&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\&quot;&gt;ActCode AMB&lt;/a&gt;: ambulatory&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2019-01-02 --&amp;gt; 2019-02-02&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">fhir:extension</a> ( [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2019-01-02&quot;^^xsd:date ]
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#date">a</a> fhir:date ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2019-01-02&quot;^^xsd:date     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">fhir:identifier</a> ( [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
@@ -306,7 +309,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 4, 2025 09:30+0000">2025-02-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2025 13:48+0000">2025-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
