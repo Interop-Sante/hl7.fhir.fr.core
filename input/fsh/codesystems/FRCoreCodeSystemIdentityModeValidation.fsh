@@ -16,6 +16,11 @@ Description: "Mode de validation de l'identité"
 * #PA "Passeport"
 * #PC "Permis de conduire"
 * #TC "Tiers de confiance"
+* #DC "Document de Circulation pour étranger mineur"
+* #AC "Acte de naissance + Carte vitale avec photo"
+* #IE "Identification électronique EIDAS"
+
+
 
 // SCS profile
 * ^experimental = false
