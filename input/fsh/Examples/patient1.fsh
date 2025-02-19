@@ -8,7 +8,7 @@ Usage: #example
 
 // birthPlace
 * extension[birthPlace].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
-* extension[birthPlace].valueAddress.extension[inseeCode].valueCoding = https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#01006
+* extension[birthPlace].valueAddress.extension[inseeCode].valueCoding = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM#01006
 * extension[birthPlace].valueAddress.city = "Ambléon"
 
 
