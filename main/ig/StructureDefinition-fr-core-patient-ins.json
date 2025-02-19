@@ -10,7 +10,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2025-02-19T13:53:58+00:00",
+  "date" : "2025-02-19T13:58:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -739,7 +739,7 @@
       "path" : "Patient.extension",
       "sliceName" : "identityReliability",
       "short" : "Reliabilility of the identity | Fiabilité de l'identité",
-      "definition" : "Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection",
+      "definition" : "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity",
       "min" : 1,
       "max" : "*",
       "base" : {
@@ -775,7 +775,7 @@
       "path" : "Patient.extension",
       "sliceName" : "deathPlace",
       "short" : "FR Core Patient Death Place Extension",
-      "definition" : "Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).",
+      "definition" : "Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).\n\rCarries the death place of the patient",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -1078,7 +1078,7 @@
       "path" : "Patient.extension.value[x].extension",
       "sliceName" : "inseeCode",
       "short" : "FR Core Address Insee Code Extension",
-      "definition" : "This extension adds the insee code (5 digits) to the address | Ajout du code insee (5 chiffres) à l'adresse postale",
+      "definition" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale.\r\nThis extension adds the insee code (5 digits) to the address",
       "min" : 1,
       "max" : "1",
       "base" : {
@@ -6479,8 +6479,8 @@
       "id" : "Patient.contact.extension:contactIdentifier",
       "path" : "Patient.contact.extension",
       "sliceName" : "contactIdentifier",
-      "short" : "Contact identifier in the patient resource | Identifiant de contact dans la ressource Patient",
-      "definition" : "This extension carries the contact identifier in the patient resource | Ajout d'un identifiant de contact dans la ressource Patient",
+      "short" : "FR Core Patient Contact Identifier Extension",
+      "definition" : "Identifiant de contact dans la ressource Patient\n\rThis extension carries the contact identifier in the patient resource",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -6516,7 +6516,7 @@
       "path" : "Patient.contact.extension",
       "sliceName" : "comment",
       "short" : "Comment on a dataElement | Commentaire sur un dataElement",
-      "definition" : "add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource",
+      "definition" : "Ajout d'un commentaire sur un dataElement d'une ressource.\r\nAdd a comment on a dataElement  of a resource",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -6597,7 +6597,7 @@
       "slicing" : {
         "discriminator" : [{
           "type" : "value",
-          "path" : "coding.system"
+          "path" : "$this"
         }],
         "rules" : "open"
       },

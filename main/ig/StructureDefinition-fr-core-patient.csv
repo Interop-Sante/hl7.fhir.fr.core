@@ -61,11 +61,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:identityReliability","Patient.extension","identityReliability","","",0,*,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability]]} {[]}
-","Reliabilility of the identity | Fiabilité de l'identité","Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Reliabilility of the identity | Fiabilité de l'identité","Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
+Reliabilility of the patient's identity","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:deathPlace","Patient.extension","deathPlace","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place]]} {[]}
-","FR Core Patient Death Place Extension","Carries the death place of the patient |Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","FR Core Patient Death Place Extension","Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
+Carries the death place of the patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:birthdateUpdateIndicator","Patient.extension","birthdateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
@@ -410,11 +412,13 @@ pat-1:SHALL at least contain a contact's details or a reference to an organizati
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.extension:contactIdentifier","Patient.contact.extension","contactIdentifier","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier]]} {[]}
-","Contact identifier in the patient resource | Identifiant de contact dans la ressource Patient","This extension carries the contact identifier in the patient resource | Ajout d'un identifiant de contact dans la ressource Patient","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","FR Core Patient Contact Identifier Extension","Identifiant de contact dans la ressource Patient
+This extension carries the contact identifier in the patient resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.extension:comment","Patient.contact.extension","comment","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment]]} {[]}
-","Comment on a dataElement | Commentaire sur un dataElement","add a comment on a dataElement  of a resource | Ajout d'un commentaire sur un dataElement d'une ressource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Comment on a dataElement | Commentaire sur un dataElement","Ajout d'un commentaire sur un dataElement d'une ressource.
+Add a comment on a dataElement  of a resource","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.contact.modifierExtension","Patient.contact.modifierExtension","","extensions
@@ -424,7 +428,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Patient.contact.relationship","Patient.contact.relationship","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","The kind of relationship","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","The nature of the relationship between a patient and a contact person for that patient.","http://hl7.org/fhir/ValueSet/patient-contactrelationship","","value:coding.system}
+","The kind of relationship","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","The nature of the relationship between a patient and a contact person for that patient.","http://hl7.org/fhir/ValueSet/patient-contactrelationship","","value:$this}
 ","",,"open","Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","n/a","NK1-7, NK1-3"
 "Patient.contact.relationship:Role","Patient.contact.relationship","Role","","",0,1,"","","","CodeableConcept {[]} {[]}
