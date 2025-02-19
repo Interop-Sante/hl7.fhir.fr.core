@@ -1,7 +1,7 @@
 ValueSet: FRCoreValueSetScheduleType
 Id: fr-core-vs-schedule-type
 Title: "FR Core ValueSet Schedule type"
-Description: "A Schedule type | Jeu de valeurs des types de Schedule"
+Description: "Jeu de valeurs des types de Schedule.\r\nA Schedule type"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"

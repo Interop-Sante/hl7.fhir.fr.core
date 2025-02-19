@@ -2,7 +2,7 @@ Profile: FRCorePractitionerRole
 Parent: PractitionerRole
 Id: fr-core-practitioner-role
 Title: "FR Core Practitioner Role"
-Description: "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."
+Description: "Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation.\r\nProfile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

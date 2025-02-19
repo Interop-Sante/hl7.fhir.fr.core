@@ -1,7 +1,7 @@
 ValueSet: FRCoreValueSetEncounterDischargeDisposition
 Id: fr-core-vs-encounter-discharge-disposition
 Title: "FR Core ValueSet Encounter discharge disposition"
-Description: "This value set defines a set of codes that can be used to where the patient left the hospital | Circonstances de sortie de l'hôpital."
+Description: "Circonstances de sortie de l'hôpital.\r\nThis value set defines a set of codes that can be used to where the patient left the hospital"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"

@@ -3,8 +3,7 @@
 Extension: FRCorePractitionerProfessionExtension
 Id: fr-core-practitioner-profession
 Title: "FR Core Practitioner Profession Extension"
-Description: """This extension adds the element "profession" to the FHIR Practitioner resource.
-ASIP valueSet http://esante.gouv.fr/sites/NOS/TABS/TRE_G15-ProfessionSante.tabs"""
+Description: """This extension adds the element "profession" to the FHIR Practitioner resource."""
 * ^context.type = #element
 * ^context.expression = "Practitioner"
 
