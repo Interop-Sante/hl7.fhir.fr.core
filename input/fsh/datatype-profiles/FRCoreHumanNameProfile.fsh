@@ -7,6 +7,7 @@ Description: "Profilage du type de données HumanName pour prise en compte de la
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
+
 * extension contains $humanname-assembly-order named assemblyOrder 0..1
 
 * prefix ..1
