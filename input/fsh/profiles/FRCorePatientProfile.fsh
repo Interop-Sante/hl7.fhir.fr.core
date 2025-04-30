@@ -21,7 +21,8 @@ Description: """Profile of the Patient resource for France. This profile specifi
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
-    http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1
+    http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1 and
+    FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
 
