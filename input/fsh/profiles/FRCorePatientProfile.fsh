@@ -32,7 +32,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
 * identifier ^slicing.rules = #open
-* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
+* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 
 
 

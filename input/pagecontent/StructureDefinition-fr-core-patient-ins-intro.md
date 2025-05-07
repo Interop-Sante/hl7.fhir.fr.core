@@ -1,6 +1,6 @@
 ### Usage
 
-Le profil hérite de FrCorePatient enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée.
+Le profil hérite de FRCorePatient enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée.
 
 Ce profil permet d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS, marqués en MustSupport (carré rouge contenant un S).
 
