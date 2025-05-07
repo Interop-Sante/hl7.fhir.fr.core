@@ -27,9 +27,11 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * identifier.type from $fr-core-patient-identifier-type (extensible)
 
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
+* identifier ^slicing.discriminator[+].type = #value
+* identifier ^slicing.discriminator[=].path = "type"
+* identifier ^slicing.discriminator[+].type = #value
+* identifier ^slicing.discriminator[=].path = "use"
+* identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.) et son usage (officiel, secondaire, usuel, etc.)"
 * identifier ^slicing.rules = #open
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 
@@ -77,6 +79,15 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..
 * identifier[PI].value 1..
+
+* identifier[PI_OLD] ^short = "Inactived Hospital assigned patient identifier | Identifiant Patient Permanent (IPP) désactivée"
+* identifier[PI_OLD] ^comment  = "Des IPP peuvent être désactivé en cas de fusion d'identité pour résoudre des problèmes de doublonnage."
+* identifier[PI_OLD].use 1..
+* identifier[PI_OLD].use = #old
+* identifier[PI_OLD].type 1..
+* identifier[PI_OLD].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
+* identifier[PI_OLD].system 1..
+* identifier[PI_OLD].value 1..
 
 * identifier[RRI] ^short = "Regional Registry ID | Identifiant régional"
 * identifier[RRI].use 1..
