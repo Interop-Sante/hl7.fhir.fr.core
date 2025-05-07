@@ -1,4 +1,4 @@
-Profile: FRCorePractitionerRole
+Profile: FRCorePractitionerRoleProfile
 Parent: PractitionerRole
 Id: fr-core-practitioner-role
 Title: "FR Core Practitioner Role"
