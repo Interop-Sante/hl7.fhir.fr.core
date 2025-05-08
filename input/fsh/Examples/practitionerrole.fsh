@@ -18,7 +18,7 @@ Alias: $fr-core-cs-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v
 
 Instance: FRCorePractitionerExample
 InstanceOf: FRCorePractitionerProfile
-Usage: #inline
+Usage: #example
 * meta.lastUpdated = "2025-04-28T18:19:26.335+02:00"
 * meta.source = "https://annuaire.sante.fr"
 * language = #fr
@@ -48,7 +48,7 @@ Usage: #inline
 
 Instance: FRCorePractitionerRoleExample
 InstanceOf: FRCorePractitionerRoleProfile
-Usage: #inline
+Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2025-04-28T18:19:34.908+02:00"
 * meta.source = "https://annuaire.sante.fr"
