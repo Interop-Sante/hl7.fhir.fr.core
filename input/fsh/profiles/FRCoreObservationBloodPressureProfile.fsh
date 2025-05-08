@@ -31,7 +31,7 @@ Description: "French profile for blood pressure.
 * value[x] ..0
 
 * bodySite from $ValueSet-bpMeasBodyLocationPrecoordVS (example)
-* method from $bp-measurement-method (example)
+* method from $ValueSet-bp-measurement-method (example)
 
 * component ^slicing.discriminator[0].type = #value
 * component ^slicing.discriminator[=].path = "code.coding.code"

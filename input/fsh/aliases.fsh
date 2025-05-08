@@ -75,7 +75,7 @@ Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vit
 Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasBodyLocationPrecoordVS
 Alias: $ValueSet-heightLengthMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heightLengthMeasMethodVS
 Alias: $ValueSet-bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bpmeasbodylocationprecoord
-Alias: $bp-measurement-method = http://hl7.org/fhir/us/vitals/ValueSet/bpMeasMethodVS
+Alias: $ValueSet-bp-measurement-method = http://hl7.org/fhir/us/vitals/ValueSet/bpMeasMethodVS
 
 // ###############
 // # FrCore link #
