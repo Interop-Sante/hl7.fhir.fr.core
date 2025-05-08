@@ -27,10 +27,8 @@ Description: "French profile for the FHIR Vital Sign Heart Rate Profile.
 * performer only Reference(CareTeam or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)
 
 * bodySite from $ValueSet-heartRateMeasBodyLocationPrecoordVS (example)
-* bodySite.coding from $fr-core-heart-rate-body-position (example)
 
 * method from $ValueSet-heartRateMeasMethodVS (example)
 * method ^binding.description = "Methods for heartrate observations."
-* method.coding from $fr-core-heart-rate-method (example)
 
 * value[x] ^slicing.rules = #open

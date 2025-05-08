@@ -103,8 +103,6 @@ Alias: $fr-core-mode-validation-identite = https://hl7.fr/ig/fhir/core/ValueSet/
 Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position
 Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle
 Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
-Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method
-Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position
 
 
 // SD
