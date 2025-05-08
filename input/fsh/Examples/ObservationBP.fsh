@@ -5,7 +5,7 @@ Usage: #example
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"
 * effectiveDateTime = "2012-09-17"
-* performer  = Reference(FRCorePractititionerExample)
+* performer  = Reference(FRCorePractitionerExample)
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"

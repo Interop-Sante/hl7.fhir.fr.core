@@ -21,6 +21,6 @@ Usage: #example
 * active = true
 * specialty = $TRE-R38-SpecialiteOrdinale#SM54 "Médecine générale (SM)"
 * actor[0] = Reference(FRCorePractitionerRoleExample)
-* actor[+] = Reference(FRCorePractititionerExample)
+* actor[+] = Reference(FRCorePractitionerExample)
 * planningHorizon.start = "2019-01-01T00:00:00Z"
 * planningHorizon.end = "2020-01-01T00:00:00Z"

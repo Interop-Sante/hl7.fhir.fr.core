@@ -4,7 +4,7 @@ Usage: #example
 * status = #final
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"
-* performer  = Reference(FRCorePractititionerExample)
+* performer  = Reference(FRCorePractitionerExample)
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 28
 * valueQuantity.code = #kg/m2

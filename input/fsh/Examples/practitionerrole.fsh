@@ -16,7 +16,7 @@ Alias: $TRE-R02-SecteurActivite = https://mos.esante.gouv.fr/NOS/TRE_R02-Secteur
 Alias: $fr-core-cs-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203
 Alias: $fr-core-cs-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307
 
-Instance: FRCorePractititionerExample
+Instance: FRCorePractitionerExample
 InstanceOf: FRCorePractitionerProfile
 Usage: #inline
 * meta.lastUpdated = "2025-04-28T18:19:26.335+02:00"
@@ -57,7 +57,7 @@ Usage: #inline
 * identifier.system = "https://rpps.esante.gouv.fr"
 * identifier.value = "1011848351"
 * active = true
-* practitioner = Reference(FRCorePractititionerExample)
+* practitioner = Reference(FRCorePractitionerExample)
 * organization = Reference(FRCoreOrganizationExample)
 * code[0] = $TRE-R22-GenreActivite#GENR01
 * code[+] = $TRE-R23-ModeExercice#L

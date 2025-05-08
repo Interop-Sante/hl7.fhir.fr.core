@@ -18,7 +18,7 @@ Usage: #example
 * participant[+].actor = Reference(FRCorePractitionerRoleExample)
 * participant[=].required = #required
 * participant[=].status = #needs-action
-* participant[+].actor = Reference(FRCorePractititionerExample)
+* participant[+].actor = Reference(FRCorePractitionerExample)
 * participant[=].required = #required
 * participant[=].status = #needs-action
 * requestedPeriod.start = "2019-01-04T09:15:00Z"
