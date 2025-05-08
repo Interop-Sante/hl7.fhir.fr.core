@@ -22,14 +22,6 @@ Usage: #inline
 * meta.lastUpdated = "2025-04-28T18:19:26.335+02:00"
 * meta.source = "https://annuaire.sante.fr"
 * language = #fr
-* extension.url = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-smartcard"
-* extension.extension[0].url = "type"
-* extension.extension[=].valueCodeableConcept = $TRE-R87-TypeCarte#CPS
-* extension.extension[+].url = "number"
-* extension.extension[=].valueString = "3100345668"
-* extension.extension[+].url = "period"
-* extension.extension[=].valuePeriod.start = "2024-02-21"
-* extension.extension[=].valuePeriod.end = "2027-02-21"
 * identifier[0].use = #official
 * identifier[=].type = $fr-core-cs-v2-0203#IDNPS
 * identifier[=].system = "urn:oid:1.2.250.1.71.4.2.1"
@@ -46,11 +38,6 @@ Usage: #inline
 * name.suffix = "DR"
 * telecom.extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type"
 * telecom.extension[=].valueCoding = $TRE-R256-TypeMessagerie#MSSANTE "MSSANTE"
-* telecom.extension[+].url = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-mailbox-mss-metadata"
-* telecom.extension[=].extension[0].url = "type"
-* telecom.extension[=].extension[=].valueCodeableConcept = $TRE-R257-TypeBAL#PER
-* telecom.extension[=].extension[+].url = "digitization"
-* telecom.extension[=].extension[=].valueBoolean = false
 * telecom.system = #email
 * telecom.value = "sophie.leclerc@mssante.fr"
 * telecom.use = #work
@@ -80,14 +67,10 @@ Usage: #inline
 Instance: FRCoreOrganizationExample
 InstanceOf: FRCoreOrganizationProfile
 Usage: #example
-* meta.extension.url = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace"
-* meta.extension.extension.url = "systeme-information"
-* meta.extension.extension.valueCode = #CG
 * meta.versionId = "1"
 * meta.lastUpdated = "2025-04-28T19:35:45.507+02:00"
 * meta.source = "https://annuaire.sante.fr"
 * meta.profile[0] = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
-* meta.profile[+] = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-dp-organization"
 * language = #fr
 * identifier[0].use = #official
 * identifier[=].type = $fr-core-cs-v2-0203#IDNST
@@ -98,10 +81,6 @@ Usage: #example
 * identifier[=].system = "https://sirene.fr"
 * identifier[=].value = "264403106"
 * active = true
-* type[0].extension.url = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types"
-* type[=].extension.valueCode = #organizationType
-* type[=] = $fr-core-cs-v2-3307#LEGAL-ENTITY
-* type[+].extension.url = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types"
-* type[=].extension.valueCode = #secteurActiviteRASS
-* type[=] = $TRE-R02-SecteurActivite#SA43
+* type[0] = $fr-core-cs-v2-3307#LEGAL-ENTITY
+* type[+] = $TRE-R02-SecteurActivite#SA43
 * name = "HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G"
