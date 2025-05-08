@@ -20,7 +20,7 @@ Usage: #example
 * identifier.value = "45"
 * active = true
 * specialty = $TRE-R38-SpecialiteOrdinale#SM54 "Médecine générale (SM)"
-* actor[0] = Reference(practitionerrole-example) "Dr Langdon, cabinet Paris"
-* actor[+] = Reference(practitioner-example) "Dr Langdon"
+* actor[0] = Reference(practitionerrole-example)
+* actor[+] = Reference(practitioner-example)
 * planningHorizon.start = "2019-01-01T00:00:00Z"
 * planningHorizon.end = "2020-01-01T00:00:00Z"
