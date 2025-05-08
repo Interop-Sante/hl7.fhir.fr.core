@@ -12,11 +12,11 @@ Description: "A set of codes that can be used to indicate the class of the encou
 * ^extension[=].valueCode = #pa
 
 
-* http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#ACUTE "Inpatient acute"
-* http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#NONAC "Inpatient non acute"
-* http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#PRENC "Pre-admission"
-* http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#SS "Short stay"
-* http://terminology.hl7.org/ValueSet/v3-ActEncounterCode#VR "Virtual"
+* http://terminology.hl7.org/CodeSystem/v3-ActCode#ACUTE "Inpatient acute"
+* http://terminology.hl7.org/CodeSystem/v3-ActCode#NONAC "Inpatient non acute"
+* http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC "Pre-admission"
+* http://terminology.hl7.org/CodeSystem/v3-ActCode#SS "Short stay"
+* http://terminology.hl7.org/CodeSystem/v3-ActCode#VR "Virtual"
 
 // SVS profile
 * ^experimental = false
