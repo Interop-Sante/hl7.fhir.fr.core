@@ -46,7 +46,7 @@ Description: "Cette extension permet de préciser une liste de période de temps
 * extension[rrule].extension[freq] ^definition = "Identifies the type of recurrence rule (year, month, day, hour, minute, seconde) | Identifie le type de récurrence\r\nThe value set comes from iCalendar | Le jeu de valeur est issu de iCalendar"
 * extension[rrule].extension[freq].value[x] only Coding
 * extension[rrule].extension[freq].value[x] from FRCoreValueSetAvailabilityTimeRule (required)
-* extension[rrule].extension[freq].value[x].system = "https://www.ietf.org/rfc/rfc2445" (exactly)
+* extension[rrule].extension[freq].value[x].system = "https://www.ietf.org/rfc/rfc2445"
 
 * extension[rrule].extension[until] ^definition = "Defines a date-time value which bounds the recurrence rule in an inclusive manner | Defini une Date/Time de fin de la récurrence"
 * extension[rrule].extension[until].value[x] only dateTime
@@ -88,8 +88,8 @@ Description: "Cette extension permet de préciser une liste de période de temps
 * extension[rrule].extension[byMonth].value[x] only positiveInt
 
 * extension[rrule].extension[wkst] ^short = "First day of the workweek | Premier jour de la semaine de travail"
-* extension[rrule].extension[wkst] ^binding.description = "The value set comes from iCalendar | Le jeu de valeur est issu de iCalendar"
 * extension[rrule].extension[wkst].value[x] only code
+* extension[rrule].extension[wkst].valueCode ^binding.description = "The value set comes from iCalendar | Le jeu de valeur est issu de iCalendar"
 * extension[rrule].extension[wkst].value[x] from DaysOfWeek (required)
 
 * extension[start] ^short = "Start of the period | Début de la période"
