@@ -37,14 +37,10 @@ Alias: $TRE-G05-SousSectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_G05-
 Alias: $TRE-R06-SectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP
 
 
-
-Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
 Alias: $JDV-J129-CategorieEtablissement-RASS = https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS
 Alias: $JDV-J105-EnsembleDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS
 Alias: $JDV-J101-SecteurActivite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS
-Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
-Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 
 
 Alias: $JDV-J81-TypeDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS
