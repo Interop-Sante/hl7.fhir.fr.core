@@ -72,13 +72,15 @@ Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasB
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 
 // opencimi
-Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS
-Alias: $ValueSet-respiratoryRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS
-Alias: $ValueSet-sPO2BodyLocationVS = http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS
-Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS
-Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
+Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasMethodVS
+Alias: $ValueSet-respiratoryRateMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/respiratoryRateMeasMethodVS
+Alias: $ValueSet-sPO2BodyLocationVS = http://hl7.org/fhir/us/vitals/ValueSet/sPO2BodyLocationVS
+Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
+
+Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyTempMeasBodyLocationPrecoordVS
+Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasBodyLocationPrecoordVS
+
+Alias: $ValueSet-heightLengthMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heightLengthMeasMethodVS
 
 // ###############
 // # FrCore link #
