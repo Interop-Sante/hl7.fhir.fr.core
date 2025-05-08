@@ -75,6 +75,7 @@ Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vit
 Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasBodyLocationPrecoordVS
 Alias: $ValueSet-heightLengthMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heightLengthMeasMethodVS
 Alias: $ValueSet-bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bpmeasbodylocationprecoord
+Alias: $bp-measurement-method = http://hl7.org/fhir/us/vitals/ValueSet/bpMeasMethodVS
 
 // ###############
 // # FrCore link #
@@ -103,7 +104,6 @@ Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-c
 Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle
 Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
 Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method
-Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position
 
 
