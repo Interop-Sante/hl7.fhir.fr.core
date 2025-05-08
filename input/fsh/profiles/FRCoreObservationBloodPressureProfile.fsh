@@ -43,14 +43,12 @@ Description: "French profile for blood pressure.
 * component contains
     MeanBP 0..1
 
-* component[SystolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[SystolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * component[SystolicBP].code.coding 1..
 
 
 * component[DiastolicBP] ^short = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP] ^definition = "Used when reporting diastolic blood pressure."
-* component[DiastolicBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
 * component[DiastolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * component[DiastolicBP].code.coding 1..
 
@@ -62,11 +60,11 @@ Description: "French profile for blood pressure.
 * component[MeanBP].code.coding ^slicing.discriminator[+].type = #value
 * component[MeanBP].code.coding ^slicing.discriminator[=].path = "system"
 * component[MeanBP].code.coding ^slicing.rules = #open
+
 * component[MeanBP].code.coding contains MBPCode 1..1
 * component[MeanBP].code.coding[MBPCode].system 1..
-* component[MeanBP].code.coding[MBPCode].system = "http://loinc.org" (exactly)
+* component[MeanBP].code.coding[MBPCode].system = "http://loinc.org" 
 * component[MeanBP].code.coding[MBPCode].code 1..
-* component[MeanBP].code.coding[MBPCode].code = #8478-0 (exactly)
+* component[MeanBP].code.coding[MBPCode].code = #8478-0 
 * component[MeanBP].code.coding[MBPCode].code ^short = "Mean blood pressure"
 * component[MeanBP].code.coding[MBPCode].code ^definition = "Mean blood pressure"
-* component[MeanBP].referenceRange ^contentReference = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
