@@ -16,7 +16,7 @@ Alias: $TRE-R02-SecteurActivite = https://mos.esante.gouv.fr/NOS/TRE_R02-Secteur
 Alias: $fr-core-cs-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203
 Alias: $fr-core-cs-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307
 
-Instance: practitioner-example
+Instance: FRCorePractititionerExample
 InstanceOf: FRCorePractitionerProfile
 Usage: #inline
 * meta.lastUpdated = "2025-04-28T18:19:26.335+02:00"
@@ -59,7 +59,7 @@ Usage: #inline
 * qualification[+].code.coding[0] = $TRE-R09-CategorieProfessionnelle#C
 * qualification[=].code.coding[+] = $TRE-G15-ProfessionSante#70
 
-Instance: practitionerrole-example
+Instance: FRCorePractitionerRoleExample
 InstanceOf: FRCorePractitionerRoleProfile
 Usage: #inline
 * meta.versionId = "1"
@@ -70,14 +70,14 @@ Usage: #inline
 * identifier.system = "https://rpps.esante.gouv.fr"
 * identifier.value = "1011848351"
 * active = true
-* practitioner = Reference(practitioner-example)
-* organization = Reference(org-example)
+* practitioner = Reference(FRCorePractititionerExample)
+* organization = Reference(FRCoreOrganizationExample)
 * code[0] = $TRE-R22-GenreActivite#GENR01
 * code[+] = $TRE-R23-ModeExercice#L
 * code[+] = $TRE-R21-Fonction#FON-05
 
 
-Instance: org-example
+Instance: FRCoreOrganizationExample
 InstanceOf: FRCoreOrganizationProfile
 Usage: #example
 * meta.extension.url = "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace"

@@ -1,5 +1,5 @@
 
-Instance: ExampleFRCorePatient001
+Instance: FRCorePatientExample
 InstanceOf: fr-core-patient-ins
 Usage: #example
 
