@@ -2,9 +2,9 @@ Instance: FRCoreObservationBMIExample
 InstanceOf: fr-core-observation-bmi
 Usage: #example
 * status = #final
-* subject = Reference(ExampleFRCorePatient001) "Pierre Durand"
+* subject = Reference(ExampleFRCorePatient001)
   * type = "Patient"
-* performer  = Reference(practitioner-example) "Dr Langdon"
+* performer  = Reference(practitioner-example)
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 28
 * valueQuantity.code = #kg/m2
