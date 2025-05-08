@@ -68,7 +68,6 @@ Alias: $resprate = http://hl7.org/fhir/StructureDefinition/resprate
 Alias: $oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 
 // opencimi
@@ -76,11 +75,10 @@ Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/
 Alias: $ValueSet-respiratoryRateMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/respiratoryRateMeasMethodVS
 Alias: $ValueSet-sPO2BodyLocationVS = http://hl7.org/fhir/us/vitals/ValueSet/sPO2BodyLocationVS
 Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
-
 Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyTempMeasBodyLocationPrecoordVS
 Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasBodyLocationPrecoordVS
-
 Alias: $ValueSet-heightLengthMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heightLengthMeasMethodVS
+Alias: $ValueSet-bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bpmeasbodylocationprecoord
 
 // ###############
 // # FrCore link #
@@ -110,7 +108,6 @@ Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/
 Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
 Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method
 Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method
-Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method
 Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position
 
 

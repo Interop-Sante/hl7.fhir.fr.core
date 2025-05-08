@@ -30,7 +30,7 @@ Description: "French profile for blood pressure.
 * value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * value[x] ..0
 
-* bodySite from $bpMeasBodyLocationPrecoordVS (example)
+* bodySite from $ValueSet-bpMeasBodyLocationPrecoordVS (example)
 * method from $fr-core-bp-measurement-method (example)
 
 * component ^slicing.discriminator[0].type = #value
