@@ -50,6 +50,7 @@ Description: "French profile for blood pressure.
 * component[DiastolicBP] ^short = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP] ^definition = "Used when reporting diastolic blood pressure."
 * component[DiastolicBP].value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
+* component[DiastolicBP].value[x] ^slicing.description = "Erroneous slicing wainting for R5 correction"
 * component[DiastolicBP].code.coding 1..
 
 * component[MeanBP] ^short = "Mean blood pressure"
@@ -60,6 +61,7 @@ Description: "French profile for blood pressure.
 * component[MeanBP].code.coding ^slicing.discriminator[+].type = #value
 * component[MeanBP].code.coding ^slicing.discriminator[=].path = "system"
 * component[MeanBP].code.coding ^slicing.rules = #open
+* component[MeanBP].code.coding ^slicing.description = "Erroneous slicing wainting for R5 correction"
 
 * component[MeanBP].code.coding contains MBPCode 1..1
 * component[MeanBP].code.coding[MBPCode].system 1..
