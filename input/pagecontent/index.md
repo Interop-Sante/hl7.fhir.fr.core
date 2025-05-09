@@ -94,3 +94,11 @@ Le guide d'implémentation FR Core est géré par HL7 France et IHE France au se
 ### Propriété intellectuelle
 
 {% include ip-statements.xhtml %}
+
+### Analyse inter-version
+
+{% include cross-version-analysis.xhtml %}
+
+### Profils internationaux
+
+{% include globals-table.xhtml %}
