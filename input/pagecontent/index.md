@@ -87,6 +87,10 @@ Le guide d'implémentation FR Core est géré par HL7 France et IHE France au se
 | Contributeur | Sylvain Demey   | Agence du Numérique en Santé |
 | Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
-## Dépendances
+### Dépendances
 
 {% include dependency-table.xhtml %}
+
+### Propriété intellectuelle
+
+{% include ip-statements.xhtml %}
