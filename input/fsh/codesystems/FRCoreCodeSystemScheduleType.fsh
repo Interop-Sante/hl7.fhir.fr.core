@@ -7,8 +7,8 @@ Description: "Schedule type"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #busy-unavailable "Indisponibilité"
-* #free "Disponibilité"
+* #busy-unavailable "Indisponibilité" "Indisponibilité"
+* #free "Disponibilité" "Disponibilité"
 
 // SCS profile
 * ^experimental = false

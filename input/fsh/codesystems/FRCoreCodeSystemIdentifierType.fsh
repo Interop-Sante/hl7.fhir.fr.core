@@ -7,8 +7,8 @@ Description: "Identifier type"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #VN "Visit Number"
-* #MN "Movement Number"
+* #VN "Visit Number" "Visit Number"
+* #MN "Movement Number" "Movement Number"
 
 // SCS profile
 * ^experimental = false

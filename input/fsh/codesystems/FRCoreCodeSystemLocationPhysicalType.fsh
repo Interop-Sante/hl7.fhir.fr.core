@@ -7,18 +7,18 @@ Description: "Location physical type"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #FTL "Emplacement fauteuil"
-* #BTMNT "Bâtiment"
-* #L "Lieu non spécifié"
-* #ETG "Etage"
-* #AL "Aile"
-* #CLR "Couloir"
-* #R "Chambre"
-* #BX "Box"
-* #PT "Point"
-* #B "Emplacement lit"
-* #BLC "Bloc"
-* #BR "Bureau"
+* #FTL "Emplacement fauteuil" "Emplacement fauteuil"
+* #BTMNT "Bâtiment" "Bâtiment"
+* #L "Lieu non spécifié" "Lieu non spécifié"
+* #ETG "Etage" "Etage"
+* #AL "Aile" "Aile"
+* #CLR "Couloir" "Couloir"
+* #R "Chambre" "Chambre"
+* #BX "Box" "Box"
+* #PT "Point" "Point"
+* #B "Emplacement lit" "Emplacement lit"
+* #BLC "Bloc" "Bloc"
+* #BR "Bureau" "Bureau"
 
 // SCS profile
 * ^experimental = false
