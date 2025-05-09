@@ -1,6 +1,7 @@
 Instance: FRCoreObservationBodyHeightExample
 InstanceOf: fr-core-observation-body-height
 Usage: #example
+Description: "Exemple de ressource Observation pour décrire la taille du patient"
 * status = #final
 * subject = Reference(FRCorePatientExample)
 * performer  = Reference(FRCorePractitionerExample)

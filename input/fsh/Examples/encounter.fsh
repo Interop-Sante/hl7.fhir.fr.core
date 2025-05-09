@@ -1,6 +1,7 @@
 Instance: FRCoreEncounterExample
 InstanceOf: fr-core-encounter
 Usage: #example
+Description: "Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical"
 * extension.url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date"
 * extension.valueDate = "2019-01-02"
 * identifier.system = "http://hopitalTest.fr/fhir/namingsystem/encounters"

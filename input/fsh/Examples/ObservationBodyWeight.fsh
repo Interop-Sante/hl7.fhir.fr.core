@@ -1,6 +1,7 @@
 Instance: FRCoreObservationBodyWeightExample
 InstanceOf: fr-core-observation-body-weight
 Usage: #example
+Description: "Exemple de ressource Observation pour décrire le poids du patient"
 * status = #final
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"

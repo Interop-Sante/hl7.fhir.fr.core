@@ -1,6 +1,7 @@
 Instance: FRCoreObservationHeartRateExample
 InstanceOf: fr-core-observation-heartrate
 Usage: #example
+Description: "Exemple de ressource Observation pour décrire la fréquence cardiaque d'un patient"
 * status = #final
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"

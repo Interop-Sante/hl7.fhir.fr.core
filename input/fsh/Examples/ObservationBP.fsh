@@ -1,6 +1,7 @@
 Instance: FRCoreObservationBPExample
 InstanceOf: fr-core-observation-bp
 Usage: #example
+Description: "Exemple de ressource Observation Pression artérielle"
 * status = #final
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"

@@ -1,6 +1,7 @@
 Instance: FRCoreOrganizationExample
 InstanceOf: FRCoreOrganizationProfile
 Usage: #example
+Description: "Exemple de ressource Organization pour décrire un hôpital"
 * meta.versionId = "1"
 * meta.lastUpdated = "2025-04-28T19:35:45.507+02:00"
 * meta.source = "https://annuaire.sante.fr"

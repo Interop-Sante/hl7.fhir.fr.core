@@ -1,6 +1,7 @@
 Instance: FRCoreSlotExample
 InstanceOf: fr-core-slot
 Usage: #example
+Description: "Exemple de ressource Slot."
 * identifier.use = #usual
 * identifier.system = "http://interopsante.org/slots"
 * identifier.value = "451"

@@ -1,6 +1,7 @@
 Instance: FRCoreObservationBMIExample
 InstanceOf: fr-core-observation-bmi
 Usage: #example
+Description: "Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)"
 * status = #final
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"
