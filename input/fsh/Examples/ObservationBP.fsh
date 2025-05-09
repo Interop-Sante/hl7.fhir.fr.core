@@ -9,7 +9,7 @@ Description: "Exemple de ressource Observation Pression artérielle"
 * performer  = Reference(FRCorePractitionerExample)
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
-* bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
+* bodySite = $SCT#17137000	"Structure of brachial artery (body structure)"
 
 // Systoic BP
 * component[SystolicBP].code = http://loinc.org#8480-6 "Systolic blood pressure"

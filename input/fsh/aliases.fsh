@@ -1,5 +1,6 @@
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
+Alias: $SCT = http://snomed.info/sct 
 
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite
