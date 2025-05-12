@@ -4,7 +4,7 @@ Usage: #example
 Description: "Exemple de ressource Appointment pour décrire un état de rendez-vous médical"
 * extension.url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator"
 * extension.valueReference = Reference(FRCorePatientExample)
-* identifier.system = "http://system-identifier.org/sampleappointment-identifier"
+* identifier.system = "http://appointment-identifier-system.org"
 * identifier.value = "123"
 * status = #proposed
 * serviceType = $ServiceType#1 "Adoption/Permanent Care Info/Support"
