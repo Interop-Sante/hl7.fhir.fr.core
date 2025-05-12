@@ -1,3 +1,5 @@
+Cette page présente les bonnes pratiques d'usage du guide d’implémentation, pour une utilisation cohérente, efficace et conforme au standard FHIR et aux spécificités nationales.
+
 ### Les identifiants techniques vs les identifiants métiers
 
 En FHIR, il y a plusieurs types d'identifiants :
