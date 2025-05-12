@@ -17,7 +17,7 @@ Description: "Exemple de ressource Schedule pour décrire un agenda."
 * extension[=].extension[+].url = "duration"
 * extension[=].extension[=].valueDuration = 15 'min' "minute"
 * identifier.use = #usual
-* identifier.system = "http://frcore.org/scheduleid"
+* identifier.system = "http://schedule-identifier-system.org"
 * identifier.value = "45"
 * active = true
 * specialty = $TRE-R38-SpecialiteOrdinale#SM54 "Médecine générale (SM)"
