@@ -3,7 +3,7 @@ InstanceOf: fr-core-slot
 Usage: #example
 Description: "Exemple de ressource Slot."
 * identifier.use = #usual
-* identifier.system = "http://interopsante.org/slots"
+* identifier.system = "http://identifier-system-slot-manager.fr"
 * identifier.value = "451"
 * serviceType = $ServiceType#7 "Friendly Visiting"
 * specialty = $TRE-R38-SpecialiteOrdinale#SM54 "Médecine générale (SM)"
