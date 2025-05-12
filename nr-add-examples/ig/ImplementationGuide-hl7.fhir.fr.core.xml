@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="active"/>
-  <date value="2025-05-12T13:04:33+00:00"/>
+  <date value="2025-05-12T14:29:06+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -515,6 +515,50 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-bp-meas-body-location"/>
+      </reference>
+      <name value="Blood Pressure Measurement Body Location Precoordinated value set"/>
+      <description value="SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-bp-meas-method"/>
+      </reference>
+      <name value="Blood Pressure Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how a blood pressure was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-body-position"/>
+      </reference>
+      <name value="Body Position value set"/>
+      <description value="SELECT SNOMED CT code system values the position in which the individual was in during a measurement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vsbody-temp-meas-body-location"/>
+      </reference>
+      <name value="Body Temperature Measurement Body Location value set"/>
+      <description value="SELECT SNOMED CT code system values that describe where on the body the temperature was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
@@ -1944,6 +1988,61 @@
       <name value="FRCoreSlotExample"/>
       <description value="Exemple de ressource Slot."/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-heartrate-body-location"/>
+      </reference>
+      <name value="Heart Rate Measurement Body Location Precoordinated value set"/>
+      <description value="SELECT SNOMED CT code system values that describe where on the body the heart rate was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-heartrate-measurement-method"/>
+      </reference>
+      <name value="Heart Rate Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how the heart rate was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-height-meas-method"/>
+      </reference>
+      <name value="Height Length Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how the height/length was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-spo2-body-location"/>
+      </reference>
+      <name value="Oxygen Saturation Body Location value set"/>
+      <description value="Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-respiratory-rate-meas-method"/>
+      </reference>
+      <name value="Respiratory Rate Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how the respiratory rate was measured."/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-05-12T13:04:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-12T14:29:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -940,6 +940,78 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-bp-meas-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Blood Pressure Measurement Body Location Precoordinated value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-bp-meas-method" ]
+       ] ;
+       fhir:name [ fhir:v "Blood Pressure Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how a blood pressure was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-body-position" ]
+       ] ;
+       fhir:name [ fhir:v "Body Position value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values the position in which the individual was in during a measurement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vsbody-temp-meas-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Body Temperature Measurement Body Location value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe where on the body the temperature was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
@@ -3293,6 +3365,96 @@
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"^^xsd:anyURI ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-heartrate-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Heart Rate Measurement Body Location Precoordinated value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe where on the body the heart rate was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-heartrate-measurement-method" ]
+       ] ;
+       fhir:name [ fhir:v "Heart Rate Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how the heart rate was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-height-meas-method" ]
+       ] ;
+       fhir:name [ fhir:v "Height Length Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how the height/length was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-spo2-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Oxygen Saturation Body Location value set" ] ;
+       fhir:description [ fhir:v "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-respiratory-rate-meas-method" ]
+       ] ;
+       fhir:name [ fhir:v "Respiratory Rate Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how the respiratory rate was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] ) ;
      fhir:page [

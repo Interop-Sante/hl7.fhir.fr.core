@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-05-12T13:04:33+00:00",
+  "date" : "2025-05-12T14:29:06+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -691,6 +691,54 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-bp-meas-body-location"
+      },
+      "name" : "Blood Pressure Measurement Body Location Precoordinated value set",
+      "description" : "SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-bp-meas-method"
+      },
+      "name" : "Blood Pressure Measurement Method value set",
+      "description" : "SELECT SNOMED CT code system values that describe how a blood pressure was measured.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-body-position"
+      },
+      "name" : "Body Position value set",
+      "description" : "SELECT SNOMED CT code system values the position in which the individual was in during a measurement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vsbody-temp-meas-body-location"
+      },
+      "name" : "Body Temperature Measurement Body Location value set",
+      "description" : "SELECT SNOMED CT code system values that describe where on the body the temperature was measured.",
+      "exampleBoolean" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
@@ -2249,6 +2297,66 @@
       "name" : "FRCoreSlotExample",
       "description" : "Exemple de ressource Slot.",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-heartrate-body-location"
+      },
+      "name" : "Heart Rate Measurement Body Location Precoordinated value set",
+      "description" : "SELECT SNOMED CT code system values that describe where on the body the heart rate was measured.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-heartrate-measurement-method"
+      },
+      "name" : "Heart Rate Measurement Method value set",
+      "description" : "SELECT SNOMED CT code system values that describe how the heart rate was measured.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-height-meas-method"
+      },
+      "name" : "Height Length Measurement Method value set",
+      "description" : "SELECT SNOMED CT code system values that describe how the height/length was measured.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-spo2-body-location"
+      },
+      "name" : "Oxygen Saturation Body Location value set",
+      "description" : "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-respiratory-rate-meas-method"
+      },
+      "name" : "Respiratory Rate Measurement Method value set",
+      "description" : "SELECT SNOMED CT code system values that describe how the respiratory rate was measured.",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
