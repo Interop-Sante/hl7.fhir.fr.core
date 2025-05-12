@@ -24,9 +24,9 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetOrganizationIdentifierType (extensible)
 
-* identifier ^slicing.discriminator[0].type = ##value
+* identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "system"
-* identifier ^slicing.discriminator[1].type = ##value
+* identifier ^slicing.discriminator[1].type = #value
 * identifier ^slicing.discriminator[1].path = "type"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier.system #value"
