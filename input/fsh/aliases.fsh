@@ -67,16 +67,7 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 
-// opencimi
-Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasMethodVS
-Alias: $ValueSet-respiratoryRateMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/respiratoryRateMeasMethodVS
-Alias: $ValueSet-sPO2BodyLocationVS = http://hl7.org/fhir/us/vitals/ValueSet/sPO2BodyLocationVS
-Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
-Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bodyTempMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/heartRateMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heightLengthMeasMethodVS = http://hl7.org/fhir/us/vitals/ValueSet/heightLengthMeasMethodVS
-Alias: $ValueSet-bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/us/vitals/ValueSet/bpmeasbodylocationprecoord
-Alias: $ValueSet-bp-measurement-method = http://hl7.org/fhir/us/vitals/ValueSet/bpMeasMethodVS
+
 
 // ###############
 // # FrCore link #
