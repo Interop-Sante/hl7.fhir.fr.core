@@ -36,7 +36,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.system ^example[0].label = "OID de l'ANS de gestion des organisations (1.2.250.1.71.4.2.2) suivi du FINESS suivi de la branche z qui gère les id de venue/mouvements si l'établissement n'a pas d'OID (sinon utilisation de l'OID de l'établissement)"
 * identifier.system ^example[=].valueUri = "1.2.250.1.71.4.2.2.1330780321"
 * identifier.system ^example[+].label = "autre solution, utilisation d'une URL"
-* identifier.system ^example[=].valueUri = "http://hopitalTest.fr/fhir/namingsystem/encounters"
+* identifier.system ^example[=].valueUri = "http://encounter-identifier-system.org"
 * identifier.value 1..
 * identifier.assigner only Reference(FRCoreOrganizationProfile)
 
