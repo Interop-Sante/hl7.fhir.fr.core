@@ -6,7 +6,7 @@
 
 [Modifications apportées dans la release 2.1.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1) :
 
-* Add patient ins slices for test and demo nir, separate SIREN & SIRET slices [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163)
+* PatientINS: ajout des slices de test et demo pour le NIR, Organization: séparation des slices SIREN & SIRET [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163)
 * Mise à jour du discriminant d'Organization [#166](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/166)
 * Suppression des tags MS (copier coller erroné de l'annuaire santé) [#171](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/171
 * Relaxation cardinalité FrPatient.identifier[PI] à 0..* au lieu de 0..1 [#172](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/172)
