@@ -7,8 +7,8 @@ Description: "Admission type"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #RM "Rétrocession de médicament"
-* #IE "Prestation inter-établissements"
+* #RM "Rétrocession de médicament" "Rétrocession de médicament"
+* #IE "Prestation inter-établissements" "Prestation inter-établissements"
 
 // SCS profile
 * ^experimental = false

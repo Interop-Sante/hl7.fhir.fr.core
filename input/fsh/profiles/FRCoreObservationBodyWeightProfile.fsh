@@ -23,6 +23,4 @@ Description: "French profile of body weight based on the FHIR profil BodyWeightM
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
 
-* method from $fr-core-weight-measurement-method (example)
-
 * value[x] ^slicing.rules = #open

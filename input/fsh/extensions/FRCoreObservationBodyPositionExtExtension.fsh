@@ -5,4 +5,4 @@ Description: "Extension CIMI (upgardée en FHIR R4) définie dans le contexte du
 * ^context.type = #element
 * ^context.expression = "Observation"
 * value[x] only CodeableConcept
-* value[x] from $ValueSet-bodyPositionVS (example)
+* value[x] from FRCoreValueSetBodyPosition (example)

@@ -26,6 +26,6 @@ Description: """French profile for the ObservationResprate profil (described in 
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
 
-* method from $ValueSet-respiratoryRateMeasMethodVS (example)
+* method from FRCoreValueSetRespiratoryRateMeasurementMethod (example)
 
 * value[x] ^slicing.rules = #open
