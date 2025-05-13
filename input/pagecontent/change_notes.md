@@ -61,7 +61,7 @@
 * Ajout des workflows [#55](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/55)
 * Ajout des données dans l'ensemble des meta.profile [#59](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/59)
 * Mise à jour de Patient.identifier.type [#58](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/58)
-* FrPattient : Mise à jour du titre [#15](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/15)
+* FrPatient : Mise à jour du titre [#15](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/15)
 * Suppression classnotes [#65](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/65)
 * Suppression slice identityReliability [#57](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/57)
 * Création d'un dossier datatype-profiles [#66](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/66)
