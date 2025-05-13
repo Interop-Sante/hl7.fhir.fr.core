@@ -4,14 +4,26 @@ Lien permanent de la release : https://hl7.fr/ig/fhir/core/2.2.0
 
 Modifications apportées dans la release [2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
-
 ### Release 2.1.0 de l'Implementation Guide FRCore
 
 Lien permanent de la release : https://hl7.fr/ig/fhir/core/2.1.0
 
 Modifications apportées dans la release [2.1.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1) :
 
-
+* Add patient ins slices for test and demo nir, separate SIREN & SIRET slices [PR #163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163)
+* Mise à jour du discriminant d'Organization [PR #166](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/166)
+* Suppression des tags MS (copier coller erroné de l'annuaire santé) [PR #171](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/171
+* Relaxation cardinalité FrPatient.identifier[PI] à 0..* au lieu de 0..1 [PR #172](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/172)
+* Mise à jour de la page index et préparation pour publication [PR #174](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/174)
+* Ajour d'une description du profil FrPractitioner : comment l'utiliser ? [PR #175](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/175)
+* Mise à jour de l'URL de la TRE R13 [PR #176](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/176)
+* Update practitioner qualification discriminator [PR #180](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/180)
+* Préparation publication 2.1.0 [PR #183](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/183)
+* Ajout de la page à propos [PR #182](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/182)
+* Fusion des deux profils PractitionerRole en un seul FRCorePractitionerRole [PR #61](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/61 )
+* Add MS Tag to FrCorePatientINS [PR #167](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/167)
+* Uniformisation des noms de profils pour avoir le format FRCore[...] [PR #179](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/179)
+* Ajout d'une intro note pour le profil Patient INS [PR #169](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169)
 
 ### Release 2.0.1 de l'Implementation Guide FRCore
 
