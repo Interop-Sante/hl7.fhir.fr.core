@@ -1,10 +1,10 @@
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 
-Modifications apportées dans la release [2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
+[Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
-Modifications apportées dans la release [2.1.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1) :
+[Modifications apportées dans la release 2.1.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1) :
 
 * Add patient ins slices for test and demo nir, separate SIREN & SIRET slices [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163)
 * Mise à jour du discriminant d'Organization [#166](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/166)
@@ -23,13 +23,13 @@ Modifications apportées dans la release [2.1.0](https://github.com/Interop-Sant
 
 ### [Release 2.0.1](https://hl7.fr/ig/fhir/core/2.0.1) de l'Implementation Guide FRCore
 
-Modifications apportées dans la release [2.0.1](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11) :
+[Modifications apportées dans la release 2.0.1](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11) :
 
 * Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization [#152](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152)
 
 ### [Release 2.0.0](https://hl7.fr/ig/fhir/core/2.0.0) de l'Implementation Guide FRCore
 
-Modifications apportées dans la release [2.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1) :
+[Modifications apportées dans la release 2.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1) :
 
 * Update list (ref. IHE PAM France 2.10) [#68](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/68)
 * Fusion des extensions Patient identity : method collection & reliability [#67](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/67)
