@@ -23,7 +23,7 @@
 
 ### [Release 2.0.1](https://hl7.fr/ig/fhir/core/2.0.1) de l'Implementation Guide FRCore
 
-[Modifications apportées dans la release 2.0.1](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11) :
+[Modifications apportées dans la release 2.0.1](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1) :
 
 * Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization [#152](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152)
 
