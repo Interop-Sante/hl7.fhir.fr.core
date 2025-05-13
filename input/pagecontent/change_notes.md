@@ -8,7 +8,7 @@
 
 * PatientINS: ajout des slices de test et demo pour le NIR, Organization: séparation des slices SIREN & SIRET [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163)
 * Mise à jour du discriminant d'Organization [#166](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/166)
-* Suppression des tags MS (copier coller erroné de l'annuaire santé) [#171](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/171
+* Suppression des tags MS (copier coller erroné de l'annuaire santé) [#171](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/171)
 * Relaxation cardinalité FrPatient.identifier[PI] à 0..* au lieu de 0..1 [#172](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/172)
 * Mise à jour de la page index et préparation pour publication [#174](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/174)
 * Ajour d'une description du profil FrPractitioner : comment l'utiliser ? [#175](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/175)
@@ -16,7 +16,7 @@
 * Update practitioner qualification discriminator [#180](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/180)
 * Préparation publication 2.1.0 [#183](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/183)
 * Ajout de la page à propos [#182](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/182)
-* Fusion des deux profils PractitionerRole en un seul FRCorePractitionerRole [#61](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/61 )
+* Fusion des deux profils PractitionerRole en un seul FRCorePractitionerRole [#61](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/61)
 * Add MS Tag to FrCorePatientINS [#167](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/167)
 * Uniformisation des noms de profils pour avoir le format FRCore[...] [#179](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/179)
 * Ajout d'une intro note pour le profil Patient INS [#169](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169)
