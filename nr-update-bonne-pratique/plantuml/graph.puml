@@ -437,6 +437,7 @@ package IG #DDDDDD{
              Patient.extension:birthdateUpdateIndicator => <&plus>[0..1]
              Patient.extension:birthPlace => <&plus>[0..1]
              Patient.extension:birthPlace.value[x] => <&plus>[None..None]
+             Patient.extension:multipleBirth => <&plus>[0..1]
              Patient.identifier => [None..None]
              Patient.identifier.type => [None..None]
              Patient.identifier:NSS => [0..1]
@@ -617,6 +618,7 @@ package IG #DDDDDD{
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientDeathPlaceExtension
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientBirthdateUpdateIndicatorExtension
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreAddressProfile
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientMultipleBirthExtension
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientBirthListGivenName
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientContactIdentifierExtension
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreCommentExtension
@@ -950,6 +952,12 @@ package IG #DDDDDD{
           Extension.value[x] => [None..None]
         } 
         class FRCoreUsePeriodExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCorePatientMultipleBirthExtension{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
