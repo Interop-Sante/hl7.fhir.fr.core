@@ -103,6 +103,9 @@
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
   </li>
   <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
     <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
@@ -229,7 +232,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#champ-dapplication" id="markdown-toc-champ-dapplication">Champ d’application</a></li>
   <li><a href="#choix-de-la-version-du-standard-fhir" id="markdown-toc-choix-de-la-version-du-standard-fhir">Choix de la version du standard FHIR</a></li>
   <li><a href="#gouvernance" id="markdown-toc-gouvernance">Gouvernance</a></li>
@@ -255,15 +257,16 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 </p>
 </blockquote>
 
-<h3 id="introduction">Introduction</h3>
-
 <p>Ce guide de mise en œuvre est fourni pour <strong>soutenir l’utilisation de FHIR® en France</strong>. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant <strong>l’échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux</strong>.</p>
 
-<p>On y retrouve :</p>
+<p>Les profils FHIR de ce guide d’implémentation sont volontairement très peu contraignants et ne répondent pas à des cas d’usages spécifiques, l’objectif de ce guide d’implémentation est de proposer un socle commun pour l’ensemble des échanges de données utilisant le standard FHIR en France.
+Par exemple, ce guide indique comment modéliser un patient FHIR en France (contenant l’identifiant national de santé (INS)), le professionnel de santé (contenant l’identifiant national de professionnel de santé (IDNatPS)), …</p>
+
+<p>Ainsi, on y retrouve :</p>
 
 <ul>
-  <li>Orientations sur les ressources essentielles profilées pour la France</li>
-  <li>Extensions nécessaires à l’utilisation locale en France.</li>
+  <li>Les ressources essentielles profilées pour la France</li>
+  <li>Les extensions nécessaires à l’utilisation locale en France.</li>
 </ul>
 
 <h3 id="champ-dapplication">Champ d’application</h3>
@@ -419,7 +422,7 @@ Il est également à noter que le choix national de la version FHIR utilisée de
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:30+0000">2025-05-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:49+0000">2025-05-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

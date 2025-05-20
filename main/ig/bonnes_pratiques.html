@@ -103,6 +103,9 @@
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
   </li>
   <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
     <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
@@ -150,7 +153,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="autres_ressources.html">next&gt;</a>
+          | <a href="known_problems.html">next&gt;</a>
 
           </span>
 
@@ -188,8 +191,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#bonnes-pratiques-dusage-du-guide-dimplémentation" id="markdown-toc-bonnes-pratiques-dusage-du-guide-dimplémentation">Bonnes pratiques d’usage du guide d’implémentation</a></li>
+  <li><a href="#les-pratiques-de-nommage-des-artifacts-fhir-dinteropsanté-hl7-france-et-de-frcore" id="markdown-toc-les-pratiques-de-nommage-des-artifacts-fhir-dinteropsanté-hl7-france-et-de-frcore">Les pratiques de nommage des artifacts FHIR d’InteropSanté (HL7 France) et de FrCore</a></li>
+</ul>
+
 </div>
 <h3 id="bonnes-pratiques-dusage-du-guide-dimplémentation">Bonnes pratiques d’usage du guide d’implémentation</h3>
 
@@ -203,6 +210,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <p>Il est conseillé de favoriser l’usage des identifiants métiers pour faciliter l’identification de la ressource en dehors du serveur.</p>
+
+<h3 id="les-pratiques-de-nommage-des-artifacts-fhir-dinteropsanté-hl7-france-et-de-frcore">Les pratiques de nommage des artifacts FHIR d’InteropSanté (HL7 France) et de FrCore</h3>
+
+<p>Les pratiques de nommages d’InteropSanté pour les artifacts FHIR se basent sur les <a href="https://interop.esante.gouv.fr/ig/documentation/bonnes_pratiques_modeler.html">bonnes pratiques définies par l’ANS</a>.</p>
+
+<h4 id="exemples-frcore">Exemples FrCore</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th><strong>Paramètre</strong></th>
+      <th><strong>Objet concerné</strong></th>
+      <th><strong>Exemple fr-core</strong></th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ressources de conformité</td>
+      <td>fr-core-patient</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>ressources de conformité</td>
+      <td>FR Core Patient Profile</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>ressources de conformité</td>
+      <td>FRCorePatientProfile</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>ressources de conformité </td>
+      <td>[base]/[ResourceType]/[id] (généré automatiquement par sushi). A noter que [ResourceType] doit respecter le nom et la casse des ressources définies dans FHIR core (ex: StructureDefinition).</td>
+      <td>https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient</td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td>SearchParameter</td>
+      <td>toujours en minuscule, mots séparés par des tirets “-“ si besoin</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -235,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="autres_ressources.html">next&gt;</a>
+                <a href="known_problems.html">next&gt;</a>
 
               </td>
             </tr>
@@ -245,7 +301,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:30+0000">2025-05-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:49+0000">2025-05-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
