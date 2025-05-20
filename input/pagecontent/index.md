@@ -17,14 +17,15 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 </blockquote>
 {% endif %}
 
-### Introduction
-
 Ce guide de mise en œuvre est fourni pour **soutenir l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux**.
 
-On y retrouve :
+Les profils FHIR de ce guide d'implémentation sont volontairement très peu contraignants et ne répondent pas à des cas d'usages spécifiques, l'objectif de ce guide d'implémentation est de proposer un socle commun pour l'ensemble des échanges de données utilisant le standard FHIR en France.
+Par exemple, ce guide indique comment modéliser un patient FHIR en France (contenant l'identifiant national de santé (INS)), le professionnel de santé (contenant l'identifiant national de professionnel de santé (IDNatPS)), ...
 
-* Orientations sur les ressources essentielles profilées pour la France
-* Extensions nécessaires à l'utilisation locale en France.
+Ainsi, on y retrouve :
+
+* Les ressources essentielles profilées pour la France
+* Les extensions nécessaires à l'utilisation locale en France.
 
 ### Champ d'application
 
