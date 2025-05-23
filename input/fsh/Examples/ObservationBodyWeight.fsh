@@ -5,7 +5,7 @@ Description: "Exemple de ressource Observation pour décrire le poids du patient
 * status = #final
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"
-* performer  = Reference(FRCorePractitionerExample)
+* performer = Reference(FRCorePractitionerExample)
 * effectiveDateTime = "2022-11-06"
 * valueQuantity.value = 96
 * valueQuantity.code = #kg
