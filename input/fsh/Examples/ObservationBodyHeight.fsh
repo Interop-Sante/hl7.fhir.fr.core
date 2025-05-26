@@ -4,7 +4,7 @@ Usage: #example
 Description: "Exemple de ressource Observation pour décrire la taille du patient"
 * status = #final
 * subject = Reference(FRCorePatientExample)
-* performer  = Reference(FRCorePractitionerExample)
+* performer = Reference(FRCorePractitionerExample)
 * effectiveDateTime = "1999-07-02"
 * valueQuantity.value = 185 
 * valueQuantity.code = #cm

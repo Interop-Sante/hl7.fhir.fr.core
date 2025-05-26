@@ -34,4 +34,4 @@ Les pratiques de nommages d'InteropSanté pour les artifacts FHIR se basent sur 
 
 ### Plus d'informations
 
-Vous trouverez davantage d'informations autour des pratiques d'implémentation et de modélisation des guides d'implémentation sur l'IG Documentation de l'Agence du Numérique en Santé (https://interop.esante.gouv.fr/ig/documentation/)
+Vous trouverez davantage d'informations autour des pratiques d'implémentation et de modélisation des guides d'implémentation sur l'[IG Documentation](https://interop.esante.gouv.fr/ig/documentation) de l'Agence du Numérique en Santé.

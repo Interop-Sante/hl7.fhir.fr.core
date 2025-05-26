@@ -6,7 +6,7 @@ Description: "Exemple de ressource Observation Pression artérielle"
 * subject = Reference(FRCorePatientExample)
   * type = "Patient"
 * effectiveDateTime = "2012-09-17"
-* performer  = Reference(FRCorePractitionerExample)
+* performer = Reference(FRCorePractitionerExample)
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = $SCT#17137000	"Structure of brachial artery (body structure)"
