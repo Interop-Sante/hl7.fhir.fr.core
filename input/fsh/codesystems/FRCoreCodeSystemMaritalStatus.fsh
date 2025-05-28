@@ -7,7 +7,7 @@ Description: "Marital status"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #PACS "PACS"
+* #PACS "PACS" "PACS"
 
 // SCS profile
 * ^experimental = false

@@ -21,10 +21,10 @@ Description: """Profil de la ressource Practitionner pour la France."""
 
 * identifier.type from FRCoreValueSetPractitionerIdentifierType (extensible)
 
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Slice based on the identifier.system pattern"
+* identifier ^slicing.description = "Slice based on the identifier.system value"
 
 * identifier contains idNatPs 0..1 and rpps 0..*
 

@@ -25,6 +25,6 @@ Title: "FR Core Observation Body Height Profile"
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
-* method from $ValueSet-heightLengthMeasMethodVS (example)
+* method from FRCoreValueSetHeightMeasurementMethod (example)
 
 * value[x] ^slicing.rules = #open

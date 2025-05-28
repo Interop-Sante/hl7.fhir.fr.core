@@ -1,7 +1,8 @@
 
-Instance: ExampleFRCorePatient001
+Instance: FRCorePatientExample
 InstanceOf: fr-core-patient-ins
 Usage: #example
+Description: "Exemple de ressource Patient"
 
 // identityReliability
 * extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445#VALI

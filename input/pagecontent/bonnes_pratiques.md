@@ -1,6 +1,8 @@
-### Bonnes pratiques d'usage du guide d'implémentation
+Cette page indique les bonnes pratiques d'usage du guide d’implémentation, pour une utilisation cohérente, efficace et conforme au standard FHIR et aux spécificités nationales.
 
-#### Les identifiants techniques vs les identifiants métiers
+### Les bonnes pratiques d'implémentation
+
+#### Les identifiants techniques et les identifiants métiers
 
 En FHIR, il y a plusieurs types d'identifiants :
 
@@ -9,11 +11,17 @@ En FHIR, il y a plusieurs types d'identifiants :
 
 Il est conseillé de favoriser l'usage des identifiants métiers pour faciliter l'identification de la ressource en dehors du serveur.
 
-### Les pratiques de nommage des artifacts FHIR d'InteropSanté (HL7 France) et de FrCore
+### Les bonnes pratiques de rédaction des guides d'implémentation
+
+#### Les Pull Requests
+
+Les Pull Requests (PR) GitHub sont un outil de travail collaboratif, elles permettent de proposer les changements avant de les valider officiellement dans la branche courante. Toute proposition de modification doit passer par une Pull Request, celle-ci doit être validée par au moins une personne avant d'être incluse dans la branche courante
+
+#### Les pratiques de nommage des artifacts FHIR d'InteropSanté (HL7 France) et de FrCore
 
 Les pratiques de nommages d'InteropSanté pour les artifacts FHIR se basent sur les [bonnes pratiques définies par l'ANS](https://interop.esante.gouv.fr/ig/documentation/bonnes_pratiques_modeler.html).
 
-#### Exemples FrCore
+**Exemples FrCore**
 
 | **Paramètre** | **Objet concerné** | **Exemple fr-core** |
 | ----- | ----- | ----- | ----- |
@@ -24,3 +32,6 @@ Les pratiques de nommages d'InteropSanté pour les artifacts FHIR se basent sur 
 | code  | SearchParameter|  toujours en minuscule, mots séparés par des tirets "-" si besoin | - |
 {: .grid }
 
+### Plus d'informations
+
+Vous trouverez davantage d'informations autour des pratiques d'implémentation et de modélisation des guides d'implémentation sur l'[IG Documentation](https://interop.esante.gouv.fr/ig/documentation) de l'Agence du Numérique en Santé.

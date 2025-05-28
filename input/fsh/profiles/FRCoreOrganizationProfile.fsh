@@ -24,12 +24,12 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier.use from IdentifierUse (required)
 * identifier.type from FRCoreValueSetOrganizationIdentifierType (extensible)
 
-* identifier ^slicing.discriminator[0].type = #pattern
+* identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "system"
-* identifier ^slicing.discriminator[1].type = #pattern
+* identifier ^slicing.discriminator[1].type = #value
 * identifier ^slicing.discriminator[1].path = "type"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Slice based on the identifier.system pattern"
+* identifier ^slicing.description = "Slice based on the identifier.system #value"
 
 * identifier contains idNatSt 0..1 and siren 0..* and siret 0..* and finess 0..* and rppsRang 0..*
 
@@ -62,7 +62,7 @@ Description: """Profile of the Organization resource for France. This profile sp
 * identifier[rppsRang].system = "https://rppsrang.esante.gouv.fr"
 
 
-* type ^slicing.discriminator.type = #pattern
+* type ^slicing.discriminator.type = #value
 * type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
 

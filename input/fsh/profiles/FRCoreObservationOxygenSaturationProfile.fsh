@@ -29,8 +29,7 @@ Description: "French profile for Oxygen saturation in Arterial blood. Saturation
 * subject only Reference(Patient or FRCorePatientProfile)
 * encounter only Reference(Encounter or FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
-* bodySite from $ValueSet-sPO2BodyLocationVS (example)
-* bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* bodySite ^binding.extension.valueString = "BodySite"
+
+* bodySite from FRCoreValueSetSPO2BodyLocation (example)
 
 * value[x] ^slicing.rules = #open
