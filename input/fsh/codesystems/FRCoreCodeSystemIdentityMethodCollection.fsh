@@ -6,11 +6,11 @@ Description: "Méthode de collection de l'identité"
 
 * ^caseSensitive = true
 * ^content = #complete
-* #SM	"Saisie manuelle"
-* #CV	"Carte vitale"
-* #INSI	"Téléservice INSI"
-* #CB	"Code à barre"
-* #RFID	"Puce RFID"
+* #SM	"Saisie manuelle" "Saisie manuelle"
+* #CV	"Carte vitale" "Carte vitale"
+* #INSI	"Téléservice INSI" "Téléservice INSI"
+* #CB	"Code à barre" "Code à barre"
+* #RFID	"Puce RFID" "Puce RFID"
 
 // SCS profile
 * ^experimental = false

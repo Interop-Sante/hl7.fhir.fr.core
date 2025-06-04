@@ -1,15 +1,15 @@
 Instance: FRCoreObservationBPExample
 InstanceOf: fr-core-observation-bp
 Usage: #example
+Description: "Exemple de ressource Observation Pression artérielle"
 * status = #final
-* subject = Reference(ExampleFRCorePatient001) "Pierre Durand"
+* subject = Reference(FRCorePatientExample)
   * type = "Patient"
-* performer = Reference(ExampleFRCorePatient001) "Pierre Durand"
 * effectiveDateTime = "2012-09-17"
-* performer  = Reference(https://exampleserver.org/fhir/Practitioner/1) "Dr Langdon"
+* performer = Reference(FRCorePractitionerExample)
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
-* bodySite = https://mos.esante.gouv.fr/NOS/TRE_R309-FMA/FHIR/TRE-R309-FMA#24890 "Bras"
+* bodySite = $SCT#17137000	"Structure of brachial artery (body structure)"
 
 // Systoic BP
 * component[SystolicBP].code = http://loinc.org#8480-6 "Systolic blood pressure"

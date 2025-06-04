@@ -16,9 +16,10 @@ Description: "Cette extension française permet d'associer le type de service av
     duration 0..1
 
 * extension[serviceType] ^short = "Type of the service that has to be performed during the appointment | Typedu service à assurer durant le RDV"
-* extension[serviceType] ^binding.description = "This value set defines an example set of codes of service-types."
+
 * extension[serviceType].value[x] only CodeableConcept
 * extension[serviceType].valueCodeableConcept from ServiceType (example) //TODO : Was extensible before, should we use extensible or example binding ?
+* extension[serviceType].valueCodeableConcept ^binding.description = "This value set defines an example set of codes of service-types."
 
 * extension[duration] ^short = "Duration of the service | durée du service"
 * extension[duration] ^definition = "Duration of the service that has to be performed during the appointment | Durée du service à assurer durant le RDV"

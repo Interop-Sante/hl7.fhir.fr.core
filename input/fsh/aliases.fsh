@@ -1,5 +1,6 @@
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
+Alias: $SCT = http://snomed.info/sct 
 
 // ANS
 Alias: $TRE-R81-Civilite = https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite
@@ -37,15 +38,11 @@ Alias: $TRE-G05-SousSectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_G05-
 Alias: $TRE-R06-SectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP
 
 
-
-Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
+Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
 Alias: $JDV-J129-CategorieEtablissement-RASS = https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS
 Alias: $JDV-J105-EnsembleDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS
 Alias: $JDV-J101-SecteurActivite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS
-Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
-Alias: $JDV-J78-Civilite-RASS = https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS
-
 
 Alias: $JDV-J81-TypeDiplome-RASS = https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS
 Alias: $JDV-J89-CategorieProfessionnelle-RASS = https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS
@@ -68,17 +65,9 @@ Alias: $resprate = http://hl7.org/fhir/StructureDefinition/resprate
 Alias: $oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
-Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 
-// opencimi
-Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS
-Alias: $ValueSet-respiratoryRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS
-Alias: $ValueSet-sPO2BodyLocationVS = http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS
-Alias: $ValueSet-bodyPositionVS = http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS
-Alias: $ValueSet-bodyTempMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heartRateMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS
-Alias: $ValueSet-heightLengthMeasMethodVS = http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS
+
 
 // ###############
 // # FrCore link #
@@ -104,15 +93,8 @@ Alias: $fr-practitioner-role-exercice = https://hl7.fr/ig/fhir/core/ValueSet/fr-
 Alias: $fr-practitioner-specialty = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty
 Alias: $fr-core-mode-validation-identite = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identite
 Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position
-Alias: $fr-core-practitioner-profession = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession
 Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle
 Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
-Alias: $fr-core-heart-rate-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method
-Alias: $fr-core-bp-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method
-Alias: $fr-core-weight-measurement-method = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method
-Alias: $fr-core-heart-rate-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position
-
-
 
 
 // SD

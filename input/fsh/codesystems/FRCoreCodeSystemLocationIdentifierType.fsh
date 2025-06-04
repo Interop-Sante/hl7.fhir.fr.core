@@ -7,10 +7,10 @@ Description: "Location identifier type"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
-* #INTRN "Identifiant interne"
-* #EXTRN "Identifiant externe"
-* #GLBL "Identifiant global"
-* #IDNST "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
+* #INTRN "Identifiant interne" "Identifiant interne"
+* #EXTRN "Identifiant externe" "Identifiant externe"
+* #GLBL "Identifiant global" "Identifiant global"
+* #IDNST "Identification nationale de structure définie par l'ANS dans le CI-SIS" "Identification nationale de structure définie par l'ANS dans le CI-SIS"
 
 // SCS profile
 * ^experimental = false

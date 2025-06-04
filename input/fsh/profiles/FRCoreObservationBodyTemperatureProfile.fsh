@@ -24,6 +24,6 @@ Description: "French profile for body temperature.
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
 * performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreOrganizationProfile or PractitionerRole)
-* bodySite from $ValueSet-bodyTempMeasBodyLocationPrecoordVS (example)
+* bodySite from FRCoreValueSetBodyTemperatureMeasurementBodyLocation (example)
 
 * value[x] ^slicing.rules = #open
