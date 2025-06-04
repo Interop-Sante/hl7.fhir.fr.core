@@ -511,18 +511,11 @@
     "name" : "FRCorePractitionerProfile"
   },
   {
-    "id" : "fr-core-practitioner-profession",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession",
-    "version" : "2.1.0",
-    "name" : "FRCorePractitionerProfessionExtension"
-  },
-  {
     "id" : "fr-core-practitioner-role",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role",
     "version" : "2.1.0",
-    "name" : "FRCorePractitionerRole"
+    "name" : "FRCorePractitionerRoleProfile"
   },
   {
     "id" : "fr-core-practitioner-specialty",
@@ -567,13 +560,6 @@
     "name" : "FRCoreSlotProfile"
   },
   {
-    "id" : "fr-core-slot-date",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot-date",
-    "version" : "2.1.0",
-    "name" : "FRCoreSlotDateExtension"
-  },
-  {
     "id" : "fr-core-use-period",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period",
@@ -586,6 +572,27 @@
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule",
     "version" : "2.1.0",
     "name" : "FRCoreValueSetAvailabilityTimeRule"
+  },
+  {
+    "id" : "fr-core-vs-body-position",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetBodyPosition"
+  },
+  {
+    "id" : "fr-core-vs-bp-meas-body-location",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetBloodPressureMeasurementBodyLocation"
+  },
+  {
+    "id" : "fr-core-vs-bp-meas-method",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetBloodPressureMeasurementMethod"
   },
   {
     "id" : "fr-core-vs-bp-method",
@@ -607,13 +614,6 @@
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-exercice-rass",
     "version" : "2.1.0",
     "name" : "FRCoreValueSetCivilityExerciceRASS"
-  },
-  {
-    "id" : "fr-core-vs-civility-rass",
-    "type" : "ValueSet",
-    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-rass",
-    "version" : "2.1.0",
-    "name" : "FRCoreValueSetCivilityRASS"
   },
   {
     "id" : "fr-core-vs-cog-commune-pays",
@@ -665,11 +665,32 @@
     "name" : "FRCoreValueSetEncounterType"
   },
   {
+    "id" : "fr-core-vs-heartrate-body-location",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-body-location",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetHeartRateMeasurementBodyLocation"
+  },
+  {
+    "id" : "fr-core-vs-heartrate-measurement-method",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetHeartRateMeasurementMethod"
+  },
+  {
     "id" : "fr-core-vs-height-body-position",
     "type" : "ValueSet",
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position",
     "version" : "2.1.0",
     "name" : "FRCoreValueSetHeightBodyPosition"
+  },
+  {
+    "id" : "fr-core-vs-height-meas-method",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetHeightMeasurementMethod"
   },
   {
     "id" : "fr-core-vs-identity-method-collection",
@@ -819,6 +840,13 @@
     "name" : "FRCoreValueSetPatientRelationType"
   },
   {
+    "id" : "fr-core-vs-respiratory-rate-meas-method",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetRespiratoryRateMeasurementMethod"
+  },
+  {
     "id" : "fr-core-vs-schedule-type",
     "type" : "ValueSet",
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type",
@@ -833,10 +861,24 @@
     "name" : "FRCoreValueSetUnavailabilityReason"
   },
   {
+    "id" : "fr-core-vs-spo2-body-location",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetSPO2BodyLocation"
+  },
+  {
     "id" : "fr-core-vs-title",
     "type" : "ValueSet",
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title",
     "version" : "2.1.0",
     "name" : "FRCoreValueSetTitle"
+  },
+  {
+    "id" : "fr-core-vsbody-temp-meas-body-location",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location",
+    "version" : "2.1.0",
+    "name" : "FRCoreValueSetBodyTemperatureMeasurementBodyLocation"
   }
 ]

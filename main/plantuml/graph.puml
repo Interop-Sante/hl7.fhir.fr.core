@@ -123,7 +123,6 @@ package IG #DDDDDD{
 
         class FRCoreObservationBmiProfile{
 
-             Observation => [None..None]
              Observation.meta.profile => [None..None]
              Observation.meta.profile:fr-canonical => [0..1]
              Observation.extension => [None..None]
@@ -153,7 +152,6 @@ package IG #DDDDDD{
 
         class FRCoreObservationBodyTemperatureProfile{
 
-             Observation => [None..None]
              Observation.meta.profile => [None..None]
              Observation.meta.profile:fr-canonical => [0..1]
              Observation.extension => [None..None]
@@ -169,7 +167,6 @@ package IG #DDDDDD{
 
         class FRCoreObservationBodyWeightProfile{
 
-             Observation => [None..None]
              Observation.meta.profile => [None..None]
              Observation.meta.profile:fr-canonical => [0..1]
              Observation.extension => [None..None]
@@ -179,12 +176,10 @@ package IG #DDDDDD{
              Observation.encounter => [None..None]
              Observation.performer => [None..None]
              Observation.value[x] => [None..None]
-             Observation.method => [None..None]
         } 
 
         class FRCoreObservationBpProfile{
 
-             Observation => [None..None]
              Observation.meta.profile => [None..None]
              Observation.meta.profile:fr-canonical => [0..1]
              Observation.extension => [None..None]
@@ -199,22 +194,18 @@ package IG #DDDDDD{
              Observation.component:SystolicBP => [None..None]
              Observation.component:SystolicBP.code.coding => [1..None]
              Observation.component:SystolicBP.value[x] => [None..None]
-             Observation.component:SystolicBP.referenceRange => [None..None]
              Observation.component:DiastolicBP => [None..None]
              Observation.component:DiastolicBP.code.coding => [1..None]
              Observation.component:DiastolicBP.value[x] => [None..None]
-             Observation.component:DiastolicBP.referenceRange => [None..None]
              Observation.component:MeanBP => [0..1]
              Observation.component:MeanBP.code.coding => [1..None]
              Observation.component:MeanBP.code.coding:MBPCode => [1..1]
              Observation.component:MeanBP.code.coding:MBPCode.system => [1..None]
              Observation.component:MeanBP.code.coding:MBPCode.code => [1..None]
-             Observation.component:MeanBP.referenceRange => [None..None]
         } 
 
         class FRCoreObservationHeadCircumProfile{
 
-             Observation => [None..None]
              Observation.meta.profile => [None..None]
              Observation.meta.profile:fr-canonical => [0..1]
              Observation.extension => [None..None]
@@ -228,7 +219,6 @@ package IG #DDDDDD{
 
         class FRCoreObservationHeartRateProfile{
 
-             Observation => [None..None]
              Observation.meta.profile => [None..None]
              Observation.meta.profile:fr-canonical => [0..1]
              Observation.extension => [None..None]
@@ -241,9 +231,7 @@ package IG #DDDDDD{
              Observation.performer => [None..None]
              Observation.value[x] => [None..None]
              Observation.bodySite => [None..None]
-             Observation.bodySite.coding => [None..None]
              Observation.method => [None..None]
-             Observation.method.coding => [None..None]
         } 
 
         class FRCoreObservationRespRateProfile{
@@ -490,7 +478,7 @@ package IG #DDDDDD{
              Patient.managingOrganization => [None..None]
         } 
 
-        class FRCorePractitionerRole{
+        class FRCorePractitionerRoleProfile{
 
              PractitionerRole.meta.profile => [None..None]
              PractitionerRole.meta.profile:fr-canonical => [0..1]
@@ -622,7 +610,7 @@ package IG #DDDDDD{
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientBirthListGivenName
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientContactIdentifierExtension
      FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreCommentExtension
-     FRCorePractitionerRole -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
+     FRCorePractitionerRoleProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
      FRCorePractitionerProfile -[#black,dashed,thickness=2]-> FRCorePractitionerSpecialtyExtension
      FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
      FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreScheduleAvailabilityTimeExtension
@@ -828,12 +816,6 @@ package IG #DDDDDD{
           Extension.url => [None..None]
           Extension.value[x] => [None..0]
         } 
-        class FRCorePractitionerProfessionExtension{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-        } 
         class FRCorePractitionerSpecialtyExtension{
 
           Extension.extension => [None..0]
@@ -945,12 +927,6 @@ package IG #DDDDDD{
           Extension.url => [None..None]
           Extension.value[x] => [None..0]
         } 
-        class FRCoreSlotDateExtension{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-        } 
         class FRCoreUsePeriodExtension{
 
           Extension.extension => [None..0]
@@ -1030,9 +1006,45 @@ package IG #DDDDDD{
 
      FRCoreLocationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetLocationPhysicalType
 
+        class FRCoreValueSetHeightMeasurementMethod  
+
+     FRCoreObservationBodyHeightProfile -[#black,dotted,thickness=2]-> FRCoreValueSetHeightMeasurementMethod
+
+        class FRCoreValueSetBodyPosition  
+
+     FRCoreObservationBodyPositionExtExtension -[#black,dotted,thickness=2]-> FRCoreValueSetBodyPosition
+
+        class FRCoreValueSetBodyTemperatureMeasurementBodyLocation  
+
+     FRCoreObservationBodyTemperatureProfile -[#black,dotted,thickness=2]-> FRCoreValueSetBodyTemperatureMeasurementBodyLocation
+
+        class FRCoreValueSetSPO2BodyLocation  
+
+     FRCoreObservationBpProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSPO2BodyLocation
+
+        class FRCoreValueSetBloodPressureMeasurementMethod  
+
+     FRCoreObservationBpProfile -[#black,dotted,thickness=2]-> FRCoreValueSetBloodPressureMeasurementMethod
+
+        class FRCoreValueSetHeartRateMeasurementBodyLocation  
+
+     FRCoreObservationHeartRateProfile -[#black,dotted,thickness=2]-> FRCoreValueSetHeartRateMeasurementBodyLocation
+
+        class FRCoreValueSetHeartRateMeasurementMethod  
+
+     FRCoreObservationHeartRateProfile -[#black,dotted,thickness=2]-> FRCoreValueSetHeartRateMeasurementMethod
+
         class FRCoreValueSetHeightBodyPosition  
 
      FRCoreObservationHeightBodyPositionExtension -[#black,dotted,thickness=2]-> FRCoreValueSetHeightBodyPosition
+
+        class FRCoreValueSetRespiratoryRateMeasurementMethod  
+
+     FRCoreObservationRespRateProfile -[#black,dotted,thickness=2]-> FRCoreValueSetRespiratoryRateMeasurementMethod
+
+        class FRCoreValueSetSPO2BodyLocation  
+
+     FRCoreObservationOxygenSaturationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSPO2BodyLocation
 
         class FRCoreValueSetOrganizationActivityField  
 
@@ -1104,11 +1116,11 @@ package IG #DDDDDD{
 
         class FRCoreValueSetPractitionerRoleExercice  
 
-     FRCorePractitionerRole -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerRoleExercice
+     FRCorePractitionerRoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerRoleExercice
 
         class FRCoreValueSetPractitionerSpecialty  
 
-     FRCorePractitionerRole -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+     FRCorePractitionerRoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
 
         class FRCoreValueSetPractitionerSpecialty  
 
@@ -1239,7 +1251,7 @@ package "Ressources de base" #palegreen {
 
  class "PractitionerRole" as  classa6482460b0b027d14fe848816788acb6 
 
-    classa6482460b0b027d14fe848816788acb6 --> FRCorePractitionerRole
+    classa6482460b0b027d14fe848816788acb6 --> FRCorePractitionerRoleProfile
 
  class "Practitioner" as  classe1fdce734a2fd9596ad930bdb139ca06 
 

@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "hl7.fhir.fr.core"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><a name=\"hl7.fhir.fr.core-fr-FR\"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><a name=\"hl7.fhir.fr.core-fr-FR\"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.1.0"] ; # 
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-05-20T13:48:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-04T13:32:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -58,7 +58,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.3.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -81,7 +81,7 @@
        fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.3.0" ]
+     fhir:version [ fhir:v "1.5.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -126,6 +126,36 @@
          fhir:value [
            a fhir:string ;
            fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-expansion-params"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "../../expansion-params.json"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "pin-canonicals"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "pin-multiples"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -530,6 +560,36 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:code ;
+           fhir:v "path-expansion-params"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "../../expansion-params.json"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "pin-canonicals"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "pin-multiples"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
            fhir:v "autoload-resources"
          ]
        ] [
@@ -876,18 +936,72 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Patient"
+           fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExampleFRCorePatient001> ;
-         fhir:reference [ fhir:v "Patient/ExampleFRCorePatient001" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-bp-meas-body-location" ]
        ] ;
-       fhir:name [ fhir:v "ExampleFRCorePatient001" ] ;
+       fhir:name [ fhir:v "Blood Pressure Measurement Body Location Precoordinated value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured." ] ;
        fhir:example [
-         a fhir:canonical ;
-         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-bp-meas-method" ]
+       ] ;
+       fhir:name [ fhir:v "Blood Pressure Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how a blood pressure was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-body-position" ]
+       ] ;
+       fhir:name [ fhir:v "Body Position value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values the position in which the individual was in during a measurement." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vsbody-temp-meas-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Body Temperature Measurement Body Location value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe where on the body the temperature was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2054,6 +2168,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-birthdate-update-indicator" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient Birthdate Update Indicator Extension" ] ;
+       fhir:description [ fhir:v "Indicateur booléen de mise à jour de la date de naissance" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2144,24 +2259,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core Patient Profile" ] ;
        fhir:description [ fhir:v "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\n\r\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-profession" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Profession Extension" ] ;
-       fhir:description [ fhir:v "This extension adds the element \"profession\" to the FHIR Practitioner resource." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2297,24 +2394,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot-date> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-slot-date" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Slot Date Extension" ] ;
-       fhir:description [ fhir:v "Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.\n\rThis extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2341,6 +2420,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-use-period" ]
        ] ;
        fhir:name [ fhir:v "FR Core Use Period Extension" ] ;
+       fhir:description [ fhir:v "Extension permettant d'indiquer la période d'utilisation d'une Location." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2431,24 +2511,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Civility exercice RASS" ] ;
        fhir:description [ fhir:v "Civilités d'exercice d'un professionnel du RASS" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-rass> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-civility-rass" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Civility RASS" ] ;
-       fhir:description [ fhir:v "Civilités des personnes physiques du RASS" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3024,6 +3086,7 @@
          fhir:reference [ fhir:v "Appointment/FRCoreAppointmentExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreAppointmentExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Appointment pour décrire un état de rendez-vous médical" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"^^xsd:anyURI ;
@@ -3042,6 +3105,7 @@
          fhir:reference [ fhir:v "Encounter/FRCoreEncounterExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreEncounterExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"^^xsd:anyURI ;
@@ -3060,6 +3124,7 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationBMIExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationBMIExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"^^xsd:anyURI ;
@@ -3078,6 +3143,7 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationBodyHeightExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationBodyHeightExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation pour décrire la taille du patient" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"^^xsd:anyURI ;
@@ -3096,6 +3162,7 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationBodyTemperatureExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationBodyTemperatureExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation pour décrire la température du patient" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"^^xsd:anyURI ;
@@ -3114,6 +3181,7 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationBodyWeightExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationBodyWeightExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation pour décrire le poids du patient" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"^^xsd:anyURI ;
@@ -3132,6 +3200,7 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationBPExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationBPExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation Pression artérielle" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"^^xsd:anyURI ;
@@ -3150,6 +3219,7 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationHeadCircumExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationHeadCircumExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation pour décrire le périmètre cranien d'un patient" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"^^xsd:anyURI ;
@@ -3168,10 +3238,87 @@
          fhir:reference [ fhir:v "Observation/FRCoreObservationHeartRateExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreObservationHeartRateExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Observation pour décrire la fréquence cardiaque d'un patient" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"^^xsd:anyURI ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Organization/FRCoreOrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/FRCoreOrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreOrganizationExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Organization pour décrire un hôpital" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientExample> ;
+         fhir:reference [ fhir:v "Patient/FRCorePatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCorePatientExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Practitioner/FRCorePractitionerExample> ;
+         fhir:reference [ fhir:v "Practitioner/FRCorePractitionerExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCorePractitionerExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l'ordre." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/PractitionerRole/FRCorePractitionerRoleExample> ;
+         fhir:reference [ fhir:v "PractitionerRole/FRCorePractitionerRoleExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCorePractitionerRoleExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role>
        ]
      ] [
        fhir:extension ( [
@@ -3186,6 +3333,7 @@
          fhir:reference [ fhir:v "Schedule/FRCoreScheduleExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreScheduleExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Schedule pour décrire un agenda." ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"^^xsd:anyURI ;
@@ -3204,10 +3352,83 @@
          fhir:reference [ fhir:v "Slot/FRCoreSlotExample" ]
        ] ;
        fhir:name [ fhir:v "FRCoreSlotExample" ] ;
+       fhir:description [ fhir:v "Exemple de ressource Slot." ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"^^xsd:anyURI ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-heartrate-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Heart Rate Measurement Body Location Precoordinated value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe where on the body the heart rate was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-heartrate-measurement-method" ]
+       ] ;
+       fhir:name [ fhir:v "Heart Rate Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how the heart rate was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-height-meas-method" ]
+       ] ;
+       fhir:name [ fhir:v "Height Length Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how the height/length was measured." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-spo2-body-location" ]
+       ] ;
+       fhir:name [ fhir:v "Oxygen Saturation Body Location value set" ] ;
+       fhir:description [ fhir:v "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -3223,6 +3444,24 @@
        ] ;
        fhir:name [ fhir:v "Rang Gémellaire" ] ;
        fhir:description [ fhir:v "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-respiratory-rate-meas-method" ]
+       ] ;
+       fhir:name [ fhir:v "Respiratory Rate Measurement Method value set" ] ;
+       fhir:description [ fhir:v "SELECT SNOMED CT code system values that describe how the respiratory rate was measured." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3282,7 +3521,7 @@
            a fhir:url ;
            fhir:v "bonnes_pratiques.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Bonnes pratiques" ] ;
+         fhir:title [ fhir:v "Bonnes pratiques d'usage du guide d'implémentation" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -3311,36 +3550,35 @@
            fhir:v "autres_ressources.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Autres Ressources" ] ;
-         fhir:generation [ fhir:v "markdown" ] ;
-         fhir:page ( [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:url ;
-               fhir:v "downloads.html"^^xsd:anyURI
-             ]
-           ] ) ;
-           fhir:name [
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
              a fhir:url ;
              fhir:v "downloads.html"^^xsd:anyURI
-           ] ;
-           fhir:title [ fhir:v "Téléchargements et usages" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [
-               a fhir:url ;
-               fhir:v "a_propos.html"^^xsd:anyURI
-             ]
-           ] ) ;
-           fhir:name [
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Téléchargements et usages" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
              a fhir:url ;
              fhir:v "a_propos.html"^^xsd:anyURI
-           ] ;
-           fhir:title [ fhir:v "A propos" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] )
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "a_propos.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "A propos" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;

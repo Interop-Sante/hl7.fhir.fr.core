@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.fr.core"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name="hl7.fhir.fr.core"> </a><a name="hchl7.fhir.fr.core"> </a><a name="hl7.fhir.fr.core-fr-FR"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name="hl7.fhir.fr.core"> </a><a name="hchl7.fhir.fr.core"> </a><a name="hl7.fhir.fr.core-fr-FR"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
   </text>
   <url value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
   <version value="2.1.0"/>
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="active"/>
-  <date value="2025-05-20T13:48:39+00:00"/>
+  <date value="2025-06-04T13:32:30+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -43,7 +43,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.3.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -56,7 +56,7 @@
   <dependsOn id="ans_fr_nos">
     <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
     <packageId value="ans.fr.nos"/>
-    <version value="1.3.0"/>
+    <version value="1.5.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -81,6 +81,22 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -296,6 +312,22 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -480,13 +512,47 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Patient/ExampleFRCorePatient001"/>
+        <reference value="ValueSet/fr-core-vs-bp-meas-body-location"/>
       </reference>
-      <name value="ExampleFRCorePatient001"/>
-      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+      <name value="Blood Pressure Measurement Body Location Precoordinated value set"/>
+      <description value="SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-bp-meas-method"/>
+      </reference>
+      <name value="Blood Pressure Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how a blood pressure was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-body-position"/>
+      </reference>
+      <name value="Body Position value set"/>
+      <description value="SELECT SNOMED CT code system values the position in which the individual was in during a measurement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vsbody-temp-meas-body-location"/>
+      </reference>
+      <name value="Body Temperature Measurement Body Location value set"/>
+      <description value="SELECT SNOMED CT code system values that describe where on the body the temperature was measured."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1200,6 +1266,7 @@
         <reference value="StructureDefinition/fr-core-patient-birthdate-update-indicator"/>
       </reference>
       <name value="FR Core Patient Birthdate Update Indicator Extension"/>
+      <description value="Indicateur booléen de mise à jour de la date de naissance"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1255,17 +1322,6 @@
       </reference>
       <name value="FR Core Patient Profile"/>
       <description value="Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.&#xA;&#xD;&#xA;Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-practitioner-profession"/>
-      </reference>
-      <name value="FR Core Practitioner Profession Extension"/>
-      <description value="This extension adds the element &quot;profession&quot; to the FHIR Practitioner resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1347,17 +1403,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-slot-date"/>
-      </reference>
-      <name value="FR Core Slot Date Extension"/>
-      <description value="Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.&#xA;&#xD;This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1375,6 +1420,7 @@
         <reference value="StructureDefinition/fr-core-use-period"/>
       </reference>
       <name value="FR Core Use Period Extension"/>
+      <description value="Extension permettant d'indiquer la période d'utilisation d'une Location."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1430,17 +1476,6 @@
       </reference>
       <name value="FR Core ValueSet Civility exercice RASS"/>
       <description value="Civilités d'exercice d'un professionnel du RASS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-civility-rass"/>
-      </reference>
-      <name value="FR Core ValueSet Civility RASS"/>
-      <description value="Civilités des personnes physiques du RASS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1792,6 +1827,7 @@
         <reference value="Appointment/FRCoreAppointmentExample"/>
       </reference>
       <name value="FRCoreAppointmentExample"/>
+      <description value="Exemple de ressource Appointment pour décrire un état de rendez-vous médical"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"/>
     </resource>
     <resource>
@@ -1802,6 +1838,7 @@
         <reference value="Encounter/FRCoreEncounterExample"/>
       </reference>
       <name value="FRCoreEncounterExample"/>
+      <description value="Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"/>
     </resource>
     <resource>
@@ -1812,6 +1849,7 @@
         <reference value="Observation/FRCoreObservationBMIExample"/>
       </reference>
       <name value="FRCoreObservationBMIExample"/>
+      <description value="Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"/>
     </resource>
     <resource>
@@ -1822,6 +1860,7 @@
         <reference value="Observation/FRCoreObservationBodyHeightExample"/>
       </reference>
       <name value="FRCoreObservationBodyHeightExample"/>
+      <description value="Exemple de ressource Observation pour décrire la taille du patient"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"/>
     </resource>
     <resource>
@@ -1832,6 +1871,7 @@
         <reference value="Observation/FRCoreObservationBodyTemperatureExample"/>
       </reference>
       <name value="FRCoreObservationBodyTemperatureExample"/>
+      <description value="Exemple de ressource Observation pour décrire la température du patient"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"/>
     </resource>
     <resource>
@@ -1842,6 +1882,7 @@
         <reference value="Observation/FRCoreObservationBodyWeightExample"/>
       </reference>
       <name value="FRCoreObservationBodyWeightExample"/>
+      <description value="Exemple de ressource Observation pour décrire le poids du patient"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"/>
     </resource>
     <resource>
@@ -1852,6 +1893,7 @@
         <reference value="Observation/FRCoreObservationBPExample"/>
       </reference>
       <name value="FRCoreObservationBPExample"/>
+      <description value="Exemple de ressource Observation Pression artérielle"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"/>
     </resource>
     <resource>
@@ -1862,6 +1904,7 @@
         <reference value="Observation/FRCoreObservationHeadCircumExample"/>
       </reference>
       <name value="FRCoreObservationHeadCircumExample"/>
+      <description value="Exemple de ressource Observation pour décrire le périmètre cranien d'un patient"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"/>
     </resource>
     <resource>
@@ -1872,7 +1915,52 @@
         <reference value="Observation/FRCoreObservationHeartRateExample"/>
       </reference>
       <name value="FRCoreObservationHeartRateExample"/>
+      <description value="Exemple de ressource Observation pour décrire la fréquence cardiaque d'un patient"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/FRCoreOrganizationExample"/>
+      </reference>
+      <name value="FRCoreOrganizationExample"/>
+      <description value="Exemple de ressource Organization pour décrire un hôpital"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/FRCorePatientExample"/>
+      </reference>
+      <name value="FRCorePatientExample"/>
+      <description value="Exemple de ressource Patient"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/FRCorePractitionerExample"/>
+      </reference>
+      <name value="FRCorePractitionerExample"/>
+      <description value="Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l'ordre."/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/FRCorePractitionerRoleExample"/>
+      </reference>
+      <name value="FRCorePractitionerRoleExample"/>
+      <description value="Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1882,6 +1970,7 @@
         <reference value="Schedule/FRCoreScheduleExample"/>
       </reference>
       <name value="FRCoreScheduleExample"/>
+      <description value="Exemple de ressource Schedule pour décrire un agenda."/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"/>
     </resource>
     <resource>
@@ -1892,7 +1981,52 @@
         <reference value="Slot/FRCoreSlotExample"/>
       </reference>
       <name value="FRCoreSlotExample"/>
+      <description value="Exemple de ressource Slot."/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-heartrate-body-location"/>
+      </reference>
+      <name value="Heart Rate Measurement Body Location Precoordinated value set"/>
+      <description value="SELECT SNOMED CT code system values that describe where on the body the heart rate was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-heartrate-measurement-method"/>
+      </reference>
+      <name value="Heart Rate Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how the heart rate was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-height-meas-method"/>
+      </reference>
+      <name value="Height Length Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how the height/length was measured."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-spo2-body-location"/>
+      </reference>
+      <name value="Oxygen Saturation Body Location value set"/>
+      <description value="Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1903,6 +2037,17 @@
       </reference>
       <name value="Rang Gémellaire"/>
       <description value="Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-respiratory-rate-meas-method"/>
+      </reference>
+      <name value="Respiratory Rate Measurement Method value set"/>
+      <description value="SELECT SNOMED CT code system values that describe how the respiratory rate was measured."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -1933,7 +2078,7 @@
           <valueUrl value="bonnes_pratiques.html"/>
         </extension>
         <nameUrl value="bonnes_pratiques.html"/>
-        <title value="Bonnes pratiques"/>
+        <title value="Bonnes pratiques d'usage du guide d'implémentation"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1951,22 +2096,22 @@
         <nameUrl value="autres_ressources.html"/>
         <title value="Autres Ressources"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="downloads.html"/>
-          </extension>
-          <nameUrl value="downloads.html"/>
-          <title value="Téléchargements et usages"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="a_propos.html"/>
-          </extension>
-          <nameUrl value="a_propos.html"/>
-          <title value="A propos"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Téléchargements et usages"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="a_propos.html"/>
+        </extension>
+        <nameUrl value="a_propos.html"/>
+        <title value="A propos"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

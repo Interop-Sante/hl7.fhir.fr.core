@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -175,7 +175,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation Fr Core - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation Fr Core - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hl7.fr/ig/fhir/core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -778,7 +778,7 @@ Organization description</p>
                   title="StructureDefinition/fr-core-patient-birthdate-update-indicator">FR Core Patient Birthdate Update Indicator Extension</a>
             </td>
             <td>
-
+<p>Indicateur booléen de mise à jour de la date de naissance</p>
 </td>
          </tr>
          <tr>
@@ -813,15 +813,6 @@ Organization description</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-practitioner-profession.html"
-                  title="StructureDefinition/fr-core-practitioner-profession">FR Core Practitioner Profession Extension</a>
-            </td>
-            <td>
-<p>This extension adds the element “profession” to the FHIR Practitioner resource.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-core-practitioner-specialty.html"
                   title="StructureDefinition/fr-core-practitioner-specialty">FR Core Practitioner Specialty Extension</a>
             </td>
@@ -851,21 +842,11 @@ Organization description</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-slot-date.html"
-                  title="StructureDefinition/fr-core-slot-date">FR Core Slot Date Extension</a>
-            </td>
-            <td>
-<p>Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.
-This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-core-use-period.html"
                   title="StructureDefinition/fr-core-use-period">FR Core Use Period Extension</a>
             </td>
             <td>
-
+<p>Extension permettant d’indiquer la période d’utilisation d’une Location.</p>
 </td>
          </tr>
          <tr>
@@ -885,6 +866,42 @@ Organization description</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-bp-meas-body-location.html"
+                  title="ValueSet/fr-core-vs-bp-meas-body-location">Blood Pressure Measurement Body Location Precoordinated value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-bp-meas-method.html"
+                  title="ValueSet/fr-core-vs-bp-meas-method">Blood Pressure Measurement Method value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe how a blood pressure was measured.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-body-position.html"
+                  title="ValueSet/fr-core-vs-body-position">Body Position value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values the position in which the individual was in during a measurement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vsbody-temp-meas-body-location.html"
+                  title="ValueSet/fr-core-vsbody-temp-meas-body-location">Body Temperature Measurement Body Location value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe where on the body the temperature was measured.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-availability-time-rule.html"
@@ -929,15 +946,6 @@ Specification of the recurrent periods</p>
             </td>
             <td>
 <p>The Patient or person civility</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-civility-rass.html"
-                  title="ValueSet/fr-core-vs-civility-rass">FR Core ValueSet Civility RASS</a>
-            </td>
-            <td>
-<p>Civilités des personnes physiques du RASS</p>
 </td>
          </tr>
          <tr>
@@ -1229,6 +1237,51 @@ A Schedule type</p>
 <p>ValueSet relation type</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-heartrate-body-location.html"
+                  title="ValueSet/fr-core-vs-heartrate-body-location">Heart Rate Measurement Body Location Precoordinated value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe where on the body the heart rate was measured.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-heartrate-measurement-method.html"
+                  title="ValueSet/fr-core-vs-heartrate-measurement-method">Heart Rate Measurement Method value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe how the heart rate was measured.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-height-meas-method.html"
+                  title="ValueSet/fr-core-vs-height-meas-method">Height Length Measurement Method value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe how the height/length was measured.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-spo2-body-location.html"
+                  title="ValueSet/fr-core-vs-spo2-body-location">Oxygen Saturation Body Location value set</a>
+            </td>
+            <td>
+<p>Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-respiratory-rate-meas-method.html"
+                  title="ValueSet/fr-core-vs-respiratory-rate-meas-method">Respiratory Rate Measurement Method value set</a>
+            </td>
+            <td>
+<p>SELECT SNOMED CT code system values that describe how the respiratory rate was measured.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="5"> </a>
@@ -1409,74 +1462,137 @@ A Schedule type</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-ExampleFRCorePatient001.html"
-                  title="Patient/ExampleFRCorePatient001">ExampleFRCorePatient001</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Appointment-FRCoreAppointmentExample.html"
                   title="Appointment/FRCoreAppointmentExample">FRCoreAppointmentExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Appointment pour décrire un état de rendez-vous médical</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Encounter-FRCoreEncounterExample.html"
                   title="Encounter/FRCoreEncounterExample">FRCoreEncounterExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBMIExample.html"
                   title="Observation/FRCoreObservationBMIExample">FRCoreObservationBMIExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBPExample.html"
                   title="Observation/FRCoreObservationBPExample">FRCoreObservationBPExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation Pression artérielle</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBodyHeightExample.html"
                   title="Observation/FRCoreObservationBodyHeightExample">FRCoreObservationBodyHeightExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation pour décrire la taille du patient</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBodyTemperatureExample.html"
                   title="Observation/FRCoreObservationBodyTemperatureExample">FRCoreObservationBodyTemperatureExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation pour décrire la température du patient</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBodyWeightExample.html"
                   title="Observation/FRCoreObservationBodyWeightExample">FRCoreObservationBodyWeightExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation pour décrire le poids du patient</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationHeadCircumExample.html"
                   title="Observation/FRCoreObservationHeadCircumExample">FRCoreObservationHeadCircumExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation pour décrire le périmètre cranien d’un patient</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationHeartRateExample.html"
                   title="Observation/FRCoreObservationHeartRateExample">FRCoreObservationHeartRateExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Observation pour décrire la fréquence cardiaque d’un patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-FRCoreOrganizationExample.html"
+                  title="Organization/FRCoreOrganizationExample">FRCoreOrganizationExample</a>
+            </td>
+            <td>
+<p>Exemple de ressource Organization pour décrire un hôpital</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-FRCorePatientExample.html"
+                  title="Patient/FRCorePatientExample">FRCorePatientExample</a>
+            </td>
+            <td>
+<p>Exemple de ressource Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-FRCorePractitionerExample.html"
+                  title="Practitioner/FRCorePractitionerExample">FRCorePractitionerExample</a>
+            </td>
+            <td>
+<p>Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l’ordre.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-FRCorePractitionerRoleExample.html"
+                  title="PractitionerRole/FRCorePractitionerRoleExample">FRCorePractitionerRoleExample</a>
+            </td>
+            <td>
+<p>Exemple de ressource PractitionerRole pour décrire le rôle d’un practitien (situation d’exercice)</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Schedule-FRCoreScheduleExample.html"
                   title="Schedule/FRCoreScheduleExample">FRCoreScheduleExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Schedule pour décrire un agenda.</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Slot-FRCoreSlotExample.html" title="Slot/FRCoreSlotExample">FRCoreSlotExample</a>
             </td>
+            <td>
+<p>Exemple de ressource Slot.</p>
+</td>
          </tr>
       </tbody>
    </table>
@@ -1520,7 +1636,7 @@ A Schedule type</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:49+0000">2025-05-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 4, 2025 13:33+0000">2025-06-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
