@@ -1,7 +1,7 @@
 Profile: FRCorePatientProfile
 Parent: Patient
 Id: fr-core-patient
-Title: "FR Core Patient Profile"
+Title: "FR Core Patient Profile (All Use Case)"
 Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.
 \r\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"""
 
@@ -20,8 +20,8 @@ Description: """Profile of the Patient resource for France. This profile specifi
     fr-core-patient-nationality named nationality 0..1 and
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
-    FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
-    http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1 and
+    FRCorePatientBirthdateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
+    $patient-birthPlace named birthPlace 0..1 and
     FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
@@ -34,30 +34,45 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier ^slicing.rules = #open
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
 
-
-
 * identifier contains
     NSS 0..1 and
+    INS-NIR 0..* and
+    INS-NIA 0..* and
     INS-C 0..* and
     NDP 0..1 and
     PI 0..* and
     RRI 0..*
 
-
 * identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
 * identifier[NSS].use 1..
 * identifier[NSS].use = #official
-* identifier[NSS].type 1..
 * identifier[NSS].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
 * identifier[NSS].system 1..
 * identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[NSS].value 1..
 
+* identifier[INS-NIR] ^short = "INS-NIR - The patient national health identifier INS obtained by requesting the national patient identification service (CNAM) called the INSi teleservice. Identifiant national de santé (NIR) du patient INS provenant du téléservice INSi (service national d'identification des patients (CNAM))"
+* identifier[INS-NIR].use 1..
+* identifier[INS-NIR].use = #official
+* identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
+* identifier[INS-NIR].system 1..
+* identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
+* identifier[INS-NIR].system ^short = "Autorité d'affectation des INS-NIR"
+* identifier[INS-NIR].value 1..
+
+* identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
+* identifier[INS-NIA].use 1..
+* identifier[INS-NIA].use = #temp
+* identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
+* identifier[INS-NIA].system 1..
+* identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
+* identifier[INS-NIA].system ^short = "Autorité d'affectation des INS-NIA"
+* identifier[INS-NIA].value 1..
+
 * identifier[INS-C] ^short = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use 1..
 * identifier[INS-C].use = #secondary
-* identifier[INS-C].type 1..
-* identifier[INS-C].type = $fr-core-v2-0203#INS-C "Identifiant National de Santé Calculé"
+* identifier[INS-C].type = $fr-core-v2-0203#INS-C //"Identifiant National de Santé Calculé"
 * identifier[INS-C].system 1..
 * identifier[INS-C].system = "urn:oid:1.2.250.1.213.1.4.2"
 * identifier[INS-C].value 1..
@@ -65,25 +80,24 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier[NDP] ^short = "French pharmaceutical Record Identifier | Numéro de Dossier Pharmaceutique français. Celui-ci est unique."
 * identifier[NDP].use 1..
 * identifier[NDP].use = #secondary
-* identifier[NDP].type 1..
-* identifier[NDP].type = $fr-core-v2-0203#NDP "Identifiant du patient au Dossier Pharmaceutique"
+* identifier[NDP].type = $fr-core-v2-0203#NDP //"Identifiant du patient au Dossier Pharmaceutique"
 * identifier[NDP].system 1..
 * identifier[NDP].system = "urn:oid:1.2.250.1.176.1.2"
 * identifier[NDP].value 1..
 
-* identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
+* identifier[PI] ^short = "Hospital assigned patient identifier | Identifiant Patient Permanent (IPP)."
 * identifier[PI].use 1..
+* identifier[PI].use from FRCoreValueSetPatientIdentifierUse
 * identifier[PI].use = #usual
-* identifier[PI].type 1..
-* identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
+* identifier[PI].use ^comment = "La valeur old permet d'identifier des IPP désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
+* identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI //"Patient internal identifier"
 * identifier[PI].system 1..
 * identifier[PI].value 1..
 
 * identifier[RRI] ^short = "Regional Registry ID | Identifiant régional"
 * identifier[RRI].use 1..
 * identifier[RRI].use = #secondary
-* identifier[RRI].type 1..
-* identifier[RRI].type = http://terminology.hl7.org/CodeSystem/v2-0203#RRI "Regional registry ID"
+* identifier[RRI].type = http://terminology.hl7.org/CodeSystem/v2-0203#RRI //"Regional registry ID"
 * identifier[RRI].system 1..
 * identifier[RRI].value 1..
 
@@ -136,21 +150,21 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
-    Role 0..1 and
-    RelationType 0..1
+    role 0..1 and
+    relationType 0..1
 // TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
-* contact.relationship[Role] from FRCoreValueSetPatientContactRole (extensible) 
+* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[Role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
+* contact.relationship[role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
 
-* contact.relationship[RelationType] from FRCoreValueSetPatientRelationType (extensible) 
+* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[RelationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
+* contact.relationship[relationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
 
 * contact.name only FRCoreHumanNameProfile
 * contact.telecom only FRCoreContactPointProfile
-* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or PractitionerRole)
-* managingOrganization only Reference(FRCoreOrganizationProfile)
+* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or Practitioner or Organization or PractitionerRole)
+* managingOrganization only Reference(FRCoreOrganizationProfile or Organization)
