@@ -70,6 +70,9 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $bpMeasBodyLocationPrecoordVS = http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
+Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: $identifier-use-vs = http://hl7.org/fhir/ValueSet/identifier-use
+Alias: $identifier-use-cs = http://hl7.org/fhir/identifier-use
 
 // opencimi
 Alias: $ValueSet-heartRateMeasMethodVS = http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS
