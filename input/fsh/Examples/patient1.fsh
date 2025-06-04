@@ -11,13 +11,10 @@ Usage: #example
 * extension[birthPlace].valueAddress.city = "Ambléon"
 
 
-//* identifier[INS-NIR].use = #official
-//* identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].value = "123456789012244"
 
 * active = true
 
-//* name[officialName].use = #official
 * name[officialName].family = "Durand"
 * name[officialName].given[0] = "Pierre"
 * name[officialName].extension[birth-list-given-name].valueString = "Pierre Yves"
