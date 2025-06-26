@@ -1,5 +1,5 @@
 Profile: FRCoreOrganizationPoleProfile
-Parent: Organization
+Parent: OrganizationEu
 Id: fr-core-organization-pole
 Title: "FR Core Organization Pole Profile"
 Description: "FR Core Organization Pole Profile"
