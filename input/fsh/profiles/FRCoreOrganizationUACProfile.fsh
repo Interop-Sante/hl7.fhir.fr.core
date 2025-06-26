@@ -1,5 +1,5 @@
 Profile: FRCoreOrganizationUACProfile
-Parent: Organization
+Parent: OrganizationEu
 Id: fr-core-organization-uac
 Title: "FR Core Organization UAC Profile"
 Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.

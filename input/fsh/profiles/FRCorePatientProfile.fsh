@@ -1,5 +1,5 @@
 Profile: FRCorePatientProfile
-Parent: Patient
+Parent: PatientEu
 Id: fr-core-patient
 Title: "FR Core Patient Profile"
 Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.
@@ -21,7 +21,6 @@ Description: """Profile of the Patient resource for France. This profile specifi
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
-    http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1 and
     FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
@@ -152,5 +151,5 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * contact.name only FRCoreHumanNameProfile
 * contact.telecom only FRCoreContactPointProfile
-* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or PractitionerRole)
+* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or FRCorePractitionerRoleProfile)
 * managingOrganization only Reference(FRCoreOrganizationProfile)
