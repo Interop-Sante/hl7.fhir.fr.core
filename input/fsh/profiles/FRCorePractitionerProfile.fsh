@@ -141,10 +141,10 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification[savoirFaire][professionMedecin].code.coding ^slicing.discriminator.path = "$this"
 * qualification[savoirFaire][professionMedecin].code.coding ^slicing.rules = #closed
 * qualification[savoirFaire][professionMedecin].code.coding contains savoirFaire 0..1
-* qualification[savoirFaire][professionMedecin].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionMedecin (required)
+* qualification[savoirFaire][professionMedecin].code.coding[savoirFaire] from FRCoreValueSetSavoirFaireProfessionMedecin (required)
 
 * qualification[savoirFaire][professionMedecin].code.coding contains typeSavoirFaire 0..1
-* qualification[savoirFaire][professionMedecin].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionMedecin (required)
+* qualification[savoirFaire][professionMedecin].code.coding[typeSavoirFaire] from FRCoreValueSetTypeSavoirFaireProfessionMedecin (required)
 
 // Profession 21 (Pharmacien)
 * qualification[savoirFaire][professionPharmacien] ^short = "Savoir-faire pour la profession 21 (Pharmacien)."
@@ -152,10 +152,10 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification[savoirFaire][professionPharmacien].code.coding ^slicing.discriminator.path = "$this"
 * qualification[savoirFaire][professionPharmacien].code.coding ^slicing.rules = #closed
 * qualification[savoirFaire][professionPharmacien].code.coding contains savoirFaire 0..1
-* qualification[savoirFaire][professionPharmacien].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionPharmacien (required)
+* qualification[savoirFaire][professionPharmacien].code.coding[savoirFaire] from FRCoreValueSetSavoirFaireProfessionPharmacien (required)
 
 * qualification[savoirFaire][professionPharmacien].code.coding contains typeSavoirFaire 0..1
-* qualification[savoirFaire][professionPharmacien].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionPharmacien (required)
+* qualification[savoirFaire][professionPharmacien].code.coding[typeSavoirFaire] from FRCoreValueSetTypeSavoirFaireProfessionPharmacien (required)
 
 // Profession 40 (Chirurgien-Dentiste)
 * qualification[savoirFaire][professionChirurgienDentiste] ^short = "Savoir-faire pour la profession 40 (Chirurgien-Dentiste)."
@@ -163,10 +163,10 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification[savoirFaire][professionChirurgienDentiste].code.coding ^slicing.discriminator.path = "$this"
 * qualification[savoirFaire][professionChirurgienDentiste].code.coding ^slicing.rules = #closed
 * qualification[savoirFaire][professionChirurgienDentiste].code.coding contains savoirFaire 0..1
-* qualification[savoirFaire][professionChirurgienDentiste].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionChirurgienDentiste (required)
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding[savoirFaire] from FRCoreValueSetSavoirFaireProfessionChirurgienDentiste (required)
 
 * qualification[savoirFaire][professionChirurgienDentiste].code.coding contains typeSavoirFaire 0..1
-* qualification[savoirFaire][professionChirurgienDentiste].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionChirurgienDentiste (required)
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding[typeSavoirFaire] from FRCoreValueSetTypeSavoirFaireProfessionChirurgienDentiste (required)
 
 // Profession 60 (Infirmier)
 * qualification[savoirFaire][professionInfirmier] ^short = "Savoir-faire pour la profession 60 (Infirmier)"
@@ -174,7 +174,7 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * qualification[savoirFaire][professionInfirmier].code.coding ^slicing.discriminator.path = "$this"
 * qualification[savoirFaire][professionInfirmier].code.coding ^slicing.rules = #closed
 * qualification[savoirFaire][professionInfirmier].code.coding contains savoirFaire 0..1
-* qualification[savoirFaire][professionInfirmier].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionInfirmier (required)
+* qualification[savoirFaire][professionInfirmier].code.coding[savoirFaire] from FRCoreValueSetSavoirFaireProfessionInfirmier (required)
 
 * qualification[savoirFaire][professionInfirmier].code.coding contains typeSavoirFaire 0..1
-* qualification[savoirFaire][professionInfirmier].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionInfirmier (required)
+* qualification[savoirFaire][professionInfirmier].code.coding[typeSavoirFaire] from FRCoreValueSetTypeSavoirFaireProfessionInfirmier (required)
