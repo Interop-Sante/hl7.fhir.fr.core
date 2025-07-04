@@ -4,6 +4,6 @@ Title: "Fr ValueSet Savoir-faire Profession Infirmier"
 Description: "Savoir-faire pour la profession 60 (Infirmier)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
-* include codes from system $TRE_R38-SpecialiteOrdinale
+* include codes from system $TRE-R38-SpecialiteOrdinale
 
 * ^experimental = false
