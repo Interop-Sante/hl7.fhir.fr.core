@@ -1,0 +1,1326 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class FRCoreAddressProfile{
+
+             Address.extension:inseeCode => <&plus>[0..1]
+             Address.city => [None..None]
+             Address.country => [None..None]
+        } 
+
+        class FRCoreAppointmentProfile{
+
+             Appointment.meta.profile => [None..None]
+             Appointment.meta.profile:fr-canonical => [0..1]
+             Appointment.extension => [None..None]
+             Appointment.extension:appointmentOperator => <&plus>[0..1]
+             Appointment.specialty => [None..None]
+             Appointment.slot => [None..None]
+             Appointment.participant.actor => [None..None]
+        } 
+
+        class FRCoreContactPointProfile{
+
+             ContactPoint.extension:emailType => <&plus>[0..1]
+             ContactPoint.system => [1..None]
+             ContactPoint.value => [1..None]
+        } 
+
+        class FRCoreEncounterProfile{
+
+             Encounter.meta.profile => [None..None]
+             Encounter.meta.profile:fr-canonical => [0..1]
+             Encounter.extension => [None..None]
+             Encounter.extension:estimatedDischargeDate => <&plus>[0..1]
+             Encounter.identifier => [1..None]
+             Encounter.identifier.type => [1..None]
+             Encounter.identifier.system => [1..None]
+             Encounter.identifier.value => [1..None]
+             Encounter.identifier.assigner => [None..None]
+             Encounter.class.system => [1..None]
+             Encounter.class.code => [1..None]
+             Encounter.type => [None..1]
+             Encounter.subject => [None..None]
+             Encounter.participant => [None..None]
+             Encounter.participant.individual => [None..None]
+             Encounter.appointment => [None..None]
+             Encounter.period => [1..None]
+             Encounter.account => [None..1]
+             Encounter.hospitalization.preAdmissionIdentifier => [None..None]
+             Encounter.hospitalization.preAdmissionIdentifier.type => [1..None]
+             Encounter.hospitalization.preAdmissionIdentifier.system => [1..None]
+             Encounter.hospitalization.preAdmissionIdentifier.value => [1..None]
+             Encounter.hospitalization.preAdmissionIdentifier.assigner => [None..None]
+             Encounter.hospitalization.origin => [None..None]
+             Encounter.hospitalization.reAdmission => [None..None]
+             Encounter.hospitalization.destination => [None..None]
+             Encounter.hospitalization.dischargeDisposition => [None..None]
+             Encounter.location.location => [None..None]
+             Encounter.location.physicalType => [None..None]
+             Encounter.serviceProvider => [None..None]
+             Encounter.partOf => [None..None]
+        } 
+
+        class FRCoreHealthcareServiceProfile{
+
+             HealthcareService.meta.profile => [None..None]
+             HealthcareService.meta.profile:fr-canonical => [0..1]
+             HealthcareService.extension => [None..None]
+             HealthcareService.extension:serviceTypeDuration => <&plus>[0..*]
+             HealthcareService.identifier.use => [None..None]
+             HealthcareService.providedBy => [None..None]
+             HealthcareService.category => [None..1]
+             HealthcareService.specialty => [None..None]
+             HealthcareService.location => [None..None]
+             HealthcareService.telecom => [None..None]
+             HealthcareService.coverageArea => [None..None]
+        } 
+
+        class FRCoreHumanNameProfile{
+
+             HumanName.extension:assemblyOrder => <&plus>[0..1]
+             HumanName.prefix => [None..1]
+             HumanName.suffix => [None..None]
+        } 
+
+        class FRCoreLocationProfile{
+
+             Location.meta.profile => [None..None]
+             Location.meta.profile:fr-canonical => [0..1]
+             Location.extension => [None..None]
+             Location.extension:usePeriod => <&plus>[0..1]
+             Location.identifier => [None..None]
+             Location.identifier.type => [1..None]
+             Location.identifier.system => [1..None]
+             Location.identifier.value => [1..None]
+             Location.identifier.assigner => [None..None]
+             Location.type => [None..1]
+             Location.telecom => [None..None]
+             Location.address => [None..None]
+             Location.physicalType => [None..None]
+             Location.managingOrganization => [None..None]
+             Location.partOf => [None..None]
+             Location.partOf.extension:positionRoom => <&plus>[0..1]
+        } 
+
+        class FRCoreMedicationAdministrationInhaledOxygenProfile{
+
+             MedicationAdministration.meta.profile => [None..None]
+             MedicationAdministration.meta.profile:fr-canonical => [0..1]
+             MedicationAdministration.medication[x] => [None..None]
+             MedicationAdministration.medication[x].coding => [1..1]
+             MedicationAdministration.medication[x].coding.system => [1..None]
+             MedicationAdministration.medication[x].coding.code => [1..None]
+             MedicationAdministration.subject => [None..None]
+             MedicationAdministration.performer.actor => [None..None]
+        } 
+
+        class FRCoreObservationBmiProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+        } 
+
+        class FRCoreObservationBodyHeightProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:bodyposition => <&plus>[0..1]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.method => [None..None]
+        } 
+
+        class FRCoreObservationBodyTemperatureProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:levelOfExertion => <&plus>[0..1]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.bodySite => [None..None]
+        } 
+
+        class FRCoreObservationBodyWeightProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+        } 
+
+        class FRCoreObservationBpProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.encounter => [None..None]
+             Observation.effective[x] => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..0]
+             Observation.bodySite => [None..None]
+             Observation.method => [None..None]
+             Observation.component:SystolicBP => [None..None]
+             Observation.component:SystolicBP.code.coding => [1..None]
+             Observation.component:SystolicBP.value[x] => [None..None]
+             Observation.component:DiastolicBP => [None..None]
+             Observation.component:DiastolicBP.code.coding => [1..None]
+             Observation.component:DiastolicBP.value[x] => [None..None]
+             Observation.component:MeanBP => [0..1]
+             Observation.component:MeanBP.code.coding => [1..None]
+             Observation.component:MeanBP.code.coding:MBPCode => [1..1]
+             Observation.component:MeanBP.code.coding:MBPCode.system => [1..None]
+             Observation.component:MeanBP.code.coding:MBPCode.code => [1..None]
+        } 
+
+        class FRCoreObservationHeadCircumProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+        } 
+
+        class FRCoreObservationHeartRateProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:levelOfExertion => <&plus>[0..1]
+             Observation.extension:bodyPosition => <&plus>[0..1]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.bodySite => [None..None]
+             Observation.method => [None..None]
+        } 
+
+        class FRCoreObservationRespRateProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:bodyPosition => <&plus>[0..1]
+             Observation.extension:levelOfExertion => <&plus>[0..1]
+             Observation.extension:supportingInfo => <&plus>[0..1]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.method => [None..None]
+        } 
+
+        class FRCoreObservationOxygenSaturationProfile{
+
+             Observation => [None..None]
+             Observation.meta.profile => [None..None]
+             Observation.meta.profile:fr-canonical => [0..1]
+             Observation.extension => [None..None]
+             Observation.extension:supportingInfoAdministrationOxygen => <&plus>[0..1]
+             Observation.partOf => [None..1]
+             Observation.partOf.reference => [None..None]
+             Observation.code.coding => [1..None]
+             Observation.subject => [None..None]
+             Observation.encounter => [None..None]
+             Observation.performer => [None..None]
+             Observation.value[x] => [None..None]
+             Observation.bodySite => [None..None]
+        } 
+
+        class FRCoreOrganizationPoleProfile{
+
+             Organization.meta.profile => [None..None]
+             Organization.meta.profile:fr-canonical => [0..1]
+             Organization.extension => [None..None]
+             Organization.extension:shortName => <&plus>[0..1]
+             Organization.extension:description => <&plus>[0..1]
+             Organization.extension:budgetLetter => <&plus>[0..1]
+             Organization.extension:usePeriod => <&plus>[0..1]
+             Organization.identifier.use => [None..None]
+             Organization.identifier.type => [1..None]
+             Organization.identifier.system => [1..None]
+             Organization.identifier.value => [1..None]
+             Organization.type => [None..1]
+             Organization.partOf => [None..None]
+             Organization.partOf.type => [None..None]
+        } 
+
+        class FRCoreOrganizationUACProfile{
+
+             Organization.meta.profile => [None..None]
+             Organization.meta.profile:fr-canonical => [0..1]
+             Organization.extension => [None..None]
+             Organization.extension:shortName => <&plus>[0..1]
+             Organization.extension:description => <&plus>[0..1]
+             Organization.extension:usePeriod => <&plus>[0..1]
+             Organization.identifier.use => [None..None]
+             Organization.identifier.type => [1..None]
+             Organization.identifier.system => [1..None]
+             Organization.identifier.value => [1..None]
+             Organization.type => [None..None]
+             Organization.partOf => [None..None]
+             Organization.partOf.type => [None..None]
+        } 
+
+        class FRCoreOrganizationUFProfile{
+
+             Organization.meta.profile => [None..None]
+             Organization.meta.profile:fr-canonical => [0..1]
+             Organization.extension => [None..None]
+             Organization.extension:shortName => <&plus>[0..1]
+             Organization.extension:description => <&plus>[0..1]
+             Organization.extension:budgetLetter => <&plus>[0..1]
+             Organization.extension:equipmentField => <&plus>[0..*]
+             Organization.extension:activityField => <&plus>[0..1]
+             Organization.extension:external => <&plus>[0..1]
+             Organization.extension:accomodationSpace => <&plus>[0..1]
+             Organization.extension:applicantAct => <&plus>[0..1]
+             Organization.extension:executantAct => <&plus>[0..1]
+             Organization.extension:analysisSection => <&plus>[0..1]
+             Organization.extension:activityType => <&plus>[0..1]
+             Organization.extension:usePeriod => <&plus>[0..1]
+             Organization.identifier.use => [None..None]
+             Organization.identifier.type => [1..None]
+             Organization.identifier.system => [1..None]
+             Organization.identifier.value => [1..None]
+             Organization.type => [None..None]
+             Organization.partOf => [None..None]
+        } 
+
+        class FRCoreOrganizationProfile{
+
+             Organization.meta.profile => [None..None]
+             Organization.meta.profile:fr-canonical => [0..1]
+             Organization.extension => [None..None]
+             Organization.extension:shortName => <&plus>[0..1]
+             Organization.extension:description => <&plus>[0..1]
+             Organization.extension:usePeriod => <&plus>[0..1]
+             Organization.identifier => [None..None]
+             Organization.identifier.use => [None..None]
+             Organization.identifier.type => [None..None]
+             Organization.identifier:idNatSt => [0..1]
+             Organization.identifier:idNatSt.use => [1..None]
+             Organization.identifier:idNatSt.type => [1..None]
+             Organization.identifier:idNatSt.system => [1..None]
+             Organization.identifier:idNatSt.value => [1..None]
+             Organization.identifier:siren => [0..*]
+             Organization.identifier:siren.type => [1..None]
+             Organization.identifier:siren.system => [1..None]
+             Organization.identifier:siret => [0..*]
+             Organization.identifier:siret.type => [1..None]
+             Organization.identifier:siret.system => [1..None]
+             Organization.identifier:finess => [0..*]
+             Organization.identifier:finess.type.coding.system => [None..None]
+             Organization.identifier:finess.type.coding.code => [None..None]
+             Organization.identifier:finess.system => [1..None]
+             Organization.identifier:rppsRang => [0..*]
+             Organization.identifier:rppsRang.type => [1..None]
+             Organization.identifier:rppsRang.system => [1..None]
+             Organization.type => [None..None]
+             Organization.type:organizationType => [0..1]
+             Organization.type:organizationType.coding => [1..1]
+             Organization.type:organizationType.coding.system => [1..None]
+             Organization.type:secteurActiviteRASS => [0..1]
+             Organization.type:secteurActiviteRASS.coding => [1..1]
+             Organization.type:secteurActiviteRASS.coding.system => [1..None]
+             Organization.type:categorieEtablissementRASS => [0..1]
+             Organization.type:categorieEtablissementRASS.coding => [1..1]
+             Organization.type:categorieEtablissementRASS.coding.system => [1..None]
+             Organization.telecom => [None..None]
+             Organization.address => [None..None]
+             Organization.partOf => [None..None]
+             Organization.partOf.type => [None..None]
+             Organization.contact.telecom => [None..None]
+             Organization.contact.address => [None..None]
+        } 
+
+        class FRCorePatientINSProfile{
+
+             Patient => [None..None]
+             Patient.meta.profile:fr-ins-canonical => [0..1]
+             Patient.extension => [2..None]
+             Patient.extension:identityReliability => <&plus>[1..None]
+             Patient.extension:birthPlace => <&plus>[1..None]
+             Patient.extension:birthPlace.value[x].extension => <&plus>[1..None]
+             Patient.extension:birthPlace.value[x].extension:inseeCode => <&plus>[1..None]
+             Patient.identifier => [1..None]
+             Patient.identifier:INS-NIR => [0..*]
+             Patient.identifier:INS-NIR.use => [1..None]
+             Patient.identifier:INS-NIR.type => [1..None]
+             Patient.identifier:INS-NIR.system => [1..None]
+             Patient.identifier:INS-NIR.value => [1..None]
+             Patient.identifier:INS-NIR-TEST => [0..*]
+             Patient.identifier:INS-NIR-TEST.use => [1..None]
+             Patient.identifier:INS-NIR-TEST.type => [1..None]
+             Patient.identifier:INS-NIR-TEST.system => [1..None]
+             Patient.identifier:INS-NIR-TEST.value => [1..None]
+             Patient.identifier:INS-NIR-DEMO => [0..*]
+             Patient.identifier:INS-NIR-DEMO.use => [1..None]
+             Patient.identifier:INS-NIR-DEMO.type => [1..None]
+             Patient.identifier:INS-NIR-DEMO.system => [1..None]
+             Patient.identifier:INS-NIR-DEMO.value => [1..None]
+             Patient.identifier:INS-NIA => [0..*]
+             Patient.identifier:INS-NIA.use => [1..None]
+             Patient.identifier:INS-NIA.type => [1..None]
+             Patient.identifier:INS-NIA.system => [1..None]
+             Patient.identifier:INS-NIA.value => [1..None]
+             Patient.name => [1..None]
+             Patient.name:officialName => [1..1]
+             Patient.name:officialName.extension => [1..None]
+             Patient.name:officialName.extension:birth-list-given-name => <&plus>[1..None]
+             Patient.name:officialName.given => [None..1]
+             Patient.gender => [1..None]
+             Patient.birthDate => [1..None]
+        } 
+
+        class FRCorePatientProfile{
+
+             Patient.meta.profile => [None..None]
+             Patient.meta.profile:fr-canonical => [0..1]
+             Patient.extension => [None..None]
+             Patient.extension:nationality => <&plus>[0..1]
+             Patient.extension:identityReliability => <&plus>[0..*]
+             Patient.extension:deathPlace => <&plus>[0..1]
+             Patient.extension:birthdateUpdateIndicator => <&plus>[0..1]
+             Patient.extension:birthPlace => <&plus>[0..1]
+             Patient.extension:birthPlace.value[x] => <&plus>[None..None]
+             Patient.extension:multipleBirth => <&plus>[0..1]
+             Patient.identifier => [None..None]
+             Patient.identifier.type => [None..None]
+             Patient.identifier:NSS => [0..1]
+             Patient.identifier:NSS.use => [1..None]
+             Patient.identifier:NSS.type => [1..None]
+             Patient.identifier:NSS.system => [1..None]
+             Patient.identifier:NSS.value => [1..None]
+             Patient.identifier:INS-C => [0..*]
+             Patient.identifier:INS-C.use => [1..None]
+             Patient.identifier:INS-C.type => [1..None]
+             Patient.identifier:INS-C.system => [1..None]
+             Patient.identifier:INS-C.value => [1..None]
+             Patient.identifier:NDP => [0..1]
+             Patient.identifier:NDP.use => [1..None]
+             Patient.identifier:NDP.type => [1..None]
+             Patient.identifier:NDP.system => [1..None]
+             Patient.identifier:NDP.value => [1..None]
+             Patient.identifier:PI => [0..*]
+             Patient.identifier:PI.use => [1..None]
+             Patient.identifier:PI.type => [1..None]
+             Patient.identifier:PI.system => [1..None]
+             Patient.identifier:PI.value => [1..None]
+             Patient.identifier:RRI => [0..*]
+             Patient.identifier:RRI.use => [1..None]
+             Patient.identifier:RRI.type => [1..None]
+             Patient.identifier:RRI.system => [1..None]
+             Patient.identifier:RRI.value => [1..None]
+             Patient.name => [None..None]
+             Patient.name:usualName => [0..*]
+             Patient.name:usualName.use => [1..None]
+             Patient.name:officialName => [0..*]
+             Patient.name:officialName.extension:birth-list-given-name => <&plus>[0..1]
+             Patient.name:officialName.use => [1..None]
+             Patient.name:officialName.family => [1..None]
+             Patient.name:officialName.given => [1..None]
+             Patient.telecom => [None..None]
+             Patient.gender => [None..None]
+             Patient.birthDate => [None..None]
+             Patient.address => [None..None]
+             Patient.maritalStatus => [None..None]
+             Patient.contact.extension => [None..None]
+             Patient.contact.extension:contactIdentifier => <&plus>[0..1]
+             Patient.contact.extension:comment => <&plus>[0..1]
+             Patient.contact.relationship => [None..None]
+             Patient.contact.relationship:Role => [0..1]
+             Patient.contact.relationship:RelationType => [0..1]
+             Patient.contact.name => [None..None]
+             Patient.contact.telecom => [None..None]
+             Patient.generalPractitioner => [None..None]
+             Patient.managingOrganization => [None..None]
+        } 
+
+        class FRCorePractitionerRoleProfile{
+
+             PractitionerRole.meta.profile => [None..None]
+             PractitionerRole.meta.profile:fr-canonical => [0..1]
+             PractitionerRole.extension => [None..None]
+             PractitionerRole.extension:serviceTypeDuration => <&plus>[0..*]
+             PractitionerRole.practitioner => [None..None]
+             PractitionerRole.organization => [None..None]
+             PractitionerRole.code => [None..None]
+             PractitionerRole.specialty => [None..None]
+             PractitionerRole.location => [None..None]
+             PractitionerRole.healthcareService => [None..None]
+             PractitionerRole.telecom => [None..None]
+        } 
+
+        class FRCorePractitionerProfile{
+
+             Practitioner.meta.profile => [None..None]
+             Practitioner.meta.profile:fr-canonical => [0..1]
+             Practitioner.extension => [None..None]
+             Practitioner.extension:specialty => <&plus>[0..1]
+             Practitioner.identifier => [None..None]
+             Practitioner.identifier.type => [None..None]
+             Practitioner.identifier:idNatPs => [0..1]
+             Practitioner.identifier:idNatPs.type => [1..None]
+             Practitioner.identifier:idNatPs.system => [1..None]
+             Practitioner.identifier:idNatPs.value => [1..None]
+             Practitioner.identifier:rpps => [0..*]
+             Practitioner.identifier:rpps.type => [1..None]
+             Practitioner.identifier:rpps.system => [1..None]
+             Practitioner.identifier:rpps.value => [1..None]
+             Practitioner.name => [None..None]
+             Practitioner.telecom => [None..None]
+             Practitioner.address => [None..None]
+             Practitioner.qualification => [None..None]
+             Practitioner.qualification:degree => [0..*]
+             Practitioner.qualification:degree.code.coding => [None..None]
+             Practitioner.qualification:degree.code.coding:degreeType => [0..1]
+             Practitioner.qualification:degree.code.coding:degree => [0..1]
+             Practitioner.qualification:exercicePro => [0..1]
+             Practitioner.qualification:exercicePro.code.coding => [None..None]
+             Practitioner.qualification:exercicePro.code.coding:categorieProfession => [0..1]
+             Practitioner.qualification:exercicePro.code.coding:profession => [0..1]
+             Practitioner.qualification:savoirFaire => [0..*]
+             Practitioner.qualification:savoirFaire.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire.code.coding:typeSavoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire.code.coding:savoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionMedecin => [0..1]
+             Practitioner.qualification:savoirFaire/professionMedecin.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire/professionMedecin.code.coding:savoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionMedecin.code.coding:typeSavoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionPharmacien => [0..1]
+             Practitioner.qualification:savoirFaire/professionPharmacien.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire/professionPharmacien.code.coding:savoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionPharmacien.code.coding:typeSavoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionChirurgienDentiste => [0..1]
+             Practitioner.qualification:savoirFaire/professionChirurgienDentiste.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire/professionChirurgienDentiste.code.coding:savoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionChirurgienDentiste.code.coding:typeSavoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionInfirmier => [0..1]
+             Practitioner.qualification:savoirFaire/professionInfirmier.code.coding => [None..None]
+             Practitioner.qualification:savoirFaire/professionInfirmier.code.coding:savoirFaire => [0..1]
+             Practitioner.qualification:savoirFaire/professionInfirmier.code.coding:typeSavoirFaire => [0..1]
+        } 
+
+        class FRCoreRelatedPersonProfile{
+
+             RelatedPerson.meta.profile => [None..None]
+             RelatedPerson.meta.profile:fr-canonical => [0..1]
+             RelatedPerson.identifier => [1..1]
+             RelatedPerson.patient => [None..None]
+             RelatedPerson.relationship => [None..None]
+             RelatedPerson.relationship:Role => [0..1]
+             RelatedPerson.relationship:Role.coding.system => [1..None]
+             RelatedPerson.relationship:RelationType => [0..*]
+             RelatedPerson.relationship:RelationType.coding.system => [1..None]
+             RelatedPerson.name => [None..None]
+             RelatedPerson.telecom => [None..None]
+             RelatedPerson.address => [None..None]
+        } 
+
+        class FRCoreScheduleProfile{
+
+             Schedule.meta.profile => [None..None]
+             Schedule.meta.profile:fr-canonical => [0..1]
+             Schedule.extension => [None..None]
+             Schedule.extension:serviceTypeDuration => <&plus>[0..*]
+             Schedule.extension:availabilityTime => <&plus>[0..*]
+             Schedule.serviceCategory => [None..1]
+             Schedule.serviceType => [None..0]
+             Schedule.specialty => [None..None]
+             Schedule.actor => [None..None]
+        } 
+
+        class FRCoreSlotProfile{
+
+             Slot.meta.profile => [None..None]
+             Slot.meta.profile:fr-canonical => [0..1]
+             Slot.identifier.use => [None..None]
+             Slot.serviceCategory => [None..1]
+             Slot.specialty => [None..None]
+             Slot.schedule => [None..None]
+             Slot.status => [None..None]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     FRCoreAddressProfile -[#black,dashed,thickness=2]-> FRCoreAddressInseeCodeExtension
+     FRCoreAppointmentProfile -[#black,dashed,thickness=2]-> FRCoreAppointmentOperatorExtension
+     FRCoreContactPointProfile -[#black,dashed,thickness=2]-> FRCoreContactPointEmailTypeExtension
+     FRCoreEncounterProfile -[#black,dashed,thickness=2]-> FRCoreEncounterEstimatedDischargeDateExtension
+     FRCoreHealthcareServiceProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
+     FRCoreLocationProfile -[#black,dashed,thickness=2]-> FRCoreUsePeriodExtension
+     FRCoreLocationProfile -[#black,dashed,thickness=2]-> FRCoreLocationPartOfPositionRoomExtension
+     FRCoreObservationBodyHeightProfile -[#black,dashed,thickness=2]-> FRCoreObservationHeightBodyPositionExtension
+     FRCoreObservationBodyTemperatureProfile -[#black,dashed,thickness=2]-> FRCoreObservationLevelOfExertionExtension
+     FRCoreObservationHeartRateProfile -[#black,dashed,thickness=2]-> FRCoreObservationLevelOfExertionExtension
+     FRCoreObservationHeartRateProfile -[#black,dashed,thickness=2]-> FRCoreObservationBodyPositionExtExtension
+     FRCoreObservationRespRateProfile -[#black,dashed,thickness=2]-> FRCoreObservationBodyPositionExtExtension
+     FRCoreObservationRespRateProfile -[#black,dashed,thickness=2]-> FRCoreObservationLevelOfExertionExtension
+     FRCoreOrganizationPoleProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationShortNameExtension
+     FRCoreOrganizationPoleProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationDescriptionExtension
+     FRCoreOrganizationPoleProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationBudgetLetterExtension
+     FRCoreOrganizationUACProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationShortNameExtension
+     FRCoreOrganizationUACProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationDescriptionExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationShortNameExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationDescriptionExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationBudgetLetterExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationFieldExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationActivityFieldExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationExternalExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationApplicantActExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationExecutantExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationAnalysisSectionExtension
+     FRCoreOrganizationUFProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationActivityTypeExtension
+     FRCoreOrganizationProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationShortNameExtension
+     FRCoreOrganizationProfile -[#black,dashed,thickness=2]-> FRCoreOrganizationDescriptionExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreNationalityExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientIdentityReliabilityExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientDeathPlaceExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientBirthdateUpdateIndicatorExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreAddressProfile
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientMultipleBirthExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientBirthListGivenName
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCorePatientContactIdentifierExtension
+     FRCorePatientProfile -[#black,dashed,thickness=2]-> FRCoreCommentExtension
+     FRCorePractitionerRoleProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
+     FRCorePractitionerProfile -[#black,dashed,thickness=2]-> FRCorePractitionerSpecialtyExtension
+     FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreServiceTypeDurationExtension
+     FRCoreScheduleProfile -[#black,dashed,thickness=2]-> FRCoreScheduleAvailabilityTimeExtension
+
+        class FRCoreAddressInseeCodeExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreAppointmentOperatorExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+          Extension.value[x]:valueReference => [0..1]
+        } 
+        class FRCoreCommentExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreContactPointEmailTypeExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreEncounterEstimatedDischargeDateExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreAssemblyOrderExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+        } 
+        class FRCorePatientIdentityReliabilityExtension{
+
+          Extension.extension:methodCollection => [0..1]
+          Extension.extension:methodCollection.extension => [None..0]
+          Extension.extension:methodCollection.url => [None..None]
+          Extension.extension:methodCollection.value[x] => [None..None]
+          Extension.extension:dateCollection => [0..1]
+          Extension.extension:dateCollection.extension => [None..0]
+          Extension.extension:dateCollection.url => [None..None]
+          Extension.extension:dateCollection.value[x] => [None..None]
+          Extension.extension:identityStatus => [0..1]
+          Extension.extension:identityStatus.extension => [None..0]
+          Extension.extension:identityStatus.url => [None..None]
+          Extension.extension:identityStatus.value[x] => [None..None]
+          Extension.extension:validationDate => [0..1]
+          Extension.extension:validationDate.extension => [None..0]
+          Extension.extension:validationDate.url => [None..None]
+          Extension.extension:validationDate.value[x] => [None..None]
+          Extension.extension:validationMode => [0..1]
+          Extension.extension:validationMode.extension => [None..0]
+          Extension.extension:validationMode.url => [None..None]
+          Extension.extension:validationMode.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class FRCoreLocationPartOfPositionRoomExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreLunarDateExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreObservationBodyPositionExtExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreObservationHeightBodyPositionExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreObservationLevelOfExertionExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationActivityFieldExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationActivityTypeExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationAnalysisSectionExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationApplicantActExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationBudgetLetterExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationDescriptionExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationExecutantExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationExternalExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationFieldExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationPrestationDisciplineExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreOrganizationShortNameExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCorePatientBirthListGivenName{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCorePatientBirthdateUpdateIndicatorExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCorePatientContactIdentifierExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCorePatientDeathPlaceExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreNationalityExtension{
+
+          Extension.extension:code => [0..1]
+          Extension.extension:code.extension => [None..0]
+          Extension.extension:code.url => [None..None]
+          Extension.extension:code.value[x] => [1..None]
+          Extension.extension:period => [0..1]
+          Extension.extension:period.extension => [None..0]
+          Extension.extension:period.url => [None..None]
+          Extension.extension:period.value[x] => [1..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class FRCorePractitionerSpecialtyExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCoreScheduleAvailabilityTimeExtension{
+
+          Extension.extension => [4..None]
+          Extension.extension:type => [1..1]
+          Extension.extension:type.extension => [None..0]
+          Extension.extension:type.url => [None..None]
+          Extension.extension:type.value[x] => [None..None]
+          Extension.extension:rrule => [0..1]
+          Extension.extension:rrule.extension => [1..None]
+          Extension.extension:rrule.extension:freq => [1..1]
+          Extension.extension:rrule.extension:freq.extension => [None..0]
+          Extension.extension:rrule.extension:freq.url => [None..None]
+          Extension.extension:rrule.extension:freq.value[x] => [None..None]
+          Extension.extension:rrule.extension:freq.value[x].system => [None..None]
+          Extension.extension:rrule.extension:until => [0..1]
+          Extension.extension:rrule.extension:until.extension => [None..0]
+          Extension.extension:rrule.extension:until.url => [None..None]
+          Extension.extension:rrule.extension:until.value[x] => [None..None]
+          Extension.extension:rrule.extension:count => [0..1]
+          Extension.extension:rrule.extension:count.extension => [None..0]
+          Extension.extension:rrule.extension:count.url => [None..None]
+          Extension.extension:rrule.extension:count.value[x] => [None..None]
+          Extension.extension:rrule.extension:interval => [0..1]
+          Extension.extension:rrule.extension:interval.extension => [None..0]
+          Extension.extension:rrule.extension:interval.url => [None..None]
+          Extension.extension:rrule.extension:interval.value[x] => [None..None]
+          Extension.extension:rrule.extension:bySecond => [0..*]
+          Extension.extension:rrule.extension:bySecond.extension => [None..0]
+          Extension.extension:rrule.extension:bySecond.url => [None..None]
+          Extension.extension:rrule.extension:bySecond.value[x] => [None..None]
+          Extension.extension:rrule.extension:byMinute => [0..*]
+          Extension.extension:rrule.extension:byMinute.extension => [None..0]
+          Extension.extension:rrule.extension:byMinute.url => [None..None]
+          Extension.extension:rrule.extension:byMinute.value[x] => [None..None]
+          Extension.extension:rrule.extension:byHour => [0..*]
+          Extension.extension:rrule.extension:byHour.extension => [None..0]
+          Extension.extension:rrule.extension:byHour.url => [None..None]
+          Extension.extension:rrule.extension:byHour.value[x] => [None..None]
+          Extension.extension:rrule.extension:byDay => [0..*]
+          Extension.extension:rrule.extension:byDay.extension => [None..0]
+          Extension.extension:rrule.extension:byDay.url => [None..None]
+          Extension.extension:rrule.extension:byDay.value[x] => [None..None]
+          Extension.extension:rrule.extension:byMonthDay => [0..*]
+          Extension.extension:rrule.extension:byMonthDay.extension => [None..0]
+          Extension.extension:rrule.extension:byMonthDay.url => [None..None]
+          Extension.extension:rrule.extension:byMonthDay.value[x] => [None..None]
+          Extension.extension:rrule.extension:byYearDay => [0..*]
+          Extension.extension:rrule.extension:byYearDay.extension => [None..0]
+          Extension.extension:rrule.extension:byYearDay.url => [None..None]
+          Extension.extension:rrule.extension:byYearDay.value[x] => [None..None]
+          Extension.extension:rrule.extension:byWeekNo => [0..*]
+          Extension.extension:rrule.extension:byWeekNo.extension => [None..0]
+          Extension.extension:rrule.extension:byWeekNo.url => [None..None]
+          Extension.extension:rrule.extension:byWeekNo.value[x] => [None..None]
+          Extension.extension:rrule.extension:byMonth => [0..*]
+          Extension.extension:rrule.extension:byMonth.extension => [None..0]
+          Extension.extension:rrule.extension:byMonth.url => [None..None]
+          Extension.extension:rrule.extension:byMonth.value[x] => [None..None]
+          Extension.extension:rrule.extension:wkst => [0..*]
+          Extension.extension:rrule.extension:wkst.extension => [None..0]
+          Extension.extension:rrule.extension:wkst.url => [None..None]
+          Extension.extension:rrule.extension:wkst.value[x] => [None..None]
+          Extension.extension:rrule.url => [None..None]
+          Extension.extension:rrule.value[x] => [None..0]
+          Extension.extension:start => [1..1]
+          Extension.extension:start.extension => [None..0]
+          Extension.extension:start.url => [None..None]
+          Extension.extension:start.value[x] => [None..None]
+          Extension.extension:end => [1..1]
+          Extension.extension:end.extension => [None..0]
+          Extension.extension:end.url => [None..None]
+          Extension.extension:end.value[x] => [None..None]
+          Extension.extension:identifier => [1..*]
+          Extension.extension:identifier.extension => [None..0]
+          Extension.extension:identifier.url => [None..None]
+          Extension.extension:identifier.value[x] => [None..None]
+          Extension.extension:unavailabilityReason => [0..1]
+          Extension.extension:unavailabilityReason.extension => [None..0]
+          Extension.extension:unavailabilityReason.url => [None..None]
+          Extension.extension:unavailabilityReason.value[x] => [None..None]
+          Extension.extension:created => [0..1]
+          Extension.extension:created.extension => [None..0]
+          Extension.extension:created.url => [None..None]
+          Extension.extension:created.value[x] => [None..None]
+          Extension.extension:priority => [0..1]
+          Extension.extension:priority.extension => [None..0]
+          Extension.extension:priority.url => [None..None]
+          Extension.extension:priority.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class FRCoreServiceTypeDurationExtension{
+
+          Extension.extension => [1..None]
+          Extension.extension:serviceType => [1..1]
+          Extension.extension:serviceType.extension => [None..0]
+          Extension.extension:serviceType.url => [None..None]
+          Extension.extension:serviceType.value[x] => [None..None]
+          Extension.extension:duration => [0..1]
+          Extension.extension:duration.extension => [None..0]
+          Extension.extension:duration.url => [None..None]
+          Extension.extension:duration.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class FRCoreUsePeriodExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class FRCorePatientMultipleBirthExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class FRCoreValueSetINSEECode  
+
+     FRCoreAddressInseeCodeExtension -[#black,dotted,thickness=2]-> FRCoreValueSetINSEECode
+
+        class FRCoreValueSetPractitionerSpecialty  
+
+     FRCoreAppointmentProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+
+        class FRCoreValueSetEmailType  
+
+     FRCoreContactPointEmailTypeExtension -[#black,dotted,thickness=2]-> FRCoreValueSetEmailType
+
+        class FRCoreValueSetEncounterIdentifierType  
+
+     FRCoreEncounterProfile -[#black,dotted,thickness=2]-> FRCoreValueSetEncounterIdentifierType
+
+        class FRCoreValueSetEncounterType  
+
+     FRCoreEncounterProfile -[#black,dotted,thickness=2]-> FRCoreValueSetEncounterType
+
+        class FRCoreValueSetEncounterIdentifierType  
+
+     FRCoreEncounterProfile -[#black,dotted,thickness=2]-> FRCoreValueSetEncounterIdentifierType
+
+        class FRCoreValueSetEncounterDischargeDisposition  
+
+     FRCoreEncounterProfile -[#black,dotted,thickness=2]-> FRCoreValueSetEncounterDischargeDisposition
+
+        class FRCoreValueSetLocationPhysicalType  
+
+     FRCoreEncounterProfile -[#black,dotted,thickness=2]-> FRCoreValueSetLocationPhysicalType
+
+        class FRCoreValueSetPractitionerSpecialty  
+
+     FRCoreHealthcareServiceProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+
+        class FRCoreValueSetIdentityMethodCollection  
+
+     FRCorePatientIdentityReliabilityExtension -[#black,dotted,thickness=2]-> FRCoreValueSetIdentityMethodCollection
+
+        class FRCoreValueSetIdentityReliabilityStatus  
+
+     FRCorePatientIdentityReliabilityExtension -[#black,dotted,thickness=2]-> FRCoreValueSetIdentityReliabilityStatus
+
+        class FRCoreValueSetModeValidationIdentity  
+
+     FRCorePatientIdentityReliabilityExtension -[#black,dotted,thickness=2]-> FRCoreValueSetModeValidationIdentity
+
+        class FRCoreValueSetLocationPositionRoom  
+
+     FRCoreLocationPartOfPositionRoomExtension -[#black,dotted,thickness=2]-> FRCoreValueSetLocationPositionRoom
+
+        class FRCoreValueSetLocationIdentifierType  
+
+     FRCoreLocationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetLocationIdentifierType
+
+        class FRCoreValueSetLocationType  
+
+     FRCoreLocationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetLocationType
+
+        class FRCoreValueSetLocationPhysicalType  
+
+     FRCoreLocationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetLocationPhysicalType
+
+        class FRCoreValueSetHeightMeasurementMethod  
+
+     FRCoreObservationBodyHeightProfile -[#black,dotted,thickness=2]-> FRCoreValueSetHeightMeasurementMethod
+
+        class FRCoreValueSetBodyPosition  
+
+     FRCoreObservationBodyPositionExtExtension -[#black,dotted,thickness=2]-> FRCoreValueSetBodyPosition
+
+        class FRCoreValueSetBodyTemperatureMeasurementBodyLocation  
+
+     FRCoreObservationBodyTemperatureProfile -[#black,dotted,thickness=2]-> FRCoreValueSetBodyTemperatureMeasurementBodyLocation
+
+        class FRCoreValueSetSPO2BodyLocation  
+
+     FRCoreObservationBpProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSPO2BodyLocation
+
+        class FRCoreValueSetBloodPressureMeasurementMethod  
+
+     FRCoreObservationBpProfile -[#black,dotted,thickness=2]-> FRCoreValueSetBloodPressureMeasurementMethod
+
+        class FRCoreValueSetHeartRateMeasurementBodyLocation  
+
+     FRCoreObservationHeartRateProfile -[#black,dotted,thickness=2]-> FRCoreValueSetHeartRateMeasurementBodyLocation
+
+        class FRCoreValueSetHeartRateMeasurementMethod  
+
+     FRCoreObservationHeartRateProfile -[#black,dotted,thickness=2]-> FRCoreValueSetHeartRateMeasurementMethod
+
+        class FRCoreValueSetHeightBodyPosition  
+
+     FRCoreObservationHeightBodyPositionExtension -[#black,dotted,thickness=2]-> FRCoreValueSetHeightBodyPosition
+
+        class FRCoreValueSetRespiratoryRateMeasurementMethod  
+
+     FRCoreObservationRespRateProfile -[#black,dotted,thickness=2]-> FRCoreValueSetRespiratoryRateMeasurementMethod
+
+        class FRCoreValueSetSPO2BodyLocation  
+
+     FRCoreObservationOxygenSaturationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSPO2BodyLocation
+
+        class FRCoreValueSetOrganizationActivityField  
+
+     FRCoreOrganizationActivityFieldExtension -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationActivityField
+
+        class FRCoreValueSetOrganizationIdentifierType  
+
+     FRCoreOrganizationPoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationIdentifierType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationPoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationPoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetOrganizationIdentifierType  
+
+     FRCoreOrganizationUACProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationIdentifierType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationUACProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationUACProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetOrganizationIdentifierType  
+
+     FRCoreOrganizationUFProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationIdentifierType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationUFProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetOrganizationIdentifierType  
+
+     FRCoreOrganizationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationIdentifierType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetOrganizationType  
+
+     FRCoreOrganizationProfile -[#black,dotted,thickness=2]-> FRCoreValueSetOrganizationType
+
+        class FRCoreValueSetPatientGenderINS  
+
+     FRCorePatientINSProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientGenderINS
+
+        class FRCoreValueSetPatientIdentifierType  
+
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientIdentifierType
+
+        class FRCoreValueSetMaritalStatus  
+
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetMaritalStatus
+
+        class FRCoreValueSetPatientContactRole  
+
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientContactRole
+
+        class FRCoreValueSetPatientRelationType  
+
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientRelationType
+
+        class FRCoreValueSetPractitionerRoleExercice  
+
+     FRCorePractitionerRoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerRoleExercice
+
+        class FRCoreValueSetPractitionerSpecialty  
+
+     FRCorePractitionerRoleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+
+        class FRCoreValueSetPractitionerSpecialty  
+
+     FRCorePractitionerSpecialtyExtension -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+
+        class FRCoreValueSetPractitionerIdentifierType  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerIdentifierType
+
+        class FRCoreValueSetSavoirFaireProfessionMedecin  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSavoirFaireProfessionMedecin
+
+        class FRCoreValueSetTypeSavoirFaireProfessionMedecin  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetTypeSavoirFaireProfessionMedecin
+
+        class FRCoreValueSetSavoirFaireProfessionPharmacien  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSavoirFaireProfessionPharmacien
+
+        class FRCoreValueSetTypeSavoirFaireProfessionPharmacien  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetTypeSavoirFaireProfessionPharmacien
+
+        class FRCoreValueSetSavoirFaireProfessionChirurgienDentiste  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSavoirFaireProfessionChirurgienDentiste
+
+        class FRCoreValueSetTypeSavoirFaireProfessionChirurgienDentiste  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetTypeSavoirFaireProfessionChirurgienDentiste
+
+        class FRCoreValueSetSavoirFaireProfessionInfirmier  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetSavoirFaireProfessionInfirmier
+
+        class FRCoreValueSetTypeSavoirFaireProfessionInfirmier  
+
+     FRCorePractitionerProfile -[#black,dotted,thickness=2]-> FRCoreValueSetTypeSavoirFaireProfessionInfirmier
+
+        class FRCoreValueSetPatientContactRole  
+
+     FRCoreRelatedPersonProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientContactRole
+
+        class FRCoreValueSetPatientRelationType  
+
+     FRCoreRelatedPersonProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientRelationType
+
+        class FRCoreValueSetScheduleType  
+
+     FRCoreScheduleAvailabilityTimeExtension -[#black,dotted,thickness=2]-> FRCoreValueSetScheduleType
+
+        class FRCoreValueSetAvailabilityTimeRule  
+
+     FRCoreScheduleAvailabilityTimeExtension -[#black,dotted,thickness=2]-> FRCoreValueSetAvailabilityTimeRule
+
+        class FRCoreValueSetPractitionerSpecialty  
+
+     FRCoreScheduleProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+
+        class FRCoreValueSetPractitionerSpecialty  
+
+     FRCoreSlotProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPractitionerSpecialty
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Address" as  classdd7bf230fde8d4836917806aff6a6b27 
+
+    classdd7bf230fde8d4836917806aff6a6b27 --> FRCoreAddressProfile
+
+ class "Appointment" as  class7b0eae0ccc6c8fd0e13d11e7da85a6bb 
+
+    class7b0eae0ccc6c8fd0e13d11e7da85a6bb --> FRCoreAppointmentProfile
+
+ class "ContactPoint" as  class1a8de90955ed09d082aa583fa10a342e 
+
+    class1a8de90955ed09d082aa583fa10a342e --> FRCoreContactPointProfile
+
+ class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+
+    classd1e9f9f891de8f9a655739a01fbf68f0 --> FRCoreEncounterProfile
+
+ class "HealthcareService" as  classccfbac0a7f2dd501f3a20274066b28a3 
+
+    classccfbac0a7f2dd501f3a20274066b28a3 --> FRCoreHealthcareServiceProfile
+
+ class "HumanName" as  class95e0fecbaf28f967a098167115412fc6 
+
+    class95e0fecbaf28f967a098167115412fc6 --> FRCoreHumanNameProfile
+
+ class "Location" as  classce5bf551379459c1c61d2a204061c455 
+
+    classce5bf551379459c1c61d2a204061c455 --> FRCoreLocationProfile
+
+ class "MedicationAdministration" as  classcb08d1580a4f19d9fc3a0c98169f1144 
+
+    classcb08d1580a4f19d9fc3a0c98169f1144 --> FRCoreMedicationAdministrationInhaledOxygenProfile
+
+ class "bmi" as  class810dc6911c825b55eff684098f2beb19 
+
+    class810dc6911c825b55eff684098f2beb19 --> FRCoreObservationBmiProfile
+
+ class "bodyheight" as  classee160d1136ad35f95725456015231c04 
+
+    classee160d1136ad35f95725456015231c04 --> FRCoreObservationBodyHeightProfile
+
+ class "bodytemp" as  classaa5a81d6f7003d017ea7e6b41ad267e1 
+
+    classaa5a81d6f7003d017ea7e6b41ad267e1 --> FRCoreObservationBodyTemperatureProfile
+
+ class "bodyweight" as  class42f266cb82c4cd680f97c9609fbd96e1 
+
+    class42f266cb82c4cd680f97c9609fbd96e1 --> FRCoreObservationBodyWeightProfile
+
+ class "bp" as  class5cfdb867e96374c7883b31d6928cc4cb 
+
+    class5cfdb867e96374c7883b31d6928cc4cb --> FRCoreObservationBpProfile
+
+ class "headcircum" as  class79f4f12cb29f354faab97cf03e408d1c 
+
+    class79f4f12cb29f354faab97cf03e408d1c --> FRCoreObservationHeadCircumProfile
+
+ class "heartrate" as  class9f0e20598fbb64e6492886a377f511b4 
+
+    class9f0e20598fbb64e6492886a377f511b4 --> FRCoreObservationHeartRateProfile
+
+ class "resprate" as  class61618b724e7eb165e5c54c81755777ae 
+
+    class61618b724e7eb165e5c54c81755777ae --> FRCoreObservationRespRateProfile
+
+ class "oxygensat" as  class7b8a7e51da4b89e163108c52f4754acc 
+
+    class7b8a7e51da4b89e163108c52f4754acc --> FRCoreObservationOxygenSaturationProfile
+
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
+
+    classd6b258792ff06f82933c74eeb8aef591 --> FRCoreOrganizationPoleProfile
+
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
+
+    classd6b258792ff06f82933c74eeb8aef591 --> FRCoreOrganizationUACProfile
+
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
+
+    classd6b258792ff06f82933c74eeb8aef591 --> FRCoreOrganizationUFProfile
+
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
+
+    classd6b258792ff06f82933c74eeb8aef591 --> FRCoreOrganizationProfile
+
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient" as  classcb72a5551de902d7716887df67489a97 
+
+    classcb72a5551de902d7716887df67489a97 --> FRCorePatientINSProfile
+
+ class "Patient" as  class01122a97dca927210827560cb7d76af8 
+
+    class01122a97dca927210827560cb7d76af8 --> FRCorePatientProfile
+
+ class "PractitionerRole" as  classa6482460b0b027d14fe848816788acb6 
+
+    classa6482460b0b027d14fe848816788acb6 --> FRCorePractitionerRoleProfile
+
+ class "Practitioner" as  classe1fdce734a2fd9596ad930bdb139ca06 
+
+    classe1fdce734a2fd9596ad930bdb139ca06 --> FRCorePractitionerProfile
+
+ class "RelatedPerson" as  class98b511f7440508b3a0a3700b6fc3c7c5 
+
+    class98b511f7440508b3a0a3700b6fc3c7c5 --> FRCoreRelatedPersonProfile
+
+ class "Schedule" as  class25f7347236b51a5eae4ba01a7862cb55 
+
+    class25f7347236b51a5eae4ba01a7862cb55 --> FRCoreScheduleProfile
+
+ class "Slot" as  class9234cc57c43f272b55a94b0069fe62d1 
+
+    class9234cc57c43f272b55a94b0069fe62d1 --> FRCoreSlotProfile
+}
+@enduml
