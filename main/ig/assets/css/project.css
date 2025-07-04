@@ -644,14 +644,14 @@ a[href$=".sch"]:after, a[href$=".xlsx"]:after, a[href$=".zip"]:after, a[href$=".
 }
 
 /* =========== external links ============= */
-p a[href^="http://"]:not([no-external^="true"]):after,p a[href^="https://"]:not([no-external^="true"]):after {
+p a[href^="http://"]:not([data-no-external^="true"]):after,p a[href^="https://"]:not([data-no-external^="true"]):after {
     content: url(../images/external.png);
     display: inline-block;
     text-decoration: none;
     padding-left: 3px;
 }
 
-li a[href^="http://"]:not([no-external^="true"]):after,li a[href^="https://"]:not([no-external^="true"]):after {
+li a[href^="http://"]:not([data-no-external^="true"]):after,li a[href^="https://"]:not([data-no-external^="true"]):after {
     content: url(../images/external.png);
     display: inline-block;
     text-decoration: none;
