@@ -128,3 +128,53 @@ Description: """Profil de la ressource Practitionner pour la France."""
 // Slice : savoirFaire
 * qualification[savoirFaire].code.coding[savoirFaire] ^short = "Compétence acquise par le professionnel (competence) R39 ou Compétence exclusive exercée par le professionnel à titre exclusif (competenceExclusive) R40 ou Diplôme d'études spécialisées complémentaires (DESC)DESCnonQualifian R42 ou Capacité (savoir-faire)de médecine (capaciteSavoirFaire) R43 ou Qualification de praticien adjoint contractuel (qualificationPAC) R44 ou Fonction qualifiée (Synonyme: fonctionQualifiee) R45 ou Droit d'exercice complémentaire (Synonyme: droitExerciceComplementaire) R97 ou Orientation particulière (Synonyme: orientationParticuliere) G13 ou Activité ponctuelle du professionnel de type expertise (attributionParticuliere) G13."
 * qualification[savoirFaire].code.coding[savoirFaire] from $JDV-J107-EnsembleSavoirFaire-RASS (required)
+
+* qualification[savoirFaire] contains
+    professionMedecin 0..1 and
+    professionPharmacien 0..1 and 
+    professionChirurgienDentiste 0..1 and
+    professionInfirmier 0..1
+
+// Profession 10 (Médecin)
+* qualification[savoirFaire][professionMedecin] ^short = "Savoir-faire pour la profession 10 (Médecin)"
+* qualification[savoirFaire][professionMedecin].code.coding ^slicing.discriminator.type = #value
+* qualification[savoirFaire][professionMedecin].code.coding ^slicing.discriminator.path = "$this"
+* qualification[savoirFaire][professionMedecin].code.coding ^slicing.rules = #closed
+* qualification[savoirFaire][professionMedecin].code.coding contains savoirFaire 0..1
+* qualification[savoirFaire][professionMedecin].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionMedecin (required)
+
+* qualification[savoirFaire][professionMedecin].code.coding contains typeSavoirFaire 0..1
+* qualification[savoirFaire][professionMedecin].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionMedecin (required)
+
+// Profession 21 (Pharmacien)
+* qualification[savoirFaire][professionPharmacien] ^short = "Savoir-faire pour la profession 21 (Pharmacien)."
+* qualification[savoirFaire][professionPharmacien].code.coding ^slicing.discriminator.type = #value
+* qualification[savoirFaire][professionPharmacien].code.coding ^slicing.discriminator.path = "$this"
+* qualification[savoirFaire][professionPharmacien].code.coding ^slicing.rules = #closed
+* qualification[savoirFaire][professionPharmacien].code.coding contains savoirFaire 0..1
+* qualification[savoirFaire][professionPharmacien].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionPharmacien (required)
+
+* qualification[savoirFaire][professionPharmacien].code.coding contains typeSavoirFaire 0..1
+* qualification[savoirFaire][professionPharmacien].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionPharmacien (required)
+
+// Profession 40 (Chirurgien-Dentiste)
+* qualification[savoirFaire][professionChirurgienDentiste] ^short = "Savoir-faire pour la profession 40 (Chirurgien-Dentiste)."
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding ^slicing.discriminator.type = #value
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding ^slicing.discriminator.path = "$this"
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding ^slicing.rules = #closed
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding contains savoirFaire 0..1
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionChirurgienDentiste (required)
+
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding contains typeSavoirFaire 0..1
+* qualification[savoirFaire][professionChirurgienDentiste].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionChirurgienDentiste (required)
+
+// Profession 60 (Infirmier)
+* qualification[savoirFaire][professionInfirmier] ^short = "Savoir-faire pour la profession 60 (Infirmier)"
+* qualification[savoirFaire][professionInfirmier].code.coding ^slicing.discriminator.type = #value
+* qualification[savoirFaire][professionInfirmier].code.coding ^slicing.discriminator.path = "$this"
+* qualification[savoirFaire][professionInfirmier].code.coding ^slicing.rules = #closed
+* qualification[savoirFaire][professionInfirmier].code.coding contains savoirFaire 0..1
+* qualification[savoirFaire][professionInfirmier].code.coding[savoirFaire] from FRValueSetSavoirFaireProfessionInfirmier (required)
+
+* qualification[savoirFaire][professionInfirmier].code.coding contains typeSavoirFaire 0..1
+* qualification[savoirFaire][professionInfirmier].code.coding[typeSavoirFaire] from FRValueSetTypeSavoirFaireProfessionInfirmier (required)
