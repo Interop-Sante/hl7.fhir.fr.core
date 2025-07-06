@@ -32,6 +32,18 @@ Les pratiques de nommages d'InteropSanté pour les artifacts FHIR se basent sur 
 | code  | SearchParameter|  toujours en minuscule, mots séparés par des tirets "-" si besoin | - |
 {: .grid }
 
+Sauf exception, l'ensemble des ressources de conformité de ce guide sont modélisées en FSH. Le nom des fichiers sont préfixés par FRCore.
+
+| **Type de fichier FSH** | **Règle** | **Exemple fr-core** |
+| ----- | ----- | ----- | ----- |
+| Artifact terminologique | FRCore[CodeSystem/ValueSet]{nom en upper camel case}.fsh | FRCoreCodeSystemCirconstancesSortie.fsh |
+| Exemples | FRCore{nom-ressource}{(optionnel)incrément ou contexte}Example.fsh | FRCorePatientExample.fsh |
+| Profils | FRCore{nom-ressource}{(optionnel) contexte}Profile.fsh | FRCorePatientProfile.fsh |
+| Profils de types de données | FRCore{nom-datatype}{(optionnel) contexte}Profile.fsh | FRCoreAddressProfile.fsh |
+
+{: .grid }
+
+
 ### Plus d'informations
 
 Vous trouverez davantage d'informations autour des pratiques d'implémentation et de modélisation des guides d'implémentation sur l'[IG Documentation](https://interop.esante.gouv.fr/ig/documentation) de l'Agence du Numérique en Santé.
