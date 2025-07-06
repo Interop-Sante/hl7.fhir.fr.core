@@ -32,7 +32,7 @@ Les pratiques de nommages d'InteropSanté pour les artifacts FHIR se basent sur 
 | code  | SearchParameter|  toujours en minuscule, mots séparés par des tirets "-" si besoin | - |
 {: .grid }
 
-Sauf exception, l'ensemble des ressources de conformité de ce guide sont modélisées en FSH. Le nom des fichiers sont préfixés par FRCore.
+Sauf exception, l'ensemble des ressources de conformité de ce guide sont modélisées en FSH. Le nom des fichiers sont préfixés par FRCore, les règles précises de définition sont indiquées dans le tableau ci-dessous.
 
 | **Type de fichier FSH** | **Règle** | **Exemple fr-core** |
 | ----- | ----- | ----- | ----- |
