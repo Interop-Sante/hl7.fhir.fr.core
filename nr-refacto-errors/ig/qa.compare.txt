@@ -90,6 +90,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-contact-identifier : 0 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-death-place : 0 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-ins : 0 / 0 / 2
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5 : 3 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-nationality : 0 / 1 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-practitioner : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-practitioner-role : 0 / 0 / 1
@@ -100,7 +101,6 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-service-type-duration : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-slot : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-use-period : 0 / 1 / 1
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-corepatient-multiple-birth-r5 : 3 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-availability-time-rule : 6 / 2 / 2
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-body-position : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-bp-meas-body-location : 0 / 0 / 1
@@ -335,6 +335,11 @@ WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureD
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json ==
 INFORMATION: StructureDefinition.snapshot.element[22].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthPlace to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+== fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth'): Conformance resource /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5.json - the canonical URL (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-multiple-birth-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth)
+ERROR: StructureDefinition/fr-core-patient-multiple-birth-r5: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth'): The Implementation Guide contains no examples for this extension
+ERROR: /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-patient-multiple-birth-r5: URL Mismatch https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-multiple-birth-r5 vs http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth
 == fsh-generated/resources/StructureDefinition-fr-core-patient-nationality.json ==
 INFORMATION: StructureDefinition.snapshot.element[7].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-Country to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.4.0)
 INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-Country to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.4.0)
@@ -351,11 +356,6 @@ WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureD
 == fsh-generated/resources/StructureDefinition-fr-core-slot.json ==
 == fsh-generated/resources/StructureDefinition-fr-core-use-period.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-fr-corepatient-multiple-birth-r5.json ==
-ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth'): Conformance resource /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-corepatient-multiple-birth-r5.json - the canonical URL (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-corepatient-multiple-birth-r5) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth)
-ERROR: StructureDefinition/fr-corepatient-multiple-birth-r5: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth'): The Implementation Guide contains no examples for this extension
-ERROR: /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-corepatient-multiple-birth-r5: URL Mismatch https://hl7.fr/ig/fhir/core/StructureDefinition/fr-corepatient-multiple-birth-r5 vs http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth
 == fsh-generated/resources/ValueSet-fr-core-vs-availability-time-rule.json ==
 WARNING: ValueSet/fr-core-vs-availability-time-rule: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://www.ietf.org/rfc/rfc2445'
 INFORMATION: ValueSet/fr-core-vs-availability-time-rule: ValueSet.compose.include[0].concept[0]: A definition for CodeSystem 'https://www.ietf.org/rfc/rfc2445' could not be found, so the code cannot be validated
