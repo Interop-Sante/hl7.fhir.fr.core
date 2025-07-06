@@ -1,7 +1,7 @@
 FrCore : Validation Results
 =========================================
 
-err = 12, warn = 61, info = 58
+err = 10, warn = 61, info = 58
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 4 / 1 / 0
@@ -115,7 +115,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-encounter-discharge-disposition : 0 / 1 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-encounter-identifier-type : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-encounter-type : 0 / 1 / 1
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-heartrate-body-location : 2 / 0 / 2
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-heartrate-body-location : 0 / 0 / 2
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-heartrate-measurement-method : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-height-body-position : 0 / 0 / 1
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-height-meas-method : 0 / 0 / 1
@@ -385,8 +385,6 @@ WARNING: ValueSet/fr-core-vs-encounter-discharge-disposition: ValueSet.compose.i
 == fsh-generated/resources/ValueSet-fr-core-vs-encounter-type.json ==
 WARNING: ValueSet/fr-core-vs-encounter-type: ValueSet.compose.include[0]: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/v2-0007'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.2.0', found versions: 2.0.0, 2.2.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/CodeSystem/v2-0007' to 'http://terminology.hl7.org/CodeSystem/v2-0007|2.2.0'
 == fsh-generated/resources/ValueSet-fr-core-vs-heartrate-body-location.json ==
-ERROR: ValueSet/fr-core-vs-heartrate-body-location: ValueSet.compose.include[0].concept[14]: The code '24781000205105' is not valid in the system http://snomed.info/sct (Unknown code '24781000205105' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/11000315107/version/20250621')
-ERROR: ValueSet/fr-core-vs-heartrate-body-location: ValueSet.compose.include[0].concept[26]: The code '24791000205107' is not valid in the system http://snomed.info/sct (Unknown code '24791000205107' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/11000315107/version/20250621')
 INFORMATION: ValueSet/fr-core-vs-heartrate-body-location: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Common carotid artery structure (body structure), Left common carotid artery structure (body structure), Right common carotid artery structure (body structure), Structure of apex of heart (body structure), Structure of brachial artery (body structure)] and examples for no FSN: [Structure of left pulmonary artery])
 == fsh-generated/resources/ValueSet-fr-core-vs-heartrate-measurement-method.json ==
 == fsh-generated/resources/ValueSet-fr-core-vs-height-body-position.json ==
