@@ -29,7 +29,7 @@ Les pratiques de nommages d'InteropSanté pour les artifacts FHIR se basent sur 
 | title | ressources de conformité | FR Core Patient Profile |
 | name | ressources de conformité | FRCorePatientProfile |
 | url | ressources de conformité | https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient |
-| code  | SearchParameter|  toujours en minuscule, mots séparés par des tirets "-" si besoin |
+| code  | SearchParameter| Toujours en minuscule, mots séparés par des tirets "-" si besoin |
 {: .grid }
 
 Sauf exception, l'ensemble des ressources de conformité de ce guide sont modélisées en FSH. Le nom des fichiers sont préfixés par FRCore, les règles précises de définition sont indiquées dans le tableau ci-dessous.
