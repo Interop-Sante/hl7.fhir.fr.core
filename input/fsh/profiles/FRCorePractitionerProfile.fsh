@@ -47,6 +47,10 @@ Description: """Profil de la ressource Practitionner pour la France."""
 * identifier[rpps].value 1..
 
 * name only FRCoreHumanNameProfile
+* name.suffix from $JDV-J79-CiviliteExercice-RASS (extensible)
+* name.suffix ^short = "jeu de valeurs pour spécifier le titre de la personne"
+* name.suffix ^binding.description = "Civilités d'exercice d'un professionnel du RASS"
+
 * telecom only FRCoreContactPointProfile
 * address only FRCoreAddressProfile
 
