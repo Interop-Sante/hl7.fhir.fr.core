@@ -1,5 +1,5 @@
 Extension: FRCorePatientMultipleBirthExtension
-Id: fr-corepatient-multiple-birth-r5
+Id: fr-core-patient-multiple-birth-r5
 Title: "Rang Gémellaire"
 Description: "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x."
 * ^context.type = #element
