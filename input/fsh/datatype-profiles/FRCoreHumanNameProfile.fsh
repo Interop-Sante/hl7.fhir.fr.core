@@ -12,8 +12,5 @@ Description: "Profilage du type de données HumanName pour prise en compte de la
 
 * prefix ..1
 * prefix from $JDV-J78-Civilite-RASS (extensible)
-* prefix ^binding.description = "Civilités des personnes physiques du RASS"
+* prefix ^binding.description = "Civilités des personnes physiques"
 
-* suffix from $JDV-J79-CiviliteExercice-RASS (extensible)
-* suffix ^short = "jeu de valeurs pour spécifier le titre de la personne"
-* suffix ^binding.description = "Civilités d'exercice d'un professionnel du RASS"
