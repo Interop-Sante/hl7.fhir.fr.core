@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-04T08:45:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-08T14:52:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -58,7 +58,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -75,13 +75,13 @@
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.2.0" ]
   ] [
-     fhir:id [ fhir:v "ans_fr_nos" ] ;
+     fhir:id [ fhir:v "ans_fr_terminologies" ] ;
      fhir:uri [
-       fhir:v "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
+       fhir:v "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
-     fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.5.0" ]
+     fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
+     fhir:version [ fhir:v "1.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -2956,24 +2956,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-qualification> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-qualification" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Practitioner qualification" ] ;
-       fhir:description [ fhir:v "A code classifying the qualification of the provider" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-specialty" ]
        ] ;
@@ -3583,8 +3565,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-corepatient-multiple-birth-r5> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-corepatient-multiple-birth-r5" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-multiple-birth-r5> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-multiple-birth-r5" ]
        ] ;
        fhir:name [ fhir:v "Rang Gémellaire" ] ;
        fhir:description [ fhir:v "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x." ] ;
