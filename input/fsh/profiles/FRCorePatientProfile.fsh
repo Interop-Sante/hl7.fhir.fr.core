@@ -30,11 +30,9 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
+* identifier ^slicing.description = "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
 * identifier ^slicing.rules = #open
-* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
-
-
+* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS."
 
 * identifier contains
     NSS 0..1 and
@@ -71,9 +69,10 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier[NDP].system = "urn:oid:1.2.250.1.176.1.2"
 * identifier[NDP].value 1..
 
-* identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
+* identifier[PI] ^short = "Hospital assigned patient identifier | Identifiant Patient Permanent (IPP)."
 * identifier[PI].use 1..
-* identifier[PI].use = #usual
+* identifier[PI].use from FRCoreValueSetPatientIdentifierUse
+* identifier[PI].use ^comment = "La valeur old permet d'identifier des IPP désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
 * identifier[PI].type 1..
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..

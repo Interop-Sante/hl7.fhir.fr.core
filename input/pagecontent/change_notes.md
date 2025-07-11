@@ -3,6 +3,7 @@
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
 A préparer pour la release
+* Patient: assouplissement de la contrainte sur identifier[PI].use via binding à un VS dédié [#215](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/215)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
