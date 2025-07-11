@@ -5,6 +5,7 @@ Title: "FR Core Patient INS Profile"
 Description: """Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient."""
 
 * obeys fr-core-1 
+* obeys fr-core-2
 
 * meta.profile contains fr-ins-canonical 0..1
 * meta.profile[fr-ins-canonical] = Canonical(fr-core-patient-ins)
@@ -29,13 +30,28 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR] ^short = "INS-NIR - The patient national health identifier INS obtained by requesting the national patient identification service (CNAM) called the INSi teleservice. Identifiant national de santé (NIR) du patient INS provenant du téléservice INSi (service national d'identification des patients (CNAM))"
 * identifier[INS-NIR] MS
 * identifier[INS-NIR].use 1..
-* identifier[INS-NIR].use = #official
+* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
 * identifier[INS-NIR].type 1..
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
 * identifier[INS-NIR].system 1..
 * identifier[INS-NIR].system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier[INS-NIR].system ^short = "Autorité d'affectation des INS-NIR"
 * identifier[INS-NIR].value 1..
+
+* identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
+* identifier[INS-NIA] MS
+* identifier[INS-NIA].use 1..
+* identifier[INS-NIA].use = #temp
+* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
+* identifier[INS-NIA].type 1..
+* identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
+* identifier[INS-NIA].system 1..
+* identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
+* identifier[INS-NIA].system ^short = "Autorité d'affectation des INS-NIA"
+* identifier[INS-NIA].value 1..
+
 
 * identifier[INS-NIR-TEST] ^short = "Identifiant INS-NIR du patient fictif de test"
 * identifier[INS-NIR-TEST].use 1..
@@ -57,17 +73,6 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR-DEMO].system ^short = "Autorité d’affectation des INS-NIR de démonstration"
 * identifier[INS-NIR-DEMO].value 1..
 
-* identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
-* identifier[INS-NIA] MS
-* identifier[INS-NIA].use 1..
-* identifier[INS-NIA].use = #temp
-* identifier[INS-NIA].type 1..
-* identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
-* identifier[INS-NIA].system 1..
-* identifier[INS-NIA].system = "urn:oid:1.2.250.1.213.1.4.9"
-* identifier[INS-NIA].system ^short = "Autorité d'affectation des INS-NIA"
-* identifier[INS-NIA].value 1..
-
 * gender 1..1 MS
 * gender from fr-core-vs-patient-gender-INS (required)
 * gender ^short = "male | female | unknown"
@@ -84,4 +89,9 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 Invariant:   fr-core-1
 Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11').exists())"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
+
+Invariant:   fr-core-2
+Description: "If identityReliability status = 'VALI', then it should be only one official identifier"
+* severity = #error
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())"

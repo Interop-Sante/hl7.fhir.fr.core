@@ -41,7 +41,6 @@ Description: """Profile of the Patient resource for France. This profile specifi
     PI 0..* and
     RRI 0..*
 
-
 * identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
 * identifier[NSS].use 1..
 * identifier[NSS].use = #official
@@ -71,7 +70,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * identifier[PI] ^short = "Hospital assigned patient identifier | Identifiant Patient Permanent (IPP)."
 * identifier[PI].use 1..
-* identifier[PI].use from FRCoreValueSetPatientIdentifierUse
+* identifier[PI].use from FRCoreValueSetPatientIdentifierUsePI
 * identifier[PI].use ^comment = "La valeur old permet d'identifier des IPP désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
 * identifier[PI].type 1..
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
