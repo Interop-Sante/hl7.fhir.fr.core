@@ -31,7 +31,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR] MS
 * identifier[INS-NIR].use 1..
 * identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS
-* identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
+* identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (permettant de noter l'ancien INS-NIR en cas de changement de sexe par exemple)"
 * identifier[INS-NIR].type 1..
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
 * identifier[INS-NIR].system 1..
@@ -43,8 +43,8 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIA] MS
 * identifier[INS-NIA].use 1..
 * identifier[INS-NIA].use = #temp
-* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS
-* identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
+* identifier[INS-NIA].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIA].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas d'obtention d'un INS-NIR par exemple)"
 * identifier[INS-NIA].type 1..
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
 * identifier[INS-NIA].system 1..
