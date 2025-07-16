@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-07-08T13:28:39+00:00",
+  "date" : "2025-07-16T09:34:35+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -58,10 +58,10 @@
     "version" : "5.2.0"
   },
   {
-    "id" : "ans_fr_nos",
-    "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
-    "packageId" : "ans.fr.nos",
-    "version" : "1.5.0"
+    "id" : "ans_fr_terminologies",
+    "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
+    "packageId" : "ans.fr.terminologies",
+    "version" : "1.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -1557,7 +1557,7 @@
         "reference" : "StructureDefinition/fr-core-patient-ins"
       },
       "name" : "FR Core Patient INS Profile",
-      "description" : "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS).",
+      "description" : "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
       "exampleBoolean" : false
     },
     {
@@ -2000,7 +2000,7 @@
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-gender-INS"
       },
-      "name" : "FR Core ValueSet Patient gender INS ValueSet",
+      "name" : "FR Core ValueSet Patient gender INS",
       "description" : "Genres autorisés dans le cadre du Patient INS.\r\nPermitted genders for INS Patient",
       "exampleBoolean" : false
     },
@@ -2022,10 +2022,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-practitioner-identifier-type"
+        "reference" : "ValueSet/fr-core-vs-patient-identifier-use"
       },
-      "name" : "FR Core ValueSet Practitioner identifier type",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)",
+      "name" : "FR Core ValueSet Patient identifier use",
+      "description" : "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier.",
       "exampleBoolean" : false
     },
     {
@@ -2034,10 +2034,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-practitioner-qualification"
+        "reference" : "ValueSet/fr-core-vs-practitioner-identifier-type"
       },
-      "name" : "FR Core ValueSet Practitioner qualification",
-      "description" : "A code classifying the qualification of the provider",
+      "name" : "FR Core ValueSet Practitioner identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)",
       "exampleBoolean" : false
     },
     {
@@ -2346,10 +2346,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-corepatient-multiple-birth-r5"
+        "reference" : "StructureDefinition/fr-core-patient-multiple-birth-r5"
       },
       "name" : "Rang Gémellaire",
-      "description" : "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.",
+      "description" : "Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.",
       "exampleBoolean" : false
     },
     {

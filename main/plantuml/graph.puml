@@ -809,6 +809,12 @@ package IG #DDDDDD{
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
         } 
+        class FRCorePatientMultipleBirthExtension{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
         class FRCoreNationalityExtension{
 
           Extension.extension:code => [0..1]
@@ -934,12 +940,6 @@ package IG #DDDDDD{
           Extension.value[x] => [None..0]
         } 
         class FRCoreUsePeriodExtension{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-        } 
-        class FRCorePatientMultipleBirthExtension{
 
           Extension.extension => [None..0]
           Extension.url => [None..None]
@@ -1108,6 +1108,10 @@ package IG #DDDDDD{
 
      FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientIdentifierType
 
+        class FRCoreValueSetPatientIdentifierUse  
+
+     FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetPatientIdentifierUse
+
         class FRCoreValueSetMaritalStatus  
 
      FRCorePatientProfile -[#black,dotted,thickness=2]-> FRCoreValueSetMaritalStatus
@@ -1151,6 +1155,10 @@ package IG #DDDDDD{
         class FRCoreValueSetAvailabilityTimeRule  
 
      FRCoreScheduleAvailabilityTimeExtension -[#black,dotted,thickness=2]-> FRCoreValueSetAvailabilityTimeRule
+
+        class FRCoreValueSetUnavailabilityReason  
+
+     FRCoreScheduleAvailabilityTimeExtension -[#black,dotted,thickness=2]-> FRCoreValueSetUnavailabilityReason
 
         class FRCoreValueSetPractitionerSpecialty  
 

@@ -414,7 +414,7 @@ Ce profil spécialise le profil fr-core-organization pour représenter les unit�
                   title="StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a>
             </td>
             <td>
-<p>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS).</p>
+<p>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>
 </td>
          </tr>
          <tr>
@@ -851,11 +851,11 @@ Organization description</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-corepatient-multiple-birth-r5.html"
-                  title="StructureDefinition/fr-corepatient-multiple-birth-r5">Rang Gémellaire</a>
+               <a href="StructureDefinition-fr-core-patient-multiple-birth-r5.html"
+                  title="StructureDefinition/fr-core-patient-multiple-birth-r5">Rang Gémellaire</a>
             </td>
             <td>
-<p>Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l’assurance maladie. Cette extension implemente l’élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.</p>
+<p>Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l’assurance maladie. Cette extension implemente l’élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.</p>
 </td>
          </tr>
       </tbody>
@@ -1149,7 +1149,7 @@ Organization types</p>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-patient-gender-INS.html"
-                  title="ValueSet/fr-core-vs-patient-gender-INS">FR Core ValueSet Patient gender INS ValueSet</a>
+                  title="ValueSet/fr-core-vs-patient-gender-INS">FR Core ValueSet Patient gender INS</a>
             </td>
             <td>
 <p>Genres autorisés dans le cadre du Patient INS.
@@ -1167,20 +1167,21 @@ Permitted genders for INS Patient</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-patient-identifier-use.html"
+                  title="ValueSet/fr-core-vs-patient-identifier-use">FR Core ValueSet Patient identifier use</a>
+            </td>
+            <td>
+<p>Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).
+Authorized use for PI identifier.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-practitioner-identifier-type.html"
                   title="ValueSet/fr-core-vs-practitioner-identifier-type">FR Core ValueSet Practitioner identifier type</a>
             </td>
             <td>
 <p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-practitioner-qualification.html"
-                  title="ValueSet/fr-core-vs-practitioner-qualification">FR Core ValueSet Practitioner qualification</a>
-            </td>
-            <td>
-<p>A code classifying the qualification of the provider</p>
 </td>
          </tr>
          <tr>
@@ -1636,7 +1637,7 @@ A Schedule type</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 8, 2025 13:29+0000">2025-07-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 16, 2025 09:35+0000">2025-07-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
