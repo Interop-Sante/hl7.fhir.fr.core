@@ -31,6 +31,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR] MS
 * identifier[INS-NIR].use 1..
 * identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIR].use ^short = "official | old"
 * identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (permettant de noter l'ancien INS-NIR en cas de changement de sexe par exemple)"
 * identifier[INS-NIR].type 1..
 * identifier[INS-NIR].type = $fr-core-v2-0203#INS-NIR
@@ -42,8 +43,8 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
 * identifier[INS-NIA] MS
 * identifier[INS-NIA].use 1..
-* identifier[INS-NIA].use = #temp
 * identifier[INS-NIA].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIA].use ^short = "official | old"
 * identifier[INS-NIA].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas d'obtention d'un INS-NIR par exemple)"
 * identifier[INS-NIA].type 1..
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
@@ -89,7 +90,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 Invariant:   fr-core-1
 Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
 
 Invariant:   fr-core-2
 Description: "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"
