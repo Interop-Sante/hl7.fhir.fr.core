@@ -1,6 +1,6 @@
-ValueSet: FRCoreValueSetPatientIdentifierUse
-Id: fr-core-vs-patient-identifier-use
-Title: "FR Core ValueSet Patient identifier use"
+ValueSet: FRCoreValueSetPatientIdentifierUsePI
+Id: fr-core-vs-patient-identifier-use-pi
+Title: "FR Core ValueSet Patient identifier use PI"
 Description: "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier."
 
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
