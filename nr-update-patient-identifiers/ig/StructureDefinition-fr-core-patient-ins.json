@@ -10,7 +10,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2025-07-17T15:24:19+00:00",
+  "date" : "2025-07-19T09:33:44+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -143,7 +143,7 @@
         "key" : "fr-core-2",
         "severity" : "error",
         "human" : "If identityReliability status =\u00a0'VALI', then only one identifier of type official SHALL be present",
-        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())",
+        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"
       }],
       "isModifier" : false,
@@ -7584,7 +7584,7 @@
         "key" : "fr-core-2",
         "severity" : "error",
         "human" : "If identityReliability status =\u00a0'VALI', then only one identifier of type official SHALL be present",
-        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())",
+        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"
       }]
     },

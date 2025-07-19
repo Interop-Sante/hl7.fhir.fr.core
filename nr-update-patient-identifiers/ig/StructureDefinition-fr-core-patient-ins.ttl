@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FRCorePatientINSProfile"] ; # 
   fhir:title [ fhir:v "FR Core Patient INS Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-17T15:24:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-19T09:33:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -169,7 +169,7 @@
          fhir:key [ fhir:v "fr-core-2" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present" ] ;
-         fhir:expression [ fhir:v "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())" ] ;
+         fhir:expression [ fhir:v "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())" ] ;
          fhir:source [
            fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
            fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
@@ -8203,7 +8203,7 @@
          fhir:key [ fhir:v "fr-core-2" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present" ] ;
-         fhir:expression [ fhir:v "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())" ] ;
+         fhir:expression [ fhir:v "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())" ] ;
          fhir:source [
            fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
            fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>

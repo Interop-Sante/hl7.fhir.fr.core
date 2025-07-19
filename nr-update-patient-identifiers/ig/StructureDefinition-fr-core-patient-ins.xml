@@ -65,7 +65,7 @@
   <name value="FRCorePatientINSProfile"/>
   <title value="FR Core Patient INS Profile"/>
   <status value="active"/>
-  <date value="2025-07-17T15:24:19+00:00"/>
+  <date value="2025-07-19T09:33:44+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -194,7 +194,7 @@
         <key value="fr-core-2"/>
         <severity value="error"/>
         <human value="If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"/>
-        <expression value="(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())"/>
+        <expression value="(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())"/>
         <source value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
       </constraint>
       <isModifier value="false"/>
@@ -7408,7 +7408,7 @@
         <key value="fr-core-2"/>
         <severity value="error"/>
         <human value="If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"/>
-        <expression value="(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1 or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'temp').exists())"/>
+        <expression value="(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())"/>
         <source value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
       </constraint>
     </element>
