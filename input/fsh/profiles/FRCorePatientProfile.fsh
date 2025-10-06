@@ -114,7 +114,9 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * telecom only FRCoreContactPointProfile
 
-* gender ^definition = "French patient's gender checked with the INSi teleservice | Genre du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs sont M ou F"
+* gender from fr-core-vs-patient-gender-INS (required)
+* gender ^short = "male | female | unknown"
+* gender ^definition = "French patient's gender checked with the INSi teleservice | Genre du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs sont M ou F et à adapter à FHIR (male ou female)."
 
 * birthDate ^short = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 
