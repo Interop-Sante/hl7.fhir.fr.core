@@ -10,8 +10,9 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * meta.profile contains fr-ins-canonical 0..1
 * meta.profile[fr-ins-canonical] = Canonical(fr-core-patient-ins)
 
+* extension[identityReliability].extension[identityStatus] = #VALI 
+* extension[identityReliability].extension[validationMode] only fr-core-vs-mode-validation-identity-ins (required)
 
-* extension[identityReliability] 1..*
 
 * extension[birthPlace] 1..1
 * extension[birthPlace] MS
@@ -30,7 +31,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR] ^short = "INS-NIR - The patient national health identifier INS obtained by requesting the national patient identification service (CNAM) called the INSi teleservice. Identifiant national de santé (NIR) du patient INS provenant du téléservice INSi (service national d'identification des patients (CNAM))"
 * identifier[INS-NIR] MS
 * identifier[INS-NIR].use 1..
-* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS  (required)
 * identifier[INS-NIR].use ^short = "official | old"
 * identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (permettant de noter l'ancien INS-NIR en cas de changement de sexe par exemple)"
 * identifier[INS-NIR].type 1..
@@ -43,9 +44,9 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIA] ^short = "INS-NIA - The temporary patient health national identifier obtained by requesting the national patient identification service (CNAM)| Identifiant national temporaire de santé du patient obtenu par interrogation du téléservice INSi de la CNAM"
 * identifier[INS-NIA] MS
 * identifier[INS-NIA].use 1..
-* identifier[INS-NIA].use from FRCoreValueSetPatientIdentifierUseINS
+* identifier[INS-NIA].use from FRCoreValueSetPatientIdentifierUseINS (required)
 * identifier[INS-NIA].use ^short = "official | old"
-* identifier[INS-NIA].use ^comment = "La valeur old permet d'identifier des INS désactivés (en cas d'obtention d'un INS-NIR par exemple)"
+* identifier[INS-NIA].use ^comment = "Un INS d'attente est à la fois officiel et temporaire. Pour éviter les différences d'interprétation, il a été conclu en 2025 que l'INS-NIA est avant tout le numéro officiel à un instant donné. La valeur old permet d'identifier des INS désactivés (en cas d'obtention d'un INS-NIR par exemple)"
 * identifier[INS-NIA].type 1..
 * identifier[INS-NIA].type = $fr-core-v2-0203#INS-NIA
 * identifier[INS-NIA].system 1..
