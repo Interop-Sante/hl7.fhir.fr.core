@@ -21,6 +21,15 @@
 * Ajout de la page change notes pour faciliter l'accès à l'historique des modifications [#221](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/221)
 * Mise à jour du texte sur le patient INS sur la définition des identifiants NIR [#227](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/227)
 * Relaxation de la contrainte Encounter.subject pour qu'il puisse également pointer un Group [#228](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/228)
+* Suppression des contraintes de HumanName sur la civiliteexercice, déplacé dans Practitioner [#230](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/230)
+* Refacto - uniformisation des namings et correction QA [#232](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/232)
+* Suppression MLLE dans les civilités [#237](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/237)
+* Mise à jour identifiants INS Patient [#238](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/238)
+* MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
+* Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
+* Retrait du genre "other" sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
+
+
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
