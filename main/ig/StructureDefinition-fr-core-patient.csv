@@ -70,7 +70,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Carries the death place of the patient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:birthdateUpdateIndicator","Patient.extension","birthdateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
+"Patient.extension:birthDateUpdateIndicator","Patient.extension","birthDateUpdateIndicator","","",0,1,"","","","Extension {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator]]} {[]}
 ","FR Core Patient Birthdate Update Indicator Extension","Indicateur booléen de mise à jour de la date de naissance","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -434,10 +434,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The kind of relationship","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","The nature of the relationship between a patient and a contact person for that patient.","http://hl7.org/fhir/ValueSet/patient-contactrelationship","","value:$this}
 ","",,"open","Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","n/a","NK1-7, NK1-3"
-"Patient.contact.relationship:Role","Patient.contact.relationship","Role","","",0,1,"","","","CodeableConcept {[]} {[]}
+"Patient.contact.relationship:role","Patient.contact.relationship","role","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role","",,,,"Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","n/a","NK1-7, NK1-3"
-"Patient.contact.relationship:RelationType","Patient.contact.relationship","RelationType","","",0,1,"","","","CodeableConcept {[]} {[]}
+"Patient.contact.relationship:relationType","Patient.contact.relationship","relationType","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ...","The nature of the relationship between the patient and the contact person.","","Used to determine which contact person is the most relevant to approach, depending on circumstances.","","","","","","","",,"extensible","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type","",,,,"Patient.contact.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","n/a","NK1-7, NK1-3"
 "Patient.contact.name","Patient.contact.name","","","",0,1,"","","","HumanName {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name]]} {[]}
@@ -487,7 +487,7 @@ Multiple GPs may be recorded against the patient for various reasons, such as a 
 
 Jurisdictions may decide that they can profile this down to 1 if desired, or 1 per type.","","","","","","","","",,,,,"",,,,"Patient.generalPractitioner",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","subjectOf.CareEvent.performer.AssignedEntity","n/a","PD1-4"
-"Patient.managingOrganization","Patient.managingOrganization","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization]]}
+"Patient.managingOrganization","Patient.managingOrganization","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization that is the custodian of the patient record","Organization that is the custodian of the patient record.","There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association).","Need to know who recognizes this patient record, manages and updates it.","","","","","","","",,,,,"",,,,"Patient.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","scoper",".providerOrganization"
 "Patient.link","Patient.link","","","",0,*,"","Y","Y","BackboneElement {[]} {[]}
