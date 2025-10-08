@@ -20,8 +20,8 @@ Description: """Profile of the Patient resource for France. This profile specifi
     fr-core-patient-nationality named nationality 0..1 and
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
-    FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
-    http://hl7.org/fhir/StructureDefinition/patient-birthPlace named birthPlace 0..1 and
+    FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
+    $patient-birthPlace named birthPlace 0..1 and
     FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
@@ -136,21 +136,21 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
-    Role 0..1 and
-    RelationType 0..1
+    role 0..1 and
+    relationType 0..1
 // TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
-* contact.relationship[Role] from FRCoreValueSetPatientContactRole (extensible) 
+* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[Role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
+* contact.relationship[role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
 
-* contact.relationship[RelationType] from FRCoreValueSetPatientRelationType (extensible) 
+* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[RelationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
+* contact.relationship[relationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
 
 * contact.name only FRCoreHumanNameProfile
 * contact.telecom only FRCoreContactPointProfile
 * generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or PractitionerRole)
-* managingOrganization only Reference(FRCoreOrganizationProfile)
+* managingOrganization only Reference(FRCoreOrganizationProfile or Organization)
