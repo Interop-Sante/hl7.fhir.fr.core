@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-30T14:55:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-08T07:32:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -73,7 +73,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
   ] [
      fhir:id [ fhir:v "ans_fr_terminologies" ] ;
      fhir:uri [
@@ -81,7 +81,7 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "1.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -508,7 +508,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.0"
        ]
      ] [
        fhir:extension ( [
@@ -2488,42 +2488,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-civility" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Civility" ] ;
-       fhir:description [ fhir:v "The Patient or person civility" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-exercice-rass> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-civility-exercice-rass" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Civility exercice RASS" ] ;
-       fhir:description [ fhir:v "Civilités d'exercice d'un professionnel du RASS" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-cog-commune-pays" ]
        ] ;
@@ -2812,6 +2776,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-mode-validation-identity-ins" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Mode validation identity INS" ] ;
+       fhir:description [ fhir:v "The validation mode of the identity authorized for INS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-activity-field> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-organization-activity-field" ]
        ] ;
@@ -2938,10 +2920,28 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-identifier-use" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-identifier-use-ins" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Patient identifier use" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient identifier use INS" ] ;
+       fhir:description [ fhir:v "Use autorisés pour l'identifiant national de santé.\r\nAuthorized use for INS identifier." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-identifier-use-pi" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient identifier use PI" ] ;
        fhir:description [ fhir:v "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier." ] ;
        fhir:example [
          a fhir:boolean ;

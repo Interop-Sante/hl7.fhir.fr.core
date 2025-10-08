@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-07-30T14:55:53+00:00",
+  "date" : "2025-10-08T07:32:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -55,13 +55,13 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0-ballot-tc1"
   },
   {
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.1.0"
+    "version" : "1.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -374,7 +374,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.0"
     },
     {
       "extension" : [{
@@ -1722,30 +1722,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-civility"
-      },
-      "name" : "FR Core ValueSet Civility",
-      "description" : "The Patient or person civility",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-civility-exercice-rass"
-      },
-      "name" : "FR Core ValueSet Civility exercice RASS",
-      "description" : "Civilités d'exercice d'un professionnel du RASS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/fr-core-vs-cog-commune-pays"
       },
       "name" : "FR Core ValueSet COG commune pays",
@@ -1938,6 +1914,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/fr-core-vs-mode-validation-identity-ins"
+      },
+      "name" : "FR Core ValueSet Mode validation identity INS",
+      "description" : "The validation mode of the identity authorized for INS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-activity-field"
       },
       "name" : "FR Core ValueSet Organization activity field",
@@ -2022,9 +2010,21 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-patient-identifier-use"
+        "reference" : "ValueSet/fr-core-vs-patient-identifier-use-ins"
       },
-      "name" : "FR Core ValueSet Patient identifier use",
+      "name" : "FR Core ValueSet Patient identifier use INS",
+      "description" : "Use autorisés pour l'identifiant national de santé.\r\nAuthorized use for INS identifier.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-patient-identifier-use-pi"
+      },
+      "name" : "FR Core ValueSet Patient identifier use PI",
       "description" : "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier.",
       "exampleBoolean" : false
     },
