@@ -10,8 +10,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * meta.profile contains fr-ins-canonical 0..1
 * meta.profile[fr-ins-canonical] = Canonical(fr-core-patient-ins)
 
-* extension[identityReliability].extension[identityStatus] = #VALI 
-* extension[identityReliability].extension[validationMode] only fr-core-vs-mode-validation-identity-ins (required)
+* extension[identityReliability].extension[validationMode].value[x] from fr-core-vs-mode-validation-identity-ins (required)
 
 
 * extension[birthPlace] 1..1
@@ -31,7 +30,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR] ^short = "INS-NIR - The patient national health identifier INS obtained by requesting the national patient identification service (CNAM) called the INSi teleservice. Identifiant national de santé (NIR) du patient INS provenant du téléservice INSi (service national d'identification des patients (CNAM))"
 * identifier[INS-NIR] MS
 * identifier[INS-NIR].use 1..
-* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS  (required)
+* identifier[INS-NIR].use from FRCoreValueSetPatientIdentifierUseINS (required)
 * identifier[INS-NIR].use ^short = "official | old"
 * identifier[INS-NIR].use ^comment = "La valeur old permet d'identifier des INS désactivés (permettant de noter l'ancien INS-NIR en cas de changement de sexe par exemple)"
 * identifier[INS-NIR].type 1..
@@ -87,7 +86,7 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 
 
 Invariant:   fr-core-1
-Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST]or Patient.identifier[INS-NIR-DEMO] SHALL be present"
+Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
 * expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
 
