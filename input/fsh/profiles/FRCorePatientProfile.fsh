@@ -116,7 +116,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * gender from fr-core-vs-patient-gender (required)
 * gender ^short = "male | female | unknown"
-* gender ^definition = "French patient's gender checked with the INSi teleservice | Genre administratif du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs M ou F issues du téléservice sont à adapter à FHIR (male ou female)."
+* gender ^definition = "French patient's gender checked with the INSi teleservice | Genre administratif du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs M ou F issues du téléservice sont à adapter à FHIR (male | female | unknown)."
 
 * birthDate ^short = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 
