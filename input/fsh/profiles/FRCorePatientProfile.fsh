@@ -20,7 +20,7 @@ Description: """Profile of the Patient resource for France. This profile specifi
     fr-core-patient-nationality named nationality 0..1 and
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
-    FRCorePatientBirthDateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
+    FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
     $patient-birthPlace named birthPlace 0..1 and
     FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 

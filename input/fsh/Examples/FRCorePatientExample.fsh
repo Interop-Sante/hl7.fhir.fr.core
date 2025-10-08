@@ -35,10 +35,10 @@ Description: "Exemple de ressource Patient (cas d'usage INS)"
 * birthDate = "1974-12-25"
 * deceasedBoolean = false
 * address
-    * use = #home
-    * type = #both
-    * text = "367 rue Troussier, 45100 Orléans, France"
-    * line = "367 rue Troussier"
-    * city = "Orléans"
-    * postalCode = "45100"
-    * period.start = "2018-06-01"
+  * use = #home
+  * type = #both
+  * text = "367 rue Troussier, 45100 Orléans, France"
+  * line = "367 rue Troussier"
+  * city = "Orléans"
+  * postalCode = "45100"
+  * period.start = "2018-06-01"

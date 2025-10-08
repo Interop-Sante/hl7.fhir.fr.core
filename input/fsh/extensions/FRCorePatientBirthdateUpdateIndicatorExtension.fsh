@@ -1,4 +1,4 @@
-Extension: FRCorePatientBirthdateUpdateIndicatorExtension
+Extension: FRCorePatientBirthDateUpdateIndicatorExtension
 Id: fr-core-patient-birthdate-update-indicator
 Title: "FR Core Patient Birthdate Update Indicator Extension"
 Description: "Indicateur booléen de mise à jour de la date de naissance"
