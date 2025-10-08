@@ -12,6 +12,7 @@ Description: "Exemple de ressource Patient (cas d'usage INS)"
 * extension[birthPlace].valueAddress.city = "Ambléon"
 
 * identifier[INS-NIR].value = "123456789012244"
+* identifier[INS-NIR].use = #official
 
 * active = true
 
