@@ -75,8 +75,6 @@ Description: """Profil Fr Core Patient surspécifié pour être conforme aux exi
 * identifier[INS-NIR-DEMO].value 1..
 
 * gender 1..1 MS
-* gender from fr-core-vs-patient-gender-INS (required)
-* gender ^short = "male | female | unknown"
 
 * birthDate 1.. MS
 
