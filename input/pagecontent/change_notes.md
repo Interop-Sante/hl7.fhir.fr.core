@@ -16,6 +16,7 @@
 * Mise à jour du HumanName use (cardinalité et suppression de lignes inutiles héritées) [#208](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/208)
 * Ajout de nouvelles méthodes de collectes d'identité dans le cadre de l'INS [#210](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/210)
 * Ajout de l'extension MultipleBirth pour indiquer le rang gémellaire d'un patient [#212](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/212)
+* Patient: assouplissement de la contrainte sur identifier[PI].use via binding à un VS dédié [#215](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/215)
 * Résolution erreurs QA : mise à jour et ajout d'exemples, définition concepts CS, path Extension [#216](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/216)
 * Ajout page : bonnes pratiques, problématiques connues, et mise à jour de l'index pour expliciter l'intérêt de FRCore [#220](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/220)
 * Ajout de la page change notes pour faciliter l'accès à l'historique des modifications [#221](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/221)
@@ -28,8 +29,6 @@
 * MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
 * Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
 * Retrait du genre "other" sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
-
-
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
