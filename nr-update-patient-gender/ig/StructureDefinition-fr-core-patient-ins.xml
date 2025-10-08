@@ -68,7 +68,7 @@
   <name value="FRCorePatientINSProfile"/>
   <title value="FR Core Patient INS Profile"/>
   <status value="active"/>
-  <date value="2025-10-08T11:52:57+00:00"/>
+  <date value="2025-10-08T11:55:00+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -7041,7 +7041,7 @@
     <element id="Patient.gender">
       <path value="Patient.gender"/>
       <short value="male | female | unknown"/>
-      <definition value="French patient's gender checked with the INSi teleservice | Genre administratif du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs M ou F issues du téléservice sont à adapter à FHIR (male ou female)."/>
+      <definition value="French patient's gender checked with the INSi teleservice | Genre administratif du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs M ou F issues du téléservice sont à adapter à FHIR (male | female | unknown)."/>
       <comment value="The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a &quot;hard&quot; error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex."/>
       <requirements value="Needed for identification of the individual, in combination with (at least) name and birth date."/>
       <min value="1"/>
