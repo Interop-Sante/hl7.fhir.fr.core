@@ -64,6 +64,7 @@ Alias: $oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
+Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 
 
 
@@ -93,6 +94,7 @@ Alias: $fr-core-mode-validation-identite = https://hl7.fr/ig/fhir/core/ValueSet/
 Alias: $fr-core-height-body-position = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position
 Alias: $fr-practitioner-role-categorie-professionnelle = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle
 Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason
+
 
 
 // SD
