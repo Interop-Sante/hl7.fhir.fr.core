@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
   },
   "url" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
-  "version" : "2.2.0",
+  "version" : "2.2.0-ballot",
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-07-07T15:26:46+00:00",
+  "date" : "2025-10-08T07:41:56+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -45,7 +45,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -55,13 +55,13 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0-ballot-tc1"
   },
   {
-    "id" : "ans_fr_nos",
-    "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
-    "packageId" : "ans.fr.nos",
-    "version" : "1.5.0"
+    "id" : "ans_fr_terminologies",
+    "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
+    "packageId" : "ans.fr.terminologies",
+    "version" : "1.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -82,7 +82,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -374,7 +374,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.0"
     },
     {
       "extension" : [{
@@ -394,7 +394,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1557,7 +1557,7 @@
         "reference" : "StructureDefinition/fr-core-patient-ins"
       },
       "name" : "FR Core Patient INS Profile",
-      "description" : "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS).",
+      "description" : "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
       "exampleBoolean" : false
     },
     {
@@ -1714,30 +1714,6 @@
       },
       "name" : "FR Core ValueSet BP measurement method",
       "description" : "A coded type for the blood pressure measurement method",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-civility"
-      },
-      "name" : "FR Core ValueSet Civility",
-      "description" : "The Patient or person civility",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-civility-exercice-rass"
-      },
-      "name" : "FR Core ValueSet Civility exercice RASS",
-      "description" : "Civilités d'exercice d'un professionnel du RASS",
       "exampleBoolean" : false
     },
     {
@@ -1938,6 +1914,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/fr-core-vs-mode-validation-identity-ins"
+      },
+      "name" : "FR Core ValueSet Mode validation identity INS",
+      "description" : "The validation mode of the identity authorized for INS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-activity-field"
       },
       "name" : "FR Core ValueSet Organization activity field",
@@ -2000,7 +1988,7 @@
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-gender-INS"
       },
-      "name" : "FR Core ValueSet Patient gender INS ValueSet",
+      "name" : "FR Core ValueSet Patient gender INS",
       "description" : "Genres autorisés dans le cadre du Patient INS.\r\nPermitted genders for INS Patient",
       "exampleBoolean" : false
     },
@@ -2022,10 +2010,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-practitioner-identifier-type"
+        "reference" : "ValueSet/fr-core-vs-patient-identifier-use-ins"
       },
-      "name" : "FR Core ValueSet Practitioner identifier type",
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)",
+      "name" : "FR Core ValueSet Patient identifier use INS",
+      "description" : "Use autorisés pour l'identifiant national de santé.\r\nAuthorized use for INS identifier.",
       "exampleBoolean" : false
     },
     {
@@ -2034,10 +2022,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-practitioner-qualification"
+        "reference" : "ValueSet/fr-core-vs-patient-identifier-use-pi"
       },
-      "name" : "FR Core ValueSet Practitioner qualification",
-      "description" : "A code classifying the qualification of the provider",
+      "name" : "FR Core ValueSet Patient identifier use PI",
+      "description" : "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-practitioner-identifier-type"
+      },
+      "name" : "FR Core ValueSet Practitioner identifier type",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)",
       "exampleBoolean" : false
     },
     {
@@ -2346,10 +2346,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-corepatient-multiple-birth-r5"
+        "reference" : "StructureDefinition/fr-core-patient-multiple-birth-r5"
       },
       "name" : "Rang Gémellaire",
-      "description" : "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.",
+      "description" : "Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.",
       "exampleBoolean" : false
     },
     {

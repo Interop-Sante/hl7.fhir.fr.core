@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:version [ fhir:v "2.2.0-ballot"] ; # 
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-07T15:26:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-08T07:41:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -58,7 +58,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -73,15 +73,15 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
   ] [
-     fhir:id [ fhir:v "ans_fr_nos" ] ;
+     fhir:id [ fhir:v "ans_fr_terminologies" ] ;
      fhir:uri [
-       fhir:v "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
+       fhir:v "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
-     fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.5.0" ]
+     fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
+     fhir:version [ fhir:v "1.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -110,7 +110,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ci-build"
+           fhir:v "ballot"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -508,7 +508,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.0"
        ]
      ] [
        fhir:extension ( [
@@ -536,7 +536,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ci-build"
+           fhir:v "ballot"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -2240,7 +2240,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
-       fhir:description [ fhir:v "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS)." ] ;
+       fhir:description [ fhir:v "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2475,42 +2475,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet BP measurement method" ] ;
        fhir:description [ fhir:v "A coded type for the blood pressure measurement method" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-civility" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Civility" ] ;
-       fhir:description [ fhir:v "The Patient or person civility" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-civility-exercice-rass> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-civility-exercice-rass" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Civility exercice RASS" ] ;
-       fhir:description [ fhir:v "Civilités d'exercice d'un professionnel du RASS" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2812,6 +2776,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-mode-validation-identity-ins" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Mode validation identity INS" ] ;
+       fhir:description [ fhir:v "The validation mode of the identity authorized for INS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-activity-field> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-organization-activity-field" ]
        ] ;
@@ -2905,7 +2887,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender-INS> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-gender-INS" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Patient gender INS ValueSet" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient gender INS" ] ;
        fhir:description [ fhir:v "Genres autorisés dans le cadre du Patient INS.\r\nPermitted genders for INS Patient" ] ;
        fhir:example [
          a fhir:boolean ;
@@ -2938,11 +2920,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-identifier-type" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-identifier-use-ins" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Practitioner identifier type" ] ;
-       fhir:description [ fhir:v "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient identifier use INS" ] ;
+       fhir:description [ fhir:v "Use autorisés pour l'identifiant national de santé.\r\nAuthorized use for INS identifier." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2956,11 +2938,29 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-qualification> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-qualification" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-identifier-use-pi" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Practitioner qualification" ] ;
-       fhir:description [ fhir:v "A code classifying the qualification of the provider" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient identifier use PI" ] ;
+       fhir:description [ fhir:v "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-identifier-type" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Practitioner identifier type" ] ;
+       fhir:description [ fhir:v "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3439,11 +3439,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-corepatient-multiple-birth-r5> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-corepatient-multiple-birth-r5" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-multiple-birth-r5> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-multiple-birth-r5" ]
        ] ;
        fhir:name [ fhir:v "Rang Gémellaire" ] ;
-       fhir:description [ fhir:v "Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x." ] ;
+       fhir:description [ fhir:v "Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

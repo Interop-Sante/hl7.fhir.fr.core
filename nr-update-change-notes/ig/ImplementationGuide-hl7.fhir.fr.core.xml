@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name="hl7.fhir.fr.core"> </a><a name="hchl7.fhir.fr.core"> </a><h2>FrCore</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
   </text>
   <url value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
-  <version value="2.2.0"/>
+  <version value="2.2.0-ballot"/>
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="active"/>
-  <date value="2025-07-07T15:26:46+00:00"/>
+  <date value="2025-10-08T07:41:56+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -43,7 +43,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -51,12 +51,12 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0-ballot-tc1"/>
   </dependsOn>
-  <dependsOn id="ans_fr_nos">
-    <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
-    <packageId value="ans.fr.nos"/>
-    <version value="1.5.0"/>
+  <dependsOn id="ans_fr_terminologies">
+    <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
+    <packageId value="ans.fr.terminologies"/>
+    <version value="1.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -72,7 +72,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="ballot"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -284,7 +284,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -299,7 +299,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="ballot"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1310,7 +1310,7 @@
         <reference value="StructureDefinition/fr-core-patient-ins"/>
       </reference>
       <name value="FR Core Patient INS Profile"/>
-      <description value="Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS)."/>
+      <description value="Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1454,28 +1454,6 @@
       </reference>
       <name value="FR Core ValueSet BP measurement method"/>
       <description value="A coded type for the blood pressure measurement method"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-civility"/>
-      </reference>
-      <name value="FR Core ValueSet Civility"/>
-      <description value="The Patient or person civility"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-civility-exercice-rass"/>
-      </reference>
-      <name value="FR Core ValueSet Civility exercice RASS"/>
-      <description value="Civilités d'exercice d'un professionnel du RASS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1659,6 +1637,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-mode-validation-identity-ins"/>
+      </reference>
+      <name value="FR Core ValueSet Mode validation identity INS"/>
+      <description value="The validation mode of the identity authorized for INS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-organization-activity-field"/>
       </reference>
       <name value="FR Core ValueSet Organization activity field"/>
@@ -1716,7 +1705,7 @@
       <reference>
         <reference value="ValueSet/fr-core-vs-patient-gender-INS"/>
       </reference>
-      <name value="FR Core ValueSet Patient gender INS ValueSet"/>
+      <name value="FR Core ValueSet Patient gender INS"/>
       <description value="Genres autorisés dans le cadre du Patient INS.&#xD;&#xA;Permitted genders for INS Patient"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1736,10 +1725,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-practitioner-identifier-type"/>
+        <reference value="ValueSet/fr-core-vs-patient-identifier-use-ins"/>
       </reference>
-      <name value="FR Core ValueSet Practitioner identifier type"/>
-      <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)"/>
+      <name value="FR Core ValueSet Patient identifier use INS"/>
+      <description value="Use autorisés pour l'identifiant national de santé.&#xD;&#xA;Authorized use for INS identifier."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1747,10 +1736,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-practitioner-qualification"/>
+        <reference value="ValueSet/fr-core-vs-patient-identifier-use-pi"/>
       </reference>
-      <name value="FR Core ValueSet Practitioner qualification"/>
-      <description value="A code classifying the qualification of the provider"/>
+      <name value="FR Core ValueSet Patient identifier use PI"/>
+      <description value="Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).&#xD;&#xA;Authorized use for PI identifier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-practitioner-identifier-type"/>
+      </reference>
+      <name value="FR Core ValueSet Practitioner identifier type"/>
+      <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2033,10 +2033,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-corepatient-multiple-birth-r5"/>
+        <reference value="StructureDefinition/fr-core-patient-multiple-birth-r5"/>
       </reference>
       <name value="Rang Gémellaire"/>
-      <description value="Extension crée pour exprimer le rang gémellaire, notamment utle dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x."/>
+      <description value="Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
