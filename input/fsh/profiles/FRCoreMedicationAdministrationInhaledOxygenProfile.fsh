@@ -2,7 +2,8 @@ Profile: FRCoreMedicationAdministrationInhaledOxygenProfile
 Parent: MedicationAdministration
 Id: fr-core-medication-administration-inhaled-oxygen
 Title: "FR Core Medication Administration Inhaled Oxygen Profile"
-Description: "Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique."
+Description: "Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.\r\n
+Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique."
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

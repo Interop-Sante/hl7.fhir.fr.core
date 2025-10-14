@@ -2,8 +2,8 @@ Profile: FRCoreOrganizationUACProfile
 Parent: Organization
 Id: fr-core-organization-uac
 Title: "FR Core Organization UAC Profile"
-Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.
-\r\nCe profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"
+Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.\r\n
+Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

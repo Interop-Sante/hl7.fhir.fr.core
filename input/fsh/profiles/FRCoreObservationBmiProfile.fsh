@@ -2,8 +2,8 @@ Profile: FRCoreObservationBmiProfile
 Parent: $bmi
 Id: fr-core-observation-bmi
 Title: "FR Core Observation Bmi Profile"
-Description: "French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].
-\r\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"
+Description: "French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].\r\n
+Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
