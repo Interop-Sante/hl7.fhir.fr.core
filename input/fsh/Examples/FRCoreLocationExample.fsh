@@ -1,7 +1,8 @@
 Instance: FRCoreLocationExample
 InstanceOf: Location
 Usage: #example
-Title: "Centre de radiologie – Hôpital Z"
+Description: "Exemple de ressource Location pour décrire la localisation du centre de radiologie de l'hôpital Z"
+
 * id = "loc-radiologie-z"
 * identifier[0].use = #official
 * identifier[0].system = "urn:oid:1.2.250.1.1.1.2"  // exemple d’OID

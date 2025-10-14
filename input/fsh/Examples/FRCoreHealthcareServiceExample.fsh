@@ -1,7 +1,7 @@
 Instance: FRCoreHealthcareServiceExample
 InstanceOf: FRCoreHealthcareServiceProfile
 Usage: #example
-Title: "Service de cardiologie de l’hôpital X"
+Description: "Exemple de ressource HealthcareService pour décrire le service de cardiologie de l’hôpital X"
 * id = "svc-cardiologie-1"
 * identifier[0].use = #official
 * identifier[0].system = "urn:oid:1.2.250.1.1.1.1"
