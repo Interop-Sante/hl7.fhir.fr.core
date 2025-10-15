@@ -2,8 +2,8 @@ Profile: FRCoreOrganizationProfile
 Parent: Organization
 Id: fr-core-organization
 Title: "FR Core Organization Profile"
-Description: """Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. 
-\r\nProfil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises."""
+Description: """Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. \r\n
+Profil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises."""
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
