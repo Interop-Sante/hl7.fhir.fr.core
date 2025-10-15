@@ -22,7 +22,11 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
     $patient-birthPlace named birthPlace 0..1 and
-    FRCorePatientMultipleBirthExtension named multipleBirth 0..1
+    $patient-multiple-birth-r5 named multipleBirth-r5 0..1
+
+* extension[multipleBirth-r5]
+  * value[x] only integer
+  * ^short = "Whether patient is part of a multiple birth"
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
 
