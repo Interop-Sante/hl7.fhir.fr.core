@@ -102,4 +102,4 @@ Alias: $fr-core-observation-level-of-exertion = https://hl7.fr/ig/fhir/core/Stru
 
 
 
-Alias: $patient-multiple-birth-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth
+Alias: $patient-multiple-birth-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth[x]

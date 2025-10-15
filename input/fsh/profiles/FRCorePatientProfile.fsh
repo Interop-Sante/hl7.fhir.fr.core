@@ -22,7 +22,11 @@ Description: """Profile of the Patient resource for France. This profile specifi
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
     $patient-birthPlace named birthPlace 0..1 and
-    $patient-multiple-birth-r5 named multipleBirth 0..1
+    $patient-multiple-birth-r5 named multipleBirth-r5 0..1
+
+* extension[multipleBirth-r5]
+  * value[x] only integer
+  * ^short = "Whether patient is part of a multiple birth"
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
 
