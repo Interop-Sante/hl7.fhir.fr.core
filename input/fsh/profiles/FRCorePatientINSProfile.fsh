@@ -95,4 +95,4 @@ Description: "If identityReliability status = 'VALI', then at least Patient.ide
 Invariant:   fr-core-2
 Description: "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"
 * severity = #error
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1).exists())"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1)"
