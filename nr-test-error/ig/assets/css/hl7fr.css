@@ -1,0 +1,162 @@
+/* Product families should override the following two colors with family-specific colors */
+
+:root {
+    --ig-status-text-color: #005aa8;
+    --navbar-bg-color: #005aa8; /* 2. Header container color */
+    --footer-bg-color: #707070; /* 3. Footer background color*/
+    --footer-container-color: #505050; /* 4. Footer container color */
+    --stripe-bg-color: #f18818; /* 5. Header strip color */
+    --btn-hover-color: #0060df; /* 6. Menu button hover color */
+    --btn-text-color: white; /* 8. Menu button text color */
+    --stu-note-background-color: #fff2ff; /* 19. (STU) Note box background color */
+    --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
+}
+
+/* Generic settings common to all HL7 IGs */
+#hl7-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+}
+#hl7-nav a {
+  color: inherit;
+}
+#hl7-logo {
+  float: left;
+  margin-left: 6px;
+}
+#hl7-search {
+  line-height: 50px;
+  float: right;
+  margin-top: 4px;
+}
+#hl7-search a {
+  color: inherit;
+}
+#project-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#project-logo {
+  float: left;
+  margin-left: 3px;
+}
+
+/* --- corps de texte --- */
+dt {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+dd {
+    margin-left: 2rem;
+}
+
+/* --- schema --- */
+
+p.schema {
+    width: 100%;
+    text-align: center;
+}
+p.schema img {
+    float: none;
+    width: 80%;
+    display: inline-block;
+}
+
+/* --- tag --- */
+
+.tag {
+    display: inline-block;
+    padding: 0.4em 1em;
+    background-color: #f0f0f0; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 10px; /* Bords arrondis */
+    font-size: 0.9em; /* Taille de la police */
+    margin: 0.2em; /* Marge autour du tag */
+}
+
+.tag-cat1 {
+    background-color: #ff5733;
+}
+.tag-cat2 {
+    background-color: #3357ff;
+}
+.tag-cat3 {
+    background-color: #ff33a1;
+}
+.tag-cat4 {
+    background-color: #8e44ad;
+}
+.tag-cat5 {
+    background-color: #3498db;
+}
+.tag-cat6 {
+    background-color: #f39c12;
+}
+.tag-cat7 {
+    background-color: #1abc9c;
+}
+.tag-cat8 {
+    background-color: #3f51b5;
+}
+.tag-cat9 {
+    background-color: #ffeb3b;
+    color: black;
+}
+.tag-cat10 {
+    background-color: #4caf50;
+}
+
+/* --- table -- */
+
+.table-is > thead {
+    background-color: var(--navbar-bg-color);
+    color: white;
+    padding: 1rem;
+}
+
+.table-is > thead > tr > th,
+.table-is > tbody > tr > td {
+    padding: 1rem;
+}
+
+.table-is {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 2rem;
+}
+
+
+/* ----------note-to-balloters styling------*/
+  
+.note-to-balloters::before {
+  white-space: pre;
+  content: "Note To Balloters\A ";
+  #background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+.note-to-balloters, .stu-note{
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+}
+  
+.stu-note::before {
+  white-space: pre;
+  content: "STU Note\A ";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
