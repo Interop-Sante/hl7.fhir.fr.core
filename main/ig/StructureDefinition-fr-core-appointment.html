@@ -278,7 +278,7 @@
         
           Active
           
-            as of 2025-10-15
+            as of 2025-10-22
           
         
       </td>
@@ -422,7 +422,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">accepted | declined | tentative | needs-action<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-participationstatus.html" title="http://hl7.org/fhir/ValueSet/participationstatus" class="binding">ParticipationStatus</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The Participation status of an appointment.</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 80a522c0-9ba4-4d4b-8185-306ff797bf35
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 7c6f6395-ce3a-4c14-850e-0748a6943eed
 document.getElementById('cbfr-core-appointmentK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-appointmentK'), 'binding', document.getElementById('cbfr-core-appointmentK-binding').checked, document.getElementById('ppfr-core-appointmentK'));
 document.getElementById('cbfr-core-appointmentK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -432,11 +432,70 @@ filterDesc(document.getElementById('fr-core-appointmentK'), 'obligation', docume
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Appointment.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The free/busy status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a><div><code>http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.specialty</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FRCoreValueSetPractitionerSpecialty</a><div><code>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"></button></div><div>From this IG</div></td></tr>
-<tr><td>Appointment.participant.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The Participation status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a><div><code>http://hl7.org/fhir/ValueSet/participationstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The free/busy status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.specialty</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FR Core ValueSet Practitioner specialty</a>
+      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0-ballot</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The Participation status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -446,19 +505,127 @@ filterDesc(document.getElementById('fr-core-appointmentK'), 'obligation', docume
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>app-1</td><td>error</td><td>Appointment.participant</td><td>Either the type or actor on the participant SHALL be specified<br/>: type.exists() or actor.exists()</td><td></td></tr>
-<tr><td>app-2</td><td>error</td><td>Appointment</td><td>Either start and end are specified, or neither<br/>: start.exists() = end.exists()</td><td></td></tr>
-<tr><td>app-3</td><td>error</td><td>Appointment</td><td>Only proposed or cancelled appointments can be missing start/end dates<br/>: (start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</td><td></td></tr>
-<tr><td>app-4</td><td>error</td><td>Appointment</td><td>Cancelation reason is only used for appointments that have been cancelled, or no-show<br/>: Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Appointment</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>app-1</td>
+    <td>error</td>
+    <td>Appointment.participant</td>
+    <td>Either the type or actor on the participant SHALL be specified</td>
+    <td>
+      <code>type.exists() or actor.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Either start and end are specified, or neither</td>
+    <td>
+      <code>start.exists() = end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Only proposed or cancelled appointments can be missing start/end dates</td>
+    <td>
+      <code>(start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Cancelation reason is only used for appointments that have been cancelled, or no-show</td>
+    <td>
+      <code>Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Appointment</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -522,7 +689,7 @@ filterDesc(document.getElementById('fr-core-appointmentK'), 'obligation', docume
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/device.html">Device</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a href="StructureDefinition-fr-core-related-person.html">FR Core Related Person Profile</a> | <a href="StructureDefinition-fr-core-healthcare-service.html">FR Core Healthcare Service Profile</a> | <a href="StructureDefinition-fr-core-practitioner.html">FR Core Practitioner Profile</a> | <a href="StructureDefinition-fr-core-patient.html">FR Core Patient Profile</a> | <a href="StructureDefinition-fr-core-location.html">FR Core Location Profile</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Person, Location/HealthcareService or Device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 80a522c0-9ba4-4d4b-8185-306ff797bf35
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 7c6f6395-ce3a-4c14-850e-0748a6943eed
 document.getElementById('cbfr-core-appointmentD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-appointmentD'), 'binding', document.getElementById('cbfr-core-appointmentD-binding').checked, document.getElementById('ppfr-core-appointmentD'));
 document.getElementById('cbfr-core-appointmentD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -533,9 +700,40 @@ filterDesc(document.getElementById('fr-core-appointmentD'), 'obligation', docume
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Appointment.specialty</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FRCoreValueSetPractitionerSpecialty</a><div><code>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.specialty</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-fr-core-vs-practitioner-specialty.html">FR Core ValueSet Practitioner specialty</a>
+      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0-ballot</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -684,7 +882,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The style of appointment or patient that has been booked in the slot (not service type)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/5.0.0/ValueSet-v2-0276.html" title="http://terminology.hl7.org/ValueSet/v2-0276" class="binding">hl7VS-appointmentReasonCodes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The style of appointment or patient that has been booked in the slot (not service type)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0276.html" title="http://terminology.hl7.org/ValueSet/v2-0276" class="binding">hl7VS-appointmentReasonCodes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a15." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-appointment-definitions.html#Appointment.reasonCode" title="The coded reason that this appointment is being scheduled. This is more clinical than administrative." data-no-external="true">reasonCode</a><a name="s-Appointment.reasonCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -804,7 +1002,7 @@ The duration (usually in minutes) could also be provided to indicate the length 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Potential date/time interval(s) requested to allocate the appointment within<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 80a522c0-9ba4-4d4b-8185-306ff797bf35
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 7c6f6395-ce3a-4c14-850e-0748a6943eed
 document.getElementById('cbfr-core-appointmentS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-appointmentS'), 'binding', document.getElementById('cbfr-core-appointmentS-binding').checked, document.getElementById('ppfr-core-appointmentS'));
 document.getElementById('cbfr-core-appointmentS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -814,37 +1012,220 @@ filterDesc(document.getElementById('fr-core-appointmentS'), 'obligation', docume
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Appointment.meta.security</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.meta.tag</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a><div><code>http://hl7.org/fhir/ValueSet/common-tags</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Bindings Additionnels</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">But</td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Appointment.meta.security</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Un binding requis, à utiliser lorsque la force de binding est 'extensible' ou 'preferred'">Binding Max</a>
+    <td title="Security Labels from the Healthcare Privacy and Security Classification System.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Appointment.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The free/busy status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a><div><code>http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.cancelationReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">AppointmentCancellationReason</a><div><code>http://hl7.org/fhir/ValueSet/appointment-cancellation-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/appointment-cancellation-reason"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.serviceCategory</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-category.html">ServiceCategory</a><div><code>http://hl7.org/fhir/ValueSet/service-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/service-category"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.serviceType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a><div><code>http://hl7.org/fhir/ValueSet/service-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.specialty</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FRCoreValueSetPractitionerSpecialty</a><div><code>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"></button></div><div>From this IG</div></td></tr>
-<tr><td>Appointment.appointmentType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="http://terminology.hl7.org/5.0.0/ValueSet-v2-0276.html">Hl7VSAppointmentReasonCodes</a><div><code>http://terminology.hl7.org/ValueSet/v2-0276</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0276"></button></div></td></tr>
-<tr><td>Appointment.reasonCode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="The Reason for the appointment to take place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/encounter-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.participant.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Role of participant in encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-participant-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.participant.required</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Is the Participant required to attend the appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a><div><code>http://hl7.org/fhir/ValueSet/participantrequired|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participantrequired|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.participant.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The Participation status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a><div><code>http://hl7.org/fhir/ValueSet/participationstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+  <tr>
+    <td>Appointment.meta.tag</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">Common Tags</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The free/busy status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.cancelationReason</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">Appointment cancellation reason</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/appointment-cancellation-reason|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.serviceCategory</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-category.html">Service category</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/service-category|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.serviceType</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-type.html">Service type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.specialty</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FR Core ValueSet Practitioner specialty</a>
+      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0-ballot</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Appointment.appointmentType</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0276.html">hl7VS-appointmentReasonCodes</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0276" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.reasonCode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="The Reason for the appointment to take place.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">Encounter Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Role of participant in encounter.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">Participant type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​required</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Is the Participant required to attend the appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participantrequired|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The Participation status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -854,19 +1235,127 @@ filterDesc(document.getElementById('fr-core-appointmentS'), 'obligation', docume
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>app-1</td><td>error</td><td>Appointment.participant</td><td>Either the type or actor on the participant SHALL be specified<br/>: type.exists() or actor.exists()</td><td></td></tr>
-<tr><td>app-2</td><td>error</td><td>Appointment</td><td>Either start and end are specified, or neither<br/>: start.exists() = end.exists()</td><td></td></tr>
-<tr><td>app-3</td><td>error</td><td>Appointment</td><td>Only proposed or cancelled appointments can be missing start/end dates<br/>: (start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</td><td></td></tr>
-<tr><td>app-4</td><td>error</td><td>Appointment</td><td>Cancelation reason is only used for appointments that have been cancelled, or no-show<br/>: Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Appointment</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>app-1</td>
+    <td>error</td>
+    <td>Appointment.participant</td>
+    <td>Either the type or actor on the participant SHALL be specified</td>
+    <td>
+      <code>type.exists() or actor.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Either start and end are specified, or neither</td>
+    <td>
+      <code>start.exists() = end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Only proposed or cancelled appointments can be missing start/end dates</td>
+    <td>
+      <code>(start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Cancelation reason is only used for appointments that have been cancelled, or no-show</td>
+    <td>
+      <code>Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Appointment</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -975,10 +1464,10 @@ filterDesc(document.getElementById('fr-core-appointmentS'), 'obligation', docume
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.specialty" title="The specialty of a practitioner that would be required to perform the service requested in this appointment" class="dict"><span style="text-decoration: underline">specialty</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">The specialty of a practitioner that would be required to perform the service requested in this appointment</a></span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.appointmentType" title="The style of appointment or patient that has been booked in the slot (not service type)" class="dict"><span style="text-decoration: underline">appointmentType</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">The style of appointment or patient that has been booked in the slot (not service type)</a></span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.reasonCode" title="The coded reason that this appointment is being scheduled. This is more clinical than administrative" class="dict"><span style="text-decoration: underline">reasonCode</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Coded reason this appointment is scheduled</a></span>
-    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.reasonReference" title="Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure" class="dict"><span style="text-decoration: underline">reasonReference</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Reason the appointment is to take place (resource)</span>
+    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.reasonReference" title="Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure" class="dict"><span style="text-decoration: underline">reasonReference</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Condition|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Reason the appointment is to take place (resource)</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.priority" title="The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority)" class="dict"><span style="text-decoration: underline">priority</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Used to make informed decisions if needing to re-prioritize</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.description" title="The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field" class="dict"><span style="text-decoration: underline">description</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Shown on a subject line in a meeting request, or appointment list</span>
-    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.supportingInformation" title="Additional information to support the appointment provided when making the appointment" class="dict"><span style="text-decoration: underline">supportingInformation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Additional information to support the appointment</span>
+    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.supportingInformation" title="Additional information to support the appointment provided when making the appointment" class="dict"><span style="text-decoration: underline">supportingInformation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Resource|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Additional information to support the appointment</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.start" title="Date/Time that the appointment is to take place" class="dict"><span style="text-decoration: underline">start</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When appointment is to take place</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.end" title="Date/Time that the appointment is to conclude" class="dict"><span style="text-decoration: underline">end</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When appointment is to conclude</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.minutesDuration" title="Number of minutes that the appointment is to take. This can be less than the duration between the start and end times.  For example, where the actual time of appointment is only an estimate or if a 30 minute appointment is being requested, but any time would work.  Also, if there is, for example, a planned 15 minute break in the middle of a long appointment, the duration may be 15 minutes less than the difference between the start and end" class="dict"><span style="text-decoration: underline">minutesDuration</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Can be less than start/end (e.g. estimate)</span>
@@ -986,7 +1475,7 @@ filterDesc(document.getElementById('fr-core-appointmentS'), 'obligation', docume
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.created" title="The date that this appointment was initially created. This could be different to the meta.lastModified value on the initial entry, as this could have been before the resource was created on the FHIR server, and should remain unchanged over the lifespan of the appointment" class="dict"><span style="text-decoration: underline">created</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The date that this appointment was initially created</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.comment" title="Additional comments about the appointment" class="dict"><span style="text-decoration: underline">comment</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Additional comments</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.patientInstruction" title="While Appointment.comment contains information for internal use, Appointment.patientInstructions is used to capture patient facing information about the Appointment (e.g. please bring your referral or fast from 8pm night before)" class="dict"><span style="text-decoration: underline">patientInstruction</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Detailed information and instructions for the patient</span>
-    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.basedOn" title="The service request this appointment is allocated to assess (e.g. incoming referral or procedure request)" class="dict"><span style="text-decoration: underline">basedOn</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The service request this appointment is allocated to assess</span>
+    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.basedOn" title="The service request this appointment is allocated to assess (e.g. incoming referral or procedure request)" class="dict"><span style="text-decoration: underline">basedOn</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(ServiceRequest|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The service request this appointment is allocated to assess</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.participant" title="List of participants involved in the appointment" class="dict"><span style="text-decoration: underline">participant</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="app-1: Either the type or actor on the participant SHALL be specified; ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Participants involved in appointment</span>
       "extension": [
       ],
@@ -1129,7 +1618,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">accepted | declined | tentative | needs-action<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-participationstatus.html" title="http://hl7.org/fhir/ValueSet/participationstatus" class="binding">ParticipationStatus</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The Participation status of an appointment.</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 80a522c0-9ba4-4d4b-8185-306ff797bf35
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 7c6f6395-ce3a-4c14-850e-0748a6943eed
 document.getElementById('cbfr-core-appointmentKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-appointmentKA'), 'binding', document.getElementById('cbfr-core-appointmentKA-binding').checked, document.getElementById('ppfr-core-appointmentKA'));
 document.getElementById('cbfr-core-appointmentKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1139,11 +1628,70 @@ filterDesc(document.getElementById('fr-core-appointmentKA'), 'obligation', docum
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Appointment.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The free/busy status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a><div><code>http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.specialty</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FRCoreValueSetPractitionerSpecialty</a><div><code>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"></button></div><div>From this IG</div></td></tr>
-<tr><td>Appointment.participant.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The Participation status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a><div><code>http://hl7.org/fhir/ValueSet/participationstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The free/busy status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.specialty</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FR Core ValueSet Practitioner specialty</a>
+      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0-ballot</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The Participation status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1153,19 +1701,127 @@ filterDesc(document.getElementById('fr-core-appointmentKA'), 'obligation', docum
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>app-1</td><td>error</td><td>Appointment.participant</td><td>Either the type or actor on the participant SHALL be specified<br/>: type.exists() or actor.exists()</td><td></td></tr>
-<tr><td>app-2</td><td>error</td><td>Appointment</td><td>Either start and end are specified, or neither<br/>: start.exists() = end.exists()</td><td></td></tr>
-<tr><td>app-3</td><td>error</td><td>Appointment</td><td>Only proposed or cancelled appointments can be missing start/end dates<br/>: (start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</td><td></td></tr>
-<tr><td>app-4</td><td>error</td><td>Appointment</td><td>Cancelation reason is only used for appointments that have been cancelled, or no-show<br/>: Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Appointment</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>app-1</td>
+    <td>error</td>
+    <td>Appointment.participant</td>
+    <td>Either the type or actor on the participant SHALL be specified</td>
+    <td>
+      <code>type.exists() or actor.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Either start and end are specified, or neither</td>
+    <td>
+      <code>start.exists() = end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Only proposed or cancelled appointments can be missing start/end dates</td>
+    <td>
+      <code>(start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Cancelation reason is only used for appointments that have been cancelled, or no-show</td>
+    <td>
+      <code>Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Appointment</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1229,7 +1885,7 @@ filterDesc(document.getElementById('fr-core-appointmentKA'), 'obligation', docum
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/device.html">Device</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a href="StructureDefinition-fr-core-related-person.html">FR Core Related Person Profile</a> | <a href="StructureDefinition-fr-core-healthcare-service.html">FR Core Healthcare Service Profile</a> | <a href="StructureDefinition-fr-core-practitioner.html">FR Core Practitioner Profile</a> | <a href="StructureDefinition-fr-core-patient.html">FR Core Patient Profile</a> | <a href="StructureDefinition-fr-core-location.html">FR Core Location Profile</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Person, Location/HealthcareService or Device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 80a522c0-9ba4-4d4b-8185-306ff797bf35
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 7c6f6395-ce3a-4c14-850e-0748a6943eed
 document.getElementById('cbfr-core-appointmentDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-appointmentDA'), 'binding', document.getElementById('cbfr-core-appointmentDA-binding').checked, document.getElementById('ppfr-core-appointmentDA'));
 document.getElementById('cbfr-core-appointmentDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1239,9 +1895,40 @@ filterDesc(document.getElementById('fr-core-appointmentDA'), 'obligation', docum
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Appointment.specialty</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FRCoreValueSetPractitionerSpecialty</a><div><code>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.specialty</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-fr-core-vs-practitioner-specialty.html">FR Core ValueSet Practitioner specialty</a>
+      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0-ballot</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1390,7 +2077,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The style of appointment or patient that has been booked in the slot (not service type)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/5.0.0/ValueSet-v2-0276.html" title="http://terminology.hl7.org/ValueSet/v2-0276" class="binding">hl7VS-appointmentReasonCodes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The style of appointment or patient that has been booked in the slot (not service type)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0276.html" title="http://terminology.hl7.org/ValueSet/v2-0276" class="binding">hl7VS-appointmentReasonCodes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a15." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-appointment-definitions.html#Appointment.reasonCode" title="The coded reason that this appointment is being scheduled. This is more clinical than administrative." data-no-external="true">reasonCode</a><a name="sa-Appointment.reasonCode"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1510,7 +2197,7 @@ The duration (usually in minutes) could also be provided to indicate the length 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Potential date/time interval(s) requested to allocate the appointment within<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 80a522c0-9ba4-4d4b-8185-306ff797bf35
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 7c6f6395-ce3a-4c14-850e-0748a6943eed
 document.getElementById('cbfr-core-appointmentSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-appointmentSA'), 'binding', document.getElementById('cbfr-core-appointmentSA-binding').checked, document.getElementById('ppfr-core-appointmentSA'));
 document.getElementById('cbfr-core-appointmentSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1520,37 +2207,220 @@ filterDesc(document.getElementById('fr-core-appointmentSA'), 'obligation', docum
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Appointment.meta.security</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.meta.tag</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a><div><code>http://hl7.org/fhir/ValueSet/common-tags</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Bindings Additionnels</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">But</td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Appointment.meta.security</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Un binding requis, à utiliser lorsque la force de binding est 'extensible' ou 'preferred'">Binding Max</a>
+    <td title="Security Labels from the Healthcare Privacy and Security Classification System.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Appointment.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The free/busy status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a><div><code>http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.cancelationReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">AppointmentCancellationReason</a><div><code>http://hl7.org/fhir/ValueSet/appointment-cancellation-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/appointment-cancellation-reason"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.serviceCategory</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-category.html">ServiceCategory</a><div><code>http://hl7.org/fhir/ValueSet/service-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/service-category"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.serviceType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a><div><code>http://hl7.org/fhir/ValueSet/service-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.specialty</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FRCoreValueSetPractitionerSpecialty</a><div><code>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"></button></div><div>From this IG</div></td></tr>
-<tr><td>Appointment.appointmentType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="http://terminology.hl7.org/5.0.0/ValueSet-v2-0276.html">Hl7VSAppointmentReasonCodes</a><div><code>http://terminology.hl7.org/ValueSet/v2-0276</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0276"></button></div></td></tr>
-<tr><td>Appointment.reasonCode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="The Reason for the appointment to take place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/encounter-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.participant.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Role of participant in encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-participant-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.participant.required</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Is the Participant required to attend the appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a><div><code>http://hl7.org/fhir/ValueSet/participantrequired|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participantrequired|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Appointment.participant.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="The Participation status of an appointment."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a><div><code>http://hl7.org/fhir/ValueSet/participationstatus|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+  <tr>
+    <td>Appointment.meta.tag</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">Common Tags</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/common-tags|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The free/busy status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.cancelationReason</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">Appointment cancellation reason</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/appointment-cancellation-reason|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.serviceCategory</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-category.html">Service category</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/service-category|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.serviceType</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-service-type.html">Service type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.specialty</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-practitioner-specialty.html">FR Core ValueSet Practitioner specialty</a>
+      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0-ballot</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Appointment.appointmentType</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0276.html">hl7VS-appointmentReasonCodes</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0276" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.reasonCode</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td title="The Reason for the appointment to take place.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">Encounter Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Role of participant in encounter.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">Participant type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​required</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Is the Participant required to attend the appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participantrequired|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Appointment.participant.​status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="The Participation status of an appointment.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participationstatus|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1560,19 +2430,127 @@ filterDesc(document.getElementById('fr-core-appointmentSA'), 'obligation', docum
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Détails</b></td><td><b>Requirements</b></td></tr>
-<tr><td>app-1</td><td>error</td><td>Appointment.participant</td><td>Either the type or actor on the participant SHALL be specified<br/>: type.exists() or actor.exists()</td><td></td></tr>
-<tr><td>app-2</td><td>error</td><td>Appointment</td><td>Either start and end are specified, or neither<br/>: start.exists() = end.exists()</td><td></td></tr>
-<tr><td>app-3</td><td>error</td><td>Appointment</td><td>Only proposed or cancelled appointments can be missing start/end dates<br/>: (start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</td><td></td></tr>
-<tr><td>app-4</td><td>error</td><td>Appointment</td><td>Cancelation reason is only used for appointments that have been cancelled, or no-show<br/>: Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Appointment</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Appointment</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Appointment</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>app-1</td>
+    <td>error</td>
+    <td>Appointment.participant</td>
+    <td>Either the type or actor on the participant SHALL be specified</td>
+    <td>
+      <code>type.exists() or actor.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Either start and end are specified, or neither</td>
+    <td>
+      <code>start.exists() = end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Only proposed or cancelled appointments can be missing start/end dates</td>
+    <td>
+      <code>(start.exists() and end.exists()) or (status in ('proposed' | 'cancelled' | 'waitlist'))</code>
+    </td>
+  </tr>
+  <tr>
+    <td>app-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>Cancelation reason is only used for appointments that have been cancelled, or no-show</td>
+    <td>
+      <code>Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Appointment</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Appointment</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1681,10 +2659,10 @@ filterDesc(document.getElementById('fr-core-appointmentSA'), 'obligation', docum
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.specialty" title="The specialty of a practitioner that would be required to perform the service requested in this appointment" class="dict"><span style="text-decoration: underline">specialty</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">The specialty of a practitioner that would be required to perform the service requested in this appointment</a></span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.appointmentType" title="The style of appointment or patient that has been booked in the slot (not service type)" class="dict"><span style="text-decoration: underline">appointmentType</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">The style of appointment or patient that has been booked in the slot (not service type)</a></span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.reasonCode" title="The coded reason that this appointment is being scheduled. This is more clinical than administrative" class="dict"><span style="text-decoration: underline">reasonCode</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Coded reason this appointment is scheduled</a></span>
-    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.reasonReference" title="Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure" class="dict"><span style="text-decoration: underline">reasonReference</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Reason the appointment is to take place (resource)</span>
+    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.reasonReference" title="Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure" class="dict"><span style="text-decoration: underline">reasonReference</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Condition|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Reason the appointment is to take place (resource)</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.priority" title="The priority of the appointment. Can be used to make informed decisions if needing to re-prioritize appointments. (The iCal Standard specifies 0 as undefined, 1 as highest, 9 as lowest priority)" class="dict"><span style="text-decoration: underline">priority</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Used to make informed decisions if needing to re-prioritize</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.description" title="The brief description of the appointment as would be shown on a subject line in a meeting request, or appointment list. Detailed or expanded information should be put in the comment field" class="dict"><span style="text-decoration: underline">description</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Shown on a subject line in a meeting request, or appointment list</span>
-    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.supportingInformation" title="Additional information to support the appointment provided when making the appointment" class="dict"><span style="text-decoration: underline">supportingInformation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Additional information to support the appointment</span>
+    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.supportingInformation" title="Additional information to support the appointment provided when making the appointment" class="dict"><span style="text-decoration: underline">supportingInformation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Resource|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Additional information to support the appointment</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.start" title="Date/Time that the appointment is to take place" class="dict"><span style="text-decoration: underline">start</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When appointment is to take place</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.end" title="Date/Time that the appointment is to conclude" class="dict"><span style="text-decoration: underline">end</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When appointment is to conclude</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.minutesDuration" title="Number of minutes that the appointment is to take. This can be less than the duration between the start and end times.  For example, where the actual time of appointment is only an estimate or if a 30 minute appointment is being requested, but any time would work.  Also, if there is, for example, a planned 15 minute break in the middle of a long appointment, the duration may be 15 minutes less than the difference between the start and end" class="dict"><span style="text-decoration: underline">minutesDuration</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Can be less than start/end (e.g. estimate)</span>
@@ -1692,7 +2670,7 @@ filterDesc(document.getElementById('fr-core-appointmentSA'), 'obligation', docum
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.created" title="The date that this appointment was initially created. This could be different to the meta.lastModified value on the initial entry, as this could have been before the resource was created on the FHIR server, and should remain unchanged over the lifespan of the appointment" class="dict"><span style="text-decoration: underline">created</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The date that this appointment was initially created</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.comment" title="Additional comments about the appointment" class="dict"><span style="text-decoration: underline">comment</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Additional comments</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.patientInstruction" title="While Appointment.comment contains information for internal use, Appointment.patientInstructions is used to capture patient facing information about the Appointment (e.g. please bring your referral or fast from 8pm night before)" class="dict"><span style="text-decoration: underline">patientInstruction</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Detailed information and instructions for the patient</span>
-    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.basedOn" title="The service request this appointment is allocated to assess (e.g. incoming referral or procedure request)" class="dict"><span style="text-decoration: underline">basedOn</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The service request this appointment is allocated to assess</span>
+    "<a href="StructureDefinition-fr-core-appointment.html#Appointment.basedOn" title="The service request this appointment is allocated to assess (e.g. incoming referral or procedure request)" class="dict"><span style="text-decoration: underline">basedOn</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(ServiceRequest|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The service request this appointment is allocated to assess</span>
     "<a href="StructureDefinition-fr-core-appointment.html#Appointment.participant" title="List of participants involved in the appointment" class="dict"><span style="text-decoration: underline">participant</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="app-1: Either the type or actor on the participant SHALL be specified; ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Participants involved in appointment</span>
       "extension": [
       ],
@@ -1813,7 +2791,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 15, 2025 15:08+0000">2025-10-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 22, 2025 14:21+0000">2025-10-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

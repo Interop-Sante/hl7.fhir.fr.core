@@ -10,7 +10,7 @@
   "name" : "FRCoreMedicationAdministrationInhaledOxygenProfile",
   "title" : "FR Core Medication Administration Inhaled Oxygen Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:07:51+00:00",
+  "date" : "2025-10-22T14:21:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -375,7 +375,7 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/StructureDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -404,7 +404,7 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/StructureDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"]
       }],
       "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen",
       "constraint" : [{
@@ -451,7 +451,7 @@
         }],
         "strength" : "extensible",
         "description" : "Security Labels from the Healthcare Privacy and Security Classification System.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/security-labels"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/security-labels|4.0.1"
       }
     },
     {
@@ -487,7 +487,7 @@
         }],
         "strength" : "example",
         "description" : "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/common-tags"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/common-tags|4.0.1"
       }
     },
     {
@@ -555,7 +555,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -790,8 +790,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-        "http://hl7.org/fhir/StructureDefinition/Procedure"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -897,7 +897,7 @@
         }],
         "strength" : "example",
         "description" : "A set of codes indicating the reason why the MedicationAdministration is negated.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -944,7 +944,7 @@
         }],
         "strength" : "preferred",
         "description" : "A coded concept describing where the medication administered is expected to occur.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/medication-admin-category"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -984,7 +984,7 @@
         }],
         "strength" : "example",
         "description" : "Codes identifying substance or product that can be administered.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/medication-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/medication-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1503,8 +1503,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter",
-        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1547,7 +1547,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1799,7 +1799,7 @@
         }],
         "strength" : "example",
         "description" : "A code describing the role an individual played in administering the medication.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1881,7 +1881,7 @@
         }],
         "strength" : "example",
         "description" : "A set of codes indicating the reason why the MedicationAdministration was made.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1911,9 +1911,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
-        "http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1957,7 +1957,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1996,7 +1996,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2264,7 +2264,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept describing the site location the medicine enters into or onto the body.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/approach-site-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2307,7 +2307,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/route-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/route-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2351,7 +2351,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept describing the technique by which the medicine is administered.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/administration-method-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/administration-method-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2377,7 +2377,7 @@
       },
       "type" : [{
         "code" : "Quantity",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2416,7 +2416,7 @@
       },
       {
         "code" : "Quantity",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2452,7 +2452,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
