@@ -139,13 +139,15 @@ bash _gencontinuous.sh
 ### 1. Créer une branche
 
 ```bash
-git checkout -b feature/ma-contribution
+git checkout -b vos-initiales/description-de-la-contribution
 ```
 
-Nommez votre branche de manière descriptive :
-- `feature/add-observation-profile` pour une nouvelle fonctionnalité
-- `fix/patient-identifier-cardinality` pour une correction
-- `doc/improve-usage-examples` pour la documentation
+Nommez votre branche de manière descriptive en la préfixant avec vos initiales :
+- `nr/add-observation-profile` pour ajouter un profil Observation
+- `yp/fix-patient-identifier-cardinality` pour corriger la cardinalité d'un identifiant
+- `nr/improve-usage-examples` pour améliorer les exemples d'usage
+
+Cette convention permet d'identifier rapidement le contributeur actif sur une branche et d'éviter les conflits de nommage.
 
 ### 2. Faire vos modifications
 
