@@ -10,7 +10,7 @@
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
   <status value="active"/>
-  <date value="2025-10-23T09:10:21+00:00"/>
+  <date value="2025-10-23T09:20:51+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -509,6 +509,38 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-address-insee-code"/>
+      </reference>
+      <name value="FR Core Address Insee Code Extension"/>
+      <description value="Extension d'ajout du code insee (5 chiffres) à l'adresse postale.&#xD;&#xA;This extension adds the insee code (5 digits) to the address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-address"/>
+      </reference>
+      <name value="FR Core Address Profile"/>
+      <description value="Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.&#xD;&#xA;French profile of Address datatype"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-patient"/>
+      </reference>
+      <name value="FR Core Patient Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -523,11 +555,33 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-insee-code"/>
+      </reference>
+      <name value="FR Core ValueSet INSEE code"/>
+      <description value="the French Address Insee Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-patient-contact-role"/>
       </reference>
       <name value="FR Core ValueSet Patient contact role"/>
       <description value="ValueSet patient contact role"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/FRCorePatientExample"/>
+      </reference>
+      <name value="FRCorePatientExample"/>
+      <description value="Exemple de ressource Patient (cas d'usage INS)"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

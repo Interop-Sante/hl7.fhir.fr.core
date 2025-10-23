@@ -113,7 +113,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ValueSet-fr-core-vs-bp-method.html">next&gt;</a>
+          | <a href="StructureDefinition-fr-core-patient.html">next&gt;</a>
 
           </span>
 
@@ -147,7 +147,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Terminology: Value Sets</a>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -156,6 +168,56 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-patient.html"
+                  title="StructureDefinition/fr-core-patient">FR Core Patient Profile</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-address.html"
+                  title="StructureDefinition/fr-core-address">FR Core Address Profile</a>
+            </td>
+            <td>
+<p>Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.
+French profile of Address datatype</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-address-insee-code.html"
+                  title="StructureDefinition/fr-core-address-insee-code">FR Core Address Insee Code Extension</a>
+            </td>
+            <td>
+<p>Extension d’ajout du code insee (5 chiffres) à l’adresse postale.
+This extension adds the insee code (5 digits) to the address</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -172,11 +234,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-insee-code.html"
+                  title="ValueSet/fr-core-vs-insee-code">FR Core ValueSet INSEE code</a>
+            </td>
+            <td>
+<p>the French Address Insee Codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-patient-contact-role.html"
                   title="ValueSet/fr-core-vs-patient-contact-role">FR Core ValueSet Patient contact role</a>
             </td>
             <td>
 <p>ValueSet patient contact role</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-FRCorePatientExample.html"
+                  title="Patient/FRCorePatientExample">FRCorePatientExample</a>
+            </td>
+            <td>
+<p>Exemple de ressource Patient (cas d’usage INS)</p>
 </td>
          </tr>
       </tbody>
@@ -211,7 +299,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="ValueSet-fr-core-vs-bp-method.html">next&gt;</a>
+                <a href="StructureDefinition-fr-core-patient.html">next&gt;</a>
 
               </td>
             </tr>
@@ -221,7 +309,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 23, 2025 09:11+0000">2025-10-23</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 23, 2025 09:21+0000">2025-10-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
