@@ -1,35 +1,19 @@
 Profile: FRCoreOrganizationUACProfile
-Parent: Organization
+Parent: FRCoreOrganizationProfile
 Id: fr-core-organization-uac
 Title: "FR Core Organization UAC Profile"
-Description: "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.\r\n
-Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"
+Description: """Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation."""
 
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile ^slicing.description = "Slice based on the canonical url value"
-* meta.profile contains fr-canonical 0..1
-* meta.profile[fr-canonical] = Canonical(fr-core-organization-uac)
+* ^version = "1.0.0"
+* ^status = #active
+* ^kind = #resource
+* ^fhirVersion = #4.0.1
+* ^abstract = false
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
-    FRCoreOrganizationShortNameExtension named shortName 0..1 and
-    FRCoreOrganizationDescriptionExtension named description 0..1 and
-    http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1
-    
-* identifier.use from IdentifierUse (required)
-* identifier.type 1..
-* identifier.type from FRCoreValueSetOrganizationIdentifierType (extensible)
-* identifier.type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
-* identifier.type ^binding.extension[=].valueBoolean = true
-* identifier.system 1..
-* identifier.value 1..
-* type from FRCoreValueSetOrganizationType (extensible)
+    FRCoreOrganizationDisciplinePrestationExtension named disciplinePrestation 0..1 and
+    FRCoreOrganizationTarifExtension named tarif 0..1 
 
-* partOf only Reference(FRCoreOrganizationProfile)
-* partOf ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
-* partOf ^type.extension.valueBoolean = true
-* partOf.type from FRCoreValueSetOrganizationType (extensible)
+* type = $fr-core-v2-3307#UAC (exactly) 
+
+* partOf only Reference(FRCoreOrganizationUFProfile)
