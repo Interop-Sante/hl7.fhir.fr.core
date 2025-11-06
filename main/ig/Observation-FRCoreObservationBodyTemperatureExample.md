@@ -20,7 +20,7 @@ Profil: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-co
 
 **performer**: [Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)
 
-**value**: 36.5 C(Details: UCUM codeCel = 'Cel')
+**value**: 36.5 C(Détails : code UCUMCel = 'Cel')
 
 
 

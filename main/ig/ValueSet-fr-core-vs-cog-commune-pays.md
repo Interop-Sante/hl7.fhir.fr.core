@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays | *Version*:2.2.0-ballot |
-| Active as of 2025-10-22 | *Computable Name*:FRCoreValueSetCOGCommunePays |
+| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetCOGCommunePays |
 
  
 Value set town and country COG 
@@ -33,8 +33,8 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
 Expansion from smt.esante.gouv.fr based on:
 
+* [codesystem TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R13-CommuneOM.html)
 * [codesystem TRE_R20_Pays v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R20-Pays.html)
-* [system TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R13-CommuneOM.html)
 
 Ce jeu de valeurs (ValueSet) a 39,532 codes. Pour garder la publication gérable, seulement une selection (1,000 codes) de lensemble des codes est affiché.
 
@@ -74,7 +74,7 @@ Ce jeu de valeurs (ValueSet) a 39,532 codes. Pour garder la publication gérable
   "title" : "FR Core ValueSet COG commune pays",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-22T14:21:04+00:00",
+  "date" : "2025-11-06T10:11:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

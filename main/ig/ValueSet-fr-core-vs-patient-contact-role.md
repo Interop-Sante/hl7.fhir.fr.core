@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role | *Version*:2.2.0-ballot |
-| Active as of 2025-10-22 | *Computable Name*:FRCoreValueSetPatientContactRole |
+| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetPatientContactRole |
 
  
 ValueSet patient contact role 
@@ -71,7 +71,7 @@ Ce jeu de valeur (ValueSet) contient 15 concepts
   "title" : "FR Core ValueSet Patient contact role",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-22T14:21:04+00:00",
+  "date" : "2025-11-06T10:11:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

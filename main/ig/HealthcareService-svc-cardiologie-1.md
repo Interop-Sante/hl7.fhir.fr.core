@@ -10,9 +10,9 @@ Profil: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthc
 
 > **FR Core Service Type Duration Extension**
 * serviceType: Cardio et Maladies vasculaires
-* duration: No display for Duration (value : 30; unit : min; system : http://unitsofmeasure.org; code : min)
+* duration: Pas daffichage pour {0} (value : 30; unit : min; system : http://unitsofmeasure.org; code : min)
 
-**identifier**: `urn:oid:1.2.250.1.1.1.1`/HOSP-X-CARDIO (use: official, )
+**identifier**: `urn:oid:1.2.250.1.1.1.1`/HOSP-X-CARDIO (utilisation : official, )
 
 **active**: true
 

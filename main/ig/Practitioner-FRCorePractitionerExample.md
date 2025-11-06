@@ -12,7 +12,7 @@ Information Source: [https://annuaire.sante.fr](https://annuaire.sante.fr)
 
 Profil: [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)
 
-**identifier**: Identifiant National de Professionnel de Santé/810101201234 (use: official, ), N° RPPS/10101201234 (use: official, )
+**identifier**: Identifiant National de Professionnel de Santé/810101201234 (utilisation : official, ), N° RPPS/10101201234 (utilisation : official, )
 
 **active**: true
 

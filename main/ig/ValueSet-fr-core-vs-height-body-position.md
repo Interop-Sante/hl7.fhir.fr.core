@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position | *Version*:2.2.0-ballot |
-| Active as of 2025-10-22 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
+| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
 
  
 ValueSet Body Position 
@@ -24,16 +24,14 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 10904000 (position debout)
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 102538003 (position allongée)
+* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 10904000
+* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 102538003
 
  
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
-
-Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -65,7 +63,7 @@ Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-22T14:21:04+00:00",
+  "date" : "2025-11-06T10:11:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

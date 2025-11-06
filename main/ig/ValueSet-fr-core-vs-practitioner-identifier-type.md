@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type | *Version*:2.2.0-ballot |
-| Active as of 2025-10-22 | *Computable Name*:FRCoreValueSetPractitionerIdentifierType |
+| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetPractitionerIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification) 
@@ -70,7 +70,7 @@ Ce jeu de valeur (ValueSet) contient 10 concepts
   "title" : "FR Core ValueSet Practitioner identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-22T14:21:04+00:00",
+  "date" : "2025-11-06T10:11:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot |
-| Active as of 2025-10-22 | *Computable Name*:FrCore |
+| Active as of 2025-11-06 | *Computable Name*:FrCore |
 
  **Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.**
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -135,7 +135,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 ### Analyse inter-version
 
-This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (hl7.fhir.fr.core.r4)](package.r4.tgz) and [R4B (hl7.fhir.fr.core.r4b)](package.r4b.tgz) are available.
+Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans R4B, il peut donc être utilisé tel quel avec les systèmes R4B. Les packages pour [R4 (hl7.fhir.fr.core.r4)](package.r4.tgz) et [R4B (hl7.fhir.fr.core.r4b)](package.r4b.tgz) sont disponibles.
 
 ### Profils internationaux
 
@@ -154,7 +154,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-10-22T14:21:04+00:00",
+  "date" : "2025-11-06T10:11:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -588,6 +588,12 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+        "valueReference" : {
+          "reference" : "Parameters/expansion-parameters"
+        }
       },
       {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",

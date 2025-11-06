@@ -12,7 +12,7 @@ Information Source: [https://annuaire.sante.fr](https://annuaire.sante.fr)
 
 Profil: [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
 
-**identifier**: `https://rpps.esante.gouv.fr`/1011848351 (use: official, )
+**identifier**: `https://rpps.esante.gouv.fr`/1011848351 (utilisation : official, )
 
 **active**: true
 

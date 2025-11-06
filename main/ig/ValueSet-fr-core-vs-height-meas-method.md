@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method | *Version*:2.2.0-ballot |
-| Active as of 2025-10-22 | *Computable Name*:FRCoreValueSetHeightMeasurementMethod |
+| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetHeightMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the height/length was measured. 
@@ -28,9 +28,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
-
-Ce jeu de valeur (ValueSet) contient 3 concepts
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -62,7 +60,7 @@ Ce jeu de valeur (ValueSet) contient 3 concepts
   "title" : "Height Length Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-22T14:21:04+00:00",
+  "date" : "2025-11-06T10:11:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

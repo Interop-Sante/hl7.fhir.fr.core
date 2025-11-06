@@ -8,7 +8,7 @@
 
 Profil: [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
 
-**identifier**: `http://slot-identifier-system.org`/451 (use: usual, )
+**identifier**: `http://slot-identifier-system.org`/451 (utilisation : usual, )
 
 **serviceType**: Friendly Visiting
 

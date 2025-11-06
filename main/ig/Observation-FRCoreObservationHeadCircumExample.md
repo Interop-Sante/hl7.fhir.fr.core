@@ -20,7 +20,7 @@ Profil: [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-ob
 
 **performer**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
 
-**value**: 61 cm(Details: UCUM codecm = 'cm')
+**value**: 61 cm(Détails : code UCUMcm = 'cm')
 
 
 

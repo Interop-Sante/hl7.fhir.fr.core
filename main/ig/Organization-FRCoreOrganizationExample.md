@@ -12,7 +12,7 @@ Information Source: [https://annuaire.sante.fr](https://annuaire.sante.fr)
 
 Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
 
-**identifier**: Identification nationale de structure définie par l’ANS dans le CI_SIS/2264403106 (use: official, ), Identification de l'organisation au SIREN/264403106 (use: official, )
+**identifier**: Identification nationale de structure définie par l’ANS dans le CI_SIS/2264403106 (utilisation : official, ), Identification de l'organisation au SIREN/264403106 (utilisation : official, )
 
 **active**: true
 

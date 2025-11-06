@@ -32,7 +32,7 @@ Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md
 
 > **participant****actor**:[Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)**required**: Required**status**: Needs Action
 
-**requestedPeriod**: 2019-01-04 09:15:00+0000 --> (ongoing)
+**requestedPeriod**: 2019-01-04 09:15:00+0000 --> (en cours)
 
 
 

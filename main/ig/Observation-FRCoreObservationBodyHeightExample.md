@@ -20,7 +20,7 @@ Profil: [FR Core Observation Body Height Profile](StructureDefinition-fr-core-ob
 
 **performer**: [Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)
 
-**value**: 185 cm(Details: UCUM codecm = 'cm')
+**value**: 185 cm(Détails : code UCUMcm = 'cm')
 
 
 

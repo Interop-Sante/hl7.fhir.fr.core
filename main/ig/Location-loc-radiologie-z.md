@@ -6,7 +6,7 @@
 
 ## Example Location: FRCoreLocationExample
 
-**identifier**: `urn:oid:1.2.250.1.1.1.2`/HOSPZ-RADIO (use: official, )
+**identifier**: `urn:oid:1.2.250.1.1.1.2`/HOSPZ-RADIO (utilisation : official, )
 
 **status**: Active
 

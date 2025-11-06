@@ -10,15 +10,15 @@ Profil: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 
 > **FR Core Schedule availability time Extension**
 * identifier: dispo09112020
-* type: [FR Core CodeSystem Schedule Type free](CodeSystem-fr-core-cs-schedule-type.md#fr-core-cs-schedule-type-free): Disponibilité
+* type: [FR Core CodeSystem Schedule Type: free](CodeSystem-fr-core-cs-schedule-type.md#fr-core-cs-schedule-type-free) (Disponibilité)
 * start: 2020-11-09 08:00:00+0100
 * end: 2020-11-09 20:00:00+0100
 
 > **FR Core Service Type Duration Extension**
 * serviceType: Hypnotherapy
-* duration: No display for Duration (value : 15; unit : minute; system : http://unitsofmeasure.org; code : min)
+* duration: Pas daffichage pour {0} (value : 15; unit : minute; system : http://unitsofmeasure.org; code : min)
 
-**identifier**: `http://schedule-identifier-system.org`/45 (use: usual, )
+**identifier**: `http://schedule-identifier-system.org`/45 (utilisation : usual, )
 
 **active**: true
 

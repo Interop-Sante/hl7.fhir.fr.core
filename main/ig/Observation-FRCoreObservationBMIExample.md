@@ -20,7 +20,7 @@ Profil: [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observatio
 
 **performer**: [Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)
 
-**value**: 28 Kg/m2(Details: UCUM codekg/m2 = 'kg/m2')
+**value**: 28 Kg/m2(Détails : code UCUMkg/m2 = 'kg/m2')
 
 **interpretation**: High
 

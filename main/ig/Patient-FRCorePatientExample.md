@@ -14,14 +14,14 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| Active: | true | Décédé : | false |
-| Contact Detail | * ph: 01 23 24 67 89(Home)
+| Actif : | true | Décédé : | false |
+| Coordonnées | * ph: 01 23 24 67 89(Home)
 * ph: 01 99 88 77 66(Work)
 * ph: 06 80 55 34 33(Mobile)
 * 367 rue Troussier, 45100 Orléans, France(home)
  | | |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Ambléon | | |
-| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445 VALI](CodeSystem-fr-core-cs-v2-0445.md#fr-core-cs-v2-0445-VALI): Identité validée
+| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](CodeSystem-fr-core-cs-v2-0445.md#fr-core-cs-v2-0445-VALI) (Identité validée)
  | | |
 
 

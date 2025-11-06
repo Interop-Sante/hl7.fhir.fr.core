@@ -12,27 +12,33 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-relation-type</b></p><a name=\"fr-core-vs-relation-type\"> </a><a name=\"hcfr-core-vs-relation-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R216-HL7RoleCode.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20241213120000, the version found through the package references\"> version ?20241213120000</span></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-relation-type</b></p><a name=\"fr-core-vs-relation-type\"> </a><a name=\"hcfr-core-vs-relation-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R216-HL7RoleCode.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20241213120000, the version found through the package references\"> version ?20241213120000</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-warning"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-warning"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/valueset-warning>
+     ] ;
      fhir:value [
-       a fhir:markdown ;
+       a fhir:Markdown ;
        fhir:v "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type"^^xsd:anyURI ;
+     fhir:l <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type>
+  ] ; # 
   fhir:version [ fhir:v "2.2.0-ballot"] ; # 
   fhir:name [ fhir:v "FRCoreValueSetPatientRelationType"] ; # 
   fhir:title [ fhir:v "FR Core ValueSet relation type"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-10-22T14:21:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-06T10:11:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -51,14 +57,20 @@
   fhir:description [ fhir:v "ValueSet relation type"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "FR" ] ;
        fhir:display [ fhir:v "France" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode>
+       ]
      ] )
   ] . # 
 
