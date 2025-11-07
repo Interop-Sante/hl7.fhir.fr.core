@@ -74,7 +74,7 @@ Ce jeu de valeurs (ValueSet) a 39,532 codes. Pour garder la publication gérable
   "title" : "FR Core ValueSet COG commune pays",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:06:48+00:00",
+  "date" : "2025-11-07T17:36:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

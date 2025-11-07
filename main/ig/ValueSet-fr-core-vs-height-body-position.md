@@ -24,8 +24,8 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 10904000 (position debout)
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 102538003 (position allongée)
+* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 10904000 (Orthostatic body position)
+* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 102538003 (Recumbent body position)
 
  
 
@@ -65,7 +65,7 @@ Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:06:48+00:00",
+  "date" : "2025-11-07T17:36:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

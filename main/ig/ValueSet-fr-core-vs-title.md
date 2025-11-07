@@ -72,7 +72,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Title",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-07T17:06:48+00:00",
+  "date" : "2025-11-07T17:36:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

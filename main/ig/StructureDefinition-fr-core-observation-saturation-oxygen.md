@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationOxygenSaturationProfile",
   "title" : "FR Core Observation Oxygen Saturation Profile",
   "status" : "active",
-  "date" : "2025-11-07T17:06:48+00:00",
+  "date" : "2025-11-07T17:36:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
