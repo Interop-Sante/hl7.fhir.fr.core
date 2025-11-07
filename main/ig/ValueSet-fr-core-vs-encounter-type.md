@@ -81,7 +81,7 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "title" : "FR Core ValueSet Encounter type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T16:50:39+00:00",
+  "date" : "2025-11-07T17:06:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

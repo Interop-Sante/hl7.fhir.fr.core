@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "name" : "FRCoreContactPointEmailTypeExtension",
   "title" : "FR Core Contact Point Email Type Extension",
   "status" : "active",
-  "date" : "2025-11-07T16:50:39+00:00",
+  "date" : "2025-11-07T17:06:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
