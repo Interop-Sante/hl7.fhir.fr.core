@@ -81,7 +81,7 @@ Ce jeu de valeur (ValueSet) contient 84 concepts
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

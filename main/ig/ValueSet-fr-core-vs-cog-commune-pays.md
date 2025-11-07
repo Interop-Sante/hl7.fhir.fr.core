@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays | *Version*:2.2.0-ballot |
-| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetCOGCommunePays |
+| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetCOGCommunePays |
 
  
 Value set town and country COG 
@@ -74,7 +74,7 @@ Ce jeu de valeurs (ValueSet) a 39,532 codes. Pour garder la publication gérable
   "title" : "FR Core ValueSet COG commune pays",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

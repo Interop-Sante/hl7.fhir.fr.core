@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection | *Version*:2.2.0-ballot |
-| Active as of 2025-11-06 | *Computable Name*:FRCoreValueSetIdentityMethodCollection |
+| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetIdentityMethodCollection |
 
  
 The validation mode of the identity. 
@@ -58,7 +58,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

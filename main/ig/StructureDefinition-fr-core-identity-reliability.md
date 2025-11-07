@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability | *Version*:2.2.0-ballot |
-| Active as of 2025-11-06 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
+| Active as of 2025-11-07 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
 
 Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

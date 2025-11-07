@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth | *Version*:2.2.0-ballot |
-| Active as of 2025-11-06 | *Computable Name*:FRCorePatientMultipleBirthExtension |
+| Active as of 2025-11-07 | *Computable Name*:FRCorePatientMultipleBirthExtension |
 
 Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l’assurance maladie. Cette extension implemente l’élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-mult
   "name" : "FRCorePatientMultipleBirthExtension",
   "title" : "Rang Gémellaire",
   "status" : "active",
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

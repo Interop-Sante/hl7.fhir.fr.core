@@ -28,7 +28,9 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
+
+Ce jeu de valeur (ValueSet) contient 4 concepts
 
 -------
 
@@ -74,7 +76,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "FR Core ValueSet BP measurement method",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

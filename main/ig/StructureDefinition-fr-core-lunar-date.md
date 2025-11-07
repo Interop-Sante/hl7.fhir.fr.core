@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date | *Version*:2.2.0-ballot |
-| Active as of 2025-11-06 | *Computable Name*:FRCoreLunarDateExtension |
+| Active as of 2025-11-07 | *Computable Name*:FRCoreLunarDateExtension |
 
 Date de naissance approximative du patient. Approximate birthdate of the patient
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-lunar-date.c
   "name" : "FRCoreLunarDateExtension",
   "title" : "FR Core Lunar Date Extension",
   "status" : "active",
-  "date" : "2025-11-06T10:11:54+00:00",
+  "date" : "2025-11-07T16:50:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
