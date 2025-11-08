@@ -6,11 +6,12 @@ Description: """Ressource Location adaptée au contexte français.
 Cette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, 
 un lit d'hôpital ou une chambre d'hôpital. """
 
-* ^version = "1.0.0"
-* ^status = #active
-* ^kind = #resource
-* ^fhirVersion = #4.0.1
-* ^abstract = false
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-location)
 
 * extension contains FRCoreLocationTypeChambreExtension named typeChambre 0..1
 * obeys inv-location-type-chambre

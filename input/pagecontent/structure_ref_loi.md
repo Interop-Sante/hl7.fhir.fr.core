@@ -210,4 +210,4 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document [No
 
 
 ### Service Public
-🌐 [Siren, Siret : de quoi s'git-il ?](https://entreprendre.service-public.fr/vosdroits/F32135)
+🌐 [Siren, Siret : de quoi s'agit-il ?](https://entreprendre.service-public.fr/vosdroits/F32135)

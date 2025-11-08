@@ -1,12 +1,12 @@
 ### Usage
 
-Une UF peut matérialiser une organisation prenant en charge ou non des patients. Elle peut également indiquer une responsabbilité médicale. L'association d'une UF avec un responsable peut alors porter cette notion de responsabilité vis-à-vis d'un patient.
+Une Unité Fonctionnelle (UF) peut matérialiser une organisation prenant en charge ou non des patients. Elle peut également indiquer une responsabilité médicale. L'association d'une UF avec un responsable peut alors porter cette notion de responsabilité vis-à-vis d'un patient.
 
 Ainsi il existe plusieurs types d'UF :
 - UF d'hébergement : Une UF d'hébergement sert à affecter la localisation d'un patient dans la structure de soins. Une UF d'hébergement dispose de lits : pour accueillir physiquement le patient.
 - UF de responsabilité médicale : Une UF de ce type sert à définir la responsabilité médicale lors de la prise en charge du patient. Il est possible qu'un patient soit localisé (hébergé) dans une UF de localisation qui n'a pas de rapport avec les soins dont il bénéficie pour des raisons de place dans une unité. Par ailleurs, une UF peut être de type hébergement et de type responsabilité médicale.
 - UF administrative : Ce type d'UF permet de définir une organisation qui regroupe des activités non cliniques.
-- UF de magasin : Une UF de type magasin serve à la gestion de la logistique.
+- UF de magasin : Une UF de type magasin sert à la gestion de la logistique.
 
 ### Ajout du profil FR
 

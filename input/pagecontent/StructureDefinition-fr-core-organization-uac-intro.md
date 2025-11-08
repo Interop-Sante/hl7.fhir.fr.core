@@ -1,6 +1,6 @@
 ### Usage
 
-L'UAC est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Elle ne sert qu’à la facturation du séjour.
+L'[UAC](structure_entites.html#UAC) est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Elle ne sert qu’à la facturation du séjour.
 Elle permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
 
 ### Ajout du profil FR

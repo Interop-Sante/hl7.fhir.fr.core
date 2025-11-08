@@ -52,11 +52,12 @@ Centre de responsabilité
 : Regroupement de structures internes permettant d’effectuer le suivi budgétaire du Centre hospitalier. Ce découpage est libre. Avec la mise en place des pôles, cette entité est amenée à
 disparaître. Toutefois, beaucoup de sites conservent cette notion qui peut parfois être équivalente à la notion de service, de département ou de secteur.
 
-PAC ou UAC
+<span id="UAC"></span>PAC ou UAC
 : Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une
 discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour.
 : Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
 : Une Unité Fonctionnelle peut regrouper plusieurs PAC/UAC, permettant d'avoir une tarification différente des actes réalisés dans l'UF.
+
 
 ### Lieux Physiques
 

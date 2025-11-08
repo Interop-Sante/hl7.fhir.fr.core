@@ -1,7 +1,7 @@
 CodeSystem: FRCoreCodeSystemTypeActivite
 Id: fr-core-cs-type-activite
 Title: "FR Core CodeSystem Type d'activité - nomenclature SAE"
-Description: "La nomenclature des types d'activité."
+Description: "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^status = #draft
 * ^caseSensitive = true

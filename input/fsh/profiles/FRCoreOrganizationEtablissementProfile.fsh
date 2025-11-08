@@ -4,12 +4,6 @@ Id: fr-core-organization-etablissement
 Title: "FR Core Organization Etablissement Profile"
 Description: """Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux."""
 
-* ^version = "1.0.0"
-* ^status = #active
-* ^kind = #resource
-* ^fhirVersion = #4.0.1
-* ^abstract = false
-
 
 * extension contains
     FRCoreOrganizationSAECategoryExtension named sae 0..1 and
@@ -26,7 +20,7 @@ Description: """Profil de la ressource Organization permettant de représenter d
 * identifier ^slicing.description = "Slice based on the identifier.system pattern"
 
 * identifier contains
-    idNatSt 0..0    and
+    idNatSt 0..*    and
     siren 0..*      and
     siret 0..*      and
     finess 0..*     and

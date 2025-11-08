@@ -4,11 +4,6 @@ Id: fr-core-organization-uf
 Title: "FR Core Organization UF Profile"
 Description: "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement."
 
-* ^version = "1.0.0"
-* ^status = #active
-* ^kind = #resource
-* ^fhirVersion = #4.0.1
-* ^abstract = false
 
 * extension contains
     FRCoreOrganizationDisciplineEquipementExtension named discplineEquipement 0..1 and
