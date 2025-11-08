@@ -35,6 +35,7 @@ Alias: $TRE-R32-StatutHospitalier = https://mos.esante.gouv.fr/NOS/TRE_R32-Statu
 Alias: $TRE-R24-TypeActiviteLiberale = https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale
 Alias: $TRE-G05-SousSectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP
 Alias: $TRE-R06-SectionTableauCNOP = https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP
+Alias: $TRE-R66-CategorieEtablissement = https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement
 
 
 Alias: $JDV-J79-CiviliteExercice-RASS = https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS
@@ -85,6 +86,11 @@ Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0
 Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311
 Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307
 Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445
+Alias: $FRCoreValueSetOrganizationUFType = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-type
+Alias: $fr-core-cs-uf-indicateur = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur
+Alias: $fr-core-cs-discipline-equipement = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement
+Alias: $fr-core-cs-champ-activite = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite
+
 
 // VS
 Alias: $fr-core-patient-identifier-type = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type
