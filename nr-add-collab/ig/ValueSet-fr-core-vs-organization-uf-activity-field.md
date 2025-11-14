@@ -76,7 +76,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Organization UF activity field",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-14T07:30:49+00:00",
+  "date" : "2025-11-14T08:50:36+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

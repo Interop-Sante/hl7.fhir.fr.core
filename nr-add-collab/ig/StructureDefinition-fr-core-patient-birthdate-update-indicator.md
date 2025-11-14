@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "name" : "FRCorePatientBirthDateUpdateIndicatorExtension",
   "title" : "FR Core Patient Birthdate Update Indicator Extension",
   "status" : "active",
-  "date" : "2025-11-14T07:30:49+00:00",
+  "date" : "2025-11-14T08:50:36+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -31,11 +31,9 @@ Des nouvelles ressources peuvent être profilées pour l’écosystème françai
 
 Vous souhaitez valoriser vos compétences — ou celles de votre organisation — grâce à des certifications ?
 
-HL7 International propose [plusieurs certifications](https://www.hl7.org/certification/fhir.cfm?ref=nav) reconnues internationalement pour attester votre expertise et renforcer vos CVs.
+HL7 International propose [plusieurs certifications](https://www.hl7.org/certification/fhir.cfm?ref=nav) reconnues internationalement pour attester votre expertise et renforcer vos CVs. L’ensemble des certifiés en France et dans le monde est ensuite consultable dans le [Certification Directory](https://www.hl7.org/implement/certificationdirectory.cfm).
 
 Pour vous préparer à la certification, vous pouvez consulter les [formations proposées par InteropSanté](https://www.interopsante.org/formations).
-
-L’ensemble des certifiés en France et dans le monde est ensuite consultable dans le [Certification Directory](https://www.hl7.org/implement/certificationdirectory.cfm).
 
 Pour rappel, l’adhésion à InteropSanté permet de bénéficier de tarifs avantageux sur les formations InteropSanté et certifications HL7.
 

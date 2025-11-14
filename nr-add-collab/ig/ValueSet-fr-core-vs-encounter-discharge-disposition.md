@@ -81,7 +81,7 @@ Ce jeu de valeur (ValueSet) contient 25 concepts
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-14T07:30:49+00:00",
+  "date" : "2025-11-14T08:50:36+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
