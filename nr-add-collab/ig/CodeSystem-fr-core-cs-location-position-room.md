@@ -37,7 +37,7 @@ Location position room
   "title" : "FR Core CodeSystem Location Position Room",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-14T07:22:57+00:00",
+  "date" : "2025-11-14T07:24:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
