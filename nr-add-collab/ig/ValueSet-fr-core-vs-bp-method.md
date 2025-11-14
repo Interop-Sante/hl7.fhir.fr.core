@@ -76,7 +76,7 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "title" : "FR Core ValueSet BP measurement method",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-14T07:24:46+00:00",
+  "date" : "2025-11-14T07:30:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

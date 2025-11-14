@@ -27,7 +27,7 @@ Plusieurs options vous permettent de contribuer à l’interopérabilité franç
 
 Des nouvelles ressources peuvent être profilées pour l’écosystème français. Pour cela, il est nécessaire d’expliquer la nécessité de profiler les ressources : pour quelles raisons faut-il rajouter des contraintes propres à l’écosystème français plutôt que d’utiliser les ressources de base proposées par FHIR ?
 
-### Les certifications
+### Les certifications HL7 International
 
 Vous souhaitez valoriser vos compétences — ou celles de votre organisation — grâce à des certifications ?
 
@@ -36,4 +36,6 @@ HL7 International propose [plusieurs certifications](https://www.hl7.org/certifi
 Pour vous préparer à la certification, vous pouvez consulter les [formations proposées par InteropSanté](https://www.interopsante.org/formations).
 
 L’ensemble des certifiés en France et dans le monde est ensuite consultable dans le [Certification Directory](https://www.hl7.org/implement/certificationdirectory.cfm).
+
+Pour rappel, l’adhésion à InteropSanté permet de bénéficier de tarifs avantageux sur les formations InteropSanté et certifications HL7.
 

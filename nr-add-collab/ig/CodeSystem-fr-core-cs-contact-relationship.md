@@ -37,7 +37,7 @@ Relationship type
   "title" : "FR Core CodeSystem Contact Relationship",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-14T07:24:46+00:00",
+  "date" : "2025-11-14T07:30:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
