@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time | *Version*:2.2.0-ballot |
-| Active as of 2025-11-14 | *Computable Name*:FRCoreScheduleAvailabilityTimeExtension |
+| Active as of 2025-11-18 | *Computable Name*:FRCoreScheduleAvailabilityTimeExtension |
 
 Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
   "name" : "FRCoreScheduleAvailabilityTimeExtension",
   "title" : "FR Core Schedule availability time Extension",
   "status" : "active",
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -145,7 +145,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type|2.2.0-ballot"
         }
       },
       {
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule|2.2.0-ballot"
         }
       },
       {
@@ -530,7 +530,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/days-of-week"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/days-of-week|4.0.1"
         }
       },
       {
@@ -653,7 +653,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason|2.2.0-ballot"
         }
       },
       {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen | *Version*:2.2.0-ballot |
-| Active as of 2025-11-14 | *Computable Name*:FRCoreObservationOxygenSaturationProfile |
+| Active as of 2025-11-18 | *Computable Name*:FRCoreObservationOxygenSaturationProfile |
 
  
 French profile for Oxygen saturation in Arterial blood. 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationOxygenSaturationProfile",
   "title" : "FR Core Observation Oxygen Saturation Profile",
   "status" : "active",
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/oxygensat",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0-ballot"
       },
       {
         "id" : "Observation.extension",
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0-ballot"
             ]
           }
         ],
@@ -214,8 +214,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
             ]
           }
         ]
@@ -227,8 +227,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/Encounter",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+              "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot"
             ]
           }
         ]
@@ -240,12 +240,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -269,7 +269,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         "path" : "Observation.bodySite",
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location|2.2.0-ballot"
         }
       }
     ]

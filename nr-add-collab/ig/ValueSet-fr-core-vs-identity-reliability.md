@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability | *Version*:2.2.0-ballot |
-| Active as of 2025-11-14 | *Computable Name*:FRCoreValueSetIdentityReliabilityStatus |
+| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetIdentityReliabilityStatus |
 
  
 The reliability of the identity. 
@@ -20,7 +20,7 @@ The reliability of the identity.
 
 ### Logical Definition (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Include tous les codes définis dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445`](CodeSystem-fr-core-cs-v2-0445.md)version 📦2.2.0-ballot
 
@@ -50,7 +50,9 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-identity-reliability",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability",
   "version" : "2.2.0-ballot",
@@ -58,7 +60,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Identity reliability",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

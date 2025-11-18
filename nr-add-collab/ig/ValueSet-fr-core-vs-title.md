@@ -20,9 +20,9 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
 
 ### Logical Definition (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice`](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R11-CiviliteExercice.html)version 📦20231215120000
+* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R11-CiviliteExercice.html)version 📦20231215120000
 
  
 
@@ -50,7 +50,9 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-title",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -72,7 +74,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Title",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

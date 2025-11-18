@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner | *Version*:2.2.0-ballot |
-| Active as of 2025-11-14 | *Computable Name*:FRCorePractitionerProfile |
+| Active as of 2025-11-18 | *Computable Name*:FRCorePractitionerProfile |
 
  
 Profil de la ressource Practitionner pour la France. 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -111,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "kind" : "resource",
   "abstract" : false,
   "type" : "Practitioner",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -139,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot"
       },
       {
         "id" : "Practitioner.extension",
@@ -164,7 +164,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0-ballot"
             ]
           }
         ]
@@ -188,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "path" : "Practitioner.identifier.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type|2.2.0-ballot"
         }
       },
       {
@@ -264,7 +264,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "HumanName",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot"
             ]
           }
         ]
@@ -276,7 +276,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "binding" : {
           "strength" : "extensible",
           "description" : "Civilités d'exercice d'un professionnel du RASS",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS|20200424120000"
         }
       },
       {
@@ -286,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -298,7 +298,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
             ]
           }
         ]
@@ -346,7 +346,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS|20230526120000"
         }
       },
       {
@@ -357,7 +357,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS|20250828120000"
         }
       },
       {
@@ -390,7 +390,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS|20240329120000"
         }
       },
       {
@@ -402,7 +402,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS|20250328120000"
         }
       },
       {
@@ -435,7 +435,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS|20251016120000"
         }
       },
       {
@@ -447,7 +447,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20241025120000"
         }
       }
     ]

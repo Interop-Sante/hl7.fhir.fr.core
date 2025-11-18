@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-14 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
+| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). 
@@ -20,11 +20,11 @@ A coded type for an identifier that can be used to determine which identifier to
 
 ### Logical Definition (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v2-0203`](http://terminology.hl7.org/6.5.0/CodeSystem-v2-0203.html)version 📦5.0.0
+* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v2-0203`](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html)version 📦5.0.0
 * Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203`](CodeSystem-fr-core-cs-v2-0203.md)version 📦2.2.0-ballot 
 
  
@@ -55,7 +55,9 @@ Ce jeu de valeur (ValueSet) contient 10 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-patient-identifier-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type",
   "version" : "2.2.0-ballot",
@@ -63,7 +65,7 @@ Ce jeu de valeur (ValueSet) contient 10 concepts
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

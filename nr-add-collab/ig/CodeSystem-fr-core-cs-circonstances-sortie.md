@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie | *Version*:2.2.0-ballot |
-| Draft as of 2025-11-14 | *Computable Name*:FRCoreCodeSystemCirconstancesSortie |
+| Draft as of 2025-11-18 | *Computable Name*:FRCoreCodeSystemCirconstancesSortie |
 
  
 Discharge Disposition 
@@ -28,7 +28,7 @@ Discharge Disposition
   "id" : "fr-core-cs-circonstances-sortie",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
@@ -37,7 +37,7 @@ Discharge Disposition
   "title" : "FR Core CodeSystem Circonstances Sortie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

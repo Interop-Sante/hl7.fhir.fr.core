@@ -20,12 +20,12 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
 
 ### Logical Definition (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
 * Inclut tous les codes définis dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie`](CodeSystem-fr-core-cs-circonstances-sortie.md)version 📦2.2.0-ballot
-* Inclut tous les codes définis dans [`http://terminology.hl7.org/CodeSystem/discharge-disposition`](http://terminology.hl7.org/6.5.0/CodeSystem-discharge-disposition.html)version 📦1.0.1
+* Inclut tous les codes définis dans [`http://terminology.hl7.org/CodeSystem/discharge-disposition`](http://terminology.hl7.org/7.0.0/CodeSystem-discharge-disposition.html)version 📦1.0.1
 
  
 
@@ -55,7 +55,9 @@ Ce jeu de valeur (ValueSet) contient 25 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-encounter-discharge-disposition",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -81,7 +83,7 @@ Ce jeu de valeur (ValueSet) contient 25 concepts
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

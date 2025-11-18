@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method | *Version*:2.2.0-ballot |
-| Active as of 2025-11-14 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementMethod |
+| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how a blood pressure was measured. 
@@ -20,7 +20,7 @@ SELECT SNOMED CT code system values that describe how a blood pressure was measu
 
 ### Logical Definition (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server)
 
@@ -54,7 +54,9 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-bp-meas-method",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method",
   "version" : "2.2.0-ballot",
@@ -62,7 +64,7 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "title" : "Blood Pressure Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-14T08:50:36+00:00",
+  "date" : "2025-11-18T17:20:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
