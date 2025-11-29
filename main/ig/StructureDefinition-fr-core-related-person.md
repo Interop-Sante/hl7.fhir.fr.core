@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreRelatedPersonProfile |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreRelatedPersonProfile |
 
  
 Profile of the RelatedPerson resource for France. 
 Profil de la ressource RelatedPerson pour l’usage en France 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Référer à ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-related-person)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

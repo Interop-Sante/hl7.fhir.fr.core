@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreServiceTypeDurationExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreServiceTypeDurationExtension |
 
 Cette extension française permet d’associer le type de service avec la durée de ce service.
 
@@ -19,10 +19,10 @@ This French extension allows to associate the type of service with the duration 
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* Examples for this Extension: [Service de cardiologie](HealthcareService-svc-cardiologie-1.md) and [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md)
+* Utiliser ce Extension: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Exemples pour ce Extension: [Service de cardiologie](HealthcareService-svc-cardiologie-1.md) and [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-service-type-duration)
 
@@ -34,9 +34,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-service-type-duration.csv), [Excel](StructureDefinition-fr-core-service-type-duration.xlsx), [Schematron](StructureDefinition-fr-core-service-type-duration.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-type
   "name" : "FRCoreServiceTypeDurationExtension",
   "title" : "FR Core Service Type Duration Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

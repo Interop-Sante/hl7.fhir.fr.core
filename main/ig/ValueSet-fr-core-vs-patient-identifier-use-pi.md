@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetPatientIdentifierUsePI |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetPatientIdentifierUsePI |
 
  
 Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP). Authorized use for PI identifier. 
@@ -18,7 +18,7 @@ Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP)
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -28,11 +28,16 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
 Ce jeu de valeur (ValueSet) exclut les codes selon les règles suivantes :
 
-* Exclude ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://hl7.org/fhir/identifier-use`](http://hl7.org/fhir/R4/codesystem-identifier-use.html)version 📦4.0.1
+* Exclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://hl7.org/fhir/identifier-use`](http://hl7.org/fhir/R4/codesystem-identifier-use.html)version 📦4.0.1
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem IdentifierUse v4.0.1 (CodeSystem)](http://hl7.org/fhir/R4/codesystem-identifier-use.html)
+* [valueset IdentifierUse v4.0.1 (ValueSet)](http://hl7.org/fhir/R4/valueset-identifier-use.html)
 
 Ce jeu de valeur (ValueSet) contient 4 concepts
 
@@ -66,7 +71,7 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "title" : "FR Core ValueSet Patient identifier use PI",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

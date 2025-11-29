@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCorePatientProfile |
+| Active as of 2025-11-29 | *Computable Name*:FRCorePatientProfile |
 
  
 Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
 Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) 
 
-**Usages:**
+**Utilisations:**
 
-* Derived from this Profile: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
-* Refer to this Profile: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md)...Show 11 more,[FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md),[FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md),[FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md),[FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md),[FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md),[FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md),[FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md),[FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md),[FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)and[FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Dérivé de ce Profil: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
+* Référer à ce Profil: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md)...Show 11 more,[FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md),[FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md),[FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md),[FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md),[FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md),[FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md),[FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md),[FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md),[FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)and[FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

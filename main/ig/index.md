@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FrCore |
+| Active as of 2025-11-29 | *Computable Name*:FrCore |
 
  **Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.**
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -115,22 +115,22 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-900000000000207008-20250701.html): [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md), [FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md)...Show 18 more,[FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md),[FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md),[FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md),[FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md),[FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md),[FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md),[FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md),[FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md),[FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md),[FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md),[FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md),[FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md),[FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md),[FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md),[FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md),[FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md)and[Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-900000000000207008-20251001.html): [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md), [FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md)...Show 18 more,[FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md),[FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md),[FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md),[FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md),[FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md),[FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md),[FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md),[FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md),[FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md),[FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md),[FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md),[FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md),[FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md),[FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md),[FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md),[FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md)and[Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Discharge disposition](http://terminology.hl7.org/6.5.0/CodeSystem-discharge-disposition.html): [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) and [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
-* [HL7 Terminology Maintenance Infrastructure Vocabulary](http://terminology.hl7.org/6.5.0/CodeSystem-hl7TermMaintInfra.html): [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md)
-* [HumanNameAssemblyOrder](http://terminology.hl7.org/6.5.0/CodeSystem-name-assembly-order.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md)
-* [Observation Category Codes](http://terminology.hl7.org/6.5.0/CodeSystem-observation-category.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md), [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)...Show 5 more,[Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md),[Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md),[Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md),[Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md)and[Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md)
-* [Service category](http://terminology.hl7.org/6.5.0/CodeSystem-service-category.html): [Service de cardiologie](HealthcareService-svc-cardiologie-1.md)
-* [Service type](http://terminology.hl7.org/6.5.0/CodeSystem-service-type.html): [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md) and [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
-* [identifierType](http://terminology.hl7.org/6.5.0/CodeSystem-v2-0203.html): [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md) and [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md)
-* [ActCode](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html): [Encounter/FRCoreEncounterExample](Encounter-FRCoreEncounterExample.md) and [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md)
-* [MaritalStatus](http://terminology.hl7.org/6.5.0/CodeSystem-v3-MaritalStatus.html): [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
-* [NullFlavor](http://terminology.hl7.org/6.5.0/CodeSystem-v3-NullFlavor.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
-* [ObservationInterpretation](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ObservationInterpretation.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md) and [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)
+* [Discharge disposition](http://terminology.hl7.org/7.0.0/CodeSystem-discharge-disposition.html): [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) and [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
+* [HL7 Terminology Maintenance Infrastructure Vocabulary](http://terminology.hl7.org/7.0.0/CodeSystem-hl7TermMaintInfra.html): [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md)
+* [HumanNameAssemblyOrder](http://terminology.hl7.org/7.0.0/CodeSystem-name-assembly-order.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.0.0/CodeSystem-observation-category.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md), [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)...Show 5 more,[Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md),[Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md),[Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md),[Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md)and[Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md)
+* [Service category](http://terminology.hl7.org/7.0.0/CodeSystem-service-category.html): [Service de cardiologie](HealthcareService-svc-cardiologie-1.md)
+* [Service type](http://terminology.hl7.org/7.0.0/CodeSystem-service-type.html): [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md) and [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
+* [identifierType](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html): [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md) and [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md)
+* [ActCode](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html): [Encounter/FRCoreEncounterExample](Encounter-FRCoreEncounterExample.md) and [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md)
+* [MaritalStatus](http://terminology.hl7.org/7.0.0/CodeSystem-v3-MaritalStatus.html): [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
+* [NullFlavor](http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md) and [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)
 
 
 ### Analyse inter-version
@@ -154,7 +154,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -202,7 +202,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7ext",
@@ -220,7 +220,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
       "id" : "ans_fr_terminologies",
       "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
       "packageId" : "ans.fr.terminologies",
-      "version" : "1.2.0"
+      "version" : "1.4.0"
     }
   ],
   "definition" : {

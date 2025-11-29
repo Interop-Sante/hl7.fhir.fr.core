@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetMaritalStatus |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetMaritalStatus |
 
  
 Patient Marital Status 
@@ -18,19 +18,25 @@ Patient Marital Status
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
 * Inclut tous les codes définis dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status`](CodeSystem-fr-core-cs-marital-status.md)version 📦2.2.0-ballot
-* Inclut tous les codes définis dans [`http://terminology.hl7.org/CodeSystem/v3-MaritalStatus`](http://terminology.hl7.org/6.5.0/CodeSystem-v3-MaritalStatus.html)version 📦3.0.0
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v3-NullFlavor`](http://terminology.hl7.org/6.5.0/CodeSystem-v3-NullFlavor.html)version 📦3.0.0 
+* Inclut tous les codes définis dans [`http://terminology.hl7.org/CodeSystem/v3-MaritalStatus`](http://terminology.hl7.org/7.0.0/CodeSystem-v3-MaritalStatus.html)version 📦3.0.0
+* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v3-NullFlavor`](http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html)version 📦3.0.0 
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem MaritalStatus v3.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v3-MaritalStatus.html)
+* [codesystem NullFlavor v3.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html)
+* [codesystem FR Core CodeSystem Marital Status v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-marital-status.md)
 
 Ce jeu de valeur (ValueSet) contient 13 concepts
 
@@ -64,7 +70,7 @@ Ce jeu de valeur (ValueSet) contient 13 concepts
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

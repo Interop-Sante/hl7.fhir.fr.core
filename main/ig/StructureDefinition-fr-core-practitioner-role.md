@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCorePractitionerRoleProfile |
+| Active as of 2025-11-29 | *Computable Name*:FRCorePractitionerRoleProfile |
 
  
 Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization 
 Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation. 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* Examples for this Profile: [PractitionerRole/FRCorePractitionerRoleExample](PractitionerRole-FRCorePractitionerRoleExample.md)
+* Référer à ce Profil: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Exemples pour ce Profil: [PractitionerRole/FRCorePractitionerRoleExample](PractitionerRole-FRCorePractitionerRoleExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-practitioner-role)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetINSEECode |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetINSEECode |
 
  
 the French Address Insee Codes 
@@ -18,17 +18,17 @@ the French Address Insee Codes
 
 * [FR Core Address Insee Code Extension](StructureDefinition-fr-core-address-insee-code.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R13-CommuneOM.html)version Not Stated (use latest from terminology server)
+* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R13-CommuneOM.html)version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 
  
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on [codesystem TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R13-CommuneOM.html)
+Expansion de smt.esante.gouv.fr basée sur [codesystem TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R13-CommuneOM.html)
 
 Ce jeu de valeurs (ValueSet) a 39,293 codes. Pour garder la publication gérable, seulement une selection (1,000 codes) de lensemble des codes est affiché.
 
@@ -62,7 +62,7 @@ Ce jeu de valeurs (ValueSet) a 39,293 codes. Pour garder la publication gérable
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

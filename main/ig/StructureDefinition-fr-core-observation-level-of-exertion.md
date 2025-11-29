@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreObservationLevelOfExertionExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreObservationLevelOfExertionExtension |
 
 Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort). French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure
 
@@ -17,9 +17,9 @@ Extension française définie dans le contexte du profil Vital Signs Resprate. C
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md) and [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
+* Utiliser ce Extension: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md) and [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-level-of-exertion)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-observation-level-of-exertion.csv), [Excel](StructureDefinition-fr-core-observation-level-of-exertion.xlsx), [Schematron](StructureDefinition-fr-core-observation-level-of-exertion.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationLevelOfExertionExtension",
   "title" : "FR Core Observation Level Of Exertion Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

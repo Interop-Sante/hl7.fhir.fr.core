@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreObservationBodyPositionExtExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreObservationBodyPositionExtExtension |
 
 Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire. CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation
 
@@ -17,9 +17,9 @@ Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respir
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md) and [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
+* Utiliser ce Extension: [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md) and [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-body-position-ext)
 
@@ -31,9 +31,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-observation-body-position-ext.csv), [Excel](StructureDefinition-fr-core-observation-body-position-ext.xlsx), [Schematron](StructureDefinition-fr-core-observation-body-position-ext.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyPositionExtExtension",
   "title" : "FR Core Observation Body Position Ext Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). 
@@ -21,7 +21,7 @@ A coded type for an identifier that can be used to determine which identifier to
 * [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
 * [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -30,6 +30,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem v2-0203 v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-v2-0203.md)
+
+Ce jeu de valeur (ValueSet) contient 7 concepts
 
 -------
 
@@ -67,7 +71,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

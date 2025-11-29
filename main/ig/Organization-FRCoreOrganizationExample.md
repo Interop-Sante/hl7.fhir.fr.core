@@ -6,7 +6,7 @@
 
 ## Example Organization: FRCoreOrganizationExample
 
-version: 1; Dernière mise à jour : 2025-04-28 19:35:45+0200; Langue : fr; 
+version : 1; Dernière mise à jour : 2025-04-28 19:35:45+0200; Langue : fr; 
 
 Information Source: [https://annuaire.sante.fr](https://annuaire.sante.fr)
 

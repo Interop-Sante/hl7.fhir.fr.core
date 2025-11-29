@@ -18,7 +18,7 @@ Jeu de valeurs des types d’identifiant de lieu. A coded type for a location
 
 * [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Location Identifier Type v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-location-identifier-type.md)
+
+Ce jeu de valeur (ValueSet) contient 4 concepts
 
 -------
 
@@ -76,7 +80,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Location identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

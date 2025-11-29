@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreOrganizationProfile |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreOrganizationProfile |
 
  
 Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. 
 Profil de la ressource Organization pour la France. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises. 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Location Profile](StructureDefinition-fr-core-location.md)...Show 15 more,[FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md),[FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md),[FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md),[FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md),[FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md),[FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md),[FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md),[FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md),[FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md),[FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md),[FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md),[FR Core Organization Profile](StructureDefinition-fr-core-organization.md),[FR Core Patient Profile](StructureDefinition-fr-core-patient.md)and[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
-* Examples for this Profile: [HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G](Organization-FRCoreOrganizationExample.md)
+* Référer à ce Profil: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Location Profile](StructureDefinition-fr-core-location.md)...Show 15 more,[FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md),[FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md),[FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md),[FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md),[FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md),[FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md),[FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md),[FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md),[FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md),[FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md),[FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md),[FR Core Organization Profile](StructureDefinition-fr-core-organization.md),[FR Core Patient Profile](StructureDefinition-fr-core-patient.md)and[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
+* Exemples pour ce Profil: [HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G](Organization-FRCoreOrganizationExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

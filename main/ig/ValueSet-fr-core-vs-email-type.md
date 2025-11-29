@@ -18,15 +18,19 @@ The type of email
 
 * [FR Core Contact Point Email Type Extension](StructureDefinition-fr-core-contact-point-email-type.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie`](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R256-TypeMessagerie.html)version 📦20231215120000
+* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R256-TypeMessagerie.html)version 📦20231215120000
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TRE_R256_TypeMessagerie v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R256-TypeMessagerie.html)
+
+Ce jeu de valeur (ValueSet) contient 4 concepts
 
 -------
 
@@ -72,7 +76,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

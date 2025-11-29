@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreContactPointProfile |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreContactPointProfile |
 
  
 Profil du type de données ContactPoint pour la France, ce profil ajoute le type d’e-mail tel que la bal mss. French profile of ContactPoint datatype 
 
-**Usages:**
+**Utilisations:**
 
-* Use this DataType Profile: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Location Profile](StructureDefinition-fr-core-location.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)...Show 3 more,[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md),[FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)and[FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
+* Utiliser ce Profil de type de données: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Location Profile](StructureDefinition-fr-core-location.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)...Show 3 more,[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md),[FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)and[FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-contact-point)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "name" : "FRCoreContactPointProfile",
   "title" : "FR Core Contact Point Profile",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

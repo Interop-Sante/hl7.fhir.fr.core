@@ -18,11 +18,11 @@ Spécifications des périodes récurrentes. Specification of the recurrent perio
 
 * [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans `https://www.ietf.org/rfc/rfc2445`version Not Stated (use latest from terminology server)
+* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans `https://www.ietf.org/rfc/rfc2445`version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 
  
 
@@ -78,7 +78,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

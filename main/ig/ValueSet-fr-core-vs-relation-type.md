@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetPatientRelationType |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetPatientRelationType |
 
  
 ValueSet relation type 
@@ -19,15 +19,19 @@ ValueSet relation type
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 * [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode`](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R216-HL7RoleCode.html)version 📦20241213120000
+* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R216-HL7RoleCode.html)version 📦20241213120000
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TRE_R216_HL7RoleCode v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R216-HL7RoleCode.html)
+
+Ce jeu de valeur (ValueSet) contient 117 concepts
 
 -------
 
@@ -65,7 +69,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet relation type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

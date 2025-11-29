@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetIdentityReliabilityStatus |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetIdentityReliabilityStatus |
 
  
 The reliability of the identity. 
@@ -18,7 +18,7 @@ The reliability of the identity.
 
 * [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem v2-0445 v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-v2-0445.md)
+
+Ce jeu de valeur (ValueSet) contient 21 concepts
 
 -------
 
@@ -58,7 +62,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Identity reliability",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

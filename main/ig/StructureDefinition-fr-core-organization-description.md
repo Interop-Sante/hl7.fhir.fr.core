@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreOrganizationDescriptionExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreOrganizationDescriptionExtension |
 
 Description textuelle d’une organisation Organization description
 
@@ -17,9 +17,9 @@ Description textuelle d’une organisation Organization description
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md), [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md) and [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Utiliser ce Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md), [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md) and [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-description)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-description.csv), [Excel](StructureDefinition-fr-core-organization-description.xlsx), [Schematron](StructureDefinition-fr-core-organization-description.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDescriptionExtension",
   "title" : "FR Core Organization Description Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

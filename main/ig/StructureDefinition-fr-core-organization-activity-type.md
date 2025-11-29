@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreOrganizationActivityTypeExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreOrganizationActivityTypeExtension |
 
 Type d’activité d’une UF An organization activity type
 
@@ -17,9 +17,9 @@ Type d’activité d’une UF An organization activity type
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-activity-type)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-activity-type.csv), [Excel](StructureDefinition-fr-core-organization-activity-type.xlsx), [Schematron](StructureDefinition-fr-core-organization-activity-type.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationActivityTypeExtension",
   "title" : "FR Core Organization Activity Type Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

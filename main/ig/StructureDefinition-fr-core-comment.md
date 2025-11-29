@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment | *Version*:2.2.0-ballot | |
-| Active as of 2025-11-07 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreCommentExtension |
+| Active as of 2025-11-29 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreCommentExtension |
 
 Ajout d’un commentaire sur un dataElement d’une ressource. Add a comment on a dataElement of a resource
 
@@ -17,9 +17,9 @@ Ajout d’un commentaire sur un dataElement d’une ressource. Add a comment on 
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
+* Utiliser ce Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-comment)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv), [Excel](StructureDefinition-fr-core-comment.xlsx), [Schematron](StructureDefinition-fr-core-comment.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

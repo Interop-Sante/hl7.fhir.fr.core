@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension |
 
 Nombre total de places d’hébergement théoriques
 
@@ -19,9 +19,9 @@ Total number of theorical accomodation space
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space)
 
@@ -33,7 +33,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.csv), [Excel](StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.xlsx), [Schematron](StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension",
   "title" : "FR Core Organization Total Number Of Theorical Accomodation Space Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

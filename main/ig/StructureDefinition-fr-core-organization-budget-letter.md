@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreOrganizationBudgetLetterExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreOrganizationBudgetLetterExtension |
 
 Lettre budgétaire de l’UF An organization budget letter
 
@@ -17,9 +17,9 @@ Lettre budgétaire de l’UF An organization budget letter
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md) and [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Utiliser ce Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md) and [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-budget-letter)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-budget-letter.csv), [Excel](StructureDefinition-fr-core-organization-budget-letter.xlsx), [Schematron](StructureDefinition-fr-core-organization-budget-letter.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationBudgetLetterExtension",
   "title" : "FR Core Organization Budget Letter Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

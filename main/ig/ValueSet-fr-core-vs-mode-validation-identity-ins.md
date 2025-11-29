@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
 
  
 The validation mode of the identity authorized for INS 
@@ -18,7 +18,7 @@ The validation mode of the identity authorized for INS
 
 * [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Mode Validation Identite v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-mode-validation-identity.md)
+
+Ce jeu de valeur (ValueSet) contient 4 concepts
 
 -------
 
@@ -58,7 +62,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

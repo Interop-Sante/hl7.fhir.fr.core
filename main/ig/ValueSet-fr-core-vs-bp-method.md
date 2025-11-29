@@ -18,17 +18,17 @@ A coded type for the blood pressure measurement method
 
 Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server)
+* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 
  
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
+Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
 
 Ce jeu de valeur (ValueSet) contient 4 concepts
 
@@ -76,7 +76,7 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "title" : "FR Core ValueSet BP measurement method",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCorePatientContactIdentifierExtension |
+| Active as of 2025-11-29 | *Computable Name*:FRCorePatientContactIdentifierExtension |
 
 Identifiant de contact dans la ressource Patient
 
@@ -19,9 +19,9 @@ This extension carries the contact identifier in the patient resource
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
+* Utiliser ce Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-contact-identifier)
 
@@ -33,7 +33,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-patient-contact-identifier.csv), [Excel](StructureDefinition-fr-core-patient-contact-identifier.xlsx), [Schematron](StructureDefinition-fr-core-patient-contact-identifier.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-cont
   "name" : "FRCorePatientContactIdentifierExtension",
   "title" : "FR Core Patient Contact Identifier Extension",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

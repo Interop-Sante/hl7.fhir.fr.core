@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-pole | *Version*:2.2.0-ballot |
-| Active as of 2025-11-07 | *Computable Name*:FRCoreOrganizationPoleProfile |
+| Active as of 2025-11-29 | *Computable Name*:FRCoreOrganizationPoleProfile |
 
  
 FR Core Organization Pole Profile 
 
-**Usages:**
+**Utilisations:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Ce Profil nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-pole)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationPoleProfile",
   "title" : "FR Core Organization Pole Profile",
   "status" : "active",
-  "date" : "2025-11-07T17:36:51+00:00",
+  "date" : "2025-11-29T07:55:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
