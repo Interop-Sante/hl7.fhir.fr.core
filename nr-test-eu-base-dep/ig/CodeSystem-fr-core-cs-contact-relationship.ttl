@@ -1,0 +1,388 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-cs-contact-relationship"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-contact-relationship</b></p><a name=\"fr-core-cs-contact-relationship\"> </a><a name=\"hcfr-core-cs-contact-relationship\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">WRD<a name=\"fr-core-cs-contact-relationship-WRD\"> </a></td><td>Dépositaire de la tutelle judiciare</td><td>Dépositaire de la tutelle judiciare</td></tr><tr><td style=\"white-space:nowrap\">GRD<a name=\"fr-core-cs-contact-relationship-GRD\"> </a></td><td>Tuteur</td><td>Tuteur</td></tr><tr><td style=\"white-space:nowrap\">CUR<a name=\"fr-core-cs-contact-relationship-CUR\"> </a></td><td>Représentant légal</td><td>Représentant légal</td></tr><tr><td style=\"white-space:nowrap\">CURTL<a name=\"fr-core-cs-contact-relationship-CURTL\"> </a></td><td>Curatelle</td><td>Curatelle</td></tr><tr><td style=\"white-space:nowrap\">EDUREF<a name=\"fr-core-cs-contact-relationship-EDUREF\"> </a></td><td>Educateur référent</td><td>Educateur référent</td></tr><tr><td style=\"white-space:nowrap\">SVG<a name=\"fr-core-cs-contact-relationship-SVG\"> </a></td><td>Sauvegarde juridique</td><td>Sauvegarde juridique</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"fr-core-cs-contact-relationship-K\"> </a></td><td>Personne de confiance</td><td>Personne de confiance</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"fr-core-cs-contact-relationship-P\"> </a></td><td>Personne à ne pas prévenir</td><td>Personne à ne pas prévenir</td></tr><tr><td style=\"white-space:nowrap\">FAMMEMB<a name=\"fr-core-cs-contact-relationship-FAMMEMB\"> </a></td><td>family member</td><td>family member</td></tr><tr><td style=\"white-space:nowrap\">CHILD<a name=\"fr-core-cs-contact-relationship-CHILD\"> </a></td><td>child</td><td>child</td></tr><tr><td style=\"white-space:nowrap\">CHLDADOPT<a name=\"fr-core-cs-contact-relationship-CHLDADOPT\"> </a></td><td>adopted child</td><td>adopted child</td></tr><tr><td style=\"white-space:nowrap\">DAUADOPT<a name=\"fr-core-cs-contact-relationship-DAUADOPT\"> </a></td><td>adopted daughter</td><td>adopted daughter</td></tr><tr><td style=\"white-space:nowrap\">SONADOPT<a name=\"fr-core-cs-contact-relationship-SONADOPT\"> </a></td><td>adopted son</td><td>adopted son</td></tr><tr><td style=\"white-space:nowrap\">CHLDFOST<a name=\"fr-core-cs-contact-relationship-CHLDFOST\"> </a></td><td>foster child</td><td>foster child</td></tr><tr><td style=\"white-space:nowrap\">SONFOST<a name=\"fr-core-cs-contact-relationship-SONFOST\"> </a></td><td>foster son</td><td>foster son</td></tr><tr><td style=\"white-space:nowrap\">DAUC<a name=\"fr-core-cs-contact-relationship-DAUC\"> </a></td><td>daughter</td><td>daughter</td></tr><tr><td style=\"white-space:nowrap\">STPDAU<a name=\"fr-core-cs-contact-relationship-STPDAU\"> </a></td><td>stepdaughter</td><td>stepdaughter</td></tr><tr><td style=\"white-space:nowrap\">SONC<a name=\"fr-core-cs-contact-relationship-SONC\"> </a></td><td>son</td><td>son</td></tr><tr><td style=\"white-space:nowrap\">STPSON<a name=\"fr-core-cs-contact-relationship-STPSON\"> </a></td><td>stepson</td><td>stepson</td></tr><tr><td style=\"white-space:nowrap\">STPCHLD<a name=\"fr-core-cs-contact-relationship-STPCHLD\"> </a></td><td>step child</td><td>step child</td></tr><tr><td style=\"white-space:nowrap\">EXT<a name=\"fr-core-cs-contact-relationship-EXT\"> </a></td><td>extended family member</td><td>extended family member</td></tr><tr><td style=\"white-space:nowrap\">AUNT<a name=\"fr-core-cs-contact-relationship-AUNT\"> </a></td><td>aunt</td><td>aunt</td></tr><tr><td style=\"white-space:nowrap\">COUSN<a name=\"fr-core-cs-contact-relationship-COUSN\"> </a></td><td>cousin</td><td>cousin</td></tr><tr><td style=\"white-space:nowrap\">GGRPRN<a name=\"fr-core-cs-contact-relationship-GGRPRN\"> </a></td><td>great grandparent</td><td>great grandparent</td></tr><tr><td style=\"white-space:nowrap\">GGRFTH<a name=\"fr-core-cs-contact-relationship-GGRFTH\"> </a></td><td>great grandfather</td><td>great grandfather</td></tr><tr><td style=\"white-space:nowrap\">GGRMTH<a name=\"fr-core-cs-contact-relationship-GGRMTH\"> </a></td><td>great grandmather</td><td>great grandmather</td></tr><tr><td style=\"white-space:nowrap\">GRNDCHILD<a name=\"fr-core-cs-contact-relationship-GRNDCHILD\"> </a></td><td>grandchild</td><td>grandchild</td></tr><tr><td style=\"white-space:nowrap\">GRNDDAU<a name=\"fr-core-cs-contact-relationship-GRNDDAU\"> </a></td><td>granddaughter</td><td>granddaughter</td></tr><tr><td style=\"white-space:nowrap\">GRNDSON<a name=\"fr-core-cs-contact-relationship-GRNDSON\"> </a></td><td>grandson</td><td>grandson</td></tr><tr><td style=\"white-space:nowrap\">GRPRN<a name=\"fr-core-cs-contact-relationship-GRPRN\"> </a></td><td>grandparent</td><td>grandparent</td></tr><tr><td style=\"white-space:nowrap\">GRFTH<a name=\"fr-core-cs-contact-relationship-GRFTH\"> </a></td><td>grandfather</td><td>grandfather</td></tr><tr><td style=\"white-space:nowrap\">GRMTH<a name=\"fr-core-cs-contact-relationship-GRMTH\"> </a></td><td>grandmather</td><td>grandmather</td></tr><tr><td style=\"white-space:nowrap\">CHLDINLAW<a name=\"fr-core-cs-contact-relationship-CHLDINLAW\"> </a></td><td>child in-law</td><td>child in-law</td></tr><tr><td style=\"white-space:nowrap\">DAUINLAW<a name=\"fr-core-cs-contact-relationship-DAUINLAW\"> </a></td><td>daughter in-law</td><td>daughter in-law</td></tr><tr><td style=\"white-space:nowrap\">PRNINLAW<a name=\"fr-core-cs-contact-relationship-PRNINLAW\"> </a></td><td>parent in-law</td><td>parent in-law</td></tr><tr><td style=\"white-space:nowrap\">FTHINLAW<a name=\"fr-core-cs-contact-relationship-FTHINLAW\"> </a></td><td>father in-law</td><td>father in-law</td></tr><tr><td style=\"white-space:nowrap\">MTHINLAW<a name=\"fr-core-cs-contact-relationship-MTHINLAW\"> </a></td><td>mother in-law</td><td>mother in-law</td></tr><tr><td style=\"white-space:nowrap\">SIBINLAW<a name=\"fr-core-cs-contact-relationship-SIBINLAW\"> </a></td><td>sibbling in-law</td><td>sibbling in-law</td></tr><tr><td style=\"white-space:nowrap\">BROINLAW<a name=\"fr-core-cs-contact-relationship-BROINLAW\"> </a></td><td>brother in-law</td><td>brother in-law</td></tr><tr><td style=\"white-space:nowrap\">SISINLAW<a name=\"fr-core-cs-contact-relationship-SISINLAW\"> </a></td><td>sister in-law</td><td>sister in-law</td></tr><tr><td style=\"white-space:nowrap\">NIENEPH<a name=\"fr-core-cs-contact-relationship-NIENEPH\"> </a></td><td>niece/nephew</td><td>niece/nephew</td></tr><tr><td style=\"white-space:nowrap\">NEPHEW<a name=\"fr-core-cs-contact-relationship-NEPHEW\"> </a></td><td>nephew</td><td>nephew</td></tr><tr><td style=\"white-space:nowrap\">NIECE<a name=\"fr-core-cs-contact-relationship-NIECE\"> </a></td><td>niece</td><td>niece</td></tr><tr><td style=\"white-space:nowrap\">UNCLE<a name=\"fr-core-cs-contact-relationship-UNCLE\"> </a></td><td>uncle</td><td>uncle</td></tr><tr><td style=\"white-space:nowrap\">PRN<a name=\"fr-core-cs-contact-relationship-PRN\"> </a></td><td>parent</td><td>parent</td></tr><tr><td style=\"white-space:nowrap\">ADOPTP<a name=\"fr-core-cs-contact-relationship-ADOPTP\"> </a></td><td>adoptive parent</td><td>adoptive parent</td></tr><tr><td style=\"white-space:nowrap\">ADOPTF<a name=\"fr-core-cs-contact-relationship-ADOPTF\"> </a></td><td>adoptive father</td><td>adoptive father</td></tr><tr><td style=\"white-space:nowrap\">ADOPTM<a name=\"fr-core-cs-contact-relationship-ADOPTM\"> </a></td><td>adoptive mother</td><td>adoptive mother</td></tr><tr><td style=\"white-space:nowrap\">FTH<a name=\"fr-core-cs-contact-relationship-FTH\"> </a></td><td>father</td><td>father</td></tr><tr><td style=\"white-space:nowrap\">FTHFOST<a name=\"fr-core-cs-contact-relationship-FTHFOST\"> </a></td><td>foster father</td><td>foster father</td></tr><tr><td style=\"white-space:nowrap\">NFTH<a name=\"fr-core-cs-contact-relationship-NFTH\"> </a></td><td>natural father</td><td>natural father</td></tr><tr><td style=\"white-space:nowrap\">STPFTH<a name=\"fr-core-cs-contact-relationship-STPFTH\"> </a></td><td>step father</td><td>step father</td></tr><tr><td style=\"white-space:nowrap\">MTH<a name=\"fr-core-cs-contact-relationship-MTH\"> </a></td><td>mother</td><td>mother</td></tr><tr><td style=\"white-space:nowrap\">MTHFOST<a name=\"fr-core-cs-contact-relationship-MTHFOST\"> </a></td><td>foster mother</td><td>foster mother</td></tr><tr><td style=\"white-space:nowrap\">GESTM<a name=\"fr-core-cs-contact-relationship-GESTM\"> </a></td><td>gestational mother</td><td>gestational mother</td></tr><tr><td style=\"white-space:nowrap\">NMTH<a name=\"fr-core-cs-contact-relationship-NMTH\"> </a></td><td>natural mother</td><td>natural mother</td></tr><tr><td style=\"white-space:nowrap\">STPMTH<a name=\"fr-core-cs-contact-relationship-STPMTH\"> </a></td><td>stepmother</td><td>stepmother</td></tr><tr><td style=\"white-space:nowrap\">NPRN<a name=\"fr-core-cs-contact-relationship-NPRN\"> </a></td><td>natural parent</td><td>natural parent</td></tr><tr><td style=\"white-space:nowrap\">STPPRN<a name=\"fr-core-cs-contact-relationship-STPPRN\"> </a></td><td>step parent</td><td>step parent</td></tr><tr><td style=\"white-space:nowrap\">SIB<a name=\"fr-core-cs-contact-relationship-SIB\"> </a></td><td>sibling</td><td>sibling</td></tr><tr><td style=\"white-space:nowrap\">BRO<a name=\"fr-core-cs-contact-relationship-BRO\"> </a></td><td>brother</td><td>brother</td></tr><tr><td style=\"white-space:nowrap\">HBRO<a name=\"fr-core-cs-contact-relationship-HBRO\"> </a></td><td>half-brother</td><td>half-brother</td></tr><tr><td style=\"white-space:nowrap\">NBRO<a name=\"fr-core-cs-contact-relationship-NBRO\"> </a></td><td>natural brother</td><td>natural brother</td></tr><tr><td style=\"white-space:nowrap\">TWINBRO<a name=\"fr-core-cs-contact-relationship-TWINBRO\"> </a></td><td>twin brother</td><td>twin brother</td></tr><tr><td style=\"white-space:nowrap\">STPBRO<a name=\"fr-core-cs-contact-relationship-STPBRO\"> </a></td><td>stepbrother</td><td>stepbrother</td></tr><tr><td style=\"white-space:nowrap\">HSIB<a name=\"fr-core-cs-contact-relationship-HSIB\"> </a></td><td>half-sibling</td><td>half-sibling</td></tr><tr><td style=\"white-space:nowrap\">HSIS<a name=\"fr-core-cs-contact-relationship-HSIS\"> </a></td><td>half-sister</td><td>half-sister</td></tr><tr><td style=\"white-space:nowrap\">NSIB<a name=\"fr-core-cs-contact-relationship-NSIB\"> </a></td><td>natural sibling</td><td>natural sibling</td></tr><tr><td style=\"white-space:nowrap\">NSIS<a name=\"fr-core-cs-contact-relationship-NSIS\"> </a></td><td>natural sister</td><td>natural sister</td></tr><tr><td style=\"white-space:nowrap\">TWINSIS<a name=\"fr-core-cs-contact-relationship-TWINSIS\"> </a></td><td>twin sister</td><td>twin sister</td></tr><tr><td style=\"white-space:nowrap\">TWIN<a name=\"fr-core-cs-contact-relationship-TWIN\"> </a></td><td>twin</td><td>twin</td></tr><tr><td style=\"white-space:nowrap\">SIS<a name=\"fr-core-cs-contact-relationship-SIS\"> </a></td><td>sister</td><td>sister</td></tr><tr><td style=\"white-space:nowrap\">STPSIS<a name=\"fr-core-cs-contact-relationship-STPSIS\"> </a></td><td>stepsister</td><td>stepsister</td></tr><tr><td style=\"white-space:nowrap\">STPSIB<a name=\"fr-core-cs-contact-relationship-STPSIB\"> </a></td><td>step sibling</td><td>step sibling</td></tr><tr><td style=\"white-space:nowrap\">SIGOTHR<a name=\"fr-core-cs-contact-relationship-SIGOTHR\"> </a></td><td>significant other</td><td>significant other</td></tr><tr><td style=\"white-space:nowrap\">DOMPART<a name=\"fr-core-cs-contact-relationship-DOMPART\"> </a></td><td>domestic partner</td><td>domestic partner</td></tr><tr><td style=\"white-space:nowrap\">SPS<a name=\"fr-core-cs-contact-relationship-SPS\"> </a></td><td>spouse</td><td>spouse</td></tr><tr><td style=\"white-space:nowrap\">HUSB<a name=\"fr-core-cs-contact-relationship-HUSB\"> </a></td><td>husband</td><td>husband</td></tr><tr><td style=\"white-space:nowrap\">WIFE<a name=\"fr-core-cs-contact-relationship-WIFE\"> </a></td><td>wife</td><td>wife</td></tr><tr><td style=\"white-space:nowrap\">FRND<a name=\"fr-core-cs-contact-relationship-FRND\"> </a></td><td>unrelated friend</td><td>unrelated friend</td></tr><tr><td style=\"white-space:nowrap\">NBOR<a name=\"fr-core-cs-contact-relationship-NBOR\"> </a></td><td>neighbor</td><td>neighbor</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship"^^xsd:anyURI ;
+     fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship>
+  ] ; # 
+  fhir:version [ fhir:v "2.2.0-ballot"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemContactRelationship"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem Contact Relationship"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-02T07:56:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Relationship type"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "81"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "WRD" ] ;
+     fhir:display [ fhir:v "Dépositaire de la tutelle judiciare" ] ;
+     fhir:definition [ fhir:v "Dépositaire de la tutelle judiciare" ]
+  ] [
+     fhir:code [ fhir:v "GRD" ] ;
+     fhir:display [ fhir:v "Tuteur" ] ;
+     fhir:definition [ fhir:v "Tuteur" ]
+  ] [
+     fhir:code [ fhir:v "CUR" ] ;
+     fhir:display [ fhir:v "Représentant légal" ] ;
+     fhir:definition [ fhir:v "Représentant légal" ]
+  ] [
+     fhir:code [ fhir:v "CURTL" ] ;
+     fhir:display [ fhir:v "Curatelle" ] ;
+     fhir:definition [ fhir:v "Curatelle" ]
+  ] [
+     fhir:code [ fhir:v "EDUREF" ] ;
+     fhir:display [ fhir:v "Educateur référent" ] ;
+     fhir:definition [ fhir:v "Educateur référent" ]
+  ] [
+     fhir:code [ fhir:v "SVG" ] ;
+     fhir:display [ fhir:v "Sauvegarde juridique" ] ;
+     fhir:definition [ fhir:v "Sauvegarde juridique" ]
+  ] [
+     fhir:code [ fhir:v "K" ] ;
+     fhir:display [ fhir:v "Personne de confiance" ] ;
+     fhir:definition [ fhir:v "Personne de confiance" ]
+  ] [
+     fhir:code [ fhir:v "P" ] ;
+     fhir:display [ fhir:v "Personne à ne pas prévenir" ] ;
+     fhir:definition [ fhir:v "Personne à ne pas prévenir" ]
+  ] [
+     fhir:code [ fhir:v "FAMMEMB" ] ;
+     fhir:display [ fhir:v "family member" ] ;
+     fhir:definition [ fhir:v "family member" ]
+  ] [
+     fhir:code [ fhir:v "CHILD" ] ;
+     fhir:display [ fhir:v "child" ] ;
+     fhir:definition [ fhir:v "child" ]
+  ] [
+     fhir:code [ fhir:v "CHLDADOPT" ] ;
+     fhir:display [ fhir:v "adopted child" ] ;
+     fhir:definition [ fhir:v "adopted child" ]
+  ] [
+     fhir:code [ fhir:v "DAUADOPT" ] ;
+     fhir:display [ fhir:v "adopted daughter" ] ;
+     fhir:definition [ fhir:v "adopted daughter" ]
+  ] [
+     fhir:code [ fhir:v "SONADOPT" ] ;
+     fhir:display [ fhir:v "adopted son" ] ;
+     fhir:definition [ fhir:v "adopted son" ]
+  ] [
+     fhir:code [ fhir:v "CHLDFOST" ] ;
+     fhir:display [ fhir:v "foster child" ] ;
+     fhir:definition [ fhir:v "foster child" ]
+  ] [
+     fhir:code [ fhir:v "SONFOST" ] ;
+     fhir:display [ fhir:v "foster son" ] ;
+     fhir:definition [ fhir:v "foster son" ]
+  ] [
+     fhir:code [ fhir:v "DAUC" ] ;
+     fhir:display [ fhir:v "daughter" ] ;
+     fhir:definition [ fhir:v "daughter" ]
+  ] [
+     fhir:code [ fhir:v "STPDAU" ] ;
+     fhir:display [ fhir:v "stepdaughter" ] ;
+     fhir:definition [ fhir:v "stepdaughter" ]
+  ] [
+     fhir:code [ fhir:v "SONC" ] ;
+     fhir:display [ fhir:v "son" ] ;
+     fhir:definition [ fhir:v "son" ]
+  ] [
+     fhir:code [ fhir:v "STPSON" ] ;
+     fhir:display [ fhir:v "stepson" ] ;
+     fhir:definition [ fhir:v "stepson" ]
+  ] [
+     fhir:code [ fhir:v "STPCHLD" ] ;
+     fhir:display [ fhir:v "step child" ] ;
+     fhir:definition [ fhir:v "step child" ]
+  ] [
+     fhir:code [ fhir:v "EXT" ] ;
+     fhir:display [ fhir:v "extended family member" ] ;
+     fhir:definition [ fhir:v "extended family member" ]
+  ] [
+     fhir:code [ fhir:v "AUNT" ] ;
+     fhir:display [ fhir:v "aunt" ] ;
+     fhir:definition [ fhir:v "aunt" ]
+  ] [
+     fhir:code [ fhir:v "COUSN" ] ;
+     fhir:display [ fhir:v "cousin" ] ;
+     fhir:definition [ fhir:v "cousin" ]
+  ] [
+     fhir:code [ fhir:v "GGRPRN" ] ;
+     fhir:display [ fhir:v "great grandparent" ] ;
+     fhir:definition [ fhir:v "great grandparent" ]
+  ] [
+     fhir:code [ fhir:v "GGRFTH" ] ;
+     fhir:display [ fhir:v "great grandfather" ] ;
+     fhir:definition [ fhir:v "great grandfather" ]
+  ] [
+     fhir:code [ fhir:v "GGRMTH" ] ;
+     fhir:display [ fhir:v "great grandmather" ] ;
+     fhir:definition [ fhir:v "great grandmather" ]
+  ] [
+     fhir:code [ fhir:v "GRNDCHILD" ] ;
+     fhir:display [ fhir:v "grandchild" ] ;
+     fhir:definition [ fhir:v "grandchild" ]
+  ] [
+     fhir:code [ fhir:v "GRNDDAU" ] ;
+     fhir:display [ fhir:v "granddaughter" ] ;
+     fhir:definition [ fhir:v "granddaughter" ]
+  ] [
+     fhir:code [ fhir:v "GRNDSON" ] ;
+     fhir:display [ fhir:v "grandson" ] ;
+     fhir:definition [ fhir:v "grandson" ]
+  ] [
+     fhir:code [ fhir:v "GRPRN" ] ;
+     fhir:display [ fhir:v "grandparent" ] ;
+     fhir:definition [ fhir:v "grandparent" ]
+  ] [
+     fhir:code [ fhir:v "GRFTH" ] ;
+     fhir:display [ fhir:v "grandfather" ] ;
+     fhir:definition [ fhir:v "grandfather" ]
+  ] [
+     fhir:code [ fhir:v "GRMTH" ] ;
+     fhir:display [ fhir:v "grandmather" ] ;
+     fhir:definition [ fhir:v "grandmather" ]
+  ] [
+     fhir:code [ fhir:v "CHLDINLAW" ] ;
+     fhir:display [ fhir:v "child in-law" ] ;
+     fhir:definition [ fhir:v "child in-law" ]
+  ] [
+     fhir:code [ fhir:v "DAUINLAW" ] ;
+     fhir:display [ fhir:v "daughter in-law" ] ;
+     fhir:definition [ fhir:v "daughter in-law" ]
+  ] [
+     fhir:code [ fhir:v "PRNINLAW" ] ;
+     fhir:display [ fhir:v "parent in-law" ] ;
+     fhir:definition [ fhir:v "parent in-law" ]
+  ] [
+     fhir:code [ fhir:v "FTHINLAW" ] ;
+     fhir:display [ fhir:v "father in-law" ] ;
+     fhir:definition [ fhir:v "father in-law" ]
+  ] [
+     fhir:code [ fhir:v "MTHINLAW" ] ;
+     fhir:display [ fhir:v "mother in-law" ] ;
+     fhir:definition [ fhir:v "mother in-law" ]
+  ] [
+     fhir:code [ fhir:v "SIBINLAW" ] ;
+     fhir:display [ fhir:v "sibbling in-law" ] ;
+     fhir:definition [ fhir:v "sibbling in-law" ]
+  ] [
+     fhir:code [ fhir:v "BROINLAW" ] ;
+     fhir:display [ fhir:v "brother in-law" ] ;
+     fhir:definition [ fhir:v "brother in-law" ]
+  ] [
+     fhir:code [ fhir:v "SISINLAW" ] ;
+     fhir:display [ fhir:v "sister in-law" ] ;
+     fhir:definition [ fhir:v "sister in-law" ]
+  ] [
+     fhir:code [ fhir:v "NIENEPH" ] ;
+     fhir:display [ fhir:v "niece/nephew" ] ;
+     fhir:definition [ fhir:v "niece/nephew" ]
+  ] [
+     fhir:code [ fhir:v "NEPHEW" ] ;
+     fhir:display [ fhir:v "nephew" ] ;
+     fhir:definition [ fhir:v "nephew" ]
+  ] [
+     fhir:code [ fhir:v "NIECE" ] ;
+     fhir:display [ fhir:v "niece" ] ;
+     fhir:definition [ fhir:v "niece" ]
+  ] [
+     fhir:code [ fhir:v "UNCLE" ] ;
+     fhir:display [ fhir:v "uncle" ] ;
+     fhir:definition [ fhir:v "uncle" ]
+  ] [
+     fhir:code [ fhir:v "PRN" ] ;
+     fhir:display [ fhir:v "parent" ] ;
+     fhir:definition [ fhir:v "parent" ]
+  ] [
+     fhir:code [ fhir:v "ADOPTP" ] ;
+     fhir:display [ fhir:v "adoptive parent" ] ;
+     fhir:definition [ fhir:v "adoptive parent" ]
+  ] [
+     fhir:code [ fhir:v "ADOPTF" ] ;
+     fhir:display [ fhir:v "adoptive father" ] ;
+     fhir:definition [ fhir:v "adoptive father" ]
+  ] [
+     fhir:code [ fhir:v "ADOPTM" ] ;
+     fhir:display [ fhir:v "adoptive mother" ] ;
+     fhir:definition [ fhir:v "adoptive mother" ]
+  ] [
+     fhir:code [ fhir:v "FTH" ] ;
+     fhir:display [ fhir:v "father" ] ;
+     fhir:definition [ fhir:v "father" ]
+  ] [
+     fhir:code [ fhir:v "FTHFOST" ] ;
+     fhir:display [ fhir:v "foster father" ] ;
+     fhir:definition [ fhir:v "foster father" ]
+  ] [
+     fhir:code [ fhir:v "NFTH" ] ;
+     fhir:display [ fhir:v "natural father" ] ;
+     fhir:definition [ fhir:v "natural father" ]
+  ] [
+     fhir:code [ fhir:v "STPFTH" ] ;
+     fhir:display [ fhir:v "step father" ] ;
+     fhir:definition [ fhir:v "step father" ]
+  ] [
+     fhir:code [ fhir:v "MTH" ] ;
+     fhir:display [ fhir:v "mother" ] ;
+     fhir:definition [ fhir:v "mother" ]
+  ] [
+     fhir:code [ fhir:v "MTHFOST" ] ;
+     fhir:display [ fhir:v "foster mother" ] ;
+     fhir:definition [ fhir:v "foster mother" ]
+  ] [
+     fhir:code [ fhir:v "GESTM" ] ;
+     fhir:display [ fhir:v "gestational mother" ] ;
+     fhir:definition [ fhir:v "gestational mother" ]
+  ] [
+     fhir:code [ fhir:v "NMTH" ] ;
+     fhir:display [ fhir:v "natural mother" ] ;
+     fhir:definition [ fhir:v "natural mother" ]
+  ] [
+     fhir:code [ fhir:v "STPMTH" ] ;
+     fhir:display [ fhir:v "stepmother" ] ;
+     fhir:definition [ fhir:v "stepmother" ]
+  ] [
+     fhir:code [ fhir:v "NPRN" ] ;
+     fhir:display [ fhir:v "natural parent" ] ;
+     fhir:definition [ fhir:v "natural parent" ]
+  ] [
+     fhir:code [ fhir:v "STPPRN" ] ;
+     fhir:display [ fhir:v "step parent" ] ;
+     fhir:definition [ fhir:v "step parent" ]
+  ] [
+     fhir:code [ fhir:v "SIB" ] ;
+     fhir:display [ fhir:v "sibling" ] ;
+     fhir:definition [ fhir:v "sibling" ]
+  ] [
+     fhir:code [ fhir:v "BRO" ] ;
+     fhir:display [ fhir:v "brother" ] ;
+     fhir:definition [ fhir:v "brother" ]
+  ] [
+     fhir:code [ fhir:v "HBRO" ] ;
+     fhir:display [ fhir:v "half-brother" ] ;
+     fhir:definition [ fhir:v "half-brother" ]
+  ] [
+     fhir:code [ fhir:v "NBRO" ] ;
+     fhir:display [ fhir:v "natural brother" ] ;
+     fhir:definition [ fhir:v "natural brother" ]
+  ] [
+     fhir:code [ fhir:v "TWINBRO" ] ;
+     fhir:display [ fhir:v "twin brother" ] ;
+     fhir:definition [ fhir:v "twin brother" ]
+  ] [
+     fhir:code [ fhir:v "STPBRO" ] ;
+     fhir:display [ fhir:v "stepbrother" ] ;
+     fhir:definition [ fhir:v "stepbrother" ]
+  ] [
+     fhir:code [ fhir:v "HSIB" ] ;
+     fhir:display [ fhir:v "half-sibling" ] ;
+     fhir:definition [ fhir:v "half-sibling" ]
+  ] [
+     fhir:code [ fhir:v "HSIS" ] ;
+     fhir:display [ fhir:v "half-sister" ] ;
+     fhir:definition [ fhir:v "half-sister" ]
+  ] [
+     fhir:code [ fhir:v "NSIB" ] ;
+     fhir:display [ fhir:v "natural sibling" ] ;
+     fhir:definition [ fhir:v "natural sibling" ]
+  ] [
+     fhir:code [ fhir:v "NSIS" ] ;
+     fhir:display [ fhir:v "natural sister" ] ;
+     fhir:definition [ fhir:v "natural sister" ]
+  ] [
+     fhir:code [ fhir:v "TWINSIS" ] ;
+     fhir:display [ fhir:v "twin sister" ] ;
+     fhir:definition [ fhir:v "twin sister" ]
+  ] [
+     fhir:code [ fhir:v "TWIN" ] ;
+     fhir:display [ fhir:v "twin" ] ;
+     fhir:definition [ fhir:v "twin" ]
+  ] [
+     fhir:code [ fhir:v "SIS" ] ;
+     fhir:display [ fhir:v "sister" ] ;
+     fhir:definition [ fhir:v "sister" ]
+  ] [
+     fhir:code [ fhir:v "STPSIS" ] ;
+     fhir:display [ fhir:v "stepsister" ] ;
+     fhir:definition [ fhir:v "stepsister" ]
+  ] [
+     fhir:code [ fhir:v "STPSIB" ] ;
+     fhir:display [ fhir:v "step sibling" ] ;
+     fhir:definition [ fhir:v "step sibling" ]
+  ] [
+     fhir:code [ fhir:v "SIGOTHR" ] ;
+     fhir:display [ fhir:v "significant other" ] ;
+     fhir:definition [ fhir:v "significant other" ]
+  ] [
+     fhir:code [ fhir:v "DOMPART" ] ;
+     fhir:display [ fhir:v "domestic partner" ] ;
+     fhir:definition [ fhir:v "domestic partner" ]
+  ] [
+     fhir:code [ fhir:v "SPS" ] ;
+     fhir:display [ fhir:v "spouse" ] ;
+     fhir:definition [ fhir:v "spouse" ]
+  ] [
+     fhir:code [ fhir:v "HUSB" ] ;
+     fhir:display [ fhir:v "husband" ] ;
+     fhir:definition [ fhir:v "husband" ]
+  ] [
+     fhir:code [ fhir:v "WIFE" ] ;
+     fhir:display [ fhir:v "wife" ] ;
+     fhir:definition [ fhir:v "wife" ]
+  ] [
+     fhir:code [ fhir:v "FRND" ] ;
+     fhir:display [ fhir:v "unrelated friend" ] ;
+     fhir:definition [ fhir:v "unrelated friend" ]
+  ] [
+     fhir:code [ fhir:v "NBOR" ] ;
+     fhir:display [ fhir:v "neighbor" ] ;
+     fhir:definition [ fhir:v "neighbor" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="FRCorePatientExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Patient FRCorePatientExample</b></p><a name="FRCorePatientExample"> </a><a name="hcFRCorePatientExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-patient-ins.html">FR Core Patient INS Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Lenregistrement est actif">Actif :</td><td>true</td><td style="background-color: #f3f5da" title="Statut connu du patient">Décédé :</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Moyens de contacter le Patient">Coordonnées</td><td colspan="3"><ul><li>ph: 01 23 24 67 89(Home)</li><li>ph: 01 99 88 77 66(Work)</li><li>ph: 06 80 55 34 33(Mobile)</li><li>367 rue Troussier, 45100 Orléans, France(home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html">Patient Birth Place</a></td><td colspan="3">Ambléon </td></tr><tr><td style="background-color: #f3f5da" title="Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
+Reliabilility of the patient's identity">FR Core Patient Ident Reliability Extension:</td><td colspan="3"><ul><li>identityStatus: <a href="CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI">FR Core CodeSystem v2-0445: VALI</a> (Identité validée)</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
+        <valueCoding>
+          <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"/>
+          <code value="01006"/>
+        </valueCoding>
+      </extension>
+      <city value="Ambléon"/>
+    </valueAddress>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">
+    <extension url="identityStatus">
+      <valueCoding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"/>
+        <code value="VALI"/>
+      </valueCoding>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+        <code value="INS-NIR"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.250.1.213.1.4.8"/>
+    <value value="123456789012244"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name">
+      <valueString value="Pierre Yves"/>
+    </extension>
+    <use value="official"/>
+    <family value="Durand"/>
+    <given value="Pierre"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="01 23 24 67 89"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="01 99 88 77 66"/>
+    <use value="work"/>
+    <rank value="1"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="06 80 55 34 33"/>
+    <use value="mobile"/>
+    <rank value="2"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1974-12-25"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <type value="both"/>
+    <text value="367 rue Troussier, 45100 Orléans, France"/>
+    <line value="367 rue Troussier"/>
+    <city value="Orléans"/>
+    <postalCode value="45100"/>
+    <period>
+      <start value="2018-06-01"/>
+    </period>
+  </address>
+</Patient>
