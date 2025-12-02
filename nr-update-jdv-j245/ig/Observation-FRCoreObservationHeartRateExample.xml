@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FRCoreObservationHeartRateExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Observation FRCoreObservationHeartRateExample</b></p><a name="FRCoreObservationHeartRateExample"> </a><a name="hcFRCoreObservationHeartRateExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-observation-heartrate.html">FR Core Observation Heart Rate Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes :{http://loinc.org 8867-4}">Heart rate</span></p><p><b>subject</b>: <a href="Patient-FRCorePatientExample.html">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href="Patient-FRCorePatientExample.html">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>value</b>: 70 battements/minute<span style="background: LightGoldenRodYellow"> (Détails : code UCUM/min = '/min')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8867-4"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FRCorePatientExample"/>
+    <type value="Patient"/>
+  </subject>
+  <effectiveDateTime value="2022-11-06"/>
+  <performer>
+    <reference value="Patient/FRCorePatientExample"/>
+  </performer>
+  <valueQuantity>
+    <value value="70"/>
+    <unit value="battements/minute"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+</Observation>
