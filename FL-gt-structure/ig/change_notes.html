@@ -218,6 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#release-230-de-limplementation-guide-frcore" id="markdown-toc-release-230-de-limplementation-guide-frcore">Release 2.3.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-220-de-limplementation-guide-frcore" id="markdown-toc-release-220-de-limplementation-guide-frcore">Release 2.2.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-210-de-limplementation-guide-frcore" id="markdown-toc-release-210-de-limplementation-guide-frcore">Release 2.1.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-201-de-limplementation-guide-frcore" id="markdown-toc-release-201-de-limplementation-guide-frcore">Release 2.0.1 de l’Implementation Guide FRCore</a></li>
@@ -225,7 +226,128 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l396">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-230-de-limplementation-guide-frcore"><a name="l400">​</a><a href="https://hl7.fr/ig/fhir/core/2.3.0">Release 2.3.0</a> de l’Implementation Guide FRCore</h3>
+<p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.3.0</a> :</p>
+
+<ul>
+  <li>Restructuration des profils Organization avec :
+    <ul>
+      <li>Simplification du profil de base FRCoreOrganizationProfile</li>
+      <li>Création du nouveau profil FRCoreOrganizationEtablissementProfile pour les établissements</li>
+      <li>Suppression du profil FRCoreOrganizationPoleProfile</li>
+      <li>Refonte des profils FRCoreOrganizationUFProfile, FRCoreOrganizationUACProfile et FRCoreLocationProfile</li>
+    </ul>
+  </li>
+  <li>Amélioration du profil Location pour mieux supporter la structuration hospitalière (chambres, lits)</li>
+  <li>Ajout de 8 nouveaux CodeSystems et 11 nouveaux ValueSets pour supporter ces structures
+    <ul>
+      <li>Nouveaux CodeSystems ajoutés :
+        <ul>
+          <li>FRCoreCodeSystemChampActiviteField : Champ d’activité clinique (MCO, SMR, HAD, PSY, EHPAD, etc.)</li>
+          <li>FRCoreCodeSystemCodeTarifTNJP : Codes tarifaires TNJP</li>
+          <li>FRCoreCodeSystemDisciplineEquipement : Discipline d’équipement</li>
+          <li>FRCoreCodeSystemDisciplinePrestation : Discipline de prestation</li>
+          <li>FRCoreCodeSystemPositionLit : Position du lit dans la chambre</li>
+          <li>FRCoreCodeSystemTypeActivite : Type d’activité</li>
+          <li>FRCoreCodeSystemTypeChambre : Type de chambre</li>
+          <li>FRCoreCodeSystemUFIndicateur : Indicateurs UF</li>
+        </ul>
+      </li>
+      <li>CodeSystems modifiés :
+        <ul>
+          <li>FRCoreCodeSystemLocationType : Ajout de codes pour lit et chambre</li>
+          <li>FRCoreCodeSystemv2-3307</li>
+        </ul>
+      </li>
+      <li>Nouveaux ValueSets ajoutés :
+        <ul>
+          <li>FRCoreValueSetCategorieSAEEtablissement</li>
+          <li>FRCoreValueSetLocationPositionLit (remplace LocationPositionRoom)</li>
+          <li>FRCoreValueSetLocationTypeChambre</li>
+          <li>FRCoreValueSetOrganizationChampActivite (remplace OrganizationActivityField)</li>
+          <li>FRCoreValueSetOrganizationCodeTarifTNJP</li>
+          <li>FRCoreValueSetOrganizationDisciplineEquipement</li>
+          <li>FRCoreValueSetOrganizationDisciplinePrestation</li>
+          <li>FRCoreValueSetOrganizationEtablissementType</li>
+          <li>FRCoreValueSetOrganizationTypeActivite</li>
+          <li>FRCoreValueSetOrganizationUACType</li>
+          <li>FRCoreValueSetOrganizationUFIndicateur</li>
+        </ul>
+      </li>
+      <li>ValueSets supprimés :
+        <ul>
+          <li>FRCoreValueSetLocationIdentifierType</li>
+          <li>FRCoreValueSetLocationPhysicalType</li>
+          <li>FRCoreValueSetLocationPositionRoom</li>
+          <li>FRCoreValueSetOrganizationActivityField</li>
+          <li>FRCoreValueSetOrganizationUFActivityField</li>
+        </ul>
+      </li>
+      <li>ValueSets modifiés :
+        <ul>
+          <li>FRCoreValueSetLocationType</li>
+          <li>FRCoreValueSetOrganizationType</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Refonte des extensions Organization avec renommage et réorganisation
+    <ul>
+      <li>Nouvelles extensions Organization :
+        <ul>
+          <li>FRCoreOrganizationChampActiviteExtension (remplace ActivityFieldExtension)</li>
+          <li>FRCoreOrganizationDemandeuseActeExtension (remplace ApplicantActExtension)</li>
+          <li>FRCoreOrganizationDisciplineEquipementExtension</li>
+          <li>FRCoreOrganizationDisciplinePrestationExtension</li>
+          <li>FRCoreOrganizationExecutanteActeExtension (remplace ExecutantExtension)</li>
+          <li>FRCoreOrganizationExterneExtension (remplace ExternalExtension)</li>
+          <li>FRCoreOrganizationMemberExtension</li>
+          <li>FRCoreOrganizationPlaceHebergementTheoriqueExtension (remplace TotalNumberOfTheoricalAccomodationSpaceExtension)</li>
+          <li>FRCoreOrganizationRaisonSocialeExtension</li>
+          <li>FRCoreOrganizationSAECategoryExtension</li>
+          <li>FRCoreOrganizationTarifExtension</li>
+          <li>FRCoreOrganizationTypeActiviteExtension (remplace ActivityTypeExtension)</li>
+          <li>FRCoreOrganizationUFIndicateurExtension</li>
+        </ul>
+      </li>
+      <li>Extensions Organization supprimées :
+        <ul>
+          <li>FRCoreOrganizationActivityFieldExtension</li>
+          <li>FRCoreOrganizationActivityTypeExtension</li>
+          <li>FRCoreOrganizationAnalysisSectionExtension</li>
+          <li>FRCoreOrganizationApplicantActExtension</li>
+          <li>FRCoreOrganizationBudgetLetterExtension</li>
+          <li>FRCoreOrganizationDescriptionExtension</li>
+          <li>FRCoreOrganizationExecutantExtension</li>
+          <li>FRCoreOrganizationExternalExtension</li>
+          <li>FRCoreOrganizationFieldExtension</li>
+          <li>FRCoreOrganizationPrestationDisciplineExtension</li>
+          <li>FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension</li>
+        </ul>
+      </li>
+      <li>Nouvelles extensions Location :
+        <ul>
+          <li>FRCoreLocationPositionLitExtension (position du lit dans la chambre)</li>
+          <li>FRCoreLocationTypeChambreExtension (type de chambre)</li>
+        </ul>
+      </li>
+      <li>Extensions Location supprimées :
+        <ul>
+          <li>FRCoreLocationPartOfPositionRoomExtension</li>
+          <li>FRCoreLocationUsePeriodExtension</li>
+        </ul>
+      </li>
+      <li>Extensions modifiées :
+        <ul>
+          <li>FRCoreOrganizationShortNameExtension</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Ajout de 14 nouveaux exemples illustrant la hiérarchie organisationnelle (EJ, EG, pôles, départements, services, UF, UAC, lieux)</li>
+</ul>
+
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l680">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
@@ -260,7 +382,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Lise à jour des profils patient et exemples (quick fix et refacto) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244">#244</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l564">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l848">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -281,7 +403,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l647">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l931">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -289,7 +411,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l665">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l949">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -385,7 +507,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 20:49+0000">2025-12-02</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 21:43+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

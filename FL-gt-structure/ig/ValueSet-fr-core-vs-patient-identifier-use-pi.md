@@ -71,7 +71,7 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "title" : "FR Core ValueSet Patient identifier use PI",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-02T20:49:48+00:00",
+  "date" : "2025-12-02T21:43:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
