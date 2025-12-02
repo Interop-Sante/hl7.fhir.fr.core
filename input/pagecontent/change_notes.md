@@ -2,7 +2,34 @@
 
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
-A préparer pour la release
+* Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209)
+* Mise à jour FrCorePatientINSProfile.fsh (correction d'erreurs) [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163) [#197](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/197)
+* Suppression du numéro ADELI suite au décommissionnement national [#189](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/189)
+* Mise à jour et uniformisation des cardinalités des identifier (Patient, Practitioner, Organization) [#190](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/190)
+* Mise à jour du emailType short dans FRCoreContactPointProfile.fsh [#193](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/193)
+* Mise à jour de la page à propos (contribution, version FHIR, bonnes pratiques) [#198](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/198)
+* Mise à jour de la requête qui liste les profils [#199](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/199)
+* Mise à jour de la description d'idnatps FRCorePractitionerProfile.fsh [#200](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/200)
+* Mise à jour du short de idnatstruct FRCoreOrganizationProfile.fsh [#201](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/201)
+* Mise à jour de l'URL du CodeSystem des communes (Commune --> CommuneOM) [#204](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/204)
+* FIX discriminateur Patient.contact.relationship [#206](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/206)
+* Mise à jour du HumanName use (cardinalité et suppression de lignes inutiles héritées) [#208](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/208)
+* Ajout de nouvelles méthodes de collectes d'identité dans le cadre de l'INS [#210](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/210)
+* Ajout de l'extension MultipleBirth pour indiquer le rang gémellaire d'un patient [#212](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/212)
+* Patient: assouplissement de la contrainte sur identifier[PI].use via binding à un VS dédié [#215](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/215)
+* Résolution erreurs QA : mise à jour et ajout d'exemples, définition concepts CS, path Extension [#216](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/216)
+* Ajout page : bonnes pratiques, problématiques connues, et mise à jour de l'index pour expliciter l'intérêt de FRCore [#220](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/220)
+* Ajout de la page change notes pour faciliter l'accès à l'historique des modifications [#221](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/221)
+* Mise à jour du texte sur le patient INS sur la définition des identifiants NIR [#227](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/227)
+* Relaxation de la contrainte Encounter.subject pour qu'il puisse également pointer un Group [#228](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/228)
+* Suppression des contraintes de HumanName sur la civiliteexercice, déplacé dans Practitioner [#230](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/230)
+* Refacto - uniformisation des namings et correction QA [#232](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/232)
+* Suppression MLLE dans les civilités [#237](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/237)
+* Mise à jour identifiants INS Patient [#238](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/238)
+* MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
+* Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
+* Retrait du genre "other" sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
+* Lise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 

@@ -2,8 +2,8 @@ Profile: FRCoreOrganizationUFProfile
 Parent: OrganizationEu
 Id: fr-core-organization-uf
 Title: "FR Core Organization UF Profile"
-Description: "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.
-\r\nCe profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"
+Description: "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.\r\n
+Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

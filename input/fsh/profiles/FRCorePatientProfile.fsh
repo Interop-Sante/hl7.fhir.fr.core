@@ -2,8 +2,8 @@ Profile: FRCorePatientProfile
 Parent: PatientEu
 Id: fr-core-patient
 Title: "FR Core Patient Profile"
-Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.
-\r\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"""
+Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\r\n
+Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"""
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -20,7 +20,8 @@ Description: """Profile of the Patient resource for France. This profile specifi
     fr-core-patient-nationality named nationality 0..1 and
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
-    FRCorePatientBirthdateUpdateIndicatorExtension named birthdateUpdateIndicator 0..1 and
+    FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
+    $patient-birthPlace named birthPlace 0..1 and
     FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
@@ -29,11 +30,9 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.description = "slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
+* identifier ^slicing.description = "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
 * identifier ^slicing.rules = #open
-* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS validée, il est nécessaire de respecter la conformité au profil FrCorePatientINS. Les identifiants NIR et NIA ne sont définis uniquement dans le cas du FRCorePatientINS."
-
-
+* identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS."
 
 * identifier contains
     NSS 0..1 and
@@ -41,7 +40,6 @@ Description: """Profile of the Patient resource for France. This profile specifi
     NDP 0..1 and
     PI 0..* and
     RRI 0..*
-
 
 * identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
 * identifier[NSS].use 1..
@@ -70,9 +68,10 @@ Description: """Profile of the Patient resource for France. This profile specifi
 * identifier[NDP].system = "urn:oid:1.2.250.1.176.1.2"
 * identifier[NDP].value 1..
 
-* identifier[PI] ^short = "Hospital assigned patient identifier | IPP"
+* identifier[PI] ^short = "Hospital assigned patient identifier | Identifiant Patient Permanent (IPP)."
 * identifier[PI].use 1..
-* identifier[PI].use = #usual
+* identifier[PI].use from FRCoreValueSetPatientIdentifierUsePI
+* identifier[PI].use ^comment = "La valeur old permet d'identifier des IPP désactivés (en cas de fusion d'identité pour résoudre des problèmes de doublonnage par exemple)"
 * identifier[PI].type 1..
 * identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI "Patient internal identifier"
 * identifier[PI].system 1..
@@ -115,7 +114,9 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * telecom only FRCoreContactPointProfile
 
-* gender ^definition = "French patient's gender checked with the INSi teleservice | Genre du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs sont M ou F"
+* gender from fr-core-vs-patient-gender (required)
+* gender ^short = "male | female | unknown"
+* gender ^definition = "French patient's gender checked with the INSi teleservice | Genre administratif du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs M ou F issues du téléservice sont à adapter à FHIR (male | female | unknown)."
 
 * birthDate ^short = "The date of birth for the french patient checked with the INSitelservice | Date de naissance du patient. Dans le cas d'une identité récupérée du téléservice INSi, la date de naissance est modifiée selon les règles du RNIV dans le cas de dates exceptionnelles."
 
@@ -135,21 +136,21 @@ Description: """Profile of the Patient resource for France. This profile specifi
 
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
-    Role 0..1 and
-    RelationType 0..1
+    role 0..1 and
+    relationType 0..1
 // TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
-* contact.relationship[Role] from FRCoreValueSetPatientContactRole (extensible) 
+* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[Role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
+* contact.relationship[role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
 
-* contact.relationship[RelationType] from FRCoreValueSetPatientRelationType (extensible) 
+* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible) 
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
-* contact.relationship[RelationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
+* contact.relationship[relationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
 
 * contact.name only FRCoreHumanNameProfile
 * contact.telecom only FRCoreContactPointProfile
-* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or FRCorePractitionerRoleProfile)
-* managingOrganization only Reference(FRCoreOrganizationProfile)
+* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or PractitionerRole)
+* managingOrganization only Reference(FRCoreOrganizationProfile or Organization)

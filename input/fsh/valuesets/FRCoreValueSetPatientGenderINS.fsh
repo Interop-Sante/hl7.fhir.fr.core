@@ -1,7 +1,7 @@
-ValueSet: FRCoreValueSetPatientGenderINS
-Id: fr-core-vs-patient-gender-INS
-Title: "FR Core ValueSet Patient gender INS ValueSet"
-Description: "Genres autorisés dans le cadre du Patient INS.\r\nPermitted genders for INS Patient"
+ValueSet: FRCoreValueSetPatientGender
+Id: fr-core-vs-patient-gender
+Title: "FR Core ValueSet Patient gender"
+Description: "Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide.\r\nPermitted genders for French Patient gender."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 
 * include http://hl7.org/fhir/administrative-gender#male

@@ -1,8 +1,8 @@
 Profile: FRCoreObservationBodyHeightProfile
 Parent: http://hl7.org/fhir/StructureDefinition/bodyheight
 Id: fr-core-observation-body-height
-Description: "French profile for body height.
-\r\nProfil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7"
+Description: "French profile for body height.\r\n
+Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7"
 Title: "FR Core Observation Body Height Profile"
 * . ^short = "French Body Height Profile based on FHIR Body height profile"
 

@@ -12,20 +12,23 @@ contact:
         value: fhir@interopsante.org
         use: work
 status: active
-version: 2.1.0
+version: 2.2.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: ci-build
+releaseLabel: ballot
 jurisdiction: urn:iso:std:iso:3166#FR "France"
 
 dependencies:
   ans.fr.nos: 1.5.0
-  hl7.fhir.eu.base: current
+  hl7.fhir.eu.base: 0.1.0
+  ans.fr.terminologies: latest
 
-parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
+#La liste des paramètres ainsi que leur explication est disponible ici : https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
+parameters: 
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
   pin-canonicals: pin-multiples # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
+
 
 pages:
     index.md:

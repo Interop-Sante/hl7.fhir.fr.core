@@ -2,8 +2,8 @@ Profile: FRCoreObservationBpProfile
 Parent: http://hl7.org/fhir/StructureDefinition/bp
 Id: fr-core-observation-bp
 Title: "FR Core Observation Blood Pressure Profile"
-Description: "French profile for blood pressure.
-\r\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7"
+Description: "French profile for blood pressure.\r\n
+Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7"
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"

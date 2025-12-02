@@ -104,8 +104,7 @@ Description: "Cette extension permet de préciser une liste de période de temps
 
 * extension[unavailabilityReason] ^short = "Non-availability resaon | Raison de l'indisponibilité"
 * extension[unavailabilityReason].value[x] only CodeableConcept
-// * extension[unavailabilityReason].value[x] from fr-core-schedule-unavailability-reason (example) 
-// * extension[unavailabilityReason].value[x] from $fr-core-schedule-unavailability-reason (extensible) // TODO : valueset à créer
+* extension[unavailabilityReason].valueCodeableConcept from fr-core-vs-schedule-unavailability-reason (extensible)
 
 * extension[created] ^short = "The date/time the period was created | Date de création de la période"
 * extension[created] ^definition = "Date/time of the availabibility/non-availlabilty period was created | Date/time à laquelle la période de disponibilité/indisponibilité a été crée"
