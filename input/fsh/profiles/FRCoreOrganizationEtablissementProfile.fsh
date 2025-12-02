@@ -56,7 +56,7 @@ Description: """Profil de la ressource Organization permettant de représenter d
 * identifier[rppsRang].system = "https://rppsrang.esante.gouv.fr"
 
 
-* type from FRCoreValueSetOrganizationEtablissementType (required)
+* type from FRCoreValueSetOrganizationEtablissementType (example)
 // Organization.name
 * name MS
 * name ^short = "Raison sociale de la structure"
