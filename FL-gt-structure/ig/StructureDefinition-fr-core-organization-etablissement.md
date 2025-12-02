@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
 
  
 Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. 
@@ -36,10 +36,10 @@ Informations à positionner en fonction des types d’établissement
 | Entité géographique | **✔** | **✘** | **✔** | **✘** |
 | Cabinet individuel sans SIRET | **✘** | **✘** | **✘** | **✔** |
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* Examples for this Profile: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md) and [CHRU RENNES](Organization-hopitaltest-ej-350005179.md)
+* Référer à ce Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Exemples pour ce Profil: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md) and [CHRU RENNES](Organization-hopitaltest-ej-350005179.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-etablissement)
 
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -203,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "sliceName" : "idNatSt",
         "short" : "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures.",
         "min" : 0,
-        "max" : "0"
+        "max" : "*"
       },
       {
         "id" : "Organization.identifier:idNatSt.use",

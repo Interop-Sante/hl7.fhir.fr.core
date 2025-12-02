@@ -18,17 +18,21 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
 
 * [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-category.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-version: 2024.1; Dernière mise à jour : 2025-03-14 18:01:34+0000
+version : 2024.1; Dernière mise à jour : 2025-03-14 18:01:34+0000
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement`](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R66-CategorieEtablissement.html)version 📦20250425120000
+* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html)version 📦20250425120000
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TRE_R66_CategorieEtablissement v20250425120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html)
+
+Ce jeu de valeur (ValueSet) contient 32 concepts
 
 -------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreEncounterEstimatedDischargeDateExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreEncounterEstimatedDischargeDateExtension |
 
 This extension is used to specify the estimated discharge date of the patient
 
@@ -17,10 +17,10 @@ This extension is used to specify the estimated discharge date of the patient
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
-* Examples for this Extension: [Encounter/FRCoreEncounterExample](Encounter-FRCoreEncounterExample.md)
+* Utiliser ce Extension: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
+* Exemples pour ce Extension: [Encounter/FRCoreEncounterExample](Encounter-FRCoreEncounterExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-estimated-discharge-date)
 
@@ -32,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-estimated-discharge-date.csv), [Excel](StructureDefinition-fr-core-estimated-discharge-date.xlsx), [Schematron](StructureDefinition-fr-core-estimated-discharge-date.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-estimated-di
   "name" : "FRCoreEncounterEstimatedDischargeDateExtension",
   "title" : "FR Core Encounter Estimated Discharge Date Extension",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationUFIndicateurExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationUFIndicateurExtension |
 
 Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.
 
@@ -17,9 +17,9 @@ Indicateur permettant de définir si une UF est d’hébergement, médicale, adm
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-uf-indicateur)
 
@@ -31,9 +31,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-uf-indicateur.csv), [Excel](StructureDefinition-fr-core-organization-uf-indicateur.xlsx), [Schematron](StructureDefinition-fr-core-organization-uf-indicateur.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFIndicateurExtension",
   "title" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

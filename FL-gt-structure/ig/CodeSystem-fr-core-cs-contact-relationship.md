@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship | *Version*:2.2.0-ballot |
-| Draft as of 2025-11-02 | *Computable Name*:FRCoreCodeSystemContactRelationship |
+| Draft as of 2025-12-02 | *Computable Name*:FRCoreCodeSystemContactRelationship |
 
  
 Relationship type 
@@ -37,7 +37,7 @@ Relationship type
   "title" : "FR Core CodeSystem Contact Relationship",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

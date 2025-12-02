@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-02T22:07:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-02T20:15:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -67,7 +67,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.5.0" ]
+     fhir:version [ fhir:v "7.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -93,7 +93,7 @@
        fhir:l <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
-     fhir:version [ fhir:v "1.2.0" ]
+     fhir:version [ fhir:v "1.4.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -2085,7 +2085,7 @@
          fhir:reference [ fhir:v "CodeSystem/fr-core-cs-type-activite" ]
        ] ;
        fhir:name [ fhir:v "FR Core CodeSystem Type d'activité - nomenclature SAE" ] ;
-       fhir:description [ fhir:v "La nomenclature des types d'activité." ] ;
+       fhir:description [ fhir:v "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2728,27 +2728,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-organization-description" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Organization Description Extension" ] ;
-       fhir:description [ fhir:v "Description textuelle d'une organisation" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -3093,7 +3072,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-organization-uac" ]
        ] ;
        fhir:name [ fhir:v "FR Core Organization UAC Profile" ] ;
-       fhir:description [ fhir:v "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation." ] ;
+       fhir:description [ fhir:v "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3534,7 +3513,7 @@
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-oragnization-code-tarif-tnjp" ]
        ] ;
        fhir:name [ fhir:v "FR Core ValueSet Codes Tarifs - nomenclature TNJP" ] ;
-       fhir:description [ fhir:v "Valeurs permettant de coder les codes tarif." ] ;
+       fhir:description [ fhir:v "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4058,29 +4037,8 @@
          fhir:l <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-organization-uf-indicateur" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Organization UF type" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Organization UF Indicateur" ] ;
        fhir:description [ fhir:v "Indicateur d'une unité fonctionnelle." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-type> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-organization-uf-type" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Organization UF type" ] ;
-       fhir:description [ fhir:v "Type de structure représentant des unités fonctionnelles." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

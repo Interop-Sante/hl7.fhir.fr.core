@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationSAECategoryExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationSAECategoryExtension |
 
 Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement)
 
@@ -17,10 +17,10 @@ Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
-* Examples for this Extension: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md) and [CHRU RENNES](Organization-hopitaltest-ej-350005179.md)
+* Utiliser ce Extension: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
+* Exemples pour ce Extension: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md) and [CHRU RENNES](Organization-hopitaltest-ej-350005179.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-sae-category)
 
@@ -32,9 +32,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-sae-category.csv), [Excel](StructureDefinition-fr-core-organization-sae-category.xlsx), [Schematron](StructureDefinition-fr-core-organization-sae-category.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationSAECategoryExtension",
   "title" : "FR Core Organization Extension - Catetgorie SAE",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

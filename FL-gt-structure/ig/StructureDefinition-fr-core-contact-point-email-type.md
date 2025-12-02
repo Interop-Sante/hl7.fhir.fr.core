@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreContactPointEmailTypeExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreContactPointEmailTypeExtension |
 
 Extension permettant d’indiquer le type d’adresse email d’un ContactPoint.
 
@@ -19,10 +19,10 @@ This extension allows to specify the type of mail used to contact the person.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Contact Point Profile](StructureDefinition-fr-core-contact-point.md)
-* Examples for this Extension: [Practitioner/FRCorePractitionerExample](Practitioner-FRCorePractitionerExample.md)
+* Utiliser ce Extension: [FR Core Contact Point Profile](StructureDefinition-fr-core-contact-point.md)
+* Exemples pour ce Extension: [Practitioner/FRCorePractitionerExample](Practitioner-FRCorePractitionerExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-contact-point-email-type)
 
@@ -34,9 +34,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-contact-point-email-type.csv), [Excel](StructureDefinition-fr-core-contact-point-email-type.xlsx), [Schematron](StructureDefinition-fr-core-contact-point-email-type.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "name" : "FRCoreContactPointEmailTypeExtension",
   "title" : "FR Core Contact Point Email Type Extension",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

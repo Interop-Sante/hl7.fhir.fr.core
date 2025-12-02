@@ -10,7 +10,7 @@
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -45,7 +45,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.5.0"
+    "version" : "7.0.0"
   },
   {
     "id" : "hl7ext",
@@ -61,7 +61,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.2.0"
+    "version" : "1.4.0"
   }],
   "definition" : {
     "extension" : [{
@@ -1047,7 +1047,7 @@
         "reference" : "CodeSystem/fr-core-cs-type-activite"
       },
       "name" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
-      "description" : "La nomenclature des types d'activité.",
+      "description" : "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.",
       "exampleBoolean" : false
     },
     {
@@ -1413,18 +1413,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-description"
-      },
-      "name" : "FR Core Organization Description Extension",
-      "description" : "Description textuelle d'une organisation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1623,7 +1611,7 @@
         "reference" : "StructureDefinition/fr-core-organization-uac"
       },
       "name" : "FR Core Organization UAC Profile",
-      "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation.",
+      "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.",
       "exampleBoolean" : false
     },
     {
@@ -1875,7 +1863,7 @@
         "reference" : "ValueSet/fr-core-vs-oragnization-code-tarif-tnjp"
       },
       "name" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
-      "description" : "Valeurs permettant de coder les codes tarif.",
+      "description" : "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).",
       "exampleBoolean" : false
     },
     {
@@ -2174,20 +2162,8 @@
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-uf-indicateur"
       },
-      "name" : "FR Core ValueSet Organization UF type",
+      "name" : "FR Core ValueSet Organization UF Indicateur",
       "description" : "Indicateur d'une unité fonctionnelle.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-organization-uf-type"
-      },
-      "name" : "FR Core ValueSet Organization UF type",
-      "description" : "Type de structure représentant des unités fonctionnelles.",
       "exampleBoolean" : false
     },
     {

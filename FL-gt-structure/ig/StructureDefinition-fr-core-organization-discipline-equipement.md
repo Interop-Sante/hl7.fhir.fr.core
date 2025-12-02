@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationDisciplineEquipementExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationDisciplineEquipementExtension |
 
 Discipline d’équipement
 
@@ -17,10 +17,10 @@ Discipline d’équipement
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
-* Examples for this Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
+* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Exemples pour ce Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-discipline-equipement)
 
@@ -32,9 +32,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-discipline-equipement.csv), [Excel](StructureDefinition-fr-core-organization-discipline-equipement.xlsx), [Schematron](StructureDefinition-fr-core-organization-discipline-equipement.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDisciplineEquipementExtension",
   "title" : "FR Core Organization Extension - Discipline d'équipement",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationShortNameExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationShortNameExtension |
 
 Libellé court de l’organisation
 
@@ -17,10 +17,10 @@ Libellé court de l’organisation
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* Examples for this Extension: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md), [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md), [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md), [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md) and [UF Nutrition](Organization-hopitaltest-uf-4705-nutrition.md)
+* Utiliser ce Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Exemples pour ce Extension: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md), [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md), [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md), [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md) and [UF Nutrition](Organization-hopitaltest-uf-4705-nutrition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-short-name)
 
@@ -32,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-short-name.csv), [Excel](StructureDefinition-fr-core-organization-short-name.xlsx), [Schematron](StructureDefinition-fr-core-organization-short-name.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationShortNameExtension",
   "title" : "FR Core Organization Short Name Extension",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

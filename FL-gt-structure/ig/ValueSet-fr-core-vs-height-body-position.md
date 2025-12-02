@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
 
  
 ValueSet Body Position 
@@ -18,20 +18,20 @@ ValueSet Body Position
 
 * [FR Core Observation Height Body Position Extension](StructureDefinition-fr-core-observation-height-body-position.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 10904000 (position debout)
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) où concept is-a 102538003 (position allongée)
+* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie) où concept est-un 10904000 (position debout)
+* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie) où concept est-un 102538003 (position allongée)
 
  
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
+Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
 
 Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
 
@@ -65,7 +65,7 @@ Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

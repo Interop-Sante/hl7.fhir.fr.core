@@ -18,7 +18,7 @@ A set of codes that can be used to indicate the relationship between a Patient a
 
 Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -30,6 +30,11 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem contactRole2 v2.1.0 (CodeSystem)](http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html)
+* [codesystem FR Core CodeSystem Contact Relationship v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-contact-relationship.md)
 
 Ce jeu de valeur (ValueSet) contient 84 concepts
 
@@ -81,7 +86,7 @@ Ce jeu de valeur (ValueSet) contient 84 concepts
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

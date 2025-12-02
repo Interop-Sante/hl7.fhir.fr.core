@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreContactPointProfile |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreContactPointProfile |
 
  
 Profil du type de données ContactPoint pour la France, ce profil ajoute le type d’e-mail tel que la bal mss. French profile of ContactPoint datatype 
 
-**Usages:**
+**Utilisations:**
 
-* Use this DataType Profile: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)...Show 2 more,[FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)and[FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
+* Utiliser ce Profil de type de données: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)...Show 2 more,[FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)and[FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-contact-point)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "name" : "FRCoreContactPointProfile",
   "title" : "FR Core Contact Point Profile",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

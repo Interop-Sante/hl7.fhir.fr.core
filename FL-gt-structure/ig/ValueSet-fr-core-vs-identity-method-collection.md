@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreValueSetIdentityMethodCollection |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreValueSetIdentityMethodCollection |
 
  
 The validation mode of the identity. 
@@ -18,7 +18,7 @@ The validation mode of the identity.
 
 * [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Mode Validation Identite v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-method-collection.md)
+
+Ce jeu de valeur (ValueSet) contient 5 concepts
 
 -------
 
@@ -58,7 +62,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

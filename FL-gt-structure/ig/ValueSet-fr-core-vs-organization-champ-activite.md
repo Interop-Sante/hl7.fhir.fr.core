@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-champ-activite | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreValueSetOrganizationChampActivite |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreValueSetOrganizationChampActivite |
 
  
 Champ d’activité d’une organisation type UF. 
@@ -18,7 +18,7 @@ Champ d’activité d’une organisation type UF.
 
 * [FR Core Organization Extension - Champ d'activité](StructureDefinition-fr-core-organization-champ-activite.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Champ Activite - Codes du champ d'activité v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-champ-activite.md)
+
+Ce jeu de valeur (ValueSet) contient 8 concepts
 
 -------
 
@@ -58,7 +62,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

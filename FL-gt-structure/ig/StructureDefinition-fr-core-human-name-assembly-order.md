@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order | *Version*:2.2.0-ballot | |
-| Active as of 2025-11-02 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreAssemblyOrderExtension |
+| Active as of 2025-12-02 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreAssemblyOrderExtension |
 
 A code that represents the preferred display order of the components of this human name.
 
@@ -17,9 +17,9 @@ A code that represents the preferred display order of the components of this hum
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* This Extension is not used by any profiles in this Implementation Guide
+* Ce Extension nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-human-name-assembly-order)
 
@@ -31,9 +31,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-assembly-order.csv), [Excel](StructureDefinition-fr-core-human-name-assembly-order.xlsx), [Schematron](StructureDefinition-fr-core-human-name-assembly-order.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

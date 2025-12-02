@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationUACProfile |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationUACProfile |
 
  
-Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. 
+Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation. 
 
 ### Usage
 
-L’UAC est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Elle ne sert qu’à la facturation du séjour. Elle permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
+L’[UAC](structure_entites.md#UAC) est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Elle ne sert qu’à la facturation du séjour. Elle permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
 
 ### Ajout du profil FR
 
@@ -25,9 +25,9 @@ Ce profil ajoute par rapport au profil FR Organization, dont il hérite :
 * la possibilité de définir une discipline de prestation
 * la possibilité d’ajouter un code tarif
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md) and [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md)
+* Exemples pour ce Profil: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md) and [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-uac)
 
@@ -52,7 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUACProfile",
   "title" : "FR Core Organization UAC Profile",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       ]
     }
   ],
-  "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation.",
+  "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.",
   "jurisdiction" : [
     {
       "coding" : [

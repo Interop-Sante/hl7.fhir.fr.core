@@ -29,7 +29,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) | French profile for the ObservationResprate profile for France.Profil de la fréquence resporatoire pour l’usage en France |
 | [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md) | Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. |
 | [FR Core Organization Profile](StructureDefinition-fr-core-organization.md) | Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France. |
-| [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md) | Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. |
+| [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md) | Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation. |
 | [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md) | Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement. |
 | [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md) | FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. |
 | [FR Core Patient Profile](StructureDefinition-fr-core-patient.md) | Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) |
@@ -68,7 +68,6 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [FR Core Observation Body Position Ext Extension](StructureDefinition-fr-core-observation-body-position-ext.md) | Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire. CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation |
 | [FR Core Observation Height Body Position Extension](StructureDefinition-fr-core-observation-height-body-position.md) | Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing). Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height. |
 | [FR Core Observation Level Of Exertion Extension](StructureDefinition-fr-core-observation-level-of-exertion.md) | Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort). French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure |
-| [FR Core Organization Description Extension](StructureDefinition-fr-core-organization-description.md) | Description textuelle d’une organisation |
 | [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-category.md) | Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) |
 | [FR Core Organization Extension - Champ d'activité](StructureDefinition-fr-core-organization-champ-activite.md) | Champ d’activité d’une UF |
 | [FR Core Organization Extension - Demandeuse d'acte](StructureDefinition-fr-core-organization-demandeuse-acte.md) | Indicateur permettant de définir si une UF peut demander des actes |
@@ -108,7 +107,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet BodyPosition](ValueSet-fr-core-vs-height-body-position.md) | ValueSet Body Position |
 | [FR Core ValueSet COG commune pays](ValueSet-fr-core-vs-cog-commune-pays.md) | Value set town and country COG |
 | [FR Core ValueSet Categorie SAE Etablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md) | Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 |
-| [FR Core ValueSet Codes Tarifs - nomenclature TNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md) | Valeurs permettant de coder les codes tarif. |
+| [FR Core ValueSet Codes Tarifs - nomenclature TNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md) | Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations). |
 | [FR Core ValueSet Contact relationship](ValueSet-fr-core-vs-contact-relationship.md) | A set of codes that can be used to indicate the relationship between a Patient and a Related Person. |
 | [FR Core ValueSet Email type](ValueSet-fr-core-vs-email-type.md) | The type of email |
 | [FR Core ValueSet Encounter class](ValueSet-fr-core-vs-encounter-class.md) | A set of codes that can be used to indicate the class of the encounter. |
@@ -130,8 +129,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet Organization Etablisement type](ValueSet-fr-core-vs-organization-etablissement-type.md) | Types d’organisation représentant des établissements. |
 | [FR Core ValueSet Organization Type Activité - nomenclature SAE](ValueSet-fr-core-vs-oragnization-type-activite.md) | Valeurs permettant de coder les types d’activité. |
 | [FR Core ValueSet Organization UAC type](ValueSet-fr-core-vs-organization-uac-type.md) | Types de structure représentant des unités d’activité. |
-| [FR Core ValueSet Organization UF type](ValueSet-fr-core-vs-organization-uf-indicateur.md) | Indicateur d’une unité fonctionnelle. |
-| [FR Core ValueSet Organization UF type](ValueSet-fr-core-vs-organization-uf-type.md) | Type de structure représentant des unités fonctionnelles. |
+| [FR Core ValueSet Organization UF Indicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md) | Indicateur d’une unité fonctionnelle. |
 | [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). |
 | [FR Core ValueSet Organization type](ValueSet-fr-core-vs-organization-type.md) | Types de structures |
 | [FR Core ValueSet Patient contact role](ValueSet-fr-core-vs-patient-contact-role.md) | ValueSet patient contact role |
@@ -178,7 +176,7 @@ These define new code systems used by systems conforming to this implementation 
 | [FR Core CodeSystem Schedule Type](CodeSystem-fr-core-cs-schedule-type.md) | Schedule type |
 | [FR Core CodeSystem Type Admission](CodeSystem-fr-core-cs-type-admission.md) | Admission type |
 | [FR Core CodeSystem Type Chambre](CodeSystem-fr-core-cs-location-type-chambre.md) | Type de chambre |
-| [FR Core CodeSystem Type d'activité - nomenclature SAE](CodeSystem-fr-core-cs-type-activite.md) | La nomenclature des types d’activité. |
+| [FR Core CodeSystem Type d'activité - nomenclature SAE](CodeSystem-fr-core-cs-type-activite.md) | La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES. |
 | [FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle](CodeSystem-fr-core-cs-uf-indicateur.md) | Système de codage permettant de définir les indicateurs d’une unité fonctionnelle. |
 | [FR Core CodeSystem v2-0203](CodeSystem-fr-core-cs-v2-0203.md) | HL7 v2 - Identifier type |
 | [FR Core CodeSystem v2-0445](CodeSystem-fr-core-cs-v2-0445.md) | HL7 v2 - Table 0445 |

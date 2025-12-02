@@ -6,7 +6,7 @@
 
 ## Example PractitionerRole: FRCorePractitionerRoleExample
 
-version: 1; Dernière mise à jour : 2025-04-28 18:19:34+0200; Langue : fr; 
+version : 1; Dernière mise à jour : 2025-04-28 18:19:34+0200; Langue : fr; 
 
 Information Source: [https://annuaire.sante.fr](https://annuaire.sante.fr)
 

@@ -1,15 +1,15 @@
-# FR Core ValueSet Organization UF type - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Organization UF Indicateur - Guide d'implémentation Fr Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **FR Core ValueSet Organization UF type**
+* **FR Core ValueSet Organization UF Indicateur**
 
-## ValueSet: FR Core ValueSet Organization UF type 
+## ValueSet: FR Core ValueSet Organization UF Indicateur 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreValueSetOrganizationUFIndicateur |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreValueSetOrganizationUFIndicateur |
 
  
 Indicateur d’une unité fonctionnelle. 
@@ -18,7 +18,7 @@ Indicateur d’une unité fonctionnelle.
 
 * [FR Core Organization Extension - Indicateur d'une unité fonctionnelle](StructureDefinition-fr-core-organization-uf-indicateur.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-uf-indicateur.md)
+
+Ce jeu de valeur (ValueSet) contient 7 concepts
 
 -------
 
@@ -55,9 +59,9 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur",
   "version" : "2.2.0-ballot",
   "name" : "FRCoreValueSetOrganizationUFIndicateur",
-  "title" : "FR Core ValueSet Organization UF type",
+  "title" : "FR Core ValueSet Organization UF Indicateur",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -23,15 +23,19 @@ The modalities of exercice of the practitioner, registered by an official organi
 * [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 * [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale`](https://interop.esante.gouv.fr/terminologies/1.2.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)version 📦20240531120000
+* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)version 📦20240531120000
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TRE_R38_SpecialiteOrdinale v20240531120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)
+
+Ce jeu de valeur (ValueSet) contient 107 concepts
 
 -------
 
@@ -77,7 +81,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

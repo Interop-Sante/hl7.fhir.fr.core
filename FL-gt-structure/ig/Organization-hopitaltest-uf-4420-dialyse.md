@@ -10,7 +10,7 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
 
 **FR Core Organization Short Name Extension**: UF Dialyse
 
-**FR Core Organization Description Extension**: UF Dialyse - Utilisation de l'hémodialyse
+**Extension Definition for Organization.description for Version 5.0**: UF Dialyse - Utilisation de l'hémodialyse
 
 > **Organization Period**
 * start: 2023-01-01 00:00:00+0100
@@ -65,7 +65,7 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
       "valueString" : "UF Dialyse"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description",
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description",
       "valueString" : "UF Dialyse - Utilisation de l'hémodialyse"
     },
     {

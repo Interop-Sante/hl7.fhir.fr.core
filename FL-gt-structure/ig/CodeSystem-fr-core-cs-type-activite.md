@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite | *Version*:2.2.0-ballot |
-| Draft as of 2025-11-02 | *Computable Name*:FRCoreCodeSystemTypeActivite |
+| Draft as of 2025-12-02 | *Computable Name*:FRCoreCodeSystemTypeActivite |
 
  
-La nomenclature des types d’activité. 
+La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -37,7 +37,7 @@ La nomenclature des types d’activité.
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -60,7 +60,7 @@ La nomenclature des types d’activité.
       ]
     }
   ],
-  "description" : "La nomenclature des types d'activité.",
+  "description" : "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.",
   "jurisdiction" : [
     {
       "coding" : [

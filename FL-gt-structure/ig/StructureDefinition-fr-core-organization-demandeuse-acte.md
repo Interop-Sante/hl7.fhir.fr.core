@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationDemandeuseActeExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationDemandeuseActeExtension |
 
 Indicateur permettant de définir si une UF peut demander des actes
 
@@ -17,10 +17,10 @@ Indicateur permettant de définir si une UF peut demander des actes
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
-* Examples for this Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
+* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Exemples pour ce Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-demandeuse-acte)
 
@@ -32,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-demandeuse-acte.csv), [Excel](StructureDefinition-fr-core-organization-demandeuse-acte.xlsx), [Schematron](StructureDefinition-fr-core-organization-demandeuse-acte.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDemandeuseActeExtension",
   "title" : "FR Core Organization Extension - Demandeuse d'acte",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

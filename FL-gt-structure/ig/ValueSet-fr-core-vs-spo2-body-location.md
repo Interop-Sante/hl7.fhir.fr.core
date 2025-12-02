@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
 
  
 Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed. 
@@ -19,17 +19,17 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
 * [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md)
 * [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server)
+* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 
  
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
+Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
 
 Ce jeu de valeur (ValueSet) contient 4 concepts
 
@@ -63,7 +63,7 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

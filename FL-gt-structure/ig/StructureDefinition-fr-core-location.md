@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreLocationProfile |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreLocationProfile |
 
  
 Ressource Location adaptée au contexte français. Cette ressource est utilisée pour représenter un lieu physique, telle qu’une salle d’examen, un lit d’hôpital ou une chambre d’hôpital. 
@@ -27,10 +27,10 @@ En plus de préciser les types de lieu utilisables avec les ressources `Location
 * le type de chambre
 * la position d’une lit dans une chambre
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* Examples for this Profile: [Lit Fenetre - chambre 04](Location-hopitaltest-endocrino-ch04-litF.md), [Chambre 04](Location-hopitaltest-endocrino-ch04.md) and [Salle d'examen 01](Location-hopitaltest-salle-examen-01.md)
+* Référer à ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Exemples pour ce Profil: [Lit Fenetre - chambre 04](Location-hopitaltest-endocrino-ch04-litF.md), [Chambre 04](Location-hopitaltest-endocrino-ch04.md) and [Salle d'examen 01](Location-hopitaltest-salle-examen-01.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location)
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -129,6 +129,28 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
             "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
           }
         ]
+      },
+      {
+        "id" : "Location.meta.profile",
+        "path" : "Location.meta.profile",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "$this"
+            }
+          ],
+          "description" : "Slice based on the canonical url value",
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Location.meta.profile:fr-canonical",
+        "path" : "Location.meta.profile",
+        "sliceName" : "fr-canonical",
+        "min" : 0,
+        "max" : "1",
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
       },
       {
         "id" : "Location.extension",

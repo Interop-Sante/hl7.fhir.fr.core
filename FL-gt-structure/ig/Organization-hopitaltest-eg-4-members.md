@@ -12,13 +12,13 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
 
 **FR Core Organization Raison Sociale Extension**: CHRU CENTRE VILLE
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**: [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
+**FR Core Organization Extension - Membre d'organisation**: [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**: `UF Nutrition`
+**FR Core Organization Extension - Membre d'organisation**: `UF Nutrition`
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**: [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md)
+**FR Core Organization Extension - Membre d'organisation**: [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md)
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**: [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
+**FR Core Organization Extension - Membre d'organisation**: [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
 
 **identifier**: FINESS d'entité géographique/350009999 (utilisation : official, ), Identification de l'organisation au SIREN/26350007609999 (utilisation : official, )
 
@@ -57,7 +57,7 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
       "valueString" : "CHRU CENTRE VILLE"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
       "valueReference" : {
         "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab",
         "type" : "UF",
@@ -65,7 +65,7 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
       }
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
       "valueReference" : {
         "reference" : "Organization/hopitaltest-uf-4705-nutrition\"",
         "type" : "UF",
@@ -73,7 +73,7 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
       }
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
       "valueReference" : {
         "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo",
         "type" : "SERVICE",
@@ -81,7 +81,7 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
       }
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
       "valueReference" : {
         "reference" : "Organization/hopitaltest-service-11007-dietetique",
         "type" : "SERVICE",

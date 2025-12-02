@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationChampActiviteExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationChampActiviteExtension |
 
 Champ d’activité d’une UF
 
@@ -17,10 +17,10 @@ Champ d’activité d’une UF
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
-* Examples for this Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
+* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Exemples pour ce Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-champ-activite)
 
@@ -32,9 +32,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-champ-activite.csv), [Excel](StructureDefinition-fr-core-organization-champ-activite.xlsx), [Schematron](StructureDefinition-fr-core-organization-champ-activite.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationChampActiviteExtension",
   "title" : "FR Core Organization Extension - Champ d'activité",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

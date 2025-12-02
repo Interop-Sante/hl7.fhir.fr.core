@@ -10,7 +10,7 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
 
 **FR Core Organization Short Name Extension**: UF Nutrition
 
-**FR Core Organization Description Extension**: Hospitalisation de semaine pour les patients nécessitant une nutrition entérale ou parentérale.
+**Extension Definition for Organization.description for Version 5.0**: Hospitalisation de semaine pour les patients nécessitant une nutrition entérale ou parentérale.
 
 > **Organization Period**
 * start: 2023-01-01 00:00:00+0100
@@ -49,7 +49,7 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
       "valueString" : "UF Nutrition"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description",
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description",
       "valueString" : "Hospitalisation de semaine pour les patients nécessitant une nutrition entérale ou parentérale."
     },
     {

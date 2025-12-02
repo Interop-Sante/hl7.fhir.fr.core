@@ -93,14 +93,8 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li>
-    <a href="profile_list.html">Liste des profils</a>
-  </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
-  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structure
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -123,6 +117,12 @@
         <a href="structure_ref_loi.html">Références</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="profile_list.html">Liste des profils</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
@@ -200,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation Fr Core - Local Development build (v2.2.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hl7.fr/ig/fhir/core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation Fr Core - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://hl7.fr/ig/fhir/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -419,7 +419,7 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-organization-uac">FR Core Organization UAC Profile</a>
             </td>
             <td>
-<p>Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation.</p>
+<p>Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.</p>
 </td>
          </tr>
          <tr>
@@ -675,15 +675,6 @@ Extension on the FrObservationBodyHeight to specify the position of the body dur
             <td>
 <p>Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort).
 French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-description.html"
-                  title="StructureDefinition/fr-core-organization-description">FR Core Organization Description Extension</a>
-            </td>
-            <td>
-<p>Description textuelle d’une organisation</p>
 </td>
          </tr>
          <tr>
@@ -994,7 +985,7 @@ Specification of the recurrent periods</p>
                   title="ValueSet/fr-core-vs-oragnization-code-tarif-tnjp">FR Core ValueSet Codes Tarifs - nomenclature TNJP</a>
             </td>
             <td>
-<p>Valeurs permettant de coder les codes tarif.</p>
+<p>Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).</p>
 </td>
          </tr>
          <tr>
@@ -1192,19 +1183,10 @@ A coded type for an encounter</p>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-organization-uf-indicateur.html"
-                  title="ValueSet/fr-core-vs-organization-uf-indicateur">FR Core ValueSet Organization UF type</a>
+                  title="ValueSet/fr-core-vs-organization-uf-indicateur">FR Core ValueSet Organization UF Indicateur</a>
             </td>
             <td>
 <p>Indicateur d’une unité fonctionnelle.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-uf-type.html"
-                  title="ValueSet/fr-core-vs-organization-uf-type">FR Core ValueSet Organization UF type</a>
-            </td>
-            <td>
-<p>Type de structure représentant des unités fonctionnelles.</p>
 </td>
          </tr>
          <tr>
@@ -1575,7 +1557,7 @@ A Schedule type</p>
                   title="CodeSystem/fr-core-cs-type-activite">FR Core CodeSystem Type d'activité - nomenclature SAE</a>
             </td>
             <td>
-<p>La nomenclature des types d’activité.</p>
+<p>La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.</p>
 </td>
          </tr>
          <tr>
@@ -1950,7 +1932,7 @@ A Schedule type</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 2, 2025 22:07+0000">2025-11-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 20:15+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -93,14 +93,8 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li>
-    <a href="profile_list.html">Liste des profils</a>
-  </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
-  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structure
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -123,6 +117,12 @@
         <a href="structure_ref_loi.html">Références</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="profile_list.html">Liste des profils</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
@@ -200,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation Fr Core - Local Development build (v2.2.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hl7.fr/ig/fhir/core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation Fr Core - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://hl7.fr/ig/fhir/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Nomenclatures</h2>
   
 
@@ -216,15 +216,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#nomenclatures" id="markdown-toc-nomenclatures">Nomenclatures</a></li>
+  <li><a href="#glossaire" id="markdown-toc-glossaire">Glossaire</a></li>
+</ul>
+
 </div>
 <h3 id="nomenclatures">Nomenclatures</h3>
 
 <p><strong>Type d’activité / Mode de traitement</strong>
-<span class="tag tag-cat1">DREESS</span></p>
+<span class="tag tag-cat1">DREES</span></p>
 <blockquote>
-  <p>Nomenclature définie par la DREESS dans le cadre de la SAE. Elle est 
+  <p>Nomenclature définie par la DREES dans le cadre de la SAE. Elle est 
 utilisé dans les remontées B2 FIDES</p>
 </blockquote>
 
@@ -234,9 +238,9 @@ utilisé dans les remontées B2 FIDES</p>
 </blockquote>
 
 <p><strong>Discipline de prestation</strong>
-<span class="tag tag-cat1">DREESS</span></p>
+<span class="tag tag-cat1">DREES</span></p>
 <blockquote>
-  <p>Nomenclature définie par la DREESS dans le cadre de la SAE.
+  <p>Nomenclature définie par la DREES dans le cadre de la SAE.
 Cette nomenclature est également utilisée dans les remontées B2 FIDES
 La discipline de prestation correspond à l’ancienne nomenclature des Disciplines Medico-Tarifaires (DMT)</p>
 </blockquote>
@@ -248,9 +252,9 @@ La discipline de prestation correspond à l’ancienne nomenclature des Discipli
 </blockquote>
 
 <p><strong>Discipline d’équipement</strong>
-<span class="tag tag-cat1">DREESS</span></p>
+<span class="tag tag-cat1">DREES</span></p>
 <blockquote>
-  <p>La nomenclature de disciplines d’équipement est utilisée pour ventiler l’activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SSR et SLD) et la discipline ‘administration, services hôteliers et techniques’. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements (source DREESS - SAE).
+  <p>La nomenclature de disciplines d’équipement est utilisée pour ventiler l’activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SSR et SLD) et la discipline ‘administration, services hôteliers et techniques’. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements (source DREES - SAE).
 Elle permet de classer les UF selon leur spécialité médicale et piloter l’analyse financière via la comptabilité analytique hospitalière.</p>
 </blockquote>
 
@@ -260,11 +264,25 @@ Elle permet de classer les UF selon leur spécialité médicale et piloter l’a
   <p>FINESS est le répertoire à portée nationale des structures des domaines sanitaire, médico-social, social et de la formation aux professions sanitaires et sociales.</p>
 </blockquote>
 
-<p><strong>SIREN/SIRET</strong>
-Le numéro SIREN (Système d’Identification du Répertoire des Entreprises) est un identifiant unique à 9 chiffres attribué à chaque entreprise ou entité juridique lors de sa création ; il reste le même tout au long de la vie de l’entreprise
+<p><strong>SIREN/SIRET</strong></p>
+<blockquote>
+  <p>Le numéro SIREN (Système d’Identification du Répertoire des Entreprises) est un identifiant unique à 9 chiffres attribué à chaque entreprise ou entité juridique lors de sa création ; il reste le même tout au long de la vie de l’entreprise
 Le numéro SIRET (Système d’Identification du Répertoire des Établissements) identifie chaque établissement géographique d’une entreprise : il est composé des 9 chiffres du SIREN suivis de 5 chiffres (le NIC) propres à chaque site ou établissement
 Ainsi, une entreprise a un seul SIREN, mais autant de SIRET qu’elle a d’établissements ou d’adresses différentes.</p>
+</blockquote>
 
+<h3 id="glossaire">Glossaire</h3>
+
+<dl>
+  <dt>DREES</dt>
+  <dd>Direction de la recherche, des études, de l’évaluation et des statistiques.</dd>
+  <dd>C’est le service statistique ministériel dans les domaines de la santé et du social.</dd>
+  <dd>🌐 <a href="https://drees.solidarites-sante.gouv.fr/">Site internet de la DREES</a></dd>
+  <dt>SAE</dt>
+  <dd>Statistique annuelle des établissements de santé.</dd>
+  <dd>La Statistique annuelle des établissements de santé (SAE) est une enquête administrative, exhaustive et obligatoire auprès des établissements de santé installés en France.</dd>
+  <dd>🌐 <a href="https://drees.solidarites-sante.gouv.fr/sources-outils-et-enquetes/00-la-statistique-annuelle-des-etablissements-sae">Informations sur la SAE</a></dd>
+</dl>
 
 
 
@@ -306,7 +324,7 @@ Ainsi, une entreprise a un seul SIREN, mais autant de SIRET qu’elle a d’éta
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 2, 2025 22:07+0000">2025-11-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 20:15+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

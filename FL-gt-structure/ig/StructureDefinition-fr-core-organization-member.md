@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://example.org/fhir/StructureDefinition/organization-member | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreOrganizationMemberExtension |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member | *Version*:2.2.0-ballot |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreOrganizationMemberExtension |
 
 Extension permettant de définir des membres d’une organisation.
 
@@ -17,9 +17,10 @@ Extension permettant de définir des membres d’une organisation.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Utiliser ce Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Exemples pour ce Extension: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-member)
 
@@ -31,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-member.csv), [Excel](StructureDefinition-fr-core-organization-member.xlsx), [Schematron](StructureDefinition-fr-core-organization-member.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
 {
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-member",
-  "url" : "http://example.org/fhir/StructureDefinition/organization-member",
+  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
   "version" : "2.2.0-ballot",
   "name" : "FRCoreOrganizationMemberExtension",
   "title" : "FR Core Organization Extension - Membre d'organisation",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -157,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://example.org/fhir/StructureDefinition/organization-member"
+        "fixedUri" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
       },
       {
         "id" : "Extension.value[x]",

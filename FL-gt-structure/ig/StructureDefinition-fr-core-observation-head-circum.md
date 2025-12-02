@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreObservationHeadCircumProfile |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreObservationHeadCircumProfile |
 
  
 French profile for Occipital-frontal circumference. 
 Profil HL7 Vital Signs Circonférence de la tête 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md)
+* Exemples pour ce Profil: [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-head-circum)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

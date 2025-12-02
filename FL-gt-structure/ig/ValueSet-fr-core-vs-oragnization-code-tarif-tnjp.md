@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreValueSetOrganizationCodeTarifTNJP |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreValueSetOrganizationCodeTarifTNJP |
 
  
-Valeurs permettant de coder les codes tarif. 
+Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations). 
 
  **References** 
 
 * [FR Core Organization Extension - Tarif Soin](StructureDefinition-fr-core-organization-tarif.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Codes Tarifs - nomenclature TNJP v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-code-tarif-tnjp.md)
+
+Ce jeu de valeur (ValueSet) contient 43 concepts
 
 -------
 
@@ -58,7 +62,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -81,7 +85,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
       ]
     }
   ],
-  "description" : "Valeurs permettant de coder les codes tarif.",
+  "description" : "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).",
   "jurisdiction" : [
     {
       "coding" : [

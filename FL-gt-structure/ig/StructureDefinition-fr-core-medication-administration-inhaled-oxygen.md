@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreMedicationAdministrationInhaledOxygenProfile |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreMedicationAdministrationInhaledOxygenProfile |
 
  
 Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation. 
 Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d’oxygène via une ventilation mécanique. 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
+* Référer à ce Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-medication-administration-inhaled-oxygen)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "name" : "FRCoreMedicationAdministrationInhaledOxygenProfile",
   "title" : "FR Core Medication Administration Inhaled Oxygen Profile",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -18,7 +18,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
 
 * [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
 
@@ -27,6 +27,10 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Schedule Type v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-schedule-type.md)
+
+Ce jeu de valeur (ValueSet) contient 2 concepts
 
 -------
 
@@ -76,7 +80,7 @@ Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "FR Core ValueSet Schedule type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 | *Version*:2.2.0-ballot |
-| Draft as of 2025-11-02 | *Computable Name*:FRCoreCodeSystemv2_3307 |
+| Draft as of 2025-12-02 | *Computable Name*:FRCoreCodeSystemv2_3307 |
 
  
 HL7 v2 - Table 3307 
@@ -19,7 +19,6 @@ HL7 v2 - Table 3307
 * [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md)
 * [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md)
 * [FRCoreValueSetOrganizationUACType](ValueSet-fr-core-vs-organization-uac-type.md)
-* [FRCoreValueSetOrganizationUFType](ValueSet-fr-core-vs-organization-uf-type.md)
 
 
 
@@ -40,7 +39,7 @@ HL7 v2 - Table 3307
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

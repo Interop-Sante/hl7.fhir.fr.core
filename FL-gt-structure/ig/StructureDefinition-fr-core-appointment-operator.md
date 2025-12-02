@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator | *Version*:2.2.0-ballot |
-| Active as of 2025-11-02 | *Computable Name*:FRCoreAppointmentOperatorExtension |
+| Active as of 2025-12-02 | *Computable Name*:FRCoreAppointmentOperatorExtension |
 
 Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment
 
@@ -17,10 +17,10 @@ Cette extension ajoute l’élément appointmentOperator à la ressource Appoint
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
-* Examples for this Extension: [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md)
+* Utiliser ce Extension: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
+* Exemples pour ce Extension: [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-appointment-operator)
 
@@ -32,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-operator.csv), [Excel](StructureDefinition-fr-core-appointment-operator.xlsx), [Schematron](StructureDefinition-fr-core-appointment-operator.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
   "name" : "FRCoreAppointmentOperatorExtension",
   "title" : "FR Core Appointment Operator Extension",
   "status" : "active",
-  "date" : "2025-11-02T22:07:39+00:00",
+  "date" : "2025-12-02T20:15:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

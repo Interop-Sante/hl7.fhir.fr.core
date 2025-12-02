@@ -26,10 +26,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
       "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "ValueSet-fr-core-vs-patient-identifier-use-pi.html" : "FR Core ValueSet Patient identifier use PI"
+      "ValueSet-fr-core-vs-patient-identifier-use-pi.html" : "FR Core ValueSet Patient identifier use PI",
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
+      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-assembly-order",
@@ -348,8 +348,6 @@
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
       ],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.4"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.4"],
       "uses" : {
       },
       "StructureDefinition-fr-core-address-insee-code.html" : "FR Core Address Insee Code Extension"
@@ -447,7 +445,7 @@
       "status" : "active",
       "name" : "FRCoreValueSetOrganizationCodeTarifTNJP",
       "title" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
-      "description" : "Valeurs permettant de coder les codes tarif.",
+      "description" : "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).",
       "systems" : [
         "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-code-tarif-tnjp"
       ],
@@ -547,7 +545,7 @@
       "version" : "2.2.0-ballot",
       "status" : "active",
       "name" : "FRCoreValueSetOrganizationUFIndicateur",
-      "title" : "FR Core ValueSet Organization UF type",
+      "title" : "FR Core ValueSet Organization UF Indicateur",
       "description" : "Indicateur d'une unité fonctionnelle.",
       "systems" : [
         "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur"
@@ -555,15 +553,6 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-organization-uf-indicateur.html" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-type",
-      "version" : "2.2.0-ballot",
-      "status" : "active",
-      "name" : "FRCoreValueSetOrganizationUFType",
-      "title" : "FR Core ValueSet Organization UF type",
-      "description" : "Type de structure représentant des unités fonctionnelles.",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
@@ -683,12 +672,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-practitioner-role.html" : "FR Core Practitioner Role",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
       "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
       "StructureDefinition-fr-core-practitioner-specialty.html" : "FR Core Practitioner Specialty Extension",
+      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
       "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
-      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile"
+      "StructureDefinition-fr-core-practitioner-role.html" : "FR Core Practitioner Role",
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
@@ -755,8 +744,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-observation-bp.html" : "FR Core Observation Blood Pressure Profile",
-      "StructureDefinition-fr-core-observation-saturation-oxygen.html" : "FR Core Observation Oxygen Saturation Profile"
+      "StructureDefinition-fr-core-observation-saturation-oxygen.html" : "FR Core Observation Oxygen Saturation Profile",
+      "StructureDefinition-fr-core-observation-bp.html" : "FR Core Observation Blood Pressure Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title",
@@ -783,7 +772,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS",
-      "version" : "20250425120000",
+      "version" : "20250828120000",
       "status" : "active",
       "name" : "JDV_J105_EnsembleDiplome_RASS",
       "title" : null,
@@ -921,7 +910,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS",
-      "version" : "20250625120000",
+      "version" : "20251016120000",
       "status" : "active",
       "name" : "JDV_J91_TypeSavoirFaire_RASS",
       "title" : null,
