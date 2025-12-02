@@ -1,5 +1,5 @@
 Profile: FRCoreLocationProfile
-Parent: LocationEu
+Parent: LocationEuCore
 Id: fr-core-location
 Title: "FR Core Location Profile"
 Description: "French profile of Location.\r\n
