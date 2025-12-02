@@ -13,7 +13,7 @@ Description: """Profil de la ressource Organization pour la France. Il s'agit du
 
 * extension contains
     FRCoreOrganizationShortNameExtension named shortName 0..1                           and
-    FRCoreOrganizationDescriptionExtension named description 0..1                       and
+    $organization-description-r5 named description 0..1                                 and
     http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1    and
     http://hl7.org/fhir/StructureDefinition/note named openReason 0..1                  and
     http://hl7.org/fhir/StructureDefinition/note named closureReason 0..1               and

@@ -5,7 +5,7 @@ Usage: #example
 
 * extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"
 * extension[=].valueString = "UF Endocrino Diabeto"
-* extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description"
+* extension[+].url = $organization-description-r5
 * extension[=].valueString = "UF Endocrinologie et Diabétologie, spécialisée dans la prise en charge des patients diabétiques et endocriniens."
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/organization-period"
 * extension[=].extension.url = "start"
