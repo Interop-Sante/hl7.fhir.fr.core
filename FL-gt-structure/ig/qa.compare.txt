@@ -1,7 +1,7 @@
 FrCore : Validation Results
 =========================================
 
-err = 105, warn = 118, info = 238
+err = 101, warn = 118, info = 238
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 6 / 16 / 0
@@ -48,7 +48,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeartRateExample : 0 / 0 / 2
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-FRCoreOrganizationExample : 0 / 2 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-dept-11003-endocrino : 4 / 4 / 3
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-eg-4-members : 16 / 6 / 3
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-eg-4-members : 12 / 6 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-ej-350005179 : 1 / 2 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-pole-1150-med-spe : 4 / 4 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-service-11006-endocrino-diabo : 0 / 1 / 2
@@ -305,21 +305,17 @@ ERROR: Organization/hopitaltest-eg-4-members: Organization: Organization.extensi
 INFORMATION: Organization/hopitaltest-eg-4-members: Organization.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Organization/hopitaltest-eg-4-members: Organization: The extension https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category is not allowed to be used at this point (this element is [Organization]; allowed for this version = e:FRCoreOrganizationEtablissementProfile)
 ERROR: Organization/hopitaltest-eg-4-members: Organization: The extension https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member is not allowed to be used at this point (this element is [Organization]; allowed for this version = e:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization#Organization)
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[2]: The Extension 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member' definition allows for the types [] but found type Reference
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[2]: Extension.value[x]: max allowed = 0, but found 1 (from https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot)
+ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[2].value.ofType(Reference): The type 'UF' is not a valid Target for this element (must be one of [CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization]])
 ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[2].value.ofType(Reference): Invalid Resource target type. Found UF, but expected one of (Organization)
 WARNING: Organization/hopitaltest-eg-4-members: Organization.extension[2].value.ofType(Reference).type: No definition could be found for URL value 'UF'
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[3]: The Extension 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member' definition allows for the types [] but found type Reference
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[3]: Extension.value[x]: max allowed = 0, but found 1 (from https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot)
 ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[3].value.ofType(Reference): Unable to resolve resource with reference 'Organization/hopitaltest-uf-4705-nutrition"'
+ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[3].value.ofType(Reference): The type 'UF' is not a valid Target for this element (must be one of [CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization]])
 ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[3].value.ofType(Reference): Invalid Resource target type. Found UF, but expected one of (Organization)
 WARNING: Organization/hopitaltest-eg-4-members: Organization.extension[3].value.ofType(Reference).type: No definition could be found for URL value 'UF'
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[4]: The Extension 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member' definition allows for the types [] but found type Reference
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[4]: Extension.value[x]: max allowed = 0, but found 1 (from https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot)
+ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[4].value.ofType(Reference): The type 'SERVICE' is not a valid Target for this element (must be one of [CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization]])
 ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[4].value.ofType(Reference): Invalid Resource target type. Found SERVICE, but expected one of (Organization)
 WARNING: Organization/hopitaltest-eg-4-members: Organization.extension[4].value.ofType(Reference).type: No definition could be found for URL value 'SERVICE'
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[5]: The Extension 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member' definition allows for the types [] but found type Reference
-ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[5]: Extension.value[x]: max allowed = 0, but found 1 (from https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot)
+ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[5].value.ofType(Reference): The type 'SERVICE' is not a valid Target for this element (must be one of [CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization]])
 ERROR: Organization/hopitaltest-eg-4-members: Organization.extension[5].value.ofType(Reference): Invalid Resource target type. Found SERVICE, but expected one of (Organization)
 WARNING: Organization/hopitaltest-eg-4-members: Organization.extension[5].value.ofType(Reference).type: No definition could be found for URL value 'SERVICE'
 WARNING: Organization/hopitaltest-eg-4-members: Organization.identifier[0].system: No definition could be found for URL value 'https://finess.esante.gouv.fr'

@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationMemberExtension",
   "title" : "FR Core Organization Extension - Membre d'organisation",
   "status" : "active",
-  "date" : "2025-12-02T20:15:58+00:00",
+  "date" : "2025-12-02T20:49:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -110,25 +110,18 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "definition" : "Extension permettant de définir des membres d'une organisation."
       },
       {
-        "id" : "Extension.extension:member",
+        "id" : "Extension.extension",
         "path" : "Extension.extension",
-        "sliceName" : "member",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:member.extension",
-        "path" : "Extension.extension.extension",
         "max" : "0"
       },
       {
-        "id" : "Extension.extension:member.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "member"
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
       },
       {
-        "id" : "Extension.extension:member.value[x]",
-        "path" : "Extension.extension.value[x]",
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
         "slicing" : {
           "discriminator" : [
             {
@@ -141,8 +134,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         }
       },
       {
-        "id" : "Extension.extension:member.value[x]:valueReference",
-        "path" : "Extension.extension.value[x]",
+        "id" : "Extension.value[x]:valueReference",
+        "path" : "Extension.value[x]",
         "sliceName" : "valueReference",
         "min" : 0,
         "max" : "1",
@@ -154,16 +147,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             ]
           }
         ]
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
       }
     ]
   }

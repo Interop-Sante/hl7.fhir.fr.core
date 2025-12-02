@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDisciplineEquipementExtension",
   "title" : "FR Core Organization Extension - Discipline d'équipement",
   "status" : "active",
-  "date" : "2025-12-02T20:15:58+00:00",
+  "date" : "2025-12-02T20:49:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2025-12-02T20:15:58+00:00",
+  "date" : "2025-12-02T20:49:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -346,7 +346,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "id" : "Organization.type",
         "path" : "Organization.type",
         "binding" : {
-          "strength" : "required",
+          "strength" : "example",
           "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type"
         }
       },
