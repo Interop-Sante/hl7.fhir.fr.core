@@ -47,6 +47,7 @@ Alias: $JDV-J89-CategorieProfessionnelle-RASS = https://mos.esante.gouv.fr/NOS/J
 Alias: $JDV-J91-TypeSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS
 Alias: $JDV-J106-EnsembleProfession-RASS = https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS
 Alias: $JDV-J107-EnsembleSavoirFaire-RASS = https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS
+Alias: $JDV-J245-Civilite-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS
 
 
 // HL7
