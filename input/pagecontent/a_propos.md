@@ -24,7 +24,7 @@ Pour vous préparer à la certification, vous pouvez consulter les [formations p
 
 Pour rappel, l'adhésion à InteropSanté permet de bénéficier de tarifs avantageux sur les formations InteropSanté et certifications HL7.
 
-### Auteurs et contributeurs
+### Auteurs et contributeurs du guide d'implémentation FRCore
 
 | Role  | Nom           | Organisation |
 | --- |---------------|--------------|
@@ -34,3 +34,5 @@ Pour rappel, l'adhésion à InteropSanté permet de bénéficier de tarifs avant
 | Contributeur | Marie Brulliard  | Kereval                      |
 | Contributeur | Sylvain Demey    | Agence du Numérique en Santé |
 | Contributeur | Isabelle Gibaud  | Agence du Numérique en Santé |
+
+Liste de l'ensemble des contributeurs au code source : https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors
