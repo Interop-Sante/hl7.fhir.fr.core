@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-core-vs-height-body-position",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-height-body-position</b></p><a name=\"fr-core-vs-height-body-position\"> </a><a name=\"hcfr-core-vs-height-body-position\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut codes provenant de<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé\"> version Non précisé (utilise la dernière version provenant du serveur de terminologie)</span> où concept  est-un 10904000 (Orthostatic body position)</li><li>Inclut codes provenant de<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé\"> version Non précisé (utilise la dernière version provenant du serveur de terminologie)</span> où concept  est-un 102538003 (Recumbent body position)</li></ul></div>"
+  },
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position",
+  "version" : "2.2.0-ballot",
+  "name" : "FRCoreValueSetHeightBodyPosition",
+  "title" : "FR Core ValueSet BodyPosition",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-05T08:44:22+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org/"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ValueSet Body Position",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "10904000"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "102538003"
+      }]
+    }]
+  }
+}
