@@ -69,26 +69,28 @@ Généralement, rajouter quelques [extensions qui miment les attributs R5](https
 
 Dans certains cas non identifiés à ce jour, il pourrait également être nécessaire de maintenir des guides d’implémentation sous plusieurs versions. Après validation par l’écosystème de ce besoin, cela donnerait l’opportunité d'estimer des travaux de maintenance d’Implementation Guide (IG) sous plusieurs versions ainsi qu’un mapping associé pour gagner en expérience.
 
-#### Priorité FHIR France en 2025+ - améliorer la qualité de l’existant
+#### Priorité FHIR France en 2026+ - accompagner la croissance des usages de FHIR 
 
-De nombreux travaux ont été menés en 2023 pour mettre en qualité les spécifications FHIR et encourager leur déploiement, tel que le passage au format IG et la mise à jour des tests et validateurs gazelle.
+Entre 2023 et 2025 des travaux structurants de mise en qualité des spécifications FHIR sous forme de guide d'implémentation ont eu lieu.
 
-Les priorités des prochaines années sont de continuer dans cette direction :
+En 2026, FHIR change d'échelle avec l'arrivée de l'espace européen des données de santé (EEDS), les travaux d'HL7 Europe, et les groupes de travail français qui portent les standards historiques en FHIR (PN-13, PAM, ...).
+
+Cette multiplication des usages de FHIR ne vient pas sans risques : il faut s'assurer de la cohérence globale de l'écosystème FHIR national.
+
+En parallèle, ces tâches de fond restent valables :
 
 <div>
     <ul>
         <li>La montée en compétences et l’acculturation des développeurs et des chefs de projets aux bonnes pratiques d’usages de FHIR, notamment en organisant des évènements par l'ANS et InteropSanté : projectathon, webinaires, formations, ...</li>
-        <li>S’assurer de la faisabilité d’implémentation des IGs existants (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, s'assurer que les IGs soient bien connus …).</li>
-        <li>Prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée vers une autre version de FHIR.</li>
-        <li>Anticiper les prochaines évolutions internationales : passage au FHIR Document dans le cadre du règlement européen, anticiper la transition vers FHIR R6, ...</li>
+        <li>Amélioration continue des guides d’implémentation existants pour assurer la faisabilité d'implémentation (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, s'assurer que les IGs soient bien connus …).</li>
+        <li>Prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée entre standards.</li>
     </ul>
 </div>
-
-Il est également nécessaire de rester à l’écoute des tendances internationales en interopérabilité et de se garder la possibilité de réitérer l’analyse si le besoin ou le contexte international évolue, en particulier l'EEDS.
 
 ### Gouvernance
 
 Le guide d'implémentation FR Core est géré par HL7 France et IHE France au sein du comité technique FHIR de HL7 France.
+
 ### Auteurs et contributeurs
 
 | Role  | Nom           | Organisation |
