@@ -1,16 +1,5 @@
 En tant qu'affilié français d'HL7 International, InteropSanté a la responsabilité de créer les profils FHIR génériques à usage français.
 
-### Auteurs et contributeurs
-
-| Role  | Nom           | Organisation |
-| --- |---------------|--------------|
-| **Auteur**   | Nicolas Riss     | Agence du Numérique en Santé |
-| **Auteur**   | Yohann Poiron    | Agence du Numérique en Santé |
-| **Auteur**   | Frédéric Laurent | CHU de Rennes                |
-| Contributeur | Marie Brulliard  | Kereval                      |
-| Contributeur | Sylvain Demey    | Agence du Numérique en Santé |
-| Contributeur | Isabelle Gibaud  | Agence du Numérique en Santé |
-
 ### Comment contribuer ?
 
 La qualité de ce guide d'implémentation s'améliore continuellement grâce aux précieuses contributions de la communauté. Pour rejoindre cette communauté, il suffit de rejoindre le [Google Group FHIR France](https://groups.google.com/g/groupes-fhir-france) ou bien le [slack FHIR France](https://join.slack.com/t/fhir-france/shared_invite/zt-2pv7q7ern-VIrh8Q9r4hrOJPQk3j_ouA), et d'adhérer à [InteropSanté](https://www.interopsante.org/).
@@ -34,3 +23,14 @@ HL7 International propose [plusieurs certifications](https://www.hl7.org/certifi
 Pour vous préparer à la certification, vous pouvez consulter les [formations proposées par InteropSanté](https://www.interopsante.org/formations).
 
 Pour rappel, l'adhésion à InteropSanté permet de bénéficier de tarifs avantageux sur les formations InteropSanté et certifications HL7.
+
+### Auteurs et contributeurs
+
+| Role  | Nom           | Organisation |
+| --- |---------------|--------------|
+| **Auteur**   | Nicolas Riss     | Agence du Numérique en Santé |
+| **Auteur**   | Yohann Poiron    | Agence du Numérique en Santé |
+| **Auteur**   | Frédéric Laurent | CHU de Rennes                |
+| Contributeur | Marie Brulliard  | Kereval                      |
+| Contributeur | Sylvain Demey    | Agence du Numérique en Santé |
+| Contributeur | Isabelle Gibaud  | Agence du Numérique en Santé |
