@@ -64,7 +64,7 @@ Ce jeu de valeur (ValueSet) contient 8 concepts
   "title" : "Heart Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T08:30:09+00:00",
+  "date" : "2025-12-05T08:32:19+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
