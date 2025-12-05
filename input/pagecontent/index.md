@@ -89,15 +89,6 @@ Il est également nécessaire de rester à l’écoute des tendances internation
 ### Gouvernance
 
 Le guide d'implémentation FR Core est géré par HL7 France et IHE France au sein du comité technique FHIR de HL7 France.
-### Auteurs et contributeurs
-
-| Role  | Nom           | Organisation |
-| --- |---------------|--------------|
-| **Auteur**   | Nicolas Riss    | Agence du Numérique en Santé |
-| **Auteur**   | Yohann Poiron   | Agence du Numérique en Santé |
-| Contributeur | Marie Brulliard | Kereval                      |
-| Contributeur | Sylvain Demey   | Agence du Numérique en Santé |
-| Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
 ### Dépendances
 
