@@ -85,7 +85,7 @@ Ce jeu de valeur (ValueSet) contient 206 concepts
   "title" : "FR Core ValueSet PractitionerRole Exercice",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T08:27:25+00:00",
+  "date" : "2025-12-05T08:30:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

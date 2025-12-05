@@ -5,13 +5,7 @@
 
 ## A propos
 
-### Historique du guide FrCore
-
 En tant qu’affilié français d’HL7 International, InteropSanté a la responsabilité de créer les profils FHIR génériques à usage français.
-
-La création de ces profils a été initiée en 2017 sur [la plateforme simplifier](https://simplifier.net/frenchprofiledfhirar) (Participants : Eric Dufour, Isabelle Gibaud, François Macary et Yohann Poiron).
-
-En 2024, l’ensemble des ressources de conformité a été mis au sein de ce [guide d’implémentation](https://hl7.fr/ig/fhir/core) pour simplifier leur usage et leur accès, rendant les anciens profils simplifier obsolètes (Participants : Marie Brulliard, Sylvain Demey, Isabelle Gibaud, Yohann Poiron et Nicolas Riss).
 
 ### Auteurs et contributeurs
 
