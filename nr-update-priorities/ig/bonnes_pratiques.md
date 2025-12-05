@@ -1,4 +1,4 @@
-# Bonnes pratiques d'usage du guide d'implémentation - Guide d'implémentation Fr Core v2.2.0-ballot
+# Bonnes pratiques d'usage du guide d'implémentation - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Bonnes pratiques d'usage du guide d'implémentation**

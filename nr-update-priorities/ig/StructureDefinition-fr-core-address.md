@@ -1,4 +1,4 @@
-# FR Core Address Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Address Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "name" : "FRCoreAddressProfile",
   "title" : "FR Core Address Profile",
   "status" : "active",
-  "date" : "2025-12-05T08:44:22+00:00",
+  "date" : "2025-12-05T08:48:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# A propos - Guide d'implémentation Fr Core v2.2.0-ballot
+# A propos - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **A propos**

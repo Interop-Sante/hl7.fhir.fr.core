@@ -1,4 +1,4 @@
-# FR Core ValueSet Contact relationship - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Contact relationship - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -86,7 +86,7 @@ Ce jeu de valeur (ValueSet) contient 84 concepts
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T08:44:22+00:00",
+  "date" : "2025-12-05T08:48:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
