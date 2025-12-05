@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum | *Version*:2.2.0-ballot |
-| Active as of 2025-11-29 | *Computable Name*:FRCoreObservationHeadCircumProfile |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreObservationHeadCircumProfile |
 
  
 French profile for Occipital-frontal circumference. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2025-11-29T07:55:08+00:00",
+  "date" : "2025-12-05T17:11:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

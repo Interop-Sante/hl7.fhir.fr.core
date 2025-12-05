@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code | *Version*:2.2.0-ballot |
-| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetINSEECode |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetINSEECode |
 
  
 the French Address Insee Codes 
@@ -62,7 +62,7 @@ Ce jeu de valeurs (ValueSet) a 39,293 codes. Pour garder la publication gérable
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-29T07:55:08+00:00",
+  "date" : "2025-12-05T17:11:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

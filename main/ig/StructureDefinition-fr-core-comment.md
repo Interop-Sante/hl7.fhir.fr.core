@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment | *Version*:2.2.0-ballot | |
-| Active as of 2025-11-29 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreCommentExtension |
+| Active as of 2025-12-05 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreCommentExtension |
 
 Ajout d’un commentaire sur un dataElement d’une ressource. Add a comment on a dataElement of a resource
 
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2025-11-29T07:55:08+00:00",
+  "date" : "2025-12-05T17:11:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

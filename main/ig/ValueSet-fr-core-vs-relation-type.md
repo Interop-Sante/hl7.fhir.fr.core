@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-29 | *Computable Name*:FRCoreValueSetPatientRelationType |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetPatientRelationType |
 
  
 ValueSet relation type 
@@ -69,7 +69,7 @@ Ce jeu de valeur (ValueSet) contient 117 concepts
   "title" : "FR Core ValueSet relation type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-29T07:55:08+00:00",
+  "date" : "2025-12-05T17:11:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

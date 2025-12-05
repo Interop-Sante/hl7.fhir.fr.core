@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period | *Version*:2.2.0-ballot |
-| Active as of 2025-11-29 | *Computable Name*:FRCoreUsePeriodExtension |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreUsePeriodExtension |
 
 Extension permettant d’indiquer la période d’utilisation d’une Location.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-use-period.c
   "name" : "FRCoreUsePeriodExtension",
   "title" : "FR Core Use Period Extension",
   "status" : "active",
-  "date" : "2025-11-29T07:55:08+00:00",
+  "date" : "2025-12-05T17:11:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name | *Version*:2.2.0-ballot |
-| Active as of 2025-11-29 | *Computable Name*:FRCoreHumanNameProfile |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreHumanNameProfile |
 
  
 Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix .French profile of datatype HumanName with constraints on prefix and suffix 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name.c
   "name" : "FRCoreHumanNameProfile",
   "title" : "FR Core Human Name Profile",
   "status" : "active",
-  "date" : "2025-11-29T07:55:08+00:00",
+  "date" : "2025-12-05T17:11:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
