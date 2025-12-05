@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-mult
   "name" : "FRCorePatientMultipleBirthExtension",
   "title" : "Rang Gémellaire",
   "status" : "active",
-  "date" : "2025-12-05T09:13:38+00:00",
+  "date" : "2025-12-05T09:27:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "name" : "FRCorePatientBirthListGivenName",
   "title" : "FR Core Patient Birth List Given name Extension",
   "status" : "active",
-  "date" : "2025-12-05T09:13:38+00:00",
+  "date" : "2025-12-05T09:27:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
