@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreSlotProfile |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreSlotProfile |
 
  
 Profil of the Slot resource for France. 
 Profil de la ressource Slot pour la France 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
-* Examples for this Profile: [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
+* Référer à ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
+* Exemples pour ce Profil: [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-slot)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
   "name" : "FRCoreSlotProfile",
   "title" : "FR Core Slot Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreOrganizationShortNameExtension |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreOrganizationShortNameExtension |
 
 Libellé court de l’organisation
 
@@ -19,9 +19,9 @@ The Organization short name
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md), [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md) and [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Utiliser ce Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md), [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md) and [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-short-name)
 
@@ -33,7 +33,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-organization-short-name.csv), [Excel](StructureDefinition-fr-core-organization-short-name.xlsx), [Schematron](StructureDefinition-fr-core-organization-short-name.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationShortNameExtension",
   "title" : "FR Core Organization Short Name Extension",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

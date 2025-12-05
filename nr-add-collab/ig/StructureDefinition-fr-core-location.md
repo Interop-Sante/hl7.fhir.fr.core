@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreLocationProfile |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreLocationProfile |
 
  
 French profile of Location. 
 Profil français de la ressource Location 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Location Profile](StructureDefinition-fr-core-location.md)...Show 2 more,[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)and[FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Référer à ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Location Profile](StructureDefinition-fr-core-location.md)...Show 2 more,[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)and[FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

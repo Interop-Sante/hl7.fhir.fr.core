@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreObservationBodyTemperatureProfile |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreObservationBodyTemperatureProfile |
 
  
 French profile for body temperature. 
 Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md)
+* Exemples pour ce Profil: [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-body-temperature)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyTemperatureProfile",
   "title" : "FR Core Observation Body Temperature Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

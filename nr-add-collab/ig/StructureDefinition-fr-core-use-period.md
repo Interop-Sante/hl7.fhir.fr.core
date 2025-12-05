@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreUsePeriodExtension |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreUsePeriodExtension |
 
 Extension permettant d’indiquer la période d’utilisation d’une Location.
 
@@ -17,9 +17,9 @@ Extension permettant d’indiquer la période d’utilisation d’une Location.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
+* Utiliser ce Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-use-period)
 
@@ -31,7 +31,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-use-period.csv), [Excel](StructureDefinition-fr-core-use-period.xlsx), [Schematron](StructureDefinition-fr-core-use-period.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-use-period.c
   "name" : "FRCoreUsePeriodExtension",
   "title" : "FR Core Use Period Extension",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

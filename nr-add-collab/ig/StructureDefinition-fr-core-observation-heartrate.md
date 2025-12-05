@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreObservationHeartRateProfile |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreObservationHeartRateProfile |
 
  
 French profile for the FHIR Vital Sign Heart Rate Profile. 
 Profilage français du profil Vital Signs Heart rate 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md)
+* Exemples pour ce Profil: [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-heartrate)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeartRateProfile",
   "title" : "FR Core Observation Heart Rate Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

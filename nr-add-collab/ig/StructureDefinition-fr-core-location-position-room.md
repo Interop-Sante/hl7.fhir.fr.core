@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreLocationPartOfPositionRoomExtension |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreLocationPartOfPositionRoomExtension |
 
 Position du lit dans la chambre. Position of the bed in the bedroom
 
@@ -17,9 +17,9 @@ Position du lit dans la chambre. Position of the bed in the bedroom
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
+* Utiliser ce Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location-position-room)
 
@@ -31,9 +31,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-location-position-room.csv), [Excel](StructureDefinition-fr-core-location-position-room.xlsx), [Schematron](StructureDefinition-fr-core-location-position-room.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "name" : "FRCoreLocationPartOfPositionRoomExtension",
   "title" : "FR Core Location Part Of Position Room Extension",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

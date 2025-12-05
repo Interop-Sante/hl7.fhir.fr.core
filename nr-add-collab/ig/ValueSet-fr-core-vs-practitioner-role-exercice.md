@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetPractitionerRoleExercice |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetPractitionerRoleExercice |
 
  
 The exercice(s) of the practitioner. 
@@ -18,9 +18,9 @@ The exercice(s) of the practitioner.
 
 * [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -38,6 +38,18 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_G05_SousSectionTableauCNOP v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-G05-SousSectionTableauCNOP.html)
+* [codesystem TRE_R06_SectionTableauCNOP v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R06-SectionTableauCNOP.html)
+* [codesystem TRE_R21_Fonction v20251023120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R21-Fonction.html)
+* [codesystem TRE_R22_GenreActivite v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R22-GenreActivite.html)
+* [codesystem TRE_R23_ModeExercice v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R23-ModeExercice.html)
+* [codesystem TRE_R24_TypeActiviteLiberale v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R24-TypeActiviteLiberale.html)
+* [codesystem TRE_R32_StatutHospitalier v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R32-StatutHospitalier.html)
+* [codesystem TRE_R85_RolePriseCharge v20250919120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R85-RolePriseCharge.html)
+* [codesystem TRE_R96_AutreFonctionSanitaire v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html)
 
 Ce jeu de valeur (ValueSet) contient 206 concepts
 
@@ -73,7 +85,7 @@ Ce jeu de valeur (ValueSet) contient 206 concepts
   "title" : "FR Core ValueSet PractitionerRole Exercice",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

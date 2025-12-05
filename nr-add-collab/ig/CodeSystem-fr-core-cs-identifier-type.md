@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type | *Version*:2.2.0-ballot |
-| Draft as of 2025-11-18 | *Computable Name*:FRCoreCodeSystemIdentifierType |
+| Draft as of 2025-12-05 | *Computable Name*:FRCoreCodeSystemIdentifierType |
 
  
 Identifier type 
@@ -37,7 +37,7 @@ Identifier type
   "title" : "FR Core CodeSystem Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

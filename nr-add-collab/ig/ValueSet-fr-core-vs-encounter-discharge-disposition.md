@@ -18,9 +18,9 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -30,6 +30,11 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem Discharge disposition v1.0.1 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-discharge-disposition.html)
+* [codesystem FR Core CodeSystem Circonstances Sortie v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-circonstances-sortie.md)
 
 Ce jeu de valeur (ValueSet) contient 25 concepts
 
@@ -83,7 +88,7 @@ Ce jeu de valeur (ValueSet) contient 25 concepts
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

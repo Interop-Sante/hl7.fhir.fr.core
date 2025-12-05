@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCorePatientDeathPlaceExtension |
+| Active as of 2025-12-05 | *Computable Name*:FRCorePatientDeathPlaceExtension |
 
 Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
 
@@ -21,9 +21,9 @@ Place where the patient is dead.
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
+* Utiliser ce Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-death-place)
 
@@ -35,7 +35,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-patient-death-place.csv), [Excel](StructureDefinition-fr-core-patient-death-place.xlsx), [Schematron](StructureDefinition-fr-core-patient-death-place.sch) 
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

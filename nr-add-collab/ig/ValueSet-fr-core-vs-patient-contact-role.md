@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetPatientContactRole |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetPatientContactRole |
 
  
 ValueSet patient contact role 
@@ -19,9 +19,9 @@ ValueSet patient contact role
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 * [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -32,6 +32,12 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem contactRole2 v2.1.0 (CodeSystem)](http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html)
+* [codesystem TRE_R217_ProtectionJuridique v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R217-ProtectionJuridique.html)
+* [codesystem TRE_R260_HL7RoleClass v20240426120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R260-HL7RoleClass.html)
 
 Ce jeu de valeur (ValueSet) contient 15 concepts
 
@@ -73,7 +79,7 @@ Ce jeu de valeur (ValueSet) contient 15 concepts
   "title" : "FR Core ValueSet Patient contact role",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -18,15 +18,19 @@ Secteur d’activité de l’organisation. The activity field of the organizatio
 
 * [FR Core Organization Activity Field Extension](StructureDefinition-fr-core-organization-activity-field.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R02-SecteurActivite.html)version 📦20250523120000
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem TRE_R02_SecteurActivite v20250523120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R02-SecteurActivite.html)
+
+Ce jeu de valeur (ValueSet) contient 69 concepts
 
 -------
 
@@ -74,7 +78,7 @@ Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareable
   "title" : "FR Core ValueSet Organization activity field",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

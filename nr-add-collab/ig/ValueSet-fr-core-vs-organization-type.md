@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetOrganizationType |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetOrganizationType |
 
  
 Types de structures. Organization types 
@@ -21,15 +21,19 @@ Types de structures. Organization types
 * [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
 * [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307`](CodeSystem-fr-core-cs-v2-3307.md)version 📦2.2.0-ballot
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem v2-3307 v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-v2-3307.md)
+
+Ce jeu de valeur (ValueSet) contient 17 concepts
 
 -------
 
@@ -63,7 +67,7 @@ Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareable
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

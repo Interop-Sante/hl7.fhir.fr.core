@@ -18,15 +18,19 @@ A coded type for an identifier that can be used to determine which identifier to
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Include tous les codes définis dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type`](CodeSystem-fr-core-cs-identifier-type.md)version 📦2.2.0-ballot
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Identifier Type v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-identifier-type.md)
+
+Ce jeu de valeur (ValueSet) contient 2 concepts
 
 -------
 
@@ -78,7 +82,7 @@ Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareable
   "title" : "FR Core ValueSet Encounter identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

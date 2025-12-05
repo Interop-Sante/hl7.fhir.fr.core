@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FrCore |
+| Active as of 2025-12-05 | *Computable Name*:FrCore |
 
  **Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.**
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -70,16 +70,6 @@ Il est également nécessaire de rester à l’écoute des tendances internation
 ### Gouvernance
 
 Le guide d’implémentation FR Core est géré par HL7 France et IHE France au sein du comité technique FHIR de HL7 France.
-
-### Auteurs et contributeurs
-
-| | | |
-| :--- | :--- | :--- |
-| **Auteur** | Nicolas Riss | Agence du Numérique en Santé |
-| **Auteur** | Yohann Poiron | Agence du Numérique en Santé |
-| Contributeur | Marie Brulliard | Kereval |
-| Contributeur | Sylvain Demey | Agence du Numérique en Santé |
-| Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
 ### Dépendances
 
@@ -154,7 +144,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

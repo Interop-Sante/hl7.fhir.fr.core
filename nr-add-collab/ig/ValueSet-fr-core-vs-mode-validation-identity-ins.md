@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
+| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
 
  
 The validation mode of the identity authorized for INS 
@@ -18,15 +18,19 @@ The validation mode of the identity authorized for INS
 
 * [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
-Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
+Profil: [Shareable ValueSetversion : null4.0.1)](http://hl7.org/fhir/R4/shareablevalueset.html)
 
 * Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity`](CodeSystem-fr-core-cs-mode-validation-identity.md)version 📦2.2.0-ballot
 
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Mode Validation Identite v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-mode-validation-identity.md)
+
+Ce jeu de valeur (ValueSet) contient 4 concepts
 
 -------
 
@@ -60,7 +64,7 @@ Profil: [Shareable ValueSetversion: null4.0.1)](http://hl7.org/fhir/R4/shareable
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

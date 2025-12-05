@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability | *Version*:2.2.0-ballot |
-| Active as of 2025-11-18 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
+| Active as of 2025-12-05 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
 
 Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
 
@@ -21,10 +21,10 @@ Permet de préciser le degré de fiabilité de l’identité du patient Reliabil
 
 **Usage info**
 
-**Usages:**
+**Utilisations:**
 
-* Use this Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
-* Examples for this Extension: [Patient/FRCorePatientExample](Patient-FRCorePatientExample.md)
+* Utiliser ce Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
+* Exemples pour ce Extension: [Patient/FRCorePatientExample](Patient-FRCorePatientExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-identity-reliability)
 
@@ -36,9 +36,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-fr-core-identity-reliability.csv), [Excel](StructureDefinition-fr-core-identity-reliability.xlsx), [Schematron](StructureDefinition-fr-core-identity-reliability.sch) 
 
-#### Terminology Bindings
+#### Bindings terminologiques
 
-#### Constraints
+#### Contraintes
 
 
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2025-11-18T17:20:39+00:00",
+  "date" : "2025-12-05T08:27:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
