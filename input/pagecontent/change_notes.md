@@ -108,3 +108,9 @@
 * Suppression du binding identifier.type qui duplique celui hérité de FHIR Core [#70](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/70)
 * Correction d'erreurs (espaces en fin de string et ajout d'un title manq ant à un ValueSet) [#94](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/94)
 * Cleaning des urls, suppression url interopsanté [#84](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/84)
+
+### Versions antérieures
+
+La création de ces profils a été initiée en 2017 sur [la plateforme simplifier](https://simplifier.net/frenchprofiledfhirar) (Participants : Eric Dufour, Isabelle Gibaud, François Macary et Yohann Poiron).
+
+En 2024, l'ensemble des ressources de conformité a été mis au sein de ce [guide d'implémentation](https://hl7.fr/ig/fhir/core) pour simplifier leur usage et leur accès, rendant les anciens profils simplifier obsolètes (Participants : Marie Brulliard, Sylvain Demey, Isabelle Gibaud, Yohann Poiron et Nicolas Riss).
