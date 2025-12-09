@@ -20,17 +20,9 @@ Position physique de l’emplacement du lit. Position room
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include tous les codes définis dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room`](CodeSystem-fr-core-cs-location-position-room.md)version 📦2.2.0-ballot
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Location Position Room v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-location-position-room.md)
-
-Ce jeu de valeur (ValueSet) contient 3 concepts
 
 -------
 
@@ -54,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 3 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-location-position-room",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -80,7 +74,7 @@ Ce jeu de valeur (ValueSet) contient 3 concepts
   "title" : "FR Core ValueSet Location position room",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

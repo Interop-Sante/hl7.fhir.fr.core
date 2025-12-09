@@ -20,10 +20,6 @@ Spécifications des périodes récurrentes. Specification of the recurrent perio
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans `https://www.ietf.org/rfc/rfc2445`version Non précisé (utilise la dernière version provenant du serveur de terminologie)
-
  
 
 ### Expansion
@@ -52,7 +48,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-availability-time-rule",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -78,7 +76,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

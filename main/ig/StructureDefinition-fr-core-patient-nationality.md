@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality | *Version*:2.2.0-ballot | |
-| Active as of 2025-12-05 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreNationalityExtension |
+| Active as of 2025-12-09 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreNationalityExtension |
 
 The nationality of the patient.
 
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
   "name" : "FRCoreNationalityExtension",
   "title" : "FR Core Nationality Extension",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

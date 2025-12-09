@@ -21,17 +21,9 @@ A role for a location
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include tous les codes définis dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type`](CodeSystem-fr-core-cs-location-type.md)version 📦2.2.0-ballot
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem Location Type v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-location-type.md)
-
-Ce jeu de valeur (ValueSet) contient 12 concepts
 
 -------
 
@@ -55,7 +47,9 @@ Ce jeu de valeur (ValueSet) contient 12 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-location-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -81,7 +75,7 @@ Ce jeu de valeur (ValueSet) contient 12 concepts
   "title" : "FR Core ValueSet Location type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

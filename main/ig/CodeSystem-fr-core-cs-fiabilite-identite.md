@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreCodeSystemReliabilityIdentity |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreCodeSystemReliabilityIdentity |
 | *Other Identifiers:*http://terminology.hl7.org/CodeSystem/v2-tables#urn:oid:2.16.840.1.113883.12.445 | |
 
  
@@ -29,7 +29,7 @@ French Identity reliabilty codes
   "id" : "fr-core-cs-fiabilite-identite",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite",
@@ -44,7 +44,7 @@ French Identity reliabilty codes
   "title" : "FR Core CodeSystem Fiabilité Identité",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

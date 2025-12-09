@@ -20,17 +20,9 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v3-ActCode`](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html)version 📦9.0.0
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem ActCode v9.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html)
-
-Ce jeu de valeur (ValueSet) contient 5 concepts
 
 -------
 
@@ -54,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 5 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-encounter-class",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -76,7 +70,7 @@ Ce jeu de valeur (ValueSet) contient 5 concepts
   "title" : "FR Core ValueSet Encounter class",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

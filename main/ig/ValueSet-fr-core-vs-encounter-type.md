@@ -20,23 +20,9 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v2-0007`](http://terminology.hl7.org/5.0.0/CodeSystem-v2-0007.html)version 📦2.2.0
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission`](CodeSystem-fr-core-cs-type-admission.md)version 📦2.2.0-ballot 
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem admissionType v2.2.0 (CodeSystem)](http://terminology.hl7.org/5.0.0/CodeSystem-v2-0007.html)
-* [codesystem FR Core CodeSystem Type Admission v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-type-admission.md)
-
-Ce jeu de valeur (ValueSet) contient 7 concepts
 
 -------
 
@@ -60,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-encounter-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -86,7 +74,7 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "title" : "FR Core ValueSet Encounter type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

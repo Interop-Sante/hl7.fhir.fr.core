@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreAppointmentProfile |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreAppointmentProfile |
 
  
 Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
   "name" : "FRCoreAppointmentProfile",
   "title" : "FR Core Appointment Profile",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
   "kind" : "resource",
   "abstract" : false,
   "type" : "Appointment",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Appointment|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -137,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0-ballot"
       },
       {
         "id" : "Appointment.extension",
@@ -162,7 +162,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator|2.2.0-ballot"
             ]
           }
         ]
@@ -178,7 +178,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
             }
           ],
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot"
         }
       },
       {
@@ -188,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0-ballot"
             ]
           }
         ]
@@ -200,13 +200,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+              "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
             ]
           }
         ]

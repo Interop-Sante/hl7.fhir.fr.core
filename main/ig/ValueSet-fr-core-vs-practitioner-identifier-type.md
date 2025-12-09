@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetPractitionerIdentifierType |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetPractitionerIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification) 
@@ -20,25 +20,9 @@ A coded type for an identifier that can be used to determine which identifier to
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v2-0203`](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html)version 📦5.0.0
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203`](CodeSystem-fr-core-cs-v2-0203.md)version 📦2.2.0-ballot 
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-G08-TypeIdentifiantPersonne.html)version 📦20240329120000 
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem identifierType v5.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html)
-* [codesystem FR Core CodeSystem v2-0203 v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-v2-0203.md)
-* [codesystem TRE_G08_TypeIdentifiantPersonne v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-G08-TypeIdentifiantPersonne.html)
-
-Ce jeu de valeur (ValueSet) contient 10 concepts
 
 -------
 
@@ -62,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 10 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-practitioner-identifier-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -76,7 +62,7 @@ Ce jeu de valeur (ValueSet) contient 10 concepts
   "title" : "FR Core ValueSet Practitioner identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

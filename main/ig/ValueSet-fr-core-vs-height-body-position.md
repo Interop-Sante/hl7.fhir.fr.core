@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
 
  
 ValueSet Body Position 
@@ -20,20 +20,9 @@ ValueSet Body Position
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie) où concept est-un 10904000 (Orthostatic body position)
-* Inclut codes provenant de[`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie) où concept est-un 102538003 (Recumbent body position)
-
  
 
 ### Expansion
-
-Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
-
-Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
 
 -------
 
@@ -57,7 +46,9 @@ Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-height-body-position",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position",
   "version" : "2.2.0-ballot",
@@ -65,7 +56,7 @@ Lexpension de ce jeu de valeurs (ValueSet) contient {0} concepts.
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

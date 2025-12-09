@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreEncounterProfile |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreEncounterProfile |
 
  
 This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
   "kind" : "resource",
   "abstract" : false,
   "type" : "Encounter",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot"
       },
       {
         "id" : "Encounter.extension",
@@ -157,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date|2.2.0-ballot"
             ]
           }
         ]
@@ -186,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
             }
           ],
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type|2.2.0-ballot"
         }
       },
       {
@@ -217,7 +217,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -244,7 +244,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
             }
           ],
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type|2.2.0-ballot"
         }
       },
       {
@@ -254,8 +254,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-              "http://hl7.org/fhir/StructureDefinition/Group"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "http://hl7.org/fhir/StructureDefinition/Group|4.0.1"
             ]
           }
         ]
@@ -272,9 +272,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"
             ]
           }
         ]
@@ -286,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0-ballot"
             ]
           }
         ]
@@ -322,7 +322,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
             }
           ],
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type|2.2.0-ballot"
         }
       },
       {
@@ -344,7 +344,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -356,8 +356,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -374,8 +374,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -385,7 +385,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
         "path" : "Encounter.hospitalization.dischargeDisposition",
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition|2.2.0-ballot"
         }
       },
       {
@@ -395,7 +395,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
             ]
           }
         ]
@@ -405,7 +405,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
         "path" : "Encounter.location.physicalType",
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type|2.2.0-ballot"
         }
       },
       {
@@ -415,7 +415,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -433,7 +433,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot"
             ]
           }
         ]

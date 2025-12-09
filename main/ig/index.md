@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FrCore |
+| Active as of 2025-12-09 | *Computable Name*:FrCore |
 
  **Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.**
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -70,16 +70,6 @@ Il est également nécessaire de rester à l’écoute des tendances internation
 ### Gouvernance
 
 Le guide d’implémentation FR Core est géré par HL7 France et IHE France au sein du comité technique FHIR de HL7 France.
-
-### Auteurs et contributeurs
-
-| | | |
-| :--- | :--- | :--- |
-| **Auteur** | Nicolas Riss | Agence du Numérique en Santé |
-| **Auteur** | Yohann Poiron | Agence du Numérique en Santé |
-| Contributeur | Marie Brulliard | Kereval |
-| Contributeur | Sylvain Demey | Agence du Numérique en Santé |
-| Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
 
 ### Dépendances
 
@@ -154,7 +144,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -285,7 +275,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           },
           {
             "url" : "value",
-            "valueString" : "pin-multiples"
+            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -659,7 +649,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           },
           {
             "url" : "value",
-            "valueString" : "pin-multiples"
+            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -2643,7 +2633,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreAppointmentExample",
         "description" : "Exemple de ressource Appointment pour décrire un état de rendez-vous médical",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2657,7 +2647,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreEncounterExample",
         "description" : "Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2671,7 +2661,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreHealthcareServiceExample",
         "description" : "Exemple de ressource HealthcareService pour décrire le service de cardiologie de l’hôpital X",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2699,7 +2689,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationBMIExample",
         "description" : "Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2713,7 +2703,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationBodyHeightExample",
         "description" : "Exemple de ressource Observation pour décrire la taille du patient",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2727,7 +2717,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationBodyTemperatureExample",
         "description" : "Exemple de ressource Observation pour décrire la température du patient",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2741,7 +2731,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationBodyWeightExample",
         "description" : "Exemple de ressource Observation pour décrire le poids du patient",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2755,7 +2745,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationBPExample",
         "description" : "Exemple de ressource Observation Pression artérielle",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2769,7 +2759,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationHeadCircumExample",
         "description" : "Exemple de ressource Observation pour décrire le périmètre cranien d'un patient",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2783,7 +2773,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreObservationHeartRateExample",
         "description" : "Exemple de ressource Observation pour décrire la fréquence cardiaque d'un patient",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2797,7 +2787,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreOrganizationExample",
         "description" : "Exemple de ressource Organization pour décrire un hôpital",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2811,7 +2801,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCorePatientExample",
         "description" : "Exemple de ressource Patient (cas d'usage INS)",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2825,7 +2815,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCorePractitionerExample",
         "description" : "Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l'ordre.",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2839,7 +2829,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCorePractitionerRoleExample",
         "description" : "Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2853,7 +2843,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreScheduleExample",
         "description" : "Exemple de ressource Schedule pour décrire un agenda.",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot"
       },
       {
         "extension" : [
@@ -2867,7 +2857,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FRCoreSlotExample",
         "description" : "Exemple de ressource Slot.",
-        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0-ballot"
       },
       {
         "extension" : [

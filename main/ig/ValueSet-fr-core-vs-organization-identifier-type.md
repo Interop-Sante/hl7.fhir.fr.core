@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). 
@@ -23,17 +23,9 @@ A coded type for an identifier that can be used to determine which identifier to
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203`](CodeSystem-fr-core-cs-v2-0203.md)version 📦2.2.0-ballot
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem FR Core CodeSystem v2-0203 v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-v2-0203.md)
-
-Ce jeu de valeur (ValueSet) contient 7 concepts
 
 -------
 
@@ -57,7 +49,9 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-organization-identifier-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -71,7 +65,7 @@ Ce jeu de valeur (ValueSet) contient 7 concepts
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

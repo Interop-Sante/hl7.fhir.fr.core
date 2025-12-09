@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetPatientIdentifierUseINS |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetPatientIdentifierUseINS |
 
  
 Use autorisés pour l’identifiant national de santé. Authorized use for INS identifier. 
@@ -20,17 +20,9 @@ Use autorisés pour l’identifiant national de santé. Authorized use for INS i
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://hl7.org/fhir/identifier-use`](http://hl7.org/fhir/R4/codesystem-identifier-use.html)version 📦4.0.1
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem IdentifierUse v4.0.1 (CodeSystem)](http://hl7.org/fhir/R4/codesystem-identifier-use.html)
-
-Ce jeu de valeur (ValueSet) contient 2 concepts
 
 -------
 
@@ -54,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 2 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-patient-identifier-use-ins",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins",
   "version" : "2.2.0-ballot",
@@ -62,7 +56,7 @@ Ce jeu de valeur (ValueSet) contient 2 concepts
   "title" : "FR Core ValueSet Patient identifier use INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
+| Active as of 2025-12-09 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
 
 Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -106,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -144,7 +144,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection|2.2.0-ballot"
         }
       },
       {
@@ -203,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability|2.2.0-ballot"
         }
       },
       {
@@ -261,7 +261,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity|2.2.0-ballot"
         }
       },
       {

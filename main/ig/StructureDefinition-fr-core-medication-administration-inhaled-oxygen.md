@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreMedicationAdministrationInhaledOxygenProfile |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreMedicationAdministrationInhaledOxygenProfile |
 
  
 Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "name" : "FRCoreMedicationAdministrationInhaledOxygenProfile",
   "title" : "FR Core Medication Administration Inhaled Oxygen Profile",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -108,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "kind" : "resource",
   "abstract" : false,
   "type" : "MedicationAdministration",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -136,7 +136,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0-ballot"
       },
       {
         "id" : "MedicationAdministration.medication[x]",
@@ -173,7 +173,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
             ]
           }
         ]
@@ -185,11 +185,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+              "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
             ]
           }
         ]

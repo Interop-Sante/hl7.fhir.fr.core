@@ -25,17 +25,9 @@ The modalities of exercice of the practitioner, registered by an official organi
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)version 📦20240531120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem TRE_R38_SpecialiteOrdinale v20240531120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)
-
-Ce jeu de valeur (ValueSet) contient 107 concepts
 
 -------
 
@@ -59,7 +51,9 @@ Ce jeu de valeur (ValueSet) contient 107 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-practitioner-specialty",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -81,7 +75,7 @@ Ce jeu de valeur (ValueSet) contient 107 concepts
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

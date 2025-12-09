@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-05 | *Computable Name*:FRCoreCodeSystemScheduleType |
+| Draft as of 2025-12-09 | *Computable Name*:FRCoreCodeSystemScheduleType |
 
  
 Schedule type 
@@ -29,7 +29,7 @@ Schedule type
   "id" : "fr-core-cs-schedule-type",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type",
@@ -38,7 +38,7 @@ Schedule type
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

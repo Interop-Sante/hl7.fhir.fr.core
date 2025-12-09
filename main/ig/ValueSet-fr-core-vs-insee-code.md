@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetINSEECode |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetINSEECode |
 
  
 the French Address Insee Codes 
@@ -20,17 +20,9 @@ the French Address Insee Codes
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R13-CommuneOM.html)version Non précisé (utilise la dernière version provenant du serveur de terminologie)
-
  
 
 ### Expansion
-
-Expansion de smt.esante.gouv.fr basée sur [codesystem TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R13-CommuneOM.html)
-
-Ce jeu de valeurs (ValueSet) a 39,293 codes. Pour garder la publication gérable, seulement une selection (1,000 codes) de lensemble des codes est affiché.
 
 -------
 
@@ -54,7 +46,9 @@ Ce jeu de valeurs (ValueSet) a 39,293 codes. Pour garder la publication gérable
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-insee-code",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code",
   "version" : "2.2.0-ballot",
@@ -62,7 +56,7 @@ Ce jeu de valeurs (ValueSet) a 39,293 codes. Pour garder la publication gérable
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

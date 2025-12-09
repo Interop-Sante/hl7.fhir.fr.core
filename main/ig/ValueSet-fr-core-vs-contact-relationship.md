@@ -20,23 +20,9 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://terminology.hl7.org/CodeSystem/v2-0131`](http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html)version 📦2.1.0
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship`](CodeSystem-fr-core-cs-contact-relationship.md)version 📦2.2.0-ballot 
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem contactRole2 v2.1.0 (CodeSystem)](http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html)
-* [codesystem FR Core CodeSystem Contact Relationship v2.2.0-ballot (CodeSystem)](CodeSystem-fr-core-cs-contact-relationship.md)
-
-Ce jeu de valeur (ValueSet) contient 84 concepts
 
 -------
 
@@ -60,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 84 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-contact-relationship",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -86,7 +74,7 @@ Ce jeu de valeur (ValueSet) contient 84 concepts
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

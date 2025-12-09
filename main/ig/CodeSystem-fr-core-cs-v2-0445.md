@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445 | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-05 | *Computable Name*:FRCoreCodeSystemv2_0445 |
+| Draft as of 2025-12-09 | *Computable Name*:FRCoreCodeSystemv2_0445 |
 
  
 HL7 v2 - Table 0445 
@@ -28,7 +28,7 @@ HL7 v2 - Table 0445
   "id" : "fr-core-cs-v2-0445",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
@@ -37,7 +37,7 @@ HL7 v2 - Table 0445
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

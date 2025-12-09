@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreOrganizationUACProfile |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreOrganizationUACProfile |
 
  
 This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUACProfile",
   "title" : "FR Core Organization UAC Profile",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -131,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot"
       },
       {
         "id" : "Organization.extension",
@@ -156,7 +156,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot"
             ]
           }
         ]
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description|2.2.0-ballot"
             ]
           }
         ]
@@ -196,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.identifier.use",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         }
       },
       {
@@ -211,7 +211,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             }
           ],
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot"
         }
       },
       {
@@ -229,7 +229,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
         }
       },
       {
@@ -245,7 +245,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -255,7 +255,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.partOf.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
         }
       }
     ]

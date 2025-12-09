@@ -20,17 +20,9 @@ The type of email
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R256-TypeMessagerie.html)version 📦20231215120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur [codesystem TRE_R256_TypeMessagerie v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R256-TypeMessagerie.html)
-
-Ce jeu de valeur (ValueSet) contient 4 concepts
 
 -------
 
@@ -54,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-email-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -76,7 +70,7 @@ Ce jeu de valeur (ValueSet) contient 4 concepts
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

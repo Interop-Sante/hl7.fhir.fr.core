@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreValueSetHeartRateMeasurementMethod |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetHeartRateMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the heart rate was measured. 
@@ -20,17 +20,9 @@ SELECT SNOMED CT code system values that describe how the heart rate was measure
 
 ### Définition logique (CLD)
 
-Profil: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`http://snomed.info/sct`](http://www.snomed.org/)version Non précisé (utilise la dernière version provenant du serveur de terminologie)
-
  
 
 ### Expansion
-
-Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
-
-Ce jeu de valeur (ValueSet) contient 8 concepts
 
 -------
 
@@ -54,7 +46,9 @@ Ce jeu de valeur (ValueSet) contient 8 concepts
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-heartrate-measurement-method",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method",
   "version" : "2.2.0-ballot",
@@ -62,7 +56,7 @@ Ce jeu de valeur (ValueSet) contient 8 concepts
   "title" : "Heart Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

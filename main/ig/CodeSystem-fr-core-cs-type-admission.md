@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-05 | *Computable Name*:FRCoreCodeSystemTypeAdmission |
+| Draft as of 2025-12-09 | *Computable Name*:FRCoreCodeSystemTypeAdmission |
 
  
 Admission type 
@@ -28,7 +28,7 @@ Admission type
   "id" : "fr-core-cs-type-admission",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
@@ -37,7 +37,7 @@ Admission type
   "title" : "FR Core CodeSystem Type Admission",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

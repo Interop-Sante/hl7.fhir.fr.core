@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreAddressProfile |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreAddressProfile |
 
  
 Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée. French profile of Address datatype 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "name" : "FRCoreAddressProfile",
   "title" : "FR Core Address Profile",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "kind" : "complex-type",
   "abstract" : false,
   "type" : "Address",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Address",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Address|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -121,7 +121,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code|2.2.0-ballot"
             ]
           }
         ]

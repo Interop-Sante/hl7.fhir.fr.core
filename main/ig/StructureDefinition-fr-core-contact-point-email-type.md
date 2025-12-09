@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type | *Version*:2.2.0-ballot |
-| Active as of 2025-12-05 | *Computable Name*:FRCoreContactPointEmailTypeExtension |
+| Active as of 2025-12-09 | *Computable Name*:FRCoreContactPointEmailTypeExtension |
 
 Extension permettant d’indiquer le type d’adresse email d’un ContactPoint.
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "name" : "FRCoreContactPointEmailTypeExtension",
   "title" : "FR Core Contact Point Email Type Extension",
   "status" : "active",
-  "date" : "2025-12-05T17:11:23+00:00",
+  "date" : "2025-12-09T22:51:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -134,7 +134,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type|2.2.0-ballot"
         }
       }
     ]
