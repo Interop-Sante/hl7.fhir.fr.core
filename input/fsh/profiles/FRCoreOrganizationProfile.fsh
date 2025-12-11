@@ -1,5 +1,5 @@
 Profile: FRCoreOrganizationProfile
-Parent: Organization
+Parent: OrganizationEu
 Id: fr-core-organization
 Title: "FR Core Organization Profile"
 Description: """Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. \r\n

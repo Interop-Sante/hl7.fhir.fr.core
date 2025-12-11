@@ -1,5 +1,5 @@
 Profile: FRCorePractitionerRoleProfile
-Parent: PractitionerRole
+Parent: PractitionerRoleEu
 Id: fr-core-practitioner-role
 Title: "FR Core Practitioner Role"
 Description: "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization\r\n
