@@ -71,7 +71,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
 * location.location only Reference(FRCoreLocationProfile)
 
-* location.physicalType from FRCoreValueSetLocationPhysicalType (example)
+* location.physicalType from FRCoreValueSetLocationType (example)
 
 * serviceProvider only Reference(FRCoreOrganizationProfile)
 
