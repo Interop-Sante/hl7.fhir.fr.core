@@ -1,0 +1,151 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBPExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreObservationBPExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation FRCoreObservationBPExample</b></p><a name=\"FRCoreObservationBPExample\"> </a><a name=\"hcFRCoreObservationBPExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-observation-bp.html\">FR Core Observation Blood Pressure Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 85354-9}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-FRCorePatientExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2012-09-17</p><p><b>performer</b>: <a href=\"Practitioner-FRCorePractitionerExample.html\">Practitioner Leclerc Sophie</a></p><p><b>interpretation</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Below low normal</span></p><p><b>bodySite</b>: <span title=\"Codes :{http://snomed.info/sct 17137000}\">artère humérale</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 107 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 60 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">En dessous de la normale</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "85354-9" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientExample> ;
+     fhir:reference [ fhir:v "Patient/FRCorePatientExample" ] ;
+     fhir:type [
+       fhir:v "Patient"^^xsd:anyURI ;
+       fhir:l fhir:Patient
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2012-09-17"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <https://hl7.fr/ig/fhir/core/Practitioner/FRCorePractitionerExample> ;
+     fhir:reference [ fhir:v "Practitioner/FRCorePractitionerExample" ]
+  ] ) ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+       ] ;
+       fhir:code [ fhir:v "L" ] ;
+       fhir:display [ fhir:v "low" ]
+     ] ) ;
+     fhir:text [ fhir:v "Below low normal" ]
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:17137000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "17137000" ] ;
+       fhir:display [ fhir:v "artère humérale" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "107"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm[Hg]" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+         ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "Normal" ]
+       ] ) ;
+       fhir:text [ fhir:v "Normal" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm[Hg]" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+         ] ;
+         fhir:code [ fhir:v "L" ] ;
+         fhir:display [ fhir:v "low" ]
+       ] ) ;
+       fhir:text [ fhir:v "En dessous de la normale" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
