@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location | *Version*:2.2.0-ballot |
-| Active as of 2025-12-09 | *Computable Name*:FRCoreLocationProfile |
+| Active as of 2025-12-17 | *Computable Name*:FRCoreLocationProfile |
 
  
 French profile of Location. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2025-12-09T22:51:13+00:00",
+  "date" : "2025-12-17T08:23:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

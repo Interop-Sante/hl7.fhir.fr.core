@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status | *Version*:2.2.0-ballot |
-| Active as of 2025-12-09 | *Computable Name*:FRCoreValueSetMaritalStatus |
+| Active as of 2025-12-17 | *Computable Name*:FRCoreValueSetMaritalStatus |
 
  
 Patient Marital Status 
@@ -56,7 +56,7 @@ Patient Marital Status
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-09T22:51:13+00:00",
+  "date" : "2025-12-17T08:23:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

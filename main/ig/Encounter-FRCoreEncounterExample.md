@@ -14,7 +14,7 @@ Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
 
 **status**: In Progress
 
-**class**: [ActCode: AMB](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB) (ambulatory)
+**class**: [ActCode: AMB](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-AMB) (ambulatory)
 
 **period**: 2019-01-02 --> 2019-02-02
 

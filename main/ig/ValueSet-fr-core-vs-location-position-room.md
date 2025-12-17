@@ -74,7 +74,7 @@ Position physique de l’emplacement du lit. Position room
   "title" : "FR Core ValueSet Location position room",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-09T22:51:13+00:00",
+  "date" : "2025-12-17T08:23:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
