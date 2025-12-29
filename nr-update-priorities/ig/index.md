@@ -17,21 +17,21 @@
 
 Ce guide d’implémentation est fourni comme **fondation pour l’utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l’échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
 
-### Le rôle du guide d’implémentation FHIR FRCore
+### Le rôle du guide d’implémentation FHIR FR Core
 
-L’objectif du guide d’implémentation FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l’ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.). Pour cela, ce guide va par exemple indiquer comment modéliser un [patient FHIR en France](./StructureDefinition-fr-core-patient-ins.md) (contenant l’identifiant national de santé (INS)), [un professionnel de santé](./StructureDefinition-fr-core-practitioner.md) (contenant l’identifiant national de professionnel de santé (IDNatPS)), …
+L’objectif du guide d’implémentation FR Core est de garantir une base commune pour permettre une utilisation homogène du standard pour l’ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.). Pour cela, ce guide va par exemple indiquer comment modéliser un [patient FHIR en France](./StructureDefinition-fr-core-patient-ins.md) (contenant l’identifiant national de santé (INS)), [un professionnel de santé](./StructureDefinition-fr-core-practitioner.md) (contenant l’identifiant national de professionnel de santé (IDNatPS)), …
 
-Afin de garantir l’uniformité d’usage de FHIR en France, l’ensemble des implémentations FHIR et des guides d’implémentation doit se baser sur FRCore, comme c’est le cas pour les guides d’implémentation de l’Agence du Numérique en Santé (ANS) et d’InteropSanté (IS).
+Afin de garantir l’uniformité d’usage de FHIR en France, l’ensemble des implémentations FHIR et des guides d’implémentation doit se baser sur FR Core, comme c’est le cas pour les guides d’implémentation de l’Agence du Numérique en Santé (ANS) et d’InteropSanté (IS).
 
-Dans les prochaines versions, FRCore sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FRCore vont permettre de valider la conformité des instances FHIR sur les espaces de tests.
+Dans les prochaines versions, FR Core sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FR Core vont permettre de valider la conformité des instances FHIR sur les espaces de tests.
 
-### Principes de modélisation et d’utilisation de FHIR FRCore
+### Principes de modélisation et d’utilisation de FHIR FR Core
 
 Les profils FHIR de ce guide d’implémentation sont volontairement peu contraignants afin de couvrir le plus grand nombre de cas d’usage et ainsi faciliter son adoption. Par conséquent, ce guide ne traite pas de cas d’usage spécifiques : il est donc recommandé de vérifier dans l’écosystème des guides d’implémentation si des guides plus spécialisés correspondant à votre cas d’usage existent.
 
-Le guide d’implémentation FRCore, et FHIR de manière générale, offrent un large éventail de ressources, d’attributs et de paramètres de recherche. Toutefois, FHIR et FRCore n’imposent pas l’implémentation complète de toutes ces fonctionnalités. Il convient donc pour chaque cas d’usage d’identifier précisément les ressources, profils et les fonctionnalités d’API nécessaires.
+Le guide d’implémentation FR Core, et FHIR de manière générale, offrent un large éventail de ressources, d’attributs et de paramètres de recherche. Toutefois, FHIR et FR Core n’imposent pas l’implémentation complète de toutes ces fonctionnalités. Il convient donc pour chaque cas d’usage d’identifier précisément les ressources, profils et les fonctionnalités d’API nécessaires.
 
-Par exemple, l’API FHIR Annuaire Santé, une API ouverte basée sur FRCore, illustre une mise en œuvre concrète de ce guide. Sa [documentation](https://ansforge.github.io/annuaire-sante-fhir-documentation/) et son [guide d’implémentation](https://interop.esante.gouv.fr/ig/fhir/annuaire/) peuvent servir de référence.
+Par exemple, l’API FHIR Annuaire Santé, une API ouverte basée sur FR Core, illustre une mise en œuvre concrète de ce guide. Sa [documentation](https://ansforge.github.io/annuaire-sante-fhir-documentation/) et son [guide d’implémentation](https://interop.esante.gouv.fr/ig/fhir/annuaire/) peuvent servir de référence.
 
 ### Champ d’application
 
@@ -45,7 +45,7 @@ Les activités de profilage donnent la priorité aux ressources ayant un niveau 
 
 ### Choix de la version du standard FHIR
 
-Pour garantir l’interopérabilité à l’échelle nationale, **l’utilisation de FHIR R4 est recommandée pour l’ensemble des projets en France**. Ainsi, ce guide d’implémentation FRCore est **basé sur FHIR R4**.
+Pour garantir l’interopérabilité à l’échelle nationale, **l’utilisation de FHIR R4 est recommandée pour l’ensemble des projets en France**. Ainsi, ce guide d’implémentation FR Core est **basé sur FHIR R4**.
 
 La stratégie sur le choix des versions FHIR a été définie au sein d’un groupe de travail organisé entre Interop’Santé et l’ANS en 2023/2024, validée via une [concertation](https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation) de l’ANS.
 
@@ -162,7 +162,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2025-12-29T10:37:03+00:00",
+  "date" : "2025-12-29T10:57:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
