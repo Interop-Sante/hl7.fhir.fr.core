@@ -37,7 +37,7 @@ Organization type
   "title" : "FR Core CodeSystem Organization Type",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-29T09:23:18+00:00",
+  "date" : "2025-12-29T09:56:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
