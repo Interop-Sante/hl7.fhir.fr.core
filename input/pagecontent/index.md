@@ -27,7 +27,7 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 </div>
 {% endif %}
 
-Ce guide d'implémentation est fourni pour **soutenir l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
+Ce guide d'implémentation est fourni comme **fondation pour l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
 
 ### Le rôle du guide d'implémentation FHIR FRCore
 
