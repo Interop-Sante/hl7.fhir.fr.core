@@ -54,7 +54,7 @@ SELECT SNOMED CT code system values that describe how the heart rate was measure
   "title" : "Heart Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T08:24:40+00:00",
+  "date" : "2025-12-29T09:23:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

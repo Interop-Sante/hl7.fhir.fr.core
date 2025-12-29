@@ -61,7 +61,7 @@ ValueSet patient contact role
   "title" : "FR Core ValueSet Patient contact role",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T08:24:40+00:00",
+  "date" : "2025-12-29T09:23:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

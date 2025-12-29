@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "name" : "FRCoreLocationPartOfPositionRoomExtension",
   "title" : "FR Core Location Part Of Position Room Extension",
   "status" : "active",
-  "date" : "2025-12-29T08:24:40+00:00",
+  "date" : "2025-12-29T09:23:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

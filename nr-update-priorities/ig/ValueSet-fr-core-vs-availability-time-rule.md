@@ -74,7 +74,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T08:24:40+00:00",
+  "date" : "2025-12-29T09:23:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
