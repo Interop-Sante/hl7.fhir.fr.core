@@ -1,9 +1,9 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>
-Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.
+Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données de santé : données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.
 </b><br>
 
-Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France
+Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of health data : administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France
 
 </p>
 
@@ -21,22 +21,30 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 <div style="width: 65%">
 <blockquote class="stu-note">
 <p>
-  <b>Attention !</b> Cette version du guide d'implémentation est en concertation pour validation. La version officielle est accessible à l'adresse http://hl7.fr/ig/fhir/core</b>
+  <b>Attention !</b> Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse http://hl7.fr/ig/fhir/core</b>
 </p>
 </blockquote>
 </div>
 {% endif %}
 
+Ce guide d'implémentation est fourni pour **soutenir l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
 
-Ce guide de mise en œuvre est fourni pour **soutenir l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux**.
+### Le rôle du guide d'implémentation FRCore
 
-Les profils FHIR de ce guide d'implémentation sont volontairement très peu contraignants et ne répondent pas à des cas d'usages spécifiques, l'objectif de ce guide d'implémentation est de proposer un socle commun pour l'ensemble des échanges de données utilisant le standard FHIR en France.
-Par exemple, ce guide indique comment modéliser un patient FHIR en France (contenant l'identifiant national de santé (INS)), le professionnel de santé (contenant l'identifiant national de professionnel de santé (IDNatPS)), ...
+L'objectif du guide d'implémentation FHIR FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l'ensemble des implémentations FHIR en France (numéro de version, extensions, identifiants, etc.).
+Pour cela, ce guide va par exemple indiquer comment modéliser un patient FHIR en France (contenant l'identifiant national de santé (INS)), le professionnel de santé (contenant l'identifiant national de professionnel de santé (IDNatPS)), ...
 
-Ainsi, on y retrouve :
+Afin de garantir l'uniformité d'usage de FHIR en France, l'ensemble des guides d'implémentation doit se baser sur FRCore, comme c'est le cas pour les guides d'implémentation de l'Agence du Numérique en Santé (ANS) et d'InteropSanté (IS).
 
-* Les ressources essentielles profilées pour la France
-* Les extensions nécessaires à l'utilisation locale en France.
+Dans les prochaines versions, FRCore sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FRCore vont permettre de valider la conformité des objets FHIR générés sur les espaces de tests.
+
+### Les choix de modélisation et utilisation du guide FRCore
+
+Les profils FHIR de ce guide d'implémentation sont volontairement peu contraignants afin de couvrir le plus grand nombre de cas d'usage et ainsi faciliter son adoption. Par conséquent, ce guide ne traite pas de cas d'usage spécifiques : il est donc recommandé de vérifier dans l'écosystème des guides d'implémentation si des guides plus spécialisés existent.
+
+Le guide d'implémentation FRCore, et FHIR de manière générale, offrent un large éventail de profils, d'attributs et de paramètres de recherche. Toutefois, FHIR et FRCore n'imposent pas l'implémentation complète de toutes ces fonctionnalités. Il convient donc pour chaque cas d'usage d'identifier précisément les ressources et les fonctionnalités d'API nécessaires.
+
+Par exemple, l'API FHIR Annuaire Santé, une API ouverte basée sur FRCore, illustre une mise en œuvre concrète de ce guide. Sa [documentation](https://ansforge.github.io/annuaire-sante-fhir-documentation/) et son [guide d'implémentation](https://interop.esante.gouv.fr/ig/fhir/annuaire/) peuvent servir de référence.
 
 ### Champ d'application
 
