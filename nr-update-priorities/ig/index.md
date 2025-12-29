@@ -27,9 +27,9 @@ Dans les prochaines versions, FRCore sera également garant de la compatibilité
 
 ### Principes de modélisation et d’utilisation de FHIR FRCore
 
-Les profils FHIR de ce guide d’implémentation sont volontairement peu contraignants afin de couvrir le plus grand nombre de cas d’usage et ainsi faciliter son adoption. Par conséquent, ce guide ne traite pas de cas d’usage spécifiques : il est donc recommandé de vérifier dans l’écosystème des guides d’implémentation si des guides plus spécialisés existent.
+Les profils FHIR de ce guide d’implémentation sont volontairement peu contraignants afin de couvrir le plus grand nombre de cas d’usage et ainsi faciliter son adoption. Par conséquent, ce guide ne traite pas de cas d’usage spécifiques : il est donc recommandé de vérifier dans l’écosystème des guides d’implémentation si des guides plus spécialisés correspondant à votre cas d’usage existent.
 
-Le guide d’implémentation FRCore, et FHIR de manière générale, offrent un large éventail de profils, d’attributs et de paramètres de recherche. Toutefois, FHIR et FRCore n’imposent pas l’implémentation complète de toutes ces fonctionnalités. Il convient donc pour chaque cas d’usage d’identifier précisément les ressources et les fonctionnalités d’API nécessaires.
+Le guide d’implémentation FRCore, et FHIR de manière générale, offrent un large éventail de ressources, d’attributs et de paramètres de recherche. Toutefois, FHIR et FRCore n’imposent pas l’implémentation complète de toutes ces fonctionnalités. Il convient donc pour chaque cas d’usage d’identifier précisément les ressources, profils et les fonctionnalités d’API nécessaires.
 
 Par exemple, l’API FHIR Annuaire Santé, une API ouverte basée sur FRCore, illustre une mise en œuvre concrète de ce guide. Sa [documentation](https://ansforge.github.io/annuaire-sante-fhir-documentation/) et son [guide d’implémentation](https://interop.esante.gouv.fr/ig/fhir/annuaire/) peuvent servir de référence.
 
@@ -49,7 +49,7 @@ Pour garantir l’interopérabilité à l’échelle nationale, **l’utilisatio
 
 La stratégie sur le choix des versions FHIR a été définie au sein d’un groupe de travail organisé entre Interop’Santé et l’ANS en 2023/2024, validée via une [concertation](https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation) de l’ANS.
 
-#### Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6
+#### Nouveaux cas d’usages FHIR : privilégier FHIR R4 et anticiper la transition vers R6
 
 Pour garantir la cohérence au sein de l’écosystème français, éviter tout problème de compatibilité ainsi que les travaux divergents, il est nécessaire d’utiliser une même version du standard FHIR à l’échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d’éviter des transitions entre version qui brouillerait l’écosystème
 
@@ -162,7 +162,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2025-12-29T10:13:00+00:00",
+  "date" : "2025-12-29T10:22:56+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

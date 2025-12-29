@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2025-12-29T10:13:00+00:00",
+  "date" : "2025-12-29T10:22:56+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
