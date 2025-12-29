@@ -70,7 +70,7 @@ Secteur d’activité de l’organisation. The activity field of the organizatio
   "title" : "FR Core ValueSet Organization activity field",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T13:55:09+00:00",
+  "date" : "2025-12-29T14:07:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

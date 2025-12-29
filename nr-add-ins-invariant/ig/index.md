@@ -140,7 +140,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2025-12-29T13:55:09+00:00",
+  "date" : "2025-12-29T14:07:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -1970,7 +1970,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "StructureDefinition/fr-core-patient-ins"
         },
         "name" : "FR Core Patient INS Profile",
-        "description" : "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
+        "description" : "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
         "exampleBoolean" : false
       },
       {

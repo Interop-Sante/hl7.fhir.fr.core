@@ -13,7 +13,7 @@
 
  
 FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile. 
-Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. 
+Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. 
 
 ### Usage
 
@@ -21,9 +21,11 @@ Le profil hérite de FRCorePatient enrichi de l’identité INS récupérée par
 
 Ce profil permet d’indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS, marqués en MustSupport (carré rouge contenant un S).
 
+Les 5 traits INS doivent être ceux renvoyés par le téléservice INSi.
+
 Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d’héritage, il n’est donc pas nécessaire d’avoir une instance de chaque profil pour un même patient.
 
-Les identifiants INS-NIR ne peuvent être véhiculés uniquement dans le cas d’un patient qualifié (cf EXI 12 du référentiel INS version 2.1), raison pour laquelle les slices identifier sont définies au niveau du FrCorePatientINS et non au niveau du FrCorePatient.
+Les identifiants INS-NIR ne peuvent être véhiculés uniquement dans le cas d’un patient qualifié (cf EXI 12 du référentiel INS version 2.1), raison pour laquelle les slices identifier sont définies au niveau du FrCorePatientINS et non au niveau du FRCorePatient.
 
 Pour plus d’informations sur le contexte du patient INS, consultez le référentiel national d’identitovigilance (RNIV) et la documentation du référentiel INS de l’ANS :
 
@@ -57,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2025-12-29T13:55:09+00:00",
+  "date" : "2025-12-29T14:07:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -80,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       ]
     }
   ],
-  "description" : "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
+  "description" : "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -149,7 +151,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
             "key" : "fr-core-3",
             "severity" : "warning",
             "human" : "If the official INS registration number is entered, then the municipality of birth COG code cannot be 99999 because this code cannot be sent via the INSI online service.",
-            "expression" : "(identifier.where(use = 'official').count() = 1 implies extension(' http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').code != 99999))",
+            "expression" : "(identifier.where(use = 'official').count() = 1 implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')",
             "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot"
           }
         ]
