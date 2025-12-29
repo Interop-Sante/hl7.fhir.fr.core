@@ -29,12 +29,12 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 
 Ce guide d'implémentation est fourni pour **soutenir l'utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
 
-### Le rôle du guide d'implémentation FRCore
+### Le rôle du guide d'implémentation FHIR FRCore
 
-L'objectif du guide d'implémentation FHIR FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l'ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.).
-Pour cela, ce guide va par exemple indiquer comment modéliser un patient FHIR en France (contenant l'identifiant national de santé (INS)), le professionnel de santé (contenant l'identifiant national de professionnel de santé (IDNatPS)), ...
+L'objectif du guide d'implémentation FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l'ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.).
+Pour cela, ce guide va par exemple indiquer comment modéliser un [patient FHIR en France](./StructureDefinition-fr-core-patient-ins.html) (contenant l'identifiant national de santé (INS)), [un professionnel de santé](./StructureDefinition-fr-core-practitioner.html) (contenant l'identifiant national de professionnel de santé (IDNatPS)), ...
 
-Afin de garantir l'uniformité d'usage de FHIR en France, l'ensemble des guides d'implémentation doit se baser sur FRCore, comme c'est le cas pour les guides d'implémentation de l'Agence du Numérique en Santé (ANS) et d'InteropSanté (IS).
+Afin de garantir l'uniformité d'usage de FHIR en France, l'ensemble des implémentations FHIR et des guides d'implémentation doit se baser sur FRCore, comme c'est le cas pour les guides d'implémentation de l'Agence du Numérique en Santé (ANS) et d'InteropSanté (IS).
 
 Dans les prochaines versions, FRCore sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FRCore vont permettre de valider la conformité des instances FHIR sur les espaces de tests.
 
@@ -58,7 +58,7 @@ Les activités de profilage donnent la priorité aux ressources ayant un niveau 
 
 ### Choix de la version du standard FHIR
 
-Pour garantir l'interopérabilité à l'échelle nationale, **l'utilisation de FHIR R4 est recommandée pour l'ensemble des projets en France**. Ainsi, ce guide d'implémentation FR Core est **basé sur FHIR R4**.
+Pour garantir l'interopérabilité à l'échelle nationale, **l'utilisation de FHIR R4 est recommandée pour l'ensemble des projets en France**. Ainsi, ce guide d'implémentation FRCore est **basé sur FHIR R4**.
 
 La stratégie sur le choix des versions FHIR a été définie au sein d'un groupe de travail organisé entre Interop'Santé et l'ANS en 2023/2024, validée via une [concertation](https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation) de l'ANS.
 
