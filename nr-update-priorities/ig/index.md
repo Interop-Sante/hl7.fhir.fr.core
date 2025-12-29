@@ -162,7 +162,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2025-12-29T16:37:53+00:00",
+  "date" : "2025-12-29T16:39:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -289,6 +289,19 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
+            "valueString" : "i18n-default-lang"
+          },
+          {
+            "url" : "value",
+            "valueString" : "fr-FR"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueString" : "pin-canonicals"
           },
           {
@@ -320,6 +333,71 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "tx"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "generate"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "init"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "progress"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -663,6 +741,19 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
+            "valueCode" : "i18n-default-lang"
+          },
+          {
+            "url" : "value",
+            "valueString" : "fr-FR"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueCode" : "pin-canonicals"
           },
           {
@@ -694,6 +785,71 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "tx"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "generate"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "init"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "progress"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

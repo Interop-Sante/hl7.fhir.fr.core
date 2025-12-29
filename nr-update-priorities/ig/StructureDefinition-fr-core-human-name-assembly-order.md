@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2025-12-29T16:37:53+00:00",
+  "date" : "2025-12-29T16:39:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

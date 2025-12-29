@@ -37,7 +37,7 @@ Identifier type
   "title" : "FR Core CodeSystem Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T16:37:53+00:00",
+  "date" : "2025-12-29T16:39:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
