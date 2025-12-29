@@ -72,7 +72,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
   "title" : "FR Core ValueSet Organization UF activity field",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T10:57:12+00:00",
+  "date" : "2025-12-29T16:37:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

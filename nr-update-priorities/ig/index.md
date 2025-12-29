@@ -162,7 +162,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2025-12-29T10:57:12+00:00",
+  "date" : "2025-12-29T16:37:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -302,6 +302,32 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
+            "valueString" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueString" : "autoload-resources"
           },
           {
@@ -432,19 +458,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
-            "valueString" : "apply-contact"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
             "valueString" : "apply-context"
           },
           {
@@ -459,19 +472,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           {
             "url" : "code",
             "valueString" : "apply-copyright"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-jurisdiction"
           },
           {
             "url" : "value",
@@ -676,6 +676,32 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
+            "valueCode" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueCode" : "autoload-resources"
           },
           {
@@ -806,19 +832,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
-            "valueCode" : "apply-contact"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
             "valueCode" : "apply-context"
           },
           {
@@ -833,19 +846,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           {
             "url" : "code",
             "valueCode" : "apply-copyright"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-jurisdiction"
           },
           {
             "url" : "value",
@@ -3064,6 +3064,14 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
       ]
     },
     "parameter" : [
+      {
+        "code" : "path-pages",
+        "value" : "input/pagecontent"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "input/intro-notes"
+      },
       {
         "code" : "path-resource",
         "value" : "input/capabilities"

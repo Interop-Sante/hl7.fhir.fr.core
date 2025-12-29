@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerSpecialtyExtension",
   "title" : "FR Core Practitioner Specialty Extension",
   "status" : "active",
-  "date" : "2025-12-29T10:57:12+00:00",
+  "date" : "2025-12-29T16:37:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
