@@ -11,6 +11,10 @@ En FHIR, il y a plusieurs types d'identifiants :
 
 Il est conseillé de favoriser l'usage des identifiants métiers pour faciliter l'identification de la ressource en dehors du serveur.
 
+#### Les syntaxes retenues
+
+Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenues sont les syntaxes XML et JSON.
+
 ### Les bonnes pratiques de rédaction des guides d'implémentation
 
 #### Les Pull Requests

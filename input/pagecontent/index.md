@@ -31,14 +31,14 @@ Ce guide d'implémentation est fourni pour **soutenir l'utilisation de FHIR® en
 
 ### Le rôle du guide d'implémentation FRCore
 
-L'objectif du guide d'implémentation FHIR FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l'ensemble des implémentations FHIR en France (numéro de version, extensions, identifiants, etc.).
+L'objectif du guide d'implémentation FHIR FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l'ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.).
 Pour cela, ce guide va par exemple indiquer comment modéliser un patient FHIR en France (contenant l'identifiant national de santé (INS)), le professionnel de santé (contenant l'identifiant national de professionnel de santé (IDNatPS)), ...
 
 Afin de garantir l'uniformité d'usage de FHIR en France, l'ensemble des guides d'implémentation doit se baser sur FRCore, comme c'est le cas pour les guides d'implémentation de l'Agence du Numérique en Santé (ANS) et d'InteropSanté (IS).
 
-Dans les prochaines versions, FRCore sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FRCore vont permettre de valider la conformité des objets FHIR générés sur les espaces de tests.
+Dans les prochaines versions, FRCore sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FRCore vont permettre de valider la conformité des instances FHIR sur les espaces de tests.
 
-### Les choix de modélisation et utilisation du guide FRCore
+### Principes de modélisation et d'utilisation de FHIR FRCore
 
 Les profils FHIR de ce guide d'implémentation sont volontairement peu contraignants afin de couvrir le plus grand nombre de cas d'usage et ainsi faciliter son adoption. Par conséquent, ce guide ne traite pas de cas d'usage spécifiques : il est donc recommandé de vérifier dans l'écosystème des guides d'implémentation si des guides plus spécialisés existent.
 
@@ -58,18 +58,19 @@ Les activités de profilage donnent la priorité aux ressources ayant un niveau 
 
 ### Choix de la version du standard FHIR
 
-Le Guide d'implémentation FR Core est **basé sur la version Release 4 de HL7 FHIR** et définit l'ensemble minimum de contraintes sur les ressources FHIR pour créer les profils FR Core. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
-
-En établissant la "base" des normes pour promouvoir l'interopérabilité et l'adoption par le biais d'une mise en œuvre commune, il permet une évolution ultérieure de l'élaboration des normes pour des cas d'utilisation spécifiques.
+Pour garantir l'interopérabilité à l'échelle nationale, **l'utilisation de FHIR R4 est recommandée pour l'ensemble des projets en France**. Ainsi, ce guide d'implémentation FR Core est **basé sur FHIR R4**.
 
 La stratégie sur le choix des versions FHIR a été définie au sein d'un groupe de travail organisé entre Interop'Santé et l'ANS en 2023/2024, validée via une [concertation](https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation) de l'ANS.
 
 #### Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6
 
-Pour garantir la cohérence au sein de l'écosystème français, éviter tout problème de compatibilité ainsi que les travaux divergents, il est nécessaire d'utiliser une même version du standard FHIR à l'échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d'éviter une double transition R4 vers R5 et R5 vers R6 qui aurait un coût non négligeable. Ce choix est conforté car la release 6 se veut être la version finale stable de FHIR, une transition vers R6 se voudra de toute manière nécessaire. Pour anticiper cette transition, il est jugé important d’être proactif sur les travaux internationaux de développement de R6 et d’anticiper les impacts pour l’écosystème français.
-Il est également à noter que le choix national de la version FHIR utilisée devra être en accord avec le règlement de l'EEDS qui se dessine progressivement et qui pour l'heure semble se diriger vers R4.
+Pour garantir la cohérence au sein de l'écosystème français, éviter tout problème de compatibilité ainsi que les travaux divergents, il est nécessaire d'utiliser une même version du standard FHIR à l'échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d'éviter des transitions entre version qui brouillerait l'écosystème
 
-#### Ne pas créer de guide d'implémentation (IG) se basant sur R5 sans analyse des normes et standards et des impacts
+La version R6 de FHIR se veut être la version finale stable de FHIR. La décision d'une transition vers R6 dépendra du règlement de l'EEDS qui se dessine progressivement et qui pour l'heure semble se diriger vers R4.
+
+Pour anticiper cette transition, il est jugé important d’être proactif sur les travaux internationaux de développement de R6 et d’anticiper les impacts pour l’écosystème français.
+
+#### Ne pas créer de guide d'implémentation (IG) se basant sur une version différente de R4 sans analyse des normes et standards et des impacts
 
 La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes. Créer des IGs R5 engendreraient une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
 
