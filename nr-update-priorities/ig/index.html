@@ -232,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#le-rôle-du-guide-dimplémentation-frcore" id="markdown-toc-le-rôle-du-guide-dimplémentation-frcore">Le rôle du guide d’implémentation FRCore</a></li>
+  <li><a href="#le-rôle-du-guide-dimplémentation-fhir-frcore" id="markdown-toc-le-rôle-du-guide-dimplémentation-fhir-frcore">Le rôle du guide d’implémentation FHIR FRCore</a></li>
   <li><a href="#principes-de-modélisation-et-dutilisation-de-fhir-frcore" id="markdown-toc-principes-de-modélisation-et-dutilisation-de-fhir-frcore">Principes de modélisation et d’utilisation de FHIR FRCore</a></li>
   <li><a href="#champ-dapplication" id="markdown-toc-champ-dapplication">Champ d’application</a></li>
   <li><a href="#choix-de-la-version-du-standard-fhir" id="markdown-toc-choix-de-la-version-du-standard-fhir">Choix de la version du standard FHIR</a></li>
@@ -264,12 +264,12 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 
 <p>Ce guide d’implémentation est fourni pour <strong>soutenir l’utilisation de FHIR® en France</strong>. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant <strong>l’échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins</strong>.</p>
 
-<h3 id="le-rôle-du-guide-dimplémentation-frcore">Le rôle du guide d’implémentation FRCore</h3>
+<h3 id="le-rôle-du-guide-dimplémentation-fhir-frcore">Le rôle du guide d’implémentation FHIR FRCore</h3>
 
-<p>L’objectif du guide d’implémentation FHIR FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l’ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.).
-Pour cela, ce guide va par exemple indiquer comment modéliser un patient FHIR en France (contenant l’identifiant national de santé (INS)), le professionnel de santé (contenant l’identifiant national de professionnel de santé (IDNatPS)), …</p>
+<p>L’objectif du guide d’implémentation FRCore est de garantir une base commune pour permettre une utilisation homogène du standard pour l’ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.).
+Pour cela, ce guide va par exemple indiquer comment modéliser un <a href="./StructureDefinition-fr-core-patient-ins.html">patient FHIR en France</a> (contenant l’identifiant national de santé (INS)), <a href="./StructureDefinition-fr-core-practitioner.html">un professionnel de santé</a> (contenant l’identifiant national de professionnel de santé (IDNatPS)), …</p>
 
-<p>Afin de garantir l’uniformité d’usage de FHIR en France, l’ensemble des guides d’implémentation doit se baser sur FRCore, comme c’est le cas pour les guides d’implémentation de l’Agence du Numérique en Santé (ANS) et d’InteropSanté (IS).</p>
+<p>Afin de garantir l’uniformité d’usage de FHIR en France, l’ensemble des implémentations FHIR et des guides d’implémentation doit se baser sur FRCore, comme c’est le cas pour les guides d’implémentation de l’Agence du Numérique en Santé (ANS) et d’InteropSanté (IS).</p>
 
 <p>Dans les prochaines versions, FRCore sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FRCore vont permettre de valider la conformité des instances FHIR sur les espaces de tests.</p>
 
@@ -295,7 +295,7 @@ Pour cela, ce guide va par exemple indiquer comment modéliser un patient FHIR e
 
 <h3 id="choix-de-la-version-du-standard-fhir">Choix de la version du standard FHIR</h3>
 
-<p>Pour garantir l’interopérabilité à l’échelle nationale, <strong>l’utilisation de FHIR R4 est recommandée pour l’ensemble des projets en France</strong>. Ainsi, ce guide d’implémentation FR Core est <strong>basé sur FHIR R4</strong>.</p>
+<p>Pour garantir l’interopérabilité à l’échelle nationale, <strong>l’utilisation de FHIR R4 est recommandée pour l’ensemble des projets en France</strong>. Ainsi, ce guide d’implémentation FRCore est <strong>basé sur FHIR R4</strong>.</p>
 
 <p>La stratégie sur le choix des versions FHIR a été définie au sein d’un groupe de travail organisé entre Interop’Santé et l’ANS en 2023/2024, validée via une <a href="https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation">concertation</a> de l’ANS.</p>
 
@@ -498,7 +498,7 @@ Pour cela, ce guide va par exemple indiquer comment modéliser un patient FHIR e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 09:56+0000">2025-12-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 10:13+0000">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

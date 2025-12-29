@@ -68,7 +68,7 @@ The type of email
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T09:56:40+00:00",
+  "date" : "2025-12-29T10:13:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
