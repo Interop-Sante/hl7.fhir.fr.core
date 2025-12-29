@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter | *Version*:2.2.0-ballot |
-| Active as of 2025-12-19 | *Computable Name*:FRCoreOrganizationBudgetLetterExtension |
+| Active as of 2025-12-29 | *Computable Name*:FRCoreOrganizationBudgetLetterExtension |
 
 Lettre budgétaire de l’UF An organization budget letter
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationBudgetLetterExtension",
   "title" : "FR Core Organization Budget Letter Extension",
   "status" : "active",
-  "date" : "2025-12-19T17:17:04+00:00",
+  "date" : "2025-12-29T08:10:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

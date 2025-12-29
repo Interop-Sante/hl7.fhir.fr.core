@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type | *Version*:2.2.0-ballot |
-| Active as of 2025-12-19 | *Computable Name*:FRCoreValueSetOrganizationType |
+| Active as of 2025-12-29 | *Computable Name*:FRCoreValueSetOrganizationType |
 
  
 Types de structures. Organization types 
@@ -59,7 +59,7 @@ Types de structures. Organization types
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:17:04+00:00",
+  "date" : "2025-12-29T08:10:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

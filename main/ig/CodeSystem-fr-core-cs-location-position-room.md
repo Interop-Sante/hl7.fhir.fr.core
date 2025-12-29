@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-19 | *Computable Name*:FRCoreCodeSystemLocationPositionRoom |
+| Draft as of 2025-12-29 | *Computable Name*:FRCoreCodeSystemLocationPositionRoom |
 
  
 Location position room 
@@ -37,7 +37,7 @@ Location position room
   "title" : "FR Core CodeSystem Location Position Room",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-19T17:17:04+00:00",
+  "date" : "2025-12-29T08:10:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

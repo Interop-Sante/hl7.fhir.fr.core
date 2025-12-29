@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-19 | *Computable Name*:FRCoreCodeSystemLocationType |
+| Draft as of 2025-12-29 | *Computable Name*:FRCoreCodeSystemLocationType |
 
  
 Location type 
@@ -37,7 +37,7 @@ Location type
   "title" : "FR Core CodeSystem Location Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-19T17:17:04+00:00",
+  "date" : "2025-12-29T08:10:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

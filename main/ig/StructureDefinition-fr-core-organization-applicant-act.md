@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act | *Version*:2.2.0-ballot |
-| Active as of 2025-12-19 | *Computable Name*:FRCoreOrganizationApplicantActExtension |
+| Active as of 2025-12-29 | *Computable Name*:FRCoreOrganizationApplicantActExtension |
 
 UF demandeuse d’actes An organization that asks soma acts
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationApplicantActExtension",
   "title" : "FR Core Organization Applicant Act Extension",
   "status" : "active",
-  "date" : "2025-12-19T17:17:04+00:00",
+  "date" : "2025-12-29T08:10:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

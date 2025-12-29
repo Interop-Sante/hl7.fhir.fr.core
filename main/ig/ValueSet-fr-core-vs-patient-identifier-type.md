@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type | *Version*:2.2.0-ballot |
-| Active as of 2025-12-19 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
+| Active as of 2025-12-29 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). 
@@ -56,7 +56,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:17:04+00:00",
+  "date" : "2025-12-29T08:10:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
