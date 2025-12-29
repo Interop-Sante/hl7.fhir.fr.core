@@ -7,6 +7,7 @@ Profil Fr Core Patient surspécifié pour être conforme aux exigences du réfé
 
 * obeys fr-core-1 
 * obeys fr-core-2
+* obeys fr-core-3
 
 * meta.profile contains 
     fr-ins-canonical 0..1
@@ -96,3 +97,9 @@ Invariant:   fr-core-2
 Description: "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"
 * severity = #error
 * expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1)"
+
+
+Invariant:   fr-core-3
+Description: "If the official INS registration number is entered, then the municipality of birth COG code cannot be 99999 because this code cannot be sent via the INSI online service."
+* severity = #warning
+* expression = "(identifier.where(use = 'official').count() = 1 implies extension(' http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').code != 99999))"
