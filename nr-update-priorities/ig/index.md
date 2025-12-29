@@ -51,7 +51,7 @@ La stratégie sur le choix des versions FHIR a été définie au sein d’un gro
 
 #### Nouveaux cas d’usages FHIR : privilégier FHIR R4 et anticiper la transition vers R6
 
-Pour garantir la cohérence au sein de l’écosystème français, éviter tout problème de compatibilité ainsi que les travaux divergents, il est nécessaire d’utiliser une même version du standard FHIR à l’échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d’éviter des transitions entre version qui brouillerait l’écosystème
+Pour garantir la cohérence au sein de l’écosystème français et éviter tout problème de compatibilité dû à des travaux divergents, il est nécessaire d’utiliser une même version du standard FHIR à l’échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d’éviter des transitions entre version qui complexifierait l’écosystème
 
 La version R6 de FHIR se veut être la version finale stable de FHIR. La décision d’une transition vers R6 dépendra du règlement de l’EEDS qui se dessine progressivement et qui pour l’heure semble se diriger vers R4.
 
@@ -162,7 +162,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2025-12-29T10:22:56+00:00",
+  "date" : "2025-12-29T10:23:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
