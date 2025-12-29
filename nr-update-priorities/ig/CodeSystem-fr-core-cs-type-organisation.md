@@ -28,7 +28,7 @@ Organization type
   "id" : "fr-core-cs-type-organisation",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-organisation",
@@ -37,7 +37,7 @@ Organization type
   "title" : "FR Core CodeSystem Organization Type",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

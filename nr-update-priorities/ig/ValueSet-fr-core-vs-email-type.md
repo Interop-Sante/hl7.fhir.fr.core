@@ -46,7 +46,9 @@ The type of email
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-email-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -68,7 +70,7 @@ The type of email
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

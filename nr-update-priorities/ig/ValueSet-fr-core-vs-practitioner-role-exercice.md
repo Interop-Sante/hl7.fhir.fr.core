@@ -46,7 +46,9 @@ The exercice(s) of the practitioner.
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-practitioner-role-exercice",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice",
   "version" : "2.2.0-ballot",
@@ -54,7 +56,7 @@ The exercice(s) of the practitioner.
   "title" : "FR Core ValueSet PractitionerRole Exercice",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

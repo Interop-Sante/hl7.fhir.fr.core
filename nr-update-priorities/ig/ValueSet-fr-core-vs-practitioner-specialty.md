@@ -51,7 +51,9 @@ The modalities of exercice of the practitioner, registered by an official organi
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-practitioner-specialty",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -73,7 +75,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

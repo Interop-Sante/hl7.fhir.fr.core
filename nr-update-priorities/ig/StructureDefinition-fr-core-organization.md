@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
       },
       {
         "id" : "Organization.extension",
@@ -157,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot"
             ]
           }
         ]
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description|2.2.0-ballot"
             ]
           }
         ]
@@ -215,7 +215,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.identifier.use",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         }
       },
       {
@@ -223,7 +223,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.identifier.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot"
         }
       },
       {
@@ -392,7 +392,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
         }
       },
       {
@@ -415,7 +415,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS|20250828120000"
         }
       },
       {
@@ -438,7 +438,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "max" : "1",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS|20241025120000"
         }
       },
       {
@@ -459,7 +459,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -471,7 +471,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
             ]
           }
         ]
@@ -489,7 +489,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -499,7 +499,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.partOf.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
         }
       },
       {
@@ -509,7 +509,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -521,7 +521,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
             ]
           }
         ]

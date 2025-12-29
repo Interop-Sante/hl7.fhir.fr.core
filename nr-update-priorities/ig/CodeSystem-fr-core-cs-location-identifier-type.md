@@ -28,7 +28,7 @@ Location identifier type
   "id" : "fr-core-cs-location-identifier-type",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type",
@@ -37,7 +37,7 @@ Location identifier type
   "title" : "FR Core CodeSystem Location Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

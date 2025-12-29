@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "kind" : "resource",
   "abstract" : false,
   "type" : "RelatedPerson",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot"
       },
       {
         "id" : "RelatedPerson.identifier",
@@ -141,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
             ]
           }
         ]
@@ -168,7 +168,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
         "max" : "1",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0-ballot"
         }
       },
       {
@@ -186,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
         "max" : "*",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0-ballot"
         }
       },
       {
@@ -202,7 +202,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "HumanName",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot"
             ]
           }
         ]
@@ -214,7 +214,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -226,7 +226,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
             ]
           }
         ]

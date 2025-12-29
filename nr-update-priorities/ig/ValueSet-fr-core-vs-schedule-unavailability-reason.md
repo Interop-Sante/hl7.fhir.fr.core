@@ -46,7 +46,9 @@ Raison d’indisponibilité
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-schedule-unavailability-reason",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -72,7 +74,7 @@ Raison d’indisponibilité
   "title" : "FR Core ValueSet Unavailability Reason",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

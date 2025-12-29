@@ -46,7 +46,9 @@ Secteur d’activité de l’organisation. The activity field of the organizatio
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-organization-activity-field",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -68,7 +70,7 @@ Secteur d’activité de l’organisation. The activity field of the organizatio
   "title" : "FR Core ValueSet Organization activity field",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

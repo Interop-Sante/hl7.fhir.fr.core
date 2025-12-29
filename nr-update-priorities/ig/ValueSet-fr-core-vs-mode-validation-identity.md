@@ -46,7 +46,9 @@ The validation mode of the identity.
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-mode-validation-identity",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity",
   "version" : "2.2.0-ballot",
@@ -54,7 +56,7 @@ The validation mode of the identity.
   "title" : "FR Core ValueSet Mode validation identity",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

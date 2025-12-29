@@ -24,6 +24,10 @@ Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenu
 
 ### Les bonnes pratiques de rédaction des guides d’implémentation
 
+#### Profilage de nouvelles ressources
+
+Des nouvelles ressources peuvent être profilées pour l’écosystème français. Pour cela, il est nécessaire d’expliquer la nécessité de profiler les ressources : pour quelles raisons faut-il rajouter des contraintes propres à l’écosystème français plutôt que d’utiliser les ressources de base proposées par FHIR ?
+
 #### Les Pull Requests
 
 Les Pull Requests (PR) GitHub sont un outil de travail collaboratif, elles permettent de proposer les changements avant de les valider officiellement dans la branche courante. Toute proposition de modification doit passer par une Pull Request, celle-ci doit être validée par au moins une personne avant d’être incluse dans la branche courante

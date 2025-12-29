@@ -47,7 +47,9 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-spo2-body-location",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location",
   "version" : "2.2.0-ballot",
@@ -55,7 +57,7 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

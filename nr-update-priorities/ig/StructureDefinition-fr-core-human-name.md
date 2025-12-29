@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name.c
   "name" : "FRCoreHumanNameProfile",
   "title" : "FR Core Human Name Profile",
   "status" : "active",
-  "date" : "2025-12-29T16:39:07+00:00",
+  "date" : "2025-12-29T16:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name.c
   "kind" : "complex-type",
   "abstract" : false,
   "type" : "HumanName",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/HumanName",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/HumanName|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name.c
         "binding" : {
           "strength" : "extensible",
           "description" : "Civilités des personnes physiques",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS"
+          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS|20230331120000"
         }
       }
     ]
