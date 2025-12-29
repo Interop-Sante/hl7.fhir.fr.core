@@ -26,7 +26,11 @@ parameters:
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
   pin-canonicals: pin-multiples # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
-
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+  apply-contact: true
+  apply-jurisdiction: true
 
 pages:
     index.md:
