@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-vs-patient-identifier-use-ins"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablevalueset?version=4.0.1>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-patient-identifier-use-ins</b></p><a name=\"fr-core-vs-patient-identifier-use-ins\"> </a><a name=\"hcfr-core-vs-patient-identifier-use-ins\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSetversion : null4.0.1)</a></p></div><ul><li>Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans <a href=\"http://hl7.org/fhir/R4/codesystem-identifier-use.html\"><code>http://hl7.org/fhir/identifier-use</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 4.0.1, la version trouvée via les références de package\"> version ?4.0.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-identifier-use.html#identifier-use-official\">official</a></td><td style=\"color: #cccccc\">Official</td><td>The identifier considered to be most trusted for the identification of this item. Sometimes also known as \"primary\" and \"main\". The determination of \"official\" is subjective and implementation guides often provide additional guidelines for use.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-identifier-use.html#identifier-use-old\">old</a></td><td style=\"color: #cccccc\">Old</td><td>The identifier id no longer considered valid, but may be relevant for search purposes.  E.g. Changes to identifier schemes, account merges, etc.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins"^^xsd:anyURI ;
+     fhir:l <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins>
+  ] ; # 
+  fhir:version [ fhir:v "2.2.0-ballot"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetPatientIdentifierUseINS"] ; # 
+  fhir:title [ fhir:v "FR Core ValueSet Patient identifier use INS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-29T08:09:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Use autorisés pour l'identifiant national de santé.\r\nAuthorized use for INS identifier."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/identifier-use"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/identifier-use>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "official" ]
+       ] [
+         fhir:code [ fhir:v "old" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
