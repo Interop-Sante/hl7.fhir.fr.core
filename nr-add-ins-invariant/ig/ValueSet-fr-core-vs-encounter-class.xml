@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fr-core-vs-encounter-class"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs fr-core-vs-encounter-class</b></p><a name="fr-core-vs-encounter-class"> </a><a name="hcfr-core-vs-encounter-class"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSetversion : null4.0.1)</a></p></div><ul><li>Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 9.0.0, la version trouvée via les références de package"> version &#x1F4E6;9.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-ACUTE">ACUTE</a></td><td>Inpatient acute</td><td>An acute inpatient encounter.</td></tr><tr><td><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-NONAC">NONAC</a></td><td>Inpatient non acute</td><td>Any category of inpatient encounter except 'acute'</td></tr><tr><td><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-PRENC">PRENC</a></td><td>Pre-admission</td><td>A patient encounter where patient is scheduled or planned to receive service delivery in the future, and the patient is given a pre-admission account number. When the patient comes back for subsequent service, the pre-admission encounter is selected and is encapsulated into the service registration, and a new account number is generated.<br/><br/>*Usage Note:* This is intended to be used in advance of encounter types such as ambulatory, inpatient encounter, virtual, etc.</td></tr><tr><td><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-SS">SS</a></td><td>Short stay</td><td>An encounter where the patient is admitted to a health care facility for a predetermined length of time, usually less than 24 hours.</td></tr><tr><td><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-VR">VR</a></td><td>Virtual</td><td>A patient encounter where the patient and the practitioner(s) are not in the same physical location. Examples include telephone conference, email exchange, robotic surgery, and televideo conference.</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa"/>
+  </extension>
+  <url value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class"/>
+  <version value="2.2.0-ballot"/>
+  <name value="FRCoreValueSetEncounterClass"/>
+  <title value="FR Core ValueSet Encounter class"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-29T13:55:09+00:00"/>
+  <publisher value="Interop'Santé"/>
+  <contact>
+    <name value="Interop'Santé"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://interopsante.org/"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="InteropSanté"/>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@interopsante.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes that can be used to indicate the class of the encounter."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <concept>
+        <code value="ACUTE"/>
+        <display value="Inpatient acute"/>
+      </concept>
+      <concept>
+        <code value="NONAC"/>
+        <display value="Inpatient non acute"/>
+      </concept>
+      <concept>
+        <code value="PRENC"/>
+        <display value="Pre-admission"/>
+      </concept>
+      <concept>
+        <code value="SS"/>
+        <display value="Short stay"/>
+      </concept>
+      <concept>
+        <code value="VR"/>
+        <display value="Virtual"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

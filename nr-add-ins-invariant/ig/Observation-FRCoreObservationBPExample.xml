@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FRCoreObservationBPExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Observation FRCoreObservationBPExample</b></p><a name="FRCoreObservationBPExample"> </a><a name="hcFRCoreObservationBPExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-observation-bp.html">FR Core Observation Blood Pressure Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes :{http://loinc.org 85354-9}">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href="Patient-FRCorePatientExample.html">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2012-09-17</p><p><b>performer</b>: <a href="Practitioner-FRCorePractitionerExample.html">Practitioner Leclerc Sophie</a></p><p><b>interpretation</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}">Below low normal</span></p><p><b>bodySite</b>: <span title="Codes :{http://snomed.info/sct 17137000}">artère humérale</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes :{http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 107 mm[Hg]<span style="background: LightGoldenRodYellow"> (Détails : code UCUMmm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes :{http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 60 mm[Hg]<span style="background: LightGoldenRodYellow"> (Détails : code UCUMmm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}">En dessous de la normale</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85354-9"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FRCorePatientExample"/>
+    <type value="Patient"/>
+  </subject>
+  <effectiveDateTime value="2012-09-17"/>
+  <performer>
+    <reference value="Practitioner/FRCorePractitionerExample"/>
+  </performer>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="L"/>
+      <display value="low"/>
+    </coding>
+    <text value="Below low normal"/>
+  </interpretation>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="17137000"/>
+      <display value="artère humérale"/>
+    </coding>
+  </bodySite>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="107"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+      <text value="Normal"/>
+    </interpretation>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="60"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="L"/>
+        <display value="low"/>
+      </coding>
+      <text value="En dessous de la normale"/>
+    </interpretation>
+  </component>
+</Observation>
