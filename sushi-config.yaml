@@ -26,7 +26,7 @@ parameters:
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
   i18n-default-lang: fr-FR # Default language
-  pin-canonicals: pin-multiples # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
+  pin-canonicals: pin-all # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
   path-pages:
     - input/pagecontent
     - input/intro-notes
@@ -38,7 +38,7 @@ parameters:
     - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
     - init #init: Messages describing the start up process (for debugging)
     - progress #progress: Overall progress messages
-    
+   
 pages:
     index.md:
       title: Accueil
