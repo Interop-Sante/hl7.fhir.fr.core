@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/hopitaltest-endocrino-ch04-litF> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hopitaltest-endocrino-ch04-litF"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Localisation hopitaltest-endocrino-ch04-litF</b></p><a name=\"hopitaltest-endocrino-ch04-litF\"> </a><a name=\"hchopitaltest-endocrino-ch04-litF\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-location.html\">FR Core Location Profile</a></p></div><p><b>fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit</b>: <a href=\"CodeSystem-fr-core-cs-location-position-lit.html#fr-core-cs-location-position-lit-FNTR\">FR Core CodeSystem Position du lit: FNTR</a> (Fenêtre)</p><p><b>status</b>: Active</p><p><b>name</b>: Lit Fenetre - chambre 04</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type LIT}\">Lit</span></p><p><b>telecom</b>: ph: 84921</p><p><b>partOf</b>: <a href=\"Organization/hopitaltest-endocrino-ch04\">Organization/hopitaltest-endocrino-ch04</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit"^^xsd:anyURI ;
+       fhir:l <http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit>
+     ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit>
+       ] ;
+       fhir:code [ fhir:v "FNTR" ] ;
+       fhir:display [ fhir:v "Fenêtre" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Lit Fenetre - chambre 04"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type>
+       ] ;
+       fhir:code [ fhir:v "LIT" ] ;
+       fhir:display [ fhir:v "Lit" ]
+     ] ) ;
+     fhir:text [ fhir:v "Lit" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "84921" ]
+  ] ) ; # 
+  fhir:partOf [
+     fhir:l <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-endocrino-ch04> ;
+     fhir:reference [ fhir:v "Organization/hopitaltest-endocrino-ch04" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
