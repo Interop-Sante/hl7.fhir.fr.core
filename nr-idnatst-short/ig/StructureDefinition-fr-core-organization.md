@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-01-08T13:12:39+00:00",
+  "date" : "2026-01-08T13:27:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -230,7 +230,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "id" : "Organization.identifier:idNatSt",
         "path" : "Organization.identifier",
         "sliceName" : "idNatSt",
-        "short" : "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures. L'idNatSt ne doit pas être construit, pour trouver l'identifiant d'une structure, il suffit de faire une requête via l'API Annuaire Santé. Il s'agit de l'identifiant national à privilégier.",
+        "short" : "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures. L'idNatSt ne doit pas être construit, pour trouver l'identifiant d'une structure, il suffit de faire une requête via l'API Annuaire Santé. Il s'agit de l'identifiant de structures à privilégier.",
         "min" : 0,
         "max" : "1"
       },

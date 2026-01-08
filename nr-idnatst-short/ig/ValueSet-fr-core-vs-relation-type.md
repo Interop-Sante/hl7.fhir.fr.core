@@ -63,7 +63,7 @@ ValueSet relation type
   "title" : "FR Core ValueSet relation type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-08T13:12:39+00:00",
+  "date" : "2026-01-08T13:27:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
