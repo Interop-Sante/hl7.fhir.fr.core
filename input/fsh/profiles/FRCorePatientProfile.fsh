@@ -17,7 +17,7 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * extension ^slicing.rules = #open
 
 * extension contains
-    fr-core-patient-nationality named nationality 0..1 and
+    fr-core-patient-nationality named nationality 0..* and
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
