@@ -1,0 +1,81 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "FRCorePractitionerExample",
+  "meta" : {
+    "lastUpdated" : "2025-04-28T18:19:26.335+02:00",
+    "source" : "https://annuaire.sante.fr",
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"]
+  },
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : Praticien FRCorePractitionerExample</b></p><a name=\"FRCorePractitionerExample\"> </a><a name=\"hcFRCorePractitionerExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Dernière mise à jour : 2025-04-28 18:19:26+0200; Langue : fr; </p><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://annuaire.sante.fr\">https://annuaire.sante.fr</a></p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-practitioner.html\">FR Core Practitioner Profile</a></p></div><p><b>identifier</b>: Identifiant National de Professionnel de Santé/810101201234\u00a0(utilisation :\u00a0official,\u00a0), N° RPPS/10101201234\u00a0(utilisation :\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>name</b>: Leclerc Sophie</p><p><b>telecom</b>: <a href=\"mailto:sophie.leclerc@mssante.fr\">sophie.leclerc@mssante.fr</a></p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome DE}, {https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais DE11}\">Diplôme Etat français</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R09-CategorieProfessionnelle/FHIR/TRE-R09-CategorieProfessionnelle C}, {https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 70}\">Civil</span></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "IDNPS"
+      }]
+    },
+    "system" : "urn:oid:1.2.250.1.71.4.2.1",
+    "value" : "810101201234"
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "RPPS"
+      }]
+    },
+    "system" : "https://rpps.esante.gouv.fr",
+    "value" : "10101201234"
+  }],
+  "active" : true,
+  "name" : [{
+    "text" : "Leclerc Sophie",
+    "family" : "Leclerc",
+    "given" : ["Sophie"],
+    "prefix" : ["MME"],
+    "suffix" : ["DR"]
+  }],
+  "telecom" : [{
+    "extension" : [{
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type",
+      "valueCoding" : {
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie",
+        "code" : "MSSANTE",
+        "display" : "MSSANTE"
+      }
+    }],
+    "system" : "email",
+    "value" : "sophie.leclerc@mssante.fr",
+    "use" : "work"
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome",
+        "code" : "DE"
+      },
+      {
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais",
+        "code" : "DE11"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R09-CategorieProfessionnelle/FHIR/TRE-R09-CategorieProfessionnelle",
+        "code" : "C"
+      },
+      {
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+        "code" : "70"
+      }]
+    }
+  }]
+}
