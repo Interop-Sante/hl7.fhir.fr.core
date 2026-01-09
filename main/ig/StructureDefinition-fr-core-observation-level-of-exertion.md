@@ -1,4 +1,4 @@
-# FR Core Observation Level Of Exertion Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Observation Level Of Exertion Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreObservationLevelOfExertionExtension |
+| Active as of 2026-01-09 | *Computable Name*:FRCoreObservationLevelOfExertionExtension |
 
 Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort). French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationLevelOfExertionExtension",
   "title" : "FR Core Observation Level Of Exertion Extension",
   "status" : "active",
-  "date" : "2025-12-29T08:10:54+00:00",
+  "date" : "2026-01-09T10:08:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

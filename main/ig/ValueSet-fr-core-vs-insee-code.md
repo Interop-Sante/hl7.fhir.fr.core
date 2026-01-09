@@ -1,4 +1,4 @@
-# FR Core ValueSet INSEE code - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet INSEE code - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreValueSetINSEECode |
+| Active as of 2026-01-09 | *Computable Name*:FRCoreValueSetINSEECode |
 
  
 the French Address Insee Codes 
@@ -56,7 +56,7 @@ the French Address Insee Codes
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T08:10:54+00:00",
+  "date" : "2026-01-09T10:08:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

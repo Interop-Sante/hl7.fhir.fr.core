@@ -1,4 +1,4 @@
-# FR Core CodeSystem Marital Status - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core CodeSystem Marital Status - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-29 | *Computable Name*:FRCoreCodeSystemMaritalStatus |
+| Draft as of 2026-01-09 | *Computable Name*:FRCoreCodeSystemMaritalStatus |
 
  
 Marital status 
@@ -37,7 +37,7 @@ Marital status
   "title" : "FR Core CodeSystem Marital Status",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T08:10:54+00:00",
+  "date" : "2026-01-09T10:08:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# FR Core Patient Death Place Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Patient Death Place Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCorePatientDeathPlaceExtension |
+| Active as of 2026-01-09 | *Computable Name*:FRCorePatientDeathPlaceExtension |
 
 Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2025-12-29T08:10:54+00:00",
+  "date" : "2026-01-09T10:08:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

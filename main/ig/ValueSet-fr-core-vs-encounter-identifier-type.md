@@ -1,4 +1,4 @@
-# FR Core ValueSet Encounter identifier type - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Encounter identifier type - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -74,7 +74,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Encounter identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T08:10:54+00:00",
+  "date" : "2026-01-09T10:08:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

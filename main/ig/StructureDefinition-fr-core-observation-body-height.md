@@ -1,4 +1,4 @@
-# FR Core Observation Body Height Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Observation Body Height Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreObservationBodyHeightProfile |
+| Active as of 2026-01-09 | *Computable Name*:FRCoreObservationBodyHeightProfile |
 
  
 French profile for body height. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyHeightProfile",
   "title" : "FR Core Observation Body Height Profile",
   "status" : "active",
-  "date" : "2025-12-29T08:10:54+00:00",
+  "date" : "2026-01-09T10:08:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
