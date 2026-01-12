@@ -87,7 +87,6 @@ Profil FR Core Patient surspécifié pour être conforme aux exigences du réfé
 
 * name[officialName].extension[birth-list-given-name] 1..1 MS
 
-
 Invariant:   fr-core-1
 Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
@@ -100,6 +99,6 @@ Description: "If identityReliability status = 'VALI', then only one identifier 
 
 
 Invariant:   fr-core-3
-Description: "If the official INS registration number is entered, then the municipality of birth COG code cannot be 99999 because this code cannot be sent via the INSI online service."
+Description: "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service."
 * severity = #warning
-* expression = "(identifier.where(use = 'official').count() = 1 implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')"
