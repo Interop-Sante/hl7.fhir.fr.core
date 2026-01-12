@@ -1,9 +1,9 @@
 FRCore : Validation Results
 =========================================
 
-err = 21, warn = 64, info = 3801
+err = 22, warn = 64, info = 3801
 IG Publisher Version: 2.0.29
-Generated Mon Jan 12 10:01:04 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
+Generated Mon Jan 12 10:03:31 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 4 / 2 / 0
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 0 / 1 / 2
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 0 / 3
@@ -36,7 +36,7 @@ Generated Mon Jan 12 10:01:04 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeadCircumExample : 0 / 0 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeartRateExample : 0 / 0 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-FRCoreOrganizationExample : 0 / 2 / 4
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Patient-FRCorePatientExample : 0 / 2 / 5
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Patient-FRCorePatientExample : 1 / 2 / 5
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Practitioner-FRCorePractitionerExample : 0 / 2 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/PractitionerRole-FRCorePractitionerRoleExample : 0 / 1 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Schedule-FRCoreScheduleExample : 0 / 1 / 3
@@ -257,6 +257,7 @@ INFORMATION: Patient/FRCorePatientExample: Patient.extension[0].value.ofType(Add
 INFORMATION: Patient/FRCorePatientExample: Patient.extension[1].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.2.0-ballot
 WARNING: Patient/FRCorePatientExample: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
 INFORMATION: Patient/FRCorePatientExample: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/FRCorePatientExample: Patient: Problem processing expression '(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')' in profile 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot' at path 'Patient': Error @1, 345: Premature ExpressionNode termination at unexpected token ")"
 == fsh-generated/resources/Practitioner-FRCorePractitionerExample.json ==
 INFORMATION: Practitioner/FRCorePractitionerExample: Practitioner.meta.source: No definition could be found for URL value 'https://annuaire.sante.fr'
 INFORMATION: Practitioner/FRCorePractitionerExample: Practitioner.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)

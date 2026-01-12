@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRCorePatientINSProfile"] ; # 
   fhir:title [ fhir:v "FR Core Patient INS Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-01-12T09:57:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-12T09:59:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -210,8 +210,8 @@
        ] [
          fhir:key [ fhir:v "fr-core-3" ] ;
          fhir:severity [ fhir:v "warning" ] ;
-         fhir:human [ fhir:v "If the official INS registration number is entered, then the municipality of birth COG code cannot be 99999 because this code cannot be sent via the INSI online service." ] ;
-         fhir:expression [ fhir:v "(identifier.where(use = 'official').count() = 1 implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')" ] ;
+         fhir:human [ fhir:v "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service." ] ;
+         fhir:expression [ fhir:v "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')" ] ;
          fhir:source [
            fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot"^^xsd:anyURI ;
            fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins?version=2.2.0-ballot>
@@ -10457,8 +10457,8 @@
        ] [
          fhir:key [ fhir:v "fr-core-3" ] ;
          fhir:severity [ fhir:v "warning" ] ;
-         fhir:human [ fhir:v "If the official INS registration number is entered, then the municipality of birth COG code cannot be 99999 because this code cannot be sent via the INSI online service." ] ;
-         fhir:expression [ fhir:v "(identifier.where(use = 'official').count() = 1 implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')" ] ;
+         fhir:human [ fhir:v "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service." ] ;
+         fhir:expression [ fhir:v "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')" ] ;
          fhir:source [
            fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot"^^xsd:anyURI ;
            fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins?version=2.2.0-ballot>

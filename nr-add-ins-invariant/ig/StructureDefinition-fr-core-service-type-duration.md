@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-type
   "name" : "FRCoreServiceTypeDurationExtension",
   "title" : "FR Core Service Type Duration Extension",
   "status" : "active",
-  "date" : "2026-01-12T09:57:25+00:00",
+  "date" : "2026-01-12T09:59:06+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
