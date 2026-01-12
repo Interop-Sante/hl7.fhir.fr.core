@@ -1,4 +1,4 @@
-# Oxygen Saturation Body Location value set - Guide d'implémentation Fr Core v2.2.0-ballot
+# Oxygen Saturation Body Location value set - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
 
  
 Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed. 
@@ -57,7 +57,7 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T14:07:05+00:00",
+  "date" : "2026-01-12T09:11:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

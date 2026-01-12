@@ -1,4 +1,4 @@
-# FR Core Observation Height Body Position Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Observation Height Body Position Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreObservationHeightBodyPositionExtension |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreObservationHeightBodyPositionExtension |
 
 Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing). Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeightBodyPositionExtension",
   "title" : "FR Core Observation Height Body Position Extension",
   "status" : "active",
-  "date" : "2025-12-29T14:07:05+00:00",
+  "date" : "2026-01-12T09:11:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

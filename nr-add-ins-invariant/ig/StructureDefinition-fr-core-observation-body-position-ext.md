@@ -1,4 +1,4 @@
-# FR Core Observation Body Position Ext Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Observation Body Position Ext Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreObservationBodyPositionExtExtension |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreObservationBodyPositionExtExtension |
 
 Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire. CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyPositionExtExtension",
   "title" : "FR Core Observation Body Position Ext Extension",
   "status" : "active",
-  "date" : "2025-12-29T14:07:05+00:00",
+  "date" : "2026-01-12T09:11:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

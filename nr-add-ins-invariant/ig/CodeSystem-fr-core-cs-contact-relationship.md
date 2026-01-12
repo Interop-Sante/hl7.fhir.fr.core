@@ -1,4 +1,4 @@
-# FR Core CodeSystem Contact Relationship - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core CodeSystem Contact Relationship - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship | *Version*:2.2.0-ballot |
-| Draft as of 2025-12-29 | *Computable Name*:FRCoreCodeSystemContactRelationship |
+| Draft as of 2026-01-12 | *Computable Name*:FRCoreCodeSystemContactRelationship |
 
  
 Relationship type 
@@ -37,7 +37,7 @@ Relationship type
   "title" : "FR Core CodeSystem Contact Relationship",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T14:07:05+00:00",
+  "date" : "2026-01-12T09:11:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

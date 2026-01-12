@@ -1,4 +1,4 @@
-# Historique des changements - Guide d'implémentation Fr Core v2.2.0-ballot
+# Historique des changements - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**

@@ -1,4 +1,4 @@
-# FR Core ValueSet relation type - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet relation type - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreValueSetPatientRelationType |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreValueSetPatientRelationType |
 
  
 ValueSet relation type 
@@ -63,7 +63,7 @@ ValueSet relation type
   "title" : "FR Core ValueSet relation type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T14:07:05+00:00",
+  "date" : "2026-01-12T09:11:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

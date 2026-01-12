@@ -1,4 +1,4 @@
-# FR Core ValueSet Mode validation identity INS - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Mode validation identity INS - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins | *Version*:2.2.0-ballot |
-| Active as of 2025-12-29 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
 
  
 The validation mode of the identity authorized for INS 
@@ -56,7 +56,7 @@ The validation mode of the identity authorized for INS
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T14:07:05+00:00",
+  "date" : "2026-01-12T09:11:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
