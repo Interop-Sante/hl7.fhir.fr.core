@@ -75,7 +75,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-08T13:26:00+00:00",
+  "date" : "2026-01-12T08:44:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

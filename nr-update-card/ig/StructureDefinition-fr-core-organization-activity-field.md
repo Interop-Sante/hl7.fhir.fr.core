@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field | *Version*:2.2.0-ballot |
-| Active as of 2026-01-08 | *Computable Name*:FRCoreOrganizationActivityFieldExtension |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreOrganizationActivityFieldExtension |
 
 Champ d’activité d’une UF. Activity field of an organization
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationActivityFieldExtension",
   "title" : "FR Core Organization Activity Field Extension",
   "status" : "active",
-  "date" : "2026-01-08T13:26:00+00:00",
+  "date" : "2026-01-12T08:44:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
