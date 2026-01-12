@@ -37,7 +37,7 @@ HL7 v2 - Table 0445
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-12T09:10:53+00:00",
+  "date" : "2026-01-12T09:16:56+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

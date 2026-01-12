@@ -33,6 +33,7 @@
 * Refacto - uniformisation des namings et correction QA [#232](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/232)
 * Suppression MLLE dans les civilités [#237](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/237)
 * Mise à jour identifiants INS Patient [#238](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/238)
+* Mise à jour du texte de l’identifiant de l’IDNatStruct de la ressource FRCoreOrganization [#264](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/264)
 * MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
 * Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
 * Retrait du genre “other” sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)

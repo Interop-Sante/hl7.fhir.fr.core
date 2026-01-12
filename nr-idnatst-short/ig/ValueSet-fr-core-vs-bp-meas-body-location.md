@@ -56,7 +56,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
   "title" : "Blood Pressure Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T09:10:53+00:00",
+  "date" : "2026-01-12T09:16:56+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
