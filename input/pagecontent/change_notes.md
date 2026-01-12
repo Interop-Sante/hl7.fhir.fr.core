@@ -2,6 +2,39 @@
 
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
+* Patient.extension[nationality] : passage de la cardinalité 0..1 à 0..* (un patient peut avoir plusieurs nationalités) [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
+* Patient.extension[deathPlace] Passage du datatype string à Address pour être uniforme avec birthPlace. Le mode string est toujours possible avec l'attribut Address.line [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
+
+Dans la version 2.1.0, le lieu de naissance était indiqué dans une extension de type `string`.
+
+```json
+{
+  "resourceType" : "Patient",
+  "extension" : [
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "valueString" : "27 rue des Tilleuls, 34070 Montpellier"
+    }
+  ]
+}
+```
+
+A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extension de type `address`. Indiquer une adresse sous forme de chaîne de caractères reste possible grâce à l'attribut Address.line.
+
+```json
+{
+  "resourceType" : "Patient",
+  "extension" : [
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "valueAddress" : {
+        "line" : "27 rue des Tilleuls, 34070 Montpellier"
+      }
+    }
+  ]
+}
+```
+
 * Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209)
 * Mise à jour FrCorePatientINSProfile.fsh (correction d'erreurs) [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163) [#197](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/197)
 * Suppression du numéro ADELI suite au décommissionnement national [#189](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/189)
