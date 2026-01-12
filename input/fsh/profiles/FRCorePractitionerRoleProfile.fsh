@@ -23,7 +23,7 @@ Spécification du profil de la ressource PractitionerRole pour un usage en Franc
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier.system value"
 
-* identifier contains numeroAm 0..*
+* identifier contains numeroAm 0..1
 
 * identifier[numeroAm] ^short = "Identifiant d’activité propre à l’Assurance Maladie. format: 9 digits. synonyme: numeroAM"
 * identifier[numeroAm].system = "https://www.ameli.fr"
