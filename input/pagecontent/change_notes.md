@@ -62,7 +62,7 @@ A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extensi
 * MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
 * Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
 * Retrait du genre "other" sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
-* Lise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
+* Mise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
