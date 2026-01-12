@@ -59,7 +59,7 @@ Types de structures. Organization types
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T09:11:14+00:00",
+  "date" : "2026-01-12T09:57:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

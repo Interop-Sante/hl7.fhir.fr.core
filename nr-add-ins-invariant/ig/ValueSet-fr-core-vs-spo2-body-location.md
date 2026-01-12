@@ -25,6 +25,8 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
 
 ### Expansion
 
+No Expansion for this valueset (not supported by Publication Tooling)
+
 -------
 
  Explanation of the columns that may appear on this page: 
@@ -57,7 +59,7 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T09:11:14+00:00",
+  "date" : "2026-01-12T09:57:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

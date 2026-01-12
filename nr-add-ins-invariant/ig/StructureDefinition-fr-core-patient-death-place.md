@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2026-01-12T09:11:14+00:00",
+  "date" : "2026-01-12T09:57:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -126,9 +126,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
       {
         "id" : "Extension.value[x]",
         "path" : "Extension.value[x]",
+        "short" : "Lieu de décès du patient | Place where the patient is dead",
         "type" : [
           {
-            "code" : "string"
+            "code" : "Address",
+            "profile" : [
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
+            ]
           }
         ]
       }

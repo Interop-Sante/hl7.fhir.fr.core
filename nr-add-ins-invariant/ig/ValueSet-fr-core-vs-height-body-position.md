@@ -24,6 +24,8 @@ ValueSet Body Position
 
 ### Expansion
 
+No Expansion for this valueset (not supported by Publication Tooling)
+
 -------
 
  Explanation of the columns that may appear on this page: 
@@ -56,7 +58,7 @@ ValueSet Body Position
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T09:11:14+00:00",
+  "date" : "2026-01-12T09:57:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
