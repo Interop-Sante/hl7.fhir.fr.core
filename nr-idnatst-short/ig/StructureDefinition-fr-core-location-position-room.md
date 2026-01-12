@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room | *Version*:2.2.0-ballot |
-| Active as of 2026-01-08 | *Computable Name*:FRCoreLocationPartOfPositionRoomExtension |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreLocationPartOfPositionRoomExtension |
 
 Position du lit dans la chambre. Position of the bed in the bedroom
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "name" : "FRCoreLocationPartOfPositionRoomExtension",
   "title" : "FR Core Location Part Of Position Room Extension",
   "status" : "active",
-  "date" : "2026-01-08T13:27:28+00:00",
+  "date" : "2026-01-12T09:10:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

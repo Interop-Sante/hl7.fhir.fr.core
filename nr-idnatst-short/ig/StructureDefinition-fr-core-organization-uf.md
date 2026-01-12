@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf | *Version*:2.2.0-ballot |
-| Active as of 2026-01-08 | *Computable Name*:FRCoreOrganizationUFProfile |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreOrganizationUFProfile |
 
  
 This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFProfile",
   "title" : "FR Core Organization UF Profile",
   "status" : "active",
-  "date" : "2026-01-08T13:27:28+00:00",
+  "date" : "2026-01-12T09:10:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
