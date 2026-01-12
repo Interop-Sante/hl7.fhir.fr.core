@@ -1,4 +1,4 @@
-# Accueil - Guide d'implémentation Fr Core v2.2.0-ballot
+# Accueil - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -8,21 +8,30 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot |
-| Active as of 2026-01-12 | *Computable Name*:FrCore |
+| Active as of 2026-01-12 | *Computable Name*:FRCore |
 
- **Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.**
- Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
+ **Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données de santé : données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.**
+ Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of health data : administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
 
-> **Attention !**Cette version du guide d'implémentation est en concertation pour validation. La version officielle est accessible à l'adresse http://hl7.fr/ig/fhir/core</b>
+> **Attention !**Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse http://hl7.fr/ig/fhir/core</b>
 
-Ce guide de mise en œuvre est fourni pour **soutenir l’utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l’échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux**.
+Ce guide d’implémentation est fourni comme **fondation pour l’utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l’échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
 
-Les profils FHIR de ce guide d’implémentation sont volontairement très peu contraignants et ne répondent pas à des cas d’usages spécifiques, l’objectif de ce guide d’implémentation est de proposer un socle commun pour l’ensemble des échanges de données utilisant le standard FHIR en France. Par exemple, ce guide indique comment modéliser un patient FHIR en France (contenant l’identifiant national de santé (INS)), le professionnel de santé (contenant l’identifiant national de professionnel de santé (IDNatPS)), …
+### Le rôle du guide d’implémentation FHIR FR Core
 
-Ainsi, on y retrouve :
+L’objectif du guide d’implémentation FR Core est de garantir une base commune pour permettre une utilisation homogène du standard pour l’ensemble des implémentations FHIR en France (version de FHIR, extensions, identifiants, etc.). Pour cela, ce guide va par exemple indiquer comment modéliser un [patient FHIR en France](./StructureDefinition-fr-core-patient-ins.md) (contenant l’identifiant national de santé (INS)), [un professionnel de santé](./StructureDefinition-fr-core-practitioner.md) (contenant l’identifiant national de professionnel de santé (IDNatPS)), …
 
-* Les ressources essentielles profilées pour la France
-* Les extensions nécessaires à l’utilisation locale en France.
+Afin de garantir l’uniformité d’usage de FHIR en France, l’ensemble des implémentations FHIR et des guides d’implémentation doit se baser sur FR Core, comme c’est le cas pour les guides d’implémentation de l’Agence du Numérique en Santé (ANS) et d’InteropSanté (IS).
+
+Dans les prochaines versions, FR Core sera également garant de la compatibilité européenne en héritant directement des profils HL7 Base Europe. Ces profils FR Core vont permettre de valider la conformité des instances FHIR sur les espaces de tests.
+
+### Principes de modélisation et d’utilisation de FHIR FR Core
+
+Les profils FHIR de ce guide d’implémentation sont volontairement peu contraignants afin de couvrir le plus grand nombre de cas d’usage et ainsi faciliter son adoption. Par conséquent, ce guide ne traite pas de cas d’usage spécifiques : il est donc recommandé de vérifier dans l’écosystème des guides d’implémentation si des guides plus spécialisés correspondant à votre cas d’usage existent.
+
+Le guide d’implémentation FR Core, et FHIR de manière générale, offrent un large éventail de ressources, d’attributs et de paramètres de recherche. Toutefois, FHIR et FR Core n’imposent pas l’implémentation complète de toutes ces fonctionnalités. Il convient donc pour chaque cas d’usage d’identifier précisément les ressources, profils et les fonctionnalités d’API nécessaires.
+
+Par exemple, l’API FHIR Annuaire Santé, une API ouverte basée sur FR Core, illustre une mise en œuvre concrète de ce guide. Sa [documentation](https://ansforge.github.io/annuaire-sante-fhir-documentation/) et son [guide d’implémentation](https://interop.esante.gouv.fr/ig/fhir/annuaire/) peuvent servir de référence.
 
 ### Champ d’application
 
@@ -36,17 +45,19 @@ Les activités de profilage donnent la priorité aux ressources ayant un niveau 
 
 ### Choix de la version du standard FHIR
 
-Le Guide d’implémentation FR Core est **basé sur la version Release 4 de HL7 FHIR** et définit l’ensemble minimum de contraintes sur les ressources FHIR pour créer les profils FR Core. Elles font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP. Les syntaxes retenues sont la syntaxe XML et JSON.
-
-En établissant la “base” des normes pour promouvoir l’interopérabilité et l’adoption par le biais d’une mise en œuvre commune, il permet une évolution ultérieure de l’élaboration des normes pour des cas d’utilisation spécifiques.
+Pour garantir l’interopérabilité à l’échelle nationale, **l’utilisation de FHIR R4 est recommandée pour l’ensemble des projets en France**. Ainsi, ce guide d’implémentation FR Core est **basé sur FHIR R4**.
 
 La stratégie sur le choix des versions FHIR a été définie au sein d’un groupe de travail organisé entre Interop’Santé et l’ANS en 2023/2024, validée via une [concertation](https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation) de l’ANS.
 
-#### Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6
+#### Nouveaux cas d’usages FHIR : privilégier FHIR R4 et anticiper la transition vers R6
 
-Pour garantir la cohérence au sein de l’écosystème français, éviter tout problème de compatibilité ainsi que les travaux divergents, il est nécessaire d’utiliser une même version du standard FHIR à l’échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d’éviter une double transition R4 vers R5 et R5 vers R6 qui aurait un coût non négligeable. Ce choix est conforté car la release 6 se veut être la version finale stable de FHIR, une transition vers R6 se voudra de toute manière nécessaire. Pour anticiper cette transition, il est jugé important d’être proactif sur les travaux internationaux de développement de R6 et d’anticiper les impacts pour l’écosystème français. Il est également à noter que le choix national de la version FHIR utilisée devra être en accord avec le règlement de l’EEDS qui se dessine progressivement et qui pour l’heure semble se diriger vers R4.
+Pour garantir la cohérence au sein de l’écosystème français et éviter tout problème de compatibilité dû à des travaux divergents, il est nécessaire d’utiliser une même version du standard FHIR à l’échelle nationale. Le choix a été fait de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d’éviter des transitions entre version qui complexifierait l’écosystème
 
-#### Ne pas créer de guide d’implémentation (IG) se basant sur R5 sans analyse des normes et standards et des impacts
+La version R6 de FHIR se veut être la version finale stable de FHIR. La décision d’une transition vers R6 dépendra du règlement de l’EEDS qui se dessine progressivement et qui pour l’heure semble se diriger vers R4.
+
+Pour anticiper cette transition, il est jugé important d’être proactif sur les travaux internationaux de développement de R6 et d’anticiper les impacts pour l’écosystème français.
+
+#### Ne pas créer de guide d’implémentation (IG) se basant sur une version différente de R4 sans analyse des normes et standards et des impacts
 
 La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes. Créer des IGs R5 engendreraient une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
 
@@ -54,18 +65,19 @@ Généralement, rajouter quelques [extensions qui miment les attributs R5](https
 
 Dans certains cas non identifiés à ce jour, il pourrait également être nécessaire de maintenir des guides d’implémentation sous plusieurs versions. Après validation par l’écosystème de ce besoin, cela donnerait l’opportunité d’estimer des travaux de maintenance d’Implementation Guide (IG) sous plusieurs versions ainsi qu’un mapping associé pour gagner en expérience.
 
-#### Priorité FHIR France en 2025+ - améliorer la qualité de l’existant
+#### Priorité FHIR France en 2026+ - accompagner la croissance des usages de FHIR
 
-De nombreux travaux ont été menés en 2023 pour mettre en qualité les spécifications FHIR et encourager leur déploiement, tel que le passage au format IG et la mise à jour des tests et validateurs gazelle.
+Entre 2023 et 2025 des travaux structurants de mise en qualité des spécifications FHIR sous forme de guide d’implémentation ont eu lieu.
 
-Les priorités des prochaines années sont de continuer dans cette direction :
+En 2026, FHIR change d’échelle avec l’arrivée de l’espace européen des données de santé (EEDS), les travaux d’HL7 Europe, et les groupes de travail français qui portent les standards historiques en FHIR (PN-13, PAM, …).
+
+Cette multiplication des usages de FHIR ne vient pas sans risques : il faut s’assurer de la cohérence globale de l’écosystème FHIR national.
+
+En parallèle, ces tâches de fond restent valables :
 
 * La montée en compétences et l’acculturation des développeurs et des chefs de projets aux bonnes pratiques d’usages de FHIR, notamment en organisant des évènements par l'ANS et InteropSanté : projectathon, webinaires, formations, ...
-* S’assurer de la faisabilité d’implémentation des IGs existants (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, s'assurer que les IGs soient bien connus …).
-* Prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée vers une autre version de FHIR.
-* Anticiper les prochaines évolutions internationales : passage au FHIR Document dans le cadre du règlement européen, anticiper la transition vers FHIR R6, ...
-
-Il est également nécessaire de rester à l’écoute des tendances internationales en interopérabilité et de se garder la possibilité de réitérer l’analyse si le besoin ou le contexte international évolue, en particulier l’EEDS.
+* Amélioration continue des guides d’implémentation existants pour assurer la faisabilité d'implémentation (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, s'assurer que les IGs soient bien connus …).
+* Prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée entre standards.
 
 ### Gouvernance
 
@@ -83,7 +95,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [FRCoreAddressInseeCodeExtension](StructureDefinition-fr-core-address-insee-code.md), [FRCoreAddressProfile](StructureDefinition-fr-core-address.md)...Show 124 more,[FRCoreAppointmentOperatorExtension](StructureDefinition-fr-core-appointment-operator.md),[FRCoreAppointmentProfile](StructureDefinition-fr-core-appointment.md),[FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md),[FRCoreCodeSystemCirconstancesSortie](CodeSystem-fr-core-cs-circonstances-sortie.md),[FRCoreCodeSystemContactRelationship](CodeSystem-fr-core-cs-contact-relationship.md),[FRCoreCodeSystemIdentifierType](CodeSystem-fr-core-cs-identifier-type.md),[FRCoreCodeSystemLocationIdentifierType](CodeSystem-fr-core-cs-location-identifier-type.md),[FRCoreCodeSystemLocationPhysicalType](CodeSystem-fr-core-cs-location-physical-type.md),[FRCoreCodeSystemLocationPositionRoom](CodeSystem-fr-core-cs-location-position-room.md),[FRCoreCodeSystemLocationType](CodeSystem-fr-core-cs-location-type.md),[FRCoreCodeSystemMaritalStatus](CodeSystem-fr-core-cs-marital-status.md),[FRCoreCodeSystemMethodCollection](CodeSystem-fr-core-cs-method-collection.md),[FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md),[FRCoreCodeSystemReliabilityIdentity](CodeSystem-fr-core-cs-fiabilite-identite.md),[FRCoreCodeSystemScheduleType](CodeSystem-fr-core-cs-schedule-type.md),[FRCoreCodeSystemTypeAdmission](CodeSystem-fr-core-cs-type-admission.md),[FRCoreCodeSystemTypesOrganisations](CodeSystem-fr-core-cs-type-organisation.md),[FRCoreCodeSystemv2_0203](CodeSystem-fr-core-cs-v2-0203.md),[FRCoreCodeSystemv2_0445](CodeSystem-fr-core-cs-v2-0445.md),[FRCoreCodeSystemv2_3307](CodeSystem-fr-core-cs-v2-3307.md),[FRCoreCodeSystemv2_3311](CodeSystem-fr-core-cs-v2-3311.md),[FRCoreCommentExtension](StructureDefinition-fr-core-comment.md),[FRCoreContactPointEmailTypeExtension](StructureDefinition-fr-core-contact-point-email-type.md),[FRCoreContactPointProfile](StructureDefinition-fr-core-contact-point.md),[FRCoreEncounterEstimatedDischargeDateExtension](StructureDefinition-fr-core-estimated-discharge-date.md),[FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md),[FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md),[FRCoreHumanNameProfile](StructureDefinition-fr-core-human-name.md),[FRCoreLocationPartOfPositionRoomExtension](StructureDefinition-fr-core-location-position-room.md),[FRCoreLocationProfile](StructureDefinition-fr-core-location.md),[FRCoreLunarDateExtension](StructureDefinition-fr-core-lunar-date.md),[FRCoreMedicationAdministrationInhaledOxygenProfile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md),[FRCoreNationalityExtension](StructureDefinition-fr-core-patient-nationality.md),[FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md),[FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md),[FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md),[FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md),[FRCoreObservationBodyWeightProfile](StructureDefinition-fr-core-observation-body-weight.md),[FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md),[FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md),[FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md),[FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md),[FRCoreObservationLevelOfExertionExtension](StructureDefinition-fr-core-observation-level-of-exertion.md),[FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md),[FRCoreOrganizationActivityFieldExtension](StructureDefinition-fr-core-organization-activity-field.md),[FRCoreOrganizationActivityTypeExtension](StructureDefinition-fr-core-organization-activity-type.md),[FRCoreOrganizationAnalysisSectionExtension](StructureDefinition-fr-core-organization-analysis-section.md),[FRCoreOrganizationApplicantActExtension](StructureDefinition-fr-core-organization-applicant-act.md),[FRCoreOrganizationBudgetLetterExtension](StructureDefinition-fr-core-organization-budget-letter.md),[FRCoreOrganizationDescriptionExtension](StructureDefinition-fr-core-organization-description.md),[FRCoreOrganizationExecutantExtension](StructureDefinition-fr-core-organization-executant.md),[FRCoreOrganizationExternalExtension](StructureDefinition-fr-core-organization-external.md),[FRCoreOrganizationFieldExtension](StructureDefinition-fr-core-organization-field.md),[FRCoreOrganizationPoleProfile](StructureDefinition-fr-core-organization-pole.md),[FRCoreOrganizationPrestationDisciplineExtension](StructureDefinition-fr-core-organization-prestation-discipline.md),[FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md),[FRCoreOrganizationShortNameExtension](StructureDefinition-fr-core-organization-short-name.md),[FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension](StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.md),[FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md),[FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md),[FRCorePatientBirthDateUpdateIndicatorExtension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md),[FRCorePatientBirthListGivenName](StructureDefinition-fr-core-patient-birth-list-given-name.md),[FRCorePatientContactIdentifierExtension](StructureDefinition-fr-core-patient-contact-identifier.md),[FRCorePatientDeathPlaceExtension](StructureDefinition-fr-core-patient-death-place.md),[FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md),[FRCorePatientIdentityReliabilityExtension](StructureDefinition-fr-core-identity-reliability.md),[FRCorePatientMultipleBirthExtension](StructureDefinition-fr-core-patient-multiple-birth-r5.md),[FRCorePatientProfile](StructureDefinition-fr-core-patient.md),[FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md),[FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md),[FRCorePractitionerSpecialtyExtension](StructureDefinition-fr-core-practitioner-specialty.md),[FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md),[FRCoreScheduleAvailabilityTimeExtension](StructureDefinition-fr-core-schedule-availability-time.md),[FRCoreScheduleProfile](StructureDefinition-fr-core-schedule.md),[FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md),[FRCoreSlotProfile](StructureDefinition-fr-core-slot.md),[FRCoreUsePeriodExtension](StructureDefinition-fr-core-use-period.md),[FRCoreValueSetAvailabilityTimeRule](ValueSet-fr-core-vs-availability-time-rule.md),[FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md),[FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md),[FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md),[FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md),[FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md),[FRCoreValueSetCOGCommunePays](ValueSet-fr-core-vs-cog-commune-pays.md),[FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md),[FRCoreValueSetEmailType](ValueSet-fr-core-vs-email-type.md),[FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md),[FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md),[FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md),[FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md),[FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md),[FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md),[FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md),[FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md),[FRCoreValueSetINSEECode](ValueSet-fr-core-vs-insee-code.md),[FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md),[FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md),[FRCoreValueSetLocationIdentifierType](ValueSet-fr-core-vs-location-identifier-type.md),[FRCoreValueSetLocationPhysicalType](ValueSet-fr-core-vs-location-physical-type.md),[FRCoreValueSetLocationPositionRoom](ValueSet-fr-core-vs-location-position-room.md),[FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md),[FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md),[FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md),[FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md),[FRCoreValueSetOrganizationActivityField](ValueSet-fr-core-vs-organization-activity-field.md),[FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md),[FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md),[FRCoreValueSetOrganizationUFActivityField](ValueSet-fr-core-vs-organization-uf-activity-field.md),[FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md),[FRCoreValueSetPatientGender](ValueSet-fr-core-vs-patient-gender.md),[FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md),[FRCoreValueSetPatientIdentifierUseINS](ValueSet-fr-core-vs-patient-identifier-use-ins.md),[FRCoreValueSetPatientIdentifierUsePI](ValueSet-fr-core-vs-patient-identifier-use-pi.md),[FRCoreValueSetPatientRelationType](ValueSet-fr-core-vs-relation-type.md),[FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md),[FRCoreValueSetPractitionerRoleExercice](ValueSet-fr-core-vs-practitioner-role-exercice.md),[FRCoreValueSetPractitionerSpecialty](ValueSet-fr-core-vs-practitioner-specialty.md),[FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md),[FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md),[FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md),[FRCoreValueSetTitle](ValueSet-fr-core-vs-title.md),[FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)and[FrCore](index.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [FRCore](index.md), [FRCoreAddressInseeCodeExtension](StructureDefinition-fr-core-address-insee-code.md)...Show 124 more,[FRCoreAddressProfile](StructureDefinition-fr-core-address.md),[FRCoreAppointmentOperatorExtension](StructureDefinition-fr-core-appointment-operator.md),[FRCoreAppointmentProfile](StructureDefinition-fr-core-appointment.md),[FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md),[FRCoreCodeSystemCirconstancesSortie](CodeSystem-fr-core-cs-circonstances-sortie.md),[FRCoreCodeSystemContactRelationship](CodeSystem-fr-core-cs-contact-relationship.md),[FRCoreCodeSystemIdentifierType](CodeSystem-fr-core-cs-identifier-type.md),[FRCoreCodeSystemLocationIdentifierType](CodeSystem-fr-core-cs-location-identifier-type.md),[FRCoreCodeSystemLocationPhysicalType](CodeSystem-fr-core-cs-location-physical-type.md),[FRCoreCodeSystemLocationPositionRoom](CodeSystem-fr-core-cs-location-position-room.md),[FRCoreCodeSystemLocationType](CodeSystem-fr-core-cs-location-type.md),[FRCoreCodeSystemMaritalStatus](CodeSystem-fr-core-cs-marital-status.md),[FRCoreCodeSystemMethodCollection](CodeSystem-fr-core-cs-method-collection.md),[FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md),[FRCoreCodeSystemReliabilityIdentity](CodeSystem-fr-core-cs-fiabilite-identite.md),[FRCoreCodeSystemScheduleType](CodeSystem-fr-core-cs-schedule-type.md),[FRCoreCodeSystemTypeAdmission](CodeSystem-fr-core-cs-type-admission.md),[FRCoreCodeSystemTypesOrganisations](CodeSystem-fr-core-cs-type-organisation.md),[FRCoreCodeSystemv2_0203](CodeSystem-fr-core-cs-v2-0203.md),[FRCoreCodeSystemv2_0445](CodeSystem-fr-core-cs-v2-0445.md),[FRCoreCodeSystemv2_3307](CodeSystem-fr-core-cs-v2-3307.md),[FRCoreCodeSystemv2_3311](CodeSystem-fr-core-cs-v2-3311.md),[FRCoreCommentExtension](StructureDefinition-fr-core-comment.md),[FRCoreContactPointEmailTypeExtension](StructureDefinition-fr-core-contact-point-email-type.md),[FRCoreContactPointProfile](StructureDefinition-fr-core-contact-point.md),[FRCoreEncounterEstimatedDischargeDateExtension](StructureDefinition-fr-core-estimated-discharge-date.md),[FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md),[FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md),[FRCoreHumanNameProfile](StructureDefinition-fr-core-human-name.md),[FRCoreLocationPartOfPositionRoomExtension](StructureDefinition-fr-core-location-position-room.md),[FRCoreLocationProfile](StructureDefinition-fr-core-location.md),[FRCoreLunarDateExtension](StructureDefinition-fr-core-lunar-date.md),[FRCoreMedicationAdministrationInhaledOxygenProfile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md),[FRCoreNationalityExtension](StructureDefinition-fr-core-patient-nationality.md),[FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md),[FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md),[FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md),[FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md),[FRCoreObservationBodyWeightProfile](StructureDefinition-fr-core-observation-body-weight.md),[FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md),[FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md),[FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md),[FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md),[FRCoreObservationLevelOfExertionExtension](StructureDefinition-fr-core-observation-level-of-exertion.md),[FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md),[FRCoreOrganizationActivityFieldExtension](StructureDefinition-fr-core-organization-activity-field.md),[FRCoreOrganizationActivityTypeExtension](StructureDefinition-fr-core-organization-activity-type.md),[FRCoreOrganizationAnalysisSectionExtension](StructureDefinition-fr-core-organization-analysis-section.md),[FRCoreOrganizationApplicantActExtension](StructureDefinition-fr-core-organization-applicant-act.md),[FRCoreOrganizationBudgetLetterExtension](StructureDefinition-fr-core-organization-budget-letter.md),[FRCoreOrganizationDescriptionExtension](StructureDefinition-fr-core-organization-description.md),[FRCoreOrganizationExecutantExtension](StructureDefinition-fr-core-organization-executant.md),[FRCoreOrganizationExternalExtension](StructureDefinition-fr-core-organization-external.md),[FRCoreOrganizationFieldExtension](StructureDefinition-fr-core-organization-field.md),[FRCoreOrganizationPoleProfile](StructureDefinition-fr-core-organization-pole.md),[FRCoreOrganizationPrestationDisciplineExtension](StructureDefinition-fr-core-organization-prestation-discipline.md),[FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md),[FRCoreOrganizationShortNameExtension](StructureDefinition-fr-core-organization-short-name.md),[FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension](StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.md),[FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md),[FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md),[FRCorePatientBirthDateUpdateIndicatorExtension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md),[FRCorePatientBirthListGivenName](StructureDefinition-fr-core-patient-birth-list-given-name.md),[FRCorePatientContactIdentifierExtension](StructureDefinition-fr-core-patient-contact-identifier.md),[FRCorePatientDeathPlaceExtension](StructureDefinition-fr-core-patient-death-place.md),[FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md),[FRCorePatientIdentityReliabilityExtension](StructureDefinition-fr-core-identity-reliability.md),[FRCorePatientMultipleBirthExtension](StructureDefinition-fr-core-patient-multiple-birth-r5.md),[FRCorePatientProfile](StructureDefinition-fr-core-patient.md),[FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md),[FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md),[FRCorePractitionerSpecialtyExtension](StructureDefinition-fr-core-practitioner-specialty.md),[FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md),[FRCoreScheduleAvailabilityTimeExtension](StructureDefinition-fr-core-schedule-availability-time.md),[FRCoreScheduleProfile](StructureDefinition-fr-core-schedule.md),[FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md),[FRCoreSlotProfile](StructureDefinition-fr-core-slot.md),[FRCoreUsePeriodExtension](StructureDefinition-fr-core-use-period.md),[FRCoreValueSetAvailabilityTimeRule](ValueSet-fr-core-vs-availability-time-rule.md),[FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md),[FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md),[FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md),[FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md),[FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md),[FRCoreValueSetCOGCommunePays](ValueSet-fr-core-vs-cog-commune-pays.md),[FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md),[FRCoreValueSetEmailType](ValueSet-fr-core-vs-email-type.md),[FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md),[FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md),[FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md),[FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md),[FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md),[FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md),[FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md),[FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md),[FRCoreValueSetINSEECode](ValueSet-fr-core-vs-insee-code.md),[FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md),[FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md),[FRCoreValueSetLocationIdentifierType](ValueSet-fr-core-vs-location-identifier-type.md),[FRCoreValueSetLocationPhysicalType](ValueSet-fr-core-vs-location-physical-type.md),[FRCoreValueSetLocationPositionRoom](ValueSet-fr-core-vs-location-position-room.md),[FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md),[FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md),[FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md),[FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md),[FRCoreValueSetOrganizationActivityField](ValueSet-fr-core-vs-organization-activity-field.md),[FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md),[FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md),[FRCoreValueSetOrganizationUFActivityField](ValueSet-fr-core-vs-organization-uf-activity-field.md),[FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md),[FRCoreValueSetPatientGender](ValueSet-fr-core-vs-patient-gender.md),[FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md),[FRCoreValueSetPatientIdentifierUseINS](ValueSet-fr-core-vs-patient-identifier-use-ins.md),[FRCoreValueSetPatientIdentifierUsePI](ValueSet-fr-core-vs-patient-identifier-use-pi.md),[FRCoreValueSetPatientRelationType](ValueSet-fr-core-vs-relation-type.md),[FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md),[FRCoreValueSetPractitionerRoleExercice](ValueSet-fr-core-vs-practitioner-role-exercice.md),[FRCoreValueSetPractitionerSpecialty](ValueSet-fr-core-vs-practitioner-specialty.md),[FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md),[FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md),[FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md),[FRCoreValueSetTitle](ValueSet-fr-core-vs-title.md)and[FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -137,10 +149,10 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "id" : "hl7.fhir.fr.core",
   "url" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
   "version" : "2.2.0-ballot",
-  "name" : "FrCore",
-  "title" : "Guide d'implémentation Fr Core",
+  "name" : "FRCore",
+  "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-01-12T09:29:04+00:00",
+  "date" : "2026-01-12T10:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -267,11 +279,115 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
+            "valueString" : "i18n-default-lang"
+          },
+          {
+            "url" : "value",
+            "valueString" : "fr-FR"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueString" : "pin-canonicals"
           },
           {
             "url" : "value",
             "valueString" : "pin-all"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "tx"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "generate"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "init"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "progress"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -410,19 +526,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
-            "valueString" : "apply-contact"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
             "valueString" : "apply-context"
           },
           {
@@ -437,19 +540,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           {
             "url" : "code",
             "valueString" : "apply-copyright"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-jurisdiction"
           },
           {
             "url" : "value",
@@ -641,11 +731,115 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
+            "valueCode" : "i18n-default-lang"
+          },
+          {
+            "url" : "value",
+            "valueString" : "fr-FR"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueCode" : "pin-canonicals"
           },
           {
             "url" : "value",
             "valueString" : "pin-all"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "tx"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "generate"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "init"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "logging"
+          },
+          {
+            "url" : "value",
+            "valueString" : "progress"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -784,19 +978,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "code",
-            "valueCode" : "apply-contact"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
             "valueCode" : "apply-context"
           },
           {
@@ -811,19 +992,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           {
             "url" : "code",
             "valueCode" : "apply-copyright"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-jurisdiction"
           },
           {
             "url" : "value",
@@ -3042,6 +3210,14 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
       ]
     },
     "parameter" : [
+      {
+        "code" : "path-pages",
+        "value" : "input/pagecontent"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "input/intro-notes"
+      },
       {
         "code" : "path-resource",
         "value" : "input/capabilities"

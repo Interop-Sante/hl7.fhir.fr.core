@@ -1,4 +1,4 @@
-# Oxygen Saturation Body Location value set - Guide d'implémentation Fr Core v2.2.0-ballot
+# Oxygen Saturation Body Location value set - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -24,6 +24,8 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -57,7 +59,7 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T09:29:04+00:00",
+  "date" : "2026-01-12T10:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

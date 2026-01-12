@@ -1,4 +1,4 @@
-# FR Core Use Period Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Use Period Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-use-period.c
   "name" : "FRCoreUsePeriodExtension",
   "title" : "FR Core Use Period Extension",
   "status" : "active",
-  "date" : "2026-01-12T09:29:04+00:00",
+  "date" : "2026-01-12T10:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

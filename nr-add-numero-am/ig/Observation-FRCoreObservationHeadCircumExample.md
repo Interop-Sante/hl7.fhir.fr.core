@@ -1,4 +1,4 @@
-# FRCoreObservationHeadCircumExample - Guide d'implémentation Fr Core v2.2.0-ballot
+# FRCoreObservationHeadCircumExample - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
