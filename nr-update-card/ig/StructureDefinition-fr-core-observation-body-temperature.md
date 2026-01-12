@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyTemperatureProfile",
   "title" : "FR Core Observation Body Temperature Profile",
   "status" : "active",
-  "date" : "2026-01-12T08:44:59+00:00",
+  "date" : "2026-01-12T08:53:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

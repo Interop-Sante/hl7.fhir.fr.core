@@ -27,7 +27,7 @@ Dans la version 2.1.0, le lieu de naissance était indiqué dans une extension d
 
 ```
 
-A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extension de type `address`. Indiquer une adresse sous forme de chaîne de caractères reste possible grâce à l’attribut Address.line.
+A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extension de type `address`. Indiquer une adresse sous forme de chaîne de caractères reste possible grâce à l’attribut `Address.line`.
 
 ```
 {
