@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationLevelOfExertionExtension",
   "title" : "FR Core Observation Level Of Exertion Extension",
   "status" : "active",
-  "date" : "2026-01-12T08:53:05+00:00",
+  "date" : "2026-01-12T09:01:56+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
