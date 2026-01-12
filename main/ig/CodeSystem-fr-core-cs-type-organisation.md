@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-organisation | *Version*:2.2.0-ballot |
-| Draft as of 2026-01-09 | *Computable Name*:FRCoreCodeSystemTypesOrganisations |
+| Draft as of 2026-01-12 | *Computable Name*:FRCoreCodeSystemTypesOrganisations |
 
  
 Organization type 
@@ -37,7 +37,7 @@ Organization type
   "title" : "FR Core CodeSystem Organization Type",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-01-09T10:08:27+00:00",
+  "date" : "2026-01-12T10:02:26+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

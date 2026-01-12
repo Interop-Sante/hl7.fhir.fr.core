@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position | *Version*:2.2.0-ballot |
-| Active as of 2026-01-09 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreValueSetHeightBodyPosition |
 
  
 ValueSet Body Position 
@@ -23,6 +23,8 @@ ValueSet Body Position
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -56,7 +58,7 @@ ValueSet Body Position
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-09T10:08:27+00:00",
+  "date" : "2026-01-12T10:02:26+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

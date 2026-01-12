@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient | *Version*:2.2.0-ballot |
-| Active as of 2026-01-09 | *Computable Name*:FRCorePatientProfile |
+| Active as of 2026-01-12 | *Computable Name*:FRCorePatientProfile |
 
  
 Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-01-09T10:08:27+00:00",
+  "date" : "2026-01-12T10:02:26+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -157,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
         "path" : "Patient.extension",
         "sliceName" : "nationality",
         "min" : 0,
-        "max" : "1",
+        "max" : "*",
         "type" : [
           {
             "code" : "Extension",

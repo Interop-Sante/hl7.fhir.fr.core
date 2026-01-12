@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp | *Version*:2.2.0-ballot |
-| Active as of 2026-01-09 | *Computable Name*:FRCoreObservationBpProfile |
+| Active as of 2026-01-12 | *Computable Name*:FRCoreObservationBpProfile |
 
  
 French profile for blood pressure. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBpProfile",
   "title" : "FR Core Observation Blood Pressure Profile",
   "status" : "active",
-  "date" : "2026-01-09T10:08:27+00:00",
+  "date" : "2026-01-12T10:02:26+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

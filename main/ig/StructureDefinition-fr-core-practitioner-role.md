@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role | *Version*:2.2.0-ballot |
-| Active as of 2026-01-09 | *Computable Name*:FRCorePractitionerRoleProfile |
+| Active as of 2026-01-12 | *Computable Name*:FRCorePractitionerRoleProfile |
 
  
 Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2026-01-09T10:08:27+00:00",
+  "date" : "2026-01-12T10:02:26+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -161,6 +161,34 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
             ]
           }
         ]
+      },
+      {
+        "id" : "PractitionerRole.identifier",
+        "path" : "PractitionerRole.identifier",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "system"
+            }
+          ],
+          "description" : "Slice based on the identifier.system value",
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "PractitionerRole.identifier:numeroAm",
+        "path" : "PractitionerRole.identifier",
+        "sliceName" : "numeroAm",
+        "short" : "Identifiant d’activité propre à l’Assurance Maladie. format: 9 digits. synonyme: numeroAM",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "PractitionerRole.identifier:numeroAm.system",
+        "path" : "PractitionerRole.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://www.ameli.fr"
       },
       {
         "id" : "PractitionerRole.practitioner",
