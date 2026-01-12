@@ -75,7 +75,7 @@ Types de lieux physiques pour la France. French location physical type
   "title" : "FR Core ValueSet Location physical type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T10:00:46+00:00",
+  "date" : "2026-01-12T10:05:22+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
