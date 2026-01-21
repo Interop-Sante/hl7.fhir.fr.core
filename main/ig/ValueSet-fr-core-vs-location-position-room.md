@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-room | *Version*:2.2.0-ballot | |
-| *Standards status:*[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetLocationPositionRoom |
+| * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetLocationPositionRoom |
 
  
 Position physique de l’emplacement du lit. Position room 
@@ -74,7 +74,7 @@ Position physique de l’emplacement du lit. Position room
   "title" : "FR Core ValueSet Location position room",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T10:02:26+00:00",
+  "date" : "2026-01-21T08:47:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

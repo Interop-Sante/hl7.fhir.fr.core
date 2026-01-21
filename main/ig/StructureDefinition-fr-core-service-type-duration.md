@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration | *Version*:2.2.0-ballot |
-| Active as of 2026-01-12 | *Computable Name*:FRCoreServiceTypeDurationExtension |
+| Active as of 2026-01-21 | *Computable Name*:FRCoreServiceTypeDurationExtension |
 
 Cette extension française permet d’associer le type de service avec la durée de ce service.
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-type
   "name" : "FRCoreServiceTypeDurationExtension",
   "title" : "FR Core Service Type Duration Extension",
   "status" : "active",
-  "date" : "2026-01-12T10:02:26+00:00",
+  "date" : "2026-01-21T08:47:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

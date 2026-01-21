@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type | *Version*:2.2.0-ballot | |
-| *Standards status:*[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetScheduleType |
+| * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetScheduleType |
 
  
 Jeu de valeurs des types de Schedule. A Schedule type 
@@ -74,7 +74,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
   "title" : "FR Core ValueSet Schedule type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-12T10:02:26+00:00",
+  "date" : "2026-01-21T08:47:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

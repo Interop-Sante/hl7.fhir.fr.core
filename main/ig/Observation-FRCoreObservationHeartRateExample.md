@@ -20,7 +20,7 @@ Profil: [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-obs
 
 **performer**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
 
-**value**: 70 battements/minute(Détails : code UCUM/min = '/min')
+**value**: 70 battements/minute (Détails : code UCUM/min = '/min')
 
 
 

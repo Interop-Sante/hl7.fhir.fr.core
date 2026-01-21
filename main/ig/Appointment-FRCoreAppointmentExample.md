@@ -26,11 +26,11 @@ Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md
 
 **created**: 2019-01-02
 
-> **participant****actor**:[Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)**required**: Required**status**: Accepted
+> **participant****actor**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)**required**: Required**status**: Accepted
 
-> **participant****actor**:[PractitionerRole Soignant](PractitionerRole-FRCorePractitionerRoleExample.md)**required**: Required**status**: Needs Action
+> **participant****actor**: [PractitionerRole Soignant](PractitionerRole-FRCorePractitionerRoleExample.md)**required**: Required**status**: Needs Action
 
-> **participant****actor**:[Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)**required**: Required**status**: Needs Action
+> **participant****actor**: [Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)**required**: Required**status**: Needs Action
 
 **requestedPeriod**: 2019-01-04 09:15:00+0000 --> (en cours)
 

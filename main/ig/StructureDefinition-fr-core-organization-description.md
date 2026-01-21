@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description | *Version*:2.2.0-ballot |
-| Active as of 2026-01-12 | *Computable Name*:FRCoreOrganizationDescriptionExtension |
+| Active as of 2026-01-21 | *Computable Name*:FRCoreOrganizationDescriptionExtension |
 
 Description textuelle d’une organisation Organization description
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDescriptionExtension",
   "title" : "FR Core Organization Description Extension",
   "status" : "active",
-  "date" : "2026-01-12T10:02:26+00:00",
+  "date" : "2026-01-21T08:47:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
