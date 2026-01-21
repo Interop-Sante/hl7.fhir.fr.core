@@ -1,5 +1,5 @@
 Profile: FRCorePatientProfile
-Parent: Patient
+Parent: PatientEu
 Id: fr-core-patient
 Title: "FR Core Patient Profile"
 Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\r\n
@@ -21,7 +21,6 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
-    $patient-birthPlace named birthPlace 0..1 and
     FRCorePatientMultipleBirthExtension named multipleBirth 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile

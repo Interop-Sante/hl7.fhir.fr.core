@@ -1,5 +1,5 @@
 Profile: FRCoreOrganizationUFProfile
-Parent: Organization
+Parent: OrganizationEu
 Id: fr-core-organization-uf
 Title: "FR Core Organization UF Profile"
 Description: "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.\r\n
