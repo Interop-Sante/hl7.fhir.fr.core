@@ -39,7 +39,7 @@ HL7 v2 - Identifier type
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T11:51:24+00:00",
+  "date" : "2026-01-22T13:05:19+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

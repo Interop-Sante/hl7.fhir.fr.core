@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
   "name" : "FRCoreHealthcareServiceProfile",
   "title" : "FR Core Healthcare Service Profile",
   "status" : "active",
-  "date" : "2026-01-22T11:51:24+00:00",
+  "date" : "2026-01-22T13:05:19+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

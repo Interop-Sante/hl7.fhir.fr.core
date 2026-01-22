@@ -54,7 +54,7 @@ Use autorisés pour l’identifiant national de santé. Authorized use for INS i
   "title" : "FR Core ValueSet Patient identifier use INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T11:51:24+00:00",
+  "date" : "2026-01-22T13:05:19+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

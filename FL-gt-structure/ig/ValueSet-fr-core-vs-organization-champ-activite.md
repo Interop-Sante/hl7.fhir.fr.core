@@ -54,7 +54,7 @@ Champ d’activité d’une organisation type UF.
   "title" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T11:51:24+00:00",
+  "date" : "2026-01-22T13:05:19+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

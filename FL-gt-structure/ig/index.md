@@ -150,7 +150,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FrCore",
   "title" : "Guide d'implémentation Fr Core",
   "status" : "active",
-  "date" : "2026-01-22T11:51:24+00:00",
+  "date" : "2026-01-22T13:05:19+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
