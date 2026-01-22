@@ -1,4 +1,4 @@
-# FR Core Organization UAC Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Organization UAC Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -52,7 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUACProfile",
   "title" : "FR Core Organization UAC Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -131,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0-ballot"
             ]
           }
         ]
@@ -146,7 +146,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0-ballot"
             ]
           }
         ]
@@ -176,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot"
             ]
           }
         ]

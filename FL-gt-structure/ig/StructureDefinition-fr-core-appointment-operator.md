@@ -1,4 +1,4 @@
-# FR Core Appointment Operator Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Appointment Operator Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
   "name" : "FRCoreAppointmentOperatorExtension",
   "title" : "FR Core Appointment Operator Extension",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -143,10 +143,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"
             ]
           }
         ]

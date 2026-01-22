@@ -1,4 +1,4 @@
-# FR Core Organization Extension - Catetgorie SAE - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Organization Extension - Catetgorie SAE - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationSAECategoryExtension",
   "title" : "FR Core Organization Extension - Catetgorie SAE",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -150,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement|2.2.0-ballot"
         }
       }
     ]

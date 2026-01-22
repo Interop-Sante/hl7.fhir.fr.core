@@ -1,4 +1,4 @@
-# Historique des changements - Guide d'implémentation Fr Core v2.2.0-ballot
+# Historique des changements - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Historique des changements**
@@ -103,6 +103,41 @@
 
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
+* Patient.extension[nationality] : passage de la cardinalité 0..1 à 0..* (un patient peut avoir plusieurs nationalités) [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
+* Patient.extension[deathPlace] Passage du datatype string à Address pour être uniforme avec birthPlace. Le mode string est toujours possible avec l’attribut Address.line [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
+
+Dans la version 2.1.0, le lieu de naissance était indiqué dans une extension de type `string`.
+
+```
+{
+  "resourceType" : "Patient",
+  "extension" : [
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "valueString" : "27 rue des Tilleuls, 34070 Montpellier"
+    }
+  ]
+}
+
+```
+
+A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extension de type `address`. Indiquer une adresse sous forme de chaîne de caractères reste possible grâce à l’attribut `Address.line`.
+
+```
+{
+  "resourceType" : "Patient",
+  "extension" : [
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "valueAddress" : {
+        "line" : "27 rue des Tilleuls, 34070 Montpellier"
+      }
+    }
+  ]
+}
+
+```
+
 * Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209)
 * Mise à jour FrCorePatientINSProfile.fsh (correction d’erreurs) [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163) [#197](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/197)
 * Suppression du numéro ADELI suite au décommissionnement national [#189](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/189)
@@ -127,10 +162,12 @@
 * Refacto - uniformisation des namings et correction QA [#232](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/232)
 * Suppression MLLE dans les civilités [#237](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/237)
 * Mise à jour identifiants INS Patient [#238](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/238)
+* Mise à jour du texte de l’identifiant de l’IDNatStruct de la ressource FRCoreOrganization [#264](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/264)
 * MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
 * Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
 * Retrait du genre “other” sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
-* Lise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244)
+* Mise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
+* Ajout du numéro AMELI au profil PractitionerRole [#260](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/260)
 
 ### Release 2.1.0 de l’Implementation Guide FRCore
 
@@ -208,4 +245,10 @@
 * Suppression du binding identifier.type qui duplique celui hérité de FHIR Core [#70](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/70)
 * Correction d’erreurs (espaces en fin de string et ajout d’un title manq ant à un ValueSet) [#94](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/94)
 * Cleaning des urls, suppression url interopsanté [#84](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/84)
+
+### Versions antérieures
+
+La création de ces profils a été initiée en 2017 sur [la plateforme simplifier](https://simplifier.net/frenchprofiledfhirar) (Participants : Eric Dufour, Isabelle Gibaud, François Macary et Yohann Poiron).
+
+En 2024, l’ensemble des ressources de conformité a été mis au sein de ce [guide d’implémentation](https://hl7.fr/ig/fhir/core) pour simplifier leur usage et leur accès, rendant les anciens profils simplifier obsolètes (Participants : Marie Brulliard, Sylvain Demey, Isabelle Gibaud, Yohann Poiron et Nicolas Riss).
 

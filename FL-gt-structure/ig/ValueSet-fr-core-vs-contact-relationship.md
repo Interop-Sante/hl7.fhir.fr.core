@@ -1,4 +1,4 @@
-# FR Core ValueSet Contact relationship - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Contact relationship - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -46,7 +46,9 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-contact-relationship",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -72,7 +74,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

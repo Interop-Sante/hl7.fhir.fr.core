@@ -1,4 +1,4 @@
-# FR Core ValueSet Patient contact role - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Patient contact role - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -47,7 +47,9 @@ ValueSet patient contact role
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-patient-contact-role",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -61,7 +63,7 @@ ValueSet patient contact role
   "title" : "FR Core ValueSet Patient contact role",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

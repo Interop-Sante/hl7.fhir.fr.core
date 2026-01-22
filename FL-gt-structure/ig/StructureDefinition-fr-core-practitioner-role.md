@@ -1,4 +1,4 @@
-# FR Core Practitioner Role - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Practitioner Role - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "kind" : "resource",
   "abstract" : false,
   "type" : "PractitionerRole",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot"
       },
       {
         "id" : "PractitionerRole.extension",
@@ -157,10 +157,38 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot"
             ]
           }
         ]
+      },
+      {
+        "id" : "PractitionerRole.identifier",
+        "path" : "PractitionerRole.identifier",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "system"
+            }
+          ],
+          "description" : "Slice based on the identifier.system value",
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "PractitionerRole.identifier:numeroAm",
+        "path" : "PractitionerRole.identifier",
+        "sliceName" : "numeroAm",
+        "short" : "Identifiant d’activité propre à l’Assurance Maladie. format: 9 digits. synonyme: numeroAM",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "PractitionerRole.identifier:numeroAm.system",
+        "path" : "PractitionerRole.identifier.system",
+        "min" : 1,
+        "patternUri" : "https://www.ameli.fr"
       },
       {
         "id" : "PractitionerRole.practitioner",
@@ -169,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot"
             ]
           }
         ]
@@ -181,7 +209,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -192,7 +220,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "short" : "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice|2.2.0-ballot"
         }
       },
       {
@@ -201,7 +229,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "short" : "Specific specialty associated with the organization | spécialité ordinale du professionnel de santé au sein de l'organisation",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot"
         }
       },
       {
@@ -211,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
             ]
           }
         ]
@@ -223,7 +251,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot"
             ]
           }
         ]
@@ -236,7 +264,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]

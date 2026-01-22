@@ -1,4 +1,4 @@
-# FR Core Organization UF Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Organization UF Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFProfile",
   "title" : "FR Core Organization UF Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -149,7 +149,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement|2.2.0-ballot"
             ]
           }
         ]
@@ -182,7 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite|2.2.0-ballot"
             ]
           }
         ]
@@ -197,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite|2.2.0-ballot"
             ]
           }
         ]
@@ -212,7 +212,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique|2.2.0-ballot"
             ]
           }
         ]
@@ -227,7 +227,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe|2.2.0-ballot"
             ]
           }
         ]
@@ -242,7 +242,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur|2.2.0-ballot"
             ]
           }
         ]
@@ -257,7 +257,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte|2.2.0-ballot"
             ]
           }
         ]
@@ -272,7 +272,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte|2.2.0-ballot"
             ]
           }
         ]

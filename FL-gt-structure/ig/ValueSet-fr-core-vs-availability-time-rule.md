@@ -1,4 +1,4 @@
-# FR Core ValueSet Availability Schedule - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Availability Schedule - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -48,7 +48,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-availability-time-rule",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -74,7 +76,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

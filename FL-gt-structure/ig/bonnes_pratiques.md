@@ -1,4 +1,4 @@
-# Bonnes pratiques d'usage du guide d'implémentation - Guide d'implémentation Fr Core v2.2.0-ballot
+# Bonnes pratiques d'usage du guide d'implémentation - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Bonnes pratiques d'usage du guide d'implémentation**
@@ -18,7 +18,15 @@ En FHIR, il y a plusieurs types d’identifiants :
 
 Il est conseillé de favoriser l’usage des identifiants métiers pour faciliter l’identification de la ressource en dehors du serveur.
 
+#### Les syntaxes retenues
+
+Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenues sont les syntaxes XML et JSON.
+
 ### Les bonnes pratiques de rédaction des guides d’implémentation
+
+#### Profilage de nouvelles ressources
+
+Des nouvelles ressources peuvent être profilées pour l’écosystème français. Pour cela, il est nécessaire d’expliquer la nécessité de profiler les ressources : pour quelles raisons faut-il rajouter des contraintes propres à l’écosystème français plutôt que d’utiliser les ressources de base proposées par FHIR ?
 
 #### Les Pull Requests
 

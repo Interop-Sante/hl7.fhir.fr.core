@@ -1,4 +1,4 @@
-# FR Core Observation Body Position Ext Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Observation Body Position Ext Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyPositionExtExtension",
   "title" : "FR Core Observation Body Position Ext Extension",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         ],
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position|2.2.0-ballot"
         }
       }
     ]

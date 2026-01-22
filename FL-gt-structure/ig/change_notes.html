@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Historique des changements - Guide d'implémentation Fr Core v2.2.0-ballot</title>
+    <title>Historique des changements - Guide d'implémentation FR Core v2.2.0-ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,7 +57,7 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d'implémentation Fr Core</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d'implémentation FR Core</span>
             <br/>
             <span style="display:inline-block;">2.2.0-ballot - ballot
 
@@ -200,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guide d'implémentation Fr Core - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://hl7.fr/ig/fhir/core/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Guide d'implémentation FR Core - version de développement local (v2.2.0-ballot) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://hl7.fr/ig/fhir/core/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
   <h2>Historique des changements</h2>
   
 
@@ -223,10 +223,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#release-210-de-limplementation-guide-frcore" id="markdown-toc-release-210-de-limplementation-guide-frcore">Release 2.1.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-201-de-limplementation-guide-frcore" id="markdown-toc-release-201-de-limplementation-guide-frcore">Release 2.0.1 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-200-de-limplementation-guide-frcore" id="markdown-toc-release-200-de-limplementation-guide-frcore">Release 2.0.0 de l’Implementation Guide FRCore</a></li>
+  <li><a href="#versions-antérieures" id="markdown-toc-versions-antérieures">Versions antérieures</a></li>
 </ul>
 
 </div>
-<h3 id="release-230-de-limplementation-guide-frcore"><a name="l400">​</a><a href="https://hl7.fr/ig/fhir/core/2.3.0">Release 2.3.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-230-de-limplementation-guide-frcore"><a name="l404">​</a><a href="https://hl7.fr/ig/fhir/core/2.3.0">Release 2.3.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.3.0</a> :</p>
 
 <ul>
@@ -347,9 +348,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout de 14 nouveaux exemples illustrant la hiérarchie organisationnelle (EJ, EG, pôles, départements, services, UF, UAC, lieux)</li>
 </ul>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l680">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l684">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
+
+<ul>
+  <li>Patient.extension[nationality] : passage de la cardinalité 0..1 à 0..* (un patient peut avoir plusieurs nationalités) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265">#265</a></li>
+  <li>Patient.extension[deathPlace] Passage du datatype string à Address pour être uniforme avec birthPlace. Le mode string est toujours possible avec l’attribut Address.line <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265">#265</a></li>
+</ul>
+
+<p>Dans la version 2.1.0, le lieu de naissance était indiqué dans une extension de type <code class="language-plaintext highlighter-rouge">string</code>.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"27 rue des Tilleuls, 34070 Montpellier"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extension de type <code class="language-plaintext highlighter-rouge">address</code>. Indiquer une adresse sous forme de chaîne de caractères reste possible grâce à l’attribut <code class="language-plaintext highlighter-rouge">Address.line</code>.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueAddress"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"line"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"27 rue des Tilleuls, 34070 Montpellier"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <ul>
   <li>Mise à jour et uniformisation des titres et description des artifacts <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184">#184</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186">#186</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188">#188</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203">#203</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209">#209</a></li>
@@ -376,13 +410,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Refacto - uniformisation des namings et correction QA <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/232">#232</a></li>
   <li>Suppression MLLE dans les civilités <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/237">#237</a></li>
   <li>Mise à jour identifiants INS Patient <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/238">#238</a></li>
+  <li>Mise à jour du texte de l’identifiant de l’IDNatStruct de la ressource FRCoreOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/264">#264</a></li>
   <li>MAJ package terminologies à LATEST <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239">#239</a></li>
   <li>Ajout du template InteropSanté <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242">#242</a></li>
   <li>Retrait du genre “other” sur le profil FrCorePatient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243">#243</a></li>
-  <li>Lise à jour des profils patient et exemples (quick fix et refacto) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244">#244</a></li>
+  <li>Mise à jour des profils patient et exemples (quick fix et refacto) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244">#244</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245">#245</a></li>
+  <li>Ajout du numéro AMELI au profil PractitionerRole <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/260">#260</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l848">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1063">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -403,7 +439,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l931">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1146">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -411,7 +447,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l949">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1164">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -466,6 +502,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Cleaning des urls, suppression url interopsanté <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/84">#84</a></li>
 </ul>
 
+<h3 id="versions-antérieures">Versions antérieures</h3>
+
+<p>La création de ces profils a été initiée en 2017 sur <a href="https://simplifier.net/frenchprofiledfhirar">la plateforme simplifier</a> (Participants : Eric Dufour, Isabelle Gibaud, François Macary et Yohann Poiron).</p>
+
+<p>En 2024, l’ensemble des ressources de conformité a été mis au sein de ce <a href="https://hl7.fr/ig/fhir/core">guide d’implémentation</a> pour simplifier leur usage et leur accès, rendant les anciens profils simplifier obsolètes (Participants : Marie Brulliard, Sylvain Demey, Isabelle Gibaud, Yohann Poiron et Nicolas Riss).</p>
+
 
 
 
@@ -507,7 +549,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 22, 2026 13:05+0000">2026-01-22</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 22, 2026 13:18+0000">2026-01-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

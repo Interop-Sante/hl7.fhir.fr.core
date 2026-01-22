@@ -1,4 +1,4 @@
-# FR Core Organization Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Organization Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -153,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
       },
       {
         "id" : "Organization.extension",
@@ -179,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot"
             ]
           }
         ]
@@ -223,7 +223,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "type" : [
           {
             "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/note"]
+            "profile" : ["http://hl7.org/fhir/StructureDefinition/note|5.2.0"]
           }
         ]
       },
@@ -236,7 +236,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "type" : [
           {
             "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/note"]
+            "profile" : ["http://hl7.org/fhir/StructureDefinition/note|5.2.0"]
           }
         ]
       },
@@ -250,7 +250,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot"
             ]
           }
         ]
@@ -260,7 +260,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.type",
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
         }
       },
       {
@@ -270,7 +270,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -282,7 +282,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
             ]
           }
         ]
@@ -300,8 +300,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot"
             ]
           }
         ]
@@ -311,7 +311,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.partOf.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
         }
       },
       {
@@ -321,7 +321,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -333,7 +333,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
             ]
           }
         ]

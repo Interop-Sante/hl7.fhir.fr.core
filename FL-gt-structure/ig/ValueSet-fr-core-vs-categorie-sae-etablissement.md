@@ -1,4 +1,4 @@
-# FR Core ValueSet Categorie SAE Etablissement - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Categorie SAE Etablissement - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -48,7 +48,9 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
   "meta" : {
     "versionId" : "2024.1",
     "lastUpdated" : "2025-03-14T18:01:34.510+00:00",
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement",
   "version" : "2.2.0-ballot",

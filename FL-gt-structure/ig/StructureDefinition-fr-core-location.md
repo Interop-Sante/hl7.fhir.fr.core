@@ -1,4 +1,4 @@
-# FR Core Location Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Location Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -106,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "Location",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Location",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Location|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -119,14 +119,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
             "severity" : "error",
             "human" : "Location Type Chambre",
             "expression" : "extension('http://fhir.fr/StructureDefinition/fr-core-location-type-chambre').exists() implies type.coding.where(code = 'CHAMB').exists()",
-            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
           },
           {
             "key" : "inv-location-type-lit",
             "severity" : "error",
             "human" : "Location Type Lit",
             "expression" : "extension('http://fhir.fr/StructureDefinition/fr-core-location-position-lit').exists() implies type.coding.where(code = 'LIT').exists()",
-            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
           }
         ]
       },
@@ -150,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
       },
       {
         "id" : "Location.extension",
@@ -176,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre|2.2.0-ballot"
             ]
           }
         ]
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit|2.2.0-ballot"
             ]
           }
         ]
@@ -201,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
         "path" : "Location.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type|2.2.0-ballot"
         }
       }
     ]

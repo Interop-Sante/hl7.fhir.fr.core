@@ -1,4 +1,4 @@
-# FR Core ValueSet Practitioner specialty - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Practitioner specialty - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -51,7 +51,9 @@ The modalities of exercice of the practitioner, registered by an official organi
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-practitioner-specialty",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -73,7 +75,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

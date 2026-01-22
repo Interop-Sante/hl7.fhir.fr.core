@@ -1,4 +1,4 @@
-# FR Core ValueSet Encounter discharge disposition - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Encounter discharge disposition - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -46,7 +46,9 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-encounter-discharge-disposition",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "extension" : [
     {
@@ -72,7 +74,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

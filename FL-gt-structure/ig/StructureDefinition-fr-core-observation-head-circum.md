@@ -1,4 +1,4 @@
-# FR Core Observation Head Circum Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Observation Head Circum Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/headcircum",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/headcircum|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -141,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0-ballot"
       },
       {
         "id" : "Observation.extension",
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
             ]
           }
         ]
@@ -196,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot"
             ]
           }
         ]
@@ -208,12 +208,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]

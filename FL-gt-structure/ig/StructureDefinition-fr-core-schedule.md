@@ -1,4 +1,4 @@
-# FR Core Schedule Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Schedule Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
   "name" : "FRCoreScheduleProfile",
   "title" : "FR Core Schedule Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "Schedule",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Schedule",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Schedule|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot"
       },
       {
         "id" : "Schedule.extension",
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot"
             ]
           }
         ]
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time|2.2.0-ballot"
             ]
           }
         ]
@@ -187,7 +187,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
         "path" : "Schedule.specialty",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot"
         }
       },
       {
@@ -197,13 +197,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"
+              "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot"
             ]
           }
         ]

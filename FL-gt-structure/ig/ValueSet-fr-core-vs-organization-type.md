@@ -1,4 +1,4 @@
-# FR Core ValueSet Organization type - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Organization type - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -17,6 +17,7 @@ Types de structures
  **References** 
 
 * [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 
 ### Définition logique (CLD)
 
@@ -46,7 +47,9 @@ Types de structures
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-organization-type",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
   "version" : "2.2.0-ballot",
@@ -54,7 +57,7 @@ Types de structures
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# FR Core Address Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Address Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profil du type de données Address pour la France, ce profil ajoute le code inse
 
 **Utilisations:**
 
-* Utiliser ce Profil de type de données: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md) and [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
+* Utiliser ce Profil de type de données: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Death Place Extension](StructureDefinition-fr-core-patient-death-place.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md) and [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-address)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "name" : "FRCoreAddressProfile",
   "title" : "FR Core Address Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "kind" : "complex-type",
   "abstract" : false,
   "type" : "Address",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Address",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Address|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -121,7 +121,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code|2.2.0-ballot"
             ]
           }
         ]

@@ -1,4 +1,4 @@
-# FR Core Slot Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Slot Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
   "name" : "FRCoreSlotProfile",
   "title" : "FR Core Slot Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
   "kind" : "resource",
   "abstract" : false,
   "type" : "Slot",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Slot",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Slot|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -127,14 +127,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0-ballot"
       },
       {
         "id" : "Slot.identifier.use",
         "path" : "Slot.identifier.use",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         }
       },
       {
@@ -147,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
         "path" : "Slot.specialty",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot"
         }
       },
       {
@@ -157,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot"
             ]
           }
         ]
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
         "path" : "Slot.status",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/slotstatus"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/slotstatus|4.0.1"
         }
       }
     ]

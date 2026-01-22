@@ -1,4 +1,4 @@
-# FR Core CodeSystem Position du lit - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core CodeSystem Position du lit - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -28,7 +28,7 @@ Position du lit dans la chambre
   "id" : "fr-core-cs-location-position-lit",
   "meta" : {
     "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
@@ -37,7 +37,7 @@ Position du lit dans la chambre
   "title" : "FR Core CodeSystem Position du lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

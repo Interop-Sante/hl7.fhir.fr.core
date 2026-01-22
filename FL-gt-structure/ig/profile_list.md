@@ -1,4 +1,4 @@
-# Liste des profils - Guide d'implémentation Fr Core v2.2.0-ballot
+# Liste des profils - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Liste des profils**

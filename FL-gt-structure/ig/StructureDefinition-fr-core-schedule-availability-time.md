@@ -1,4 +1,4 @@
-# FR Core Schedule availability time Extension - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Schedule availability time Extension - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
   "name" : "FRCoreScheduleAvailabilityTimeExtension",
   "title" : "FR Core Schedule availability time Extension",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -145,7 +145,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type|2.2.0-ballot"
         }
       },
       {
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule|2.2.0-ballot"
         }
       },
       {
@@ -530,7 +530,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/days-of-week"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/days-of-week|4.0.1"
         }
       },
       {
@@ -653,7 +653,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason|2.2.0-ballot"
         }
       },
       {

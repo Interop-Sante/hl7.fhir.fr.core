@@ -1,4 +1,4 @@
-# FR Core ValueSet Identity reliability - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core ValueSet Identity reliability - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -46,7 +46,9 @@ The reliability of the identity.
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-identity-reliability",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability",
   "version" : "2.2.0-ballot",
@@ -54,7 +56,7 @@ The reliability of the identity.
   "title" : "FR Core ValueSet Identity reliability",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

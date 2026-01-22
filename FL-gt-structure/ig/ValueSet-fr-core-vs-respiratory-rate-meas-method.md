@@ -1,4 +1,4 @@
-# Respiratory Rate Measurement Method value set - Guide d'implémentation Fr Core v2.2.0-ballot
+# Respiratory Rate Measurement Method value set - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -46,7 +46,9 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-respiratory-rate-meas-method",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+    "profile" : [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method",
   "version" : "2.2.0-ballot",
@@ -54,7 +56,7 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
   "title" : "Respiratory Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

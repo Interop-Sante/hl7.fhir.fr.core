@@ -1,4 +1,4 @@
-# FR Core Healthcare Service Profile - Guide d'implémentation Fr Core v2.2.0-ballot
+# FR Core Healthcare Service Profile - Guide d'implémentation FR Core v2.2.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
   "name" : "FRCoreHealthcareServiceProfile",
   "title" : "FR Core Healthcare Service Profile",
   "status" : "active",
-  "date" : "2026-01-22T13:05:19+00:00",
+  "date" : "2026-01-22T13:18:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
   "kind" : "resource",
   "abstract" : false,
   "type" : "HealthcareService",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/HealthcareService|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot"
       },
       {
         "id" : "HealthcareService.extension",
@@ -147,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot"
             ]
           }
         ]
@@ -157,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
         "path" : "HealthcareService.identifier.use",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         }
       },
       {
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
             ]
           }
         ]
@@ -182,7 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
         "path" : "HealthcareService.specialty",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot"
         }
       },
       {
@@ -192,7 +192,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
             ]
           }
         ]
@@ -204,7 +204,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
             ]
           }
         ]
@@ -216,7 +216,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
             ]
           }
         ]
