@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0-ballot |
-| Active as of 2026-01-07 | *Computable Name*:FRCoreOrganizationProfile |
+| Active as of 2026-01-22 | *Computable Name*:FRCoreOrganizationProfile |
 
  
 Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France. 
@@ -38,7 +38,7 @@ Ce profil ajoute par rapport à la ressource du standard
 **Utilisations:**
 
 * Dérivé de ce Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md) and [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
-* Référer à ce Profil: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md)...Show 12 more,[FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md),[FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md),[FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md),[FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md),[FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md),[FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md),[FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md),[FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md),[FR Core Organization Extension - Membre d'organisation](StructureDefinition-fr-core-organization-member.md),[FR Core Organization Profile](StructureDefinition-fr-core-organization.md),[FR Core Patient Profile](StructureDefinition-fr-core-patient.md)and[FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
+* Référer à ce Profil: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md)... Show 12 more, [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md), [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FR Core Organization Extension - Membre d'organisation](StructureDefinition-fr-core-organization-member.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md) and [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
 * Exemples pour ce Profil: [HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G](Organization-FRCoreOrganizationExample.md), [Depertement d'Endocrinologie](Organization-hopitaltest-dept-11003-endocrino.md), [Pole Medecines spécialisées](Organization-hopitaltest-pole-1150-med-spe.md), [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md) and [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization)
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-01-07T14:08:03+00:00",
+  "date" : "2026-01-22T11:51:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location | *Version*:2.2.0-ballot |
-| Active as of 2026-01-07 | *Computable Name*:FRCoreLocationProfile |
+| Active as of 2026-01-22 | *Computable Name*:FRCoreLocationProfile |
 
  
 Ressource Location adaptée au contexte français. Cette ressource est utilisée pour représenter un lieu physique, telle qu’une salle d’examen, un lit d’hôpital ou une chambre d’hôpital. 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-01-07T14:08:03+00:00",
+  "date" : "2026-01-22T11:51:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

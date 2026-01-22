@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur | *Version*:2.2.0-ballot |
-| Active as of 2026-01-07 | *Computable Name*:FRCoreValueSetOrganizationUFIndicateur |
+| Active as of 2026-01-22 | *Computable Name*:FRCoreValueSetOrganizationUFIndicateur |
 
  
 Indicateur d’une unité fonctionnelle. 
@@ -53,7 +53,7 @@ Indicateur d’une unité fonctionnelle.
   "name" : "FRCoreValueSetOrganizationUFIndicateur",
   "title" : "FR Core ValueSet Organization UF Indicateur",
   "status" : "active",
-  "date" : "2026-01-07T14:08:03+00:00",
+  "date" : "2026-01-22T11:51:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

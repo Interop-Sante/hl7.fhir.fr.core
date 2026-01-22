@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte | *Version*:2.2.0-ballot |
-| Active as of 2026-01-07 | *Computable Name*:FRCoreOrganizationExecutanteActeExtension |
+| Active as of 2026-01-22 | *Computable Name*:FRCoreOrganizationExecutanteActeExtension |
 
 Indicateur permettant de définir si une UF peut exécuter des actes
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationExecutanteActeExtension",
   "title" : "FR Core Organization Extension - Exécutante d'acte",
   "status" : "active",
-  "date" : "2026-01-07T14:08:03+00:00",
+  "date" : "2026-01-22T11:51:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

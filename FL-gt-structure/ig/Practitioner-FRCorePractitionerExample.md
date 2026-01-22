@@ -20,9 +20,9 @@ Profil: [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.
 
 **telecom**: [sophie.leclerc@mssante.fr](mailto:sophie.leclerc@mssante.fr)
 
-> **qualification****code**:Diplôme Etat français
+> **qualification****code**: Diplôme Etat français
 
-> **qualification****code**:Civil
+> **qualification****code**: Civil
 
 
 

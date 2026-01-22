@@ -20,7 +20,7 @@ Profil: [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-ob
 
 **performer**: [Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md)
 
-**value**: 96 Kg(Détails : code UCUMkg = 'kg')
+**value**: 96 Kg (Détails : code UCUMkg = 'kg')
 
 
 
