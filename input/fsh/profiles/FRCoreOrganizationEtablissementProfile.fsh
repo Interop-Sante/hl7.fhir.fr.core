@@ -58,6 +58,26 @@ Description: """Profil de la ressource Organization permettant de représenter d
 
 
 * type from FRCoreValueSetOrganizationEtablissementType (example)
+* type contains
+    organizationType 0..1 and
+    secteurActiviteRASS 0..1 and
+    categorieEtablissementRASS 0..1
+
+* type[organizationType] from FRCoreValueSetOrganizationType (required)
+* type[organizationType].coding 1..1
+* type[organizationType].coding.system 1..
+
+* type[secteurActiviteRASS] from $JDV-J101-SecteurActivite-RASS (required)
+* type[secteurActiviteRASS] ^short = "Secteurs d'activité des établissements avec la même activité dans le RASS"
+* type[secteurActiviteRASS].coding 1..1
+* type[secteurActiviteRASS].coding.system 1..
+
+* type[categorieEtablissementRASS] from $JDV-J129-CategorieEtablissement-RASS (required)
+* type[categorieEtablissementRASS] ^short = "Catégorie d'établissement du RASS"
+* type[categorieEtablissementRASS].coding 1..1
+* type[categorieEtablissementRASS].coding.system 1..
+
+
 // Organization.name
 * name MS
 * name ^short = "Raison sociale de la structure"
