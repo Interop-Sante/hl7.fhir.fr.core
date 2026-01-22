@@ -5,4 +5,5 @@ Description: "Précise le lieu de décès du patient (hôpital, sur la voie publ
 * ^purpose = "Place where the patient is dead."
 * ^context.type = #element
 * ^context.expression = "Patient"
-* value[x] only string
+* value[x] only FRCoreAddressProfile
+* valueAddress ^short = "Lieu de décès du patient | Place where the patient is dead"

@@ -1,7 +1,7 @@
 id: hl7.fhir.fr.core
 canonical: https://hl7.fr/ig/fhir/core
-name: FrCore
-title: Guide d'implémentation Fr Core
+name: FRCore
+title: Guide d'implémentation FR Core
 publisher:
   name: Interop'Santé
   url: http://interopsante.org/
@@ -26,9 +26,20 @@ dependencies:
 parameters: 
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
-  pin-canonicals: pin-multiples # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
-
-
+  i18n-default-lang: fr-FR # Default language
+  pin-canonicals: pin-all # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+  apply-contact: true
+  apply-jurisdiction: true
+  logging:
+    - tx #tx: Messages describing the use of the terminology server (for debugging)
+    - html #html: Log when validating an html page (troubleshooting only - leave off)
+    - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
+    - init #init: Messages describing the start up process (for debugging)
+    - progress #progress: Overall progress messages
+   
 pages:
     index.md:
       title: Accueil
