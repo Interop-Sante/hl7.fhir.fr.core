@@ -27,7 +27,8 @@ Description: """Profil de la ressource Organization permettant de représenter d
     rppsRang 0..*
     
 
-* identifier[idNatSt] ^short = "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures."
+* identifier[idNatSt] ^short = "Identifiant national de structure, à privilégier. L'idNatSt ne doit pas être construit, il peut être trouvé via l'API Annuaire Santé."
+* identifier[idNatSt] ^definition = "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures. L'idNatSt ne doit pas être construit, pour trouver l'identifiant d'une structure, il suffit de faire une requête via l'API Annuaire Santé. Il s'agit de l'identifiant national à privilégier."
 * identifier[idNatSt].use 1..
 * identifier[idNatSt].use = #official
 * identifier[idNatSt].type 1..
