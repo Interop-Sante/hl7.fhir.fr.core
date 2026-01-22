@@ -58,6 +58,12 @@ Description: """Profil de la ressource Organization permettant de représenter d
 
 
 * type from FRCoreValueSetOrganizationEtablissementType (example)
+
+* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.path = "$this"
+* type ^slicing.rules = #open
+
+
 * type contains
     organizationType 0..1 and
     secteurActiviteRASS 0..1 and
