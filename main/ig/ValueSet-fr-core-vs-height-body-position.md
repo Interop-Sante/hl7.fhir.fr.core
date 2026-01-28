@@ -56,7 +56,7 @@ ValueSet Body Position
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T09:35:28+00:00",
+  "date" : "2026-01-28T10:29:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -93,6 +93,31 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
   </li>
@@ -193,6 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#les-profils-structures-des-établissements" id="markdown-toc-les-profils-structures-des-établissements">Les profils structures des établissements</a></li>
   <li><a href="#les-profils-administratifs" id="markdown-toc-les-profils-administratifs">Les profils administratifs</a></li>
   <li><a href="#les-profils-mesures-de-santé-vital-signs" id="markdown-toc-les-profils-mesures-de-santé-vital-signs">Les profils mesures de santé (vital signs)</a></li>
   <li><a href="#les-profils-agenda" id="markdown-toc-les-profils-agenda">Les profils agenda</a></li>
@@ -200,7 +226,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Cette page contient la liste des profils définis dans le cadre du guide d’implémentation FrCore, ordonnés par catégories</p>
+<p>Cette page contient la liste des profils définis dans le cadre du guide d’implémentation FrCore, ordonnés par catégories.</p>
+
+<h3 id="les-profils-structures-des-établissements">Les profils structures des établissements</h3>
+
+<!-- Rajout du style pour que le tableau prenne toute la taille et se place en-dessous du menu -->
+<div style="width: 100%; display: flex"> 
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-core-location.html">FRCoreLocationProfile</a></td><td><div><p>Ressource Location adaptée au contexte français.
+Cette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen,
+un lit d'hôpital ou une chambre d'hôpital.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-etablissement.html">FRCoreOrganizationEtablissementProfile</a></td><td><div><p>Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-uac.html">FRCoreOrganizationUACProfile</a></td><td><div><p>Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-uf.html">FRCoreOrganizationUFProfile</a></td><td><div><p>Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization.html">FRCoreOrganizationProfile</a></td><td><div><p>Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France.</p>
+</div></td></tr></table>
+</div>
 
 <h3 id="les-profils-administratifs">Les profils administratifs</h3>
 
@@ -210,15 +250,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-core-healthcare-service.html">FRCoreHealthcareServiceProfile</a></td><td><div><p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).</p>
 <p>Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror).</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-core-location.html">FRCoreLocationProfile</a></td><td><div><p>French profile of Location.</p>
-<p>Profil français de la ressource Location</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-pole.html">FRCoreOrganizationPoleProfile</a></td><td><div><p>FR Core Organization Pole Profile</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-uac.html">FRCoreOrganizationUACProfile</a></td><td><div><p>This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.</p>
-<p>Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-uf.html">FRCoreOrganizationUFProfile</a></td><td><div><p>This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.</p>
-<p>Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization.html">FRCoreOrganizationProfile</a></td><td><div><p>Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions.</p>
-<p>Profil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-core-patient-ins.html">FRCorePatientINSProfile</a></td><td><div><p>FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.</p>
 <p>Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-core-patient.html">FRCorePatientProfile</a></td><td><div><p>Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.</p>
@@ -311,7 +342,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 09:35+0000">2026-01-28</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:29+0000">2026-01-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

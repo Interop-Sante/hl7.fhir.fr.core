@@ -7,6 +7,13 @@
     "name" : "FRCorePatientMultipleBirthExtension"
   },
   {
+    "id" : "fr-core-cs-champ-activite",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemChampActivite"
+  },
+  {
     "id" : "fr-core-cs-circonstances-sortie",
     "type" : "CodeSystem",
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
@@ -14,11 +21,32 @@
     "name" : "FRCoreCodeSystemCirconstancesSortie"
   },
   {
+    "id" : "fr-core-cs-code-tarif-tnjp",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-code-tarif-tnjp",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemCodeTarifTNJP"
+  },
+  {
     "id" : "fr-core-cs-contact-relationship",
     "type" : "CodeSystem",
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreCodeSystemContactRelationship"
+  },
+  {
+    "id" : "fr-core-cs-discipline-equipement",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemDisciplineEquipement"
+  },
+  {
+    "id" : "fr-core-cs-discipline-prestation",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemDisciplinePrestation"
   },
   {
     "id" : "fr-core-cs-fiabilite-identite",
@@ -49,11 +77,11 @@
     "name" : "FRCoreCodeSystemLocationPhysicalType"
   },
   {
-    "id" : "fr-core-cs-location-position-room",
+    "id" : "fr-core-cs-location-position-lit",
     "type" : "CodeSystem",
-    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreCodeSystemLocationPositionRoom"
+    "name" : "FRCoreCodeSystemPositionLit"
   },
   {
     "id" : "fr-core-cs-location-type",
@@ -61,6 +89,13 @@
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreCodeSystemLocationType"
+  },
+  {
+    "id" : "fr-core-cs-location-type-chambre",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemTypeChambre"
   },
   {
     "id" : "fr-core-cs-marital-status",
@@ -91,6 +126,13 @@
     "name" : "FRCoreCodeSystemScheduleType"
   },
   {
+    "id" : "fr-core-cs-type-activite",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemTypeActivite"
+  },
+  {
     "id" : "fr-core-cs-type-admission",
     "type" : "CodeSystem",
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
@@ -103,6 +145,13 @@
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-organisation",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreCodeSystemTypesOrganisations"
+  },
+  {
+    "id" : "fr-core-cs-uf-indicateur",
+    "type" : "CodeSystem",
+    "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreCodeSystemUFIndicateur"
   },
   {
     "id" : "fr-core-cs-v2-0203",
@@ -238,11 +287,18 @@
     "name" : "FRCoreLocationProfile"
   },
   {
-    "id" : "fr-core-location-position-room",
+    "id" : "fr-core-location-position-lit",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreLocationPartOfPositionRoomExtension"
+    "name" : "FRCoreLocationPositionLitExtension"
+  },
+  {
+    "id" : "fr-core-location-type-chambre",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreLocationTypeChambreExtension"
   },
   {
     "id" : "fr-core-lunar-date",
@@ -350,88 +406,74 @@
     "name" : "FRCoreOrganizationProfile"
   },
   {
-    "id" : "fr-core-organization-activity-field",
+    "id" : "fr-core-organization-champ-activite",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationActivityFieldExtension"
+    "name" : "FRCoreOrganizationChampActiviteExtension"
   },
   {
-    "id" : "fr-core-organization-activity-type",
+    "id" : "fr-core-organization-demandeuse-acte",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationActivityTypeExtension"
+    "name" : "FRCoreOrganizationDemandeuseActeExtension"
   },
   {
-    "id" : "fr-core-organization-analysis-section",
+    "id" : "fr-core-organization-discipline-equipement",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-analysis-section",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationAnalysisSectionExtension"
+    "name" : "FRCoreOrganizationDisciplineEquipementExtension"
   },
   {
-    "id" : "fr-core-organization-applicant-act",
+    "id" : "fr-core-organization-discipline-prestation",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationApplicantActExtension"
+    "name" : "FRCoreOrganizationDisciplinePrestationExtension"
   },
   {
-    "id" : "fr-core-organization-budget-letter",
+    "id" : "fr-core-organization-etablissement",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationBudgetLetterExtension"
+    "name" : "FRCoreOrganizationEtablissementProfile"
   },
   {
-    "id" : "fr-core-organization-description",
+    "id" : "fr-core-organization-executante-acte",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationDescriptionExtension"
+    "name" : "FRCoreOrganizationExecutanteActeExtension"
   },
   {
-    "id" : "fr-core-organization-executant",
+    "id" : "fr-core-organization-member",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executant",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationExecutantExtension"
+    "name" : "FRCoreOrganizationMemberExtension"
   },
   {
-    "id" : "fr-core-organization-external",
+    "id" : "fr-core-organization-place-hebergement-theorique",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-external",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationExternalExtension"
+    "name" : "FRCoreOrganizationPlaceHebergementTheoriqueExtension"
   },
   {
-    "id" : "fr-core-organization-field",
+    "id" : "fr-core-organization-raison-sociale",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-field",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationFieldExtension"
+    "name" : "FRCoreOrganizationRaisonSocialeExtension"
   },
   {
-    "id" : "fr-core-organization-number-of-theorical-accomadation-space",
+    "id" : "fr-core-organization-sae-category",
     "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension"
-  },
-  {
-    "id" : "fr-core-organization-pole",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-pole",
-    "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationPoleProfile"
-  },
-  {
-    "id" : "fr-core-organization-prestation-discipline",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-prestation-discipline",
-    "version" : "2.2.0-ballot",
-    "name" : "FRCoreOrganizationPrestationDisciplineExtension"
+    "name" : "FRCoreOrganizationSAECategoryExtension"
   },
   {
     "id" : "fr-core-organization-short-name",
@@ -439,6 +481,20 @@
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreOrganizationShortNameExtension"
+  },
+  {
+    "id" : "fr-core-organization-tarif",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreOrganizationTarifExtension"
+  },
+  {
+    "id" : "fr-core-organization-type-activite",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreOrganizationTypeActiviteExtension"
   },
   {
     "id" : "fr-core-organization-uac",
@@ -453,6 +509,20 @@
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreOrganizationUFProfile"
+  },
+  {
+    "id" : "fr-core-organization-uf-externe",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreOrganizationUFExterneExtension"
+  },
+  {
+    "id" : "fr-core-organization-uf-indicateur",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreOrganizationUFIndicateurExtension"
   },
   {
     "id" : "fr-core-patient",
@@ -560,13 +630,6 @@
     "name" : "FRCoreSlotProfile"
   },
   {
-    "id" : "fr-core-use-period",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period",
-    "version" : "2.2.0-ballot",
-    "name" : "FRCoreUsePeriodExtension"
-  },
-  {
     "id" : "fr-core-vs-availability-time-rule",
     "type" : "ValueSet",
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule",
@@ -602,6 +665,13 @@
     "name" : "FRCoreValueSetBPMeasurementMethod"
   },
   {
+    "id" : "fr-core-vs-categorie-sae-etablissement",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetCategorieSAEEtablissement"
+  },
+  {
     "id" : "fr-core-vs-cog-commune-pays",
     "type" : "ValueSet",
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays",
@@ -614,6 +684,13 @@
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-contact-relationship",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreValueSetContactRelationship"
+  },
+  {
+    "id" : "fr-core-vs-discipline-prestation",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetDisciplinePrestation"
   },
   {
     "id" : "fr-core-vs-email-type",
@@ -700,25 +777,11 @@
     "name" : "FRCoreValueSetINSEECode"
   },
   {
-    "id" : "fr-core-vs-location-identifier-type",
+    "id" : "fr-core-vs-location-position-lit",
     "type" : "ValueSet",
-    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-identifier-type",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreValueSetLocationIdentifierType"
-  },
-  {
-    "id" : "fr-core-vs-location-physical-type",
-    "type" : "ValueSet",
-    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type",
-    "version" : "2.2.0-ballot",
-    "name" : "FRCoreValueSetLocationPhysicalType"
-  },
-  {
-    "id" : "fr-core-vs-location-position-room",
-    "type" : "ValueSet",
-    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-room",
-    "version" : "2.2.0-ballot",
-    "name" : "FRCoreValueSetLocationPositionRoom"
+    "name" : "FRCoreValueSetLocationPositionLit"
   },
   {
     "id" : "fr-core-vs-location-type",
@@ -726,6 +789,13 @@
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type",
     "version" : "2.2.0-ballot",
     "name" : "FRCoreValueSetLocationType"
+  },
+  {
+    "id" : "fr-core-vs-location-type-chambre",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type-chambre",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetLocationTypeChambre"
   },
   {
     "id" : "fr-core-vs-marital-status",
@@ -749,11 +819,39 @@
     "name" : "FRCoreValueSetModeValidationIdentityINS"
   },
   {
-    "id" : "fr-core-vs-organization-activity-field",
+    "id" : "fr-core-vs-oragnization-code-tarif-tnjp",
     "type" : "ValueSet",
-    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-activity-field",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreValueSetOrganizationActivityField"
+    "name" : "FRCoreValueSetOrganizationCodeTarifTNJP"
+  },
+  {
+    "id" : "fr-core-vs-oragnization-type-activite",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-type-activite",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetOrganizationTypeActivite"
+  },
+  {
+    "id" : "fr-core-vs-organization-champ-activite",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-champ-activite",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetOrganizationChampActivite"
+  },
+  {
+    "id" : "fr-core-vs-organization-discipline-equipement",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-discipline-equipement",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetOrganizationDisciplineEquipement"
+  },
+  {
+    "id" : "fr-core-vs-organization-etablissement-type",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetOrganizationEtablissementType"
   },
   {
     "id" : "fr-core-vs-organization-identifier-type",
@@ -770,11 +868,18 @@
     "name" : "FRCoreValueSetOrganizationType"
   },
   {
-    "id" : "fr-core-vs-organization-uf-activity-field",
+    "id" : "fr-core-vs-organization-uac-type",
     "type" : "ValueSet",
-    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-activity-field",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uac-type",
     "version" : "2.2.0-ballot",
-    "name" : "FRCoreValueSetOrganizationUFActivityField"
+    "name" : "FRCoreValueSetOrganizationUACType"
+  },
+  {
+    "id" : "fr-core-vs-organization-uf-indicateur",
+    "type" : "ValueSet",
+    "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur",
+    "version" : "2.2.0-ballot",
+    "name" : "FRCoreValueSetOrganizationUFIndicateur"
   },
   {
     "id" : "fr-core-vs-patient-contact-role",

@@ -56,7 +56,7 @@ SELECT SNOMED CT code system values that describe where on the body the temperat
   "title" : "Body Temperature Measurement Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T09:35:28+00:00",
+  "date" : "2026-01-28T10:29:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

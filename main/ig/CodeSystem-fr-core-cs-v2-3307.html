@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9.124"}
-    h3,h4,h5,h6{--heading-prefix:"9.124"}</style>
+    <style type="text/css">h2{--heading-prefix:"15.139"}
+    h3,h4,h5,h6{--heading-prefix:"15.139"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -92,6 +92,31 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
@@ -268,64 +293,43 @@
 
   
 <ul>
+ <li><a href="ValueSet-fr-core-vs-organization-etablissement-type.html">FRCoreValueSetOrganizationEtablissementType</a></li>
  <li><a href="ValueSet-fr-core-vs-organization-type.html">FRCoreValueSetOrganizationType</a></li>
+ <li><a href="ValueSet-fr-core-vs-organization-uac-type.html">FRCoreValueSetOrganizationUACType</a></li>
 </ul>
 
 
   <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="fr-core-cs-v2-3307"> </a><a name="hcfr-core-cs-v2-3307"> </a>
 <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablecodesystem.html">Shareable CodeSystemversion : null4.0.1)</a></p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307</code> defines the following codes:</p>
-<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr>
-<tr><td style="white-space:nowrap">LEGAL-ENTITY<a name="fr-core-cs-v2-3307-LEGAL-ENTITY"> </a></td>
-<td>Entité légale</td>
-<td>Entité légale</td></tr>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr>
 <tr><td style="white-space:nowrap">GHT<a name="fr-core-cs-v2-3307-GHT"> </a></td>
-<td>Groupement hospitalier de territoire</td>
 <td>Groupement hospitalier de territoire</td></tr>
+<tr><td style="white-space:nowrap">LEGAL-ENTITY<a name="fr-core-cs-v2-3307-LEGAL-ENTITY"> </a></td>
+<td>Entité légale</td></tr>
 <tr><td style="white-space:nowrap">GEOGRAPHICAL-ENTITY<a name="fr-core-cs-v2-3307-GEOGRAPHICAL-ENTITY"> </a></td>
-<td>Entité géographique</td>
 <td>Entité géographique</td></tr>
 <tr><td style="white-space:nowrap">GROUP<a name="fr-core-cs-v2-3307-GROUP"> </a></td>
-<td>Groupe privé/hospitalier</td>
 <td>Groupe privé/hospitalier</td></tr>
-<tr><td style="white-space:nowrap">HEBERGEMENT<a name="fr-core-cs-v2-3307-HEBERGEMENT"> </a></td>
-<td>Hébergement</td>
-<td>Hébergement</td></tr>
-<tr><td style="white-space:nowrap">SOIN<a name="fr-core-cs-v2-3307-SOIN"> </a></td>
-<td>Soin</td>
-<td>Soin</td></tr>
-<tr><td style="white-space:nowrap">ADMINISTRATIF<a name="fr-core-cs-v2-3307-ADMINISTRATIF"> </a></td>
-<td>Administration</td>
-<td>Administration</td></tr>
-<tr><td style="white-space:nowrap">MEDICAL<a name="fr-core-cs-v2-3307-MEDICAL"> </a></td>
-<td>Médical</td>
-<td>Médical</td></tr>
-<tr><td style="white-space:nowrap">TECHNIQUE<a name="fr-core-cs-v2-3307-TECHNIQUE"> </a></td>
-<td>Technique</td>
-<td>Technique</td></tr>
-<tr><td style="white-space:nowrap">MEDICOTEC<a name="fr-core-cs-v2-3307-MEDICOTEC"> </a></td>
-<td>medico technique (radio, scanner …)</td>
-<td>medico technique (radio, scanner …)</td></tr>
-<tr><td style="white-space:nowrap">UF<a name="fr-core-cs-v2-3307-UF"> </a></td>
-<td>Unité fonctionnelle</td>
-<td>Unité fonctionnelle</td></tr>
+<tr><td style="white-space:nowrap">STRUCT-INTERNE<a name="fr-core-cs-v2-3307-STRUCT-INTERNE"> </a></td>
+<td>Structure interne</td></tr>
+<tr><td style="white-space:nowrap">SECTEUR<a name="fr-core-cs-v2-3307-SECTEUR"> </a></td>
+<td>Secteur</td></tr>
+<tr><td style="white-space:nowrap">DEPARTEMENT<a name="fr-core-cs-v2-3307-DEPARTEMENT"> </a></td>
+<td>Département</td></tr>
 <tr><td style="white-space:nowrap">SERVICE<a name="fr-core-cs-v2-3307-SERVICE"> </a></td>
-<td>Service</td>
 <td>Service</td></tr>
 <tr><td style="white-space:nowrap">UM<a name="fr-core-cs-v2-3307-UM"> </a></td>
-<td>Unité médicale</td>
 <td>Unité médicale</td></tr>
 <tr><td style="white-space:nowrap">UAC<a name="fr-core-cs-v2-3307-UAC"> </a></td>
-<td>Unité d'activité</td>
 <td>Unité d'activité</td></tr>
 <tr><td style="white-space:nowrap">POLE<a name="fr-core-cs-v2-3307-POLE"> </a></td>
-<td>Pôle</td>
 <td>Pôle</td></tr>
 <tr><td style="white-space:nowrap">CENTRE-RESP<a name="fr-core-cs-v2-3307-CENTRE-RESP"> </a></td>
-<td>Centre de responsabilité</td>
 <td>Centre de responsabilité</td></tr>
 <tr><td style="white-space:nowrap">CENTRE-ACTIVITE<a name="fr-core-cs-v2-3307-CENTRE-ACTIVITE"> </a></td>
-<td>Centre d'activité</td>
-<td>Centre d'activité</td></tr></table></div>
+<td>Centre d'activité</td></tr>
+<tr><td style="white-space:nowrap">UF<a name="fr-core-cs-v2-3307-UF"> </a></td>
+<td>Unité fonctionnelle</td></tr></table></div>
 
   
 
@@ -374,7 +378,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 09:35+0000">2026-01-28</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 10:29+0000">2026-01-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -6,10 +6,10 @@
 
 ## ValueSet: FR Core ValueSet Location type 
 
-| | | |
-| :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type | *Version*:2.2.0-ballot | |
-| * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetLocationType |
+| | |
+| :--- | :--- |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type | *Version*:2.2.0-ballot |
+| Active as of 2026-01-28 | *Computable Name*:FRCoreValueSetLocationType |
 
  
 Jeu de valeurs du rôle joué par un lieu. 
@@ -17,6 +17,7 @@ A role for a location
 
  **References** 
 
+* [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
 * [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 ### Définition logique (CLD)
@@ -51,31 +52,13 @@ A role for a location
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
     ]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
-      "valueMarkdown" : "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode" : "informative"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger" : 1
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode" : "fhir"
-    }
-  ],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type",
   "version" : "2.2.0-ballot",
   "name" : "FRCoreValueSetLocationType",
   "title" : "FR Core ValueSet Location type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T09:35:28+00:00",
+  "date" : "2026-01-28T10:29:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

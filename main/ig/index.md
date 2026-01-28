@@ -95,7 +95,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [FRCore](index.md), [FRCoreAddressInseeCodeExtension](StructureDefinition-fr-core-address-insee-code.md)... Show 124 more, [FRCoreAddressProfile](StructureDefinition-fr-core-address.md), [FRCoreAppointmentOperatorExtension](StructureDefinition-fr-core-appointment-operator.md), [FRCoreAppointmentProfile](StructureDefinition-fr-core-appointment.md), [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCoreCodeSystemCirconstancesSortie](CodeSystem-fr-core-cs-circonstances-sortie.md), [FRCoreCodeSystemContactRelationship](CodeSystem-fr-core-cs-contact-relationship.md), [FRCoreCodeSystemIdentifierType](CodeSystem-fr-core-cs-identifier-type.md), [FRCoreCodeSystemLocationIdentifierType](CodeSystem-fr-core-cs-location-identifier-type.md), [FRCoreCodeSystemLocationPhysicalType](CodeSystem-fr-core-cs-location-physical-type.md), [FRCoreCodeSystemLocationPositionRoom](CodeSystem-fr-core-cs-location-position-room.md), [FRCoreCodeSystemLocationType](CodeSystem-fr-core-cs-location-type.md), [FRCoreCodeSystemMaritalStatus](CodeSystem-fr-core-cs-marital-status.md), [FRCoreCodeSystemMethodCollection](CodeSystem-fr-core-cs-method-collection.md), [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md), [FRCoreCodeSystemReliabilityIdentity](CodeSystem-fr-core-cs-fiabilite-identite.md), [FRCoreCodeSystemScheduleType](CodeSystem-fr-core-cs-schedule-type.md), [FRCoreCodeSystemTypeAdmission](CodeSystem-fr-core-cs-type-admission.md), [FRCoreCodeSystemTypesOrganisations](CodeSystem-fr-core-cs-type-organisation.md), [FRCoreCodeSystemv2_0203](CodeSystem-fr-core-cs-v2-0203.md), [FRCoreCodeSystemv2_0445](CodeSystem-fr-core-cs-v2-0445.md), [FRCoreCodeSystemv2_3307](CodeSystem-fr-core-cs-v2-3307.md), [FRCoreCodeSystemv2_3311](CodeSystem-fr-core-cs-v2-3311.md), [FRCoreCommentExtension](StructureDefinition-fr-core-comment.md), [FRCoreContactPointEmailTypeExtension](StructureDefinition-fr-core-contact-point-email-type.md), [FRCoreContactPointProfile](StructureDefinition-fr-core-contact-point.md), [FRCoreEncounterEstimatedDischargeDateExtension](StructureDefinition-fr-core-estimated-discharge-date.md), [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md), [FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md), [FRCoreHumanNameProfile](StructureDefinition-fr-core-human-name.md), [FRCoreLocationPartOfPositionRoomExtension](StructureDefinition-fr-core-location-position-room.md), [FRCoreLocationProfile](StructureDefinition-fr-core-location.md), [FRCoreLunarDateExtension](StructureDefinition-fr-core-lunar-date.md), [FRCoreMedicationAdministrationInhaledOxygenProfile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md), [FRCoreNationalityExtension](StructureDefinition-fr-core-patient-nationality.md), [FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md), [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md), [FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md), [FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md), [FRCoreObservationBodyWeightProfile](StructureDefinition-fr-core-observation-body-weight.md), [FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md), [FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md), [FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md), [FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md), [FRCoreObservationLevelOfExertionExtension](StructureDefinition-fr-core-observation-level-of-exertion.md), [FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md), [FRCoreOrganizationActivityFieldExtension](StructureDefinition-fr-core-organization-activity-field.md), [FRCoreOrganizationActivityTypeExtension](StructureDefinition-fr-core-organization-activity-type.md), [FRCoreOrganizationAnalysisSectionExtension](StructureDefinition-fr-core-organization-analysis-section.md), [FRCoreOrganizationApplicantActExtension](StructureDefinition-fr-core-organization-applicant-act.md), [FRCoreOrganizationBudgetLetterExtension](StructureDefinition-fr-core-organization-budget-letter.md), [FRCoreOrganizationDescriptionExtension](StructureDefinition-fr-core-organization-description.md), [FRCoreOrganizationExecutantExtension](StructureDefinition-fr-core-organization-executant.md), [FRCoreOrganizationExternalExtension](StructureDefinition-fr-core-organization-external.md), [FRCoreOrganizationFieldExtension](StructureDefinition-fr-core-organization-field.md), [FRCoreOrganizationPoleProfile](StructureDefinition-fr-core-organization-pole.md), [FRCoreOrganizationPrestationDisciplineExtension](StructureDefinition-fr-core-organization-prestation-discipline.md), [FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md), [FRCoreOrganizationShortNameExtension](StructureDefinition-fr-core-organization-short-name.md), [FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension](StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.md), [FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md), [FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md), [FRCorePatientBirthDateUpdateIndicatorExtension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md), [FRCorePatientBirthListGivenName](StructureDefinition-fr-core-patient-birth-list-given-name.md), [FRCorePatientContactIdentifierExtension](StructureDefinition-fr-core-patient-contact-identifier.md), [FRCorePatientDeathPlaceExtension](StructureDefinition-fr-core-patient-death-place.md), [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientIdentityReliabilityExtension](StructureDefinition-fr-core-identity-reliability.md), [FRCorePatientMultipleBirthExtension](StructureDefinition-fr-core-patient-multiple-birth-r5.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md), [FRCorePractitionerSpecialtyExtension](StructureDefinition-fr-core-practitioner-specialty.md), [FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md), [FRCoreScheduleAvailabilityTimeExtension](StructureDefinition-fr-core-schedule-availability-time.md), [FRCoreScheduleProfile](StructureDefinition-fr-core-schedule.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [FRCoreSlotProfile](StructureDefinition-fr-core-slot.md), [FRCoreUsePeriodExtension](StructureDefinition-fr-core-use-period.md), [FRCoreValueSetAvailabilityTimeRule](ValueSet-fr-core-vs-availability-time-rule.md), [FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md), [FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md), [FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md), [FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md), [FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md), [FRCoreValueSetCOGCommunePays](ValueSet-fr-core-vs-cog-commune-pays.md), [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md), [FRCoreValueSetEmailType](ValueSet-fr-core-vs-email-type.md), [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md), [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md), [FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md), [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md), [FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md), [FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md), [FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md), [FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md), [FRCoreValueSetINSEECode](ValueSet-fr-core-vs-insee-code.md), [FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md), [FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md), [FRCoreValueSetLocationIdentifierType](ValueSet-fr-core-vs-location-identifier-type.md), [FRCoreValueSetLocationPhysicalType](ValueSet-fr-core-vs-location-physical-type.md), [FRCoreValueSetLocationPositionRoom](ValueSet-fr-core-vs-location-position-room.md), [FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md), [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md), [FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md), [FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md), [FRCoreValueSetOrganizationActivityField](ValueSet-fr-core-vs-organization-activity-field.md), [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md), [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md), [FRCoreValueSetOrganizationUFActivityField](ValueSet-fr-core-vs-organization-uf-activity-field.md), [FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md), [FRCoreValueSetPatientGender](ValueSet-fr-core-vs-patient-gender.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md), [FRCoreValueSetPatientIdentifierUseINS](ValueSet-fr-core-vs-patient-identifier-use-ins.md), [FRCoreValueSetPatientIdentifierUsePI](ValueSet-fr-core-vs-patient-identifier-use-pi.md), [FRCoreValueSetPatientRelationType](ValueSet-fr-core-vs-relation-type.md), [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md), [FRCoreValueSetPractitionerRoleExercice](ValueSet-fr-core-vs-practitioner-role-exercice.md), [FRCoreValueSetPractitionerSpecialty](ValueSet-fr-core-vs-practitioner-specialty.md), [FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md), [FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md), [FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md), [FRCoreValueSetTitle](ValueSet-fr-core-vs-title.md) and [FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [FRCore](index.md), [FRCoreAddressInseeCodeExtension](StructureDefinition-fr-core-address-insee-code.md)... Show 139 more, [FRCoreAddressProfile](StructureDefinition-fr-core-address.md), [FRCoreAppointmentOperatorExtension](StructureDefinition-fr-core-appointment-operator.md), [FRCoreAppointmentProfile](StructureDefinition-fr-core-appointment.md), [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCoreCodeSystemChampActivite](CodeSystem-fr-core-cs-champ-activite.md), [FRCoreCodeSystemCirconstancesSortie](CodeSystem-fr-core-cs-circonstances-sortie.md), [FRCoreCodeSystemCodeTarifTNJP](CodeSystem-fr-core-cs-code-tarif-tnjp.md), [FRCoreCodeSystemContactRelationship](CodeSystem-fr-core-cs-contact-relationship.md), [FRCoreCodeSystemDisciplineEquipement](CodeSystem-fr-core-cs-discipline-equipement.md), [FRCoreCodeSystemDisciplinePrestation](CodeSystem-fr-core-cs-discipline-prestation.md), [FRCoreCodeSystemIdentifierType](CodeSystem-fr-core-cs-identifier-type.md), [FRCoreCodeSystemLocationIdentifierType](CodeSystem-fr-core-cs-location-identifier-type.md), [FRCoreCodeSystemLocationPhysicalType](CodeSystem-fr-core-cs-location-physical-type.md), [FRCoreCodeSystemLocationType](CodeSystem-fr-core-cs-location-type.md), [FRCoreCodeSystemMaritalStatus](CodeSystem-fr-core-cs-marital-status.md), [FRCoreCodeSystemMethodCollection](CodeSystem-fr-core-cs-method-collection.md), [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md), [FRCoreCodeSystemPositionLit](CodeSystem-fr-core-cs-location-position-lit.md), [FRCoreCodeSystemReliabilityIdentity](CodeSystem-fr-core-cs-fiabilite-identite.md), [FRCoreCodeSystemScheduleType](CodeSystem-fr-core-cs-schedule-type.md), [FRCoreCodeSystemTypeActivite](CodeSystem-fr-core-cs-type-activite.md), [FRCoreCodeSystemTypeAdmission](CodeSystem-fr-core-cs-type-admission.md), [FRCoreCodeSystemTypeChambre](CodeSystem-fr-core-cs-location-type-chambre.md), [FRCoreCodeSystemTypesOrganisations](CodeSystem-fr-core-cs-type-organisation.md), [FRCoreCodeSystemUFIndicateur](CodeSystem-fr-core-cs-uf-indicateur.md), [FRCoreCodeSystemv2_0203](CodeSystem-fr-core-cs-v2-0203.md), [FRCoreCodeSystemv2_0445](CodeSystem-fr-core-cs-v2-0445.md), [FRCoreCodeSystemv2_3307](CodeSystem-fr-core-cs-v2-3307.md), [FRCoreCodeSystemv2_3311](CodeSystem-fr-core-cs-v2-3311.md), [FRCoreCommentExtension](StructureDefinition-fr-core-comment.md), [FRCoreContactPointEmailTypeExtension](StructureDefinition-fr-core-contact-point-email-type.md), [FRCoreContactPointProfile](StructureDefinition-fr-core-contact-point.md), [FRCoreEncounterEstimatedDischargeDateExtension](StructureDefinition-fr-core-estimated-discharge-date.md), [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md), [FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md), [FRCoreHumanNameProfile](StructureDefinition-fr-core-human-name.md), [FRCoreLocationPositionLitExtension](StructureDefinition-fr-core-location-position-lit.md), [FRCoreLocationProfile](StructureDefinition-fr-core-location.md), [FRCoreLocationTypeChambreExtension](StructureDefinition-fr-core-location-type-chambre.md), [FRCoreLunarDateExtension](StructureDefinition-fr-core-lunar-date.md), [FRCoreMedicationAdministrationInhaledOxygenProfile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md), [FRCoreNationalityExtension](StructureDefinition-fr-core-patient-nationality.md), [FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md), [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md), [FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md), [FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md), [FRCoreObservationBodyWeightProfile](StructureDefinition-fr-core-observation-body-weight.md), [FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md), [FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md), [FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md), [FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md), [FRCoreObservationLevelOfExertionExtension](StructureDefinition-fr-core-observation-level-of-exertion.md), [FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md), [FRCoreOrganizationChampActiviteExtension](StructureDefinition-fr-core-organization-champ-activite.md), [FRCoreOrganizationDemandeuseActeExtension](StructureDefinition-fr-core-organization-demandeuse-acte.md), [FRCoreOrganizationDisciplineEquipementExtension](StructureDefinition-fr-core-organization-discipline-equipement.md), [FRCoreOrganizationDisciplinePrestationExtension](StructureDefinition-fr-core-organization-discipline-prestation.md), [FRCoreOrganizationEtablissementProfile](StructureDefinition-fr-core-organization-etablissement.md), [FRCoreOrganizationExecutanteActeExtension](StructureDefinition-fr-core-organization-executante-acte.md), [FRCoreOrganizationMemberExtension](StructureDefinition-fr-core-organization-member.md), [FRCoreOrganizationPlaceHebergementTheoriqueExtension](StructureDefinition-fr-core-organization-place-hebergement-theorique.md), [FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md), [FRCoreOrganizationRaisonSocialeExtension](StructureDefinition-fr-core-organization-raison-sociale.md), [FRCoreOrganizationSAECategoryExtension](StructureDefinition-fr-core-organization-sae-category.md), [FRCoreOrganizationShortNameExtension](StructureDefinition-fr-core-organization-short-name.md), [FRCoreOrganizationTarifExtension](StructureDefinition-fr-core-organization-tarif.md), [FRCoreOrganizationTypeActiviteExtension](StructureDefinition-fr-core-organization-type-activite.md), [FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md), [FRCoreOrganizationUFExterneExtension](StructureDefinition-fr-core-organization-uf-externe.md), [FRCoreOrganizationUFIndicateurExtension](StructureDefinition-fr-core-organization-uf-indicateur.md), [FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md), [FRCorePatientBirthDateUpdateIndicatorExtension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md), [FRCorePatientBirthListGivenName](StructureDefinition-fr-core-patient-birth-list-given-name.md), [FRCorePatientContactIdentifierExtension](StructureDefinition-fr-core-patient-contact-identifier.md), [FRCorePatientDeathPlaceExtension](StructureDefinition-fr-core-patient-death-place.md), [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientIdentityReliabilityExtension](StructureDefinition-fr-core-identity-reliability.md), [FRCorePatientMultipleBirthExtension](StructureDefinition-fr-core-patient-multiple-birth-r5.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md), [FRCorePractitionerSpecialtyExtension](StructureDefinition-fr-core-practitioner-specialty.md), [FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md), [FRCoreScheduleAvailabilityTimeExtension](StructureDefinition-fr-core-schedule-availability-time.md), [FRCoreScheduleProfile](StructureDefinition-fr-core-schedule.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [FRCoreSlotProfile](StructureDefinition-fr-core-slot.md), [FRCoreValueSetAvailabilityTimeRule](ValueSet-fr-core-vs-availability-time-rule.md), [FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md), [FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md), [FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md), [FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md), [FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md), [FRCoreValueSetCOGCommunePays](ValueSet-fr-core-vs-cog-commune-pays.md), [FRCoreValueSetCategorieSAEEtablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md), [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md), [FRCoreValueSetDisciplinePrestation](ValueSet-fr-core-vs-discipline-prestation.md), [FRCoreValueSetEmailType](ValueSet-fr-core-vs-email-type.md), [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md), [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md), [FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md), [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md), [FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md), [FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md), [FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md), [FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md), [FRCoreValueSetINSEECode](ValueSet-fr-core-vs-insee-code.md), [FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md), [FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md), [FRCoreValueSetLocationPositionLit](ValueSet-fr-core-vs-location-position-lit.md), [FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md), [FRCoreValueSetLocationTypeChambre](ValueSet-fr-core-vs-location-type-chambre.md), [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md), [FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md), [FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md), [FRCoreValueSetOrganizationChampActivite](ValueSet-fr-core-vs-organization-champ-activite.md), [FRCoreValueSetOrganizationCodeTarifTNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md), [FRCoreValueSetOrganizationDisciplineEquipement](ValueSet-fr-core-vs-organization-discipline-equipement.md), [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md), [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md), [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md), [FRCoreValueSetOrganizationTypeActivite](ValueSet-fr-core-vs-oragnization-type-activite.md), [FRCoreValueSetOrganizationUACType](ValueSet-fr-core-vs-organization-uac-type.md), [FRCoreValueSetOrganizationUFIndicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md), [FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md), [FRCoreValueSetPatientGender](ValueSet-fr-core-vs-patient-gender.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md), [FRCoreValueSetPatientIdentifierUseINS](ValueSet-fr-core-vs-patient-identifier-use-ins.md), [FRCoreValueSetPatientIdentifierUsePI](ValueSet-fr-core-vs-patient-identifier-use-pi.md), [FRCoreValueSetPatientRelationType](ValueSet-fr-core-vs-relation-type.md), [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md), [FRCoreValueSetPractitionerRoleExercice](ValueSet-fr-core-vs-practitioner-role-exercice.md), [FRCoreValueSetPractitionerSpecialty](ValueSet-fr-core-vs-practitioner-specialty.md), [FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md), [FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md), [FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md), [FRCoreValueSetTitle](ValueSet-fr-core-vs-title.md) and [FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -152,7 +152,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-01-28T09:35:28+00:00",
+  "date" : "2026-01-28T10:29:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -1253,6 +1253,20 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-champ-activite"
+        },
+        "name" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
+        "description" : "Champ d'activité clinique de l'organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
           "reference" : "CodeSystem/fr-core-cs-circonstances-sortie"
         },
         "name" : "FR Core CodeSystem Circonstances Sortie",
@@ -1267,10 +1281,52 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-code-tarif-tnjp"
+        },
+        "name" : "FR Core CodeSystem Codes Tarifs - nomenclature TNJP",
+        "description" : "La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
           "reference" : "CodeSystem/fr-core-cs-contact-relationship"
         },
         "name" : "FR Core CodeSystem Contact Relationship",
         "description" : "Relationship type",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-discipline-equipement"
+        },
+        "name" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
+        "description" : "La nomenclature de disciplines d'équipement est utilisée pour ventiler l'activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline 'administration, services hôteliers et techniques'. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n'apparaissent pas, car elles ne font pas partie du champ de la SAE.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-discipline-prestation"
+        },
+        "name" : "FR Core CodeSystem Discipline de prestation - nomenclature SAE",
+        "description" : "La nomenclature des discipline de prestation.",
         "exampleBoolean" : false
       },
       {
@@ -1327,20 +1383,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FR Core CodeSystem Location Physical Type",
         "description" : "Location physical type",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/fr-core-cs-location-position-room"
-        },
-        "name" : "FR Core CodeSystem Location Position Room",
-        "description" : "Location position room",
         "exampleBoolean" : false
       },
       {
@@ -1421,6 +1463,20 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-location-position-lit"
+        },
+        "name" : "FR Core CodeSystem Position du lit",
+        "description" : "Position du lit dans la chambre",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
           "reference" : "CodeSystem/fr-core-cs-schedule-type"
         },
         "name" : "FR Core CodeSystem Schedule Type",
@@ -1439,6 +1495,48 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FR Core CodeSystem Type Admission",
         "description" : "Admission type",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-location-type-chambre"
+        },
+        "name" : "FR Core CodeSystem Type Chambre",
+        "description" : "Type de chambre",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-type-activite"
+        },
+        "name" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
+        "description" : "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/fr-core-cs-uf-indicateur"
+        },
+        "name" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
+        "description" : "Système de codage permettant de définir les indicateurs d'une unité fonctionnelle.",
         "exampleBoolean" : false
       },
       {
@@ -1603,10 +1701,24 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/fr-core-location-position-room"
+          "reference" : "StructureDefinition/fr-core-location-position-lit"
         },
-        "name" : "FR Core Location Part Of Position Room Extension",
-        "description" : "Position du lit dans la chambre.\r\nPosition of the bed in the bedroom",
+        "name" : "FR Core Location Extension - Position du lit",
+        "description" : "Position du lit dans la chambre",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-location-type-chambre"
+        },
+        "name" : "FR Core Location Extension - Type de chambre",
+        "description" : "Type de chambre",
         "exampleBoolean" : false
       },
       {
@@ -1620,7 +1732,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "StructureDefinition/fr-core-location"
         },
         "name" : "FR Core Location Profile",
-        "description" : "French profile of Location.\r\n\nProfil français de la ressource Location",
+        "description" : "Ressource Location adaptée au contexte français. \nCette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, \nun lit d'hôpital ou une chambre d'hôpital.",
         "exampleBoolean" : false
       },
       {
@@ -1837,140 +1949,14 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-activity-field"
-        },
-        "name" : "FR Core Organization Activity Field Extension",
-        "description" : "Champ d'activité d'une UF.\r\nActivity field of an organization",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-activity-type"
-        },
-        "name" : "FR Core Organization Activity Type Extension",
-        "description" : "Type d'activité d'une UF\r\nAn organization activity type",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-analysis-section"
-        },
-        "name" : "FR Core Organization Analysis Section Extension",
-        "description" : "Section d'analyse d'une UF.\r\nAn oraganization analysis section",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-applicant-act"
-        },
-        "name" : "FR Core Organization Applicant Act Extension",
-        "description" : "UF demandeuse d'actes\r\nAn organization that asks soma acts",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-budget-letter"
-        },
-        "name" : "FR Core Organization Budget Letter Extension",
-        "description" : "Lettre budgétaire de l'UF\r\nAn organization budget letter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-description"
-        },
-        "name" : "FR Core Organization Description Extension",
-        "description" : "Description textuelle d'une organisation\r\nOrganization description",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-executant"
-        },
-        "name" : "FR Core Organization Executant Extension",
-        "description" : "Une UF exécutante d'actes\n\rAn executant act organization",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-external"
-        },
-        "name" : "FR Core Organization External Extension",
-        "description" : "UF externe à l'établissement.\n\rExternal ward of the facility",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-field"
-        },
-        "name" : "FR Core Organization Field Extension",
-        "description" : "Discipline d'équipement\n\rEquipment field",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-pole"
+          "reference" : "StructureDefinition/fr-core-organization-etablissement"
         },
-        "name" : "FR Core Organization Pole Profile",
-        "description" : "FR Core Organization Pole Profile",
+        "name" : "FR Core Organization Etablissement Profile",
+        "description" : "Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.",
         "exampleBoolean" : false
       },
       {
@@ -1981,10 +1967,164 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-prestation-discipline"
+          "reference" : "StructureDefinition/fr-core-organization-sae-category"
         },
-        "name" : "FR Core Organization Prestation Discipline Extension",
-        "description" : "Prestation de discipline UAC for France\n\rDiscipline prestation of the organization",
+        "name" : "FR Core Organization Extension - Catetgorie SAE",
+        "description" : "Categorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-champ-activite"
+        },
+        "name" : "FR Core Organization Extension - Champ d'activité",
+        "description" : "Champ d'activité d'une UF",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-demandeuse-acte"
+        },
+        "name" : "FR Core Organization Extension - Demandeuse d'acte",
+        "description" : "Indicateur permettant de définir si une UF peut demander des actes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-discipline-equipement"
+        },
+        "name" : "FR Core Organization Extension - Discipline d'équipement",
+        "description" : "Discipline d'équipement",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-discipline-prestation"
+        },
+        "name" : "FR Core Organization Extension - Discipline Prestation",
+        "description" : "Discipline de prestation d'une UAC",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-executante-acte"
+        },
+        "name" : "FR Core Organization Extension - Exécutante d'acte",
+        "description" : "Indicateur permettant de définir si une UF peut exécuter des actes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-uf-indicateur"
+        },
+        "name" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
+        "description" : "Indicateur permettant de définir si une UF est d'hébergement, médicale, administrative ou de magasin.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-member"
+        },
+        "name" : "FR Core Organization Extension - Membre d'organisation",
+        "description" : "Extension permettant de définir des membres d'une organisation.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-place-hebergement-theorique"
+        },
+        "name" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
+        "description" : "Nombre total de places d'hébergement théoriques",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-tarif"
+        },
+        "name" : "FR Core Organization Extension - Tarif Soin",
+        "description" : "Tarif de soin associé à l'unité d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-type-activite"
+        },
+        "name" : "FR Core Organization Extension - Type d'activité",
+        "description" : "Type d'activité d'une UF",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-uf-externe"
+        },
+        "name" : "FR Core Organization Extension - UF Externe",
+        "description" : "Indicateur permettant de définir si une UF est externe à l'établissement",
         "exampleBoolean" : false
       },
       {
@@ -1998,7 +2138,21 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "StructureDefinition/fr-core-organization"
         },
         "name" : "FR Core Organization Profile",
-        "description" : "Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. \r\n\nProfil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises.",
+        "description" : "Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fr-core-organization-raison-sociale"
+        },
+        "name" : "FR Core Organization Raison Sociale Extension",
+        "description" : "Raison Sociale l'organisation",
         "exampleBoolean" : false
       },
       {
@@ -2012,21 +2166,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "StructureDefinition/fr-core-organization-short-name"
         },
         "name" : "FR Core Organization Short Name Extension",
-        "description" : "Libellé court de l'organisation\n\rThe Organization short name",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space"
-        },
-        "name" : "FR Core Organization Total Number Of Theorical Accomodation Space Extension",
-        "description" : "Nombre total de places d'hébergement théoriques\n\rTotal number of theorical accomodation space",
+        "description" : "Libellé court de l'organisation",
         "exampleBoolean" : false
       },
       {
@@ -2040,7 +2180,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "StructureDefinition/fr-core-organization-uac"
         },
         "name" : "FR Core Organization UAC Profile",
-        "description" : "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.\r\n\nCe profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement",
+        "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.",
         "exampleBoolean" : false
       },
       {
@@ -2054,7 +2194,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "StructureDefinition/fr-core-organization-uf"
         },
         "name" : "FR Core Organization UF Profile",
-        "description" : "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.\r\n\nCe profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement",
+        "description" : "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.",
         "exampleBoolean" : false
       },
       {
@@ -2271,20 +2411,6 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/fr-core-use-period"
-        },
-        "name" : "FR Core Use Period Extension",
-        "description" : "Extension permettant d'indiquer la période d'utilisation d'une Location.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -2321,6 +2447,34 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FR Core ValueSet BP measurement method",
         "description" : "A coded type for the blood pressure measurement method",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-categorie-sae-etablissement"
+        },
+        "name" : "FR Core ValueSet Categorie SAE Etablissement",
+        "description" : "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-oragnization-code-tarif-tnjp"
+        },
+        "name" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
+        "description" : "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).",
         "exampleBoolean" : false
       },
       {
@@ -2471,38 +2625,10 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/fr-core-vs-location-identifier-type"
+          "reference" : "ValueSet/fr-core-vs-location-position-lit"
         },
-        "name" : "FR Core ValueSet Location identifier type",
-        "description" : "Jeu de valeurs des types d'identifiant de lieu.\r\nA coded type for a location",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/fr-core-vs-location-physical-type"
-        },
-        "name" : "FR Core ValueSet Location physical type",
-        "description" : "Types de lieux physiques pour la France.\r\nFrench location physical type",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/fr-core-vs-location-position-room"
-        },
-        "name" : "FR Core ValueSet Location position room",
-        "description" : "Position physique de l'emplacement du lit.\r\nPosition room",
+        "name" : "FR Core ValueSet Location Position Lit",
+        "description" : "Position du lit dans la chambre",
         "exampleBoolean" : false
       },
       {
@@ -2517,6 +2643,20 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         },
         "name" : "FR Core ValueSet Location type",
         "description" : "Jeu de valeurs du rôle joué par un lieu.\n\rA role for a location",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-location-type-chambre"
+        },
+        "name" : "FR Core ValueSet Location Type Chambre",
+        "description" : "Type de chambre",
         "exampleBoolean" : false
       },
       {
@@ -2569,10 +2709,52 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/fr-core-vs-organization-activity-field"
+          "reference" : "ValueSet/fr-core-vs-organization-champ-activite"
         },
-        "name" : "FR Core ValueSet Organization activity field",
-        "description" : "Secteur d'activité de l'organisation.\r\nThe activity field of the organization",
+        "name" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
+        "description" : "Champ d'activité d'une organisation type UF.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-organization-discipline-equipement"
+        },
+        "name" : "FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE",
+        "description" : "Valeurs permettant de coder les disciplines d'équipement.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-discipline-prestation"
+        },
+        "name" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE",
+        "description" : "Valeurs permettant de coder les disciplines de prestation.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-organization-etablissement-type"
+        },
+        "name" : "FR Core ValueSet Organization Etablisement type",
+        "description" : "Types d'organisation représentant des établissements.",
         "exampleBoolean" : false
       },
       {
@@ -2600,7 +2782,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "ValueSet/fr-core-vs-organization-type"
         },
         "name" : "FR Core ValueSet Organization type",
-        "description" : "Types de structures.\r\nOrganization types",
+        "description" : "Types de structures",
         "exampleBoolean" : false
       },
       {
@@ -2611,10 +2793,38 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/fr-core-vs-organization-uf-activity-field"
+          "reference" : "ValueSet/fr-core-vs-oragnization-type-activite"
         },
-        "name" : "FR Core ValueSet Organization UF activity field",
-        "description" : "Champ d'activité des structures UF.\r\nOrganization UF activity field",
+        "name" : "FR Core ValueSet Organization Type Activité - nomenclature SAE",
+        "description" : "Valeurs permettant de coder les types d'activité.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-organization-uac-type"
+        },
+        "name" : "FR Core ValueSet Organization UAC type",
+        "description" : "Types de structure représentant des unités d'activité.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/fr-core-vs-organization-uf-indicateur"
+        },
+        "name" : "FR Core ValueSet Organization UF Indicateur",
+        "description" : "Indicateur d'une unité fonctionnelle.",
         "exampleBoolean" : false
       },
       {
@@ -3069,6 +3279,188 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-dept-11003-endocrino"
+        },
+        "name" : "hopitaltest-dept-11003-endocrino",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-eg-4-members"
+        },
+        "name" : "hopitaltest-eg-4-members",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-ej-350005179"
+        },
+        "name" : "hopitaltest-ej-350005179",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/hopitaltest-endocrino-ch04"
+        },
+        "name" : "hopitaltest-endocrino-ch04",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/hopitaltest-endocrino-ch04-litF"
+        },
+        "name" : "hopitaltest-endocrino-ch04-litF",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-pole-1150-med-spe"
+        },
+        "name" : "hopitaltest-pole-1150-med-spe",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/hopitaltest-salle-examen-01"
+        },
+        "name" : "hopitaltest-salle-examen-01",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo"
+        },
+        "name" : "hopitaltest-service-11006-endocrino-diabo",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-service-11007-dietetique"
+        },
+        "name" : "hopitaltest-service-11007-dietetique",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-uac-4420-uac-01"
+        },
+        "name" : "hopitaltest-uac-4420-uac-01",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-uac-4420-uac-02"
+        },
+        "name" : "hopitaltest-uac-4420-uac-02",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-uf-4420-dialyse"
+        },
+        "name" : "hopitaltest-uf-4420-dialyse",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
+        },
+        "name" : "hopitaltest-uf-4701-endocrino-diab",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/hopitaltest-uf-4705-nutrition"
+        },
+        "name" : "hopitaltest-uf-4705-nutrition",
+        "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -3205,6 +3597,72 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           ],
           "nameUrl" : "change_notes.html",
           "title" : "Historique des changements",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "structure_intro.html"
+            }
+          ],
+          "nameUrl" : "structure_intro.html",
+          "title" : "Introduction",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "structure_entites.html"
+            }
+          ],
+          "nameUrl" : "structure_entites.html",
+          "title" : "Entités",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "structure_relations.html"
+            }
+          ],
+          "nameUrl" : "structure_relations.html",
+          "title" : "Relations entre entités",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "structure_contraintes.html"
+            }
+          ],
+          "nameUrl" : "structure_contraintes.html",
+          "title" : "Contraintes sur les profils",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "structure_nomenclatures.html"
+            }
+          ],
+          "nameUrl" : "structure_nomenclatures.html",
+          "title" : "Nomenclatures",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "structure_ref_loi.html"
+            }
+          ],
+          "nameUrl" : "structure_ref_loi.html",
+          "title" : "Références",
           "generation" : "markdown"
         }
       ]

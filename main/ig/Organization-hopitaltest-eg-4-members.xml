@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="hopitaltest-eg-4-members"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Organisation hopitaltest-eg-4-members</b></p><a name="hopitaltest-eg-4-members"> </a><a name="hchopitaltest-eg-4-members"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-organization-etablissement.html">FR Core Organization Etablissement Profile</a></p></div><p><b>FR Core Organization Extension - Catetgorie SAE</b>: <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement 101}">Centre hospitalier régional (CHR)</span></p><p><b>FR Core Organization Raison Sociale Extension</b>: CHRU CENTRE VILLE</p><p><b>FR Core Organization Extension - Membre d'organisation</b>: <a href="Organization-hopitaltest-uf-4701-endocrino-diab.html">UF Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - Membre d'organisation</b>: <code>UF Nutrition</code></p><p><b>FR Core Organization Extension - Membre d'organisation</b>: <a href="Organization-hopitaltest-service-11006-endocrino-diabo.html">Service Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - Membre d'organisation</b>: <a href="Organization-hopitaltest-service-11007-dietetique.html">Service Dietetique</a></p><p><b>identifier</b>: FINESS d'entité géographique/350009999 (utilisation : official, ), Identification de l'organisation au SIREN/26350007609999 (utilisation : official, )</p><p><b>type</b>: <span title="Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 LEGAL-ENTITY}">Etablissement Géographique</span></p><p><b>name</b>: CHRU CENTRE VILLE</p></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"/>
+        <code value="101"/>
+        <display value="Centre hospitalier régional (CHR)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale">
+    <valueString value="CHRU CENTRE VILLE"/>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member">
+    <valueReference>
+      <reference value="Organization/hopitaltest-uf-4701-endocrino-diab"/>
+      <type value="UF"/>
+      <display value="UF Endocrino Diabeto"/>
+    </valueReference>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member">
+    <valueReference>
+      <reference value="Organization/hopitaltest-uf-4705-nutrition&quot;"/>
+      <type value="UF"/>
+      <display value="UF Nutrition"/>
+    </valueReference>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member">
+    <valueReference>
+      <reference value="Organization/hopitaltest-service-11006-endocrino-diabo"/>
+      <type value="SERVICE"/>
+      <display value="Service Endocrino Diabeto"/>
+    </valueReference>
+  </extension>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member">
+    <valueReference>
+      <reference value="Organization/hopitaltest-service-11007-dietetique"/>
+      <type value="SERVICE"/>
+      <display value="Service Dietetique"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+        <code value="FINEG"/>
+        <display value="FINESS d'entité géographique"/>
+      </coding>
+    </type>
+    <system value="https://finess.esante.gouv.fr"/>
+    <value value="350009999"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+        <code value="SIREN"/>
+        <display value="Identification de l'organisation au SIREN"/>
+      </coding>
+    </type>
+    <system value="https://sirene.fr"/>
+    <value value="26350007609999"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"/>
+      <code value="LEGAL-ENTITY"/>
+      <display value="Entité légale"/>
+    </coding>
+    <text value="Etablissement Géographique"/>
+  </type>
+  <name value="CHRU CENTRE VILLE"/>
+</Organization>

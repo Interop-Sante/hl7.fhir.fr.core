@@ -34,8 +34,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.58"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse",
-      "ValueSet-fr-core-vs-patient-identifier-use-ins.html" : "FR Core ValueSet Patient identifier use INS"
+      "ValueSet-fr-core-vs-patient-identifier-use-ins.html" : "FR Core ValueSet Patient identifier use INS",
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
       "url" : "http://hl7.org/fhir/slotstatus",
@@ -59,17 +59,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-fr-core-vs-bp-meas-method.html" : "Blood Pressure Measurement Method value set",
+      "ValueSet-fr-core-vs-spo2-body-location.html" : "Oxygen Saturation Body Location value set",
       "ValueSet-fr-core-vsbody-temp-meas-body-location.html" : "Body Temperature Measurement Body Location value set",
-      "ValueSet-fr-core-vs-heartrate-body-location.html" : "Heart Rate Measurement Body Location Precoordinated value set",
+      "ValueSet-fr-core-vs-bp-meas-method.html" : "Blood Pressure Measurement Method value set",
+      "ValueSet-fr-core-vs-bp-meas-body-location.html" : "Blood Pressure Measurement Body Location Precoordinated value set",
       "ValueSet-fr-core-vs-respiratory-rate-meas-method.html" : "Respiratory Rate Measurement Method value set",
-      "ValueSet-fr-core-vs-heartrate-measurement-method.html" : "Heart Rate Measurement Method value set",
+      "ValueSet-fr-core-vs-bp-method.html" : "FR Core ValueSet BP measurement method",
+      "ValueSet-fr-core-vs-height-meas-method.html" : "Height Length Measurement Method value set",
       "ValueSet-fr-core-vs-height-body-position.html" : "FR Core ValueSet BodyPosition",
       "ValueSet-fr-core-vs-body-position.html" : "Body Position value set",
-      "ValueSet-fr-core-vs-spo2-body-location.html" : "Oxygen Saturation Body Location value set",
-      "ValueSet-fr-core-vs-bp-meas-body-location.html" : "Blood Pressure Measurement Body Location Precoordinated value set",
-      "ValueSet-fr-core-vs-height-meas-method.html" : "Height Length Measurement Method value set",
-      "ValueSet-fr-core-vs-bp-method.html" : "FR Core ValueSet BP measurement method"
+      "ValueSet-fr-core-vs-heartrate-measurement-method.html" : "Heart Rate Measurement Method value set",
+      "ValueSet-fr-core-vs-heartrate-body-location.html" : "Heart Rate Measurement Body Location Precoordinated value set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
@@ -142,8 +142,8 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
-      "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type"
+      "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type",
+      "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0444",
@@ -191,8 +191,19 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Marital Status ValueSet",
-      "http://hl7.org/fhir/R4/valueset-name-assembly-order.html" : "HumanNameAssemblyOrder"
+      "http://hl7.org/fhir/R4/valueset-name-assembly-order.html" : "HumanNameAssemblyOrder",
+      "ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Marital Status ValueSet"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
+      "version" : "2.2.0-ballot",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemChampActivite",
+      "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
+      "description" : "Champ d'activité clinique de l'organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS.",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-organization-champ-activite.html" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
@@ -206,6 +217,17 @@
       "ValueSet-fr-core-vs-encounter-discharge-disposition.html" : "FR Core ValueSet Encounter discharge disposition"
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-code-tarif-tnjp",
+      "version" : "2.2.0-ballot",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemCodeTarifTNJP",
+      "title" : "FR Core CodeSystem Codes Tarifs - nomenclature TNJP",
+      "description" : "La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.html" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship",
       "version" : "2.2.0-ballot",
       "status" : "draft",
@@ -215,6 +237,28 @@
       "uses" : {
       },
       "ValueSet-fr-core-vs-contact-relationship.html" : "FR Core ValueSet Contact relationship"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement",
+      "version" : "2.2.0-ballot",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemDisciplineEquipement",
+      "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
+      "description" : "La nomenclature de disciplines d'équipement est utilisée pour ventiler l'activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline 'administration, services hôteliers et techniques'. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n'apparaissent pas, car elles ne font pas partie du champ de la SAE.",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-organization-discipline-equipement.html" : "FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation",
+      "version" : "2.2.0-ballot",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemDisciplinePrestation",
+      "title" : "FR Core CodeSystem Discipline de prestation - nomenclature SAE",
+      "description" : "La nomenclature des discipline de prestation.",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-discipline-prestation.html" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
@@ -228,48 +272,37 @@
       "ValueSet-fr-core-vs-encounter-identifier-type.html" : "FR Core ValueSet Encounter identifier type"
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type",
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
       "version" : "2.2.0-ballot",
-      "status" : "draft",
-      "name" : "FRCoreCodeSystemLocationIdentifierType",
-      "title" : "FR Core CodeSystem Location Identifier Type",
-      "description" : "Location identifier type",
+      "status" : "active",
+      "name" : "FRCoreCodeSystemPositionLit",
+      "title" : "FR Core CodeSystem Position du lit",
+      "description" : "Position du lit dans la chambre",
       "uses" : {
       },
-      "ValueSet-fr-core-vs-location-identifier-type.html" : "FR Core ValueSet Location identifier type"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type",
-      "version" : "2.2.0-ballot",
-      "status" : "draft",
-      "name" : "FRCoreCodeSystemLocationPhysicalType",
-      "title" : "FR Core CodeSystem Location Physical Type",
-      "description" : "Location physical type",
-      "uses" : {
-      },
-      "ValueSet-fr-core-vs-location-physical-type.html" : "FR Core ValueSet Location physical type"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room",
-      "version" : "2.2.0-ballot",
-      "status" : "draft",
-      "name" : "FRCoreCodeSystemLocationPositionRoom",
-      "title" : "FR Core CodeSystem Location Position Room",
-      "description" : "Location position room",
-      "uses" : {
-      },
-      "ValueSet-fr-core-vs-location-position-room.html" : "FR Core ValueSet Location position room"
+      "ValueSet-fr-core-vs-location-position-lit.html" : "FR Core ValueSet Location Position Lit"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
       "version" : "2.2.0-ballot",
-      "status" : "draft",
+      "status" : "active",
       "name" : "FRCoreCodeSystemLocationType",
       "title" : "FR Core CodeSystem Location Type",
       "description" : "Location type",
       "uses" : {
       },
       "ValueSet-fr-core-vs-location-type.html" : "FR Core ValueSet Location type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre",
+      "version" : "2.2.0-ballot",
+      "status" : "active",
+      "name" : "FRCoreCodeSystemTypeChambre",
+      "title" : "FR Core CodeSystem Type Chambre",
+      "description" : "Type de chambre",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-location-type-chambre.html" : "FR Core ValueSet Location Type Chambre"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status",
@@ -318,6 +351,17 @@
       "ValueSet-fr-core-vs-schedule-type.html" : "FR Core ValueSet Schedule type"
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite",
+      "version" : "2.2.0-ballot",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemTypeActivite",
+      "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
+      "description" : "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-oragnization-type-activite.html" : "FR Core ValueSet Organization Type Activité - nomenclature SAE"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
       "version" : "2.2.0-ballot",
       "status" : "draft",
@@ -329,6 +373,17 @@
       "ValueSet-fr-core-vs-encounter-type.html" : "FR Core ValueSet Encounter type"
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
+      "version" : "2.2.0-ballot",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemUFIndicateur",
+      "title" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
+      "description" : "Système de codage permettant de définir les indicateurs d'une unité fonctionnelle.",
+      "uses" : {
+      },
+      "ValueSet-fr-core-vs-organization-uf-indicateur.html" : "FR Core ValueSet Organization UF Indicateur"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
       "version" : "2.2.0-ballot",
       "status" : "active",
@@ -337,9 +392,9 @@
       "description" : "HL7 v2 - Identifier type",
       "uses" : {
       },
-      "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
       "ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type",
-      "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type"
+      "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type",
+      "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
@@ -361,18 +416,9 @@
       "description" : "HL7 v2 - Table 3307",
       "uses" : {
       },
+      "ValueSet-fr-core-vs-organization-etablissement-type.html" : "FR Core ValueSet Organization Etablisement type",
+      "ValueSet-fr-core-vs-organization-uac-type.html" : "FR Core ValueSet Organization UAC type",
       "ValueSet-fr-core-vs-organization-type.html" : "FR Core ValueSet Organization type"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311",
-      "version" : "2.2.0-ballot",
-      "status" : "draft",
-      "name" : "FRCoreCodeSystemv2_3311",
-      "title" : "FR Core CodeSystem v2-3311",
-      "description" : "HL7 v2 - Table 3311",
-      "uses" : {
-      },
-      "ValueSet-fr-core-vs-organization-uf-activity-field.html" : "FR Core ValueSet Organization UF activity field"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP",
@@ -432,7 +478,6 @@
       "oids" : ["1.2.250.1.71.4.2.4"],
       "uses" : {
       },
-      "ValueSet-fr-core-vs-organization-activity-field.html" : "FR Core ValueSet Organization activity field",
       "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101_SecteurActivite_RASS"
     },
     {
@@ -494,8 +539,8 @@
       "oids" : ["1.2.250.1.213.2.23"],
       "uses" : {
       },
-      "ValueSet-fr-core-vs-cog-commune-pays.html" : "FR Core ValueSet COG commune pays",
-      "ValueSet-fr-core-vs-insee-code.html" : "FR Core ValueSet INSEE code"
+      "ValueSet-fr-core-vs-insee-code.html" : "FR Core ValueSet INSEE code",
+      "ValueSet-fr-core-vs-cog-commune-pays.html" : "FR Core ValueSet COG commune pays"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome",
@@ -699,8 +744,8 @@
       "oids" : ["1.2.250.1.213.2.28"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J107-EnsembleSavoirFaire-RASS.html" : "JDV_J107_EnsembleSavoirFaire_RASS",
-      "ValueSet-fr-core-vs-practitioner-specialty.html" : "FR Core ValueSet Practitioner specialty"
+      "ValueSet-fr-core-vs-practitioner-specialty.html" : "FR Core ValueSet Practitioner specialty",
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J107-EnsembleSavoirFaire-RASS.html" : "JDV_J107_EnsembleSavoirFaire_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence",
@@ -916,7 +961,8 @@
       "oids" : ["1.2.250.1.213.1.6.1.8"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129_CategorieEtablissement_RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129_CategorieEtablissement_RASS",
+      "ValueSet-fr-core-vs-categorie-sae-etablissement.html" : "FR Core ValueSet Categorie SAE Etablissement"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",

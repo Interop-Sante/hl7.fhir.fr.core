@@ -16,7 +16,7 @@ HL7 v2 - Table 3311
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [FRCoreValueSetOrganizationUFActivityField](ValueSet-fr-core-vs-organization-uf-activity-field.md)
+* Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)
 
 
 
@@ -37,7 +37,7 @@ HL7 v2 - Table 3311
   "title" : "FR Core CodeSystem v2-3311",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-28T09:35:28+00:00",
+  "date" : "2026-01-28T10:29:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

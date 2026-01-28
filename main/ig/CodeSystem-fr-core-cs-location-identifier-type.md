@@ -16,7 +16,7 @@ Location identifier type
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [FRCoreValueSetLocationIdentifierType](ValueSet-fr-core-vs-location-identifier-type.md)
+* Cette terminologie de référence (CodeSystem) nest pas utilisée ici; elle peut être utilisée ailleurs (par exemple spécifications et/ou implémentations qui utilisent ce contenu)
 
 
 
@@ -37,7 +37,7 @@ Location identifier type
   "title" : "FR Core CodeSystem Location Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-28T09:35:28+00:00",
+  "date" : "2026-01-28T10:29:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
