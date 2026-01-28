@@ -1,3 +1,83 @@
+### [Release 2.3.0](https://hl7.fr/ig/fhir/core/2.3.0) de l'Implementation Guide FRCore
+[Modifications apportées dans la release 2.3.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
+
+* Restructuration des profils Organization avec :
+    - Simplification du profil de base FRCoreOrganizationProfile
+    - Création du nouveau profil FRCoreOrganizationEtablissementProfile pour les établissements
+    - Suppression du profil FRCoreOrganizationPoleProfile
+    - Refonte des profils FRCoreOrganizationUFProfile, FRCoreOrganizationUACProfile et FRCoreLocationProfile
+* Amélioration du profil Location pour mieux supporter la structuration hospitalière (chambres, lits)
+* Ajout de 8 nouveaux CodeSystems et 11 nouveaux ValueSets pour supporter ces structures
+    * Nouveaux CodeSystems ajoutés :
+        - FRCoreCodeSystemChampActiviteField : Champ d'activité clinique (MCO, SMR, HAD, PSY, EHPAD, etc.)
+        - FRCoreCodeSystemCodeTarifTNJP : Codes tarifaires TNJP
+        - FRCoreCodeSystemDisciplineEquipement : Discipline d'équipement
+        - FRCoreCodeSystemDisciplinePrestation : Discipline de prestation
+        - FRCoreCodeSystemPositionLit : Position du lit dans la chambre
+        - FRCoreCodeSystemTypeActivite : Type d'activité
+        - FRCoreCodeSystemTypeChambre : Type de chambre
+        - FRCoreCodeSystemUFIndicateur : Indicateurs UF
+    * CodeSystems modifiés :
+        - FRCoreCodeSystemLocationType : Ajout de codes pour lit et chambre
+        - FRCoreCodeSystemv2-3307
+    * Nouveaux ValueSets ajoutés :
+        - FRCoreValueSetCategorieSAEEtablissement
+        - FRCoreValueSetLocationPositionLit (remplace LocationPositionRoom)
+        - FRCoreValueSetLocationTypeChambre
+        - FRCoreValueSetOrganizationChampActivite (remplace OrganizationActivityField)
+        - FRCoreValueSetOrganizationCodeTarifTNJP
+        - FRCoreValueSetOrganizationDisciplineEquipement
+        - FRCoreValueSetOrganizationDisciplinePrestation
+        - FRCoreValueSetOrganizationEtablissementType
+        - FRCoreValueSetOrganizationTypeActivite
+        - FRCoreValueSetOrganizationUACType
+        - FRCoreValueSetOrganizationUFIndicateur
+    * ValueSets supprimés :
+        - FRCoreValueSetLocationIdentifierType
+        - FRCoreValueSetLocationPhysicalType
+        - FRCoreValueSetLocationPositionRoom
+        - FRCoreValueSetOrganizationActivityField
+        - FRCoreValueSetOrganizationUFActivityField
+    * ValueSets modifiés :
+        - FRCoreValueSetLocationType
+        - FRCoreValueSetOrganizationType
+* Refonte des extensions Organization avec renommage et réorganisation
+    * Nouvelles extensions Organization :
+        - FRCoreOrganizationChampActiviteExtension (remplace ActivityFieldExtension)
+        - FRCoreOrganizationDemandeuseActeExtension (remplace ApplicantActExtension)
+        - FRCoreOrganizationDisciplineEquipementExtension
+        - FRCoreOrganizationDisciplinePrestationExtension
+        - FRCoreOrganizationExecutanteActeExtension (remplace ExecutantExtension)
+        - FRCoreOrganizationExterneExtension (remplace ExternalExtension)
+        - FRCoreOrganizationMemberExtension
+        - FRCoreOrganizationPlaceHebergementTheoriqueExtension (remplace TotalNumberOfTheoricalAccomodationSpaceExtension)
+        - FRCoreOrganizationRaisonSocialeExtension
+        - FRCoreOrganizationSAECategoryExtension
+        - FRCoreOrganizationTarifExtension
+        - FRCoreOrganizationTypeActiviteExtension (remplace ActivityTypeExtension)
+        - FRCoreOrganizationUFIndicateurExtension
+    * Extensions Organization supprimées :
+        - FRCoreOrganizationActivityFieldExtension
+        - FRCoreOrganizationActivityTypeExtension
+        - FRCoreOrganizationAnalysisSectionExtension
+        - FRCoreOrganizationApplicantActExtension
+        - FRCoreOrganizationBudgetLetterExtension
+        - FRCoreOrganizationDescriptionExtension
+        - FRCoreOrganizationExecutantExtension
+        - FRCoreOrganizationExternalExtension
+        - FRCoreOrganizationFieldExtension
+        - FRCoreOrganizationPrestationDisciplineExtension
+        - FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension
+    * Nouvelles extensions Location :
+        - FRCoreLocationPositionLitExtension (position du lit dans la chambre)
+        - FRCoreLocationTypeChambreExtension (type de chambre)
+    * Extensions Location supprimées :
+        - FRCoreLocationPartOfPositionRoomExtension
+        - FRCoreLocationUsePeriodExtension
+    * Extensions modifiées :
+        - FRCoreOrganizationShortNameExtension
+* Ajout de 14 nouveaux exemples illustrant la hiérarchie organisationnelle (EJ, EG, pôles, départements, services, UF, UAC, lieux)
+
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
@@ -64,6 +144,7 @@ A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extensi
 * Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
 * Retrait du genre "other" sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
 * Mise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
+* Ajout d'un invariant qui renvoie un warning si le COG de naissance 99999 est utilisé pour une identité validée [#262](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/262)
 * Ajout du numéro AMELI au profil PractitionerRole [#260](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/260)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
