@@ -74,7 +74,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Encounter identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-21T08:47:55+00:00",
+  "date" : "2026-01-28T09:35:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

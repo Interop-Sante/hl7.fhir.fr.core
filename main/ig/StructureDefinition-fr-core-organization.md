@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0-ballot |
-| Active as of 2026-01-21 | *Computable Name*:FRCoreOrganizationProfile |
+| Active as of 2026-01-28 | *Computable Name*:FRCoreOrganizationProfile |
 
  
 Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-01-21T08:47:55+00:00",
+  "date" : "2026-01-28T09:35:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
