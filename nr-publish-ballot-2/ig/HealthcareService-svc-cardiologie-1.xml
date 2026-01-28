@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="svc-cardiologie-1"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ServiceDeSanté svc-cardiologie-1</b></p><a name="svc-cardiologie-1"> </a><a name="hcsvc-cardiologie-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-healthcare-service.html">FR Core Healthcare Service Profile</a></p></div><blockquote><p><b>FR Core Service Type Duration Extension</b></p><ul><li>serviceType: <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM04}">Cardio et Maladies vasculaires</span></li><li>duration: Pas daffichage pour {0}  (value : 30; unit : min; system : http://unitsofmeasure.org; code : min)</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:1.2.250.1.1.1.1</code>/HOSP-X-CARDIO (utilisation : official, )</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization-FRCoreOrganizationExample.html">Organization HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G</a></p><p><b>category</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/service-category 2}">Aged Care</span></p><p><b>specialty</b>: <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM04}">Cardio et Maladies vasculaires</span></p><p><b>name</b>: Service de cardiologie</p><p><b>comment</b>: Ce service prend en charge les pathologies cardiaques.</p><p><b>telecom</b>: <a href="mailto:cardio@hosp-x.fr">cardio@hosp-x.fr</a></p><p><b>appointmentRequired</b>: true</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Monday, Tuesday, Wednesday, Thursday, Friday</p><p><b>allDay</b>: false</p><p><b>availableStartTime</b>: 08:00:00</p><p><b>availableEndTime</b>: 17:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Saturday</p><p><b>allDay</b>: false</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote><h3>NotAvailables</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Description</b></td><td><b>During</b></td></tr><tr><td style="display: none">*</td><td>Fermeture annuelle</td><td>2025-08-01 --&gt; 2025-08-31</td></tr></table></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration">
+    <extension url="serviceType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"/>
+          <code value="SM04"/>
+          <display value="Cardio et Maladies vasculaires"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="duration">
+      <valueDuration>
+        <value value="30"/>
+        <unit value="min"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="min"/>
+      </valueDuration>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.250.1.1.1.1"/>
+    <value value="HOSP-X-CARDIO"/>
+  </identifier>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/FRCoreOrganizationExample"/>
+  </providedBy>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/service-category"/>
+      <code value="2"/>
+      <display value="Aged Care"/>
+    </coding>
+  </category>
+  <specialty>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"/>
+      <code value="SM04"/>
+      <display value="Cardio et Maladies vasculaires"/>
+    </coding>
+  </specialty>
+  <name value="Service de cardiologie"/>
+  <comment value="Ce service prend en charge les pathologies cardiaques."/>
+  <telecom>
+    <system value="email"/>
+    <value value="cardio@hosp-x.fr"/>
+  </telecom>
+  <appointmentRequired value="true"/>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <allDay value="false"/>
+    <availableStartTime value="08:00:00"/>
+    <availableEndTime value="17:30:00"/>
+  </availableTime>
+  <availableTime>
+    <daysOfWeek value="sat"/>
+    <allDay value="false"/>
+    <availableStartTime value="09:00:00"/>
+    <availableEndTime value="12:00:00"/>
+  </availableTime>
+  <notAvailable>
+    <description value="Fermeture annuelle"/>
+    <during>
+      <start value="2025-08-01"/>
+      <end value="2025-08-31"/>
+    </during>
+  </notAvailable>
+</HealthcareService>
