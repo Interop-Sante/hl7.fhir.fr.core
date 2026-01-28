@@ -3,10 +3,11 @@ Parent: fr-core-patient
 Id: fr-core-patient-ins
 Title: "FR Core Patient INS Profile"
 Description: """FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n
-Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient."""
+Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient."""
 
 * obeys fr-core-1 
 * obeys fr-core-2
+* obeys fr-core-3
 
 * meta.profile contains 
     fr-ins-canonical 0..1
@@ -86,7 +87,6 @@ Profil Fr Core Patient surspécifié pour être conforme aux exigences du réfé
 
 * name[officialName].extension[birth-list-given-name] 1..1 MS
 
-
 Invariant:   fr-core-1
 Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
@@ -96,3 +96,9 @@ Invariant:   fr-core-2
 Description: "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"
 * severity = #error
 * expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1)"
+
+
+Invariant:   fr-core-3
+Description: "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service."
+* severity = #warning
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')"
