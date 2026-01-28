@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

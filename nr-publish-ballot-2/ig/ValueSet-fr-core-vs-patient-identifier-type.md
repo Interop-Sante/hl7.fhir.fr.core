@@ -56,7 +56,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -85,7 +85,7 @@ A coded type for an identifier that can be used to determine which identifier to
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -92,6 +92,31 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
@@ -149,7 +174,7 @@
 
           <span style="float:right;">
 
-            <a href="change_notes.html">&lt;prev</a> | 
+            <a href="structure_ref_loi.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -255,9 +280,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-core-location">FR Core Location Profile</a>
             </td>
             <td>
-<p>French profile of Location.</p>
-
-<p>Profil français de la ressource Location</p>
+<p>Ressource Location adaptée au contexte français. 
+Cette ressource est utilisée pour représenter un lieu physique, telle qu’une salle d’examen, 
+un lit d’hôpital ou une chambre d’hôpital.</p>
 </td>
          </tr>
          <tr>
@@ -372,11 +397,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-pole.html"
-                  title="StructureDefinition/fr-core-organization-pole">FR Core Organization Pole Profile</a>
+               <a href="StructureDefinition-fr-core-organization-etablissement.html"
+                  title="StructureDefinition/fr-core-organization-etablissement">FR Core Organization Etablissement Profile</a>
             </td>
             <td>
-<p>FR Core Organization Pole Profile</p>
+<p>Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.</p>
 </td>
          </tr>
          <tr>
@@ -385,9 +410,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-core-organization">FR Core Organization Profile</a>
             </td>
             <td>
-<p>Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. </p>
-
-<p>Profil de la ressource Organization pour la France. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises.</p>
+<p>Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France.</p>
 </td>
          </tr>
          <tr>
@@ -396,9 +419,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-core-organization-uac">FR Core Organization UAC Profile</a>
             </td>
             <td>
-<p>This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.</p>
-
-<p>Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement</p>
+<p>Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.</p>
 </td>
          </tr>
          <tr>
@@ -407,9 +428,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-core-organization-uf">FR Core Organization UF Profile</a>
             </td>
             <td>
-<p>This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.</p>
-
-<p>Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement</p>
+<p>Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.</p>
 </td>
          </tr>
          <tr>
@@ -420,7 +439,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>
 <p>FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.</p>
 
-<p>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>
+<p>Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>
 </td>
          </tr>
          <tr>
@@ -593,12 +612,20 @@ Add a comment on a dataElement  of a resource</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-location-position-room.html"
-                  title="StructureDefinition/fr-core-location-position-room">FR Core Location Part Of Position Room Extension</a>
+               <a href="StructureDefinition-fr-core-location-position-lit.html"
+                  title="StructureDefinition/fr-core-location-position-lit">FR Core Location Extension - Position du lit</a>
             </td>
             <td>
-<p>Position du lit dans la chambre.
-Position of the bed in the bedroom</p>
+<p>Position du lit dans la chambre</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-location-type-chambre.html"
+                  title="StructureDefinition/fr-core-location-type-chambre">FR Core Location Extension - Type de chambre</a>
+            </td>
+            <td>
+<p>Type de chambre</p>
 </td>
          </tr>
          <tr>
@@ -652,102 +679,119 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-activity-field.html"
-                  title="StructureDefinition/fr-core-organization-activity-field">FR Core Organization Activity Field Extension</a>
+               <a href="StructureDefinition-fr-core-organization-sae-category.html"
+                  title="StructureDefinition/fr-core-organization-sae-category">FR Core Organization Extension - Catetgorie SAE</a>
             </td>
             <td>
-<p>Champ d’activité d’une UF.
-Activity field of an organization</p>
+<p>Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-activity-type.html"
-                  title="StructureDefinition/fr-core-organization-activity-type">FR Core Organization Activity Type Extension</a>
+               <a href="StructureDefinition-fr-core-organization-champ-activite.html"
+                  title="StructureDefinition/fr-core-organization-champ-activite">FR Core Organization Extension - Champ d'activité</a>
             </td>
             <td>
-<p>Type d’activité d’une UF
-An organization activity type</p>
+<p>Champ d’activité d’une UF</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-analysis-section.html"
-                  title="StructureDefinition/fr-core-organization-analysis-section">FR Core Organization Analysis Section Extension</a>
+               <a href="StructureDefinition-fr-core-organization-demandeuse-acte.html"
+                  title="StructureDefinition/fr-core-organization-demandeuse-acte">FR Core Organization Extension - Demandeuse d'acte</a>
             </td>
             <td>
-<p>Section d’analyse d’une UF.
-An oraganization analysis section</p>
+<p>Indicateur permettant de définir si une UF peut demander des actes</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-applicant-act.html"
-                  title="StructureDefinition/fr-core-organization-applicant-act">FR Core Organization Applicant Act Extension</a>
+               <a href="StructureDefinition-fr-core-organization-discipline-prestation.html"
+                  title="StructureDefinition/fr-core-organization-discipline-prestation">FR Core Organization Extension - Discipline Prestation</a>
             </td>
             <td>
-<p>UF demandeuse d’actes
-An organization that asks soma acts</p>
+<p>Discipline de prestation d’une UAC</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-budget-letter.html"
-                  title="StructureDefinition/fr-core-organization-budget-letter">FR Core Organization Budget Letter Extension</a>
+               <a href="StructureDefinition-fr-core-organization-discipline-equipement.html"
+                  title="StructureDefinition/fr-core-organization-discipline-equipement">FR Core Organization Extension - Discipline d'équipement</a>
             </td>
             <td>
-<p>Lettre budgétaire de l’UF
-An organization budget letter</p>
+<p>Discipline d’équipement</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-description.html"
-                  title="StructureDefinition/fr-core-organization-description">FR Core Organization Description Extension</a>
+               <a href="StructureDefinition-fr-core-organization-executante-acte.html"
+                  title="StructureDefinition/fr-core-organization-executante-acte">FR Core Organization Extension - Exécutante d'acte</a>
             </td>
             <td>
-<p>Description textuelle d’une organisation
-Organization description</p>
+<p>Indicateur permettant de définir si une UF peut exécuter des actes</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-executant.html"
-                  title="StructureDefinition/fr-core-organization-executant">FR Core Organization Executant Extension</a>
+               <a href="StructureDefinition-fr-core-organization-uf-indicateur.html"
+                  title="StructureDefinition/fr-core-organization-uf-indicateur">FR Core Organization Extension - Indicateur d'une unité fonctionnelle</a>
             </td>
             <td>
-<p>Une UF exécutante d’actes
-An executant act organization</p>
+<p>Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-external.html"
-                  title="StructureDefinition/fr-core-organization-external">FR Core Organization External Extension</a>
+               <a href="StructureDefinition-fr-core-organization-member.html"
+                  title="StructureDefinition/fr-core-organization-member">FR Core Organization Extension - Membre d'organisation</a>
             </td>
             <td>
-<p>UF externe à l’établissement.
-External ward of the facility</p>
+<p>Extension permettant de définir des membres d’une organisation.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-field.html"
-                  title="StructureDefinition/fr-core-organization-field">FR Core Organization Field Extension</a>
+               <a href="StructureDefinition-fr-core-organization-place-hebergement-theorique.html"
+                  title="StructureDefinition/fr-core-organization-place-hebergement-theorique">FR Core Organization Extension - Nombre total de places d'hébergement théoriques</a>
             </td>
             <td>
-<p>Discipline d’équipement
-Equipment field</p>
+<p>Nombre total de places d’hébergement théoriques</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-prestation-discipline.html"
-                  title="StructureDefinition/fr-core-organization-prestation-discipline">FR Core Organization Prestation Discipline Extension</a>
+               <a href="StructureDefinition-fr-core-organization-tarif.html"
+                  title="StructureDefinition/fr-core-organization-tarif">FR Core Organization Extension - Tarif Soin</a>
             </td>
             <td>
-<p>Prestation de discipline UAC for France
-Discipline prestation of the organization</p>
+<p>Tarif de soin associé à l’unité d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-type-activite.html"
+                  title="StructureDefinition/fr-core-organization-type-activite">FR Core Organization Extension - Type d'activité</a>
+            </td>
+            <td>
+<p>Type d’activité d’une UF</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-uf-externe.html"
+                  title="StructureDefinition/fr-core-organization-uf-externe">FR Core Organization Extension - UF Externe</a>
+            </td>
+            <td>
+<p>Indicateur permettant de définir si une UF est externe à l’établissement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-raison-sociale.html"
+                  title="StructureDefinition/fr-core-organization-raison-sociale">FR Core Organization Raison Sociale Extension</a>
+            </td>
+            <td>
+<p>Raison Sociale l’organisation</p>
 </td>
          </tr>
          <tr>
@@ -756,18 +800,7 @@ Organization description</p>
                   title="StructureDefinition/fr-core-organization-short-name">FR Core Organization Short Name Extension</a>
             </td>
             <td>
-<p>Libellé court de l’organisation
-The Organization short name</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.html"
-                  title="StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space">FR Core Organization Total Number Of Theorical Accomodation Space Extension</a>
-            </td>
-            <td>
-<p>Nombre total de places d’hébergement théoriques
-Total number of theorical accomodation space</p>
+<p>Libellé court de l’organisation</p>
 </td>
          </tr>
          <tr>
@@ -845,15 +878,6 @@ Organization description</p>
             <td>
 <p>Cette extension française permet d’associer le type de service avec la durée de ce service.
 This French extension allows to associate the type of service with the duration of this service</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-use-period.html"
-                  title="StructureDefinition/fr-core-use-period">FR Core Use Period Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer la période d’utilisation d’une Location.</p>
 </td>
          </tr>
          <tr>
@@ -948,6 +972,24 @@ Specification of the recurrent periods</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-categorie-sae-etablissement.html"
+                  title="ValueSet/fr-core-vs-categorie-sae-etablissement">FR Core ValueSet Categorie SAE Etablissement</a>
+            </td>
+            <td>
+<p>Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.html"
+                  title="ValueSet/fr-core-vs-oragnization-code-tarif-tnjp">FR Core ValueSet Codes Tarifs - nomenclature TNJP</a>
+            </td>
+            <td>
+<p>Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-contact-relationship.html"
                   title="ValueSet/fr-core-vs-contact-relationship">FR Core ValueSet Contact relationship</a>
             </td>
@@ -1031,32 +1073,20 @@ A coded type for an encounter</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-location-identifier-type.html"
-                  title="ValueSet/fr-core-vs-location-identifier-type">FR Core ValueSet Location identifier type</a>
+               <a href="ValueSet-fr-core-vs-location-position-lit.html"
+                  title="ValueSet/fr-core-vs-location-position-lit">FR Core ValueSet Location Position Lit</a>
             </td>
             <td>
-<p>Jeu de valeurs des types d’identifiant de lieu.
-A coded type for a location</p>
+<p>Position du lit dans la chambre</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-location-physical-type.html"
-                  title="ValueSet/fr-core-vs-location-physical-type">FR Core ValueSet Location physical type</a>
+               <a href="ValueSet-fr-core-vs-location-type-chambre.html"
+                  title="ValueSet/fr-core-vs-location-type-chambre">FR Core ValueSet Location Type Chambre</a>
             </td>
             <td>
-<p>Types de lieux physiques pour la France.
-French location physical type</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-location-position-room.html"
-                  title="ValueSet/fr-core-vs-location-position-room">FR Core ValueSet Location position room</a>
-            </td>
-            <td>
-<p>Position physique de l’emplacement du lit.
-Position room</p>
+<p>Type de chambre</p>
 </td>
          </tr>
          <tr>
@@ -1098,22 +1128,65 @@ Position room</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-uf-activity-field.html"
-                  title="ValueSet/fr-core-vs-organization-uf-activity-field">FR Core ValueSet Organization UF activity field</a>
+               <a href="ValueSet-fr-core-vs-organization-champ-activite.html"
+                  title="ValueSet/fr-core-vs-organization-champ-activite">FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF</a>
             </td>
             <td>
-<p>Champ d’activité des structures UF.
-Organization UF activity field</p>
+<p>Champ d’activité d’une organisation type UF.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-activity-field.html"
-                  title="ValueSet/fr-core-vs-organization-activity-field">FR Core ValueSet Organization activity field</a>
+               <a href="ValueSet-fr-core-vs-organization-discipline-equipement.html"
+                  title="ValueSet/fr-core-vs-organization-discipline-equipement">FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE</a>
             </td>
             <td>
-<p>Secteur d’activité de l’organisation.
-The activity field of the organization</p>
+<p>Valeurs permettant de coder les disciplines d’équipement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-discipline-prestation.html"
+                  title="ValueSet/fr-core-vs-discipline-prestation">FR Core ValueSet Organization Discipline de prestation - nomenclature SAE</a>
+            </td>
+            <td>
+<p>Valeurs permettant de coder les disciplines de prestation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-organization-etablissement-type.html"
+                  title="ValueSet/fr-core-vs-organization-etablissement-type">FR Core ValueSet Organization Etablisement type</a>
+            </td>
+            <td>
+<p>Types d’organisation représentant des établissements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-oragnization-type-activite.html"
+                  title="ValueSet/fr-core-vs-oragnization-type-activite">FR Core ValueSet Organization Type Activité - nomenclature SAE</a>
+            </td>
+            <td>
+<p>Valeurs permettant de coder les types d’activité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-organization-uac-type.html"
+                  title="ValueSet/fr-core-vs-organization-uac-type">FR Core ValueSet Organization UAC type</a>
+            </td>
+            <td>
+<p>Types de structure représentant des unités d’activité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-organization-uf-indicateur.html"
+                  title="ValueSet/fr-core-vs-organization-uf-indicateur">FR Core ValueSet Organization UF Indicateur</a>
+            </td>
+            <td>
+<p>Indicateur d’une unité fonctionnelle.</p>
 </td>
          </tr>
          <tr>
@@ -1131,8 +1204,7 @@ The activity field of the organization</p>
                   title="ValueSet/fr-core-vs-organization-type">FR Core ValueSet Organization type</a>
             </td>
             <td>
-<p>Types de structures.
-Organization types</p>
+<p>Types de structures</p>
 </td>
          </tr>
          <tr>
@@ -1301,6 +1373,15 @@ A Schedule type</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-champ-activite.html"
+                  title="CodeSystem/fr-core-cs-champ-activite">FR Core CodeSystem Champ Activite - Codes du champ d'activité</a>
+            </td>
+            <td>
+<p>Champ d’activité clinique de l’organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-circonstances-sortie.html"
                   title="CodeSystem/fr-core-cs-circonstances-sortie">FR Core CodeSystem Circonstances Sortie</a>
             </td>
@@ -1310,11 +1391,38 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-code-tarif-tnjp.html"
+                  title="CodeSystem/fr-core-cs-code-tarif-tnjp">FR Core CodeSystem Codes Tarifs - nomenclature TNJP</a>
+            </td>
+            <td>
+<p>La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-contact-relationship.html"
                   title="CodeSystem/fr-core-cs-contact-relationship">FR Core CodeSystem Contact Relationship</a>
             </td>
             <td>
 <p>Relationship type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-discipline-equipement.html"
+                  title="CodeSystem/fr-core-cs-discipline-equipement">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE</a>
+            </td>
+            <td>
+<p>La nomenclature de disciplines d’équipement est utilisée pour ventiler l’activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline ‘administration, services hôteliers et techniques’. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n’apparaissent pas, car elles ne font pas partie du champ de la SAE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-discipline-prestation.html"
+                  title="CodeSystem/fr-core-cs-discipline-prestation">FR Core CodeSystem Discipline de prestation - nomenclature SAE</a>
+            </td>
+            <td>
+<p>La nomenclature des discipline de prestation.</p>
 </td>
          </tr>
          <tr>
@@ -1351,15 +1459,6 @@ A Schedule type</p>
             </td>
             <td>
 <p>Location physical type</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-location-position-room.html"
-                  title="CodeSystem/fr-core-cs-location-position-room">FR Core CodeSystem Location Position Room</a>
-            </td>
-            <td>
-<p>Location position room</p>
 </td>
          </tr>
          <tr>
@@ -1409,6 +1508,15 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-location-position-lit.html"
+                  title="CodeSystem/fr-core-cs-location-position-lit">FR Core CodeSystem Position du lit</a>
+            </td>
+            <td>
+<p>Position du lit dans la chambre</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-schedule-type.html"
                   title="CodeSystem/fr-core-cs-schedule-type">FR Core CodeSystem Schedule Type</a>
             </td>
@@ -1423,6 +1531,33 @@ A Schedule type</p>
             </td>
             <td>
 <p>Admission type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-location-type-chambre.html"
+                  title="CodeSystem/fr-core-cs-location-type-chambre">FR Core CodeSystem Type Chambre</a>
+            </td>
+            <td>
+<p>Type de chambre</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-type-activite.html"
+                  title="CodeSystem/fr-core-cs-type-activite">FR Core CodeSystem Type d'activité - nomenclature SAE</a>
+            </td>
+            <td>
+<p>La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-uf-indicateur.html"
+                  title="CodeSystem/fr-core-cs-uf-indicateur">FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle</a>
+            </td>
+            <td>
+<p>Système de codage permettant de définir les indicateurs d’une unité fonctionnelle.</p>
 </td>
          </tr>
          <tr>
@@ -1620,6 +1755,132 @@ A Schedule type</p>
 <p>Exemple de ressource Slot.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-dept-11003-endocrino.html"
+                  title="Organization/hopitaltest-dept-11003-endocrino">hopitaltest-dept-11003-endocrino</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-eg-4-members.html"
+                  title="Organization/hopitaltest-eg-4-members">hopitaltest-eg-4-members</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-ej-350005179.html"
+                  title="Organization/hopitaltest-ej-350005179">hopitaltest-ej-350005179</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-hopitaltest-endocrino-ch04.html"
+                  title="Location/hopitaltest-endocrino-ch04">hopitaltest-endocrino-ch04</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-hopitaltest-endocrino-ch04-litF.html"
+                  title="Location/hopitaltest-endocrino-ch04-litF">hopitaltest-endocrino-ch04-litF</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-pole-1150-med-spe.html"
+                  title="Organization/hopitaltest-pole-1150-med-spe">hopitaltest-pole-1150-med-spe</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-hopitaltest-salle-examen-01.html"
+                  title="Location/hopitaltest-salle-examen-01">hopitaltest-salle-examen-01</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-service-11006-endocrino-diabo.html"
+                  title="Organization/hopitaltest-service-11006-endocrino-diabo">hopitaltest-service-11006-endocrino-diabo</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-service-11007-dietetique.html"
+                  title="Organization/hopitaltest-service-11007-dietetique">hopitaltest-service-11007-dietetique</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-uac-4420-uac-01.html"
+                  title="Organization/hopitaltest-uac-4420-uac-01">hopitaltest-uac-4420-uac-01</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-uac-4420-uac-02.html"
+                  title="Organization/hopitaltest-uac-4420-uac-02">hopitaltest-uac-4420-uac-02</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-uf-4420-dialyse.html"
+                  title="Organization/hopitaltest-uf-4420-dialyse">hopitaltest-uf-4420-dialyse</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-uf-4701-endocrino-diab.html"
+                  title="Organization/hopitaltest-uf-4701-endocrino-diab">hopitaltest-uf-4701-endocrino-diab</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-hopitaltest-uf-4705-nutrition.html"
+                  title="Organization/hopitaltest-uf-4705-nutrition">hopitaltest-uf-4705-nutrition</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -1644,7 +1905,7 @@ A Schedule type</p>
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="change_notes.html">&lt;prev</a>
+                <a href="structure_ref_loi.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -1662,7 +1923,7 @@ A Schedule type</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot-2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 08:22+0000">2026-01-28</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0-ballot-2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 13:01+0000">2026-01-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

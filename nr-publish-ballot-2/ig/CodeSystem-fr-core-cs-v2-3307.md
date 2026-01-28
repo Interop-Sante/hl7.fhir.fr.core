@@ -16,7 +16,9 @@ HL7 v2 - Table 3307
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
+* [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md)
 * [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md)
+* [FRCoreValueSetOrganizationUACType](ValueSet-fr-core-vs-organization-uac-type.md)
 
 
 
@@ -37,7 +39,7 @@ HL7 v2 - Table 3307
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -66,7 +68,7 @@ HL7 v2 - Table 3307
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -74,92 +76,63 @@ HL7 v2 - Table 3307
   ],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 17,
+  "count" : 14,
   "concept" : [
     {
-      "code" : "LEGAL-ENTITY",
-      "display" : "Entité légale",
-      "definition" : "Entité légale"
+      "code" : "GHT",
+      "display" : "Groupement hospitalier de territoire"
     },
     {
-      "code" : "GHT",
-      "display" : "Groupement hospitalier de territoire",
-      "definition" : "Groupement hospitalier de territoire"
+      "code" : "LEGAL-ENTITY",
+      "display" : "Entité légale"
     },
     {
       "code" : "GEOGRAPHICAL-ENTITY",
-      "display" : "Entité géographique",
-      "definition" : "Entité géographique"
+      "display" : "Entité géographique"
     },
     {
       "code" : "GROUP",
-      "display" : "Groupe privé/hospitalier",
-      "definition" : "Groupe privé/hospitalier"
+      "display" : "Groupe privé/hospitalier"
     },
     {
-      "code" : "HEBERGEMENT",
-      "display" : "Hébergement",
-      "definition" : "Hébergement"
+      "code" : "STRUCT-INTERNE",
+      "display" : "Structure interne"
     },
     {
-      "code" : "SOIN",
-      "display" : "Soin",
-      "definition" : "Soin"
+      "code" : "SECTEUR",
+      "display" : "Secteur"
     },
     {
-      "code" : "ADMINISTRATIF",
-      "display" : "Administration",
-      "definition" : "Administration"
-    },
-    {
-      "code" : "MEDICAL",
-      "display" : "Médical",
-      "definition" : "Médical"
-    },
-    {
-      "code" : "TECHNIQUE",
-      "display" : "Technique",
-      "definition" : "Technique"
-    },
-    {
-      "code" : "MEDICOTEC",
-      "display" : "medico technique (radio, scanner …)",
-      "definition" : "medico technique (radio, scanner …)"
-    },
-    {
-      "code" : "UF",
-      "display" : "Unité fonctionnelle",
-      "definition" : "Unité fonctionnelle"
+      "code" : "DEPARTEMENT",
+      "display" : "Département"
     },
     {
       "code" : "SERVICE",
-      "display" : "Service",
-      "definition" : "Service"
+      "display" : "Service"
     },
     {
       "code" : "UM",
-      "display" : "Unité médicale",
-      "definition" : "Unité médicale"
+      "display" : "Unité médicale"
     },
     {
       "code" : "UAC",
-      "display" : "Unité d'activité",
-      "definition" : "Unité d'activité"
+      "display" : "Unité d'activité"
     },
     {
       "code" : "POLE",
-      "display" : "Pôle",
-      "definition" : "Pôle"
+      "display" : "Pôle"
     },
     {
       "code" : "CENTRE-RESP",
-      "display" : "Centre de responsabilité",
-      "definition" : "Centre de responsabilité"
+      "display" : "Centre de responsabilité"
     },
     {
       "code" : "CENTRE-ACTIVITE",
-      "display" : "Centre d'activité",
-      "definition" : "Centre d'activité"
+      "display" : "Centre d'activité"
+    },
+    {
+      "code" : "UF",
+      "display" : "Unité fonctionnelle"
     }
   ]
 }

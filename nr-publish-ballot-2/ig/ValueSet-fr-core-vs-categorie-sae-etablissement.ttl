@@ -1,0 +1,167 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-vs-categorie-sae-etablissement"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "2024.1" ] ;
+     fhir:lastUpdated [ fhir:v "2025-03-14T18:01:34.510+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablevalueset?version=4.0.1>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-categorie-sae-etablissement</b></p><a name=\"fr-core-vs-categorie-sae-etablissement\"> </a><a name=\"hcfr-core-vs-categorie-sae-etablissement\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version : 2024.1; Dernière mise à jour : 2025-03-14 18:01:34+0000</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSetversion : null4.0.1)</a></p></div><ul><li>Include ce(s) code(s) tel quil(s) est (sont) défini(s) dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20250425120000, la version trouvée via les références de package\"> version ?20250425120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-101\">101</a></td><td>Centre hospitalier régional (CHR)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-106\">106</a></td><td>Centre hospitalier, ex Hôpital local</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-109\">109</a></td><td>Etablissement de santé privé autorisé en SSR</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-114\">114</a></td><td>Hôpital des Armées</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-115\">115</a></td><td>Etablissement de soins du service de santé des Armées</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-122\">122</a></td><td>Établissement de soins obstétriques et chirurgico-gynécologiques</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-127\">127</a></td><td>Hospitalisation à domicile</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-128\">128</a></td><td>Établissement de soins chirurgicaux</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-129\">129</a></td><td>Établissement de soins médicaux</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-131\">131</a></td><td>Centre de lutte contre le cancer (CLCC)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-141\">141</a></td><td>Centre de dialyse</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-146\">146</a></td><td>Structure d'alternative à la dialyse en centre</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-156\">156</a></td><td>Centre médico-psychologique (CMP)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-161\">161</a></td><td>Maison de santé pour maladies mentales</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-292\">292</a></td><td>Centre hospitalier spécialisé dans la lutte contre les maladies mentales (CHS)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-355\">355</a></td><td>Centre hospitalier non dénommé ailleurs (CH)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-362\">362</a></td><td>Etablissement de soins longue durée (SLD)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-365\">365</a></td><td>Etablissement de soins pluridisciplinaire</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-366\">366</a></td><td>Atelier thérapeutique</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-412\">412</a></td><td>Appartement thérapeutique</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-415\">415</a></td><td>Service médico-psychologique régional (SMPR)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-422\">422</a></td><td>Traitements spécialisés à domicile</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-425\">425</a></td><td>Centre d'accueil thérapeutique à temps partiel (CATTP)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-426\">426</a></td><td>Syndicat Inter Hospitalier (SIH)</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-430\">430</a></td><td>Centre de postcure pour malades mentaux</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-433\">433</a></td><td>Etablissement sanitaire des prisons</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-444\">444</a></td><td>Centre Crise ou d'accueil Permanent</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-695\">695</a></td><td>Groupement de coopération sanitaire de moyens - Exploitant GCS-Exploitant</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-696\">696</a></td><td>Groupement de coopération sanitaire de moyens GCS-Moyens</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-697\">697</a></td><td>Groupement de coopération sanitaire - Etablissement de santé GCS-ES</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-698\">698</a></td><td>Autre établissement soumis aux dispositions de la loi hospitalière</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R66-CategorieEtablissement.html#TRE-R66-CategorieEtablissement-699\">699</a></td><td>Entité Ayant Autorisation</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement"^^xsd:anyURI ;
+     fhir:l <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement>
+  ] ; # 
+  fhir:version [ fhir:v "2.2.0-ballot-2"] ; # 
+  fhir:name [ fhir:v "FRCoreValueSetCategorieSAEEtablissement"] ; # 
+  fhir:title [ fhir:v "FR Core ValueSet Categorie SAE Etablissement"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-10-25T12:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FRA" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "Centre hospitalier régional (CHR)" ]
+       ] [
+         fhir:code [ fhir:v "106" ] ;
+         fhir:display [ fhir:v "Centre hospitalier, ex Hôpital local" ]
+       ] [
+         fhir:code [ fhir:v "109" ] ;
+         fhir:display [ fhir:v "Etablissement de santé privé autorisé en SSR" ]
+       ] [
+         fhir:code [ fhir:v "114" ] ;
+         fhir:display [ fhir:v "Hôpital des Armées" ]
+       ] [
+         fhir:code [ fhir:v "115" ] ;
+         fhir:display [ fhir:v "Etablissement de soins du service de santé des Armées" ]
+       ] [
+         fhir:code [ fhir:v "122" ] ;
+         fhir:display [ fhir:v "Établissement de soins obstétriques et chirurgico-gynécologiques" ]
+       ] [
+         fhir:code [ fhir:v "127" ] ;
+         fhir:display [ fhir:v "Hospitalisation à domicile" ]
+       ] [
+         fhir:code [ fhir:v "128" ] ;
+         fhir:display [ fhir:v "Établissement de soins chirurgicaux" ]
+       ] [
+         fhir:code [ fhir:v "129" ] ;
+         fhir:display [ fhir:v "Établissement de soins médicaux" ]
+       ] [
+         fhir:code [ fhir:v "131" ] ;
+         fhir:display [ fhir:v "Centre de lutte contre le cancer (CLCC)" ]
+       ] [
+         fhir:code [ fhir:v "141" ] ;
+         fhir:display [ fhir:v "Centre de dialyse" ]
+       ] [
+         fhir:code [ fhir:v "146" ] ;
+         fhir:display [ fhir:v "Structure d'alternative à la dialyse en centre" ]
+       ] [
+         fhir:code [ fhir:v "156" ] ;
+         fhir:display [ fhir:v "Centre médico-psychologique (CMP)" ]
+       ] [
+         fhir:code [ fhir:v "161" ] ;
+         fhir:display [ fhir:v "Maison de santé pour maladies mentales" ]
+       ] [
+         fhir:code [ fhir:v "292" ] ;
+         fhir:display [ fhir:v "Centre hospitalier spécialisé dans la lutte contre les maladies mentales (CHS)" ]
+       ] [
+         fhir:code [ fhir:v "355" ] ;
+         fhir:display [ fhir:v "Centre hospitalier non dénommé ailleurs (CH)" ]
+       ] [
+         fhir:code [ fhir:v "362" ] ;
+         fhir:display [ fhir:v "Etablissement de soins longue durée (SLD)" ]
+       ] [
+         fhir:code [ fhir:v "365" ] ;
+         fhir:display [ fhir:v "Etablissement de soins pluridisciplinaire" ]
+       ] [
+         fhir:code [ fhir:v "366" ] ;
+         fhir:display [ fhir:v "Atelier thérapeutique" ]
+       ] [
+         fhir:code [ fhir:v "412" ] ;
+         fhir:display [ fhir:v "Appartement thérapeutique" ]
+       ] [
+         fhir:code [ fhir:v "415" ] ;
+         fhir:display [ fhir:v "Service médico-psychologique régional (SMPR)" ]
+       ] [
+         fhir:code [ fhir:v "422" ] ;
+         fhir:display [ fhir:v "Traitements spécialisés à domicile" ]
+       ] [
+         fhir:code [ fhir:v "425" ] ;
+         fhir:display [ fhir:v "Centre d'accueil thérapeutique à temps partiel (CATTP)" ]
+       ] [
+         fhir:code [ fhir:v "426" ] ;
+         fhir:display [ fhir:v "Syndicat Inter Hospitalier (SIH)" ]
+       ] [
+         fhir:code [ fhir:v "430" ] ;
+         fhir:display [ fhir:v "Centre de postcure pour malades mentaux" ]
+       ] [
+         fhir:code [ fhir:v "433" ] ;
+         fhir:display [ fhir:v "Etablissement sanitaire des prisons" ]
+       ] [
+         fhir:code [ fhir:v "444" ] ;
+         fhir:display [ fhir:v "Centre Crise ou d'accueil Permanent" ]
+       ] [
+         fhir:code [ fhir:v "695" ] ;
+         fhir:display [ fhir:v "Groupement de coopération sanitaire de moyens - Exploitant GCS-Exploitant" ]
+       ] [
+         fhir:code [ fhir:v "696" ] ;
+         fhir:display [ fhir:v "Groupement de coopération sanitaire de moyens GCS-Moyens" ]
+       ] [
+         fhir:code [ fhir:v "697" ] ;
+         fhir:display [ fhir:v "Groupement de coopération sanitaire - Etablissement de santé GCS-ES" ]
+       ] [
+         fhir:code [ fhir:v "698" ] ;
+         fhir:display [ fhir:v "Autre établissement soumis aux dispositions de la loi hospitalière" ]
+       ] [
+         fhir:code [ fhir:v "699" ] ;
+         fhir:display [ fhir:v "Entité Ayant Autorisation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

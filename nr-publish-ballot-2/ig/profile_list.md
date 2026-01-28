@@ -5,7 +5,18 @@
 
 ## Liste des profils
 
-Cette page contient la liste des profils définis dans le cadre du guide d’implémentation FrCore, ordonnés par catégories
+Cette page contient la liste des profils définis dans le cadre du guide d’implémentation FrCore, ordonnés par catégories.
+
+### Les profils structures des établissements
+
+| | |
+| :--- | :--- |
+| Titre du profil | Description |
+| [FRCoreLocationProfile](StructureDefinition-fr-core-location.md) | Ressource Location adaptée au contexte français. Cette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, un lit d'hôpital ou une chambre d'hôpital. |
+| [FRCoreOrganizationEtablissementProfile](StructureDefinition-fr-core-organization-etablissement.md) | Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. |
+| [FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md) | Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation. |
+| [FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md) | Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement. |
+| [FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md) | Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France. |
 
 ### Les profils administratifs
 
@@ -14,12 +25,7 @@ Cette page contient la liste des profils définis dans le cadre du guide d’imp
 | Titre du profil | Description |
 | [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) | This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue. |
 | [FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md) | Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror). |
-| [FRCoreLocationProfile](StructureDefinition-fr-core-location.md) | French profile of Location.Profil français de la ressource Location |
-| [FRCoreOrganizationPoleProfile](StructureDefinition-fr-core-organization-pole.md) | FR Core Organization Pole Profile |
-| [FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md) | This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement |
-| [FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md) | This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement |
-| [FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md) | Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions.Profil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises. |
-| [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md) | FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. |
+| [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md) | FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. |
 | [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) | Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) |
 | [FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md) | Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organizationSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation. |
 | [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md) | Profil de la ressource Practitionner pour la France. |

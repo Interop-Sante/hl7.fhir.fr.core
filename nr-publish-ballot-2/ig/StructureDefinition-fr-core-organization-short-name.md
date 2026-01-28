@@ -13,15 +13,14 @@
 
 Libellé court de l’organisation
 
-The Organization short name
-
 **Context of Use**
 
 **Usage info**
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md), [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md) and [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Utiliser ce Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Exemples pour ce Extension: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md), [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md), [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md), [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md) and [UF Nutrition](Organization-hopitaltest-uf-4705-nutrition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-short-name)
 
@@ -48,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationShortNameExtension",
   "title" : "FR Core Organization Short Name Extension",
   "status" : "active",
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -71,13 +70,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       ]
     }
   ],
-  "description" : "Libellé court de l'organisation\n\rThe Organization short name",
+  "description" : "Libellé court de l'organisation",
   "jurisdiction" : [
     {
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -96,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "context" : [
     {
       "type" : "element",
-      "expression" : "Organization"
+      "expression" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization#Organization"
     }
   ],
   "type" : "Extension",
@@ -108,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "id" : "Extension",
         "path" : "Extension",
         "short" : "FR Core Organization Short Name Extension",
-        "definition" : "Libellé court de l'organisation\n\rThe Organization short name"
+        "definition" : "Libellé court de l'organisation"
       },
       {
         "id" : "Extension.extension",

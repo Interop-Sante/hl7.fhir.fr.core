@@ -16,10 +16,7 @@ A coded type for an identifier that can be used to determine which identifier to
 
  **References** 
 
-* [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md)
-* [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
-* [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 
 ### Définition logique (CLD)
 
@@ -65,7 +62,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -94,7 +91,7 @@ A coded type for an identifier that can be used to determine which identifier to
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

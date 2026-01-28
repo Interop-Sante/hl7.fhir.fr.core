@@ -12,14 +12,12 @@
 | Active as of 2026-01-28 | *Computable Name*:FRCoreValueSetOrganizationType |
 
  
-Types de structures. Organization types 
+Types de structures 
 
  **References** 
 
 * [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* [FR Core Organization Pole Profile](StructureDefinition-fr-core-organization-pole.md)
-* [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
-* [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 
 ### Définition logique (CLD)
 
@@ -59,7 +57,7 @@ Types de structures. Organization types
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -82,13 +80,13 @@ Types de structures. Organization types
       ]
     }
   ],
-  "description" : "Types de structures.\r\nOrganization types",
+  "description" : "Types de structures",
   "jurisdiction" : [
     {
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -104,44 +102,20 @@ Types de structures. Organization types
             "display" : "Groupement hospitalier de territoire"
           },
           {
-            "code" : "LEGAL-ENTITY",
-            "display" : "Entité juridique"
-          },
-          {
-            "code" : "GEOGRAPHICAL-ENTITY",
-            "display" : "Entité géographique"
-          },
-          {
             "code" : "GROUP",
             "display" : "Groupe privé / hospitalier"
           },
           {
-            "code" : "HEBERGEMENT",
-            "display" : "Hébergement"
+            "code" : "STRUCT-INTERNE",
+            "display" : "Structure interne"
           },
           {
-            "code" : "SOIN",
-            "display" : "Soin"
+            "code" : "SECTEUR",
+            "display" : "Secteur"
           },
           {
-            "code" : "ADMINISTRATIF",
-            "display" : "Administration"
-          },
-          {
-            "code" : "MEDICAL",
-            "display" : "Médical"
-          },
-          {
-            "code" : "TECHNIQUE",
-            "display" : "Technique"
-          },
-          {
-            "code" : "MEDICOTEC",
-            "display" : "medico technique (radio, scanner …)"
-          },
-          {
-            "code" : "UF",
-            "display" : "Unité fonctionnelle"
+            "code" : "DEPARTEMENT",
+            "display" : "Département"
           },
           {
             "code" : "SERVICE",
@@ -150,10 +124,6 @@ Types de structures. Organization types
           {
             "code" : "UM",
             "display" : "Unité médicale"
-          },
-          {
-            "code" : "UAC",
-            "display" : "Unité d'activité"
           },
           {
             "code" : "POLE",

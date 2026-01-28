@@ -12,12 +12,22 @@
 | Active as of 2026-01-28 | *Computable Name*:FRCoreOrganizationUACProfile |
 
  
-This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions. 
-Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement 
+Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation. 
+
+### Usage
+
+L’[UAC](structure_entites.md#UAC) est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Elle ne sert qu’à la facturation du séjour. Elle permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
+
+### Ajout du profil FR
+
+Ce profil ajoute par rapport au profil FR Organization, dont il hérite :
+
+* la possibilité de définir une discipline de prestation
+* la possibilité d’ajouter un code tarif
 
 **Utilisations:**
 
-* Ce Profil nest utilisé par aucun profil dans ce guide dimplémentation
+* Exemples pour ce Profil: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md) and [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-uac)
 
@@ -42,7 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUACProfile",
   "title" : "FR Core Organization UAC Profile",
   "status" : "active",
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -65,13 +75,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       ]
     }
   ],
-  "description" : "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.\r\n\nCe profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement",
+  "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.",
   "jurisdiction" : [
     {
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -103,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -112,124 +122,45 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization"
       },
       {
-        "id" : "Organization.meta.profile",
-        "path" : "Organization.meta.profile",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "$this"
-            }
-          ],
-          "description" : "Slice based on the canonical url value",
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Organization.meta.profile:fr-canonical",
-        "path" : "Organization.meta.profile",
-        "sliceName" : "fr-canonical",
-        "min" : 0,
-        "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot-2"
-      },
-      {
-        "id" : "Organization.extension",
+        "id" : "Organization.extension:disciplinePrestation",
         "path" : "Organization.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Organization.extension:shortName",
-        "path" : "Organization.extension",
-        "sliceName" : "shortName",
+        "sliceName" : "disciplinePrestation",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot-2"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0-ballot-2"
             ]
           }
         ]
       },
       {
-        "id" : "Organization.extension:description",
+        "id" : "Organization.extension:tarif",
         "path" : "Organization.extension",
-        "sliceName" : "description",
+        "sliceName" : "tarif",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description|2.2.0-ballot-2"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0-ballot-2"
             ]
           }
         ]
-      },
-      {
-        "id" : "Organization.extension:usePeriod",
-        "path" : "Organization.extension",
-        "sliceName" : "usePeriod",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.identifier.use",
-        "path" : "Organization.identifier.use",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
-        }
-      },
-      {
-        "id" : "Organization.identifier.type",
-        "path" : "Organization.identifier.type",
-        "min" : 1,
-        "binding" : {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean" : true
-            }
-          ],
-          "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot-2"
-        }
-      },
-      {
-        "id" : "Organization.identifier.system",
-        "path" : "Organization.identifier.system",
-        "min" : 1
-      },
-      {
-        "id" : "Organization.identifier.value",
-        "path" : "Organization.identifier.value",
-        "min" : 1
       },
       {
         "id" : "Organization.type",
         "path" : "Organization.type",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
+        "fixedCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+              "code" : "UAC"
+            }
+          ]
         }
       },
       {
@@ -245,18 +176,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
             ]
           }
         ]
-      },
-      {
-        "id" : "Organization.partOf.type",
-        "path" : "Organization.partOf.type",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
-        }
       }
     ]
   }

@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-01-28T08:22:20+00:00",
+  "date" : "2026-01-28T13:01:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -405,7 +405,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
         "path" : "Encounter.location.physicalType",
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type|2.2.0-ballot-2"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type|2.2.0-ballot-2"
         }
       },
       {

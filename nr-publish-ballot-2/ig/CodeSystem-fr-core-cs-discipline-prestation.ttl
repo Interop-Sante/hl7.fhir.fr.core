@@ -1,0 +1,838 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-core-cs-discipline-prestation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem?version=4.0.1>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-discipline-prestation</b></p><a name=\"fr-core-cs-discipline-prestation\"> </a><a name=\"hcfr-core-cs-discipline-prestation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystemversion : null4.0.1)</a></p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"fr-core-cs-discipline-prestation-35\"> </a></td><td>Scanographie X</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"fr-core-cs-discipline-prestation-39\"> </a></td><td>Radiothérapie externe (césium, cobalt)</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"fr-core-cs-discipline-prestation-43\"> </a></td><td>Curiethérapie</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"fr-core-cs-discipline-prestation-76\"> </a></td><td>Immunologie sans autre indication (sai)</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"fr-core-cs-discipline-prestation-102\"> </a></td><td>Maladies infectieuses</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"fr-core-cs-discipline-prestation-103\"> </a></td><td>Toxicologie (y compris en particulier activité des centres antipoison)</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"fr-core-cs-discipline-prestation-104\"> </a></td><td>Réanimation médicale (y compris soins intensifs)</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"fr-core-cs-discipline-prestation-105\"> </a></td><td>Réanimation polyvalente (médicale + chirurgicale, y compris soins intensifs)</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"fr-core-cs-discipline-prestation-106\"> </a></td><td>Surveillance continue - médecine (non compris soins intensifs)</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"fr-core-cs-discipline-prestation-107\"> </a></td><td>Surveillance continue polyvalente (médicale+chirurgicale, non compris soins intensifs)</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"fr-core-cs-discipline-prestation-108\"> </a></td><td>Pédiatrie indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"fr-core-cs-discipline-prestation-109\"> </a></td><td>Pédiatrie enfants et adolescents</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"fr-core-cs-discipline-prestation-110\"> </a></td><td>Pédiatrie nouveau-nés et nourrissons indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"fr-core-cs-discipline-prestation-111\"> </a></td><td>Pédiatrie nourrissons</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"fr-core-cs-discipline-prestation-112\"> </a></td><td>Néonatologie</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"fr-core-cs-discipline-prestation-113\"> </a></td><td>Médecine gériatrique</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"fr-core-cs-discipline-prestation-114\"> </a></td><td>Spécialités médicales indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"fr-core-cs-discipline-prestation-115\"> </a></td><td>Allergologie</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"fr-core-cs-discipline-prestation-116\"> </a></td><td>Dermatologie et vénérologie indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"fr-core-cs-discipline-prestation-117\"> </a></td><td>Dermatologie</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"fr-core-cs-discipline-prestation-118\"> </a></td><td>Vénérologie</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"fr-core-cs-discipline-prestation-119\"> </a></td><td>Endocrinologie, diabétologie, nutrition et métabolisme indifférenciés</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"fr-core-cs-discipline-prestation-120\"> </a></td><td>Endocrinologie</td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"fr-core-cs-discipline-prestation-121\"> </a></td><td>Diabétologie</td></tr><tr><td style=\"white-space:nowrap\">122<a name=\"fr-core-cs-discipline-prestation-122\"> </a></td><td>Nutrition-métabolisme</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"fr-core-cs-discipline-prestation-123\"> </a></td><td>Hématologie et maladies du sang</td></tr><tr><td style=\"white-space:nowrap\">124<a name=\"fr-core-cs-discipline-prestation-124\"> </a></td><td>Hépatogastro-entérologie</td></tr><tr><td style=\"white-space:nowrap\">125<a name=\"fr-core-cs-discipline-prestation-125\"> </a></td><td>Maladies tropicales et exotiques</td></tr><tr><td style=\"white-space:nowrap\">126<a name=\"fr-core-cs-discipline-prestation-126\"> </a></td><td>Médecine carcinologique</td></tr><tr><td style=\"white-space:nowrap\">127<a name=\"fr-core-cs-discipline-prestation-127\"> </a></td><td>Médecine cardiovasculaire</td></tr><tr><td style=\"white-space:nowrap\">129<a name=\"fr-core-cs-discipline-prestation-129\"> </a></td><td>Neurologie</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"fr-core-cs-discipline-prestation-130\"> </a></td><td>Pneumologie indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"fr-core-cs-discipline-prestation-131\"> </a></td><td>Pneumologie non tuberculeuse</td></tr><tr><td style=\"white-space:nowrap\">132<a name=\"fr-core-cs-discipline-prestation-132\"> </a></td><td>Phtisiologie</td></tr><tr><td style=\"white-space:nowrap\">133<a name=\"fr-core-cs-discipline-prestation-133\"> </a></td><td>Rhumatologie</td></tr><tr><td style=\"white-space:nowrap\">134<a name=\"fr-core-cs-discipline-prestation-134\"> </a></td><td>Radiothérapie et médecine nucléaire indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">135<a name=\"fr-core-cs-discipline-prestation-135\"> </a></td><td>Radiothérapie</td></tr><tr><td style=\"white-space:nowrap\">136<a name=\"fr-core-cs-discipline-prestation-136\"> </a></td><td>Médecine nucléaire</td></tr><tr><td style=\"white-space:nowrap\">137<a name=\"fr-core-cs-discipline-prestation-137\"> </a></td><td>Chirurgie générale</td></tr><tr><td style=\"white-space:nowrap\">138<a name=\"fr-core-cs-discipline-prestation-138\"> </a></td><td>Chirurgie infantile indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">139<a name=\"fr-core-cs-discipline-prestation-139\"> </a></td><td>Chirurgie enfants et adolescents</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"fr-core-cs-discipline-prestation-140\"> </a></td><td>Chirurgie nouveau-nés et nourrissons</td></tr><tr><td style=\"white-space:nowrap\">141<a name=\"fr-core-cs-discipline-prestation-141\"> </a></td><td>Réanimation chirurgicale indifférenciée (y compris soins intensifs)</td></tr><tr><td style=\"white-space:nowrap\">142<a name=\"fr-core-cs-discipline-prestation-142\"> </a></td><td>Surveillance continue chirurgicale (non compris soins intensifs)</td></tr><tr><td style=\"white-space:nowrap\">143<a name=\"fr-core-cs-discipline-prestation-143\"> </a></td><td>Spécialités chirurgicales indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">144<a name=\"fr-core-cs-discipline-prestation-144\"> </a></td><td>Chirurgie carcinologique</td></tr><tr><td style=\"white-space:nowrap\">145<a name=\"fr-core-cs-discipline-prestation-145\"> </a></td><td>Chirurgie des grands brûlés</td></tr><tr><td style=\"white-space:nowrap\">146<a name=\"fr-core-cs-discipline-prestation-146\"> </a></td><td>Chirurgie digestive</td></tr><tr><td style=\"white-space:nowrap\">147<a name=\"fr-core-cs-discipline-prestation-147\"> </a></td><td>Chirurgie thoracique et cardiovasculaire indiférenciée</td></tr><tr><td style=\"white-space:nowrap\">148<a name=\"fr-core-cs-discipline-prestation-148\"> </a></td><td>Chirurgie thoracopulmonaire</td></tr><tr><td style=\"white-space:nowrap\">149<a name=\"fr-core-cs-discipline-prestation-149\"> </a></td><td>Chirurgie vasculaire</td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"fr-core-cs-discipline-prestation-150\"> </a></td><td>Chirurgie cardiovasculaire</td></tr><tr><td style=\"white-space:nowrap\">151<a name=\"fr-core-cs-discipline-prestation-151\"> </a></td><td>Neurochirurgie</td></tr><tr><td style=\"white-space:nowrap\">152<a name=\"fr-core-cs-discipline-prestation-152\"> </a></td><td>Orthopédie-traumatologie et chirurgie plastique et réparatrice indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">153<a name=\"fr-core-cs-discipline-prestation-153\"> </a></td><td>Orthopédie-traumatologie</td></tr><tr><td style=\"white-space:nowrap\">154<a name=\"fr-core-cs-discipline-prestation-154\"> </a></td><td>Chirurgie plastique et réparatrice</td></tr><tr><td style=\"white-space:nowrap\">155<a name=\"fr-core-cs-discipline-prestation-155\"> </a></td><td>ORL et ophtalmologie indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">156<a name=\"fr-core-cs-discipline-prestation-156\"> </a></td><td>ORL</td></tr><tr><td style=\"white-space:nowrap\">157<a name=\"fr-core-cs-discipline-prestation-157\"> </a></td><td>Ophtalmologie</td></tr><tr><td style=\"white-space:nowrap\">158<a name=\"fr-core-cs-discipline-prestation-158\"> </a></td><td>Stomatologie et chirurgie maxillofaciale indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">159<a name=\"fr-core-cs-discipline-prestation-159\"> </a></td><td>Stomatologie</td></tr><tr><td style=\"white-space:nowrap\">160<a name=\"fr-core-cs-discipline-prestation-160\"> </a></td><td>Chirurgie maxillofaciale</td></tr><tr><td style=\"white-space:nowrap\">161<a name=\"fr-core-cs-discipline-prestation-161\"> </a></td><td>Urologie</td></tr><tr><td style=\"white-space:nowrap\">162<a name=\"fr-core-cs-discipline-prestation-162\"> </a></td><td>ORL, ophtalmologie et stomatologie indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">163<a name=\"fr-core-cs-discipline-prestation-163\"> </a></td><td>Gynécologie et obstétrique indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">164<a name=\"fr-core-cs-discipline-prestation-164\"> </a></td><td>Gynécologie</td></tr><tr><td style=\"white-space:nowrap\">165<a name=\"fr-core-cs-discipline-prestation-165\"> </a></td><td>Obstétrique</td></tr><tr><td style=\"white-space:nowrap\">166<a name=\"fr-core-cs-discipline-prestation-166\"> </a></td><td>Chroniques et convalescents indifférenciés</td></tr><tr><td style=\"white-space:nowrap\">167<a name=\"fr-core-cs-discipline-prestation-167\"> </a></td><td>Chroniques</td></tr><tr><td style=\"white-space:nowrap\">168<a name=\"fr-core-cs-discipline-prestation-168\"> </a></td><td>Repos, convalescence et régime indifférenciés</td></tr><tr><td style=\"white-space:nowrap\">169<a name=\"fr-core-cs-discipline-prestation-169\"> </a></td><td>Repos</td></tr><tr><td style=\"white-space:nowrap\">170<a name=\"fr-core-cs-discipline-prestation-170\"> </a></td><td>Convalescence</td></tr><tr><td style=\"white-space:nowrap\">171<a name=\"fr-core-cs-discipline-prestation-171\"> </a></td><td>Régime (y compris diététique)</td></tr><tr><td style=\"white-space:nowrap\">172<a name=\"fr-core-cs-discipline-prestation-172\"> </a></td><td>Rééducation fonctionnelle et réadaptation polyvalente</td></tr><tr><td style=\"white-space:nowrap\">173<a name=\"fr-core-cs-discipline-prestation-173\"> </a></td><td>Cure thermale indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">174<a name=\"fr-core-cs-discipline-prestation-174\"> </a></td><td>Médecine générale et spécialités médicales indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">176<a name=\"fr-core-cs-discipline-prestation-176\"> </a></td><td>Long séjour pour personnes ayant perdu leur autonomie de vie</td></tr><tr><td style=\"white-space:nowrap\">177<a name=\"fr-core-cs-discipline-prestation-177\"> </a></td><td>Cure médicale en établissement d'hébergements pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">178<a name=\"fr-core-cs-discipline-prestation-178\"> </a></td><td>Rééducation fonctionnelle et réadaptation motrice indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">179<a name=\"fr-core-cs-discipline-prestation-179\"> </a></td><td>Rééducation fonctionnelle et réadaptation neurologique</td></tr><tr><td style=\"white-space:nowrap\">180<a name=\"fr-core-cs-discipline-prestation-180\"> </a></td><td>Rééducation des affections respiratoires</td></tr><tr><td style=\"white-space:nowrap\">181<a name=\"fr-core-cs-discipline-prestation-181\"> </a></td><td>Chirurgie générale et spécialités chirugicales indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">182<a name=\"fr-core-cs-discipline-prestation-182\"> </a></td><td>Rééducation des maladies cardiovasculaires</td></tr><tr><td style=\"white-space:nowrap\">183<a name=\"fr-core-cs-discipline-prestation-183\"> </a></td><td>Obstétrique sans possibilités chirurgicales</td></tr><tr><td style=\"white-space:nowrap\">184<a name=\"fr-core-cs-discipline-prestation-184\"> </a></td><td>Rééducation des affections hépatodigestives</td></tr><tr><td style=\"white-space:nowrap\">185<a name=\"fr-core-cs-discipline-prestation-185\"> </a></td><td>Repos et convalescence indifférenciés</td></tr><tr><td style=\"white-space:nowrap\">187<a name=\"fr-core-cs-discipline-prestation-187\"> </a></td><td>Autre rééducation fonctionnelle et réadaptation</td></tr><tr><td style=\"white-space:nowrap\">189<a name=\"fr-core-cs-discipline-prestation-189\"> </a></td><td>Cure thermale des voies respiratoires</td></tr><tr><td style=\"white-space:nowrap\">193<a name=\"fr-core-cs-discipline-prestation-193\"> </a></td><td>Cure thermale en rhumatologie et séquelles de traumatismes ostéo-articulaires</td></tr><tr><td style=\"white-space:nowrap\">194<a name=\"fr-core-cs-discipline-prestation-194\"> </a></td><td>Cure thermale en dermatologie</td></tr><tr><td style=\"white-space:nowrap\">195<a name=\"fr-core-cs-discipline-prestation-195\"> </a></td><td>Lutte contre les toxicomanies (autres que l'alcoolisme)</td></tr><tr><td style=\"white-space:nowrap\">196<a name=\"fr-core-cs-discipline-prestation-196\"> </a></td><td>Lutte contre l'alcoolisme (y compris alcoologie)</td></tr><tr><td style=\"white-space:nowrap\">198<a name=\"fr-core-cs-discipline-prestation-198\"> </a></td><td>Lutte contre le cancer (activité des CRLC)</td></tr><tr><td style=\"white-space:nowrap\">206<a name=\"fr-core-cs-discipline-prestation-206\"> </a></td><td>Lutte antihansénienne (lèpre)</td></tr><tr><td style=\"white-space:nowrap\">214<a name=\"fr-core-cs-discipline-prestation-214\"> </a></td><td>Postcure pour alcooliques</td></tr><tr><td style=\"white-space:nowrap\">217<a name=\"fr-core-cs-discipline-prestation-217\"> </a></td><td>Lutte contre la tuberculose indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">219<a name=\"fr-core-cs-discipline-prestation-219\"> </a></td><td>Lutte contre la tuberculose pulmonaire (sanatorium pulmonaire, hôtel de cure)</td></tr><tr><td style=\"white-space:nowrap\">220<a name=\"fr-core-cs-discipline-prestation-220\"> </a></td><td>Lutte contre la tuberculose extrapulmonaire</td></tr><tr><td style=\"white-space:nowrap\">221<a name=\"fr-core-cs-discipline-prestation-221\"> </a></td><td>Cure et repos en préventorium</td></tr><tr><td style=\"white-space:nowrap\">222<a name=\"fr-core-cs-discipline-prestation-222\"> </a></td><td>Aérium (traitements préventifs de la tuberculose)</td></tr><tr><td style=\"white-space:nowrap\">223<a name=\"fr-core-cs-discipline-prestation-223\"> </a></td><td>Médecine générale polyvalente</td></tr><tr><td style=\"white-space:nowrap\">224<a name=\"fr-core-cs-discipline-prestation-224\"> </a></td><td>Observation et traitement pneumoconioses</td></tr><tr><td style=\"white-space:nowrap\">225<a name=\"fr-core-cs-discipline-prestation-225\"> </a></td><td>Médecine interne</td></tr><tr><td style=\"white-space:nowrap\">226<a name=\"fr-core-cs-discipline-prestation-226\"> </a></td><td>Accueil et orientation des malades atteints ou suspects de tuberculose pulmonaire</td></tr><tr><td style=\"white-space:nowrap\">227<a name=\"fr-core-cs-discipline-prestation-227\"> </a></td><td>Postcure pour tuberculeux</td></tr><tr><td style=\"white-space:nowrap\">230<a name=\"fr-core-cs-discipline-prestation-230\"> </a></td><td>Psychiatrie générale</td></tr><tr><td style=\"white-space:nowrap\">235<a name=\"fr-core-cs-discipline-prestation-235\"> </a></td><td>Soins intensifs de néonatologie</td></tr><tr><td style=\"white-space:nowrap\">236<a name=\"fr-core-cs-discipline-prestation-236\"> </a></td><td>Psychiatrie infanto-juvénile</td></tr><tr><td style=\"white-space:nowrap\">252<a name=\"fr-core-cs-discipline-prestation-252\"> </a></td><td>Pouponnière à caractère sanitaire (hébergement et soins en )</td></tr><tr><td style=\"white-space:nowrap\">263<a name=\"fr-core-cs-discipline-prestation-263\"> </a></td><td>Placement familial sanitaire</td></tr><tr><td style=\"white-space:nowrap\">267<a name=\"fr-core-cs-discipline-prestation-267\"> </a></td><td>Action médico-sociale précoce pour enfants polyhandicapés</td></tr><tr><td style=\"white-space:nowrap\">268<a name=\"fr-core-cs-discipline-prestation-268\"> </a></td><td>Action médico-sociale précoce pour autre catégorie de clientèle</td></tr><tr><td style=\"white-space:nowrap\">269<a name=\"fr-core-cs-discipline-prestation-269\"> </a></td><td>Soins de type foyer à double tarification pour adultes handicapés</td></tr><tr><td style=\"white-space:nowrap\">273<a name=\"fr-core-cs-discipline-prestation-273\"> </a></td><td>Hébergement en service de soins de longue durée</td></tr><tr><td style=\"white-space:nowrap\">302<a name=\"fr-core-cs-discipline-prestation-302\"> </a></td><td>Chimiothérapie en hématologie et cancérologie</td></tr><tr><td style=\"white-space:nowrap\">304<a name=\"fr-core-cs-discipline-prestation-304\"> </a></td><td>Transplantation du foie</td></tr><tr><td style=\"white-space:nowrap\">305<a name=\"fr-core-cs-discipline-prestation-305\"> </a></td><td>Transplantations rénales</td></tr><tr><td style=\"white-space:nowrap\">306<a name=\"fr-core-cs-discipline-prestation-306\"> </a></td><td>Transplantations cardiaques</td></tr><tr><td style=\"white-space:nowrap\">309<a name=\"fr-core-cs-discipline-prestation-309\"> </a></td><td>Interruption volontaire de grossesse</td></tr><tr><td style=\"white-space:nowrap\">310<a name=\"fr-core-cs-discipline-prestation-310\"> </a></td><td>Examens de santé et bilans</td></tr><tr><td style=\"white-space:nowrap\">311<a name=\"fr-core-cs-discipline-prestation-311\"> </a></td><td>Transplantation coeur-poumon</td></tr><tr><td style=\"white-space:nowrap\">312<a name=\"fr-core-cs-discipline-prestation-312\"> </a></td><td>Néphrologie</td></tr><tr><td style=\"white-space:nowrap\">313<a name=\"fr-core-cs-discipline-prestation-313\"> </a></td><td>Psychiatrie - sorties modifiant la tarification</td></tr><tr><td style=\"white-space:nowrap\">314<a name=\"fr-core-cs-discipline-prestation-314\"> </a></td><td>Allogreffe de moelle osseuse</td></tr><tr><td style=\"white-space:nowrap\">316<a name=\"fr-core-cs-discipline-prestation-316\"> </a></td><td>Autre transplantation d'organe (grêle, poumon, pancréas, multigreffe, ...)</td></tr><tr><td style=\"white-space:nowrap\">318<a name=\"fr-core-cs-discipline-prestation-318\"> </a></td><td>Action médico-sociale précoce pour tous types de déficiences S.A.I</td></tr><tr><td style=\"white-space:nowrap\">320<a name=\"fr-core-cs-discipline-prestation-320\"> </a></td><td>Activités des CMPP</td></tr><tr><td style=\"white-space:nowrap\">321<a name=\"fr-core-cs-discipline-prestation-321\"> </a></td><td>Action médico-sociale précoce pour déficients auditifs</td></tr><tr><td style=\"white-space:nowrap\">322<a name=\"fr-core-cs-discipline-prestation-322\"> </a></td><td>Action médico-sociale précoce pour déficients visuels</td></tr><tr><td style=\"white-space:nowrap\">323<a name=\"fr-core-cs-discipline-prestation-323\"> </a></td><td>Action médico-sociale précoce pour déficients moteurs</td></tr><tr><td style=\"white-space:nowrap\">324<a name=\"fr-core-cs-discipline-prestation-324\"> </a></td><td>Action médico-sociale précoce pour déficients intellectuels</td></tr><tr><td style=\"white-space:nowrap\">325<a name=\"fr-core-cs-discipline-prestation-325\"> </a></td><td>Placement familial spécialisé pour enfants handicapés</td></tr><tr><td style=\"white-space:nowrap\">355<a name=\"fr-core-cs-discipline-prestation-355\"> </a></td><td>Activités des centres de jour pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">358<a name=\"fr-core-cs-discipline-prestation-358\"> </a></td><td>Soins à domicile</td></tr><tr><td style=\"white-space:nowrap\">389<a name=\"fr-core-cs-discipline-prestation-389\"> </a></td><td>Lutte contre la stérilité</td></tr><tr><td style=\"white-space:nowrap\">398<a name=\"fr-core-cs-discipline-prestation-398\"> </a></td><td>Placement familial spécialisé pour adultes handicapés</td></tr><tr><td style=\"white-space:nowrap\">401<a name=\"fr-core-cs-discipline-prestation-401\"> </a></td><td>Unité de proximité d'accueil, de traitement et d'orientation des urgences (UPATOU)</td></tr><tr><td style=\"white-space:nowrap\">402<a name=\"fr-core-cs-discipline-prestation-402\"> </a></td><td>Service d'accueil et de traitemet des urgences (SAU)</td></tr><tr><td style=\"white-space:nowrap\">403<a name=\"fr-core-cs-discipline-prestation-403\"> </a></td><td>Pôle spécialisé d'urgence en pédiatrie (POSU)</td></tr><tr><td style=\"white-space:nowrap\">404<a name=\"fr-core-cs-discipline-prestation-404\"> </a></td><td>Pôle spécialisé d'urgence en ophtalmologie (POSU)</td></tr><tr><td style=\"white-space:nowrap\">405<a name=\"fr-core-cs-discipline-prestation-405\"> </a></td><td>Pôle spécialisé d'urgence en cardiologie (POSU)</td></tr><tr><td style=\"white-space:nowrap\">406<a name=\"fr-core-cs-discipline-prestation-406\"> </a></td><td>Pôle spécialisé d'urgence en traumatologie (POSU)</td></tr><tr><td style=\"white-space:nowrap\">407<a name=\"fr-core-cs-discipline-prestation-407\"> </a></td><td>Pôle spécialisé d'urgence en 'SOS main'(POSU)</td></tr><tr><td style=\"white-space:nowrap\">408<a name=\"fr-core-cs-discipline-prestation-408\"> </a></td><td>Pôle spécialisé d'urgence en neurochirgie (POSU)</td></tr><tr><td style=\"white-space:nowrap\">409<a name=\"fr-core-cs-discipline-prestation-409\"> </a></td><td>Autre pôle spécialisé d'urgence non dénommé ailleurs (POSU)</td></tr><tr><td style=\"white-space:nowrap\">457<a name=\"fr-core-cs-discipline-prestation-457\"> </a></td><td>Cure médicale spécialisée contre la tuberculose indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">458<a name=\"fr-core-cs-discipline-prestation-458\"> </a></td><td>Cure médicale spécialisée contre la tuberculose pulmonaire</td></tr><tr><td style=\"white-space:nowrap\">459<a name=\"fr-core-cs-discipline-prestation-459\"> </a></td><td>Cure médicale specialisée contre la tuberculose extra-pulmonaire</td></tr><tr><td style=\"white-space:nowrap\">460<a name=\"fr-core-cs-discipline-prestation-460\"> </a></td><td>Cure médicale spécialisée contre la tuberculose (préventorium)</td></tr><tr><td style=\"white-space:nowrap\">462<a name=\"fr-core-cs-discipline-prestation-462\"> </a></td><td>Autre cure médicale spécialisée pour enfants (notamment aérium reclassé)</td></tr><tr><td style=\"white-space:nowrap\">463<a name=\"fr-core-cs-discipline-prestation-463\"> </a></td><td>Autre cure médicale spécialisée pour tous âges</td></tr><tr><td style=\"white-space:nowrap\">464<a name=\"fr-core-cs-discipline-prestation-464\"> </a></td><td>Cure médicale spécialisée pneumologique pour enfants</td></tr><tr><td style=\"white-space:nowrap\">465<a name=\"fr-core-cs-discipline-prestation-465\"> </a></td><td>Cure médicale spécialisée pneumologique pour tous âges</td></tr><tr><td style=\"white-space:nowrap\">466<a name=\"fr-core-cs-discipline-prestation-466\"> </a></td><td>Convalescence réadaptation pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">467<a name=\"fr-core-cs-discipline-prestation-467\"> </a></td><td>Cure médicale spécialisée cardiologique pour enfants</td></tr><tr><td style=\"white-space:nowrap\">468<a name=\"fr-core-cs-discipline-prestation-468\"> </a></td><td>Cure médicale spécialisée cardiologique pour tous âges</td></tr><tr><td style=\"white-space:nowrap\">552<a name=\"fr-core-cs-discipline-prestation-552\"> </a></td><td>Entraînement à l'hémodialyse à domicile et à l'autodialyse</td></tr><tr><td style=\"white-space:nowrap\">553<a name=\"fr-core-cs-discipline-prestation-553\"> </a></td><td>Entraînement à la dialyse péritonéale à domicile</td></tr><tr><td style=\"white-space:nowrap\">554<a name=\"fr-core-cs-discipline-prestation-554\"> </a></td><td>Entraînement à la dialyse péritonéale continue</td></tr><tr><td style=\"white-space:nowrap\">555<a name=\"fr-core-cs-discipline-prestation-555\"> </a></td><td>Dialyse péritonéale</td></tr><tr><td style=\"white-space:nowrap\">556<a name=\"fr-core-cs-discipline-prestation-556\"> </a></td><td>Dialyse péritonéale continue</td></tr><tr><td style=\"white-space:nowrap\">557<a name=\"fr-core-cs-discipline-prestation-557\"> </a></td><td>ORL et stomatologie indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">588<a name=\"fr-core-cs-discipline-prestation-588\"> </a></td><td>Soins courants en établissement d'hébergement pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">593<a name=\"fr-core-cs-discipline-prestation-593\"> </a></td><td>Accueil de l'enfant accompagnant la mère convalescente</td></tr><tr><td style=\"white-space:nowrap\">594<a name=\"fr-core-cs-discipline-prestation-594\"> </a></td><td>Repos prénatal</td></tr><tr><td style=\"white-space:nowrap\">595<a name=\"fr-core-cs-discipline-prestation-595\"> </a></td><td>Convalescence postnatale</td></tr><tr><td style=\"white-space:nowrap\">604<a name=\"fr-core-cs-discipline-prestation-604\"> </a></td><td>Cure médicale non spécialisée pour enfants (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">605<a name=\"fr-core-cs-discipline-prestation-605\"> </a></td><td>Cure médicale non spécialisée pour enfants (MECS ouverte temporairement)</td></tr><tr><td style=\"white-space:nowrap\">606<a name=\"fr-core-cs-discipline-prestation-606\"> </a></td><td>Cure thermale pour enfants (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">607<a name=\"fr-core-cs-discipline-prestation-607\"> </a></td><td>Cure thermale pour enfants (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">608<a name=\"fr-core-cs-discipline-prestation-608\"> </a></td><td>Cure médicale pour enfants atteints d'affections chroniques non tuberculeuses des voies respiratoires (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">609<a name=\"fr-core-cs-discipline-prestation-609\"> </a></td><td>Cure médicale pour enfants atteints d'affections chroniques non tuberculeuses des voies respiratoires (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">610<a name=\"fr-core-cs-discipline-prestation-610\"> </a></td><td>Cure médicale pour enfants convalescents de rhumatismes aigus (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">611<a name=\"fr-core-cs-discipline-prestation-611\"> </a></td><td>Cure médicale pour enfants convalescents de rhumatismes aigus (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">612<a name=\"fr-core-cs-discipline-prestation-612\"> </a></td><td>Cure médicale pour enfants diabétiques (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">613<a name=\"fr-core-cs-discipline-prestation-613\"> </a></td><td>Cure médicale pour enfants diabétiques (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">614<a name=\"fr-core-cs-discipline-prestation-614\"> </a></td><td>Cure médicale pour enfants épileptiques (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">615<a name=\"fr-core-cs-discipline-prestation-615\"> </a></td><td>Cure médicale pour enfants épileptiques (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">616<a name=\"fr-core-cs-discipline-prestation-616\"> </a></td><td>Cure médicale pour enfants atteints de déficiences temporaires somatopsychologiques (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">618<a name=\"fr-core-cs-discipline-prestation-618\"> </a></td><td>Cure médicale pour enfants hémophiles (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">619<a name=\"fr-core-cs-discipline-prestation-619\"> </a></td><td>Cure médicale pour enfants hémophiles (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">620<a name=\"fr-core-cs-discipline-prestation-620\"> </a></td><td>Cure médicale pour enfants atteints d'infirmités orthopédiques (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">621<a name=\"fr-core-cs-discipline-prestation-621\"> </a></td><td>Cure médicale pour enfants atteints d'infirmités orthopédiques (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">622<a name=\"fr-core-cs-discipline-prestation-622\"> </a></td><td>Cure médicale pour enfants énurétiques (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">623<a name=\"fr-core-cs-discipline-prestation-623\"> </a></td><td>Cure médicale pour enfants énurétiques (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">624<a name=\"fr-core-cs-discipline-prestation-624\"> </a></td><td>Autre cure médicale spécialisée pour enfants (MECS ouverte en permanence)</td></tr><tr><td style=\"white-space:nowrap\">625<a name=\"fr-core-cs-discipline-prestation-625\"> </a></td><td>Autre cure médicale spécialisée pour enfants (MECS ouverte de façon temporaire)</td></tr><tr><td style=\"white-space:nowrap\">627<a name=\"fr-core-cs-discipline-prestation-627\"> </a></td><td>Moyen séjour indifférencié</td></tr><tr><td style=\"white-space:nowrap\">628<a name=\"fr-core-cs-discipline-prestation-628\"> </a></td><td>Orthopédie</td></tr><tr><td style=\"white-space:nowrap\">631<a name=\"fr-core-cs-discipline-prestation-631\"> </a></td><td>Gynécologie chirurgicale</td></tr><tr><td style=\"white-space:nowrap\">635<a name=\"fr-core-cs-discipline-prestation-635\"> </a></td><td>Réanimation néonatale</td></tr><tr><td style=\"white-space:nowrap\">636<a name=\"fr-core-cs-discipline-prestation-636\"> </a></td><td>Réanimation pédiatrique</td></tr><tr><td style=\"white-space:nowrap\">637<a name=\"fr-core-cs-discipline-prestation-637\"> </a></td><td>Surveillance continue en cardiologie</td></tr><tr><td style=\"white-space:nowrap\">638<a name=\"fr-core-cs-discipline-prestation-638\"> </a></td><td>Surveillance continue en pédiatrie</td></tr><tr><td style=\"white-space:nowrap\">639<a name=\"fr-core-cs-discipline-prestation-639\"> </a></td><td>Surveillance continue en néphrologie</td></tr><tr><td style=\"white-space:nowrap\">640<a name=\"fr-core-cs-discipline-prestation-640\"> </a></td><td>Surveillance continue en urologie</td></tr><tr><td style=\"white-space:nowrap\">641<a name=\"fr-core-cs-discipline-prestation-641\"> </a></td><td>Réanimation en cardiologie</td></tr><tr><td style=\"white-space:nowrap\">644<a name=\"fr-core-cs-discipline-prestation-644\"> </a></td><td>Neutronthérapie</td></tr><tr><td style=\"white-space:nowrap\">645<a name=\"fr-core-cs-discipline-prestation-645\"> </a></td><td>Oxygénothérapie isolée (insuffisants respiratoires)</td></tr><tr><td style=\"white-space:nowrap\">646<a name=\"fr-core-cs-discipline-prestation-646\"> </a></td><td>Assistance ventilatoire sans trachéotomie (insuffisants respiratoires)</td></tr><tr><td style=\"white-space:nowrap\">647<a name=\"fr-core-cs-discipline-prestation-647\"> </a></td><td>Assistance ventilatoire endotrachéale (insuffisants respiratoires)</td></tr><tr><td style=\"white-space:nowrap\">648<a name=\"fr-core-cs-discipline-prestation-648\"> </a></td><td>Trachéotomie isolée (insuffisants respiratoires)</td></tr><tr><td style=\"white-space:nowrap\">651<a name=\"fr-core-cs-discipline-prestation-651\"> </a></td><td>Cure thermale des affections des muqueuses buccolinguales</td></tr><tr><td style=\"white-space:nowrap\">654<a name=\"fr-core-cs-discipline-prestation-654\"> </a></td><td>Hébergement spécialisé pour enfants et adolescents handicapés</td></tr><tr><td style=\"white-space:nowrap\">657<a name=\"fr-core-cs-discipline-prestation-657\"> </a></td><td>Hébergement temporaire pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">663<a name=\"fr-core-cs-discipline-prestation-663\"> </a></td><td>Nutrition parentérale pour enfants</td></tr><tr><td style=\"white-space:nowrap\">664<a name=\"fr-core-cs-discipline-prestation-664\"> </a></td><td>Nutrition parentérale pour adultes</td></tr><tr><td style=\"white-space:nowrap\">715<a name=\"fr-core-cs-discipline-prestation-715\"> </a></td><td>Surveillance par monitorage en vue de prévenir la mort subite et inexpliquée du nourrisson</td></tr><tr><td style=\"white-space:nowrap\">717<a name=\"fr-core-cs-discipline-prestation-717\"> </a></td><td>Soins hautement spécialisés en médecine</td></tr><tr><td style=\"white-space:nowrap\">718<a name=\"fr-core-cs-discipline-prestation-718\"> </a></td><td>Soins hautement spécialisés en chirurgie</td></tr><tr><td style=\"white-space:nowrap\">719<a name=\"fr-core-cs-discipline-prestation-719\"> </a></td><td>Soins hautement spécialisés en gynécologie-obstétrique</td></tr><tr><td style=\"white-space:nowrap\">720<a name=\"fr-core-cs-discipline-prestation-720\"> </a></td><td>Réanimation néonatale et pédiatrique indifférenciée</td></tr><tr><td style=\"white-space:nowrap\">721<a name=\"fr-core-cs-discipline-prestation-721\"> </a></td><td>Radiothérapie métabolique (ingestion de source)</td></tr><tr><td style=\"white-space:nowrap\">722<a name=\"fr-core-cs-discipline-prestation-722\"> </a></td><td>Maladies infectieuses, tropicales et exotiques indifférenciées</td></tr><tr><td style=\"white-space:nowrap\">723<a name=\"fr-core-cs-discipline-prestation-723\"> </a></td><td>Autodialyse</td></tr><tr><td style=\"white-space:nowrap\">728<a name=\"fr-core-cs-discipline-prestation-728\"> </a></td><td>Cardiologie infantile</td></tr><tr><td style=\"white-space:nowrap\">729<a name=\"fr-core-cs-discipline-prestation-729\"> </a></td><td>Néphrologie infantile</td></tr><tr><td style=\"white-space:nowrap\">730<a name=\"fr-core-cs-discipline-prestation-730\"> </a></td><td>Carcinologie infantile</td></tr><tr><td style=\"white-space:nowrap\">731<a name=\"fr-core-cs-discipline-prestation-731\"> </a></td><td>Autres spécialités pédiatriques</td></tr><tr><td style=\"white-space:nowrap\">732<a name=\"fr-core-cs-discipline-prestation-732\"> </a></td><td>Hépatologie</td></tr><tr><td style=\"white-space:nowrap\">733<a name=\"fr-core-cs-discipline-prestation-733\"> </a></td><td>Gastro-entérologie</td></tr><tr><td style=\"white-space:nowrap\">734<a name=\"fr-core-cs-discipline-prestation-734\"> </a></td><td>Réanimation chirurgicale pédiatrique</td></tr><tr><td style=\"white-space:nowrap\">735<a name=\"fr-core-cs-discipline-prestation-735\"> </a></td><td>Réanimation chirurgicale adulte</td></tr><tr><td style=\"white-space:nowrap\">736<a name=\"fr-core-cs-discipline-prestation-736\"> </a></td><td>Traumatologie</td></tr><tr><td style=\"white-space:nowrap\">737<a name=\"fr-core-cs-discipline-prestation-737\"> </a></td><td>Convalescence et réadaptation</td></tr><tr><td style=\"white-space:nowrap\">738<a name=\"fr-core-cs-discipline-prestation-738\"> </a></td><td>Rééducation fonctionnelle et réadaptation motrice orientation rhumatologie</td></tr><tr><td style=\"white-space:nowrap\">739<a name=\"fr-core-cs-discipline-prestation-739\"> </a></td><td>Rééducation fonctionnelle et réadaptation motrice orientation traumatologie</td></tr><tr><td style=\"white-space:nowrap\">743<a name=\"fr-core-cs-discipline-prestation-743\"> </a></td><td>Immuno-hématologie</td></tr><tr><td style=\"white-space:nowrap\">744<a name=\"fr-core-cs-discipline-prestation-744\"> </a></td><td>Immuno-cancérologie</td></tr><tr><td style=\"white-space:nowrap\">753<a name=\"fr-core-cs-discipline-prestation-753\"> </a></td><td>Imagerie par résonance magnétique (IRM)</td></tr><tr><td style=\"white-space:nowrap\">797<a name=\"fr-core-cs-discipline-prestation-797\"> </a></td><td>Hémodialyse et hémofiltration pour chroniques adultes</td></tr><tr><td style=\"white-space:nowrap\">798<a name=\"fr-core-cs-discipline-prestation-798\"> </a></td><td>Hémodialyse et hémofiltration pour chroniques enfants</td></tr><tr><td style=\"white-space:nowrap\">799<a name=\"fr-core-cs-discipline-prestation-799\"> </a></td><td>Assistance ventilatoire avec prothèse extrathoracique(insiffisants respiratoires)</td></tr><tr><td style=\"white-space:nowrap\">800<a name=\"fr-core-cs-discipline-prestation-800\"> </a></td><td>Assistance ventilatoire par pression positive continue ou autres techniques particulières agréées (insuffisants respiratoires)</td></tr><tr><td style=\"white-space:nowrap\">801<a name=\"fr-core-cs-discipline-prestation-801\"> </a></td><td>Insulinothérapie</td></tr><tr><td style=\"white-space:nowrap\">803<a name=\"fr-core-cs-discipline-prestation-803\"> </a></td><td>Psychitatrie pour arriérés profonds</td></tr><tr><td style=\"white-space:nowrap\">806<a name=\"fr-core-cs-discipline-prestation-806\"> </a></td><td>Atelier thérapeutique pour adultes</td></tr><tr><td style=\"white-space:nowrap\">807<a name=\"fr-core-cs-discipline-prestation-807\"> </a></td><td>Atelier thérapeutique pour adolescents</td></tr><tr><td style=\"white-space:nowrap\">808<a name=\"fr-core-cs-discipline-prestation-808\"> </a></td><td>Sectorisation psychiatrique en milieu pénitenciaire</td></tr><tr><td style=\"white-space:nowrap\">809<a name=\"fr-core-cs-discipline-prestation-809\"> </a></td><td>Hématologie pédiatrique</td></tr><tr><td style=\"white-space:nowrap\">825<a name=\"fr-core-cs-discipline-prestation-825\"> </a></td><td>Soins et accompagnement des malades en phase terminale-Soins palliatifs</td></tr><tr><td style=\"white-space:nowrap\">826<a name=\"fr-core-cs-discipline-prestation-826\"> </a></td><td>Traitement spécialisé contre la douleur</td></tr><tr><td style=\"white-space:nowrap\">827<a name=\"fr-core-cs-discipline-prestation-827\"> </a></td><td>Nutrition entérale à domicile</td></tr><tr><td style=\"white-space:nowrap\">828<a name=\"fr-core-cs-discipline-prestation-828\"> </a></td><td>Cure thermale pour maladies cardio-artérielles</td></tr><tr><td style=\"white-space:nowrap\">829<a name=\"fr-core-cs-discipline-prestation-829\"> </a></td><td>Cure thermale en neurologie</td></tr><tr><td style=\"white-space:nowrap\">830<a name=\"fr-core-cs-discipline-prestation-830\"> </a></td><td>Cure thermale pour affections psychosomatiques</td></tr><tr><td style=\"white-space:nowrap\">831<a name=\"fr-core-cs-discipline-prestation-831\"> </a></td><td>Cure thermale en phlébologie</td></tr><tr><td style=\"white-space:nowrap\">832<a name=\"fr-core-cs-discipline-prestation-832\"> </a></td><td>Cure thermale pour troubles du développement chez l'enfant</td></tr><tr><td style=\"white-space:nowrap\">833<a name=\"fr-core-cs-discipline-prestation-833\"> </a></td><td>Cure thermale en gynécologie</td></tr><tr><td style=\"white-space:nowrap\">834<a name=\"fr-core-cs-discipline-prestation-834\"> </a></td><td>Cure thermale pour maladies de l'appareil digestif et maladies métaboliques</td></tr><tr><td style=\"white-space:nowrap\">835<a name=\"fr-core-cs-discipline-prestation-835\"> </a></td><td>Cure thermale pour maladies de l'appareil urinaire et maladies métaboliques</td></tr><tr><td style=\"white-space:nowrap\">897<a name=\"fr-core-cs-discipline-prestation-897\"> </a></td><td>Hébergement ouvert en foyer pour adultes handicapés</td></tr><tr><td style=\"white-space:nowrap\">924<a name=\"fr-core-cs-discipline-prestation-924\"> </a></td><td>Hébergement en maison de retraite</td></tr><tr><td style=\"white-space:nowrap\">925<a name=\"fr-core-cs-discipline-prestation-925\"> </a></td><td>Hébergement en logement foyer pour personnes âgées seules (F1)</td></tr><tr><td style=\"white-space:nowrap\">926<a name=\"fr-core-cs-discipline-prestation-926\"> </a></td><td>Hébergement en logement foyer pour personnes âgées en couple (F2)</td></tr><tr><td style=\"white-space:nowrap\">927<a name=\"fr-core-cs-discipline-prestation-927\"> </a></td><td>Hébergement en logement foyer pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">936<a name=\"fr-core-cs-discipline-prestation-936\"> </a></td><td>Hébergement en logement foyer pour personnes âgées</td></tr><tr><td style=\"white-space:nowrap\">939<a name=\"fr-core-cs-discipline-prestation-939\"> </a></td><td>Hébergement en logement foyer pour personnes âgées</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation"^^xsd:anyURI ;
+     fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation>
+  ] ; # 
+  fhir:version [ fhir:v "2.2.0-ballot-2"] ; # 
+  fhir:name [ fhir:v "FRCoreCodeSystemDisciplinePrestation"] ; # 
+  fhir:title [ fhir:v "FR Core CodeSystem Discipline de prestation - nomenclature SAE"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-28T13:01:34+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Interop'Santé" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://interopsante.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "InteropSanté" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "La nomenclature des discipline de prestation."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FRA" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "258"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "Scanographie X" ]
+  ] [
+     fhir:code [ fhir:v "39" ] ;
+     fhir:display [ fhir:v "Radiothérapie externe (césium, cobalt)" ]
+  ] [
+     fhir:code [ fhir:v "43" ] ;
+     fhir:display [ fhir:v "Curiethérapie" ]
+  ] [
+     fhir:code [ fhir:v "76" ] ;
+     fhir:display [ fhir:v "Immunologie sans autre indication (sai)" ]
+  ] [
+     fhir:code [ fhir:v "102" ] ;
+     fhir:display [ fhir:v "Maladies infectieuses" ]
+  ] [
+     fhir:code [ fhir:v "103" ] ;
+     fhir:display [ fhir:v "Toxicologie (y compris en particulier activité des centres antipoison)" ]
+  ] [
+     fhir:code [ fhir:v "104" ] ;
+     fhir:display [ fhir:v "Réanimation médicale (y compris soins intensifs)" ]
+  ] [
+     fhir:code [ fhir:v "105" ] ;
+     fhir:display [ fhir:v "Réanimation polyvalente (médicale + chirurgicale, y compris soins intensifs)" ]
+  ] [
+     fhir:code [ fhir:v "106" ] ;
+     fhir:display [ fhir:v "Surveillance continue - médecine (non compris soins intensifs)" ]
+  ] [
+     fhir:code [ fhir:v "107" ] ;
+     fhir:display [ fhir:v "Surveillance continue polyvalente (médicale+chirurgicale, non compris soins intensifs)" ]
+  ] [
+     fhir:code [ fhir:v "108" ] ;
+     fhir:display [ fhir:v "Pédiatrie indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "109" ] ;
+     fhir:display [ fhir:v "Pédiatrie enfants et adolescents" ]
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "Pédiatrie nouveau-nés et nourrissons indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "111" ] ;
+     fhir:display [ fhir:v "Pédiatrie nourrissons" ]
+  ] [
+     fhir:code [ fhir:v "112" ] ;
+     fhir:display [ fhir:v "Néonatologie" ]
+  ] [
+     fhir:code [ fhir:v "113" ] ;
+     fhir:display [ fhir:v "Médecine gériatrique" ]
+  ] [
+     fhir:code [ fhir:v "114" ] ;
+     fhir:display [ fhir:v "Spécialités médicales indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "Allergologie" ]
+  ] [
+     fhir:code [ fhir:v "116" ] ;
+     fhir:display [ fhir:v "Dermatologie et vénérologie indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "117" ] ;
+     fhir:display [ fhir:v "Dermatologie" ]
+  ] [
+     fhir:code [ fhir:v "118" ] ;
+     fhir:display [ fhir:v "Vénérologie" ]
+  ] [
+     fhir:code [ fhir:v "119" ] ;
+     fhir:display [ fhir:v "Endocrinologie, diabétologie, nutrition et métabolisme indifférenciés" ]
+  ] [
+     fhir:code [ fhir:v "120" ] ;
+     fhir:display [ fhir:v "Endocrinologie" ]
+  ] [
+     fhir:code [ fhir:v "121" ] ;
+     fhir:display [ fhir:v "Diabétologie" ]
+  ] [
+     fhir:code [ fhir:v "122" ] ;
+     fhir:display [ fhir:v "Nutrition-métabolisme" ]
+  ] [
+     fhir:code [ fhir:v "123" ] ;
+     fhir:display [ fhir:v "Hématologie et maladies du sang" ]
+  ] [
+     fhir:code [ fhir:v "124" ] ;
+     fhir:display [ fhir:v "Hépatogastro-entérologie" ]
+  ] [
+     fhir:code [ fhir:v "125" ] ;
+     fhir:display [ fhir:v "Maladies tropicales et exotiques" ]
+  ] [
+     fhir:code [ fhir:v "126" ] ;
+     fhir:display [ fhir:v "Médecine carcinologique" ]
+  ] [
+     fhir:code [ fhir:v "127" ] ;
+     fhir:display [ fhir:v "Médecine cardiovasculaire" ]
+  ] [
+     fhir:code [ fhir:v "129" ] ;
+     fhir:display [ fhir:v "Neurologie" ]
+  ] [
+     fhir:code [ fhir:v "130" ] ;
+     fhir:display [ fhir:v "Pneumologie indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "131" ] ;
+     fhir:display [ fhir:v "Pneumologie non tuberculeuse" ]
+  ] [
+     fhir:code [ fhir:v "132" ] ;
+     fhir:display [ fhir:v "Phtisiologie" ]
+  ] [
+     fhir:code [ fhir:v "133" ] ;
+     fhir:display [ fhir:v "Rhumatologie" ]
+  ] [
+     fhir:code [ fhir:v "134" ] ;
+     fhir:display [ fhir:v "Radiothérapie et médecine nucléaire indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "135" ] ;
+     fhir:display [ fhir:v "Radiothérapie" ]
+  ] [
+     fhir:code [ fhir:v "136" ] ;
+     fhir:display [ fhir:v "Médecine nucléaire" ]
+  ] [
+     fhir:code [ fhir:v "137" ] ;
+     fhir:display [ fhir:v "Chirurgie générale" ]
+  ] [
+     fhir:code [ fhir:v "138" ] ;
+     fhir:display [ fhir:v "Chirurgie infantile indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "139" ] ;
+     fhir:display [ fhir:v "Chirurgie enfants et adolescents" ]
+  ] [
+     fhir:code [ fhir:v "140" ] ;
+     fhir:display [ fhir:v "Chirurgie nouveau-nés et nourrissons" ]
+  ] [
+     fhir:code [ fhir:v "141" ] ;
+     fhir:display [ fhir:v "Réanimation chirurgicale indifférenciée (y compris soins intensifs)" ]
+  ] [
+     fhir:code [ fhir:v "142" ] ;
+     fhir:display [ fhir:v "Surveillance continue chirurgicale (non compris soins intensifs)" ]
+  ] [
+     fhir:code [ fhir:v "143" ] ;
+     fhir:display [ fhir:v "Spécialités chirurgicales indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "144" ] ;
+     fhir:display [ fhir:v "Chirurgie carcinologique" ]
+  ] [
+     fhir:code [ fhir:v "145" ] ;
+     fhir:display [ fhir:v "Chirurgie des grands brûlés" ]
+  ] [
+     fhir:code [ fhir:v "146" ] ;
+     fhir:display [ fhir:v "Chirurgie digestive" ]
+  ] [
+     fhir:code [ fhir:v "147" ] ;
+     fhir:display [ fhir:v "Chirurgie thoracique et cardiovasculaire indiférenciée" ]
+  ] [
+     fhir:code [ fhir:v "148" ] ;
+     fhir:display [ fhir:v "Chirurgie thoracopulmonaire" ]
+  ] [
+     fhir:code [ fhir:v "149" ] ;
+     fhir:display [ fhir:v "Chirurgie vasculaire" ]
+  ] [
+     fhir:code [ fhir:v "150" ] ;
+     fhir:display [ fhir:v "Chirurgie cardiovasculaire" ]
+  ] [
+     fhir:code [ fhir:v "151" ] ;
+     fhir:display [ fhir:v "Neurochirurgie" ]
+  ] [
+     fhir:code [ fhir:v "152" ] ;
+     fhir:display [ fhir:v "Orthopédie-traumatologie et chirurgie plastique et réparatrice indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "153" ] ;
+     fhir:display [ fhir:v "Orthopédie-traumatologie" ]
+  ] [
+     fhir:code [ fhir:v "154" ] ;
+     fhir:display [ fhir:v "Chirurgie plastique et réparatrice" ]
+  ] [
+     fhir:code [ fhir:v "155" ] ;
+     fhir:display [ fhir:v "ORL et ophtalmologie indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "156" ] ;
+     fhir:display [ fhir:v "ORL" ]
+  ] [
+     fhir:code [ fhir:v "157" ] ;
+     fhir:display [ fhir:v "Ophtalmologie" ]
+  ] [
+     fhir:code [ fhir:v "158" ] ;
+     fhir:display [ fhir:v "Stomatologie et chirurgie maxillofaciale indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "159" ] ;
+     fhir:display [ fhir:v "Stomatologie" ]
+  ] [
+     fhir:code [ fhir:v "160" ] ;
+     fhir:display [ fhir:v "Chirurgie maxillofaciale" ]
+  ] [
+     fhir:code [ fhir:v "161" ] ;
+     fhir:display [ fhir:v "Urologie" ]
+  ] [
+     fhir:code [ fhir:v "162" ] ;
+     fhir:display [ fhir:v "ORL, ophtalmologie et stomatologie indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "163" ] ;
+     fhir:display [ fhir:v "Gynécologie et obstétrique indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "164" ] ;
+     fhir:display [ fhir:v "Gynécologie" ]
+  ] [
+     fhir:code [ fhir:v "165" ] ;
+     fhir:display [ fhir:v "Obstétrique" ]
+  ] [
+     fhir:code [ fhir:v "166" ] ;
+     fhir:display [ fhir:v "Chroniques et convalescents indifférenciés" ]
+  ] [
+     fhir:code [ fhir:v "167" ] ;
+     fhir:display [ fhir:v "Chroniques" ]
+  ] [
+     fhir:code [ fhir:v "168" ] ;
+     fhir:display [ fhir:v "Repos, convalescence et régime indifférenciés" ]
+  ] [
+     fhir:code [ fhir:v "169" ] ;
+     fhir:display [ fhir:v "Repos" ]
+  ] [
+     fhir:code [ fhir:v "170" ] ;
+     fhir:display [ fhir:v "Convalescence" ]
+  ] [
+     fhir:code [ fhir:v "171" ] ;
+     fhir:display [ fhir:v "Régime (y compris diététique)" ]
+  ] [
+     fhir:code [ fhir:v "172" ] ;
+     fhir:display [ fhir:v "Rééducation fonctionnelle et réadaptation polyvalente" ]
+  ] [
+     fhir:code [ fhir:v "173" ] ;
+     fhir:display [ fhir:v "Cure thermale indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "174" ] ;
+     fhir:display [ fhir:v "Médecine générale et spécialités médicales indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "176" ] ;
+     fhir:display [ fhir:v "Long séjour pour personnes ayant perdu leur autonomie de vie" ]
+  ] [
+     fhir:code [ fhir:v "177" ] ;
+     fhir:display [ fhir:v "Cure médicale en établissement d'hébergements pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "178" ] ;
+     fhir:display [ fhir:v "Rééducation fonctionnelle et réadaptation motrice indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "179" ] ;
+     fhir:display [ fhir:v "Rééducation fonctionnelle et réadaptation neurologique" ]
+  ] [
+     fhir:code [ fhir:v "180" ] ;
+     fhir:display [ fhir:v "Rééducation des affections respiratoires" ]
+  ] [
+     fhir:code [ fhir:v "181" ] ;
+     fhir:display [ fhir:v "Chirurgie générale et spécialités chirugicales indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "182" ] ;
+     fhir:display [ fhir:v "Rééducation des maladies cardiovasculaires" ]
+  ] [
+     fhir:code [ fhir:v "183" ] ;
+     fhir:display [ fhir:v "Obstétrique sans possibilités chirurgicales" ]
+  ] [
+     fhir:code [ fhir:v "184" ] ;
+     fhir:display [ fhir:v "Rééducation des affections hépatodigestives" ]
+  ] [
+     fhir:code [ fhir:v "185" ] ;
+     fhir:display [ fhir:v "Repos et convalescence indifférenciés" ]
+  ] [
+     fhir:code [ fhir:v "187" ] ;
+     fhir:display [ fhir:v "Autre rééducation fonctionnelle et réadaptation" ]
+  ] [
+     fhir:code [ fhir:v "189" ] ;
+     fhir:display [ fhir:v "Cure thermale des voies respiratoires" ]
+  ] [
+     fhir:code [ fhir:v "193" ] ;
+     fhir:display [ fhir:v "Cure thermale en rhumatologie et séquelles de traumatismes ostéo-articulaires" ]
+  ] [
+     fhir:code [ fhir:v "194" ] ;
+     fhir:display [ fhir:v "Cure thermale en dermatologie" ]
+  ] [
+     fhir:code [ fhir:v "195" ] ;
+     fhir:display [ fhir:v "Lutte contre les toxicomanies (autres que l'alcoolisme)" ]
+  ] [
+     fhir:code [ fhir:v "196" ] ;
+     fhir:display [ fhir:v "Lutte contre l'alcoolisme (y compris alcoologie)" ]
+  ] [
+     fhir:code [ fhir:v "198" ] ;
+     fhir:display [ fhir:v "Lutte contre le cancer (activité des CRLC)" ]
+  ] [
+     fhir:code [ fhir:v "206" ] ;
+     fhir:display [ fhir:v "Lutte antihansénienne (lèpre)" ]
+  ] [
+     fhir:code [ fhir:v "214" ] ;
+     fhir:display [ fhir:v "Postcure pour alcooliques" ]
+  ] [
+     fhir:code [ fhir:v "217" ] ;
+     fhir:display [ fhir:v "Lutte contre la tuberculose indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "219" ] ;
+     fhir:display [ fhir:v "Lutte contre la tuberculose pulmonaire (sanatorium pulmonaire, hôtel de cure)" ]
+  ] [
+     fhir:code [ fhir:v "220" ] ;
+     fhir:display [ fhir:v "Lutte contre la tuberculose extrapulmonaire" ]
+  ] [
+     fhir:code [ fhir:v "221" ] ;
+     fhir:display [ fhir:v "Cure et repos en préventorium" ]
+  ] [
+     fhir:code [ fhir:v "222" ] ;
+     fhir:display [ fhir:v "Aérium (traitements préventifs de la tuberculose)" ]
+  ] [
+     fhir:code [ fhir:v "223" ] ;
+     fhir:display [ fhir:v "Médecine générale polyvalente" ]
+  ] [
+     fhir:code [ fhir:v "224" ] ;
+     fhir:display [ fhir:v "Observation et traitement pneumoconioses" ]
+  ] [
+     fhir:code [ fhir:v "225" ] ;
+     fhir:display [ fhir:v "Médecine interne" ]
+  ] [
+     fhir:code [ fhir:v "226" ] ;
+     fhir:display [ fhir:v "Accueil et orientation des malades atteints ou suspects de tuberculose pulmonaire" ]
+  ] [
+     fhir:code [ fhir:v "227" ] ;
+     fhir:display [ fhir:v "Postcure pour tuberculeux" ]
+  ] [
+     fhir:code [ fhir:v "230" ] ;
+     fhir:display [ fhir:v "Psychiatrie générale" ]
+  ] [
+     fhir:code [ fhir:v "235" ] ;
+     fhir:display [ fhir:v "Soins intensifs de néonatologie" ]
+  ] [
+     fhir:code [ fhir:v "236" ] ;
+     fhir:display [ fhir:v "Psychiatrie infanto-juvénile" ]
+  ] [
+     fhir:code [ fhir:v "252" ] ;
+     fhir:display [ fhir:v "Pouponnière à caractère sanitaire (hébergement et soins en )" ]
+  ] [
+     fhir:code [ fhir:v "263" ] ;
+     fhir:display [ fhir:v "Placement familial sanitaire" ]
+  ] [
+     fhir:code [ fhir:v "267" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour enfants polyhandicapés" ]
+  ] [
+     fhir:code [ fhir:v "268" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour autre catégorie de clientèle" ]
+  ] [
+     fhir:code [ fhir:v "269" ] ;
+     fhir:display [ fhir:v "Soins de type foyer à double tarification pour adultes handicapés" ]
+  ] [
+     fhir:code [ fhir:v "273" ] ;
+     fhir:display [ fhir:v "Hébergement en service de soins de longue durée" ]
+  ] [
+     fhir:code [ fhir:v "302" ] ;
+     fhir:display [ fhir:v "Chimiothérapie en hématologie et cancérologie" ]
+  ] [
+     fhir:code [ fhir:v "304" ] ;
+     fhir:display [ fhir:v "Transplantation du foie" ]
+  ] [
+     fhir:code [ fhir:v "305" ] ;
+     fhir:display [ fhir:v "Transplantations rénales" ]
+  ] [
+     fhir:code [ fhir:v "306" ] ;
+     fhir:display [ fhir:v "Transplantations cardiaques" ]
+  ] [
+     fhir:code [ fhir:v "309" ] ;
+     fhir:display [ fhir:v "Interruption volontaire de grossesse" ]
+  ] [
+     fhir:code [ fhir:v "310" ] ;
+     fhir:display [ fhir:v "Examens de santé et bilans" ]
+  ] [
+     fhir:code [ fhir:v "311" ] ;
+     fhir:display [ fhir:v "Transplantation coeur-poumon" ]
+  ] [
+     fhir:code [ fhir:v "312" ] ;
+     fhir:display [ fhir:v "Néphrologie" ]
+  ] [
+     fhir:code [ fhir:v "313" ] ;
+     fhir:display [ fhir:v "Psychiatrie - sorties modifiant la tarification" ]
+  ] [
+     fhir:code [ fhir:v "314" ] ;
+     fhir:display [ fhir:v "Allogreffe de moelle osseuse" ]
+  ] [
+     fhir:code [ fhir:v "316" ] ;
+     fhir:display [ fhir:v "Autre transplantation d'organe (grêle, poumon, pancréas, multigreffe, ...)" ]
+  ] [
+     fhir:code [ fhir:v "318" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour tous types de déficiences S.A.I" ]
+  ] [
+     fhir:code [ fhir:v "320" ] ;
+     fhir:display [ fhir:v "Activités des CMPP" ]
+  ] [
+     fhir:code [ fhir:v "321" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour déficients auditifs" ]
+  ] [
+     fhir:code [ fhir:v "322" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour déficients visuels" ]
+  ] [
+     fhir:code [ fhir:v "323" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour déficients moteurs" ]
+  ] [
+     fhir:code [ fhir:v "324" ] ;
+     fhir:display [ fhir:v "Action médico-sociale précoce pour déficients intellectuels" ]
+  ] [
+     fhir:code [ fhir:v "325" ] ;
+     fhir:display [ fhir:v "Placement familial spécialisé pour enfants handicapés" ]
+  ] [
+     fhir:code [ fhir:v "355" ] ;
+     fhir:display [ fhir:v "Activités des centres de jour pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "358" ] ;
+     fhir:display [ fhir:v "Soins à domicile" ]
+  ] [
+     fhir:code [ fhir:v "389" ] ;
+     fhir:display [ fhir:v "Lutte contre la stérilité" ]
+  ] [
+     fhir:code [ fhir:v "398" ] ;
+     fhir:display [ fhir:v "Placement familial spécialisé pour adultes handicapés" ]
+  ] [
+     fhir:code [ fhir:v "401" ] ;
+     fhir:display [ fhir:v "Unité de proximité d'accueil, de traitement et d'orientation des urgences (UPATOU)" ]
+  ] [
+     fhir:code [ fhir:v "402" ] ;
+     fhir:display [ fhir:v "Service d'accueil et de traitemet des urgences (SAU)" ]
+  ] [
+     fhir:code [ fhir:v "403" ] ;
+     fhir:display [ fhir:v "Pôle spécialisé d'urgence en pédiatrie (POSU)" ]
+  ] [
+     fhir:code [ fhir:v "404" ] ;
+     fhir:display [ fhir:v "Pôle spécialisé d'urgence en ophtalmologie (POSU)" ]
+  ] [
+     fhir:code [ fhir:v "405" ] ;
+     fhir:display [ fhir:v "Pôle spécialisé d'urgence en cardiologie (POSU)" ]
+  ] [
+     fhir:code [ fhir:v "406" ] ;
+     fhir:display [ fhir:v "Pôle spécialisé d'urgence en traumatologie (POSU)" ]
+  ] [
+     fhir:code [ fhir:v "407" ] ;
+     fhir:display [ fhir:v "Pôle spécialisé d'urgence en 'SOS main'(POSU)" ]
+  ] [
+     fhir:code [ fhir:v "408" ] ;
+     fhir:display [ fhir:v "Pôle spécialisé d'urgence en neurochirgie (POSU)" ]
+  ] [
+     fhir:code [ fhir:v "409" ] ;
+     fhir:display [ fhir:v "Autre pôle spécialisé d'urgence non dénommé ailleurs (POSU)" ]
+  ] [
+     fhir:code [ fhir:v "457" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée contre la tuberculose indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "458" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée contre la tuberculose pulmonaire" ]
+  ] [
+     fhir:code [ fhir:v "459" ] ;
+     fhir:display [ fhir:v "Cure médicale specialisée contre la tuberculose extra-pulmonaire" ]
+  ] [
+     fhir:code [ fhir:v "460" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée contre la tuberculose (préventorium)" ]
+  ] [
+     fhir:code [ fhir:v "462" ] ;
+     fhir:display [ fhir:v "Autre cure médicale spécialisée pour enfants (notamment aérium reclassé)" ]
+  ] [
+     fhir:code [ fhir:v "463" ] ;
+     fhir:display [ fhir:v "Autre cure médicale spécialisée pour tous âges" ]
+  ] [
+     fhir:code [ fhir:v "464" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée pneumologique pour enfants" ]
+  ] [
+     fhir:code [ fhir:v "465" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée pneumologique pour tous âges" ]
+  ] [
+     fhir:code [ fhir:v "466" ] ;
+     fhir:display [ fhir:v "Convalescence réadaptation pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "467" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée cardiologique pour enfants" ]
+  ] [
+     fhir:code [ fhir:v "468" ] ;
+     fhir:display [ fhir:v "Cure médicale spécialisée cardiologique pour tous âges" ]
+  ] [
+     fhir:code [ fhir:v "552" ] ;
+     fhir:display [ fhir:v "Entraînement à l'hémodialyse à domicile et à l'autodialyse" ]
+  ] [
+     fhir:code [ fhir:v "553" ] ;
+     fhir:display [ fhir:v "Entraînement à la dialyse péritonéale à domicile" ]
+  ] [
+     fhir:code [ fhir:v "554" ] ;
+     fhir:display [ fhir:v "Entraînement à la dialyse péritonéale continue" ]
+  ] [
+     fhir:code [ fhir:v "555" ] ;
+     fhir:display [ fhir:v "Dialyse péritonéale" ]
+  ] [
+     fhir:code [ fhir:v "556" ] ;
+     fhir:display [ fhir:v "Dialyse péritonéale continue" ]
+  ] [
+     fhir:code [ fhir:v "557" ] ;
+     fhir:display [ fhir:v "ORL et stomatologie indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "588" ] ;
+     fhir:display [ fhir:v "Soins courants en établissement d'hébergement pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "593" ] ;
+     fhir:display [ fhir:v "Accueil de l'enfant accompagnant la mère convalescente" ]
+  ] [
+     fhir:code [ fhir:v "594" ] ;
+     fhir:display [ fhir:v "Repos prénatal" ]
+  ] [
+     fhir:code [ fhir:v "595" ] ;
+     fhir:display [ fhir:v "Convalescence postnatale" ]
+  ] [
+     fhir:code [ fhir:v "604" ] ;
+     fhir:display [ fhir:v "Cure médicale non spécialisée pour enfants (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "605" ] ;
+     fhir:display [ fhir:v "Cure médicale non spécialisée pour enfants (MECS ouverte temporairement)" ]
+  ] [
+     fhir:code [ fhir:v "606" ] ;
+     fhir:display [ fhir:v "Cure thermale pour enfants (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "607" ] ;
+     fhir:display [ fhir:v "Cure thermale pour enfants (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "608" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants atteints d'affections chroniques non tuberculeuses des voies respiratoires (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "609" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants atteints d'affections chroniques non tuberculeuses des voies respiratoires (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "610" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants convalescents de rhumatismes aigus (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "611" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants convalescents de rhumatismes aigus (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "612" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants diabétiques (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "613" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants diabétiques (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "614" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants épileptiques (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "615" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants épileptiques (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "616" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants atteints de déficiences temporaires somatopsychologiques (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "618" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants hémophiles (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "619" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants hémophiles (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "620" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants atteints d'infirmités orthopédiques (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "621" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants atteints d'infirmités orthopédiques (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "622" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants énurétiques (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "623" ] ;
+     fhir:display [ fhir:v "Cure médicale pour enfants énurétiques (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "624" ] ;
+     fhir:display [ fhir:v "Autre cure médicale spécialisée pour enfants (MECS ouverte en permanence)" ]
+  ] [
+     fhir:code [ fhir:v "625" ] ;
+     fhir:display [ fhir:v "Autre cure médicale spécialisée pour enfants (MECS ouverte de façon temporaire)" ]
+  ] [
+     fhir:code [ fhir:v "627" ] ;
+     fhir:display [ fhir:v "Moyen séjour indifférencié" ]
+  ] [
+     fhir:code [ fhir:v "628" ] ;
+     fhir:display [ fhir:v "Orthopédie" ]
+  ] [
+     fhir:code [ fhir:v "631" ] ;
+     fhir:display [ fhir:v "Gynécologie chirurgicale" ]
+  ] [
+     fhir:code [ fhir:v "635" ] ;
+     fhir:display [ fhir:v "Réanimation néonatale" ]
+  ] [
+     fhir:code [ fhir:v "636" ] ;
+     fhir:display [ fhir:v "Réanimation pédiatrique" ]
+  ] [
+     fhir:code [ fhir:v "637" ] ;
+     fhir:display [ fhir:v "Surveillance continue en cardiologie" ]
+  ] [
+     fhir:code [ fhir:v "638" ] ;
+     fhir:display [ fhir:v "Surveillance continue en pédiatrie" ]
+  ] [
+     fhir:code [ fhir:v "639" ] ;
+     fhir:display [ fhir:v "Surveillance continue en néphrologie" ]
+  ] [
+     fhir:code [ fhir:v "640" ] ;
+     fhir:display [ fhir:v "Surveillance continue en urologie" ]
+  ] [
+     fhir:code [ fhir:v "641" ] ;
+     fhir:display [ fhir:v "Réanimation en cardiologie" ]
+  ] [
+     fhir:code [ fhir:v "644" ] ;
+     fhir:display [ fhir:v "Neutronthérapie" ]
+  ] [
+     fhir:code [ fhir:v "645" ] ;
+     fhir:display [ fhir:v "Oxygénothérapie isolée (insuffisants respiratoires)" ]
+  ] [
+     fhir:code [ fhir:v "646" ] ;
+     fhir:display [ fhir:v "Assistance ventilatoire sans trachéotomie (insuffisants respiratoires)" ]
+  ] [
+     fhir:code [ fhir:v "647" ] ;
+     fhir:display [ fhir:v "Assistance ventilatoire endotrachéale (insuffisants respiratoires)" ]
+  ] [
+     fhir:code [ fhir:v "648" ] ;
+     fhir:display [ fhir:v "Trachéotomie isolée (insuffisants respiratoires)" ]
+  ] [
+     fhir:code [ fhir:v "651" ] ;
+     fhir:display [ fhir:v "Cure thermale des affections des muqueuses buccolinguales" ]
+  ] [
+     fhir:code [ fhir:v "654" ] ;
+     fhir:display [ fhir:v "Hébergement spécialisé pour enfants et adolescents handicapés" ]
+  ] [
+     fhir:code [ fhir:v "657" ] ;
+     fhir:display [ fhir:v "Hébergement temporaire pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "663" ] ;
+     fhir:display [ fhir:v "Nutrition parentérale pour enfants" ]
+  ] [
+     fhir:code [ fhir:v "664" ] ;
+     fhir:display [ fhir:v "Nutrition parentérale pour adultes" ]
+  ] [
+     fhir:code [ fhir:v "715" ] ;
+     fhir:display [ fhir:v "Surveillance par monitorage en vue de prévenir la mort subite et inexpliquée du nourrisson" ]
+  ] [
+     fhir:code [ fhir:v "717" ] ;
+     fhir:display [ fhir:v "Soins hautement spécialisés en médecine" ]
+  ] [
+     fhir:code [ fhir:v "718" ] ;
+     fhir:display [ fhir:v "Soins hautement spécialisés en chirurgie" ]
+  ] [
+     fhir:code [ fhir:v "719" ] ;
+     fhir:display [ fhir:v "Soins hautement spécialisés en gynécologie-obstétrique" ]
+  ] [
+     fhir:code [ fhir:v "720" ] ;
+     fhir:display [ fhir:v "Réanimation néonatale et pédiatrique indifférenciée" ]
+  ] [
+     fhir:code [ fhir:v "721" ] ;
+     fhir:display [ fhir:v "Radiothérapie métabolique (ingestion de source)" ]
+  ] [
+     fhir:code [ fhir:v "722" ] ;
+     fhir:display [ fhir:v "Maladies infectieuses, tropicales et exotiques indifférenciées" ]
+  ] [
+     fhir:code [ fhir:v "723" ] ;
+     fhir:display [ fhir:v "Autodialyse" ]
+  ] [
+     fhir:code [ fhir:v "728" ] ;
+     fhir:display [ fhir:v "Cardiologie infantile" ]
+  ] [
+     fhir:code [ fhir:v "729" ] ;
+     fhir:display [ fhir:v "Néphrologie infantile" ]
+  ] [
+     fhir:code [ fhir:v "730" ] ;
+     fhir:display [ fhir:v "Carcinologie infantile" ]
+  ] [
+     fhir:code [ fhir:v "731" ] ;
+     fhir:display [ fhir:v "Autres spécialités pédiatriques" ]
+  ] [
+     fhir:code [ fhir:v "732" ] ;
+     fhir:display [ fhir:v "Hépatologie" ]
+  ] [
+     fhir:code [ fhir:v "733" ] ;
+     fhir:display [ fhir:v "Gastro-entérologie" ]
+  ] [
+     fhir:code [ fhir:v "734" ] ;
+     fhir:display [ fhir:v "Réanimation chirurgicale pédiatrique" ]
+  ] [
+     fhir:code [ fhir:v "735" ] ;
+     fhir:display [ fhir:v "Réanimation chirurgicale adulte" ]
+  ] [
+     fhir:code [ fhir:v "736" ] ;
+     fhir:display [ fhir:v "Traumatologie" ]
+  ] [
+     fhir:code [ fhir:v "737" ] ;
+     fhir:display [ fhir:v "Convalescence et réadaptation" ]
+  ] [
+     fhir:code [ fhir:v "738" ] ;
+     fhir:display [ fhir:v "Rééducation fonctionnelle et réadaptation motrice orientation rhumatologie" ]
+  ] [
+     fhir:code [ fhir:v "739" ] ;
+     fhir:display [ fhir:v "Rééducation fonctionnelle et réadaptation motrice orientation traumatologie" ]
+  ] [
+     fhir:code [ fhir:v "743" ] ;
+     fhir:display [ fhir:v "Immuno-hématologie" ]
+  ] [
+     fhir:code [ fhir:v "744" ] ;
+     fhir:display [ fhir:v "Immuno-cancérologie" ]
+  ] [
+     fhir:code [ fhir:v "753" ] ;
+     fhir:display [ fhir:v "Imagerie par résonance magnétique (IRM)" ]
+  ] [
+     fhir:code [ fhir:v "797" ] ;
+     fhir:display [ fhir:v "Hémodialyse et hémofiltration pour chroniques adultes" ]
+  ] [
+     fhir:code [ fhir:v "798" ] ;
+     fhir:display [ fhir:v "Hémodialyse et hémofiltration pour chroniques enfants" ]
+  ] [
+     fhir:code [ fhir:v "799" ] ;
+     fhir:display [ fhir:v "Assistance ventilatoire avec prothèse extrathoracique(insiffisants respiratoires)" ]
+  ] [
+     fhir:code [ fhir:v "800" ] ;
+     fhir:display [ fhir:v "Assistance ventilatoire par pression positive continue ou autres techniques particulières agréées (insuffisants respiratoires)" ]
+  ] [
+     fhir:code [ fhir:v "801" ] ;
+     fhir:display [ fhir:v "Insulinothérapie" ]
+  ] [
+     fhir:code [ fhir:v "803" ] ;
+     fhir:display [ fhir:v "Psychitatrie pour arriérés profonds" ]
+  ] [
+     fhir:code [ fhir:v "806" ] ;
+     fhir:display [ fhir:v "Atelier thérapeutique pour adultes" ]
+  ] [
+     fhir:code [ fhir:v "807" ] ;
+     fhir:display [ fhir:v "Atelier thérapeutique pour adolescents" ]
+  ] [
+     fhir:code [ fhir:v "808" ] ;
+     fhir:display [ fhir:v "Sectorisation psychiatrique en milieu pénitenciaire" ]
+  ] [
+     fhir:code [ fhir:v "809" ] ;
+     fhir:display [ fhir:v "Hématologie pédiatrique" ]
+  ] [
+     fhir:code [ fhir:v "825" ] ;
+     fhir:display [ fhir:v "Soins et accompagnement des malades en phase terminale-Soins palliatifs" ]
+  ] [
+     fhir:code [ fhir:v "826" ] ;
+     fhir:display [ fhir:v "Traitement spécialisé contre la douleur" ]
+  ] [
+     fhir:code [ fhir:v "827" ] ;
+     fhir:display [ fhir:v "Nutrition entérale à domicile" ]
+  ] [
+     fhir:code [ fhir:v "828" ] ;
+     fhir:display [ fhir:v "Cure thermale pour maladies cardio-artérielles" ]
+  ] [
+     fhir:code [ fhir:v "829" ] ;
+     fhir:display [ fhir:v "Cure thermale en neurologie" ]
+  ] [
+     fhir:code [ fhir:v "830" ] ;
+     fhir:display [ fhir:v "Cure thermale pour affections psychosomatiques" ]
+  ] [
+     fhir:code [ fhir:v "831" ] ;
+     fhir:display [ fhir:v "Cure thermale en phlébologie" ]
+  ] [
+     fhir:code [ fhir:v "832" ] ;
+     fhir:display [ fhir:v "Cure thermale pour troubles du développement chez l'enfant" ]
+  ] [
+     fhir:code [ fhir:v "833" ] ;
+     fhir:display [ fhir:v "Cure thermale en gynécologie" ]
+  ] [
+     fhir:code [ fhir:v "834" ] ;
+     fhir:display [ fhir:v "Cure thermale pour maladies de l'appareil digestif et maladies métaboliques" ]
+  ] [
+     fhir:code [ fhir:v "835" ] ;
+     fhir:display [ fhir:v "Cure thermale pour maladies de l'appareil urinaire et maladies métaboliques" ]
+  ] [
+     fhir:code [ fhir:v "897" ] ;
+     fhir:display [ fhir:v "Hébergement ouvert en foyer pour adultes handicapés" ]
+  ] [
+     fhir:code [ fhir:v "924" ] ;
+     fhir:display [ fhir:v "Hébergement en maison de retraite" ]
+  ] [
+     fhir:code [ fhir:v "925" ] ;
+     fhir:display [ fhir:v "Hébergement en logement foyer pour personnes âgées seules (F1)" ]
+  ] [
+     fhir:code [ fhir:v "926" ] ;
+     fhir:display [ fhir:v "Hébergement en logement foyer pour personnes âgées en couple (F2)" ]
+  ] [
+     fhir:code [ fhir:v "927" ] ;
+     fhir:display [ fhir:v "Hébergement en logement foyer pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "936" ] ;
+     fhir:display [ fhir:v "Hébergement en logement foyer pour personnes âgées" ]
+  ] [
+     fhir:code [ fhir:v "939" ] ;
+     fhir:display [ fhir:v "Hébergement en logement foyer pour personnes âgées" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,15 +1,22 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "f9ff3370-aaed-412c-92d5-3db1068f9b09-137",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f9ff3370-aaed-412c-92d5-3db1068f9b09-137",
+  "id" : "af9f0166-1623-4511-809e-6eeccc7ff6ae-134",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/af9f0166-1623-4511-809e-6eeccc7ff6ae-134",
   "name" : "UnionFRCoreLocationProfileAndFRCoreLocationProfile",
   "title" : "Union of FR Core Location Profile And FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-01-28T08:24:23+00:00",
+  "date" : "2026-01-28T13:03:41+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
       "display" : "France"
     }]
   }],
@@ -551,7 +558,7 @@
     },
     {
       "path" : "Location.identifier",
-      "short" : "Identifiant fonctionnel du lieu. Il est recommandé de remplir ce champs pour faciliter l'identification des ressources.",
+      "short" : "left: Identifiant fonctionnel du lieu. Il est recommandé de remplir ce champs pour faciliter l'identification des ressources.; right: Unique code or number identifying the location to its users",
       "definition" : "Unique code or number identifying the location to its users.",
       "requirements" : "Organization label locations in registries, need to keep track of those.",
       "min" : 0,
@@ -583,12 +590,18 @@
       }]
     },
     {
+      "id" : "Location.identifier.id",
       "path" : "Location.identifier.id",
       "representation" : ["xmlAttr"],
       "short" : "Unique id for inter-element referencing",
       "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
@@ -596,7 +609,6 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -605,7 +617,16 @@
       }]
     },
     {
+      "id" : "Location.identifier.extension",
       "path" : "Location.identifier.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
       "short" : "Additional content defined by implementations",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -613,6 +634,11 @@
       "user content"],
       "min" : 0,
       "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
       "type" : [{
         "code" : "Extension"
       }],
@@ -638,7 +664,6 @@
         "expression" : "extension.exists() != value.exists()",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -647,6 +672,7 @@
       }]
     },
     {
+      "id" : "Location.identifier.use",
       "path" : "Location.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -654,6 +680,11 @@
       "requirements" : "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Identifier.use",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "code"
       }],
@@ -668,10 +699,14 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : true,
+      "isModifierReason" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
       "isSummary" : true,
       "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "IdentifierUse"
+        }],
         "strength" : "required",
         "description" : "Identifies the purpose for this identifier, if known .",
         "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
@@ -686,6 +721,7 @@
       }]
     },
     {
+      "id" : "Location.identifier.type",
       "path" : "Location.identifier.type",
       "short" : "Description of identifier",
       "definition" : "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
@@ -693,6 +729,11 @@
       "requirements" : "Allows users to make use of identifiers when the identifier system is not known.",
       "min" : 1,
       "max" : "1",
+      "base" : {
+        "path" : "Identifier.type",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -707,12 +748,11 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f9ff3370-aaed-412c-92d5-3db1068f9b09-140"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-identifier-type"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -724,6 +764,7 @@
       }]
     },
     {
+      "id" : "Location.identifier.system",
       "path" : "Location.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -731,6 +772,11 @@
       "requirements" : "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
       "min" : 1,
       "max" : "1",
+      "base" : {
+        "path" : "Identifier.system",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "uri"
       }],
@@ -749,7 +795,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -766,12 +811,18 @@
       }]
     },
     {
+      "id" : "Location.identifier.value",
       "path" : "Location.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
-      "comment" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension]. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+      "comment" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
       "min" : 1,
       "max" : "1",
+      "base" : {
+        "path" : "Identifier.value",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "string"
       }],
@@ -790,7 +841,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -807,11 +857,17 @@
       }]
     },
     {
+      "id" : "Location.identifier.period",
       "path" : "Location.identifier.period",
       "short" : "Time period when id is/was valid for use",
       "definition" : "Time period during which identifier is/was valid for use.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Identifier.period",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "Period"
       }],
@@ -826,7 +882,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -843,16 +898,21 @@
       }]
     },
     {
+      "id" : "Location.identifier.assigner",
       "path" : "Location.identifier.assigner",
       "short" : "Organization that issued id (may be just text)",
       "definition" : "Organization that issued/manages the identifier.",
       "comment" : "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Identifier.assigner",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-        "#sd-fr-core-organization-fr-core-organization"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -865,7 +925,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -944,7 +1003,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "The operational status if the location (where typically a bed/room).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f9ff3370-aaed-412c-92d5-3db1068f9b09-143"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/af9f0166-1623-4511-809e-6eeccc7ff6ae-137"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1087,7 +1146,7 @@
       "short" : "Type of function performed",
       "definition" : "Indicates the type of function performed at the location.",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -1107,7 +1166,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f9ff3370-aaed-412c-92d5-3db1068f9b09-146"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/af9f0166-1623-4511-809e-6eeccc7ff6ae-140"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1125,8 +1184,7 @@
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point"]
+        "code" : "ContactPoint"
       }],
       "constraint" : [{
         "extension" : [{
@@ -1156,8 +1214,7 @@
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address"]
+        "code" : "Address"
       }],
       "constraint" : [{
         "extension" : [{
@@ -1204,7 +1261,8 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "example",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f9ff3370-aaed-412c-92d5-3db1068f9b09-149"
+        "description" : "Physical form of the location.",
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/af9f0166-1623-4511-809e-6eeccc7ff6ae-143"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1446,8 +1504,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-        "#sd-fr-core-organization-fr-core-organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1481,15 +1538,7 @@
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
-          "valueBoolean" : true
-        }],
-        "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1511,12 +1560,18 @@
       }]
     },
     {
+      "id" : "Location.partOf.id",
       "path" : "Location.partOf.id",
       "representation" : ["xmlAttr"],
       "short" : "Unique id for inter-element referencing",
       "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
@@ -1524,7 +1579,6 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -1533,7 +1587,16 @@
       }]
     },
     {
+      "id" : "Location.partOf.extension",
       "path" : "Location.partOf.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
       "short" : "Additional content defined by implementations",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -1541,6 +1604,11 @@
       "user content"],
       "min" : 0,
       "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
       "type" : [{
         "code" : "Extension"
       }],
@@ -1566,7 +1634,6 @@
         "expression" : "extension.exists() != value.exists()",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -1575,15 +1642,22 @@
       }]
     },
     {
+      "id" : "Location.partOf.reference",
       "path" : "Location.partOf.reference",
       "short" : "Literal reference, Relative, internal or absolute URL",
       "definition" : "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
       "comment" : "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Reference.reference",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "string"
       }],
+      "condition" : ["ref-1"],
       "constraint" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
@@ -1595,7 +1669,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1604,12 +1677,18 @@
       }]
     },
     {
+      "id" : "Location.partOf.type",
       "path" : "Location.partOf.type",
       "short" : "Type the reference refers to (e.g. \"Patient\")",
       "definition" : "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.\n\nThe type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
       "comment" : "This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Reference.type",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "uri"
       }],
@@ -1624,10 +1703,13 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "FHIRResourceTypeExt"
+        }],
         "strength" : "extensible",
         "description" : "Aa resource (or, for logical models, the URI of the logical model).",
         "valueSet" : "http://hl7.org/fhir/ValueSet/resource-types|4.0.1"
@@ -1638,12 +1720,18 @@
       }]
     },
     {
+      "id" : "Location.partOf.identifier",
       "path" : "Location.partOf.identifier",
       "short" : "Logical reference, when literal reference is not known",
       "definition" : "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
       "comment" : "When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. \n\nWhen both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference\n\nApplications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.\n\nReference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Reference.identifier",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "Identifier"
       }],
@@ -1658,7 +1746,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1667,12 +1754,22 @@
       }]
     },
     {
+      "id" : "Location.partOf.display",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      }],
       "path" : "Location.partOf.display",
       "short" : "Text alternative for the resource",
       "definition" : "Plain text narrative that identifies the resource in addition to the resource reference.",
       "comment" : "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Reference.display",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "string"
       }],
@@ -1687,7 +1784,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{

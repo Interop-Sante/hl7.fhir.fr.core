@@ -46,6 +46,17 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetCategorieSAEEtablissement",
+      "title" : "FR Core ValueSet Categorie SAE Etablissement",
+      "description" : "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
+      ]
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays",
       "version" : "2.2.0-ballot-2",
       "status" : "active",
@@ -67,6 +78,17 @@
       "systems" : [
         "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship",
         "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetDisciplinePrestation",
+      "title" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE",
+      "description" : "Valeurs permettant de coder les disciplines de prestation.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation"
       ]
     },
     {
@@ -192,36 +214,14 @@
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-identifier-type",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit",
       "version" : "2.2.0-ballot-2",
       "status" : "active",
-      "name" : "FRCoreValueSetLocationIdentifierType",
-      "title" : "FR Core ValueSet Location identifier type",
-      "description" : "Jeu de valeurs des types d'identifiant de lieu.\r\nA coded type for a location",
+      "name" : "FRCoreValueSetLocationPositionLit",
+      "title" : "FR Core ValueSet Location Position Lit",
+      "description" : "Position du lit dans la chambre",
       "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type"
-      ]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-physical-type",
-      "version" : "2.2.0-ballot-2",
-      "status" : "active",
-      "name" : "FRCoreValueSetLocationPhysicalType",
-      "title" : "FR Core ValueSet Location physical type",
-      "description" : "Types de lieux physiques pour la France.\r\nFrench location physical type",
-      "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type"
-      ]
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-room",
-      "version" : "2.2.0-ballot-2",
-      "status" : "active",
-      "name" : "FRCoreValueSetLocationPositionRoom",
-      "title" : "FR Core ValueSet Location position room",
-      "description" : "Position physique de l'emplacement du lit.\r\nPosition room",
-      "systems" : [
-        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit"
       ]
     },
     {
@@ -233,6 +233,17 @@
       "description" : "Jeu de valeurs du rôle joué par un lieu.\n\rA role for a location",
       "systems" : [
         "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type-chambre",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetLocationTypeChambre",
+      "title" : "FR Core ValueSet Location Type Chambre",
+      "description" : "Type de chambre",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre"
       ]
     },
     {
@@ -271,15 +282,57 @@
       ]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-activity-field",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp",
       "version" : "2.2.0-ballot-2",
       "status" : "active",
-      "name" : "FRCoreValueSetOrganizationActivityField",
-      "title" : "FR Core ValueSet Organization activity field",
-      "description" : "Secteur d'activité de l'organisation.\r\nThe activity field of the organization",
+      "name" : "FRCoreValueSetOrganizationCodeTarifTNJP",
+      "title" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
+      "description" : "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).",
       "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-code-tarif-tnjp"
       ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-type-activite",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationTypeActivite",
+      "title" : "FR Core ValueSet Organization Type Activité - nomenclature SAE",
+      "description" : "Valeurs permettant de coder les types d'activité.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-champ-activite",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationChampActivite",
+      "title" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
+      "description" : "Champ d'activité d'une organisation type UF.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-discipline-equipement",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationDisciplineEquipement",
+      "title" : "FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE",
+      "description" : "Valeurs permettant de coder les disciplines d'équipement.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement"
+      ]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationEtablissementType",
+      "title" : "FR Core ValueSet Organization Etablisement type",
+      "description" : "Types d'organisation représentant des établissements.",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type",
@@ -296,17 +349,28 @@
       "status" : "active",
       "name" : "FRCoreValueSetOrganizationType",
       "title" : "FR Core ValueSet Organization type",
-      "description" : "Types de structures.\r\nOrganization types",
+      "description" : "Types de structures",
       "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"]
     },
     {
-      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-activity-field",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uac-type",
       "version" : "2.2.0-ballot-2",
-      "status" : "draft",
-      "name" : "FRCoreValueSetOrganizationUFActivityField",
-      "title" : "FR Core ValueSet Organization UF activity field",
-      "description" : "Champ d'activité des structures UF.\r\nOrganization UF activity field",
-      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311"]
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationUACType",
+      "title" : "FR Core ValueSet Organization UAC type",
+      "description" : "Types de structure représentant des unités d'activité.",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"]
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur",
+      "version" : "2.2.0-ballot-2",
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationUFIndicateur",
+      "title" : "FR Core ValueSet Organization UF Indicateur",
+      "description" : "Indicateur d'une unité fonctionnelle.",
+      "systems" : [
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur"
+      ]
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
