@@ -35,7 +35,7 @@ A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extensi
 }
 ```
 
-* Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209)
+* Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209) [#264](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/264)
 * Mise à jour FrCorePatientINSProfile.fsh (correction d'erreurs) [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163) [#197](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/197)
 * Suppression du numéro ADELI suite au décommissionnement national [#189](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/189)
 * Mise à jour et uniformisation des cardinalités des identifier (Patient, Practitioner, Organization) [#190](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/190)
