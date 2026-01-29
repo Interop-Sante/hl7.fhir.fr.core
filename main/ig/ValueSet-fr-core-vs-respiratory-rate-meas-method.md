@@ -1,4 +1,4 @@
-# Respiratory Rate Measurement Method value set - Guide d'implémentation FR Core v2.2.0-ballot
+# Respiratory Rate Measurement Method value set - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
 
  
@@ -51,12 +51,12 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetRespiratoryRateMeasurementMethod",
   "title" : "Respiratory Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -64,7 +64,7 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -85,7 +85,7 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

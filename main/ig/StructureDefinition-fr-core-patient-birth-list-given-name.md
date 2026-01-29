@@ -1,4 +1,4 @@
-# FR Core Patient Birth List Given name Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Patient Birth List Given name Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCorePatientBirthListGivenName |
 
 Prénoms de l’acte de naissance
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-patient-birth-list-given-name",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCorePatientBirthListGivenName",
   "title" : "FR Core Patient Birth List Given name Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

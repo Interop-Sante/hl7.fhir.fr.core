@@ -1,4 +1,4 @@
-# FR Core CodeSystem Champ Activite - Codes du champ d'activité - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core CodeSystem Champ Activite - Codes du champ d'activité - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite | *Version*:2.2.0-ballot-2 |
 | Draft as of 2026-01-29 | *Computable Name*:FRCoreCodeSystemChampActivite |
 
  
@@ -32,12 +32,12 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemChampActivite",
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -45,7 +45,7 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -66,7 +66,7 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

@@ -1,4 +1,4 @@
-# FR Core Related Person Profile - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Related Person Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreRelatedPersonProfile |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-related-person",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -71,7 +71,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot-2"
       },
       {
         "id" : "RelatedPerson.identifier",
@@ -141,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"
             ]
           }
         ]
@@ -168,7 +168,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
         "max" : "1",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0-ballot-2"
         }
       },
       {
@@ -186,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
         "max" : "*",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0-ballot-2"
         }
       },
       {
@@ -202,7 +202,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "HumanName",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot-2"
             ]
           }
         ]
@@ -214,7 +214,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"
             ]
           }
         ]
@@ -226,7 +226,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"
             ]
           }
         ]

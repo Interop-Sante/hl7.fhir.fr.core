@@ -1,4 +1,4 @@
-# FR Core Contact Point Email Type Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Contact Point Email Type Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreContactPointEmailTypeExtension |
 
 Extension permettant d’indiquer le type d’adresse email d’un ContactPoint.
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-contact-point-email-type",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreContactPointEmailTypeExtension",
   "title" : "FR Core Contact Point Email Type Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -134,7 +134,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type|2.2.0-ballot-2"
         }
       }
     ]

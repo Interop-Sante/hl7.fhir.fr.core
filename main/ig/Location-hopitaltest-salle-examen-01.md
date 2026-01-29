@@ -1,4 +1,4 @@
-# hopitaltest-salle-examen-01 - Guide d'implémentation FR Core v2.2.0-ballot
+# hopitaltest-salle-examen-01 - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

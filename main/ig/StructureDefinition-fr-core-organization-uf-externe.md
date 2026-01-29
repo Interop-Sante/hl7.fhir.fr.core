@@ -1,4 +1,4 @@
-# FR Core Organization Extension - UF Externe - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Organization Extension - UF Externe - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreOrganizationUFExterneExtension |
 
 Indicateur permettant de définir si une UF est externe à l’établissement
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-uf-externe",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreOrganizationUFExterneExtension",
   "title" : "FR Core Organization Extension - UF Externe",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

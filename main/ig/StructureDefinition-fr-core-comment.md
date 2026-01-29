@@ -1,4 +1,4 @@
-# FR Core Comment Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Comment Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment | *Version*:2.2.0-ballot | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment | *Version*:2.2.0-ballot-2 | |
 | Active as of 2026-01-29 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreCommentExtension |
 
 Ajout d’un commentaire sur un dataElement d’une ressource. Add a comment on a dataElement of a resource
@@ -52,11 +52,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
     }
   ],
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

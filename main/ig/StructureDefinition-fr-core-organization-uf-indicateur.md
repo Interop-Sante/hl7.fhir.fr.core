@@ -1,4 +1,4 @@
-# FR Core Organization Extension - Indicateur d'une unité fonctionnelle - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Organization Extension - Indicateur d'une unité fonctionnelle - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreOrganizationUFIndicateurExtension |
 
 Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-uf-indicateur",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreOrganizationUFIndicateurExtension",
   "title" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -149,7 +149,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur|2.2.0-ballot-2"
         }
       }
     ]

@@ -1,4 +1,4 @@
-# Relations entre entités - Guide d'implémentation FR Core v2.2.0-ballot
+# Relations entre entités - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * **Relations entre entités**

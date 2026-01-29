@@ -1,4 +1,4 @@
-# FR Core Patient Ident Reliability Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Patient Ident Reliability Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCorePatientIdentityReliabilityExtension |
 
 Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-identity-reliability",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -144,7 +144,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection|2.2.0-ballot-2"
         }
       },
       {
@@ -203,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability|2.2.0-ballot-2"
         }
       },
       {
@@ -261,7 +261,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-identity-rel
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity|2.2.0-ballot-2"
         }
       },
       {

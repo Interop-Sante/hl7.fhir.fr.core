@@ -1,4 +1,4 @@
-# FR Core CodeSystem Circonstances Sortie - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core CodeSystem Circonstances Sortie - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie | *Version*:2.2.0-ballot-2 |
 | Draft as of 2026-01-29 | *Computable Name*:FRCoreCodeSystemCirconstancesSortie |
 
  
@@ -32,12 +32,12 @@ Discharge Disposition
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemCirconstancesSortie",
   "title" : "FR Core CodeSystem Circonstances Sortie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -45,7 +45,7 @@ Discharge Disposition
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -66,7 +66,7 @@ Discharge Disposition
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

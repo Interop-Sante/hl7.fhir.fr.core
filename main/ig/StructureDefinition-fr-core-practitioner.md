@@ -1,4 +1,4 @@
-# FR Core Practitioner Profile - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Practitioner Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCorePractitionerProfile |
 
  
@@ -46,11 +46,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-practitioner",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -139,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2"
       },
       {
         "id" : "Practitioner.extension",
@@ -164,7 +164,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0-ballot-2"
             ]
           }
         ]
@@ -188,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
         "path" : "Practitioner.identifier.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type|2.2.0-ballot-2"
         }
       },
       {
@@ -264,7 +264,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "HumanName",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot-2"
             ]
           }
         ]
@@ -286,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "ContactPoint",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"
             ]
           }
         ]
@@ -298,7 +298,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
           {
             "code" : "Address",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"
             ]
           }
         ]

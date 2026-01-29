@@ -1,4 +1,4 @@
-# FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur | *Version*:2.2.0-ballot-2 |
 | Draft as of 2026-01-29 | *Computable Name*:FRCoreCodeSystemUFIndicateur |
 
  
@@ -32,12 +32,12 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemUFIndicateur",
   "title" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -45,7 +45,7 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -66,7 +66,7 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

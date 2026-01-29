@@ -1,4 +1,4 @@
-# FR Core Assembly Order Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Assembly Order Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order | *Version*:2.2.0-ballot | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order | *Version*:2.2.0-ballot-2 | |
 | Active as of 2026-01-29 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreAssemblyOrderExtension |
 
 A code that represents the preferred display order of the components of this human name.
@@ -54,11 +54,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
     }
   ],
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -87,7 +87,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

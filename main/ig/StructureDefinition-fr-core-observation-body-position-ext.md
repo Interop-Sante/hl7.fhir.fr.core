@@ -1,4 +1,4 @@
-# FR Core Observation Body Position Ext Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Observation Body Position Ext Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreObservationBodyPositionExtExtension |
 
 Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire. CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-observation-body-position-ext",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreObservationBodyPositionExtExtension",
   "title" : "FR Core Observation Body Position Ext Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         ],
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position|2.2.0-ballot-2"
         }
       }
     ]

@@ -1,4 +1,4 @@
-# hopitaltest-uf-4701-endocrino-diab - Guide d'implémentation FR Core v2.2.0-ballot
+# hopitaltest-uf-4701-endocrino-diab - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

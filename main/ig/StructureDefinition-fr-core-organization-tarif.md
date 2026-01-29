@@ -1,4 +1,4 @@
-# FR Core Organization Extension - Tarif Soin - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Organization Extension - Tarif Soin - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreOrganizationTarifExtension |
 
 Tarif de soin associé à l’unité d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-tarif",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreOrganizationTarifExtension",
   "title" : "FR Core Organization Extension - Tarif Soin",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp|2.2.0-ballot-2"
         }
       }
     ]

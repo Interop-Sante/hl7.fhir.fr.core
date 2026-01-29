@@ -1,4 +1,4 @@
-# FR Core Appointment Operator Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Appointment Operator Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreAppointmentOperatorExtension |
 
 Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-appointment-operator",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreAppointmentOperatorExtension",
   "title" : "FR Core Appointment Operator Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -143,9 +143,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"
             ]
           }

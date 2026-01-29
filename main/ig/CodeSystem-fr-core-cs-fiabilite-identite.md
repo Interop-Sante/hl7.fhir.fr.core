@@ -1,4 +1,4 @@
-# FR Core CodeSystem Fiabilité Identité - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core CodeSystem Fiabilité Identité - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreCodeSystemReliabilityIdentity |
 | *Other Identifiers:*http://terminology.hl7.org/CodeSystem/v2-tables#urn:oid:2.16.840.1.113883.12.445 | |
 
@@ -39,12 +39,12 @@ French Identity reliabilty codes
       "value" : "urn:oid:2.16.840.1.113883.12.445"
     }
   ],
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemReliabilityIdentity",
   "title" : "FR Core CodeSystem Fiabilité Identité",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -52,7 +52,7 @@ French Identity reliabilty codes
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -73,7 +73,7 @@ French Identity reliabilty codes
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

@@ -1,4 +1,4 @@
-# Rang Gémellaire - Guide d'implémentation FR Core v2.2.0-ballot
+# Rang Gémellaire - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth | *Version*:2.2.0-ballot |
+| *Official URL*:http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCorePatientMultipleBirthExtension |
 
 Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l’assurance maladie. Cette extension implemente l’élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-mult
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-patient-multiple-birth-r5",
   "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCorePatientMultipleBirthExtension",
   "title" : "Rang Gémellaire",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-mult
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-mult
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

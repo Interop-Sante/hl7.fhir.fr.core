@@ -1,4 +1,4 @@
-# FR Core Observation Head Circum Profile - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Observation Head Circum Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreObservationHeadCircumProfile |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-observation-head-circum",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -71,7 +71,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -141,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0-ballot"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0-ballot-2"
       },
       {
         "id" : "Observation.extension",
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"
             ]
           }
         ]
@@ -196,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot-2"
             ]
           }
         ]
@@ -210,10 +210,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
             "targetProfile" : [
               "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
             ]
           }
         ]

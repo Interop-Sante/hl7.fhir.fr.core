@@ -1,4 +1,4 @@
-# FR Core ValueSet Contact relationship - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core ValueSet Contact relationship - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-contact-relationship | *Version*:2.2.0-ballot | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-contact-relationship | *Version*:2.2.0-ballot-2 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetContactRelationship |
 
  
@@ -69,12 +69,12 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
     }
   ],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-contact-relationship",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetContactRelationship",
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -82,7 +82,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -103,7 +103,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

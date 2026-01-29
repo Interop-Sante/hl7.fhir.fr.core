@@ -1,4 +1,4 @@
-# FR Core Location Extension - Position du lit - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Location Extension - Position du lit - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreLocationPositionLitExtension |
 
 Position du lit dans la chambre
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-location-position-lit",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreLocationPositionLitExtension",
   "title" : "FR Core Location Extension - Position du lit",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit|2.2.0-ballot-2"
         }
       }
     ]

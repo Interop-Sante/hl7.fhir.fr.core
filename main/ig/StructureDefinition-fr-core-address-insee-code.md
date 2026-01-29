@@ -1,4 +1,4 @@
-# FR Core Address Insee Code Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Address Insee Code Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreAddressInseeCodeExtension |
 
 Extension d’ajout du code insee (5 chiffres) à l’adresse postale. This extension adds the insee code (5 digits) to the address
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-address-insee-code",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -136,7 +136,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.2.0-ballot-2"
         }
       }
     ]

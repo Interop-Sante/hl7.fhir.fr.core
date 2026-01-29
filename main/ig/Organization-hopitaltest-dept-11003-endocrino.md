@@ -1,4 +1,4 @@
-# hopitaltest-dept-11003-endocrino - Guide d'implémentation FR Core v2.2.0-ballot
+# hopitaltest-dept-11003-endocrino - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

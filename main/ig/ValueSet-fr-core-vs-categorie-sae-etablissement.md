@@ -1,4 +1,4 @@
-# FR Core ValueSet Categorie SAE Etablissement - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core ValueSet Categorie SAE Etablissement - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement | *Version*:2.2.0-ballot-2 |
 | Active as of 2024-10-25 | *Computable Name*:FRCoreValueSetCategorieSAEEtablissement |
 
  
@@ -53,7 +53,7 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetCategorieSAEEtablissement",
   "title" : "FR Core ValueSet Categorie SAE Etablissement",
   "status" : "active",
@@ -66,7 +66,7 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -87,7 +87,7 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

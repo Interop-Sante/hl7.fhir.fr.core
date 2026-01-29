@@ -1,4 +1,4 @@
-# FR Core Patient Contact Identifier Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Patient Contact Identifier Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCorePatientContactIdentifierExtension |
 
 Identifiant de contact dans la ressource Patient
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-cont
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-patient-contact-identifier",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCorePatientContactIdentifierExtension",
   "title" : "FR Core Patient Contact Identifier Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-cont
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-cont
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

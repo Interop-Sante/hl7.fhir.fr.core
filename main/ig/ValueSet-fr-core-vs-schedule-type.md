@@ -1,4 +1,4 @@
-# FR Core ValueSet Schedule type - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core ValueSet Schedule type - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type | *Version*:2.2.0-ballot | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type | *Version*:2.2.0-ballot-2 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetScheduleType |
 
  
@@ -69,12 +69,12 @@ Jeu de valeurs des types de Schedule. A Schedule type
     }
   ],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetScheduleType",
   "title" : "FR Core ValueSet Schedule type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -82,7 +82,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -103,7 +103,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

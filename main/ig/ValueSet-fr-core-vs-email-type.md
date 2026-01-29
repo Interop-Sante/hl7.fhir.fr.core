@@ -1,4 +1,4 @@
-# FR Core ValueSet Email type - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core ValueSet Email type - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type | *Version*:2.2.0-ballot | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type | *Version*:2.2.0-ballot-2 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 0 | *Computable Name*:FRCoreValueSetEmailType |
 
  
@@ -65,12 +65,12 @@ The type of email
     }
   ],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetEmailType",
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -78,7 +78,7 @@ The type of email
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -99,7 +99,7 @@ The type of email
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

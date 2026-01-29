@@ -1,4 +1,4 @@
-# FR Core Observation Level Of Exertion Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Observation Level Of Exertion Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreObservationLevelOfExertionExtension |
 
 Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort). French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-observation-level-of-exertion",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreObservationLevelOfExertionExtension",
   "title" : "FR Core Observation Level Of Exertion Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

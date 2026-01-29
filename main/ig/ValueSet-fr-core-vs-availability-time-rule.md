@@ -1,4 +1,4 @@
-# FR Core ValueSet Availability Schedule - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core ValueSet Availability Schedule - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule | *Version*:2.2.0-ballot | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule | *Version*:2.2.0-ballot-2 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetAvailabilityTimeRule |
 
  
@@ -71,12 +71,12 @@ No Expansion for this valueset (not supported by Publication Tooling)
     }
   ],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetAvailabilityTimeRule",
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -84,7 +84,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -105,7 +105,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

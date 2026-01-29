@@ -1,4 +1,4 @@
-# FR Core Service Type Duration Extension - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Service Type Duration Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreServiceTypeDurationExtension |
 
 Cette extension française permet d’associer le type de service avec la durée de ce service.
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-type
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-service-type-duration",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreServiceTypeDurationExtension",
   "title" : "FR Core Service Type Duration Extension",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-type
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-type
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

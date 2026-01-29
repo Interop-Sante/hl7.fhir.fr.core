@@ -1,4 +1,4 @@
-# FR Core CodeSystem Schedule Type - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core CodeSystem Schedule Type - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type | *Version*:2.2.0-ballot-2 |
 | Draft as of 2026-01-29 | *Computable Name*:FRCoreCodeSystemScheduleType |
 
  
@@ -33,12 +33,12 @@ Schedule type
     ]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemScheduleType",
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -46,7 +46,7 @@ Schedule type
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -67,7 +67,7 @@ Schedule type
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]

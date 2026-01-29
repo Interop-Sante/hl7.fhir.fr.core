@@ -1,4 +1,4 @@
-# FR Core Location Profile - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Location Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreLocationProfile |
 
  
@@ -51,11 +51,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-location",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -119,14 +119,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
             "severity" : "error",
             "human" : "Location Type Chambre",
             "expression" : "extension('http://fhir.fr/StructureDefinition/fr-core-location-type-chambre').exists() implies type.coding.where(code = 'CHAMB').exists()",
-            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
+            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
           },
           {
             "key" : "inv-location-type-lit",
             "severity" : "error",
             "human" : "Location Type Lit",
             "expression" : "extension('http://fhir.fr/StructureDefinition/fr-core-location-position-lit').exists() implies type.coding.where(code = 'LIT').exists()",
-            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
+            "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
           }
         ]
       },
@@ -150,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
         "sliceName" : "fr-canonical",
         "min" : 0,
         "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot"
+        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
       },
       {
         "id" : "Location.extension",
@@ -176,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre|2.2.0-ballot-2"
             ]
           }
         ]
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit|2.2.0-ballot-2"
             ]
           }
         ]
@@ -201,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
         "path" : "Location.type",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type|2.2.0-ballot-2"
         }
       }
     ]

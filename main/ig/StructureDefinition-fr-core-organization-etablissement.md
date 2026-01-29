@@ -1,4 +1,4 @@
-# FR Core Organization Etablissement Profile - Guide d'implémentation FR Core v2.2.0-ballot
+# FR Core Organization Etablissement Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0-ballot |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0-ballot-2 |
 | Active as of 2026-01-29 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
 
  
@@ -60,11 +60,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-etablissement",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement",
-  "version" : "2.2.0-ballot",
+  "version" : "2.2.0-ballot-2",
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-01-29T08:32:45+00:00",
+  "date" : "2026-01-29T08:34:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://interopsante.org/"
+          "value" : "http://interopsante.org"
         }
       ]
     },
@@ -93,7 +93,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "coding" : [
         {
           "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
+          "code" : "FRA",
           "display" : "France"
         }
       ]
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category|2.2.0-ballot-2"
             ]
           }
         ]
@@ -158,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           {
             "code" : "Extension",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0-ballot"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0-ballot-2"
             ]
           }
         ]
@@ -194,7 +194,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         "path" : "Organization.identifier.type",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot-2"
         }
       },
       {
@@ -357,7 +357,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         },
         "binding" : {
           "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0-ballot"
+          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0-ballot-2"
         }
       },
       {
