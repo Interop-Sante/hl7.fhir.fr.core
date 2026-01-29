@@ -38,7 +38,7 @@ Schedule type
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:34:51+00:00",
+  "date" : "2026-01-29T08:41:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

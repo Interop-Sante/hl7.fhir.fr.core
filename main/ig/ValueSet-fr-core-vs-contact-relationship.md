@@ -74,7 +74,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:34:51+00:00",
+  "date" : "2026-01-29T08:41:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
