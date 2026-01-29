@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:FRCoreValueSetBodyPosition |
+| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetBodyPosition |
 
  
 SELECT SNOMED CT code system values the position in which the individual was in during a measurement. 
@@ -56,7 +56,7 @@ SELECT SNOMED CT code system values the position in which the individual was in 
   "title" : "Body Position value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T10:29:57+00:00",
+  "date" : "2026-01-29T08:32:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

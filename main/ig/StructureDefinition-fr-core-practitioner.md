@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:FRCorePractitionerProfile |
+| Active as of 2026-01-29 | *Computable Name*:FRCorePractitionerProfile |
 
  
 Profil de la ressource Practitionner pour la France. 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-01-28T10:29:57+00:00",
+  "date" : "2026-01-29T08:32:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

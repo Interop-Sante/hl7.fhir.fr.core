@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:FRCoreValueSetOrganizationType |
+| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetOrganizationType |
 
  
 Types de structures 
@@ -17,7 +17,6 @@ Types de structures
  **References** 
 
 * [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 
 ### Définition logique (CLD)
 
@@ -57,7 +56,7 @@ Types de structures
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T10:29:57+00:00",
+  "date" : "2026-01-29T08:32:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

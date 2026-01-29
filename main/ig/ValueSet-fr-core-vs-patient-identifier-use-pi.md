@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:FRCoreValueSetPatientIdentifierUsePI |
+| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetPatientIdentifierUsePI |
 
  
 Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP). Authorized use for PI identifier. 
@@ -56,7 +56,7 @@ Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP)
   "title" : "FR Core ValueSet Patient identifier use PI",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T10:29:57+00:00",
+  "date" : "2026-01-29T08:32:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

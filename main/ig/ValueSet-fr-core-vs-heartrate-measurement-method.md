@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:FRCoreValueSetHeartRateMeasurementMethod |
+| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetHeartRateMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the heart rate was measured. 
@@ -56,7 +56,7 @@ SELECT SNOMED CT code system values that describe how the heart rate was measure
   "title" : "Heart Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T10:29:57+00:00",
+  "date" : "2026-01-29T08:32:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

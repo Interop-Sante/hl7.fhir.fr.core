@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0-ballot |
-| Active as of 2026-01-28 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
+| Active as of 2026-01-29 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
 
  
 Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. 
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-01-28T10:29:57+00:00",
+  "date" : "2026-01-29T08:32:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -359,74 +359,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           "strength" : "example",
           "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0-ballot"
         }
-      },
-      {
-        "id" : "Organization.type:organizationType",
-        "path" : "Organization.type",
-        "sliceName" : "organizationType",
-        "min" : 0,
-        "max" : "1",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot"
-        }
-      },
-      {
-        "id" : "Organization.type:organizationType.coding",
-        "path" : "Organization.type.coding",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Organization.type:organizationType.coding.system",
-        "path" : "Organization.type.coding.system",
-        "min" : 1
-      },
-      {
-        "id" : "Organization.type:secteurActiviteRASS",
-        "path" : "Organization.type",
-        "sliceName" : "secteurActiviteRASS",
-        "short" : "Secteurs d'activité des établissements avec la même activité dans le RASS",
-        "min" : 0,
-        "max" : "1",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS|20250828120000"
-        }
-      },
-      {
-        "id" : "Organization.type:secteurActiviteRASS.coding",
-        "path" : "Organization.type.coding",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Organization.type:secteurActiviteRASS.coding.system",
-        "path" : "Organization.type.coding.system",
-        "min" : 1
-      },
-      {
-        "id" : "Organization.type:categorieEtablissementRASS",
-        "path" : "Organization.type",
-        "sliceName" : "categorieEtablissementRASS",
-        "short" : "Catégorie d'établissement du RASS",
-        "min" : 0,
-        "max" : "1",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS|20241025120000"
-        }
-      },
-      {
-        "id" : "Organization.type:categorieEtablissementRASS.coding",
-        "path" : "Organization.type.coding",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Organization.type:categorieEtablissementRASS.coding.system",
-        "path" : "Organization.type.coding.system",
-        "min" : 1
       },
       {
         "id" : "Organization.name",

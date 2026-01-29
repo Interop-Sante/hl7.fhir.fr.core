@@ -26,10 +26,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile",
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "ValueSet-fr-core-vs-patient-identifier-use-pi.html" : "FR Core ValueSet Patient identifier use PI",
       "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
-      "ValueSet-fr-core-vs-patient-identifier-use-pi.html" : "FR Core ValueSet Patient identifier use PI"
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-assembly-order",
@@ -529,7 +529,6 @@
       "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile",
       "StructureDefinition-fr-core-organization.html" : "FR Core Organization Profile"
     },
     {
@@ -569,8 +568,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile",
-      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile"
+      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile",
+      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender",
@@ -673,12 +672,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
-      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
-      "StructureDefinition-fr-core-practitioner-role.html" : "FR Core Practitioner Role",
-      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
+      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile",
       "StructureDefinition-fr-core-practitioner-specialty.html" : "FR Core Practitioner Specialty Extension",
-      "StructureDefinition-fr-core-schedule.html" : "FR Core Schedule Profile"
+      "StructureDefinition-fr-core-slot.html" : "FR Core Slot Profile",
+      "StructureDefinition-fr-core-healthcare-service.html" : "FR Core Healthcare Service Profile",
+      "StructureDefinition-fr-core-appointment.html" : "FR Core Appointment Profile",
+      "StructureDefinition-fr-core-practitioner-role.html" : "FR Core Practitioner Role"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
@@ -692,8 +691,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile",
-      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile"
+      "StructureDefinition-fr-core-related-person.html" : "FR Core Related Person Profile",
+      "StructureDefinition-fr-core-patient.html" : "FR Core Patient Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method",
@@ -745,8 +744,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-fr-core-observation-bp.html" : "FR Core Observation Blood Pressure Profile",
-      "StructureDefinition-fr-core-observation-saturation-oxygen.html" : "FR Core Observation Oxygen Saturation Profile"
+      "StructureDefinition-fr-core-observation-saturation-oxygen.html" : "FR Core Observation Oxygen Saturation Profile",
+      "StructureDefinition-fr-core-observation-bp.html" : "FR Core Observation Blood Pressure Profile"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title",
@@ -770,22 +769,6 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-observation-body-temperature.html" : "FR Core Observation Body Temperature Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
-      "version" : "20250828120000",
-      "status" : "active",
-      "name" : "JDV_J101_SecteurActivite_RASS",
-      "title" : null,
-      "description" : "Secteurs d'activité des établissements avec la même activité dans le RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.169"],
-      "sources" : ["1.2.250.1.213.1.6.1.169"],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS",
@@ -860,22 +843,6 @@
       "uses" : {
       },
       "StructureDefinition-fr-core-practitioner.html" : "FR Core Practitioner Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
-      "version" : "20241025120000",
-      "status" : "active",
-      "name" : "JDV_J129_CategorieEtablissement_RASS",
-      "title" : null,
-      "description" : "Catégorie d'établissement du RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.215"],
-      "sources" : ["1.2.250.1.213.1.6.1.215"],
-      "uses" : {
-      },
-      "StructureDefinition-fr-core-organization-etablissement.html" : "FR Core Organization Etablissement Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J245-Civilite-CISIS/FHIR/JDV-J245-Civilite-CISIS",
