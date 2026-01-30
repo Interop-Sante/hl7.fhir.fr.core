@@ -1,5 +1,5 @@
-### [Release 2.3.0](https://hl7.fr/ig/fhir/core/2.3.0) de l'Implementation Guide FRCore
-[Modifications apportées dans la release 2.3.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
+### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
+[Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
 * Restructuration des profils Organization avec :
     - Simplification du profil de base FRCoreOrganizationProfile
@@ -77,10 +77,6 @@
     * Extensions modifiées :
         - FRCoreOrganizationShortNameExtension
 * Ajout de 14 nouveaux exemples illustrant la hiérarchie organisationnelle (EJ, EG, pôles, départements, services, UF, UAC, lieux)
-
-### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
-
-[Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
 * Patient.extension[nationality] : passage de la cardinalité 0..1 à 0..* (un patient peut avoir plusieurs nationalités) [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
 * Patient.extension[deathPlace] Passage du datatype string à Address pour être uniforme avec birthPlace. Le mode string est toujours possible avec l'attribut Address.line [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
