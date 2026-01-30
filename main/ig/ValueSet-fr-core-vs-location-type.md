@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetLocationType |
+| Active as of 2026-01-30 | *Computable Name*:FRCoreValueSetLocationType |
 
  
 Jeu de valeurs du rôle joué par un lieu. 
@@ -58,7 +58,7 @@ A role for a location
   "title" : "FR Core ValueSet Location type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:41:18+00:00",
+  "date" : "2026-01-30T10:25:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

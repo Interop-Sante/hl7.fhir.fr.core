@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
+| Active as of 2026-01-30 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). 
@@ -62,7 +62,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:41:18+00:00",
+  "date" : "2026-01-30T10:25:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

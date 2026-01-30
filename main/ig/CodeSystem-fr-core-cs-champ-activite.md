@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-01-29 | *Computable Name*:FRCoreCodeSystemChampActivite |
+| Draft as of 2026-01-30 | *Computable Name*:FRCoreCodeSystemChampActivite |
 
  
 Champ d’activité clinique de l’organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS. 
@@ -37,7 +37,7 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-29T08:41:18+00:00",
+  "date" : "2026-01-30T10:25:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-29 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
+| Active as of 2026-01-30 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
 
  
 The validation mode of the identity authorized for INS 
@@ -56,7 +56,7 @@ The validation mode of the identity authorized for INS
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-29T08:41:18+00:00",
+  "date" : "2026-01-30T10:25:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
