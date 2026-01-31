@@ -108,3 +108,6 @@ Alias: $fr-core-schedule-unavailability-reason = https://hl7.fr/ig/fhir/core/Val
 // SD
 Alias: $fr-core-observation-level-of-exertion = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion // A corriger
 
+
+
+Alias: $patient-multiple-birth-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth[x]
