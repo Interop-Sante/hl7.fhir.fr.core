@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Appointment/FRCoreAppointmentExample> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreAppointmentExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : RendezVous FRCoreAppointmentExample</b></p><a name=\"FRCoreAppointmentExample\"> </a><a name=\"hcFRCoreAppointmentExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-appointment.html\">FR Core Appointment Profile</a></p></div><p><b>FR Core Appointment Operator Extension</b>: <a href=\"Patient-FRCorePatientExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>identifier</b>: <code>http://appointment-identifier-system.org</code>/123</p><p><b>status</b>: Proposed</p><p><b>serviceType</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/service-type 1}\">Adoption/Permanent Care Info/Support</span></p><p><b>specialty</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM54}\">Médecine générale (SM)</span></p><p><b>priority</b>: 5</p><p><b>minutesDuration</b>: 15</p><p><b>slot</b>: <a href=\"Slot-FRCoreSlotExample.html\">Slot : identifier = http://slot-identifier-system.org#451 (use: usual, ); serviceType = Friendly Visiting; specialty = Médecine générale (SM); status = free; start = 2019-01-04 09:15:00+0000; end = 2019-01-04 09:30:00+0000</a></p><p><b>created</b>: 2019-01-02</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-FRCorePatientExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"PractitionerRole-FRCorePractitionerRoleExample.html\">PractitionerRole Soignant</a></p><p><b>required</b>: Required</p><p><b>status</b>: Needs Action</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Practitioner-FRCorePractitionerExample.html\">Practitioner Leclerc Sophie</a></p><p><b>required</b>: Required</p><p><b>status</b>: Needs Action</p></blockquote><p><b>requestedPeriod</b>: 2019-01-04 09:15:00+0000 --&gt; (en cours)</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientExample> ;
+       fhir:reference [ fhir:v "Patient/FRCorePatientExample" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://appointment-identifier-system.org"^^xsd:anyURI ;
+       fhir:l <http://appointment-identifier-system.org>
+     ] ;
+     fhir:value [ fhir:v "123" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "proposed"] ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/service-type>
+       ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Adoption/Permanent Care Info/Support" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale>
+       ] ;
+       fhir:code [ fhir:v "SM54" ] ;
+       fhir:display [ fhir:v "Médecine générale (SM)" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:minutesDuration [ fhir:v "15"^^xsd:positiveInteger] ; # 
+  fhir:slot ( [
+     fhir:l <https://hl7.fr/ig/fhir/core/Slot/FRCoreSlotExample> ;
+     fhir:reference [ fhir:v "Slot/FRCoreSlotExample" ]
+  ] ) ; # 
+  fhir:created [ fhir:v "2019-01-02"^^xsd:date] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:l <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientExample> ;
+       fhir:reference [ fhir:v "Patient/FRCorePatientExample" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:l <https://hl7.fr/ig/fhir/core/PractitionerRole/FRCorePractitionerRoleExample> ;
+       fhir:reference [ fhir:v "PractitionerRole/FRCorePractitionerRoleExample" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "needs-action" ]
+  ] [
+     fhir:actor [
+       fhir:l <https://hl7.fr/ig/fhir/core/Practitioner/FRCorePractitionerExample> ;
+       fhir:reference [ fhir:v "Practitioner/FRCorePractitionerExample" ]
+     ] ;
+     fhir:required [ fhir:v "required" ] ;
+     fhir:status [ fhir:v "needs-action" ]
+  ] ) ; # 
+  fhir:requestedPeriod ( [
+     fhir:start [ fhir:v "2019-01-04T09:15:00Z"^^xsd:dateTime ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="FRCoreEncounterExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Venue FRCoreEncounterExample</b></p><a name="FRCoreEncounterExample"> </a><a name="hcFRCoreEncounterExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile</a></p></div><p><b>FR Core Encounter Estimated Discharge Date Extension</b>: 2019-01-02</p><p><b>identifier</b>: Visit Number/123</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (ambulatory)</p><p><b>period</b>: 2019-01-02 --&gt; 2019-02-02</p></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date">
+    <valueDate value="2019-01-02"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type"/>
+        <code value="VN"/>
+      </coding>
+    </type>
+    <system value="http://encounter-identifier-system.org"/>
+    <value value="123"/>
+  </identifier>
+  <status value="in-progress"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+  </class>
+  <period>
+    <start value="2019-01-02"/>
+    <end value="2019-02-02"/>
+  </period>
+</Encounter>
