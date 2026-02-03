@@ -12,7 +12,7 @@
 | Active as of 2024-10-25 | *Computable Name*:FRCoreValueSetCategorieSAEEtablissement |
 
  
-Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 
+Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 
 
  **References** 
 
@@ -52,6 +52,7 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
     ]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetCategorieSAEEtablissement",
@@ -81,7 +82,7 @@ Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structu
       ]
     }
   ],
-  "description" : "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
+  "description" : "Catérorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
   "jurisdiction" : [
     {
       "coding" : [

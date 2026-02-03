@@ -75,7 +75,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
   "title" : "FR Core ValueSet Schedule type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-03T10:51:45+00:00",
+  "date" : "2026-02-03T14:58:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

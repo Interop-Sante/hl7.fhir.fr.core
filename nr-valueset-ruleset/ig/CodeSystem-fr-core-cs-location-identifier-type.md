@@ -37,7 +37,7 @@ Location identifier type
   "title" : "FR Core CodeSystem Location Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-03T10:51:45+00:00",
+  "date" : "2026-02-03T14:58:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

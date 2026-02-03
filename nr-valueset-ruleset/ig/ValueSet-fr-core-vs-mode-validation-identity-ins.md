@@ -50,13 +50,14 @@ The validation mode of the identity authorized for INS
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
     ]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetModeValidationIdentityINS",
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-03T10:51:45+00:00",
+  "date" : "2026-02-03T14:58:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

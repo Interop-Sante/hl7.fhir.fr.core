@@ -152,7 +152,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-02-03T10:51:45+00:00",
+  "date" : "2026-02-03T14:58:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -2460,7 +2460,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
           "reference" : "ValueSet/fr-core-vs-categorie-sae-etablissement"
         },
         "name" : "FR Core ValueSet Categorie SAE Etablissement",
-        "description" : "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
+        "description" : "Catérorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
         "exampleBoolean" : false
       },
       {
