@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4705-nutrition> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hopitaltest-uf-4705-nutrition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uf-4705-nutrition</b></p><a name=\"hopitaltest-uf-4705-nutrition\"> </a><a name=\"hchopitaltest-uf-4705-nutrition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uf.html\">FR Core Organization UF Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Nutrition</p><p><b>Extension Definition for Organization.description for Version 5.0</b>: Hospitalisation de semaine pour les patients nécessitant une nutrition entérale ou parentérale.</p><blockquote><p><b>Organization Period</b></p><ul><li>start: 2023-01-01 00:00:00+0100</li></ul></blockquote><p><b>fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur HEB}, {https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur MED}\">Hébergement</span></p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4705 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UF}\">UF</span></p><p><b>name</b>: UF Nutrition</p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 84705(Work)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "UF Nutrition"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Hospitalisation de semaine pour les patients nécessitant une nutrition entérale ou parentérale."
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "start"^^xsd:anyURI ;
+         fhir:l fhir:start
+       ] ;
+       fhir:value [
+         a fhir:DateTime ;
+         fhir:v "2023-01-01T00:00:00+01:00"^^xsd:dateTime
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/organization-period"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/organization-period>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur"^^xsd:anyURI ;
+           fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur>
+         ] ;
+         fhir:code [ fhir:v "HEB" ] ;
+         fhir:display [ fhir:v "Hébergement" ]
+       ] [
+         fhir:system [
+           fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur"^^xsd:anyURI ;
+           fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur>
+         ] ;
+         fhir:code [ fhir:v "MED" ] ;
+         fhir:display [ fhir:v "Médicale" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [
+       fhir:v "http://hopitalTest.fr/namingsystem/organization"^^xsd:anyURI ;
+       fhir:l <http://hopitalTest.fr/namingsystem/organization>
+     ] ;
+     fhir:value [ fhir:v "4705" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307>
+       ] ;
+       fhir:code [ fhir:v "UF" ] ;
+       fhir:display [ fhir:v "Unité fonctionnelle" ]
+     ] ) ;
+     fhir:text [ fhir:v "UF" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "UF Nutrition"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "84705" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
