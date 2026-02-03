@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetAvailabilityTimeRule
 Id: fr-core-vs-availability-time-rule
 Title: "FR Core ValueSet Availability Schedule"
 Description: "Spécifications des périodes récurrentes.\r\nSpecification of the recurrent periods "
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension[=].valueMarkdown = "Availability Time Rule"

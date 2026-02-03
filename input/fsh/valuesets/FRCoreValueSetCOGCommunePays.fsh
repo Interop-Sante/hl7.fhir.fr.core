@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetCOGCommunePays
 Id: fr-core-vs-cog-commune-pays
 Title: "FR Core ValueSet COG commune pays"
 Description: "Value set town and country COG"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension.valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
