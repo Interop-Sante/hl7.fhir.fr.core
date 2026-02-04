@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uac-4420-uac-02> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hopitaltest-uac-4420-uac-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uac-4420-uac-02</b></p><a name=\"hopitaltest-uac-4420-uac-02\"> </a><a name=\"hchopitaltest-uac-4420-uac-02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uac.html\">FR Core Organization UAC Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Dialyse</p><p><b>Extension Definition for Organization.description for Version 5.0</b>: UF Dialyse - Utilisation de l'hémodialuse</p><blockquote><p><b>Organization Period</b></p><ul><li>start: 2023-01-01 00:00:00+0100</li></ul></blockquote><p><b>fr/ig/fhir/core/StructureDefinition/fr-core-organization-care-rate-extension</b>: E2</p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4220-02 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UAC}\">UAC</span></p><p><b>name</b>: UAC 02 Dialyse</p><p><b>partOf</b>: <a href=\"Organization-hopitaltest-uf-4420-dialyse.html\">Organization UF Dialyse</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "UF Dialyse"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "UF Dialyse - Utilisation de l'hémodialuse"
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "start"^^xsd:anyURI ;
+         fhir:l fhir:start
+       ] ;
+       fhir:value [
+         a fhir:DateTime ;
+         fhir:v "2023-01-01T00:00:00+01:00"^^xsd:dateTime
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/organization-period"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/organization-period>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-care-rate-extension"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-care-rate-extension>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "E2"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [
+       fhir:v "http://hopitalTest.fr/namingsystem/organization"^^xsd:anyURI ;
+       fhir:l <http://hopitalTest.fr/namingsystem/organization>
+     ] ;
+     fhir:value [ fhir:v "4220-02" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307>
+       ] ;
+       fhir:code [ fhir:v "UAC" ]
+     ] ) ;
+     fhir:text [ fhir:v "UAC" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "UAC 02 Dialyse"] ; # 
+  fhir:partOf [
+     fhir:l <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4420-dialyse> ;
+     fhir:reference [ fhir:v "Organization/hopitaltest-uf-4420-dialyse" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
