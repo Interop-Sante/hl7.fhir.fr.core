@@ -6,10 +6,16 @@ Description: "The nationality of the patient."
 * ^extension[=].valueCode = #pa
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
-* ^context.type = #element
-* ^context.expression = "Patient"
-* . ^short = "Nationality"
-* . ^definition = "The nationality of the patient."
+
+* ^context[0].type = #element
+* ^context[=].expression = "Patient"
+
+* ^context[+].type = #element
+* ^context[=].expression = "Person"
+
+* ^context[+].type = #element
+* ^context[=].expression = "RelatedPerson"
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
