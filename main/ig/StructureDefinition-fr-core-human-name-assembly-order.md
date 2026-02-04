@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order | *Version*:2.2.0-ballot-2 | |
-| Active as of 2026-01-30 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreAssemblyOrderExtension |
+| Active as of 2026-02-04 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreAssemblyOrderExtension |
 
 A code that represents the preferred display order of the components of this human name.
 
@@ -19,9 +19,9 @@ A code that represents the preferred display order of the components of this hum
 
 **Utilisations:**
 
-* Ce Extension nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Extension n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-human-name-assembly-order)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-human-name-assembly-order)
 
 ### Formal Views of Extension Content
 
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-30 | *Computable Name*:FRCorePatientINSProfile |
+| Active as of 2026-02-04 | *Computable Name*:FRCorePatientINSProfile |
 
  
 FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile. 
@@ -34,9 +34,9 @@ Pour plus d’informations sur le contexte du patient INS, consultez le référe
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Patient/FRCorePatientExample](Patient-FRCorePatientExample.md)
+* Exemples pour ce/t/te Profil: [Patient/FRCorePatientExample](Patient-FRCorePatientExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-ins)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-ins)
 
 ### Formal Views of Profile Content
 
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-30 | *Computable Name*:FRCoreLocationTypeChambreExtension |
+| Active as of 2026-02-04 | *Computable Name*:FRCoreLocationTypeChambreExtension |
 
 Type de chambre
 
@@ -19,9 +19,9 @@ Type de chambre
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
+* Utilise ce/t/te Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location-type-chambre)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location-type-chambre)
 
 ### Formal Views of Extension Content
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-typ
   "name" : "FRCoreLocationTypeChambreExtension",
   "title" : "FR Core Location Extension - Type de chambre",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

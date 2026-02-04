@@ -16,7 +16,7 @@ Profil: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 
 > **FR Core Service Type Duration Extension**
 * serviceType: Hypnotherapy
-* duration: Pas daffichage pour {0} (value : 15; unit : minute; system : http://unitsofmeasure.org; code : min)
+* duration: Pas d'affichage pour Duration (value : 15; unit : minute; system : http://unitsofmeasure.org; code : min)
 
 **identifier**: `http://schedule-identifier-system.org`/45 (utilisation : usual, )
 

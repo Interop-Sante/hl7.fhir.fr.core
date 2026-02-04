@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-30 | *Computable Name*:FRCoreScheduleAvailabilityTimeExtension |
+| Active as of 2026-02-04 | *Computable Name*:FRCoreScheduleAvailabilityTimeExtension |
 
 Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.
 
@@ -21,10 +21,10 @@ This extension specifies a list of periods of time (recurrent or not). It specif
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* Exemples pour ce Extension: [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md)
+* Utilise ce/t/te Extension: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Exemples pour ce/t/te Extension: [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-schedule-availability-time)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-schedule-availability-time)
 
 ### Formal Views of Extension Content
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule-ava
   "name" : "FRCoreScheduleAvailabilityTimeExtension",
   "title" : "FR Core Schedule availability time Extension",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

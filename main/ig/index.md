@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-30 | *Computable Name*:FRCore |
+| Active as of 2026-02-04 | *Computable Name*:FRCore |
 
  ** Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données de santé : données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France. **
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of health data : administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -133,7 +133,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 ### Analyse inter-version
 
-Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans R4B, il peut donc être utilisé tel quel avec les systèmes R4B. Les packages pour [R4 (hl7.fhir.fr.core.r4)](package.r4.tgz) et [R4B (hl7.fhir.fr.core.r4b)](package.r4b.tgz) sont disponibles.
+Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dans R4B, il peut donc être utilisé tel quel avec les systèmes R4B. Les packages pour [R4 (hl7.fhir.fr.core.r4)](package.r4.tgz) et [R4B (hl7.fhir.fr.core.r4b)](package.r4b.tgz) sont disponibles.
 
 ### Profils internationaux
 
@@ -152,7 +152,7 @@ Ceci est un IG R4. Aucune des fonctionnalités quil utilise nest modifiée dans 
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

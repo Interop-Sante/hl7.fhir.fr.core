@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-30 | *Computable Name*:FRCoreOrganizationMemberExtension |
+| Active as of 2026-02-04 | *Computable Name*:FRCoreOrganizationMemberExtension |
 
 Extension permettant de définir des membres d’une organisation.
 
@@ -19,10 +19,10 @@ Extension permettant de définir des membres d’une organisation.
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* Exemples pour ce Extension: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md)
+* Utilise ce/t/te Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+* Exemples pour ce/t/te Extension: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-member)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-member)
 
 ### Formal Views of Extension Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationMemberExtension",
   "title" : "FR Core Organization Extension - Membre d'organisation",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

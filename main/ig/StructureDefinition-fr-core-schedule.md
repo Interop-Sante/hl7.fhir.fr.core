@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-01-30 | *Computable Name*:FRCoreScheduleProfile |
+| Active as of 2026-02-04 | *Computable Name*:FRCoreScheduleProfile |
 
  
 Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule 
@@ -17,10 +17,10 @@ Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l
 
 **Utilisations:**
 
-* Référer à ce Profil: [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
-* Exemples pour ce Profil: [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md)
+* Référence ce Profil: [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
+* Exemples pour ce/t/te Profil: [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-schedule)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-schedule)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
   "name" : "FRCoreScheduleProfile",
   "title" : "FR Core Schedule Profile",
   "status" : "active",
-  "date" : "2026-01-30T10:25:45+00:00",
+  "date" : "2026-02-04T13:09:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
