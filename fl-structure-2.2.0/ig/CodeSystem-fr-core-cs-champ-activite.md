@@ -37,7 +37,7 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-07T13:17:22+00:00",
+  "date" : "2026-02-07T19:30:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -18,7 +18,6 @@ HL7 v2 - Table 3307
 
 * [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md)
 * [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md)
-* [FRCoreValueSetOrganizationUACType](ValueSet-fr-core-vs-organization-uac-type.md)
 
 
 
@@ -39,7 +38,7 @@ HL7 v2 - Table 3307
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-07T13:17:22+00:00",
+  "date" : "2026-02-07T19:30:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

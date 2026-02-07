@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-02-07T13:17:22+00:00",
+  "date" : "2026-02-07T19:30:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -241,9 +241,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
         ]
       },
       {
-        "id" : "Organization.extension:members",
+        "id" : "Organization.extension:member",
         "path" : "Organization.extension",
-        "sliceName" : "members",
+        "sliceName" : "member",
         "min" : 0,
         "max" : "1",
         "type" : [

@@ -56,7 +56,7 @@ SELECT SNOMED CT code system values that describe where on the body the heart ra
   "title" : "Heart Rate Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-07T13:17:22+00:00",
+  "date" : "2026-02-07T19:30:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
