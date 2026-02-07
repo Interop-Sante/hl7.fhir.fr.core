@@ -5,5 +5,6 @@ Description: "Champ d'activité d'une organisation type UF."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^experimental = false
 * ^immutable = true
+
 * include codes from system $fr-core-cs-champ-activite
 

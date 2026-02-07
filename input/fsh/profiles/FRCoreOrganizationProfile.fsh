@@ -17,7 +17,7 @@ Description: """Profil de la ressource Organization pour la France. Il s'agit du
     http://hl7.org/fhir/StructureDefinition/organization-period named usePeriod 0..1    and
     http://hl7.org/fhir/StructureDefinition/note named openReason 0..1                  and
     http://hl7.org/fhir/StructureDefinition/note named closureReason 0..1               and
-    FRCoreOrganizationMemberExtension named members 0..1
+    FRCoreOrganizationMemberExtension named member 0..1
     
 
 * type  from FRCoreValueSetOrganizationType (example)
