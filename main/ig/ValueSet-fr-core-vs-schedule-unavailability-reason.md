@@ -74,7 +74,7 @@ Raison d’indisponibilité
   "title" : "FR Core ValueSet Unavailability Reason",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-04T13:09:39+00:00",
+  "date" : "2026-02-09T06:47:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

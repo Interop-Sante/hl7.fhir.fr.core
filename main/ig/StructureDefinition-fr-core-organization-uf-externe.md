@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-04 | *Computable Name*:FRCoreOrganizationUFExterneExtension |
+| Active as of 2026-02-09 | *Computable Name*:FRCoreOrganizationUFExterneExtension |
 
 Indicateur permettant de définir si une UF est externe à l’établissement
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFExterneExtension",
   "title" : "FR Core Organization Extension - UF Externe",
   "status" : "active",
-  "date" : "2026-02-04T13:09:39+00:00",
+  "date" : "2026-02-09T06:47:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

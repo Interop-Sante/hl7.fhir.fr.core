@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-04 | *Computable Name*:FRCoreOrganizationTypeActiviteExtension |
+| Active as of 2026-02-09 | *Computable Name*:FRCoreOrganizationTypeActiviteExtension |
 
 Type d’activité d’une UF
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationTypeActiviteExtension",
   "title" : "FR Core Organization Extension - Type d'activité",
   "status" : "active",
-  "date" : "2026-02-04T13:09:39+00:00",
+  "date" : "2026-02-09T06:47:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -123,25 +123,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       {
         "id" : "Extension.value[x]",
         "path" : "Extension.value[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Extension.value[x]:valueCodeableConcept",
-        "path" : "Extension.value[x]",
-        "sliceName" : "valueCodeableConcept",
         "short" : "Type d'activité",
         "definition" : "Type d'activité de l'UF",
-        "min" : 0,
-        "max" : "1",
         "type" : [
           {
             "code" : "CodeableConcept"

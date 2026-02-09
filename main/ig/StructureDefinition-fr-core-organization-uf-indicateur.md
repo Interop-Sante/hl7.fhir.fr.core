@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-04 | *Computable Name*:FRCoreOrganizationUFIndicateurExtension |
+| Active as of 2026-02-09 | *Computable Name*:FRCoreOrganizationUFIndicateurExtension |
 
 Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFIndicateurExtension",
   "title" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
   "status" : "active",
-  "date" : "2026-02-04T13:09:39+00:00",
+  "date" : "2026-02-09T06:47:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
