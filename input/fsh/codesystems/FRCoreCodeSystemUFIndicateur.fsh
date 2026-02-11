@@ -7,10 +7,11 @@ Description: "Système de codage permettant de définir les indicateurs d'une un
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false
+
 * #HEB "Hébergement"
 * #SOIN "Soin"
 * #ADMIN "Administrative"
 * #MED "Médicale"
 * #TECH "Technique"
-* #MEDICOTECH "medico technique (radio, scanner, ...)"
+* #MEDICOTECH "Médico technique (radio, scanner, ...)"
 * #MAG "Magasin"

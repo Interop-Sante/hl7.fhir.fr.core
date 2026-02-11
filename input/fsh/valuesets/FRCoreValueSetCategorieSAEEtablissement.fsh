@@ -9,6 +9,7 @@ Description: "Catégrorie d'établissement de santé, suivant les valeurs de la 
 * ^experimental = false
 * ^date = "2024-10-25T12:00:00+01:00"
 * ^publisher = "Interop'Santé"
+
 * $TRE-R66-CategorieEtablissement#101 "Centre hospitalier régional (CHR)"
 * $TRE-R66-CategorieEtablissement#106 "Centre hospitalier, ex Hôpital local"
 * $TRE-R66-CategorieEtablissement#109 "Etablissement de santé privé autorisé en SSR"
