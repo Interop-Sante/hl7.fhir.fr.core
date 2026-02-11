@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-09 | *Computable Name*:FRCoreValueSetBodyTemperatureMeasurementBodyLocation |
+| Active as of 2026-02-11 | *Computable Name*:FRCoreValueSetBodyTemperatureMeasurementBodyLocation |
 
  
 SELECT SNOMED CT code system values that describe where on the body the temperature was measured. 
@@ -56,7 +56,7 @@ SELECT SNOMED CT code system values that describe where on the body the temperat
   "title" : "Body Temperature Measurement Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

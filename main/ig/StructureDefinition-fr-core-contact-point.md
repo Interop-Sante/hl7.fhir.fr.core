@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-09 | *Computable Name*:FRCoreContactPointProfile |
+| Active as of 2026-02-11 | *Computable Name*:FRCoreContactPointProfile |
 
  
 Profil du type de données ContactPoint pour la France, ce profil ajoute le type d’e-mail tel que la bal mss. French profile of ContactPoint datatype 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-contact-poin
   "name" : "FRCoreContactPointProfile",
   "title" : "FR Core Contact Point Profile",
   "status" : "active",
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

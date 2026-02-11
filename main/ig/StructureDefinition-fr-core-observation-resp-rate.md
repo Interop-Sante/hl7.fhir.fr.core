@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-09 | *Computable Name*:FRCoreObservationRespRateProfile |
+| Active as of 2026-02-11 | *Computable Name*:FRCoreObservationRespRateProfile |
 
  
 French profile for the ObservationResprate profile for France. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationRespRateProfile",
   "title" : "FR Core Observation Respiratory Rate Profile",
   "status" : "active",
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

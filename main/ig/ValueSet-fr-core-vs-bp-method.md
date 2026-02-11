@@ -70,7 +70,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet BP measurement method",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

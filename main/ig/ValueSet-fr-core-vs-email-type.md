@@ -70,7 +70,7 @@ The type of email
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

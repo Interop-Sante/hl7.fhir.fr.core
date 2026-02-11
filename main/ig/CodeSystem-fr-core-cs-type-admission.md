@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-09 | *Computable Name*:FRCoreCodeSystemTypeAdmission |
+| Draft as of 2026-02-11 | *Computable Name*:FRCoreCodeSystemTypeAdmission |
 
  
 Admission type 
@@ -37,7 +37,7 @@ Admission type
   "title" : "FR Core CodeSystem Type Admission",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

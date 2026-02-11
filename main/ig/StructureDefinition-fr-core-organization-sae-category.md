@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-09 | *Computable Name*:FRCoreOrganizationSAECategoryExtension |
+| Active as of 2026-02-11 | *Computable Name*:FRCoreOrganizationSAECategoryExtension |
 
 Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationSAECategoryExtension",
   "title" : "FR Core Organization Extension - Catetgorie SAE",
   "status" : "active",
-  "date" : "2026-02-09T06:47:58+00:00",
+  "date" : "2026-02-11T16:15:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
