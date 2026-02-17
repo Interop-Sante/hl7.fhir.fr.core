@@ -5,4 +5,5 @@ Description: "Valeurs permettant de coder les types d'activité."
 * insert SetValueset
 
 * ^experimental = false
+
 * include codes from system fr-core-cs-type-activite

@@ -17,7 +17,3 @@ Description: "Profil de la ressource Organization permettant de représenter les
 
 * type = $fr-core-v2-3307#UF (exactly)
 
-//* partOf ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
-//* partOf ^type.extension.valueBoolean = true
-
-//* type from FRCoreValueSetOrganizationUFType (required)

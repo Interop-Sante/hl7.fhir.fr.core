@@ -6,5 +6,6 @@ Description: "Champ d'activité d'une organisation type UF."
 
 * ^experimental = false
 * ^immutable = true
+
 * include codes from system $fr-core-cs-champ-activite
 

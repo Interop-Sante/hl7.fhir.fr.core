@@ -7,6 +7,7 @@ Description: "HL7 v2 - Table 3307"
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
+
 * #GHT "Groupement hospitalier de territoire"
 * #LEGAL-ENTITY "Entité légale"
 * #GEOGRAPHICAL-ENTITY "Entité géographique"
