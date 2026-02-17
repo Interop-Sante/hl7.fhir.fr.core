@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemLocationType
 Id: fr-core-cs-location-type
 Title: "FR Core CodeSystem Location Type"
 Description: "Location type"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete

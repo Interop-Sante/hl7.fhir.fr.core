@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemDisciplineEquipement
 Id: fr-core-cs-discipline-equipement
 Title: "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE"
 Description: "La nomenclature de disciplines d'équipement est utilisée pour ventiler l'activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline 'administration, services hôteliers et techniques'. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n'apparaissent pas, car elles ne font pas partie du champ de la SAE."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete

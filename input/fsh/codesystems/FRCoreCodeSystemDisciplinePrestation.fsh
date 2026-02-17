@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemDisciplinePrestation
 Id: fr-core-cs-discipline-prestation
 Title: "FR Core CodeSystem Discipline de prestation - nomenclature SAE"
 Description: "La nomenclature des discipline de prestation."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete

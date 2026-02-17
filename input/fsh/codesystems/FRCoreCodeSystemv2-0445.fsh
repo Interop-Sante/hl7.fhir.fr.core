@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemv2_0445
 Id: fr-core-cs-v2-0445
 Title: "FR Core CodeSystem v2-0445"
 Description: "HL7 v2 - Table 0445"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 
 * ^status = #draft
 * ^caseSensitive = true

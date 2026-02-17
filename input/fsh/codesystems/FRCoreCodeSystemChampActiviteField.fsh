@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemChampActivite
 Id: fr-core-cs-champ-activite
 Title: "FR Core CodeSystem Champ Activite - Codes du champ d'activité"
 Description: "Champ d'activité clinique de l'organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete

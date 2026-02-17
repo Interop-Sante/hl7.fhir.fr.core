@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemTypesOrganisations
 Id: fr-core-cs-type-organisation
 Title: "FR Core CodeSystem Organization Type"
 Description: "Organization type"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 
 * ^status = #draft
 * ^experimental = true

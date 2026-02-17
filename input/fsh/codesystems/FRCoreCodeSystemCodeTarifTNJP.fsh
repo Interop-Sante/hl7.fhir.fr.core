@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemCodeTarifTNJP
 Id: fr-core-cs-code-tarif-tnjp
 Title: "FR Core CodeSystem Codes Tarifs - nomenclature TNJP"
 Description: "La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^status = #draft
 * ^caseSensitive = true
 * ^content = #complete
