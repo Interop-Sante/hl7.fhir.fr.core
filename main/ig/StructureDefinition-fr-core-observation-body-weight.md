@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-11 | *Computable Name*:FRCoreObservationBodyWeightProfile |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreObservationBodyWeightProfile |
 
  
 French profile of body weight based on the FHIR profil BodyWeightMeas. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyWeightProfile",
   "title" : "FR Core Observation Body Weight Profile",
   "status" : "active",
-  "date" : "2026-02-11T16:15:37+00:00",
+  "date" : "2026-02-17T10:02:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

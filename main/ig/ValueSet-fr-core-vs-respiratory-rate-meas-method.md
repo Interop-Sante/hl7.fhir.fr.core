@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-11 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the respiratory rate was measured. 
@@ -56,7 +56,7 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
   "title" : "Respiratory Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-11T16:15:37+00:00",
+  "date" : "2026-02-17T10:02:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

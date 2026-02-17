@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-11 | *Computable Name*:FRCorePractitionerRoleProfile |
+| Active as of 2026-02-17 | *Computable Name*:FRCorePractitionerRoleProfile |
 
  
 Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2026-02-11T16:15:37+00:00",
+  "date" : "2026-02-17T10:02:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
