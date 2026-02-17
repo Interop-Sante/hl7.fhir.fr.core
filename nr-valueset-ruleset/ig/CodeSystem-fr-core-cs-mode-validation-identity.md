@@ -32,13 +32,14 @@ Mode de validation de l’identité
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemModeValidationIdentite",
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T13:17:39+00:00",
+  "date" : "2026-02-17T14:34:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
@@ -83,6 +84,7 @@ Mode de validation de l’identité
       "definition" : "Extrait d'acte de naissance",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -97,6 +99,7 @@ Mode de validation de l’identité
       "definition" : "Carnet de circulation",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -111,6 +114,7 @@ Mode de validation de l’identité
       "definition" : "Carte Européenne",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -125,6 +129,7 @@ Mode de validation de l’identité
       "definition" : "Carte militaire",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -139,6 +144,7 @@ Mode de validation de l’identité
       "definition" : "Carte nationale d'identité",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -153,6 +159,7 @@ Mode de validation de l’identité
       "definition" : "Carte de séjour",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -167,6 +174,7 @@ Mode de validation de l’identité
       "definition" : "Livret de famille",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -181,6 +189,7 @@ Mode de validation de l’identité
       "definition" : "Passeport",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -195,6 +204,7 @@ Mode de validation de l’identité
       "definition" : "Permis de conduire",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -209,6 +219,7 @@ Mode de validation de l’identité
       "definition" : "Tiers de confiance",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -223,6 +234,7 @@ Mode de validation de l’identité
       "definition" : "Document de Circulation pour étranger mineur",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -237,6 +249,7 @@ Mode de validation de l’identité
       "definition" : "Acte de naissance + Carte vitale avec photo",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"
@@ -251,6 +264,7 @@ Mode de validation de l’identité
       "definition" : "Identification électronique EIDAS",
       "designation" : [
         {
+          "language" : "fr-FR",
           "use" : {
             "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code" : "preferredForLanguage"

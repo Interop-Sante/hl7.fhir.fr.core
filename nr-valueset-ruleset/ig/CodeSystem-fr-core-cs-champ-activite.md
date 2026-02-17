@@ -31,13 +31,14 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
     ]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemChampActivite",
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-17T13:17:39+00:00",
+  "date" : "2026-02-17T14:34:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

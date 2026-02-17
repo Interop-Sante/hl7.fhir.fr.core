@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "name" : "FRCoreLocationPositionLitExtension",
   "title" : "FR Core Location Extension - Position du lit",
   "status" : "active",
-  "date" : "2026-02-17T13:17:39+00:00",
+  "date" : "2026-02-17T14:34:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

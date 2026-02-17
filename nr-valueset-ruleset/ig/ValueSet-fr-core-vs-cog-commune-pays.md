@@ -63,7 +63,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet COG commune pays",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T13:17:39+00:00",
+  "date" : "2026-02-17T14:34:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
