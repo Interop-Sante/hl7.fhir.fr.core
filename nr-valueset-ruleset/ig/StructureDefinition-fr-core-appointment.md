@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreAppointmentProfile |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreAppointmentProfile |
 
  
 Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment. 
@@ -17,10 +17,10 @@ Profil de la ressource Appointment pour la France. Ce profil ajoute l’opérate
 
 **Utilisations:**
 
-* Référer à ce Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
-* Exemples pour ce Profil: [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md)
+* Référence ce Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
+* Exemples pour ce/t/te Profil: [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-appointment)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-appointment)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
   "name" : "FRCoreAppointmentProfile",
   "title" : "FR Core Appointment Profile",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

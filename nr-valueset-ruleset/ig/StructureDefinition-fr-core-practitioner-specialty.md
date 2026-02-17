@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCorePractitionerSpecialtyExtension |
+| Active as of 2026-02-17 | *Computable Name*:FRCorePractitionerSpecialtyExtension |
 
 This extension adds the element “specialty” to the FHIR Practitioner resource.
 
@@ -19,9 +19,9 @@ This extension adds the element “specialty” to the FHIR Practitioner resourc
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)
+* Utilise ce/t/te Extension: [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-practitioner-specialty)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-practitioner-specialty)
 
 ### Formal Views of Extension Content
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "name" : "FRCorePractitionerSpecialtyExtension",
   "title" : "FR Core Practitioner Specialty Extension",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

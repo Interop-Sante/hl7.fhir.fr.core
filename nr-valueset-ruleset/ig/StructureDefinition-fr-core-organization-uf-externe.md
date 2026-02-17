@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreOrganizationUFExterneExtension |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreOrganizationUFExterneExtension |
 
 Indicateur permettant de définir si une UF est externe à l’établissement
 
@@ -19,10 +19,10 @@ Indicateur permettant de définir si une UF est externe à l’établissement
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
-* Exemples pour ce Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
+* Utilise ce/t/te Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Exemples pour ce/t/te Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-uf-externe)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-uf-externe)
 
 ### Formal Views of Extension Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFExterneExtension",
   "title" : "FR Core Organization Extension - UF Externe",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -16,7 +16,7 @@ A set of codes that can be used to indicate the relationship between a Patient a
 
  **References** 
 
-Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
 ### Définition logique (CLD)
 
@@ -75,7 +75,7 @@ Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

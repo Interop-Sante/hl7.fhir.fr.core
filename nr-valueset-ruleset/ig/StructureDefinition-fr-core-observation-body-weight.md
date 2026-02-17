@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreObservationBodyWeightProfile |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreObservationBodyWeightProfile |
 
  
 French profile of body weight based on the FHIR profil BodyWeightMeas. 
@@ -17,9 +17,9 @@ Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Sig
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md)
+* Exemples pour ce/t/te Profil: [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-body-weight)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-body-weight)
 
 ### Formal Views of Profile Content
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyWeightProfile",
   "title" : "FR Core Observation Body Weight Profile",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

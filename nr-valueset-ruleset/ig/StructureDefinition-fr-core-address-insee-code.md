@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreAddressInseeCodeExtension |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreAddressInseeCodeExtension |
 
 Extension d’ajout du code insee (5 chiffres) à l’adresse postale. This extension adds the insee code (5 digits) to the address
 
@@ -23,10 +23,10 @@ This extension adds to the address data type:
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Address Profile](StructureDefinition-fr-core-address.md)
-* Exemples pour ce Extension: [Patient/FRCorePatientExample](Patient-FRCorePatientExample.md)
+* Utilise ce/t/te Extension: [FR Core Address Profile](StructureDefinition-fr-core-address.md)
+* Exemples pour ce/t/te Extension: [Patient/FRCorePatientExample](Patient-FRCorePatientExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-address-insee-code)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-address-insee-code)
 
 ### Formal Views of Extension Content
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -128,7 +128,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet Organization Discipline de prestation - nomenclature SAE](ValueSet-fr-core-vs-discipline-prestation.md) | Valeurs permettant de coder les disciplines de prestation. |
 | [FR Core ValueSet Organization Etablisement type](ValueSet-fr-core-vs-organization-etablissement-type.md) | Types d’organisation représentant des établissements. |
 | [FR Core ValueSet Organization Type Activité - nomenclature SAE](ValueSet-fr-core-vs-oragnization-type-activite.md) | Valeurs permettant de coder les types d’activité. |
-| [FR Core ValueSet Organization UAC type](ValueSet-fr-core-vs-organization-uac-type.md) | Types de structure représentant des unités d’activité. |
 | [FR Core ValueSet Organization UF Indicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md) | Indicateur d’une unité fonctionnelle. |
 | [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). |
 | [FR Core ValueSet Organization type](ValueSet-fr-core-vs-organization-type.md) | Types de structures |

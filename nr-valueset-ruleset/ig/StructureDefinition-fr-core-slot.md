@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreSlotProfile |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreSlotProfile |
 
  
 Profil of the Slot resource for France. 
@@ -17,10 +17,10 @@ Profil de la ressource Slot pour la France
 
 **Utilisations:**
 
-* Référer à ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
-* Exemples pour ce Profil: [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
+* Référence ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
+* Exemples pour ce/t/te Profil: [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-slot)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-slot)
 
 ### Formal Views of Profile Content
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-slot.csv), [
   "name" : "FRCoreSlotProfile",
   "title" : "FR Core Slot Profile",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

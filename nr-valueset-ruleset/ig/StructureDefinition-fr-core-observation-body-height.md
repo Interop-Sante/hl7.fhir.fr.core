@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreObservationBodyHeightProfile |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreObservationBodyHeightProfile |
 
  
 French profile for body height. 
@@ -17,9 +17,9 @@ Profil français de la mesure de la taille. Profil basé sur le profil bodyheigh
 
 **Utilisations:**
 
-* Exemples pour ce Profil: [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md)
+* Exemples pour ce/t/te Profil: [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-body-height)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-body-height)
 
 ### Formal Views of Profile Content
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBodyHeightProfile",
   "title" : "FR Core Observation Body Height Profile",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-03 | *Computable Name*:FRCoreOrganizationDisciplinePrestationExtension |
+| Active as of 2026-02-17 | *Computable Name*:FRCoreOrganizationDisciplinePrestationExtension |
 
 Discipline de prestation d’une UAC
 
@@ -19,9 +19,9 @@ Discipline de prestation d’une UAC
 
 **Utilisations:**
 
-* Utiliser ce Extension: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
+* Utilise ce/t/te Extension: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-discipline-prestation)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-discipline-prestation)
 
 ### Formal Views of Extension Content
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDisciplinePrestationExtension",
   "title" : "FR Core Organization Extension - Discipline Prestation",
   "status" : "active",
-  "date" : "2026-02-03T14:58:38+00:00",
+  "date" : "2026-02-17T13:17:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [
     {
