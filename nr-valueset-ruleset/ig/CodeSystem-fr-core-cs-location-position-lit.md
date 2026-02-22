@@ -36,7 +36,7 @@ Position du lit dans la chambre
   "title" : "FR Core CodeSystem Position du lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-22T17:13:24+00:00",
+  "date" : "2026-02-22T17:25:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,7 +66,8 @@ Position du lit dans la chambre
   "count" : 3,
   "concept" : [{
     "code" : "FNTR",
-    "display" : "Fenêtre"
+    "display" : "Fenêtre",
+    "definition" : "Fenêtre"
   },
   {
     "code" : "CLR",
@@ -74,7 +75,8 @@ Position du lit dans la chambre
   },
   {
     "code" : "ML",
-    "display" : "Milieu"
+    "display" : "Milieu",
+    "definition" : "Milieu"
   }]
 }
 

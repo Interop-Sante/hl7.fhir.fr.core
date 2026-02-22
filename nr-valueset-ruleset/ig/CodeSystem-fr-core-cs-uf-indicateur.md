@@ -36,7 +36,7 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
   "title" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-22T17:13:24+00:00",
+  "date" : "2026-02-22T17:25:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,31 +66,38 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
   "count" : 7,
   "concept" : [{
     "code" : "HEB",
-    "display" : "Hébergement"
+    "display" : "Hébergement",
+    "definition" : "Hébergement"
   },
   {
     "code" : "SOIN",
-    "display" : "Soin"
+    "display" : "Soin",
+    "definition" : "Soin"
   },
   {
     "code" : "ADMIN",
-    "display" : "Administrative"
+    "display" : "Administrative",
+    "definition" : "Administrative"
   },
   {
     "code" : "MED",
-    "display" : "Médicale"
+    "display" : "Médicale",
+    "definition" : "Médicale"
   },
   {
     "code" : "TECH",
-    "display" : "Technique"
+    "display" : "Technique",
+    "definition" : "Technique"
   },
   {
     "code" : "MEDICOTECH",
-    "display" : "Médico technique (radio, scanner, ...)"
+    "display" : "Médico technique (radio, scanner, ...)",
+    "definition" : "Médico technique (radio, scanner, ...)"
   },
   {
     "code" : "MAG",
-    "display" : "Magasin"
+    "display" : "Magasin",
+    "definition" : "Magasin"
   }]
 }
 

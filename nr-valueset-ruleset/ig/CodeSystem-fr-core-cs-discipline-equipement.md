@@ -36,7 +36,7 @@ La nomenclature de disciplines d’équipement est utilisée pour ventiler l’a
   "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-22T17:13:24+00:00",
+  "date" : "2026-02-22T17:25:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,527 +66,658 @@ La nomenclature de disciplines d’équipement est utilisée pour ventiler l’a
   "count" : 131,
   "concept" : [{
     "code" : "23",
-    "display" : "Stérilisation"
+    "display" : "Stérilisation",
+    "definition" : "Stérilisation"
   },
   {
     "code" : "34",
-    "display" : "Radiostandard"
+    "display" : "Radiostandard",
+    "definition" : "Radiostandard"
   },
   {
     "code" : "35",
-    "display" : "Scanographie X"
+    "display" : "Scanographie X",
+    "definition" : "Scanographie X"
   },
   {
     "code" : "36",
-    "display" : "Neuroradiologie"
+    "display" : "Neuroradiologie",
+    "definition" : "Neuroradiologie"
   },
   {
     "code" : "37",
-    "display" : "Hémodynamique"
+    "display" : "Hémodynamique",
+    "definition" : "Hémodynamique"
   },
   {
     "code" : "45",
-    "display" : "Explorations fonctionnelles cardiovasculaires"
+    "display" : "Explorations fonctionnelles cardiovasculaires",
+    "definition" : "Explorations fonctionnelles cardiovasculaires"
   },
   {
     "code" : "46",
-    "display" : "Explorations fonctionnelles néphrologiques"
+    "display" : "Explorations fonctionnelles néphrologiques",
+    "definition" : "Explorations fonctionnelles néphrologiques"
   },
   {
     "code" : "47",
-    "display" : "Explorations fonctionnelles pneumologiques"
+    "display" : "Explorations fonctionnelles pneumologiques",
+    "definition" : "Explorations fonctionnelles pneumologiques"
   },
   {
     "code" : "48",
-    "display" : "Explorations fonctionnelles neurologiques"
+    "display" : "Explorations fonctionnelles neurologiques",
+    "definition" : "Explorations fonctionnelles neurologiques"
   },
   {
     "code" : "49",
-    "display" : "Explorations fonctionnelles du tube digestif"
+    "display" : "Explorations fonctionnelles du tube digestif",
+    "definition" : "Explorations fonctionnelles du tube digestif"
   },
   {
     "code" : "50",
-    "display" : "Autres explorations fonctionnelles spécialisées"
+    "display" : "Autres explorations fonctionnelles spécialisées",
+    "definition" : "Autres explorations fonctionnelles spécialisées"
   },
   {
     "code" : "51",
-    "display" : "Explorations fonctionnelles cardiovasculaires et néphrologiques"
+    "display" : "Explorations fonctionnelles cardiovasculaires et néphrologiques",
+    "definition" : "Explorations fonctionnelles cardiovasculaires et néphrologiques"
   },
   {
     "code" : "52",
-    "display" : "Explorations fonctionnelles cardiovasculaires et pneumologiques"
+    "display" : "Explorations fonctionnelles cardiovasculaires et pneumologiques",
+    "definition" : "Explorations fonctionnelles cardiovasculaires et pneumologiques"
   },
   {
     "code" : "53",
-    "display" : "Autres explorations fonctionnelles polyvalentes"
+    "display" : "Autres explorations fonctionnelles polyvalentes",
+    "definition" : "Autres explorations fonctionnelles polyvalentes"
   },
   {
     "code" : "55",
-    "display" : "Réeducation fonctionnelle"
+    "display" : "Réeducation fonctionnelle",
+    "definition" : "Réeducation fonctionnelle"
   },
   {
     "code" : "56",
-    "display" : "Ergothérapie"
+    "display" : "Ergothérapie",
+    "definition" : "Ergothérapie"
   },
   {
     "code" : "57",
-    "display" : "Hydrothérapie"
+    "display" : "Hydrothérapie",
+    "definition" : "Hydrothérapie"
   },
   {
     "code" : "58",
-    "display" : "Kinésithérapie"
+    "display" : "Kinésithérapie",
+    "definition" : "Kinésithérapie"
   },
   {
     "code" : "59",
-    "display" : "Orthophonie"
+    "display" : "Orthophonie",
+    "definition" : "Orthophonie"
   },
   {
     "code" : "60",
-    "display" : "Orthoptie"
+    "display" : "Orthoptie",
+    "definition" : "Orthoptie"
   },
   {
     "code" : "61",
-    "display" : "Autres rééducations spécialisées"
+    "display" : "Autres rééducations spécialisées",
+    "definition" : "Autres rééducations spécialisées"
   },
   {
     "code" : "62",
-    "display" : "Anatomie pathologique (anatomie et cytologie pathologique)"
+    "display" : "Anatomie pathologique (anatomie et cytologie pathologique)",
+    "definition" : "Anatomie pathologique (anatomie et cytologie pathologique)"
   },
   {
     "code" : "63",
-    "display" : "Bactériologie"
+    "display" : "Bactériologie",
+    "definition" : "Bactériologie"
   },
   {
     "code" : "64",
-    "display" : "Biochimie générale et spécialisée"
+    "display" : "Biochimie générale et spécialisée",
+    "definition" : "Biochimie générale et spécialisée"
   },
   {
     "code" : "70",
-    "display" : "Embryologie clinique"
+    "display" : "Embryologie clinique",
+    "definition" : "Embryologie clinique"
   },
   {
     "code" : "79",
-    "display" : "Parasitologie-mycologie"
+    "display" : "Parasitologie-mycologie",
+    "definition" : "Parasitologie-mycologie"
   },
   {
     "code" : "80",
-    "display" : "Pharmacologie-toxicologie"
+    "display" : "Pharmacologie-toxicologie",
+    "definition" : "Pharmacologie-toxicologie"
   },
   {
     "code" : "83",
-    "display" : "Virologie"
+    "display" : "Virologie",
+    "definition" : "Virologie"
   },
   {
     "code" : "86",
-    "display" : "Vaccination "
+    "display" : "Vaccination",
+    "definition" : "Vaccination"
   },
   {
     "code" : "87",
-    "display" : "Consultation antitabac"
+    "display" : "Consultation antitabac",
+    "definition" : "Consultation antitabac"
   },
   {
     "code" : "88",
-    "display" : "Médecine légale"
+    "display" : "Médecine légale",
+    "definition" : "Médecine légale"
   },
   {
     "code" : "89",
-    "display" : "Médecine préventive et de santé publique"
+    "display" : "Médecine préventive et de santé publique",
+    "definition" : "Médecine préventive et de santé publique"
   },
   {
     "code" : "90",
-    "display" : "Autres consultations et soins externes"
+    "display" : "Autres consultations et soins externes",
+    "definition" : "Autres consultations et soins externes"
   },
   {
     "code" : "91",
-    "display" : "Fabrication-préparation de produits pharmaceutiques"
+    "display" : "Fabrication-préparation de produits pharmaceutiques",
+    "definition" : "Fabrication-préparation de produits pharmaceutiques"
   },
   {
     "code" : "92",
-    "display" : "Distribution de produits pharmaceutiques"
+    "display" : "Distribution de produits pharmaceutiques",
+    "definition" : "Distribution de produits pharmaceutiques"
   },
   {
     "code" : "93",
-    "display" : "Distribution d'autres biens médicaux"
+    "display" : "Distribution d'autres biens médicaux",
+    "definition" : "Distribution d'autres biens médicaux"
   },
   {
     "code" : "94",
-    "display" : "Activité de pharmacocinétique (Autre activité d'analyse et de recherche sur les médicaments)"
+    "display" : "Activité de pharmacocinétique (Autre activité d'analyse et de recherche sur les médicaments)",
+    "definition" : "Activité de pharmacocinétique (Autre activité d'analyse et de recherche sur les médicaments)"
   },
   {
     "code" : "95",
-    "display" : "Autres activités (fabrication autres biens médicaux, prothèses, etc)"
+    "display" : "Autres activités (fabrication autres biens médicaux, prothèses, etc)",
+    "definition" : "Autres activités (fabrication autres biens médicaux, prothèses, etc)"
   },
   {
     "code" : "96",
-    "display" : "Prélèvement à but scientifique (autopsie) et vérification de diagnostics"
+    "display" : "Prélèvement à but scientifique (autopsie) et vérification de diagnostics",
+    "definition" : "Prélèvement à but scientifique (autopsie) et vérification de diagnostics"
   },
   {
     "code" : "97",
-    "display" : "Anesthésiologie (consultation)"
+    "display" : "Anesthésiologie (consultation)",
+    "definition" : "Anesthésiologie (consultation)"
   },
   {
     "code" : "99",
-    "display" : "Activité de pharmacotoxico-vigilance"
+    "display" : "Activité de pharmacotoxico-vigilance",
+    "definition" : "Activité de pharmacotoxico-vigilance"
   },
   {
     "code" : "108",
-    "display" : "Médecine pédiatrique (hors unité d'oncologie médicale, spécialisée ou non)"
+    "display" : "Médecine pédiatrique (hors unité d'oncologie médicale, spécialisée ou non)",
+    "definition" : "Médecine pédiatrique (hors unité d'oncologie médicale, spécialisée ou non)"
   },
   {
     "code" : "112",
-    "display" : "Néonatologie sans SI"
+    "display" : "Néonatologie sans SI",
+    "definition" : "Néonatologie sans SI"
   },
   {
     "code" : "145",
-    "display" : "Traitement des grands brûlés (hors réanimation et surveillance continue grands brûlés)"
+    "display" : "Traitement des grands brûlés (hors réanimation et surveillance continue grands brûlés)",
+    "definition" : "Traitement des grands brûlés (hors réanimation et surveillance continue grands brûlés)"
   },
   {
     "code" : "151",
-    "display" : "Neurochirurgie"
+    "display" : "Neurochirurgie",
+    "definition" : "Neurochirurgie"
   },
   {
     "code" : "164",
-    "display" : "Gynécologie seule"
+    "display" : "Gynécologie seule",
+    "definition" : "Gynécologie seule"
   },
   {
     "code" : "165",
-    "display" : "Obstétrique seule"
+    "display" : "Obstétrique seule",
+    "definition" : "Obstétrique seule"
   },
   {
     "code" : "176",
-    "display" : "Soins de longue durée pour personnes ayant perdu leur autonomie de vie"
+    "display" : "Soins de longue durée pour personnes ayant perdu leur autonomie de vie",
+    "definition" : "Soins de longue durée pour personnes ayant perdu leur autonomie de vie"
   },
   {
     "code" : "197",
-    "display" : "Consultations et soins dentaires"
+    "display" : "Consultations et soins dentaires",
+    "definition" : "Consultations et soins dentaires"
   },
   {
     "code" : "200",
-    "display" : "Transfusion sanguine (laboratoire)"
+    "display" : "Transfusion sanguine (laboratoire)",
+    "definition" : "Transfusion sanguine (laboratoire)"
   },
   {
     "code" : "201",
-    "display" : "Banque de sperme"
+    "display" : "Banque de sperme",
+    "definition" : "Banque de sperme"
   },
   {
     "code" : "202",
-    "display" : "Banques d'organes"
+    "display" : "Banques d'organes",
+    "definition" : "Banques d'organes"
   },
   {
     "code" : "203",
-    "display" : "Dispensaire de soins"
+    "display" : "Dispensaire de soins",
+    "definition" : "Dispensaire de soins"
   },
   {
     "code" : "204",
-    "display" : "Soins infirmiers"
+    "display" : "Soins infirmiers",
+    "definition" : "Soins infirmiers"
   },
   {
     "code" : "205",
-    "display" : "Lutte contre les maladies sexuellement transmissibles"
+    "display" : "Lutte contre les maladies sexuellement transmissibles",
+    "definition" : "Lutte contre les maladies sexuellement transmissibles"
   },
   {
     "code" : "218",
-    "display" : "Vaccination BCG"
+    "display" : "Vaccination BCG",
+    "definition" : "Vaccination BCG"
   },
   {
     "code" : "235",
-    "display" : "Soins intensifs en néonatologie"
+    "display" : "Soins intensifs en néonatologie",
+    "definition" : "Soins intensifs en néonatologie"
   },
   {
     "code" : "241",
-    "display" : "Hygiène alimentaire (activité des centres d'hygiène alimentaire notamment)"
+    "display" : "Hygiène alimentaire (activité des centres d'hygiène alimentaire notamment)",
+    "definition" : "Hygiène alimentaire (activité des centres d'hygiène alimentaire notamment)"
   },
   {
     "code" : "309",
-    "display" : "Interruption volontaire de grossesse"
+    "display" : "Interruption volontaire de grossesse",
+    "definition" : "Interruption volontaire de grossesse"
   },
   {
     "code" : "384",
-    "display" : "Protection maternelle et infantile (centre de PMI ou dispensaire de PMI)"
+    "display" : "Protection maternelle et infantile (centre de PMI ou dispensaire de PMI)",
+    "definition" : "Protection maternelle et infantile (centre de PMI ou dispensaire de PMI)"
   },
   {
     "code" : "385",
-    "display" : "Consultations prénuptiales, prénatales ou postnatales"
+    "display" : "Consultations prénuptiales, prénatales ou postnatales",
+    "definition" : "Consultations prénuptiales, prénatales ou postnatales"
   },
   {
     "code" : "386",
-    "display" : "Consultations de protection infantile"
+    "display" : "Consultations de protection infantile",
+    "definition" : "Consultations de protection infantile"
   },
   {
     "code" : "389",
-    "display" : "Lutte contre la stérilité"
+    "display" : "Lutte contre la stérilité",
+    "definition" : "Lutte contre la stérilité"
   },
   {
     "code" : "390",
-    "display" : "Consultations de conseil génétique"
+    "display" : "Consultations de conseil génétique",
+    "definition" : "Consultations de conseil génétique"
   },
   {
     "code" : "391",
-    "display" : "Consultations de planification ou d'éducation familiale"
+    "display" : "Consultations de planification ou d'éducation familiale",
+    "definition" : "Consultations de planification ou d'éducation familiale"
   },
   {
     "code" : "392",
-    "display" : "Information, consultation ou conseil familial"
+    "display" : "Information, consultation ou conseil familial",
+    "definition" : "Information, consultation ou conseil familial"
   },
   {
     "code" : "394",
-    "display" : "Lactarium"
+    "display" : "Lactarium",
+    "definition" : "Lactarium"
   },
   {
     "code" : "395",
-    "display" : "Guidance parentale"
+    "display" : "Guidance parentale",
+    "definition" : "Guidance parentale"
   },
   {
     "code" : "396",
-    "display" : "Guidance infantile"
+    "display" : "Guidance infantile",
+    "definition" : "Guidance infantile"
   },
   {
     "code" : "446",
-    "display" : "Médecine scolaire"
+    "display" : "Médecine scolaire",
+    "definition" : "Médecine scolaire"
   },
   {
     "code" : "447",
-    "display" : "Médecine universitaire"
+    "display" : "Médecine universitaire",
+    "definition" : "Médecine universitaire"
   },
   {
     "code" : "448",
-    "display" : "Médecine sportive"
+    "display" : "Médecine sportive",
+    "definition" : "Médecine sportive"
   },
   {
     "code" : "452",
-    "display" : "Aide aux insuffisants respiratoires"
+    "display" : "Aide aux insuffisants respiratoires",
+    "definition" : "Aide aux insuffisants respiratoires"
   },
   {
     "code" : "552",
-    "display" : "Entraînement à l'hémodialyse "
+    "display" : "Entraînement à l'hémodialyse ",
+    "definition" : "Entraînement à l'hémodialyse "
   },
   {
     "code" : "553",
-    "display" : "Entraînement à la dialyse péritonéale"
+    "display" : "Entraînement à la dialyse péritonéale",
+    "definition" : "Entraînement à la dialyse péritonéale"
   },
   {
     "code" : "555",
-    "display" : "Dialyse péritonéale automatisée à domicile"
+    "display" : "Dialyse péritonéale automatisée à domicile",
+    "definition" : "Dialyse péritonéale automatisée à domicile"
   },
   {
     "code" : "556",
-    "display" : "Dialyse péritonéale continue ambulatoire à domicile"
+    "display" : "Dialyse péritonéale continue ambulatoire à domicile",
+    "definition" : "Dialyse péritonéale continue ambulatoire à domicile"
   },
   {
     "code" : "596",
-    "display" : "Médecine du travail"
+    "display" : "Médecine du travail",
+    "definition" : "Médecine du travail"
   },
   {
     "code" : "631",
-    "display" : "Gynécologie seule"
+    "display" : "Gynécologie seule",
+    "definition" : "Gynécologie seule"
   },
   {
     "code" : "634",
-    "display" : "Laboratoire de  radio-isotopes (Médecine nucléaire in vivo)"
+    "display" : "Laboratoire de  radio-isotopes (Médecine nucléaire in vivo)",
+    "definition" : "Laboratoire de  radio-isotopes (Médecine nucléaire in vivo)"
   },
   {
     "code" : "635",
-    "display" : "Réanimation néonatale"
+    "display" : "Réanimation néonatale",
+    "definition" : "Réanimation néonatale"
   },
   {
     "code" : "645",
-    "display" : "Oxygénothérapie isolée (insuffisants respiratoires)"
+    "display" : "Oxygénothérapie isolée (insuffisants respiratoires)",
+    "definition" : "Oxygénothérapie isolée (insuffisants respiratoires)"
   },
   {
     "code" : "646",
-    "display" : "Assistance ventilatoire sans trachéotomie (insuffisants respiratoires)"
+    "display" : "Assistance ventilatoire sans trachéotomie (insuffisants respiratoires)",
+    "definition" : "Assistance ventilatoire sans trachéotomie (insuffisants respiratoires)"
   },
   {
     "code" : "647",
-    "display" : "Assistance ventilatoire endotrachéale (insuffisants respiratoires)"
+    "display" : "Assistance ventilatoire endotrachéale (insuffisants respiratoires)",
+    "definition" : "Assistance ventilatoire endotrachéale (insuffisants respiratoires)"
   },
   {
     "code" : "648",
-    "display" : "Trachéotomie isolée (insuffisants respiratoires)"
+    "display" : "Trachéotomie isolée (insuffisants respiratoires)",
+    "definition" : "Trachéotomie isolée (insuffisants respiratoires)"
   },
   {
     "code" : "665",
-    "display" : "Fabrication et distribution indifférenciées de produits pharmaceutiques"
+    "display" : "Fabrication et distribution indifférenciées de produits pharmaceutiques",
+    "definition" : "Fabrication et distribution indifférenciées de produits pharmaceutiques"
   },
   {
     "code" : "700",
-    "display" : "Fabrication, conditionnement et importation de produits cosmétiques et de produits d'hygiène corp."
+    "display" : "Fabrication, conditionnement et importation de produits cosmétiques et de produits d'hygiène corp.",
+    "definition" : "Fabrication, conditionnement et importation de produits cosmétiques et de produits d'hygiène corp."
   },
   {
     "code" : "701",
-    "display" : "Fabrication de produits diététiques"
+    "display" : "Fabrication de produits diététiques",
+    "definition" : "Fabrication de produits diététiques"
   },
   {
     "code" : "702",
-    "display" : "Préparation et vente en gros de produits vétérinaires"
+    "display" : "Préparation et vente en gros de produits vétérinaires",
+    "definition" : "Préparation et vente en gros de produits vétérinaires"
   },
   {
     "code" : "703",
-    "display" : "Fabrication (ou importation) de radio-éléments artificiels"
+    "display" : "Fabrication (ou importation) de radio-éléments artificiels",
+    "definition" : "Fabrication (ou importation) de radio-éléments artificiels"
   },
   {
     "code" : "704",
-    "display" : "Détention d'animaux en vue de l'expérimentation des médicaments"
+    "display" : "Détention d'animaux en vue de l'expérimentation des médicaments",
+    "definition" : "Détention d'animaux en vue de l'expérimentation des médicaments"
   },
   {
     "code" : "705",
-    "display" : "Fabrication d'objets contraceptifs"
+    "display" : "Fabrication d'objets contraceptifs",
+    "definition" : "Fabrication d'objets contraceptifs"
   },
   {
     "code" : "723",
-    "display" : "Hémodialyse à domicile"
+    "display" : "Hémodialyse à domicile",
+    "definition" : "Hémodialyse à domicile"
   },
   {
     "code" : "726",
-    "display" : "Consultations multidisciplines regroupées (médecine, chirurgie et autres spécialités)"
+    "display" : "Consultations multidisciplines regroupées (médecine, chirurgie et autres spécialités)",
+    "definition" : "Consultations multidisciplines regroupées (médecine, chirurgie et autres spécialités)"
   },
   {
     "code" : "727",
-    "display" : "Consultations externes indifférenciées"
+    "display" : "Consultations externes indifférenciées",
+    "definition" : "Consultations externes indifférenciées"
   },
   {
     "code" : "743",
-    "display" : "Immunohématologie"
+    "display" : "Immunohématologie",
+    "definition" : "Immunohématologie"
   },
   {
     "code" : "745",
-    "display" : "Hémostase"
+    "display" : "Hémostase",
+    "definition" : "Hémostase"
   },
   {
     "code" : "750",
-    "display" : "Tomographie"
+    "display" : "Tomographie",
+    "definition" : "Tomographie"
   },
   {
     "code" : "751",
-    "display" : "Radiologie vasculaire"
+    "display" : "Radiologie vasculaire",
+    "definition" : "Radiologie vasculaire"
   },
   {
     "code" : "752",
-    "display" : "Echographie sans autre indication (sai)"
+    "display" : "Echographie sans autre indication (sai)",
+    "definition" : "Echographie sans autre indication (sai)"
   },
   {
     "code" : "753",
-    "display" : "Imagerie par résonance magnétique (IRM)"
+    "display" : "Imagerie par résonance magnétique (IRM)",
+    "definition" : "Imagerie par résonance magnétique (IRM)"
   },
   {
     "code" : "754",
-    "display" : "Autres activités spécialisées d'imagerie médicale"
+    "display" : "Autres activités spécialisées d'imagerie médicale",
+    "definition" : "Autres activités spécialisées d'imagerie médicale"
   },
   {
     "code" : "755",
-    "display" : "Explorations fonctionnelles en ORL"
+    "display" : "Explorations fonctionnelles en ORL",
+    "definition" : "Explorations fonctionnelles en ORL"
   },
   {
     "code" : "756",
-    "display" : "Explorations fonctionnelles en ophtalmologie"
+    "display" : "Explorations fonctionnelles en ophtalmologie",
+    "definition" : "Explorations fonctionnelles en ophtalmologie"
   },
   {
     "code" : "757",
-    "display" : "Recherche et expérimentation dans les services médico-techniques"
+    "display" : "Recherche et expérimentation dans les services médico-techniques",
+    "definition" : "Recherche et expérimentation dans les services médico-techniques"
   },
   {
     "code" : "760",
-    "display" : "Salle de réveil"
+    "display" : "Salle de réveil",
+    "definition" : "Salle de réveil"
   },
   {
     "code" : "761",
-    "display" : "Anesthésiologie et salle de réveil"
+    "display" : "Anesthésiologie et salle de réveil",
+    "definition" : "Anesthésiologie et salle de réveil"
   },
   {
     "code" : "762",
-    "display" : "Bloc opératoire et stérilisation indifférenciés"
+    "display" : "Bloc opératoire et stérilisation indifférenciés",
+    "definition" : "Bloc opératoire et stérilisation indifférenciés"
   },
   {
     "code" : "763",
-    "display" : "Pharmacie et stérilisation indifférenciées"
+    "display" : "Pharmacie et stérilisation indifférenciées",
+    "definition" : "Pharmacie et stérilisation indifférenciées"
   },
   {
     "code" : "797",
-    "display" : "Hémodialyse en centre pour adulte"
+    "display" : "Hémodialyse en centre pour adulte",
+    "definition" : "Hémodialyse en centre pour adulte"
   },
   {
     "code" : "798",
-    "display" : "Hémodialyse en centre pour enfant"
+    "display" : "Hémodialyse en centre pour enfant",
+    "definition" : "Hémodialyse en centre pour enfant"
   },
   {
     "code" : "799",
-    "display" : "Assistance ventilatoire avec prothèse extrathoracique(insuffisants respiratoires)"
+    "display" : "Assistance ventilatoire avec prothèse extrathoracique(insuffisants respiratoires)",
+    "definition" : "Assistance ventilatoire avec prothèse extrathoracique(insuffisants respiratoires)"
   },
   {
     "code" : "800",
-    "display" : "Assistance ventilatoire par pression positive continue ou autres techniques particulières agréées (insuffisants respiratoires)"
+    "display" : "Assistance ventilatoire par pression positive continue ou autres techniques particulières agréées (insuffisants respiratoires)",
+    "definition" : "Assistance ventilatoire par pression positive continue ou autres techniques particulières agréées (insuffisants respiratoires)"
   },
   {
     "code" : "815",
-    "display" : "Echocardiologie"
+    "display" : "Echocardiologie",
+    "definition" : "Echocardiologie"
   },
   {
     "code" : "816",
-    "display" : "Echographie abdominale"
+    "display" : "Echographie abdominale",
+    "definition" : "Echographie abdominale"
   },
   {
     "code" : "817",
-    "display" : "Echographie en obstétrique"
+    "display" : "Echographie en obstétrique",
+    "definition" : "Echographie en obstétrique"
   },
   {
     "code" : "818",
-    "display" : "Echographie vasculaire"
+    "display" : "Echographie vasculaire",
+    "definition" : "Echographie vasculaire"
   },
   {
     "code" : "819",
-    "display" : "Autres échographies"
+    "display" : "Autres échographies",
+    "definition" : "Autres échographies"
   },
   {
     "code" : "820",
-    "display" : "Collecte de sang"
+    "display" : "Collecte de sang",
+    "definition" : "Collecte de sang"
   },
   {
     "code" : "821",
-    "display" : "Stockage-distribution de sang"
+    "display" : "Stockage-distribution de sang",
+    "definition" : "Stockage-distribution de sang"
   },
   {
     "code" : "822",
-    "display" : "Production de produits sanguins"
+    "display" : "Production de produits sanguins",
+    "definition" : "Production de produits sanguins"
   },
   {
     "code" : "823",
-    "display" : "Autres activités de transfusion sanguine"
+    "display" : "Autres activités de transfusion sanguine",
+    "definition" : "Autres activités de transfusion sanguine"
   },
   {
     "code" : "824",
-    "display" : "Pharmacie d'établissement"
+    "display" : "Pharmacie d'établissement",
+    "definition" : "Pharmacie d'établissement"
   },
   {
     "code" : "949",
-    "display" : "Recherche chirurgicale ou chirurgie expérimentale"
+    "display" : "Recherche chirurgicale ou chirurgie expérimentale",
+    "definition" : "Recherche chirurgicale ou chirurgie expérimentale"
   },
   {
     "code" : "952",
-    "display" : "Recherche médicale"
+    "display" : "Recherche médicale",
+    "definition" : "Recherche médicale"
   },
   {
     "code" : "953",
-    "display" : "Recherche pharmacologique"
+    "display" : "Recherche pharmacologique",
+    "definition" : "Recherche pharmacologique"
   },
   {
     "code" : "954",
-    "display" : "Recherche pharmaceutique"
+    "display" : "Recherche pharmaceutique",
+    "definition" : "Recherche pharmaceutique"
   },
   {
     "code" : "955",
-    "display" : "Recherche odontologique"
+    "display" : "Recherche odontologique",
+    "definition" : "Recherche odontologique"
   },
   {
     "code" : "956",
-    "display" : "Recherche toxicologique"
+    "display" : "Recherche toxicologique",
+    "definition" : "Recherche toxicologique"
   },
   {
     "code" : "996",
-    "display" : "Services extérieurs"
+    "display" : "Services extérieurs",
+    "definition" : "Services extérieurs"
   },
   {
     "code" : "997",
-    "display" : "Discipline non dénommée ailleurs"
+    "display" : "Discipline non dénommée ailleurs",
+    "definition" : "Discipline non dénommée ailleurs"
   }]
 }
 

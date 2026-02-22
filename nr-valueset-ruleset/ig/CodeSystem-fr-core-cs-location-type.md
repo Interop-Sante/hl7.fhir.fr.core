@@ -36,7 +36,7 @@ Location type
   "title" : "FR Core CodeSystem Location Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-22T17:13:24+00:00",
+  "date" : "2026-02-22T17:25:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,51 +66,63 @@ Location type
   "count" : 12,
   "concept" : [{
     "code" : "BAT",
-    "display" : "Bâtiment"
+    "display" : "Bâtiment",
+    "definition" : "Bâtiment"
   },
   {
     "code" : "ETAG",
-    "display" : "Étage"
+    "display" : "Étage",
+    "definition" : "Étage"
   },
   {
     "code" : "COUL",
-    "display" : "Couloir"
+    "display" : "Couloir",
+    "definition" : "Couloir"
   },
   {
     "code" : "AILE",
-    "display" : "Aile"
+    "display" : "Aile",
+    "definition" : "Aile"
   },
   {
     "code" : "BOX",
-    "display" : "Box"
+    "display" : "Box",
+    "definition" : "Box"
   },
   {
     "code" : "CHAMB",
-    "display" : "Chambre"
+    "display" : "Chambre",
+    "definition" : "Chambre"
   },
   {
     "code" : "LIT",
-    "display" : "Lit"
+    "display" : "Lit",
+    "definition" : "Lit"
   },
   {
     "code" : "PL_TECH",
-    "display" : "Plateau technique"
+    "display" : "Plateau technique",
+    "definition" : "Plateau technique"
   },
   {
     "code" : "PNT_CLCT",
-    "display" : "Point de collecte"
+    "display" : "Point de collecte",
+    "definition" : "Point de collecte"
   },
   {
     "code" : "PNT_LVRSN",
-    "display" : "Point de livraison"
+    "display" : "Point de livraison",
+    "definition" : "Point de livraison"
   },
   {
     "code" : "SL_EXM",
-    "display" : "Salle examen"
+    "display" : "Salle examen",
+    "definition" : "Salle examen"
   },
   {
     "code" : "SL_CONS",
-    "display" : "Salle de consultation"
+    "display" : "Salle de consultation",
+    "definition" : "Salle de consultation"
   }]
 }
 
