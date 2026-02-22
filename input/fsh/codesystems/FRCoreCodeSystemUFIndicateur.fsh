@@ -8,10 +8,10 @@ Description: "Système de codage permettant de définir les indicateurs d'une un
 * ^content = #complete
 * ^experimental = false
 
-* #HEB "Hébergement"
-* #SOIN "Soin"
-* #ADMIN "Administrative"
-* #MED "Médicale"
-* #TECH "Technique"
-* #MEDICOTECH "Médico technique (radio, scanner, ...)"
-* #MAG "Magasin"
+* #HEB "Hébergement" "Hébergement"
+* #SOIN "Soin" "Soin"
+* #ADMIN "Administrative" "Administrative"
+* #MED "Médicale" "Médicale"
+* #TECH "Technique" "Technique"
+* #MEDICOTECH "Médico technique (radio, scanner, ...)" "Médico technique (radio, scanner, ...)"
+* #MAG "Magasin" "Magasin"

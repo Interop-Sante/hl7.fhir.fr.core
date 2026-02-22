@@ -7,6 +7,6 @@ Description: "Position du lit dans la chambre"
 * ^caseSensitive = true
 * ^content = #complete
 
-* #FNTR "Fenêtre"
-* #CLR "Couloir"
-* #ML "Milieu"
+* #FNTR "Fenêtre" "Fenêtre"
+* #CLR "Couloir" 
+* #ML "Milieu" "Milieu"
