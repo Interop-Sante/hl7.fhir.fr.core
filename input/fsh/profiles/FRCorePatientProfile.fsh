@@ -47,7 +47,7 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * identifier[NSS].type 1..
 * identifier[NSS].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
 * identifier[NSS].system 1..
-* identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.8"
+* identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.13"
 * identifier[NSS].value 1..
 
 * identifier[INS-C] ^short = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
