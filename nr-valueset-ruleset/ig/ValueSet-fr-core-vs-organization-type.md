@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetOrganizationType |
+| Active as of 2026-02-22 | *Computable Name*:FRCoreValueSetOrganizationType |
 
  
 Types de structures 
@@ -46,9 +46,7 @@ Types de structures
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-organization-type",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
@@ -57,89 +55,76 @@ Types de structures
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T14:34:23+00:00",
+  "date" : "2026-02-22T17:13:24+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Types de structures",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "version" : "2.2.0-ballot-2",
+      "concept" : [{
+        "code" : "GHT",
+        "display" : "Groupement hospitalier de territoire"
+      },
       {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-        "concept" : [
-          {
-            "code" : "GHT",
-            "display" : "Groupement hospitalier de territoire"
-          },
-          {
-            "code" : "GROUP",
-            "display" : "Groupe privé / hospitalier"
-          },
-          {
-            "code" : "STRUCT-INTERNE",
-            "display" : "Structure interne"
-          },
-          {
-            "code" : "SECTEUR",
-            "display" : "Secteur"
-          },
-          {
-            "code" : "DEPARTEMENT",
-            "display" : "Département"
-          },
-          {
-            "code" : "SERVICE",
-            "display" : "Service"
-          },
-          {
-            "code" : "UM",
-            "display" : "Unité médicale"
-          },
-          {
-            "code" : "POLE",
-            "display" : "Pole"
-          },
-          {
-            "code" : "CENTRE-RESP",
-            "display" : "Centre de responsabilité"
-          },
-          {
-            "code" : "CENTRE-ACTIVITE",
-            "display" : "Centre d'activité"
-          }
-        ]
-      }
-    ]
+        "code" : "GROUP",
+        "display" : "Groupe privé / hospitalier"
+      },
+      {
+        "code" : "STRUCT-INTERNE",
+        "display" : "Structure interne"
+      },
+      {
+        "code" : "SECTEUR",
+        "display" : "Secteur"
+      },
+      {
+        "code" : "DEPARTEMENT",
+        "display" : "Département"
+      },
+      {
+        "code" : "SERVICE",
+        "display" : "Service"
+      },
+      {
+        "code" : "UM",
+        "display" : "Unité médicale"
+      },
+      {
+        "code" : "POLE",
+        "display" : "Pole"
+      },
+      {
+        "code" : "CENTRE-RESP",
+        "display" : "Centre de responsabilité"
+      },
+      {
+        "code" : "CENTRE-ACTIVITE",
+        "display" : "Centre d'activité"
+      }]
+    }]
   }
 }
 

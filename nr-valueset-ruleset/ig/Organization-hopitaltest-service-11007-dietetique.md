@@ -23,29 +23,21 @@ Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.
   "resourceType" : "Organization",
   "id" : "hopitaltest-service-11007-dietetique",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"]
   },
-  "identifier" : [
-    {
-      "use" : "official",
-      "system" : "http://hopitalTest.fr/namingsystem/organization",
-      "value" : "11007"
-    }
-  ],
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-          "code" : "SERVICE",
-          "display" : "Service"
-        }
-      ],
-      "text" : "SERVICE"
-    }
-  ],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://hopitalTest.fr/namingsystem/organization",
+    "value" : "11007"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "SERVICE",
+      "display" : "Service"
+    }],
+    "text" : "SERVICE"
+  }],
   "name" : "Service Dietetique"
 }
 

@@ -31,38 +31,28 @@ Profil: [FR Core Observation Body Height Profile](StructureDefinition-fr-core-ob
   "resourceType" : "Observation",
   "id" : "FRCoreObservationBodyHeightExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8302-2"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample"
   },
   "effectiveDateTime" : "1999-07-02",
-  "performer" : [
-    {
-      "reference" : "Practitioner/FRCorePractitionerExample"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/FRCorePractitionerExample"
+  }],
   "valueQuantity" : {
     "value" : 185,
     "unit" : "cm",

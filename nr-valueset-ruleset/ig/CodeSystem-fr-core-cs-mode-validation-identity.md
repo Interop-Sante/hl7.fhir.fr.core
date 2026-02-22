@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemModeValidationIdentite |
+| Active as of 2026-02-22 | *Computable Name*:FRCoreCodeSystemModeValidationIdentite |
 
  
 Mode de validation de l’identité 
@@ -28,9 +28,7 @@ Mode de validation de l’identité
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-mode-validation-identity",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
   "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity",
@@ -39,241 +37,203 @@ Mode de validation de l’identité
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T14:34:23+00:00",
+  "date" : "2026-02-22T17:13:24+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Mode de validation de l'identité",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 13,
-  "concept" : [
-    {
-      "code" : "AN",
-      "display" : "Extrait d'acte de naissance",
-      "definition" : "Extrait d'acte de naissance",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Extrait d'acte de naissance"
-        }
-      ]
-    },
-    {
-      "code" : "CC",
-      "display" : "Carnet de circulation",
-      "definition" : "Carnet de circulation",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Carnet de circulation"
-        }
-      ]
-    },
-    {
-      "code" : "CE",
-      "display" : "Carte Européenne",
-      "definition" : "Carte Européenne",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Carte Européenne"
-        }
-      ]
-    },
-    {
-      "code" : "CM",
-      "display" : "Carte militaire",
-      "definition" : "Carte militaire",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Carte militaire"
-        }
-      ]
-    },
-    {
-      "code" : "CN",
-      "display" : "Carte nationale d'identité",
-      "definition" : "Carte nationale d'identité",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Carte nationale d'identité"
-        }
-      ]
-    },
-    {
-      "code" : "CS",
-      "display" : "Carte de séjour",
-      "definition" : "Carte de séjour",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Carte de séjour"
-        }
-      ]
-    },
-    {
-      "code" : "LE",
-      "display" : "Livret de famille",
-      "definition" : "Livret de famille",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Livret de famille"
-        }
-      ]
-    },
-    {
-      "code" : "PA",
-      "display" : "Passeport",
-      "definition" : "Passeport",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Passeport"
-        }
-      ]
-    },
-    {
-      "code" : "PC",
-      "display" : "Permis de conduire",
-      "definition" : "Permis de conduire",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Permis de conduire"
-        }
-      ]
-    },
-    {
-      "code" : "TC",
-      "display" : "Tiers de confiance",
-      "definition" : "Tiers de confiance",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Tiers de confiance"
-        }
-      ]
-    },
-    {
-      "code" : "DC",
-      "display" : "Document de Circulation pour étranger mineur",
-      "definition" : "Document de Circulation pour étranger mineur",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Document de Circulation pour étranger mineur"
-        }
-      ]
-    },
-    {
-      "code" : "AC",
-      "display" : "Acte de naissance + Carte vitale avec photo",
-      "definition" : "Acte de naissance + Carte vitale avec photo",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Acte de naissance + Carte vitale avec photo"
-        }
-      ]
-    },
-    {
-      "code" : "IE",
-      "display" : "Identification électronique EIDAS",
-      "definition" : "Identification électronique EIDAS",
-      "designation" : [
-        {
-          "language" : "fr-FR",
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "code" : "preferredForLanguage"
-          },
-          "value" : "Identification électronique EIDAS"
-        }
-      ]
-    }
-  ]
+  "concept" : [{
+    "code" : "AN",
+    "display" : "Extrait d'acte de naissance",
+    "definition" : "Extrait d'acte de naissance",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Extrait d'acte de naissance"
+    }]
+  },
+  {
+    "code" : "CC",
+    "display" : "Carnet de circulation",
+    "definition" : "Carnet de circulation",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carnet de circulation"
+    }]
+  },
+  {
+    "code" : "CE",
+    "display" : "Carte Européenne",
+    "definition" : "Carte Européenne",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carte Européenne"
+    }]
+  },
+  {
+    "code" : "CM",
+    "display" : "Carte militaire",
+    "definition" : "Carte militaire",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carte militaire"
+    }]
+  },
+  {
+    "code" : "CN",
+    "display" : "Carte nationale d'identité",
+    "definition" : "Carte nationale d'identité",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carte nationale d'identité"
+    }]
+  },
+  {
+    "code" : "CS",
+    "display" : "Carte de séjour",
+    "definition" : "Carte de séjour",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carte de séjour"
+    }]
+  },
+  {
+    "code" : "LE",
+    "display" : "Livret de famille",
+    "definition" : "Livret de famille",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Livret de famille"
+    }]
+  },
+  {
+    "code" : "PA",
+    "display" : "Passeport",
+    "definition" : "Passeport",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Passeport"
+    }]
+  },
+  {
+    "code" : "PC",
+    "display" : "Permis de conduire",
+    "definition" : "Permis de conduire",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Permis de conduire"
+    }]
+  },
+  {
+    "code" : "TC",
+    "display" : "Tiers de confiance",
+    "definition" : "Tiers de confiance",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Tiers de confiance"
+    }]
+  },
+  {
+    "code" : "DC",
+    "display" : "Document de Circulation pour étranger mineur",
+    "definition" : "Document de Circulation pour étranger mineur",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Document de Circulation pour étranger mineur"
+    }]
+  },
+  {
+    "code" : "AC",
+    "display" : "Acte de naissance + Carte vitale avec photo",
+    "definition" : "Acte de naissance + Carte vitale avec photo",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Acte de naissance + Carte vitale avec photo"
+    }]
+  },
+  {
+    "code" : "IE",
+    "display" : "Identification électronique EIDAS",
+    "definition" : "Identification électronique EIDAS",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Identification électronique EIDAS"
+    }]
+  }]
 }
 
 ```

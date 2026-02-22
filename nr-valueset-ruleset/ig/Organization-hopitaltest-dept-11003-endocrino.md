@@ -27,48 +27,36 @@ Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.
   "resourceType" : "Organization",
   "id" : "hopitaltest-dept-11003-endocrino",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"]
   },
-  "extension" : [
+  "extension" : [{
+    "extension" : [{
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "valueReference" : {
+        "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
+      }
+    },
     {
-      "extension" : [
-        {
-          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-          "valueReference" : {
-            "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
-          }
-        },
-        {
-          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-          "valueReference" : {
-            "reference" : "Organization/hopitaltest-uf-4705-nutrition"
-          }
-        }
-      ],
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"
-    }
-  ],
-  "identifier" : [
-    {
-      "use" : "official",
-      "system" : "http://hopitalTest.fr/namingsystem/organization",
-      "value" : "11003"
-    }
-  ],
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-          "code" : "DEPARTEMENT",
-          "display" : "Pole"
-        }
-      ],
-      "text" : "DEPARTEMENT"
-    }
-  ],
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "valueReference" : {
+        "reference" : "Organization/hopitaltest-uf-4705-nutrition"
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://hopitalTest.fr/namingsystem/organization",
+    "value" : "11003"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "DEPARTEMENT",
+      "display" : "Pole"
+    }],
+    "text" : "DEPARTEMENT"
+  }],
   "name" : "Depertement d'Endocrinologie"
 }
 

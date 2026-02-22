@@ -40,92 +40,74 @@ Profil: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
   "resourceType" : "Schedule",
   "id" : "FRCoreScheduleExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "identifier",
-          "valueIdentifier" : {
-            "value" : "dispo09112020"
-          }
-        },
-        {
-          "url" : "type",
-          "valueCoding" : {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type",
-            "code" : "free",
-            "display" : "Disponibilité"
-          }
-        },
-        {
-          "url" : "start",
-          "valueDateTime" : "2020-11-09T08:00:00+01:00"
-        },
-        {
-          "url" : "end",
-          "valueDateTime" : "2020-11-09T20:00:00+01:00"
-        }
-      ],
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time"
+  "extension" : [{
+    "extension" : [{
+      "url" : "identifier",
+      "valueIdentifier" : {
+        "value" : "dispo09112020"
+      }
     },
     {
-      "extension" : [
-        {
-          "url" : "serviceType",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "http://terminology.hl7.org/CodeSystem/service-type",
-                "code" : "22",
-                "display" : "Hypnotherapy"
-              }
-            ]
-          }
-        },
-        {
-          "url" : "duration",
-          "valueDuration" : {
-            "value" : 15,
-            "unit" : "minute",
-            "system" : "http://unitsofmeasure.org",
-            "code" : "min"
-          }
-        }
-      ],
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration"
-    }
-  ],
-  "identifier" : [
+      "url" : "type",
+      "valueCoding" : {
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type",
+        "code" : "free",
+        "display" : "Disponibilité"
+      }
+    },
     {
-      "use" : "usual",
-      "system" : "http://schedule-identifier-system.org",
-      "value" : "45"
-    }
-  ],
+      "url" : "start",
+      "valueDateTime" : "2020-11-09T08:00:00+01:00"
+    },
+    {
+      "url" : "end",
+      "valueDateTime" : "2020-11-09T20:00:00+01:00"
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time"
+  },
+  {
+    "extension" : [{
+      "url" : "serviceType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+          "code" : "22",
+          "display" : "Hypnotherapy"
+        }]
+      }
+    },
+    {
+      "url" : "duration",
+      "valueDuration" : {
+        "value" : 15,
+        "unit" : "minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "min"
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration"
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://schedule-identifier-system.org",
+    "value" : "45"
+  }],
   "active" : true,
-  "specialty" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
-          "code" : "SM54",
-          "display" : "Médecine générale (SM)"
-        }
-      ]
-    }
-  ],
-  "actor" : [
-    {
-      "reference" : "PractitionerRole/FRCorePractitionerRoleExample"
-    },
-    {
-      "reference" : "Practitioner/FRCorePractitionerExample"
-    }
-  ],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+      "code" : "SM54",
+      "display" : "Médecine générale (SM)"
+    }]
+  }],
+  "actor" : [{
+    "reference" : "PractitionerRole/FRCorePractitionerRoleExample"
+  },
+  {
+    "reference" : "Practitioner/FRCorePractitionerExample"
+  }],
   "planningHorizon" : {
     "start" : "2019-01-01T00:00:00Z",
     "end" : "2020-01-01T00:00:00Z"

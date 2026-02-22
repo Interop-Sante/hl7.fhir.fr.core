@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemv2_3307 |
+| Draft as of 2026-02-22 | *Computable Name*:FRCoreCodeSystemv2_3307 |
 
  
 HL7 v2 - Table 3307 
@@ -28,9 +28,7 @@ HL7 v2 - Table 3307
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-v2-3307",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
   "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
@@ -39,102 +37,90 @@ HL7 v2 - Table 3307
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-17T14:34:23+00:00",
+  "date" : "2026-02-22T17:13:24+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "HL7 v2 - Table 3307",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 14,
-  "concept" : [
-    {
-      "code" : "GHT",
-      "display" : "Groupement hospitalier de territoire"
-    },
-    {
-      "code" : "LEGAL-ENTITY",
-      "display" : "Entité légale"
-    },
-    {
-      "code" : "GEOGRAPHICAL-ENTITY",
-      "display" : "Entité géographique"
-    },
-    {
-      "code" : "GROUP",
-      "display" : "Groupe privé/hospitalier"
-    },
-    {
-      "code" : "STRUCT-INTERNE",
-      "display" : "Structure interne"
-    },
-    {
-      "code" : "SECTEUR",
-      "display" : "Secteur"
-    },
-    {
-      "code" : "DEPARTEMENT",
-      "display" : "Département"
-    },
-    {
-      "code" : "SERVICE",
-      "display" : "Service"
-    },
-    {
-      "code" : "UM",
-      "display" : "Unité médicale"
-    },
-    {
-      "code" : "UAC",
-      "display" : "Unité d'activité"
-    },
-    {
-      "code" : "POLE",
-      "display" : "Pôle"
-    },
-    {
-      "code" : "CENTRE-RESP",
-      "display" : "Centre de responsabilité"
-    },
-    {
-      "code" : "CENTRE-ACTIVITE",
-      "display" : "Centre d'activité"
-    },
-    {
-      "code" : "UF",
-      "display" : "Unité fonctionnelle"
-    }
-  ]
+  "concept" : [{
+    "code" : "GHT",
+    "display" : "Groupement hospitalier de territoire"
+  },
+  {
+    "code" : "LEGAL-ENTITY",
+    "display" : "Entité légale"
+  },
+  {
+    "code" : "GEOGRAPHICAL-ENTITY",
+    "display" : "Entité géographique"
+  },
+  {
+    "code" : "GROUP",
+    "display" : "Groupe privé/hospitalier"
+  },
+  {
+    "code" : "STRUCT-INTERNE",
+    "display" : "Structure interne"
+  },
+  {
+    "code" : "SECTEUR",
+    "display" : "Secteur"
+  },
+  {
+    "code" : "DEPARTEMENT",
+    "display" : "Département"
+  },
+  {
+    "code" : "SERVICE",
+    "display" : "Service"
+  },
+  {
+    "code" : "UM",
+    "display" : "Unité médicale"
+  },
+  {
+    "code" : "UAC",
+    "display" : "Unité d'activité"
+  },
+  {
+    "code" : "POLE",
+    "display" : "Pôle"
+  },
+  {
+    "code" : "CENTRE-RESP",
+    "display" : "Centre de responsabilité"
+  },
+  {
+    "code" : "CENTRE-ACTIVITE",
+    "display" : "Centre d'activité"
+  },
+  {
+    "code" : "UF",
+    "display" : "Unité fonctionnelle"
+  }]
 }
 
 ```

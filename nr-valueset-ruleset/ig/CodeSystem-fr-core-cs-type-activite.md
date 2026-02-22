@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemTypeActivite |
+| Draft as of 2026-02-22 | *Computable Name*:FRCoreCodeSystemTypeActivite |
 
  
 La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES. 
@@ -27,9 +27,7 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-type-activite",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
   "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite",
@@ -38,194 +36,182 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-17T14:34:23+00:00",
+  "date" : "2026-02-22T17:13:24+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "La nomenclature des types d'activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 37,
-  "concept" : [
-    {
-      "code" : "01",
-      "display" : "Administration"
-    },
-    {
-      "code" : "02",
-      "display" : "Services hôteliers et techniques"
-    },
-    {
-      "code" : "03",
-      "display" : "Hospitalisation complète (non compris hospitalisation de semaine)"
-    },
-    {
-      "code" : "04",
-      "display" : "Hospitalisation de jour"
-    },
-    {
-      "code" : "05",
-      "display" : "Hospitalisation de nuit"
-    },
-    {
-      "code" : "06",
-      "display" : "Hospitalisation à domicile"
-    },
-    {
-      "code" : "07",
-      "display" : "Consultations, soins externes"
-    },
-    {
-      "code" : "08",
-      "display" : "Bloc opératoire (y compris obstétrical et gynécologique)"
-    },
-    {
-      "code" : "09",
-      "display" : "Autres unités médico-techniques (anesthésiologie, explorations fonctionnelles, rééducation et réadaptation fonctionnelles, pharmacie)"
-    },
-    {
-      "code" : "10",
-      "display" : "Accueil des urgences"
-    },
-    {
-      "code" : "11",
-      "display" : "Hébergement complet ou internat (non compris internat de semaine)"
-    },
-    {
-      "code" : "12",
-      "display" : "Hébergement de nuit en structure regroupée"
-    },
-    {
-      "code" : "13",
-      "display" : "Semi-internat"
-    },
-    {
-      "code" : "14",
-      "display" : "Externat"
-    },
-    {
-      "code" : "15",
-      "display" : "Placement en famille d'accueil (strictement social)"
-    },
-    {
-      "code" : "16",
-      "display" : "Prestations sur le lieu de vie (non compris placement familial)"
-    },
-    {
-      "code" : "17",
-      "display" : "Internat de semaine"
-    },
-    {
-      "code" : "18",
-      "display" : "Hébergement de nuit en structure éclatée"
-    },
-    {
-      "code" : "19",
-      "display" : "Traitements et cures ambulatoires"
-    },
-    {
-      "code" : "20",
-      "display" : "Hospitalisation de semaine"
-    },
-    {
-      "code" : "21",
-      "display" : "Accueil de jour"
-    },
-    {
-      "code" : "23",
-      "display" : "Anesthésie ou chirurgie ambulatoires"
-    },
-    {
-      "code" : "24",
-      "display" : "Accueil et prise en charge en service d'accueil familial thérapeutique psychiatrique"
-    },
-    {
-      "code" : "25",
-      "display" : "Hébergement temporaire de week-end ou de vacances"
-    },
-    {
-      "code" : "26",
-      "display" : "Analyses médicales biologiques"
-    },
-    {
-      "code" : "28",
-      "display" : "Consultations dentaires et soins dentaires"
-    },
-    {
-      "code" : "30",
-      "display" : "Stockage d'organes et de produits humains"
-    },
-    {
-      "code" : "31",
-      "display" : "Transport de malades"
-    },
-    {
-      "code" : "32",
-      "display" : "Radiologie (radiodiagnostic et radiothérapie), imagerie médicale"
-    },
-    {
-      "code" : "33",
-      "display" : "Recherche"
-    },
-    {
-      "code" : "34",
-      "display" : "Enseignement"
-    },
-    {
-      "code" : "37",
-      "display" : "Accueil et prise en charge en appartement thérapeutique psychiatrique"
-    },
-    {
-      "code" : "38",
-      "display" : "Accueil et prise en charge en centre de postcure psychiatrique"
-    },
-    {
-      "code" : "39",
-      "display" : "Accueil et prise en charge en centre de crise psychiatrique"
-    },
-    {
-      "code" : "40",
-      "display" : "Commerce de détail des biens à usage médical"
-    },
-    {
-      "code" : "41",
-      "display" : "Commerce en gros de produits à usage médical ou vétérinaire"
-    },
-    {
-      "code" : "97",
-      "display" : "Activité non dénommée ailleurs"
-    }
-  ]
+  "concept" : [{
+    "code" : "01",
+    "display" : "Administration"
+  },
+  {
+    "code" : "02",
+    "display" : "Services hôteliers et techniques"
+  },
+  {
+    "code" : "03",
+    "display" : "Hospitalisation complète (non compris hospitalisation de semaine)"
+  },
+  {
+    "code" : "04",
+    "display" : "Hospitalisation de jour"
+  },
+  {
+    "code" : "05",
+    "display" : "Hospitalisation de nuit"
+  },
+  {
+    "code" : "06",
+    "display" : "Hospitalisation à domicile"
+  },
+  {
+    "code" : "07",
+    "display" : "Consultations, soins externes"
+  },
+  {
+    "code" : "08",
+    "display" : "Bloc opératoire (y compris obstétrical et gynécologique)"
+  },
+  {
+    "code" : "09",
+    "display" : "Autres unités médico-techniques (anesthésiologie, explorations fonctionnelles, rééducation et réadaptation fonctionnelles, pharmacie)"
+  },
+  {
+    "code" : "10",
+    "display" : "Accueil des urgences"
+  },
+  {
+    "code" : "11",
+    "display" : "Hébergement complet ou internat (non compris internat de semaine)"
+  },
+  {
+    "code" : "12",
+    "display" : "Hébergement de nuit en structure regroupée"
+  },
+  {
+    "code" : "13",
+    "display" : "Semi-internat"
+  },
+  {
+    "code" : "14",
+    "display" : "Externat"
+  },
+  {
+    "code" : "15",
+    "display" : "Placement en famille d'accueil (strictement social)"
+  },
+  {
+    "code" : "16",
+    "display" : "Prestations sur le lieu de vie (non compris placement familial)"
+  },
+  {
+    "code" : "17",
+    "display" : "Internat de semaine"
+  },
+  {
+    "code" : "18",
+    "display" : "Hébergement de nuit en structure éclatée"
+  },
+  {
+    "code" : "19",
+    "display" : "Traitements et cures ambulatoires"
+  },
+  {
+    "code" : "20",
+    "display" : "Hospitalisation de semaine"
+  },
+  {
+    "code" : "21",
+    "display" : "Accueil de jour"
+  },
+  {
+    "code" : "23",
+    "display" : "Anesthésie ou chirurgie ambulatoires"
+  },
+  {
+    "code" : "24",
+    "display" : "Accueil et prise en charge en service d'accueil familial thérapeutique psychiatrique"
+  },
+  {
+    "code" : "25",
+    "display" : "Hébergement temporaire de week-end ou de vacances"
+  },
+  {
+    "code" : "26",
+    "display" : "Analyses médicales biologiques"
+  },
+  {
+    "code" : "28",
+    "display" : "Consultations dentaires et soins dentaires"
+  },
+  {
+    "code" : "30",
+    "display" : "Stockage d'organes et de produits humains"
+  },
+  {
+    "code" : "31",
+    "display" : "Transport de malades"
+  },
+  {
+    "code" : "32",
+    "display" : "Radiologie (radiodiagnostic et radiothérapie), imagerie médicale"
+  },
+  {
+    "code" : "33",
+    "display" : "Recherche"
+  },
+  {
+    "code" : "34",
+    "display" : "Enseignement"
+  },
+  {
+    "code" : "37",
+    "display" : "Accueil et prise en charge en appartement thérapeutique psychiatrique"
+  },
+  {
+    "code" : "38",
+    "display" : "Accueil et prise en charge en centre de postcure psychiatrique"
+  },
+  {
+    "code" : "39",
+    "display" : "Accueil et prise en charge en centre de crise psychiatrique"
+  },
+  {
+    "code" : "40",
+    "display" : "Commerce de détail des biens à usage médical"
+  },
+  {
+    "code" : "41",
+    "display" : "Commerce en gros de produits à usage médical ou vétérinaire"
+  },
+  {
+    "code" : "97",
+    "display" : "Activité non dénommée ailleurs"
+  }]
 }
 
 ```

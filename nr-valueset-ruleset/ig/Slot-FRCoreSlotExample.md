@@ -31,39 +31,27 @@ Profil: [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
   "resourceType" : "Slot",
   "id" : "FRCoreSlotExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"]
   },
-  "identifier" : [
-    {
-      "use" : "usual",
-      "system" : "http://slot-identifier-system.org",
-      "value" : "451"
-    }
-  ],
-  "serviceType" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/service-type",
-          "code" : "7",
-          "display" : "Friendly Visiting"
-        }
-      ]
-    }
-  ],
-  "specialty" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
-          "code" : "SM54",
-          "display" : "Médecine générale (SM)"
-        }
-      ]
-    }
-  ],
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://slot-identifier-system.org",
+    "value" : "451"
+  }],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+      "code" : "7",
+      "display" : "Friendly Visiting"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+      "code" : "SM54",
+      "display" : "Médecine générale (SM)"
+    }]
+  }],
   "schedule" : {
     "reference" : "Schedule/FRCoreScheduleExample"
   },

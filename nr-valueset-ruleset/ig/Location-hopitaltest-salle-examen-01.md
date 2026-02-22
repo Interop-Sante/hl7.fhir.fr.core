@@ -27,30 +27,22 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
   "resourceType" : "Location",
   "id" : "hopitaltest-salle-examen-01",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"]
   },
   "status" : "active",
   "name" : "Salle d'examen 01",
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
-          "code" : "SL_EXM",
-          "display" : "Salle d'examen"
-        }
-      ],
-      "text" : "Salle d'examen"
-    }
-  ],
-  "telecom" : [
-    {
-      "system" : "phone",
-      "value" : "84900"
-    }
-  ],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
+      "code" : "SL_EXM",
+      "display" : "Salle d'examen"
+    }],
+    "text" : "Salle d'examen"
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "84900"
+  }],
   "partOf" : {
     "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
   }

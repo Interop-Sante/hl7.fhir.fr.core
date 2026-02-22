@@ -31,38 +31,28 @@ Profil: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-co
   "resourceType" : "Observation",
   "id" : "FRCoreObservationBodyTemperatureExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8310-5"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8310-5"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample"
   },
   "effectiveDateTime" : "2022-11-06",
-  "performer" : [
-    {
-      "reference" : "Practitioner/FRCorePractitionerExample"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/FRCorePractitionerExample"
+  }],
   "valueQuantity" : {
     "value" : 36.5,
     "unit" : "C",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetHeightMeasurementMethod |
+| Active as of 2026-02-22 | *Computable Name*:FRCoreValueSetHeightMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the height/length was measured. 
@@ -23,6 +23,8 @@ SELECT SNOMED CT code system values that describe how the height/length was meas
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,9 +48,7 @@ SELECT SNOMED CT code system values that describe how the height/length was meas
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-height-meas-method",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method",
   "version" : "2.2.0-ballot-2",
@@ -56,61 +56,48 @@ SELECT SNOMED CT code system values that describe how the height/length was meas
   "title" : "Height Length Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T14:34:23+00:00",
+  "date" : "2026-02-22T17:13:24+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "SELECT SNOMED CT code system values that describe how the height/length was measured.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "414135002",
+        "display" : "Estimated (qualifier value)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "414135002",
-            "display" : "Estimated (qualifier value)"
-          },
-          {
-            "code" : "258104002",
-            "display" : "Measured (qualifier value)"
-          },
-          {
-            "code" : "733985002",
-            "display" : "Reported (qualifier value)"
-          }
-        ]
-      }
-    ]
+        "code" : "258104002",
+        "display" : "Measured (qualifier value)"
+      },
+      {
+        "code" : "733985002",
+        "display" : "Reported (qualifier value)"
+      }]
+    }]
   }
 }
 

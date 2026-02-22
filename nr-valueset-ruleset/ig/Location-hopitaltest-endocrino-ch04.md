@@ -25,24 +25,18 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
   "resourceType" : "Location",
   "id" : "hopitaltest-endocrino-ch04",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"]
   },
   "status" : "active",
   "name" : "Chambre 04",
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
-          "code" : "CHAMB",
-          "display" : "Chambre"
-        }
-      ],
-      "text" : "Chambre"
-    }
-  ],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
+      "code" : "CHAMB",
+      "display" : "Chambre"
+    }],
+    "text" : "Chambre"
+  }],
   "partOf" : {
     "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
   }

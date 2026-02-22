@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
+| Active as of 2026-02-22 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the respiratory rate was measured. 
@@ -23,6 +23,8 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,9 +48,7 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-respiratory-rate-meas-method",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method",
   "version" : "2.2.0-ballot-2",
@@ -56,61 +56,48 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
   "title" : "Respiratory Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T14:34:23+00:00",
+  "date" : "2026-02-22T17:13:24+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "SELECT SNOMED CT code system values that describe how the respiratory rate was measured.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "37931006",
+        "display" : "Auscultation (procedure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "37931006",
-            "display" : "Auscultation (procedure)"
-          },
-          {
-            "code" : "32750006",
-            "display" : "Inspection (procedure)"
-          },
-          {
-            "code" : "239516002",
-            "display" : "Monitoring procedure (regime/therapy)"
-          }
-        ]
-      }
-    ]
+        "code" : "32750006",
+        "display" : "Inspection (procedure)"
+      },
+      {
+        "code" : "239516002",
+        "display" : "Monitoring procedure (regime/therapy)"
+      }]
+    }]
   }
 }
 

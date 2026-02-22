@@ -35,102 +35,86 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
   "resourceType" : "Organization",
   "id" : "hopitaltest-eg-4-members",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"]
   },
-  "extension" : [
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
-            "code" : "101",
-            "display" : "Centre hospitalier régional (CHR)"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
-      "valueString" : "CHRU CENTRE VILLE"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab",
-        "type" : "UF",
-        "display" : "UF Endocrino Diabeto"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-uf-4705-nutrition\"",
-        "type" : "UF",
-        "display" : "UF Nutrition"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo",
-        "type" : "SERVICE",
-        "display" : "Service Endocrino Diabeto"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-service-11007-dietetique",
-        "type" : "SERVICE",
-        "display" : "Service Dietetique"
-      }
+  "extension" : [{
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+        "code" : "101",
+        "display" : "Centre hospitalier régional (CHR)"
+      }]
     }
-  ],
-  "identifier" : [
-    {
-      "use" : "official",
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-            "code" : "FINEG",
-            "display" : "FINESS d'entité géographique"
-          }
-        ]
-      },
-      "system" : "https://finess.esante.gouv.fr",
-      "value" : "350009999"
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
+    "valueString" : "CHRU CENTRE VILLE"
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab",
+      "type" : "UF",
+      "display" : "UF Endocrino Diabeto"
+    }
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-uf-4705-nutrition\"",
+      "type" : "UF",
+      "display" : "UF Nutrition"
+    }
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo",
+      "type" : "SERVICE",
+      "display" : "Service Endocrino Diabeto"
+    }
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-service-11007-dietetique",
+      "type" : "SERVICE",
+      "display" : "Service Dietetique"
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "FINEG",
+        "display" : "FINESS d'entité géographique"
+      }]
     },
-    {
-      "use" : "official",
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-            "code" : "SIREN",
-            "display" : "Identification de l'organisation au SIREN"
-          }
-        ]
-      },
-      "system" : "https://sirene.fr",
-      "value" : "26350007609999"
-    }
-  ],
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-          "code" : "LEGAL-ENTITY",
-          "display" : "Entité légale"
-        }
-      ],
-      "text" : "Etablissement Géographique"
-    }
-  ],
+    "system" : "https://finess.esante.gouv.fr",
+    "value" : "350009999"
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "SIREN",
+        "display" : "Identification de l'organisation au SIREN"
+      }]
+    },
+    "system" : "https://sirene.fr",
+    "value" : "26350007609999"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "LEGAL-ENTITY",
+      "display" : "Entité légale"
+    }],
+    "text" : "Etablissement Géographique"
+  }],
   "name" : "CHRU CENTRE VILLE"
 }
 

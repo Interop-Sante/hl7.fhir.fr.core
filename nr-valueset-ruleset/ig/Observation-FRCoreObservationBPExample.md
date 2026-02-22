@@ -37,120 +37,90 @@ Profil: [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core
   "resourceType" : "Observation",
   "id" : "FRCoreObservationBPExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "85354-9"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "85354-9"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2012-09-17",
-  "performer" : [
-    {
-      "reference" : "Practitioner/FRCorePractitionerExample"
-    }
-  ],
-  "interpretation" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "code" : "L",
-          "display" : "low"
-        }
-      ],
-      "text" : "Below low normal"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/FRCorePractitionerExample"
+  }],
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "L",
+      "display" : "low"
+    }],
+    "text" : "Below low normal"
+  }],
   "bodySite" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "17137000",
-        "display" : "artère humérale"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "17137000",
+      "display" : "artère humérale"
+    }]
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "8480-6",
-            "display" : "Systolic blood pressure"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 107,
-        "unit" : "mm[Hg]",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mm[Hg]"
-      },
-      "interpretation" : [
-        {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-              "code" : "N",
-              "display" : "Normal"
-            }
-          ],
-          "text" : "Normal"
-        }
-      ]
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "8462-4",
-            "display" : "Diastolic blood pressure"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 60,
-        "unit" : "mm[Hg]",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mm[Hg]"
-      },
-      "interpretation" : [
-        {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-              "code" : "L",
-              "display" : "low"
-            }
-          ],
-          "text" : "En dessous de la normale"
-        }
-      ]
-    }
-  ]
+    "valueQuantity" : {
+      "value" : 107,
+      "unit" : "mm[Hg]",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    },
+    "interpretation" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code" : "N",
+        "display" : "Normal"
+      }],
+      "text" : "Normal"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 60,
+      "unit" : "mm[Hg]",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    },
+    "interpretation" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code" : "L",
+        "display" : "low"
+      }],
+      "text" : "En dessous de la normale"
+    }]
+  }]
 }
 
 ```
