@@ -53,7 +53,7 @@ Description: """Profil de la ressource Organization permettant de représenter d
 * identifier[finess].system = "https://finess.esante.gouv.fr"
 
 * identifier[rppsRang] ^short = "RPPS rang (11 chiffres RPPS + 2 chiffres RANG)"
-* identifier[rppsRang].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#INTRN
+* identifier[rppsRang].type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203#RPPS
 * identifier[rppsRang].system = "https://rppsrang.esante.gouv.fr"
 
 
