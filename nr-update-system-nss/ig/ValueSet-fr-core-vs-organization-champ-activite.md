@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-champ-activite | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-22 | *Computable Name*:FRCoreValueSetOrganizationChampActivite |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreValueSetOrganizationChampActivite |
 
  
 Champ d’activité d’une organisation type UF. 
@@ -54,7 +54,7 @@ Champ d’activité d’une organisation type UF.
   "title" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-22T17:34:51+00:00",
+  "date" : "2026-02-23T07:43:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

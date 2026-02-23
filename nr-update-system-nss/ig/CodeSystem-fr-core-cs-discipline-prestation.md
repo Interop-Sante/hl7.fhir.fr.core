@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-22 | *Computable Name*:FRCoreCodeSystemDisciplinePrestation |
+| Draft as of 2026-02-23 | *Computable Name*:FRCoreCodeSystemDisciplinePrestation |
 
  
 La nomenclature des discipline de prestation. 
@@ -35,7 +35,7 @@ La nomenclature des discipline de prestation.
   "title" : "FR Core CodeSystem Discipline de prestation - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-22T17:34:51+00:00",
+  "date" : "2026-02-23T07:43:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-22 | *Computable Name*:FRCorePatientProfile |
+| Active as of 2026-02-23 | *Computable Name*:FRCorePatientProfile |
 
  
 Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-02-22T17:34:51+00:00",
+  "date" : "2026-02-23T07:43:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -231,21 +231,21 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       }
     },
     {
-      "id" : "Patient.identifier:NSS",
+      "id" : "Patient.identifier:NSS-NIR",
       "path" : "Patient.identifier",
-      "sliceName" : "NSS",
+      "sliceName" : "NSS-NIR",
       "short" : "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré).",
       "min" : 0,
       "max" : "1"
     },
     {
-      "id" : "Patient.identifier:NSS.use",
+      "id" : "Patient.identifier:NSS-NIR.use",
       "path" : "Patient.identifier.use",
       "min" : 1,
       "patternCode" : "official"
     },
     {
-      "id" : "Patient.identifier:NSS.type",
+      "id" : "Patient.identifier:NSS-NIR.type",
       "path" : "Patient.identifier.type",
       "min" : 1,
       "patternCodeableConcept" : {
@@ -256,13 +256,51 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       }
     },
     {
-      "id" : "Patient.identifier:NSS.system",
+      "id" : "Patient.identifier:NSS-NIR.system",
       "path" : "Patient.identifier.system",
+      "short" : "Autorité d’affectation du NIR utilisé en tant que numéro de sécurité sociale",
       "min" : 1,
       "patternUri" : "urn:oid:1.2.250.1.213.1.4.13"
     },
     {
-      "id" : "Patient.identifier:NSS.value",
+      "id" : "Patient.identifier:NSS-NIR.value",
+      "path" : "Patient.identifier.value",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.identifier:NSS-NIA",
+      "path" : "Patient.identifier",
+      "sliceName" : "NSS-NIA",
+      "short" : "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIA) de facturation d'attente permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale d'attente de l’ouvrant droit (assuré).",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Patient.identifier:NSS-NIA.use",
+      "path" : "Patient.identifier.use",
+      "min" : 1,
+      "patternCode" : "official"
+    },
+    {
+      "id" : "Patient.identifier:NSS-NIA.type",
+      "path" : "Patient.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "code" : "NH"
+        }]
+      }
+    },
+    {
+      "id" : "Patient.identifier:NSS-NIA.system",
+      "path" : "Patient.identifier.system",
+      "short" : "Autorité d’affectation du NIA utilisé en tant que numéro de sécurité sociale",
+      "min" : 1,
+      "patternUri" : "urn:oid:1.2.250.1.213.1.4.14"
+    },
+    {
+      "id" : "Patient.identifier:NSS-NIA.value",
       "path" : "Patient.identifier.value",
       "min" : 1
     },
