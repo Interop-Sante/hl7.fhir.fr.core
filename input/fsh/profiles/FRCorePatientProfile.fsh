@@ -35,20 +35,33 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS."
 
 * identifier contains
-    NSS 0..1 and
+    NSS-NIR 0..1 and
+    NSS-NIA 0..1 and
     INS-C 0..* and
     NDP 0..1 and
     PI 0..* and
     RRI 0..*
 
-* identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
-* identifier[NSS].use 1..
-* identifier[NSS].use = #official
-* identifier[NSS].type 1..
-* identifier[NSS].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
-* identifier[NSS].system 1..
-* identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.8"
-* identifier[NSS].value 1..
+* identifier[NSS-NIR] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
+* identifier[NSS-NIR].use 1..
+* identifier[NSS-NIR].use = #official
+* identifier[NSS-NIR].type 1..
+* identifier[NSS-NIR].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+* identifier[NSS-NIR].system 1..
+* identifier[NSS-NIR].system ^short = "Autorité d’affectation du NIR utilisé en tant que numéro de sécurité sociale"
+* identifier[NSS-NIR].system = "urn:oid:1.2.250.1.213.1.4.13"
+* identifier[NSS-NIR].value 1..
+
+* identifier[NSS-NIA] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIA) de facturation d'attente permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale d'attente de l’ouvrant droit (assuré)."
+* identifier[NSS-NIA].use 1..
+* identifier[NSS-NIA].use = #official
+* identifier[NSS-NIA].type 1..
+* identifier[NSS-NIA].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+* identifier[NSS-NIA].system 1..
+* identifier[NSS-NIA].system ^short = "Autorité d’affectation du NIA utilisé en tant que numéro de sécurité sociale"
+* identifier[NSS-NIA].system = "urn:oid:1.2.250.1.213.1.4.14"
+* identifier[NSS-NIA].value 1..
+
 
 * identifier[INS-C] ^short = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use 1..
