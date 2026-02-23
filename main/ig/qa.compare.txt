@@ -1,7 +1,7 @@
 FRCore : Validation Results
 =========================================
 
-err = 118, warn = 97, info = 4200
+err = 117, warn = 97, info = 4200
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 6 / 16 / 0
@@ -57,7 +57,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-uf-4420-dialyse : 13 / 6 / 9
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-uf-4701-endocrino-diab : 9 / 2 / 5
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-uf-4705-nutrition : 9 / 2 / 5
- /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Patient-FRCorePatientExample : 2 / 3 / 4
+ /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Patient-FRCorePatientExample : 1 / 3 / 4
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Practitioner-FRCorePractitionerExample : 0 / 2 / 3
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/PractitionerRole-FRCorePractitionerRoleExample : 0 / 1 / 4
  /home/runner/work/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Schedule-FRCoreScheduleExample : 0 / 1 / 3
@@ -524,7 +524,6 @@ ERROR: Patient/FRCorePatientExample: Patient.extension[0].value.ofType(Address).
 INFORMATION: Patient/FRCorePatientExample: Patient.extension[1].extension[0].value.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.2.0-ballot-2
 WARNING: Patient/FRCorePatientExample: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
 INFORMATION: Patient/FRCorePatientExample: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot-2 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Patient/FRCorePatientExample: Patient: Problem processing expression '(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')' in profile 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2' at path 'Patient': Error @1, 345: Premature ExpressionNode termination at unexpected token ")"
 == fsh-generated/resources/Practitioner-FRCorePractitionerExample.json ==
 INFORMATION: Practitioner/FRCorePractitionerExample: Practitioner.meta.source: No definition could be found for URL value 'https://annuaire.sante.fr'
 INFORMATION: Practitioner/FRCorePractitionerExample: Practitioner.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -4332,8 +4331,8 @@ INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM to 20240628120000
 INFORMATION: ValueSet.compose.include[1]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays to 20250328120000
 INFORMATION: ValueSet/fr-core-vs-cog-commune-pays: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr-FR'. The display is 'France' which is the default language display
-ERROR: ValueSet.where(id = 'fr-core-vs-cog-commune-pays'): Error from https://smt.esante.gouv.fr/fhir: Error: [0dde4fcf-bfcb-41a4-a183-2ac3db6d1036]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM|20240628120000 could not be resolved.
-Information: X-Request-Id: 2937e75e-05a2-4f93-8fe3-68680d0385f8
+ERROR: ValueSet.where(id = 'fr-core-vs-cog-commune-pays'): Error from https://smt.esante.gouv.fr/fhir: Error: [1363a15f-fab9-4589-bfb8-d02a6d81f88e]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM|20240628120000 could not be resolved.
+Information: X-Request-Id: 00aecef4-b63d-4566-a654-d274fcd60071
 == fsh-generated/resources/ValueSet-fr-core-vs-contact-relationship.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v2-0131 to 3.0.0
@@ -4577,7 +4576,7 @@ INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM to 20240628120000
 INFORMATION: ValueSet/fr-core-vs-insee-code: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr-FR'. The display is 'France' which is the default language display
 ERROR: ValueSet.where(id = 'fr-core-vs-insee-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [28943653-c5fa-4c8a-860f-737756d4e83e]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM|20240628120000 could not be resolved.
-Information: X-Request-Id: 3323bc68-fd98-4fe8-b05b-b624fc6cc673
+Information: X-Request-Id: 330c9415-35b4-4f09-a302-3ff7306effe5
 == fsh-generated/resources/ValueSet-fr-core-vs-location-position-lit.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit to 2.2.0-ballot-2

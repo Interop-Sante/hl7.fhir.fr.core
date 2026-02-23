@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-02-23T10:39:10+00:00",
+  "date" : "2026-02-23T12:56:47+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
         "key" : "fr-core-1",
         "severity" : "error",
         "human" : "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present",
-        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())",
+        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official' and type.coding.exists(code = 'INS-NIR')).exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
       },
       {
@@ -137,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
         "key" : "fr-core-3",
         "severity" : "warning",
         "human" : "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service.",
-        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')",
+        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999'",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
       }]
     },
