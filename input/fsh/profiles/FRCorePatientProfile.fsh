@@ -48,6 +48,7 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * identifier[NSS-NIR].type 1..
 * identifier[NSS-NIR].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
 * identifier[NSS-NIR].system 1..
+* identifier[NSS-NIR].system ^short = "Autorité d’affectation du NIR utilisé en tant que numéro de sécurité sociale"
 * identifier[NSS-NIR].system = "urn:oid:1.2.250.1.213.1.4.13"
 * identifier[NSS-NIR].value 1..
 
@@ -57,6 +58,7 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * identifier[NSS-NIA].type 1..
 * identifier[NSS-NIA].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
 * identifier[NSS-NIA].system 1..
+* identifier[NSS-NIA].system ^short = "Autorité d’affectation du NIA utilisé en tant que numéro de sécurité sociale"
 * identifier[NSS-NIA].system = "urn:oid:1.2.250.1.213.1.4.14"
 * identifier[NSS-NIA].value 1..
 
