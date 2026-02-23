@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemContactRelationship
 Id: fr-core-cs-contact-relationship
 Title: "FR Core CodeSystem Contact Relationship"
 Description: "Relationship type"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 
 * ^status = #draft
 * ^experimental = true

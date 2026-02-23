@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetEmailType
 Id: fr-core-vs-email-type
 Title: "FR Core ValueSet Email type"
 Description: "The type of email"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative

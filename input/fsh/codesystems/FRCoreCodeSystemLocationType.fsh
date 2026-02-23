@@ -2,20 +2,20 @@ CodeSystem: FRCoreCodeSystemLocationType
 Id: fr-core-cs-location-type
 Title: "FR Core CodeSystem Location Type"
 Description: "Location type"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
 
-* #BAT "Bâtiment"
-* #ETAG "Étage"
-* #COUL "Couloir"
-* #AILE "Aile"
-* #BOX "Box"
-* #CHAMB "Chambre"
-* #LIT "Lit"
-* #PL_TECH "Plateau technique"
-* #PNT_CLCT "Point de collecte"
-* #PNT_LVRSN "Point de livraison"
-* #SL_EXM "Salle examen"
-* #SL_CONS "Salle de consultation"
+* #BAT "Bâtiment" "Bâtiment"
+* #ETAG "Étage" "Étage"
+* #COUL "Couloir" "Couloir"
+* #AILE "Aile" "Aile"
+* #BOX "Box" "Box"
+* #CHAMB "Chambre" "Chambre"
+* #LIT "Lit" "Lit"
+* #PL_TECH "Plateau technique" "Plateau technique"
+* #PNT_CLCT "Point de collecte" "Point de collecte"
+* #PNT_LVRSN "Point de livraison" "Point de livraison"
+* #SL_EXM "Salle examen" "Salle examen"
+* #SL_CONS "Salle de consultation" "Salle de consultation"

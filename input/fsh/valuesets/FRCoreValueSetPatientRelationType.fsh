@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetPatientRelationType
 Id: fr-core-vs-relation-type
 Title: "FR Core ValueSet relation type"
 Description: "ValueSet relation type"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension.valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
