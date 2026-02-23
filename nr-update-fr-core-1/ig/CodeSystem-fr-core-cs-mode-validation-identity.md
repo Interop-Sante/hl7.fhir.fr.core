@@ -37,7 +37,7 @@ Mode de validation de l’identité
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-23T11:01:45+00:00",
+  "date" : "2026-02-23T12:41:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

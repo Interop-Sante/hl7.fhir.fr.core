@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-typ
   "name" : "FRCoreLocationTypeChambreExtension",
   "title" : "FR Core Location Extension - Type de chambre",
   "status" : "active",
-  "date" : "2026-02-23T11:01:45+00:00",
+  "date" : "2026-02-23T12:41:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

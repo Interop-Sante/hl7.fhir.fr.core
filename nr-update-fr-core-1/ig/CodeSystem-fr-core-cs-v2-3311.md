@@ -36,7 +36,7 @@ HL7 v2 - Table 3311
   "title" : "FR Core CodeSystem v2-3311",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-23T11:01:45+00:00",
+  "date" : "2026-02-23T12:41:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
