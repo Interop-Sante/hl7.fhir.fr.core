@@ -29,13 +29,14 @@ Location type
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemLocationType",
   "title" : "FR Core CodeSystem Location Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-23T09:26:22+00:00",
+  "date" : "2026-02-23T10:39:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -56,7 +57,7 @@ Location type
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -65,51 +66,63 @@ Location type
   "count" : 12,
   "concept" : [{
     "code" : "BAT",
-    "display" : "Bâtiment"
+    "display" : "Bâtiment",
+    "definition" : "Bâtiment"
   },
   {
     "code" : "ETAG",
-    "display" : "Étage"
+    "display" : "Étage",
+    "definition" : "Étage"
   },
   {
     "code" : "COUL",
-    "display" : "Couloir"
+    "display" : "Couloir",
+    "definition" : "Couloir"
   },
   {
     "code" : "AILE",
-    "display" : "Aile"
+    "display" : "Aile",
+    "definition" : "Aile"
   },
   {
     "code" : "BOX",
-    "display" : "Box"
+    "display" : "Box",
+    "definition" : "Box"
   },
   {
     "code" : "CHAMB",
-    "display" : "Chambre"
+    "display" : "Chambre",
+    "definition" : "Chambre"
   },
   {
     "code" : "LIT",
-    "display" : "Lit"
+    "display" : "Lit",
+    "definition" : "Lit"
   },
   {
     "code" : "PL_TECH",
-    "display" : "Plateau technique"
+    "display" : "Plateau technique",
+    "definition" : "Plateau technique"
   },
   {
     "code" : "PNT_CLCT",
-    "display" : "Point de collecte"
+    "display" : "Point de collecte",
+    "definition" : "Point de collecte"
   },
   {
     "code" : "PNT_LVRSN",
-    "display" : "Point de livraison"
+    "display" : "Point de livraison",
+    "definition" : "Point de livraison"
   },
   {
     "code" : "SL_EXM",
-    "display" : "Salle examen"
+    "display" : "Salle examen",
+    "definition" : "Salle examen"
   },
   {
     "code" : "SL_CONS",
-    "display" : "Salle de consultation"
+    "display" : "Salle de consultation",
+    "definition" : "Salle de consultation"
   }]
 }
 

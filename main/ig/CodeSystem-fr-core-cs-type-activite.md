@@ -29,13 +29,14 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemTypeActivite",
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-23T09:26:22+00:00",
+  "date" : "2026-02-23T10:39:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -56,7 +57,7 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -65,151 +66,188 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
   "count" : 37,
   "concept" : [{
     "code" : "01",
-    "display" : "Administration"
+    "display" : "Administration",
+    "definition" : "Administration"
   },
   {
     "code" : "02",
-    "display" : "Services hôteliers et techniques"
+    "display" : "Services hôteliers et techniques",
+    "definition" : "Services hôteliers et techniques"
   },
   {
     "code" : "03",
-    "display" : "Hospitalisation complète (non compris hospitalisation de semaine)"
+    "display" : "Hospitalisation complète (non compris hospitalisation de semaine)",
+    "definition" : "Hospitalisation complète (non compris hospitalisation de semaine)"
   },
   {
     "code" : "04",
-    "display" : "Hospitalisation de jour"
+    "display" : "Hospitalisation de jour",
+    "definition" : "Hospitalisation de jour"
   },
   {
     "code" : "05",
-    "display" : "Hospitalisation de nuit"
+    "display" : "Hospitalisation de nuit",
+    "definition" : "Hospitalisation de nuit"
   },
   {
     "code" : "06",
-    "display" : "Hospitalisation à domicile"
+    "display" : "Hospitalisation à domicile",
+    "definition" : "Hospitalisation à domicile"
   },
   {
     "code" : "07",
-    "display" : "Consultations, soins externes"
+    "display" : "Consultations, soins externes",
+    "definition" : "Consultations, soins externes"
   },
   {
     "code" : "08",
-    "display" : "Bloc opératoire (y compris obstétrical et gynécologique)"
+    "display" : "Bloc opératoire (y compris obstétrical et gynécologique)",
+    "definition" : "Bloc opératoire (y compris obstétrical et gynécologique)"
   },
   {
     "code" : "09",
-    "display" : "Autres unités médico-techniques (anesthésiologie, explorations fonctionnelles, rééducation et réadaptation fonctionnelles, pharmacie)"
+    "display" : "Autres unités médico-techniques (anesthésiologie, explorations fonctionnelles, rééducation et réadaptation fonctionnelles, pharmacie)",
+    "definition" : "Autres unités médico-techniques (anesthésiologie, explorations fonctionnelles, rééducation et réadaptation fonctionnelles, pharmacie)"
   },
   {
     "code" : "10",
-    "display" : "Accueil des urgences"
+    "display" : "Accueil des urgences",
+    "definition" : "Accueil des urgences"
   },
   {
     "code" : "11",
-    "display" : "Hébergement complet ou internat (non compris internat de semaine)"
+    "display" : "Hébergement complet ou internat (non compris internat de semaine)",
+    "definition" : "Hébergement complet ou internat (non compris internat de semaine)"
   },
   {
     "code" : "12",
-    "display" : "Hébergement de nuit en structure regroupée"
+    "display" : "Hébergement de nuit en structure regroupée",
+    "definition" : "Hébergement de nuit en structure regroupée"
   },
   {
     "code" : "13",
-    "display" : "Semi-internat"
+    "display" : "Semi-internat",
+    "definition" : "Semi-internat"
   },
   {
     "code" : "14",
-    "display" : "Externat"
+    "display" : "Externat",
+    "definition" : "Externat"
   },
   {
     "code" : "15",
-    "display" : "Placement en famille d'accueil (strictement social)"
+    "display" : "Placement en famille d'accueil (strictement social)",
+    "definition" : "Placement en famille d'accueil (strictement social)"
   },
   {
     "code" : "16",
-    "display" : "Prestations sur le lieu de vie (non compris placement familial)"
+    "display" : "Prestations sur le lieu de vie (non compris placement familial)",
+    "definition" : "Prestations sur le lieu de vie (non compris placement familial)"
   },
   {
     "code" : "17",
-    "display" : "Internat de semaine"
+    "display" : "Internat de semaine",
+    "definition" : "Internat de semaine"
   },
   {
     "code" : "18",
-    "display" : "Hébergement de nuit en structure éclatée"
+    "display" : "Hébergement de nuit en structure éclatée",
+    "definition" : "Hébergement de nuit en structure éclatée"
   },
   {
     "code" : "19",
-    "display" : "Traitements et cures ambulatoires"
+    "display" : "Traitements et cures ambulatoires",
+    "definition" : "Traitements et cures ambulatoires"
   },
   {
     "code" : "20",
-    "display" : "Hospitalisation de semaine"
+    "display" : "Hospitalisation de semaine",
+    "definition" : "Hospitalisation de semaine"
   },
   {
     "code" : "21",
-    "display" : "Accueil de jour"
+    "display" : "Accueil de jour",
+    "definition" : "Accueil de jour"
   },
   {
     "code" : "23",
-    "display" : "Anesthésie ou chirurgie ambulatoires"
+    "display" : "Anesthésie ou chirurgie ambulatoires",
+    "definition" : "Anesthésie ou chirurgie ambulatoires"
   },
   {
     "code" : "24",
-    "display" : "Accueil et prise en charge en service d'accueil familial thérapeutique psychiatrique"
+    "display" : "Accueil et prise en charge en service d'accueil familial thérapeutique psychiatrique",
+    "definition" : "Accueil et prise en charge en service d'accueil familial thérapeutique psychiatrique"
   },
   {
     "code" : "25",
-    "display" : "Hébergement temporaire de week-end ou de vacances"
+    "display" : "Hébergement temporaire de week-end ou de vacances",
+    "definition" : "Hébergement temporaire de week-end ou de vacances"
   },
   {
     "code" : "26",
-    "display" : "Analyses médicales biologiques"
+    "display" : "Analyses médicales biologiques",
+    "definition" : "Analyses médicales biologiques"
   },
   {
     "code" : "28",
-    "display" : "Consultations dentaires et soins dentaires"
+    "display" : "Consultations dentaires et soins dentaires",
+    "definition" : "Consultations dentaires et soins dentaires"
   },
   {
     "code" : "30",
-    "display" : "Stockage d'organes et de produits humains"
+    "display" : "Stockage d'organes et de produits humains",
+    "definition" : "Stockage d'organes et de produits humains"
   },
   {
     "code" : "31",
-    "display" : "Transport de malades"
+    "display" : "Transport de malades",
+    "definition" : "Transport de malades"
   },
   {
     "code" : "32",
-    "display" : "Radiologie (radiodiagnostic et radiothérapie), imagerie médicale"
+    "display" : "Radiologie (radiodiagnostic et radiothérapie), imagerie médicale",
+    "definition" : "Radiologie (radiodiagnostic et radiothérapie), imagerie médicale"
   },
   {
     "code" : "33",
-    "display" : "Recherche"
+    "display" : "Recherche",
+    "definition" : "Recherche"
   },
   {
     "code" : "34",
-    "display" : "Enseignement"
+    "display" : "Enseignement",
+    "definition" : "Enseignement"
   },
   {
     "code" : "37",
-    "display" : "Accueil et prise en charge en appartement thérapeutique psychiatrique"
+    "display" : "Accueil et prise en charge en appartement thérapeutique psychiatrique",
+    "definition" : "Accueil et prise en charge en appartement thérapeutique psychiatrique"
   },
   {
     "code" : "38",
-    "display" : "Accueil et prise en charge en centre de postcure psychiatrique"
+    "display" : "Accueil et prise en charge en centre de postcure psychiatrique",
+    "definition" : "Accueil et prise en charge en centre de postcure psychiatrique"
   },
   {
     "code" : "39",
-    "display" : "Accueil et prise en charge en centre de crise psychiatrique"
+    "display" : "Accueil et prise en charge en centre de crise psychiatrique",
+    "definition" : "Accueil et prise en charge en centre de crise psychiatrique"
   },
   {
     "code" : "40",
-    "display" : "Commerce de détail des biens à usage médical"
+    "display" : "Commerce de détail des biens à usage médical",
+    "definition" : "Commerce de détail des biens à usage médical"
   },
   {
     "code" : "41",
-    "display" : "Commerce en gros de produits à usage médical ou vétérinaire"
+    "display" : "Commerce en gros de produits à usage médical ou vétérinaire",
+    "definition" : "Commerce en gros de produits à usage médical ou vétérinaire"
   },
   {
     "code" : "97",
-    "display" : "Activité non dénommée ailleurs"
+    "display" : "Activité non dénommée ailleurs",
+    "definition" : "Activité non dénommée ailleurs"
   }]
 }
 

@@ -29,13 +29,14 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemChampActivite",
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-23T09:26:22+00:00",
+  "date" : "2026-02-23T10:39:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -56,7 +57,7 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -66,64 +67,42 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
   "concept" : [{
     "code" : "MCO",
     "display" : "MCO",
-    "designation" : [{
-      "use" : {
-        "code" : "display"
-      },
-      "value" : "Médecine Chirurgie Obstétrique"
-    }]
+    "definition" : "Médecine Chirurgie Obstétrique"
   },
   {
     "code" : "SMR",
     "display" : "SMR",
-    "designation" : [{
-      "use" : {
-        "code" : "display"
-      },
-      "value" : "Soins Médicaux et de Réadaptation"
-    }]
+    "definition" : "Soins Médicaux et de Réadaptation"
   },
   {
     "code" : "HAD",
     "display" : "HAD",
-    "designation" : [{
-      "use" : {
-        "code" : "display"
-      },
-      "value" : "Hospitalisation à Domicile"
-    }]
+    "definition" : "Hospitalisation à Domicile"
   },
   {
     "code" : "PSY",
     "display" : "PSY",
-    "designation" : [{
-      "use" : {
-        "code" : "display"
-      },
-      "value" : "Psychiatrie"
-    }]
+    "definition" : "Psychiatrie"
   },
   {
     "code" : "EHPAD",
     "display" : "EHPAD",
-    "designation" : [{
-      "use" : {
-        "code" : "display"
-      },
-      "value" : "Etablissement d'Hébergement pour Personnes Agées Dépendantes"
-    }]
+    "definition" : "Etablissement d'Hébergement pour Personnes Agées Dépendantes"
   },
   {
     "code" : "LG_SJR",
-    "display" : "Long séjour"
+    "display" : "Long séjour",
+    "definition" : "Long séjour"
   },
   {
     "code" : "MSN_RTRT",
-    "display" : "Maison de retraite"
+    "display" : "Maison de retraite",
+    "definition" : "Maison de retraite"
   },
   {
     "code" : "ATR",
-    "display" : "Autre"
+    "display" : "Autre",
+    "definition" : "Autre"
   }]
 }
 

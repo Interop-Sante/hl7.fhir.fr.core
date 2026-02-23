@@ -29,13 +29,14 @@ Position du lit dans la chambre
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemPositionLit",
   "title" : "FR Core CodeSystem Position du lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-23T09:26:22+00:00",
+  "date" : "2026-02-23T10:39:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -56,7 +57,7 @@ Position du lit dans la chambre
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -65,7 +66,8 @@ Position du lit dans la chambre
   "count" : 3,
   "concept" : [{
     "code" : "FNTR",
-    "display" : "Fenêtre"
+    "display" : "Fenêtre",
+    "definition" : "Fenêtre"
   },
   {
     "code" : "CLR",
@@ -73,7 +75,8 @@ Position du lit dans la chambre
   },
   {
     "code" : "ML",
-    "display" : "Milieu"
+    "display" : "Milieu",
+    "definition" : "Milieu"
   }]
 }
 

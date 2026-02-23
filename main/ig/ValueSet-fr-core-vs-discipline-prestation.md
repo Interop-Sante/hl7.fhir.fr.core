@@ -48,13 +48,14 @@ Valeurs permettant de coder les disciplines de prestation.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetDisciplinePrestation",
   "title" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-23T09:26:22+00:00",
+  "date" : "2026-02-23T10:39:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -75,7 +76,7 @@ Valeurs permettant de coder les disciplines de prestation.
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

@@ -48,12 +48,13 @@ Indicateur d’une unité fonctionnelle.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetOrganizationUFIndicateur",
   "title" : "FR Core ValueSet Organization UF Indicateur",
   "status" : "active",
-  "date" : "2026-02-23T09:26:22+00:00",
+  "date" : "2026-02-23T10:39:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -74,7 +75,7 @@ Indicateur d’une unité fonctionnelle.
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
