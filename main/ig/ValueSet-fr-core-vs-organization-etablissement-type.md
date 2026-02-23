@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetOrganizationEtablissementType |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreValueSetOrganizationEtablissementType |
 
  
 Types d’organisation représentant des établissements. 
@@ -46,9 +46,7 @@ Types d’organisation représentant des établissements.
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-organization-etablissement-type",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type",
   "version" : "2.2.0-ballot-2",
@@ -56,57 +54,44 @@ Types d’organisation représentant des établissements.
   "title" : "FR Core ValueSet Organization Etablisement type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Types d'organisation représentant des établissements.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "version" : "2.2.0-ballot-2",
+      "concept" : [{
+        "code" : "LEGAL-ENTITY",
+        "display" : "Entité légale"
+      },
       {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-        "concept" : [
-          {
-            "code" : "LEGAL-ENTITY",
-            "display" : "Entité légale"
-          },
-          {
-            "code" : "GEOGRAPHICAL-ENTITY",
-            "display" : "Entité géographique"
-          }
-        ]
-      }
-    ]
+        "code" : "GEOGRAPHICAL-ENTITY",
+        "display" : "Entité géographique"
+      }]
+    }]
   }
 }
 

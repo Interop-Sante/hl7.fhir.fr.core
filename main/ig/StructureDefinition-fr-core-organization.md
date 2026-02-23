@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreOrganizationProfile |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreOrganizationProfile |
 
  
 Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France. 
@@ -64,281 +64,221 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "servd",
-      "uri" : "http://www.omg.org/spec/ServD/1.0/",
-      "name" : "ServD"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Organization",
-        "path" : "Organization"
-      },
-      {
-        "id" : "Organization.meta.profile",
-        "path" : "Organization.meta.profile",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "$this"
-            }
-          ],
-          "description" : "Slice based on the canonical url value",
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Organization.meta.profile:fr-canonical",
-        "path" : "Organization.meta.profile",
-        "sliceName" : "fr-canonical",
-        "min" : 0,
-        "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
-      },
-      {
-        "id" : "Organization.extension",
-        "path" : "Organization.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Organization.extension:shortName",
-        "path" : "Organization.extension",
-        "sliceName" : "shortName",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:description",
-        "path" : "Organization.extension",
-        "sliceName" : "description",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:usePeriod",
-        "path" : "Organization.extension",
-        "sliceName" : "usePeriod",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:openReason",
-        "path" : "Organization.extension",
-        "sliceName" : "openReason",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/note|5.2.0"]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:closureReason",
-        "path" : "Organization.extension",
-        "sliceName" : "closureReason",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/note|5.2.0"]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:member",
-        "path" : "Organization.extension",
-        "sliceName" : "member",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.type",
-        "path" : "Organization.type",
-        "binding" : {
-          "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
-        }
-      },
-      {
-        "id" : "Organization.telecom",
-        "path" : "Organization.telecom",
-        "type" : [
-          {
-            "code" : "ContactPoint",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.address",
-        "path" : "Organization.address",
-        "type" : [
-          {
-            "code" : "Address",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.partOf",
-        "path" : "Organization.partOf",
-        "type" : [
-          {
-            "extension" : [
-              {
-                "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
-                "valueBoolean" : true
-              }
-            ],
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.partOf.type",
-        "path" : "Organization.partOf.type",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
-        }
-      },
-      {
-        "id" : "Organization.contact.telecom",
-        "path" : "Organization.contact.telecom",
-        "type" : [
-          {
-            "code" : "ContactPoint",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.contact.address",
-        "path" : "Organization.contact.address",
-        "type" : [
-          {
-            "code" : "Address",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"
-            ]
-          }
-        ]
+    "element" : [{
+      "id" : "Organization",
+      "path" : "Organization"
+    },
+    {
+      "id" : "Organization.meta.profile",
+      "path" : "Organization.meta.profile",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "$this"
+        }],
+        "description" : "Slice based on the canonical url value",
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Organization.meta.profile:fr-canonical",
+      "path" : "Organization.meta.profile",
+      "sliceName" : "fr-canonical",
+      "min" : 0,
+      "max" : "1",
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+    },
+    {
+      "id" : "Organization.extension",
+      "path" : "Organization.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Organization.extension:shortName",
+      "path" : "Organization.extension",
+      "sliceName" : "shortName",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:description",
+      "path" : "Organization.extension",
+      "sliceName" : "description",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:usePeriod",
+      "path" : "Organization.extension",
+      "sliceName" : "usePeriod",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:openReason",
+      "path" : "Organization.extension",
+      "sliceName" : "openReason",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/note|5.2.0"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:closureReason",
+      "path" : "Organization.extension",
+      "sliceName" : "closureReason",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/note|5.2.0"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:member",
+      "path" : "Organization.extension",
+      "sliceName" : "member",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.type",
+      "path" : "Organization.type",
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
+      }
+    },
+    {
+      "id" : "Organization.telecom",
+      "path" : "Organization.telecom",
+      "type" : [{
+        "code" : "ContactPoint",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.address",
+      "path" : "Organization.address",
+      "type" : [{
+        "code" : "Address",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.partOf",
+      "path" : "Organization.partOf",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+          "valueBoolean" : true
+        }],
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.partOf.type",
+      "path" : "Organization.partOf.type",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
+      }
+    },
+    {
+      "id" : "Organization.contact.telecom",
+      "path" : "Organization.contact.telecom",
+      "type" : [{
+        "code" : "ContactPoint",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.contact.address",
+      "path" : "Organization.contact.address",
+      "type" : [{
+        "code" : "Address",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
+      }]
+    }]
   }
 }
 

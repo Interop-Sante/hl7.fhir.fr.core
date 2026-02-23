@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreScheduleProfile |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreScheduleProfile |
 
  
 Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule 
@@ -43,172 +43,142 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
   "name" : "FRCoreScheduleProfile",
   "title" : "FR Core Schedule Profile",
   "status" : "active",
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule\r\n\nProfil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "ical",
-      "uri" : "http://ietf.org/rfc/2445",
-      "name" : "iCalendar"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "ical",
+    "uri" : "http://ietf.org/rfc/2445",
+    "name" : "iCalendar"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Schedule",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Schedule|4.0.1",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Schedule",
-        "path" : "Schedule"
-      },
-      {
-        "id" : "Schedule.meta.profile",
-        "path" : "Schedule.meta.profile",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "$this"
-            }
-          ],
-          "description" : "Slice based on the canonical url value",
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Schedule.meta.profile:fr-canonical",
-        "path" : "Schedule.meta.profile",
-        "sliceName" : "fr-canonical",
-        "min" : 0,
-        "max" : "1",
-        "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot-2"
-      },
-      {
-        "id" : "Schedule.extension",
-        "path" : "Schedule.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Schedule.extension:serviceTypeDuration",
-        "path" : "Schedule.extension",
-        "sliceName" : "serviceTypeDuration",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Schedule.extension:availabilityTime",
-        "path" : "Schedule.extension",
-        "sliceName" : "availabilityTime",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Schedule.serviceCategory",
-        "path" : "Schedule.serviceCategory",
-        "max" : "1"
-      },
-      {
-        "id" : "Schedule.serviceType",
-        "path" : "Schedule.serviceType",
-        "max" : "0"
-      },
-      {
-        "id" : "Schedule.specialty",
-        "path" : "Schedule.specialty",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot-2"
-        }
-      },
-      {
-        "id" : "Schedule.actor",
-        "path" : "Schedule.actor",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot-2",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot-2",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot-2",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2"
-            ]
-          }
-        ]
+    "element" : [{
+      "id" : "Schedule",
+      "path" : "Schedule"
+    },
+    {
+      "id" : "Schedule.meta.profile",
+      "path" : "Schedule.meta.profile",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "$this"
+        }],
+        "description" : "Slice based on the canonical url value",
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Schedule.meta.profile:fr-canonical",
+      "path" : "Schedule.meta.profile",
+      "sliceName" : "fr-canonical",
+      "min" : 0,
+      "max" : "1",
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot-2"
+    },
+    {
+      "id" : "Schedule.extension",
+      "path" : "Schedule.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Schedule.extension:serviceTypeDuration",
+      "path" : "Schedule.extension",
+      "sliceName" : "serviceTypeDuration",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Schedule.extension:availabilityTime",
+      "path" : "Schedule.extension",
+      "sliceName" : "availabilityTime",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Schedule.serviceCategory",
+      "path" : "Schedule.serviceCategory",
+      "max" : "1"
+    },
+    {
+      "id" : "Schedule.serviceType",
+      "path" : "Schedule.serviceType",
+      "max" : "0"
+    },
+    {
+      "id" : "Schedule.specialty",
+      "path" : "Schedule.specialty",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot-2"
+      }
+    },
+    {
+      "id" : "Schedule.actor",
+      "path" : "Schedule.actor",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2"]
+      }]
+    }]
   }
 }
 

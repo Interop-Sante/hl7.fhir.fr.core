@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemPositionLit |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreCodeSystemPositionLit |
 
  
 Position du lit dans la chambre 
@@ -27,9 +27,7 @@ Position du lit dans la chambre
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-location-position-lit",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
   "version" : "2.2.0-ballot-2",
@@ -37,58 +35,46 @@ Position du lit dans la chambre
   "title" : "FR Core CodeSystem Position du lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Position du lit dans la chambre",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "FNTR",
-      "display" : "Fenêtre"
-    },
-    {
-      "code" : "CLR",
-      "display" : "Couloir"
-    },
-    {
-      "code" : "ML",
-      "display" : "Milieu"
-    }
-  ]
+  "concept" : [{
+    "code" : "FNTR",
+    "display" : "Fenêtre"
+  },
+  {
+    "code" : "CLR",
+    "display" : "Couloir"
+  },
+  {
+    "code" : "ML",
+    "display" : "Milieu"
+  }]
 }
 
 ```

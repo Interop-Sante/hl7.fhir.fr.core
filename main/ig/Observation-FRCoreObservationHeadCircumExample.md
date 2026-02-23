@@ -31,39 +31,29 @@ Profil: [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-ob
   "resourceType" : "Observation",
   "id" : "FRCoreObservationHeadCircumExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "9843-4"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9843-4"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",
-  "performer" : [
-    {
-      "reference" : "Patient/FRCorePatientExample"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Patient/FRCorePatientExample"
+  }],
   "valueQuantity" : {
     "value" : 61,
     "unit" : "cm",

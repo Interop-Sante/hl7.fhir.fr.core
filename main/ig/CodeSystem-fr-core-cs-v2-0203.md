@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemv2_0203 |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreCodeSystemv2_0203 |
 
  
 HL7 v2 - Identifier type 
@@ -29,9 +29,7 @@ HL7 v2 - Identifier type
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-v2-0203",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
   "version" : "2.2.0-ballot-2",
@@ -39,131 +37,119 @@ HL7 v2 - Identifier type
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "HL7 v2 - Identifier type",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 17,
-  "concept" : [
-    {
-      "code" : "ADELI",
-      "display" : "N° ADELI",
-      "definition" : "N° ADELI"
-    },
-    {
-      "code" : "RPPS",
-      "display" : "N° RPPS",
-      "definition" : "N° RPPS"
-    },
-    {
-      "code" : "IDNPS",
-      "display" : "Identifiant National de Professionnel de Santé",
-      "definition" : "Identifiant National de Professionnel de Santé"
-    },
-    {
-      "code" : "NNFRA",
-      "display" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code",
-      "definition" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code"
-    },
-    {
-      "code" : "NDP",
-      "display" : "Identifiant du patient au Dossier Pharmaceutique",
-      "definition" : "Identifiant du patient au Dossier Pharmaceutique"
-    },
-    {
-      "code" : "INS-C",
-      "display" : "Identifiant National de Santé Calculé",
-      "definition" : "Identifiant National de Santé Calculé"
-    },
-    {
-      "code" : "INS-NIA",
-      "display" : "NIR temporaire",
-      "definition" : "NIR temporaire"
-    },
-    {
-      "code" : "INS-NIR",
-      "display" : "NIR définitif",
-      "definition" : "NIR définitif"
-    },
-    {
-      "code" : "INS-NIR-TEST",
-      "display" : "NIR TEST",
-      "definition" : "NIR TEST"
-    },
-    {
-      "code" : "INS-NIR-DEMO",
-      "display" : "NIR DEMO",
-      "definition" : "NIR DEMO"
-    },
-    {
-      "code" : "FINEJ",
-      "display" : "FINESS d'entité juridique",
-      "definition" : "FINESS d'entité juridique"
-    },
-    {
-      "code" : "FINEG",
-      "display" : "FINESS d'entité géographique",
-      "definition" : "FINESS d'entité géographique"
-    },
-    {
-      "code" : "SIREN",
-      "display" : "Identification de l'organisation au SIREN",
-      "definition" : "Identification de l'organisation au SIREN"
-    },
-    {
-      "code" : "SIRET",
-      "display" : "Identification de l'organisation au SIRET",
-      "definition" : "Identification de l'organisation au SIRET"
-    },
-    {
-      "code" : "IDNST",
-      "display" : "Identification nationale de structure définie par l’ANS dans le CI_SIS",
-      "definition" : "Identification nationale de structure définie par l’ANS dans le CI_SIS"
-    },
-    {
-      "code" : "INTRN",
-      "display" : "Identifiant interne",
-      "definition" : "Identifiant interne"
-    },
-    {
-      "code" : "EXTRN",
-      "display" : "Identifiant externe",
-      "definition" : "Identifiant externe"
-    }
-  ]
+  "concept" : [{
+    "code" : "ADELI",
+    "display" : "N° ADELI",
+    "definition" : "N° ADELI"
+  },
+  {
+    "code" : "RPPS",
+    "display" : "N° RPPS",
+    "definition" : "N° RPPS"
+  },
+  {
+    "code" : "IDNPS",
+    "display" : "Identifiant National de Professionnel de Santé",
+    "definition" : "Identifiant National de Professionnel de Santé"
+  },
+  {
+    "code" : "NNFRA",
+    "display" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code",
+    "definition" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code"
+  },
+  {
+    "code" : "NDP",
+    "display" : "Identifiant du patient au Dossier Pharmaceutique",
+    "definition" : "Identifiant du patient au Dossier Pharmaceutique"
+  },
+  {
+    "code" : "INS-C",
+    "display" : "Identifiant National de Santé Calculé",
+    "definition" : "Identifiant National de Santé Calculé"
+  },
+  {
+    "code" : "INS-NIA",
+    "display" : "NIR temporaire",
+    "definition" : "NIR temporaire"
+  },
+  {
+    "code" : "INS-NIR",
+    "display" : "NIR définitif",
+    "definition" : "NIR définitif"
+  },
+  {
+    "code" : "INS-NIR-TEST",
+    "display" : "NIR TEST",
+    "definition" : "NIR TEST"
+  },
+  {
+    "code" : "INS-NIR-DEMO",
+    "display" : "NIR DEMO",
+    "definition" : "NIR DEMO"
+  },
+  {
+    "code" : "FINEJ",
+    "display" : "FINESS d'entité juridique",
+    "definition" : "FINESS d'entité juridique"
+  },
+  {
+    "code" : "FINEG",
+    "display" : "FINESS d'entité géographique",
+    "definition" : "FINESS d'entité géographique"
+  },
+  {
+    "code" : "SIREN",
+    "display" : "Identification de l'organisation au SIREN",
+    "definition" : "Identification de l'organisation au SIREN"
+  },
+  {
+    "code" : "SIRET",
+    "display" : "Identification de l'organisation au SIRET",
+    "definition" : "Identification de l'organisation au SIRET"
+  },
+  {
+    "code" : "IDNST",
+    "display" : "Identification nationale de structure définie par l’ANS dans le CI_SIS",
+    "definition" : "Identification nationale de structure définie par l’ANS dans le CI_SIS"
+  },
+  {
+    "code" : "INTRN",
+    "display" : "Identifiant interne",
+    "definition" : "Identifiant interne"
+  },
+  {
+    "code" : "EXTRN",
+    "display" : "Identifiant externe",
+    "definition" : "Identifiant externe"
+  }]
 }
 
 ```

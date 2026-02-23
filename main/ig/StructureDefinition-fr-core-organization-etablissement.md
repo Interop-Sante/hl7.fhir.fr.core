@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
 
  
 Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. 
@@ -64,309 +64,275 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "servd",
-      "uri" : "http://www.omg.org/spec/ServD/1.0/",
-      "name" : "ServD"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
   "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Organization",
-        "path" : "Organization"
-      },
-      {
-        "id" : "Organization.extension:sae",
-        "path" : "Organization.extension",
-        "sliceName" : "sae",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:raisonSociale",
-        "path" : "Organization.extension",
-        "sliceName" : "raisonSociale",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.identifier",
-        "path" : "Organization.identifier",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "pattern",
-              "path" : "system"
-            },
-            {
-              "type" : "pattern",
-              "path" : "type"
-            }
-          ],
-          "description" : "Slice based on the identifier.system pattern",
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Organization.identifier.use",
-        "path" : "Organization.identifier.use",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
-        }
-      },
-      {
-        "id" : "Organization.identifier.type",
-        "path" : "Organization.identifier.type",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot-2"
-        }
-      },
-      {
-        "id" : "Organization.identifier:idNatSt",
-        "path" : "Organization.identifier",
-        "sliceName" : "idNatSt",
-        "short" : "Identifiant national de structure, à privilégier. L'idNatSt ne doit pas être construit, il peut être trouvé via l'API Annuaire Santé.",
-        "definition" : "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures. L'idNatSt ne doit pas être construit, pour trouver l'identifiant d'une structure, il suffit de faire une requête via l'API Annuaire Santé. Il s'agit de l'identifiant national à privilégier.",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Organization.identifier:idNatSt.use",
-        "path" : "Organization.identifier.use",
-        "min" : 1,
-        "patternCode" : "official"
-      },
-      {
-        "id" : "Organization.identifier:idNatSt.type",
-        "path" : "Organization.identifier.type",
-        "min" : 1,
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-              "code" : "IDNST"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Organization.identifier:idNatSt.system",
-        "path" : "Organization.identifier.system",
-        "min" : 1,
-        "patternUri" : "urn:oid:1.2.250.1.71.4.2.2"
-      },
-      {
-        "id" : "Organization.identifier:idNatSt.value",
-        "path" : "Organization.identifier.value",
-        "short" : "Identifiant national de la structure. Cet identifiant ne doit pas être construit ni interprété, la donnée peut être trouvée dans l'annuaire santé.",
-        "definition" : "L'idNatStruct est construit, selon le cas, de cette manière : 0 + ADELI rang, 1 + Numéro FINESS Etablissement, 2 + Numéro SIREN, 3 + Numéro SIRET, 4 + RPPS rang ou identifiant technique de la structure",
-        "min" : 1
-      },
-      {
-        "id" : "Organization.identifier:siren",
-        "path" : "Organization.identifier",
-        "sliceName" : "siren",
-        "short" : "Identifiant SIREN (9 chiffres)",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Organization.identifier:siren.type",
-        "path" : "Organization.identifier.type",
-        "min" : 1,
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-              "code" : "SIREN"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Organization.identifier:siren.system",
-        "path" : "Organization.identifier.system",
-        "min" : 1,
-        "patternUri" : "https://sirene.fr"
-      },
-      {
-        "id" : "Organization.identifier:siret",
-        "path" : "Organization.identifier",
-        "sliceName" : "siret",
-        "short" : "Identifiant SIRET (14 chiffres)",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Organization.identifier:siret.type",
-        "path" : "Organization.identifier.type",
-        "min" : 1,
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-              "code" : "SIRET"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Organization.identifier:siret.system",
-        "path" : "Organization.identifier.system",
-        "min" : 1,
-        "patternUri" : "https://sirene.fr"
-      },
-      {
-        "id" : "Organization.identifier:finess",
-        "path" : "Organization.identifier",
-        "sliceName" : "finess",
-        "short" : "Identifiant FINESS Entité Géographique (EG) ou Entité Juridique (EJ)",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Organization.identifier:finess.type.coding.system",
-        "path" : "Organization.identifier.type.coding.system",
-        "patternUri" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
-      },
-      {
-        "id" : "Organization.identifier:finess.type.coding.code",
-        "path" : "Organization.identifier.type.coding.code",
-        "short" : "FINEJ | FINEG"
-      },
-      {
-        "id" : "Organization.identifier:finess.system",
-        "path" : "Organization.identifier.system",
-        "min" : 1,
-        "patternUri" : "https://finess.esante.gouv.fr"
-      },
-      {
-        "id" : "Organization.identifier:rppsRang",
-        "path" : "Organization.identifier",
-        "sliceName" : "rppsRang",
-        "short" : "RPPS rang (11 chiffres RPPS + 2 chiffres RANG)",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Organization.identifier:rppsRang.type",
-        "path" : "Organization.identifier.type",
-        "min" : 1,
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-              "code" : "INTRN"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Organization.identifier:rppsRang.system",
-        "path" : "Organization.identifier.system",
-        "min" : 1,
-        "patternUri" : "https://rppsrang.esante.gouv.fr"
-      },
-      {
-        "id" : "Organization.type",
-        "path" : "Organization.type",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "$this"
-            }
-          ],
-          "rules" : "open"
+    "element" : [{
+      "id" : "Organization",
+      "path" : "Organization"
+    },
+    {
+      "id" : "Organization.extension:sae",
+      "path" : "Organization.extension",
+      "sliceName" : "sae",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:raisonSociale",
+      "path" : "Organization.extension",
+      "sliceName" : "raisonSociale",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.identifier",
+      "path" : "Organization.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "system"
         },
-        "binding" : {
-          "strength" : "example",
-          "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0-ballot-2"
-        }
-      },
-      {
-        "id" : "Organization.name",
-        "path" : "Organization.name",
-        "short" : "Raison sociale de la structure",
-        "mustSupport" : true
+        {
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "description" : "Slice based on the identifier.system pattern",
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Organization.identifier.use",
+      "path" : "Organization.identifier.use",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+      }
+    },
+    {
+      "id" : "Organization.identifier.type",
+      "path" : "Organization.identifier.type",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot-2"
+      }
+    },
+    {
+      "id" : "Organization.identifier:idNatSt",
+      "path" : "Organization.identifier",
+      "sliceName" : "idNatSt",
+      "short" : "Identifiant national de structure, à privilégier. L'idNatSt ne doit pas être construit, il peut être trouvé via l'API Annuaire Santé.",
+      "definition" : "Identifiant national de structure unique délivré par une autorité d'enregistrement tel que défini dans l'Annexe Transverse Source des données métier pour les professionnels et les structures. L'idNatSt ne doit pas être construit, pour trouver l'identifiant d'une structure, il suffit de faire une requête via l'API Annuaire Santé. Il s'agit de l'identifiant national à privilégier.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Organization.identifier:idNatSt.use",
+      "path" : "Organization.identifier.use",
+      "min" : 1,
+      "patternCode" : "official"
+    },
+    {
+      "id" : "Organization.identifier:idNatSt.type",
+      "path" : "Organization.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+          "code" : "IDNST"
+        }]
+      }
+    },
+    {
+      "id" : "Organization.identifier:idNatSt.system",
+      "path" : "Organization.identifier.system",
+      "min" : 1,
+      "patternUri" : "urn:oid:1.2.250.1.71.4.2.2"
+    },
+    {
+      "id" : "Organization.identifier:idNatSt.value",
+      "path" : "Organization.identifier.value",
+      "short" : "Identifiant national de la structure. Cet identifiant ne doit pas être construit ni interprété, la donnée peut être trouvée dans l'annuaire santé.",
+      "definition" : "L'idNatStruct est construit, selon le cas, de cette manière : 0 + ADELI rang, 1 + Numéro FINESS Etablissement, 2 + Numéro SIREN, 3 + Numéro SIRET, 4 + RPPS rang ou identifiant technique de la structure",
+      "min" : 1
+    },
+    {
+      "id" : "Organization.identifier:siren",
+      "path" : "Organization.identifier",
+      "sliceName" : "siren",
+      "short" : "Identifiant SIREN (9 chiffres)",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Organization.identifier:siren.type",
+      "path" : "Organization.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+          "code" : "SIREN"
+        }]
+      }
+    },
+    {
+      "id" : "Organization.identifier:siren.system",
+      "path" : "Organization.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://sirene.fr"
+    },
+    {
+      "id" : "Organization.identifier:siret",
+      "path" : "Organization.identifier",
+      "sliceName" : "siret",
+      "short" : "Identifiant SIRET (14 chiffres)",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Organization.identifier:siret.type",
+      "path" : "Organization.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+          "code" : "SIRET"
+        }]
+      }
+    },
+    {
+      "id" : "Organization.identifier:siret.system",
+      "path" : "Organization.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://sirene.fr"
+    },
+    {
+      "id" : "Organization.identifier:finess",
+      "path" : "Organization.identifier",
+      "sliceName" : "finess",
+      "short" : "Identifiant FINESS Entité Géographique (EG) ou Entité Juridique (EJ)",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Organization.identifier:finess.type.coding.system",
+      "path" : "Organization.identifier.type.coding.system",
+      "patternUri" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"
+    },
+    {
+      "id" : "Organization.identifier:finess.type.coding.code",
+      "path" : "Organization.identifier.type.coding.code",
+      "short" : "FINEJ | FINEG"
+    },
+    {
+      "id" : "Organization.identifier:finess.system",
+      "path" : "Organization.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://finess.esante.gouv.fr"
+    },
+    {
+      "id" : "Organization.identifier:rppsRang",
+      "path" : "Organization.identifier",
+      "sliceName" : "rppsRang",
+      "short" : "RPPS rang (11 chiffres RPPS + 2 chiffres RANG)",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Organization.identifier:rppsRang.type",
+      "path" : "Organization.identifier.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+          "code" : "INTRN"
+        }]
+      }
+    },
+    {
+      "id" : "Organization.identifier:rppsRang.system",
+      "path" : "Organization.identifier.system",
+      "min" : 1,
+      "patternUri" : "https://rppsrang.esante.gouv.fr"
+    },
+    {
+      "id" : "Organization.type",
+      "path" : "Organization.type",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0-ballot-2"
+      }
+    },
+    {
+      "id" : "Organization.name",
+      "path" : "Organization.name",
+      "short" : "Raison sociale de la structure",
+      "mustSupport" : true
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetHeartRateMeasurementMethod |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreValueSetHeartRateMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the heart rate was measured. 
@@ -23,6 +23,8 @@ SELECT SNOMED CT code system values that describe how the heart rate was measure
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,9 +48,7 @@ SELECT SNOMED CT code system values that describe how the heart rate was measure
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-heartrate-measurement-method",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method",
   "version" : "2.2.0-ballot-2",
@@ -56,81 +56,68 @@ SELECT SNOMED CT code system values that describe how the heart rate was measure
   "title" : "Heart Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "SELECT SNOMED CT code system values that describe how the heart rate was measured.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "37931006",
+        "display" : "Auscultation (procedure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "37931006",
-            "display" : "Auscultation (procedure)"
-          },
-          {
-            "code" : "268447006",
-            "display" : "Doppler studies (procedure)"
-          },
-          {
-            "code" : "29303009",
-            "display" : "Electrocardiographic procedure (procedure)"
-          },
-          {
-            "code" : "13385008",
-            "display" : "Mediate auscultation (procedure)"
-          },
-          {
-            "code" : "264598005",
-            "display" : "Oximetry (procedure)"
-          },
-          {
-            "code" : "113011001",
-            "display" : "Palpation (procedure)"
-          },
-          {
-            "code" : "277917001",
-            "display" : "Thoracic impedance cardiography (procedure)"
-          },
-          {
-            "code" : "239516002",
-            "display" : "Monitoring procedure (regime/therapy)"
-          }
-        ]
-      }
-    ]
+        "code" : "268447006",
+        "display" : "Doppler studies (procedure)"
+      },
+      {
+        "code" : "29303009",
+        "display" : "Electrocardiographic procedure (procedure)"
+      },
+      {
+        "code" : "13385008",
+        "display" : "Mediate auscultation (procedure)"
+      },
+      {
+        "code" : "264598005",
+        "display" : "Oximetry (procedure)"
+      },
+      {
+        "code" : "113011001",
+        "display" : "Palpation (procedure)"
+      },
+      {
+        "code" : "277917001",
+        "display" : "Thoracic impedance cardiography (procedure)"
+      },
+      {
+        "code" : "239516002",
+        "display" : "Monitoring procedure (regime/therapy)"
+      }]
+    }]
   }
 }
 

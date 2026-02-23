@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementBodyLocation |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementBodyLocation |
 
  
 SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured. 
@@ -23,6 +23,8 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,9 +48,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-bp-meas-body-location",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location",
   "version" : "2.2.0-ballot-2",
@@ -56,121 +56,108 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "Blood Pressure Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "49256001",
+        "display" : "Structure of dorsal digital artery of foot (body structure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "49256001",
-            "display" : "Structure of dorsal digital artery of foot (body structure)"
-          },
-          {
-            "code" : "368469003",
-            "display" : "Structure of proper volar digital arteries (body structure)"
-          },
-          {
-            "code" : "17137000",
-            "display" : "Structure of brachial artery (body structure)"
-          },
-          {
-            "code" : "723961002",
-            "display" : "Structure of left brachial artery (body structure)"
-          },
-          {
-            "code" : "723962009",
-            "display" : "Structure of right brachial artery (body structure)"
-          },
-          {
-            "code" : "7657000",
-            "display" : "Structure of femoral artery (body structure)"
-          },
-          {
-            "code" : "113270003",
-            "display" : "Structure of left femoral artery (body structure)"
-          },
-          {
-            "code" : "69833005",
-            "display" : "Structure of right femoral artery (body structure)"
-          },
-          {
-            "code" : "45631007",
-            "display" : "Structure of radial artery (body structure)"
-          },
-          {
-            "code" : "368504007",
-            "display" : "Structure of left radial artery (body structure)"
-          },
-          {
-            "code" : "368503001",
-            "display" : "Structure of right radial artery (body structure)"
-          },
-          {
-            "code" : "13363002",
-            "display" : "Structure of posterior tibial artery (body structure)"
-          },
-          {
-            "code" : "214912001",
-            "display" : "Structure of left posterior tibial artery (body structure)"
-          },
-          {
-            "code" : "214811007",
-            "display" : "Structure of right posterior tibial artery (body structure)"
-          },
-          {
-            "code" : "54247002",
-            "display" : "Ascending aorta structure (body structure)"
-          },
-          {
-            "code" : "281130003",
-            "display" : "Descending aorta structure (body structure)"
-          },
-          {
-            "code" : "57034009",
-            "display" : "Aortic arch structure (body structure)"
-          },
-          {
-            "code" : "7832008",
-            "display" : "Abdominal aorta structure (body structure)"
-          }
-        ]
-      }
-    ]
+        "code" : "368469003",
+        "display" : "Structure of proper volar digital arteries (body structure)"
+      },
+      {
+        "code" : "17137000",
+        "display" : "Structure of brachial artery (body structure)"
+      },
+      {
+        "code" : "723961002",
+        "display" : "Structure of left brachial artery (body structure)"
+      },
+      {
+        "code" : "723962009",
+        "display" : "Structure of right brachial artery (body structure)"
+      },
+      {
+        "code" : "7657000",
+        "display" : "Structure of femoral artery (body structure)"
+      },
+      {
+        "code" : "113270003",
+        "display" : "Structure of left femoral artery (body structure)"
+      },
+      {
+        "code" : "69833005",
+        "display" : "Structure of right femoral artery (body structure)"
+      },
+      {
+        "code" : "45631007",
+        "display" : "Structure of radial artery (body structure)"
+      },
+      {
+        "code" : "368504007",
+        "display" : "Structure of left radial artery (body structure)"
+      },
+      {
+        "code" : "368503001",
+        "display" : "Structure of right radial artery (body structure)"
+      },
+      {
+        "code" : "13363002",
+        "display" : "Structure of posterior tibial artery (body structure)"
+      },
+      {
+        "code" : "214912001",
+        "display" : "Structure of left posterior tibial artery (body structure)"
+      },
+      {
+        "code" : "214811007",
+        "display" : "Structure of right posterior tibial artery (body structure)"
+      },
+      {
+        "code" : "54247002",
+        "display" : "Ascending aorta structure (body structure)"
+      },
+      {
+        "code" : "281130003",
+        "display" : "Descending aorta structure (body structure)"
+      },
+      {
+        "code" : "57034009",
+        "display" : "Aortic arch structure (body structure)"
+      },
+      {
+        "code" : "7832008",
+        "display" : "Abdominal aorta structure (body structure)"
+      }]
+    }]
   }
 }
 

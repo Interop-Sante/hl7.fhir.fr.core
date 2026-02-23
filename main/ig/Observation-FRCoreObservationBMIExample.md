@@ -33,56 +33,42 @@ Profil: [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observatio
   "resourceType" : "Observation",
   "id" : "FRCoreObservationBMIExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "39156-5"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "39156-5"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",
-  "performer" : [
-    {
-      "reference" : "Practitioner/FRCorePractitionerExample"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/FRCorePractitionerExample"
+  }],
   "valueQuantity" : {
     "value" : 28,
     "unit" : "Kg/m2",
     "system" : "http://unitsofmeasure.org",
     "code" : "kg/m2"
   },
-  "interpretation" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "code" : "H",
-          "display" : "High"
-        }
-      ]
-    }
-  ]
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "H",
+      "display" : "High"
+    }]
+  }]
 }
 
 ```

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). 
@@ -46,9 +46,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-patient-identifier-type",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type",
   "version" : "2.2.0-ballot-2",
@@ -56,94 +54,80 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "concept" : [
-          {
-            "code" : "PPN",
-            "display" : "Passport Number"
-          },
-          {
-            "code" : "PN",
-            "display" : "Person Number"
-          },
-          {
-            "code" : "PI",
-            "display" : "Patient Identifier"
-          },
-          {
-            "code" : "RRI",
-            "display" : "Regional Registry ID"
-          },
-          {
-            "code" : "NH",
-            "display" : "Numéro de sécurité sociale"
-          }
-        ]
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "concept" : [{
+        "code" : "PPN",
+        "display" : "Passport Number"
       },
       {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-        "concept" : [
-          {
-            "code" : "NNFRA",
-            "display" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code"
-          },
-          {
-            "code" : "NDP",
-            "display" : "Identifiant du patient au Dossier Pharmaceutique"
-          },
-          {
-            "code" : "INS-C",
-            "display" : "Identifiant National de Santé Calculé"
-          },
-          {
-            "code" : "INS-NIA",
-            "display" : "NIR temporaire"
-          },
-          {
-            "code" : "INS-NIR",
-            "display" : "NIR définitif"
-          }
-        ]
-      }
-    ]
+        "code" : "PN",
+        "display" : "Person Number"
+      },
+      {
+        "code" : "PI",
+        "display" : "Patient Identifier"
+      },
+      {
+        "code" : "RRI",
+        "display" : "Regional Registry ID"
+      },
+      {
+        "code" : "NH",
+        "display" : "Numéro de sécurité sociale"
+      }]
+    },
+    {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+      "version" : "2.2.0-ballot-2",
+      "concept" : [{
+        "code" : "NNFRA",
+        "display" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code"
+      },
+      {
+        "code" : "NDP",
+        "display" : "Identifiant du patient au Dossier Pharmaceutique"
+      },
+      {
+        "code" : "INS-C",
+        "display" : "Identifiant National de Santé Calculé"
+      },
+      {
+        "code" : "INS-NIA",
+        "display" : "NIR temporaire"
+      },
+      {
+        "code" : "INS-NIR",
+        "display" : "NIR définitif"
+      }]
+    }]
   }
 }
 

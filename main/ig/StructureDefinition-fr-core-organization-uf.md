@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreOrganizationUFProfile |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreOrganizationUFProfile |
 
  
 Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement. 
@@ -88,208 +88,160 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFProfile",
   "title" : "FR Core Organization UF Profile",
   "status" : "active",
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "servd",
-      "uri" : "http://www.omg.org/spec/ServD/1.0/",
-      "name" : "ServD"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
   "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Organization",
-        "path" : "Organization"
-      },
-      {
-        "id" : "Organization.extension:discplineEquipement",
-        "path" : "Organization.extension",
-        "sliceName" : "discplineEquipement",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:typeActivite",
-        "path" : "Organization.extension",
-        "sliceName" : "typeActivite",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:champActivite",
-        "path" : "Organization.extension",
-        "sliceName" : "champActivite",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:placeHebergement",
-        "path" : "Organization.extension",
-        "sliceName" : "placeHebergement",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:externe",
-        "path" : "Organization.extension",
-        "sliceName" : "externe",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:indicateur",
-        "path" : "Organization.extension",
-        "sliceName" : "indicateur",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:demandeuseActe",
-        "path" : "Organization.extension",
-        "sliceName" : "demandeuseActe",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.extension:executanteActe",
-        "path" : "Organization.extension",
-        "sliceName" : "executanteActe",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte|2.2.0-ballot-2"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Organization.type",
-        "path" : "Organization.type",
-        "fixedCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-              "code" : "UF"
-            }
-          ]
-        }
+    "element" : [{
+      "id" : "Organization",
+      "path" : "Organization"
+    },
+    {
+      "id" : "Organization.extension:discplineEquipement",
+      "path" : "Organization.extension",
+      "sliceName" : "discplineEquipement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:typeActivite",
+      "path" : "Organization.extension",
+      "sliceName" : "typeActivite",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:champActivite",
+      "path" : "Organization.extension",
+      "sliceName" : "champActivite",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:placeHebergement",
+      "path" : "Organization.extension",
+      "sliceName" : "placeHebergement",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:externe",
+      "path" : "Organization.extension",
+      "sliceName" : "externe",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:indicateur",
+      "path" : "Organization.extension",
+      "sliceName" : "indicateur",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:demandeuseActe",
+      "path" : "Organization.extension",
+      "sliceName" : "demandeuseActe",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.extension:executanteActe",
+      "path" : "Organization.extension",
+      "sliceName" : "executanteActe",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte|2.2.0-ballot-2"]
+      }]
+    },
+    {
+      "id" : "Organization.type",
+      "path" : "Organization.type",
+      "fixedCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+          "code" : "UF"
+        }]
       }
-    ]
+    }]
   }
 }
 

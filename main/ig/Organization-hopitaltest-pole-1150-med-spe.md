@@ -27,48 +27,36 @@ Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.
   "resourceType" : "Organization",
   "id" : "hopitaltest-pole-1150-med-spe",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"]
   },
-  "extension" : [
+  "extension" : [{
+    "extension" : [{
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "valueReference" : {
+        "reference" : "Organization/hopitaltest-uf-4420-dialyse"
+      }
+    },
     {
-      "extension" : [
-        {
-          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-          "valueReference" : {
-            "reference" : "Organization/hopitaltest-uf-4420-dialyse"
-          }
-        },
-        {
-          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-          "valueReference" : {
-            "reference" : "Organization/hopitaltest-uac-4420-uac-01"
-          }
-        }
-      ],
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"
-    }
-  ],
-  "identifier" : [
-    {
-      "use" : "official",
-      "system" : "http://hopitalTest.fr/namingsystem/organization",
-      "value" : "1150"
-    }
-  ],
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-          "code" : "POLE",
-          "display" : "Pole"
-        }
-      ],
-      "text" : "POLE"
-    }
-  ],
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+      "valueReference" : {
+        "reference" : "Organization/hopitaltest-uac-4420-uac-01"
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://hopitalTest.fr/namingsystem/organization",
+    "value" : "1150"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "POLE",
+      "display" : "Pole"
+    }],
+    "text" : "POLE"
+  }],
   "name" : "Pole Medecines spécialisées"
 }
 

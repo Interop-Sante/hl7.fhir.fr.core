@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
+| Active as of 2026-02-23 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
 
  
 Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed. 
@@ -24,6 +24,8 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -47,9 +49,7 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-spo2-body-location",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location",
   "version" : "2.2.0-ballot-2",
@@ -57,65 +57,52 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T10:02:14+00:00",
+  "date" : "2026-02-23T09:26:22+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "48800003",
+        "display" : "Ear lobule structure (body structure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "48800003",
-            "display" : "Ear lobule structure (body structure)"
-          },
-          {
-            "code" : "7569003",
-            "display" : "Finger structure (body structure)"
-          },
-          {
-            "code" : "52795006",
-            "display" : "Forehead structure (body structure)"
-          },
-          {
-            "code" : "29707007",
-            "display" : "Toe structure (body structure)"
-          }
-        ]
-      }
-    ]
+        "code" : "7569003",
+        "display" : "Finger structure (body structure)"
+      },
+      {
+        "code" : "52795006",
+        "display" : "Forehead structure (body structure)"
+      },
+      {
+        "code" : "29707007",
+        "display" : "Toe structure (body structure)"
+      }]
+    }]
   }
 }
 
