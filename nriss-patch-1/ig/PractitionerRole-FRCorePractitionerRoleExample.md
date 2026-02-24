@@ -34,18 +34,14 @@ Profil: [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-rol
     "versionId" : "1",
     "lastUpdated" : "2025-04-28T18:19:34.908+02:00",
     "source" : "https://annuaire.sante.fr",
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role"]
   },
   "language" : "fr",
-  "identifier" : [
-    {
-      "use" : "official",
-      "system" : "https://rpps.esante.gouv.fr",
-      "value" : "1011848351"
-    }
-  ],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "https://rpps.esante.gouv.fr",
+    "value" : "1011848351"
+  }],
   "active" : true,
   "practitioner" : {
     "reference" : "Practitioner/FRCorePractitionerExample"
@@ -53,32 +49,24 @@ Profil: [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-rol
   "organization" : {
     "reference" : "Organization/FRCoreOrganizationExample"
   },
-  "code" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite",
-          "code" : "GENR01"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
-          "code" : "L"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
-          "code" : "FON-05"
-        }
-      ]
-    }
-  ]
+  "code" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite",
+      "code" : "GENR01"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+      "code" : "L"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+      "code" : "FON-05"
+    }]
+  }]
 }
 
 ```

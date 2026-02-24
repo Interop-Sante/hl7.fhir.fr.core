@@ -39,23 +39,19 @@
 {
   "resourceType" : "Location",
   "id" : "loc-radiologie-z",
-  "identifier" : [
-    {
-      "use" : "official",
-      "system" : "urn:oid:1.2.250.1.1.1.2",
-      "value" : "HOSPZ-RADIO"
-    }
-  ],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.250.1.1.1.2",
+    "value" : "HOSPZ-RADIO"
+  }],
   "status" : "active",
   "name" : "Centre de radiologie Hôpital Z",
   "description" : "Imagerie médicale, radiographies, scanners, IRM",
   "mode" : "instance",
-  "telecom" : [
-    {
-      "system" : "email",
-      "value" : "radiologie@hosp-z.fr"
-    }
-  ],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "radiologie@hosp-z.fr"
+  }],
   "address" : {
     "line" : ["10 rue de la Santé"],
     "city" : "Paris",
@@ -64,13 +60,11 @@
     "country" : "FRA"
   },
   "physicalType" : {
-    "coding" : [
-      {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type",
-        "code" : "BTMNT",
-        "display" : "Bâtiment"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type",
+      "code" : "BTMNT",
+      "display" : "Bâtiment"
+    }]
   },
   "position" : {
     "longitude" : 2.3333,

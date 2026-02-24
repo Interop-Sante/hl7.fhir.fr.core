@@ -29,40 +29,30 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
   "resourceType" : "Location",
   "id" : "hopitaltest-endocrino-ch04-litF",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
-      "valueCoding" : {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
-        "code" : "FNTR",
-        "display" : "Fenêtre"
-      }
+  "extension" : [{
+    "url" : "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
+    "valueCoding" : {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
+      "code" : "FNTR",
+      "display" : "Fenêtre"
     }
-  ],
+  }],
   "status" : "active",
   "name" : "Lit Fenetre - chambre 04",
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
-          "code" : "LIT",
-          "display" : "Lit"
-        }
-      ],
-      "text" : "Lit"
-    }
-  ],
-  "telecom" : [
-    {
-      "system" : "phone",
-      "value" : "84921"
-    }
-  ],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type",
+      "code" : "LIT",
+      "display" : "Lit"
+    }],
+    "text" : "Lit"
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "84921"
+  }],
   "partOf" : {
     "reference" : "Organization/hopitaltest-endocrino-ch04"
   }

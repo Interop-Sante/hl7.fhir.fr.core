@@ -48,105 +48,88 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-availability-time-rule",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
-      "valueMarkdown" : "Availability Time Rule"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode" : "informative"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger" : 1
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode" : "fhir"
-    }
-  ],
+  "language" : "fr-FR",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
+    "valueMarkdown" : "Availability Time Rule"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreValueSetAvailabilityTimeRule",
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Spécifications des périodes récurrentes.\r\nSpecification of the recurrent periods ",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://www.ietf.org/rfc/rfc2445",
+      "concept" : [{
+        "code" : "SECONDLY",
+        "display" : "Par seconde"
+      },
       {
-        "system" : "https://www.ietf.org/rfc/rfc2445",
-        "concept" : [
-          {
-            "code" : "SECONDLY",
-            "display" : "Par seconde"
-          },
-          {
-            "code" : "MINUTELY",
-            "display" : "Par minute"
-          },
-          {
-            "code" : "HOURLY",
-            "display" : "Par heure"
-          },
-          {
-            "code" : "DAILY",
-            "display" : "Par jour"
-          },
-          {
-            "code" : "WEEKLY",
-            "display" : "Par semaine"
-          },
-          {
-            "code" : "MONTHLY",
-            "display" : "Par mois"
-          },
-          {
-            "code" : "YEARLY",
-            "display" : "Par an"
-          }
-        ]
-      }
-    ]
+        "code" : "MINUTELY",
+        "display" : "Par minute"
+      },
+      {
+        "code" : "HOURLY",
+        "display" : "Par heure"
+      },
+      {
+        "code" : "DAILY",
+        "display" : "Par jour"
+      },
+      {
+        "code" : "WEEKLY",
+        "display" : "Par semaine"
+      },
+      {
+        "code" : "MONTHLY",
+        "display" : "Par mois"
+      },
+      {
+        "code" : "YEARLY",
+        "display" : "Par an"
+      }]
+    }]
   }
 }
 

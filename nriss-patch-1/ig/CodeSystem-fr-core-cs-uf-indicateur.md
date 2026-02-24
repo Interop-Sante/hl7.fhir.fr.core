@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemUFIndicateur |
+| Draft as of 2026-02-24 | *Computable Name*:FRCoreCodeSystemUFIndicateur |
 
  
 Système de codage permettant de définir les indicateurs d’une unité fonctionnelle. 
@@ -27,84 +27,78 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-uf-indicateur",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemUFIndicateur",
   "title" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Système de codage permettant de définir les indicateurs d'une unité fonctionnelle.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 7,
-  "concept" : [
-    {
-      "code" : "HEB",
-      "display" : "Hébergement"
-    },
-    {
-      "code" : "SOIN",
-      "display" : "Soin"
-    },
-    {
-      "code" : "ADMIN",
-      "display" : "Administrative"
-    },
-    {
-      "code" : "MED",
-      "display" : "Médicale"
-    },
-    {
-      "code" : "TECH",
-      "display" : "Technique"
-    },
-    {
-      "code" : "MEDICOTECH",
-      "display" : "Médico technique (radio, scanner, ...)"
-    },
-    {
-      "code" : "MAG",
-      "display" : "Magasin"
-    }
-  ]
+  "concept" : [{
+    "code" : "HEB",
+    "display" : "Hébergement",
+    "definition" : "Hébergement"
+  },
+  {
+    "code" : "SOIN",
+    "display" : "Soin",
+    "definition" : "Soin"
+  },
+  {
+    "code" : "ADMIN",
+    "display" : "Administrative",
+    "definition" : "Administrative"
+  },
+  {
+    "code" : "MED",
+    "display" : "Médicale",
+    "definition" : "Médicale"
+  },
+  {
+    "code" : "TECH",
+    "display" : "Technique",
+    "definition" : "Technique"
+  },
+  {
+    "code" : "MEDICOTECH",
+    "display" : "Médico technique (radio, scanner, ...)",
+    "definition" : "Médico technique (radio, scanner, ...)"
+  },
+  {
+    "code" : "MAG",
+    "display" : "Magasin",
+    "definition" : "Magasin"
+  }]
 }
 
 ```

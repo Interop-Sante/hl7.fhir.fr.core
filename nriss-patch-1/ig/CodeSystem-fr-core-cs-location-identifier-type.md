@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemLocationIdentifierType |
+| Draft as of 2026-02-24 | *Computable Name*:FRCoreCodeSystemLocationIdentifierType |
 
  
 Location identifier type 
@@ -27,76 +27,63 @@ Location identifier type
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-location-identifier-type",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemLocationIdentifierType",
   "title" : "FR Core CodeSystem Location Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Location identifier type",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 4,
-  "concept" : [
-    {
-      "code" : "INTRN",
-      "display" : "Identifiant interne",
-      "definition" : "Identifiant interne"
-    },
-    {
-      "code" : "EXTRN",
-      "display" : "Identifiant externe",
-      "definition" : "Identifiant externe"
-    },
-    {
-      "code" : "GLBL",
-      "display" : "Identifiant global",
-      "definition" : "Identifiant global"
-    },
-    {
-      "code" : "IDNST",
-      "display" : "Identification nationale de structure définie par l'ANS dans le CI-SIS",
-      "definition" : "Identification nationale de structure définie par l'ANS dans le CI-SIS"
-    }
-  ]
+  "concept" : [{
+    "code" : "INTRN",
+    "display" : "Identifiant interne",
+    "definition" : "Identifiant interne"
+  },
+  {
+    "code" : "EXTRN",
+    "display" : "Identifiant externe",
+    "definition" : "Identifiant externe"
+  },
+  {
+    "code" : "GLBL",
+    "display" : "Identifiant global",
+    "definition" : "Identifiant global"
+  },
+  {
+    "code" : "IDNST",
+    "display" : "Identification nationale de structure définie par l'ANS dans le CI-SIS",
+    "definition" : "Identification nationale de structure définie par l'ANS dans le CI-SIS"
+  }]
 }
 
 ```

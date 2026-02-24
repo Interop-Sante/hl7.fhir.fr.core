@@ -31,39 +31,29 @@ Profil: [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-ob
   "resourceType" : "Observation",
   "id" : "FRCoreObservationBodyWeightExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "29463-7"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",
-  "performer" : [
-    {
-      "reference" : "Practitioner/FRCorePractitionerExample"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Practitioner/FRCorePractitionerExample"
+  }],
   "valueQuantity" : {
     "value" : 96,
     "unit" : "Kg",

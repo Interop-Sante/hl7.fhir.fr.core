@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetBodyPosition |
+| Active as of 2026-02-24 | *Computable Name*:FRCoreValueSetBodyPosition |
 
  
 SELECT SNOMED CT code system values the position in which the individual was in during a measurement. 
@@ -23,6 +23,8 @@ SELECT SNOMED CT code system values the position in which the individual was in 
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,9 +48,7 @@ SELECT SNOMED CT code system values the position in which the individual was in 
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-body-position",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position",
   "version" : "2.2.0-ballot-2",
@@ -56,101 +56,88 @@ SELECT SNOMED CT code system values the position in which the individual was in 
   "title" : "Body Position value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "SELECT SNOMED CT code system values the position in which the individual was in during a measurement.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "30212006",
+        "display" : "Fowler's position (finding)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "30212006",
-            "display" : "Fowler's position (finding)"
-          },
-          {
-            "code" : "26527006",
-            "display" : "Inverse Trendelenburg position (finding)"
-          },
-          {
-            "code" : "102536004",
-            "display" : "Left lateral decubitus position (finding)"
-          },
-          {
-            "code" : "414585002",
-            "display" : "Left lateral tilt (finding)"
-          },
-          {
-            "code" : "10904000",
-            "display" : "Orthostatic body position (finding)"
-          },
-          {
-            "code" : "1240000",
-            "display" : "Prone body position (finding)"
-          },
-          {
-            "code" : "102538003",
-            "display" : "Recumbent body position (finding)"
-          },
-          {
-            "code" : "423413008",
-            "display" : "Reverse trendelenburg positioning (finding)"
-          },
-          {
-            "code" : "102535000",
-            "display" : "Right lateral decubitus position (finding)"
-          },
-          {
-            "code" : "415346000",
-            "display" : "Right lateral tilt (finding)"
-          },
-          {
-            "code" : "33586001",
-            "display" : "Sitting position (finding)"
-          },
-          {
-            "code" : "40199007",
-            "display" : "Supine body position (finding)"
-          },
-          {
-            "code" : "34106002",
-            "display" : "Trendelenburg position (finding)"
-          }
-        ]
-      }
-    ]
+        "code" : "26527006",
+        "display" : "Inverse Trendelenburg position (finding)"
+      },
+      {
+        "code" : "102536004",
+        "display" : "Left lateral decubitus position (finding)"
+      },
+      {
+        "code" : "414585002",
+        "display" : "Left lateral tilt (finding)"
+      },
+      {
+        "code" : "10904000",
+        "display" : "Orthostatic body position (finding)"
+      },
+      {
+        "code" : "1240000",
+        "display" : "Prone body position (finding)"
+      },
+      {
+        "code" : "102538003",
+        "display" : "Recumbent body position (finding)"
+      },
+      {
+        "code" : "423413008",
+        "display" : "Reverse trendelenburg positioning (finding)"
+      },
+      {
+        "code" : "102535000",
+        "display" : "Right lateral decubitus position (finding)"
+      },
+      {
+        "code" : "415346000",
+        "display" : "Right lateral tilt (finding)"
+      },
+      {
+        "code" : "33586001",
+        "display" : "Sitting position (finding)"
+      },
+      {
+        "code" : "40199007",
+        "display" : "Supine body position (finding)"
+      },
+      {
+        "code" : "34106002",
+        "display" : "Trendelenburg position (finding)"
+      }]
+    }]
   }
 }
 

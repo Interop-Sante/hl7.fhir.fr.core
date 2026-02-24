@@ -27,30 +27,22 @@ Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
   "resourceType" : "Encounter",
   "id" : "FRCoreEncounterExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"]
   },
-  "extension" : [
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date",
-      "valueDate" : "2019-01-02"
-    }
-  ],
-  "identifier" : [
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
-            "code" : "VN"
-          }
-        ]
-      },
-      "system" : "http://encounter-identifier-system.org",
-      "value" : "123"
-    }
-  ],
+  "extension" : [{
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date",
+    "valueDate" : "2019-01-02"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type",
+        "code" : "VN"
+      }]
+    },
+    "system" : "http://encounter-identifier-system.org",
+    "value" : "123"
+  }],
   "status" : "in-progress",
   "class" : {
     "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",

@@ -106,7 +106,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet BP measurement method](ValueSet-fr-core-vs-bp-method.md) | A coded type for the blood pressure measurement method |
 | [FR Core ValueSet BodyPosition](ValueSet-fr-core-vs-height-body-position.md) | ValueSet Body Position |
 | [FR Core ValueSet COG commune pays](ValueSet-fr-core-vs-cog-commune-pays.md) | Value set town and country COG |
-| [FR Core ValueSet Categorie SAE Etablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md) | Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 |
+| [FR Core ValueSet Categorie SAE Etablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md) | Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 |
 | [FR Core ValueSet Codes Tarifs - nomenclature TNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md) | Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations). |
 | [FR Core ValueSet Contact relationship](ValueSet-fr-core-vs-contact-relationship.md) | A set of codes that can be used to indicate the relationship between a Patient and a Related Person. |
 | [FR Core ValueSet Email type](ValueSet-fr-core-vs-email-type.md) | The type of email |

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemMethodCollection |
+| Active as of 2026-02-24 | *Computable Name*:FRCoreCodeSystemMethodCollection |
 
  
 Méthode de collection de l’identité 
@@ -27,81 +27,68 @@ Méthode de collection de l’identité
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-method-collection",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemMethodCollection",
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Méthode de collection de l'identité",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 5,
-  "concept" : [
-    {
-      "code" : "SM",
-      "display" : "Saisie manuelle",
-      "definition" : "Saisie manuelle"
-    },
-    {
-      "code" : "CV",
-      "display" : "Carte vitale",
-      "definition" : "Carte vitale"
-    },
-    {
-      "code" : "INSI",
-      "display" : "Téléservice INSI",
-      "definition" : "Téléservice INSI"
-    },
-    {
-      "code" : "CB",
-      "display" : "Code à barre",
-      "definition" : "Code à barre"
-    },
-    {
-      "code" : "RFID",
-      "display" : "Puce RFID",
-      "definition" : "Puce RFID"
-    }
-  ]
+  "concept" : [{
+    "code" : "SM",
+    "display" : "Saisie manuelle",
+    "definition" : "Saisie manuelle"
+  },
+  {
+    "code" : "CV",
+    "display" : "Carte vitale",
+    "definition" : "Carte vitale"
+  },
+  {
+    "code" : "INSI",
+    "display" : "Téléservice INSI",
+    "definition" : "Téléservice INSI"
+  },
+  {
+    "code" : "CB",
+    "display" : "Code à barre",
+    "definition" : "Code à barre"
+  },
+  {
+    "code" : "RFID",
+    "display" : "Puce RFID",
+    "definition" : "Puce RFID"
+  }]
 }
 
 ```

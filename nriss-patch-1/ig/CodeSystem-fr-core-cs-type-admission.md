@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-02-17 | *Computable Name*:FRCoreCodeSystemTypeAdmission |
+| Draft as of 2026-02-24 | *Computable Name*:FRCoreCodeSystemTypeAdmission |
 
  
 Admission type 
@@ -27,66 +27,53 @@ Admission type
   "resourceType" : "CodeSystem",
   "id" : "fr-core-cs-type-admission",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
   "version" : "2.2.0-ballot-2",
   "name" : "FRCoreCodeSystemTypeAdmission",
   "title" : "FR Core CodeSystem Type Admission",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "Admission type",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 2,
-  "concept" : [
-    {
-      "code" : "RM",
-      "display" : "Rétrocession de médicament",
-      "definition" : "Rétrocession de médicament"
-    },
-    {
-      "code" : "IE",
-      "display" : "Prestation inter-établissements",
-      "definition" : "Prestation inter-établissements"
-    }
-  ]
+  "concept" : [{
+    "code" : "RM",
+    "display" : "Rétrocession de médicament",
+    "definition" : "Rétrocession de médicament"
+  },
+  {
+    "code" : "IE",
+    "display" : "Prestation inter-établissements",
+    "definition" : "Prestation inter-établissements"
+  }]
 }
 
 ```

@@ -43,83 +43,63 @@ Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md
   "resourceType" : "Appointment",
   "id" : "FRCoreAppointmentExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"]
   },
-  "extension" : [
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
-      "valueReference" : {
-        "reference" : "Patient/FRCorePatientExample"
-      }
+  "extension" : [{
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
+    "valueReference" : {
+      "reference" : "Patient/FRCorePatientExample"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "http://appointment-identifier-system.org",
-      "value" : "123"
-    }
-  ],
+  }],
+  "identifier" : [{
+    "system" : "http://appointment-identifier-system.org",
+    "value" : "123"
+  }],
   "status" : "proposed",
-  "serviceType" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/service-type",
-          "code" : "1",
-          "display" : "Adoption/Permanent Care Info/Support"
-        }
-      ]
-    }
-  ],
-  "specialty" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
-          "code" : "SM54",
-          "display" : "Médecine générale (SM)"
-        }
-      ]
-    }
-  ],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/service-type",
+      "code" : "1",
+      "display" : "Adoption/Permanent Care Info/Support"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+      "code" : "SM54",
+      "display" : "Médecine générale (SM)"
+    }]
+  }],
   "priority" : 5,
   "minutesDuration" : 15,
-  "slot" : [
-    {
-      "reference" : "Slot/FRCoreSlotExample"
-    }
-  ],
+  "slot" : [{
+    "reference" : "Slot/FRCoreSlotExample"
+  }],
   "created" : "2019-01-02",
-  "participant" : [
-    {
-      "actor" : {
-        "reference" : "Patient/FRCorePatientExample"
-      },
-      "required" : "required",
-      "status" : "accepted"
+  "participant" : [{
+    "actor" : {
+      "reference" : "Patient/FRCorePatientExample"
     },
-    {
-      "actor" : {
-        "reference" : "PractitionerRole/FRCorePractitionerRoleExample"
-      },
-      "required" : "required",
-      "status" : "needs-action"
+    "required" : "required",
+    "status" : "accepted"
+  },
+  {
+    "actor" : {
+      "reference" : "PractitionerRole/FRCorePractitionerRoleExample"
     },
-    {
-      "actor" : {
-        "reference" : "Practitioner/FRCorePractitionerExample"
-      },
-      "required" : "required",
-      "status" : "needs-action"
-    }
-  ],
-  "requestedPeriod" : [
-    {
-      "start" : "2019-01-04T09:15:00Z"
-    }
-  ]
+    "required" : "required",
+    "status" : "needs-action"
+  },
+  {
+    "actor" : {
+      "reference" : "Practitioner/FRCorePractitionerExample"
+    },
+    "required" : "required",
+    "status" : "needs-action"
+  }],
+  "requestedPeriod" : [{
+    "start" : "2019-01-04T09:15:00Z"
+  }]
 }
 
 ```

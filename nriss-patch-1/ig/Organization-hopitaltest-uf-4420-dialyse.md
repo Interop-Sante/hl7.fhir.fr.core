@@ -55,125 +55,107 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
   "resourceType" : "Organization",
   "id" : "hopitaltest-uf-4420-dialyse",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"]
   },
-  "extension" : [
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name",
-      "valueString" : "UF Dialyse"
-    },
-    {
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description",
-      "valueString" : "UF Dialyse - Utilisation de l'hémodialyse"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "start",
-          "valueDateTime" : "2023-01-01T00:00:00+01:00"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/StructureDefinition/organization-period"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
-            "code" : "HEB",
-            "display" : "Hébergement"
-          },
-          {
-            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
-            "code" : "MED",
-            "display" : "Médicale"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement",
-      "valueCoding" : {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement",
-        "code" : "797",
-        "display" : "Hémodialyse en centre pour adulte"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite",
-      "valueCoding" : {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
-        "code" : "MCO",
-        "display" : "MCO"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe",
-      "valueBoolean" : false
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique",
-      "valueInteger" : 10
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte",
-      "valueBoolean" : false
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte",
-      "valueBoolean" : true
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-uac-4420-uac-01",
-        "type" : "UAC",
-        "display" : "UAC 01 Dialyse"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-uac-4420-uac-02",
-        "type" : "UAC",
-        "display" : "UAC 02 Dialyse"
-      }
+  "extension" : [{
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name",
+    "valueString" : "UF Dialyse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description",
+    "valueString" : "UF Dialyse - Utilisation de l'hémodialyse"
+  },
+  {
+    "extension" : [{
+      "url" : "start",
+      "valueDateTime" : "2023-01-01T00:00:00+01:00"
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/organization-period"
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
+        "code" : "HEB",
+        "display" : "Hébergement"
+      },
+      {
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
+        "code" : "MED",
+        "display" : "Médicale"
+      }]
     }
-  ],
-  "identifier" : [
-    {
-      "use" : "official",
-      "system" : "http://hopitalTest.fr/namingsystem/organization",
-      "value" : "4220"
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement",
+    "valueCoding" : {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement",
+      "code" : "797",
+      "display" : "Hémodialyse en centre pour adulte"
     }
-  ],
-  "type" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-          "code" : "UF",
-          "display" : "Unité fonctionnelle"
-        }
-      ],
-      "text" : "UF"
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite",
+    "valueCoding" : {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite",
+      "code" : "MCO",
+      "display" : "MCO"
     }
-  ],
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique",
+    "valueInteger" : 10
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-uac-4420-uac-01",
+      "type" : "UAC",
+      "display" : "UAC 01 Dialyse"
+    }
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-uac-4420-uac-02",
+      "type" : "UAC",
+      "display" : "UAC 02 Dialyse"
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://hopitalTest.fr/namingsystem/organization",
+    "value" : "4220"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "UF",
+      "display" : "Unité fonctionnelle"
+    }],
+    "text" : "UF"
+  }],
   "name" : "UF Dialyse",
-  "contact" : [
-    {
-      "telecom" : [
-        {
-          "system" : "phone",
-          "value" : "84220",
-          "use" : "work"
-        }
-      ]
-    }
-  ]
+  "contact" : [{
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "84220",
+      "use" : "work"
+    }]
+  }]
 }
 
 ```

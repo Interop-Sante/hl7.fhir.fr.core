@@ -31,39 +31,29 @@ Profil: [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-obs
   "resourceType" : "Observation",
   "id" : "FRCoreObservationHeartRateExample",
   "meta" : {
-    "profile" : [
-      "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"
-    ]
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"]
   },
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "vital-signs"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://loinc.org",
-        "code" : "8867-4"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8867-4"
+    }]
   },
   "subject" : {
     "reference" : "Patient/FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",
-  "performer" : [
-    {
-      "reference" : "Patient/FRCorePatientExample"
-    }
-  ],
+  "performer" : [{
+    "reference" : "Patient/FRCorePatientExample"
+  }],
   "valueQuantity" : {
     "value" : 70,
     "unit" : "battements/minute",

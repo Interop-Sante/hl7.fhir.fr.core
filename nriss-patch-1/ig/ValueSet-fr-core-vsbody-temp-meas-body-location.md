@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-02-17 | *Computable Name*:FRCoreValueSetBodyTemperatureMeasurementBodyLocation |
+| Active as of 2026-02-24 | *Computable Name*:FRCoreValueSetBodyTemperatureMeasurementBodyLocation |
 
  
 SELECT SNOMED CT code system values that describe where on the body the temperature was measured. 
@@ -23,6 +23,8 @@ SELECT SNOMED CT code system values that describe where on the body the temperat
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,9 +48,7 @@ SELECT SNOMED CT code system values that describe where on the body the temperat
   "resourceType" : "ValueSet",
   "id" : "fr-core-vsbody-temp-meas-body-location",
   "meta" : {
-    "profile" : [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
-    ]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location",
   "version" : "2.2.0-ballot-2",
@@ -56,93 +56,80 @@ SELECT SNOMED CT code system values that describe where on the body the temperat
   "title" : "Body Temperature Measurement Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17T09:55:04+00:00",
+  "date" : "2026-02-24T08:54:16+00:00",
   "publisher" : "Interop'Santé",
-  "contact" : [
-    {
-      "name" : "Interop'Santé",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://interopsante.org"
-        }
-      ]
-    },
-    {
-      "name" : "InteropSanté",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "fhir@interopsante.org",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
   "description" : "SELECT SNOMED CT code system values that describe where on the body the temperature was measured.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FRA",
-          "display" : "France"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
+      "concept" : [{
+        "code" : "117590005",
+        "display" : "Ear structure (body structure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "117590005",
-            "display" : "Ear structure (body structure)"
-          },
-          {
-            "code" : "7569003",
-            "display" : "Finger structure (body structure)"
-          },
-          {
-            "code" : "52795006",
-            "display" : "Forehead structure (body structure)"
-          },
-          {
-            "code" : "279549004",
-            "display" : "Nasal cavity structure (body structure)"
-          },
-          {
-            "code" : "71836000",
-            "display" : "Nasopharyngeal structure (body structure)"
-          },
-          {
-            "code" : "74262004",
-            "display" : "Oral cavity structure (body structure)"
-          },
-          {
-            "code" : "34402009",
-            "display" : "Rectum structure (body structure)"
-          },
-          {
-            "code" : "422543003",
-            "display" : "Structure of axillary fossa (body structure)"
-          },
-          {
-            "code" : "29707007",
-            "display" : "Toe structure (body structure)"
-          },
-          {
-            "code" : "42859004",
-            "display" : "Tympanic membrane structure (body structure)"
-          },
-          {
-            "code" : "89837001",
-            "display" : "Urinary bladder structure (body structure)"
-          }
-        ]
-      }
-    ]
+        "code" : "7569003",
+        "display" : "Finger structure (body structure)"
+      },
+      {
+        "code" : "52795006",
+        "display" : "Forehead structure (body structure)"
+      },
+      {
+        "code" : "279549004",
+        "display" : "Nasal cavity structure (body structure)"
+      },
+      {
+        "code" : "71836000",
+        "display" : "Nasopharyngeal structure (body structure)"
+      },
+      {
+        "code" : "74262004",
+        "display" : "Oral cavity structure (body structure)"
+      },
+      {
+        "code" : "34402009",
+        "display" : "Rectum structure (body structure)"
+      },
+      {
+        "code" : "422543003",
+        "display" : "Structure of axillary fossa (body structure)"
+      },
+      {
+        "code" : "29707007",
+        "display" : "Toe structure (body structure)"
+      },
+      {
+        "code" : "42859004",
+        "display" : "Tympanic membrane structure (body structure)"
+      },
+      {
+        "code" : "89837001",
+        "display" : "Urinary bladder structure (body structure)"
+      }]
+    }]
   }
 }
 
