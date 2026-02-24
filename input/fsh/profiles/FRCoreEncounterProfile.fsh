@@ -42,7 +42,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 * class.system 1..
 * class.code 1..
-* type ..1
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
