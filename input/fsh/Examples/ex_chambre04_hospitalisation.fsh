@@ -8,4 +8,4 @@ Usage: #example
 
 * name = "Chambre 04"
 
-* partOf = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)
+* managingOrganization = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)

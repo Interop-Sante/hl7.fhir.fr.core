@@ -1,9 +1,10 @@
-Extension: FRCoreOrganizationSAECategoryExtension
-Id: fr-core-organization-sae-category
+Extension: FRCoreOrganizationSAECategorieExtension
+Id: fr-core-organization-sae-categorie
 Title: "FR Core Organization Extension - Catetgorie SAE"
 Description: "Categorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement)"
-* ^context.type = #element
-* ^context.expression = "FRCoreOrganizationEtablissementProfile"
+
+//* ^context.type = #element
+//* ^context.expression = "FRCoreOrganizationEtablissementProfile"
 * valueCodeableConcept 0..1
 * valueCodeableConcept from FRCoreValueSetCategorieSAEEtablissement (required)
 * valueCodeableConcept ^short = "Catégorie de l'établissement de santé"
