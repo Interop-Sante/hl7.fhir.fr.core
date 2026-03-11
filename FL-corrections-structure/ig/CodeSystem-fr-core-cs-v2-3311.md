@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311 | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-03-08 | *Computable Name*:FRCoreCodeSystemv2_3311 |
+| Draft as of 2026-03-11 | *Computable Name*:FRCoreCodeSystemv2_3311 |
 
  
 HL7 v2 - Table 3311 
@@ -36,7 +36,7 @@ HL7 v2 - Table 3311
   "title" : "FR Core CodeSystem v2-3311",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-08T19:18:35+00:00",
+  "date" : "2026-03-11T17:39:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

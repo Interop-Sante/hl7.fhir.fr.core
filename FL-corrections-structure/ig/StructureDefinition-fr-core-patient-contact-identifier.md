@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier | *Version*:2.2.0-ballot-2 |
-| Active as of 2026-03-08 | *Computable Name*:FRCorePatientContactIdentifierExtension |
+| Active as of 2026-03-11 | *Computable Name*:FRCorePatientContactIdentifierExtension |
 
 Identifiant de contact dans la ressource Patient
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-cont
   "name" : "FRCorePatientContactIdentifierExtension",
   "title" : "FR Core Patient Contact Identifier Extension",
   "status" : "active",
-  "date" : "2026-03-08T19:18:35+00:00",
+  "date" : "2026-03-11T17:39:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type | *Version*:2.2.0-ballot-2 |
-| Draft as of 2026-03-08 | *Computable Name*:FRCoreCodeSystemLocationPhysicalType |
+| Draft as of 2026-03-11 | *Computable Name*:FRCoreCodeSystemLocationPhysicalType |
 
  
 Location physical type 
@@ -36,7 +36,7 @@ Location physical type
   "title" : "FR Core CodeSystem Location Physical Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-08T19:18:35+00:00",
+  "date" : "2026-03-11T17:39:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
