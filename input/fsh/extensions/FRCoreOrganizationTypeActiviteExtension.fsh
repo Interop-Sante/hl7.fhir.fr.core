@@ -2,6 +2,7 @@ Extension: FRCoreOrganizationTypeActiviteExtension
 Id: fr-core-organization-type-activite
 Title: "FR Core Organization Extension - Type d'activité"
 Description: "Type d'activité d'une UF"
+Context: Organization
 
 * ^status = #active
 

@@ -4,6 +4,7 @@ Extension: FRCoreOrganizationDisciplinePrestationExtension
 Id: fr-core-organization-discipline-prestation
 Title: "FR Core Organization Extension - Discipline Prestation"
 Description: "Discipline de prestation d'une UAC"
+Context: Organization
 
 * value[x] only Coding
 * value[x] from FRCoreValueSetDisciplinePrestation (extensible)
