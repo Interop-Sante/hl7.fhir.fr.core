@@ -83,6 +83,7 @@ Alias: $fr-type-admission = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-ty
 Alias: $fr-location-identifier-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type
 Alias: $fr-location-physical-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type
 Alias: $fr-location-position-room = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room
+Alias: $fr-location-position-lit = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit
 Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203
 Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311

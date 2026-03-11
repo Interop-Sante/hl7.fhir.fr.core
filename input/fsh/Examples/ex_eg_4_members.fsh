@@ -2,29 +2,29 @@ Instance: hopitaltest-eg-4-members
 InstanceOf: FRCoreOrganizationEtablissementProfile
 Usage: #example
 
-* extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category"
-* extension[=].valueCodeableConcept.coding[0] = $TRE-R66-CategorieEtablissement#101 "Centre hospitalier régional (CHR)"
-* extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale"
+//* extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie"
+//* extension[=].valueCodeableConcept.coding[0] = $TRE-R66-CategorieEtablissement#101 "Centre hospitalier régional (CHR)"
+* extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale"
 * extension[=].valueString = "CHRU CENTRE VILLE"
 
 * extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
 * extension[=].valueReference = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)
-* extension[=].valueReference.type = $fr-core-v2-3307#UF
+//* extension[=].valueReference.type = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"
 * extension[=].valueReference.display = "UF Endocrino Diabeto"
 
 * extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
-* extension[=].valueReference = Reference(Organization/hopitaltest-uf-4705-nutrition")
-* extension[=].valueReference.type = $fr-core-v2-3307#UF
+* extension[=].valueReference = Reference(Organization/hopitaltest-uf-4705-nutrition)
+//* extension[=].valueReference.type = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"
 * extension[=].valueReference.display = "UF Nutrition"
 
 * extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
 * extension[=].valueReference = Reference(Organization/hopitaltest-service-11006-endocrino-diabo)
-* extension[=].valueReference.type = $fr-core-v2-3307#SERVICE
+//* extension[=].valueReference.type = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"
 * extension[=].valueReference.display = "Service Endocrino Diabeto"
 
 * extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
 * extension[=].valueReference = Reference(Organization/hopitaltest-service-11007-dietetique)
-* extension[=].valueReference.type = $fr-core-v2-3307#SERVICE
+//* extension[=].valueReference.type = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"
 * extension[=].valueReference.display = "Service Dietetique"
 
 

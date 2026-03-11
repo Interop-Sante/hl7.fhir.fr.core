@@ -10,4 +10,4 @@ Usage: #example
 * telecom.value = "84900"
 * name = "Salle d'examen 01"
 
-* partOf = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)
+* managingOrganization = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)
