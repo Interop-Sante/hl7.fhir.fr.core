@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetPatientContactRole
 Id: fr-core-vs-patient-contact-role
 Title: "FR Core ValueSet Patient contact role"
 Description: "ValueSet patient contact role"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension.valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"

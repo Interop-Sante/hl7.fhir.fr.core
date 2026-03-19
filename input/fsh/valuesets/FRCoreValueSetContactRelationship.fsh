@@ -4,7 +4,7 @@ ValueSet: FRCoreValueSetContactRelationship
 Id: fr-core-vs-contact-relationship
 Title: "FR Core ValueSet Contact relationship"
 Description: "A set of codes that can be used to indicate the relationship between a Patient and a Related Person."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"

@@ -6,7 +6,7 @@ Description: """Profil de la ressource Organization permettant de représenter d
 
 
 * extension contains
-    FRCoreOrganizationSAECategoryExtension named sae 0..1 and
+    FRCoreOrganizationSAECategorieExtension named sae 0..1 and
     FRCoreOrganizationRaisonSocialeExtension named raisonSociale 0..1
 
 * identifier.use from IdentifierUse (required)

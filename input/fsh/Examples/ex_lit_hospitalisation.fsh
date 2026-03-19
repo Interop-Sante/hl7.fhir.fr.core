@@ -6,12 +6,12 @@ Usage: #example
 * type.text = "Lit"
 * status = #active
 
-* extension[0].url = "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit"
-* extension[=].valueCoding = fr-core-cs-location-position-lit#FNTR "Fenêtre"
-
+* extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit"
+* extension[=].valueCoding = $fr-location-position-lit#FNTR "Fenêtre"
 
 * telecom.system = #phone
 * telecom.value = "84921"
 * name = "Lit Fenetre - chambre 04"
 
-* partOf = Reference(Organization/hopitaltest-endocrino-ch04)
+* managingOrganization = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)
+* partOf = Reference(Location/hopitaltest-endocrino-ch04)

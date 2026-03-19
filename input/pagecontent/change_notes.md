@@ -142,6 +142,20 @@ A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extensi
 * Mise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
 * Ajout d'un invariant qui renvoie un warning si le COG de naissance 99999 est utilisé pour une identité validée [#262](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/262)
 * Ajout du numéro AMELI au profil PractitionerRole [#260](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/260)
+* Mise à jour invariant FrCorePatientINSProfile.fsh (correction d'erreur) [#185](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/185)
+* Ajout d'informations sur la certification et le répertoire de certifications [#257](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/257)
+* Correction d'un jeu de valeurs en erreur (j245) [#258](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/258)
+* Mise à jour du narratif FRCore (index.md, bonnes_pratiques.md et known_problems.md) [#259](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/259)
+* Réorganisation des alias FSH [#261](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/261)
+* Ajout de la contrainte : obligation d'un CodeableConcept sur value[x] pour le type d'activité [#276](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/276)
+* Ajout d'un ruleset ValueSet et d'un ruleset CodeSystem (ShareableValueSet / ShareableCodeSystem & langue fr-FR) [#277](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/277)
+* Extension nationality : extension du contexte à Person et RelatedPerson [#278](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/278)
+* Revue des profils de structure : correction de `members` → `member` (cohérence avec l'extension et le nommage FHIR), suppression du VS UAC inutilisé [#280](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/280)
+* Correction orthographique : artifact → artéfact [#282](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/282)
+* Ajout de l'invariant fr-core-1 : si l'identité patient est validée, elle doit contenir un matricule INS [#285](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/285)
+* Suppression de la contrainte de cardinalité sur Encounter.type [#286](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/286)
+* Suppression de l'extension MultipleBirth ajoutée en erreur [#288](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/288)
+* Corrections pour la publication : mise à jour des textes sur les UM et l'extension `member`, correction des exemples liés à la structure [#289](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/289)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 

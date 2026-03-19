@@ -1,14 +1,17 @@
 ValueSet: FRCoreValueSetCategorieSAEEtablissement
 Id: fr-core-vs-categorie-sae-etablissement
 Title: "FR Core ValueSet Categorie SAE Etablissement"
-Description: "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024"
+Description: "Catérorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024"
+* insert SetValueset
+
 * ^meta.versionId = "2024.1"
 * ^meta.lastUpdated = "2025-03-14T18:01:34.510+00:00"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-10-25T12:00:00+01:00"
 * ^publisher = "Interop'Santé"
+
 * $TRE-R66-CategorieEtablissement#101 "Centre hospitalier régional (CHR)"
 * $TRE-R66-CategorieEtablissement#106 "Centre hospitalier, ex Hôpital local"
 * $TRE-R66-CategorieEtablissement#109 "Etablissement de santé privé autorisé en SSR"

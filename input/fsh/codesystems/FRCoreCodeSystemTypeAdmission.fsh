@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemTypeAdmission
 Id: fr-core-cs-type-admission
 Title: "FR Core CodeSystem Type Admission"
 Description: "Admission type"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 
 * ^status = #draft
 * ^caseSensitive = true
