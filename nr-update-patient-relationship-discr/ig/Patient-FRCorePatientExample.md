@@ -115,6 +115,10 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
   }],
   "contact" : [{
     "relationship" : [{
+      "extension" : [{
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+        "valueCode" : "role"
+      }],
       "coding" : [{
         "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
         "code" : "ECON",
@@ -122,6 +126,10 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
       }]
     },
     {
+      "extension" : [{
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+        "valueCode" : "relationType"
+      }],
       "coding" : [{
         "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
         "code" : "MTH",

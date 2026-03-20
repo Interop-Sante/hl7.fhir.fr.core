@@ -56,7 +56,7 @@ Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP)
   "title" : "FR Core ValueSet Patient identifier use PI",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-20T07:02:57+00:00",
+  "date" : "2026-03-20T07:20:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

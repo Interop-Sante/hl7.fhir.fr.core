@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
   "name" : "FRCoreNationalityExtension",
   "title" : "FR Core Nationality Extension",
   "status" : "active",
-  "date" : "2026-03-20T07:02:57+00:00",
+  "date" : "2026-03-20T07:20:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -10,7 +10,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-03-20T07:02:57+00:00",
+  "date" : "2026-03-20T07:20:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1116,6 +1116,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-patient-contact-relationship-category"
+      },
+      "name" : "FR Core CodeSystem Patient Contact Relationship Category",
+      "description" : "Catégorie de la relation du contact patient : rôle ou type de relation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-position-lit"
       },
       "name" : "FR Core CodeSystem Position du lit",
@@ -1788,6 +1800,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-core-patient-contact-relationship-category"
+      },
+      "name" : "FR Core Patient Contact Relationship Category Extension",
+      "description" : "Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-death-place"
       },
       "name" : "FR Core Patient Death Place Extension",
@@ -2272,6 +2296,18 @@
       },
       "name" : "FR Core ValueSet Organization UF Indicateur",
       "description" : "Indicateur d'une unité fonctionnelle.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-patient-contact-relationship-category"
+      },
+      "name" : "FR Core ValueSet Patient Contact Relationship Category",
+      "description" : "Catégorie de la relation du contact patient : rôle ou type de relation",
       "exampleBoolean" : false
     },
     {
