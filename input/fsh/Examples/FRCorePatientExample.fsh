@@ -44,9 +44,11 @@ Description: "Exemple de ressource Patient (cas d'usage INS)"
   * postalCode = "45100"
   * period.start = "2018-06-01"
 
+* contact[0].relationship[role].extension[category].valueCode = #role
 * contact[0].relationship[role].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
 * contact[0].relationship[role].coding[0].code = #ECON
 * contact[0].relationship[role].coding[0].display = "personne à prévenir en cas d'urgence"
+* contact[0].relationship[relationType].extension[category].valueCode = #relationType
 * contact[0].relationship[relationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
 * contact[0].relationship[relationType].coding[0].code = #MTH
 * contact[0].relationship[relationType].coding[0].display = "Mère"
