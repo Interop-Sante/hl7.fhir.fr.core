@@ -8,6 +8,7 @@ Description: "HL7 v2 - Identifier type"
 * ^content = #complete
 * #ADELI "N° ADELI" "N° ADELI"
 * #RPPS "N° RPPS" "N° RPPS"
+* #RPPSRG "N° RPPS Rang" "N° RPPS Rang d'identification des cabinets libéraux selon le référentiel RPPS"
 * #IDNPS "Identifiant National de Professionnel de Santé" "Identifiant National de Professionnel de Santé"
 * #NNFRA "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code" "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code"
 * #NDP "Identifiant du patient au Dossier Pharmaceutique" "Identifiant du patient au Dossier Pharmaceutique"
