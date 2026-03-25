@@ -85,6 +85,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [FR Core Patient Birth List Given name Extension](StructureDefinition-fr-core-patient-birth-list-given-name.md) | Prénoms de l’acte de naissance |
 | [FR Core Patient Birthdate Update Indicator Extension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md) | Indicateur booléen de mise à jour de la date de naissance |
 | [FR Core Patient Contact Identifier Extension](StructureDefinition-fr-core-patient-contact-identifier.md) | Identifiant de contact dans la ressource Patient This extension carries the contact identifier in the patient resource |
+| [FR Core Patient Contact Relationship Category Extension](StructureDefinition-fr-core-patient-contact-relationship-category.md) | Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère) |
 | [FR Core Patient Death Place Extension](StructureDefinition-fr-core-patient-death-place.md) | Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.). Carries the death place of the patient |
 | [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md) | Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection. Reliabilility of the patient’s identity |
 | [FR Core Practitioner Specialty Extension](StructureDefinition-fr-core-practitioner-specialty.md) | This extension adds the element “specialty” to the FHIR Practitioner resource. |
@@ -130,6 +131,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet Organization UF Indicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md) | Indicateur d’une unité fonctionnelle. |
 | [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). |
 | [FR Core ValueSet Organization type](ValueSet-fr-core-vs-organization-type.md) | Types de structures |
+| [FR Core ValueSet Patient Contact Relationship Category](ValueSet-fr-core-vs-patient-contact-relationship-category.md) | Catégorie de la relation du contact patient : rôle ou type de relation |
 | [FR Core ValueSet Patient contact role](ValueSet-fr-core-vs-patient-contact-role.md) | ValueSet patient contact role |
 | [FR Core ValueSet Patient gender](ValueSet-fr-core-vs-patient-gender.md) | Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide. Permitted genders for French Patient gender. |
 | [FR Core ValueSet Patient identifier type](ValueSet-fr-core-vs-patient-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). |
@@ -169,6 +171,7 @@ These define new code systems used by systems conforming to this implementation 
 | [FR Core CodeSystem Mode Validation Identite](CodeSystem-fr-core-cs-method-collection.md) | Méthode de collection de l’identité |
 | [FR Core CodeSystem Mode Validation Identite](CodeSystem-fr-core-cs-mode-validation-identity.md) | Mode de validation de l’identité |
 | [FR Core CodeSystem Organization Type](CodeSystem-fr-core-cs-type-organisation.md) | Organization type |
+| [FR Core CodeSystem Patient Contact Relationship Category](CodeSystem-fr-core-cs-patient-contact-relationship-category.md) | Catégorie de la relation du contact patient : rôle ou type de relation |
 | [FR Core CodeSystem Position du lit](CodeSystem-fr-core-cs-location-position-lit.md) | Position du lit dans la chambre |
 | [FR Core CodeSystem Schedule Type](CodeSystem-fr-core-cs-schedule-type.md) | Schedule type |
 | [FR Core CodeSystem Type Admission](CodeSystem-fr-core-cs-type-admission.md) | Admission type |

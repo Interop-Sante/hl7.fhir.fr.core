@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:22:11+00:00",
+  "date" : "2026-03-25T10:22:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -549,7 +549,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "slicing" : {
         "discriminator" : [{
           "type" : "value",
-          "path" : "$this"
+          "path" : "extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category').value"
         }],
         "rules" : "open"
       }
@@ -567,6 +567,27 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       }
     },
     {
+      "id" : "Patient.contact.relationship:role.extension",
+      "path" : "Patient.contact.relationship.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.contact.relationship:role.extension:category",
+      "path" : "Patient.contact.relationship.extension",
+      "sliceName" : "category",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category|2.2.0"]
+      }]
+    },
+    {
+      "id" : "Patient.contact.relationship:role.extension:category.value[x]",
+      "path" : "Patient.contact.relationship.extension.value[x]",
+      "patternCode" : "role"
+    },
+    {
       "id" : "Patient.contact.relationship:relationType",
       "path" : "Patient.contact.relationship",
       "sliceName" : "relationType",
@@ -577,6 +598,27 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
         "strength" : "extensible",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0"
       }
+    },
+    {
+      "id" : "Patient.contact.relationship:relationType.extension",
+      "path" : "Patient.contact.relationship.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.contact.relationship:relationType.extension:category",
+      "path" : "Patient.contact.relationship.extension",
+      "sliceName" : "category",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category|2.2.0"]
+      }]
+    },
+    {
+      "id" : "Patient.contact.relationship:relationType.extension:category.value[x]",
+      "path" : "Patient.contact.relationship.extension.value[x]",
+      "patternCode" : "relationType"
     },
     {
       "id" : "Patient.contact.name",

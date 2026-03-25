@@ -20,6 +20,9 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
 * ph: 06 80 55 34 33(Mobile)
 * 367 rue Troussier, 45100 Orléans, France(home)
  | | |
+| Contact : | * Marie Durand 
+* Relations :personne à prévenir en cas d'urgence, Mère
+ | | |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | Ambléon | | |
 | FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](CodeSystem-fr-core-cs-v2-0445.md#fr-core-cs-v2-0445-VALI) (Identité validée)
  | | |
@@ -108,6 +111,34 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
     "postalCode" : "45100",
     "period" : {
       "start" : "2018-06-01"
+    }
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "extension" : [{
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+        "valueCode" : "role"
+      }],
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+        "code" : "ECON",
+        "display" : "personne à prévenir en cas d'urgence"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+        "valueCode" : "relationType"
+      }],
+      "coding" : [{
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+        "code" : "MTH",
+        "display" : "Mère"
+      }]
+    }],
+    "name" : {
+      "family" : "Durand",
+      "given" : ["Marie"]
     }
   }]
 }
