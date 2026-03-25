@@ -152,10 +152,63 @@ A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extensi
 * Extension nationality : extension du contexte à Person et RelatedPerson [#278](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/278)
 * Revue des profils de structure : correction de `members` → `member` (cohérence avec l'extension et le nommage FHIR), suppression du VS UAC inutilisé [#280](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/280)
 * Correction orthographique : artifact → artéfact [#282](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/282)
+* **[BREAKING CHANGE]** Patient : séparation de la slice `NSS` en deux slices distinctes `NSS-NIR` et `NSS-NIA`, et mise à jour des OID associés [#284](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/284)
+
+Dans la version 2.1.0, le numéro de sécurité sociale était modélisé dans une seule slice `NSS` avec l'OID `1.2.250.1.213.1.4.8`.
+
+```json
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.250.1.213.1.4.8",
+      "value": "1 69 05 69 123 456 78"
+    }
+  ]
+}
+```
+
+À partir de la version 2.2.0, deux slices distinctes permettent de différencier le NIR et le NIA utilisés comme numéro de sécurité sociale, avec des OID spécifiques :
+
+* `NSS-NIR` : NIR utilisé comme numéro de sécurité sociale → `urn:oid:1.2.250.1.213.1.4.13`
+* `NSS-NIA` : NIA utilisé comme numéro de sécurité sociale → `urn:oid:1.2.250.1.213.1.4.14`
+
+```json
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.250.1.213.1.4.13",
+      "value": "1 69 05 69 123 456 78"
+    }
+  ]
+}
+```
+
+> **Impact pour les implémenteurs** : les ressources utilisant `identifier[NSS]` avec `system: urn:oid:1.2.250.1.213.1.4.8` doivent être mises à jour. L'OID `1.2.250.1.213.1.4.8` correspond désormais au matricule INS-NIR (porté par le profil PatientINS), et non au numéro de sécurité sociale.
+
 * Ajout de l'invariant fr-core-1 : si l'identité patient est validée, elle doit contenir un matricule INS [#285](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/285)
 * Suppression de la contrainte de cardinalité sur Encounter.type [#286](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/286)
 * Suppression de l'extension MultipleBirth ajoutée en erreur [#288](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/288)
 * Corrections pour la publication : mise à jour des textes sur les UM et l'extension `member`, correction des exemples liés à la structure [#289](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/289)
+* Mise à jour de l'identifier type du rpps rang (INTRN → RPPS) [#273](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/273)
+* [FIX] Discriminateur Patient.contact.relationship via extension de catégorie [#293](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
