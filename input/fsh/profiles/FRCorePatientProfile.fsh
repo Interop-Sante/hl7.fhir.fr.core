@@ -131,7 +131,7 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
     FRCoreCommentExtension named comment 0..1
 
 * contact.relationship ^slicing.discriminator.type = #value
-* contact.relationship ^slicing.discriminator.path = "$this"
+* contact.relationship ^slicing.discriminator.path = "extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category').value"
 
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
@@ -139,12 +139,16 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
     relationType 0..1
 // TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
-* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible) 
+* contact.relationship[role].extension contains FRCorePatientContactRelationshipCategoryExtension named category 1..1
+* contact.relationship[role].extension[category].valueCode = #role
+* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible)
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
 * contact.relationship[role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
 
-* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible) 
+* contact.relationship[relationType].extension contains FRCorePatientContactRelationshipCategoryExtension named category 1..1
+* contact.relationship[relationType].extension[category].valueCode = #relationType
+* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible)
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
 * contact.relationship[relationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."
