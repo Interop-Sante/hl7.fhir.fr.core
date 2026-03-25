@@ -56,7 +56,7 @@ Valeurs permettant de coder les disciplines d’équipement.
   "title" : "FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:22:40+00:00",
+  "date" : "2026-03-25T10:25:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
