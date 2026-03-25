@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemReliabilityIdentity
 Id: fr-core-cs-fiabilite-identite
 Title: "FR Core CodeSystem Fiabilité Identité"
 Description: "French Identity reliabilty codes"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 
 * ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.12.445"

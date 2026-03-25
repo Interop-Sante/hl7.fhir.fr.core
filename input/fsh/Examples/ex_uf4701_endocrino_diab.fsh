@@ -5,21 +5,20 @@ Usage: #example
 
 * extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"
 * extension[=].valueString = "UF Endocrino Diabeto"
-* extension[+].url = $organization-description-r5
-* extension[=].valueString = "UF Endocrinologie et Diabétologie, spécialisée dans la prise en charge des patients diabétiques et endocriniens."
+//* extension[+].url = $organization-description-r5
+//* extension[=].valueString = "UF Endocrinologie et Diabétologie, spécialisée dans la prise en charge des patients diabétiques et endocriniens."
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/organization-period"
-* extension[=].extension.url = "start"
-* extension[=].extension.valueDateTime = "2023-01-01T00:00:00+01:00"
+* extension[=].valuePeriod.start = "2023-01-01T00:00:00+01:00"
 
-* extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension"
-* extension[=].valueCodeableConcept.coding[0] = $fr-core-cs-uf-indicateur#HEB "Hébergement"
+* extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur"
+* extension[=].valueCodeableConcept.coding[0] = $fr-core-cs-uf-indicateur#HEB
 
 
 * identifier.use = #official
 * identifier.system = "http://hopitalTest.fr/namingsystem/organization"
 * identifier.value = "4701"
-* type = $fr-core-v2-3307#UF "Unité fonctionnelle"
-* type.text = "UF"
+* type = $fr-core-v2-3307#UF
+
 * name = "UF Endocrino Diabeto"
 * contact.telecom.system = #phone
 * contact.telecom.value = "84701"

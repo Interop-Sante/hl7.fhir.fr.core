@@ -54,7 +54,7 @@ Ce document présente les concepts d'utilisation français définis par :
 * Extensions - extensions FHIR ajoutées pour un usage local, couvrant les concepts français nécessaires.
 * Terminologies - systèmes de codes et ensembles de valeurs définis ou référencés pour la France.
 
-Les activités de profilage donnent la priorité aux ressources ayant un niveau de maturité suffisant (>=3). Chaque sujet fonctionnel est traité par un groupe de travail dédié d'Interop'Santé, réunissant des éditeurs de logiciels, des professionnels des établissements de santé et des représentants d'agences gouvernementales. Le consensus sur les ressources de conformité FHIR est établi d'abord au niveau du groupe de travail, puis au niveau des membres.
+Chaque sujet fonctionnel est traité par un groupe de travail dédié d'Interop'Santé, réunissant des éditeurs de logiciels, des professionnels des établissements de santé et des représentants d'agences gouvernementales. Le consensus sur les ressources de conformité FHIR est établi d'abord au niveau du groupe de travail, puis au niveau des membres.
 
 ### Choix de la version du standard FHIR
 

@@ -14,7 +14,7 @@ Les contraintes fonctionnelles sont notamment issues des [textes de loi](structu
 |STRU-4|Les structures internes, services, UF, secteur et pole ont 1 responsable|Les responsables sont représentés par des ressources `Practitioner` et le rôle (responsabilité) porté par ces professionnels sur les entités est défini par une ressource `PractitionerRole`. Cette notion de responsabilité est externe aux ressources `Organization` et `Location`|
 |STRU-5|Les personnes responsables ne sont pas forcément des médecins (ex. DG, DRH, etc.)|Un `Practitioner` est un personnel de santé qui contribue au soins, tous les professionnels de santé rentrent dans cette catégorie|
 |STRU-6|Les pôles peuvent être inter établissements|La contrainte est résolue par la mise en place de l'extension `member`, voir la gestion [des relations](structure_relations.html) entre entités|
-|STRU-7|1 UM peut contenir plusieurs UF, être équivalente à 1 UF ou être une sous partie d'une UF|A l'heure actuelle, les UM ne font pas partie du périmètre des ressources profilées. A revoir si un ou des cas d'usage le nécessite|
+|STRU-7|1 UM peut contenir plusieurs UF, être équivalente à 1 UF ou être une sous partie d'une UF|Les relations `partOf` et `member` permettent de modéliser les différentes configurations|
 {: .table-is .table-striped }
 
 ### Contraintes techniques 

@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetEncounterClass
 Id: fr-core-vs-encounter-class
 Title: "FR Core ValueSet Encounter class"
 Description: "A set of codes that can be used to indicate the class of the encounter."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative

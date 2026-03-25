@@ -2,7 +2,7 @@ CodeSystem: FRCoreCodeSystemTypeChambre
 Id: fr-core-cs-location-type-chambre
 Title: "FR Core CodeSystem Type Chambre"
 Description: "Type de chambre"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* insert SetCodesystem
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
