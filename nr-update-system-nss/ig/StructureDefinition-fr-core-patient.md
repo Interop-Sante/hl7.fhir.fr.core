@@ -1,4 +1,4 @@
-# FR Core Patient Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Patient Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCorePatientProfile |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-patient",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "sliceName" : "fr-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
     },
     {
       "id" : "Patient.extension",
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0"]
       }]
     },
     {
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0"]
       }]
     },
     {
@@ -165,7 +165,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.2.0"]
       }]
     },
     {
@@ -176,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0"]
       }]
     },
     {
@@ -195,18 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.extension.value[x]",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
-      }]
-    },
-    {
-      "id" : "Patient.extension:multipleBirth",
-      "path" : "Patient.extension",
-      "sliceName" : "multipleBirth",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     },
     {
@@ -227,7 +216,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.identifier.type",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type|2.2.0"
       }
     },
     {
@@ -393,7 +382,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi|2.2.0"
       }
     },
     {
@@ -466,7 +455,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       },
       "type" : [{
         "code" : "HumanName",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0"]
       }]
     },
     {
@@ -501,7 +490,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.2.0"]
       }]
     },
     {
@@ -525,7 +514,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.telecom",
       "type" : [{
         "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0"]
       }]
     },
     {
@@ -535,7 +524,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "definition" : "French patient's gender checked with the INSi teleservice | Genre administratif du patient. Dans le cas d'une identité récupérée par le téléservice INSi, les valeurs M ou F issues du téléservice sont à adapter à FHIR (male | female | unknown).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender|2.2.0"
       }
     },
     {
@@ -548,7 +537,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.address",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     },
     {
@@ -556,7 +545,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.maritalStatus",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status|2.2.0"
       }
     },
     {
@@ -578,7 +567,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.2.0"]
       }]
     },
     {
@@ -589,7 +578,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.2.0"]
       }]
     },
     {
@@ -598,7 +587,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "slicing" : {
         "discriminator" : [{
           "type" : "value",
-          "path" : "$this"
+          "path" : "extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category').value"
         }],
         "rules" : "open"
       }
@@ -612,8 +601,29 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0"
       }
+    },
+    {
+      "id" : "Patient.contact.relationship:role.extension",
+      "path" : "Patient.contact.relationship.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.contact.relationship:role.extension:category",
+      "path" : "Patient.contact.relationship.extension",
+      "sliceName" : "category",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category|2.2.0"]
+      }]
+    },
+    {
+      "id" : "Patient.contact.relationship:role.extension:category.value[x]",
+      "path" : "Patient.contact.relationship.extension.value[x]",
+      "patternCode" : "role"
     },
     {
       "id" : "Patient.contact.relationship:relationType",
@@ -624,15 +634,36 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "max" : "1",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0"
       }
+    },
+    {
+      "id" : "Patient.contact.relationship:relationType.extension",
+      "path" : "Patient.contact.relationship.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.contact.relationship:relationType.extension:category",
+      "path" : "Patient.contact.relationship.extension",
+      "sliceName" : "category",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category|2.2.0"]
+      }]
+    },
+    {
+      "id" : "Patient.contact.relationship:relationType.extension:category.value[x]",
+      "path" : "Patient.contact.relationship.extension.value[x]",
+      "patternCode" : "relationType"
     },
     {
       "id" : "Patient.contact.name",
       "path" : "Patient.contact.name",
       "type" : [{
         "code" : "HumanName",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0"]
       }]
     },
     {
@@ -640,7 +671,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.contact.telecom",
       "type" : [{
         "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0"]
       }]
     },
     {
@@ -648,8 +679,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.generalPractitioner",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
       }]
     },
@@ -658,7 +689,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "path" : "Patient.managingOrganization",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }]
     }]

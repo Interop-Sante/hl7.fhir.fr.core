@@ -1,4 +1,4 @@
-# hopitaltest-pole-1150-med-spe - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-pole-1150-med-spe - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,13 +8,11 @@
 
 Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
 
-> **fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**
-* https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension: [Organization UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
-* https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension: [Organization UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md)
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [Organization UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
 
 **identifier**: `http://hopitalTest.fr/namingsystem/organization`/1150 (utilisation : official, )
 
-**type**: POLE
+**type**: Pôle
 
 **name**: Pole Medecines spécialisées
 
@@ -30,19 +28,10 @@ Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"]
   },
   "extension" : [{
-    "extension" : [{
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-uf-4420-dialyse"
-      }
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
-      "valueReference" : {
-        "reference" : "Organization/hopitaltest-uac-4420-uac-01"
-      }
-    }],
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
+    "valueReference" : {
+      "reference" : "Organization/hopitaltest-uf-4420-dialyse"
+    }
   }],
   "identifier" : [{
     "use" : "official",
@@ -52,10 +41,8 @@ Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.
   "type" : [{
     "coding" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-      "code" : "POLE",
-      "display" : "Pole"
-    }],
-    "text" : "POLE"
+      "code" : "POLE"
+    }]
   }],
   "name" : "Pole Medecines spécialisées"
 }

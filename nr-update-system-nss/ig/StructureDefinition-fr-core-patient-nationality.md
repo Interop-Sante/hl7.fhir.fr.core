@@ -1,4 +1,4 @@
-# FR Core Nationality Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Nationality Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality | *Version*:2.2.0 | |
 | Active as of 2026-03-25 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreNationalityExtension |
 
 The nationality of the patient.
@@ -52,11 +52,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
     "valueInteger" : 1
   }],
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreNationalityExtension",
   "title" : "FR Core Nationality Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -92,6 +92,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
   "context" : [{
     "type" : "element",
     "expression" : "Patient"
+  },
+  {
+    "type" : "element",
+    "expression" : "Person"
+  },
+  {
+    "type" : "element",
+    "expression" : "RelatedPerson"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
@@ -100,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-nati
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Nationality",
+      "short" : "FR Core Nationality Extension",
       "definition" : "The nationality of the patient."
     },
     {

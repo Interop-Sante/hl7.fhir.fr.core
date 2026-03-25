@@ -1,4 +1,4 @@
-# FR Core ValueSet Title - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Title - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title | *Version*:2.2.0 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 0 | *Computable Name*:FRCoreValueSetTitle |
 
  
@@ -48,6 +48,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "informative"
@@ -61,12 +62,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
     "valueCode" : "fhir"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetTitle",
   "title" : "FR Core ValueSet Title",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -87,7 +88,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

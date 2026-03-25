@@ -1,4 +1,4 @@
-# FR Core Observation Body Temperature Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Observation Body Temperature Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreObservationBodyTemperatureProfile |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-observation-body-temperature",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreObservationBodyTemperatureProfile",
   "title" : "FR Core Observation Body Temperature Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -126,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "sliceName" : "fr-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0"
     },
     {
       "id" : "Observation.extension",
@@ -147,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion|2.2.0"]
       }]
     },
     {
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "path" : "Observation.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"]
       }]
     },
     {
@@ -180,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "path" : "Observation.encounter",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0"]
       }]
     },
     {
@@ -190,9 +190,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1",
         "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
       }]
     },
@@ -213,7 +213,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       "path" : "Observation.bodySite",
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location|2.2.0"
       }
     }]
   }

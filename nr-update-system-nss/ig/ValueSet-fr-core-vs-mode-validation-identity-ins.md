@@ -1,4 +1,4 @@
-# FR Core ValueSet Mode validation identity INS - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Mode validation identity INS - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetModeValidationIdentityINS |
 
  
@@ -49,13 +49,14 @@ The validation mode of the identity authorized for INS
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetModeValidationIdentityINS",
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -76,14 +77,14 @@ The validation mode of the identity authorized for INS
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
   "compose" : {
     "include" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity",
-      "version" : "2.2.0-ballot-2",
+      "version" : "2.2.0",
       "concept" : [{
         "code" : "PA"
       },

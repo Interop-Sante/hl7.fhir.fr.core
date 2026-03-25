@@ -1,4 +1,4 @@
-# Accueil - Guide d'implémentation FR Core v2.2.0-ballot-2
+# Accueil - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,13 +7,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCore |
 
  ** Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données de santé : données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France. **
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of health data : administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
-
->  **Attention !** Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse http://hl7.fr/ig/fhir/core</b> 
 
 Ce guide d’implémentation est fourni comme **fondation pour l’utilisation de FHIR® en France**. Il permet de définir les profils, les extensions et les jeux de valeurs normalisant **l’échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), les signes vitaux ainsi que les structures des établissements de soins**.
 
@@ -41,7 +39,7 @@ Ce document présente les concepts d’utilisation français définis par :
 * Extensions - extensions FHIR ajoutées pour un usage local, couvrant les concepts français nécessaires.
 * Terminologies - systèmes de codes et ensembles de valeurs définis ou référencés pour la France.
 
-Les activités de profilage donnent la priorité aux ressources ayant un niveau de maturité suffisant (>=3). Chaque sujet fonctionnel est traité par un groupe de travail dédié d’Interop’Santé, réunissant des éditeurs de logiciels, des professionnels des établissements de santé et des représentants d’agences gouvernementales. Le consensus sur les ressources de conformité FHIR est établi d’abord au niveau du groupe de travail, puis au niveau des membres.
+Chaque sujet fonctionnel est traité par un groupe de travail dédié d’Interop’Santé, réunissant des éditeurs de logiciels, des professionnels des établissements de santé et des représentants d’agences gouvernementales. Le consensus sur les ressources de conformité FHIR est établi d’abord au niveau du groupe de travail, puis au niveau des membres.
 
 ### Choix de la version du standard FHIR
 
@@ -95,7 +93,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [FRCore](index.md), [FRCoreAddressInseeCodeExtension](StructureDefinition-fr-core-address-insee-code.md)... Show 138 more, [FRCoreAddressProfile](StructureDefinition-fr-core-address.md), [FRCoreAppointmentOperatorExtension](StructureDefinition-fr-core-appointment-operator.md), [FRCoreAppointmentProfile](StructureDefinition-fr-core-appointment.md), [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCoreCodeSystemChampActivite](CodeSystem-fr-core-cs-champ-activite.md), [FRCoreCodeSystemCirconstancesSortie](CodeSystem-fr-core-cs-circonstances-sortie.md), [FRCoreCodeSystemCodeTarifTNJP](CodeSystem-fr-core-cs-code-tarif-tnjp.md), [FRCoreCodeSystemContactRelationship](CodeSystem-fr-core-cs-contact-relationship.md), [FRCoreCodeSystemDisciplineEquipement](CodeSystem-fr-core-cs-discipline-equipement.md), [FRCoreCodeSystemDisciplinePrestation](CodeSystem-fr-core-cs-discipline-prestation.md), [FRCoreCodeSystemIdentifierType](CodeSystem-fr-core-cs-identifier-type.md), [FRCoreCodeSystemLocationIdentifierType](CodeSystem-fr-core-cs-location-identifier-type.md), [FRCoreCodeSystemLocationPhysicalType](CodeSystem-fr-core-cs-location-physical-type.md), [FRCoreCodeSystemLocationType](CodeSystem-fr-core-cs-location-type.md), [FRCoreCodeSystemMaritalStatus](CodeSystem-fr-core-cs-marital-status.md), [FRCoreCodeSystemMethodCollection](CodeSystem-fr-core-cs-method-collection.md), [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md), [FRCoreCodeSystemPositionLit](CodeSystem-fr-core-cs-location-position-lit.md), [FRCoreCodeSystemReliabilityIdentity](CodeSystem-fr-core-cs-fiabilite-identite.md), [FRCoreCodeSystemScheduleType](CodeSystem-fr-core-cs-schedule-type.md), [FRCoreCodeSystemTypeActivite](CodeSystem-fr-core-cs-type-activite.md), [FRCoreCodeSystemTypeAdmission](CodeSystem-fr-core-cs-type-admission.md), [FRCoreCodeSystemTypeChambre](CodeSystem-fr-core-cs-location-type-chambre.md), [FRCoreCodeSystemTypesOrganisations](CodeSystem-fr-core-cs-type-organisation.md), [FRCoreCodeSystemUFIndicateur](CodeSystem-fr-core-cs-uf-indicateur.md), [FRCoreCodeSystemv2_0203](CodeSystem-fr-core-cs-v2-0203.md), [FRCoreCodeSystemv2_0445](CodeSystem-fr-core-cs-v2-0445.md), [FRCoreCodeSystemv2_3307](CodeSystem-fr-core-cs-v2-3307.md), [FRCoreCodeSystemv2_3311](CodeSystem-fr-core-cs-v2-3311.md), [FRCoreCommentExtension](StructureDefinition-fr-core-comment.md), [FRCoreContactPointEmailTypeExtension](StructureDefinition-fr-core-contact-point-email-type.md), [FRCoreContactPointProfile](StructureDefinition-fr-core-contact-point.md), [FRCoreEncounterEstimatedDischargeDateExtension](StructureDefinition-fr-core-estimated-discharge-date.md), [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md), [FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md), [FRCoreHumanNameProfile](StructureDefinition-fr-core-human-name.md), [FRCoreLocationPositionLitExtension](StructureDefinition-fr-core-location-position-lit.md), [FRCoreLocationProfile](StructureDefinition-fr-core-location.md), [FRCoreLocationTypeChambreExtension](StructureDefinition-fr-core-location-type-chambre.md), [FRCoreLunarDateExtension](StructureDefinition-fr-core-lunar-date.md), [FRCoreMedicationAdministrationInhaledOxygenProfile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md), [FRCoreNationalityExtension](StructureDefinition-fr-core-patient-nationality.md), [FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md), [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md), [FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md), [FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md), [FRCoreObservationBodyWeightProfile](StructureDefinition-fr-core-observation-body-weight.md), [FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md), [FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md), [FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md), [FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md), [FRCoreObservationLevelOfExertionExtension](StructureDefinition-fr-core-observation-level-of-exertion.md), [FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md), [FRCoreOrganizationChampActiviteExtension](StructureDefinition-fr-core-organization-champ-activite.md), [FRCoreOrganizationDemandeuseActeExtension](StructureDefinition-fr-core-organization-demandeuse-acte.md), [FRCoreOrganizationDisciplineEquipementExtension](StructureDefinition-fr-core-organization-discipline-equipement.md), [FRCoreOrganizationDisciplinePrestationExtension](StructureDefinition-fr-core-organization-discipline-prestation.md), [FRCoreOrganizationEtablissementProfile](StructureDefinition-fr-core-organization-etablissement.md), [FRCoreOrganizationExecutanteActeExtension](StructureDefinition-fr-core-organization-executante-acte.md), [FRCoreOrganizationMemberExtension](StructureDefinition-fr-core-organization-member.md), [FRCoreOrganizationPlaceHebergementTheoriqueExtension](StructureDefinition-fr-core-organization-place-hebergement-theorique.md), [FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md), [FRCoreOrganizationRaisonSocialeExtension](StructureDefinition-fr-core-organization-raison-sociale.md), [FRCoreOrganizationSAECategoryExtension](StructureDefinition-fr-core-organization-sae-category.md), [FRCoreOrganizationShortNameExtension](StructureDefinition-fr-core-organization-short-name.md), [FRCoreOrganizationTarifExtension](StructureDefinition-fr-core-organization-tarif.md), [FRCoreOrganizationTypeActiviteExtension](StructureDefinition-fr-core-organization-type-activite.md), [FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md), [FRCoreOrganizationUFExterneExtension](StructureDefinition-fr-core-organization-uf-externe.md), [FRCoreOrganizationUFIndicateurExtension](StructureDefinition-fr-core-organization-uf-indicateur.md), [FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md), [FRCorePatientBirthDateUpdateIndicatorExtension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md), [FRCorePatientBirthListGivenName](StructureDefinition-fr-core-patient-birth-list-given-name.md), [FRCorePatientContactIdentifierExtension](StructureDefinition-fr-core-patient-contact-identifier.md), [FRCorePatientDeathPlaceExtension](StructureDefinition-fr-core-patient-death-place.md), [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientIdentityReliabilityExtension](StructureDefinition-fr-core-identity-reliability.md), [FRCorePatientMultipleBirthExtension](StructureDefinition-fr-core-patient-multiple-birth-r5.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md), [FRCorePractitionerSpecialtyExtension](StructureDefinition-fr-core-practitioner-specialty.md), [FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md), [FRCoreScheduleAvailabilityTimeExtension](StructureDefinition-fr-core-schedule-availability-time.md), [FRCoreScheduleProfile](StructureDefinition-fr-core-schedule.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [FRCoreSlotProfile](StructureDefinition-fr-core-slot.md), [FRCoreValueSetAvailabilityTimeRule](ValueSet-fr-core-vs-availability-time-rule.md), [FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md), [FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md), [FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md), [FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md), [FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md), [FRCoreValueSetCOGCommunePays](ValueSet-fr-core-vs-cog-commune-pays.md), [FRCoreValueSetCategorieSAEEtablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md), [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md), [FRCoreValueSetDisciplinePrestation](ValueSet-fr-core-vs-discipline-prestation.md), [FRCoreValueSetEmailType](ValueSet-fr-core-vs-email-type.md), [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md), [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md), [FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md), [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md), [FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md), [FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md), [FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md), [FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md), [FRCoreValueSetINSEECode](ValueSet-fr-core-vs-insee-code.md), [FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md), [FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md), [FRCoreValueSetLocationPositionLit](ValueSet-fr-core-vs-location-position-lit.md), [FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md), [FRCoreValueSetLocationTypeChambre](ValueSet-fr-core-vs-location-type-chambre.md), [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md), [FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md), [FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md), [FRCoreValueSetOrganizationChampActivite](ValueSet-fr-core-vs-organization-champ-activite.md), [FRCoreValueSetOrganizationCodeTarifTNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md), [FRCoreValueSetOrganizationDisciplineEquipement](ValueSet-fr-core-vs-organization-discipline-equipement.md), [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md), [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md), [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md), [FRCoreValueSetOrganizationTypeActivite](ValueSet-fr-core-vs-oragnization-type-activite.md), [FRCoreValueSetOrganizationUFIndicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md), [FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md), [FRCoreValueSetPatientGender](ValueSet-fr-core-vs-patient-gender.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md), [FRCoreValueSetPatientIdentifierUseINS](ValueSet-fr-core-vs-patient-identifier-use-ins.md), [FRCoreValueSetPatientIdentifierUsePI](ValueSet-fr-core-vs-patient-identifier-use-pi.md), [FRCoreValueSetPatientRelationType](ValueSet-fr-core-vs-relation-type.md), [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md), [FRCoreValueSetPractitionerRoleExercice](ValueSet-fr-core-vs-practitioner-role-exercice.md), [FRCoreValueSetPractitionerSpecialty](ValueSet-fr-core-vs-practitioner-specialty.md), [FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md), [FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md), [FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md), [FRCoreValueSetTitle](ValueSet-fr-core-vs-title.md) and [FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [FRCore](index.md), [FRCoreAddressInseeCodeExtension](StructureDefinition-fr-core-address-insee-code.md)... Show 140 more, [FRCoreAddressProfile](StructureDefinition-fr-core-address.md), [FRCoreAppointmentOperatorExtension](StructureDefinition-fr-core-appointment-operator.md), [FRCoreAppointmentProfile](StructureDefinition-fr-core-appointment.md), [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCoreCodeSystemChampActivite](CodeSystem-fr-core-cs-champ-activite.md), [FRCoreCodeSystemCirconstancesSortie](CodeSystem-fr-core-cs-circonstances-sortie.md), [FRCoreCodeSystemCodeTarifTNJP](CodeSystem-fr-core-cs-code-tarif-tnjp.md), [FRCoreCodeSystemContactRelationship](CodeSystem-fr-core-cs-contact-relationship.md), [FRCoreCodeSystemDisciplineEquipement](CodeSystem-fr-core-cs-discipline-equipement.md), [FRCoreCodeSystemDisciplinePrestation](CodeSystem-fr-core-cs-discipline-prestation.md), [FRCoreCodeSystemIdentifierType](CodeSystem-fr-core-cs-identifier-type.md), [FRCoreCodeSystemLocationIdentifierType](CodeSystem-fr-core-cs-location-identifier-type.md), [FRCoreCodeSystemLocationPhysicalType](CodeSystem-fr-core-cs-location-physical-type.md), [FRCoreCodeSystemLocationType](CodeSystem-fr-core-cs-location-type.md), [FRCoreCodeSystemMaritalStatus](CodeSystem-fr-core-cs-marital-status.md), [FRCoreCodeSystemMethodCollection](CodeSystem-fr-core-cs-method-collection.md), [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md), [FRCoreCodeSystemPatientContactRelationshipCategory](CodeSystem-fr-core-cs-patient-contact-relationship-category.md), [FRCoreCodeSystemPositionLit](CodeSystem-fr-core-cs-location-position-lit.md), [FRCoreCodeSystemReliabilityIdentity](CodeSystem-fr-core-cs-fiabilite-identite.md), [FRCoreCodeSystemScheduleType](CodeSystem-fr-core-cs-schedule-type.md), [FRCoreCodeSystemTypeActivite](CodeSystem-fr-core-cs-type-activite.md), [FRCoreCodeSystemTypeAdmission](CodeSystem-fr-core-cs-type-admission.md), [FRCoreCodeSystemTypeChambre](CodeSystem-fr-core-cs-location-type-chambre.md), [FRCoreCodeSystemTypesOrganisations](CodeSystem-fr-core-cs-type-organisation.md), [FRCoreCodeSystemUFIndicateur](CodeSystem-fr-core-cs-uf-indicateur.md), [FRCoreCodeSystemv2_0203](CodeSystem-fr-core-cs-v2-0203.md), [FRCoreCodeSystemv2_0445](CodeSystem-fr-core-cs-v2-0445.md), [FRCoreCodeSystemv2_3307](CodeSystem-fr-core-cs-v2-3307.md), [FRCoreCodeSystemv2_3311](CodeSystem-fr-core-cs-v2-3311.md), [FRCoreCommentExtension](StructureDefinition-fr-core-comment.md), [FRCoreContactPointEmailTypeExtension](StructureDefinition-fr-core-contact-point-email-type.md), [FRCoreContactPointProfile](StructureDefinition-fr-core-contact-point.md), [FRCoreEncounterEstimatedDischargeDateExtension](StructureDefinition-fr-core-estimated-discharge-date.md), [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md), [FRCoreHealthcareServiceProfile](StructureDefinition-fr-core-healthcare-service.md), [FRCoreHumanNameProfile](StructureDefinition-fr-core-human-name.md), [FRCoreLocationPositionLitExtension](StructureDefinition-fr-core-location-position-lit.md), [FRCoreLocationProfile](StructureDefinition-fr-core-location.md), [FRCoreLocationTypeChambreExtension](StructureDefinition-fr-core-location-type-chambre.md), [FRCoreLunarDateExtension](StructureDefinition-fr-core-lunar-date.md), [FRCoreMedicationAdministrationInhaledOxygenProfile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md), [FRCoreNationalityExtension](StructureDefinition-fr-core-patient-nationality.md), [FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md), [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md), [FRCoreObservationBodyPositionExtExtension](StructureDefinition-fr-core-observation-body-position-ext.md), [FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md), [FRCoreObservationBodyWeightProfile](StructureDefinition-fr-core-observation-body-weight.md), [FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md), [FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md), [FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md), [FRCoreObservationHeightBodyPositionExtension](StructureDefinition-fr-core-observation-height-body-position.md), [FRCoreObservationLevelOfExertionExtension](StructureDefinition-fr-core-observation-level-of-exertion.md), [FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md), [FRCoreOrganizationChampActiviteExtension](StructureDefinition-fr-core-organization-champ-activite.md), [FRCoreOrganizationDemandeuseActeExtension](StructureDefinition-fr-core-organization-demandeuse-acte.md), [FRCoreOrganizationDisciplineEquipementExtension](StructureDefinition-fr-core-organization-discipline-equipement.md), [FRCoreOrganizationDisciplinePrestationExtension](StructureDefinition-fr-core-organization-discipline-prestation.md), [FRCoreOrganizationEtablissementProfile](StructureDefinition-fr-core-organization-etablissement.md), [FRCoreOrganizationExecutanteActeExtension](StructureDefinition-fr-core-organization-executante-acte.md), [FRCoreOrganizationMemberExtension](StructureDefinition-fr-core-organization-member.md), [FRCoreOrganizationPlaceHebergementTheoriqueExtension](StructureDefinition-fr-core-organization-place-hebergement-theorique.md), [FRCoreOrganizationProfile](StructureDefinition-fr-core-organization.md), [FRCoreOrganizationRaisonSocialeExtension](StructureDefinition-fr-core-organization-raison-sociale.md), [FRCoreOrganizationSAECategorieExtension](StructureDefinition-fr-core-organization-sae-categorie.md), [FRCoreOrganizationShortNameExtension](StructureDefinition-fr-core-organization-short-name.md), [FRCoreOrganizationTarifExtension](StructureDefinition-fr-core-organization-tarif.md), [FRCoreOrganizationTypeActiviteExtension](StructureDefinition-fr-core-organization-type-activite.md), [FRCoreOrganizationUACProfile](StructureDefinition-fr-core-organization-uac.md), [FRCoreOrganizationUFExterneExtension](StructureDefinition-fr-core-organization-uf-externe.md), [FRCoreOrganizationUFIndicateurExtension](StructureDefinition-fr-core-organization-uf-indicateur.md), [FRCoreOrganizationUFProfile](StructureDefinition-fr-core-organization-uf.md), [FRCorePatientBirthDateUpdateIndicatorExtension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md), [FRCorePatientBirthListGivenName](StructureDefinition-fr-core-patient-birth-list-given-name.md), [FRCorePatientContactIdentifierExtension](StructureDefinition-fr-core-patient-contact-identifier.md), [FRCorePatientContactRelationshipCategoryExtension](StructureDefinition-fr-core-patient-contact-relationship-category.md), [FRCorePatientDeathPlaceExtension](StructureDefinition-fr-core-patient-death-place.md), [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientIdentityReliabilityExtension](StructureDefinition-fr-core-identity-reliability.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCorePractitionerRoleProfile](StructureDefinition-fr-core-practitioner-role.md), [FRCorePractitionerSpecialtyExtension](StructureDefinition-fr-core-practitioner-specialty.md), [FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md), [FRCoreScheduleAvailabilityTimeExtension](StructureDefinition-fr-core-schedule-availability-time.md), [FRCoreScheduleProfile](StructureDefinition-fr-core-schedule.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [FRCoreSlotProfile](StructureDefinition-fr-core-slot.md), [FRCoreValueSetAvailabilityTimeRule](ValueSet-fr-core-vs-availability-time-rule.md), [FRCoreValueSetBPMeasurementMethod](ValueSet-fr-core-vs-bp-method.md), [FRCoreValueSetBloodPressureMeasurementBodyLocation](ValueSet-fr-core-vs-bp-meas-body-location.md), [FRCoreValueSetBloodPressureMeasurementMethod](ValueSet-fr-core-vs-bp-meas-method.md), [FRCoreValueSetBodyPosition](ValueSet-fr-core-vs-body-position.md), [FRCoreValueSetBodyTemperatureMeasurementBodyLocation](ValueSet-fr-core-vsbody-temp-meas-body-location.md), [FRCoreValueSetCOGCommunePays](ValueSet-fr-core-vs-cog-commune-pays.md), [FRCoreValueSetCategorieSAEEtablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md), [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md), [FRCoreValueSetDisciplinePrestation](ValueSet-fr-core-vs-discipline-prestation.md), [FRCoreValueSetEmailType](ValueSet-fr-core-vs-email-type.md), [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md), [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md), [FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md), [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md), [FRCoreValueSetHeartRateMeasurementBodyLocation](ValueSet-fr-core-vs-heartrate-body-location.md), [FRCoreValueSetHeartRateMeasurementMethod](ValueSet-fr-core-vs-heartrate-measurement-method.md), [FRCoreValueSetHeightBodyPosition](ValueSet-fr-core-vs-height-body-position.md), [FRCoreValueSetHeightMeasurementMethod](ValueSet-fr-core-vs-height-meas-method.md), [FRCoreValueSetINSEECode](ValueSet-fr-core-vs-insee-code.md), [FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md), [FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md), [FRCoreValueSetLocationPositionLit](ValueSet-fr-core-vs-location-position-lit.md), [FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md), [FRCoreValueSetLocationTypeChambre](ValueSet-fr-core-vs-location-type-chambre.md), [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md), [FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md), [FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md), [FRCoreValueSetOrganizationChampActivite](ValueSet-fr-core-vs-organization-champ-activite.md), [FRCoreValueSetOrganizationCodeTarifTNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md), [FRCoreValueSetOrganizationDisciplineEquipement](ValueSet-fr-core-vs-organization-discipline-equipement.md), [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md), [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md), [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md), [FRCoreValueSetOrganizationTypeActivite](ValueSet-fr-core-vs-oragnization-type-activite.md), [FRCoreValueSetOrganizationUFIndicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md), [FRCoreValueSetPatientContactRelationshipCategory](ValueSet-fr-core-vs-patient-contact-relationship-category.md), [FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md), [FRCoreValueSetPatientGender](ValueSet-fr-core-vs-patient-gender.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md), [FRCoreValueSetPatientIdentifierUseINS](ValueSet-fr-core-vs-patient-identifier-use-ins.md), [FRCoreValueSetPatientIdentifierUsePI](ValueSet-fr-core-vs-patient-identifier-use-pi.md), [FRCoreValueSetPatientRelationType](ValueSet-fr-core-vs-relation-type.md), [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md), [FRCoreValueSetPractitionerRoleExercice](ValueSet-fr-core-vs-practitioner-role-exercice.md), [FRCoreValueSetPractitionerSpecialty](ValueSet-fr-core-vs-practitioner-specialty.md), [FRCoreValueSetRespiratoryRateMeasurementMethod](ValueSet-fr-core-vs-respiratory-rate-meas-method.md), [FRCoreValueSetSPO2BodyLocation](ValueSet-fr-core-vs-spo2-body-location.md), [FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md), [FRCoreValueSetTitle](ValueSet-fr-core-vs-title.md) and [FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -148,11 +146,11 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.fr.core",
   "url" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -169,10 +167,11 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       "use" : "work"
     }]
   }],
+  "description" : "Guide d'implémentation FR Core définissant la structuration générique de FHIR en France. Socle de référence à utiliser systématiquement dans tout projet FHIR français.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -224,7 +223,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -608,7 +607,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1258,6 +1257,18 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-patient-contact-relationship-category"
+      },
+      "name" : "FR Core CodeSystem Patient Contact Relationship Category",
+      "description" : "Catégorie de la relation du contact patient : rôle ou type de relation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-position-lit"
       },
       "name" : "FR Core CodeSystem Position du lit",
@@ -1690,7 +1701,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-sae-category"
+        "reference" : "StructureDefinition/fr-core-organization-sae-categorie"
       },
       "name" : "FR Core Organization Extension - Catetgorie SAE",
       "description" : "Categorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement)",
@@ -1774,10 +1785,10 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-member"
+        "reference" : "StructureDefinition/fr-core-organization-place-hebergement-theorique"
       },
-      "name" : "FR Core Organization Extension - Membre d'organisation",
-      "description" : "Extension permettant de définir des membres d'une organisation.",
+      "name" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
+      "description" : "Nombre total de places d'hébergement théoriques",
       "exampleBoolean" : false
     },
     {
@@ -1786,10 +1797,10 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-place-hebergement-theorique"
+        "reference" : "StructureDefinition/fr-core-organization-member"
       },
-      "name" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
-      "description" : "Nombre total de places d'hébergement théoriques",
+      "name" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
+      "description" : "Extension permettant de définir des membres d'une organisation. Les membres sont des organisations filles de la ressources. C'est la relation inverse de partOf.",
       "exampleBoolean" : false
     },
     {
@@ -1922,6 +1933,18 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FR Core Patient Contact Identifier Extension",
       "description" : "Identifiant de contact dans la ressource Patient\n\rThis extension carries the contact identifier in the patient resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-patient-contact-relationship-category"
+      },
+      "name" : "FR Core Patient Contact Relationship Category Extension",
+      "description" : "Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère)",
       "exampleBoolean" : false
     },
     {
@@ -2113,7 +2136,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "ValueSet/fr-core-vs-categorie-sae-etablissement"
       },
       "name" : "FR Core ValueSet Categorie SAE Etablissement",
-      "description" : "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
+      "description" : "Catérorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
       "exampleBoolean" : false
     },
     {
@@ -2422,6 +2445,18 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/fr-core-vs-patient-contact-relationship-category"
+      },
+      "name" : "FR Core ValueSet Patient Contact Relationship Category",
+      "description" : "Catégorie de la relation du contact patient : rôle ou type de relation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-contact-role"
       },
       "name" : "FR Core ValueSet Patient contact role",
@@ -2570,7 +2605,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreAppointmentExample",
       "description" : "Exemple de ressource Appointment pour décrire un état de rendez-vous médical",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0"
     },
     {
       "extension" : [{
@@ -2582,7 +2617,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreEncounterExample",
       "description" : "Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0"
     },
     {
       "extension" : [{
@@ -2594,7 +2629,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreHealthcareServiceExample",
       "description" : "Exemple de ressource HealthcareService pour décrire le service de cardiologie de l’hôpital X",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0"
     },
     {
       "extension" : [{
@@ -2618,7 +2653,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationBMIExample",
       "description" : "Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0"
     },
     {
       "extension" : [{
@@ -2630,7 +2665,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationBodyHeightExample",
       "description" : "Exemple de ressource Observation pour décrire la taille du patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0"
     },
     {
       "extension" : [{
@@ -2642,7 +2677,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationBodyTemperatureExample",
       "description" : "Exemple de ressource Observation pour décrire la température du patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0"
     },
     {
       "extension" : [{
@@ -2654,7 +2689,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationBodyWeightExample",
       "description" : "Exemple de ressource Observation pour décrire le poids du patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0"
     },
     {
       "extension" : [{
@@ -2666,7 +2701,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationBPExample",
       "description" : "Exemple de ressource Observation Pression artérielle",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0"
     },
     {
       "extension" : [{
@@ -2678,7 +2713,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationHeadCircumExample",
       "description" : "Exemple de ressource Observation pour décrire le périmètre cranien d'un patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0"
     },
     {
       "extension" : [{
@@ -2690,7 +2725,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreObservationHeartRateExample",
       "description" : "Exemple de ressource Observation pour décrire la fréquence cardiaque d'un patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0"
     },
     {
       "extension" : [{
@@ -2702,7 +2737,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreOrganizationExample",
       "description" : "Exemple de ressource Organization pour décrire un hôpital",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2714,7 +2749,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCorePatientExample",
       "description" : "Exemple de ressource Patient (cas d'usage INS)",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
     },
     {
       "extension" : [{
@@ -2726,7 +2761,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCorePractitionerExample",
       "description" : "Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l'ordre.",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0"
     },
     {
       "extension" : [{
@@ -2738,7 +2773,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCorePractitionerRoleExample",
       "description" : "Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"
     },
     {
       "extension" : [{
@@ -2750,7 +2785,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreScheduleExample",
       "description" : "Exemple de ressource Schedule pour décrire un agenda.",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0"
     },
     {
       "extension" : [{
@@ -2762,7 +2797,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "FRCoreSlotExample",
       "description" : "Exemple de ressource Slot.",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0"
     },
     {
       "extension" : [{
@@ -2809,7 +2844,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-dept-11003-endocrino"
       },
       "name" : "hopitaltest-dept-11003-endocrino",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2820,7 +2855,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-eg-4-members"
       },
       "name" : "hopitaltest-eg-4-members",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
       "extension" : [{
@@ -2831,7 +2866,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-ej-350005179"
       },
       "name" : "hopitaltest-ej-350005179",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
       "extension" : [{
@@ -2842,7 +2877,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Location/hopitaltest-endocrino-ch04"
       },
       "name" : "hopitaltest-endocrino-ch04",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
       "extension" : [{
@@ -2853,7 +2888,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Location/hopitaltest-endocrino-ch04-litF"
       },
       "name" : "hopitaltest-endocrino-ch04-litF",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
       "extension" : [{
@@ -2864,7 +2899,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-pole-1150-med-spe"
       },
       "name" : "hopitaltest-pole-1150-med-spe",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2875,7 +2910,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Location/hopitaltest-salle-examen-01"
       },
       "name" : "hopitaltest-salle-examen-01",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
       "extension" : [{
@@ -2886,7 +2921,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo"
       },
       "name" : "hopitaltest-service-11006-endocrino-diabo",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2897,7 +2932,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-service-11007-dietetique"
       },
       "name" : "hopitaltest-service-11007-dietetique",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2908,7 +2943,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uac-4420-uac-01"
       },
       "name" : "hopitaltest-uac-4420-uac-01",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
       "extension" : [{
@@ -2919,7 +2954,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uac-4420-uac-02"
       },
       "name" : "hopitaltest-uac-4420-uac-02",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
       "extension" : [{
@@ -2930,7 +2965,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uf-4420-dialyse"
       },
       "name" : "hopitaltest-uf-4420-dialyse",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
       "extension" : [{
@@ -2941,7 +2976,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
       },
       "name" : "hopitaltest-uf-4701-endocrino-diab",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
       "extension" : [{
@@ -2952,7 +2987,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uf-4705-nutrition"
       },
       "name" : "hopitaltest-uf-4705-nutrition",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
       "extension" : [{
@@ -2964,18 +2999,6 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "Oxygen Saturation Body Location value set",
       "description" : "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-patient-multiple-birth-r5"
-      },
-      "name" : "Rang Gémellaire",
-      "description" : "Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.",
       "exampleBoolean" : false
     },
     {

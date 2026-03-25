@@ -1,4 +1,4 @@
-# FR Core Organization Etablissement Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization Etablissement Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
 
  
@@ -60,11 +60,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-etablissement",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie|2.2.0"]
       }]
     },
     {
@@ -139,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0"]
       }]
     },
     {
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.identifier.type",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type|2.2.0"
       }
     },
     {
@@ -291,7 +291,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "id" : "Organization.identifier:rppsRang",
       "path" : "Organization.identifier",
       "sliceName" : "rppsRang",
-      "short" : "RPPS rang (11 chiffres RPPS + 2 chiffres RANG)",
+      "short" : "RPPS rang (11 chiffres RPPS + 2 ou 3 chiffres RANG)",
       "min" : 0,
       "max" : "*"
     },
@@ -302,7 +302,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-          "code" : "INTRN"
+          "code" : "RPPSRG"
         }]
       }
     },
@@ -324,7 +324,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       },
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type|2.2.0"
       }
     },
     {

@@ -1,4 +1,4 @@
-# hopitaltest-uac-4420-uac-02 - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-uac-4420-uac-02 - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,16 +10,13 @@ Profil: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organizat
 
 **FR Core Organization Short Name Extension**: UF Dialyse
 
-**Extension Definition for Organization.description for Version 5.0**: UF Dialyse - Utilisation de l'hémodialuse
+**Organization Period**: 2023-01-01 00:00:00+0100 --> (en cours)
 
-> **Organization Period**
-* start: 2023-01-01 00:00:00+0100
-
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-care-rate-extension**: E2
+**FR Core Organization Extension - Discipline Prestation**: [FR Core CodeSystem Discipline d'Equipement - nomenclature SAE: 798](CodeSystem-fr-core-cs-discipline-equipement.md#fr-core-cs-discipline-equipement-798) (Hémodialyse en centre pour enfant)
 
 **identifier**: `http://hopitalTest.fr/namingsystem/organization`/4220-02 (utilisation : official, )
 
-**type**: UAC
+**type**: Unité d'activité
 
 **name**: UAC 02 Dialyse
 
@@ -41,19 +38,17 @@ Profil: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organizat
     "valueString" : "UF Dialyse"
   },
   {
-    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description",
-    "valueString" : "UF Dialyse - Utilisation de l'hémodialuse"
+    "url" : "http://hl7.org/fhir/StructureDefinition/organization-period",
+    "valuePeriod" : {
+      "start" : "2023-01-01T00:00:00+01:00"
+    }
   },
   {
-    "extension" : [{
-      "url" : "start",
-      "valueDateTime" : "2023-01-01T00:00:00+01:00"
-    }],
-    "url" : "http://hl7.org/fhir/StructureDefinition/organization-period"
-  },
-  {
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-care-rate-extension",
-    "valueString" : "E2"
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation",
+    "valueCoding" : {
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement",
+      "code" : "798"
+    }
   }],
   "identifier" : [{
     "use" : "official",
@@ -64,8 +59,7 @@ Profil: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organizat
     "coding" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
       "code" : "UAC"
-    }],
-    "text" : "UAC"
+    }]
   }],
   "name" : "UAC 02 Dialyse",
   "partOf" : {

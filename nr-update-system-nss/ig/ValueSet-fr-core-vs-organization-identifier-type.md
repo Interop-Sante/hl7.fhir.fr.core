@@ -1,4 +1,4 @@
-# FR Core ValueSet Organization identifier type - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Organization identifier type - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
 
  
@@ -49,17 +49,18 @@ A coded type for an identifier that can be used to determine which identifier to
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
     "valueMarkdown" : "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetOrganizationIdentifierType",
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -80,7 +81,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -88,7 +89,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "compose" : {
     "include" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-      "version" : "2.2.0-ballot-2",
+      "version" : "2.2.0",
       "concept" : [{
         "code" : "FINEJ",
         "display" : "FINESS d'entité juridique"
@@ -116,6 +117,10 @@ A coded type for an identifier that can be used to determine which identifier to
       {
         "code" : "EXTRN",
         "display" : "Identifiant externe"
+      },
+      {
+        "code" : "RPPSRG",
+        "display" : "Identifiant RPPS Rang"
       }]
     }]
   }

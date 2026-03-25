@@ -1,4 +1,4 @@
-# FR Core ValueSet Organization Etablisement type - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Organization Etablisement type - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetOrganizationEtablissementType |
 
  
@@ -49,13 +49,14 @@ Types d’organisation représentant des établissements.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetOrganizationEtablissementType",
   "title" : "FR Core ValueSet Organization Etablisement type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -76,14 +77,14 @@ Types d’organisation représentant des établissements.
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
   "compose" : {
     "include" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-      "version" : "2.2.0-ballot-2",
+      "version" : "2.2.0",
       "concept" : [{
         "code" : "LEGAL-ENTITY",
         "display" : "Entité légale"

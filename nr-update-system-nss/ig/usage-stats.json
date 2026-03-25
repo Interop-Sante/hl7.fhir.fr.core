@@ -1,16 +1,9 @@
 {
   "package": "hl7.fhir.fr.core",
-  "version": "2.2.0-ballot-2",
+  "version": "2.2.0",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "FRA",
+  "jurisdiction": "FR",
   "extensions": [
-    {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth",
-      "title": "Rang Gémellaire",
-      "types": [
-        "integer"
-      ]
-    },
     {
       "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
       "title": "FR Core Address Insee Code Extension",
@@ -243,7 +236,7 @@
     },
     {
       "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-      "title": "FR Core Organization Extension - Membre d\u0027organisation",
+      "title": "FR Core Organization Extension - quelles sont les entités qui font partie de l\u0027organisation",
       "types": [
         "base64Binary",
         "boolean",
@@ -313,7 +306,7 @@
       ]
     },
     {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category",
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie",
       "title": "FR Core Organization Extension - Catetgorie SAE",
       "types": [
         "base64Binary",
@@ -473,6 +466,13 @@
       "title": "FR Core Patient Contact Identifier Extension",
       "types": [
         "Identifier"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",
+      "title": "FR Core Patient Contact Relationship Category Extension",
+      "types": [
+        "code"
       ]
     },
     {
@@ -868,14 +868,8 @@
     ]
   },
   "usage": {
-    "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit": [
-      "Location"
-    ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description": [
       "Organization"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.multipleBirth|2.2.0-ballot-2": [
-      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -965,165 +959,168 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code|2.2.0": [
       "Address",
       "Patient.extension.value[x]"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator": [
       "Appointment"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator|2.2.0": [
       "Appointment"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.2.0": [
       "Patient.contact"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
       "Practitioner.telecom"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type|2.2.0": [
       "ContactPoint"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date": [
       "Encounter"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date|2.2.0": [
       "Encounter"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit": [
       "Location"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit|2.2.0": [
       "Location"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre|2.2.0": [
+      "Location"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext|2.2.0": [
       "Observation"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position|2.2.0": [
       "Observation"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion|2.2.0": [
       "Observation"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-care-rate-extension": [
-      "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement|2.2.0": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe|2.2.0": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur|2.2.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
       "Patient.name"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.2.0": [
       "Patient.name"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.2.0": [
       "Patient.contact"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category": [
+      "Patient.contact.relationship"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category|2.2.0": [
+      "Patient.contact.relationship"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.2.0": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0": [
       "Practitioner"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time": [
       "Schedule"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time|2.2.0": [
       "Schedule"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
       "HealthcareService",
       "Schedule"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot-2": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0": [
       "HealthcareService",
       "PractitionerRole",
       "Schedule"

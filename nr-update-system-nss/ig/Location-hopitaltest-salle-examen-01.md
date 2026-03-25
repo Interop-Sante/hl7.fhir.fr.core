@@ -1,4 +1,4 @@
-# hopitaltest-salle-examen-01 - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-salle-examen-01 - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 **telecom**: ph: 84900
 
-**partOf**: [Organization UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
+**managingOrganization**: [Organization UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
 
 
 
@@ -43,7 +43,7 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
     "system" : "phone",
     "value" : "84900"
   }],
-  "partOf" : {
+  "managingOrganization" : {
     "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
   }
 }

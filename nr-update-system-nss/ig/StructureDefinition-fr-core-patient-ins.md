@@ -1,4 +1,4 @@
-# FR Core Patient INS Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Patient INS Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCorePatientINSProfile |
 
  
@@ -55,11 +55,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-patient-ins",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -123,22 +123,22 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
         "key" : "fr-core-1",
         "severity" : "error",
         "human" : "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present",
-        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())",
-        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
+        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official' and type.coding.exists(code = 'INS-NIR')).exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
       },
       {
         "key" : "fr-core-2",
         "severity" : "error",
         "human" : "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present",
         "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1)",
-        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
       },
       {
         "key" : "fr-core-3",
         "severity" : "warning",
         "human" : "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service.",
-        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999')",
-        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
+        "expression" : "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999'",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
       }]
     },
     {
@@ -147,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "sliceName" : "fr-ins-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
     },
     {
       "id" : "Patient.extension",
@@ -169,7 +169,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "path" : "Patient.extension.extension.value[x]",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins|2.2.0"
       }
     },
     {
@@ -212,7 +212,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins|2.2.0"
       }
     },
     {
@@ -329,7 +329,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins|2.2.0"
       }
     },
     {

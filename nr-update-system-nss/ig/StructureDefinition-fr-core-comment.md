@@ -1,4 +1,4 @@
-# FR Core Comment Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Comment Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment | *Version*:2.2.0 | |
 | Active as of 2026-03-25 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreCommentExtension |
 
 Ajout d’un commentaire sur un dataElement d’une ressource. Add a comment on a dataElement of a resource
@@ -50,11 +50,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
     "valueInteger" : 1
   }],
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-comment.csv)
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

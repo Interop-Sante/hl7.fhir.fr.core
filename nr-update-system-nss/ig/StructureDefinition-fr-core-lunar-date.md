@@ -1,4 +1,4 @@
-# FR Core Lunar Date Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Lunar Date Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreLunarDateExtension |
 
 Date de naissance approximative du patient. Approximate birthdate of the patient
@@ -46,11 +46,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-lunar-date.c
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-lunar-date",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreLunarDateExtension",
   "title" : "FR Core Lunar Date Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -71,7 +71,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-lunar-date.c
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

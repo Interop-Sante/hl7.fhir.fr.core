@@ -1,4 +1,4 @@
-# FR Core Organization Extension - Indicateur d'une unité fonctionnelle - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization Extension - Indicateur d'une unité fonctionnelle - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationUFIndicateurExtension |
 
 Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.
@@ -20,6 +20,7 @@ Indicateur permettant de définir si une UF est d’hébergement, médicale, adm
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+* Exemples pour ce/t/te Extension: [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md), [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md) and [UF Nutrition](Organization-hopitaltest-uf-4705-nutrition.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-uf-indicateur)
 
@@ -44,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-uf-indicateur",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationUFIndicateurExtension",
   "title" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -83,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf#Organization"
+    "expression" : "Organization"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
@@ -130,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur|2.2.0"
       }
     }]
   }

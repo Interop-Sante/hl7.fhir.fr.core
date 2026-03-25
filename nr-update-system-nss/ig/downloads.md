@@ -1,4 +1,4 @@
-# Téléchargements et usages - Guide d'implémentation FR Core v2.2.0-ballot-2
+# Téléchargements et usages - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Téléchargements et usages**

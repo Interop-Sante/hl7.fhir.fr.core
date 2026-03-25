@@ -1,4 +1,4 @@
-# FR Core Observation Body Position Ext Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Observation Body Position Ext Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreObservationBodyPositionExtExtension |
 
 Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire. CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-observation-body-position-ext",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreObservationBodyPositionExtExtension",
   "title" : "FR Core Observation Body Position Ext Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       }],
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position|2.2.0"
       }
     }]
   }

@@ -1,4 +1,4 @@
-# FR Core CodeSystem Location Identifier Type - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core CodeSystem Location Identifier Type - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type | *Version*:2.2.0 |
 | Draft as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemLocationIdentifierType |
 
  
@@ -29,13 +29,14 @@ Location identifier type
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreCodeSystemLocationIdentifierType",
   "title" : "FR Core CodeSystem Location Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -56,7 +57,7 @@ Location identifier type
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

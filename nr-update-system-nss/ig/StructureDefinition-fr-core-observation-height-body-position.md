@@ -1,4 +1,4 @@
-# FR Core Observation Height Body Position Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Observation Height Body Position Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreObservationHeightBodyPositionExtension |
 
 Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing). Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-observation-height-body-position",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreObservationHeightBodyPositionExtension",
   "title" : "FR Core Observation Height Body Position Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
       }],
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position|2.2.0"
       }
     }]
   }

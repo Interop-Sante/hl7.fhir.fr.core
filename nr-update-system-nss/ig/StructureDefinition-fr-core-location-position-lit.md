@@ -1,4 +1,4 @@
-# FR Core Location Extension - Position du lit - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Location Extension - Position du lit - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreLocationPositionLitExtension |
 
 Position du lit dans la chambre
@@ -20,6 +20,7 @@ Position du lit dans la chambre
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
+* Exemples pour ce/t/te Extension: [Lit Fenetre - chambre 04](Location-hopitaltest-endocrino-ch04-litF.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location-position-lit)
 
@@ -44,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-location-position-lit",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreLocationPositionLitExtension",
   "title" : "FR Core Location Extension - Position du lit",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -83,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location#Location"
+    "expression" : "Location"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
@@ -113,7 +114,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-pos
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit|2.2.0"
       }
     }]
   }

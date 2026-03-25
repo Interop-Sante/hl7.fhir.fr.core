@@ -1,4 +1,4 @@
-# FR Core Related Person Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Related Person Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreRelatedPersonProfile |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-related-person",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -111,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "sliceName" : "fr-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0"
     },
     {
       "id" : "RelatedPerson.identifier",
@@ -124,7 +124,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "path" : "RelatedPerson.patient",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"]
       }]
     },
     {
@@ -147,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "max" : "1",
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.2.0"
       }
     },
     {
@@ -165,7 +165,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "max" : "*",
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type|2.2.0"
       }
     },
     {
@@ -179,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "path" : "RelatedPerson.name",
       "type" : [{
         "code" : "HumanName",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.2.0"]
       }]
     },
     {
@@ -187,7 +187,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "path" : "RelatedPerson.telecom",
       "type" : [{
         "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0"]
       }]
     },
     {
@@ -195,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
       "path" : "RelatedPerson.address",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     }]
   }

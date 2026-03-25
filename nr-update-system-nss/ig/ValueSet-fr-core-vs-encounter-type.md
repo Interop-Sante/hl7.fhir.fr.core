@@ -1,4 +1,4 @@
-# FR Core ValueSet Encounter type - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Encounter type - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type | *Version*:2.2.0 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetEncounterType |
 
  
@@ -49,6 +49,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
     "valueMarkdown" : "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.html) for a list of common identifier systems"
@@ -66,12 +67,12 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
     "valueCode" : "fhir"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetEncounterType",
   "title" : "FR Core ValueSet Encounter type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -92,7 +93,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -123,7 +124,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
     },
     {
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission",
-      "version" : "2.2.0-ballot-2",
+      "version" : "2.2.0",
       "concept" : [{
         "code" : "RM",
         "display" : "Rétrocession de médicament"

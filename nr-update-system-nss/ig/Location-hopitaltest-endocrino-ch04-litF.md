@@ -1,4 +1,4 @@
-# hopitaltest-endocrino-ch04-litF - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-endocrino-ch04-litF - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit**: [FR Core CodeSystem Position du lit: FNTR](CodeSystem-fr-core-cs-location-position-lit.md#fr-core-cs-location-position-lit-FNTR) (Fenêtre)
+**FR Core Location Extension - Position du lit**: [FR Core CodeSystem Position du lit: FNTR](CodeSystem-fr-core-cs-location-position-lit.md#fr-core-cs-location-position-lit-FNTR) (Fenêtre)
 
 **status**: Active
 
@@ -18,7 +18,9 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 **telecom**: ph: 84921
 
-**partOf**: [Organization/hopitaltest-endocrino-ch04](Organization/hopitaltest-endocrino-ch04)
+**managingOrganization**: [Organization UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
+
+**partOf**: [Location Chambre 04](Location-hopitaltest-endocrino-ch04.md)
 
 
 
@@ -32,7 +34,7 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"]
   },
   "extension" : [{
-    "url" : "http://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
     "valueCoding" : {
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit",
       "code" : "FNTR",
@@ -53,8 +55,11 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
     "system" : "phone",
     "value" : "84921"
   }],
+  "managingOrganization" : {
+    "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
+  },
   "partOf" : {
-    "reference" : "Organization/hopitaltest-endocrino-ch04"
+    "reference" : "Location/hopitaltest-endocrino-ch04"
   }
 }
 

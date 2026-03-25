@@ -1,4 +1,4 @@
-# FR Core CodeSystem Fiabilité Identité - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core CodeSystem Fiabilité Identité - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemReliabilityIdentity |
 | *Other Identifiers:*http://terminology.hl7.org/CodeSystem/v2-tables#urn:oid:2.16.840.1.113883.12.445 | |
 
@@ -30,17 +30,18 @@ French Identity reliabilty codes
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite",
   "identifier" : [{
     "system" : "http://terminology.hl7.org/CodeSystem/v2-tables",
     "value" : "urn:oid:2.16.840.1.113883.12.445"
   }],
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreCodeSystemReliabilityIdentity",
   "title" : "FR Core CodeSystem Fiabilité Identité",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -61,7 +62,7 @@ French Identity reliabilty codes
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

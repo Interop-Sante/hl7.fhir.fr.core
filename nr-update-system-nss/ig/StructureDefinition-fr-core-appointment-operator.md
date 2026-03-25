@@ -1,4 +1,4 @@
-# FR Core Appointment Operator Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Appointment Operator Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreAppointmentOperatorExtension |
 
 Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-appointment-operator",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreAppointmentOperatorExtension",
   "title" : "FR Core Appointment Operator Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -124,9 +124,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment-
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
       }]
     }]

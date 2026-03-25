@@ -1,4 +1,4 @@
-# hopitaltest-eg-4-members - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-eg-4-members - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,17 +8,15 @@
 
 Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 
-**FR Core Organization Extension - Catetgorie SAE**: Centre hospitalier régional (CHR)
-
 **FR Core Organization Raison Sociale Extension**: CHRU CENTRE VILLE
 
-**FR Core Organization Extension - Membre d'organisation**: [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
 
-**FR Core Organization Extension - Membre d'organisation**: `UF Nutrition`
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [UF Nutrition](Organization-hopitaltest-uf-4705-nutrition.md)
 
-**FR Core Organization Extension - Membre d'organisation**: [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md)
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md)
 
-**FR Core Organization Extension - Membre d'organisation**: [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
 
 **identifier**: FINESS d'entité géographique/350009999 (utilisation : official, ), Identification de l'organisation au SIREN/26350007609999 (utilisation : official, )
 
@@ -38,16 +36,6 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"]
   },
   "extension" : [{
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category",
-    "valueCodeableConcept" : {
-      "coding" : [{
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
-        "code" : "101",
-        "display" : "Centre hospitalier régional (CHR)"
-      }]
-    }
-  },
-  {
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
     "valueString" : "CHRU CENTRE VILLE"
   },
@@ -55,15 +43,13 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "valueReference" : {
       "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab",
-      "type" : "UF",
       "display" : "UF Endocrino Diabeto"
     }
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "valueReference" : {
-      "reference" : "Organization/hopitaltest-uf-4705-nutrition\"",
-      "type" : "UF",
+      "reference" : "Organization/hopitaltest-uf-4705-nutrition",
       "display" : "UF Nutrition"
     }
   },
@@ -71,7 +57,6 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "valueReference" : {
       "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo",
-      "type" : "SERVICE",
       "display" : "Service Endocrino Diabeto"
     }
   },
@@ -79,7 +64,6 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "valueReference" : {
       "reference" : "Organization/hopitaltest-service-11007-dietetique",
-      "type" : "SERVICE",
       "display" : "Service Dietetique"
     }
   }],

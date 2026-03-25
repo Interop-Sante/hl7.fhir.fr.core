@@ -1,4 +1,4 @@
-# FR Core Organization Extension - Discipline Prestation - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization Extension - Discipline Prestation - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationDisciplinePrestationExtension |
 
 Discipline de prestation d’une UAC
@@ -20,6 +20,7 @@ Discipline de prestation d’une UAC
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
+* Exemples pour ce/t/te Extension: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md) and [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-discipline-prestation)
 
@@ -44,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-discipline-prestation",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationDisciplinePrestationExtension",
   "title" : "FR Core Organization Extension - Discipline Prestation",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -83,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac#Organization"
+    "expression" : "Organization"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
@@ -113,7 +114,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation|2.2.0"
       }
     }]
   }

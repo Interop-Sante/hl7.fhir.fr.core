@@ -1,4 +1,4 @@
-# FR Core Assembly Order Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Assembly Order Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order | *Version*:2.2.0 | |
 | Active as of 2026-03-25 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreAssemblyOrderExtension |
 
 A code that represents the preferred display order of the components of this human name.
@@ -52,11 +52,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
     "valueInteger" : 1
   }],
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-human-name-a
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

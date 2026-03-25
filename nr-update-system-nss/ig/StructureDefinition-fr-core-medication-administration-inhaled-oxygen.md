@@ -1,4 +1,4 @@
-# FR Core Medication Administration Inhaled Oxygen Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Medication Administration Inhaled Oxygen Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreMedicationAdministrationInhaledOxygenProfile |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-medication-administration-inhaled-oxygen",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreMedicationAdministrationInhaledOxygenProfile",
   "title" : "FR Core Medication Administration Inhaled Oxygen Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -121,7 +121,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
       "sliceName" : "fr-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0"
     },
     {
       "id" : "MedicationAdministration.medication[x]",
@@ -154,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
       "path" : "MedicationAdministration.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"]
       }]
     },
     {
@@ -164,9 +164,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
         "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0-ballot-2"]
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"]
       }]
     }]
   }

@@ -1,4 +1,4 @@
-# Artifacts Summary - Guide d'implémentation FR Core v2.2.0-ballot-2
+# Artifacts Summary - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -68,29 +68,29 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [FR Core Observation Body Position Ext Extension](StructureDefinition-fr-core-observation-body-position-ext.md) | Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire. CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation |
 | [FR Core Observation Height Body Position Extension](StructureDefinition-fr-core-observation-height-body-position.md) | Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing). Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height. |
 | [FR Core Observation Level Of Exertion Extension](StructureDefinition-fr-core-observation-level-of-exertion.md) | Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort). French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure |
-| [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-category.md) | Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) |
+| [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-categorie.md) | Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) |
 | [FR Core Organization Extension - Champ d'activité](StructureDefinition-fr-core-organization-champ-activite.md) | Champ d’activité d’une UF |
 | [FR Core Organization Extension - Demandeuse d'acte](StructureDefinition-fr-core-organization-demandeuse-acte.md) | Indicateur permettant de définir si une UF peut demander des actes |
 | [FR Core Organization Extension - Discipline Prestation](StructureDefinition-fr-core-organization-discipline-prestation.md) | Discipline de prestation d’une UAC |
 | [FR Core Organization Extension - Discipline d'équipement](StructureDefinition-fr-core-organization-discipline-equipement.md) | Discipline d’équipement |
 | [FR Core Organization Extension - Exécutante d'acte](StructureDefinition-fr-core-organization-executante-acte.md) | Indicateur permettant de définir si une UF peut exécuter des actes |
 | [FR Core Organization Extension - Indicateur d'une unité fonctionnelle](StructureDefinition-fr-core-organization-uf-indicateur.md) | Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin. |
-| [FR Core Organization Extension - Membre d'organisation](StructureDefinition-fr-core-organization-member.md) | Extension permettant de définir des membres d’une organisation. |
 | [FR Core Organization Extension - Nombre total de places d'hébergement théoriques](StructureDefinition-fr-core-organization-place-hebergement-theorique.md) | Nombre total de places d’hébergement théoriques |
 | [FR Core Organization Extension - Tarif Soin](StructureDefinition-fr-core-organization-tarif.md) | Tarif de soin associé à l’unité d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient. |
 | [FR Core Organization Extension - Type d'activité](StructureDefinition-fr-core-organization-type-activite.md) | Type d’activité d’une UF |
 | [FR Core Organization Extension - UF Externe](StructureDefinition-fr-core-organization-uf-externe.md) | Indicateur permettant de définir si une UF est externe à l’établissement |
+| [FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation](StructureDefinition-fr-core-organization-member.md) | Extension permettant de définir des membres d’une organisation. Les membres sont des organisations filles de la ressources. C’est la relation inverse de partOf. |
 | [FR Core Organization Raison Sociale Extension](StructureDefinition-fr-core-organization-raison-sociale.md) | Raison Sociale l’organisation |
 | [FR Core Organization Short Name Extension](StructureDefinition-fr-core-organization-short-name.md) | Libellé court de l’organisation |
 | [FR Core Patient Birth List Given name Extension](StructureDefinition-fr-core-patient-birth-list-given-name.md) | Prénoms de l’acte de naissance |
 | [FR Core Patient Birthdate Update Indicator Extension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md) | Indicateur booléen de mise à jour de la date de naissance |
 | [FR Core Patient Contact Identifier Extension](StructureDefinition-fr-core-patient-contact-identifier.md) | Identifiant de contact dans la ressource Patient This extension carries the contact identifier in the patient resource |
+| [FR Core Patient Contact Relationship Category Extension](StructureDefinition-fr-core-patient-contact-relationship-category.md) | Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère) |
 | [FR Core Patient Death Place Extension](StructureDefinition-fr-core-patient-death-place.md) | Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.). Carries the death place of the patient |
 | [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md) | Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection. Reliabilility of the patient’s identity |
 | [FR Core Practitioner Specialty Extension](StructureDefinition-fr-core-practitioner-specialty.md) | This extension adds the element “specialty” to the FHIR Practitioner resource. |
 | [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md) | Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité. This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period |
 | [FR Core Service Type Duration Extension](StructureDefinition-fr-core-service-type-duration.md) | Cette extension française permet d’associer le type de service avec la durée de ce service. This French extension allows to associate the type of service with the duration of this service |
-| [Rang Gémellaire](StructureDefinition-fr-core-patient-multiple-birth-r5.md) | Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l’assurance maladie. Cette extension implemente l’élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x. |
 
 ### Terminology: Value Sets 
 
@@ -106,7 +106,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet BP measurement method](ValueSet-fr-core-vs-bp-method.md) | A coded type for the blood pressure measurement method |
 | [FR Core ValueSet BodyPosition](ValueSet-fr-core-vs-height-body-position.md) | ValueSet Body Position |
 | [FR Core ValueSet COG commune pays](ValueSet-fr-core-vs-cog-commune-pays.md) | Value set town and country COG |
-| [FR Core ValueSet Categorie SAE Etablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md) | Catégrorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 |
+| [FR Core ValueSet Categorie SAE Etablissement](ValueSet-fr-core-vs-categorie-sae-etablissement.md) | Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 |
 | [FR Core ValueSet Codes Tarifs - nomenclature TNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md) | Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations). |
 | [FR Core ValueSet Contact relationship](ValueSet-fr-core-vs-contact-relationship.md) | A set of codes that can be used to indicate the relationship between a Patient and a Related Person. |
 | [FR Core ValueSet Email type](ValueSet-fr-core-vs-email-type.md) | The type of email |
@@ -131,6 +131,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet Organization UF Indicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md) | Indicateur d’une unité fonctionnelle. |
 | [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). |
 | [FR Core ValueSet Organization type](ValueSet-fr-core-vs-organization-type.md) | Types de structures |
+| [FR Core ValueSet Patient Contact Relationship Category](ValueSet-fr-core-vs-patient-contact-relationship-category.md) | Catégorie de la relation du contact patient : rôle ou type de relation |
 | [FR Core ValueSet Patient contact role](ValueSet-fr-core-vs-patient-contact-role.md) | ValueSet patient contact role |
 | [FR Core ValueSet Patient gender](ValueSet-fr-core-vs-patient-gender.md) | Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide. Permitted genders for French Patient gender. |
 | [FR Core ValueSet Patient identifier type](ValueSet-fr-core-vs-patient-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). |
@@ -170,6 +171,7 @@ These define new code systems used by systems conforming to this implementation 
 | [FR Core CodeSystem Mode Validation Identite](CodeSystem-fr-core-cs-method-collection.md) | Méthode de collection de l’identité |
 | [FR Core CodeSystem Mode Validation Identite](CodeSystem-fr-core-cs-mode-validation-identity.md) | Mode de validation de l’identité |
 | [FR Core CodeSystem Organization Type](CodeSystem-fr-core-cs-type-organisation.md) | Organization type |
+| [FR Core CodeSystem Patient Contact Relationship Category](CodeSystem-fr-core-cs-patient-contact-relationship-category.md) | Catégorie de la relation du contact patient : rôle ou type de relation |
 | [FR Core CodeSystem Position du lit](CodeSystem-fr-core-cs-location-position-lit.md) | Position du lit dans la chambre |
 | [FR Core CodeSystem Schedule Type](CodeSystem-fr-core-cs-schedule-type.md) | Schedule type |
 | [FR Core CodeSystem Type Admission](CodeSystem-fr-core-cs-type-admission.md) | Admission type |

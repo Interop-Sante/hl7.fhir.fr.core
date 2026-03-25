@@ -1,4 +1,4 @@
-# Blood Pressure Measurement Body Location Precoordinated value set - Guide d'implémentation FR Core v2.2.0-ballot-2
+# Blood Pressure Measurement Body Location Precoordinated value set - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementBodyLocation |
 
  
@@ -51,12 +51,12 @@ No Expansion for this valueset (Unsupported Code System Version)
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetBloodPressureMeasurementBodyLocation",
   "title" : "Blood Pressure Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -77,7 +77,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

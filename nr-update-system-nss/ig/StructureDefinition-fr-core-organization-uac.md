@@ -1,4 +1,4 @@
-# FR Core Organization UAC Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization UAC Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationUACProfile |
 
  
@@ -48,11 +48,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-uac",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationUACProfile",
   "title" : "FR Core Organization UAC Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -73,7 +73,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -116,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0"]
       }]
     },
     {
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0"]
       }]
     },
     {
@@ -149,7 +149,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"]
       }]
     }]
   }

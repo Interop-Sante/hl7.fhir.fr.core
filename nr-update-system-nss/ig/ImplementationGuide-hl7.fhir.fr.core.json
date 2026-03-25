@@ -3,14 +3,14 @@
   "id" : "hl7.fhir.fr.core",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><h2>FRCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><h2>FRCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre><div><p>Guide d'implémentation FR Core définissant la structuration générique de FHIR en France. Socle de référence à utiliser systématiquement dans tout projet FHIR français.</p>\n</div></div>"
   },
   "url" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -27,10 +27,11 @@
       "use" : "work"
     }]
   }],
+  "description" : "Guide d'implémentation FR Core définissant la structuration générique de FHIR en France. Socle de référence à utiliser systématiquement dans tout projet FHIR français.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -82,7 +83,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -466,7 +467,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1116,6 +1117,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-patient-contact-relationship-category"
+      },
+      "name" : "FR Core CodeSystem Patient Contact Relationship Category",
+      "description" : "Catégorie de la relation du contact patient : rôle ou type de relation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-position-lit"
       },
       "name" : "FR Core CodeSystem Position du lit",
@@ -1548,7 +1561,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-sae-category"
+        "reference" : "StructureDefinition/fr-core-organization-sae-categorie"
       },
       "name" : "FR Core Organization Extension - Catetgorie SAE",
       "description" : "Categorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement)",
@@ -1632,10 +1645,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-member"
+        "reference" : "StructureDefinition/fr-core-organization-place-hebergement-theorique"
       },
-      "name" : "FR Core Organization Extension - Membre d'organisation",
-      "description" : "Extension permettant de définir des membres d'une organisation.",
+      "name" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
+      "description" : "Nombre total de places d'hébergement théoriques",
       "exampleBoolean" : false
     },
     {
@@ -1644,10 +1657,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-core-organization-place-hebergement-theorique"
+        "reference" : "StructureDefinition/fr-core-organization-member"
       },
-      "name" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
-      "description" : "Nombre total de places d'hébergement théoriques",
+      "name" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
+      "description" : "Extension permettant de définir des membres d'une organisation. Les membres sont des organisations filles de la ressources. C'est la relation inverse de partOf.",
       "exampleBoolean" : false
     },
     {
@@ -1780,6 +1793,18 @@
       },
       "name" : "FR Core Patient Contact Identifier Extension",
       "description" : "Identifiant de contact dans la ressource Patient\n\rThis extension carries the contact identifier in the patient resource",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-patient-contact-relationship-category"
+      },
+      "name" : "FR Core Patient Contact Relationship Category Extension",
+      "description" : "Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère)",
       "exampleBoolean" : false
     },
     {
@@ -1971,7 +1996,7 @@
         "reference" : "ValueSet/fr-core-vs-categorie-sae-etablissement"
       },
       "name" : "FR Core ValueSet Categorie SAE Etablissement",
-      "description" : "Catégrorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
+      "description" : "Catérorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024",
       "exampleBoolean" : false
     },
     {
@@ -2280,6 +2305,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/fr-core-vs-patient-contact-relationship-category"
+      },
+      "name" : "FR Core ValueSet Patient Contact Relationship Category",
+      "description" : "Catégorie de la relation du contact patient : rôle ou type de relation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-contact-role"
       },
       "name" : "FR Core ValueSet Patient contact role",
@@ -2428,7 +2465,7 @@
       },
       "name" : "FRCoreAppointmentExample",
       "description" : "Exemple de ressource Appointment pour décrire un état de rendez-vous médical",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0"
     },
     {
       "extension" : [{
@@ -2440,7 +2477,7 @@
       },
       "name" : "FRCoreEncounterExample",
       "description" : "Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0"
     },
     {
       "extension" : [{
@@ -2452,7 +2489,7 @@
       },
       "name" : "FRCoreHealthcareServiceExample",
       "description" : "Exemple de ressource HealthcareService pour décrire le service de cardiologie de l’hôpital X",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0"
     },
     {
       "extension" : [{
@@ -2476,7 +2513,7 @@
       },
       "name" : "FRCoreObservationBMIExample",
       "description" : "Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0"
     },
     {
       "extension" : [{
@@ -2488,7 +2525,7 @@
       },
       "name" : "FRCoreObservationBodyHeightExample",
       "description" : "Exemple de ressource Observation pour décrire la taille du patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0"
     },
     {
       "extension" : [{
@@ -2500,7 +2537,7 @@
       },
       "name" : "FRCoreObservationBodyTemperatureExample",
       "description" : "Exemple de ressource Observation pour décrire la température du patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0"
     },
     {
       "extension" : [{
@@ -2512,7 +2549,7 @@
       },
       "name" : "FRCoreObservationBodyWeightExample",
       "description" : "Exemple de ressource Observation pour décrire le poids du patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0"
     },
     {
       "extension" : [{
@@ -2524,7 +2561,7 @@
       },
       "name" : "FRCoreObservationBPExample",
       "description" : "Exemple de ressource Observation Pression artérielle",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0"
     },
     {
       "extension" : [{
@@ -2536,7 +2573,7 @@
       },
       "name" : "FRCoreObservationHeadCircumExample",
       "description" : "Exemple de ressource Observation pour décrire le périmètre cranien d'un patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0"
     },
     {
       "extension" : [{
@@ -2548,7 +2585,7 @@
       },
       "name" : "FRCoreObservationHeartRateExample",
       "description" : "Exemple de ressource Observation pour décrire la fréquence cardiaque d'un patient",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0"
     },
     {
       "extension" : [{
@@ -2560,7 +2597,7 @@
       },
       "name" : "FRCoreOrganizationExample",
       "description" : "Exemple de ressource Organization pour décrire un hôpital",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2572,7 +2609,7 @@
       },
       "name" : "FRCorePatientExample",
       "description" : "Exemple de ressource Patient (cas d'usage INS)",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
     },
     {
       "extension" : [{
@@ -2584,7 +2621,7 @@
       },
       "name" : "FRCorePractitionerExample",
       "description" : "Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l'ordre.",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0"
     },
     {
       "extension" : [{
@@ -2596,7 +2633,7 @@
       },
       "name" : "FRCorePractitionerRoleExample",
       "description" : "Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"
     },
     {
       "extension" : [{
@@ -2608,7 +2645,7 @@
       },
       "name" : "FRCoreScheduleExample",
       "description" : "Exemple de ressource Schedule pour décrire un agenda.",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0"
     },
     {
       "extension" : [{
@@ -2620,7 +2657,7 @@
       },
       "name" : "FRCoreSlotExample",
       "description" : "Exemple de ressource Slot.",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0"
     },
     {
       "extension" : [{
@@ -2667,7 +2704,7 @@
         "reference" : "Organization/hopitaltest-dept-11003-endocrino"
       },
       "name" : "hopitaltest-dept-11003-endocrino",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2678,7 +2715,7 @@
         "reference" : "Organization/hopitaltest-eg-4-members"
       },
       "name" : "hopitaltest-eg-4-members",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
       "extension" : [{
@@ -2689,7 +2726,7 @@
         "reference" : "Organization/hopitaltest-ej-350005179"
       },
       "name" : "hopitaltest-ej-350005179",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
       "extension" : [{
@@ -2700,7 +2737,7 @@
         "reference" : "Location/hopitaltest-endocrino-ch04"
       },
       "name" : "hopitaltest-endocrino-ch04",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
       "extension" : [{
@@ -2711,7 +2748,7 @@
         "reference" : "Location/hopitaltest-endocrino-ch04-litF"
       },
       "name" : "hopitaltest-endocrino-ch04-litF",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
       "extension" : [{
@@ -2722,7 +2759,7 @@
         "reference" : "Organization/hopitaltest-pole-1150-med-spe"
       },
       "name" : "hopitaltest-pole-1150-med-spe",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2733,7 +2770,7 @@
         "reference" : "Location/hopitaltest-salle-examen-01"
       },
       "name" : "hopitaltest-salle-examen-01",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
       "extension" : [{
@@ -2744,7 +2781,7 @@
         "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo"
       },
       "name" : "hopitaltest-service-11006-endocrino-diabo",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2755,7 +2792,7 @@
         "reference" : "Organization/hopitaltest-service-11007-dietetique"
       },
       "name" : "hopitaltest-service-11007-dietetique",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "extension" : [{
@@ -2766,7 +2803,7 @@
         "reference" : "Organization/hopitaltest-uac-4420-uac-01"
       },
       "name" : "hopitaltest-uac-4420-uac-01",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
       "extension" : [{
@@ -2777,7 +2814,7 @@
         "reference" : "Organization/hopitaltest-uac-4420-uac-02"
       },
       "name" : "hopitaltest-uac-4420-uac-02",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
       "extension" : [{
@@ -2788,7 +2825,7 @@
         "reference" : "Organization/hopitaltest-uf-4420-dialyse"
       },
       "name" : "hopitaltest-uf-4420-dialyse",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
       "extension" : [{
@@ -2799,7 +2836,7 @@
         "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
       },
       "name" : "hopitaltest-uf-4701-endocrino-diab",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
       "extension" : [{
@@ -2810,7 +2847,7 @@
         "reference" : "Organization/hopitaltest-uf-4705-nutrition"
       },
       "name" : "hopitaltest-uf-4705-nutrition",
-      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0-ballot-2"
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
       "extension" : [{
@@ -2822,18 +2859,6 @@
       },
       "name" : "Oxygen Saturation Body Location value set",
       "description" : "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-patient-multiple-birth-r5"
-      },
-      "name" : "Rang Gémellaire",
-      "description" : "Extension créée pour exprimer le rang gémellaire, notamment utile dans le cadre des attestations de droits à l'assurance maladie. Cette extension implemente l'élément PatientMultipleBirth de R5 https://www.hl7.org/fhir/patient-definitions.html#Patient.multipleBirth_x.",
       "exampleBoolean" : false
     },
     {

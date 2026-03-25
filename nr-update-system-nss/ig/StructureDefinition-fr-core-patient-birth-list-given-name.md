@@ -1,4 +1,4 @@
-# FR Core Patient Birth List Given name Extension - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Patient Birth List Given name Extension - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCorePatientBirthListGivenName |
 
 Prénoms de l’acte de naissance
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-patient-birth-list-given-name",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCorePatientBirthListGivenName",
   "title" : "FR Core Patient Birth List Given name Extension",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],

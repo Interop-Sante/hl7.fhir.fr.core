@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "8e72bc7c-e43f-488f-ab0b-fc834937442a-410",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/8e72bc7c-e43f-488f-ab0b-fc834937442a-410",
+  "name" : "UnionFRCoreValueSetPatientIdentifierUsePIAndFRCoreValueSetPatientIdentifierUsePI",
+  "title" : "Union of FR Core ValueSet Patient identifier use PI And FR Core ValueSet Patient identifier use PI",
+  "status" : "active",
+  "date" : "2026-03-25T14:44:21+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"]
+    }],
+    "exclude" : [{
+      "concept" : [{
+        "code" : "official"
+      }]
+    }]
+  }
+}

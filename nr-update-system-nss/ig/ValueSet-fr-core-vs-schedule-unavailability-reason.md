@@ -1,4 +1,4 @@
-# FR Core ValueSet Unavailability Reason - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Unavailability Reason - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason | *Version*:2.2.0 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetUnavailabilityReason |
 
  
@@ -49,6 +49,7 @@ Raison d’indisponibilité
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
     "valueMarkdown" : "Unavailability-reason"
@@ -66,12 +67,12 @@ Raison d’indisponibilité
     "valueCode" : "fhir"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetUnavailabilityReason",
   "title" : "FR Core ValueSet Unavailability Reason",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -92,14 +93,14 @@ Raison d’indisponibilité
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
   "compose" : {
     "include" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type",
-      "version" : "2.2.0-ballot-2",
+      "version" : "2.2.0",
       "concept" : [{
         "code" : "busy-unavailable",
         "display" : "Indisponibilité"

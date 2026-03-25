@@ -1,4 +1,4 @@
-# hopitaltest-endocrino-ch04 - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-endocrino-ch04 - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,7 +14,7 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 **type**: Chambre
 
-**partOf**: [Organization UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
+**managingOrganization**: [Organization UF Endocrino Diabeto](Organization-hopitaltest-uf-4701-endocrino-diab.md)
 
 
 
@@ -37,7 +37,7 @@ Profil: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
     }],
     "text" : "Chambre"
   }],
-  "partOf" : {
+  "managingOrganization" : {
     "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
   }
 }

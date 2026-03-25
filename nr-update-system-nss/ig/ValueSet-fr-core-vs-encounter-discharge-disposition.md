@@ -1,4 +1,4 @@
-# FR Core ValueSet Encounter discharge disposition - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core ValueSet Encounter discharge disposition - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition | *Version*:2.2.0-ballot-2 | |
+| *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition | *Version*:2.2.0 | |
 | * Standards status: *[Informative](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:FRCoreValueSetEncounterDischargeDisposition |
 
  
@@ -49,6 +49,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
+  "language" : "fr-FR",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
     "valueMarkdown" : "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
@@ -66,12 +67,12 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
     "valueCode" : "fhir"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreValueSetEncounterDischargeDisposition",
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -92,7 +93,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -100,7 +101,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "compose" : {
     "include" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
-      "version" : "2.2.0-ballot-2"
+      "version" : "2.2.0"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",

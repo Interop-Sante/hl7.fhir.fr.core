@@ -1,4 +1,4 @@
-# FR Core Organization Extension - Type d'activité - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization Extension - Type d'activité - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationTypeActiviteExtension |
 
 Type d’activité d’une UF
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-type-activite",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationTypeActiviteExtension",
   "title" : "FR Core Organization Extension - Type d'activité",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -83,7 +83,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf#Organization"
+    "expression" : "Organization"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-type-activite|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-type-activite|2.2.0"
       }
     }]
   }

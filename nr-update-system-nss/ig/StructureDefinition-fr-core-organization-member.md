@@ -1,17 +1,17 @@
-# FR Core Organization Extension - Membre d'organisation - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **FR Core Organization Extension - Membre d'organisation**
+* **FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**
 
-## Extension: FR Core Organization Extension - Membre d'organisation 
+## Extension: FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationMemberExtension |
 
-Extension permettant de définir des membres d’une organisation.
+Extension permettant de définir des membres d’une organisation. Les membres sont des organisations filles de la ressources. C’est la relation inverse de partOf.
 
 **Context of Use**
 
@@ -20,7 +20,7 @@ Extension permettant de définir des membres d’une organisation.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
-* Exemples pour ce/t/te Extension: [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md)
+* Exemples pour ce/t/te Extension: [Département d'Endocrinologie](Organization-hopitaltest-dept-11003-endocrino.md), [CHRU CENTRE VILLE](Organization-hopitaltest-eg-4-members.md), [Pole Medecines spécialisées](Organization-hopitaltest-pole-1150-med-spe.md) and [UF Dialyse](Organization-hopitaltest-uf-4420-dialyse.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-member)
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization-member",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationMemberExtension",
-  "title" : "FR Core Organization Extension - Membre d'organisation",
+  "title" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -64,11 +64,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "use" : "work"
     }]
   }],
-  "description" : "Extension permettant de définir des membres d'une organisation.",
+  "description" : "Extension permettant de définir des membres d'une organisation. Les membres sont des organisations filles de la ressources. C'est la relation inverse de partOf.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization#Organization"
+    "expression" : "Organization"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
@@ -91,8 +91,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "FR Core Organization Extension - Membre d'organisation",
-      "definition" : "Extension permettant de définir des membres d'une organisation."
+      "short" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
+      "definition" : "Extension permettant de définir des membres d'une organisation. Les membres sont des organisations filles de la ressources. C'est la relation inverse de partOf."
     },
     {
       "id" : "Extension.extension",
@@ -124,7 +124,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"]
       }]
     }]
   }

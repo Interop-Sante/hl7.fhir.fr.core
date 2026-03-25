@@ -1,4 +1,4 @@
-# FR Core Practitioner Role - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Practitioner Role - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCorePractitionerRoleProfile |
 
  
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-practitioner-role",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -117,7 +117,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "sliceName" : "fr-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"
     },
     {
       "id" : "PractitionerRole.extension",
@@ -138,7 +138,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0"]
       }]
     },
     {
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "path" : "PractitionerRole.practitioner",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0"]
       }]
     },
     {
@@ -180,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "path" : "PractitionerRole.organization",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"]
       }]
     },
     {
@@ -189,7 +189,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "short" : "The role a person plays representing an organization | Rôle (situation d'exercice) du professionnel de santé au sein de l'organisation",
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice|2.2.0"
       }
     },
     {
@@ -198,7 +198,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "short" : "Specific specialty associated with the organization | spécialité ordinale du professionnel de santé au sein de l'organisation",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty|2.2.0"
       }
     },
     {
@@ -206,7 +206,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "path" : "PractitionerRole.location",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"]
       }]
     },
     {
@@ -214,7 +214,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "path" : "PractitionerRole.healthcareService",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0"]
       }]
     },
     {
@@ -223,7 +223,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-practitioner
       "short" : "Details of a Technology mediated contact point | Coordonnées électroniques détaillées",
       "type" : [{
         "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0"]
       }]
     }]
   }

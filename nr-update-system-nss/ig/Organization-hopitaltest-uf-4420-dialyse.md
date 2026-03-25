@@ -1,4 +1,4 @@
-# hopitaltest-uf-4420-dialyse - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-uf-4420-dialyse - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,12 +10,9 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
 
 **FR Core Organization Short Name Extension**: UF Dialyse
 
-**Extension Definition for Organization.description for Version 5.0**: UF Dialyse - Utilisation de l'hémodialyse
+**Organization Period**: 2023-01-01 00:00:00+0100 --> (en cours)
 
-> **Organization Period**
-* start: 2023-01-01 00:00:00+0100
-
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension**: Hébergement
+**FR Core Organization Extension - Indicateur d'une unité fonctionnelle**: Hébergement
 
 **FR Core Organization Extension - Discipline d'équipement**: [FR Core CodeSystem Discipline d'Equipement - nomenclature SAE: 797](CodeSystem-fr-core-cs-discipline-equipement.md#fr-core-cs-discipline-equipement-797) (Hémodialyse en centre pour adulte)
 
@@ -29,13 +26,13 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
 
 **FR Core Organization Extension - Exécutante d'acte**: true
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md)
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [UAC 01 Dialyse](Organization-hopitaltest-uac-4420-uac-01.md)
 
-**fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension**: [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md)
+**FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation**: [UAC 02 Dialyse](Organization-hopitaltest-uac-4420-uac-02.md)
 
 **identifier**: `http://hopitalTest.fr/namingsystem/organization`/4220 (utilisation : official, )
 
-**type**: UF
+**type**: Unité fonctionnelle
 
 **name**: UF Dialyse
 
@@ -62,28 +59,21 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
     "valueString" : "UF Dialyse"
   },
   {
-    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description",
-    "valueString" : "UF Dialyse - Utilisation de l'hémodialyse"
+    "url" : "http://hl7.org/fhir/StructureDefinition/organization-period",
+    "valuePeriod" : {
+      "start" : "2023-01-01T00:00:00+01:00"
+    }
   },
   {
-    "extension" : [{
-      "url" : "start",
-      "valueDateTime" : "2023-01-01T00:00:00+01:00"
-    }],
-    "url" : "http://hl7.org/fhir/StructureDefinition/organization-period"
-  },
-  {
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur-extension",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
-        "code" : "HEB",
-        "display" : "Hébergement"
+        "code" : "HEB"
       },
       {
         "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur",
-        "code" : "MED",
-        "display" : "Médicale"
+        "code" : "MED"
       }]
     }
   },
@@ -120,18 +110,16 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
     "valueBoolean" : true
   },
   {
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "valueReference" : {
       "reference" : "Organization/hopitaltest-uac-4420-uac-01",
-      "type" : "UAC",
       "display" : "UAC 01 Dialyse"
     }
   },
   {
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension",
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
     "valueReference" : {
       "reference" : "Organization/hopitaltest-uac-4420-uac-02",
-      "type" : "UAC",
       "display" : "UAC 02 Dialyse"
     }
   }],
@@ -143,10 +131,8 @@ Profil: [FR Core Organization UF Profile](StructureDefinition-fr-core-organizati
   "type" : [{
     "coding" : [{
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-      "code" : "UF",
-      "display" : "Unité fonctionnelle"
-    }],
-    "text" : "UF"
+      "code" : "UF"
+    }]
   }],
   "name" : "UF Dialyse",
   "contact" : [{

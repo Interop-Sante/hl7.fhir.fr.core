@@ -1,4 +1,4 @@
-# FR Core Organization Profile - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core Organization Profile - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationProfile |
 
  
@@ -38,8 +38,8 @@ Ce profil ajoute par rapport à la ressource du standard
 **Utilisations:**
 
 * Dérivé de ce Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md), [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md) and [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
-* Référence ce Profil: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md)... Show 12 more, [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md), [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FR Core Organization Extension - Membre d'organisation](StructureDefinition-fr-core-organization-member.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md) and [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
-* Exemples pour ce/t/te Profil: [HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G](Organization-FRCoreOrganizationExample.md), [Depertement d'Endocrinologie](Organization-hopitaltest-dept-11003-endocrino.md), [Pole Medecines spécialisées](Organization-hopitaltest-pole-1150-med-spe.md), [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md) and [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
+* Référence ce Profil: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md)... Show 12 more, [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md), [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation](StructureDefinition-fr-core-organization-member.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md) and [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
+* Exemples pour ce/t/te Profil: [HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G](Organization-FRCoreOrganizationExample.md), [Département d'Endocrinologie](Organization-hopitaltest-dept-11003-endocrino.md), [Pole Medecines spécialisées](Organization-hopitaltest-pole-1150-med-spe.md), [Service Endocrino Diabeto](Organization-hopitaltest-service-11006-endocrino-diabo.md) and [Service Dietetique](Organization-hopitaltest-service-11007-dietetique.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization)
 
@@ -60,11 +60,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "fr-core-organization",
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
@@ -138,7 +138,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "sliceName" : "fr-canonical",
       "min" : 0,
       "max" : "1",
-      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2"
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
       "id" : "Organization.extension",
@@ -160,7 +160,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0"]
       }]
     },
     {
@@ -212,10 +212,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.extension",
       "sliceName" : "member",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0"]
       }]
     },
     {
@@ -223,7 +223,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.type",
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0"
       }
     },
     {
@@ -231,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.telecom",
       "type" : [{
         "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0"]
       }]
     },
     {
@@ -239,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.address",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     },
     {
@@ -251,8 +251,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0-ballot-2",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0-ballot-2"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"]
       }]
     },
     {
@@ -260,7 +260,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.partOf.type",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0-ballot-2"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type|2.2.0"
       }
     },
     {
@@ -268,7 +268,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.contact.telecom",
       "type" : [{
         "code" : "ContactPoint",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point|2.2.0"]
       }]
     },
     {
@@ -276,7 +276,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "path" : "Organization.contact.address",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0-ballot-2"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     }]
   }

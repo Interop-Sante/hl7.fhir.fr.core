@@ -1,4 +1,4 @@
-# FR Core CodeSystem v2-0203 - Guide d'implémentation FR Core v2.2.0-ballot-2
+# FR Core CodeSystem v2-0203 - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 | *Version*:2.2.0-ballot-2 |
+| *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 | *Version*:2.2.0 |
 | Active as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemv2_0203 |
 
  
@@ -31,13 +31,14 @@ HL7 v2 - Identifier type
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
   },
+  "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-  "version" : "2.2.0-ballot-2",
+  "version" : "2.2.0",
   "name" : "FRCoreCodeSystemv2_0203",
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T10:28:50+00:00",
+  "date" : "2026-03-25T14:42:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -58,13 +59,13 @@ HL7 v2 - Identifier type
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "FRA",
+      "code" : "FR",
       "display" : "France"
     }]
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 17,
+  "count" : 18,
   "concept" : [{
     "code" : "ADELI",
     "display" : "N° ADELI",
@@ -74,6 +75,11 @@ HL7 v2 - Identifier type
     "code" : "RPPS",
     "display" : "N° RPPS",
     "definition" : "N° RPPS"
+  },
+  {
+    "code" : "RPPSRG",
+    "display" : "N° RPPS Rang",
+    "definition" : "N° RPPS Rang d'identification des cabinets libéraux selon le référentiel RPPS"
   },
   {
     "code" : "IDNPS",

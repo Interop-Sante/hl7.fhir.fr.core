@@ -1,4 +1,4 @@
-# hopitaltest-ej-350005179 - Guide d'implémentation FR Core v2.2.0-ballot-2
+# hopitaltest-ej-350005179 - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -7,8 +7,6 @@
 ## Example Organization: hopitaltest-ej-350005179
 
 Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
-
-**FR Core Organization Extension - Catetgorie SAE**: Centre hospitalier régional (CHR)
 
 **FR Core Organization Raison Sociale Extension**: CHRU RENNES
 
@@ -30,16 +28,6 @@ Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"]
   },
   "extension" : [{
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-category",
-    "valueCodeableConcept" : {
-      "coding" : [{
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
-        "code" : "101",
-        "display" : "Centre hospitalier régional (CHR)"
-      }]
-    }
-  },
-  {
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
     "valueString" : "CHRU RENNES"
   }],
