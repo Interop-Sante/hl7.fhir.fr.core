@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement | *Version*:2.2.0 |
-| Active as of 2026-03-20 | *Computable Name*:FRCoreOrganizationDisciplineEquipementExtension |
+| Active as of 2026-03-25 | *Computable Name*:FRCoreOrganizationDisciplineEquipementExtension |
 
 Discipline d’équipement
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationDisciplineEquipementExtension",
   "title" : "FR Core Organization Extension - Discipline d'équipement",
   "status" : "active",
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

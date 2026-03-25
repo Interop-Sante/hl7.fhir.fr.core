@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRCoreObservationBpProfile"] ; # 
   fhir:title [ fhir:v "FR Core Observation Blood Pressure Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-20T07:09:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-25T10:22:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -5224,14 +5224,6 @@
      ] [
        fhir:id [ fhir:v "Observation.component:SystolicBP.value[x]" ] ;
        fhir:path [ fhir:v "Observation.component.value[x]" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "type" ] ;
-           fhir:path [ fhir:v "$this" ]
-         ] ) ;
-         fhir:ordered [ fhir:v false ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Vital Sign Value recorded with UCUM" ] ;
        fhir:definition [ fhir:v "Vital Sign Value recorded with UCUM." ] ;
        fhir:comment [ fhir:v "Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/observation.html#notes) below." ] ;
@@ -6606,14 +6598,6 @@
      ] [
        fhir:id [ fhir:v "Observation.component:DiastolicBP.value[x]" ] ;
        fhir:path [ fhir:v "Observation.component.value[x]" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "type" ] ;
-           fhir:path [ fhir:v "$this" ]
-         ] ) ;
-         fhir:ordered [ fhir:v false ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Vital Sign Value recorded with UCUM" ] ;
        fhir:definition [ fhir:v "Vital Sign Value recorded with UCUM." ] ;
        fhir:comment [ fhir:v "Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/observation.html#notes) below." ] ;

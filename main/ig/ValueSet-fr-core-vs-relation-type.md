@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type | *Version*:2.2.0 |
-| Active as of 2026-03-20 | *Computable Name*:FRCoreValueSetPatientRelationType |
+| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetPatientRelationType |
 
  
 ValueSet relation type 
@@ -62,7 +62,7 @@ ValueSet relation type
   "title" : "FR Core ValueSet relation type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

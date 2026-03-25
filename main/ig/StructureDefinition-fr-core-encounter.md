@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter | *Version*:2.2.0 |
-| Active as of 2026-03-20 | *Computable Name*:FRCoreEncounterProfile |
+| Active as of 2026-03-25 | *Computable Name*:FRCoreEncounterProfile |
 
  
 This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-encounter.cs
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

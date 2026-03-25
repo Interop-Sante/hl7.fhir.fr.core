@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type | *Version*:2.2.0 |
-| Active as of 2026-03-20 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
+| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetOrganizationIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). 
@@ -60,7 +60,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -117,6 +117,10 @@ A coded type for an identifier that can be used to determine which identifier to
       {
         "code" : "EXTRN",
         "display" : "Identifiant externe"
+      },
+      {
+        "code" : "RPPSRG",
+        "display" : "Identifiant RPPS Rang"
       }]
     }]
   }

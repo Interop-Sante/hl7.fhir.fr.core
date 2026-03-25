@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type | *Version*:2.2.0 |
-| Draft as of 2026-03-20 | *Computable Name*:FRCoreCodeSystemLocationIdentifierType |
+| Draft as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemLocationIdentifierType |
 
  
 Location identifier type 
@@ -36,7 +36,7 @@ Location identifier type
   "title" : "FR Core CodeSystem Location Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

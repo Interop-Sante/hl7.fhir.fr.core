@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type | *Version*:2.2.0 |
-| Draft as of 2026-03-20 | *Computable Name*:FRCoreCodeSystemScheduleType |
+| Draft as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemScheduleType |
 
  
 Schedule type 
@@ -37,7 +37,7 @@ Schedule type
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

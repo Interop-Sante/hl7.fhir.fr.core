@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 | *Version*:2.2.0 |
-| Active as of 2026-03-20 | *Computable Name*:FRCoreCodeSystemv2_0203 |
+| Active as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemv2_0203 |
 
  
 HL7 v2 - Identifier type 
@@ -38,7 +38,7 @@ HL7 v2 - Identifier type
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-20T07:09:47+00:00",
+  "date" : "2026-03-25T10:22:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -65,7 +65,7 @@ HL7 v2 - Identifier type
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 17,
+  "count" : 18,
   "concept" : [{
     "code" : "ADELI",
     "display" : "N° ADELI",
@@ -75,6 +75,11 @@ HL7 v2 - Identifier type
     "code" : "RPPS",
     "display" : "N° RPPS",
     "definition" : "N° RPPS"
+  },
+  {
+    "code" : "RPPSRG",
+    "display" : "N° RPPS Rang",
+    "definition" : "N° RPPS Rang d'identification des cabinets libéraux selon le référentiel RPPS"
   },
   {
     "code" : "IDNPS",
