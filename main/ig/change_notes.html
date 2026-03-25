@@ -421,13 +421,70 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Extension nationality : extension du contexte à Person et RelatedPerson <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/278">#278</a></li>
   <li>Revue des profils de structure : correction de <code class="language-plaintext highlighter-rouge">members</code> → <code class="language-plaintext highlighter-rouge">member</code> (cohérence avec l’extension et le nommage FHIR), suppression du VS UAC inutilisé <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/280">#280</a></li>
   <li>Correction orthographique : artifact → artéfact <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/282">#282</a></li>
+  <li><strong>[BREAKING CHANGE]</strong> Patient : séparation de la slice <code class="language-plaintext highlighter-rouge">NSS</code> en deux slices distinctes <code class="language-plaintext highlighter-rouge">NSS-NIR</code> et <code class="language-plaintext highlighter-rouge">NSS-NIA</code>, et mise à jour des OID associés <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/284">#284</a></li>
+</ul>
+
+<p>Dans la version 2.1.0, le numéro de sécurité sociale était modélisé dans une seule slice <code class="language-plaintext highlighter-rouge">NSS</code> avec l’OID <code class="language-plaintext highlighter-rouge">1.2.250.1.213.1.4.8</code>.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NH"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.250.1.213.1.4.8"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1 69 05 69 123 456 78"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>À partir de la version 2.2.0, deux slices distinctes permettent de différencier le NIR et le NIA utilisés comme numéro de sécurité sociale, avec des OID spécifiques :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">NSS-NIR</code> : NIR utilisé comme numéro de sécurité sociale → <code class="language-plaintext highlighter-rouge">urn:oid:1.2.250.1.213.1.4.13</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NSS-NIA</code> : NIA utilisé comme numéro de sécurité sociale → <code class="language-plaintext highlighter-rouge">urn:oid:1.2.250.1.213.1.4.14</code></li>
+</ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NH"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.250.1.213.1.4.13"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1 69 05 69 123 456 78"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<blockquote>
+  <p><strong>Impact pour les implémenteurs</strong> : les ressources utilisant <code class="language-plaintext highlighter-rouge">identifier[NSS]</code> avec <code class="language-plaintext highlighter-rouge">system: urn:oid:1.2.250.1.213.1.4.8</code> doivent être mises à jour. L’OID <code class="language-plaintext highlighter-rouge">1.2.250.1.213.1.4.8</code> correspond désormais au matricule INS-NIR (porté par le profil PatientINS), et non au numéro de sécurité sociale.</p>
+</blockquote>
+
+<ul>
   <li>Ajout de l’invariant fr-core-1 : si l’identité patient est validée, elle doit contenir un matricule INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/285">#285</a></li>
   <li>Suppression de la contrainte de cardinalité sur Encounter.type <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/286">#286</a></li>
   <li>Suppression de l’extension MultipleBirth ajoutée en erreur <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/288">#288</a></li>
   <li>Corrections pour la publication : mise à jour des textes sur les UM et l’extension <code class="language-plaintext highlighter-rouge">member</code>, correction des exemples liés à la structure <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/289">#289</a></li>
+  <li>Mise à jour de l’identifier type du rpps rang (INTRN → RPPS) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/273">#273</a></li>
+  <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1134">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1463">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -448,7 +505,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1217">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1546">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -456,7 +513,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1235">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1564">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -558,7 +615,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 10:25+0000">2026-03-25</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 15:00+0000">2026-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
