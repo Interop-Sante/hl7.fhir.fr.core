@@ -142,6 +142,56 @@ A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extensi
 * Mise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
 * Ajout d'un invariant qui renvoie un warning si le COG de naissance 99999 est utilisé pour une identité validée [#262](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/262)
 * Ajout du numéro AMELI au profil PractitionerRole [#260](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/260)
+* **[BREAKING CHANGE]** Patient : séparation de la slice `NSS` en deux slices distinctes `NSS-NIR` et `NSS-NIA`, et mise à jour des OID associés [#284](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/284)
+
+Dans la version 2.1.0, le numéro de sécurité sociale était modélisé dans une seule slice `NSS` avec l'OID `1.2.250.1.213.1.4.8`.
+
+```json
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.250.1.213.1.4.8",
+      "value": "1 69 05 69 123 456 78"
+    }
+  ]
+}
+```
+
+À partir de la version 2.2.0, deux slices distinctes permettent de différencier le NIR et le NIA utilisés comme numéro de sécurité sociale, avec des OID spécifiques :
+
+- `NSS-NIR` : NIR utilisé comme numéro de sécurité sociale → `urn:oid:1.2.250.1.213.1.4.13`
+- `NSS-NIA` : NIA utilisé comme numéro de sécurité sociale → `urn:oid:1.2.250.1.213.1.4.14`
+
+```json
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.250.1.213.1.4.13",
+      "value": "1 69 05 69 123 456 78"
+    }
+  ]
+}
+```
+
+> **Impact pour les implémenteurs** : les ressources utilisant `identifier[NSS]` avec `system: urn:oid:1.2.250.1.213.1.4.8` doivent être mises à jour. L'OID `1.2.250.1.213.1.4.8` correspond désormais au matricule INS-NIR (porté par le profil PatientINS), et non au numéro de sécurité sociale.
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
