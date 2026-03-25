@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-dept-11003-endocrino> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hopitaltest-dept-11003-endocrino"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-dept-11003-endocrino</b></p><a name=\"hopitaltest-dept-11003-endocrino\"> </a><a name=\"hchopitaltest-dept-11003-endocrino\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization.html\">FR Core Organization Profile</a></p></div><blockquote><p><b>fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension</b></p><ul><li>https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension: <a href=\"Organization-hopitaltest-uf-4701-endocrino-diab.html\">Organization UF Endocrino Diabeto</a></li><li>https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension: <a href=\"Organization-hopitaltest-uf-4705-nutrition.html\">Organization UF Nutrition</a></li></ul></blockquote><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/11003 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 DEPARTEMENT}\">DEPARTEMENT</span></p><p><b>name</b>: Depertement d'Endocrinologie</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension>
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4701-endocrino-diab> ;
+         fhir:reference [ fhir:v "Organization/hopitaltest-uf-4701-endocrino-diab" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension>
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4705-nutrition> ;
+         fhir:reference [ fhir:v "Organization/hopitaltest-uf-4705-nutrition" ]
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member-extension>
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [
+       fhir:v "http://hopitalTest.fr/namingsystem/organization"^^xsd:anyURI ;
+       fhir:l <http://hopitalTest.fr/namingsystem/organization>
+     ] ;
+     fhir:value [ fhir:v "11003" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307>
+       ] ;
+       fhir:code [ fhir:v "DEPARTEMENT" ] ;
+       fhir:display [ fhir:v "Pole" ]
+     ] ) ;
+     fhir:text [ fhir:v "DEPARTEMENT" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Depertement d'Endocrinologie"] . # 
+
+# -------------------------------------------------------------------------------------
+
