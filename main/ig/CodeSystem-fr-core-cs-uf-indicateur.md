@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur | *Version*:2.2.0 |
-| Draft as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemUFIndicateur |
+| Draft as of 2026-03-31 | *Computable Name*:FRCoreCodeSystemUFIndicateur |
 
  
 Système de codage permettant de définir les indicateurs d’une unité fonctionnelle. 
@@ -36,7 +36,7 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
   "title" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -58,7 +58,7 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "caseSensitive" : true,

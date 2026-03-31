@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetPractitionerRoleExercice |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetPractitionerRoleExercice |
 
  
 The exercice(s) of the practitioner. 
 
  **References** 
 
-* [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
 * [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ The exercice(s) of the practitioner.
   "title" : "FR Core ValueSet PractitionerRole Exercice",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ The exercice(s) of the practitioner.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "immutable" : true,

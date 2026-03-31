@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetRespiratoryRateMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the respiratory rate was measured. 
 
  **References** 
 
-* [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
 * [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
 
 ### Définition logique (CLD)
@@ -57,7 +56,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "Respiratory Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -79,7 +78,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

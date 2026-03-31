@@ -17,7 +17,6 @@ A coded type for an identifier that can be used to determine which identifier to
  **References** 
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
-* [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
 
 ### Définition logique (CLD)
 
@@ -72,7 +71,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Encounter identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -94,7 +93,7 @@ A coded type for an identifier that can be used to determine which identifier to
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "immutable" : true,

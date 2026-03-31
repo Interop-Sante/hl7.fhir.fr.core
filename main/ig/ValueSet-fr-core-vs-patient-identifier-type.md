@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). 
 
  **References** 
 
-* [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ A coded type for an identifier that can be used to determine which identifier to
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

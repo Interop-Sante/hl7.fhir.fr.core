@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetMaritalStatus |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetMaritalStatus |
 
  
 Patient Marital Status 
 
  **References** 
 
-* [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ Patient Marital Status
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ Patient Marital Status
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type-chambre | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetLocationTypeChambre |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetLocationTypeChambre |
 
  
 Type de chambre 
 
  **References** 
 
-* [FR Core Location Extension - Type de chambre](StructureDefinition-fr-core-location-type-chambre.md)
 * [FR Core Location Extension - Type de chambre](StructureDefinition-fr-core-location-type-chambre.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ Type de chambre
   "title" : "FR Core ValueSet Location Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ Type de chambre
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

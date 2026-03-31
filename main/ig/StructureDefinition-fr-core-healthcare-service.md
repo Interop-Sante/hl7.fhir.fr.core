@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreHealthcareServiceProfile |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreHealthcareServiceProfile |
 
  
 Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror). 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
   "name" : "FRCoreHealthcareServiceProfile",
   "title" : "FR Core Healthcare Service Profile",
   "status" : "active",
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -65,7 +65,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-healthcare-s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

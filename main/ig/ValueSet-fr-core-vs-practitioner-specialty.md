@@ -17,16 +17,10 @@ The modalities of exercice of the practitioner, registered by an official organi
  **References** 
 
 * [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
-* [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
-* [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md)
 * [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md)
 * [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
-* [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
-* [FR Core Practitioner Specialty Extension](StructureDefinition-fr-core-practitioner-specialty.md)
 * [FR Core Practitioner Specialty Extension](StructureDefinition-fr-core-practitioner-specialty.md)
 * [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
 * [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
 
 ### Définition logique (CLD)
@@ -78,7 +72,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -100,7 +94,7 @@ The modalities of exercice of the practitioner, registered by an official organi
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "immutable" : true,

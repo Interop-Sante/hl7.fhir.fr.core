@@ -17,7 +17,6 @@ Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structur
  **References** 
 
 * [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-categorie.md)
-* [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-categorie.md)
 
 ### Définition logique (CLD)
 
@@ -80,7 +79,7 @@ Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structur
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

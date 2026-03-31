@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetOrganizationCodeTarifTNJP |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetOrganizationCodeTarifTNJP |
 
  
 Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations). 
 
  **References** 
 
-* [FR Core Organization Extension - Tarif Soin](StructureDefinition-fr-core-organization-tarif.md)
 * [FR Core Organization Extension - Tarif Soin](StructureDefinition-fr-core-organization-tarif.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ Valeurs permettant de coder les codes TNJP (Tarification nationale journalière 
   "title" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ Valeurs permettant de coder les codes TNJP (Tarification nationale journalière 
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetSPO2BodyLocation |
 
  
 Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed. 
@@ -17,8 +17,6 @@ Select SNOMED CT codes. An set of codes for the location at which oxygen saturat
  **References** 
 
 * [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md)
-* [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md)
-* [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
 * [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
 
 ### Définition logique (CLD)
@@ -59,7 +57,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "Oxygen Saturation Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -81,7 +79,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetIdentityReliabilityStatus |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetIdentityReliabilityStatus |
 
  
 The reliability of the identity. 
 
  **References** 
 
-* [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
 * [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ The reliability of the identity.
   "title" : "FR Core ValueSet Identity reliability",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ The reliability of the identity.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

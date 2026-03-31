@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetOrganizationEtablissementType |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetOrganizationEtablissementType |
 
  
 Types d’organisation représentant des établissements. 
 
  **References** 
 
-* [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 * [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
 
 ### Définition logique (CLD)
@@ -56,7 +55,7 @@ Types d’organisation représentant des établissements.
   "title" : "FR Core ValueSet Organization Etablisement type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +77,7 @@ Types d’organisation représentant des établissements.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

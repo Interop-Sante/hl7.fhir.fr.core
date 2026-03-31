@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreObservationBmiProfile |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreObservationBmiProfile |
 
  
 French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio]. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationBmiProfile",
   "title" : "FR Core Observation Bmi Profile",
   "status" : "active",
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

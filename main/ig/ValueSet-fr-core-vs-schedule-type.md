@@ -17,7 +17,6 @@ Jeu de valeurs des types de Schedule. A Schedule type
  **References** 
 
 * [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
-* [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
 
 ### Définition logique (CLD)
 
@@ -72,7 +71,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
   "title" : "FR Core ValueSet Schedule type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -94,7 +93,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

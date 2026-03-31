@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 | *Version*:2.2.0 |
-| Draft as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemv2_3307 |
+| Draft as of 2026-03-31 | *Computable Name*:FRCoreCodeSystemv2_3307 |
 
  
 HL7 v2 - Table 3307 
@@ -37,7 +37,7 @@ HL7 v2 - Table 3307
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -59,7 +59,7 @@ HL7 v2 - Table 3307
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "caseSensitive" : true,

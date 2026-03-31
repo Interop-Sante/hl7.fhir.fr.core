@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetLocationType |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetLocationType |
 
  
 Jeu de valeurs du rôle joué par un lieu. 
@@ -18,8 +18,6 @@ A role for a location
  **References** 
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
-* [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
-* [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 * [FR Core Location Profile](StructureDefinition-fr-core-location.md)
 
 ### Définition logique (CLD)
@@ -59,7 +57,7 @@ A role for a location
   "title" : "FR Core ValueSet Location type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -81,7 +79,7 @@ A role for a location
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

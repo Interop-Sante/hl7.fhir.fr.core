@@ -69,7 +69,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet BP measurement method",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -91,7 +91,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

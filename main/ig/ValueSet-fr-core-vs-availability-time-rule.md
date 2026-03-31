@@ -17,7 +17,6 @@ Spécifications des périodes récurrentes. Specification of the recurrent perio
  **References** 
 
 * [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
-* [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
 
 ### Définition logique (CLD)
 
@@ -74,7 +73,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -96,7 +95,7 @@ No Expansion for this valueset (Unknown Code System)
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

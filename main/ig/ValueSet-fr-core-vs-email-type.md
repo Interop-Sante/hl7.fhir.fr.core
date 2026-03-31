@@ -17,7 +17,6 @@ The type of email
  **References** 
 
 * [FR Core Contact Point Email Type Extension](StructureDefinition-fr-core-contact-point-email-type.md)
-* [FR Core Contact Point Email Type Extension](StructureDefinition-fr-core-contact-point-email-type.md)
 
 ### Définition logique (CLD)
 
@@ -68,7 +67,7 @@ The type of email
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -90,7 +89,7 @@ The type of email
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

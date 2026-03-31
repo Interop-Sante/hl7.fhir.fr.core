@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreAppointmentProfile |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreAppointmentProfile |
 
  
 Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
   "name" : "FRCoreAppointmentProfile",
   "title" : "FR Core Appointment Profile",
   "status" : "active",
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -65,7 +65,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

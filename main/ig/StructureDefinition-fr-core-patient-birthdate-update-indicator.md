@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCorePatientBirthDateUpdateIndicatorExtension |
+| Active as of 2026-03-31 | *Computable Name*:FRCorePatientBirthDateUpdateIndicatorExtension |
 
 Indicateur booléen de mise à jour de la date de naissance
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "name" : "FRCorePatientBirthDateUpdateIndicatorExtension",
   "title" : "FR Core Patient Birthdate Update Indicator Extension",
   "status" : "active",
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

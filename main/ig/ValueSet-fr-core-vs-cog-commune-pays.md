@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetCOGCommunePays |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetCOGCommunePays |
 
  
 Value set town and country COG 
@@ -23,6 +23,8 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
  
 
 ### Expansion
+
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -59,7 +61,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet COG commune pays",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -81,7 +83,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

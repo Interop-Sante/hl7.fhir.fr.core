@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203 | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemv2_0203 |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreCodeSystemv2_0203 |
 
  
 HL7 v2 - Identifier type 
@@ -38,7 +38,7 @@ HL7 v2 - Identifier type
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -60,7 +60,7 @@ HL7 v2 - Identifier type
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "caseSensitive" : true,

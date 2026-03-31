@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreValueSetINSEECode |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetINSEECode |
 
  
 the French Address Insee Codes 
@@ -17,13 +17,14 @@ the French Address Insee Codes
  **References** 
 
 * [FR Core Address Insee Code Extension](StructureDefinition-fr-core-address-insee-code.md)
-* [FR Core Address Insee Code Extension](StructureDefinition-fr-core-address-insee-code.md)
 
 ### Définition logique (CLD)
 
  
 
 ### Expansion
+
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -56,7 +57,7 @@ the French Address Insee Codes
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +79,7 @@ the French Address Insee Codes
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {

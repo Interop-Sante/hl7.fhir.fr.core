@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit | *Version*:2.2.0 |
-| Active as of 2026-03-25 | *Computable Name*:FRCoreCodeSystemPositionLit |
+| Active as of 2026-03-31 | *Computable Name*:FRCoreCodeSystemPositionLit |
 
  
 Position du lit dans la chambre 
@@ -36,7 +36,7 @@ Position du lit dans la chambre
   "title" : "FR Core CodeSystem Position du lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T15:00:47+00:00",
+  "date" : "2026-03-31T09:16:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -58,7 +58,7 @@ Position du lit dans la chambre
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "France"
+      "display" : "France (la)"
     }]
   }],
   "caseSensitive" : true,
