@@ -26,6 +26,8 @@ L'ensemble des contributeurs au code source peuvent être vus sur [GitHub](https
 
 #### Version 2.2.0
 
+Chair : Nicolas Riss
+
 * Delphine Bayle (TECHNIDATA)
 * Matisse Bornard (CHU de Toulouse)
 * Georges-Alexandre (CHASTIN ENOVACOM)
