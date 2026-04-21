@@ -36,7 +36,7 @@ Méthode de collection de l’identité
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-21T12:37:27+00:00",
+  "date" : "2026-04-21T12:38:14+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
