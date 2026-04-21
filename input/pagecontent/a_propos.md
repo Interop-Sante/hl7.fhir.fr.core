@@ -31,7 +31,7 @@ L'ensemble des contributeurs au code source peuvent être vus sur [GitHub](https
 * Georges-Alexandre (CHASTIN ENOVACOM)
 * Lucas  Miralles (CHU de Toulouse)
 * Yohann Poiron (ANS)
-* Nicolas Riss (ANS / HL7 France)
+* Nicolas Riss (ANS / Chair HL7 France)
 * Guillaume Arras (PHAST)
 * Frédéric Déchanet (Maincare)
 * Sylvain Demey (ANS)
@@ -53,7 +53,7 @@ L'ensemble des contributeurs au code source peuvent être vus sur [GitHub](https
 
 #### Versions historiques
 
-* Isabelle Gibaud
-* François Macary
-* Eric Dufour
-* Yohann Poiron
+* Isabelle Gibaud (co-chair IHE-France and chair HL7-france)
+* François Macary (Phast, chair HL7 France)
+* Eric Dufour (SELIC, technical lead H'xml)
+* Yohann Poiron (OpenXtrem, technical lead IHE PAM France)
