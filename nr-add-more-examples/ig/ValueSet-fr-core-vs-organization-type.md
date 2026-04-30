@@ -55,7 +55,7 @@ Types de structures
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-30T13:20:47+00:00",
+  "date" : "2026-04-30T13:24:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -90,7 +90,7 @@ Types de structures
       },
       {
         "code" : "GROUP",
-        "display" : "Groupe privé / hospitalier"
+        "display" : "Groupe privé/hospitalier"
       },
       {
         "code" : "STRUCT-INTERNE",
@@ -114,7 +114,7 @@ Types de structures
       },
       {
         "code" : "POLE",
-        "display" : "Pole"
+        "display" : "Pôle"
       },
       {
         "code" : "CENTRE-RESP",
