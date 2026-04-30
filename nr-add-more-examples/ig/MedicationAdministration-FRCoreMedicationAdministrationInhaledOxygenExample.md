@@ -1,0 +1,77 @@
+# FRCoreMedicationAdministrationInhaledOxygenExample - Guide d'implémentation FR Core v2.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **FRCoreMedicationAdministrationInhaledOxygenExample**
+
+## Example MedicationAdministration: FRCoreMedicationAdministrationInhaledOxygenExample
+
+Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md)
+
+**status**: In Progress
+
+**medication**: Product containing oxygen (medicinal product)
+
+**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+
+**effective**: 2022-11-06 09:00:00+0100 --> (en cours)
+
+### Performers
+
+| | |
+| :--- | :--- |
+| - | **Actor** |
+| * | [Practitioner Leclerc Sophie](Practitioner-FRCorePractitionerExample.md) |
+
+### Dosages
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Text** | **Route** |
+| * | Oxygène 2 L/min par lunette nasale | Respiratory tract route (qualifier value) |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "FRCoreMedicationAdministrationInhaledOxygenExample",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen"]
+  },
+  "status" : "in-progress",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "767111007",
+      "display" : "Product containing oxygen (medicinal product)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/FRCorePatientExample",
+    "type" : "Patient"
+  },
+  "effectivePeriod" : {
+    "start" : "2022-11-06T09:00:00+01:00"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/FRCorePractitionerExample",
+      "type" : "Practitioner"
+    }
+  }],
+  "dosage" : {
+    "text" : "Oxygène 2 L/min par lunette nasale",
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "447694001",
+        "display" : "Respiratory tract route (qualifier value)"
+      }]
+    }
+  }
+}
+
+```

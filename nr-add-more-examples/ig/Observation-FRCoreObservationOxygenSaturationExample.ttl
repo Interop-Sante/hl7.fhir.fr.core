@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationOxygenSaturationExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreObservationOxygenSaturationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation FRCoreObservationOxygenSaturationExample</b></p><a name=\"FRCoreObservationOxygenSaturationExample\"> </a><a name=\"hcFRCoreObservationOxygenSaturationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-observation-saturation-oxygen.html\">FR Core Observation Oxygen Saturation Profile</a></p></div><p><b>partOf</b>: <a href=\"MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.html\">MedicationAdministration : status = in-progress; medication[x] = Product containing oxygen (medicinal product); effective[x] = 2022-11-06 09:00:00+0100 --&gt; (en cours)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 2708-6}\">Oxygène saturation [Fraction massique] Sang artériel ; Numérique</span></p><p><b>subject</b>: <a href=\"Patient-FRCorePatientExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2022-11-06 09:30:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-FRCorePractitionerExample.html\">Practitioner Leclerc Sophie</a></p><p><b>value</b>: 97 %<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUM% = '%')</span></p><p><b>bodySite</b>: <span title=\"Codes :{http://snomed.info/sct 7569003}\">Finger structure (body structure)</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:partOf ( [
+     fhir:l <https://hl7.fr/ig/fhir/core/MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample> ;
+     fhir:reference [ fhir:v "MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:2708-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "2708-6" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientExample> ;
+     fhir:reference [ fhir:v "Patient/FRCorePatientExample" ] ;
+     fhir:type [
+       fhir:v "Patient"^^xsd:anyURI ;
+       fhir:l fhir:Patient
+     ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2022-11-06T09:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <https://hl7.fr/ig/fhir/core/Practitioner/FRCorePractitionerExample> ;
+     fhir:reference [ fhir:v "Practitioner/FRCorePractitionerExample" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "97"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "%" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "%" ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:7569003 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "7569003" ] ;
+       fhir:display [ fhir:v "Finger structure (body structure)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
