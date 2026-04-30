@@ -6,7 +6,7 @@ Description: "Exemple de ressource MedicationAdministration pour décrire l'admi
 * medicationCodeableConcept.coding.system = "http://snomed.info/sct"
 * medicationCodeableConcept.coding.code = #767111007
 * medicationCodeableConcept.coding.display = "Product containing oxygen (medicinal product)"
-* subject = Reference(FRCorePatientExample)
+* subject = Reference(FRCorePatientINSExample)
   * type = "Patient"
 * effectivePeriod.start = "2022-11-06T09:00:00+01:00"
 * performer.actor = Reference(FRCorePractitionerExample)

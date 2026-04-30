@@ -5,7 +5,7 @@ Description: "Exemple de ressource Observation pour décrire la fréquence respi
 * extension[bodyPosition].valueCodeableConcept = $SCT#33586001 "Sitting position (finding)"
 * extension[levelOfExertion].valueCodeableConcept.text = "Au repos"
 * status = #final
-* subject = Reference(FRCorePatientExample)
+* subject = Reference(FRCorePatientINSExample)
   * type = "Patient"
 * performer = Reference(FRCorePractitionerExample)
 * effectiveDateTime = "2022-11-06"

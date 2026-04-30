@@ -3,7 +3,7 @@ InstanceOf: fr-core-observation-body-temperature
 Usage: #example
 Description: "Exemple de ressource Observation pour décrire la température du patient"
 * status = #final
-* subject = Reference(FRCorePatientExample)
+* subject = Reference(FRCorePatientINSExample)
 * performer = Reference(FRCorePractitionerExample)
 
 * effectiveDateTime = "2022-11-06"

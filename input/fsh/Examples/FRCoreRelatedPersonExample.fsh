@@ -2,10 +2,10 @@ Instance: FRCoreRelatedPersonExample
 InstanceOf: fr-core-related-person
 Usage: #example
 Description: "Exemple de ressource RelatedPerson pour décrire la mère d'un patient"
-* extension[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality].extension[code].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-Country#FRA "France"
+* extension[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#FR "France"
 * identifier.system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier.value = "P98765"
-* patient = Reference(FRCorePatientExample)
+* patient = Reference(FRCorePatientINSExample)
 * relationship[Role].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
 * relationship[Role].coding.code = #ECON
 * relationship[Role].coding.display = "Personne à prévenir en cas d'urgence"

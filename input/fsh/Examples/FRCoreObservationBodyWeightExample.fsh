@@ -3,7 +3,7 @@ InstanceOf: fr-core-observation-body-weight
 Usage: #example
 Description: "Exemple de ressource Observation pour décrire le poids du patient"
 * status = #final
-* subject = Reference(FRCorePatientExample)
+* subject = Reference(FRCorePatientINSExample)
   * type = "Patient"
 * performer = Reference(FRCorePractitionerExample)
 * effectiveDateTime = "2022-11-06"
