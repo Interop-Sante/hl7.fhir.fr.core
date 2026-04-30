@@ -80,7 +80,7 @@ Description: "La nomenclature de disciplines d'équipement est utilisée pour ve
 * #447 "Médecine universitaire" "Médecine universitaire"
 * #448 "Médecine sportive" "Médecine sportive"
 * #452 "Aide aux insuffisants respiratoires" "Aide aux insuffisants respiratoires"
-* #552 "Entraînement à l'hémodialyse " "Entraînement à l'hémodialyse "
+* #552 "Entraînement à l'hémodialyse" "Entraînement à l'hémodialyse"
 * #553 "Entraînement à la dialyse péritonéale" "Entraînement à la dialyse péritonéale"
 * #555 "Dialyse péritonéale automatisée à domicile" "Dialyse péritonéale automatisée à domicile"
 * #556 "Dialyse péritonéale continue ambulatoire à domicile" "Dialyse péritonéale continue ambulatoire à domicile"

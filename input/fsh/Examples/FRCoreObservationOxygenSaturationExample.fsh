@@ -9,4 +9,4 @@ Description: "Exemple de ressource Observation pour décrire la saturation en ox
 * performer = Reference(FRCorePractitionerExample)
 * effectiveDateTime = "2022-11-06T09:30:00+01:00"
 * valueQuantity = 97 '%' "%"
-* bodySite = $SCT#7569003 "Finger structure (body structure)"
+* bodySite = $SCT#7569003 "doigt d'une main excepté le pouce"
