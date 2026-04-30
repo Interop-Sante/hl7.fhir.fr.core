@@ -12,7 +12,7 @@ Description: "Exemple de ressource Patient (cas d'usage INS)"
 * extension[birthPlace].valueAddress.city = "Ambléon"
 
 // nationality
-* extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#FR "France"
+* extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#FR "France (la)"
 
 // birthDateUpdateIndicator
 * extension[birthDateUpdateIndicator].valueBoolean = false
