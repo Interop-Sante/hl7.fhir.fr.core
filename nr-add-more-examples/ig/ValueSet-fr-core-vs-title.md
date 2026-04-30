@@ -67,7 +67,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet Title",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-30T13:10:34+00:00",
+  "date" : "2026-04-30T13:20:47+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

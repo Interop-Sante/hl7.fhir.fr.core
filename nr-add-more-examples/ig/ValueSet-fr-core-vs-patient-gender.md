@@ -55,7 +55,7 @@ Genres autorisés dans le cadre du genre administratif du Patient en France. Pou
   "title" : "FR Core ValueSet Patient gender",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-30T13:10:34+00:00",
+  "date" : "2026-04-30T13:20:47+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

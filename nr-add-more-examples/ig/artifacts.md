@@ -216,6 +216,7 @@ These are example instances that show what data produced and consumed by systems
 | [hopitaltest-ej-350005179](Organization-hopitaltest-ej-350005179.md) | Exemple d’entité juridique d’un établissement de santé (FINESS 350005179) |
 | [hopitaltest-endocrino-ch04](Location-hopitaltest-endocrino-ch04.md) | Exemple de chambre d’hospitalisation (chambre 04 du service d’endocrinologie) |
 | [hopitaltest-endocrino-ch04-litF](Location-hopitaltest-endocrino-ch04-litF.md) | Exemple de lit d’hospitalisation (lit F de la chambre 04 du service d’endocrinologie) |
+| [hopitaltest-infectio-ch02-prsn-ngtv](Location-hopitaltest-infectio-ch02-prsn-ngtv.md) | Exemple de chambre en pression négative (service d’infectiologie) illustrant l’extension typeChambre |
 | [hopitaltest-pole-1150-med-spe](Organization-hopitaltest-pole-1150-med-spe.md) | Exemple de pôle de médecine spécialisée (Organisation de type pôle) |
 | [hopitaltest-salle-examen-01](Location-hopitaltest-salle-examen-01.md) | Exemple de salle d’examen (Location de type salle d’examen) |
 | [hopitaltest-service-11006-endocrino-diabo](Organization-hopitaltest-service-11006-endocrino-diabo.md) | Exemple de service d’endocrinologie-diabétologie (Organisation de type service) |

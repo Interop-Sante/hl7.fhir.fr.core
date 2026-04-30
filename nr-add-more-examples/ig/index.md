@@ -151,7 +151,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-04-30T13:10:34+00:00",
+  "date" : "2026-04-30T13:20:47+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2960,6 +2960,18 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
       },
       "name" : "hopitaltest-endocrino-ch04-litF",
       "description" : "Exemple de lit d'hospitalisation (lit F de la chambre 04 du service d'endocrinologie)",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hopitaltest-infectio-ch02-prsn-ngtv"
+      },
+      "name" : "hopitaltest-infectio-ch02-prsn-ngtv",
+      "description" : "Exemple de chambre en pression négative (service d'infectiologie) illustrant l'extension typeChambre",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {

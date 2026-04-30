@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FR Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-04-30T13:10:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-30T13:20:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -5264,6 +5264,28 @@
        ] ;
        fhir:name [ fhir:v "hopitaltest-endocrino-ch04-litF" ] ;
        fhir:description [ fhir:v "Exemple de lit d'hospitalisation (lit F de la chambre 04 du service d'endocrinologie)" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location?version=2.2.0>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://hl7.fr/ig/fhir/core/Location/hopitaltest-infectio-ch02-prsn-ngtv> ;
+         fhir:reference [ fhir:v "Location/hopitaltest-infectio-ch02-prsn-ngtv" ]
+       ] ;
+       fhir:name [ fhir:v "hopitaltest-infectio-ch02-prsn-ngtv" ] ;
+       fhir:description [ fhir:v "Exemple de chambre en pression négative (service d'infectiologie) illustrant l'extension typeChambre" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"^^xsd:anyURI ;

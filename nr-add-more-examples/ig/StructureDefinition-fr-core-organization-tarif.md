@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationTarifExtension",
   "title" : "FR Core Organization Extension - Tarif Soin",
   "status" : "active",
-  "date" : "2026-04-30T13:10:34+00:00",
+  "date" : "2026-04-30T13:20:47+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
