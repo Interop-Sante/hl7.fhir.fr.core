@@ -1,6 +1,7 @@
 Instance: hopitaltest-endocrino-ch04
 InstanceOf: FRCoreLocationProfile
 Usage: #example
+Description: "Exemple de chambre d'hospitalisation (chambre 04 du service d'endocrinologie)"
 
 * type = $fr-location-type#CHAMB "Chambre"
 * type.text = "Chambre"

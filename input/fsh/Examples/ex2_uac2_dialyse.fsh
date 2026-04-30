@@ -1,6 +1,7 @@
 Instance: hopitaltest-uac-4420-uac-02
 InstanceOf: FRCoreOrganizationUACProfile
 Usage: #example
+Description: "Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 02"
 
 * extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"
 * extension[=].valueString = "UF Dialyse"
