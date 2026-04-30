@@ -1,5 +1,5 @@
 
-Instance: FRCorePatientExample
+Instance: FRCorePatientINSExample
 InstanceOf: fr-core-patient-ins
 Usage: #example
 Description: "Exemple de ressource Patient (cas d'usage INS)"
