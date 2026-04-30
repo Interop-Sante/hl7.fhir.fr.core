@@ -151,7 +151,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-04-30T12:40:02+00:00",
+  "date" : "2026-04-30T12:42:30+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2911,6 +2911,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-dept-11003-endocrino"
       },
       "name" : "hopitaltest-dept-11003-endocrino",
+      "description" : "Exemple de département d'endocrinologie (Organisation de type département)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2922,6 +2923,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-eg-4-members"
       },
       "name" : "hopitaltest-eg-4-members",
+      "description" : "Exemple d'établissement géographique regroupant 4 entités membres",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
@@ -2933,6 +2935,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-ej-350005179"
       },
       "name" : "hopitaltest-ej-350005179",
+      "description" : "Exemple d'entité juridique d'un établissement de santé (FINESS 350005179)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
@@ -2944,6 +2947,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Location/hopitaltest-endocrino-ch04"
       },
       "name" : "hopitaltest-endocrino-ch04",
+      "description" : "Exemple de chambre d'hospitalisation (chambre 04 du service d'endocrinologie)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
@@ -2955,6 +2959,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Location/hopitaltest-endocrino-ch04-litF"
       },
       "name" : "hopitaltest-endocrino-ch04-litF",
+      "description" : "Exemple de lit d'hospitalisation (lit F de la chambre 04 du service d'endocrinologie)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
@@ -2966,6 +2971,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-pole-1150-med-spe"
       },
       "name" : "hopitaltest-pole-1150-med-spe",
+      "description" : "Exemple de pôle de médecine spécialisée (Organisation de type pôle)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2977,6 +2983,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Location/hopitaltest-salle-examen-01"
       },
       "name" : "hopitaltest-salle-examen-01",
+      "description" : "Exemple de salle d'examen (Location de type salle d'examen)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
@@ -2988,6 +2995,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo"
       },
       "name" : "hopitaltest-service-11006-endocrino-diabo",
+      "description" : "Exemple de service d'endocrinologie-diabétologie (Organisation de type service)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2999,6 +3007,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-service-11007-dietetique"
       },
       "name" : "hopitaltest-service-11007-dietetique",
+      "description" : "Exemple de service de diététique (Organisation de type service)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -3010,6 +3019,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uac-4420-uac-01"
       },
       "name" : "hopitaltest-uac-4420-uac-01",
+      "description" : "Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 01",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
@@ -3021,6 +3031,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uac-4420-uac-02"
       },
       "name" : "hopitaltest-uac-4420-uac-02",
+      "description" : "Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 02",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
@@ -3032,6 +3043,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uf-4420-dialyse"
       },
       "name" : "hopitaltest-uf-4420-dialyse",
+      "description" : "Exemple d'unité fonctionnelle (UF) de dialyse",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
@@ -3043,6 +3055,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
       },
       "name" : "hopitaltest-uf-4701-endocrino-diab",
+      "description" : "Exemple d'unité fonctionnelle (UF) d'endocrinologie-diabétologie",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
@@ -3054,6 +3067,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "Organization/hopitaltest-uf-4705-nutrition"
       },
       "name" : "hopitaltest-uf-4705-nutrition",
+      "description" : "Exemple d'unité fonctionnelle (UF) de nutrition",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {

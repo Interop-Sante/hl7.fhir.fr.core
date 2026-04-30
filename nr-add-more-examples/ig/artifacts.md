@@ -211,18 +211,18 @@ These are example instances that show what data produced and consumed by systems
 | [FRCoreRelatedPersonExample](RelatedPerson-FRCoreRelatedPersonExample.md) | Exemple de ressource RelatedPerson pour décrire la mère d’un patient |
 | [FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md) | Exemple de ressource Schedule pour décrire un agenda. |
 | [FRCoreSlotExample](Slot-FRCoreSlotExample.md) | Exemple de ressource Slot. |
-| [hopitaltest-dept-11003-endocrino](Organization-hopitaltest-dept-11003-endocrino.md) |  |
-| [hopitaltest-eg-4-members](Organization-hopitaltest-eg-4-members.md) |  |
-| [hopitaltest-ej-350005179](Organization-hopitaltest-ej-350005179.md) |  |
-| [hopitaltest-endocrino-ch04](Location-hopitaltest-endocrino-ch04.md) |  |
-| [hopitaltest-endocrino-ch04-litF](Location-hopitaltest-endocrino-ch04-litF.md) |  |
-| [hopitaltest-pole-1150-med-spe](Organization-hopitaltest-pole-1150-med-spe.md) |  |
-| [hopitaltest-salle-examen-01](Location-hopitaltest-salle-examen-01.md) |  |
-| [hopitaltest-service-11006-endocrino-diabo](Organization-hopitaltest-service-11006-endocrino-diabo.md) |  |
-| [hopitaltest-service-11007-dietetique](Organization-hopitaltest-service-11007-dietetique.md) |  |
-| [hopitaltest-uac-4420-uac-01](Organization-hopitaltest-uac-4420-uac-01.md) |  |
-| [hopitaltest-uac-4420-uac-02](Organization-hopitaltest-uac-4420-uac-02.md) |  |
-| [hopitaltest-uf-4420-dialyse](Organization-hopitaltest-uf-4420-dialyse.md) |  |
-| [hopitaltest-uf-4701-endocrino-diab](Organization-hopitaltest-uf-4701-endocrino-diab.md) |  |
-| [hopitaltest-uf-4705-nutrition](Organization-hopitaltest-uf-4705-nutrition.md) |  |
+| [hopitaltest-dept-11003-endocrino](Organization-hopitaltest-dept-11003-endocrino.md) | Exemple de département d’endocrinologie (Organisation de type département) |
+| [hopitaltest-eg-4-members](Organization-hopitaltest-eg-4-members.md) | Exemple d’établissement géographique regroupant 4 entités membres |
+| [hopitaltest-ej-350005179](Organization-hopitaltest-ej-350005179.md) | Exemple d’entité juridique d’un établissement de santé (FINESS 350005179) |
+| [hopitaltest-endocrino-ch04](Location-hopitaltest-endocrino-ch04.md) | Exemple de chambre d’hospitalisation (chambre 04 du service d’endocrinologie) |
+| [hopitaltest-endocrino-ch04-litF](Location-hopitaltest-endocrino-ch04-litF.md) | Exemple de lit d’hospitalisation (lit F de la chambre 04 du service d’endocrinologie) |
+| [hopitaltest-pole-1150-med-spe](Organization-hopitaltest-pole-1150-med-spe.md) | Exemple de pôle de médecine spécialisée (Organisation de type pôle) |
+| [hopitaltest-salle-examen-01](Location-hopitaltest-salle-examen-01.md) | Exemple de salle d’examen (Location de type salle d’examen) |
+| [hopitaltest-service-11006-endocrino-diabo](Organization-hopitaltest-service-11006-endocrino-diabo.md) | Exemple de service d’endocrinologie-diabétologie (Organisation de type service) |
+| [hopitaltest-service-11007-dietetique](Organization-hopitaltest-service-11007-dietetique.md) | Exemple de service de diététique (Organisation de type service) |
+| [hopitaltest-uac-4420-uac-01](Organization-hopitaltest-uac-4420-uac-01.md) | Exemple d’unité d’activité clinique (UAC) de dialyse - UAC 01 |
+| [hopitaltest-uac-4420-uac-02](Organization-hopitaltest-uac-4420-uac-02.md) | Exemple d’unité d’activité clinique (UAC) de dialyse - UAC 02 |
+| [hopitaltest-uf-4420-dialyse](Organization-hopitaltest-uf-4420-dialyse.md) | Exemple d’unité fonctionnelle (UF) de dialyse |
+| [hopitaltest-uf-4701-endocrino-diab](Organization-hopitaltest-uf-4701-endocrino-diab.md) | Exemple d’unité fonctionnelle (UF) d’endocrinologie-diabétologie |
+| [hopitaltest-uf-4705-nutrition](Organization-hopitaltest-uf-4705-nutrition.md) | Exemple d’unité fonctionnelle (UF) de nutrition |
 
