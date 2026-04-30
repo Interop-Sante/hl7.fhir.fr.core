@@ -20,8 +20,6 @@ Description: "Exemple de ressource Patient décédé illustrant les extensions d
 * name[officialName].use = #official
 * name[officialName].family = "Martin"
 * name[officialName].given[0] = "Jean"
-* name[officialName].extension[assemblyOrder].valueCode = http://terminology.hl7.org/CodeSystem/name-assembly-order#NL3
-
 * gender = #male
 * birthDate = "1950-03-10"
 * deceasedDateTime = "2024-01-15"
