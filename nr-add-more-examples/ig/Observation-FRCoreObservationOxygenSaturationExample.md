@@ -24,7 +24,7 @@ Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-c
 
 **value**: 97 % (Détails : code UCUM% = '%')
 
-**bodySite**: Finger structure (body structure)
+**bodySite**: doigt d'une main excepté le pouce
 
 
 
@@ -71,7 +71,7 @@ Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-c
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "7569003",
-      "display" : "Finger structure (body structure)"
+      "display" : "doigt d'une main excepté le pouce"
     }]
   }
 }

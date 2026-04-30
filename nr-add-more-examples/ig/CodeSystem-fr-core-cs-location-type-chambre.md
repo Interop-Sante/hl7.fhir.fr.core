@@ -36,7 +36,7 @@ Type de chambre
   "title" : "FR Core CodeSystem Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-30T12:46:16+00:00",
+  "date" : "2026-04-30T13:10:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,23 +66,28 @@ Type de chambre
   "count" : 5,
   "concept" : [{
     "code" : "STD",
-    "display" : "Standard"
+    "display" : "Standard",
+    "definition" : "Standard"
   },
   {
     "code" : "PRSN_NGTV",
-    "display" : "Pression négative"
+    "display" : "Pression négative",
+    "definition" : "Pression négative"
   },
   {
     "code" : "PRSN_PSTV",
-    "display" : "Pression positive"
+    "display" : "Pression positive",
+    "definition" : "Pression positive"
   },
   {
     "code" : "CRCRL",
-    "display" : "Carcéral"
+    "display" : "Carcéral",
+    "definition" : "Carcéral"
   },
   {
     "code" : "CPTN",
-    "display" : "Capitonné"
+    "display" : "Capitonné",
+    "definition" : "Capitonné"
   }]
 }
 

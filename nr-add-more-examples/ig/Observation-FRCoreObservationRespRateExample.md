@@ -8,7 +8,7 @@
 
 Profil: [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
 
-**FR Core Observation Body Position Ext Extension**: Sitting position (finding)
+**FR Core Observation Body Position Ext Extension**: position assise
 
 **FR Core Observation Level Of Exertion Extension**: Au repos
 
@@ -26,7 +26,7 @@ Profil: [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-co
 
 **value**: 16 respirations/minute (Détails : code UCUM/min = '/min')
 
-**method**: Inspection (procedure)
+**method**: examen visuel
 
 
 
@@ -45,7 +45,7 @@ Profil: [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-co
       "coding" : [{
         "system" : "http://snomed.info/sct",
         "code" : "33586001",
-        "display" : "Sitting position (finding)"
+        "display" : "position assise"
       }]
     }
   },
@@ -86,7 +86,7 @@ Profil: [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-co
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "32750006",
-      "display" : "Inspection (procedure)"
+      "display" : "examen visuel"
     }]
   }
 }
