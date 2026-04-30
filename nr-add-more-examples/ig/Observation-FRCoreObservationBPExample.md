@@ -14,7 +14,7 @@ Profil: [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core
 
 **code**: Blood pressure panel with all children optional
 
-**subject**: `FRCorePatientExample`
+**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
 **effective**: 2012-09-17
 
@@ -53,7 +53,7 @@ Profil: [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core
     }]
   },
   "subject" : {
-    "reference" : "FRCorePatientExample",
+    "reference" : "Patient/FRCorePatientINSExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2012-09-17",

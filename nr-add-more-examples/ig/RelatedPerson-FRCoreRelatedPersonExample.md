@@ -13,7 +13,7 @@ Profil: [FR Core Related Person Profile](StructureDefinition-fr-core-related-per
 
 **identifier**: `urn:oid:1.2.250.1.213.1.4.8`/P98765
 
-**patient**: `FRCorePatientExample`
+**patient**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
 **relationship**: Personne à prévenir en cas d'urgence, Mère
 
@@ -39,8 +39,8 @@ Profil: [FR Core Related Person Profile](StructureDefinition-fr-core-related-per
       "url" : "code",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-Country",
-          "code" : "FRA",
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
           "display" : "France"
         }]
       }
@@ -52,7 +52,7 @@ Profil: [FR Core Related Person Profile](StructureDefinition-fr-core-related-per
     "value" : "P98765"
   }],
   "patient" : {
-    "reference" : "FRCorePatientExample"
+    "reference" : "Patient/FRCorePatientINSExample"
   },
   "relationship" : [{
     "coding" : [{

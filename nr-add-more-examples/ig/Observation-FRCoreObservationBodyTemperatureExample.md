@@ -14,7 +14,7 @@ Profil: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-co
 
 **code**: Température corporelle [Température] Patient ; Numérique
 
-**subject**: `FRCorePatientExample`
+**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
 **effective**: 2022-11-06
 
@@ -47,7 +47,7 @@ Profil: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-co
     }]
   },
   "subject" : {
-    "reference" : "FRCorePatientExample"
+    "reference" : "Patient/FRCorePatientINSExample"
   },
   "effectiveDateTime" : "2022-11-06",
   "performer" : [{

@@ -8,7 +8,7 @@
 
 Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
 
-**FR Core Appointment Operator Extension**: `FRCorePatientExample`
+**FR Core Appointment Operator Extension**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
 **identifier**: `http://appointment-identifier-system.org`/123
 
@@ -26,7 +26,7 @@ Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md
 
 **created**: 2019-01-02
 
-> **participant****actor**: `FRCorePatientExample`**required**: Required**status**: Accepted
+> **participant****actor**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)**required**: Required**status**: Accepted
 
 > **participant****actor**: [PractitionerRole Soignant](PractitionerRole-FRCorePractitionerRoleExample.md)**required**: Required**status**: Needs Action
 
@@ -48,7 +48,7 @@ Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md
   "extension" : [{
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
     "valueReference" : {
-      "reference" : "FRCorePatientExample"
+      "reference" : "Patient/FRCorePatientINSExample"
     }
   }],
   "identifier" : [{
@@ -78,7 +78,7 @@ Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md
   "created" : "2019-01-02",
   "participant" : [{
     "actor" : {
-      "reference" : "FRCorePatientExample"
+      "reference" : "Patient/FRCorePatientINSExample"
     },
     "required" : "required",
     "status" : "accepted"

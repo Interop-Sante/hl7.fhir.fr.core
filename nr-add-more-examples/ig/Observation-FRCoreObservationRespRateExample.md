@@ -18,7 +18,7 @@ Profil: [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-co
 
 **code**: Respiratory rate
 
-**subject**: `FRCorePatientExample`
+**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
 **effective**: 2022-11-06
 
@@ -69,7 +69,7 @@ Profil: [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-co
     }]
   },
   "subject" : {
-    "reference" : "FRCorePatientExample",
+    "reference" : "Patient/FRCorePatientINSExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",

@@ -69,8 +69,8 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
       "url" : "code",
       "valueCodeableConcept" : {
         "coding" : [{
-          "system" : "http://terminology.hl7.org/CodeSystem/v3-Country",
-          "code" : "FRA",
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
           "display" : "France"
         }]
       }
