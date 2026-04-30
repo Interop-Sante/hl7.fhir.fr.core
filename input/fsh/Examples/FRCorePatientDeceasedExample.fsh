@@ -12,7 +12,6 @@ Description: "Exemple de ressource Patient décédé illustrant les extensions d
 * extension[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date].valueString = "1950-03-10"
 
 * identifier[PI].use = #usual
-* identifier[PI].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
 * identifier[PI].system = "http://hopital.fr/namingsystem/ipp"
 * identifier[PI].value = "IPP-999-001"
 
