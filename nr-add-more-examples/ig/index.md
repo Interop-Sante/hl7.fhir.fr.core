@@ -99,7 +99,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md), [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)... Show 7 more, [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md), [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md), [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md), [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md), [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md), [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md) and [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)
+* [Unified Code for Units of Measure (UCUM)](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html): [MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample](MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.md), [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md)... Show 8 more, [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md), [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md), [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md), [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md), [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md), [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md), [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md) and [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
@@ -151,7 +151,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-04-30T12:26:28+00:00",
+  "date" : "2026-04-30T12:40:02+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

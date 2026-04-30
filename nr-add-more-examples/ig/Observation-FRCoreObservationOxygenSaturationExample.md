@@ -8,7 +8,7 @@
 
 Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
 
-**partOf**: [MedicationAdministration : status = in-progress; medication[x] = Product containing oxygen (medicinal product); effective[x] = 2022-11-06 09:00:00+0100 --> (en cours)](MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.md)
+**partOf**: [MedicationAdministration : status = in-progress; medication[x] = produit contenant de l'oxygène; effective[x] = 2022-11-06 09:00:00+0100 --> (en cours)](MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.md)
 
 **status**: Final
 

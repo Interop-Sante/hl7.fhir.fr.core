@@ -10,7 +10,7 @@ Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefi
 
 **status**: In Progress
 
-**medication**: Product containing oxygen (medicinal product)
+**medication**: produit contenant de l'oxygène
 
 **subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
@@ -25,10 +25,10 @@ Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefi
 
 ### Dosages
 
-| | | |
-| :--- | :--- | :--- |
-| - | **Text** | **Route** |
-| * | Oxygène 2 L/min par lunette nasale | Respiratory tract route (qualifier value) |
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Text** | **Route** | **Rate[x]** |
+| * | Oxygène 2 L/min par lunette nasale | voie inhalée | 2 L/min (Détails : code UCUML/min = 'L/min') |
 
 
 
@@ -46,7 +46,7 @@ Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefi
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "767111007",
-      "display" : "Product containing oxygen (medicinal product)"
+      "display" : "produit contenant de l'oxygène"
     }]
   },
   "subject" : {
@@ -68,8 +68,14 @@ Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefi
       "coding" : [{
         "system" : "http://snomed.info/sct",
         "code" : "447694001",
-        "display" : "Respiratory tract route (qualifier value)"
+        "display" : "voie inhalée"
       }]
+    },
+    "rateQuantity" : {
+      "value" : 2,
+      "unit" : "L/min",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "L/min"
     }
   }
 }
