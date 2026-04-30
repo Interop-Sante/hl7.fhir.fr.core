@@ -2,7 +2,8 @@ ValueSet: FRCoreValueSetModeValidationIdentityINS
 Id: fr-core-vs-mode-validation-identity-ins
 Title: "FR Core ValueSet Mode validation identity INS"
 Description: "The validation mode of the identity authorized for INS"
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
+
 // SVS profile
 * ^experimental = false
 

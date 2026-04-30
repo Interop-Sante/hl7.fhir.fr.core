@@ -1,0 +1,9 @@
+ValueSet: FRCoreValueSetOrganizationCodeTarifTNJP
+Id: fr-core-vs-oragnization-code-tarif-tnjp
+Title: "FR Core ValueSet Codes Tarifs - nomenclature TNJP"
+Description: "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations)."
+* insert SetValueset
+
+* ^experimental = false
+
+* include codes from system fr-core-cs-code-tarif-tnjp

@@ -17,6 +17,19 @@ Spécification du profil de la ressource PractitionerRole pour un usage en Franc
 * extension ^slicing.rules = #open
 * extension contains FRCoreServiceTypeDurationExtension named serviceTypeDuration 0..*
 
+/* PractitionerRole.identifier */
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice based on the identifier.system value"
+
+* identifier contains numeroAm 0..1
+
+* identifier[numeroAm] ^short = "Identifiant d’activité propre à l’Assurance Maladie. format: 9 digits. synonyme: numeroAM"
+* identifier[numeroAm].system = "https://www.ameli.fr"
+
+
+
 * practitioner only Reference(FRCorePractitionerProfile)
 * organization only Reference(FRCoreOrganizationProfile)
 

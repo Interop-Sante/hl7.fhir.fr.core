@@ -2,8 +2,9 @@ Profile: FRCoreLocationProfile
 Parent: Location
 Id: fr-core-location
 Title: "FR Core Location Profile"
-Description: "French profile of Location.\r\n
-Profil français de la ressource Location"
+Description: """Ressource Location adaptée au contexte français. 
+Cette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, 
+un lit d'hôpital ou une chambre d'hôpital. """
 
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
@@ -12,34 +13,20 @@ Profil français de la ressource Location"
 * meta.profile contains fr-canonical 0..1
 * meta.profile[fr-canonical] = Canonical(fr-core-location)
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains FRCoreUsePeriodExtension named usePeriod 0..1
+* extension contains FRCoreLocationTypeChambreExtension named typeChambre 0..1
+* obeys inv-location-type-chambre
 
-* identifier ^short = "Identifiant fonctionnel du lieu. Il est recommandé de remplir ce champs pour faciliter l'identification des ressources."
+* extension contains FRCoreLocationPositionLitExtension named positionLit 0..1
+* obeys inv-location-type-lit
 
-* identifier.type 1..
-* identifier.type from FRCoreValueSetLocationIdentifierType (extensible)
+* type  from FRCoreValueSetLocationType (required)
 
-* identifier.system 1..
-* identifier.value 1..
-* identifier.assigner only Reference(FRCoreOrganizationProfile)
+Invariant: inv-location-type-chambre
+Description: """Location Type Chambre"""
+Severity: #error
+Expression: "extension('http://fhir.fr/StructureDefinition/fr-core-location-type-chambre').exists() implies type.coding.where(code = 'CHAMB').exists()"
 
-* type ..1
-* type from FRCoreValueSetLocationType (extensible)
-
-* telecom only FRCoreContactPointProfile
-* address only FRCoreAddressProfile
-
-* physicalType from FRCoreValueSetLocationPhysicalType (example)
-
-* managingOrganization only Reference(FRCoreOrganizationProfile)
-
-* partOf only Reference(FRCoreLocationProfile)
-
-* partOf.extension ^slicing.discriminator.type = #value
-* partOf.extension ^slicing.discriminator.path = "url"
-* partOf.extension ^slicing.rules = #open
-
-* partOf.extension contains FRCoreLocationPartOfPositionRoomExtension named positionRoom 0..1
+Invariant: inv-location-type-lit
+Description: """Location Type Lit"""
+Severity: #error
+Expression: "extension('http://fhir.fr/StructureDefinition/fr-core-location-position-lit').exists() implies type.coding.where(code = 'LIT').exists()"

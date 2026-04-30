@@ -1,10 +1,11 @@
 id: hl7.fhir.fr.core
 canonical: https://hl7.fr/ig/fhir/core
-name: FrCore
-title: Guide d'implémentation Fr Core
+name: FRCore
+title: Guide d'implémentation FR Core
+description: Guide d'implémentation FR Core définissant la structuration générique de FHIR en France. Socle de référence à utiliser systématiquement dans tout projet FHIR français.
 publisher:
   name: Interop'Santé
-  url: http://interopsante.org/
+  url: http://interopsante.org
 contact:
   - name: InteropSanté
     telecom:
@@ -12,22 +13,34 @@ contact:
         value: fhir@interopsante.org
         use: work
 status: active
-version: 2.2.0-ballot
+version: 2.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: ballot
-jurisdiction: urn:iso:std:iso:3166#FR "France"
+releaseLabel: trial-use
+jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
   ans.fr.terminologies: latest
+  hl7.fhir.extensions.r5: 4.0.1
 
 #La liste des paramètres ainsi que leur explication est disponible ici : https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
 parameters: 
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
-  pin-canonicals: pin-multiples # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
-
-
+  i18n-default-lang: fr-FR # Default language
+  pin-canonicals: pin-all # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+  apply-contact: true
+  apply-jurisdiction: true
+  logging:
+    - tx #tx: Messages describing the use of the terminology server (for debugging)
+    - html #html: Log when validating an html page (troubleshooting only - leave off)
+    - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
+    - init #init: Messages describing the start up process (for debugging)
+    - progress #progress: Overall progress messages
+   
 pages:
     index.md:
       title: Accueil
@@ -45,11 +58,31 @@ pages:
       title: A propos
     change_notes.md:
       title: Historique des changements
+    structure_intro.md: 
+        title: Introduction
+    structure_entites.md: 
+        title: Entités
+    structure_relations.md:
+        title: "Relations entre entités"
+    structure_contraintes.md:
+        title: Contraintes sur les profils
+    structure_nomenclatures.md:
+        title: Nomenclatures
+    structure_ref_loi.md: 
+        title: Références
 
 menu:
     Accueil: index.html
+    Structures des établissements:
+        Introduction: structure_intro.html
+        Entités: structure_entites.html
+        Relations: structure_relations.html
+        Contraintes: structure_contraintes.html
+        Nomenclatures: structure_nomenclatures.html
+        Références: structure_ref_loi.html
     Liste des profils: profile_list.html
     Ressources de conformité: artifacts.html
+    
     Bonnes pratiques: bonnes_pratiques.html
     Problématiques connues: known_problems.html
     Historique: change_notes.html

@@ -1,8 +1,117 @@
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
-
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
-* Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209)
+* Restructuration des profils Organization avec :
+    - Simplification du profil de base FRCoreOrganizationProfile
+    - Création du nouveau profil FRCoreOrganizationEtablissementProfile pour les établissements
+    - Suppression du profil FRCoreOrganizationPoleProfile
+    - Refonte des profils FRCoreOrganizationUFProfile, FRCoreOrganizationUACProfile et FRCoreLocationProfile
+* Amélioration du profil Location pour mieux supporter la structuration hospitalière (chambres, lits)
+* Ajout de 8 nouveaux CodeSystems et 11 nouveaux ValueSets pour supporter ces structures
+    * Nouveaux CodeSystems ajoutés :
+        - FRCoreCodeSystemChampActiviteField : Champ d'activité clinique (MCO, SMR, HAD, PSY, EHPAD, etc.)
+        - FRCoreCodeSystemCodeTarifTNJP : Codes tarifaires TNJP
+        - FRCoreCodeSystemDisciplineEquipement : Discipline d'équipement
+        - FRCoreCodeSystemDisciplinePrestation : Discipline de prestation
+        - FRCoreCodeSystemPositionLit : Position du lit dans la chambre
+        - FRCoreCodeSystemTypeActivite : Type d'activité
+        - FRCoreCodeSystemTypeChambre : Type de chambre
+        - FRCoreCodeSystemUFIndicateur : Indicateurs UF
+    * CodeSystems modifiés :
+        - FRCoreCodeSystemLocationType : Ajout de codes pour lit et chambre
+        - FRCoreCodeSystemv2-3307
+    * Nouveaux ValueSets ajoutés :
+        - FRCoreValueSetCategorieSAEEtablissement
+        - FRCoreValueSetLocationPositionLit (remplace LocationPositionRoom)
+        - FRCoreValueSetLocationTypeChambre
+        - FRCoreValueSetOrganizationChampActivite (remplace OrganizationActivityField)
+        - FRCoreValueSetOrganizationCodeTarifTNJP
+        - FRCoreValueSetOrganizationDisciplineEquipement
+        - FRCoreValueSetOrganizationDisciplinePrestation
+        - FRCoreValueSetOrganizationEtablissementType
+        - FRCoreValueSetOrganizationTypeActivite
+        - FRCoreValueSetOrganizationUACType
+        - FRCoreValueSetOrganizationUFIndicateur
+    * ValueSets supprimés :
+        - FRCoreValueSetLocationIdentifierType
+        - FRCoreValueSetLocationPhysicalType
+        - FRCoreValueSetLocationPositionRoom
+        - FRCoreValueSetOrganizationActivityField
+        - FRCoreValueSetOrganizationUFActivityField
+    * ValueSets modifiés :
+        - FRCoreValueSetLocationType
+        - FRCoreValueSetOrganizationType
+* Refonte des extensions Organization avec renommage et réorganisation
+    * Nouvelles extensions Organization :
+        - FRCoreOrganizationChampActiviteExtension (remplace ActivityFieldExtension)
+        - FRCoreOrganizationDemandeuseActeExtension (remplace ApplicantActExtension)
+        - FRCoreOrganizationDisciplineEquipementExtension
+        - FRCoreOrganizationDisciplinePrestationExtension
+        - FRCoreOrganizationExecutanteActeExtension (remplace ExecutantExtension)
+        - FRCoreOrganizationExterneExtension (remplace ExternalExtension)
+        - FRCoreOrganizationMemberExtension
+        - FRCoreOrganizationPlaceHebergementTheoriqueExtension (remplace TotalNumberOfTheoricalAccomodationSpaceExtension)
+        - FRCoreOrganizationRaisonSocialeExtension
+        - FRCoreOrganizationSAECategoryExtension
+        - FRCoreOrganizationTarifExtension
+        - FRCoreOrganizationTypeActiviteExtension (remplace ActivityTypeExtension)
+        - FRCoreOrganizationUFIndicateurExtension
+    * Extensions Organization supprimées :
+        - FRCoreOrganizationActivityFieldExtension
+        - FRCoreOrganizationActivityTypeExtension
+        - FRCoreOrganizationAnalysisSectionExtension
+        - FRCoreOrganizationApplicantActExtension
+        - FRCoreOrganizationBudgetLetterExtension
+        - FRCoreOrganizationDescriptionExtension
+        - FRCoreOrganizationExecutantExtension
+        - FRCoreOrganizationExternalExtension
+        - FRCoreOrganizationFieldExtension
+        - FRCoreOrganizationPrestationDisciplineExtension
+        - FRCoreOrganizationTotalNumberOfTheoricalAccomodationSpaceExtension
+    * Nouvelles extensions Location :
+        - FRCoreLocationPositionLitExtension (position du lit dans la chambre)
+        - FRCoreLocationTypeChambreExtension (type de chambre)
+    * Extensions Location supprimées :
+        - FRCoreLocationPartOfPositionRoomExtension
+        - FRCoreLocationUsePeriodExtension
+    * Extensions modifiées :
+        - FRCoreOrganizationShortNameExtension
+* Ajout de 14 nouveaux exemples illustrant la hiérarchie organisationnelle (EJ, EG, pôles, départements, services, UF, UAC, lieux)
+
+* Patient.extension[nationality] : passage de la cardinalité 0..1 à 0..* (un patient peut avoir plusieurs nationalités) [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
+* Patient.extension[deathPlace] Passage du datatype string à Address pour être uniforme avec birthPlace. Le mode string est toujours possible avec l'attribut Address.line [#265](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/265)
+
+Dans la version 2.1.0, le lieu de naissance était indiqué dans une extension de type `string`.
+
+```json
+{
+  "resourceType" : "Patient",
+  "extension" : [
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "valueString" : "27 rue des Tilleuls, 34070 Montpellier"
+    }
+  ]
+}
+```
+
+A partir de la version 2.2.0, le lieu de naissance est indiqué dans une extension de type `address`. Indiquer une adresse sous forme de chaîne de caractères reste possible grâce à l'attribut `Address.line`.
+
+```json
+{
+  "resourceType" : "Patient",
+  "extension" : [
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
+      "valueAddress" : {
+        "line" : "27 rue des Tilleuls, 34070 Montpellier"
+      }
+    }
+  ]
+}
+```
+
+* Mise à jour et uniformisation des titres et description des artifacts [#184](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/184) [#186](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/186) [#188](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/188) [#203](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/203) [#209](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/209) [#264](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/264)
 * Mise à jour FrCorePatientINSProfile.fsh (correction d'erreurs) [#163](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/163) [#197](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/197)
 * Suppression du numéro ADELI suite au décommissionnement national [#189](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/189)
 * Mise à jour et uniformisation des cardinalités des identifier (Patient, Practitioner, Organization) [#190](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/190)
@@ -26,10 +135,80 @@
 * Refacto - uniformisation des namings et correction QA [#232](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/232)
 * Suppression MLLE dans les civilités [#237](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/237)
 * Mise à jour identifiants INS Patient [#238](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/238)
+* Mise à jour du texte de l'identifiant de l'IDNatStruct de la ressource FRCoreOrganization [#264](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/264)
 * MAJ package terminologies à LATEST [#239](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/239)
 * Ajout du template InteropSanté [#242](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/242)
 * Retrait du genre "other" sur le profil FrCorePatient INS [#243](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/243)
-* Lise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244)
+* Mise à jour des profils patient et exemples (quick fix et refacto) [#244](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/244) [#245](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/245)
+* Ajout d'un invariant qui renvoie un warning si le COG de naissance 99999 est utilisé pour une identité validée [#262](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/262)
+* Ajout du numéro AMELI au profil PractitionerRole [#260](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/260)
+* Mise à jour invariant FrCorePatientINSProfile.fsh (correction d'erreur) [#185](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/185)
+* Ajout d'informations sur la certification et le répertoire de certifications [#257](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/257)
+* Correction d'un jeu de valeurs en erreur (j245) [#258](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/258)
+* Mise à jour du narratif FRCore (index.md, bonnes_pratiques.md et known_problems.md) [#259](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/259)
+* Réorganisation des alias FSH [#261](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/261)
+* Ajout de la contrainte : obligation d'un CodeableConcept sur value[x] pour le type d'activité [#276](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/276)
+* Ajout d'un ruleset ValueSet et d'un ruleset CodeSystem (ShareableValueSet / ShareableCodeSystem & langue fr-FR) [#277](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/277)
+* Extension nationality : extension du contexte à Person et RelatedPerson [#278](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/278)
+* Revue des profils de structure : correction de `members` → `member` (cohérence avec l'extension et le nommage FHIR), suppression du VS UAC inutilisé [#280](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/280)
+* Correction orthographique : artifact → artéfact [#282](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/282)
+* **[BREAKING CHANGE]** Patient : séparation de la slice `NSS` en deux slices distinctes `NSS-NIR` et `NSS-NIA`, et mise à jour des OID associés [#284](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/284)
+
+Dans la version 2.1.0, le numéro de sécurité sociale était modélisé dans une seule slice `NSS` avec l'OID `1.2.250.1.213.1.4.8`.
+
+```json
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.250.1.213.1.4.8",
+      "value": "1 69 05 69 123 456 78"
+    }
+  ]
+}
+```
+
+À partir de la version 2.2.0, deux slices distinctes permettent de différencier le NIR et le NIA utilisés comme numéro de sécurité sociale, avec des OID spécifiques :
+
+* `NSS-NIR` : NIR utilisé comme numéro de sécurité sociale → `urn:oid:1.2.250.1.213.1.4.13`
+* `NSS-NIA` : NIA utilisé comme numéro de sécurité sociale → `urn:oid:1.2.250.1.213.1.4.14`
+
+```json
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NH"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.250.1.213.1.4.13",
+      "value": "1 69 05 69 123 456 78"
+    }
+  ]
+}
+```
+
+> **Impact pour les implémenteurs** : les ressources utilisant `identifier[NSS]` avec `system: urn:oid:1.2.250.1.213.1.4.8` doivent être mises à jour. L'OID `1.2.250.1.213.1.4.8` correspond désormais au matricule INS-NIR (porté par le profil PatientINS), et non au numéro de sécurité sociale.
+
+* Ajout de l'invariant fr-core-1 : si l'identité patient est validée, elle doit contenir un matricule INS [#285](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/285)
+* Suppression de la contrainte de cardinalité sur Encounter.type [#286](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/286)
+* Suppression de l'extension MultipleBirth ajoutée en erreur [#288](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/288)
+* Corrections pour la publication : mise à jour des textes sur les UM et l'extension `member`, correction des exemples liés à la structure [#289](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/289)
+* Mise à jour de l'identifier type du rpps rang (INTRN → RPPS) [#273](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/273)
+* [FIX] Discriminateur Patient.contact.relationship via extension de catégorie [#293](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293)
 
 ### [Release 2.1.0](https://hl7.fr/ig/fhir/core/2.1.0) de l'Implementation Guide FRCore
 
@@ -108,3 +287,9 @@
 * Suppression du binding identifier.type qui duplique celui hérité de FHIR Core [#70](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/70)
 * Correction d'erreurs (espaces en fin de string et ajout d'un title manq ant à un ValueSet) [#94](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/94)
 * Cleaning des urls, suppression url interopsanté [#84](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/84)
+
+### Versions antérieures
+
+La création de ces profils a été initiée en 2017 sur [la plateforme simplifier](https://simplifier.net/frenchprofiledfhirar) (Participants : Eric Dufour, Isabelle Gibaud, François Macary et Yohann Poiron).
+
+En 2024, l'ensemble des ressources de conformité a été mis au sein de ce [guide d'implémentation](https://hl7.fr/ig/fhir/core) pour simplifier leur usage et leur accès, rendant les anciens profils simplifier obsolètes (Participants : Marie Brulliard, Sylvain Demey, Isabelle Gibaud, Yohann Poiron et Nicolas Riss).

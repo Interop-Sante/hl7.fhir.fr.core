@@ -17,12 +17,11 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * extension ^slicing.rules = #open
 
 * extension contains
-    fr-core-patient-nationality named nationality 0..1 and
+    fr-core-patient-nationality named nationality 0..* and
     FRCorePatientIdentityReliabilityExtension named identityReliability 0..* and 
     FRCorePatientDeathPlaceExtension named deathPlace 0..1 and
     FRCorePatientBirthDateUpdateIndicatorExtension named birthDateUpdateIndicator 0..1 and
-    $patient-birthPlace named birthPlace 0..1 and
-    FRCorePatientMultipleBirthExtension named multipleBirth 0..1
+    $patient-birthPlace named birthPlace 0..1
 
 * extension[birthPlace].valueAddress only FRCoreAddressProfile
 
@@ -35,20 +34,33 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS."
 
 * identifier contains
-    NSS 0..1 and
+    NSS-NIR 0..1 and
+    NSS-NIA 0..1 and
     INS-C 0..* and
     NDP 0..1 and
     PI 0..* and
     RRI 0..*
 
-* identifier[NSS] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
-* identifier[NSS].use 1..
-* identifier[NSS].use = #official
-* identifier[NSS].type 1..
-* identifier[NSS].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
-* identifier[NSS].system 1..
-* identifier[NSS].system = "urn:oid:1.2.250.1.213.1.4.8"
-* identifier[NSS].value 1..
+* identifier[NSS-NIR] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIR) de facturation permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale de l’ouvrant droit (assuré)."
+* identifier[NSS-NIR].use 1..
+* identifier[NSS-NIR].use = #official
+* identifier[NSS-NIR].type 1..
+* identifier[NSS-NIR].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+* identifier[NSS-NIR].system 1..
+* identifier[NSS-NIR].system ^short = "Autorité d’affectation du NIR utilisé en tant que numéro de sécurité sociale"
+* identifier[NSS-NIR].system = "urn:oid:1.2.250.1.213.1.4.13"
+* identifier[NSS-NIR].value 1..
+
+* identifier[NSS-NIA] ^short = "National Health Plan Identifier | Le Numéro d'Inscription au Répertoire (NIA) de facturation d'attente permet de faire transiter le numéro de sécurité social de l’ayant droit ou du bénéfiaire (patient) / le numéro de sécurité sociale d'attente de l’ouvrant droit (assuré)."
+* identifier[NSS-NIA].use 1..
+* identifier[NSS-NIA].use = #official
+* identifier[NSS-NIA].type 1..
+* identifier[NSS-NIA].type = http://terminology.hl7.org/CodeSystem/v2-0203#NH
+* identifier[NSS-NIA].system 1..
+* identifier[NSS-NIA].system ^short = "Autorité d’affectation du NIA utilisé en tant que numéro de sécurité sociale"
+* identifier[NSS-NIA].system = "urn:oid:1.2.250.1.213.1.4.14"
+* identifier[NSS-NIA].value 1..
+
 
 * identifier[INS-C] ^short = "Computed National Health Identifier | Identifiant National de Santé Calculé à partir des éléments de la carte vitale"
 * identifier[INS-C].use 1..
@@ -132,7 +144,7 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
     FRCoreCommentExtension named comment 0..1
 
 * contact.relationship ^slicing.discriminator.type = #value
-* contact.relationship ^slicing.discriminator.path = "$this"
+* contact.relationship ^slicing.discriminator.path = "extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category').value"
 
 * contact.relationship ^slicing.rules = #open
 * contact.relationship contains
@@ -140,12 +152,16 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
     relationType 0..1
 // TODO : discuter des cardinalités : relationship, relationship[RolePerson], relationship[RelatedPerson]
 
-* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible) 
+* contact.relationship[role].extension contains FRCorePatientContactRelationshipCategoryExtension named category 1..1
+* contact.relationship[role].extension[category].valueCode = #role
+* contact.relationship[role] from FRCoreValueSetPatientContactRole (extensible)
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
 * contact.relationship[role] ^short = "The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ..."
 
-* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible) 
+* contact.relationship[relationType].extension contains FRCorePatientContactRelationshipCategoryExtension named category 1..1
+* contact.relationship[relationType].extension[category].valueCode = #relationType
+* contact.relationship[relationType] from FRCoreValueSetPatientRelationType (extensible)
 //TODO : à confirmer car HL7 préconise un autre VS, à mettre à jour, utiliser FRCoreValueSetContactRelationship ?
 //TODO : Adapter aux valeurs préconisées dans PAM
 * contact.relationship[relationType] ^short = "The nature of the relationship. Relation de la personne. Ex : Mère, époux, enfant ..."

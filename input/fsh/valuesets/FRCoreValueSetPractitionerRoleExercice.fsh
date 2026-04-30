@@ -2,7 +2,7 @@ ValueSet: FRCoreValueSetPractitionerRoleExercice
 Id: fr-core-vs-practitioner-role-exercice
 Title: "FR Core ValueSet PractitionerRole Exercice"
 Description: "The exercice(s) of the practitioner."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* insert SetValueset
 
 * ^immutable = true
 * include codes from system $TRE-R21-Fonction
