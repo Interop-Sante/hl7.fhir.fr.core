@@ -1,10 +1,10 @@
-# FRCorePatientExample - Guide d'implémentation FR Core v2.2.0
+# FRCorePatientINSExample - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **FRCorePatientExample**
+* **FRCorePatientINSExample**
 
-## Example Patient: FRCorePatientExample
+## Example Patient: FRCorePatientINSExample
 
 Profil: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
 
@@ -37,7 +37,7 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
 ```json
 {
   "resourceType" : "Patient",
-  "id" : "FRCorePatientExample",
+  "id" : "FRCorePatientINSExample",
   "meta" : {
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"]
   },

@@ -14,7 +14,7 @@ Profil: [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-ob
 
 **code**: Poids corporel [Masse] Patient ; Numérique
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: `FRCorePatientExample`
 
 **effective**: 2022-11-06
 
@@ -47,7 +47,7 @@ Profil: [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-ob
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample",
+    "reference" : "FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",

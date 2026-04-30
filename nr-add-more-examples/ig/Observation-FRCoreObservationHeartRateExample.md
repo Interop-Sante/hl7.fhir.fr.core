@@ -14,11 +14,11 @@ Profil: [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-obs
 
 **code**: Heart rate
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: `FRCorePatientExample`
 
 **effective**: 2022-11-06
 
-**performer**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**performer**: `FRCorePatientExample`
 
 **value**: 70 battements/minute (Détails : code UCUM/min = '/min')
 
@@ -47,12 +47,12 @@ Profil: [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-obs
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample",
+    "reference" : "FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",
   "performer" : [{
-    "reference" : "Patient/FRCorePatientExample"
+    "reference" : "FRCorePatientExample"
   }],
   "valueQuantity" : {
     "value" : 70,

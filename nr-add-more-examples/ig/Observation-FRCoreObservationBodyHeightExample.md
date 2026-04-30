@@ -14,7 +14,7 @@ Profil: [FR Core Observation Body Height Profile](StructureDefinition-fr-core-ob
 
 **code**: Taille du patient [Longueur] Patient ; Numérique
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: `FRCorePatientExample`
 
 **effective**: 1999-07-02
 
@@ -47,7 +47,7 @@ Profil: [FR Core Observation Body Height Profile](StructureDefinition-fr-core-ob
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample"
+    "reference" : "FRCorePatientExample"
   },
   "effectiveDateTime" : "1999-07-02",
   "performer" : [{

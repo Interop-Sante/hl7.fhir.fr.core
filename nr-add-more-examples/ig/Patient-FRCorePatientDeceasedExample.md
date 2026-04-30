@@ -55,10 +55,6 @@ Jean Martin (official) Male, Date de Naissance :1950-03-10 ( Patient internal id
   }],
   "active" : false,
   "name" : [{
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
-      "valueCode" : "NL3"
-    }],
     "use" : "official",
     "family" : "Martin",
     "given" : ["Jean"]

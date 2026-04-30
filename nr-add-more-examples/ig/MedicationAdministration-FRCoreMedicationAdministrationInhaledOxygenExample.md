@@ -12,7 +12,7 @@ Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefi
 
 **medication**: Product containing oxygen (medicinal product)
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: `FRCorePatientExample`
 
 **effective**: 2022-11-06 09:00:00+0100 --> (en cours)
 
@@ -50,7 +50,7 @@ Profil: [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefi
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample",
+    "reference" : "FRCorePatientExample",
     "type" : "Patient"
   },
   "effectivePeriod" : {

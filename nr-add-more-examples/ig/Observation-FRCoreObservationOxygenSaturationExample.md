@@ -16,7 +16,7 @@ Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-c
 
 **code**: Oxygène saturation [Fraction massique] Sang artériel ; Numérique
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: `FRCorePatientExample`
 
 **effective**: 2022-11-06 09:30:00+0100
 
@@ -54,7 +54,7 @@ Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-c
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample",
+    "reference" : "FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06T09:30:00+01:00",

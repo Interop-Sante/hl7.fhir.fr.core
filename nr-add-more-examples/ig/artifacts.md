@@ -205,7 +205,7 @@ These are example instances that show what data produced and consumed by systems
 | [FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md) | Exemple de ressource Observation pour décrire la fréquence respiratoire d’un patient |
 | [FRCoreOrganizationExample](Organization-FRCoreOrganizationExample.md) | Exemple de ressource Organization pour décrire un hôpital |
 | [FRCorePatientDeceasedExample](Patient-FRCorePatientDeceasedExample.md) | Exemple de ressource Patient décédé illustrant les extensions deathPlace, lunarDate et assemblyOrder |
-| [FRCorePatientExample](Patient-FRCorePatientExample.md) | Exemple de ressource Patient (cas d’usage INS) |
+| [FRCorePatientINSExample](Patient-FRCorePatientINSExample.md) | Exemple de ressource Patient (cas d’usage INS) |
 | [FRCorePractitionerExample](Practitioner-FRCorePractitionerExample.md) | Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l’ordre. |
 | [FRCorePractitionerRoleExample](PractitionerRole-FRCorePractitionerRoleExample.md) | Exemple de ressource PractitionerRole pour décrire le rôle d’un practitien (situation d’exercice) |
 | [FRCoreRelatedPersonExample](RelatedPerson-FRCoreRelatedPersonExample.md) | Exemple de ressource RelatedPerson pour décrire la mère d’un patient |

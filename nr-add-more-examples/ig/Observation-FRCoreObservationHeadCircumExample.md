@@ -14,11 +14,11 @@ Profil: [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-ob
 
 **code**: Head Occipital-frontal circumference
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: `FRCorePatientExample`
 
 **effective**: 2022-11-06
 
-**performer**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**performer**: `FRCorePatientExample`
 
 **value**: 61 cm (Détails : code UCUMcm = 'cm')
 
@@ -47,12 +47,12 @@ Profil: [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-ob
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample",
+    "reference" : "FRCorePatientExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",
   "performer" : [{
-    "reference" : "Patient/FRCorePatientExample"
+    "reference" : "FRCorePatientExample"
   }],
   "valueQuantity" : {
     "value" : 61,
