@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place | *Version*:2.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FRCorePatientDeathPlaceExtension |
+| Active as of 2026-05-07 | *Computable Name*:FRCorePatientDeathPlaceExtension |
 
 Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-deat
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2026-03-31T09:16:18+00:00",
+  "date" : "2026-05-07T06:38:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

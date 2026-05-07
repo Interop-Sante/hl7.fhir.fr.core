@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins | *Version*:2.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetPatientIdentifierUseINS |
+| Active as of 2026-05-07 | *Computable Name*:FRCoreValueSetPatientIdentifierUseINS |
 
  
 Use autorisés pour l’identifiant national de santé. Authorized use for INS identifier. 
@@ -55,7 +55,7 @@ Use autorisés pour l’identifiant national de santé. Authorized use for INS i
   "title" : "FR Core ValueSet Patient identifier use INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-31T09:16:18+00:00",
+  "date" : "2026-05-07T06:38:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -83,7 +83,7 @@ Use autorisés pour l’identifiant national de santé. Authorized use for INS i
   "compose" : {
     "include" : [{
       "system" : "http://hl7.org/fhir/identifier-use",
-      "version" : "4.0.1",
+      "version" : "5.0.0",
       "concept" : [{
         "code" : "official"
       },

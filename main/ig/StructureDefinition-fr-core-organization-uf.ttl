@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRCoreOrganizationUFProfile"] ; # 
   fhir:title [ fhir:v "FR Core Organization UF Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-31T09:16:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-07T06:38:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -899,8 +899,9 @@
        fhir:id [ fhir:v "Organization.extension:description" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;
        fhir:sliceName [ fhir:v "description" ] ;
-       fhir:short [ fhir:v "Optional Extensions Element" ] ;
-       fhir:definition [ fhir:v "Optional Extension Element - found in all resources." ] ;
+       fhir:short [ fhir:v "R5: Additional details about the Organization that could be displayed as further information to identify the Organization beyond its name (new)" ] ;
+       fhir:definition [ fhir:v "R5: `Organization.description` (new:markdown)" ] ;
+       fhir:comment [ fhir:v "Element `Organization.description` has a context of Organization based on following the parent source element upwards and mapping to `Organization`.\nElement `Organization.description` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -914,8 +915,8 @@
            fhir:l fhir:Extension
          ] ;
          fhir:profile ( [
-           fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description>
+           fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description?version=0.1.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -941,14 +942,7 @@
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] )
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "Organization.extension:usePeriod" ] ;
        fhir:path [ fhir:v "Organization.extension" ] ;

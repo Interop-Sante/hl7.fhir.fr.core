@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization | *Version*:2.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FRCoreOrganizationProfile |
+| Active as of 2026-05-07 | *Computable Name*:FRCoreOrganizationProfile |
 
  
 Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France. 
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-03-31T09:16:18+00:00",
+  "date" : "2026-05-07T06:38:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"]
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description|0.1.0"]
       }]
     },
     {

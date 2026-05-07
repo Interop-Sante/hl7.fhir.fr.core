@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role | *Version*:2.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetPatientContactRole |
+| Active as of 2026-05-07 | *Computable Name*:FRCoreValueSetPatientContactRole |
 
  
 ValueSet patient contact role 
@@ -60,7 +60,7 @@ ValueSet patient contact role
   "title" : "FR Core ValueSet Patient contact role",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-31T09:16:18+00:00",
+  "date" : "2026-05-07T06:38:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

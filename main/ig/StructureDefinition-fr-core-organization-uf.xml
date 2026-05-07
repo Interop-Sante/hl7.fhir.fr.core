@@ -24,7 +24,7 @@
   <name value="FRCoreOrganizationUFProfile"/>
   <title value="FR Core Organization UF Profile"/>
   <status value="active"/>
-  <date value="2026-03-31T09:16:18+00:00"/>
+  <date value="2026-05-07T06:38:11+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -695,8 +695,9 @@
     <element id="Organization.extension:description">
       <path value="Organization.extension"/>
       <sliceName value="description"/>
-      <short value="Optional Extensions Element"/>
-      <definition value="Optional Extension Element - found in all resources."/>
+      <short value="R5: Additional details about the Organization that could be displayed as further information to identify the Organization beyond its name (new)"/>
+      <definition value="R5: `Organization.description` (new:markdown)"/>
+      <comment value="Element `Organization.description` has a context of Organization based on following the parent source element upwards and mapping to `Organization`.&#xA;Element `Organization.description` has no mapping targets in FHIR R4. Typically, this is because the element has been added (is a new element)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -706,7 +707,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description"/>
+        <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description|0.1.0"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -727,14 +728,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Organization.extension:usePeriod">
       <path value="Organization.extension"/>

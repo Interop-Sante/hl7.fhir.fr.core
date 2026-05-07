@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender | *Version*:2.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FRCoreValueSetPatientGender |
+| Active as of 2026-05-07 | *Computable Name*:FRCoreValueSetPatientGender |
 
  
 Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide. Permitted genders for French Patient gender. 
@@ -55,7 +55,7 @@ Genres autorisés dans le cadre du genre administratif du Patient en France. Pou
   "title" : "FR Core ValueSet Patient gender",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-31T09:16:18+00:00",
+  "date" : "2026-05-07T06:38:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -83,7 +83,7 @@ Genres autorisés dans le cadre du genre administratif du Patient en France. Pou
   "compose" : {
     "include" : [{
       "system" : "http://hl7.org/fhir/administrative-gender",
-      "version" : "4.0.1",
+      "version" : "5.0.0",
       "concept" : [{
         "code" : "male"
       },
