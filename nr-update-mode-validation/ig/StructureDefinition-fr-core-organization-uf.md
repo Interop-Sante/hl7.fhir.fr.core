@@ -88,7 +88,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFProfile",
   "title" : "FR Core Organization UF Profile",
   "status" : "active",
-  "date" : "2026-05-27T12:08:23+00:00",
+  "date" : "2026-05-27T12:19:44+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

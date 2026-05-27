@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-appointment.
   "name" : "FRCoreAppointmentProfile",
   "title" : "FR Core Appointment Profile",
   "status" : "active",
-  "date" : "2026-05-27T12:08:23+00:00",
+  "date" : "2026-05-27T12:19:44+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
