@@ -67,7 +67,7 @@
   <name value="FRCorePatientINSProfile"/>
   <title value="FR Core Patient INS Profile"/>
   <status value="active"/>
-  <date value="2026-05-27T07:13:11+00:00"/>
+  <date value="2026-05-27T07:23:03+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -2094,41 +2094,6 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="false"/>
-    </element>
-    <element id="Patient.extension:nationality">
-      <path value="Patient.extension"/>
-      <sliceName value="nationality"/>
-      <short value="FR Core Nationality Extension"/>
-      <definition value="The nationality of the patient."/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="DomainResource.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element|4.0.1"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"/>
       </constraint>
       <isModifier value="false"/>

@@ -8,7 +8,7 @@
 
 Profil: [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
 
-> **FR Core Nationality Extension**
+> **Patient Nationality**
 * code: France (la)
 
 **identifier**: `urn:oid:1.2.250.1.213.1.4.8`/P98765
@@ -45,7 +45,7 @@ Profil: [FR Core Related Person Profile](StructureDefinition-fr-core-related-per
         }]
       }
     }],
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality"
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
   }],
   "identifier" : [{
     "system" : "urn:oid:1.2.250.1.213.1.4.8",

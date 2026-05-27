@@ -10,7 +10,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-05-27T07:13:11+00:00",
+  "date" : "2026-05-27T07:23:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2115,42 +2115,6 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
-      }],
-      "isModifier" : false,
-      "isSummary" : false
-    },
-    {
-      "id" : "Patient.extension:nationality",
-      "path" : "Patient.extension",
-      "sliceName" : "nationality",
-      "short" : "FR Core Nationality Extension",
-      "definition" : "The nationality of the patient.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "DomainResource.extension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0"]
-      }],
-      "constraint" : [{
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() or (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
-      },
-      {
-        "key" : "ext-1",
-        "severity" : "error",
-        "human" : "Must have either extensions or value[x], not both",
-        "expression" : "extension.exists() != value.exists()",
-        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
       }],
       "isModifier" : false,

@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-05-27T07:13:11+00:00",
+  "date" : "2026-05-27T07:23:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -136,17 +136,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "type" : [{
         "code" : "Address",
         "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
-      }]
-    },
-    {
-      "id" : "Patient.extension:nationality",
-      "path" : "Patient.extension",
-      "sliceName" : "nationality",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0"]
       }]
     },
     {

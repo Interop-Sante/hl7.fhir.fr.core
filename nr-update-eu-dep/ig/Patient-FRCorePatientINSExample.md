@@ -23,11 +23,11 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
 | Contact : | * Marie Durand 
 * Relations :personne à prévenir en cas d'urgence, Mère
  | | |
+| Patient Nationality: | * code: France (la)
+ | | |
 | [FR Core Patient Birthdate Update Indicator Extension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md) | false | | |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Ambléon | | |
 | FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](CodeSystem-fr-core-cs-v2-0445.md#fr-core-cs-v2-0445-VALI) (Identité validée)
- | | |
-| FR Core Nationality Extension: | * code: France (la)
  | | |
 
 
@@ -75,7 +75,7 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
         }]
       }
     }],
-    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality"
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator",
