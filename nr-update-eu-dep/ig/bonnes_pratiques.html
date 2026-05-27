@@ -224,7 +224,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Cette page indique les bonnes pratiques d’usage du guide d’implémentation, pour une utilisation cohérente, efficace et conforme au standard FHIR et aux spécificités nationales.</p>
+<p>giCette page indique les bonnes pratiques d’usage du guide d’implémentation, pour une utilisation cohérente, efficace et conforme au standard FHIR et aux spécificités nationales.</p>
 
 <h3 id="les-bonnes-pratiques-dimplémentation">Les bonnes pratiques d’implémentation</h3>
 
@@ -242,6 +242,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="les-syntaxes-retenues">Les syntaxes retenues</h4>
 
 <p>Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenues sont les syntaxes XML et JSON.</p>
+
+<h4 id="la-gestion-des-champs-obligatoires-manquants">La gestion des champs obligatoires manquants</h4>
+
+<p>Certains champs obligatoires dans un profil peuvent être inconnus ou non disponibles au moment de l’échange. FHIR prévoit un mécanisme standard pour gérer ces situations : l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code>, qui permet d’indiquer la raison de l’absence d’une valeur tout en restant conforme au profil.</p>
+
+<p>Pour en savoir plus sur les stratégies à adopter (valeur inconnue, non applicable, non collectée…), consultez la page dédiée : <a href="https://hl7.eu/fhir/base/missing-data.html">Missing Data - HL7 Europe Base IG</a>.</p>
 
 <h3 id="les-bonnes-pratiques-de-rédaction-des-guides-dimplémentation">Les bonnes pratiques de rédaction des guides d’implémentation</h3>
 
@@ -375,7 +381,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2026 07:23+0000">2026-05-27</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2026 11:54+0000">2026-05-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
