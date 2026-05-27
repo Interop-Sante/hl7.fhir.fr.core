@@ -29,14 +29,41 @@ Pour rappel, l’adhésion à InteropSanté permet de bénéficier de tarifs ava
 
 ### Auteurs et contributeurs du guide d’implémentation FRCore
 
-| | | |
-| :--- | :--- | :--- |
-| **Auteur** | Nicolas Riss | Agence du Numérique en Santé |
-| **Auteur** | Yohann Poiron | Agence du Numérique en Santé |
-| **Auteur** | Frédéric Laurent | CHU de Rennes |
-| Contributeur | Marie Brulliard | Kereval |
-| Contributeur | Sylvain Demey | Agence du Numérique en Santé |
-| Contributeur | Isabelle Gibaud | Agence du Numérique en Santé |
-
 L’ensemble des contributeurs au code source peuvent être vus sur [GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors)
+
+#### Version 2.2.0
+
+Chair : Nicolas Riss
+
+* Delphine Bayle (TECHNIDATA)
+* Matisse Bornard (CHU de Toulouse)
+* Georges-Alexandre (CHASTIN ENOVACOM)
+* Lucas Miralles (CHU de Toulouse)
+* Yohann Poiron (ANS)
+* Nicolas Riss (ANS / Chair HL7 France)
+* Guillaume Arras (PHAST)
+* Frédéric Déchanet (Maincare)
+* Sylvain Demey (ANS)
+* Laurent Dubor (Numih France)
+* Sylvain GARNIER (ANS, projet ROR)
+* Frédéric LAURENT (CHU Rennes)
+* Nicolas Moreau (CPage)
+* Paul Ortega (CHU de Toulouse)
+* Christophe Delarbre (Numih France)
+* Alexandre Grosbois (Health-Comm)
+* Charlotte LATRON (Technidata)
+* Eric Marchand (Maincare)
+* Lucas Mazel (Numih France)
+* Manuel Metz (Lifen)
+* David Ouagne (AP-HP)
+* Pascale Ranger (CHU de Toulouse)
+* Clotaire THOCQUENNE (Aplete)
+* Ingrid Sida-Cally (DEDALUS)
+
+#### Versions historiques
+
+* Isabelle Gibaud (co-chair IHE-France and chair HL7-france)
+* François Macary (Phast, chair HL7 France)
+* Eric Dufour (SELIC, technical lead H’xml)
+* Yohann Poiron (OpenXtrem, technical lead IHE PAM France)
 
