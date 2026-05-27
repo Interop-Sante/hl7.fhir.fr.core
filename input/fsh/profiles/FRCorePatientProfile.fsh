@@ -1,5 +1,5 @@
 Profile: FRCorePatientProfile
-Parent: Patient
+Parent: PatientEuCore
 Id: fr-core-patient
 Title: "FR Core Patient Profile"
 Description: """Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\r\n

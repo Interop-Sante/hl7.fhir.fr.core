@@ -1,5 +1,5 @@
 Profile: FRCorePractitionerProfile
-Parent: Practitioner
+Parent: PractitionerEuCore
 Id: fr-core-practitioner
 Title: "FR Core Practitioner Profile"
 Description: """Profil de la ressource Practitionner pour la France."""
