@@ -20,6 +20,7 @@ Extension française définie dans le contexte du profil Vital Signs Resprate. C
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md) and [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
+* Exemples pour ce/t/te Extension: [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-observation-level-of-exertion)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationLevelOfExertionExtension",
   "title" : "FR Core Observation Level Of Exertion Extension",
   "status" : "active",
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -10,7 +10,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2512,6 +2512,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample"
+      },
+      "name" : "FRCoreMedicationAdministrationInhaledOxygenExample",
+      "description" : "Exemple de ressource MedicationAdministration pour décrire l'administration d'oxygène inhalé",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -2596,6 +2608,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/FRCoreObservationOxygenSaturationExample"
+      },
+      "name" : "FRCoreObservationOxygenSaturationExample",
+      "description" : "Exemple de ressource Observation pour décrire la saturation en oxygène d'un patient sous oxygénothérapie",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/FRCoreObservationRespRateExample"
+      },
+      "name" : "FRCoreObservationRespRateExample",
+      "description" : "Exemple de ressource Observation pour décrire la fréquence respiratoire d'un patient",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -2611,9 +2647,21 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/FRCorePatientExample"
+        "reference" : "Patient/FRCorePatientDeceasedExample"
       },
-      "name" : "FRCorePatientExample",
+      "name" : "FRCorePatientDeceasedExample",
+      "description" : "Exemple de ressource Patient décédé illustrant les extensions deathPlace, lunarDate et assemblyOrder",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/FRCorePatientINSExample"
+      },
+      "name" : "FRCorePatientINSExample",
       "description" : "Exemple de ressource Patient (cas d'usage INS)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
     },
@@ -2640,6 +2688,18 @@
       "name" : "FRCorePractitionerRoleExample",
       "description" : "Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/FRCoreRelatedPersonExample"
+      },
+      "name" : "FRCoreRelatedPersonExample",
+      "description" : "Exemple de ressource RelatedPerson pour décrire la mère d'un patient",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0"
     },
     {
       "extension" : [{
@@ -2710,6 +2770,7 @@
         "reference" : "Organization/hopitaltest-dept-11003-endocrino"
       },
       "name" : "hopitaltest-dept-11003-endocrino",
+      "description" : "Exemple de département d'endocrinologie (Organisation de type département)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2721,6 +2782,7 @@
         "reference" : "Organization/hopitaltest-eg-4-members"
       },
       "name" : "hopitaltest-eg-4-members",
+      "description" : "Exemple d'établissement géographique regroupant 4 entités membres",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
@@ -2732,6 +2794,7 @@
         "reference" : "Organization/hopitaltest-ej-350005179"
       },
       "name" : "hopitaltest-ej-350005179",
+      "description" : "Exemple d'entité juridique d'un établissement de santé (FINESS 350005179)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"
     },
     {
@@ -2743,6 +2806,7 @@
         "reference" : "Location/hopitaltest-endocrino-ch04"
       },
       "name" : "hopitaltest-endocrino-ch04",
+      "description" : "Exemple de chambre d'hospitalisation (chambre 04 du service d'endocrinologie)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
@@ -2754,6 +2818,19 @@
         "reference" : "Location/hopitaltest-endocrino-ch04-litF"
       },
       "name" : "hopitaltest-endocrino-ch04-litF",
+      "description" : "Exemple de lit d'hospitalisation (lit F de la chambre 04 du service d'endocrinologie)",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hopitaltest-infectio-ch02-prsn-ngtv"
+      },
+      "name" : "hopitaltest-infectio-ch02-prsn-ngtv",
+      "description" : "Exemple de chambre en pression négative (service d'infectiologie) illustrant l'extension typeChambre",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
@@ -2765,6 +2842,7 @@
         "reference" : "Organization/hopitaltest-pole-1150-med-spe"
       },
       "name" : "hopitaltest-pole-1150-med-spe",
+      "description" : "Exemple de pôle de médecine spécialisée (Organisation de type pôle)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2776,6 +2854,7 @@
         "reference" : "Location/hopitaltest-salle-examen-01"
       },
       "name" : "hopitaltest-salle-examen-01",
+      "description" : "Exemple de salle d'examen (Location de type salle d'examen)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"
     },
     {
@@ -2787,6 +2866,7 @@
         "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo"
       },
       "name" : "hopitaltest-service-11006-endocrino-diabo",
+      "description" : "Exemple de service d'endocrinologie-diabétologie (Organisation de type service)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2798,6 +2878,7 @@
         "reference" : "Organization/hopitaltest-service-11007-dietetique"
       },
       "name" : "hopitaltest-service-11007-dietetique",
+      "description" : "Exemple de service de diététique (Organisation de type service)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"
     },
     {
@@ -2809,6 +2890,7 @@
         "reference" : "Organization/hopitaltest-uac-4420-uac-01"
       },
       "name" : "hopitaltest-uac-4420-uac-01",
+      "description" : "Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 01",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
@@ -2820,6 +2902,7 @@
         "reference" : "Organization/hopitaltest-uac-4420-uac-02"
       },
       "name" : "hopitaltest-uac-4420-uac-02",
+      "description" : "Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 02",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"
     },
     {
@@ -2831,6 +2914,7 @@
         "reference" : "Organization/hopitaltest-uf-4420-dialyse"
       },
       "name" : "hopitaltest-uf-4420-dialyse",
+      "description" : "Exemple d'unité fonctionnelle (UF) de dialyse",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
@@ -2842,6 +2926,7 @@
         "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
       },
       "name" : "hopitaltest-uf-4701-endocrino-diab",
+      "description" : "Exemple d'unité fonctionnelle (UF) d'endocrinologie-diabétologie",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {
@@ -2853,6 +2938,7 @@
         "reference" : "Organization/hopitaltest-uf-4705-nutrition"
       },
       "name" : "hopitaltest-uf-4705-nutrition",
+      "description" : "Exemple d'unité fonctionnelle (UF) de nutrition",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"
     },
     {

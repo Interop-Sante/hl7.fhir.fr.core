@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FRCorePatientExample - Guide d&#39;implémentation FR Core v2.2.0</title>
+    <title> - Guide d&#39;implémentation FR Core v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15.154"}
-    h3,h4,h5,h6{--heading-prefix:"15.154"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -170,15 +174,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>FRCorePatientExample</b></li>
+          
 
           <span style="float:right;">
 
-            <a href="Organization-FRCoreOrganizationExample.ttl.html">&lt;prev</a> | 
-
             <a href="#bottom">bottom</a>
-
-          | <a href="Patient-FRCorePatientExample.xml.html">next&gt;</a>
 
           </span>
 
@@ -192,9 +192,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - version de développement local (intégration continue v2.2.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://hl7.fr/ig/fhir/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - version de développement local (intégration continue v2.2.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://hl7.fr/ig/fhir/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -206,29 +206,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="RelatedPerson-FRCoreRelatedPersonExample.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Patient-FRCorePatientExample.xml.html">XML</a>
+      <a href="RelatedPerson-FRCoreRelatedPersonExample.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Patient-FRCorePatientExample.json.html">JSON</a>
+      <a href="RelatedPerson-FRCoreRelatedPersonExample.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="Patient-FRCorePatientExample.ttl.html">TTL</a>
+      <a href="RelatedPerson-FRCoreRelatedPersonExample.ttl.html">TTL</a>
     </li>
   
 
@@ -238,29 +238,13 @@
 
 
   <a name="root"> </a>
-
-
-  <h2 id="root">Example Patient: FRCorePatientExample</h2>
-
-
-
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="FRCorePatientExample"> </a><a name="hcFRCorePatientExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-patient-ins.html">FR Core Patient INS Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="L'enregistrement est actif">Actif :</td><td>true</td><td style="background-color: #f3f5da" title="Statut connu du patient">Décédé :</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Moyens de contacter le Patient">Coordonnées</td><td colspan="3"><ul><li>ph: 01 23 24 67 89(Home)</li><li>ph: 01 99 88 77 66(Work)</li><li>ph: 06 80 55 34 33(Mobile)</li><li>367 rue Troussier, 45100 Orléans, France(home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Contact du patient">Contact :</td><td colspan="3"><ul><li>Marie Durand </li><li>Relations :<span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}">personne à prévenir en cas d'urgence</span>, <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode MTH}">Mère</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html">Patient Birth Place</a></td><td colspan="3">Ambléon </td></tr><tr><td style="background-color: #f3f5da" title="Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
-Reliabilility of the patient's identity">FR Core Patient Ident Reliability Extension:</td><td colspan="3"><ul><li>identityStatus: <a href="CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI">FR Core CodeSystem v2-0445: VALI</a> (Identité validée)</li></ul></td></tr></table></div>
+  <h2 id="root">: RelatedPerson/FRCoreRelatedPersonExample - Change History</h2>
+  <p>History of changes for FRCoreRelatedPersonExample .</p>
 
   
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -268,6 +252,8 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -280,7 +266,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="Organization-FRCoreOrganizationExample.ttl.html">&lt;prev</a>
+                <span style="visibility:hidden">&lt;prev</span>
 
               </td>
               <td style="text-align:center">
@@ -288,7 +274,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="Patient-FRCorePatientExample.xml.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
@@ -298,7 +284,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2026 13:50+0000">2026-05-27</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2026 14:53+0000">2026-05-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

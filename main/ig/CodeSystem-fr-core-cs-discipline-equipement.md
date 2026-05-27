@@ -36,7 +36,7 @@ La nomenclature de disciplines d’équipement est utilisée pour ventiler l’a
   "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -431,8 +431,8 @@ La nomenclature de disciplines d’équipement est utilisée pour ventiler l’a
   },
   {
     "code" : "552",
-    "display" : "Entraînement à l'hémodialyse ",
-    "definition" : "Entraînement à l'hémodialyse "
+    "display" : "Entraînement à l'hémodialyse",
+    "definition" : "Entraînement à l'hémodialyse"
   },
   {
     "code" : "553",

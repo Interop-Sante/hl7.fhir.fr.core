@@ -18,6 +18,7 @@ Profil se basant sur la ressource Medication Administration pour indiquer l’ox
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
+* Exemples pour ce/t/te Profil: [MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample](MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-medication-administration-inhaled-oxygen)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "name" : "FRCoreMedicationAdministrationInhaledOxygenProfile",
   "title" : "FR Core Medication Administration Inhaled Oxygen Profile",
   "status" : "active",
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

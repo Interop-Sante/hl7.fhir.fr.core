@@ -30,7 +30,7 @@ En plus de préciser les types de lieu utilisables avec les ressources `Location
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
-* Exemples pour ce/t/te Profil: [Lit Fenetre - chambre 04](Location-hopitaltest-endocrino-ch04-litF.md), [Chambre 04](Location-hopitaltest-endocrino-ch04.md) and [Salle d'examen 01](Location-hopitaltest-salle-examen-01.md)
+* Exemples pour ce/t/te Profil: [Lit Fenetre - chambre 04](Location-hopitaltest-endocrino-ch04-litF.md), [Chambre 04](Location-hopitaltest-endocrino-ch04.md), [Chambre 02 - Pression négative](Location-hopitaltest-infectio-ch02-prsn-ngtv.md) and [Salle d'examen 01](Location-hopitaltest-salle-examen-01.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location)
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -1,10 +1,10 @@
-# FRCorePatientExample - Guide d'implémentation FR Core v2.2.0
+# FRCorePatientINSExample - Guide d'implémentation FR Core v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **FRCorePatientExample**
+* **FRCorePatientINSExample**
 
-## Example Patient: FRCorePatientExample
+## Example Patient: FRCorePatientINSExample
 
 Profil: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
 
@@ -23,8 +23,11 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
 | Contact : | * Marie Durand 
 * Relations :personne à prévenir en cas d'urgence, Mère
  | | |
+| [FR Core Patient Birthdate Update Indicator Extension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md) | false | | |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Ambléon | | |
 | FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](CodeSystem-fr-core-cs-v2-0445.md#fr-core-cs-v2-0445-VALI) (Identité validée)
+ | | |
+| FR Core Nationality Extension: | * code: France (la)
  | | |
 
 
@@ -34,7 +37,7 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
 ```json
 {
   "resourceType" : "Patient",
-  "id" : "FRCorePatientExample",
+  "id" : "FRCorePatientINSExample",
   "meta" : {
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"]
   },
@@ -60,6 +63,23 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
       }
     }],
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+  },
+  {
+    "extension" : [{
+      "url" : "code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality"
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator",
+    "valueBoolean" : false
   }],
   "identifier" : [{
     "use" : "official",
@@ -114,6 +134,17 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
     }
   }],
   "contact" : [{
+    "extension" : [{
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment",
+      "valueString" : "Mère du patient, à contacter en priorité"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier",
+      "valueIdentifier" : {
+        "system" : "urn:oid:1.2.250.1.213.1.4.8",
+        "value" : "C98765"
+      }
+    }],
     "relationship" : [{
       "extension" : [{
         "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category",

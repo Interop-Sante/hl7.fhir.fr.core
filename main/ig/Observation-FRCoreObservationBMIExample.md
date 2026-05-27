@@ -14,7 +14,7 @@ Profil: [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observatio
 
 **code**: Indice de masse corporelle [Ratio] Patient ; Numérique
 
-**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientExample.md)
+**subject**: [Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))](Patient-FRCorePatientINSExample.md)
 
 **effective**: 2022-11-06
 
@@ -49,7 +49,7 @@ Profil: [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observatio
     }]
   },
   "subject" : {
-    "reference" : "Patient/FRCorePatientExample",
+    "reference" : "Patient/FRCorePatientINSExample",
     "type" : "Patient"
   },
   "effectiveDateTime" : "2022-11-06",

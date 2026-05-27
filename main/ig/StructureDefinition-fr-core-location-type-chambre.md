@@ -20,6 +20,7 @@ Type de chambre
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Location Profile](StructureDefinition-fr-core-location.md)
+* Exemples pour ce/t/te Extension: [Chambre 02 - Pression négative](Location-hopitaltest-infectio-ch02-prsn-ngtv.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-location-type-chambre)
 
@@ -48,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location-typ
   "name" : "FRCoreLocationTypeChambreExtension",
   "title" : "FR Core Location Extension - Type de chambre",
   "status" : "active",
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

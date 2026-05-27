@@ -37,7 +37,7 @@ HL7 v2 - Table 3307
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -67,59 +67,73 @@ HL7 v2 - Table 3307
   "count" : 14,
   "concept" : [{
     "code" : "GHT",
-    "display" : "Groupement hospitalier de territoire"
+    "display" : "Groupement hospitalier de territoire",
+    "definition" : "Groupement hospitalier de territoire"
   },
   {
     "code" : "LEGAL-ENTITY",
-    "display" : "Entité légale"
+    "display" : "Entité légale",
+    "definition" : "Entité légale"
   },
   {
     "code" : "GEOGRAPHICAL-ENTITY",
-    "display" : "Entité géographique"
+    "display" : "Entité géographique",
+    "definition" : "Entité géographique"
   },
   {
     "code" : "GROUP",
-    "display" : "Groupe privé/hospitalier"
+    "display" : "Groupe privé/hospitalier",
+    "definition" : "Groupe privé/hospitalier"
   },
   {
     "code" : "STRUCT-INTERNE",
-    "display" : "Structure interne"
+    "display" : "Structure interne",
+    "definition" : "Structure interne"
   },
   {
     "code" : "SECTEUR",
-    "display" : "Secteur"
+    "display" : "Secteur",
+    "definition" : "Secteur"
   },
   {
     "code" : "DEPARTEMENT",
-    "display" : "Département"
+    "display" : "Département",
+    "definition" : "Département"
   },
   {
     "code" : "SERVICE",
-    "display" : "Service"
+    "display" : "Service",
+    "definition" : "Service"
   },
   {
     "code" : "UM",
-    "display" : "Unité médicale"
+    "display" : "Unité médicale",
+    "definition" : "Unité médicale"
   },
   {
     "code" : "UAC",
-    "display" : "Unité d'activité"
+    "display" : "Unité d'activité",
+    "definition" : "Unité d'activité"
   },
   {
     "code" : "POLE",
-    "display" : "Pôle"
+    "display" : "Pôle",
+    "definition" : "Pôle"
   },
   {
     "code" : "CENTRE-RESP",
-    "display" : "Centre de responsabilité"
+    "display" : "Centre de responsabilité",
+    "definition" : "Centre de responsabilité"
   },
   {
     "code" : "CENTRE-ACTIVITE",
-    "display" : "Centre d'activité"
+    "display" : "Centre d'activité",
+    "definition" : "Centre d'activité"
   },
   {
     "code" : "UF",
-    "display" : "Unité fonctionnelle"
+    "display" : "Unité fonctionnelle",
+    "definition" : "Unité fonctionnelle"
   }]
 }
 

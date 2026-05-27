@@ -36,7 +36,7 @@ Position du lit dans la chambre
   "title" : "FR Core CodeSystem Position du lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-27T13:50:40+00:00",
+  "date" : "2026-05-27T14:53:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -71,7 +71,8 @@ Position du lit dans la chambre
   },
   {
     "code" : "CLR",
-    "display" : "Couloir"
+    "display" : "Couloir",
+    "definition" : "Couloir"
   },
   {
     "code" : "ML",

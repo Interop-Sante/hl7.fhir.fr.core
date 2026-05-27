@@ -11,7 +11,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-05-27T13:50:40+00:00"/>
+  <date value="2026-05-27T14:53:55+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -2160,6 +2160,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample"/>
+      </reference>
+      <name value="FRCoreMedicationAdministrationInhaledOxygenExample"/>
+      <description value="Exemple de ressource MedicationAdministration pour décrire l'administration d'oxygène inhalé"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -2237,6 +2248,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationOxygenSaturationExample"/>
+      </reference>
+      <name value="FRCoreObservationOxygenSaturationExample"/>
+      <description value="Exemple de ressource Observation pour décrire la saturation en oxygène d'un patient sous oxygénothérapie"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationRespRateExample"/>
+      </reference>
+      <name value="FRCoreObservationRespRateExample"/>
+      <description value="Exemple de ressource Observation pour décrire la fréquence respiratoire d'un patient"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -2251,9 +2284,20 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/FRCorePatientExample"/>
+        <reference value="Patient/FRCorePatientDeceasedExample"/>
       </reference>
-      <name value="FRCorePatientExample"/>
+      <name value="FRCorePatientDeceasedExample"/>
+      <description value="Exemple de ressource Patient décédé illustrant les extensions deathPlace, lunarDate et assemblyOrder"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/FRCorePatientINSExample"/>
+      </reference>
+      <name value="FRCorePatientINSExample"/>
       <description value="Exemple de ressource Patient (cas d'usage INS)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"/>
     </resource>
@@ -2278,6 +2322,17 @@
       <name value="FRCorePractitionerRoleExample"/>
       <description value="Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/FRCoreRelatedPersonExample"/>
+      </reference>
+      <name value="FRCoreRelatedPersonExample"/>
+      <description value="Exemple de ressource RelatedPerson pour décrire la mère d'un patient"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2342,6 +2397,7 @@
         <reference value="Organization/hopitaltest-dept-11003-endocrino"/>
       </reference>
       <name value="hopitaltest-dept-11003-endocrino"/>
+      <description value="Exemple de département d'endocrinologie (Organisation de type département)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"/>
     </resource>
     <resource>
@@ -2352,6 +2408,7 @@
         <reference value="Organization/hopitaltest-eg-4-members"/>
       </reference>
       <name value="hopitaltest-eg-4-members"/>
+      <description value="Exemple d'établissement géographique regroupant 4 entités membres"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"/>
     </resource>
     <resource>
@@ -2362,6 +2419,7 @@
         <reference value="Organization/hopitaltest-ej-350005179"/>
       </reference>
       <name value="hopitaltest-ej-350005179"/>
+      <description value="Exemple d'entité juridique d'un établissement de santé (FINESS 350005179)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0"/>
     </resource>
     <resource>
@@ -2372,6 +2430,7 @@
         <reference value="Location/hopitaltest-endocrino-ch04"/>
       </reference>
       <name value="hopitaltest-endocrino-ch04"/>
+      <description value="Exemple de chambre d'hospitalisation (chambre 04 du service d'endocrinologie)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"/>
     </resource>
     <resource>
@@ -2382,6 +2441,18 @@
         <reference value="Location/hopitaltest-endocrino-ch04-litF"/>
       </reference>
       <name value="hopitaltest-endocrino-ch04-litF"/>
+      <description value="Exemple de lit d'hospitalisation (lit F de la chambre 04 du service d'endocrinologie)"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hopitaltest-infectio-ch02-prsn-ngtv"/>
+      </reference>
+      <name value="hopitaltest-infectio-ch02-prsn-ngtv"/>
+      <description value="Exemple de chambre en pression négative (service d'infectiologie) illustrant l'extension typeChambre"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"/>
     </resource>
     <resource>
@@ -2392,6 +2463,7 @@
         <reference value="Organization/hopitaltest-pole-1150-med-spe"/>
       </reference>
       <name value="hopitaltest-pole-1150-med-spe"/>
+      <description value="Exemple de pôle de médecine spécialisée (Organisation de type pôle)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"/>
     </resource>
     <resource>
@@ -2402,6 +2474,7 @@
         <reference value="Location/hopitaltest-salle-examen-01"/>
       </reference>
       <name value="hopitaltest-salle-examen-01"/>
+      <description value="Exemple de salle d'examen (Location de type salle d'examen)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0"/>
     </resource>
     <resource>
@@ -2412,6 +2485,7 @@
         <reference value="Organization/hopitaltest-service-11006-endocrino-diabo"/>
       </reference>
       <name value="hopitaltest-service-11006-endocrino-diabo"/>
+      <description value="Exemple de service d'endocrinologie-diabétologie (Organisation de type service)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"/>
     </resource>
     <resource>
@@ -2422,6 +2496,7 @@
         <reference value="Organization/hopitaltest-service-11007-dietetique"/>
       </reference>
       <name value="hopitaltest-service-11007-dietetique"/>
+      <description value="Exemple de service de diététique (Organisation de type service)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0"/>
     </resource>
     <resource>
@@ -2432,6 +2507,7 @@
         <reference value="Organization/hopitaltest-uac-4420-uac-01"/>
       </reference>
       <name value="hopitaltest-uac-4420-uac-01"/>
+      <description value="Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 01"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"/>
     </resource>
     <resource>
@@ -2442,6 +2518,7 @@
         <reference value="Organization/hopitaltest-uac-4420-uac-02"/>
       </reference>
       <name value="hopitaltest-uac-4420-uac-02"/>
+      <description value="Exemple d'unité d'activité clinique (UAC) de dialyse - UAC 02"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0"/>
     </resource>
     <resource>
@@ -2452,6 +2529,7 @@
         <reference value="Organization/hopitaltest-uf-4420-dialyse"/>
       </reference>
       <name value="hopitaltest-uf-4420-dialyse"/>
+      <description value="Exemple d'unité fonctionnelle (UF) de dialyse"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"/>
     </resource>
     <resource>
@@ -2462,6 +2540,7 @@
         <reference value="Organization/hopitaltest-uf-4701-endocrino-diab"/>
       </reference>
       <name value="hopitaltest-uf-4701-endocrino-diab"/>
+      <description value="Exemple d'unité fonctionnelle (UF) d'endocrinologie-diabétologie"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"/>
     </resource>
     <resource>
@@ -2472,6 +2551,7 @@
         <reference value="Organization/hopitaltest-uf-4705-nutrition"/>
       </reference>
       <name value="hopitaltest-uf-4705-nutrition"/>
+      <description value="Exemple d'unité fonctionnelle (UF) de nutrition"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"/>
     </resource>
     <resource>
