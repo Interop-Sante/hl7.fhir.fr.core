@@ -1,6 +1,7 @@
 Instance: hopitaltest-pole-1150-med-spe
 InstanceOf: FRCoreOrganizationProfile
 Usage: #example
+Description: "Exemple de pôle de médecine spécialisée (Organisation de type pôle)"
 
 * extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
 * extension[=].valueReference = Reference(Organization/hopitaltest-uf-4420-dialyse)

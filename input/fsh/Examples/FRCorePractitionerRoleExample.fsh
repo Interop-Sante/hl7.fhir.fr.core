@@ -20,6 +20,7 @@ Instance: FRCorePractitionerExample
 InstanceOf: FRCorePractitionerProfile
 Usage: #example
 Description: "Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l'ordre."
+* extension[specialty].valueCoding = $TRE-R38-SpecialiteOrdinale#SM54 "Médecine générale (SM)"
 * meta.lastUpdated = "2025-04-28T18:19:26.335+02:00"
 * meta.source = "https://annuaire.sante.fr"
 * language = #fr

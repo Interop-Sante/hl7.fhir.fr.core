@@ -1,6 +1,7 @@
 Instance: hopitaltest-dept-11003-endocrino
 InstanceOf: FRCoreOrganizationProfile
 Usage: #example
+Description: "Exemple de département d'endocrinologie (Organisation de type département)"
 
 * extension[+].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"
 * extension[=].valueReference = Reference(Organization/hopitaltest-uf-4701-endocrino-diab)

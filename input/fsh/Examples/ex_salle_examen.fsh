@@ -1,6 +1,7 @@
 Instance: hopitaltest-salle-examen-01
 InstanceOf: FRCoreLocationProfile
 Usage: #example
+Description: "Exemple de salle d'examen (Location de type salle d'examen)"
 
 * type = $fr-location-type#SL_EXM "Salle d'examen"
 * type.text = "Salle d'examen"

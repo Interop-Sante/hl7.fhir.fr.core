@@ -3,7 +3,7 @@ InstanceOf: fr-core-observation-bp
 Usage: #example
 Description: "Exemple de ressource Observation Pression artérielle"
 * status = #final
-* subject = Reference(FRCorePatientExample)
+* subject = Reference(FRCorePatientINSExample)
   * type = "Patient"
 * effectiveDateTime = "2012-09-17"
 * performer = Reference(FRCorePractitionerExample)

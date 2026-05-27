@@ -8,5 +8,5 @@ Description: "Position du lit dans la chambre"
 * ^content = #complete
 
 * #FNTR "Fenêtre" "Fenêtre"
-* #CLR "Couloir" 
+* #CLR "Couloir" "Couloir"
 * #ML "Milieu" "Milieu"

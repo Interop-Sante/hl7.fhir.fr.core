@@ -1,6 +1,7 @@
 Instance: hopitaltest-endocrino-ch04-litF
 InstanceOf: FRCoreLocationProfile
 Usage: #example
+Description: "Exemple de lit d'hospitalisation (lit F de la chambre 04 du service d'endocrinologie)"
 
 * type = $fr-location-type#LIT "Lit"
 * type.text = "Lit"

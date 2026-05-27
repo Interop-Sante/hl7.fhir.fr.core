@@ -1,6 +1,7 @@
 Instance: hopitaltest-ej-350005179
 InstanceOf: FRCoreOrganizationEtablissementProfile
 Usage: #example
+Description: "Exemple d'entité juridique d'un établissement de santé (FINESS 350005179)"
 
 //* extension[sae].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie"
 //* extension[sae].valueCodeableConcept.coding[0] = $TRE-R66-CategorieEtablissement#101 "Centre hospitalier régional (CHR)"

@@ -1,6 +1,7 @@
 Instance: hopitaltest-uf-4705-nutrition
 InstanceOf: FRCoreOrganizationUFProfile
 Usage: #example
+Description: "Exemple d'unité fonctionnelle (UF) de nutrition"
 //Instance: a443da9f-4cc0-42b1-9ff8-591199b65773
 
 * extension[0].url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"

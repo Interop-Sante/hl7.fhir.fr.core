@@ -1,6 +1,7 @@
 Instance: hopitaltest-service-11006-endocrino-diabo
 InstanceOf: FRCoreOrganizationProfile
 Usage: #example
+Description: "Exemple de service d'endocrinologie-diabétologie (Organisation de type service)"
 
 * identifier.use = #official
 * identifier.system = "http://hopitalTest.fr/namingsystem/organization"

@@ -7,8 +7,8 @@ Description: "Type de chambre"
 * ^caseSensitive = true
 * ^content = #complete
 
-* #STD "Standard"
-* #PRSN_NGTV "Pression négative"
-* #PRSN_PSTV "Pression positive"
-* #CRCRL "Carcéral"
-* #CPTN "Capitonné"
+* #STD "Standard" "Standard"
+* #PRSN_NGTV "Pression négative" "Pression négative"
+* #PRSN_PSTV "Pression positive" "Pression positive"
+* #CRCRL "Carcéral" "Carcéral"
+* #CPTN "Capitonné" "Capitonné"

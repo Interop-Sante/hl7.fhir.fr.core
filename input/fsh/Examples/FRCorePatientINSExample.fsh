@@ -1,5 +1,5 @@
 
-Instance: FRCorePatientExample
+Instance: FRCorePatientINSExample
 InstanceOf: fr-core-patient-ins
 Usage: #example
 Description: "Exemple de ressource Patient (cas d'usage INS)"
@@ -10,6 +10,12 @@ Description: "Exemple de ressource Patient (cas d'usage INS)"
 // birthPlace
 * extension[birthPlace].valueAddress.extension[inseeCode].valueCoding = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM#01006
 * extension[birthPlace].valueAddress.city = "Ambléon"
+
+// nationality
+* extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#FR "France (la)"
+
+// birthDateUpdateIndicator
+* extension[birthDateUpdateIndicator].valueBoolean = false
 
 * identifier[INS-NIR].value = "123456789012244"
 * identifier[INS-NIR].use = #official
@@ -52,5 +58,8 @@ Description: "Exemple de ressource Patient (cas d'usage INS)"
 * contact[0].relationship[relationType].coding[0].system = "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
 * contact[0].relationship[relationType].coding[0].code = #MTH
 * contact[0].relationship[relationType].coding[0].display = "Mère"
+* contact[0].extension[comment].valueString = "Mère du patient, à contacter en priorité"
+* contact[0].extension[contactIdentifier].valueIdentifier.system = "urn:oid:1.2.250.1.213.1.4.8"
+* contact[0].extension[contactIdentifier].valueIdentifier.value = "C98765"
 * contact[0].name.family = "Durand"
 * contact[0].name.given[0] = "Marie"
