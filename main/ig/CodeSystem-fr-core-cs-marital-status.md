@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status | *Version*:2.2.0 |
-| Draft as of 2026-05-27 | *Computable Name*:FRCoreCodeSystemMaritalStatus |
+| Draft as of 2026-05-28 | *Computable Name*:FRCoreCodeSystemMaritalStatus |
 
  
 Marital status 
@@ -36,7 +36,7 @@ Marital status
   "title" : "FR Core CodeSystem Marital Status",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-27T14:53:55+00:00",
+  "date" : "2026-05-28T14:22:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location | *Version*:2.2.0 |
-| Active as of 2026-05-27 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementBodyLocation |
+| Active as of 2026-05-28 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementBodyLocation |
 
  
 SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured. 
@@ -54,7 +54,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "Blood Pressure Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-27T14:53:55+00:00",
+  "date" : "2026-05-28T14:22:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

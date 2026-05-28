@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-discipline-equipement | *Version*:2.2.0 |
-| Active as of 2026-05-27 | *Computable Name*:FRCoreValueSetOrganizationDisciplineEquipement |
+| Active as of 2026-05-28 | *Computable Name*:FRCoreValueSetOrganizationDisciplineEquipement |
 
  
 Valeurs permettant de coder les disciplines d’équipement. 
@@ -55,7 +55,7 @@ Valeurs permettant de coder les disciplines d’équipement.
   "title" : "FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-27T14:53:55+00:00",
+  "date" : "2026-05-28T14:22:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
