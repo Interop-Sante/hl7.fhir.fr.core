@@ -1,3 +1,20 @@
+### [Release 3.0.0](https://hl7.fr/ig/fhir/core/3.0.0) de l'Implementation Guide FRCore
+[Modifications apportées dans la release 3.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1) :
+
+* Mise à jour de la dépendance vers EU Core 2.0.0 : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
+    * FRCoreOrganization : `name` devient obligatoire
+    * **[BREAKING CHANGE]** FRCorePatient et FRCorePatientINS : suppression de la slice `nationality` référençant l'extension FR Core `fr-core-patient-nationality` au profit de l'extension internationale héritée via EU Core. Les ressources utilisant l'URL `https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality` doivent être mises à jour.
+    * FRCorePractitioner : obligation d'avoir un `identifier` ou un `name`
+    * FRCoreAddress : ajout des extensions internationales `streetName`, `houseNumber`, `postBox`, `countryCode` (déjà utilisées dans le cadre de l'AS)
+    * Possibilité d'utiliser l'extension `data-absent-reason` si un attribut obligatoire ne peut pas être renseigné
+* Mise à jour des dépendances : remplacement de `hl7.fhir.extensions.r5` par `hl7.fhir.uv.xver-r5.r4`, ajout de `hl7.fhir.eu.base: 2.0.0` [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
+* Ajout d'une section sur la gestion des champs obligatoires manquants (`data-absent-reason`) dans les bonnes pratiques [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
+* Mise à jour des participants aux groupes de travail [#295](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/295)
+* Ajout d'exemples et corrections QA [#296](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/296)
+    * Ajout de 5 nouveaux exemples : `FRCorePatientDeceasedExample`, `FRCoreRelatedPersonExample`, `FRCoreObservationRespRateExample`, `FRCoreMedicationAdministrationInhaledOxygenExample`, `FRCoreObservationOxygenSaturationExample`
+    * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
+    * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
+
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 

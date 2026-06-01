@@ -1,5 +1,5 @@
 Profile: FRCoreAddressProfile
-Parent: Address
+Parent: AddressEu
 Id: fr-core-address
 Title: "FR Core Address Profile"
 Description: "Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.\r\nFrench profile of Address datatype"

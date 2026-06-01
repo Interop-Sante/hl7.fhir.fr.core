@@ -15,6 +15,12 @@ Il est conseillé de favoriser l'usage des identifiants métiers pour faciliter 
 
 Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenues sont les syntaxes XML et JSON.
 
+#### La gestion des champs obligatoires manquants
+
+Certains champs obligatoires dans un profil peuvent être inconnus ou non disponibles au moment de l'échange. FHIR prévoit un mécanisme standard pour gérer ces situations : l'extension `data-absent-reason`, qui permet d'indiquer la raison de l'absence d'une valeur tout en restant conforme au profil.
+
+Pour en savoir plus sur les stratégies à adopter (valeur inconnue, non applicable, non collectée…), consultez la page dédiée : [Missing Data - HL7 Europe Base IG](https://hl7.eu/fhir/base/missing-data.html).
+
 ### Les bonnes pratiques de rédaction des guides d'implémentation
 
 #### Profilage de nouvelles ressources

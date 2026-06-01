@@ -1,5 +1,5 @@
 Profile: FRCoreOrganizationProfile
-Parent: Organization
+Parent: OrganizationEuCore
 Id: fr-core-organization
 Title: "FR Core Organization Profile"
 Description: """Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France."""
