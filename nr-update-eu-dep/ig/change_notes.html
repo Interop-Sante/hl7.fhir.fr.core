@@ -63,7 +63,7 @@
 
 
 
-  <span title="null">FR</span>
+  <img src="assets/images/fra.svg" alt="France (la) flag" title="France (la)" height="16"/>
 
 
             </span>
@@ -218,6 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#release-300-de-limplementation-guide-frcore" id="markdown-toc-release-300-de-limplementation-guide-frcore">Release 3.0.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-220-de-limplementation-guide-frcore" id="markdown-toc-release-220-de-limplementation-guide-frcore">Release 2.2.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-210-de-limplementation-guide-frcore" id="markdown-toc-release-210-de-limplementation-guide-frcore">Release 2.1.0 de l’Implementation Guide FRCore</a></li>
   <li><a href="#release-201-de-limplementation-guide-frcore" id="markdown-toc-release-201-de-limplementation-guide-frcore">Release 2.0.1 de l’Implementation Guide FRCore</a></li>
@@ -226,7 +227,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l401">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-300-de-limplementation-guide-frcore"><a name="l404">​</a><a href="https://hl7.fr/ig/fhir/core/3.0.0">Release 3.0.0</a> de l’Implementation Guide FRCore</h3>
+<p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1">Modifications apportées dans la release 3.0.0</a> :</p>
+
+<ul>
+  <li>Mise à jour de la dépendance vers EU Core 2.0.0 : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300">#300</a>
+    <ul>
+      <li>FRCoreOrganization : <code class="language-plaintext highlighter-rouge">name</code> devient obligatoire</li>
+      <li><strong>[BREAKING CHANGE]</strong> FRCorePatient et FRCorePatientINS : suppression de la slice <code class="language-plaintext highlighter-rouge">nationality</code> référençant l’extension FR Core <code class="language-plaintext highlighter-rouge">fr-core-patient-nationality</code> au profit de l’extension internationale héritée via EU Core. Les ressources utilisant l’URL <code class="language-plaintext highlighter-rouge">https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality</code> doivent être mises à jour.</li>
+      <li>FRCorePractitioner : obligation d’avoir un <code class="language-plaintext highlighter-rouge">identifier</code> ou un <code class="language-plaintext highlighter-rouge">name</code></li>
+      <li>FRCoreAddress : ajout des extensions internationales <code class="language-plaintext highlighter-rouge">streetName</code>, <code class="language-plaintext highlighter-rouge">houseNumber</code>, <code class="language-plaintext highlighter-rouge">postBox</code>, <code class="language-plaintext highlighter-rouge">countryCode</code> (déjà utilisées dans le cadre de l’AS)</li>
+      <li>Possibilité d’utiliser l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> si un attribut obligatoire ne peut pas être renseigné</li>
+    </ul>
+  </li>
+  <li>Mise à jour des dépendances : remplacement de <code class="language-plaintext highlighter-rouge">hl7.fhir.extensions.r5</code> par <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.xver-r5.r4</code>, ajout de <code class="language-plaintext highlighter-rouge">hl7.fhir.eu.base: 2.0.0</code> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300">#300</a></li>
+  <li>Ajout d’une section sur la gestion des champs obligatoires manquants (<code class="language-plaintext highlighter-rouge">data-absent-reason</code>) dans les bonnes pratiques <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300">#300</a></li>
+  <li>Mise à jour des participants aux groupes de travail <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/295">#295</a></li>
+  <li>Ajout d’exemples et corrections QA <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/296">#296</a>
+    <ul>
+      <li>Ajout de 5 nouveaux exemples : <code class="language-plaintext highlighter-rouge">FRCorePatientDeceasedExample</code>, <code class="language-plaintext highlighter-rouge">FRCoreRelatedPersonExample</code>, <code class="language-plaintext highlighter-rouge">FRCoreObservationRespRateExample</code>, <code class="language-plaintext highlighter-rouge">FRCoreMedicationAdministrationInhaledOxygenExample</code>, <code class="language-plaintext highlighter-rouge">FRCoreObservationOxygenSaturationExample</code></li>
+      <li>Enrichissement de <code class="language-plaintext highlighter-rouge">FRCorePatientINSExample</code> (renommé depuis <code class="language-plaintext highlighter-rouge">FRCorePatientExample</code>) et <code class="language-plaintext highlighter-rouge">FRCorePractitionerExample</code></li>
+      <li>Corrections QA : code système nationality (<code class="language-plaintext highlighter-rouge">urn:iso:std:iso:3166</code>), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems <code class="language-plaintext highlighter-rouge">v2-3307</code>, <code class="language-plaintext highlighter-rouge">TypeChambre</code>, <code class="language-plaintext highlighter-rouge">PositionLit</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l553">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -484,7 +510,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1466">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1618">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -505,7 +531,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1549">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1701">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -513,7 +539,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1567">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1719">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -615,7 +641,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2026 14:56+0000">2026-05-27</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 1, 2026 09:11+0000">2026-06-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

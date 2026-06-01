@@ -5,7 +5,7 @@
 
 ## Bonnes pratiques d'usage du guide d'implémentation
 
-giCette page indique les bonnes pratiques d’usage du guide d’implémentation, pour une utilisation cohérente, efficace et conforme au standard FHIR et aux spécificités nationales.
+Cette page indique les bonnes pratiques d’usage du guide d’implémentation, pour une utilisation cohérente, efficace et conforme au standard FHIR et aux spécificités nationales.
 
 ### Les bonnes pratiques d’implémentation
 

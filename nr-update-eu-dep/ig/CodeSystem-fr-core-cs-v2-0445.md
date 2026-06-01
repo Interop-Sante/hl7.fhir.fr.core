@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445 | *Version*:2.2.0 |
-| Draft as of 2026-05-27 | *Computable Name*:FRCoreCodeSystemv2_0445 |
+| Draft as of 2026-06-01 | *Computable Name*:FRCoreCodeSystemv2_0445 |
 
  
 HL7 v2 - Table 0445 
@@ -36,7 +36,7 @@ HL7 v2 - Table 0445
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-27T14:56:15+00:00",
+  "date" : "2026-06-01T09:11:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

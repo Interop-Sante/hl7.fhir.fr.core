@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method | *Version*:2.2.0 |
-| Active as of 2026-05-27 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementMethod |
+| Active as of 2026-06-01 | *Computable Name*:FRCoreValueSetBloodPressureMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how a blood pressure was measured. 
@@ -54,7 +54,7 @@ SELECT SNOMED CT code system values that describe how a blood pressure was measu
   "title" : "Blood Pressure Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-27T14:56:15+00:00",
+  "date" : "2026-06-01T09:11:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

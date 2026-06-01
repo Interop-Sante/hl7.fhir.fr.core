@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit | *Version*:2.2.0 |
-| Active as of 2026-05-27 | *Computable Name*:FRCoreValueSetLocationPositionLit |
+| Active as of 2026-06-01 | *Computable Name*:FRCoreValueSetLocationPositionLit |
 
  
 Position du lit dans la chambre 
@@ -55,7 +55,7 @@ Position du lit dans la chambre
   "title" : "FR Core ValueSet Location Position Lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-27T14:56:15+00:00",
+  "date" : "2026-06-01T09:11:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
