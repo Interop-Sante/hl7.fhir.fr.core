@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-relationship-category | *Version*:2.2.0 |
-| Active as of 2026-05-26 | *Computable Name*:FRCoreValueSetPatientContactRelationshipCategory |
+| Active as of 2026-06-05 | *Computable Name*:FRCoreValueSetPatientContactRelationshipCategory |
 
  
 Catégorie de la relation du contact patient : rôle ou type de relation 
@@ -55,7 +55,7 @@ Catégorie de la relation du contact patient : rôle ou type de relation
   "title" : "FR Core ValueSet Patient Contact Relationship Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-26T10:29:07+00:00",
+  "date" : "2026-06-05T13:13:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

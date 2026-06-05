@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen | *Version*:2.2.0 |
-| Active as of 2026-05-26 | *Computable Name*:FRCoreObservationOxygenSaturationProfile |
+| Active as of 2026-06-05 | *Computable Name*:FRCoreObservationOxygenSaturationProfile |
 
  
 French profile for Oxygen saturation in Arterial blood. 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationOxygenSaturationProfile",
   "title" : "FR Core Observation Oxygen Saturation Profile",
   "status" : "active",
-  "date" : "2026-05-26T10:29:07+00:00",
+  "date" : "2026-06-05T13:13:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

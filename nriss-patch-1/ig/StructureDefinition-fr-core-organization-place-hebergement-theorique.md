@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique | *Version*:2.2.0 |
-| Active as of 2026-05-26 | *Computable Name*:FRCoreOrganizationPlaceHebergementTheoriqueExtension |
+| Active as of 2026-06-05 | *Computable Name*:FRCoreOrganizationPlaceHebergementTheoriqueExtension |
 
 Nombre total de places d’hébergement théoriques
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationPlaceHebergementTheoriqueExtension",
   "title" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
   "status" : "active",
-  "date" : "2026-05-26T10:29:07+00:00",
+  "date" : "2026-06-05T13:13:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

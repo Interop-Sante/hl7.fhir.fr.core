@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement | *Version*:2.2.0 |
-| Active as of 2026-05-26 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
+| Active as of 2026-06-05 | *Computable Name*:FRCoreOrganizationEtablissementProfile |
 
  
 Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. 
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-05-26T10:29:07+00:00",
+  "date" : "2026-06-05T13:13:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
