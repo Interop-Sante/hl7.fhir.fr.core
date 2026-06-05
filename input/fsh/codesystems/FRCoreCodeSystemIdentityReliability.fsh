@@ -30,6 +30,8 @@ Description: "French Identity reliabilty codes"
 * #HOMA "Homonyme avéré (attribut d'identité homonyme)" "Homonyme avéré (attribut d'identité homonyme)"
 * #FICT "Identité fictive (attribut d'identité fictive)" "Identité fictive (attribut d'identité fictive)"
 * #DOUT "Identité douteuse (attribut d'identité douteuse)" "Identité douteuse (attribut d'identité douteuse)"
+* #RECUP "Identité récupérée" "Identité récupérée"
+* #QUAL "Identité qualifiée" "Identité qualifiée"
 
 // SCS profile
 * ^experimental = false

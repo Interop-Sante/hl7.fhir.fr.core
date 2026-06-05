@@ -17,6 +17,7 @@ Description: "Précision sur le degré de fiabilité de l'identité du patient (
     methodCollection 0..1 and
     dateCollection 0..1 and
     identityStatus 0..1 and
+    comment 0..* and
     validationDate 0..1 and
     validationMode 0..1
 
@@ -30,9 +31,13 @@ Description: "Précision sur le degré de fiabilité de l'identité du patient (
 * extension[dateCollection] ^definition = "INS collection date| date d'interrogation du téléservice INSi"
 * extension[dateCollection].value[x] only date
 
-* extension[identityStatus] ^short = "Il s'agit du statut de l'identité (VALI | PROV | FICT | DOUT | ...). Dans certains cas il peut également être nécessaire de véhiculer, la notion d’attribut d’identité. Les combinaisons autorisées entre statuts et attributs sont décrites dans le Référentiel National d’Identito-Vigilance."
+* extension[identityStatus] ^short = "Statut de confiance de l’identité au sens du RNIV (EXI SI 07) : PROV | RECUP | VALI | QUAL. Ces 4 statuts sont exclusifs les uns des autres."
 * extension[identityStatus].value[x] only Coding
-* extension[identityStatus].value[x] from FRCoreValueSetIdentityReliabilityStatus (extensible)
+* extension[identityStatus].value[x] from FRCoreValueSetIdentityReliabilityINSStatus (required)
+
+* extension[comment] ^short = "Annotations complémentaires sur l’identité : attributs RNIV (homonyme, douteux, fictif) et codes de gestion (doublon, collision, désactivé…). Plusieurs annotations peuvent coexister."
+* extension[comment].value[x] only Coding
+* extension[comment].value[x] from FRCoreValueSetIdentityReliabilityStatus (extensible)
 
 * extension[validationDate] ^short = "Date de vérification de l'identité"
 * extension[validationDate].value[x] only date
