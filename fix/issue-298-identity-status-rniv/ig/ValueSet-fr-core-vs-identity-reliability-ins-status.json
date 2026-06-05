@@ -1,0 +1,65 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-core-vs-identity-reliability-ins-status",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+  },
+  "language" : "fr-FR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"fr-FR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr-FR\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-identity-reliability-ins-status</b></p><a name=\"fr-core-vs-identity-reliability-ins-status\"> </a><a name=\"hcfr-core-vs-identity-reliability-ins-status\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version : 4.0.1</p></div><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-fr-core-cs-v2-0445.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445</code></a><span title=\"La version est explicitement indiquée comme étant 2.2.0\"> version &#x1F4CD;2.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td><a href=\"CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-PROV\">PROV</a></td><td>Identité provisoire</td><td>Identité provisoire</td></tr><tr><td><a href=\"CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-RECUP\">RECUP</a></td><td>Identité récupérée</td><td>Identité récupérée</td></tr><tr><td><a href=\"CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">VALI</a></td><td>Identité validée</td><td>Identité validée</td></tr><tr><td><a href=\"CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-QUAL\">QUAL</a></td><td>Identité qualifiée</td><td>Identité qualifiée</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability-ins-status",
+  "version" : "2.2.0",
+  "name" : "FRCoreValueSetIdentityReliabilityINSStatus",
+  "title" : "FR Core ValueSet Identity Reliability INS Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-05T12:16:59+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.\n\n| Code | Statut RNIV | INSi (I) | Contrôle (C) |\n|---|---|---|---|\n| PROV | Identité provisoire | − | − |\n| RECUP | Identité récupérée | + | − |\n| VALI | Identité validée | − | + |\n| QUAL | Identité qualifiée | + | + |",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+      "version" : "2.2.0",
+      "concept" : [{
+        "code" : "PROV",
+        "display" : "Identité provisoire"
+      },
+      {
+        "code" : "RECUP",
+        "display" : "Identité récupérée"
+      },
+      {
+        "code" : "VALI",
+        "display" : "Identité validée"
+      },
+      {
+        "code" : "QUAL",
+        "display" : "Identité qualifiée"
+      }]
+    }]
+  }
+}
