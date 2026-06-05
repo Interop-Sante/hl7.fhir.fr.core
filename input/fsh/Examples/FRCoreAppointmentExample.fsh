@@ -2,8 +2,6 @@ Instance: FRCoreAppointmentExample
 InstanceOf: fr-core-appointment
 Usage: #example
 Description: "Exemple de ressource Appointment pour décrire un état de rendez-vous médical"
-* extension.url = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator"
-* extension.valueReference = Reference(FRCorePatientINSExample)
 * identifier.system = "http://appointment-identifier-system.org"
 * identifier.value = "123"
 * status = #proposed
@@ -22,4 +20,7 @@ Description: "Exemple de ressource Appointment pour décrire un état de rendez-
 * participant[+].actor = Reference(FRCorePractitionerExample)
 * participant[=].required = #required
 * participant[=].status = #needs-action
+* participant[+].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#ENT
+* participant[=].actor = Reference(FRCorePractitionerExample)
+* participant[=].status = #accepted
 * requestedPeriod.start = "2019-01-04T09:15:00Z"
