@@ -279,43 +279,6 @@
 <p>
 <p>Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Statut RNIV</th>
-      <th>INSi (I)</th>
-      <th>Contrôle (C)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>PROV</td>
-      <td>Identité provisoire</td>
-      <td>−</td>
-      <td>−</td>
-    </tr>
-    <tr>
-      <td>RECUP</td>
-      <td>Identité récupérée</td>
-      <td>+</td>
-      <td>−</td>
-    </tr>
-    <tr>
-      <td>VALI</td>
-      <td>Identité validée</td>
-      <td>−</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>QUAL</td>
-      <td>Identité qualifiée</td>
-      <td>+</td>
-      <td>+</td>
-    </tr>
-  </tbody>
-</table>
-
 </p>
 
 
@@ -330,6 +293,70 @@
 
   <!-- insert intro if present -->
   
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Ce ValueSet définit les <strong>4 statuts de confiance</strong> de l’identité imposés par le Référentiel National d’Identitovigilance (RNIV) [EXI SI 07] :</p>
+
+<blockquote>
+  <p>« Tout système d’information en santé doit permettre d’attribuer un des 4 statuts de confiance à chaque identité numérique stockée. »</p>
+</blockquote>
+
+<p>Ces statuts sont <strong>exclusifs les uns des autres</strong>. Ils résultent du croisement de deux axes indépendants :</p>
+
+<ul>
+  <li><strong>I</strong> : les traits d’identité ont été récupérés via le téléservice INSi (+) ou non (−)</li>
+  <li><strong>C</strong> : un contrôle de cohérence a été effectué avec un dispositif d’identification à haut niveau de confiance (+) ou non (−)</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Statut RNIV</th>
+      <th>INSi (I)</th>
+      <th>Contrôle (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PROV</code></td>
+      <td>Identité provisoire</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RECUP</code></td>
+      <td>Identité récupérée</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">VALI</code></td>
+      <td>Identité validée</td>
+      <td>−</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">QUAL</code></td>
+      <td>Identité qualifiée</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Seul le statut <strong>Identité qualifiée</strong> (<code class="language-plaintext highlighter-rouge">QUAL</code>) autorise le référencement des données de santé échangées avec le matricule INS [EXI SI 08].</p>
+
+<p>Ce ValueSet est utilisé avec un binding <code class="language-plaintext highlighter-rouge">required</code> dans la sous-extension <code class="language-plaintext highlighter-rouge">identityStatus</code> de l’extension <a href="StructureDefinition-fr-core-identity-reliability.html">FR Core Patient Identity Reliability</a>.</p>
+
+
+</div>
+
 
 
 
@@ -426,7 +453,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 5, 2026 12:16+0000">2026-06-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 5, 2026 12:18+0000">2026-06-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

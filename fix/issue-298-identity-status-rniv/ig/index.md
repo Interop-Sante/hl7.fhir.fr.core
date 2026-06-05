@@ -139,7 +139,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-06-05T12:16:59+00:00",
+  "date" : "2026-06-05T12:18:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2263,7 +2263,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "ValueSet/fr-core-vs-identity-reliability-ins-status"
       },
       "name" : "FR Core ValueSet Identity Reliability INS Status",
-      "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.\n\n| Code | Statut RNIV | INSi (I) | Contrôle (C) |\n|---|---|---|---|\n| PROV | Identité provisoire | − | − |\n| RECUP | Identité récupérée | + | − |\n| VALI | Identité validée | − | + |\n| QUAL | Identité qualifiée | + | + |",
+      "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.",
       "exampleBoolean" : false
     },
     {

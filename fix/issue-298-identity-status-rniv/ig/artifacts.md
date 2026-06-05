@@ -115,14 +115,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR Core ValueSet Encounter identifier type](ValueSet-fr-core-vs-encounter-identifier-type.md) | A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters). |
 | [FR Core ValueSet Encounter type](ValueSet-fr-core-vs-encounter-type.md) | Jeu de valeurs des types de rencontre. A coded type for an encounter |
 | [FR Core ValueSet INSEE code](ValueSet-fr-core-vs-insee-code.md) | the French Address Insee Codes |
-| [FR Core ValueSet Identity Reliability INS Status](ValueSet-fr-core-vs-identity-reliability-ins-status.md) | Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.
-| | | | |
-| :--- | :--- | :--- | :--- |
-| PROV | Identité provisoire | − | − |
-| RECUP | Identité récupérée | + | − |
-| VALI | Identité validée | − | + |
-| QUAL | Identité qualifiée | + | + |
- |
+| [FR Core ValueSet Identity Reliability INS Status](ValueSet-fr-core-vs-identity-reliability-ins-status.md) | Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres. |
 | [FR Core ValueSet Identity method collection](ValueSet-fr-core-vs-identity-method-collection.md) | The validation mode of the identity. |
 | [FR Core ValueSet Identity reliability](ValueSet-fr-core-vs-identity-reliability.md) | The reliability of the identity. |
 | [FR Core ValueSet Location Position Lit](ValueSet-fr-core-vs-location-position-lit.md) | Position du lit dans la chambre |

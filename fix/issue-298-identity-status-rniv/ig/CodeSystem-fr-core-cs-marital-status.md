@@ -36,7 +36,7 @@ Marital status
   "title" : "FR Core CodeSystem Marital Status",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-05T12:16:59+00:00",
+  "date" : "2026-06-05T12:18:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
