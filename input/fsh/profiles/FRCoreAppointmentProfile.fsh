@@ -31,7 +31,7 @@ Profil de la ressource Appointment pour la France. Il permet de référencer év
 * participant ^slicing.rules = #open
 * participant contains appointmentOperator 0..*
 
-* participant[appointmentOperator] ^short = "Opérateur ayant saisi ou modifié le rendez-vous"
+* participant[appointmentOperator] ^short = "Opérateur ayant saisi, modifié ou annulé le rendez-vous"
 * participant[appointmentOperator].type 1..*
 * participant[appointmentOperator].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#ENT
 * participant[appointmentOperator].actor only Reference(FRCoreOrganizationProfile or FRCorePractitionerProfile or FRCorePatientProfile or RelatedPerson)
