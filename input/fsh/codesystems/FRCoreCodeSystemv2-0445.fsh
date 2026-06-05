@@ -28,6 +28,8 @@ Description: "HL7 v2 - Table 0445"
 * #INVA "Identité invalidée" "Identité invalidée"
 * #FICT "Identité fictive (Attribut d’identité « fictive »)" "Identité fictive (Attribut d’identité « fictive »)"
 * #DOUT "Identité douteuse (Attribut d’identité « douteuse »)" "Identité douteuse (Attribut d’identité « douteuse »)"
+* #RECUP "Identité récupérée" "Identité récupérée"
+* #QUAL "Identité qualifiée" "Identité qualifiée"
 
 // SCS profile
 * ^experimental = false
