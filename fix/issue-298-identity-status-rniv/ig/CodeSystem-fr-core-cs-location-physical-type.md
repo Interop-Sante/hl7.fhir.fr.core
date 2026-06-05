@@ -36,7 +36,7 @@ Location physical type
   "title" : "FR Core CodeSystem Location Physical Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-05T12:21:59+00:00",
+  "date" : "2026-06-05T13:35:06+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

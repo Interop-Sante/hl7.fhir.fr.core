@@ -5,7 +5,9 @@
 
 ## Historique des changements
 
-### Prochaine release
+### Release 3.0.0 de l’Implementation Guide FRCore
+
+[Modifications apportées dans la release 3.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1) :
 
 * **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : restructuration de l’extension `fr-core-identity-reliability` pour modéliser les 4 statuts de confiance de l’identité [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
