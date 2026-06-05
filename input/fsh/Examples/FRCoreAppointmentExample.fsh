@@ -2,6 +2,7 @@ Instance: FRCoreAppointmentExample
 InstanceOf: fr-core-appointment
 Usage: #example
 Description: "Exemple de ressource Appointment pour décrire un état de rendez-vous médical"
+* extension[subject].valueReference = Reference(FRCorePatientINSExample)
 * identifier.system = "http://appointment-identifier-system.org"
 * identifier.value = "123"
 * status = #proposed
