@@ -1,3 +1,39 @@
+### Release 2.3.0 de l'Implementation Guide FRCore
+
+* **[BREAKING CHANGE]** Appointment : suppression de l'extension `FRCoreAppointmentOperatorExtension` (`fr-core-appointment-operator`) et modélisation de l'opérateur via `Appointment.participant` [#297](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/297)
+
+L'extension `appointmentOperator` permettait de référencer la personne ayant créé/modifié/annulé un rendez-vous. Cette modélisation via une extension propriétaire était redondante avec `Appointment.participant`, qui supporte nativement des participants non présents lors de l'acte (ex. : `referrer`). Elle est remplacée par une slice `appointmentOperator` sur `participant`, utilisant le code standard `ENT` (_data entry person_) du CodeSystem `v3-ParticipationType`.
+
+**Avant (version 2.2.0)**
+
+```json
+{
+  "resourceType": "Appointment",
+  "extension": [{
+    "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator",
+    "valueReference": { "reference": "Practitioner/123" }
+  }]
+}
+```
+
+**Après (version 2.3.0)**
+
+```json
+{
+  "resourceType": "Appointment",
+  "participant": [{
+    "type": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType", "code": "ENT" }] }],
+    "actor": { "reference": "Practitioner/123" },
+    "status": "accepted"
+  }]
+}
+```
+
+> **Impact pour les implémenteurs** : les ressources utilisant l'extension `fr-core-appointment-operator` doivent migrer vers `participant` avec `type = ENT`. Les IGs dépendant de FRCore qui utilisent cette extension (notamment GAP) devront être mis à jour.
+
+* Appointment : ajout du ValueSet `FRCoreValueSetAppointmentParticipantType` pour le binding de `participant.type`, étendant `encounter-participant-type` avec les codes `ENT` (_data entry person_) et `SBJ` (_subject_) du CodeSystem `v3-ParticipationType` [#297](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/297)
+* Appointment : ajout de l'extension cross-version R5 `Appointment.subject` (`http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.subject`) pour identifier explicitement le patient sujet du rendez-vous, en anticipation de FHIR R5 qui introduit cet élément nativement [#5](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/5)
+
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 

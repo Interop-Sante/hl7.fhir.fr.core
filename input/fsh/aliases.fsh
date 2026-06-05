@@ -69,6 +69,7 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $organization-description-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description
+Alias: $appointment-subject-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.subject
 
 
 // ###############
