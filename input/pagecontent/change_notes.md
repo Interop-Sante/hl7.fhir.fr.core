@@ -1,3 +1,62 @@
+### Prochaine release
+
+* **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : restructuration de l'extension `fr-core-identity-reliability` pour modéliser les 4 statuts de confiance de l'identité [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+
+#### Nouveaux codes dans le CodeSystem `fr-core-cs-v2-0445`
+
+Deux codes ajoutés pour couvrir les 4 statuts RNIV :
+
+| Code | Statut RNIV | INSi (I) | Contrôle (C) |
+|------|-------------|----------|--------------|
+| `PROV` | Identité provisoire | − | − |
+| `RECUP` _(nouveau)_ | Identité récupérée | + | − |
+| `VALI` | Identité validée | − | + |
+| `QUAL` _(nouveau)_ | Identité qualifiée | + | + |
+
+#### Nouveau ValueSet restreint `fr-core-vs-identity-reliability-ins-status`
+
+Un nouveau ValueSet limité aux 4 statuts RNIV est créé. Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (4 valeurs uniquement).
+
+**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`.
+
+Dans les versions précédentes, les annotations complémentaires pouvaient être portées dans `identityStatus` :
+
+```json
+{
+  "url": "identityStatus",
+  "valueCoding": {
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+    "code": "DOUB"
+  }
+}
+```
+
+À partir de cette version, elles doivent être portées dans `comment` :
+
+```json
+{
+  "url": "comment",
+  "valueCoding": {
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+    "code": "DOUB"
+  }
+}
+```
+
+#### Correction des invariants `fr-core-1`, `fr-core-2`, `fr-core-3`
+
+Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`, conformément à l'exigence EXI SI 08 :
+
+> « Seul le statut Identité qualifiée permet le référencement des données de santé échangées avec le matricule INS. »
+
+**Impact pour les implémenteurs** : une ressource `FRCorePatientINS` portant un matricule INS doit avoir le statut `QUAL` (et non `VALI`). Les instances existantes au statut `VALI` avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en `QUAL`.
+
+#### `identityStatus` obligatoire dans `FRCorePatientINSProfile`
+
+La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
+
+---
+
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
