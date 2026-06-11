@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category | *Version*:2.2.0 |
-| Active as of 2026-06-01 | *Computable Name*:FRCorePatientContactRelationshipCategoryExtension |
+| Active as of 2026-06-11 | *Computable Name*:FRCorePatientContactRelationshipCategoryExtension |
 
 Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-cont
   "name" : "FRCorePatientContactRelationshipCategoryExtension",
   "title" : "FR Core Patient Contact Relationship Category Extension",
   "status" : "active",
-  "date" : "2026-06-01T09:11:05+00:00",
+  "date" : "2026-06-11T14:00:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

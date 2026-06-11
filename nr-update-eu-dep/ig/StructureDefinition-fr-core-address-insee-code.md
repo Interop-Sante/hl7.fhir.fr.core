@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code | *Version*:2.2.0 |
-| Active as of 2026-06-01 | *Computable Name*:FRCoreAddressInseeCodeExtension |
+| Active as of 2026-06-11 | *Computable Name*:FRCoreAddressInseeCodeExtension |
 
-Extension d’ajout du code insee (5 chiffres) à l’adresse postale. This extension adds the insee code (5 digits) to the address
+Extension d’ajout du code insee (5 chiffres) à l’adresse postale. Dans le cas d’une ville étrangère, le code département devient “99” et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d’identitovigilance (RNIV). This extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes “99”, and the municipality code is populated with the country code.
 
 This extension adds to the address data type:
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-06-01T09:11:05+00:00",
+  "date" : "2026-06-11T14:00:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
       "use" : "work"
     }]
   }],
-  "description" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale.\r\nThis extension adds the insee code (5 digits) to the address",
+  "description" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient \"99\" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV).\r\nThis extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes \"99\", and the municipality code is populated with the country code.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
       "id" : "Extension",
       "path" : "Extension",
       "short" : "FR Core Address Insee Code Extension",
-      "definition" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale.\r\nThis extension adds the insee code (5 digits) to the address"
+      "definition" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient \"99\" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV).\r\nThis extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes \"99\", and the municipality code is populated with the country code."
     },
     {
       "id" : "Extension.extension",
@@ -118,7 +118,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
         "code" : "Coding"
       }],
       "binding" : {
-        "strength" : "required",
+        "strength" : "extensible",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.2.0"
       }
     }]

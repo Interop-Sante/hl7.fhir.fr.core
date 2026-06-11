@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type | *Version*:2.2.0 |
-| Active as of 2026-06-01 | *Computable Name*:FRCoreValueSetPractitionerIdentifierType |
+| Active as of 2026-06-11 | *Computable Name*:FRCoreValueSetPractitionerIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification) 
@@ -59,7 +59,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Practitioner identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-01T09:11:05+00:00",
+  "date" : "2026-06-11T14:00:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method | *Version*:2.2.0 |
-| Active as of 2026-06-01 | *Computable Name*:FRCoreValueSetHeightMeasurementMethod |
+| Active as of 2026-06-11 | *Computable Name*:FRCoreValueSetHeightMeasurementMethod |
 
  
 SELECT SNOMED CT code system values that describe how the height/length was measured. 
@@ -54,7 +54,7 @@ SELECT SNOMED CT code system values that describe how the height/length was meas
   "title" : "Height Length Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-01T09:11:05+00:00",
+  "date" : "2026-06-11T14:00:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

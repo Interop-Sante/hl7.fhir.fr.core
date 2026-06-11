@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type-chambre | *Version*:2.2.0 |
-| Active as of 2026-06-01 | *Computable Name*:FRCoreValueSetLocationTypeChambre |
+| Active as of 2026-06-11 | *Computable Name*:FRCoreValueSetLocationTypeChambre |
 
  
 Type de chambre 
@@ -55,7 +55,7 @@ Type de chambre
   "title" : "FR Core ValueSet Location Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-01T09:11:05+00:00",
+  "date" : "2026-06-11T14:00:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
