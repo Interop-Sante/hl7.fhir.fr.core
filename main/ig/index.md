@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0 |
-| Active as of 2026-05-28 | *Computable Name*:FRCore |
+| Active as of 2026-06-12 | *Computable Name*:FRCore |
 
  ** Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données de santé : données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France. **
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of health data : administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -139,7 +139,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-05-28T14:22:24+00:00",
+  "date" : "2026-06-12T14:04:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -191,7 +191,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.9.2"
+    "version" : "1.10.0"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -1015,7 +1015,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "StructureDefinition/fr-core-address-insee-code"
       },
       "name" : "FR Core Address Insee Code Extension",
-      "description" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale.\r\nThis extension adds the insee code (5 digits) to the address",
+      "description" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient \"99\" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV).\r\nThis extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes \"99\", and the municipality code is populated with the country code.",
       "exampleBoolean" : false
     },
     {

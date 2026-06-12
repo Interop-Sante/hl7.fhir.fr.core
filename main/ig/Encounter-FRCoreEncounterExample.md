@@ -14,7 +14,7 @@ Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
 
 **status**: In Progress
 
-**class**: [v3 Code System ActCode: AMB](http://hl7.org/fhir/R4/v3/ActCode/cs.html#v3-ActCode-AMB) (ambulatory)
+**class**: [v3 Code System ActCode: AMB](http://hl7.org/fhir/R4/v3/ActCode/cs.html#v3-ActCode-AMB) (Ambulatoire (hors établissement))
 
 **period**: 2019-01-02 --> 2019-02-02
 

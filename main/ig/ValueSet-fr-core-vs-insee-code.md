@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code | *Version*:2.2.0 |
-| Active as of 2026-05-28 | *Computable Name*:FRCoreValueSetINSEECode |
+| Active as of 2026-06-12 | *Computable Name*:FRCoreValueSetINSEECode |
 
  
 the French Address Insee Codes 
@@ -55,7 +55,7 @@ the French Address Insee Codes
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-28T14:22:24+00:00",
+  "date" : "2026-06-12T14:04:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -12,7 +12,7 @@ Information Source: [https://annuaire.sante.fr](https://annuaire.sante.fr)
 
 Profil: [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)
 
-**FR Core Practitioner Specialty Extension**: [TRE_R38_SpecialiteOrdinale: SM54](https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R38-SpecialiteOrdinale.html#TRE-R38-SpecialiteOrdinale-SM54) (Médecine générale (SM))
+**FR Core Practitioner Specialty Extension**: [TRE_R38_SpecialiteOrdinale: SM54](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html#TRE-R38-SpecialiteOrdinale-SM54) (Médecine générale (SM))
 
 **identifier**: Identifiant National de Professionnel de Santé/810101201234 (utilisation : official, ), N° RPPS/10101201234 (utilisation : official, )
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity | *Version*:2.2.0 |
-| Active as of 2026-05-28 | *Computable Name*:FRCoreCodeSystemModeValidationIdentite |
+| Active as of 2026-06-12 | *Computable Name*:FRCoreCodeSystemModeValidationIdentite |
 
  
 Mode de validation de l’identité 
@@ -37,7 +37,7 @@ Mode de validation de l’identité
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-28T14:22:24+00:00",
+  "date" : "2026-06-12T14:04:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -64,7 +64,7 @@ Mode de validation de l’identité
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 13,
+  "count" : 14,
   "concept" : [{
     "code" : "AN",
     "display" : "Extrait d'acte de naissance",
@@ -105,19 +105,6 @@ Mode de validation de l’identité
     }]
   },
   {
-    "code" : "CM",
-    "display" : "Carte militaire",
-    "definition" : "Carte militaire",
-    "designation" : [{
-      "language" : "fr-FR",
-      "use" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-        "code" : "preferredForLanguage"
-      },
-      "value" : "Carte militaire"
-    }]
-  },
-  {
     "code" : "CN",
     "display" : "Carte nationale d'identité",
     "definition" : "Carte nationale d'identité",
@@ -128,19 +115,6 @@ Mode de validation de l’identité
         "code" : "preferredForLanguage"
       },
       "value" : "Carte nationale d'identité"
-    }]
-  },
-  {
-    "code" : "CS",
-    "display" : "Carte de séjour",
-    "definition" : "Carte de séjour",
-    "designation" : [{
-      "language" : "fr-FR",
-      "use" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-        "code" : "preferredForLanguage"
-      },
-      "value" : "Carte de séjour"
     }]
   },
   {
@@ -196,19 +170,6 @@ Mode de validation de l’identité
     }]
   },
   {
-    "code" : "DC",
-    "display" : "Document de Circulation pour étranger mineur",
-    "definition" : "Document de Circulation pour étranger mineur",
-    "designation" : [{
-      "language" : "fr-FR",
-      "use" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-        "code" : "preferredForLanguage"
-      },
-      "value" : "Document de Circulation pour étranger mineur"
-    }]
-  },
-  {
     "code" : "AC",
     "display" : "Acte de naissance + Carte vitale avec photo",
     "definition" : "Acte de naissance + Carte vitale avec photo",
@@ -222,6 +183,32 @@ Mode de validation de l’identité
     }]
   },
   {
+    "code" : "AV",
+    "display" : "Application Carte Vitale",
+    "definition" : "Application Carte Vitale",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Application Carte Vitale"
+    }]
+  },
+  {
+    "code" : "CS",
+    "display" : "Carte de séjour",
+    "definition" : "Carte de séjour ou titre de séjour",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carte de séjour"
+    }]
+  },
+  {
     "code" : "IE",
     "display" : "Identification électronique EIDAS",
     "definition" : "Identification électronique EIDAS",
@@ -232,6 +219,32 @@ Mode de validation de l’identité
         "code" : "preferredForLanguage"
       },
       "value" : "Identification électronique EIDAS"
+    }]
+  },
+  {
+    "code" : "DC",
+    "display" : "Document de Circulation pour étranger mineur",
+    "definition" : "Document de Circulation pour étranger mineur",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Document de Circulation pour étranger mineur"
+    }]
+  },
+  {
+    "code" : "CM",
+    "display" : "Carte militaire",
+    "definition" : "Carte militaire",
+    "designation" : [{
+      "language" : "fr-FR",
+      "use" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+        "code" : "preferredForLanguage"
+      },
+      "value" : "Carte militaire"
     }]
   }]
 }

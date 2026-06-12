@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection | *Version*:2.2.0 |
-| Active as of 2026-05-28 | *Computable Name*:FRCoreCodeSystemMethodCollection |
+| Active as of 2026-06-12 | *Computable Name*:FRCoreCodeSystemMethodCollection |
 
  
 Méthode de collection de l’identité 
@@ -36,7 +36,7 @@ Méthode de collection de l’identité
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-28T14:22:24+00:00",
+  "date" : "2026-06-12T14:04:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-body-location | *Version*:2.2.0 |
-| Active as of 2026-05-28 | *Computable Name*:FRCoreValueSetHeartRateMeasurementBodyLocation |
+| Active as of 2026-06-12 | *Computable Name*:FRCoreValueSetHeartRateMeasurementBodyLocation |
 
  
 SELECT SNOMED CT code system values that describe where on the body the heart rate was measured. 
@@ -54,7 +54,7 @@ SELECT SNOMED CT code system values that describe where on the body the heart ra
   "title" : "Heart Rate Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-28T14:22:24+00:00",
+  "date" : "2026-06-12T14:04:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
