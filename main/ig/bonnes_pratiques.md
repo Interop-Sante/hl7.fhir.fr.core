@@ -18,6 +18,21 @@ En FHIR, il y a plusieurs types d’identifiants :
 
 Il est conseillé de favoriser l’usage des identifiants métiers pour faciliter l’identification de la ressource en dehors du serveur.
 
+#### Indiquer la version du profil dans meta.profile
+
+Il n’est pas toujours évident de déterminer sur quelle version d’un profil se base une instance de ressource FHIR. Il est donc conseillé aux producteurs de ressources d’indiquer explicitement la version du profil dans `meta.profile`, en utilisant la [syntaxe `url|version` définie par la spécification FHIR](https://hl7.org/fhir/references.html#canonical) :
+
+```
+"meta": {
+  "profile": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
+  ]
+}
+
+```
+
+Cette pratique facilite la validation, le débogage et l’interopérabilité entre systèmes, en particulier lorsque plusieurs versions d’un même profil coexistent.
+
 #### Les syntaxes retenues
 
 Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenues sont les syntaxes XML et JSON.
