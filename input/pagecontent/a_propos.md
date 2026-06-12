@@ -1,5 +1,11 @@
 En tant qu'affilié français d'HL7 International, InteropSanté a la responsabilité de créer les profils FHIR génériques à usage français.
 
+### Cycle de vie
+
+FRCore suit le [cycle de vie des guides d'implémentation FHIR](https://interop.esante.gouv.fr/ig/doctrine/cycle-de-vie.html) défini dans la doctrine du CI-SIS.
+
+Les évolutions à venir — héritage des profils européens, synchronisation avec l'IG Document Core, et migration vers FHIR R6 — impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut `final-text`.
+
 ### Comment contribuer ?
 
 La qualité de ce guide d'implémentation s'améliore continuellement grâce aux précieuses contributions de la communauté. Pour rejoindre cette communauté, il suffit de rejoindre le [Google Group FHIR France](https://groups.google.com/g/groupes-fhir-france) ou bien le [slack FHIR France](https://join.slack.com/t/fhir-france/shared_invite/zt-2pv7q7ern-VIrh8Q9r4hrOJPQk3j_ouA), et d'adhérer à [InteropSanté](https://www.interopsante.org/).
