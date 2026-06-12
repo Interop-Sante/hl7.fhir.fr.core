@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "name" : "FRCoreAddressProfile",
   "title" : "FR Core Address Profile",
   "status" : "active",
-  "date" : "2026-06-12T14:04:24+00:00",
+  "date" : "2026-06-12T14:05:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address.csv)
   "kind" : "complex-type",
   "abstract" : false,
   "type" : "Address",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Address|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/Address-eu|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

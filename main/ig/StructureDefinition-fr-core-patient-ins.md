@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-06-12T14:04:24+00:00",
+  "date" : "2026-06-12T14:05:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -155,24 +155,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "min" : 1
     },
     {
-      "id" : "Patient.extension:identityReliability",
-      "path" : "Patient.extension",
-      "sliceName" : "identityReliability"
-    },
-    {
-      "id" : "Patient.extension:identityReliability.extension:validationMode",
-      "path" : "Patient.extension.extension",
-      "sliceName" : "validationMode"
-    },
-    {
-      "id" : "Patient.extension:identityReliability.extension:validationMode.value[x]",
-      "path" : "Patient.extension.extension.value[x]",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins|2.2.0"
-      }
-    },
-    {
       "id" : "Patient.extension:birthPlace",
       "path" : "Patient.extension",
       "sliceName" : "birthPlace",
@@ -189,6 +171,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "path" : "Patient.extension.value[x].extension",
       "sliceName" : "inseeCode",
       "min" : 1
+    },
+    {
+      "id" : "Patient.extension:identityReliability",
+      "path" : "Patient.extension",
+      "sliceName" : "identityReliability"
+    },
+    {
+      "id" : "Patient.extension:identityReliability.extension:validationMode",
+      "path" : "Patient.extension.extension",
+      "sliceName" : "validationMode"
+    },
+    {
+      "id" : "Patient.extension:identityReliability.extension:validationMode.value[x]",
+      "path" : "Patient.extension.extension.value[x]",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins|2.2.0"
+      }
     },
     {
       "id" : "Patient.identifier",
@@ -356,11 +356,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
       "min" : 1
     },
     {
-      "id" : "Patient.name",
-      "path" : "Patient.name",
-      "min" : 1
-    },
-    {
       "id" : "Patient.name:officialName",
       "path" : "Patient.name",
       "sliceName" : "officialName",
@@ -395,7 +390,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-ins.
     {
       "id" : "Patient.birthDate",
       "path" : "Patient.birthDate",
-      "min" : 1,
       "mustSupport" : true
     }]
   }

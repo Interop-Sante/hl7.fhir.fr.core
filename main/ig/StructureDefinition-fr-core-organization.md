@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-06-12T14:04:24+00:00",
+  "date" : "2026-06-12T14:05:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

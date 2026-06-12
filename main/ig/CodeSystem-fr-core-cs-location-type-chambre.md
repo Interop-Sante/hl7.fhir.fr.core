@@ -36,7 +36,7 @@ Type de chambre
   "title" : "FR Core CodeSystem Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:04:24+00:00",
+  "date" : "2026-06-12T14:05:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

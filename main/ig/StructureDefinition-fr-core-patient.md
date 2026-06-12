@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-06-12T14:04:24+00:00",
+  "date" : "2026-06-12T14:05:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -126,25 +126,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
     },
     {
-      "id" : "Patient.extension",
+      "id" : "Patient.extension:birthPlace",
       "path" : "Patient.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "rules" : "open"
-      }
+      "sliceName" : "birthPlace"
     },
     {
-      "id" : "Patient.extension:nationality",
-      "path" : "Patient.extension",
-      "sliceName" : "nationality",
-      "min" : 0,
-      "max" : "*",
+      "id" : "Patient.extension:birthPlace.value[x]",
+      "path" : "Patient.extension.value[x]",
       "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0"]
+        "code" : "Address",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     },
     {
@@ -178,25 +169,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient.csv)
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0"]
-      }]
-    },
-    {
-      "id" : "Patient.extension:birthPlace",
-      "path" : "Patient.extension",
-      "sliceName" : "birthPlace",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.3.0"]
-      }]
-    },
-    {
-      "id" : "Patient.extension:birthPlace.value[x]",
-      "path" : "Patient.extension.value[x]",
-      "type" : [{
-        "code" : "Address",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address|2.2.0"]
       }]
     },
     {

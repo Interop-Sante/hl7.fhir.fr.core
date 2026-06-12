@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-06-12T14:04:24+00:00",
+  "date" : "2026-06-12T14:05:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-location.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "Location",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Location|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/location-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
