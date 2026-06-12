@@ -1,5 +1,5 @@
 Profile: FRCoreLocationProfile
-Parent: Location
+Parent: LocationEuCore
 Id: fr-core-location
 Title: "FR Core Location Profile"
 Description: """Ressource Location adaptée au contexte français. 
