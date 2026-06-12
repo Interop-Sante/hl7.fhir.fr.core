@@ -2,7 +2,7 @@ En tant qu'affilié français d'HL7 International, InteropSanté a la responsabi
 
 ### Cycle de vie
 
-FRCore suit le [cycle de vie des guides d'implémentation FHIR](https://interop.esante.gouv.fr/ig/doctrine/cycle-de-vie.html) défini dans la doctrine du CI-SIS.
+FRCore suit le [cycle de vie des guides d'implémentation FHIR](https://interop.esante.gouv.fr/ig/doctrine/cycle-de-vie.html) défini dans la doctrine du CI-SIS. La correspondance entre les statuts du cycle de vie et le paramétrage des fichiers de configuration est documentée dans les [bonnes pratiques de release d'un IG FHIR](https://ansforge.github.io/IG-documentation/nr-clarify-release-fields/ig/mod_bonnes_pratiques.html#release-dun-ig-fhir).
 
 Les évolutions à venir — héritage des profils européens, synchronisation avec l'IG Document Core, et migration vers FHIR R6 — impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut `final-text`.
 
