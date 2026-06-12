@@ -36,7 +36,7 @@ La nomenclature de disciplines d’équipement est utilisée pour ventiler l’a
   "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-12T13:47:13+00:00",
+  "date" : "2026-06-12T13:49:15+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

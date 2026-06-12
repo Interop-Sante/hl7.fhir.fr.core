@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - trial-use
+            <span style="display:inline-block;">2.2.0 - ci-build
 
 
 
@@ -239,6 +239,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Il est conseillé de favoriser l’usage des identifiants métiers pour faciliter l’identification de la ressource en dehors du serveur.</p>
 
+<h4 id="indiquer-la-version-du-profil-dans-metaprofile">Indiquer la version du profil dans meta.profile</h4>
+
+<p>Il n’est pas toujours évident de déterminer sur quelle version d’un profil se base une instance de ressource FHIR. Il est donc conseillé aux producteurs de ressources d’indiquer explicitement la version du profil dans <code class="language-plaintext highlighter-rouge">meta.profile</code>, en utilisant la <a href="https://hl7.org/fhir/references.html#canonical">syntaxe <code class="language-plaintext highlighter-rouge">url|version</code> définie par la spécification FHIR</a> :</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Cette pratique facilite la validation, le débogage et l’interopérabilité entre systèmes, en particulier lorsque plusieurs versions d’un même profil coexistent.</p>
+
 <h4 id="les-syntaxes-retenues">Les syntaxes retenues</h4>
 
 <p>Parmi les trois syntaxes disponibles pour implémenter FHIR, les syntaxes retenues sont les syntaxes XML et JSON.</p>
@@ -375,7 +388,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 12, 2026 13:47+0000">2026-06-12</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 12, 2026 13:49+0000">2026-06-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
