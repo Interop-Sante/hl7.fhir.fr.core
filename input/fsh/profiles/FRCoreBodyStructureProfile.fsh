@@ -3,6 +3,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/bodyStructure-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreBodyStructureProfile
 Parent: BodyStructure
 Id: fr-core-body-structure
