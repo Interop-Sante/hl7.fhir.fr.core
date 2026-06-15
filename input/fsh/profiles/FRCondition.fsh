@@ -1,8 +1,8 @@
-Profile: FRConditionDocument
+Profile: FRCondition
 Parent: Condition
-Id: fr-condition-document
-Title: "Condition - FR Condition Document"
-Description: "FRConditionDocument est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
+Id: fr-condition
+Title: "Condition - FR Condition"
+Description: "FRCondition est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
