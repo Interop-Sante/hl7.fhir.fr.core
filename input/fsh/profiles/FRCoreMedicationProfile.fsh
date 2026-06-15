@@ -3,6 +3,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationProfile
 Parent: Medication
 Id: fr-core-medication

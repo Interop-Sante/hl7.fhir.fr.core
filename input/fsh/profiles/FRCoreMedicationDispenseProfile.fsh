@@ -3,6 +3,7 @@
 // Une étude devra être faite dans un second temps pour aligner ces profils à ceux d'InteropSanté
 //
 // Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationDispenseProfile
 Parent: MedicationDispense
 Id: fr-core-medication-dispense

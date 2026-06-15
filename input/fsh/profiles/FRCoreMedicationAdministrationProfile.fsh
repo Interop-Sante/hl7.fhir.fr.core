@@ -2,6 +2,7 @@
 //   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationAdministrationDocument.fsh
 //
 // Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationAdministrationProfile
 Parent: MedicationAdministration
 Id: fr-core-medication-administration

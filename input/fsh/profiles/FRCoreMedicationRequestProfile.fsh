@@ -4,6 +4,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationRequestProfile
 Parent: MedicationRequest
 Id: fr-core-medication-request
