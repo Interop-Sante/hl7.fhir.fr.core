@@ -1,11 +1,13 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRProcedureDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRProcedureDocument.fsh
+//
+// Profil EU Core (héritage direct) :
+//   https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
 Profile: FRCoreProcedureProfile
 Parent: Procedure
 Id: fr-core-procedure
 Title: "FR Core Procedure Profile"
 Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
-
-// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
 
 // * identifier 1.. // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
