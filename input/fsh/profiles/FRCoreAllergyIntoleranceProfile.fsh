@@ -1,22 +1,23 @@
-Profile: FRAllergyIntolerance
+// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAllergyIntoleranceDocument.fsh
+Profile: FRCoreAllergyIntoleranceProfile
 Parent: AllergyIntolerance
-Id: fr-allergy-intolerance
-Title: "AllergyIntolerance - FR Allergy and intolerance"
-Description: "FRAllergyIntolerance est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
+Id: fr-core-allergy-intolerance
+Title: "FR Core AllergyIntolerance Profile"
+Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
 
-// mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
+// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core
+//* ^extension[$imposeProfile].valueCanonical = Canonical(allergyIntolerance-eu-core)
 
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
 * type ^short = "Type d'allergie ou d'intolérance"
 * type from FRValueSetAllergyInoleranceTypeDocument (required)
-* code 1..1
+* code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "agent allergique"
 * code from FRValueSetAllergyCodeDocument (extensible)
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
 * onsetPeriod ^short = "Dates de début et de fin"
-* onsetPeriod.start 1..1
+* onsetPeriod.start 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 
 * criticality ^short = "Criticité"
 
@@ -32,11 +33,11 @@ Description: "FRAllergyIntolerance est un profil utilisé pourdécrire une aller
 * reaction.substance ^short = "Substance responsable de la réaction"
 * reaction.substance from FRValueSetAllergySubstanceDocument (required)
 
-* reaction.manifestation ^short = "Symptômes/signes cliniques associés à l’événement"
+* reaction.manifestation ^short = "Symptômes/signes cliniques associés à l'événement"
 
 * reaction.severity ^short = "Sévérité"
 
-* reaction.note 0..1
+* reaction.note 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * reaction.note ^short = "Commentaire"
 
 * reaction.onset ^short = "Dates de début et de fin du problème"
