@@ -8,7 +8,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(immunization-eu-core)
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
 
