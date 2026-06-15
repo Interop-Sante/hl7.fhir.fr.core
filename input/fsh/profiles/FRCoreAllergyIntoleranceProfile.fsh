@@ -6,7 +6,6 @@ Title: "FR Core AllergyIntolerance Profile"
 Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(allergyIntolerance-eu-core)
 
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
