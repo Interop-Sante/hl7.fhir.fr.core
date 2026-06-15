@@ -7,23 +7,23 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1 MS
+* identifier 1..1
 * identifier ^short = "Identifiant" 
 
 // à supprimer après retour de NRISS et remplacer par * protocolApplied.series
 //* extension contains fr-immunization-type-extension named typeVaccination 1..1
-* status MS
+* status
 * status = #completed
-* occurrence[x] MS
+* occurrence[x]
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
 // équivalent CDA nullFlavor
 * occurrence[x] ^definition = "Si la date de la vaccination est inconnue, utiliser l’extension data-absent-reason précisant pourquoi elle n’est pas connue."
 * occurrence[x].extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named dataAbsentReason 0..1
-* route MS
+* route
 * route ^short = "Voie d'administration"
 * route from $jdv-immunization-route-code-cisis (required)
-* site MS
+* site
 * site ^short = "Région anatomique d'administration"
 * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis (required)
 * doseQuantity MS 
@@ -35,7 +35,7 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 * vaccineCode.coding ^slicing.rules = #open
 * vaccineCode.coding ^slicing.description = "Slice CIS et autres codifications"
 
-* vaccineCode MS
+* vaccineCode
 * vaccineCode ^short = "Vaccin. Code du produit de santé"
 // Slice CIS obligatoire
 * vaccineCode.coding contains cis 1..1
@@ -47,14 +47,14 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 * vaccineCode.coding[translation].system 1..1
 
 //Nom de marque du produit : Extension IHE
-* extension contains $ihe-ext-medication-productname named productName 1..1 MS
+* extension contains $ihe-ext-medication-productname named productName 1..1
 * extension[productName] ^short = "Nom de marque du produit." 
-* lotNumber MS
+* lotNumber
   * ^short = "Numéro de lot."
 * expirationDate MS 
   * ^short = "Date d'expiration du produit"
 
-* performer MS
+* performer
 * performer.actor.extension contains
     FRActorExtension named author 1..1 and
     FRActorExtension named executant 0..1
@@ -75,14 +75,14 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 * extension[basedOnRequestR5].valueReference only Reference (FRMedicationRequestDocument)
 * extension[basedOnRequestR5] ^short = "Prescription"
 
-* protocolApplied MS
+* protocolApplied
 // Type de vaccination
 * protocolApplied.series from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis
 // Rang de la vaccination 
-* protocolApplied.doseNumberPositiveInt MS
+* protocolApplied.doseNumberPositiveInt
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
 
-* reasonReference MS
+* reasonReference
 * reasonReference only Reference(FRConditionDocument) 
   * ^short = "Réaction observée suite au vaccin"
 
@@ -91,5 +91,5 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 /* * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
 * extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRMedicationDocument)
  */
-* note 0..1 MS
+* note 0..1
   * ^short = "Commentaire"
