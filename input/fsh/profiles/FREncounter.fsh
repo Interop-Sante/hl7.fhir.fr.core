@@ -1,8 +1,8 @@
-Profile: FREncounterDocument
+Profile: FREncounter
 Parent: FRCoreEncounterProfile
-Id: fr-encounter-document
-Title: "Encounter - FR Encounter Document"
-Description: "FREncounterDocument est un profil permettant de conserver les modalités d'une rencontre du patient. Il peut s'agir d'une rencontre passée ou à venir"
+Id: fr-encounter
+Title: "Encounter - FR Encounter"
+Description: "FREncounter est un profil permettant de conserver les modalités d'une rencontre du patient. Il peut s'agir d'une rencontre passée ou à venir"
 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
