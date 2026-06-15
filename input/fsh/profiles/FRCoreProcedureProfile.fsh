@@ -36,7 +36,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 * performed[x] ^short = "Date de l'acte"
 
-* extension contains FRProcedurePriorityExtension named priority 0..1
+* extension contains FRCoreProcedurePriorityExtension named priority 0..1
 
 // Voie d'abord : extension standard FHIR (procedure-approachBodySite)
 * extension contains
@@ -88,5 +88,5 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 // Difficulté Observation / Scores Observation
 * extension contains
-    FRProcedureDifficultyExtension named difficulte 0..1
+    FRCoreProcedureDifficultyExtension named difficulte 0..1
 * extension[difficulte] ^short = "Référence vers une Observation représentant la difficulté"
