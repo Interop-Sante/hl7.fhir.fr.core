@@ -1,11 +1,12 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAdverseEventDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAdverseEventDocument.fsh
+//
+// Profil EU Core (héritage direct) : non disponible
 Profile: FRCoreAdverseEventProfile
 Parent: AdverseEvent
 Id: fr-core-adverse-event
 Title: "FR Core AdverseEvent Profile"
 Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable prévisible lié à un médicament"
-
-// Pas de profil EU Core disponible pour cette ressource
 
 * category 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * category from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis (required)
