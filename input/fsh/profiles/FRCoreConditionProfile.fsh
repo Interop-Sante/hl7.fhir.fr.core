@@ -3,6 +3,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreConditionProfile
 Parent: Condition
 Id: fr-core-condition
