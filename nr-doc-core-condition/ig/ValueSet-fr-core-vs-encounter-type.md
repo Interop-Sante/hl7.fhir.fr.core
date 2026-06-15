@@ -71,7 +71,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
   "title" : "FR Core ValueSet Encounter type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-15T09:15:08+00:00",
+  "date" : "2026-06-15T12:03:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

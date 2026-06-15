@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FRCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation FR Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-15T09:15:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-15T12:03:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -59,7 +59,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.1.0" ]
+     fhir:version [ fhir:v "7.2.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -1779,6 +1779,24 @@
        ] ;
        fhir:name [ fhir:v "FR Core Comment Extension" ] ;
        fhir:description [ fhir:v "Ajout d'un commentaire sur un dataElement d'une ressource.\r\nAdd a comment on a dataElement  of a resource" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-condition" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Condition Profile" ] ;
+       fhir:description [ fhir:v "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
