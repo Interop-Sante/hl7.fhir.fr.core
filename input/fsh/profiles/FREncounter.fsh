@@ -10,29 +10,24 @@ Description: "FREncounter est un profil permettant de conserver les modalités d
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant de la rencontre"
 
-* class
 * class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
 * class from FRValueSetEncounterClass (extensible)
 
-* status
 * status ^short = "Statut de la rencontre (finished | planned | proposed)"
 * obeys fr-encounter-status
 
-* period
 * period ^short = "Date début et fin de la rencontre
 Si la rencontre est réalisée ou planifiée : la date est obligatoire.
 Si la rencontre est prévue non confirmée : la date est facultative."
 
-* priority
 * priority ^short = """
 Si la rencontre est prévue non confirmée et qu'une confirmation est attendue :
 code='CS', display='callback for scheduling'
 Sinon, l'élément 'priority' n'est pas fourni.
 """
 
-* subject only Reference(FRPatientINSDocument or FRPatientDocument)
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 
-* participant
 * participant ^short = "Liste des participants impliqués dans la rencontre"
 * participant.individual.extension contains
     FRActorExtension named executant 0..* and
@@ -55,7 +50,6 @@ Sinon : l'exécutant n'est pas obligatoire mais peut être renseigné"
 * location ^short = "Lieu d'exécution"
 * location.location only Reference(FRLocationDocument)
 
-* hospitalization
 * hospitalization ^short = "Informations sur l'hospitalisation associée à la rencontre"
 * hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
 * hospitalization.admitSource from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis (required)
