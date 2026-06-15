@@ -1,8 +1,8 @@
-Profile: FRAdverseEventDocument
+Profile: FRAdverseEvent
 Parent: AdverseEvent
-Id: fr-adverse-event-document
-Title: "AdverseEvent - FR adverse event Document"
-Description: "FRAdverseEventDocument permet de décrire un effet indésirable prévisible lié à un médicament"
+Id: fr-adverse-event
+Title: "AdverseEvent - FR adverse event"
+Description: "FRAdverseEvent permet de décrire un effet indésirable prévisible lié à un médicament"
 
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
