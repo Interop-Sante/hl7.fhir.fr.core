@@ -42,10 +42,10 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * bodySite ^short = "Cible"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
-* extension contains FRInterpretationExtension named interpretation 0..1
+* extension contains FRCoreInterpretationExtension named interpretation 0..1
 * extension[interpretation] ^short = "Interprétation"
 
-* extension contains FRMethodExtension named method 0..1
+* extension contains FRCoreMethodExtension named method 0..1
 * extension[method] ^short = "Méthode"
 
 // Commenté car spécifique document
