@@ -47,7 +47,8 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
   * ^short = "Numéro de lot."
   * ^short = "Date d'expiration du produit"
 
-* performer.actor.extension contains
+// Commenté car spécifique document
+// * performer.actor.extension contains
 //     FRActorExtension named author 1..1 and
 //     FRActorExtension named executant 0..1
 
