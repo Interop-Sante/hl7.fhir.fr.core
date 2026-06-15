@@ -47,18 +47,18 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
   * ^short = "Date d'expiration du produit"
 
 * performer.actor.extension contains
-    FRActorExtension named author 1..1 and
-    FRActorExtension named executant 0..1
+//     FRActorExtension named author 1..1 and
+//     FRActorExtension named executant 0..1
 
 // --- Auteur ---
-* performer.actor.extension[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
-* performer.actor.extension[author].extension[type].valueCode = #AUT
-* performer.actor.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * performer.actor.extension[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
+// * performer.actor.extension[author].extension[type].valueCode = #AUT
+// * performer.actor.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 // --- Exécutant ---
-* performer.actor.extension[executant] ^short = "Exécutant"
-* performer.actor.extension[executant].extension[type].valueCode = #PRF
-* performer.actor.extension[executant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * performer.actor.extension[executant] ^short = "Exécutant"
+// * performer.actor.extension[executant].extension[type].valueCode = #PRF
+// * performer.actor.extension[executant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
