@@ -45,7 +45,8 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 * extension contains FRMethodExtension named method 0..1
 * extension[method] ^short = "Méthode"
 
-// * requester.extension contains FRActorExtension named author 0..1 // FRActorExtension est propre à la couche documentaire (IG Document Core)
+// Commenté car spécifique document
+// * requester.extension contains FRActorExtension named author 0..1
 // * requester.extension[author] ^short = "Auteur de la demande"
 // * requester.extension[author].extension[type].valueCode = #AUT
 // * requester.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or Device or FRDeviceAuteurDocument or FROrganizationDocument or FRRelatedPersonDocument or FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
