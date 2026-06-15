@@ -87,6 +87,4 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * encounter only Reference(FREncounterDocument)
 
 // Difficulté Observation / Scores Observation
-* extension contains
-    FRCoreProcedureDifficultyExtension named difficulte 0..1
-* extension[difficulte] ^short = "Référence vers une Observation représentant la difficulté"
+* extension contains FRCoreProcedureDifficultyExtension named difficulte 0..1
