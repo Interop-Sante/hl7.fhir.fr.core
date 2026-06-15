@@ -1,12 +1,13 @@
-Profile: FRServiceRequest
+// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRServiceRequestDocument.fsh
+Profile: FRCoreServiceRequestProfile
 Parent: ServiceRequest
-Id: fr-service-request
-Title: "ServiceRequest - FR Service Request"
-Description: "FRServiceRequest profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
-// mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
+Id: fr-core-service-request
+Title: "FR Core ServiceRequest Profile"
+Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
+// Pas de profil EU Core disponible pour cette ressource
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* category 1..*
+* category 1..* // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * category ^short = "Catégorie de la demande"
 
 * identifier ^slicing.discriminator.type = #value
@@ -16,22 +17,22 @@ Description: "FRServiceRequest profil permet de porter des demandes d'examens (a
 
 * identifier contains accessionNumber 0..1
 * identifier[accessionNumber] only FRAccessionNumberIdentifierDocument
-* identifier[accessionNumber] ^short = "Accession Number de la demande d’examen d’imagerie"
+* identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
-* intent ^short = 
+* intent ^short =
 """
 Si la demande fait partie d'un plan de soins : 'INT = order'
 Si la demande est une proposition : 'PRP = proposal'
 Si la demande est un objectif à atteindre : 'GOL = plan'
 """
-* code 1..1
+* code 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 * code ^short = "Type de la demande"
-* code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'"
+* code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
 //Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
-//* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d’examen ou de suivi"
-* occurrence[x] 1..1
+//* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d'examen ou de suivi"
+* occurrence[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
-* orderDetail 0..1
+* orderDetail 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * orderDetail.coding ^short = "Résultat de la demande"
 // * supportingInfo ^short = "Résultat de la demande"
 // * supportingInfo only Reference(Observation)
@@ -42,7 +43,7 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 * extension contains FRInterpretationExtension named interpretation 0..1
 * extension[interpretation] ^short = "Interprétation"
 
-* extension contains FRMethodExtension named method 0..1 
+* extension contains FRMethodExtension named method 0..1
 * extension[method] ^short = "Méthode"
 
 // * requester.extension contains FRActorExtension named author 0..1 // FRActorExtension est propre à la couche documentaire (IG Document Core)
@@ -53,19 +54,19 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 * note ^slicing.discriminator.type = #value
 * note ^slicing.discriminator.path = "text"
 * note ^slicing.rules = #open
-* note ^short = "Justification de la demande d’examen / Finalité de l'examen"
+* note ^short = "Justification de la demande d'examen / Finalité de l'examen"
 
-// Définition des deux slices
+// Slices note obligatoires — contraintes ajoutées par IG Document Core (FHIR R5 base note : 0..*)
 * note contains
     finaliteExamen 1..1 and
     justificationDemande 1..1
 
-// Slice 1 : Finalité de l’examen
-* note[finaliteExamen].text 1..1
-* note[finaliteExamen].text ^short = "Finalité de l’examen"
-* note[finaliteExamen] ^short = "Finalité de l’examen demandé"
+// Slice 1 : Finalité de l'examen
+* note[finaliteExamen].text 1..1 // FHIR R5 base : 1..1 — cardinalité identique (Annotation.text est obligatoire)
+* note[finaliteExamen].text ^short = "Finalité de l'examen"
+* note[finaliteExamen] ^short = "Finalité de l'examen demandé"
 
 // Slice 2 : Justification de la demande
-* note[justificationDemande].text 1..1
+* note[justificationDemande].text 1..1 // FHIR R5 base : 1..1 — cardinalité identique (Annotation.text est obligatoire)
 * note[justificationDemande].text ^short = "Justification de la demande d'examen"
-* note[justificationDemande] ^short = "Justification de la demande d’examen"
+* note[justificationDemande] ^short = "Justification de la demande d'examen"
