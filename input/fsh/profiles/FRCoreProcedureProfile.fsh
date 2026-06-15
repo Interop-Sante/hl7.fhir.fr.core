@@ -3,6 +3,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreProcedureProfile
 Parent: Procedure
 Id: fr-core-procedure
