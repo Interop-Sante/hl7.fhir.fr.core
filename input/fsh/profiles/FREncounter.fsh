@@ -29,7 +29,7 @@ Sinon, l'élément 'priority' n'est pas fourni.
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 
 * participant ^short = "Liste des participants impliqués dans la rencontre"
-* participant.individual.extension contains
+// * participant.individual.extension contains // FRActorExtension est propre à la couche documentaire (IG Document Core)
 //     FRActorExtension named executant 0..* and
 //     FRActorExtension named author 0..* and
 //     FRActorExtension named informant 0..*
