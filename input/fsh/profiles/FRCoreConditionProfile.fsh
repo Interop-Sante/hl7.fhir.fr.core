@@ -6,7 +6,6 @@ Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(condition-eu-core)
 
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
