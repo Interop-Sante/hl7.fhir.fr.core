@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2026-06-15T12:05:54+00:00",
+  "date" : "2026-06-15T12:19:26+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
