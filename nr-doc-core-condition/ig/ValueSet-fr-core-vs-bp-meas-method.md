@@ -54,7 +54,7 @@ SELECT SNOMED CT code system values that describe how a blood pressure was measu
   "title" : "Blood Pressure Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-15T12:19:26+00:00",
+  "date" : "2026-06-15T12:25:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
