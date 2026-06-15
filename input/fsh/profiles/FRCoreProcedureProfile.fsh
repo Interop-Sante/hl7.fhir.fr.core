@@ -6,7 +6,6 @@ Title: "FR Core Procedure Profile"
 Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(procedure-eu-core)
 
 // * identifier 1.. // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
