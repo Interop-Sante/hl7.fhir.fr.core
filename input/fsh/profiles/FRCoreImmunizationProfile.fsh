@@ -1,14 +1,16 @@
-Profile: FRImmunization
+// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRImmunizationDocument.fsh
+Profile: FRCoreImmunizationProfile
 Parent: Immunization
-Id: fr-immunization
-Title: "Immunization - FR Immunization"
-Description: "FRImmunization permet de décrire l'administration d'un vaccin. 
+Id: fr-core-immunization
+Title: "FR Core Immunization Profile"
+Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.
  - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
 
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
+// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
+//* ^extension[$imposeProfile].valueCanonical = Canonical(immunization-eu-core)
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant" 
+* identifier ^short = "Identifiant"
 
 // à supprimer après retour de NRISS et remplacer par * protocolApplied.series
 //* extension contains fr-immunization-type-extension named typeVaccination 1..1
@@ -16,7 +18,7 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
 // équivalent CDA nullFlavor
-* occurrence[x] ^definition = "Si la date de la vaccination est inconnue, utiliser l’extension data-absent-reason précisant pourquoi elle n’est pas connue."
+* occurrence[x] ^definition = "Si la date de la vaccination est inconnue, utiliser l'extension data-absent-reason précisant pourquoi elle n'est pas connue."
 * occurrence[x].extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named dataAbsentReason 0..1
 * route ^short = "Voie d'administration"
 * route from $jdv-immunization-route-code-cisis (required)
@@ -32,17 +34,17 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 
 * vaccineCode ^short = "Vaccin. Code du produit de santé"
 // Slice CIS obligatoire
-* vaccineCode.coding contains cis 1..1
+* vaccineCode.coding contains cis 1..1 // Slice CIS obligatoire — contrainte ajoutée par IG Document Core (FHIR R5 base vaccineCode.coding : 0..*)
 * vaccineCode.coding[cis] from FRValueSetVaccineCodeCISDocument (required)
 
 // Slice (autres codifications)
 * vaccineCode.coding contains translation 0..*
 * vaccineCode.coding[translation] from FRValueSetMedicationTranslationDocument (required)
-* vaccineCode.coding[translation].system 1..1
+* vaccineCode.coding[translation].system 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base Coding.system : 0..1)
 
 //Nom de marque du produit : Extension IHE
-* extension contains $ihe-ext-medication-productname named productName 1..1
-* extension[productName] ^short = "Nom de marque du produit." 
+* extension contains $ihe-ext-medication-productname named productName 1..1 // Nom de marque requis — contrainte ajoutée par IG Document Core
+* extension[productName] ^short = "Nom de marque du produit."
   * ^short = "Numéro de lot."
   * ^short = "Date d'expiration du produit"
 
@@ -62,22 +64,22 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
-* extension[basedOnRequestR5].valueReference 1..1
+* extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
 * extension[basedOnRequestR5].valueReference only Reference (FRMedicationRequestDocument)
 * extension[basedOnRequestR5] ^short = "Prescription"
 
 // Type de vaccination
 * protocolApplied.series from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis
-// Rang de la vaccination 
+// Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
 
-* reasonReference only Reference(FRConditionDocument) 
+* reasonReference only Reference(FRConditionDocument)
   * ^short = "Réaction observée suite au vaccin"
 
 // Dose d'antigène
-// Problème dataType : codeableReference 
+// Problème dataType : codeableReference
 /* * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
 * extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRMedicationDocument)
  */
-* note 0..1
+* note 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
   * ^short = "Commentaire"
