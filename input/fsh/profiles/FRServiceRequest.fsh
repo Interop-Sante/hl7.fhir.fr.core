@@ -1,8 +1,8 @@
-Profile: FRServiceRequestDocument
+Profile: FRServiceRequest
 Parent: ServiceRequest
-Id: fr-service-request-document
-Title: "ServiceRequest - FR Service Request Document"
-Description: "FRServiceRequestDocument profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
+Id: fr-service-request
+Title: "ServiceRequest - FR Service Request"
+Description: "FRServiceRequest profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
