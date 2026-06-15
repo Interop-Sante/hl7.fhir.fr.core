@@ -45,32 +45,32 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 * performer.actor.extension contains
-    FRActorExtension named Intervenant 0..* and
-    FRActorExtension named Informateur 0..* and
-    FRActorExtension named Participant 0..* and
-    FRActorExtension named Dispositif 0..*
+//     FRActorExtension named Intervenant 0..* and
+//     FRActorExtension named Informateur 0..* and
+//     FRActorExtension named Participant 0..* and
+//     FRActorExtension named Dispositif 0..*
 
 //performer
-* performer.actor.extension[Intervenant] ^short = "Intervenant"
-* performer.actor.extension[Intervenant].extension[type].valueCode = #PRF
-* performer.actor.extension[Intervenant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * performer.actor.extension[Intervenant] ^short = "Intervenant"
+// * performer.actor.extension[Intervenant].extension[type].valueCode = #PRF
+// * performer.actor.extension[Intervenant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 //informant
-* performer.actor.extension[Informateur] ^short = "Informateur"
-* performer.actor.extension[Informateur].extension[type].valueCode = #INF
-* performer.actor.extension[Informateur].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
+// * performer.actor.extension[Informateur] ^short = "Informateur"
+// * performer.actor.extension[Informateur].extension[type].valueCode = #INF
+// * performer.actor.extension[Informateur].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 //participant
-* performer.actor.extension[Participant] ^short = "Participant"
-* performer.actor.extension[Participant].extension[type].valueCode = #PART
-* performer.actor.extension[Participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * performer.actor.extension[Participant] ^short = "Participant"
+// * performer.actor.extension[Participant].extension[type].valueCode = #PART
+// * performer.actor.extension[Participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 //dispositif médical
-* performer.actor.extension[Dispositif] ^short = "Dispositif automatique utilisé lors de l'acte"
-* performer.actor.extension[Dispositif].extension[type].valueCode = #PART
-* performer.actor.extension[Dispositif].extension[actor].valueReference only Reference(Device)
+// * performer.actor.extension[Dispositif] ^short = "Dispositif automatique utilisé lors de l'acte"
+// * performer.actor.extension[Dispositif].extension[type].valueCode = #PART
+// * performer.actor.extension[Dispositif].extension[actor].valueReference only Reference(Device)
 
-* recorder.extension contains FRActorExtension named author 0..1
+// * recorder.extension contains FRActorExtension named author 0..1 // FRActorExtension est propre à la couche documentaire (IG Document Core)
 * recorder ^short = "Auteur"
-* recorder.extension[author].extension[type].valueCode = #AUT
-* recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * recorder.extension[author].extension[type].valueCode = #AUT
+// * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 //Réference interne à un DM (REFR)
 * usedReference ^short = "Réference interne à un DM"
