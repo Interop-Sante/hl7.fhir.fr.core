@@ -3,6 +3,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreAllergyIntoleranceProfile
 Parent: AllergyIntolerance
 Id: fr-core-allergy-intolerance
