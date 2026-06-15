@@ -13,7 +13,6 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
 * status ^short = "Statut"
 * status = #completed
 // Dosages progressifs, fractionnés 
-* dosageInstruction
   * sequence
   * timing
     * ^short = "Durée du traitement et fréquence d'administration."
@@ -29,41 +28,36 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
       * when
       * offset
   // Dosages conditionnels
-  * asNeeded[x] MS 
+  * asNeeded[x]
   * route
   * route from FRValueSetEDQMDocument
   * route ^short = "Voie d'administration"
   * site
   * site ^short = "Région anatomique d'administration"
   * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis
-  * doseAndRate.doseRange MS 
+  * doseAndRate.doseRange
   * doseAndRate.doseRange ^short = "Dose à administrer"
     * low 1..1
     * high 1..1
-  * doseAndRate.rateRange MS 
+  * doseAndRate.rateRange
   * doseAndRate.rateRange ^short = "Rythme d'administration"
     * low 1..1
     * high 1..1
-  * maxDosePerPeriod MS 
+  * maxDosePerPeriod
   * maxDosePerPeriod ^short = "Dose maximale"
   * maxDosePerPeriod.numerator 1..1
   * maxDosePerPeriod.denominator 1..1
 
-* dispenseRequest.numberOfRepeatsAllowed
   * ^short = "Nombre de renouvellement(s) possible(s)"
-* medication[x]
 * medication[x] only CodeableConcept or Reference(FRMedicationDocument)
   * ^short = "Produit de santé"
-* subject only Reference(FRPatientDocument or FRPatientINSDocument)
+* subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 * encounter only Reference(FREncounterCareDocument)
 // --- Prescripteur : Auteur du document Prescription ---
-* requester
 * requester ^short = "Prescripteur"
 * requester only Reference(FRPractitionerRoleDocument or FRPractitionerDocument)
 
-* authoredOn
 // Motif du traitement
-* reasonReference
   * ^short = "Motif du traitement"
 * reasonReference only Reference(FRConditionDocument or Observation)
 
@@ -79,19 +73,16 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
 * dosageInstruction.additionalInstruction ^slicing.rules = #open
  
 * dosageInstruction.additionalInstruction contains
-    instructionsPatient 0..1 MS and
+    instructionsPatient 0..1 and
     precondition 0..1
  
-* dosageInstruction.additionalInstruction[instructionsPatient]
   * ^short = "Instruction au patient"
   * coding 1..1
   * coding = $v3-ActCode#PINSTRUCT "Patient Medication Instructions"
  
-* dosageInstruction.additionalInstruction[precondition]
   * ^short = "Condition préalable à l'utilisation du médicament"
   * text = "Permet de décrire les conditions préalables à l'utilisation du médicament."
 
-* dispenseRequest
   * extension contains $medicationRequest-dispenseRequest-dispenserInstruction-r5 named dispenserInstructionR5 0..1
   * extension[dispenserInstructionR5].valueAnnotation 1..1
     * ^short = "instructions au dispensateur"
@@ -99,7 +90,7 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
     * ^short = "Quantité à dispenser" 
   * validityPeriod
     * ^short = "Période de validité"
-  * numberOfRepeatsAllowed MS 
+  * numberOfRepeatsAllowed
     * ^short = "Nombre de renouvellement(s) possible(s)"
 * substitution 1..1
   * allowed[x]

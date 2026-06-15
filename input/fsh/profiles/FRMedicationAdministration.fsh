@@ -10,13 +10,11 @@ Description: "
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
-* category
   * ^short = "Acte ou situation"
 * status 1..1
   * ^short = "Statut"
 * status = #completed
 * effective[x] only Period
-* effectivePeriod
   * ^short = "Durée du traitement"
 
 // R5 : occurenceTiming
@@ -25,7 +23,6 @@ Description: "
 * extension[occurenceR5].valueTiming 1..1
 * extension[occurenceR5] ^short = "Fréquence d'administration"
 
-* dosage
   // Dosages progressifs ou fractionnés
   * extension contains FRMedicationAdministrationSequenceExtension named sequence 0..*
   // Dosages conditionnels
@@ -40,22 +37,16 @@ Description: "
   * dose
     * ^short = "Dose à administrer"
 
-* dosage.rate[x]
-* dosage.rateRatio
   * ^short = "doseMaximale"
-* dosage.rateQuantity
   * ^short = "rythme d'administration"
 
 // Médicament
-* medication[x]
 * medication[x] only Reference(FRMedicationDocument)
 
 // Instruction au patient
-* dosage.text
   * ^short = "Instruction au patient"
 
 // Motif du traitement
-* reasonReference
   * ^short = "Motif du traitement"
 * reasonReference only Reference(FRConditionDocument or Observation)
 

@@ -13,22 +13,18 @@ Description: "
 * basedOn only Reference(FRMedicationRequestDocument)
 * basedOn ^short = "Prescription"
 * partOf only Reference(FRMedicationAdministrationDocument)
-* category
   * ^short = "Acte ou situation"
-* status
   * ^short = "Statut"
 * status = #completed
 * effective[x] only Period
-* effectivePeriod
   * ^short = "Durée du traitement"
 
-* dosage
   * timing
   * timing ^short = "Fréquence d'administration"
   // Dosages progressifs, fractionnés 
   * sequence
   // Dosages conditionnels
-  * asNeeded[x] MS 
+  * asNeeded[x]
   * route
   * route from FRValueSetEDQMDocument
   * route ^short = "Voie d'administration"
@@ -37,28 +33,19 @@ Description: "
   * site ^short = "Région anatomique d'administration"
   * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis
   
-* dosage.doseAndRate
-* dosage.doseAndRate.doseQuantity
   * ^short = "Dose déclarée"
 
-* dosage.maxDosePerPeriod
-* dosage.maxDosePerPeriod
   * ^short = "dose maximale"
-* dosage.doseAndRate.rateQuantity
   * ^short = "rythme d'administration"
 //Instructions au patient
 // si codé : 
-* dosage.additionalInstruction MS 
   * ^short = "Instructions au patient"
   // si non codé : 
-* dosage.additionalInstruction.text MS 
   * ^short = "Instruction au patient"
 // Médicament
-* medication[x]
 * medication[x] only CodeableConcept or Reference(FRMedicationDocument)
 
 // Motif du traitement
-* reasonReference
   * ^short = "Motif du traitement"
 * reasonReference only Reference(FRConditionDocument or Observation)
 
