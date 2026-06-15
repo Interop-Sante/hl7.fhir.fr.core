@@ -1,4 +1,8 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRImmunizationDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRImmunizationDocument.fsh
+//
+// Profil EU Core (héritage direct) :
+//   https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
 Profile: FRCoreImmunizationProfile
 Parent: Immunization
 Id: fr-core-immunization
@@ -7,7 +11,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
  - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
 
-// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
 
