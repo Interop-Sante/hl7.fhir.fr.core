@@ -65,11 +65,7 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
     justificationDemande 1..1
 
 // Slice 1 : Finalité de l'examen
-* note[finaliteExamen].text 1..1 // FHIR R5 base : 1..1 — cardinalité identique (Annotation.text est obligatoire)
-* note[finaliteExamen].text ^short = "Finalité de l'examen"
 * note[finaliteExamen] ^short = "Finalité de l'examen demandé"
 
 // Slice 2 : Justification de la demande
-* note[justificationDemande].text 1..1 // FHIR R5 base : 1..1 — cardinalité identique (Annotation.text est obligatoire)
-* note[justificationDemande].text ^short = "Justification de la demande d'examen"
 * note[justificationDemande] ^short = "Justification de la demande d'examen"
