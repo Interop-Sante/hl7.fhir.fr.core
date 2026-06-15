@@ -1,9 +1,9 @@
 // Une étude devra être faite dans un second temps pour aligner ces profils à ceux d'InteropSanté
-Profile: FRMedicationRequestDocument
+Profile: FRMedicationRequest
 Parent: MedicationRequest
-Id: fr-medication-request-document
-Title: "MedicationRequest - FR Medication Request Document"
-Description: "FRMedicationRequestDocument permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d'administration."
+Id: fr-medication-request
+Title: "MedicationRequest - FR Medication Request"
+Description: "FRMedicationRequest permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d'administration."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * intent = #order
@@ -72,7 +72,7 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
 
 * basedOn 0..1 MS
   * ^short = "Référence à un item du plan de traitement. Une copie du plan de traitement médicamenteux."
-* basedOn only Reference(FRMedicationRequestDocument)
+* basedOn only Reference(FRMedicationRequest)
 
 * dosageInstruction.additionalInstruction ^slicing.discriminator.type = #pattern
 * dosageInstruction.additionalInstruction ^slicing.discriminator.path = "$this"

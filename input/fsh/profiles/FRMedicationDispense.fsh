@@ -1,9 +1,9 @@
 // Une étude devra être faite dans un second temps pour aligner ces profils à ceux d'InteropSanté
-Profile: FRMedicationDispenseDocument
+Profile: FRMedicationDispense
 Parent: MedicationDispense
-Id: fr-medication-dispense-document
-Title: "MedicationDispense - FR Medication Dispense Document"
-Description: "FRMedicationDispenseDocument permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
+Id: fr-medication-dispense
+Title: "MedicationDispense - FR Medication Dispense"
+Description: "FRMedicationDispense permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * identifier 1..1 MS

@@ -1,9 +1,9 @@
-Profile: FRMedicationAdministrationDocument
+Profile: FRMedicationAdministration
 Parent: MedicationAdministration
-Id: fr-medication-administration-document
-Title: "MedicationAdministration - FR Medication Administration Document"
+Id: fr-medication-administration
+Title: "MedicationAdministration - FR Medication Administration"
 Description: "
- - FRMedicationAdministrationDocument permert de décrire les modalités d'administration d'un médicament au patient.
+ - FRMedicationAdministration permert de décrire les modalités d'administration d'un médicament au patient.
  - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.
  - Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit."
 

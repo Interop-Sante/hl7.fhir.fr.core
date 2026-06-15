@@ -1,9 +1,9 @@
-Profile: FRMedicationStatementDocument
+Profile: FRMedicationStatement
 Parent: MedicationStatement
-Id: fr-medication-statement-document
-Title: "MedicationStatement - FR Medication Statement Document"
+Id: fr-medication-statement
+Title: "MedicationStatement - FR Medication Statement"
 Description: "
- - FRMedicationStatementDocument permet de décrire les modalités d'administration d'un médicament au patient.
+ - FRMedicationStatement permet de décrire les modalités d'administration d'un médicament au patient.
  - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.
  - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement."
 

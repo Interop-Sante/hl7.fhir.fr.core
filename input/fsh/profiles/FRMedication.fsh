@@ -1,8 +1,8 @@
-Profile: FRMedicationDocument
+Profile: FRMedication
 Parent: Medication
-Id: fr-medication-document
-Title: "Medication - FR Medication Document"
-Description: "FRMedicationDocument permet de décrire un médicament ou un vaccin."
+Id: fr-medication
+Title: "Medication - FR Medication"
+Description: "FRMedication permet de décrire un médicament ou un vaccin."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
@@ -34,7 +34,7 @@ Description: "FRMedicationDocument permet de décrire un médicament ou un vacci
   * itemCodeableConcept.text MS
   * itemCodeableConcept.text ^short = "Nom de la substance"
   * itemReference MS
-  * itemReference only Reference(FRMedicationDocument)
+  * itemReference only Reference(FRMedication)
 
   * strength MS
   * strength ^short = "Quantité de substance présente dans le médicament"
