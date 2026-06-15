@@ -1,11 +1,13 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRConditionDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRConditionDocument.fsh
+//
+// Profil EU Core (héritage direct) :
+//   https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
 Profile: FRCoreConditionProfile
 Parent: Condition
 Id: fr-core-condition
 Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
-
-// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
 
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
