@@ -1,11 +1,12 @@
-Profile: FRProcedure
+// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRProcedureDocument.fsh
+Profile: FRCoreProcedureProfile
 Parent: Procedure
-Id: fr-procedure
-Title: "Procedure - FR Procedure"
-Description: "FRProcedure est un profil utilisé pour décrire un acte planifié ou réalisé."
+Id: fr-core-procedure
+Title: "FR Core Procedure Profile"
+Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
 
-// mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
+// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
+//* ^extension[$imposeProfile].valueCanonical = Canonical(procedure-eu-core)
 
 // * identifier 1.. // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
@@ -15,7 +16,7 @@ Description: "FRProcedure est un profil utilisé pour décrire un acte planifié
 
 * status ^short = "Statut de l'acte"
 
-* code 1..1
+* code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "Code d'acte"
 * code from FRValueSetProcedureCodeDocument (preferred)
 * code ^comment = """
