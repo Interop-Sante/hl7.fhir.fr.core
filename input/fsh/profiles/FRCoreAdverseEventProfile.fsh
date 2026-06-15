@@ -2,6 +2,7 @@
 //   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAdverseEventDocument.fsh
 //
 // Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreAdverseEventProfile
 Parent: AdverseEvent
 Id: fr-core-adverse-event
