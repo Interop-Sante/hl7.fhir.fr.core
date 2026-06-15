@@ -44,7 +44,8 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
-* performer.actor.extension contains
+// Commenté car spécifique document
+// * performer.actor.extension contains
 //     FRActorExtension named Intervenant 0..* and
 //     FRActorExtension named Informateur 0..* and
 //     FRActorExtension named Participant 0..* and
@@ -67,7 +68,8 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 // * performer.actor.extension[Dispositif].extension[type].valueCode = #PART
 // * performer.actor.extension[Dispositif].extension[actor].valueReference only Reference(Device)
 
-// * recorder.extension contains FRActorExtension named author 0..1 // FRActorExtension est propre à la couche documentaire (IG Document Core)
+// Commenté car spécifique document
+// * recorder.extension contains FRActorExtension named author 0..1
 * recorder ^short = "Auteur"
 // * recorder.extension[author].extension[type].valueCode = #AUT
 // * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
