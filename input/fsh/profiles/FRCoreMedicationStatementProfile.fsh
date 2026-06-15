@@ -1,4 +1,8 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationStatementDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationStatementDocument.fsh
+//
+// Profil EU Core (héritage direct) :
+//   https://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core
 Profile: FRCoreMedicationStatementProfile
 Parent: MedicationStatement
 Id: fr-core-medication-statement
@@ -8,7 +12,6 @@ Description: "
  - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.
  - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement."
 
-// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
 * basedOn only Reference(FRMedicationRequestDocument)

@@ -1,4 +1,7 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationAdministrationDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationAdministrationDocument.fsh
+//
+// Profil EU Core (héritage direct) : non disponible
 Profile: FRCoreMedicationAdministrationProfile
 Parent: MedicationAdministration
 Id: fr-core-medication-administration
@@ -8,7 +11,6 @@ Description: "
  - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.
  - Si le traitement est en attente d'administration c'est-à dire qu'il a été prescrit."
 
-// Pas de profil EU Core disponible pour cette ressource
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
   * ^short = "Acte ou situation"

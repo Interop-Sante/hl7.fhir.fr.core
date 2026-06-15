@@ -1,12 +1,15 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationRequestDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationRequestDocument.fsh
 // Une étude devra être faite dans un second temps pour aligner ces profils à ceux d'InteropSanté
+//
+// Profil EU Core (héritage direct) :
+//   https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
 Profile: FRCoreMedicationRequestProfile
 Parent: MedicationRequest
 Id: fr-core-medication-request
 Title: "FR Core MedicationRequest Profile"
 Description: "FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."
 
-// Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
 * intent = #order
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant prescription"

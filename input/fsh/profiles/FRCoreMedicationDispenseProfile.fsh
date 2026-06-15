@@ -1,12 +1,14 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationDispenseDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationDispenseDocument.fsh
 // Une étude devra être faite dans un second temps pour aligner ces profils à ceux d'InteropSanté
+//
+// Profil EU Core (héritage direct) : non disponible
 Profile: FRCoreMedicationDispenseProfile
 Parent: MedicationDispense
 Id: fr-core-medication-dispense
 Title: "FR Core MedicationDispense Profile"
 Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
 
-// Pas de profil EU Core disponible pour cette ressource
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant"
 * type 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
