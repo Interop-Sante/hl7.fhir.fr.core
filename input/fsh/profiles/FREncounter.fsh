@@ -7,23 +7,23 @@ Description: "FREncounter est un profil permettant de conserver les modalités d
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..* MS
+* identifier 1..*
 * identifier ^short = "Identifiant de la rencontre"
 
-* class MS
+* class
 * class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
 * class from FRValueSetEncounterClass (extensible)
 
-* status MS
+* status
 * status ^short = "Statut de la rencontre (finished | planned | proposed)"
 * obeys fr-encounter-status
 
-* period MS
+* period
 * period ^short = "Date début et fin de la rencontre
 Si la rencontre est réalisée ou planifiée : la date est obligatoire.
 Si la rencontre est prévue non confirmée : la date est facultative."
 
-* priority MS
+* priority
 * priority ^short = """
 Si la rencontre est prévue non confirmée et qu'une confirmation est attendue :
 code='CS', display='callback for scheduling'
@@ -32,7 +32,7 @@ Sinon, l'élément 'priority' n'est pas fourni.
 
 * subject only Reference(FRPatientINSDocument or FRPatientDocument)
 
-* participant MS
+* participant
 * participant ^short = "Liste des participants impliqués dans la rencontre"
 * participant.individual.extension contains
     FRActorExtension named executant 0..* and
@@ -51,11 +51,11 @@ Sinon : l'exécutant n'est pas obligatoire mais peut être renseigné"
 * participant.individual.extension[informant] ^short = "Informant"
 * participant.individual.extension[informant].extension[type].valueCode = #INF
 
-* location 0..1 MS
+* location 0..1
 * location ^short = "Lieu d'exécution"
 * location.location only Reference(FRLocationDocument)
 
-* hospitalization MS
+* hospitalization
 * hospitalization ^short = "Informations sur l'hospitalisation associée à la rencontre"
 * hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
 * hospitalization.admitSource from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis (required)
