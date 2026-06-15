@@ -1,6 +1,5 @@
 // Source doc-core : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
 // Pas de profil EU Core disponible pour cette ressource
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
 Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
