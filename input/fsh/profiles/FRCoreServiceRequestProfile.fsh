@@ -5,7 +5,6 @@ Id: fr-core-service-request
 Title: "FR Core ServiceRequest Profile"
 Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
 // Pas de profil EU Core disponible pour cette ressource
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
 
 * category 1..* // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * category ^short = "Catégorie de la demande"
