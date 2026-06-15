@@ -1,8 +1,8 @@
-Profile: FRBodyStructureDocument
+Profile: FRBodyStructure
 Parent: BodyStructure
-Id: fr-body-structure-document
-Title: "BodyStructure - FR Body Structure Document"
-Description: "FRBodyStructureDocument permet de préciser les modificateurs topographiques associés à une localisation anatomique."
+Id: fr-body-structure
+Title: "BodyStructure - FR Body Structure"
+Description: "FRBodyStructure permet de préciser les modificateurs topographiques associés à une localisation anatomique."
 
 * locationQualifier ^short = "Modificateurs topographiques"
 * locationQualifier from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis (required)
