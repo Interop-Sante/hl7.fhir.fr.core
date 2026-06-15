@@ -18,7 +18,7 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * identifier ^slicing.ordered = false
 
 * identifier contains accessionNumber 0..1
-* identifier[accessionNumber] only FRAccessionNumberIdentifierDocument
+* identifier[accessionNumber] only FRCoreAccessionNumberIdentifierProfile
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
 // Commenté car spécifique document (mapping sémantique ValueSet CDA → FHIR)
