@@ -22,11 +22,9 @@ Description: "FRAdverseEvent permet de décrire un effet indésirable prévisibl
 * suspectEntity 1..
 
 * suspectEntity ^short = "Agent soupçonné d’être à l’origine de l’événement indésirable"
-* suspectEntity.instance
 * suspectEntity.instance only Reference(FRMedicationAdministrationDocument)
 * suspectEntity.instance ^short = "Médicament, substance incriminée, posologie"
 
-* resultingCondition
 * resultingCondition only Reference(FRConditionDocument)
 * resultingCondition ^short = "Réaction observée"
 
@@ -41,6 +39,5 @@ Description: "FRAdverseEvent permet de décrire un effet indésirable prévisibl
 * seriousness from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis (required)
 * seriousness ^short = "Gravité de l'effet indésirable"
 
-* outcome
 * outcome from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis (required)
 * outcome ^short = "Évolution de l'effet indésirable"
