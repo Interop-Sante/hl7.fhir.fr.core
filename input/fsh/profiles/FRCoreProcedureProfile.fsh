@@ -73,7 +73,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 // Commenté car spécifique document
 // * recorder.extension contains FRActorExtension named author 0..1
-* recorder ^short = "Auteur"
+// * recorder ^short = "Auteur"
 // * recorder.extension[author].extension[type].valueCode = #AUT
 // * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
