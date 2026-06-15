@@ -33,15 +33,15 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * subject ^short = "Patient concerné"
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 
-* onset[x] 1..1
+* onset[x] 1..1 // À valider : suppression de la contrainte
 * onsetDateTime ^short = "Date de début du problème"
 
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
 
-* recorder.extension contains FRActorExtension named author 0..1
-* recorder.extension[author] ^short = "Auteur du problème"
-* recorder.extension[author].extension[type].valueCode = #AUT
-* recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * recorder.extension contains FRActorExtension named author 0..1 // FRActorExtension est propre à la couche documentaire (IG Document Core)
+// * recorder.extension[author] ^short = "Auteur du problème"
+// * recorder.extension[author].extension[type].valueCode = #AUT
+// * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
