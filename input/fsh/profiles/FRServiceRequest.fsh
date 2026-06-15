@@ -18,38 +18,38 @@ Description: "FRServiceRequest profil permet de porter des demandes d'examens (a
 * identifier[accessionNumber] only FRAccessionNumberIdentifierDocument
 * identifier[accessionNumber] ^short = "Accession Number de la demande d’examen d’imagerie"
 
-* intent MS
+* intent
 * intent ^short = 
 """
 Si la demande fait partie d'un plan de soins : 'INT = order'
 Si la demande est une proposition : 'PRP = proposal'
 Si la demande est un objectif à atteindre : 'GOL = plan'
 """
-* code 1..1 MS
+* code 1..1
 * code ^short = "Type de la demande"
 * code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'"
 //Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
 //* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d’examen ou de suivi"
-* occurrence[x] 1..1 MS
+* occurrence[x] 1..1
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
-* orderDetail 0..1 MS
+* orderDetail 0..1
 * orderDetail.coding ^short = "Résultat de la demande"
 // * supportingInfo ^short = "Résultat de la demande"
 // * supportingInfo only Reference(Observation)
 
-* bodySite MS
+* bodySite
 * bodySite ^short = "Cible"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 * extension contains FRInterpretationExtension named interpretation 0..1
-* extension[interpretation] MS
+* extension[interpretation]
 * extension[interpretation] ^short = "Interprétation"
 
 * extension contains FRMethodExtension named method 0..1 
-* extension[method] MS
+* extension[method]
 * extension[method] ^short = "Méthode"
 
-* requester MS
+* requester
 * requester.extension contains FRActorExtension named author 0..1
 * requester.extension[author] ^short = "Auteur de la demande"
 * requester.extension[author].extension[type].valueCode = #AUT
@@ -63,7 +63,7 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 // Définition des deux slices
 * note contains
     finaliteExamen 1..1 MS and
-    justificationDemande 1..1 MS
+    justificationDemande 1..1
 
 // Slice 1 : Finalité de l’examen
 * note[finaliteExamen].text 1..1
