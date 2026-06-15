@@ -29,8 +29,7 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 // Si la demande est un objectif à atteindre : 'GOL = plan'
 // """
 * code 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
-* code ^short = "Type de la demande"
-* code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
+* code ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
 //Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
 //* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d'examen ou de suivi"
 * occurrence[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
