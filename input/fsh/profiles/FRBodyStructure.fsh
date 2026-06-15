@@ -1,3 +1,4 @@
+// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRBodyStructureDocument.fsh
 Profile: FRBodyStructure
 Parent: BodyStructure
 Id: fr-body-structure
