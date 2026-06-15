@@ -3,6 +3,7 @@
 //
 // Profil EU Core (héritage direct) :
 //   https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreImmunizationProfile
 Parent: Immunization
 Id: fr-core-immunization
