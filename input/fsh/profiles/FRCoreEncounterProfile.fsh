@@ -3,6 +3,7 @@
 //   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
 //
 // Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
