@@ -7,48 +7,48 @@ Description: "FRAllergyIntolerance est un profil utilisé pourdécrire une aller
 // mettre le bon canonical à partir de HL7 Europe Base and Core FHIR IG
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 
-* identifier 1..* MS
+* identifier 1..*
 * identifier ^short = "Identifiant"
-* type MS
+* type
 * type ^short = "Type d'allergie ou d'intolérance"
 * type from FRValueSetAllergyInoleranceTypeDocument (required)
-* code 1..1 MS
+* code 1..1
 * code ^short = "agent allergique"
 * code from FRValueSetAllergyCodeDocument (extensible)
-* onset[x] MS
+* onset[x]
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
-* onsetPeriod MS
+* onsetPeriod
 * onsetPeriod ^short = "Dates de début et de fin"
 * onsetPeriod.start 1..1
 
-* criticality MS
+* criticality
 * criticality ^short = "Criticité"
 
-* verificationStatus MS
+* verificationStatus
 * verificationStatus ^short = "Certitude"
 
-* clinicalStatus MS
+* clinicalStatus
 * clinicalStatus ^short = "Statut clinique"
 
-* patient MS
+* patient
 * patient ^short = "Patient concerné par l'allergie ou intolérance"
 * patient only Reference(FRPatientINSDocument or FRPatientDocument)
 
-* reaction MS
+* reaction
 * reaction ^short = "Réaction observée"
 
-* reaction.substance MS
+* reaction.substance
 * reaction.substance ^short = "Substance responsable de la réaction"
 * reaction.substance from FRValueSetAllergySubstanceDocument (required)
 
-* reaction.manifestation MS
+* reaction.manifestation
 * reaction.manifestation ^short = "Symptômes/signes cliniques associés à l’événement"
 
-* reaction.severity MS
+* reaction.severity
 * reaction.severity ^short = "Sévérité"
 
-* reaction.note 0..1 MS
+* reaction.note 0..1
 * reaction.note ^short = "Commentaire"
 
-* reaction.onset MS
+* reaction.onset
 * reaction.onset ^short = "Dates de début et de fin du problème"
