@@ -1,5 +1,8 @@
-// Source doc-core : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
 // Pas de profil EU Core disponible pour cette ressource
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
+//
+// Profil EU Core (héritage direct) : non disponible
 Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
