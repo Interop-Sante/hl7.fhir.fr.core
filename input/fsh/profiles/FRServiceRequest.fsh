@@ -18,7 +18,6 @@ Description: "FRServiceRequest profil permet de porter des demandes d'examens (a
 * identifier[accessionNumber] only FRAccessionNumberIdentifierDocument
 * identifier[accessionNumber] ^short = "Accession Number de la demande d’examen d’imagerie"
 
-* intent
 * intent ^short = 
 """
 Si la demande fait partie d'un plan de soins : 'INT = order'
@@ -37,23 +36,19 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 // * supportingInfo ^short = "Résultat de la demande"
 // * supportingInfo only Reference(Observation)
 
-* bodySite
 * bodySite ^short = "Cible"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 * extension contains FRInterpretationExtension named interpretation 0..1
-* extension[interpretation]
 * extension[interpretation] ^short = "Interprétation"
 
 * extension contains FRMethodExtension named method 0..1 
-* extension[method]
 * extension[method] ^short = "Méthode"
 
-* requester
 * requester.extension contains FRActorExtension named author 0..1
 * requester.extension[author] ^short = "Auteur de la demande"
 * requester.extension[author].extension[type].valueCode = #AUT
-* requester.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or Device or FRDeviceAuteurDocument or FROrganizationDocument or FRRelatedPersonDocument or FRPatientINSDocument or FRPatientDocument)
+* requester.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or Device or FRDeviceAuteurDocument or FROrganizationDocument or FRRelatedPersonDocument or FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 
 * note ^slicing.discriminator.type = #value
 * note ^slicing.discriminator.path = "text"
@@ -62,7 +57,7 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 
 // Définition des deux slices
 * note contains
-    finaliteExamen 1..1 MS and
+    finaliteExamen 1..1 and
     justificationDemande 1..1
 
 // Slice 1 : Finalité de l’examen
