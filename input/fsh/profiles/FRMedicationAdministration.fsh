@@ -8,7 +8,7 @@ Description: "
  - Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..*
+// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
 * category
   * ^short = "Acte ou situation"

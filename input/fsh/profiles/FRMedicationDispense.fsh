@@ -6,7 +6,7 @@ Title: "MedicationDispense - FR Medication Dispense"
 Description: "FRMedicationDispense permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1
+// * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant"
 * type 1..1
   * ^short = "Complétude de la dispensation" 

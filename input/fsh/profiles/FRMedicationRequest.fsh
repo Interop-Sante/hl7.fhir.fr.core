@@ -7,7 +7,7 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * intent = #order
-* identifier 1..*
+// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant prescription"
 * status 1..1
 * status ^short = "Statut"

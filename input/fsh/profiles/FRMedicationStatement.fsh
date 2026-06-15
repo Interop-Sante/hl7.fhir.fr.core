@@ -8,7 +8,7 @@ Description: "
  - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..*
+// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
 * basedOn only Reference(FRMedicationRequestDocument)
 * basedOn ^short = "Prescription"
