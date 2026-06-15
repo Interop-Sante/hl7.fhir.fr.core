@@ -2,6 +2,7 @@
 //   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRServiceRequestDocument.fsh
 //
 // Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreServiceRequestProfile
 Parent: ServiceRequest
 Id: fr-core-service-request
