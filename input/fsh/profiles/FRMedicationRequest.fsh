@@ -7,70 +7,70 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * intent = #order
-* identifier 1..* MS
+* identifier 1..*
 * identifier ^short = "Identifiant prescription"
-* status 1..1 MS
+* status 1..1
 * status ^short = "Statut"
 * status = #completed
 // Dosages progressifs, fractionnés 
 * dosageInstruction
-  * sequence MS
-  * timing MS
+  * sequence
+  * timing
     * ^short = "Durée du traitement et fréquence d'administration."
-    * repeat MS
+    * repeat
       * boundsPeriod ^short = "Durée du traitement"
         * start ^short = "Date de début du traitement"
         * end ^short = "Date de fin du traitement"
     //Fréquence d'administration
-      * frequency MS
+      * frequency
       // @value , @unit 
-      * period MS
-      * periodUnit MS
-      * when MS
-      * offset MS
+      * period
+      * periodUnit
+      * when
+      * offset
   // Dosages conditionnels
   * asNeeded[x] MS 
-  * route MS
+  * route
   * route from FRValueSetEDQMDocument
   * route ^short = "Voie d'administration"
-  * site MS
+  * site
   * site ^short = "Région anatomique d'administration"
   * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis
   * doseAndRate.doseRange MS 
   * doseAndRate.doseRange ^short = "Dose à administrer"
-    * low 1..1 MS
-    * high 1..1 MS
+    * low 1..1
+    * high 1..1
   * doseAndRate.rateRange MS 
   * doseAndRate.rateRange ^short = "Rythme d'administration"
-    * low 1..1 MS
-    * high 1..1 MS
+    * low 1..1
+    * high 1..1
   * maxDosePerPeriod MS 
   * maxDosePerPeriod ^short = "Dose maximale"
-  * maxDosePerPeriod.numerator 1..1 MS
-  * maxDosePerPeriod.denominator 1..1 MS
+  * maxDosePerPeriod.numerator 1..1
+  * maxDosePerPeriod.denominator 1..1
 
-* dispenseRequest.numberOfRepeatsAllowed MS
+* dispenseRequest.numberOfRepeatsAllowed
   * ^short = "Nombre de renouvellement(s) possible(s)"
-* medication[x] MS
+* medication[x]
 * medication[x] only CodeableConcept or Reference(FRMedicationDocument)
   * ^short = "Produit de santé"
 * subject only Reference(FRPatientDocument or FRPatientINSDocument)
 * encounter only Reference(FREncounterCareDocument)
 // --- Prescripteur : Auteur du document Prescription ---
-* requester MS
+* requester
 * requester ^short = "Prescripteur"
 * requester only Reference(FRPractitionerRoleDocument or FRPractitionerDocument)
 
-* authoredOn MS
+* authoredOn
 // Motif du traitement
-* reasonReference MS
+* reasonReference
   * ^short = "Motif du traitement"
 * reasonReference only Reference(FRConditionDocument or Observation)
 
 // document externe 
 * instantiatesUri ^short = "Référence de la prescription"
 
-* basedOn 0..1 MS
+* basedOn 0..1
   * ^short = "Référence à un item du plan de traitement. Une copie du plan de traitement médicamenteux."
 * basedOn only Reference(FRMedicationRequest)
 
@@ -91,21 +91,21 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
   * ^short = "Condition préalable à l'utilisation du médicament"
   * text = "Permet de décrire les conditions préalables à l'utilisation du médicament."
 
-* dispenseRequest MS
+* dispenseRequest
   * extension contains $medicationRequest-dispenseRequest-dispenserInstruction-r5 named dispenserInstructionR5 0..1
   * extension[dispenserInstructionR5].valueAnnotation 1..1
     * ^short = "instructions au dispensateur"
-  * quantity MS
+  * quantity
     * ^short = "Quantité à dispenser" 
-  * validityPeriod MS
+  * validityPeriod
     * ^short = "Période de validité"
   * numberOfRepeatsAllowed MS 
     * ^short = "Nombre de renouvellement(s) possible(s)"
-* substitution 1..1 MS
-  * allowed[x] MS
+* substitution 1..1
+  * allowed[x]
   * ^short = "Autorisation de substitution" 
   * allowedCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis
-  * reason MS
+  * reason
   * reason.text ^short = "Motif de non substitution (Marge thérapeutique étroite, Enfant forme galénique, Contre-indication formelle)."
 
 * reasonReference ^slicing.discriminator.type = #pattern
@@ -127,7 +127,7 @@ Description: "FRMedicationRequest permet de décrire un traitement prescrit avec
 * reasonReference[prevention] only Reference(FRConditionDocument)
 * reasonReference[prevention] ^short = "En rapport avec la prévention"
 
-* extension contains $ihe-ext-offLabel named horsAMM 0..* MS
+* extension contains $ihe-ext-offLabel named horsAMM 0..*
 * extension[horsAMM] ^short = "Hors Autorisation de mise sur le marché"
 
 * extension contains FRNotCoveredExtension named notCovered 0..1

@@ -8,43 +8,43 @@ Description: "
  - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..* MS
+* identifier 1..*
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
 * basedOn only Reference(FRMedicationRequestDocument)
 * basedOn ^short = "Prescription"
 * partOf only Reference(FRMedicationAdministrationDocument)
-* category MS
+* category
   * ^short = "Acte ou situation"
-* status MS
+* status
   * ^short = "Statut"
 * status = #completed
 * effective[x] only Period
-* effectivePeriod MS
+* effectivePeriod
   * ^short = "Durée du traitement"
 
-* dosage MS
-  * timing MS
+* dosage
+  * timing
   * timing ^short = "Fréquence d'administration"
   // Dosages progressifs, fractionnés 
-  * sequence MS
+  * sequence
   // Dosages conditionnels
   * asNeeded[x] MS 
-  * route MS
+  * route
   * route from FRValueSetEDQMDocument
   * route ^short = "Voie d'administration"
   * route ^binding.description = "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)" 
-  * site MS
+  * site
   * site ^short = "Région anatomique d'administration"
   * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis
   
-* dosage.doseAndRate MS
-* dosage.doseAndRate.doseQuantity MS
+* dosage.doseAndRate
+* dosage.doseAndRate.doseQuantity
   * ^short = "Dose déclarée"
 
-* dosage.maxDosePerPeriod MS
+* dosage.maxDosePerPeriod
 * dosage.maxDosePerPeriod
   * ^short = "dose maximale"
-* dosage.doseAndRate.rateQuantity MS
+* dosage.doseAndRate.rateQuantity
   * ^short = "rythme d'administration"
 //Instructions au patient
 // si codé : 
@@ -54,13 +54,13 @@ Description: "
 * dosage.additionalInstruction.text MS 
   * ^short = "Instruction au patient"
 // Médicament
-* medication[x] MS
+* medication[x]
 * medication[x] only CodeableConcept or Reference(FRMedicationDocument)
 
 // Motif du traitement
-* reasonReference MS
+* reasonReference
   * ^short = "Motif du traitement"
 * reasonReference only Reference(FRConditionDocument or Observation)
 
-* note 0..1 MS
+* note 0..1
 * note ^short = "Permet de décrire les conditions préalables à l'utilisation du médicament."

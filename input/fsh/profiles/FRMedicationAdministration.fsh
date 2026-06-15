@@ -8,15 +8,15 @@ Description: "
  - Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..* MS
+* identifier 1..*
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
-* category MS
+* category
   * ^short = "Acte ou situation"
-* status 1..1 MS
+* status 1..1
   * ^short = "Statut"
 * status = #completed
 * effective[x] only Period
-* effectivePeriod MS
+* effectivePeriod
   * ^short = "Durée du traitement"
 
 // R5 : occurenceTiming
@@ -30,37 +30,37 @@ Description: "
   * extension contains FRMedicationAdministrationSequenceExtension named sequence 0..*
   // Dosages conditionnels
   //* extension contains http://hl7.org/fhir/StructureDefinition/note named dosagesConditionnels 0..* 
-  * route MS
+  * route
   * route from FRValueSetEDQMDocument
   * route ^short = "Voie d'administration"
   * route ^binding.description = "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)" 
-  * site MS
+  * site
   * site ^short = "Région anatomique d'administration"
   * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis
-  * dose MS
+  * dose
     * ^short = "Dose à administrer"
 
-* dosage.rate[x] MS
-* dosage.rateRatio MS
+* dosage.rate[x]
+* dosage.rateRatio
   * ^short = "doseMaximale"
-* dosage.rateQuantity MS
+* dosage.rateQuantity
   * ^short = "rythme d'administration"
 
 // Médicament
-* medication[x] MS
+* medication[x]
 * medication[x] only Reference(FRMedicationDocument)
 
 // Instruction au patient
-* dosage.text MS
+* dosage.text
   * ^short = "Instruction au patient"
 
 // Motif du traitement
-* reasonReference MS
+* reasonReference
   * ^short = "Motif du traitement"
 * reasonReference only Reference(FRConditionDocument or Observation)
 
 * request only Reference(FRMedicationRequestDocument)
 * request ^short = "Prescription"
 
-* note 0..1 MS
+* note 0..1
 * note ^short = "Permet de décrire les conditions préalables à l'utilisation du médicament."
