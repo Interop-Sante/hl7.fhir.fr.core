@@ -38,7 +38,8 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
 
-// * recorder.extension contains FRActorExtension named author 0..1 // FRActorExtension est propre à la couche documentaire (IG Document Core)
+// Commenté car spécifique document
+// * recorder.extension contains FRActorExtension named author 0..1
 // * recorder.extension[author] ^short = "Auteur du problème"
 // * recorder.extension[author].extension[type].valueCode = #AUT
 // * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
