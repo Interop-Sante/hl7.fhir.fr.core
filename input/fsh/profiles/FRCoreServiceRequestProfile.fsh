@@ -21,12 +21,13 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * identifier[accessionNumber] only FRAccessionNumberIdentifierDocument
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
-* intent ^short =
-"""
-Si la demande fait partie d'un plan de soins : 'INT = order'
-Si la demande est une proposition : 'PRP = proposal'
-Si la demande est un objectif à atteindre : 'GOL = plan'
-"""
+// Commenté car spécifique document (mapping sémantique ValueSet CDA → FHIR)
+// * intent ^short =
+// """
+// Si la demande fait partie d'un plan de soins : 'INT = order'
+// Si la demande est une proposition : 'PRP = proposal'
+// Si la demande est un objectif à atteindre : 'GOL = plan'
+// """
 * code 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 * code ^short = "Type de la demande"
 * code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
