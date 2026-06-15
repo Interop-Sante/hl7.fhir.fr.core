@@ -14,7 +14,7 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 * identifier ^short = "Identifiant"
 
 * partOf ^short = "Observation de score ou administration de médicament associée à l'acte (ex. : produit administré lors d'un acte d'imagerie)."
-* partOf only Reference(Observation or FRMedicationAdministrationDocument)
+// Proposition de supprimer cette ligne * partOf only Reference(Observation or FRMedicationAdministrationDocument)
 
 * status ^short = "Statut de l'acte"
 
@@ -77,11 +77,12 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 // * recorder.extension[author].extension[type].valueCode = #AUT
 // * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
+// Commenté car pas nécessaire
 //Réference interne à un DM (REFR)
-* usedReference ^short = "Réference interne à un DM"
-* usedReference only Reference(Device)
+// * usedReference ^short = "Réference interne à un DM"
+// * usedReference only Reference(Device)
 
-// Circonstances ayant décidé de l'acte à créer (COMP)
+// Rencontre ayant décidé de l'acte à créer (COMP)
 * encounter ^short = "Circonstances ayant décidé de l'acte"
 * encounter only Reference(FREncounterDocument)
 
