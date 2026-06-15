@@ -13,7 +13,7 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 
 // date de début de l'effet indésirable
 // la date de fin de l'effet indésirable est à renseigner dans resultingCondition.abatementDateTime
-* date 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* date 1.. // Contrainte ajoutée uniquement par IG Document Core — ⚠ élément FHIR R4 (renommé occurrence[x] en R5, R4 base : 0..1)
 * date ^short = "Date de début de l'effet indésirable"
 
 * detected 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
@@ -28,10 +28,10 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * resultingCondition only Reference(FRConditionDocument)
 * resultingCondition ^short = "Réaction observée"
 
-* suspectEntity.causality 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
+* suspectEntity.causality 0..1 // FHIR R5 base : 0..1 — cardinalité identique
 * suspectEntity.causality ^short = "Imputabilité"
 
-* suspectEntity.causality.assessment 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* suspectEntity.causality.assessment 1.. // Contrainte ajoutée uniquement par IG Document Core — ⚠ élément FHIR R4 (renommé assessmentMethod en R5, R4 base : 0..1)
 * suspectEntity.causality.assessment from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis (required)
 * suspectEntity.causality.assessment ^short = "Niveau d'imputabilité"
 
