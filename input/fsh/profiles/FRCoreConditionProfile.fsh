@@ -58,5 +58,5 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * stage.summary ^short = "Statut clinique du patient"
 * stage.summary from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis (required)
 
-* note 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
+* note 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*) Proposition --> repasser à 0..*
 * note ^short = "Commentaire"
