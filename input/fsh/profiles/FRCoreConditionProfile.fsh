@@ -49,7 +49,7 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * severity ^short = "Sévérité"
 * severity from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis
 
-* evidence.detail only Reference(FRDocumentReferenceDocument)
+// * evidence.detail only Reference(FRDocumentReferenceDocument) // Commenté : profil FRDocumentReferenceDocument inexistant — à créer
 
 * stage.summary ^short = "Statut clinique du patient"
 * stage.summary from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis (required)
