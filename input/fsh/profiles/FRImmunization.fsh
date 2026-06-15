@@ -7,7 +7,7 @@ Description: "FRImmunization permet de décrire l'administration d'un vaccin.
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1
+// * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant" 
 
 // à supprimer après retour de NRISS et remplacer par * protocolApplied.series
