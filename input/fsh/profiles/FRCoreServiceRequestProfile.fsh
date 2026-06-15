@@ -1,10 +1,12 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRServiceRequestDocument.fsh
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRServiceRequestDocument.fsh
+//
+// Profil EU Core (héritage direct) : non disponible
 Profile: FRCoreServiceRequestProfile
 Parent: ServiceRequest
 Id: fr-core-service-request
 Title: "FR Core ServiceRequest Profile"
 Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
-// Pas de profil EU Core disponible pour cette ressource
 
 * category 1..* // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * category ^short = "Catégorie de la demande"
