@@ -6,7 +6,6 @@ Title: "FR Core Medication Profile"
 Description: "FRCoreMedicationProfile permet de décrire un médicament ou un vaccin."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(medication-eu-core)
 
 * code 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1, EU Core : 0..1)
   * ^short = "Code du produit de santé"

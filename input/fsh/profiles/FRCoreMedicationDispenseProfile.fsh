@@ -7,7 +7,6 @@ Title: "FR Core MedicationDispense Profile"
 Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
 
 // Pas de profil EU Core disponible pour cette ressource
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
 // * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant"
 * type 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)

@@ -9,7 +9,6 @@ Description: "
  - Si le traitement est en attente d'administration c'est-à dire qu'il a été prescrit."
 
 // Pas de profil EU Core disponible pour cette ressource
-//* ^extension[$imposeProfile].valueCanonical = Canonical()
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
   * ^short = "Acte ou situation"

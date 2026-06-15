@@ -9,7 +9,6 @@ Description: "
  - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(medicationStatement-eu-core)
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
   * ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
 * basedOn only Reference(FRMedicationRequestDocument)

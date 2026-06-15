@@ -7,7 +7,6 @@ Title: "FR Core MedicationRequest Profile"
 Description: "FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."
 
 // Profil EU Core disponible : https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
-//* ^extension[$imposeProfile].valueCanonical = Canonical(medicationRequest-eu-core)
 * intent = #order
 // * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant prescription"
