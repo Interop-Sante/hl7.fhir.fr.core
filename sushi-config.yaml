@@ -28,7 +28,11 @@ dependencies:
 parameters: 
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
-  i18n-default-lang: fr-FR # Default language
+  i18n-default-lang: fr # Default language
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
   pin-canonicals: pin-all # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
   path-pages:
     - input/pagecontent
@@ -69,8 +73,10 @@ pages:
         title: Contraintes sur les profils
     structure_nomenclatures.md:
         title: Nomenclatures
-    structure_ref_loi.md: 
+    structure_ref_loi.md:
         title: Références
+    translationinfo.md:
+        title: Informations sur la traduction
 
 menu:
     Accueil: index.html
