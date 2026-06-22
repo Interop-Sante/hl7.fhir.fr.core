@@ -24,14 +24,10 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * suspectEntity 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 
 * suspectEntity ^short = "Agent soupçonné d'être à l'origine de l'événement indésirable"
-// Doc Core : Reference(FRMedicationAdministrationDocument)
-// * suspectEntity.instance only Reference(FRCoreMedicationAdministrationProfile) // non encore mergée dans FRCore
-* suspectEntity.instance only Reference(MedicationAdministration)
+* suspectEntity.instance only Reference(MedicationAdministration) // * suspectEntity.instance only Reference(FRCoreMedicationAdministrationProfile)
 * suspectEntity.instance ^short = "Médicament, substance incriminée, posologie"
 
-// Doc Core : Reference(FRConditionDocument)
-// * resultingCondition only Reference(FRCoreConditionProfile) // non encore mergée dans FRCore
-* resultingCondition only Reference(Condition)
+* resultingCondition only Reference(Condition) // * resultingCondition only Reference(FRCoreConditionProfile)
 * resultingCondition ^short = "Réaction observée"
 
 * suspectEntity.causality 0..1 // FHIR R5 base : 0..1 — cardinalité identique
