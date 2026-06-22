@@ -10,8 +10,6 @@ Id: fr-core-allergy-intolerance
 Title: "FR Core AllergyIntolerance Profile"
 Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
 
-// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant"
 * type ^short = "Type d'allergie ou d'intolérance"
 * type from FRValueSetAllergyInoleranceTypeDocument (required)
 * code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
