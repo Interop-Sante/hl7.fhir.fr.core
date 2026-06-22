@@ -9,8 +9,7 @@ Parent: immunization-eu-core
 Id: fr-core-immunization
 Title: "FR Core Immunization Profile"
 Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.
- - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.
- - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
+ - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé."
 
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
