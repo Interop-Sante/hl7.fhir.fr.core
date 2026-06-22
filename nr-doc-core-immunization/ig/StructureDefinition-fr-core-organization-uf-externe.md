@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationUFExterneExtension",
   "title" : "FR Core Organization Extension - UF Externe",
   "status" : "active",
-  "date" : "2026-06-22T13:09:12+00:00",
+  "date" : "2026-06-22T13:13:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

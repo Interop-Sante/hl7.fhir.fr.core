@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-06-22T13:09:12+00:00",
+  "date" : "2026-06-22T13:13:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
