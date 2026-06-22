@@ -73,6 +73,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * extension[basedOnRequestR5] ^short = "Prescription"
 
 // Type de vaccination
+* protocolApplied.series ^short = "Type de vaccination : BOOSTER (Rappel de vaccin) | IMMUNIZ (Vaccination sans autre précision) | INITIMMUNIZ (1ère série vaccinante)"
 * protocolApplied.series from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis
 // Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
