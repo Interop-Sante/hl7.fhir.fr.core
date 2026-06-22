@@ -12,9 +12,7 @@
 | Active as of 2026-06-22 | *Computable Name*:FRCoreImmunizationProfile |
 
  
-FRCoreImmunizationProfile permet de décrire l’administration d’un vaccin. 
-* Il permet également de décrire pourquoi un vaccin n’a pas été réalisé.
- 
+FRCoreImmunizationProfile permet de décrire l’administration d’un vaccin. Il permet également de décrire pourquoi un vaccin n’a pas été réalisé. 
 
 **Utilisations:**
 
@@ -43,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-22T14:26:05+00:00",
+  "date" : "2026-06-22T14:28:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -60,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
       "use" : "work"
     }]
   }],
-  "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.\n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.",
+  "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin. Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
