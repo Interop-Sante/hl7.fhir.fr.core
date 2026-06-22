@@ -8,8 +8,7 @@ Profile: FRCoreImmunizationProfile
 Parent: immunization-eu-core
 Id: fr-core-immunization
 Title: "FR Core Immunization Profile"
-Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.
- - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé."
+Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin. Il permet également de décrire pourquoi un vaccin n'a pas été réalisé."
 
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
@@ -17,8 +16,10 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 
 * route ^short = "Voie d'administration"
 * route from $jdv-immunization-route-code-cisis (required)
+
 * site ^short = "Région anatomique d'administration"
 * site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis (required)
+
 * doseQuantity ^short = "Dose administrée"
 
 // produit de santé
@@ -65,9 +66,8 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 // Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
 
-// Doc Core : Reference(FRConditionDocument)
-// * reasonReference only Reference(FRCoreConditionProfile) // non encore mergée dans FRCore
-* reasonReference only Reference(Condition)
+
+* reasonReference only Reference(Condition) // * reasonReference only Reference(FRCoreConditionProfile)
 * reasonReference ^short = "Réaction observée suite au vaccin"
 
 // Dose d'antigène
