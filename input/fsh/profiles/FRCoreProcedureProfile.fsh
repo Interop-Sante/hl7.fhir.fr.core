@@ -13,8 +13,8 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 // * identifier 1.. // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
 * identifier ^short = "Identifiant"
 
-* partOf ^short = "Observation de score ou administration de médicament associée à l'acte (ex. : produit administré lors d'un acte d'imagerie)."
-// Proposition de supprimer cette ligne * partOf only Reference(Observation or FRMedicationAdministrationDocument)
+* partOf ^short = "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l'acte (ex. produit administré lors d'un acte d'imagerie)."
+// Contrainte relâchée dans FRCore — en Doc Core : Reference(Observation or FRMedicationAdministrationDocument or FRProcedureDocument)
 
 * status ^short = "Statut de l'acte"
 
@@ -78,13 +78,13 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 // * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 // Commenté car pas nécessaire
-//Réference interne à un DM (REFR)
-// * usedReference ^short = "Réference interne à un DM"
+// * usedReference ^short = "Réference à un DM"
 // * usedReference only Reference(Device)
 
-// Rencontre ayant décidé de l'acte à créer (COMP)
-* encounter ^short = "Circonstances ayant décidé de l'acte"
+// Rencontre associée à l'acte
+* encounter ^short = "Rencontre associée à l'acte"
 * encounter only Reference(FREncounterDocument)
 
-// Difficulté Observation / Scores Observation
+// Difficulté de l'acte
 * extension contains FRCoreProcedureDifficultyExtension named difficulte 0..1
+* extension[difficulte] ^short = "Difficulté de l'acte"
