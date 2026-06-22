@@ -44,7 +44,9 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * extension contains
     http://hl7.org/fhir/StructureDefinition/procedure-approachBodyStructure named approachBodySite 0..*
 * extension[approachBodySite] ^short = "Voie d'abord"
-* extension[approachBodySite].valueReference only Reference(FRBodyStructureDocument)
+// Doc Core : Reference(FRBodyStructureDocument)
+// * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile) // FRCoreBodyStructureProfile non encore mergée dans FRCore
+* extension[approachBodySite].valueReference only Reference(BodyStructure)
 
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
@@ -85,7 +87,9 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"
-* encounter only Reference(FREncounterDocument)
+// Doc Core : Reference(FREncounterDocument)
+// * encounter only Reference(FRCoreEncounterProfile) // FRCoreEncounterProfile non encore mergée dans FRCore
+* encounter only Reference(Encounter)
 
 // Difficulté de l'acte
 * extension contains FRCoreProcedureDifficultyExtension named difficulte 0..1
