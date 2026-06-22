@@ -19,7 +19,7 @@ Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement d
 
 * quantity 1..1 // Doc Core (FHIR R4 base : 0..1)
 * quantity ^short = "Quantité : Unité issue de EDQM Packaging / classe CON (Récipient)" // Doc Core
-* quantity.unit from FRValueSetEDQMDocument (extensible) // Doc Core
+* quantity.unit from FRCoreValueSetEDQM (extensible) // Doc Core
 
 // Médicament — Doc Core : CodeableConcept or Reference(FRMedicationDocument) — FRCore : FRCoreMedicationProfile
 * medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)

@@ -27,9 +27,9 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 * extension[occurenceR5] ^short = "Fréquence d'administration"
 
 // Dosage
-// FRMedicationAdministrationSequenceExtension : extension Doc Core à créer dans FRCore (non encore portée)
-* dosage.extension contains FRMedicationAdministrationSequenceExtension named sequence 0..* // Doc Core : dosages progressifs/fractionnés
-* dosage.route from FRValueSetEDQMDocument (extensible) // Doc Core
+// Doc Core : FRMedicationAdministrationSequenceExtension
+* dosage.extension contains FRCoreMedicationAdministrationSequenceExtension named sequence 0..* // dosages progressifs/fractionnés
+* dosage.route from FRCoreValueSetEDQM (extensible) // Doc Core
 * dosage.route ^short = "Voie d'administration"
 * dosage.route ^binding.description = "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)"
 * dosage.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible) // Doc Core

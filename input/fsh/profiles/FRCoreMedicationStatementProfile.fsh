@@ -34,7 +34,7 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * dosage.timing ^short = "Fréquence d'administration"
 * dosage.sequence ^short = "Séquence (dosages progressifs/fractionnés)"
 * dosage.asNeeded[x] ^short = "Dosage conditionnel"
-* dosage.route from FRValueSetEDQMDocument (extensible) // Doc Core
+* dosage.route from FRCoreValueSetEDQM (extensible) // Doc Core
 * dosage.route ^short = "Voie d'administration"
 * dosage.route ^binding.description = "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)"
 * dosage.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible) // Doc Core

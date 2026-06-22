@@ -96,7 +96,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.timing.repeat.boundsPeriod.start ^short = "Date de début du traitement" // Doc Core
 * dosageInstruction.timing.repeat.boundsPeriod.end ^short = "Date de fin du traitement" // Doc Core
 * dosageInstruction.asNeeded[x] ^short = "Dosage conditionnel" // Doc Core
-* dosageInstruction.route from FRValueSetEDQMDocument (extensible) // Doc Core
+* dosageInstruction.route from FRCoreValueSetEDQM (extensible) // Doc Core
 * dosageInstruction.route ^short = "Voie d'administration"
 // ePrescription : from FrRouteOfAdministration (extensible) — même base EDQM, convergence
 * dosageInstruction.method ^short = "Méthode d'administration" // ePrescription (FrMethodOfAdministration = codes from EDQM)
@@ -145,6 +145,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * extension contains $ihe-ext-offLabel named horsAMM 0..*
 * extension[horsAMM] ^short = "Hors Autorisation de mise sur le marché"
 
-// FRNotCoveredExtension : extension Doc Core à créer dans FRCore (non encore portée)
-* extension contains FRNotCoveredExtension named notCovered 0..1
+// Doc Core : FRNotCoveredExtension
+* extension contains FRCoreNotCoveredExtension named notCovered 0..1
 * extension[notCovered] ^short = "Traitement non remboursable"

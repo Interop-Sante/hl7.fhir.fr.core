@@ -17,16 +17,16 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 
 * code 1..1 // Doc Core (FHIR R4 base : 0..1, EU Core : 0..1)
 * code ^short = "Code du produit de santé"
-// Doc Core : from FRValueSetMedicationTranslationDocument (required)
+// Doc Core : FRValueSetMedicationTranslationDocument
 // ePrescription : from fr-medication-code (required) — UCD, SMS, ANSM
 // FRCore : aligne sur Doc Core ; harmonisation terminologique avec ePrescription à prévoir
-* code.coding from FRValueSetMedicationTranslationDocument (required)
+* code.coding from FRCoreValueSetMedicationTranslation (required)
 
 // Nom de marque : Extension IHE MPD (Doc Core)
 * extension contains $ihe-ext-medication-productname named productName 1..1 // Doc Core : 1..1 (FHIR R4 base : absent)
 * extension[productName] ^short = "Nom de marque du produit."
 
-* form from FRValueSetEDQMDocument (required) // Doc Core
+* form from FRCoreValueSetEDQM (required) // Doc Core
 * form ^short = "Forme pharmaceutique (EDQM)"
 
 // Doc Core : batch.lotNumber et batch.expirationDate documentés
