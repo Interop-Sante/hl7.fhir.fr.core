@@ -10,9 +10,6 @@ Id: fr-core-condition
 Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
 
-// * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant"
-
 * clinicalStatus 1..1 // FHIR R5 base : 1..1 — cardinalité identique
 * clinicalStatus ^short = "Statut du problème"
 
