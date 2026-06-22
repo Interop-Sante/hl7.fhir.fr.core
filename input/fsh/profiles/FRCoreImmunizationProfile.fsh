@@ -40,9 +40,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode.coding[translation] from FRCoreValueSetMedicationTranslation (required)
 * vaccineCode.coding[translation].system 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base Coding.system : 0..1)
 
-//Nom de marque du produit : Extension IHE
-* extension contains $ihe-ext-medication-productname named productName 1..1 // Nom de marque requis — contrainte ajoutée par IG Document Core
-* extension[productName] ^short = "Nom de marque du produit."
 * lotNumber ^short = "Numéro de lot." // Doc Core
 * expirationDate ^short = "Date d'expiration du produit" // Doc Core
 
@@ -55,11 +52,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 // * performer.actor.extension[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
 // * performer.actor.extension[author].extension[type].valueCode = #AUT
 // * performer.actor.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
-
-// --- Exécutant ---
-// * performer.actor.extension[executant] ^short = "Exécutant"
-// * performer.actor.extension[executant].extension[type].valueCode = #PRF
-// * performer.actor.extension[executant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
