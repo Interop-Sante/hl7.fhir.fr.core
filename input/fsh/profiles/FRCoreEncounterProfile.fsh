@@ -85,7 +85,8 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 // ── Contraintes dérivées de IG Document Core ─────────────────────────────────────────────────────
 
 * class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
-* class from FRValueSetEncounterClass (extensible) // Contrainte ajoutée uniquement par IG Document Core
+// Doc Core : FRValueSetEncounterClass (tous les codes v3-ActEncounterCode)
+* class from FRCoreValueSetEncounterClass (extensible) // Contrainte ajoutée uniquement par IG Document Core
 
 * status ^short = "Statut de la rencontre (finished | planned | proposed)"
 * obeys fr-encounter-status // Invariant ajouté par IG Document Core
