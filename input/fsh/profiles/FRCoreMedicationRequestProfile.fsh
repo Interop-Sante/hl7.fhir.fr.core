@@ -26,9 +26,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * requester ^short = "Prescripteur"
 // Doc Core : Reference(FRPractitionerRoleDocument or FRPractitionerDocument)
 // ePrescription : Reference($FrCorePractitioner) uniquement
-// FRCore : base FHIR en attendant merge des profils Practitioner/PractitionerRole
-// * requester only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile) // à décommenter après merge
-* requester only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device)
+* requester only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device) // * requester only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile)
 
 // Extension R5 backport : représentation lisible de la posologie (ePrescription)
 * extension contains $medicationrequest-rendereddosageinstruction-r5 named renderedDosageInstruction 0..1
@@ -49,8 +47,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * subject ^short = "Patient"
 
 // Doc Core : Reference(FREncounterCareDocument) — ePrescription : Reference($FrCoreEncounter)
-// * encounter only Reference(FRCoreEncounterProfile) // FRCoreEncounterProfile non encore mergée dans FRCore
-* encounter only Reference(Encounter) // FHIR R4 base
+* encounter only Reference(Encounter) // * encounter only Reference(FRCoreEncounterProfile)
 * encounter ^short = "Contexte de soin"
 
 // Motif du traitement — slicing Doc Core (discriminateur par display : à revoir)
@@ -63,9 +60,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
     accidentTravail 0..1 and
     prevention 0..1
 
-// Doc Core : Reference(FRConditionDocument) — FRCore : Condition base (FRCoreConditionProfile non encore mergée)
-// * reasonReference[ald] only Reference(FRCoreConditionProfile) // à décommenter après merge
-* reasonReference[ald] only Reference(Condition)
+* reasonReference[ald] only Reference(Condition) // * reasonReference[ald] only Reference(FRCoreConditionProfile)
 * reasonReference[ald] ^short = "En rapport avec une Affection Longue Durée (ALD)." // Doc Core
 * reasonReference[ald] ^definition = "S'il s'agit d'une Affection Longue Durée (ALD) il faut préciser le problème"
 
@@ -73,9 +68,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * reasonReference[accidentTravail] only Reference(Observation)
 * reasonReference[accidentTravail] ^short = "En rapport avec accident travail" // Doc Core
 
-// Doc Core : Reference(FRConditionDocument) — FRCore : Condition base
-// * reasonReference[prevention] only Reference(FRCoreConditionProfile) // à décommenter après merge
-* reasonReference[prevention] only Reference(Condition)
+* reasonReference[prevention] only Reference(Condition) // * reasonReference[prevention] only Reference(FRCoreConditionProfile)
 * reasonReference[prevention] ^short = "En rapport avec la prévention" // Doc Core
 
 * instantiatesUri ^short = "Référence de la prescription" // Doc Core

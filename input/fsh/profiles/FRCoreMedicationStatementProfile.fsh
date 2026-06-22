@@ -46,9 +46,7 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)
 * medication[x] ^short = "Médicament"
 
-// Motif du traitement — Doc Core : Reference(FRConditionDocument or Observation) — FRCore : base FHIR
-// * reasonReference only Reference(FRCoreConditionProfile or Observation) // FRCoreConditionProfile non encore mergée
-* reasonReference only Reference(Condition or Observation)
+* reasonReference only Reference(Condition or Observation) // * reasonReference only Reference(FRCoreConditionProfile or Observation)
 * reasonReference ^short = "Motif du traitement"
 
 * note 0..1 // Doc Core (FHIR R4 base : 0..*)
