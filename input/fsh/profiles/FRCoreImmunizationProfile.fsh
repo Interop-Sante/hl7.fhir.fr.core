@@ -55,9 +55,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
 * extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
-// Doc Core : Reference(FRMedicationRequestDocument)
-// * extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile) // non encore mergée dans FRCore
-* extension[basedOnRequestR5].valueReference only Reference(MedicationRequest)
+* extension[basedOnRequestR5].valueReference only Reference(MedicationRequest) // * extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile)
 * extension[basedOnRequestR5] ^short = "Prescription"
 
 // Type de vaccination
@@ -65,7 +63,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * protocolApplied.series from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis
 // Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
-
 
 * reasonReference only Reference(Condition) // * reasonReference only Reference(FRCoreConditionProfile)
 * reasonReference ^short = "Réaction observée suite au vaccin"
