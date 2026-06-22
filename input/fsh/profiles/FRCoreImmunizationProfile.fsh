@@ -14,9 +14,8 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
-// équivalent CDA nullFlavor
 * occurrence[x] ^definition = "Si la date de la vaccination est inconnue, utiliser l'extension data-absent-reason précisant pourquoi elle n'est pas connue."
-// * occurrence[x].extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named dataAbsentReason 0..1
+
 * route ^short = "Voie d'administration"
 * route from $jdv-immunization-route-code-cisis (required)
 * site ^short = "Région anatomique d'administration"
