@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreMedicationAdministrationInhaledOxygenExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : AdministrationMédicaments FRCoreMedicationAdministrationInhaledOxygenExample</b></p><a name=\"FRCoreMedicationAdministrationInhaledOxygenExample\"> </a><a name=\"hcFRCoreMedicationAdministrationInhaledOxygenExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html\">FR Core Medication Administration Inhaled Oxygen Profile</a></p></div><p><b>status</b>: In Progress</p><p><b>medication</b>: <span title=\"Codes :{http://snomed.info/sct 767111007}\">produit contenant de l'oxygène</span></p><p><b>subject</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2022-11-06 09:00:00+0100 --&gt; (en cours)</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-FRCorePractitionerExample.html\">Practitioner Leclerc Sophie</a></td></tr></table><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Oxygène 2 L/min par lunette nasale</td><td><span title=\"Codes :{http://snomed.info/sct 447694001}\">voie inhalée</span></td><td>2 L/min<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUML/min = 'L/min')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:767111007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "767111007" ] ;
+       fhir:display [ fhir:v "produit contenant de l'oxygène" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> ;
+     fhir:reference [ fhir:v "Patient/FRCorePatientINSExample" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2022-11-06T09:00:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://hl7.fr/ig/fhir/core/Practitioner/FRCorePractitionerExample> ;
+       fhir:reference [ fhir:v "Practitioner/FRCorePractitionerExample" ] ;
+       fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ]
+     ]
+  ] ) ; # 
+  fhir:dosage [
+     fhir:text [ fhir:v "Oxygène 2 L/min par lunette nasale" ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:447694001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "447694001" ] ;
+         fhir:display [ fhir:v "voie inhalée" ]
+       ] )
+     ] ;
+     fhir:rate [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "L/min" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "L/min" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
