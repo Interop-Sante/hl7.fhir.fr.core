@@ -14,9 +14,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 * intent = #order // Doc Core
 
-// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant prescription"
-
 * status 1..1 // FHIR R4 base : 1..1 — cardinalité identique
 * status ^short = "Statut"
 // Doc Core : status = #completed — INCOMPATIBILITÉ avec ePrescription qui ne fixe pas la valeur

@@ -10,9 +10,6 @@ Id: fr-core-medication-administration
 Title: "FR Core MedicationAdministration Profile"
 Description: "FRCoreMedicationAdministrationProfile permet de décrire les modalités d'administration d'un médicament au patient (médicament, mode d'administration, quantité, durée et fréquence)."
 
-// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique." // Doc Core
-
 * category ^short = "Acte ou situation" // Doc Core
 
 * status 1..1 // FHIR R4 base : 1..1 — cardinalité identique

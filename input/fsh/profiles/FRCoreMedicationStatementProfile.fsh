@@ -11,9 +11,6 @@ Id: fr-core-medication-statement
 Title: "FR Core MedicationStatement Profile"
 Description: "FRCoreMedicationStatementProfile permet de décrire les modalités d'administration d'un médicament au patient (médicament déclaré, mode d'administration, quantité, durée et fréquence). Couvre les bilans médicamenteux et conciliations médicamenteuses."
 
-// * identifier 1..* // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant. L'entrée Traitement doit être identifiée de manière unique." // Doc Core
-
 // Prescription — Doc Core : Reference(FRMedicationRequestDocument) — FRCore : FRCoreMedicationRequestProfile
 * basedOn only Reference(FRCoreMedicationRequestProfile)
 * basedOn ^short = "Prescription"
