@@ -17,7 +17,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 
 // à supprimer après retour de NRISS et remplacer par * protocolApplied.series
 //* extension contains fr-immunization-type-extension named typeVaccination 1..1
-* status = #completed
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
 // équivalent CDA nullFlavor
