@@ -14,7 +14,6 @@
  
 FRCoreImmunizationProfile permet de décrire l’administration d’un vaccin. 
 * Il permet également de décrire pourquoi un vaccin n’a pas été réalisé.
-* Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après.
  
 
 **Utilisations:**
@@ -44,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-22T14:24:08+00:00",
+  "date" : "2026-06-22T14:26:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -61,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
       "use" : "work"
     }]
   }],
-  "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.\n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.\n - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après.",
+  "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.\n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -174,7 +174,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-06-22T14:24:08+00:00",
+  "date" : "2026-06-22T14:26:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1524,7 +1524,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
         "reference" : "StructureDefinition/fr-core-immunization"
       },
       "name" : "FR Core Immunization Profile",
-      "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.\n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.\n - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après.",
+      "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.\n - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.",
       "exampleBoolean" : false
     },
     {
