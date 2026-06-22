@@ -5,7 +5,7 @@
 //   https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreImmunizationProfile
-Parent: Immunization
+Parent: immunization-eu-core
 Id: fr-core-immunization
 Title: "FR Core Immunization Profile"
 Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin.
