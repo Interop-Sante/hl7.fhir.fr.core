@@ -29,7 +29,9 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 """
 
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
-* reasonReference only Reference(FRConditionDocument or FRDiagnosticReportDocument or FRDiagnosticReportImagingDocument or FRDiagnosticReportBIOChapterDocument)
+// Doc Core : Reference(FRConditionDocument or FRDiagnosticReportDocument or FRDiagnosticReportImagingDocument or FRDiagnosticReportBIOChapterDocument)
+// * reasonReference only Reference(FRCoreConditionProfile or DiagnosticReport) // FRCoreConditionProfile non encore mergée dans FRCore
+* reasonReference only Reference(Condition or DiagnosticReport)
 
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 * subject ^short = "Patient concerné"
