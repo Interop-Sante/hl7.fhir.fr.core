@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-r
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-06-22T12:42:43+00:00",
+  "date" : "2026-06-22T14:38:01+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -161,11 +161,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-r
         "code" : "Extension",
         "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0"]
       }]
-    },
-    {
-      "id" : "MedicationRequest.identifier",
-      "path" : "MedicationRequest.identifier",
-      "short" : "Identifiant prescription"
     },
     {
       "id" : "MedicationRequest.status",

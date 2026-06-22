@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
   "name" : "FRCoreMedicationAdministrationProfile",
   "title" : "FR Core MedicationAdministration Profile",
   "status" : "active",
-  "date" : "2026-06-22T12:42:43+00:00",
+  "date" : "2026-06-22T14:38:01+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -130,11 +130,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-medication-a
       "id" : "MedicationAdministration.extension:occurenceR5.extension",
       "path" : "MedicationAdministration.extension.extension",
       "max" : "0"
-    },
-    {
-      "id" : "MedicationAdministration.identifier",
-      "path" : "MedicationAdministration.identifier",
-      "short" : "Identifiant. L'entrée Traitement doit être identifiée de manière unique."
     },
     {
       "id" : "MedicationAdministration.status",
