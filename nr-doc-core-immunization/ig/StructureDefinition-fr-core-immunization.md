@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-22T13:13:25+00:00",
+  "date" : "2026-06-22T13:33:44+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -147,11 +147,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1"]
       }]
-    },
-    {
-      "id" : "Immunization.identifier",
-      "path" : "Immunization.identifier",
-      "short" : "Identifiant"
     },
     {
       "id" : "Immunization.vaccineCode",
