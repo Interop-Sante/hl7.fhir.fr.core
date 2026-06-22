@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-procedure.cs
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-06-22T07:36:35+00:00",
+  "date" : "2026-06-22T13:39:21+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -143,11 +143,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-procedure.cs
         "code" : "Extension",
         "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure-difficulty-extension|2.2.0"]
       }]
-    },
-    {
-      "id" : "Procedure.identifier",
-      "path" : "Procedure.identifier",
-      "short" : "Identifiant"
     },
     {
       "id" : "Procedure.partOf",
