@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-accession-number-identifier | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreAccessionNumberIdentifierProfile |
+| Active as of 2026-06-22 | *Computable Name*:FRCoreAccessionNumberIdentifierProfile |
 
  
 DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-accession-nu
   "name" : "FRCoreAccessionNumberIdentifierProfile",
   "title" : "FR Core Accession Number Identifier Profile",
   "status" : "active",
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

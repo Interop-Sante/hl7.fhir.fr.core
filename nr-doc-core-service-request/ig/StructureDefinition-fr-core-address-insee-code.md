@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreAddressInseeCodeExtension |
+| Active as of 2026-06-22 | *Computable Name*:FRCoreAddressInseeCodeExtension |
 
 Extension d’ajout du code insee (5 chiffres) à l’adresse postale. Dans le cas d’une ville étrangère, le code département devient “99” et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d’identitovigilance (RNIV). This extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes “99”, and the municipality code is populated with the country code.
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-address-inse
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

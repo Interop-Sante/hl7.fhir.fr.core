@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreObservationHeartRateProfile |
+| Active as of 2026-06-22 | *Computable Name*:FRCoreObservationHeartRateProfile |
 
  
 French profile for the FHIR Vital Sign Heart Rate Profile. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-observation-
   "name" : "FRCoreObservationHeartRateProfile",
   "title" : "FR Core Observation Heart Rate Profile",
   "status" : "active",
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

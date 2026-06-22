@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreMethodExtension |
+| Active as of 2026-06-22 | *Computable Name*:FRCoreMethodExtension |
 
 Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-method-exten
   "name" : "FRCoreMethodExtension",
   "title" : "FR Core Method Extension",
   "status" : "active",
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-request | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreServiceRequestProfile |
+| Active as of 2026-06-22 | *Computable Name*:FRCoreServiceRequestProfile |
 
  
 FRCoreServiceRequestProfile profil permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-service-requ
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

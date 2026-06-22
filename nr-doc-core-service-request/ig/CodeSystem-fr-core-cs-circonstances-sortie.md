@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie | *Version*:2.2.0 |
-| Draft as of 2026-06-15 | *Computable Name*:FRCoreCodeSystemCirconstancesSortie |
+| Draft as of 2026-06-22 | *Computable Name*:FRCoreCodeSystemCirconstancesSortie |
 
  
 Discharge Disposition 
@@ -36,7 +36,7 @@ Discharge Disposition
   "title" : "FR Core CodeSystem Circonstances Sortie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

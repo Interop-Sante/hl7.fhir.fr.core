@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreScheduleProfile |
+| Active as of 2026-06-22 | *Computable Name*:FRCoreScheduleProfile |
 
  
 Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-schedule.csv
   "name" : "FRCoreScheduleProfile",
   "title" : "FR Core Schedule Profile",
   "status" : "active",
-  "date" : "2026-06-15T16:22:03+00:00",
+  "date" : "2026-06-22T07:18:24+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
