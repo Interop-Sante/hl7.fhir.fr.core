@@ -26,9 +26,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 """
 
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
-// Doc Core : Reference(FRConditionDocument or FRDiagnosticReportDocument or FRDiagnosticReportImagingDocument or FRDiagnosticReportBIOChapterDocument)
-// * reasonReference only Reference(FRCoreConditionProfile or DiagnosticReport) // FRCoreConditionProfile non encore mergée dans FRCore
-* reasonReference only Reference(Condition or DiagnosticReport)
+* reasonReference only Reference(Condition or DiagnosticReport) // * reasonReference only Reference(FRCoreConditionProfile or DiagnosticReport)
 
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 * subject ^short = "Patient concerné"
@@ -41,9 +39,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * extension contains
     http://hl7.org/fhir/StructureDefinition/procedure-approachBodyStructure named approachBodySite 0..*
 * extension[approachBodySite] ^short = "Voie d'abord"
-// Doc Core : Reference(FRBodyStructureDocument)
-// * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile) // FRCoreBodyStructureProfile non encore mergée dans FRCore
-* extension[approachBodySite].valueReference only Reference(BodyStructure)
+* extension[approachBodySite].valueReference only Reference(BodyStructure) // * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile)
 
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
@@ -84,9 +80,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"
-// Doc Core : Reference(FREncounterDocument)
-// * encounter only Reference(FRCoreEncounterProfile) // FRCoreEncounterProfile non encore mergée dans FRCore
-* encounter only Reference(Encounter)
+* encounter only Reference(Encounter) // * encounter only Reference(FRCoreEncounterProfile)
 
 // Difficulté de l'acte
 * extension contains FRCoreProcedureDifficultyExtension named difficulte 0..1
