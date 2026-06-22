@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-22T13:47:42+00:00",
+  "date" : "2026-06-22T14:04:21+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -104,23 +104,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
     "element" : [{
       "id" : "Immunization",
       "path" : "Immunization"
-    },
-    {
-      "id" : "Immunization.extension",
-      "path" : "Immunization.extension",
-      "min" : 1
-    },
-    {
-      "id" : "Immunization.extension:productName",
-      "path" : "Immunization.extension",
-      "sliceName" : "productName",
-      "short" : "Nom de marque du produit.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname|1.0.0-comment-2"]
-      }]
     },
     {
       "id" : "Immunization.extension:basedOnRequestR5",

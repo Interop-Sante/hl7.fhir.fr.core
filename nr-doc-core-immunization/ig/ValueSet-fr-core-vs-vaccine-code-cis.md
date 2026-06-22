@@ -56,7 +56,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRCoreValueSetVaccineCodeCIS",
   "title" : "FR Core ValueSet Vaccine code CIS",
   "status" : "active",
-  "date" : "2026-06-22T13:47:42+00:00",
+  "date" : "2026-06-22T14:04:21+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
