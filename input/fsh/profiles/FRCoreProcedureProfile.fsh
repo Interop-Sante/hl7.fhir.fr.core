@@ -20,7 +20,7 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 
 * code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "Code d'acte"
-* code from FRValueSetProcedureCodeDocument (preferred)
+* code from FRCoreValueSetProcedureCode (preferred)
 * code ^comment = """
 Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.
 Si l'acte n'est pas trouvé dans CCAM, utiliser le code NCIT 'C25218' (Intervention)
