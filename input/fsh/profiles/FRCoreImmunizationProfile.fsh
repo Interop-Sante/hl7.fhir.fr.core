@@ -12,9 +12,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
  - Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.
  - Ce profil hérite de la structuration, des contraintes et des vocabulaires définis dans le profil FRMedicationAdministrationDocument sauf mentions précisées ci-après."
 
-// * identifier 1..1 // Contrainte relâchée dans FRCore pour laisser la liberté aux implémenteurs et aux spécifications héritantes
-* identifier ^short = "Identifiant"
-
 // à supprimer après retour de NRISS et remplacer par * protocolApplied.series
 //* extension contains fr-immunization-type-extension named typeVaccination 1..1
 * occurrence[x] only dateTime
