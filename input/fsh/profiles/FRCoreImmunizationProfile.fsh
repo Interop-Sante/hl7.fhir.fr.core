@@ -38,18 +38,20 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode ^short = "Vaccin. Code du produit de santé"
 // Slice CIS obligatoire
 * vaccineCode.coding contains cis 1..1 // Slice CIS obligatoire — contrainte ajoutée par IG Document Core (FHIR R5 base vaccineCode.coding : 0..*)
-* vaccineCode.coding[cis] from FRValueSetVaccineCodeCISDocument (required)
+// Doc Core : FRValueSetVaccineCodeCISDocument
+* vaccineCode.coding[cis] from FRCoreValueSetVaccineCodeCIS (required)
 
 // Slice (autres codifications)
 * vaccineCode.coding contains translation 0..*
-* vaccineCode.coding[translation] from FRValueSetMedicationTranslationDocument (required)
+// Doc Core : FRValueSetMedicationTranslationDocument
+* vaccineCode.coding[translation] from FRCoreValueSetMedicationTranslation (required)
 * vaccineCode.coding[translation].system 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base Coding.system : 0..1)
 
 //Nom de marque du produit : Extension IHE
 * extension contains $ihe-ext-medication-productname named productName 1..1 // Nom de marque requis — contrainte ajoutée par IG Document Core
 * extension[productName] ^short = "Nom de marque du produit."
-  * ^short = "Numéro de lot."
-  * ^short = "Date d'expiration du produit"
+* lotNumber ^short = "Numéro de lot." // Doc Core
+* expirationDate ^short = "Date d'expiration du produit" // Doc Core
 
 // Commenté car spécifique document
 // * performer.actor.extension contains
@@ -69,7 +71,9 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
 * extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
-* extension[basedOnRequestR5].valueReference only Reference (FRMedicationRequestDocument)
+// Doc Core : Reference(FRMedicationRequestDocument)
+// * extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile) // non encore mergée dans FRCore
+* extension[basedOnRequestR5].valueReference only Reference(MedicationRequest)
 * extension[basedOnRequestR5] ^short = "Prescription"
 
 // Type de vaccination
@@ -77,13 +81,15 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 // Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
 
-* reasonReference only Reference(FRConditionDocument)
-  * ^short = "Réaction observée suite au vaccin"
+// Doc Core : Reference(FRConditionDocument)
+// * reasonReference only Reference(FRCoreConditionProfile) // non encore mergée dans FRCore
+* reasonReference only Reference(Condition)
+* reasonReference ^short = "Réaction observée suite au vaccin"
 
 // Dose d'antigène
 // Problème dataType : codeableReference
 /* * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
-* extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRMedicationDocument)
+* extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
  */
 * note 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
   * ^short = "Commentaire"
