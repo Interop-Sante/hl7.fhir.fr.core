@@ -45,8 +45,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 
 // Commenté car spécifique document
 // * performer.actor.extension contains
-//     FRActorExtension named author 1..1 and
-//     FRActorExtension named executant 0..1
+//     FRActorExtension named author 1..1
 
 // --- Auteur ---
 // * performer.actor.extension[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
