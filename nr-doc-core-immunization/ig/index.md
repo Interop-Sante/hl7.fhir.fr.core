@@ -145,6 +145,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [admissionType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0007.html): [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) and [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md)
 * [contactRole2](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0131.html): [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md), [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md) and [FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md)
 * [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md)... Show 4 more, [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md), [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md) and [Patient/FRCorePatientDeceasedExample](Patient-FRCorePatientDeceasedExample.md)
+* [providerRole](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0443.html): [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md)
 * [nameAssemblyOrder](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0444.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md)
 * [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/FRCoreEncounterExample](Encounter-FRCoreEncounterExample.md), [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md) and [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md)
 * [MaritalStatus](http://terminology.hl7.org/7.2.0/CodeSystem-v3-MaritalStatus.html): [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
@@ -173,7 +174,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-06-22T12:39:00+00:00",
+  "date" : "2026-06-22T13:09:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

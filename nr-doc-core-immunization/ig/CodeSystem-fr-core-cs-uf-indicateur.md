@@ -36,7 +36,7 @@ Système de codage permettant de définir les indicateurs d’une unité fonctio
   "title" : "FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-22T12:39:00+00:00",
+  "date" : "2026-06-22T13:09:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -67,7 +67,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet Encounter class",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-22T12:39:00+00:00",
+  "date" : "2026-06-22T13:09:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

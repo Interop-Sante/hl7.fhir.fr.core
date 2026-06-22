@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-22T12:39:00+00:00",
+  "date" : "2026-06-22T13:09:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
   "kind" : "resource",
   "abstract" : false,
   "type" : "Immunization",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Immunization|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -108,14 +108,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-immunization
     {
       "id" : "Immunization.extension",
       "path" : "Immunization.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
       "min" : 1
     },
     {
