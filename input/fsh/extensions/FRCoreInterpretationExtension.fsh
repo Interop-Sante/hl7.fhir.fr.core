@@ -3,6 +3,10 @@
 //
 // Profil EU Core (héritage direct) : non disponible
 // ─────────────────────────────────────────────────────────────────────────────
+
+
+/// A Discuter - Qu'est-ce qu'une interprétation de ServiceRequest ?
+
 Extension: FRCoreInterpretationExtension
 Id: fr-core-interpretation-extension
 Title: "FR Core Interpretation Extension"
