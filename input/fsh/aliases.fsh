@@ -1,6 +1,15 @@
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
-Alias: $SCT = http://snomed.info/sct 
+Alias: $SCT = http://snomed.info/sct
+
+// IHE MPD extensions (immunization)
+Alias: $ihe-ext-medication-productname = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname
+
+// CISIS JDVs (immunization)
+Alias: $jdv-immunization-route-code-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis
+
+// R5 backport extensions (immunization)
+Alias: $immunization-basedOn-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn
 
 // ANS
 Alias: $TRE-G08-TypeIdentifiantPersonne = https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne
