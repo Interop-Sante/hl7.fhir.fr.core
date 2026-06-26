@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCoreOrganizationRaisonSocialeExtension |
+| Active as of 2026-06-26 | *Computable Name*:FRCoreOrganizationRaisonSocialeExtension |
 
 Raison Sociale l’organisation
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-organization
   "name" : "FRCoreOrganizationRaisonSocialeExtension",
   "title" : "FR Core Organization Raison Sociale Extension",
   "status" : "active",
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

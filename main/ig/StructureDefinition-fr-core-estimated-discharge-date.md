@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCoreEncounterEstimatedDischargeDateExtension |
+| Active as of 2026-06-26 | *Computable Name*:FRCoreEncounterEstimatedDischargeDateExtension |
 
 This extension is used to specify the estimated discharge date of the patient
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-estimated-di
   "name" : "FRCoreEncounterEstimatedDischargeDateExtension",
   "title" : "FR Core Encounter Estimated Discharge Date Extension",
   "status" : "active",
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

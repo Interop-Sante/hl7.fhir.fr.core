@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
+| Active as of 2026-06-26 | *Computable Name*:FRCoreValueSetPatientIdentifierType |
 
  
 A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). 
@@ -55,7 +55,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -83,7 +83,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-      "version" : "2.9",
+      "version" : "5.0.0",
       "concept" : [{
         "code" : "PPN",
         "display" : "Passport Number"

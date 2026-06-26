@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCoreRelatedPersonProfile |
+| Active as of 2026-06-26 | *Computable Name*:FRCoreRelatedPersonProfile |
 
  
 Profile of the RelatedPerson resource for France. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-related-pers
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

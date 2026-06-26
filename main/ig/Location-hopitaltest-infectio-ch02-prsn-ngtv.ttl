@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,49 +7,48 @@
 
 <https://hl7.fr/ig/fhir/core/Location/hopitaltest-infectio-ch02-prsn-ngtv> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "hopitaltest-infectio-ch02-prsn-ngtv"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location"^^xsd:anyURI ;
-       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Localisation hopitaltest-infectio-ch02-prsn-ngtv</b></p><a name=\"hopitaltest-infectio-ch02-prsn-ngtv\"> </a><a name=\"hchopitaltest-infectio-ch02-prsn-ngtv\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-location.html\">FR Core Location Profile</a></p></div><p><b>FR Core Location Extension - Type de chambre</b>: <a href=\"CodeSystem-fr-core-cs-location-type-chambre.html#fr-core-cs-location-type-chambre-PRSN_NGTV\">FR Core CodeSystem Type Chambre: PRSN_NGTV</a> (Pression négative)</p><p><b>status</b>: Active</p><p><b>name</b>: Chambre 02 - Pression négative</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type CHAMB}\">Chambre</span></p><p><b>managingOrganization</b>: <a href=\"Organization-hopitaltest-eg-4-members.html\">Organization CHRU CENTRE VILLE</a></p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre"^^xsd:anyURI ;
-       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre>
-     ] ;
-     fhir:value [
-       a fhir:Coding ;
-       fhir:system [
-         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre"^^xsd:anyURI ;
-         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre>
-       ] ;
-       fhir:code [ fhir:v "PRSN_NGTV" ] ;
-       fhir:display [ fhir:v "Pression négative" ]
+  fhir:Resource.id [ fhir:value "hopitaltest-infectio-ch02-prsn-ngtv"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location>
      ]
-  ] ) ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:name [ fhir:v "Chambre 02 - Pression négative"] ; # 
-  fhir:type ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type"^^xsd:anyURI ;
-         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type>
-       ] ;
-       fhir:code [ fhir:v "CHAMB" ] ;
-       fhir:display [ fhir:v "Chambre" ]
-     ] ) ;
-     fhir:text [ fhir:v "Chambre" ]
-  ] ) ; # 
-  fhir:managingOrganization [
-     fhir:l <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-eg-4-members> ;
-     fhir:reference [ fhir:v "Organization/hopitaltest-eg-4-members" ]
-  ] . # 
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Localisation hopitaltest-infectio-ch02-prsn-ngtv</b></p><a name=\"hopitaltest-infectio-ch02-prsn-ngtv\"> </a><a name=\"hchopitaltest-infectio-ch02-prsn-ngtv\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-location.html\">FR Core Location Profile</a></p></div><p><b>FR Core Location Extension - Type de chambre</b>: <a href=\"CodeSystem-fr-core-cs-location-type-chambre.html#fr-core-cs-location-type-chambre-PRSN_NGTV\">FR Core CodeSystem Type Chambre: PRSN_NGTV</a> (Pression négative)</p><p><b>status</b>: Active</p><p><b>name</b>: Chambre 02 - Pression négative</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type CHAMB}\">Chambre</span></p><p><b>managingOrganization</b>: <a href=\"Organization-hopitaltest-eg-4-members.html\">Organization CHRU CENTRE VILLE</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre" ] ;
+       fhir:Coding.code [ fhir:value "PRSN_NGTV" ] ;
+       fhir:Coding.display [ fhir:value "Pression négative" ]
+     ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Chambre 02 - Pression négative"] ;
+  fhir:Location.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type" ] ;
+       fhir:Coding.code [ fhir:value "CHAMB" ] ;
+       fhir:Coding.display [ fhir:value "Chambre" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Chambre" ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-eg-4-members> ;
+     fhir:Reference.reference [ fhir:value "Organization/hopitaltest-eg-4-members" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/hopitaltest-infectio-ch02-prsn-ngtv.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

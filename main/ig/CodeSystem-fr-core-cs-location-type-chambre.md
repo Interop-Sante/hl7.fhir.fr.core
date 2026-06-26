@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCoreCodeSystemTypeChambre |
+| Active as of 2026-06-26 | *Computable Name*:FRCoreCodeSystemTypeChambre |
 
  
 Type de chambre 
@@ -36,7 +36,7 @@ Type de chambre
   "title" : "FR Core CodeSystem Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

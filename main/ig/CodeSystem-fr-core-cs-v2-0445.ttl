@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,142 +7,169 @@
 
 <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "fr-core-cs-v2-0445"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem?version=4.0.1>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "fr-FR"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xml:lang=\"fr-FR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr-FR\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-v2-0445</b></p><a name=\"fr-core-cs-v2-0445\"> </a><a name=\"hcfr-core-cs-v2-0445\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a> version : 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">VIDE<a name=\"fr-core-cs-v2-0445-VIDE\"> </a></td><td>Identité non encore qualifiée</td><td>Identité non encore qualifiée</td></tr><tr><td style=\"white-space:nowrap\">PROV<a name=\"fr-core-cs-v2-0445-PROV\"> </a></td><td>Identité provisoire</td><td>Identité provisoire</td></tr><tr><td style=\"white-space:nowrap\">VALI<a name=\"fr-core-cs-v2-0445-VALI\"> </a></td><td>Identité validée</td><td>Identité validée</td></tr><tr><td style=\"white-space:nowrap\">DOUB<a name=\"fr-core-cs-v2-0445-DOUB\"> </a></td><td>Doublon</td><td>Doublon</td></tr><tr><td style=\"white-space:nowrap\">DESA<a name=\"fr-core-cs-v2-0445-DESA\"> </a></td><td>Identité désactivée</td><td>Identité désactivée</td></tr><tr><td style=\"white-space:nowrap\">DPOT<a name=\"fr-core-cs-v2-0445-DPOT\"> </a></td><td>Doublon potentiel</td><td>Doublon potentiel</td></tr><tr><td style=\"white-space:nowrap\">DOUA<a name=\"fr-core-cs-v2-0445-DOUA\"> </a></td><td>Doublon avéré</td><td>Doublon avéré</td></tr><tr><td style=\"white-space:nowrap\">COLP<a name=\"fr-core-cs-v2-0445-COLP\"> </a></td><td>Collision potentielle</td><td>Collision potentielle</td></tr><tr><td style=\"white-space:nowrap\">COLV<a name=\"fr-core-cs-v2-0445-COLV\"> </a></td><td>Collision avérée</td><td>Collision avérée</td></tr><tr><td style=\"white-space:nowrap\">FILI<a name=\"fr-core-cs-v2-0445-FILI\"> </a></td><td>Filiation</td><td>Filiation</td></tr><tr><td style=\"white-space:nowrap\">CACH<a name=\"fr-core-cs-v2-0445-CACH\"> </a></td><td>Identité cachée</td><td>Identité cachée</td></tr><tr><td style=\"white-space:nowrap\">ANOM<a name=\"fr-core-cs-v2-0445-ANOM\"> </a></td><td>Anonyme</td><td>Anonyme</td></tr><tr><td style=\"white-space:nowrap\">IDVER<a name=\"fr-core-cs-v2-0445-IDVER\"> </a></td><td>Identité vérifiée par le patient</td><td>Identité vérifiée par le patient</td></tr><tr><td style=\"white-space:nowrap\">RECD<a name=\"fr-core-cs-v2-0445-RECD\"> </a></td><td>Identité reçue d'un autre domaine</td><td>Identité reçue d'un autre domaine</td></tr><tr><td style=\"white-space:nowrap\">IDRA<a name=\"fr-core-cs-v2-0445-IDRA\"> </a></td><td>Identité rapprochée dans un autre domaine</td><td>Identité rapprochée dans un autre domaine</td></tr><tr><td style=\"white-space:nowrap\">USUR<a name=\"fr-core-cs-v2-0445-USUR\"> </a></td><td>Identité usurpée</td><td>Identité usurpée</td></tr><tr><td style=\"white-space:nowrap\">HOMD<a name=\"fr-core-cs-v2-0445-HOMD\"> </a></td><td>Homonyme détecté</td><td>Homonyme détecté</td></tr><tr><td style=\"white-space:nowrap\">HOMA<a name=\"fr-core-cs-v2-0445-HOMA\"> </a></td><td>Homonyme avéré</td><td>Homonyme avéré</td></tr><tr><td style=\"white-space:nowrap\">INVA<a name=\"fr-core-cs-v2-0445-INVA\"> </a></td><td>Identité invalidée</td><td>Identité invalidée</td></tr><tr><td style=\"white-space:nowrap\">FICT<a name=\"fr-core-cs-v2-0445-FICT\"> </a></td><td>Identité fictive (Attribut d’identité « fictive »)</td><td>Identité fictive (Attribut d’identité « fictive »)</td></tr><tr><td style=\"white-space:nowrap\">DOUT<a name=\"fr-core-cs-v2-0445-DOUT\"> </a></td><td>Identité douteuse (Attribut d’identité « douteuse »)</td><td>Identité douteuse (Attribut d’identité « douteuse »)</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"^^xsd:anyURI ;
-     fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445>
-  ] ; # 
-  fhir:version [ fhir:v "2.2.0"] ; # 
-  fhir:name [ fhir:v "FRCoreCodeSystemv2_0445"] ; # 
-  fhir:title [ fhir:v "FR Core CodeSystem v2-0445"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-12T14:35:23+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Interop'Santé"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Interop'Santé" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://interopsante.org" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "InteropSanté" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "fhir@interopsante.org" ] ;
-       fhir:use [ fhir:v "work" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "HL7 v2 - Table 0445"] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
-       ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "VIDE" ] ;
-     fhir:display [ fhir:v "Identité non encore qualifiée" ] ;
-     fhir:definition [ fhir:v "Identité non encore qualifiée" ]
-  ] [
-     fhir:code [ fhir:v "PROV" ] ;
-     fhir:display [ fhir:v "Identité provisoire" ] ;
-     fhir:definition [ fhir:v "Identité provisoire" ]
-  ] [
-     fhir:code [ fhir:v "VALI" ] ;
-     fhir:display [ fhir:v "Identité validée" ] ;
-     fhir:definition [ fhir:v "Identité validée" ]
-  ] [
-     fhir:code [ fhir:v "DOUB" ] ;
-     fhir:display [ fhir:v "Doublon" ] ;
-     fhir:definition [ fhir:v "Doublon" ]
-  ] [
-     fhir:code [ fhir:v "DESA" ] ;
-     fhir:display [ fhir:v "Identité désactivée" ] ;
-     fhir:definition [ fhir:v "Identité désactivée" ]
-  ] [
-     fhir:code [ fhir:v "DPOT" ] ;
-     fhir:display [ fhir:v "Doublon potentiel" ] ;
-     fhir:definition [ fhir:v "Doublon potentiel" ]
-  ] [
-     fhir:code [ fhir:v "DOUA" ] ;
-     fhir:display [ fhir:v "Doublon avéré" ] ;
-     fhir:definition [ fhir:v "Doublon avéré" ]
-  ] [
-     fhir:code [ fhir:v "COLP" ] ;
-     fhir:display [ fhir:v "Collision potentielle" ] ;
-     fhir:definition [ fhir:v "Collision potentielle" ]
-  ] [
-     fhir:code [ fhir:v "COLV" ] ;
-     fhir:display [ fhir:v "Collision avérée" ] ;
-     fhir:definition [ fhir:v "Collision avérée" ]
-  ] [
-     fhir:code [ fhir:v "FILI" ] ;
-     fhir:display [ fhir:v "Filiation" ] ;
-     fhir:definition [ fhir:v "Filiation" ]
-  ] [
-     fhir:code [ fhir:v "CACH" ] ;
-     fhir:display [ fhir:v "Identité cachée" ] ;
-     fhir:definition [ fhir:v "Identité cachée" ]
-  ] [
-     fhir:code [ fhir:v "ANOM" ] ;
-     fhir:display [ fhir:v "Anonyme" ] ;
-     fhir:definition [ fhir:v "Anonyme" ]
-  ] [
-     fhir:code [ fhir:v "IDVER" ] ;
-     fhir:display [ fhir:v "Identité vérifiée par le patient" ] ;
-     fhir:definition [ fhir:v "Identité vérifiée par le patient" ]
-  ] [
-     fhir:code [ fhir:v "RECD" ] ;
-     fhir:display [ fhir:v "Identité reçue d'un autre domaine" ] ;
-     fhir:definition [ fhir:v "Identité reçue d'un autre domaine" ]
-  ] [
-     fhir:code [ fhir:v "IDRA" ] ;
-     fhir:display [ fhir:v "Identité rapprochée dans un autre domaine" ] ;
-     fhir:definition [ fhir:v "Identité rapprochée dans un autre domaine" ]
-  ] [
-     fhir:code [ fhir:v "USUR" ] ;
-     fhir:display [ fhir:v "Identité usurpée" ] ;
-     fhir:definition [ fhir:v "Identité usurpée" ]
-  ] [
-     fhir:code [ fhir:v "HOMD" ] ;
-     fhir:display [ fhir:v "Homonyme détecté" ] ;
-     fhir:definition [ fhir:v "Homonyme détecté" ]
-  ] [
-     fhir:code [ fhir:v "HOMA" ] ;
-     fhir:display [ fhir:v "Homonyme avéré" ] ;
-     fhir:definition [ fhir:v "Homonyme avéré" ]
-  ] [
-     fhir:code [ fhir:v "INVA" ] ;
-     fhir:display [ fhir:v "Identité invalidée" ] ;
-     fhir:definition [ fhir:v "Identité invalidée" ]
-  ] [
-     fhir:code [ fhir:v "FICT" ] ;
-     fhir:display [ fhir:v "Identité fictive (Attribut d’identité « fictive »)" ] ;
-     fhir:definition [ fhir:v "Identité fictive (Attribut d’identité « fictive »)" ]
-  ] [
-     fhir:code [ fhir:v "DOUT" ] ;
-     fhir:display [ fhir:v "Identité douteuse (Attribut d’identité « douteuse »)" ] ;
-     fhir:definition [ fhir:v "Identité douteuse (Attribut d’identité « douteuse »)" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "fr-core-cs-v2-0445"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr-FR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr-FR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr-FR\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-v2-0445</b></p><a name=\"fr-core-cs-v2-0445\"> </a><a name=\"hcfr-core-cs-v2-0445\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a> version : 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">VIDE<a name=\"fr-core-cs-v2-0445-VIDE\"> </a></td><td>Identité non encore qualifiée</td><td>Identité non encore qualifiée</td></tr><tr><td style=\"white-space:nowrap\">PROV<a name=\"fr-core-cs-v2-0445-PROV\"> </a></td><td>Identité provisoire</td><td>Identité provisoire</td></tr><tr><td style=\"white-space:nowrap\">VALI<a name=\"fr-core-cs-v2-0445-VALI\"> </a></td><td>Identité validée</td><td>Identité validée</td></tr><tr><td style=\"white-space:nowrap\">DOUB<a name=\"fr-core-cs-v2-0445-DOUB\"> </a></td><td>Doublon</td><td>Doublon</td></tr><tr><td style=\"white-space:nowrap\">DESA<a name=\"fr-core-cs-v2-0445-DESA\"> </a></td><td>Identité désactivée</td><td>Identité désactivée</td></tr><tr><td style=\"white-space:nowrap\">DPOT<a name=\"fr-core-cs-v2-0445-DPOT\"> </a></td><td>Doublon potentiel</td><td>Doublon potentiel</td></tr><tr><td style=\"white-space:nowrap\">DOUA<a name=\"fr-core-cs-v2-0445-DOUA\"> </a></td><td>Doublon avéré</td><td>Doublon avéré</td></tr><tr><td style=\"white-space:nowrap\">COLP<a name=\"fr-core-cs-v2-0445-COLP\"> </a></td><td>Collision potentielle</td><td>Collision potentielle</td></tr><tr><td style=\"white-space:nowrap\">COLV<a name=\"fr-core-cs-v2-0445-COLV\"> </a></td><td>Collision avérée</td><td>Collision avérée</td></tr><tr><td style=\"white-space:nowrap\">FILI<a name=\"fr-core-cs-v2-0445-FILI\"> </a></td><td>Filiation</td><td>Filiation</td></tr><tr><td style=\"white-space:nowrap\">CACH<a name=\"fr-core-cs-v2-0445-CACH\"> </a></td><td>Identité cachée</td><td>Identité cachée</td></tr><tr><td style=\"white-space:nowrap\">ANOM<a name=\"fr-core-cs-v2-0445-ANOM\"> </a></td><td>Anonyme</td><td>Anonyme</td></tr><tr><td style=\"white-space:nowrap\">IDVER<a name=\"fr-core-cs-v2-0445-IDVER\"> </a></td><td>Identité vérifiée par le patient</td><td>Identité vérifiée par le patient</td></tr><tr><td style=\"white-space:nowrap\">RECD<a name=\"fr-core-cs-v2-0445-RECD\"> </a></td><td>Identité reçue d'un autre domaine</td><td>Identité reçue d'un autre domaine</td></tr><tr><td style=\"white-space:nowrap\">IDRA<a name=\"fr-core-cs-v2-0445-IDRA\"> </a></td><td>Identité rapprochée dans un autre domaine</td><td>Identité rapprochée dans un autre domaine</td></tr><tr><td style=\"white-space:nowrap\">USUR<a name=\"fr-core-cs-v2-0445-USUR\"> </a></td><td>Identité usurpée</td><td>Identité usurpée</td></tr><tr><td style=\"white-space:nowrap\">HOMD<a name=\"fr-core-cs-v2-0445-HOMD\"> </a></td><td>Homonyme détecté</td><td>Homonyme détecté</td></tr><tr><td style=\"white-space:nowrap\">HOMA<a name=\"fr-core-cs-v2-0445-HOMA\"> </a></td><td>Homonyme avéré</td><td>Homonyme avéré</td></tr><tr><td style=\"white-space:nowrap\">INVA<a name=\"fr-core-cs-v2-0445-INVA\"> </a></td><td>Identité invalidée</td><td>Identité invalidée</td></tr><tr><td style=\"white-space:nowrap\">FICT<a name=\"fr-core-cs-v2-0445-FICT\"> </a></td><td>Identité fictive (Attribut d’identité « fictive »)</td><td>Identité fictive (Attribut d’identité « fictive »)</td></tr><tr><td style=\"white-space:nowrap\">DOUT<a name=\"fr-core-cs-v2-0445-DOUT\"> </a></td><td>Identité douteuse (Attribut d’identité « douteuse »)</td><td>Identité douteuse (Attribut d’identité « douteuse »)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FRCoreCodeSystemv2_0445"] ;
+  fhir:CodeSystem.title [ fhir:value "FR Core CodeSystem v2-0445"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-26T12:32:04+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "HL7 v2 - Table 0445"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "21"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VIDE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité non encore qualifiée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité non encore qualifiée" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PROV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité provisoire" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité provisoire" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VALI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité validée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité validée" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DOUB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doublon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Doublon" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DESA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité désactivée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité désactivée" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DPOT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doublon potentiel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Doublon potentiel" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DOUA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doublon avéré" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Doublon avéré" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "COLP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Collision potentielle" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Collision potentielle" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "COLV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Collision avérée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Collision avérée" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FILI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Filiation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Filiation" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CACH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité cachée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité cachée" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ANOM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anonyme" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anonyme" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IDVER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité vérifiée par le patient" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité vérifiée par le patient" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RECD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité reçue d'un autre domaine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité reçue d'un autre domaine" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IDRA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité rapprochée dans un autre domaine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité rapprochée dans un autre domaine" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "USUR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité usurpée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité usurpée" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HOMD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Homonyme détecté" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Homonyme détecté" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HOMA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Homonyme avéré" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Homonyme avéré" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INVA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité invalidée" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité invalidée" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FICT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité fictive (Attribut d’identité « fictive »)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité fictive (Attribut d’identité « fictive »)" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DOUT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identité douteuse (Attribut d’identité « douteuse »)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identité douteuse (Attribut d’identité « douteuse »)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

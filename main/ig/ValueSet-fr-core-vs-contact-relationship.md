@@ -71,7 +71,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -99,7 +99,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "2.9",
+      "version" : "3.0.0",
       "concept" : [{
         "code" : "O",
         "display" : "Other"

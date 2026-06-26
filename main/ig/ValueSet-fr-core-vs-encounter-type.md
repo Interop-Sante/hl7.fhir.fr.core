@@ -71,7 +71,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
   "title" : "FR Core ValueSet Encounter type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -99,7 +99,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v2-0007",
-      "version" : "2.9",
+      "version" : "3.0.0",
       "concept" : [{
         "code" : "C",
         "display" : "Elective/Confort|Confort"

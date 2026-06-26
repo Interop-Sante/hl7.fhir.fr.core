@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCoreValueSetDisciplinePrestation |
+| Active as of 2026-06-26 | *Computable Name*:FRCoreValueSetDisciplinePrestation |
 
  
 Valeurs permettant de coder les disciplines de prestation. 
@@ -55,7 +55,7 @@ Valeurs permettant de coder les disciplines de prestation.
   "title" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

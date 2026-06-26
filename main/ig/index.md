@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core | *Version*:2.2.0 |
-| Active as of 2026-06-12 | *Computable Name*:FRCore |
+| Active as of 2026-06-26 | *Computable Name*:FRCore |
 
  ** Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données de santé : données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France. **
  Profiles, extensions, value sets, code systems and implementation guides standardizing the exchange of health data : administrative data about patients, health professionals and organization, and patient encounters (scheduled or effective), and vital sign in France 
@@ -121,7 +121,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [HL7 Terminology Maintenance Infrastructure Vocabulary](http://terminology.hl7.org/7.1.0/CodeSystem-hl7TermMaintInfra.html): [FRCoreCodeSystemModeValidationIdentite](CodeSystem-fr-core-cs-mode-validation-identity.md)
+* [Discharge disposition](http://terminology.hl7.org/7.2.0/CodeSystem-discharge-disposition.html): [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) and [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
+* [HumanNameAssemblyOrder](http://terminology.hl7.org/7.2.0/CodeSystem-name-assembly-order.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md), [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)... Show 7 more, [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md), [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md), [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md), [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md), [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md), [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md) and [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)
+* [Service category](http://terminology.hl7.org/7.2.0/CodeSystem-service-category.html): [Service de cardiologie](HealthcareService-svc-cardiologie-1.md)
+* [Service type](http://terminology.hl7.org/7.2.0/CodeSystem-service-type.html): [Appointment/FRCoreAppointmentExample](Appointment-FRCoreAppointmentExample.md), [FRCoreServiceTypeDurationExtension](StructureDefinition-fr-core-service-type-duration.md), [Schedule/FRCoreScheduleExample](Schedule-FRCoreScheduleExample.md) and [Slot/FRCoreSlotExample](Slot-FRCoreSlotExample.md)
+* [admissionType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0007.html): [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) and [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md)
+* [contactRole2](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0131.html): [FRCorePatientProfile](StructureDefinition-fr-core-patient.md), [FRCoreRelatedPersonProfile](StructureDefinition-fr-core-related-person.md), [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md) and [FRCoreValueSetPatientContactRole](ValueSet-fr-core-vs-patient-contact-role.md)
+* [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [FRCorePatientINSProfile](StructureDefinition-fr-core-patient-ins.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md)... Show 4 more, [FRCorePractitionerProfile](StructureDefinition-fr-core-practitioner.md), [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md), [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md) and [Patient/FRCorePatientDeceasedExample](Patient-FRCorePatientDeceasedExample.md)
+* [nameAssemblyOrder](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0444.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md)
+* [ActCode](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActCode.html): [Encounter/FRCoreEncounterExample](Encounter-FRCoreEncounterExample.md) and [FRCoreValueSetEncounterClass](ValueSet-fr-core-vs-encounter-class.md)
+* [MaritalStatus](http://terminology.hl7.org/7.2.0/CodeSystem-v3-MaritalStatus.html): [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
+* [NullFlavor](http://terminology.hl7.org/7.2.0/CodeSystem-v3-NullFlavor.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md), [FRCorePatientProfile](StructureDefinition-fr-core-patient.md) and [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md) and [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)
 
 
 ### Analyse inter-version
@@ -145,7 +157,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -181,7 +193,7 @@ Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dan
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",

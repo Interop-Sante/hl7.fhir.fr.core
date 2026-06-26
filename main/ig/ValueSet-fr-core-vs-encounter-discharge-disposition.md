@@ -71,7 +71,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-12T14:35:23+00:00",
+  "date" : "2026-06-26T12:32:04+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -104,7 +104,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
-      "version" : "4.0.1"
+      "version" : "1.0.1"
     }]
   }
 }
