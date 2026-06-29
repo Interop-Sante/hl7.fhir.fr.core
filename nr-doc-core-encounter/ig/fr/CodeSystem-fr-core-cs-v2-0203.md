@@ -1,0 +1,156 @@
+# FR Core CodeSystem v2-0203 - Guide d'implémentation FR Core v2.2.0
+
+## CodeSystem: FR Core CodeSystem v2-0203 
+
+ 
+HL7 v2 - Identifier type 
+
+Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
+
+* [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md)
+* [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md)
+* [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md)
+
+-------
+
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fr-core-cs-v2-0203",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
+  },
+  "language" : "fr-FR",
+  "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+  "version" : "2.2.0",
+  "name" : "FRCoreCodeSystemv2_0203",
+  "title" : "FR Core CodeSystem v2-0203",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-29T12:39:39+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "HL7 v2 - Identifier type",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 18,
+  "concept" : [{
+    "code" : "ADELI",
+    "display" : "N° ADELI",
+    "definition" : "N° ADELI"
+  },
+  {
+    "code" : "RPPS",
+    "display" : "N° RPPS",
+    "definition" : "N° RPPS"
+  },
+  {
+    "code" : "RPPSRG",
+    "display" : "N° RPPS Rang",
+    "definition" : "N° RPPS Rang d'identification des cabinets libéraux selon le référentiel RPPS"
+  },
+  {
+    "code" : "IDNPS",
+    "display" : "Identifiant National de Professionnel de Santé",
+    "definition" : "Identifiant National de Professionnel de Santé"
+  },
+  {
+    "code" : "NNFRA",
+    "display" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code",
+    "definition" : "National Person Identifier where the FRA is the ISO table 3166 3-character (alphabetic) country code"
+  },
+  {
+    "code" : "NDP",
+    "display" : "Identifiant du patient au Dossier Pharmaceutique",
+    "definition" : "Identifiant du patient au Dossier Pharmaceutique"
+  },
+  {
+    "code" : "INS-C",
+    "display" : "Identifiant National de Santé Calculé",
+    "definition" : "Identifiant National de Santé Calculé"
+  },
+  {
+    "code" : "INS-NIA",
+    "display" : "NIR temporaire",
+    "definition" : "NIR temporaire"
+  },
+  {
+    "code" : "INS-NIR",
+    "display" : "NIR définitif",
+    "definition" : "NIR définitif"
+  },
+  {
+    "code" : "INS-NIR-TEST",
+    "display" : "NIR TEST",
+    "definition" : "NIR TEST"
+  },
+  {
+    "code" : "INS-NIR-DEMO",
+    "display" : "NIR DEMO",
+    "definition" : "NIR DEMO"
+  },
+  {
+    "code" : "FINEJ",
+    "display" : "FINESS d'entité juridique",
+    "definition" : "FINESS d'entité juridique"
+  },
+  {
+    "code" : "FINEG",
+    "display" : "FINESS d'entité géographique",
+    "definition" : "FINESS d'entité géographique"
+  },
+  {
+    "code" : "SIREN",
+    "display" : "Identification de l'organisation au SIREN",
+    "definition" : "Identification de l'organisation au SIREN"
+  },
+  {
+    "code" : "SIRET",
+    "display" : "Identification de l'organisation au SIRET",
+    "definition" : "Identification de l'organisation au SIRET"
+  },
+  {
+    "code" : "IDNST",
+    "display" : "Identification nationale de structure définie par l’ANS dans le CI_SIS",
+    "definition" : "Identification nationale de structure définie par l’ANS dans le CI_SIS"
+  },
+  {
+    "code" : "INTRN",
+    "display" : "Identifiant interne",
+    "definition" : "Identifiant interne"
+  },
+  {
+    "code" : "EXTRN",
+    "display" : "Identifiant externe",
+    "definition" : "Identifiant externe"
+  }]
+}
+
+```
