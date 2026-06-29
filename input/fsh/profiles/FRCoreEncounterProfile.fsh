@@ -1,3 +1,9 @@
+// Pas de profil EU Core disponible pour cette ressource
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
+//
+// Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
@@ -40,8 +46,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.value 1..
 * identifier.assigner only Reference(FRCoreOrganizationProfile)
 
-* class.system 1..
-* class.code 1..
+
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
@@ -75,3 +80,52 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * serviceProvider only Reference(FRCoreOrganizationProfile)
 
 * partOf only Reference(FRCoreEncounterProfile)
+
+// ── Contraintes dérivées de IG Document Core ─────────────────────────────────────────────────────
+
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)"
+* class from FRCoreValueSetEncounterClass (extensible)
+
+* status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
+
+* period ^short = "Date début et fin de la rencontre
+Si la rencontre est réalisée ou planifiée : la date est obligatoire.
+Si la rencontre est prévue non confirmée : la date est facultative."
+
+* priority ^short = """
+Si la rencontre est prévue non confirmée et qu'une confirmation est attendue :
+code='CS', display='callback for scheduling'
+Sinon, l'élément 'priority' n'est pas fourni.
+"""
+
+// * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : retire Group, ajoute FRCorePatientINSProfile — non appliqué (FRCoreEncounterProfile contraint déjà : Reference(FRCorePatientProfile or Group))
+
+* participant ^short = "Liste des participants impliqués dans la rencontre"
+// Commenté car spécifique document
+// * participant.individual.extension contains
+//     FRActorExtension named executant 0..* and
+//     FRActorExtension named author 0..* and
+//     FRActorExtension named informant 0..*
+
+// * participant.individual.extension[executant] ^short = "Exécutant :
+// Si la rencontre est réalisée :
+//  au moins 1 exécutant doit être renseigné.
+// Sinon : l'exécutant n'est pas obligatoire mais peut être renseigné"
+// * participant.individual.extension[executant].extension[type].valueCode = #PRF
+
+// * participant.individual.extension[author] ^short = "Author"
+// * participant.individual.extension[author].extension[type].valueCode = #AUT
+
+// * participant.individual.extension[informant] ^short = "Informant"
+// * participant.individual.extension[informant].extension[type].valueCode = #INF
+
+* location 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
+* location ^short = "Lieu d'exécution"
+// * location.location only Reference(FRLocationDocument) // Doc Core — FRCoreEncounterProfile contraint déjà : only Reference(FRCoreLocationProfile) ; FRLocationDocument à remplacer par un profil FRCore équivalent
+
+* hospitalization ^short = "Informations sur l'hospitalisation associée à la rencontre"
+* hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
+* hospitalization.admitSource from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis (required) // Contrainte ajoutée uniquement par IG Document Core
+* hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre:
+Valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet"
+// * hospitalization.dischargeDisposition from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis (preferred) // Doc Core — conflict avec le binding FRCoreValueSetEncounterDischargeDisposition (example) existant ; à arbitrer
