@@ -46,8 +46,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.value 1..
 * identifier.assigner only Reference(FRCoreOrganizationProfile)
 
-* class.system 1..
-* class.code 1..
+
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
@@ -84,12 +83,10 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 // ── Contraintes dérivées de IG Document Core ─────────────────────────────────────────────────────
 
-* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
-// Doc Core : FRValueSetEncounterClass (tous les codes v3-ActEncounterCode)
-* class from FRCoreValueSetEncounterClass (extensible) // Contrainte ajoutée uniquement par IG Document Core
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)"
+* class from FRCoreValueSetEncounterClass (extensible)
 
-* status ^short = "Statut de la rencontre (finished | planned | proposed)"
-* obeys fr-encounter-status // Invariant ajouté par IG Document Core
+* status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
 
 * period ^short = "Date début et fin de la rencontre
 Si la rencontre est réalisée ou planifiée : la date est obligatoire.
@@ -132,8 +129,3 @@ Sinon, l'élément 'priority' n'est pas fourni.
 * hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre:
 Valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet"
 // * hospitalization.dischargeDisposition from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis (preferred) // Doc Core — conflict avec le binding FRCoreValueSetEncounterDischargeDisposition (example) existant ; à arbitrer
-
-Invariant: fr-encounter-status
-Description: "Le statut de la rencontre doit être 'finished' (rencontre réalisée), 'planned' (rencontre planifiée) ou 'proposed' (rencontre prévue mais non confirmée)."
-Severity: #error
-Expression: "status = 'finished' or status = 'planned' or status = 'proposed'"
