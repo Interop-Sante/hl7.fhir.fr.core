@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/hopitaltest-endocrino-ch04> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hopitaltest-endocrino-ch04"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr-FR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Localisation hopitaltest-endocrino-ch04</b></p><a name=\"hopitaltest-endocrino-ch04\"> </a><a name=\"hchopitaltest-endocrino-ch04\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-location.html\">FR Core Location Profile</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Chambre 04</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type CHAMB}\">Chambre</span></p><p><b>managingOrganization</b>: <a href=\"Organization-hopitaltest-uf-4701-endocrino-diab.html\">Organization UF Endocrino Diabeto</a></p></div>"
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Chambre 04"] ;
+  fhir:Location.type [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type" ] ;
+       fhir:Coding.code [ fhir:value "CHAMB" ] ;
+       fhir:Coding.display [ fhir:value "Chambre" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Chambre" ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4701-endocrino-diab> ;
+     fhir:Reference.reference [ fhir:value "Organization/hopitaltest-uf-4701-endocrino-diab" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/hopitaltest-endocrino-ch04.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

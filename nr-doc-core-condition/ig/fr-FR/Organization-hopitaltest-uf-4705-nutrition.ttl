@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4705-nutrition> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hopitaltest-uf-4705-nutrition"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr-FR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uf-4705-nutrition</b></p><a name=\"hopitaltest-uf-4705-nutrition\"> </a><a name=\"hchopitaltest-uf-4705-nutrition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uf.html\">FR Core Organization UF Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Nutrition</p><p><b>Organization Period</b>: 2023-01-01 00:00:00+0100 --&gt; (en cours)</p><p><b>FR Core Organization Extension - Indicateur d'une unité fonctionnelle</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur HEB}, {https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur MED}\">Hébergement</span></p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4705 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UF}\">Unité fonctionnelle</span></p><p><b>name</b>: UF Nutrition</p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 84705(Work)</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name" ] ;
+     fhir:Extension.valueString [ fhir:value "UF Nutrition" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/organization-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2023-01-01T00:00:00+01:00"^^xsd:dateTime ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur" ] ;
+         fhir:Coding.code [ fhir:value "HEB" ] ;
+         fhir:Coding.display [ fhir:value "Hébergement" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur" ] ;
+         fhir:Coding.code [ fhir:value "MED" ] ;
+         fhir:Coding.display [ fhir:value "Médicale" ]
+       ]
+     ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://hopitalTest.fr/namingsystem/organization" ] ;
+     fhir:Identifier.value [ fhir:value "4705" ]
+  ] ;
+  fhir:Organization.type [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307" ] ;
+       fhir:Coding.code [ fhir:value "UF" ]
+     ]
+  ] ;
+  fhir:Organization.name [ fhir:value "UF Nutrition"] ;
+  fhir:Organization.contact [
+     fhir:index -1 ;
+     fhir:Organization.contact.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "84705" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4705-nutrition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
