@@ -1,0 +1,138 @@
+# FR Core Organization Extension - Type d'activité - Guide d'implémentation FR Core v2.2.0
+
+## : FR Core Organization Extension - Type d'activité 
+
+Type d’activité d’une UF
+
+**Context of Use**
+
+**Usage info**
+
+**Utilisations:**
+
+* Utilise ce/t/te Extension: [FR Core Organization UF Profile](StructureDefinition-fr-core-organization-uf.md)
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-type-activite)
+
+### 
+
+ . 
+
+*   
+*   
+*   
+*   
+
+#### Bindings terminologiques (différentiel)
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+** Résumé **
+
+Extension simple avec le type CodeableConcept : Type d'activité d'une UF
+
+ **Differential View** 
+
+#### Bindings terminologiques (différentiel)
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+** Résumé **
+
+Extension simple avec le type CodeableConcept : Type d'activité d'une UF
+
+ 
+
+ , ,  
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-core-organization-type-activite",
+  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite",
+  "version" : "2.2.0",
+  "name" : "FRCoreOrganizationTypeActiviteExtension",
+  "title" : "FR Core Organization Extension - Type d'activité",
+  "status" : "active",
+  "date" : "2026-06-29T09:28:38+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Type d'activité d'une UF",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Organization"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "FR Core Organization Extension - Type d'activité",
+      "definition" : "Type d'activité d'une UF"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "short" : "Type d'activité",
+      "definition" : "Type d'activité de l'UF",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-type-activite|2.2.0"
+      }
+    }]
+  }
+}
+
+```

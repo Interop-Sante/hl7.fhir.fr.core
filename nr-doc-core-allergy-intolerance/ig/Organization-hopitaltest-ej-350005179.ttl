@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-ej-350005179> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hopitaltest-ej-350005179"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-ej-350005179</b></p><a name=\"hopitaltest-ej-350005179\"> </a><a name=\"hchopitaltest-ej-350005179\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-etablissement.html\">FR Core Organization Etablissement Profile</a></p></div><p><b>FR Core Organization Raison Sociale Extension</b>: CHRU RENNES</p><p><b>identifier</b>: FINESS d'entité juridique/350005179 (utilisation : official, ), Identification de l'organisation au SIREN/263500076 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 LEGAL-ENTITY}\">Etablissement Juridique</span></p><p><b>name</b>: CHRU RENNES</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale" ] ;
+     fhir:Extension.valueString [ fhir:value "CHRU RENNES" ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "FINEJ" ] ;
+         fhir:Coding.display [ fhir:value "FINESS d'entité juridique" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://finess.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "350005179" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "SIREN" ] ;
+         fhir:Coding.display [ fhir:value "Identification de l'organisation au SIREN" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://sirene.fr" ] ;
+     fhir:Identifier.value [ fhir:value "263500076" ]
+  ] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307" ] ;
+       fhir:Coding.code [ fhir:value "LEGAL-ENTITY" ] ;
+       fhir:Coding.display [ fhir:value "Entité légale" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Etablissement Juridique" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "CHRU RENNES"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-ej-350005179.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

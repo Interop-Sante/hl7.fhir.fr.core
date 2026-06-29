@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uac-4420-uac-01> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hopitaltest-uac-4420-uac-01"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uac-4420-uac-01</b></p><a name=\"hopitaltest-uac-4420-uac-01\"> </a><a name=\"hchopitaltest-uac-4420-uac-01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uac.html\">FR Core Organization UAC Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Dialyse</p><p><b>Organization Period</b>: 2023-01-01 00:00:00+0100 --&gt; (en cours)</p><p><b>FR Core Organization Extension - Discipline Prestation</b>: <a href=\"CodeSystem-fr-core-cs-discipline-equipement.html#fr-core-cs-discipline-equipement-797\">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE: 797</a> (Hémodialyse en centre pour adulte)</p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4220-01 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UAC}\">Unité d'activité</span></p><p><b>name</b>: UAC 01 Dialyse</p><p><b>partOf</b>: <a href=\"Organization-hopitaltest-uf-4420-dialyse.html\">Organization UF Dialyse</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name" ] ;
+     fhir:Extension.valueString [ fhir:value "UF Dialyse" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/organization-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2023-01-01T00:00:00+01:00"^^xsd:dateTime ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement" ] ;
+       fhir:Coding.code [ fhir:value "797" ]
+     ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://hopitalTest.fr/namingsystem/organization" ] ;
+     fhir:Identifier.value [ fhir:value "4220-01" ]
+  ] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307" ] ;
+       fhir:Coding.code [ fhir:value "UAC" ]
+     ]
+  ] ;
+  fhir:Organization.name [ fhir:value "UAC 01 Dialyse"] ;
+  fhir:Organization.partOf [
+     fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4420-dialyse> ;
+     fhir:Reference.reference [ fhir:value "Organization/hopitaltest-uf-4420-dialyse" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uac-4420-uac-01.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

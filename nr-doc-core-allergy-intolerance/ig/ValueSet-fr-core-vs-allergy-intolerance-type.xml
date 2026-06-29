@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fr-core-vs-allergy-intolerance-type"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"/>
+  </meta>
+  <language value="fr-FR"/>
+  <text>
+    <status value="extensions"/><div xml:lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs fr-core-vs-allergy-intolerance-type</b></p><a name="fr-core-vs-allergy-intolerance-type"> </a><a name="hcfr-core-vs-allergy-intolerance-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr-FR</p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a> version : 4.0.1</p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href="http://hl7.org/fhir/R4/codesystem-allergy-intolerance-type.html"><code>http://hl7.org/fhir/allergy-intolerance-type</code></a><span title="La version est explicitement indiquée comme étant 4.0.1"> version &#x1F4CD;4.0.1</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-allergy-intolerance-type.html#allergy-intolerance-type-allergy">allergy</a></td><td>allergie</td><td>A propensity for hypersensitive reaction(s) to a substance.  These reactions are most typically type I hypersensitivity, plus other &quot;allergy-like&quot; reactions, including pseudoallergy.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-allergy-intolerance-type.html#allergy-intolerance-type-intolerance">intolerance</a></td><td>intolerance</td><td>A propensity for adverse reactions to a substance that is not judged to be allergic or &quot;allergy-like&quot;.  These reactions are typically (but not necessarily) non-immune.  They are to some degree idiosyncratic and/or patient-specific (i.e. are not a reaction that is expected to occur with most or all patients given similar circumstances).</td></tr></table></li><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href="http://snomed.info/id/56840009">56840009</a></td><td>idiosyncrasie</td></tr><tr><td><a href="http://snomed.info/id/609396006">609396006</a></td><td>hypersensibilité non allergique</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-intolerance-type"/>
+  <version value="2.2.0"/>
+  <name value="FRCoreValueSetAllergyIntoleranceType"/>
+  <title value="FR Core ValueSet Allergy Intolerance Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-06-29T09:28:38+00:00"/>
+  <publisher value="Interop'Santé"/>
+  <contact>
+    <name value="Interop'Santé"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://interopsante.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="InteropSanté"/>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@interopsante.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs contenant les codes autorisés pour les types d'allergies et d'intolérances."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/allergy-intolerance-type"/>
+      <version value="4.0.1"/>
+      <concept>
+        <code value="allergy"/>
+        <display value="allergie"/>
+      </concept>
+      <concept>
+        <code value="intolerance"/>
+        <display value="intolerance"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="56840009"/>
+        <display value="idiosyncrasie"/>
+      </concept>
+      <concept>
+        <code value="609396006"/>
+        <display value="hypersensibilité non allergique"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/RelatedPerson/FRCoreRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCoreRelatedPersonExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PersonneEnRelation FRCoreRelatedPersonExample</b></p><a name=\"FRCoreRelatedPersonExample\"> </a><a name=\"hcFRCoreRelatedPersonExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-related-person.html\">FR Core Related Person Profile</a></p></div><blockquote><p><b>Patient Nationality</b></p><ul><li>code: <span title=\"Codes :{urn:iso:std:iso:3166 FR}\">France (la)</span></li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.4.8</code>/P98765</p><p><b>patient</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>relationship</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Personne à prévenir en cas d'urgence</span>, <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode MTH}\">Mère</span></p><p><b>name</b>: Marie Durand (Official)</p><p><b>telecom</b>: ph: 06 12 34 56 78(Mobile)</p><p><b>address</b>: 12 rue des Lilas Paris 75020 (home)</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "code" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+           fhir:Coding.code [ fhir:value "FR" ] ;
+           fhir:Coding.display [ fhir:value "France (la)" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-nationality" ]
+  ] ;
+  fhir:RelatedPerson.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.1.4.8" ] ;
+     fhir:Identifier.value [ fhir:value "P98765" ]
+  ] ;
+  fhir:RelatedPerson.patient [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FRCorePatientINSExample" ]
+  ] ;
+  fhir:RelatedPerson.relationship [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass" ] ;
+       fhir:Coding.code [ fhir:value "ECON" ] ;
+       fhir:Coding.display [ fhir:value "Personne à prévenir en cas d'urgence" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode" ] ;
+       fhir:Coding.code [ fhir:value "MTH" ] ;
+       fhir:Coding.display [ fhir:value "Mère" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Durand" ] ;
+     fhir:HumanName.given [
+       fhir:value "Marie" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:RelatedPerson.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "06 12 34 56 78" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ] ;
+  fhir:RelatedPerson.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "12 rue des Lilas" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Paris" ] ;
+     fhir:Address.postalCode [ fhir:value "75020" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/RelatedPerson/FRCoreRelatedPersonExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

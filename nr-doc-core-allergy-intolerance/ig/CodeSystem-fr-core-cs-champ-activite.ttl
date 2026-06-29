@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-cs-champ-activite"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr-FR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr-FR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr-FR\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-champ-activite</b></p><a name=\"fr-core-cs-champ-activite\"> </a><a name=\"hcfr-core-cs-champ-activite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a> version : 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">MCO<a name=\"fr-core-cs-champ-activite-MCO\"> </a></td><td>MCO</td><td>Médecine Chirurgie Obstétrique</td></tr><tr><td style=\"white-space:nowrap\">SMR<a name=\"fr-core-cs-champ-activite-SMR\"> </a></td><td>SMR</td><td>Soins Médicaux et de Réadaptation</td></tr><tr><td style=\"white-space:nowrap\">HAD<a name=\"fr-core-cs-champ-activite-HAD\"> </a></td><td>HAD</td><td>Hospitalisation à Domicile</td></tr><tr><td style=\"white-space:nowrap\">PSY<a name=\"fr-core-cs-champ-activite-PSY\"> </a></td><td>PSY</td><td>Psychiatrie</td></tr><tr><td style=\"white-space:nowrap\">EHPAD<a name=\"fr-core-cs-champ-activite-EHPAD\"> </a></td><td>EHPAD</td><td>Etablissement d'Hébergement pour Personnes Agées Dépendantes</td></tr><tr><td style=\"white-space:nowrap\">LG_SJR<a name=\"fr-core-cs-champ-activite-LG_SJR\"> </a></td><td>Long séjour</td><td>Long séjour</td></tr><tr><td style=\"white-space:nowrap\">MSN_RTRT<a name=\"fr-core-cs-champ-activite-MSN_RTRT\"> </a></td><td>Maison de retraite</td><td>Maison de retraite</td></tr><tr><td style=\"white-space:nowrap\">ATR<a name=\"fr-core-cs-champ-activite-ATR\"> </a></td><td>Autre</td><td>Autre</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FRCoreCodeSystemChampActivite"] ;
+  fhir:CodeSystem.title [ fhir:value "FR Core CodeSystem Champ Activite - Codes du champ d'activité"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-29T09:28:38+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Champ d'activité clinique de l'organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MCO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MCO" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Médecine Chirurgie Obstétrique" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SMR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SMR" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Soins Médicaux et de Réadaptation" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HAD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HAD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospitalisation à Domicile" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PSY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PSY" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Psychiatrie" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EHPAD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EHPAD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Etablissement d'Hébergement pour Personnes Agées Dépendantes" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LG_SJR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Long séjour" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Long séjour" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MSN_RTRT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Maison de retraite" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Maison de retraite" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ATR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Autre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Autre" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

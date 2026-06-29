@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Patient/FRCorePatientDeceasedExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCorePatientDeceasedExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr-FR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Patient FRCorePatientDeceasedExample</b></p><a name=\"FRCorePatientDeceasedExample\"> </a><a name=\"hcFRCorePatientDeceasedExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-patient.html\">FR Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jean Martin (official) Male, Date de Naissance :1950-03-10 ( Patient internal identifier: IPP-999-001 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"L'enregistrement est actif\">Actif :</td><td>false</td><td style=\"background-color: #f3f5da\" title=\"Statut connu du patient\">Décédé :</td><td colspan=\"3\">2024-01-15</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Date de naissance approximative du patient.#xD;#xA;Approximate birthdate of the patient\"><a href=\"StructureDefinition-fr-core-lunar-date.html\">FR Core Lunar Date Extension</a></td><td colspan=\"3\">1950-03-10</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).#xA;#xD;Carries the death place of the patient\"><a href=\"StructureDefinition-fr-core-patient-death-place.html\">FR Core Patient Death Place Extension</a></td><td colspan=\"3\">CHU de Paris, Paris, France</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Address.text [ fhir:value "CHU de Paris, Paris, France" ] ;
+       fhir:Address.city [ fhir:value "Paris" ] ;
+       fhir:Address.postalCode [ fhir:value "75014" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date" ] ;
+     fhir:Extension.valueString [ fhir:value "1950-03-10" ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PI" ] ;
+         fhir:Coding.display [ fhir:value "Patient internal identifier" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://hopital.fr/namingsystem/ipp" ] ;
+     fhir:Identifier.value [ fhir:value "IPP-999-001" ]
+  ] ;
+  fhir:Patient.active [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index -1 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Martin" ] ;
+     fhir:HumanName.given [
+       fhir:value "Jean" ;
+       fhir:index -1
+     ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "male"] ;
+  fhir:Patient.birthDate [ fhir:value "1950-03-10"^^xsd:date] ;
+  fhir:Patient.deceasedDateTime [ fhir:value "2024-01-15"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Patient/FRCorePatientDeceasedExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
