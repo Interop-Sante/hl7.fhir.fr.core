@@ -23,22 +23,15 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * doseQuantity ^short = "Dose administrée"
 
 // produit de santé
-* vaccineCode.coding ^slicing.discriminator.type = #value
-* vaccineCode.coding ^slicing.discriminator.path = "system"
-* vaccineCode.coding ^slicing.rules = #open
-* vaccineCode.coding ^slicing.description = "Slice CIS et autres codifications"
-
 * vaccineCode ^short = "Vaccin. Code du produit de santé"
-// Slice CIS obligatoire
-* vaccineCode.coding contains cis 1..1 // Slice CIS obligatoire — contrainte ajoutée par IG Document Core (FHIR R5 base vaccineCode.coding : 0..*)
-// Doc Core : FRValueSetVaccineCodeCISDocument
-* vaccineCode.coding[cis] from FRCoreValueSetVaccineCodeCIS (required)
-
-// Slice (autres codifications)
-* vaccineCode.coding contains translation 0..*
-// Doc Core : FRValueSetMedicationTranslationDocument
-* vaccineCode.coding[translation] from FRCoreValueSetMedicationTranslation (required)
-* vaccineCode.coding[translation].system 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base Coding.system : 0..1)
+* vaccineCode from FRCoreValueSetVaccineCodeCIS (required)
+* vaccineCode ^binding.extension[+].extension[0].url = "key"
+* vaccineCode ^binding.extension[=].extension[=].valueId = "fr-core-immunization-vaccinecode-translation"
+* vaccineCode ^binding.extension[=].extension[+].url = "purpose"
+* vaccineCode ^binding.extension[=].extension[=].valueCode = #extensible
+* vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
+* vaccineCode ^binding.extension[=].extension[=].valueCanonical = Canonical(FRCoreValueSetMedicationTranslation)
+* vaccineCode ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 
 * lotNumber ^short = "Numéro de lot." // Doc Core
 * expirationDate ^short = "Date d'expiration du produit" // Doc Core
