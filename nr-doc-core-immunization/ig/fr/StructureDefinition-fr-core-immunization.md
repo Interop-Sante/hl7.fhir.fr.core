@@ -122,7 +122,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-29T10:25:23+00:00",
+  "date" : "2026-06-29T15:19:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -284,7 +284,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
       "id" : "Immunization.occurrence[x]",
       "path" : "Immunization.occurrence[x]",
       "short" : "Date de la vaccination",
-      "definition" : "Si la date de la vaccination est inconnue, utiliser l'extension data-absent-reason précisant pourquoi elle n'est pas connue.",
       "type" : [{
         "code" : "dateTime"
       }]

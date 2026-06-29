@@ -1,9 +1,9 @@
 FRCore : Validation Results
 =========================================
 
-err = 12, warn = 200, info = 4372
+err = 13, warn = 200, info = 4372
 IG Publisher Version: 2.2.10
-Generated Mon Jun 29 10:31:21 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0 (canonical = https://hl7.fr/ig/fhir/core)
+Generated Mon Jun 29 15:25:32 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0 (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 0 / 1 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-champ-activite : 0 / 2 / 3
@@ -48,7 +48,7 @@ Generated Mon Jun 29 10:31:21 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationBodyWeightExample : 0 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeadCircumExample : 0 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeartRateExample : 0 / 0 / 3
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationOxygenSaturationExample : 0 / 0 / 3
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationOxygenSaturationExample : 1 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationRespRateExample : 0 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-FRCoreOrganizationExample : 0 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-dept-11003-endocrino : 0 / 1 / 3
@@ -405,6 +405,7 @@ INFORMATION: Observation/FRCoreObservationHeadCircumExample: Observation.meta.pr
 INFORMATION: Observation/FRCoreObservationHeartRateExample: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Observation-FRCoreObservationOxygenSaturationExample.json ==
 INFORMATION: Observation/FRCoreObservationOxygenSaturationExample: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Observation/FRCoreObservationOxygenSaturationExample: Observation.bodySite.coding[0].display: Wrong Display Name 'doigt d'une main excepté le pouce' for http://snomed.info/sct#7569003. Valid display is 'doigt de la main excepté le pouce' (fr-x-sctlang-10031000-315102) (for the language(s) 'fr-FR')
 == fsh-generated/resources/Observation-FRCoreObservationRespRateExample.json ==
 INFORMATION: Observation/FRCoreObservationRespRateExample: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Organization-FRCoreOrganizationExample.json ==
@@ -4777,8 +4778,8 @@ WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet.compose.include[3]
 WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet.compose.include[4].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-nuva/'
 WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-medication-translation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'fr-core-vs-medication-translation'): Error from https://smt.esante.gouv.fr/fhir: Error: [693a1011-3783-4a6d-ad54-67c0ef723cc4]: A usable code system with URL https://smt.esante.gouv.fr/terminologie-bdpm|2026-05-05 could not be resolved.
-Information: X-Request-Id: 538e57b3-56a0-4adb-926b-5f47dc06dd1e
+WARNING: ValueSet.where(id = 'fr-core-vs-medication-translation'): Error from https://smt.esante.gouv.fr/fhir: Error: [660f9cfd-0e4c-4fa3-80bf-80bbc294e1fa]: A usable code system with URL https://smt.esante.gouv.fr/terminologie-bdpm|2026-05-05 could not be resolved.
+Information: X-Request-Id: 6166f02e-8643-400b-a7b6-cf9acab23838
 == fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity to 2.2.0
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
@@ -4979,8 +4980,8 @@ ERROR: ValueSet/fr-core-vs-vaccine-code-cis: ValueSet: ValueSet.experimental: mi
 ERROR: ValueSet/fr-core-vs-vaccine-code-cis: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/fr-core-vs-vaccine-code-cis: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-vaccine-code-cis should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'fr-core-vs-vaccine-code-cis'): Error from https://smt.esante.gouv.fr/fhir: Error: [693a1011-3783-4a6d-ad54-67c0ef723cc4]: A usable code system with URL https://smt.esante.gouv.fr/terminologie-bdpm|2026-05-05 could not be resolved.
-Information: X-Request-Id: 538e57b3-56a0-4adb-926b-5f47dc06dd1e
+WARNING: ValueSet.where(id = 'fr-core-vs-vaccine-code-cis'): Error from https://smt.esante.gouv.fr/fhir: Error: [660f9cfd-0e4c-4fa3-80bf-80bbc294e1fa]: A usable code system with URL https://smt.esante.gouv.fr/terminologie-bdpm|2026-05-05 could not be resolved.
+Information: X-Request-Id: 6166f02e-8643-400b-a7b6-cf9acab23838
 == fsh-generated/resources/ValueSet-fr-core-vsbody-temp-meas-body-location.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 INFORMATION: ValueSet/fr-core-vsbody-temp-meas-body-location: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)

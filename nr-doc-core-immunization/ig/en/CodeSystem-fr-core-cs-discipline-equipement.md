@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-29T10:25:23+00:00",
+  "date" : "2026-06-29T15:19:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

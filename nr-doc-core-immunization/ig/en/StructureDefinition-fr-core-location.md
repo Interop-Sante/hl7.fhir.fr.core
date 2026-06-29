@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-location.
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-06-29T10:25:23+00:00",
+  "date" : "2026-06-29T15:19:05+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
