@@ -15,7 +15,6 @@ Description: "DataType définissant l'Accession Number d'une demande d'examen. I
 * type 1..1
 * type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
 
-* system 0..1
 * system ^short = "L'espace de nommage pour l'identifiant"
 
 * value 1..1
