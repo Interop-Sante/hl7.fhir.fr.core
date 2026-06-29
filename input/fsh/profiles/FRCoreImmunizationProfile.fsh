@@ -12,7 +12,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
-* occurrence[x] ^definition = "Si la date de la vaccination est inconnue, utiliser l'extension data-absent-reason précisant pourquoi elle n'est pas connue."
 
 * route ^short = "Voie d'administration"
 * route from $jdv-immunization-route-code-cisis (required)
@@ -41,13 +40,14 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * expirationDate ^short = "Date d'expiration du produit" // Doc Core
 
 // Commenté car spécifique document
-// * performer.actor.extension contains
-//     FRActorExtension named author 1..1
-
+// * performer ^short = "Exécutant"
+// * performer.function = $v2-0443#AP
+// * performer.actor only Reference(FRCorePractitionerRoleProfile)
 // --- Auteur ---
-// * performer.actor.extension[author] ^short = "Auteur de la vaccination (personne ayant validé médicalement que la vaccination a été réalisée)"
-// * performer.actor.extension[author].extension[type].valueCode = #AUT
-// * performer.actor.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+// * extension contains FRActorExtension named author 1..1
+// * extension[author] ^short = "Auteur de la vaccination"
+// * extension[author].extension[type].valueCode = #AUT
+// * extension[author].extension[actor].valueReference only Reference(FRCorePractitionerRoleProfile or FRCorePatientINSProfile or FRCorePatientProfile)
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1

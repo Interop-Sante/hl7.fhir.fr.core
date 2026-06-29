@@ -60,6 +60,7 @@ Alias: $JDV-J245-Civilite-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J245-Civili
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
 Alias: $v2-0007 = http://terminology.hl7.org/CodeSystem/v2-0007
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
