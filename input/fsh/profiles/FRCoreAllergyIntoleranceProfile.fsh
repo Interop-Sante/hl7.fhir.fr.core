@@ -5,7 +5,7 @@
 //   https://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreAllergyIntoleranceProfile
-Parent: AllergyIntolerance
+Parent: allergyIntolerance-eu-core
 Id: fr-core-allergy-intolerance
 Title: "FR Core AllergyIntolerance Profile"
 Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
