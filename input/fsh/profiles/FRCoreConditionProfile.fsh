@@ -5,7 +5,7 @@
 //   https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreConditionProfile
-Parent: Condition
+Parent: condition-eu-core
 Id: fr-core-condition
 Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
