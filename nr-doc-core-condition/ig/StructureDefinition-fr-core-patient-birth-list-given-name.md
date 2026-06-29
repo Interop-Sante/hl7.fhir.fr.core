@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCorePatientBirthListGivenName |
+| Active as of 2026-06-29 | *Computable Name*:FRCorePatientBirthListGivenName |
 
 Prénoms de l’acte de naissance
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-patient-birt
   "name" : "FRCorePatientBirthListGivenName",
   "title" : "FR Core Patient Birth List Given name Extension",
   "status" : "active",
-  "date" : "2026-06-15T15:22:45+00:00",
+  "date" : "2026-06-29T09:12:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

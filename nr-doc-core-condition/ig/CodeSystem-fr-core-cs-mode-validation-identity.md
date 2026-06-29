@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreCodeSystemModeValidationIdentite |
+| Active as of 2026-06-29 | *Computable Name*:FRCoreCodeSystemModeValidationIdentite |
 
  
 Mode de validation de l’identité 
@@ -37,7 +37,7 @@ Mode de validation de l’identité
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-15T15:22:45+00:00",
+  "date" : "2026-06-29T09:12:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

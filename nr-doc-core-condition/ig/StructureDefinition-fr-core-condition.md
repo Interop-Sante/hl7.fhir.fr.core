@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition | *Version*:2.2.0 |
-| Active as of 2026-06-15 | *Computable Name*:FRCoreConditionProfile |
+| Active as of 2026-06-29 | *Computable Name*:FRCoreConditionProfile |
 
  
 FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-condition.cs
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-06-15T15:22:45+00:00",
+  "date" : "2026-06-29T09:12:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -100,17 +100,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-condition.cs
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Condition",
       "path" : "Condition"
-    },
-    {
-      "id" : "Condition.identifier",
-      "path" : "Condition.identifier",
-      "short" : "Identifiant"
     },
     {
       "id" : "Condition.clinicalStatus",
@@ -159,8 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-condition.cs
     {
       "id" : "Condition.code",
       "path" : "Condition.code",
-      "short" : "Identification de la condition, du problème ou du diagnostic :\nCIM-10 pour les pathologie  et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' display='Causes inconnues et non précisées de morbidité' system='https://smt.esante.gouv.fr/terminologie-cim-10' et décrire le problème sous forme de texte libre\nRéaction allergique : CIM-11 (2.16.840.1.113883.6.347) / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité\nSi pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-problem-cisis",
-      "min" : 1
+      "short" : "Identification de la condition, du problème ou du diagnostic :\nCIM-10 pour les pathologie  et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' display='Causes inconnues et non précisées de morbidité' system='https://smt.esante.gouv.fr/terminologie-cim-10' et décrire le problème sous forme de texte libre\nRéaction allergique : CIM-11 (2.16.840.1.113883.6.347) / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité\nSi pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-problem-cisis"
     },
     {
       "id" : "Condition.bodySite",
@@ -184,14 +178,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-condition.cs
     {
       "id" : "Condition.onset[x]",
       "path" : "Condition.onset[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
       "min" : 1
     },
     {
@@ -199,31 +185,15 @@ Other representations of profile: [CSV](StructureDefinition-fr-core-condition.cs
       "path" : "Condition.onset[x]",
       "sliceName" : "onsetDateTime",
       "short" : "Date de début du problème",
-      "min" : 0,
-      "max" : "1",
       "type" : [{
         "code" : "dateTime"
       }]
-    },
-    {
-      "id" : "Condition.abatement[x]",
-      "path" : "Condition.abatement[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
     },
     {
       "id" : "Condition.abatement[x]:abatementDateTime",
       "path" : "Condition.abatement[x]",
       "sliceName" : "abatementDateTime",
       "short" : "Date de fin du problème (si applicable)",
-      "min" : 0,
-      "max" : "1",
       "type" : [{
         "code" : "dateTime"
       }]
