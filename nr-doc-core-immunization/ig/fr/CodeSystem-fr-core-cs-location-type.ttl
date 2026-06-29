@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-cs-location-type"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-location-type</b></p><a name=\"fr-core-cs-location-type\"> </a><a name=\"hcfr-core-cs-location-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a> version : 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">BAT<a name=\"fr-core-cs-location-type-BAT\"> </a></td><td>Bâtiment</td><td>Bâtiment</td></tr><tr><td style=\"white-space:nowrap\">ETAG<a name=\"fr-core-cs-location-type-ETAG\"> </a></td><td>Étage</td><td>Étage</td></tr><tr><td style=\"white-space:nowrap\">COUL<a name=\"fr-core-cs-location-type-COUL\"> </a></td><td>Couloir</td><td>Couloir</td></tr><tr><td style=\"white-space:nowrap\">AILE<a name=\"fr-core-cs-location-type-AILE\"> </a></td><td>Aile</td><td>Aile</td></tr><tr><td style=\"white-space:nowrap\">BOX<a name=\"fr-core-cs-location-type-BOX\"> </a></td><td>Box</td><td>Box</td></tr><tr><td style=\"white-space:nowrap\">CHAMB<a name=\"fr-core-cs-location-type-CHAMB\"> </a></td><td>Chambre</td><td>Chambre</td></tr><tr><td style=\"white-space:nowrap\">LIT<a name=\"fr-core-cs-location-type-LIT\"> </a></td><td>Lit</td><td>Lit</td></tr><tr><td style=\"white-space:nowrap\">PL_TECH<a name=\"fr-core-cs-location-type-PL_TECH\"> </a></td><td>Plateau technique</td><td>Plateau technique</td></tr><tr><td style=\"white-space:nowrap\">PNT_CLCT<a name=\"fr-core-cs-location-type-PNT_CLCT\"> </a></td><td>Point de collecte</td><td>Point de collecte</td></tr><tr><td style=\"white-space:nowrap\">PNT_LVRSN<a name=\"fr-core-cs-location-type-PNT_LVRSN\"> </a></td><td>Point de livraison</td><td>Point de livraison</td></tr><tr><td style=\"white-space:nowrap\">SL_EXM<a name=\"fr-core-cs-location-type-SL_EXM\"> </a></td><td>Salle d'examen</td><td>Salle d'examen</td></tr><tr><td style=\"white-space:nowrap\">SL_CONS<a name=\"fr-core-cs-location-type-SL_CONS\"> </a></td><td>Salle de consultation</td><td>Salle de consultation</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FRCoreCodeSystemLocationType"] ;
+  fhir:CodeSystem.title [ fhir:value "FR Core CodeSystem Location Type"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-29T10:03:57+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Location type"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "12"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BAT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bâtiment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bâtiment" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ETAG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Étage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Étage" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "COUL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Couloir" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Couloir" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AILE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aile" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Aile" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BOX" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Box" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Box" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHAMB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chambre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Chambre" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LIT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PL_TECH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plateau technique" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Plateau technique" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PNT_CLCT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Point de collecte" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Point de collecte" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PNT_LVRSN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Point de livraison" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Point de livraison" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SL_EXM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Salle d'examen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Salle d'examen" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SL_CONS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Salle de consultation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Salle de consultation" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
