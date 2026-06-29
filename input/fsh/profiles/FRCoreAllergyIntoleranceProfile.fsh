@@ -11,10 +11,10 @@ Title: "FR Core AllergyIntolerance Profile"
 Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
 
 * type ^short = "Type d'allergie ou d'intolérance"
-* type from FRValueSetAllergyInoleranceTypeDocument (required)
+* type from FRCoreValueSetAllergyIntoleranceType (required)
 * code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "agent allergique"
-* code from FRValueSetAllergyCodeDocument (extensible)
+* code from FRCoreValueSetAllergyCode (extensible)
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
 * onsetPeriod ^short = "Dates de début et de fin"
 * onsetPeriod.start 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
