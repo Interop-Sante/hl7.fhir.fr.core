@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-29T10:21:29+00:00",
+  "date" : "2026-06-29T10:25:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -127,7 +127,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
         "extension" : [{
           "extension" : [{
             "url" : "key",
-            "valueId" : "fr-core-immunization-vaccinecode-translation"
+            "valueCode" : "preferred"
           },
           {
             "url" : "purpose",
@@ -136,9 +136,56 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
           {
             "url" : "valueSet",
             "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "For when WHO ATC code system is preferred"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "preferred"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Additional conformance binding to the cross-border vaccines value set."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "For EU cross-border use"
           }],
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
         }],
+        "strength" : "preferred",
+        "description" : "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization.",
+        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips|1.1.0"
+      }
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding",
+      "path" : "Immunization.vaccineCode.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding:cis",
+      "path" : "Immunization.vaccineCode.coding",
+      "sliceName" : "cis",
+      "min" : 1,
+      "max" : "1",
+      "binding" : {
         "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis|2.2.0"
       }

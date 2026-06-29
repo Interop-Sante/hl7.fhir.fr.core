@@ -39,7 +39,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T10:21:29+00:00",
+  "date" : "2026-06-29T10:25:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

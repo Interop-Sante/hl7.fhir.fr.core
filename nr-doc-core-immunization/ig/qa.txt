@@ -1,9 +1,9 @@
 FRCore : Validation Results
 =========================================
 
-err = 7, warn = 199, info = 4365
+err = 12, warn = 200, info = 4372
 IG Publisher Version: 2.2.10
-Generated Mon Jun 29 10:27:57 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0 (canonical = https://hl7.fr/ig/fhir/core)
+Generated Mon Jun 29 10:31:21 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0 (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 0 / 1 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-champ-activite : 0 / 2 / 3
@@ -82,7 +82,7 @@ Generated Mon Jun 29 10:27:57 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-human-name : 0 / 0 / 19
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-human-name-assembly-order : 0 / 1 / 8
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-identity-reliability : 0 / 0 / 39
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-immunization : 0 / 4 / 132
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-immunization : 5 / 5 / 139
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-location : 0 / 0 / 72
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-location-position-lit : 0 / 0 / 10
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-location-type-chambre : 0 / 0 / 10
@@ -1031,6 +1031,9 @@ INFORMATION: StructureDefinition.differential.element[12].binding.valueSet: Pinn
 INFORMATION: StructureDefinition.differential.element[20].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity to 2.2.0
 INFORMATION: Resource: The resource StructureDefinition/fr-core-identity-reliability could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-fr-core-immunization.json ==
+ERROR: StructureDefinition.differential.element[3].binding.extension[0].extension[0]: Unrecognized property 'valueId'
+ERROR: StructureDefinition.differential.element[3].binding.extension[0].extension[1]: Unrecognized property 'valueCode'
+ERROR: StructureDefinition.differential.element[3].binding.extension[0].extension[2]: Unrecognized property 'valueCanonical'
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
@@ -1062,108 +1065,118 @@ INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[57].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis to 2.2.0
+INFORMATION: StructureDefinition.snapshot.element[57].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips to 1.1.0
 INFORMATION: StructureDefinition.snapshot.element[57].binding.additional[0].valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips to 1.1.0
 INFORMATION: StructureDefinition.snapshot.element[57].binding.additional[2].valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation to 2.2.0
-INFORMATION: StructureDefinition.snapshot.element[58].type[0].targetProfile[0]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core to 2.0.0
-INFORMATION: StructureDefinition.snapshot.element[58].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[59].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[59].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[60].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[61].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[61].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis to 2.2.0
+INFORMATION: StructureDefinition.snapshot.element[62].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[63].type[0].targetProfile[0]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[63].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[63].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[64].type[0].profile[0]: Pinned the version of http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life to 1.3.0
 INFORMATION: StructureDefinition.snapshot.element[64].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[64].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[66].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[68].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[68].binding.valueSet: Pinned the version of http://hl7.eu/fhir/base/ValueSet/periodsOfLife-eu to 2.0.0
-INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[68].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[69].type[0].profile[0]: Pinned the version of http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life to 1.3.0
+INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[69].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[73].type[0].targetProfile[0]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/location-eu-core to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[71].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[73].binding.valueSet: Pinned the version of http://hl7.eu/fhir/base/ValueSet/periodsOfLife-eu to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[76].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[77].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis to 20260420150249
+INFORMATION: StructureDefinition.snapshot.element[78].type[0].targetProfile[0]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/location-eu-core to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[78].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis to 20260420150250
 INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[82].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[82].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis to 20260420150249
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[83].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[83].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis to 20260420150250
 INFORMATION: StructureDefinition.snapshot.element[84].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[85].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[87].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[87].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[88].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[88].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[89].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[89].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[91].type[0].targetProfile[0]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core to 2.0.0
-INFORMATION: StructureDefinition.snapshot.element[91].type[0].targetProfile[1]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core to 2.0.0
-INFORMATION: StructureDefinition.snapshot.element[91].type[0].targetProfile[2]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[92].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[93].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[93].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[94].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[94].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[96].type[0].targetProfile[0]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[96].type[0].targetProfile[1]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[96].type[0].targetProfile[2]: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[96].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[97].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[98].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[99].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[99].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[99].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[100].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[101].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[102].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[102].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Immunization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[103].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[104].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[104].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[104].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[105].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[105].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[106].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[107].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[108].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[107].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Immunization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[109].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[109].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[110].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[110].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[111].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[112].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[113].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[114].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[114].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[115].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[115].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[116].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[117].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[118].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[119].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[119].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[120].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[120].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[121].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[121].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[122].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[122].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[123].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[123].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis to 20260420150251
 INFORMATION: StructureDefinition.snapshot.element[124].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[125].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[125].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips to 1.1.0
 INFORMATION: StructureDefinition.snapshot.element[126].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[126].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[127].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[127].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[128].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[128].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis to 20260420150251
+INFORMATION: StructureDefinition.snapshot.element[129].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[130].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[130].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips to 1.1.0
+INFORMATION: StructureDefinition.snapshot.element[131].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[132].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[133].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn to 0.1.0
 INFORMATION: StructureDefinition.differential.element[3].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationRequest to 4.0.1
-INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis to 2.2.0
+INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips to 1.1.0
 INFORMATION: StructureDefinition.differential.element[4].binding.additional[0].valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation to 2.2.0
-INFORMATION: StructureDefinition.differential.element[8].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis to 20260420150249
-INFORMATION: StructureDefinition.differential.element[9].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis to 20260420150250
-INFORMATION: StructureDefinition.differential.element[12].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
-INFORMATION: StructureDefinition.differential.element[13].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis to 20260420150251
+INFORMATION: StructureDefinition.differential.element[6].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis to 2.2.0
+INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis to 20260420150249
+INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis to 20260420150250
+INFORMATION: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
+INFORMATION: StructureDefinition.differential.element[15].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis to 20260420150251
 WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[57].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[57].binding.extension[1]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
-WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[125].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
+ERROR: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[57].binding.extension[2].extension[0].value.ofType(code): The Profile 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding|1.1.2' definition allows for the type id but found type code
+WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[130].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
+ERROR: StructureDefinition/fr-core-immunization: StructureDefinition.differential.element[4].binding.extension[0].extension[0].value.ofType(code): The Profile 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding|1.1.2' definition allows for the type id but found type code
+WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.differential.element[4].binding.extension[1]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 INFORMATION: Resource: The resource StructureDefinition/fr-core-immunization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-immunization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-core-location.json ==
@@ -4765,7 +4778,7 @@ WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet.compose.include[4]
 WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-medication-translation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-core-vs-medication-translation'): Error from https://smt.esante.gouv.fr/fhir: Error: [693a1011-3783-4a6d-ad54-67c0ef723cc4]: A usable code system with URL https://smt.esante.gouv.fr/terminologie-bdpm|2026-05-05 could not be resolved.
-Information: X-Request-Id: 07c9ffdb-0be4-4dc6-b34a-613f0461e230
+Information: X-Request-Id: 538e57b3-56a0-4adb-926b-5f47dc06dd1e
 == fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity to 2.2.0
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
@@ -4967,7 +4980,7 @@ ERROR: ValueSet/fr-core-vs-vaccine-code-cis: ValueSet: Value sets published by H
 WARNING: ValueSet/fr-core-vs-vaccine-code-cis: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-vaccine-code-cis should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-core-vs-vaccine-code-cis'): Error from https://smt.esante.gouv.fr/fhir: Error: [693a1011-3783-4a6d-ad54-67c0ef723cc4]: A usable code system with URL https://smt.esante.gouv.fr/terminologie-bdpm|2026-05-05 could not be resolved.
-Information: X-Request-Id: 07c9ffdb-0be4-4dc6-b34a-613f0461e230
+Information: X-Request-Id: 538e57b3-56a0-4adb-926b-5f47dc06dd1e
 == fsh-generated/resources/ValueSet-fr-core-vsbody-temp-meas-body-location.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 INFORMATION: ValueSet/fr-core-vsbody-temp-meas-body-location: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)
