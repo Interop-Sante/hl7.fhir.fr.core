@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,117 +7,120 @@
 
 <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4420-dialyse> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "hopitaltest-uf-4420-dialyse"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "hopitaltest-uf-4420-dialyse"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf" ;
+       fhir:index 0 ;
        fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uf-4420-dialyse</b></p><a name=\"hopitaltest-uf-4420-dialyse\"> </a><a name=\"hchopitaltest-uf-4420-dialyse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uf.html\">FR Core Organization UF Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Dialyse</p><p><b>Organization Period</b>: 2023-01-01 00:00:00+0100 --&gt; (en cours)</p><p><b>FR Core Organization Extension - Indicateur d'une unité fonctionnelle</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur HEB}, {https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur MED}\">Hébergement</span></p><p><b>FR Core Organization Extension - Discipline d'équipement</b>: <a href=\"CodeSystem-fr-core-cs-discipline-equipement.html#fr-core-cs-discipline-equipement-797\">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE: 797</a> (Hémodialyse en centre pour adulte)</p><p><b>FR Core Organization Extension - Champ d'activité</b>: <a href=\"CodeSystem-fr-core-cs-champ-activite.html#fr-core-cs-champ-activite-MCO\">FR Core CodeSystem Champ Activite - Codes du champ d'activité: MCO</a> (MCO)</p><p><b>FR Core Organization Extension - UF Externe</b>: false</p><p><b>FR Core Organization Extension - Nombre total de places d'hébergement théoriques</b>: 10</p><p><b>FR Core Organization Extension - Demandeuse d'acte</b>: false</p><p><b>FR Core Organization Extension - Exécutante d'acte</b>: true</p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uac-4420-uac-01.html\">UAC 01 Dialyse</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uac-4420-uac-02.html\">UAC 02 Dialyse</a></p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4220 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UF}\">Unité fonctionnelle</span></p><p><b>name</b>: UF Dialyse</p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 84220(Work)</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "UF Dialyse"
      ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/organization-period"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Period ;
-       fhir:start [ fhir:v "2023-01-01T00:00:00+01:00"^^xsd:dateTime ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uf-4420-dialyse</b></p><a name=\"hopitaltest-uf-4420-dialyse\"> </a><a name=\"hchopitaltest-uf-4420-dialyse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uf.html\">FR Core Organization UF Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Dialyse</p><p><b>Organization Period</b>: 2023-01-01 00:00:00+0100 --&gt; (en cours)</p><p><b>FR Core Organization Extension - Indicateur d'une unité fonctionnelle</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur HEB}, {https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur MED}\">Hébergement</span></p><p><b>FR Core Organization Extension - Discipline d'équipement</b>: <a href=\"CodeSystem-fr-core-cs-discipline-equipement.html#fr-core-cs-discipline-equipement-797\">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE: 797</a> (Hémodialyse en centre pour adulte)</p><p><b>FR Core Organization Extension - Champ d'activité</b>: <a href=\"CodeSystem-fr-core-cs-champ-activite.html#fr-core-cs-champ-activite-MCO\">FR Core CodeSystem Champ Activite - Codes du champ d'activité: MCO</a> (MCO)</p><p><b>FR Core Organization Extension - UF Externe</b>: false</p><p><b>FR Core Organization Extension - Nombre total de places d'hébergement théoriques</b>: 10</p><p><b>FR Core Organization Extension - Demandeuse d'acte</b>: false</p><p><b>FR Core Organization Extension - Exécutante d'acte</b>: true</p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uac-4420-uac-01.html\">UAC 01 Dialyse</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uac-4420-uac-02.html\">UAC 02 Dialyse</a></p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4220 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UF}\">Unité fonctionnelle</span></p><p><b>name</b>: UF Dialyse</p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 84220(Work)</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Organization hopitaltest-uf-4420-dialyse</b></p><a name=\"en-hopitaltest-uf-4420-dialyse\"> </a><a name=\"en-hchopitaltest-uf-4420-dialyse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-organization-uf.html\">FR Core Organization UF Profile</a></p></div><p><b>FR Core Organization Short Name Extension</b>: UF Dialyse</p><p><b>Organization Period</b>: 2023-01-01 00:00:00+0100 --&gt; (ongoing)</p><p><b>FR Core Organization Extension - Indicateur d'une unité fonctionnelle</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur HEB}, {https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur MED}\">Hébergement</span></p><p><b>FR Core Organization Extension - Discipline d'équipement</b>: <a href=\"CodeSystem-fr-core-cs-discipline-equipement.html#fr-core-cs-discipline-equipement-797\">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE: 797</a> (Hémodialyse en centre pour adulte)</p><p><b>FR Core Organization Extension - Champ d'activité</b>: <a href=\"CodeSystem-fr-core-cs-champ-activite.html#fr-core-cs-champ-activite-MCO\">FR Core CodeSystem Champ Activite - Codes du champ d'activité: MCO</a> (MCO)</p><p><b>FR Core Organization Extension - UF Externe</b>: false</p><p><b>FR Core Organization Extension - Nombre total de places d'hébergement théoriques</b>: 10</p><p><b>FR Core Organization Extension - Demandeuse d'acte</b>: false</p><p><b>FR Core Organization Extension - Exécutante d'acte</b>: true</p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uac-4420-uac-01.html\">UAC 01 Dialyse</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uac-4420-uac-02.html\">UAC 02 Dialyse</a></p><p><b>identifier</b>: <code>http://hopitalTest.fr/namingsystem/organization</code>/4220 (use: official, )</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UF}\">Unité fonctionnelle</span></p><p><b>name</b>: UF Dialyse</p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 84220(Work)</td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name" ] ;
+     fhir:Extension.valueString [ fhir:value "UF Dialyse" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/organization-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2023-01-01T00:00:00+01:00"^^xsd:dateTime ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "HEB" ]
-       ] [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "MED" ]
-       ] )
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur" ] ;
+         fhir:Coding.code [ fhir:value "HEB" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur" ] ;
+         fhir:Coding.code [ fhir:value "MED" ]
+       ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Coding ;
-       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "797" ] ;
-       fhir:display [ fhir:v "Hémodialyse en centre pour adulte" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement" ] ;
+       fhir:Coding.code [ fhir:value "797" ] ;
+       fhir:Coding.display [ fhir:value "Hémodialyse en centre pour adulte" ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Coding ;
-       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "MCO" ] ;
-       fhir:display [ fhir:v "MCO" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite" ] ;
+       fhir:Coding.code [ fhir:value "MCO" ] ;
+       fhir:Coding.display [ fhir:value "MCO" ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v false
-     ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:integer ;
-       fhir:v 10
-     ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v false
-     ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v true
-     ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique" ] ;
+     fhir:Extension.valueInteger [ fhir:value "10"^^xsd:integer ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uac-4420-uac-01> ;
-       fhir:reference [ fhir:v "Organization/hopitaltest-uac-4420-uac-01" ] ;
-       fhir:display [ fhir:v "UAC 01 Dialyse" ]
+       fhir:Reference.reference [ fhir:value "Organization/hopitaltest-uac-4420-uac-01" ] ;
+       fhir:Reference.display [ fhir:value "UAC 01 Dialyse" ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uac-4420-uac-02> ;
-       fhir:reference [ fhir:v "Organization/hopitaltest-uac-4420-uac-02" ] ;
-       fhir:display [ fhir:v "UAC 02 Dialyse" ]
+       fhir:Reference.reference [ fhir:value "Organization/hopitaltest-uac-4420-uac-02" ] ;
+       fhir:Reference.display [ fhir:value "UAC 02 Dialyse" ]
      ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://hopitalTest.fr/namingsystem/organization"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "4220" ]
-  ] ) ; # 
-  fhir:type ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "UF" ]
-     ] )
-  ] ) ; # 
-  fhir:name [ fhir:v "UF Dialyse"] ; # 
-  fhir:contact ( [
-     fhir:telecom ( [
-       fhir:system [ fhir:v "phone" ] ;
-       fhir:value [ fhir:v "84220" ] ;
-       fhir:use [ fhir:v "work" ]
-     ] )
-  ] ) . # 
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://hopitalTest.fr/namingsystem/organization" ] ;
+     fhir:Identifier.value [ fhir:value "4220" ]
+  ] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307" ] ;
+       fhir:Coding.code [ fhir:value "UF" ]
+     ]
+  ] ;
+  fhir:Organization.name [ fhir:value "UF Dialyse"] ;
+  fhir:Organization.contact [
+     fhir:index 0 ;
+     fhir:Organization.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "84220" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4420-dialyse.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
