@@ -1,0 +1,89 @@
+# FR Core CodeSystem Mode Validation Identite - Guide d'implémentation FR Core v2.2.0
+
+## CodeSystem: FR Core CodeSystem Mode Validation Identite 
+
+ 
+Méthode de collection de l’identité 
+
+Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
+
+* [FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md)
+
+-------
+
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fr-core-cs-method-collection",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"]
+  },
+  "language" : "fr-FR",
+  "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection",
+  "version" : "2.2.0",
+  "name" : "FRCoreCodeSystemMethodCollection",
+  "title" : "FR Core CodeSystem Mode Validation Identite",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-29T12:41:53+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Méthode de collection de l'identité",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "SM",
+    "display" : "Saisie manuelle",
+    "definition" : "Saisie manuelle"
+  },
+  {
+    "code" : "CV",
+    "display" : "Carte vitale",
+    "definition" : "Carte vitale"
+  },
+  {
+    "code" : "INSI",
+    "display" : "Téléservice INSI",
+    "definition" : "Téléservice INSI"
+  },
+  {
+    "code" : "CB",
+    "display" : "Code à barre",
+    "definition" : "Code à barre"
+  },
+  {
+    "code" : "RFID",
+    "display" : "Puce RFID",
+    "definition" : "Puce RFID"
+  }]
+}
+
+```

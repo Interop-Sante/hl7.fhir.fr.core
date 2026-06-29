@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-cs-schedule-type"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fr-core-cs-schedule-type</b></p><a name=\"en-fr-core-cs-schedule-type\"> </a><a name=\"en-hcfr-core-cs-schedule-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-FR</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a> version: 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">busy-unavailable<a name=\"en-fr-core-cs-schedule-type-busy-unavailable\"> </a></td><td>Indisponibilité</td><td>Indisponibilité</td></tr><tr><td style=\"white-space:nowrap\">free<a name=\"en-fr-core-cs-schedule-type-free\"> </a></td><td>Disponibilité</td><td>Disponibilité</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FRCoreCodeSystemScheduleType"] ;
+  fhir:CodeSystem.title [ fhir:value "FR Core CodeSystem Schedule Type"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-29T12:41:53+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Schedule type"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "busy-unavailable" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Indisponibilité" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Indisponibilité" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "free" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Disponibilité" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Disponibilité" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

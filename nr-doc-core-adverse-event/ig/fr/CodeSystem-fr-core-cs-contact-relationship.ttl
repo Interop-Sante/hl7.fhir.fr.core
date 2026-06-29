@@ -1,0 +1,475 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-cs-contact-relationship"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem fr-core-cs-contact-relationship</b></p><a name=\"fr-core-cs-contact-relationship\"> </a><a name=\"hcfr-core-cs-contact-relationship\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a> version : 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">WRD<a name=\"fr-core-cs-contact-relationship-WRD\"> </a></td><td>Dépositaire de la tutelle judiciare</td><td>Dépositaire de la tutelle judiciare</td></tr><tr><td style=\"white-space:nowrap\">GRD<a name=\"fr-core-cs-contact-relationship-GRD\"> </a></td><td>Tuteur</td><td>Tuteur</td></tr><tr><td style=\"white-space:nowrap\">CUR<a name=\"fr-core-cs-contact-relationship-CUR\"> </a></td><td>Représentant légal</td><td>Représentant légal</td></tr><tr><td style=\"white-space:nowrap\">CURTL<a name=\"fr-core-cs-contact-relationship-CURTL\"> </a></td><td>Curatelle</td><td>Curatelle</td></tr><tr><td style=\"white-space:nowrap\">EDUREF<a name=\"fr-core-cs-contact-relationship-EDUREF\"> </a></td><td>Educateur référent</td><td>Educateur référent</td></tr><tr><td style=\"white-space:nowrap\">SVG<a name=\"fr-core-cs-contact-relationship-SVG\"> </a></td><td>Sauvegarde juridique</td><td>Sauvegarde juridique</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"fr-core-cs-contact-relationship-K\"> </a></td><td>Personne de confiance</td><td>Personne de confiance</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"fr-core-cs-contact-relationship-P\"> </a></td><td>Personne à ne pas prévenir</td><td>Personne à ne pas prévenir</td></tr><tr><td style=\"white-space:nowrap\">FAMMEMB<a name=\"fr-core-cs-contact-relationship-FAMMEMB\"> </a></td><td>family member</td><td>family member</td></tr><tr><td style=\"white-space:nowrap\">CHILD<a name=\"fr-core-cs-contact-relationship-CHILD\"> </a></td><td>child</td><td>child</td></tr><tr><td style=\"white-space:nowrap\">CHLDADOPT<a name=\"fr-core-cs-contact-relationship-CHLDADOPT\"> </a></td><td>adopted child</td><td>adopted child</td></tr><tr><td style=\"white-space:nowrap\">DAUADOPT<a name=\"fr-core-cs-contact-relationship-DAUADOPT\"> </a></td><td>adopted daughter</td><td>adopted daughter</td></tr><tr><td style=\"white-space:nowrap\">SONADOPT<a name=\"fr-core-cs-contact-relationship-SONADOPT\"> </a></td><td>adopted son</td><td>adopted son</td></tr><tr><td style=\"white-space:nowrap\">CHLDFOST<a name=\"fr-core-cs-contact-relationship-CHLDFOST\"> </a></td><td>foster child</td><td>foster child</td></tr><tr><td style=\"white-space:nowrap\">SONFOST<a name=\"fr-core-cs-contact-relationship-SONFOST\"> </a></td><td>foster son</td><td>foster son</td></tr><tr><td style=\"white-space:nowrap\">DAUC<a name=\"fr-core-cs-contact-relationship-DAUC\"> </a></td><td>daughter</td><td>daughter</td></tr><tr><td style=\"white-space:nowrap\">STPDAU<a name=\"fr-core-cs-contact-relationship-STPDAU\"> </a></td><td>stepdaughter</td><td>stepdaughter</td></tr><tr><td style=\"white-space:nowrap\">SONC<a name=\"fr-core-cs-contact-relationship-SONC\"> </a></td><td>son</td><td>son</td></tr><tr><td style=\"white-space:nowrap\">STPSON<a name=\"fr-core-cs-contact-relationship-STPSON\"> </a></td><td>stepson</td><td>stepson</td></tr><tr><td style=\"white-space:nowrap\">STPCHLD<a name=\"fr-core-cs-contact-relationship-STPCHLD\"> </a></td><td>step child</td><td>step child</td></tr><tr><td style=\"white-space:nowrap\">EXT<a name=\"fr-core-cs-contact-relationship-EXT\"> </a></td><td>extended family member</td><td>extended family member</td></tr><tr><td style=\"white-space:nowrap\">AUNT<a name=\"fr-core-cs-contact-relationship-AUNT\"> </a></td><td>aunt</td><td>aunt</td></tr><tr><td style=\"white-space:nowrap\">COUSN<a name=\"fr-core-cs-contact-relationship-COUSN\"> </a></td><td>cousin</td><td>cousin</td></tr><tr><td style=\"white-space:nowrap\">GGRPRN<a name=\"fr-core-cs-contact-relationship-GGRPRN\"> </a></td><td>great grandparent</td><td>great grandparent</td></tr><tr><td style=\"white-space:nowrap\">GGRFTH<a name=\"fr-core-cs-contact-relationship-GGRFTH\"> </a></td><td>great grandfather</td><td>great grandfather</td></tr><tr><td style=\"white-space:nowrap\">GGRMTH<a name=\"fr-core-cs-contact-relationship-GGRMTH\"> </a></td><td>great grandmather</td><td>great grandmather</td></tr><tr><td style=\"white-space:nowrap\">GRNDCHILD<a name=\"fr-core-cs-contact-relationship-GRNDCHILD\"> </a></td><td>grandchild</td><td>grandchild</td></tr><tr><td style=\"white-space:nowrap\">GRNDDAU<a name=\"fr-core-cs-contact-relationship-GRNDDAU\"> </a></td><td>granddaughter</td><td>granddaughter</td></tr><tr><td style=\"white-space:nowrap\">GRNDSON<a name=\"fr-core-cs-contact-relationship-GRNDSON\"> </a></td><td>grandson</td><td>grandson</td></tr><tr><td style=\"white-space:nowrap\">GRPRN<a name=\"fr-core-cs-contact-relationship-GRPRN\"> </a></td><td>grandparent</td><td>grandparent</td></tr><tr><td style=\"white-space:nowrap\">GRFTH<a name=\"fr-core-cs-contact-relationship-GRFTH\"> </a></td><td>grandfather</td><td>grandfather</td></tr><tr><td style=\"white-space:nowrap\">GRMTH<a name=\"fr-core-cs-contact-relationship-GRMTH\"> </a></td><td>grandmather</td><td>grandmather</td></tr><tr><td style=\"white-space:nowrap\">CHLDINLAW<a name=\"fr-core-cs-contact-relationship-CHLDINLAW\"> </a></td><td>child in-law</td><td>child in-law</td></tr><tr><td style=\"white-space:nowrap\">DAUINLAW<a name=\"fr-core-cs-contact-relationship-DAUINLAW\"> </a></td><td>daughter in-law</td><td>daughter in-law</td></tr><tr><td style=\"white-space:nowrap\">PRNINLAW<a name=\"fr-core-cs-contact-relationship-PRNINLAW\"> </a></td><td>parent in-law</td><td>parent in-law</td></tr><tr><td style=\"white-space:nowrap\">FTHINLAW<a name=\"fr-core-cs-contact-relationship-FTHINLAW\"> </a></td><td>father in-law</td><td>father in-law</td></tr><tr><td style=\"white-space:nowrap\">MTHINLAW<a name=\"fr-core-cs-contact-relationship-MTHINLAW\"> </a></td><td>mother in-law</td><td>mother in-law</td></tr><tr><td style=\"white-space:nowrap\">SIBINLAW<a name=\"fr-core-cs-contact-relationship-SIBINLAW\"> </a></td><td>sibbling in-law</td><td>sibbling in-law</td></tr><tr><td style=\"white-space:nowrap\">BROINLAW<a name=\"fr-core-cs-contact-relationship-BROINLAW\"> </a></td><td>brother in-law</td><td>brother in-law</td></tr><tr><td style=\"white-space:nowrap\">SISINLAW<a name=\"fr-core-cs-contact-relationship-SISINLAW\"> </a></td><td>sister in-law</td><td>sister in-law</td></tr><tr><td style=\"white-space:nowrap\">NIENEPH<a name=\"fr-core-cs-contact-relationship-NIENEPH\"> </a></td><td>niece/nephew</td><td>niece/nephew</td></tr><tr><td style=\"white-space:nowrap\">NEPHEW<a name=\"fr-core-cs-contact-relationship-NEPHEW\"> </a></td><td>nephew</td><td>nephew</td></tr><tr><td style=\"white-space:nowrap\">NIECE<a name=\"fr-core-cs-contact-relationship-NIECE\"> </a></td><td>niece</td><td>niece</td></tr><tr><td style=\"white-space:nowrap\">UNCLE<a name=\"fr-core-cs-contact-relationship-UNCLE\"> </a></td><td>uncle</td><td>uncle</td></tr><tr><td style=\"white-space:nowrap\">PRN<a name=\"fr-core-cs-contact-relationship-PRN\"> </a></td><td>parent</td><td>parent</td></tr><tr><td style=\"white-space:nowrap\">ADOPTP<a name=\"fr-core-cs-contact-relationship-ADOPTP\"> </a></td><td>adoptive parent</td><td>adoptive parent</td></tr><tr><td style=\"white-space:nowrap\">ADOPTF<a name=\"fr-core-cs-contact-relationship-ADOPTF\"> </a></td><td>adoptive father</td><td>adoptive father</td></tr><tr><td style=\"white-space:nowrap\">ADOPTM<a name=\"fr-core-cs-contact-relationship-ADOPTM\"> </a></td><td>adoptive mother</td><td>adoptive mother</td></tr><tr><td style=\"white-space:nowrap\">FTH<a name=\"fr-core-cs-contact-relationship-FTH\"> </a></td><td>father</td><td>father</td></tr><tr><td style=\"white-space:nowrap\">FTHFOST<a name=\"fr-core-cs-contact-relationship-FTHFOST\"> </a></td><td>foster father</td><td>foster father</td></tr><tr><td style=\"white-space:nowrap\">NFTH<a name=\"fr-core-cs-contact-relationship-NFTH\"> </a></td><td>natural father</td><td>natural father</td></tr><tr><td style=\"white-space:nowrap\">STPFTH<a name=\"fr-core-cs-contact-relationship-STPFTH\"> </a></td><td>step father</td><td>step father</td></tr><tr><td style=\"white-space:nowrap\">MTH<a name=\"fr-core-cs-contact-relationship-MTH\"> </a></td><td>mother</td><td>mother</td></tr><tr><td style=\"white-space:nowrap\">MTHFOST<a name=\"fr-core-cs-contact-relationship-MTHFOST\"> </a></td><td>foster mother</td><td>foster mother</td></tr><tr><td style=\"white-space:nowrap\">GESTM<a name=\"fr-core-cs-contact-relationship-GESTM\"> </a></td><td>gestational mother</td><td>gestational mother</td></tr><tr><td style=\"white-space:nowrap\">NMTH<a name=\"fr-core-cs-contact-relationship-NMTH\"> </a></td><td>natural mother</td><td>natural mother</td></tr><tr><td style=\"white-space:nowrap\">STPMTH<a name=\"fr-core-cs-contact-relationship-STPMTH\"> </a></td><td>stepmother</td><td>stepmother</td></tr><tr><td style=\"white-space:nowrap\">NPRN<a name=\"fr-core-cs-contact-relationship-NPRN\"> </a></td><td>natural parent</td><td>natural parent</td></tr><tr><td style=\"white-space:nowrap\">STPPRN<a name=\"fr-core-cs-contact-relationship-STPPRN\"> </a></td><td>step parent</td><td>step parent</td></tr><tr><td style=\"white-space:nowrap\">SIB<a name=\"fr-core-cs-contact-relationship-SIB\"> </a></td><td>sibling</td><td>sibling</td></tr><tr><td style=\"white-space:nowrap\">BRO<a name=\"fr-core-cs-contact-relationship-BRO\"> </a></td><td>brother</td><td>brother</td></tr><tr><td style=\"white-space:nowrap\">HBRO<a name=\"fr-core-cs-contact-relationship-HBRO\"> </a></td><td>half-brother</td><td>half-brother</td></tr><tr><td style=\"white-space:nowrap\">NBRO<a name=\"fr-core-cs-contact-relationship-NBRO\"> </a></td><td>natural brother</td><td>natural brother</td></tr><tr><td style=\"white-space:nowrap\">TWINBRO<a name=\"fr-core-cs-contact-relationship-TWINBRO\"> </a></td><td>twin brother</td><td>twin brother</td></tr><tr><td style=\"white-space:nowrap\">STPBRO<a name=\"fr-core-cs-contact-relationship-STPBRO\"> </a></td><td>stepbrother</td><td>stepbrother</td></tr><tr><td style=\"white-space:nowrap\">HSIB<a name=\"fr-core-cs-contact-relationship-HSIB\"> </a></td><td>half-sibling</td><td>half-sibling</td></tr><tr><td style=\"white-space:nowrap\">HSIS<a name=\"fr-core-cs-contact-relationship-HSIS\"> </a></td><td>half-sister</td><td>half-sister</td></tr><tr><td style=\"white-space:nowrap\">NSIB<a name=\"fr-core-cs-contact-relationship-NSIB\"> </a></td><td>natural sibling</td><td>natural sibling</td></tr><tr><td style=\"white-space:nowrap\">NSIS<a name=\"fr-core-cs-contact-relationship-NSIS\"> </a></td><td>natural sister</td><td>natural sister</td></tr><tr><td style=\"white-space:nowrap\">TWINSIS<a name=\"fr-core-cs-contact-relationship-TWINSIS\"> </a></td><td>twin sister</td><td>twin sister</td></tr><tr><td style=\"white-space:nowrap\">TWIN<a name=\"fr-core-cs-contact-relationship-TWIN\"> </a></td><td>twin</td><td>twin</td></tr><tr><td style=\"white-space:nowrap\">SIS<a name=\"fr-core-cs-contact-relationship-SIS\"> </a></td><td>sister</td><td>sister</td></tr><tr><td style=\"white-space:nowrap\">STPSIS<a name=\"fr-core-cs-contact-relationship-STPSIS\"> </a></td><td>stepsister</td><td>stepsister</td></tr><tr><td style=\"white-space:nowrap\">STPSIB<a name=\"fr-core-cs-contact-relationship-STPSIB\"> </a></td><td>step sibling</td><td>step sibling</td></tr><tr><td style=\"white-space:nowrap\">SIGOTHR<a name=\"fr-core-cs-contact-relationship-SIGOTHR\"> </a></td><td>significant other</td><td>significant other</td></tr><tr><td style=\"white-space:nowrap\">DOMPART<a name=\"fr-core-cs-contact-relationship-DOMPART\"> </a></td><td>domestic partner</td><td>domestic partner</td></tr><tr><td style=\"white-space:nowrap\">SPS<a name=\"fr-core-cs-contact-relationship-SPS\"> </a></td><td>spouse</td><td>spouse</td></tr><tr><td style=\"white-space:nowrap\">HUSB<a name=\"fr-core-cs-contact-relationship-HUSB\"> </a></td><td>husband</td><td>husband</td></tr><tr><td style=\"white-space:nowrap\">WIFE<a name=\"fr-core-cs-contact-relationship-WIFE\"> </a></td><td>wife</td><td>wife</td></tr><tr><td style=\"white-space:nowrap\">FRND<a name=\"fr-core-cs-contact-relationship-FRND\"> </a></td><td>unrelated friend</td><td>unrelated friend</td></tr><tr><td style=\"white-space:nowrap\">NBOR<a name=\"fr-core-cs-contact-relationship-NBOR\"> </a></td><td>neighbor</td><td>neighbor</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FRCoreCodeSystemContactRelationship"] ;
+  fhir:CodeSystem.title [ fhir:value "FR Core CodeSystem Contact Relationship"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-06-29T12:41:53+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Relationship type"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "81"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "WRD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dépositaire de la tutelle judiciare" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dépositaire de la tutelle judiciare" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tuteur" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tuteur" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CUR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Représentant légal" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Représentant légal" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CURTL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Curatelle" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Curatelle" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EDUREF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Educateur référent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Educateur référent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SVG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sauvegarde juridique" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sauvegarde juridique" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "K" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Personne de confiance" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Personne de confiance" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "P" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Personne à ne pas prévenir" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Personne à ne pas prévenir" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FAMMEMB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "family member" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "family member" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHILD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "child" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "child" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHLDADOPT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "adopted child" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "adopted child" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAUADOPT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "adopted daughter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "adopted daughter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SONADOPT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "adopted son" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "adopted son" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHLDFOST" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "foster child" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "foster child" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SONFOST" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "foster son" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "foster son" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAUC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "daughter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "daughter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPDAU" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "stepdaughter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "stepdaughter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SONC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "son" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "son" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPSON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "stepson" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "stepson" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPCHLD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "step child" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "step child" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EXT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "extended family member" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "extended family member" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AUNT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "aunt" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "aunt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "COUSN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "cousin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "cousin" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GGRPRN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "great grandparent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "great grandparent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GGRFTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "great grandfather" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "great grandfather" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GGRMTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "great grandmather" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "great grandmather" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRNDCHILD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "grandchild" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "grandchild" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRNDDAU" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "granddaughter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "granddaughter" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRNDSON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "grandson" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "grandson" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRPRN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "grandparent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "grandparent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRFTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "grandfather" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "grandfather" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRMTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "grandmather" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "grandmather" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHLDINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "child in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "child in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAUINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "daughter in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "daughter in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PRNINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "parent in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "parent in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FTHINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "father in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "father in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MTHINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mother in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "mother in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SIBINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sibbling in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "sibbling in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BROINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "brother in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "brother in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SISINLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sister in-law" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "sister in-law" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NIENEPH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "niece/nephew" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "niece/nephew" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NEPHEW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "nephew" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "nephew" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NIECE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "niece" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "niece" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "UNCLE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "uncle" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "uncle" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PRN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "parent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "parent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ADOPTP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "adoptive parent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "adoptive parent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ADOPTF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "adoptive father" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "adoptive father" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ADOPTM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "adoptive mother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "adoptive mother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "father" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "father" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FTHFOST" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "foster father" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "foster father" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NFTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "natural father" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "natural father" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPFTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "step father" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "step father" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "mother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "mother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MTHFOST" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "foster mother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "foster mother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GESTM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "gestational mother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "gestational mother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NMTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "natural mother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "natural mother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPMTH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "stepmother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "stepmother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NPRN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "natural parent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "natural parent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPPRN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "step parent" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "step parent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SIB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sibling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "sibling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "brother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "brother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "half-brother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "half-brother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "natural brother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "natural brother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TWINBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "twin brother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "twin brother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "stepbrother" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "stepbrother" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HSIB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "half-sibling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "half-sibling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HSIS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "half-sister" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "half-sister" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NSIB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "natural sibling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "natural sibling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NSIS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "natural sister" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "natural sister" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TWINSIS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "twin sister" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "twin sister" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TWIN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "twin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "twin" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SIS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "sister" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "sister" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPSIS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "stepsister" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "stepsister" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "STPSIB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "step sibling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "step sibling" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SIGOTHR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "significant other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "significant other" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DOMPART" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "domestic partner" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "domestic partner" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SPS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "spouse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "spouse" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HUSB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "husband" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "husband" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "WIFE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "wife" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "wife" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRND" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "unrelated friend" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "unrelated friend" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NBOR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "neighbor" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "neighbor" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

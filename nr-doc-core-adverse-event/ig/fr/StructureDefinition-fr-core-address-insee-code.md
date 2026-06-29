@@ -1,0 +1,148 @@
+# FR Core Address Insee Code Extension - Guide d'implémentation FR Core v2.2.0
+
+## Extension: FR Core Address Insee Code Extension 
+
+Extension d’ajout du code insee (5 chiffres) à l’adresse postale. Dans le cas d’une ville étrangère, le code département devient “99” et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d’identitovigilance (RNIV). This extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes “99”, and the municipality code is populated with the country code.
+
+**Context of Use**
+
+**Usage info**
+
+**Utilisations:**
+
+* Utilise ce/t/te Extension: [FR Core Address Profile](StructureDefinition-fr-core-address.md)
+* Exemples pour ce/t/te Extension: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md)
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-address-insee-code)
+
+### Vues formelles du contenu de l'extension
+
+ [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Tableau différentiel (differential)](#tabs-diff) 
+*  [Tableau récapitulatif (snapshot)](#tabs-snap) 
+*  [Statistiques/Références](#tabs-summ) 
+*  [Tous](#tabs-all) 
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+#### Bindings terminologiques (différentiel)
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+** Résumé **
+
+Extension simple avec le type Coding : Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient "99" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV). This extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes "99", and the municipality code is populated with the country code.
+
+ **Vue différentielleDifferential View** 
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+#### Bindings terminologiques (différentiel)
+
+ **Vue d'ensemble** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+** Résumé **
+
+Extension simple avec le type Coding : Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient "99" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV). This extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes "99", and the municipality code is populated with the country code.
+
+ 
+
+Autres représentations du profil : [CSV](../StructureDefinition-fr-core-address-insee-code.csv), [Excel](../StructureDefinition-fr-core-address-insee-code.xlsx), [Schematron](../StructureDefinition-fr-core-address-insee-code.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-core-address-insee-code",
+  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+  "version" : "2.2.0",
+  "name" : "FRCoreAddressInseeCodeExtension",
+  "title" : "FR Core Address Insee Code Extension",
+  "status" : "active",
+  "date" : "2026-06-29T12:41:53+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient \"99\" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV).\r\nThis extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes \"99\", and the municipality code is populated with the country code.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "purpose" : "This extension adds to the address data type:\r\n-  \"Code commune INSEE\" (5 digits)",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Address"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "FR Core Address Insee Code Extension",
+      "definition" : "Extension d'ajout du code insee (5 chiffres) à l'adresse postale. Dans le cas d'une ville étrangère, le code département devient \"99\" et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d'identitovigilance (RNIV).\r\nThis extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes \"99\", and the municipality code is populated with the country code."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.2.0"
+      }
+    }]
+  }
+}
+
+```

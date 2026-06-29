@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,88 +7,98 @@
 
 <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-eg-4-members> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "hopitaltest-eg-4-members"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "hopitaltest-eg-4-members"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement" ;
+       fhir:index 0 ;
        fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-eg-4-members</b></p><a name=\"hopitaltest-eg-4-members\"> </a><a name=\"hchopitaltest-eg-4-members\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-etablissement.html\">FR Core Organization Etablissement Profile</a></p></div><p><b>FR Core Organization Raison Sociale Extension</b>: CHRU CENTRE VILLE</p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uf-4701-endocrino-diab.html\">UF Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uf-4705-nutrition.html\">UF Nutrition</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-service-11006-endocrino-diabo.html\">Service Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-service-11007-dietetique.html\">Service Dietetique</a></p><p><b>identifier</b>: FINESS d'entité géographique/350009999 (utilisation : official, ), Identification de l'organisation au SIREN/26350007609999 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 LEGAL-ENTITY}\">Etablissement Géographique</span></p><p><b>name</b>: CHRU CENTRE VILLE</p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "CHRU CENTRE VILLE"
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-eg-4-members</b></p><a name=\"hopitaltest-eg-4-members\"> </a><a name=\"hchopitaltest-eg-4-members\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-etablissement.html\">FR Core Organization Etablissement Profile</a></p></div><p><b>FR Core Organization Raison Sociale Extension</b>: CHRU CENTRE VILLE</p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uf-4701-endocrino-diab.html\">UF Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uf-4705-nutrition.html\">UF Nutrition</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-service-11006-endocrino-diabo.html\">Service Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-service-11007-dietetique.html\">Service Dietetique</a></p><p><b>identifier</b>: FINESS d'entité géographique/350009999 (utilisation : official, ), Identification de l'organisation au SIREN/26350007609999 (utilisation : official, )</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 LEGAL-ENTITY}\">Etablissement Géographique</span></p><p><b>name</b>: CHRU CENTRE VILLE</p></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Organization hopitaltest-eg-4-members</b></p><a name=\"en-hopitaltest-eg-4-members\"> </a><a name=\"en-hchopitaltest-eg-4-members\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-organization-etablissement.html\">FR Core Organization Etablissement Profile</a></p></div><p><b>FR Core Organization Raison Sociale Extension</b>: CHRU CENTRE VILLE</p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uf-4701-endocrino-diab.html\">UF Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-uf-4705-nutrition.html\">UF Nutrition</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-service-11006-endocrino-diabo.html\">Service Endocrino Diabeto</a></p><p><b>FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</b>: <a href=\"Organization-hopitaltest-service-11007-dietetique.html\">Service Dietetique</a></p><p><b>identifier</b>: FINESS d'entité géographique/350009999 (use: official, ), Identification de l'organisation au SIREN/26350007609999 (use: official, )</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 LEGAL-ENTITY}\">Etablissement Géographique</span></p><p><b>name</b>: CHRU CENTRE VILLE</p></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale" ] ;
+     fhir:Extension.valueString [ fhir:value "CHRU CENTRE VILLE" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4701-endocrino-diab> ;
-       fhir:reference [ fhir:v "Organization/hopitaltest-uf-4701-endocrino-diab" ] ;
-       fhir:display [ fhir:v "UF Endocrino Diabeto" ]
+       fhir:Reference.reference [ fhir:value "Organization/hopitaltest-uf-4701-endocrino-diab" ] ;
+       fhir:Reference.display [ fhir:value "UF Endocrino Diabeto" ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4705-nutrition> ;
-       fhir:reference [ fhir:v "Organization/hopitaltest-uf-4705-nutrition" ] ;
-       fhir:display [ fhir:v "UF Nutrition" ]
+       fhir:Reference.reference [ fhir:value "Organization/hopitaltest-uf-4705-nutrition" ] ;
+       fhir:Reference.display [ fhir:value "UF Nutrition" ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-service-11006-endocrino-diabo> ;
-       fhir:reference [ fhir:v "Organization/hopitaltest-service-11006-endocrino-diabo" ] ;
-       fhir:display [ fhir:v "Service Endocrino Diabeto" ]
+       fhir:Reference.reference [ fhir:value "Organization/hopitaltest-service-11006-endocrino-diabo" ] ;
+       fhir:Reference.display [ fhir:value "Service Endocrino Diabeto" ]
      ]
-  ] [
-     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Reference ;
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member" ] ;
+     fhir:Extension.valueReference [
        fhir:link <https://hl7.fr/ig/fhir/core/Organization/hopitaltest-service-11007-dietetique> ;
-       fhir:reference [ fhir:v "Organization/hopitaltest-service-11007-dietetique" ] ;
-       fhir:display [ fhir:v "Service Dietetique" ]
+       fhir:Reference.reference [ fhir:value "Organization/hopitaltest-service-11007-dietetique" ] ;
+       fhir:Reference.display [ fhir:value "Service Dietetique" ]
      ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "FINEG" ] ;
-         fhir:display [ fhir:v "FINESS d'entité géographique" ]
-       ] )
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "FINEG" ] ;
+         fhir:Coding.display [ fhir:value "FINESS d'entité géographique" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "https://finess.esante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "350009999" ]
-  ] [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "SIREN" ] ;
-         fhir:display [ fhir:v "Identification de l'organisation au SIREN" ]
-       ] )
+     fhir:Identifier.system [ fhir:value "https://finess.esante.gouv.fr" ] ;
+     fhir:Identifier.value [ fhir:value "350009999" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "SIREN" ] ;
+         fhir:Coding.display [ fhir:value "Identification de l'organisation au SIREN" ]
+       ]
      ] ;
-     fhir:system [ fhir:v "https://sirene.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "26350007609999" ]
-  ] ) ; # 
-  fhir:type ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "LEGAL-ENTITY" ] ;
-       fhir:display [ fhir:v "Entité légale" ]
-     ] ) ;
-     fhir:text [ fhir:v "Etablissement Géographique" ]
-  ] ) ; # 
-  fhir:name [ fhir:v "CHRU CENTRE VILLE"] . # 
+     fhir:Identifier.system [ fhir:value "https://sirene.fr" ] ;
+     fhir:Identifier.value [ fhir:value "26350007609999" ]
+  ] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307" ] ;
+       fhir:Coding.code [ fhir:value "LEGAL-ENTITY" ] ;
+       fhir:Coding.display [ fhir:value "Entité légale" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Etablissement Géographique" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "CHRU CENTRE VILLE"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-eg-4-members.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

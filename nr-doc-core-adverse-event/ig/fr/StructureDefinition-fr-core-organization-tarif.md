@@ -1,0 +1,146 @@
+# FR Core Organization Extension - Tarif Soin - Guide d'implémentation FR Core v2.2.0
+
+## Extension: FR Core Organization Extension - Tarif Soin 
+
+Tarif de soin associé à l’unité d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
+
+**Context of Use**
+
+**Usage info**
+
+**Utilisations:**
+
+* Utilise ce/t/te Extension: [FR Core Organization UAC Profile](StructureDefinition-fr-core-organization-uac.md)
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-organization-tarif)
+
+### Vues formelles du contenu de l'extension
+
+ [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Tableau différentiel (differential)](#tabs-diff) 
+*  [Tableau récapitulatif (snapshot)](#tabs-snap) 
+*  [Statistiques/Références](#tabs-summ) 
+*  [Tous](#tabs-all) 
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+#### Bindings terminologiques (différentiel)
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+** Résumé **
+
+Extension simple avec le type Coding : Tarif de soin associé à l'unité d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
+
+ **Vue différentielleDifferential View** 
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+#### Bindings terminologiques (différentiel)
+
+ **Vue d'ensemble** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
+
+** Résumé **
+
+Extension simple avec le type Coding : Tarif de soin associé à l'unité d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.
+
+ 
+
+Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organization-tarif.csv), [Excel](../StructureDefinition-fr-core-organization-tarif.xlsx), [Schematron](../StructureDefinition-fr-core-organization-tarif.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-core-organization-tarif",
+  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif",
+  "version" : "2.2.0",
+  "name" : "FRCoreOrganizationTarifExtension",
+  "title" : "FR Core Organization Extension - Tarif Soin",
+  "status" : "active",
+  "date" : "2026-06-29T12:41:53+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tarif de soin associé à l'unité d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Organization"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "FR Core Organization Extension - Tarif Soin",
+      "definition" : "Tarif de soin associé à l'unité d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-code-tarif-tnjp|2.2.0"
+      }
+    }]
+  }
+}
+
+```

@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-vs-body-position"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-body-position</b></p><a name=\"fr-core-vs-body-position\"> </a><a name=\"hcfr-core-vs-body-position\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version : 4.0.1</p></div><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/30212006\">30212006</a></td><td>Fowler's position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/26527006\">26527006</a></td><td>Inverse Trendelenburg position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102536004\">102536004</a></td><td>Left lateral decubitus position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/414585002\">414585002</a></td><td>Left lateral tilt (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/10904000\">10904000</a></td><td>Orthostatic body position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1240000\">1240000</a></td><td>Prone body position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102538003\">102538003</a></td><td>Recumbent body position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/423413008\">423413008</a></td><td>Reverse trendelenburg positioning (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102535000\">102535000</a></td><td>Right lateral decubitus position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/415346000\">415346000</a></td><td>Right lateral tilt (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/33586001\">33586001</a></td><td>Sitting position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/40199007\">40199007</a></td><td>Supine body position (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/34106002\">34106002</a></td><td>Trendelenburg position (finding)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "FRCoreValueSetBodyPosition"] ;
+  fhir:ValueSet.title [ fhir:value "Body Position value set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-06-29T12:41:53+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "SELECT SNOMED CT code system values the position in which the individual was in during a measurement."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30212006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fowler's position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26527006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inverse Trendelenburg position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102536004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left lateral decubitus position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "414585002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left lateral tilt (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10904000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Orthostatic body position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1240000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prone body position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102538003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Recumbent body position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "423413008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reverse trendelenburg positioning (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102535000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right lateral decubitus position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "415346000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right lateral tilt (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33586001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sitting position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40199007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Supine body position (finding)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34106002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trendelenburg position (finding)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
