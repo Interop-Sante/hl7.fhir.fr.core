@@ -46,8 +46,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.value 1..
 * identifier.assigner only Reference(FRCoreOrganizationProfile)
 
-* class.system 1..
-* class.code 1..
+
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
@@ -84,9 +83,8 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 // ── Contraintes dérivées de IG Document Core ─────────────────────────────────────────────────────
 
-* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
-// Doc Core : FRValueSetEncounterClass (tous les codes v3-ActEncounterCode)
-* class from FRCoreValueSetEncounterClass (extensible) // Contrainte ajoutée uniquement par IG Document Core
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)"
+* class from FRCoreValueSetEncounterClass (extensible)
 
 * status ^short = "Statut de la rencontre (finished | planned | proposed)"
 * obeys fr-encounter-status // Invariant ajouté par IG Document Core
