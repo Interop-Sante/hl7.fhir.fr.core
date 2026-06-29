@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationHeightBodyPositionExtension",
   "title" : "FR Core Observation Height Body Position Extension",
   "status" : "active",
-  "date" : "2026-06-29T10:03:57+00:00",
+  "date" : "2026-06-29T10:21:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

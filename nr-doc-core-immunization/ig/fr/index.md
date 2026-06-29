@@ -93,7 +93,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [CC BY-ND 3.0 IGO](https://creativecommons.org/licenses/by-nd/3.0/igo/legalcode) 
 
-* [Classification anatomique, thérapeutique et chimique](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-atc.html): [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md) and [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
+* [Classification anatomique, thérapeutique et chimique](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-atc.html): [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
 
 
 * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 

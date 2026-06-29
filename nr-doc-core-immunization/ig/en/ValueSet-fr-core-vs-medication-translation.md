@@ -7,7 +7,7 @@ Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (
 
  **References** 
 
-* [FR Core Immunization Profile](StructureDefinition-fr-core-immunization.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -39,7 +39,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T10:03:57+00:00",
+  "date" : "2026-06-29T10:21:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

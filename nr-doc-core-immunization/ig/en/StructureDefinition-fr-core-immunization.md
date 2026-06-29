@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-29T10:03:57+00:00",
+  "date" : "2026-06-29T10:21:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -122,47 +122,26 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
     {
       "id" : "Immunization.vaccineCode",
       "path" : "Immunization.vaccineCode",
-      "short" : "Vaccin. Code du produit de santé"
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding",
-      "path" : "Immunization.vaccineCode.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "system"
-        }],
-        "description" : "Slice CIS et autres codifications",
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:cis",
-      "path" : "Immunization.vaccineCode.coding",
-      "sliceName" : "cis",
-      "min" : 1,
-      "max" : "1",
+      "short" : "Vaccin. Code du produit de santé",
       "binding" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "key",
+            "valueId" : "fr-core-immunization-vaccinecode-translation"
+          },
+          {
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        }],
         "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis|2.2.0"
       }
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:translation",
-      "path" : "Immunization.vaccineCode.coding",
-      "sliceName" : "translation",
-      "min" : 0,
-      "max" : "*",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
-      }
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:translation.system",
-      "path" : "Immunization.vaccineCode.coding.system",
-      "min" : 1
     },
     {
       "id" : "Immunization.occurrence[x]",

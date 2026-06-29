@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Patient Contact Relationship Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T10:03:57+00:00",
+  "date" : "2026-06-29T10:21:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

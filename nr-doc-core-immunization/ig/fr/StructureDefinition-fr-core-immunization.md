@@ -37,7 +37,7 @@ Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.
 
 ** Résumé **
 
-Obligatoire : 2 éléments(2 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -57,7 +57,6 @@ Cette structure fait référence à ces extensions:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
-* The element 1 is sliced based on the value of Immunization.vaccineCode.coding
 * The element 1 is sliced based on the value of Immunization.protocolApplied.doseNumber[x]
 
  **Vue des éléments clés** 
@@ -82,7 +81,7 @@ Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.
 
 ** Résumé **
 
-Obligatoire : 2 éléments(2 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -102,7 +101,6 @@ Cette structure fait référence à ces extensions:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
-* The element 1 is sliced based on the value of Immunization.vaccineCode.coding
 * The element 1 is sliced based on the value of Immunization.protocolApplied.doseNumber[x]
 
  
@@ -122,7 +120,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-06-29T10:03:57+00:00",
+  "date" : "2026-06-29T10:21:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -212,47 +210,26 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
     {
       "id" : "Immunization.vaccineCode",
       "path" : "Immunization.vaccineCode",
-      "short" : "Vaccin. Code du produit de santé"
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding",
-      "path" : "Immunization.vaccineCode.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "system"
-        }],
-        "description" : "Slice CIS et autres codifications",
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:cis",
-      "path" : "Immunization.vaccineCode.coding",
-      "sliceName" : "cis",
-      "min" : 1,
-      "max" : "1",
+      "short" : "Vaccin. Code du produit de santé",
       "binding" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "key",
+            "valueId" : "fr-core-immunization-vaccinecode-translation"
+          },
+          {
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        }],
         "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis|2.2.0"
       }
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:translation",
-      "path" : "Immunization.vaccineCode.coding",
-      "sliceName" : "translation",
-      "min" : 0,
-      "max" : "*",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
-      }
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:translation.system",
-      "path" : "Immunization.vaccineCode.coding.system",
-      "min" : 1
     },
     {
       "id" : "Immunization.occurrence[x]",
