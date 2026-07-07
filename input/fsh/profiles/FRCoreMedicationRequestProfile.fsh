@@ -12,9 +12,6 @@ Id: fr-core-medication-request
 Title: "FR Core MedicationRequest Profile"
 Description: "FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."
 
-* intent = #order // Doc Core
-
-* status 1..1 // FHIR R4 base : 1..1 — cardinalité identique
 * status ^short = "Statut"
 // Doc Core : status = #completed — INCOMPATIBILITÉ avec ePrescription qui ne fixe pas la valeur
 // FRCore : valeur fixe supprimée ; le statut peut être active, completed, stopped, on-hold, etc.
