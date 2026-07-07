@@ -97,18 +97,18 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [CC BY-ND 3.0 IGO](https://creativecommons.org/licenses/by-nd/3.0/igo/legalcode) 
 
-* [Classification anatomique, thérapeutique et chimique](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-atc.html): [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md) and [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
+* [Classification anatomique, thérapeutique et chimique](https://interop.esante.gouv.fr/terminologies/1.11.0/CodeSystem-terminologie-atc.html): [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md) and [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
 
 
 * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 
 
-* [Dictionnaire européen multilingue des substances entrant dans la composition de médicaments](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-sms.html): [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md)
-* [Standard Terms Data Base Dictionnaire européen multilingue de termes normalisés descripteurs de médicaments](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-standardterms.html): [FRCoreMedicationAdministrationProfile](StructureDefinition-fr-core-medication-administration.md), [FRCoreMedicationDispenseProfile](StructureDefinition-fr-core-medication-dispense.md)... Show 4 more, [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md), [FRCoreMedicationRequestProfile](StructureDefinition-fr-core-medication-request.md), [FRCoreMedicationStatementProfile](StructureDefinition-fr-core-medication-statement.md) and [FRCoreValueSetEDQM](ValueSet-fr-core-vs-edqm.md)
+* [Dictionnaire européen multilingue des substances entrant dans la composition de médicaments](https://interop.esante.gouv.fr/terminologies/1.11.0/CodeSystem-terminologie-sms.html): [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md)
+* [Standard Terms Data Base Dictionnaire européen multilingue de termes normalisés descripteurs de médicaments](https://interop.esante.gouv.fr/terminologies/1.11.0/CodeSystem-terminologie-standardterms.html): [FRCoreMedicationAdministrationProfile](StructureDefinition-fr-core-medication-administration.md), [FRCoreMedicationDispenseProfile](StructureDefinition-fr-core-medication-dispense.md)... Show 4 more, [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md), [FRCoreMedicationRequestProfile](StructureDefinition-fr-core-medication-request.md), [FRCoreMedicationStatementProfile](StructureDefinition-fr-core-medication-statement.md) and [FRCoreValueSetEDQM](ValueSet-fr-core-vs-edqm.md)
 
 
 * [LOv2](https://github.com/etalab/licence-ouverte/blob/master/LO.md) 
 
-* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-bdpm.html): [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md) and [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
+* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.11.0/CodeSystem-terminologie-bdpm.html): [FRCoreMedicationProfile](StructureDefinition-fr-core-medication.md) and [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)

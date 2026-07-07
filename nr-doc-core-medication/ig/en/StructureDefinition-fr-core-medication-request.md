@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-06-29T12:42:10+00:00",
+  "date" : "2026-07-07T09:34:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -157,11 +157,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "id" : "MedicationRequest.status",
       "path" : "MedicationRequest.status",
       "short" : "Statut"
-    },
-    {
-      "id" : "MedicationRequest.intent",
-      "path" : "MedicationRequest.intent",
-      "patternCode" : "order"
     },
     {
       "id" : "MedicationRequest.medication[x]",
@@ -367,7 +362,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260420150249"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260619134041"
       }
     },
     {
@@ -543,7 +538,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis|20260420150250"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis|20260619134042"
       }
     },
     {

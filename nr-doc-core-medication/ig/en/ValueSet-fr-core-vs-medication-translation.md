@@ -38,7 +38,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRCoreValueSetMedicationTranslation",
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
-  "date" : "2026-06-29T12:42:10+00:00",
+  "date" : "2026-07-07T09:34:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,7 +66,7 @@ No Expansion for this valueset (Unknown Code System)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
-      "version" : "2026-05-05"
+      "version" : "2026-06-01"
     },
     {
       "system" : "https://smt.esante.gouv.fr/terminologie-cip_ucd"

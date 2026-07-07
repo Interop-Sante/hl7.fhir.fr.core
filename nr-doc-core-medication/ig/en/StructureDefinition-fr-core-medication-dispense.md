@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationDispenseProfile",
   "title" : "FR Core MedicationDispense Profile",
   "status" : "active",
-  "date" : "2026-06-29T12:42:10+00:00",
+  "date" : "2026-07-07T09:34:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -136,7 +136,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "path" : "MedicationDispense.type.coding",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis|20260420150249"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis|20260619134041"
       }
     },
     {

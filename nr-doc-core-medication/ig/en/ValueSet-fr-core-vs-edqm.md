@@ -19,8 +19,6 @@ Formes galéniques issues du CodeSystem EDQM fourni par le SMT (classe PDF).
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -42,7 +40,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRCoreValueSetEDQM",
   "title" : "FR Core ValueSet EDQM",
   "status" : "active",
-  "date" : "2026-06-29T12:42:10+00:00",
+  "date" : "2026-07-07T09:34:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -70,7 +68,7 @@ No Expansion for this valueset (Unknown Code System)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
-      "version" : "2025-03-19",
+      "version" : "2026-01-30",
       "filter" : [{
         "property" : "concept",
         "op" : "is-a",
