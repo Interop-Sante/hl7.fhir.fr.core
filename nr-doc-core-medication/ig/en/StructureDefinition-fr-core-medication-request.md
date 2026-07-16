@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-07-07T09:34:50+00:00",
+  "date" : "2026-07-16T11:52:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -200,49 +200,13 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
     {
       "id" : "MedicationRequest.reasonReference",
       "path" : "MedicationRequest.reasonReference",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "display"
-        }],
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "MedicationRequest.reasonReference:ald",
-      "path" : "MedicationRequest.reasonReference",
-      "sliceName" : "ald",
-      "short" : "En rapport avec une Affection Longue Durée (ALD).",
-      "definition" : "S'il s'agit d'une Affection Longue Durée (ALD) il faut préciser le problème",
-      "min" : 0,
-      "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"]
-      }]
-    },
-    {
-      "id" : "MedicationRequest.reasonReference:accidentTravail",
-      "path" : "MedicationRequest.reasonReference",
-      "sliceName" : "accidentTravail",
-      "short" : "En rapport avec accident travail",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"]
-      }]
-    },
-    {
-      "id" : "MedicationRequest.reasonReference:prevention",
-      "path" : "MedicationRequest.reasonReference",
-      "sliceName" : "prevention",
-      "short" : "En rapport avec la prévention",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-ald|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-work-related-accident|2.2.0"]
       }]
     },
     {
@@ -257,7 +221,10 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|4.0.1"]
       }]
     },
     {
@@ -273,45 +240,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
     {
       "id" : "MedicationRequest.dosageInstruction.additionalInstruction",
       "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
-      "sliceName" : "instructionsPatient",
-      "short" : "Instruction au patient",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction.coding",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code" : "PINSTRUCT",
-        "display" : "Patient Medication Instructions"
-      }
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:precondition",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
-      "sliceName" : "precondition",
-      "short" : "Condition préalable à l'utilisation du médicament",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:precondition.text",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction.text",
-      "patternString" : "Permet de décrire les conditions préalables à l'utilisation du médicament."
+      "short" : "Informations supplémentaires utilisables pour instructions au Patien ou pércondition préalables à l'utilisation du médicament"
     },
     {
       "id" : "MedicationRequest.dosageInstruction.timing",

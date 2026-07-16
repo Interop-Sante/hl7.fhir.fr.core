@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-07T09:34:50+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-16T11:52:18+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -90,7 +90,7 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.11.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.11.1" ]
   ], [
      fhir:index 3 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_xver_r5_r4" ] ;
@@ -1783,6 +1783,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-ald> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-ald" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation ALD" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for ALD observation.\r\n\nProfil français pour l'observation ALD" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-bp" ]
        ] ;
@@ -1790,7 +1804,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for blood pressure.\r\n\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56 ;
+       fhir:index 57 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1804,7 +1818,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].\r\n\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 57 ;
+       fhir:index 58 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1818,7 +1832,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for body height.\r\n\nProfil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 58 ;
+       fhir:index 59 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1832,7 +1846,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.\r\nCIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 59 ;
+       fhir:index 60 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1846,7 +1860,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for body temperature.\r\n\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60 ;
+       fhir:index 61 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1860,7 +1874,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile of body weight based on the FHIR profil BodyWeightMeas.\r\n\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 61 ;
+       fhir:index 62 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1874,7 +1888,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for Occipital-frontal circumference.\r\n\nProfil HL7 Vital Signs Circonférence de la tête" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 62 ;
+       fhir:index 63 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1888,7 +1902,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for the FHIR Vital Sign Heart Rate Profile.\r\n\nProfilage français du profil Vital Signs Heart rate" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 63 ;
+       fhir:index 64 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1902,7 +1916,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing).\r\nExtension on the FrObservationBodyHeight to specify the position of the body during the measure of the height." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 64 ;
+       fhir:index 65 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1916,7 +1930,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d'exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l'effort, après l'effort).\r\nFrench extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 65 ;
+       fhir:index 66 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1930,7 +1944,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for Oxygen saturation in Arterial blood.\r\n\nProfil de la saturation en oxygène du sang artériel." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 66 ;
+       fhir:index 67 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-prevention" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Prevention" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for prevention observation.\r\n\nProfil français pour l'observation en rapport avec la prevention" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1944,7 +1972,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for the ObservationResprate profile for France.\r\n\nProfil de la fréquence resporatoire pour l'usage en France" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67 ;
+       fhir:index 69 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1958,7 +1986,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68 ;
+       fhir:index 70 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1972,7 +2000,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69 ;
+       fhir:index 71 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1986,7 +2014,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Champ d'activité d'une UF" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70 ;
+       fhir:index 72 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2000,7 +2028,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicateur permettant de définir si une UF peut demander des actes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 71 ;
+       fhir:index 73 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2014,7 +2042,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Discipline d'équipement" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72 ;
+       fhir:index 74 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2028,7 +2056,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Discipline de prestation d'une UAC" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73 ;
+       fhir:index 75 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2042,7 +2070,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicateur permettant de définir si une UF peut exécuter des actes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74 ;
+       fhir:index 76 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2056,7 +2084,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicateur permettant de définir si une UF est d'hébergement, médicale, administrative ou de magasin." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75 ;
+       fhir:index 77 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2070,7 +2098,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nombre total de places d'hébergement théoriques" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 76 ;
+       fhir:index 78 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2084,7 +2112,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension permettant de définir des membres d'une organisation. Les membres sont des organisations filles de la ressources. C'est la relation inverse de partOf." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77 ;
+       fhir:index 79 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2098,7 +2126,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tarif de soin associé à l'unité d'activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 78 ;
+       fhir:index 80 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2112,7 +2140,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type d'activité d'une UF" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79 ;
+       fhir:index 81 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2126,7 +2154,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicateur permettant de définir si une UF est externe à l'établissement" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80 ;
+       fhir:index 82 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2140,7 +2168,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81 ;
+       fhir:index 83 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2154,7 +2182,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Raison Sociale l'organisation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 82 ;
+       fhir:index 84 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2168,7 +2196,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Libellé court de l'organisation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 83 ;
+       fhir:index 85 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2182,7 +2210,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 84 ;
+       fhir:index 86 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2196,7 +2224,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 85 ;
+       fhir:index 87 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2210,7 +2238,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prénoms de l'acte de naissance" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 86 ;
+       fhir:index 88 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2224,7 +2252,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicateur booléen de mise à jour de la date de naissance" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87 ;
+       fhir:index 89 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2238,7 +2266,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifiant de contact dans la ressource Patient\n\rThis extension carries the contact identifier in the patient resource" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88 ;
+       fhir:index 90 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2252,7 +2280,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 89 ;
+       fhir:index 91 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2266,7 +2294,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).\n\rCarries the death place of the patient" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 90 ;
+       fhir:index 92 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2280,7 +2308,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 91 ;
+       fhir:index 93 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2294,7 +2322,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 92 ;
+       fhir:index 94 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2308,7 +2336,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\r\n\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 93 ;
+       fhir:index 95 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2322,7 +2350,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Practitionner pour la France." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 94 ;
+       fhir:index 96 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2336,7 +2364,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization\r\n\nSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95 ;
+       fhir:index 97 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2350,7 +2378,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This extension adds the element \"specialty\" to the FHIR Practitioner resource." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 96 ;
+       fhir:index 98 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2364,7 +2392,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the RelatedPerson resource for France.\r\n\nProfil de la ressource RelatedPerson pour l'usage en France" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 97 ;
+       fhir:index 99 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2378,7 +2406,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l'identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d'une période récurrente, la date de création de la période et une priorité.\n\rThis extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 98 ;
+       fhir:index 100 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2392,7 +2420,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule\r\n\nProfil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 99 ;
+       fhir:index 101 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2406,7 +2434,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cette extension française permet d'associer le type de service avec la durée de ce service.\n\rThis French extension allows to associate the type of service with the duration of this service" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 100 ;
+       fhir:index 102 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2420,7 +2448,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil of the Slot resource for France.\r\n\nProfil de la ressource Slot pour la France" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 101 ;
+       fhir:index 103 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2434,7 +2462,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Spécifications des périodes récurrentes.\r\nSpecification of the recurrent periods" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 102 ;
+       fhir:index 104 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2448,7 +2476,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Body Position" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 103 ;
+       fhir:index 105 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2462,7 +2490,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for the blood pressure measurement method" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 104 ;
+       fhir:index 106 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2476,7 +2504,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catérorie d'établissement de santé, suivant les valeurs de la SAE (Structure d'Activité d'Etablissement) 2024" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 105 ;
+       fhir:index 107 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2490,7 +2518,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 106 ;
+       fhir:index 108 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2504,7 +2532,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set town and country COG" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 107 ;
+       fhir:index 109 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2518,7 +2546,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of codes that can be used to indicate the relationship between a Patient and a Related Person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 108 ;
+       fhir:index 110 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2532,7 +2560,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formes galéniques issues du CodeSystem EDQM fourni par le SMT (classe PDF)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 109 ;
+       fhir:index 111 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2546,7 +2574,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of email" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 110 ;
+       fhir:index 112 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2560,7 +2588,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of codes that can be used to indicate the class of the encounter." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 111 ;
+       fhir:index 113 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2574,7 +2602,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Circonstances de sortie de l'hôpital.\r\nThis value set defines a set of codes that can be used to where the patient left the hospital" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 112 ;
+       fhir:index 114 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2588,7 +2616,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 113 ;
+       fhir:index 115 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2602,7 +2630,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs des types de rencontre.\r\nA coded type for an encounter" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 114 ;
+       fhir:index 116 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2616,7 +2644,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The validation mode of the identity." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 115 ;
+       fhir:index 117 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2630,7 +2658,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reliability of the identity." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 116 ;
+       fhir:index 118 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2644,7 +2672,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "the French Address Insee Codes" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 117 ;
+       fhir:index 119 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2658,7 +2686,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Position du lit dans la chambre" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 118 ;
+       fhir:index 120 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2672,7 +2700,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs du rôle joué par un lieu.\n\rA role for a location" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 119 ;
+       fhir:index 121 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2686,7 +2714,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de chambre" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 120 ;
+       fhir:index 122 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2700,7 +2728,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Marital Status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 121 ;
+       fhir:index 123 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2714,7 +2742,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (médicament virtuel) et NUVA (vaccins)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 122 ;
+       fhir:index 124 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2728,7 +2756,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The validation mode of the identity." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 123 ;
+       fhir:index 125 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2742,7 +2770,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The validation mode of the identity authorized for INS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 124 ;
+       fhir:index 126 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2756,7 +2784,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Champ d'activité d'une organisation type UF." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 125 ;
+       fhir:index 127 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2770,7 +2798,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valeurs permettant de coder les disciplines d'équipement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 126 ;
+       fhir:index 128 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2784,7 +2812,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valeurs permettant de coder les disciplines de prestation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 127 ;
+       fhir:index 129 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2798,7 +2826,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Types d'organisation représentant des établissements." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 128 ;
+       fhir:index 130 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2812,7 +2840,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 129 ;
+       fhir:index 131 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2826,7 +2854,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Types de structures" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 130 ;
+       fhir:index 132 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2840,7 +2868,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valeurs permettant de coder les types d'activité." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 131 ;
+       fhir:index 133 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2854,7 +2882,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicateur d'une unité fonctionnelle." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 132 ;
+       fhir:index 134 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2868,7 +2896,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catégorie de la relation du contact patient : rôle ou type de relation" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 133 ;
+       fhir:index 135 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2882,7 +2910,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet patient contact role" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 134 ;
+       fhir:index 136 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2896,7 +2924,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide.\r\nPermitted genders for French Patient gender." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 135 ;
+       fhir:index 137 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2910,7 +2938,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 136 ;
+       fhir:index 138 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2924,7 +2952,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Use autorisés pour l'identifiant national de santé.\r\nAuthorized use for INS identifier." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 137 ;
+       fhir:index 139 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2938,7 +2966,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\r\nAuthorized use for PI identifier." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 138 ;
+       fhir:index 140 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2952,7 +2980,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 139 ;
+       fhir:index 141 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2966,7 +2994,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The modalities of exercice of the practitioner, registered by an official organization for a period of time." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 140 ;
+       fhir:index 142 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2980,7 +3008,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The exercice(s) of the practitioner." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 141 ;
+       fhir:index 143 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2994,7 +3022,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet relation type" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 142 ;
+       fhir:index 144 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3008,7 +3036,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs des types de Schedule.\r\nA Schedule type" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 143 ;
+       fhir:index 145 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3022,7 +3050,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Patient or person civility" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 144 ;
+       fhir:index 146 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3036,7 +3064,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs SNOMED CT pour l'intention globale du traitement (MedicationRequest)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 145 ;
+       fhir:index 147 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3050,7 +3078,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Raison d'indisponibilité" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 146 ;
+       fhir:index 148 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3067,7 +3095,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0>
        ]
      ], [
-       fhir:index 147 ;
+       fhir:index 149 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3084,7 +3112,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0>
        ]
      ], [
-       fhir:index 148 ;
+       fhir:index 150 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3101,7 +3129,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0>
        ]
      ], [
-       fhir:index 149 ;
+       fhir:index 151 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3115,7 +3143,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource Location pour décrire la localisation du centre de radiologie de l'hôpital Z" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 150 ;
+       fhir:index 152 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3132,7 +3160,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0>
        ]
      ], [
-       fhir:index 151 ;
+       fhir:index 153 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3149,7 +3177,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0>
        ]
      ], [
-       fhir:index 152 ;
+       fhir:index 154 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3166,7 +3194,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0>
        ]
      ], [
-       fhir:index 153 ;
+       fhir:index 155 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3183,7 +3211,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0>
        ]
      ], [
-       fhir:index 154 ;
+       fhir:index 156 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3200,7 +3228,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0>
        ]
      ], [
-       fhir:index 155 ;
+       fhir:index 157 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3217,7 +3245,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0>
        ]
      ], [
-       fhir:index 156 ;
+       fhir:index 158 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3234,7 +3262,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0>
        ]
      ], [
-       fhir:index 157 ;
+       fhir:index 159 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3251,7 +3279,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0>
        ]
      ], [
-       fhir:index 158 ;
+       fhir:index 160 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3268,7 +3296,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0>
        ]
      ], [
-       fhir:index 159 ;
+       fhir:index 161 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3285,7 +3313,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate|2.2.0>
        ]
      ], [
-       fhir:index 160 ;
+       fhir:index 162 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3302,7 +3330,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 161 ;
+       fhir:index 163 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3319,7 +3347,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0>
        ]
      ], [
-       fhir:index 162 ;
+       fhir:index 164 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3336,7 +3364,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0>
        ]
      ], [
-       fhir:index 163 ;
+       fhir:index 165 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3353,7 +3381,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0>
        ]
      ], [
-       fhir:index 164 ;
+       fhir:index 166 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3370,7 +3398,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0>
        ]
      ], [
-       fhir:index 165 ;
+       fhir:index 167 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3387,7 +3415,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0>
        ]
      ], [
-       fhir:index 166 ;
+       fhir:index 168 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3404,7 +3432,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0>
        ]
      ], [
-       fhir:index 167 ;
+       fhir:index 169 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3421,7 +3449,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0>
        ]
      ], [
-       fhir:index 168 ;
+       fhir:index 170 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3435,7 +3463,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe where on the body the heart rate was measured." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 169 ;
+       fhir:index 171 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3449,7 +3477,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe how the heart rate was measured." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 170 ;
+       fhir:index 172 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3463,7 +3491,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe how the height/length was measured." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 171 ;
+       fhir:index 173 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3480,7 +3508,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 172 ;
+       fhir:index 174 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3497,7 +3525,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0>
        ]
      ], [
-       fhir:index 173 ;
+       fhir:index 175 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3514,7 +3542,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0>
        ]
      ], [
-       fhir:index 174 ;
+       fhir:index 176 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3531,7 +3559,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 175 ;
+       fhir:index 177 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3548,7 +3576,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 176 ;
+       fhir:index 178 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3565,7 +3593,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 177 ;
+       fhir:index 179 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3582,7 +3610,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 178 ;
+       fhir:index 180 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3599,7 +3627,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 179 ;
+       fhir:index 181 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3616,7 +3644,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 180 ;
+       fhir:index 182 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3633,7 +3661,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 181 ;
+       fhir:index 183 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3650,7 +3678,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0>
        ]
      ], [
-       fhir:index 182 ;
+       fhir:index 184 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3667,7 +3695,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0>
        ]
      ], [
-       fhir:index 183 ;
+       fhir:index 185 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3684,7 +3712,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
      ], [
-       fhir:index 184 ;
+       fhir:index 186 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3701,7 +3729,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
      ], [
-       fhir:index 185 ;
+       fhir:index 187 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3718,7 +3746,21 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
      ], [
-       fhir:index 186 ;
+       fhir:index 188 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-work-related-accident> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-work-related-accident" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - FR Core Observation Work Related Accident" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for work related accident observation.\r\n\nProfil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 189 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3732,7 +3774,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 187 ;
+       fhir:index 190 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

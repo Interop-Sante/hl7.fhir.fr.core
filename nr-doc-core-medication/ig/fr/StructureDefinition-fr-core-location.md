@@ -120,7 +120,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-locatio
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-07-07T09:34:50+00:00",
+  "date" : "2026-07-16T11:52:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

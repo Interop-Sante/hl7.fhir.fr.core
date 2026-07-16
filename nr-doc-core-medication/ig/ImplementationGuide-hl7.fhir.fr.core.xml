@@ -13,7 +13,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-07-07T09:34:50+00:00"/>
+  <date value="2026-07-16T11:52:18+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -60,7 +60,7 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.11.0"/>
+    <version value="1.11.1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_xver_r5_r4">
     <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
@@ -1277,6 +1277,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-core-observation-ald"/>
+      </reference>
+      <name value="FR Core Observation ALD"/>
+      <description value="French profile for ALD observation.&#xD;&#xA;&#xA;Profil français pour l'observation ALD"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-core-observation-bp"/>
       </reference>
       <name value="FR Core Observation Blood Pressure Profile"/>
@@ -1391,6 +1402,17 @@
       </reference>
       <name value="FR Core Observation Oxygen Saturation Profile"/>
       <description value="French profile for Oxygen saturation in Arterial blood.&#xD;&#xA;&#xA;Profil de la saturation en oxygène du sang artériel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-observation-prevention"/>
+      </reference>
+      <name value="FR Core Observation Prevention"/>
+      <description value="French profile for prevention observation.&#xD;&#xA;&#xA;Profil français pour l'observation en rapport avec la prevention"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2712,6 +2734,17 @@
       <name value="hopitaltest-uf-4705-nutrition"/>
       <description value="Exemple d'unité fonctionnelle (UF) de nutrition"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-observation-work-related-accident"/>
+      </reference>
+      <name value="Observation - FR Core Observation Work Related Accident"/>
+      <description value="French profile for work related accident observation.&#xD;&#xA;&#xA;Profil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

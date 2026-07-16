@@ -37,7 +37,7 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 ** Résumé **
 
-Obligatoire : 4 éléments(8 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 4 éléments(7 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -47,9 +47,15 @@ Cette structure fait référence à ces autres structures:
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
-* [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
 * [Observation (http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)](http://hl7.org/fhir/R4/observation.html)
+* [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
+* [FR Core Observation Prevention (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention|2.2.0)](StructureDefinition-fr-core-observation-prevention.md)
+* [FR Core Observation ALD (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-ald|2.2.0)](StructureDefinition-fr-core-observation-ald.md)
+* [Observation - FR Core Observation Work Related Accident (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-work-related-accident|2.2.0)](StructureDefinition-fr-core-observation-work-related-accident.md)
 * [FR Core MedicationRequest Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0)](StructureDefinition-fr-core-medication-request.md)
+* [CarePlan (http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1)](http://hl7.org/fhir/R4/careplan.html)
+* [ServiceRequest (http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1)](http://hl7.org/fhir/R4/servicerequest.html)
+* [ImmunizationRecommendation (http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|4.0.1)](http://hl7.org/fhir/R4/immunizationrecommendation.html)
 
 **Extensions**
 
@@ -65,8 +71,6 @@ Cette structure fait référence à ces extensions:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
-* The element 1 is sliced based on the value of MedicationRequest.reasonReference
-* The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.additionalInstruction
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.timing.repeat.bounds[x]
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.rate[x]
@@ -94,7 +98,7 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 ** Résumé **
 
-Obligatoire : 4 éléments(8 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 4 éléments(7 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -104,9 +108,15 @@ Cette structure fait référence à ces autres structures:
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
-* [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
 * [Observation (http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)](http://hl7.org/fhir/R4/observation.html)
+* [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
+* [FR Core Observation Prevention (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention|2.2.0)](StructureDefinition-fr-core-observation-prevention.md)
+* [FR Core Observation ALD (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-ald|2.2.0)](StructureDefinition-fr-core-observation-ald.md)
+* [Observation - FR Core Observation Work Related Accident (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-work-related-accident|2.2.0)](StructureDefinition-fr-core-observation-work-related-accident.md)
 * [FR Core MedicationRequest Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0)](StructureDefinition-fr-core-medication-request.md)
+* [CarePlan (http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1)](http://hl7.org/fhir/R4/careplan.html)
+* [ServiceRequest (http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1)](http://hl7.org/fhir/R4/servicerequest.html)
+* [ImmunizationRecommendation (http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|4.0.1)](http://hl7.org/fhir/R4/immunizationrecommendation.html)
 
 **Extensions**
 
@@ -122,8 +132,6 @@ Cette structure fait référence à ces extensions:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
-* The element 1 is sliced based on the value of MedicationRequest.reasonReference
-* The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.additionalInstruction
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.timing.repeat.bounds[x]
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.rate[x]
@@ -146,7 +154,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-07-07T09:34:50+00:00",
+  "date" : "2026-07-16T11:52:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -314,49 +322,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationRequest.reasonReference",
       "path" : "MedicationRequest.reasonReference",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "display"
-        }],
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "MedicationRequest.reasonReference:ald",
-      "path" : "MedicationRequest.reasonReference",
-      "sliceName" : "ald",
-      "short" : "En rapport avec une Affection Longue Durée (ALD).",
-      "definition" : "S'il s'agit d'une Affection Longue Durée (ALD) il faut préciser le problème",
-      "min" : 0,
-      "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"]
-      }]
-    },
-    {
-      "id" : "MedicationRequest.reasonReference:accidentTravail",
-      "path" : "MedicationRequest.reasonReference",
-      "sliceName" : "accidentTravail",
-      "short" : "En rapport avec accident travail",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"]
-      }]
-    },
-    {
-      "id" : "MedicationRequest.reasonReference:prevention",
-      "path" : "MedicationRequest.reasonReference",
-      "sliceName" : "prevention",
-      "short" : "En rapport avec la prévention",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-ald|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-work-related-accident|2.2.0"]
       }]
     },
     {
@@ -371,7 +343,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|4.0.1"]
       }]
     },
     {
@@ -387,45 +362,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationRequest.dosageInstruction.additionalInstruction",
       "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
-      "sliceName" : "instructionsPatient",
-      "short" : "Instruction au patient",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction.coding",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code" : "PINSTRUCT",
-        "display" : "Patient Medication Instructions"
-      }
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:precondition",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
-      "sliceName" : "precondition",
-      "short" : "Condition préalable à l'utilisation du médicament",
-      "min" : 0,
-      "max" : "1"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:precondition.text",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction.text",
-      "patternString" : "Permet de décrire les conditions préalables à l'utilisation du médicament."
+      "short" : "Informations supplémentaires utilisables pour instructions au Patien ou pércondition préalables à l'utilisation du médicament"
     },
     {
       "id" : "MedicationRequest.dosageInstruction.timing",

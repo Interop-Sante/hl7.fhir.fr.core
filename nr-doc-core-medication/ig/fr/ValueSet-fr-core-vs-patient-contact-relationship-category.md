@@ -37,7 +37,7 @@ Catégorie de la relation du contact patient : rôle ou type de relation
   "title" : "FR Core ValueSet Patient Contact Relationship Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-07T09:34:50+00:00",
+  "date" : "2026-07-16T11:52:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

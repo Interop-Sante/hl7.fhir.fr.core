@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-07T09:34:50+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-16T11:52:18+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -90,7 +90,7 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.11.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.11.1" ]
   ], [
      fhir:index -1 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_xver_r5_r4" ] ;
@@ -1783,6 +1783,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-ald> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-ald" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation ALD" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for ALD observation.\r\n\nProfil français pour l'observation ALD" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-bp" ]
        ] ;
@@ -1928,6 +1942,20 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Oxygen Saturation Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for Oxygen saturation in Arterial blood.\r\n\nProfil de la saturation en oxygène du sang artériel." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-prevention" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Prevention" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for prevention observation.\r\n\nProfil français pour l'observation en rapport avec la prevention" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -3717,6 +3745,20 @@
          fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0" ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-work-related-accident> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-observation-work-related-accident" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - FR Core Observation Work Related Accident" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for work related accident observation.\r\n\nProfil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
