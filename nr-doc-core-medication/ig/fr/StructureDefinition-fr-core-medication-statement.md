@@ -112,7 +112,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationStatementProfile",
   "title" : "FR Core MedicationStatement Profile",
   "status" : "active",
-  "date" : "2026-07-16T13:43:45+00:00",
+  "date" : "2026-07-16T16:12:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

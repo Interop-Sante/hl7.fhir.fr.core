@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-07-16T13:43:45+00:00",
+  "date" : "2026-07-16T16:12:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -246,6 +246,18 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "id" : "MedicationRequest.dosageInstruction.timing",
       "path" : "MedicationRequest.dosageInstruction.timing",
       "short" : "Durée du traitement et fréquence d'administration."
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.extension:AdditionalWhenValues",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.extension",
+      "sliceName" : "AdditionalWhenValues",
+      "short" : "Codes additionnels pour l'occurrence, issus de PN13",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values|2.2.0"]
+      }]
     },
     {
       "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",

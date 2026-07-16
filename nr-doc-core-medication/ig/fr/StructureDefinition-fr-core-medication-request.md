@@ -65,6 +65,7 @@ Cette structure fait référence à ces extensions:
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent|2.2.0](StructureDefinition-fr-core-treatment-intent.md)
 * [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-offLabel.html)
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0](StructureDefinition-fr-core-not-covered.md)
+* [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values|2.2.0](StructureDefinition-fr-core-additional-when-values.md)
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-MedicationRequest.dis.dispenserInstruction.html)
 
 **Slices**
@@ -126,6 +127,7 @@ Cette structure fait référence à ces extensions:
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent|2.2.0](StructureDefinition-fr-core-treatment-intent.md)
 * [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-offLabel.html)
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0](StructureDefinition-fr-core-not-covered.md)
+* [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values|2.2.0](StructureDefinition-fr-core-additional-when-values.md)
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-MedicationRequest.dis.dispenserInstruction.html)
 
 **Slices**
@@ -154,7 +156,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-07-16T13:43:45+00:00",
+  "date" : "2026-07-16T16:12:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -368,6 +370,18 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "id" : "MedicationRequest.dosageInstruction.timing",
       "path" : "MedicationRequest.dosageInstruction.timing",
       "short" : "Durée du traitement et fréquence d'administration."
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.extension:AdditionalWhenValues",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.extension",
+      "sliceName" : "AdditionalWhenValues",
+      "short" : "Codes additionnels pour l'occurrence, issus de PN13",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values|2.2.0"]
+      }]
     },
     {
       "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",

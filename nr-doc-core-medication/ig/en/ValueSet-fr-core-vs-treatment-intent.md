@@ -36,7 +36,7 @@ Jeu de valeurs SNOMED CT pour l’intention globale du traitement (MedicationReq
   "name" : "FRCoreValueSetTreatmentIntent",
   "title" : "FR Core ValueSet Treatment Intent",
   "status" : "active",
-  "date" : "2026-07-16T13:43:45+00:00",
+  "date" : "2026-07-16T16:12:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

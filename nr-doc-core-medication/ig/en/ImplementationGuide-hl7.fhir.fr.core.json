@@ -11,7 +11,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-07-16T13:43:45+00:00",
+  "date" : "2026-07-16T16:12:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -946,6 +946,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/fr-core-additional-when-values"
+      },
+      "name" : "FR Core Additional When Values Extension",
+      "description" : "Codes additionnels pour l'élément Dosage.timing.repeat.when, issus de PN13.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/fr-core-address-insee-code"
       },
       "name" : "FR Core Address Insee Code Extension",
@@ -998,6 +1010,18 @@
       },
       "name" : "FR Core Assembly Order Extension",
       "description" : "A code that represents the preferred display order of the components of this human name.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-additional-when-codes"
+      },
+      "name" : "FR Core CodeSystem Additional When Codes",
+      "description" : "Codes additionnels pour des périodes d'occurrence qui ne sont pas définies dans FHIR.",
       "exampleBoolean" : false
     },
     {
@@ -2126,6 +2150,18 @@
       },
       "name" : "FR Core Slot Profile",
       "description" : "Profil of the Slot resource for France.\r\n\nProfil de la ressource Slot pour la France",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-additional-when-codes"
+      },
+      "name" : "FR Core ValueSet Additional When Codes",
+      "description" : "Jeu de valeurs à utiliser pour coder des périodes d'occurrence qui ne sont pas dans le jeu de valeurs http://hl7.org/fhir/ValueSet/event-timing.",
       "exampleBoolean" : false
     },
     {

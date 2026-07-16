@@ -12,7 +12,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-07-16T13:43:45+00:00"/>
+  <date value="2026-07-16T16:12:39+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -715,6 +715,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-core-additional-when-values"/>
+      </reference>
+      <name value="FR Core Additional When Values Extension"/>
+      <description value="Codes additionnels pour l'élément Dosage.timing.repeat.when, issus de PN13."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-core-address-insee-code"/>
       </reference>
       <name value="FR Core Address Insee Code Extension"/>
@@ -763,6 +774,17 @@
       </reference>
       <name value="FR Core Assembly Order Extension"/>
       <description value="A code that represents the preferred display order of the components of this human name."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/fr-core-cs-additional-when-codes"/>
+      </reference>
+      <name value="FR Core CodeSystem Additional When Codes"/>
+      <description value="Codes additionnels pour des périodes d'occurrence qui ne sont pas définies dans FHIR."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1797,6 +1819,17 @@
       </reference>
       <name value="FR Core Slot Profile"/>
       <description value="Profil of the Slot resource for France.&#xD;&#xA;&#xA;Profil de la ressource Slot pour la France"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-additional-when-codes"/>
+      </reference>
+      <name value="FR Core ValueSet Additional When Codes"/>
+      <description value="Jeu de valeurs à utiliser pour coder des périodes d'occurrence qui ne sont pas dans le jeu de valeurs http://hl7.org/fhir/ValueSet/event-timing."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
