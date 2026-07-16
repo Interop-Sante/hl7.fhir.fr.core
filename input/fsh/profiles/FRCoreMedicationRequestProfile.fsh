@@ -47,32 +47,15 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * encounter only Reference(Encounter) // * encounter only Reference(FRCoreEncounterProfile)
 * encounter ^short = "Contexte de soin"
 
-// Motif du traitement — slicing Doc Core (discriminateur par display : à revoir)
-* reasonReference ^slicing.discriminator.type = #pattern
-* reasonReference ^slicing.discriminator.path = "display"
-* reasonReference ^slicing.rules = #open
+// Motif du traitement
 
-* reasonReference contains
-    ald 0..1 and
-    accidentTravail 0..1 and
-    prevention 0..1
-
-* reasonReference[ald] only Reference(Condition) // * reasonReference[ald] only Reference(FRCoreConditionProfile)
-* reasonReference[ald] ^short = "En rapport avec une Affection Longue Durée (ALD)." // Doc Core
-* reasonReference[ald] ^definition = "S'il s'agit d'une Affection Longue Durée (ALD) il faut préciser le problème"
-
-// Doc Core : Reference(FRObservationWorkRelatedAccidentDocument) — FRCore : Observation base
-* reasonReference[accidentTravail] only Reference(Observation)
-* reasonReference[accidentTravail] ^short = "En rapport avec accident travail" // Doc Core
-
-* reasonReference[prevention] only Reference(Condition) // * reasonReference[prevention] only Reference(FRCoreConditionProfile)
-* reasonReference[prevention] ^short = "En rapport avec la prévention" // Doc Core
+* reasonReference only Reference(Observation or Condition or FRCoreObservationPrevention or FRCoreObservationALD or FRCoreObservationWorkRelatedAccident ) // * reasonReference only Reference(Observation or FRCoreConditionProfile or FRCoreObservationPrevention or FRCoreObservationALD or FRCoreObservationWorkRelatedAccident)
 
 * instantiatesUri ^short = "Référence de la prescription" // Doc Core
 
 * basedOn 0..1 // Doc Core
 * basedOn ^short = "Référence à un item du plan de traitement."
-* basedOn only Reference(FRCoreMedicationRequestProfile)
+* basedOn only Reference(FRCoreMedicationRequestProfile or CarePlan or ServiceRequest or ImmunizationRecommendation) // Doc Core : Reference(FRMedicationRequestDocument or FRCarePlanDocument or FRServiceRequestDocument or FRImmunizationRecommendationDocument)
 
 // Posologie — 1..* requis (ePrescription : 1..)
 * dosageInstruction 1..* // ePrescription : 1.. (FHIR R4 base : 0..*)
@@ -100,20 +83,8 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.maxDosePerPeriod.denominator 1..1 // Doc Core (FHIR R4 base : 0..1)
 // ePrescription : doseAndRate.* only FrRatioMedication/FrSimpleQuantityMedication/FrRangeMedication — types ePrescription-spécifiques, non portés dans FRCore
 
-// Instructions au patient (Doc Core)
-* dosageInstruction.additionalInstruction ^slicing.discriminator.type = #pattern
-* dosageInstruction.additionalInstruction ^slicing.discriminator.path = "$this"
-* dosageInstruction.additionalInstruction ^slicing.rules = #open
-
-* dosageInstruction.additionalInstruction contains
-    instructionsPatient 0..1 and
-    precondition 0..1
-
-* dosageInstruction.additionalInstruction[instructionsPatient] ^short = "Instruction au patient" // Doc Core
-* dosageInstruction.additionalInstruction[instructionsPatient].coding 1..1 // Doc Core (FHIR R4 base : 0..*)
-* dosageInstruction.additionalInstruction[instructionsPatient].coding = $v3-ActCode#PINSTRUCT "Patient Medication Instructions"
-* dosageInstruction.additionalInstruction[precondition] ^short = "Condition préalable à l'utilisation du médicament" // Doc Core
-* dosageInstruction.additionalInstruction[precondition].text = "Permet de décrire les conditions préalables à l'utilisation du médicament."
+// Instructions au patient et préconditions (Doc Core)
+* dosageInstruction.additionalInstruction ^short = "Informations supplémentaires utilisables pour instructions au Patien ou pércondition préalables à l'utilisation du médicament"
 
 // Dispensation (Doc Core)
 * dispenseRequest.extension contains $medicationRequest-dispenseRequest-dispenserInstruction-r5 named dispenserInstructionR5 0..1 // Doc Core
