@@ -13,7 +13,6 @@
     <sch:title>f:MedicationAdministration</sch:title>
     <sch:rule context="f:MedicationAdministration">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

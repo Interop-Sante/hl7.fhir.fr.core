@@ -126,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationAdministrationProfile",
   "title" : "FR Core MedicationAdministration Profile",
   "status" : "active",
-  "date" : "2026-07-16T11:52:18+00:00",
+  "date" : "2026-07-16T13:43:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -265,8 +265,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationAdministration.note",
       "path" : "MedicationAdministration.note",
-      "short" : "Conditions préalables à l'utilisation du médicament.",
-      "max" : "1"
+      "short" : "Conditions préalables à l'utilisation du médicament."
     },
     {
       "id" : "MedicationAdministration.dosage.extension",
@@ -311,7 +310,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "short" : "Voie d'administration",
       "binding" : {
         "strength" : "extensible",
-        "description" : "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)",
+        "description" : "EDQM - Standard terms / classe ROA",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
       }
     },
