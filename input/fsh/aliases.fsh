@@ -18,6 +18,7 @@ Alias: $medicationrequest-rendereddosageinstruction-r5 = http://hl7.org/fhir/5.0
 
 // Médicament - Extension ePrescription (portée dans FRCore)
 Alias: $fr-treatment-intent = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent
+Alias: $fr-additional-when-values = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values
 
 // ANS
 Alias: $TRE-G08-TypeIdentifiantPersonne = https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne

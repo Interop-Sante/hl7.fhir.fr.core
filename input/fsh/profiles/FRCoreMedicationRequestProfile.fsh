@@ -65,6 +65,8 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.timing.repeat.boundsPeriod ^short = "Durée du traitement" // Doc Core
 * dosageInstruction.timing.repeat.boundsPeriod.start ^short = "Date de début du traitement" // Doc Core
 * dosageInstruction.timing.repeat.boundsPeriod.end ^short = "Date de fin du traitement" // Doc Core
+* dosageInstruction.timing.repeat.extension contains $fr-additional-when-values named AdditionalWhenValues 0..1 // ePrescription
+* dosageInstruction.timing.repeat.extension[AdditionalWhenValues] ^short = "Codes additionnels pour l'occurrence, issus de PN13"
 * dosageInstruction.asNeeded[x] ^short = "Dosage conditionnel" // Doc Core
 * dosageInstruction.route from FRCoreValueSetEDQM (extensible) // Doc Core
 * dosageInstruction.route ^short = "Voie d'administration"
