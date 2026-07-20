@@ -74,7 +74,7 @@ Extension simple avec le type code : A code that represents the preferred displa
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2026-07-20T15:29:23+00:00",
+  "date" : "2026-07-20T15:43:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
