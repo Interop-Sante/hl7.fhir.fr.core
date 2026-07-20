@@ -112,7 +112,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationStatementProfile",
   "title" : "FR Core MedicationStatement Profile",
   "status" : "active",
-  "date" : "2026-07-16T16:12:39+00:00",
+  "date" : "2026-07-20T14:23:22+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -229,8 +229,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationStatement.note",
       "path" : "MedicationStatement.note",
-      "short" : "Conditions préalables à l'utilisation du médicament.",
-      "max" : "1"
+      "short" : "Conditions préalables à l'utilisation du médicament."
     },
     {
       "id" : "MedicationStatement.dosage.sequence",
