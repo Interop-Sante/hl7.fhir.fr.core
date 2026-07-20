@@ -85,7 +85,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-06-29T15:18:50+00:00",
+  "date" : "2026-07-20T14:28:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -183,7 +183,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
       "max" : "*",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260420150251"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260619134043"
       }
     },
     {
@@ -192,7 +192,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
       "short" : "Sévérité",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis|20260420150250"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis|20260619134042"
       }
     },
     {
@@ -248,14 +248,8 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
       "short" : "Statut clinique du patient",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260420150250"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260619134042"
       }
-    },
-    {
-      "id" : "Condition.note",
-      "path" : "Condition.note",
-      "short" : "Commentaire",
-      "max" : "1"
     }]
   }
 }

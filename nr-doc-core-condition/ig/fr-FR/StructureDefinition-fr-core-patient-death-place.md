@@ -61,7 +61,7 @@ Carries the death place of the patient
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2026-06-29T15:18:50+00:00",
+  "date" : "2026-07-20T14:28:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
