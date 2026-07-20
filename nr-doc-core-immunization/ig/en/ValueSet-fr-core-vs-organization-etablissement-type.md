@@ -37,7 +37,7 @@ Types d’organisation représentant des établissements.
   "title" : "FR Core ValueSet Organization Etablisement type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T15:19:05+00:00",
+  "date" : "2026-07-20T14:29:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

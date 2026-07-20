@@ -96,17 +96,17 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [CC BY-ND 3.0 IGO](https://creativecommons.org/licenses/by-nd/3.0/igo/legalcode) 
 
-* [Classification anatomique, thérapeutique et chimique](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-atc.html): [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
+* [Classification anatomique, thérapeutique et chimique](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-atc.html): [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md)
 
 
 * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 
 
-* [Standard Terms Data Base Dictionnaire européen multilingue de termes normalisés descripteurs de médicaments](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-standardterms.html): [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md)
+* [Standard Terms Data Base Dictionnaire européen multilingue de termes normalisés descripteurs de médicaments](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-standardterms.html): [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md)
 
 
 * [LOv2](https://github.com/etalab/licence-ouverte/blob/master/LO.md) 
 
-* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-bdpm.html): [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md), [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md) and [FRCoreValueSetVaccineCodeCIS](ValueSet-fr-core-vs-vaccine-code-cis.md)
+* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-bdpm.html): [FRCoreImmunizationProfile](StructureDefinition-fr-core-immunization.md), [FRCoreValueSetMedicationTranslation](ValueSet-fr-core-vs-medication-translation.md) and [FRCoreValueSetVaccineCodeCIS](ValueSet-fr-core-vs-vaccine-code-cis.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
