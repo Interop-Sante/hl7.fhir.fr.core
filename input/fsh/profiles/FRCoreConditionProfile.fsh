@@ -41,9 +41,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
-* severity ^short = "Sévérité"
-* severity from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis
-
 // * evidence.detail only Reference(FRDocumentReferenceDocument) // Commenté : profil FRDocumentReferenceDocument inexistant — à créer
 
 * stage.summary ^short = "Statut clinique du patient"
