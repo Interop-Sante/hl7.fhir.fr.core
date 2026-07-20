@@ -11,7 +11,7 @@ Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
 
 * clinicalStatus 1..1 // FHIR R5 base : 1..1 — cardinalité identique
-* clinicalStatus ^short = "Statut du problème"
+* clinicalStatus ^short = "Statut clinique du problème"
 
 * verificationStatus ^short = "Certitude"
 
