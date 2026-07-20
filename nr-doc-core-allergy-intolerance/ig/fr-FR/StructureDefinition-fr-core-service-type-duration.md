@@ -65,7 +65,7 @@ Extension complexe: Cette extension française permet d'associer le type de serv
   "name" : "FRCoreServiceTypeDurationExtension",
   "title" : "FR Core Service Type Duration Extension",
   "status" : "active",
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

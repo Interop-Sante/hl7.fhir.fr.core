@@ -84,7 +84,7 @@ Obligatoire : 9 éléments(16 éléments obligatoire(s) imbriqué(s))
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

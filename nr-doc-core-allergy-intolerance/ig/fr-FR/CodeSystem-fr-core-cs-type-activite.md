@@ -29,7 +29,7 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

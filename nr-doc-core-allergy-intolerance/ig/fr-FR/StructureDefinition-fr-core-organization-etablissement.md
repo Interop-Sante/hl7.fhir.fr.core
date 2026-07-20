@@ -112,7 +112,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

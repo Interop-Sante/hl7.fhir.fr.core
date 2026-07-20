@@ -15,8 +15,6 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie.
 
 ### 
 
-No Expansion for this valueset (Unknown Code System)
-
 -------
 
  . 
@@ -47,7 +45,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Allergy Substance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -75,7 +73,7 @@ No Expansion for this valueset (Unknown Code System)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-sms",
-      "version" : "2026-05"
+      "version" : "2026-07"
     }]
   }
 }

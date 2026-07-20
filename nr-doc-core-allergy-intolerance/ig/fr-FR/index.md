@@ -93,12 +93,12 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) 
 
-* [Dictionnaire européen multilingue des substances entrant dans la composition de médicaments](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-sms.html): [FRCoreAllergyIntoleranceProfile](StructureDefinition-fr-core-allergy-intolerance.md), [FRCoreValueSetAllergyCode](ValueSet-fr-core-vs-allergy-code.md) and [FRCoreValueSetAllergySubstance](ValueSet-fr-core-vs-allergy-substance.md)
+* [Dictionnaire européen multilingue des substances entrant dans la composition de médicaments](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-sms.html): [FRCoreAllergyIntoleranceProfile](StructureDefinition-fr-core-allergy-intolerance.md), [FRCoreValueSetAllergyCode](ValueSet-fr-core-vs-allergy-code.md) and [FRCoreValueSetAllergySubstance](ValueSet-fr-core-vs-allergy-substance.md)
 
 
 * [LOv2](https://github.com/etalab/licence-ouverte/blob/master/LO.md) 
 
-* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-bdpm.html): [FRCoreAllergyIntoleranceProfile](StructureDefinition-fr-core-allergy-intolerance.md) and [FRCoreValueSetAllergyCode](ValueSet-fr-core-vs-allergy-code.md)
+* [Base de données publique du médicament](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-bdpm.html): [FRCoreAllergyIntoleranceProfile](StructureDefinition-fr-core-allergy-intolerance.md) and [FRCoreValueSetAllergyCode](ValueSet-fr-core-vs-allergy-code.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)

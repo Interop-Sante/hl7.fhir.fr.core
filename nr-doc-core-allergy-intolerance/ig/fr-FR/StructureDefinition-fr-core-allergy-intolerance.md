@@ -73,7 +73,7 @@ Cette structure fait référence à ces autres structures:
   "name" : "FRCoreAllergyIntoleranceProfile",
   "title" : "FR Core AllergyIntolerance Profile",
   "status" : "active",
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -220,8 +220,7 @@ Cette structure fait référence à ces autres structures:
     {
       "id" : "AllergyIntolerance.reaction.note",
       "path" : "AllergyIntolerance.reaction.note",
-      "short" : "Commentaire",
-      "max" : "1"
+      "short" : "Commentaire"
     }]
   }
 }

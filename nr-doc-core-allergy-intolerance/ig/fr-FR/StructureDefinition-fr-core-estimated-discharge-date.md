@@ -55,7 +55,7 @@ Extension simple avec le type date : This extension is used to specify the estim
   "name" : "FRCoreEncounterEstimatedDischargeDateExtension",
   "title" : "FR Core Encounter Estimated Discharge Date Extension",
   "status" : "active",
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

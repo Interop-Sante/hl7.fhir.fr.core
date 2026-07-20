@@ -53,7 +53,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Allergy Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-29T09:28:38+00:00",
+  "date" : "2026-07-20T14:26:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -81,7 +81,7 @@ No Expansion for this valueset (Unknown Code System)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
-      "version" : "2026-05-05"
+      "version" : "2026-07-01"
     },
     {
       "system" : "https://smt.esante.gouv.fr/terminologie-cip_ucd"
@@ -90,11 +90,11 @@ No Expansion for this valueset (Unknown Code System)
       "system" : "http://id.who.int/icd/release/11/mms"
     },
     {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis|20260420150251"]
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis|20260619134043"]
     },
     {
       "system" : "https://smt.esante.gouv.fr/terminologie-sms",
-      "version" : "2026-05"
+      "version" : "2026-07"
     }]
   }
 }

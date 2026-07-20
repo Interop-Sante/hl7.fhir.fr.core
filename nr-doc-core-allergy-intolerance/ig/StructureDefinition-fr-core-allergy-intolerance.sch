@@ -21,10 +21,4 @@
       <sch:assert test="count(f:start) &gt;= 1">start: minimum cardinality of 'start' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:AllergyIntolerance/f:reaction</sch:title>
-    <sch:rule context="f:AllergyIntolerance/f:reaction">
-      <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
 </sch:schema>
