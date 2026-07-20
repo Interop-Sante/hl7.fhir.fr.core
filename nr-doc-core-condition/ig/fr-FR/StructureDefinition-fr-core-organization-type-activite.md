@@ -62,7 +62,7 @@ Extension simple avec le type CodeableConcept : Type d'activité d'une UF
   "name" : "FRCoreOrganizationTypeActiviteExtension",
   "title" : "FR Core Organization Extension - Type d'activité",
   "status" : "active",
-  "date" : "2026-07-20T15:21:00+00:00",
+  "date" : "2026-07-20T15:29:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

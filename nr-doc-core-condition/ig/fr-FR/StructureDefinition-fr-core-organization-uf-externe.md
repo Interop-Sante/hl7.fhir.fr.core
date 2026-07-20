@@ -55,7 +55,7 @@ Extension simple avec le type boolean : Indicateur permettant de définir si une
   "name" : "FRCoreOrganizationUFExterneExtension",
   "title" : "FR Core Organization Extension - UF Externe",
   "status" : "active",
-  "date" : "2026-07-20T15:21:00+00:00",
+  "date" : "2026-07-20T15:29:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

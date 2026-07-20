@@ -55,7 +55,7 @@ Extension simple avec le type base64Binary, boolean, canonical, code, date, date
   "name" : "FRCoreOrganizationMemberExtension",
   "title" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
   "status" : "active",
-  "date" : "2026-07-20T15:21:00+00:00",
+  "date" : "2026-07-20T15:29:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

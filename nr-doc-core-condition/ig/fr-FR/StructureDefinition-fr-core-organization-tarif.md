@@ -62,7 +62,7 @@ Extension simple avec le type Coding : Tarif de soin associé à l'unité d'acti
   "name" : "FRCoreOrganizationTarifExtension",
   "title" : "FR Core Organization Extension - Tarif Soin",
   "status" : "active",
-  "date" : "2026-07-20T15:21:00+00:00",
+  "date" : "2026-07-20T15:29:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

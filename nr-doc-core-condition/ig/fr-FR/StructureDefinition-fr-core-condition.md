@@ -73,7 +73,7 @@ Cette structure fait référence à ces autres structures:
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-07-20T15:21:00+00:00",
+  "date" : "2026-07-20T15:29:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -142,7 +142,7 @@ Cette structure fait référence à ces autres structures:
     {
       "id" : "Condition.clinicalStatus",
       "path" : "Condition.clinicalStatus",
-      "short" : "Statut du problème",
+      "short" : "Statut clinique du problème",
       "min" : 1
     },
     {
@@ -190,15 +190,6 @@ Cette structure fait référence à ces autres structures:
       "id" : "Condition.onset[x]",
       "path" : "Condition.onset[x]",
       "min" : 1
-    },
-    {
-      "id" : "Condition.onset[x]:onsetDateTime",
-      "path" : "Condition.onset[x]",
-      "sliceName" : "onsetDateTime",
-      "short" : "Date de début du problème",
-      "type" : [{
-        "code" : "dateTime"
-      }]
     },
     {
       "id" : "Condition.abatement[x]:abatementDateTime",
