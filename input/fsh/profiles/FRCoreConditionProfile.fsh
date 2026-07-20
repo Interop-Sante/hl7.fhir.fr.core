@@ -28,7 +28,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 
 * onset[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
-* onsetDateTime ^short = "Date de début du problème"
 
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
 
