@@ -108,7 +108,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2026-07-20T14:28:34+00:00",
+  "date" : "2026-07-20T14:36:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

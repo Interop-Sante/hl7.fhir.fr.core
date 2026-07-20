@@ -63,7 +63,7 @@ Extension simple avec le type Coding : Type de chambre
   "name" : "FRCoreLocationTypeChambreExtension",
   "title" : "FR Core Location Extension - Type de chambre",
   "status" : "active",
-  "date" : "2026-07-20T14:28:34+00:00",
+  "date" : "2026-07-20T14:36:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

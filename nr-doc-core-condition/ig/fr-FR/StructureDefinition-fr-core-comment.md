@@ -67,7 +67,7 @@ Extension simple avec le type string : Ajout d'un commentaire sur un dataElement
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2026-07-20T14:28:34+00:00",
+  "date" : "2026-07-20T14:36:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

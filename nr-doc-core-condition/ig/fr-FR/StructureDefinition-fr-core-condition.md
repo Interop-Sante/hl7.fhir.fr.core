@@ -37,12 +37,6 @@ Cette structure fait référence à ces autres structures:
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Condition.category
-
 #### Bindings terminologiques (différentiel)
 
  **View** 
@@ -62,12 +56,6 @@ Cette structure fait référence à ces autres structures:
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Condition.category
-
  
 
  ,  
@@ -85,7 +73,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-07-20T14:28:34+00:00",
+  "date" : "2026-07-20T14:36:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -165,22 +153,6 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
     {
       "id" : "Condition.category",
       "path" : "Condition.category",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding.system"
-        }],
-        "rules" : "open"
-      },
-      "short" : "Type d'observation"
-    },
-    {
-      "id" : "Condition.category:problemeCisis",
-      "path" : "Condition.category",
-      "sliceName" : "problemeCisis",
-      "short" : "Problème (jdv-code-probleme-cisis)",
-      "min" : 0,
-      "max" : "*",
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260619134043"
