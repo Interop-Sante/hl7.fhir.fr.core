@@ -32,12 +32,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
 
-// Commenté car spécifique document
-// * extension contains FRActorExtension named author 0..1
-// * extension[author] ^short = "Auteur du problème"
-// * extension[author].extension[type].valueCode = #AUT
-// * extension[author].extension[actor].valueReference only Reference(FRCorePractitionerRoleProfile)
-
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
