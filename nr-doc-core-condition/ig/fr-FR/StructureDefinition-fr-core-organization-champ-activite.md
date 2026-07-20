@@ -63,7 +63,7 @@ Extension simple avec le type Coding : Champ d'activité d'une UF
   "name" : "FRCoreOrganizationChampActiviteExtension",
   "title" : "FR Core Organization Extension - Champ d'activité",
   "status" : "active",
-  "date" : "2026-07-20T15:18:49+00:00",
+  "date" : "2026-07-20T15:21:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -73,7 +73,7 @@ Cette structure fait référence à ces autres structures:
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-07-20T15:18:49+00:00",
+  "date" : "2026-07-20T15:21:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -156,15 +156,6 @@ Cette structure fait référence à ces autres structures:
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260619134043"
-      }
-    },
-    {
-      "id" : "Condition.severity",
-      "path" : "Condition.severity",
-      "short" : "Sévérité",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-severite-observation-cisis|20260619134042"
       }
     },
     {
