@@ -69,4 +69,3 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 /* * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
 * extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
  */
-* note ^short = "Commentaire"
