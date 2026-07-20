@@ -37,6 +37,4 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrir
 
 * reaction.severity ^short = "Sévérité"
 
-* reaction.note ^short = "Commentaire"
-
 * reaction.onset ^short = "Dates de début et de fin du problème"
