@@ -15,14 +15,7 @@ Description: "FRCoreConditionProfile est un profil utilisé pour décrire un pro
 
 * verificationStatus ^short = "Certitude"
 
-// * category 1..1 // Remplacé par un slicing pour plus de flexibilité
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "coding.system"
-* category ^slicing.rules = #open
-* category ^short = "Type d'observation"
-* category contains problemeCisis 0..*
-* category[problemeCisis] from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
-* category[problemeCisis] ^short = "Problème (jdv-code-probleme-cisis)"
+* category from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
 
 * code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = """Identification de la condition, du problème ou du diagnostic :
