@@ -19,9 +19,9 @@ Description: "FRCoreConditionProfile est un profil utilisé pour décrire un pro
 
 * code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code from FRCoreValueSetConditionCode (extensible)
-* code ^short = """Identification de la condition, du problème ou du diagnostic :
-CIM-10 pour les pathologie  et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' display='Causes inconnues et non précisées de morbidité' system='https://smt.esante.gouv.fr/terminologie-cim-10' et décrire le problème sous forme de texte libre
-Réaction allergique : CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité
+* code ^short = "Identification de la condition, du problème ou du diagnostic"
+* code ^definition = """CIM-10 pour les pathologies et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' display='Causes inconnues et non précisées de morbidité' system='https://smt.esante.gouv.fr/terminologie-cim-10' et décrire le problème sous forme de texte libre.\r\n
+Réaction allergique : CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité.\r\n
 Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-problem-cisis
 """
 * subject ^short = "Patient concerné"
