@@ -37,7 +37,6 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrir
 
 * reaction.severity ^short = "Sévérité"
 
-* reaction.note 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * reaction.note ^short = "Commentaire"
 
 * reaction.onset ^short = "Dates de début et de fin du problème"
