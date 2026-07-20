@@ -55,7 +55,7 @@ Extension simple avec le type string : Libellé court de l'organisation
   "name" : "FRCoreOrganizationShortNameExtension",
   "title" : "FR Core Organization Short Name Extension",
   "status" : "active",
-  "date" : "2026-07-20T14:36:58+00:00",
+  "date" : "2026-07-20T15:18:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

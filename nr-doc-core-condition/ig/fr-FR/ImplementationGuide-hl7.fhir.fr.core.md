@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-07-20T14:36:58+00:00",
+  "date" : "2026-07-20T15:18:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2037,6 +2037,18 @@
       },
       "name" : "FR Core ValueSet COG commune pays",
       "description" : "Value set town and country COG",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-condition-code"
+      },
+      "name" : "FR Core ValueSet Condition Code",
+      "description" : "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), DRC (SFMG)",
       "exampleBoolean" : false
     },
     {

@@ -39,7 +39,7 @@ A role for a location
   "title" : "FR Core ValueSet Location type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T14:36:58+00:00",
+  "date" : "2026-07-20T15:18:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-20T14:36:58+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-20T15:18:49+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -2338,6 +2338,20 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet COG commune pays" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set town and country COG" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-condition-code" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet Condition Code" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), DRC (SFMG)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
