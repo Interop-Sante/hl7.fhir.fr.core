@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-07-21T07:29:40+00:00",
+  "date" : "2026-07-21T07:54:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -117,6 +117,36 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5",
+      "path" : "Immunization.extension",
+      "sliceName" : "ImmunizationAdministeredProductR5",
+      "short" : "Dose d'antigène administrée",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference",
+      "path" : "Immunization.extension.extension",
+      "sliceName" : "reference"
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference.extension",
+      "path" : "Immunization.extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference.value[x]",
+      "path" : "Immunization.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"]
       }]
     },
     {

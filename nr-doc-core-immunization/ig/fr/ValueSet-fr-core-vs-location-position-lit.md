@@ -37,7 +37,7 @@ Position du lit dans la chambre
   "title" : "FR Core ValueSet Location Position Lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T07:29:40+00:00",
+  "date" : "2026-07-21T07:54:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

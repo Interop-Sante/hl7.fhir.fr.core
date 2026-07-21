@@ -38,13 +38,14 @@ Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.
 ** Résumé **
 
 Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
- Interdit : 1 élément
+ Interdit : 2 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
 * [MedicationRequest (http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1)](http://hl7.org/fhir/R4/medicationrequest.html)
+* [Medication (http://hl7.org/fhir/StructureDefinition/Medication|4.0.1)](http://hl7.org/fhir/R4/medication.html)
 * [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
 
 **Extensions**
@@ -52,6 +53,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-Immunization.basedOn.html)
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-Immunization.administeredProduct.html)
 
 **Slices**
 
@@ -83,13 +85,14 @@ Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.
 ** Résumé **
 
 Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
- Interdit : 1 élément
+ Interdit : 2 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
 * [MedicationRequest (http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1)](http://hl7.org/fhir/R4/medicationrequest.html)
+* [Medication (http://hl7.org/fhir/StructureDefinition/Medication|4.0.1)](http://hl7.org/fhir/R4/medication.html)
 * [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
 
 **Extensions**
@@ -97,6 +100,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-Immunization.basedOn.html)
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-Immunization.administeredProduct.html)
 
 **Slices**
 
@@ -122,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-07-21T07:29:40+00:00",
+  "date" : "2026-07-21T07:54:03+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -207,6 +211,36 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5",
+      "path" : "Immunization.extension",
+      "sliceName" : "ImmunizationAdministeredProductR5",
+      "short" : "Dose d'antigène administrée",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference",
+      "path" : "Immunization.extension.extension",
+      "sliceName" : "reference"
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference.extension",
+      "path" : "Immunization.extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference.value[x]",
+      "path" : "Immunization.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"]
       }]
     },
     {
