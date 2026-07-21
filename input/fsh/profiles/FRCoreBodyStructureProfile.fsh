@@ -13,4 +13,4 @@ Description: "FRCoreBodyStructureProfile est un profil FRCore utilisé pour pré
 * locationQualifier ^short = "Modificateurs topographiques"
 * locationQualifier from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis (required)
 * location ^short = "Localisation anatomique ou voie d'abord"
-* location from FRValueSetLocationBodyStructureDocument (extensible)
+* location from FRCoreValueSetBodyStructureLocation (extensible)
