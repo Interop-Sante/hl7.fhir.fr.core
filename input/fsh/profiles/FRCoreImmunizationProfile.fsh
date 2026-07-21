@@ -39,16 +39,6 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * lotNumber ^short = "Numéro de lot." // Doc Core
 * expirationDate ^short = "Date d'expiration du produit" // Doc Core
 
-// Commenté car spécifique document
-// * performer ^short = "Exécutant"
-// * performer.function = $v2-0443#AP
-// * performer.actor only Reference(FRCorePractitionerRoleProfile)
-// --- Auteur ---
-// * extension contains FRActorExtension named author 1..1
-// * extension[author] ^short = "Auteur de la vaccination"
-// * extension[author].extension[type].valueCode = #AUT
-// * extension[author].extension[actor].valueReference only Reference(FRCorePractitionerRoleProfile or FRCorePatientINSProfile or FRCorePatientProfile)
-
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
 * extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
