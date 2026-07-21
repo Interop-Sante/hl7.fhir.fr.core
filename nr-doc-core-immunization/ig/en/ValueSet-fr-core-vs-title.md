@@ -49,7 +49,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "FR Core ValueSet Title",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-20T14:29:12+00:00",
+  "date" : "2026-07-21T07:29:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
