@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-21T11:52:46+00:00",
+  "date" : "2026-07-21T11:54:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -192,7 +192,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.class",
       "path" : "Encounter.class",
-      "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)\nExemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :\n- ACUTE : Inpatient acute\n- NONAC : Inpatient non acute\n- PRENC : Pre-admission\n- SS : Short stay\n- VR : Virtual"
+      "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)"
     },
     {
       "id" : "Encounter.type",
@@ -209,7 +209,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.priority",
       "path" : "Encounter.priority",
-      "short" : "Si la rencontre est prévue non confirmée et qu'une confirmation est attendue :\ncode='CS', display='callback for scheduling'\nSinon, l'élément 'priority' n'est pas fourni."
+      "short" : "Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni."
     },
     {
       "id" : "Encounter.subject",
@@ -246,7 +246,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.period",
       "path" : "Encounter.period",
-      "short" : "Date début et fin de la rencontre\nSi la rencontre est réalisée ou planifiée : la date est obligatoire.\nSi la rencontre est prévue non confirmée : la date est facultative.",
+      "short" : "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative.",
       "min" : 1
     },
     {
@@ -336,7 +336,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.hospitalization.dischargeDisposition",
       "path" : "Encounter.hospitalization.dischargeDisposition",
-      "short" : "Modalité de sortie du patient lors de la rencontre:\nValeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet",
+      "short" : "Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet",
       "binding" : {
         "strength" : "example",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition|2.2.0"

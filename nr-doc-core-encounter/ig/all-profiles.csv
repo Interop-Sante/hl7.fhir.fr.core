@@ -477,13 +477,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The time that the episode was in the specified status","The time that the episode was in the specified status.","","","","","","","","","",,,,,"",,,,"Encounter.statusHistory.period",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.class","Encounter.class","","","",1,1,"","","Y","Coding {[]} {[]}
-","Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
-Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
-- ACUTE : Inpatient acute
-- NONAC : Inpatient non acute
-- PRENC : Pre-admission
-- SS : Short stay
-- VR : Virtual","Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.","","","","","","","","","",,"extensible","Classification of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0","",,,,"Encounter.class",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)","Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.","","","","","","","","","",,"extensible","Classification of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0","",,,,"Encounter.class",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.classHistory","Encounter.classHistory","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","List of past encounter classes","The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient.","","","","","","","","","",,,,,"",,,,"Encounter.classHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -513,9 +507,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Specific type of service","Broad categorization of the service that is to be provided (e.g. cardiology).","","","","","","","","","",,"example","Broad categorization of the service that is to be provided.","http://hl7.org/fhir/ValueSet/service-type|4.0.1","",,,,"Encounter.serviceType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.priority","Encounter.priority","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Si la rencontre est prévue non confirmée et qu'une confirmation est attendue :
-code='CS', display='callback for scheduling'
-Sinon, l'élément 'priority' n'est pas fourni.","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni.","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.subject","Encounter.subject","","patient
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group|4.0.1]]}
@@ -556,9 +548,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The appointment that scheduled this encounter","The appointment that scheduled this encounter.","","","","","","","","","",,,,,"",,,,"Encounter.appointment",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.period","Encounter.period","","","",1,1,"","","","Period {[]} {[]}
-","Date début et fin de la rencontre
-Si la rencontre est réalisée ou planifiée : la date est obligatoire.
-Si la rencontre est prévue non confirmée : la date est facultative.","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative.","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.length","Encounter.length","","","",0,1,"","","","Duration {[]} {[]}
 ","Quantity of time the encounter lasted (less time absent)","Quantity of time the encounter lasted. This excludes the time during leaves of absence.","May differ from the time the Encounter.period lasted because of leave of absence.","","","","","","","","",,,,,"",,,,"Encounter.length",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -665,8 +655,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 ","Location/organization to which the patient is discharged","Location/organization to which the patient is discharged.","","","","","","","","","",,,,,"",,,,"Encounter.hospitalization.destination",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.hospitalization.dischargeDisposition","Encounter.hospitalization.dischargeDisposition","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Modalité de sortie du patient lors de la rencontre:
-Valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet","Category or kind of location after discharge.","","","","","","","","","",,"example","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition|2.2.0","",,,,"Encounter.hospitalization.dischargeDisposition",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet","Category or kind of location after discharge.","","","","","","","","","",,"example","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition|2.2.0","",,,,"Encounter.hospitalization.dischargeDisposition",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.location","Encounter.location","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Lieu d'exécution","List of locations where  the patient has been during this encounter.","Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type ""kind"" such as ""client's home"" and an encounter.class = ""virtual"".","","","","","","","","",,,,,"",,,,"Encounter.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
