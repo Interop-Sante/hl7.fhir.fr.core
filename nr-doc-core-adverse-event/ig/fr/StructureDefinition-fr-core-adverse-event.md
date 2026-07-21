@@ -92,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-06-29T12:41:53+00:00",
+  "date" : "2026-07-21T12:27:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -146,7 +146,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis|20260420150249"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis|20260619134042"
       }
     },
     {
@@ -173,7 +173,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260420150249"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260619134042"
       }
     },
     {
@@ -182,7 +182,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "short" : "Évolution de l'effet indésirable",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260420150249"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260619134042"
       }
     },
     {
@@ -213,7 +213,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260420150249"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260619134042"
       }
     }]
   }
