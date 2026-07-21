@@ -55,7 +55,5 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * reasonReference ^short = "Réaction observée suite au vaccin"
 
 // Dose d'antigène
-// Problème dataType : codeableReference
-/* * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
+* extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
 * extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
- */
