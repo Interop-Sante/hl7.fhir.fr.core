@@ -7,6 +7,7 @@ Alias: $jdv-immunization-route-code-cisis = https://smt.esante.gouv.fr/fhir/Valu
 
 // R5 backport extensions (immunization)
 Alias: $immunization-basedOn-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn
+Alias: $immunization-administeredProduct-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct
 
 // ANS
 Alias: $TRE-G08-TypeIdentifiantPersonne = https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne
