@@ -94,23 +94,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 // * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : retire Group, ajoute FRCorePatientINSProfile — non appliqué (FRCoreEncounterProfile contraint déjà : Reference(FRCorePatientProfile or Group))
 
 * participant ^short = "Liste des participants impliqués dans la rencontre"
-// Commenté car spécifique document
-// * participant.individual.extension contains
-//     FRActorExtension named executant 0..* and
-//     FRActorExtension named author 0..* and
-//     FRActorExtension named informant 0..*
-
-// * participant.individual.extension[executant] ^short = "Exécutant :
-// Si la rencontre est réalisée :
-//  au moins 1 exécutant doit être renseigné.
-// Sinon : l'exécutant n'est pas obligatoire mais peut être renseigné"
-// * participant.individual.extension[executant].extension[type].valueCode = #PRF
-
-// * participant.individual.extension[author] ^short = "Author"
-// * participant.individual.extension[author].extension[type].valueCode = #AUT
-
-// * participant.individual.extension[informant] ^short = "Informant"
-// * participant.individual.extension[informant].extension[type].valueCode = #INF
 
 * location 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * location ^short = "Lieu d'exécution"
