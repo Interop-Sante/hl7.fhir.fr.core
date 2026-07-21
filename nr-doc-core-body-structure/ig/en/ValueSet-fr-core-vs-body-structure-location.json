@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-core-vs-body-structure-location",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-body-structure-location</b></p><a name=\"en-fr-core-vs-body-structure-location\"> </a><a name=\"en-hcfr-core-vs-body-structure-location\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-FR</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version: 4.0.1</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-body-site.html\">SNOMED CT Body Structures</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-approach-site-codes.html\">SNOMED CT Anatomical Structure for Administration Site Codes</a></li></ul></div>"
+  },
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-structure-location",
+  "version" : "2.2.0",
+  "name" : "FRCoreValueSetBodyStructureLocation",
+  "title" : "FR Core ValueSet BodyStructure location",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T12:10:10+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie d'abord.\nInclut :\n- Les structures anatomiques pour body site : http://hl7.org/fhir/ValueSet/body-site\n- Les structures anatomiques pour voie d'abord (approach-site-codes) : http://hl7.org/fhir/ValueSet/approach-site-codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/body-site|4.0.1"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1"]
+    }]
+  }
+}
