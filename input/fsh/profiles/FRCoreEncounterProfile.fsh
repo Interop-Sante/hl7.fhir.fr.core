@@ -46,16 +46,31 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.value 1..
 * identifier.assigner only Reference(FRCoreOrganizationProfile)
 
+* status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
+
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)"
 
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
+
+* priority ^short = "Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni."
+
 * subject only Reference(FRCorePatientProfile or Group)
+// * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : retire Group, ajoute FRCorePatientINSProfile — non appliqué (FRCoreEncounterProfile contraint déjà : Reference(FRCorePatientProfile or Group))
+
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
 * participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
+* participant ^short = "Liste des participants impliqués dans la rencontre"
+
 * appointment only Reference(FRCoreAppointmentProfile)
+
 * period 1..
+* period ^short = "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
+
 * account ..1
+
+* hospitalization ^short = "Informations sur l'hospitalisation associée à la rencontre"
 * hospitalization.preAdmissionIdentifier ^short = "Pre-admission identifier | Identifiant de pré-admission"
 
 * hospitalization.preAdmissionIdentifier.type 1..
@@ -69,38 +84,27 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * hospitalization.preAdmissionIdentifier.system ^definition = "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre , concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France"
 * hospitalization.preAdmissionIdentifier.value 1..
 * hospitalization.preAdmissionIdentifier.assigner only Reference(FRCoreOrganizationProfile)
+
 * hospitalization.origin only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
+
+* hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
+* hospitalization.admitSource from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis (required) // Contrainte ajoutée uniquement par IG Document Core
+
 * hospitalization.reAdmission ^short = "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
+
 * hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
+
 * hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
+* hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet"
+// * hospitalization.dischargeDisposition from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis (preferred) // Doc Core — conflict avec le binding FRCoreValueSetEncounterDischargeDisposition (example) existant ; à arbitrer
+
+* location 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
+* location ^short = "Lieu d'exécution"
 * location.location only Reference(FRCoreLocationProfile)
+// * location.location only Reference(FRLocationDocument) // Doc Core — FRCoreEncounterProfile contraint déjà : only Reference(FRCoreLocationProfile) ; FRLocationDocument à remplacer par un profil FRCore équivalent
 
 * location.physicalType from FRCoreValueSetLocationType (example)
 
 * serviceProvider only Reference(FRCoreOrganizationProfile)
 
 * partOf only Reference(FRCoreEncounterProfile)
-
-// ── Contraintes dérivées de IG Document Core ─────────────────────────────────────────────────────
-
-* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)"
-
-* status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
-
-* period ^short = "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
-
-* priority ^short = "Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni."
-
-// * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : retire Group, ajoute FRCorePatientINSProfile — non appliqué (FRCoreEncounterProfile contraint déjà : Reference(FRCorePatientProfile or Group))
-
-* participant ^short = "Liste des participants impliqués dans la rencontre"
-
-* location 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
-* location ^short = "Lieu d'exécution"
-// * location.location only Reference(FRLocationDocument) // Doc Core — FRCoreEncounterProfile contraint déjà : only Reference(FRCoreLocationProfile) ; FRLocationDocument à remplacer par un profil FRCore équivalent
-
-* hospitalization ^short = "Informations sur l'hospitalisation associée à la rencontre"
-* hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
-* hospitalization.admitSource from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis (required) // Contrainte ajoutée uniquement par IG Document Core
-* hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet"
-// * hospitalization.dischargeDisposition from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis (preferred) // Doc Core — conflict avec le binding FRCoreValueSetEncounterDischargeDisposition (example) existant ; à arbitrer
