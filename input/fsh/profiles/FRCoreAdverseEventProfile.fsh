@@ -30,7 +30,7 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * resultingCondition only Reference(Condition) // * resultingCondition only Reference(FRCoreConditionProfile)
 * resultingCondition ^short = "Réaction observée"
 
-* suspectEntity.causality 0..1 // FHIR R5 base : 0..1 — cardinalité identique
+* suspectEntity.causality 0..1 // Application de la cardinalité de FHIR R5 base : passage à 0..1 
 * suspectEntity.causality ^short = "Imputabilité"
 
 * suspectEntity.causality.assessment 1.. // Contrainte ajoutée uniquement par IG Document Core — ⚠ élément FHIR R4 (renommé assessmentMethod en R5, R4 base : 0..1)
