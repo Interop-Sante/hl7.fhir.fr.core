@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-06-29T12:39:39+00:00",
+  "date" : "2026-07-21T11:52:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -192,11 +192,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.class",
       "path" : "Encounter.class",
-      "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)",
-      "binding" : {
-        "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0"
-      }
+      "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)\nExemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :\n- ACUTE : Inpatient acute\n- NONAC : Inpatient non acute\n- PRENC : Pre-admission\n- SS : Short stay\n- VR : Virtual"
     },
     {
       "id" : "Encounter.type",
@@ -320,7 +316,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
       "short" : "Modalité d'entrée du patient lors de la rencontre",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043"
       }
     },
     {

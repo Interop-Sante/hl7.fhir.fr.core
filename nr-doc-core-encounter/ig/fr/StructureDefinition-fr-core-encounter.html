@@ -338,7 +338,7 @@ FR Core Encounter Profile
           
 
             à partir de 
-2026-06-29
+2026-07-21
 
           
         
@@ -492,7 +492,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="Cet élément est inclus dans les résumés">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class" class="binding">FRCoreValueSetEncounterClass (2.2.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.type" title="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." data-no-external="true">type</a><a name="k-Encounter.type"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="Cet élément est inclus dans les résumés">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -596,7 +602,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260420150251)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ane" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.hospitalization.reAdmission" title="Whether this hospitalization is a readmission and why if known." data-no-external="true">reAdmission</a><a name="k-Encounter.hospitalization.reAdmission"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -645,7 +651,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile(2.2.0)</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Another Encounter this encounter is part of</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 13692532-c3f2-4150-86ba-5d8997f26fbd
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fbfde057-61cf-414f-a2a1-ab633eb90404
 document.getElementById('cbfr-core-encounterK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-encounterK'), 'binding', document.getElementById('cbfr-core-encounterK-binding').checked, document.getElementById('ppfr-core-encounterK'));
 document.getElementById('cbfr-core-encounterK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -727,12 +733,14 @@ filterDesc(document.getElementById('fr-core-encounterK'), 'obligation', document
     <td>
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-encounter-class.html">FR Core ValueSet Encounter class</a>
-      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+    <td title="Classification of the encounter.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 2.2.0">&#x1F4CD;2.2.0</td>
-    <td>cet IG</td>
+    <td title="La version est explicitement indiquée comme étant 3.0.0">&#x1F4CD;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.2.0">THO v7.2</a>
+    </td>
   </tr>
   <tr>
     <td>Encounter.type</td>
@@ -797,12 +805,12 @@ filterDesc(document.getElementById('fr-core-encounterK'), 'obligation', document
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260420150251">&#x1F4CD;20260420150251</td>
+    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.10.0">Terminologies  de Santé v1.10</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
     </td>
   </tr>
   <tr>
@@ -1016,7 +1024,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class" class="binding">FRCoreValueSetEncounterClass (2.2.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.type" data-no-external="true">type</a><a name="Encounter.type"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
@@ -1101,7 +1115,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260420150251)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="amd" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.hospitalization.reAdmission" data-no-external="true">reAdmission</a><a name="Encounter.hospitalization.reAdmission"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -1143,7 +1157,7 @@ Valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet<
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile(2.2.0)</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Another Encounter this encounter is part of</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 13692532-c3f2-4150-86ba-5d8997f26fbd
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fbfde057-61cf-414f-a2a1-ab633eb90404
 document.getElementById('cbfr-core-encounterD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-encounterD'), 'binding', document.getElementById('cbfr-core-encounterD-binding').checked, document.getElementById('ppfr-core-encounterD'));
 document.getElementById('cbfr-core-encounterD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1192,19 +1206,6 @@ filterDesc(document.getElementById('fr-core-encounterD'), 'obligation', document
     <td>cet IG</td>
   </tr>
   <tr>
-    <td>Encounter.class</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
-    </td>
-    <td>
-      <a style="opacity: 0.5" href="ValueSet-fr-core-vs-encounter-class.html">FR Core ValueSet Encounter class</a>
-      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
-    </td>
-    <td title="La version est explicitement indiquée comme étant 2.2.0">&#x1F4CD;2.2.0</td>
-    <td>cet IG</td>
-  </tr>
-  <tr>
     <td>Encounter.type</td>
     <td>Base</td>
     <td>
@@ -1237,12 +1238,12 @@ filterDesc(document.getElementById('fr-core-encounterD'), 'obligation', document
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260420150251">&#x1F4CD;20260420150251</td>
+    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.10.0">Terminologies  de Santé v1.10</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
     </td>
   </tr>
   <tr>
@@ -1472,7 +1473,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="Cet élément est inclus dans les résumés">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class" class="binding">FRCoreValueSetEncounterClass (2.2.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a12." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.classHistory" title="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient." data-no-external="true">classHistory</a><a name="s-Encounter.classHistory"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1720,7 +1727,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260420150251)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a27.g" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.hospitalization.reAdmission" title="Whether this hospitalization is a readmission and why if known." data-no-external="true">reAdmission</a><a name="s-Encounter.hospitalization.reAdmission"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1804,7 +1811,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile(2.2.0)</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Another Encounter this encounter is part of</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 13692532-c3f2-4150-86ba-5d8997f26fbd
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fbfde057-61cf-414f-a2a1-ab633eb90404
 document.getElementById('cbfr-core-encounterS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-encounterS'), 'binding', document.getElementById('cbfr-core-encounterS-binding').checked, document.getElementById('ppfr-core-encounterS'));
 document.getElementById('cbfr-core-encounterS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1947,12 +1954,14 @@ filterDesc(document.getElementById('fr-core-encounterS'), 'obligation', document
     <td>
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-encounter-class.html">FR Core ValueSet Encounter class</a>
-      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+    <td title="Classification of the encounter.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 2.2.0">&#x1F4CD;2.2.0</td>
-    <td>cet IG</td>
+    <td title="La version est explicitement indiquée comme étant 3.0.0">&#x1F4CD;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.2.0">THO v7.2</a>
+    </td>
   </tr>
   <tr>
     <td>Encounter.classHistory.​class</td>
@@ -2092,12 +2101,12 @@ filterDesc(document.getElementById('fr-core-encounterS'), 'obligation', document
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260420150251">&#x1F4CD;20260420150251</td>
+    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.10.0">Terminologies  de Santé v1.10</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
     </td>
   </tr>
   <tr>
@@ -2362,7 +2371,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
       "<a href="StructureDefinition-fr-core-encounter.html#Encounter.statusHistory.status" title="planned | arrived | triaged | in-progress | onleave | finished | cancelled +" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">planned | arrived | triaged | in-progress | onleave | finished | cancelled +</a></span>
       "<a href="StructureDefinition-fr-core-encounter.html#Encounter.statusHistory.period" title="The time that the episode was in the specified status" class="dict"><span style="text-decoration: underline">period</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The time that the episode was in the specified status</span>
     }],
-    "<a href="StructureDefinition-fr-core-encounter.html#Encounter.class" title="Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations" class="dict"><span style="text-decoration: underline">class</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)</a></span>
+    "<a href="StructureDefinition-fr-core-encounter.html#Encounter.class" title="Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations" class="dict"><span style="text-decoration: underline">class</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual</a></span>
     "<a href="StructureDefinition-fr-core-encounter.html#Encounter.classHistory" title="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient" class="dict"><span style="text-decoration: underline">classHistory</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">List of past encounter classes</span>
       "extension": [
       ],
@@ -2571,7 +2586,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="Cet élément est inclus dans les résumés">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class" class="binding">FRCoreValueSetEncounterClass (2.2.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.type" title="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." data-no-external="true">type</a><a name="ka-Encounter.type"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="Cet élément est inclus dans les résumés">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -2675,7 +2696,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260420150251)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ane" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.hospitalization.reAdmission" title="Whether this hospitalization is a readmission and why if known." data-no-external="true">reAdmission</a><a name="ka-Encounter.hospitalization.reAdmission"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -2724,7 +2745,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile(2.2.0)</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Another Encounter this encounter is part of</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 13692532-c3f2-4150-86ba-5d8997f26fbd
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fbfde057-61cf-414f-a2a1-ab633eb90404
 document.getElementById('cbfr-core-encounterKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-encounterKA'), 'binding', document.getElementById('cbfr-core-encounterKA-binding').checked, document.getElementById('ppfr-core-encounterKA'));
 document.getElementById('cbfr-core-encounterKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2805,12 +2826,14 @@ filterDesc(document.getElementById('fr-core-encounterKA'), 'obligation', documen
     <td>
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-encounter-class.html">FR Core ValueSet Encounter class</a>
-      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+    <td title="Classification of the encounter.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 2.2.0">&#x1F4CD;2.2.0</td>
-    <td>cet IG</td>
+    <td title="La version est explicitement indiquée comme étant 3.0.0">&#x1F4CD;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.2.0">THO v7.2</a>
+    </td>
   </tr>
   <tr>
     <td>Encounter.type</td>
@@ -2875,12 +2898,12 @@ filterDesc(document.getElementById('fr-core-encounterKA'), 'obligation', documen
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260420150251">&#x1F4CD;20260420150251</td>
+    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.10.0">Terminologies  de Santé v1.10</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
     </td>
   </tr>
   <tr>
@@ -3094,7 +3117,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class" class="binding">FRCoreValueSetEncounterClass (2.2.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.type" data-no-external="true">type</a><a name="a-Encounter.type"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
@@ -3179,7 +3208,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260420150251)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="amd" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.hospitalization.reAdmission" data-no-external="true">reAdmission</a><a name="a-Encounter.hospitalization.reAdmission"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -3221,7 +3250,7 @@ Valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet<
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile(2.2.0)</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Another Encounter this encounter is part of</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 13692532-c3f2-4150-86ba-5d8997f26fbd
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fbfde057-61cf-414f-a2a1-ab633eb90404
 document.getElementById('cbfr-core-encounterDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-encounterDA'), 'binding', document.getElementById('cbfr-core-encounterDA-binding').checked, document.getElementById('ppfr-core-encounterDA'));
 document.getElementById('cbfr-core-encounterDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3267,19 +3296,6 @@ filterDesc(document.getElementById('fr-core-encounterDA'), 'obligation', documen
     <td>cet IG</td>
   </tr>
   <tr>
-    <td>Encounter.class</td>
-    <td>Base</td>
-    <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
-    </td>
-    <td>
-      <a style="opacity: 0.5" href="ValueSet-fr-core-vs-encounter-class.html">FR Core ValueSet Encounter class</a>
-      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
-    </td>
-    <td title="La version est explicitement indiquée comme étant 2.2.0">&#x1F4CD;2.2.0</td>
-    <td>cet IG</td>
-  </tr>
-  <tr>
     <td>Encounter.type</td>
     <td>Base</td>
     <td>
@@ -3312,12 +3328,12 @@ filterDesc(document.getElementById('fr-core-encounterDA'), 'obligation', documen
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 0.5" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260420150251">&#x1F4CD;20260420150251</td>
+    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.10.0">Terminologies  de Santé v1.10</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
     </td>
   </tr>
   <tr>
@@ -3547,7 +3563,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="Cet élément est inclus dans les résumés">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class" class="binding">FRCoreValueSetEncounterClass (2.2.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a12." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.classHistory" title="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient." data-no-external="true">classHistory</a><a name="sa-Encounter.classHistory"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -3795,7 +3817,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260420150251)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modalité d'entrée du patient lors de la rencontre<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html" title="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis" class="binding">JdvModaliteEntreeCisis (20260619134043)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a27.g" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-encounter-definitions.html#Encounter.hospitalization.reAdmission" title="Whether this hospitalization is a readmission and why if known." data-no-external="true">reAdmission</a><a name="sa-Encounter.hospitalization.reAdmission"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -3879,7 +3901,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile(2.2.0)</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Another Encounter this encounter is part of</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 13692532-c3f2-4150-86ba-5d8997f26fbd
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // fbfde057-61cf-414f-a2a1-ab633eb90404
 document.getElementById('cbfr-core-encounterSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-encounterSA'), 'binding', document.getElementById('cbfr-core-encounterSA-binding').checked, document.getElementById('ppfr-core-encounterSA'));
 document.getElementById('cbfr-core-encounterSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4020,12 +4042,14 @@ filterDesc(document.getElementById('fr-core-encounterSA'), 'obligation', documen
     <td>
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td>
-      <a style="opacity: 1.0" href="ValueSet-fr-core-vs-encounter-class.html">FR Core ValueSet Encounter class</a>
-      <button data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+    <td title="Classification of the encounter.">
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.2.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 2.2.0">&#x1F4CD;2.2.0</td>
-    <td>cet IG</td>
+    <td title="La version est explicitement indiquée comme étant 3.0.0">&#x1F4CD;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/7.2.0">THO v7.2</a>
+    </td>
   </tr>
   <tr>
     <td>Encounter.classHistory.​class</td>
@@ -4165,12 +4189,12 @@ filterDesc(document.getElementById('fr-core-encounterSA'), 'obligation', documen
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
-      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260420150251" title="Cliquer pour copier l'URL" class="btn-copy"></button>
+      <a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/1.11.1/ValueSet-jdv-modalite-entree-cisis.html">JDV Modalite Entree CISIS</a>
+      <button data-clipboard-text="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version est explicitement indiquée comme étant 20260420150251">&#x1F4CD;20260420150251</td>
+    <td title="La version est explicitement indiquée comme étant 20260619134043">&#x1F4CD;20260619134043</td>
     <td>
-      <a href="https://interop.esante.gouv.fr/terminologies/1.10.0">Terminologies  de Santé v1.10</a>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.11.1">Terminologies  de Santé v1.11</a>
     </td>
   </tr>
   <tr>
@@ -4435,7 +4459,13 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
       "<a href="StructureDefinition-fr-core-encounter.html#Encounter.statusHistory.status" title="planned | arrived | triaged | in-progress | onleave | finished | cancelled +" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">planned | arrived | triaged | in-progress | onleave | finished | cancelled +</a></span>
       "<a href="StructureDefinition-fr-core-encounter.html#Encounter.statusHistory.period" title="The time that the episode was in the specified status" class="dict"><span style="text-decoration: underline">period</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The time that the episode was in the specified status</span>
     }],
-    "<a href="StructureDefinition-fr-core-encounter.html#Encounter.class" title="Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations" class="dict"><span style="text-decoration: underline">class</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)</a></span>
+    "<a href="StructureDefinition-fr-core-encounter.html#Encounter.class" title="Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations" class="dict"><span style="text-decoration: underline">class</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages)
+Exemples de codes les plus courants (http://terminology.hl7.org/CodeSystem/v3-ActCode) :
+- ACUTE : Inpatient acute
+- NONAC : Inpatient non acute
+- PRENC : Pre-admission
+- SS : Short stay
+- VR : Virtual</a></span>
     "<a href="StructureDefinition-fr-core-encounter.html#Encounter.classHistory" title="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient" class="dict"><span style="text-decoration: underline">classHistory</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">List of past encounter classes</span>
       "extension": [
       ],
@@ -4628,8 +4658,8 @@ Résumé
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-29 12:39:00 +0000">
-    2026-06-29
+  <span title="2026-07-21 11:52:00 +0000">
+    2026-07-21
   </span>
 
           <br/>
