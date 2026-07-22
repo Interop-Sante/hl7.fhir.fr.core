@@ -135,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationBodyTemperatureProfile",
   "title" : "FR Core Observation Body Temperature Profile",
   "status" : "active",
-  "date" : "2026-07-22T12:47:59+00:00",
+  "date" : "2026-07-22T12:55:33+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

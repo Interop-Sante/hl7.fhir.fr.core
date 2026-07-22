@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-22T12:47:59+00:00",
+  "date" : "2026-07-22T12:55:33+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
