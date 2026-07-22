@@ -5,7 +5,7 @@
 //   https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreProcedureProfile
-Parent: Procedure
+Parent: procedure-eu-core
 Id: fr-core-procedure
 Title: "FR Core Procedure Profile"
 Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
@@ -17,7 +17,7 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 
 * code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "Code d'acte"
-* code from FRCoreValueSetProcedureCode (preferred)
+* code from FRCoreValueSetProcedureCode (preferred) // EU Core : binding preferred identique (ValueSet différent : procedures-uv-ips, remplacé par CCAM/NCIT/CISIS)
 * code ^comment = """
 Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.
 Si l'acte n'est pas trouvé dans CCAM, utiliser le code NCIT 'C25218' (Intervention)
@@ -26,12 +26,20 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 """
 
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
-* reasonReference only Reference(Condition or DiagnosticReport) // * reasonReference only Reference(FRCoreConditionProfile or DiagnosticReport)
+// Cible héritée de procedure-eu-core : Reference(Condition EU Core or Observation or Procedure EU Core or DiagnosticReport or DocumentReference)
+// Condition EU Core non re-resserré vers FRCoreConditionProfile : pas encore mergé sur main (branche nr-doc-core-condition)
 
-* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
+// EU Core : Reference(Patient EU Core) — FRCorePatientProfile/FRCorePatientINSProfile héritent directement de patient-eu-core
+// Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 * subject ^short = "Patient concerné"
 
+* performed[x] 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * performed[x] ^short = "Date de l'acte"
+
+* performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or RelatedPerson or FRCoreOrganizationProfile)
+// EU Core : Reference(PractitionerRole EU Core or Practitioner EU Core or Device or Patient EU Core or RelatedPerson or Organization EU Core)
+* performer.onBehalfOf only Reference(FRCoreOrganizationProfile) // EU Core : Reference(Organization EU Core)
 
 * extension contains FRCoreProcedurePriorityExtension named priority 0..1
 
@@ -42,7 +50,9 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * extension[approachBodySite].valueReference only Reference(BodyStructure) // * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile)
 
 * bodySite ^short = "Localisation anatomique"
-* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible) // FRCore plus stricte que le binding preferred hérité de procedure-eu-core (même ValueSet)
+// Hérités de procedure-eu-core : bodySite.extension (http://hl7.org/fhir/StructureDefinition/bodySite) ciblant BodyStructure EU Core
+// et l'invariant eu-bodysite-1 (code OU référence à une BodyStructure, jamais les deux)
 
 // Commenté car spécifique document
 // * performer.actor.extension contains
