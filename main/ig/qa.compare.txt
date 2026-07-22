@@ -1,7 +1,7 @@
 FRCore : Validation Results
 =========================================
 
-err = 5, warn = 186, info = 4229
+err = 6, warn = 186, info = 4229
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
@@ -48,7 +48,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationBodyWeightExample : 0 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeadCircumExample : 0 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationHeartRateExample : 0 / 0 / 3
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationOxygenSaturationExample : 0 / 0 / 3
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationOxygenSaturationExample : 1 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Observation-FRCoreObservationRespRateExample : 0 / 0 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-FRCoreOrganizationExample : 0 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Organization-hopitaltest-dept-11003-endocrino : 0 / 1 / 3
@@ -402,6 +402,7 @@ INFORMATION: Observation/FRCoreObservationHeadCircumExample: Observation.meta.pr
 INFORMATION: Observation/FRCoreObservationHeartRateExample: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Observation-FRCoreObservationOxygenSaturationExample.json ==
 INFORMATION: Observation/FRCoreObservationOxygenSaturationExample: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Observation/FRCoreObservationOxygenSaturationExample: Observation.bodySite.coding[0].display: Wrong Display Name 'doigt d'une main excepté le pouce' for http://snomed.info/sct#7569003. Valid display is 'doigt de la main excepté le pouce' (fr-x-sctlang-10031000-315102) (for the language(s) 'fr-FR')
 == fsh-generated/resources/Observation-FRCoreObservationRespRateExample.json ==
 INFORMATION: Observation/FRCoreObservationRespRateExample: Observation.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Organization-FRCoreOrganizationExample.json ==
