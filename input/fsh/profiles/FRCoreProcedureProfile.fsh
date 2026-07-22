@@ -15,7 +15,6 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 
 * status ^short = "Statut de l'acte"
 
-* code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "Code d'acte"
 * code from FRCoreValueSetProcedureCode (preferred) // EU Core : binding preferred identique (ValueSet différent : procedures-uv-ips, remplacé par CCAM/NCIT/CISIS)
 * code ^comment = """
@@ -34,7 +33,6 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
 * subject ^short = "Patient concerné"
 
-* performed[x] 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * performed[x] ^short = "Date de l'acte"
 
 * performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or RelatedPerson or FRCoreOrganizationProfile)
@@ -53,40 +51,6 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible) // FRCore plus stricte que le binding preferred hérité de procedure-eu-core (même ValueSet)
 // Hérités de procedure-eu-core : bodySite.extension (http://hl7.org/fhir/StructureDefinition/bodySite) ciblant BodyStructure EU Core
 // et l'invariant eu-bodysite-1 (code OU référence à une BodyStructure, jamais les deux)
-
-// Commenté car spécifique document
-// * performer.actor.extension contains
-//     FRActorExtension named Intervenant 0..* and
-//     FRActorExtension named Informateur 0..* and
-//     FRActorExtension named Participant 0..* and
-//     FRActorExtension named Dispositif 0..*
-
-//performer
-// * performer.actor.extension[Intervenant] ^short = "Intervenant"
-// * performer.actor.extension[Intervenant].extension[type].valueCode = #PRF
-// * performer.actor.extension[Intervenant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
-//informant
-// * performer.actor.extension[Informateur] ^short = "Informateur"
-// * performer.actor.extension[Informateur].extension[type].valueCode = #INF
-// * performer.actor.extension[Informateur].extension[actor].valueReference only Reference(FRPractitionerRoleDocument or FRRelatedPersonDocument or FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
-//participant
-// * performer.actor.extension[Participant] ^short = "Participant"
-// * performer.actor.extension[Participant].extension[type].valueCode = #PART
-// * performer.actor.extension[Participant].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
-//dispositif médical
-// * performer.actor.extension[Dispositif] ^short = "Dispositif automatique utilisé lors de l'acte"
-// * performer.actor.extension[Dispositif].extension[type].valueCode = #PART
-// * performer.actor.extension[Dispositif].extension[actor].valueReference only Reference(Device)
-
-// Commenté car spécifique document
-// * recorder.extension contains FRActorExtension named author 0..1
-// * recorder ^short = "Auteur"
-// * recorder.extension[author].extension[type].valueCode = #AUT
-// * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
-
-// Commenté car pas nécessaire
-// * usedReference ^short = "Réference à un DM"
-// * usedReference only Reference(Device)
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"
