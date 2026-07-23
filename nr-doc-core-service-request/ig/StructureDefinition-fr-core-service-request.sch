@@ -14,15 +14,7 @@
     <sch:rule context="f:ServiceRequest">
       <sch:assert test="count(f:extension[@url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension|2.2.0']) &lt;= 1">extension with URL = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
-      <sch:assert test="count(f:orderDetail) &lt;= 1">orderDetail: maximum cardinality of 'orderDetail' is 1</sch:assert>
       <sch:assert test="count(f:occurrence[x]) &gt;= 1">occurrence[x]: minimum cardinality of 'occurrence[x]' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:ServiceRequest/f:orderDetail</sch:title>
-    <sch:rule context="f:ServiceRequest/f:orderDetail">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

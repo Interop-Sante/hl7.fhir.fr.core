@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-method-
   "name" : "FRCoreMethodExtension",
   "title" : "FR Core Method Extension",
   "status" : "active",
-  "date" : "2026-07-23T09:36:51+00:00",
+  "date" : "2026-07-23T09:46:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

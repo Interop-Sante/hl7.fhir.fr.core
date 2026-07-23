@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-comment.c
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2026-07-23T09:36:51+00:00",
+  "date" : "2026-07-23T09:46:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

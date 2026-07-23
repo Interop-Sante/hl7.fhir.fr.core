@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-07-23T09:36:51+00:00",
+  "date" : "2026-07-23T09:46:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -241,11 +241,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
     {
       "id" : "ServiceRequest.orderDetail",
       "path" : "ServiceRequest.orderDetail",
-      "max" : "1"
-    },
-    {
-      "id" : "ServiceRequest.orderDetail.coding",
-      "path" : "ServiceRequest.orderDetail.coding",
       "short" : "Résultat de la demande"
     },
     {

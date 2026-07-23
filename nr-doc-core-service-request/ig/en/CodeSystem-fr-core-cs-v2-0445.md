@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-23T09:36:51+00:00",
+  "date" : "2026-07-23T09:46:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
