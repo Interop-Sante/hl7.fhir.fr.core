@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-07-23T09:46:12+00:00",
+  "date" : "2026-07-23T09:54:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
