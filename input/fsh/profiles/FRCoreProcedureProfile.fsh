@@ -54,7 +54,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"
-* encounter only Reference(Encounter) // * encounter only Reference(FRCoreEncounterProfile)
+* encounter only Reference(FRCoreEncounterProfile)
 
 // Difficulté de l'acte
 * extension contains FRCoreProcedureDifficultyExtension named difficulte 0..1
