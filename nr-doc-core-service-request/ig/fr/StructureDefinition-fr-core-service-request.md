@@ -37,7 +37,7 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 ** Résumé **
 
-Obligatoire : 4 éléments
+Obligatoire : 2 éléments
 
 **Structures**
 
@@ -56,7 +56,6 @@ Cette structure fait référence à ces extensions:
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of ServiceRequest.identifier
-* The element 1 is sliced based on the value of ServiceRequest.note
 
  **Vue des éléments clés** 
 
@@ -80,7 +79,7 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 ** Résumé **
 
-Obligatoire : 4 éléments
+Obligatoire : 2 éléments
 
 **Structures**
 
@@ -99,7 +98,6 @@ Cette structure fait référence à ces extensions:
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of ServiceRequest.identifier
-* The element 1 is sliced based on the value of ServiceRequest.note
 
  
 
@@ -118,7 +116,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-07-23T09:54:31+00:00",
+  "date" : "2026-07-23T10:00:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -261,31 +259,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
     {
       "id" : "ServiceRequest.note",
       "path" : "ServiceRequest.note",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "text"
-        }],
-        "rules" : "open"
-      },
-      "short" : "Justification de la demande d'examen / Finalité de l'examen",
-      "min" : 2
-    },
-    {
-      "id" : "ServiceRequest.note:finaliteExamen",
-      "path" : "ServiceRequest.note",
-      "sliceName" : "finaliteExamen",
-      "short" : "Finalité de l'examen demandé",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "ServiceRequest.note:justificationDemande",
-      "path" : "ServiceRequest.note",
-      "sliceName" : "justificationDemande",
-      "short" : "Justification de la demande d'examen",
-      "min" : 1,
-      "max" : "1"
+      "short" : "Note à propos de la demande d'acte, par exemple finalité de l'examen et justification de la demande"
     }]
   }
 }

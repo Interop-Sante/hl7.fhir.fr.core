@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-service-r
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-07-23T09:54:31+00:00",
+  "date" : "2026-07-23T10:00:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -175,31 +175,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-service-r
     {
       "id" : "ServiceRequest.note",
       "path" : "ServiceRequest.note",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "text"
-        }],
-        "rules" : "open"
-      },
-      "short" : "Justification de la demande d'examen / Finalité de l'examen",
-      "min" : 2
-    },
-    {
-      "id" : "ServiceRequest.note:finaliteExamen",
-      "path" : "ServiceRequest.note",
-      "sliceName" : "finaliteExamen",
-      "short" : "Finalité de l'examen demandé",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "ServiceRequest.note:justificationDemande",
-      "path" : "ServiceRequest.note",
-      "sliceName" : "justificationDemande",
-      "short" : "Justification de la demande d'examen",
-      "min" : 1,
-      "max" : "1"
+      "short" : "Note à propos de la demande d'acte, par exemple finalité de l'examen et justification de la demande"
     }]
   }
 }

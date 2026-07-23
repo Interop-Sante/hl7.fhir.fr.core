@@ -8991,15 +8991,8 @@ AOE","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/Structu
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Cible","Anatomic location where the procedure should be performed. This is the target site.","Only used if not implicit in the code found in ServiceRequest.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [procedure-targetBodyStructure](http://hl7.org/fhir/R4/extension-procedure-targetbodystructure.html).","Knowing where the procedure is performed is important for tracking if multiple sites are possible.","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/body-site|4.0.1","",,,,"ServiceRequest.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"fr-core-service-request","ServiceRequest.note","ServiceRequest.note","","","",2,*,"","","","Annotation {[]} {[]}
-","Justification de la demande d'examen / Finalité de l'examen","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"","value:text}
-","",,"open","ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"fr-core-service-request","ServiceRequest.note:finaliteExamen","ServiceRequest.note","finaliteExamen","","",1,1,"","","","Annotation {[]} {[]}
-","Finalité de l'examen demandé","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"",,,,"ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"fr-core-service-request","ServiceRequest.note:justificationDemande","ServiceRequest.note","justificationDemande","","",1,1,"","","","Annotation {[]} {[]}
-","Justification de la demande d'examen","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"",,,,"ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"fr-core-service-request","ServiceRequest.note","ServiceRequest.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Note à propos de la demande d'acte, par exemple finalité de l'examen et justification de la demande","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"",,,,"ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-service-request","ServiceRequest.patientInstruction","ServiceRequest.patientInstruction","","","",0,1,"","","Y","string {[]} {[]}
 ","Patient or consumer-oriented instructions","Instructions in terms that are understood by the patient or consumer.","","","","","","","","","",,,,,"",,,,"ServiceRequest.patientInstruction",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
