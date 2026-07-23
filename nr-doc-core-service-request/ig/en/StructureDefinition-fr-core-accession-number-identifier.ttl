@@ -1,0 +1,580 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-accession-number-identifier> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-accession-number-identifier"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition fr-core-accession-number-identifier</b></p><a name=\"en-fr-core-accession-number-identifier\"> </a><a name=\"en-hcfr-core-accession-number-identifier\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-core-accession-number-identifier-definitions.html#Identifier\">Identifier</a><a name=\"en-Identifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier(4.0.1)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier intended for computation</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-core-accession-number-identifier-definitions.html#Identifier.type\">type</a><a name=\"en-Identifier.type\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Description of identifier</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(Complex)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://terminology.hl7.org/CodeSystem/v2-0203</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">ACSN</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Accession ID</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-core-accession-number-identifier-definitions.html#Identifier.system\">system</a><a name=\"en-Identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">L'espace de nommage pour l'identifiant</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-fr-core-accession-number-identifier-definitions.html#Identifier.value\">value</a><a name=\"en-Identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">La valeur de l'identifiant</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-accession-number-identifier"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
+  fhir:StructureDefinition.name [ fhir:value "FRCoreAccessionNumberIdentifierProfile"] ;
+  fhir:StructureDefinition.title [ fhir:value "FR Core Accession Number Identifier Profile"] ;
+  fhir:StructureDefinition.status [ fhir:value "active"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-23T09:21:02+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.mapping [
+     fhir:index -1 ;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "v2" ] ;
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v2" ] ;
+     fhir:StructureDefinition.mapping.name [ fhir:value "HL7 v2 Mapping" ]
+  ], [
+     fhir:index -1 ;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ] ;
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ] ;
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ], [
+     fhir:index -1 ;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "servd" ] ;
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://www.omg.org/spec/ServD/1.0/" ] ;
+     fhir:StructureDefinition.mapping.name [ fhir:value "ServD" ]
+  ] ;
+  fhir:StructureDefinition.kind [ fhir:value "complex-type"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "Identifier"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Identifier|4.0.1" ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Identifier|4.0.1>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "constraint"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "4.0.1" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "An identifier intended for computation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1" ;
+         fhir:index -1
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CX / EI (occasionally, more often EI maps to a resource id or a URL)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.id" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.id" ] ;
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr" ;
+         fhir:index -1
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ] ;
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ] ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.extension" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.extension" ] ;
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index -1 ;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ] ;
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ] ;
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.use" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.use" ] ;
+       fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The purpose of this identifier." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier.use" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isModifierReason [ fhir:value "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one." ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ] ;
+           fhir:Extension.valueString [ fhir:value "IdentifierUse" ]
+         ] ;
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "Identifies the purpose for this identifier, if known ." ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/ValueSet/identifier-use|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Description of identifier" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "Allows users to make use of identifiers when the identifier system is not known." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.patternCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+           fhir:Coding.code [ fhir:value "ACSN" ] ;
+           fhir:Coding.display [ fhir:value "Accession ID" ]
+         ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ] ;
+           fhir:Extension.valueString [ fhir:value "IdentifierType" ]
+         ] ;
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/ValueSet/identifier-type|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CX.5" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "L'espace de nommage pour l'identifiant" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Establishes the namespace for the value - that is, a URL that describes a set values that are unique." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "Identifier.system is always case sensitive." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier.system" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ] ;
+       fhir:ElementDefinition.example [
+         fhir:index -1 ;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ] ;
+         fhir:ElementDefinition.example.valueUri [ fhir:value "http://www.acme.com/identifiers/patient" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CX.4 / EI-2-4" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "II.root or Role.id.root" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "La valeur de l'identifiant" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier.value" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ] ;
+       fhir:ElementDefinition.example [
+         fhir:index -1 ;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ] ;
+         fhir:ElementDefinition.example.valueString [ fhir:value "123456" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CX.1 / EI.1" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.period" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.period" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time period during which identifier is/was valid for use." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier.period" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CX.7 + CX.8" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "Role.effectiveTime or implied by context" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.assigner" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.assigner" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Organization that issued/manages the identifier." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Identifier.assigner" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1" ;
+           fhir:index -1 ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CX.4 / (CX.4,CX.9,CX.10)" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.type" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.patternCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+           fhir:Coding.code [ fhir:value "ACSN" ] ;
+           fhir:Coding.display [ fhir:value "Accession ID" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "L'espace de nommage pour l'identifiant" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Identifier.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Identifier.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "La valeur de l'identifiant" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-accession-number-identifier.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
