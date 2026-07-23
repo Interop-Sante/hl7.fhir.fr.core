@@ -13,5 +13,5 @@ Description: "Extension permettant d'indiquer la méthode utilisée : techniques
 * ^context[=].expression = "ServiceRequest"
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Jeu de valeur donné à titre d'exemple devant être adapté par cas d'usage (anapat, biologie, ...)"
-* valueCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis (example) // J
+* valueCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis (example)
 * valueCodeableConcept ^short = "Méthode utilisée"
