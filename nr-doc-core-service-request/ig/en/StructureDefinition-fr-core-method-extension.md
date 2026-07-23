@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-method-ex
   "name" : "FRCoreMethodExtension",
   "title" : "FR Core Method Extension",
   "status" : "active",
-  "date" : "2026-07-23T09:21:02+00:00",
+  "date" : "2026-07-23T09:32:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-method-ex
         "code" : "CodeableConcept"
       }],
       "binding" : {
-        "strength" : "required",
+        "strength" : "example",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260619134042"
       }
     }]

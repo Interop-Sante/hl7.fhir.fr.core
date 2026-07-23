@@ -13,7 +13,6 @@
     <sch:title>f:ServiceRequest</sch:title>
     <sch:rule context="f:ServiceRequest">
       <sch:assert test="count(f:extension[@url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension|2.2.0']) &lt;= 1">extension with URL = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:orderDetail) &lt;= 1">orderDetail: maximum cardinality of 'orderDetail' is 1</sch:assert>
       <sch:assert test="count(f:occurrence[x]) &gt;= 1">occurrence[x]: minimum cardinality of 'occurrence[x]' is 1</sch:assert>

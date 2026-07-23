@@ -37,7 +37,7 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 ** Résumé **
 
-Obligatoire : 5 éléments
+Obligatoire : 4 éléments
 
 **Structures**
 
@@ -80,7 +80,7 @@ Cette structure est dérivée de [ServiceRequest](http://hl7.org/fhir/R4/service
 
 ** Résumé **
 
-Obligatoire : 5 éléments
+Obligatoire : 4 éléments
 
 **Structures**
 
@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-07-23T09:21:02+00:00",
+  "date" : "2026-07-23T09:32:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -230,8 +230,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
     {
       "id" : "ServiceRequest.category",
       "path" : "ServiceRequest.category",
-      "short" : "Catégorie de la demande",
-      "min" : 1
+      "short" : "Catégorie de la demande"
     },
     {
       "id" : "ServiceRequest.code",
