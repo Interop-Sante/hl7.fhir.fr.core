@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationDemandeuseActeExtension",
   "title" : "FR Core Organization Extension - Demandeuse d'acte",
   "status" : "active",
-  "date" : "2026-07-23T09:32:23+00:00",
+  "date" : "2026-07-23T09:36:51+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
