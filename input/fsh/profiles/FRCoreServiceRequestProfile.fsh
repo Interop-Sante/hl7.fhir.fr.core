@@ -37,18 +37,4 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * extension contains FRCoreMethodExtension named method 0..*
 * extension[method] ^short = "Méthode"
 
-* note ^slicing.discriminator.type = #value
-* note ^slicing.discriminator.path = "text"
-* note ^slicing.rules = #open
-* note ^short = "Justification de la demande d'examen / Finalité de l'examen"
-
-// Slices note obligatoires — contraintes ajoutées par IG Document Core (FHIR R5 base note : 0..*)
-* note contains
-    finaliteExamen 1..1 and
-    justificationDemande 1..1
-
-// Slice 1 : Finalité de l'examen
-* note[finaliteExamen] ^short = "Finalité de l'examen demandé"
-
-// Slice 2 : Justification de la demande
-* note[justificationDemande] ^short = "Justification de la demande d'examen"
+* note ^short = "Note à propos de la demande d'acte, par exemple finalité de l'examen et justification de la demande"
