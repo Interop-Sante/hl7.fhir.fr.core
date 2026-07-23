@@ -26,8 +26,8 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 //* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d'examen ou de suivi"
 * occurrence[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
-* orderDetail 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
-* orderDetail.coding ^short = "Résultat de la demande"
+// Informations complémentaires sur la demande d'acte (exemple : INR cible)
+* orderDetail ^short = "Résultat de la demande"
 // * supportingInfo ^short = "Résultat de la demande"
 // * supportingInfo only Reference(Observation)
 
