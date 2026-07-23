@@ -27,7 +27,7 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * occurrence[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
 // Informations complémentaires sur la demande d'acte (exemple : INR cible)
-* orderDetail ^short = "Résultat de la demande"
+* orderDetail ^short = "informations complémentaires sur la demande d'acte, exemple : INR cible"
 // * supportingInfo ^short = "Résultat de la demande"
 // * supportingInfo only Reference(Observation)
 
