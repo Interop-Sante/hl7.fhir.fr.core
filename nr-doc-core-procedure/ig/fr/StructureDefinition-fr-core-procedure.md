@@ -43,7 +43,7 @@ Cette structure fait référence à ces autres structures:
 
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
-* [Encounter (http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1)](http://hl7.org/fhir/R4/encounter.html)
+* [FR Core Encounter Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0)](StructureDefinition-fr-core-encounter.md)
 * [FR Core Practitioner Role (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0)](StructureDefinition-fr-core-practitioner-role.md)
 * [FR Core Practitioner Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0)](StructureDefinition-fr-core-practitioner.md)
 * [Device (http://hl7.org/fhir/StructureDefinition/Device|4.0.1)](http://hl7.org/fhir/R4/device.html)
@@ -86,7 +86,7 @@ Cette structure fait référence à ces autres structures:
 
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
-* [Encounter (http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1)](http://hl7.org/fhir/R4/encounter.html)
+* [FR Core Encounter Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0)](StructureDefinition-fr-core-encounter.md)
 * [FR Core Practitioner Role (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0)](StructureDefinition-fr-core-practitioner-role.md)
 * [FR Core Practitioner Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0)](StructureDefinition-fr-core-practitioner.md)
 * [Device (http://hl7.org/fhir/StructureDefinition/Device|4.0.1)](http://hl7.org/fhir/R4/device.html)
@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-07-22T12:55:33+00:00",
+  "date" : "2026-07-23T09:09:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -245,7 +245,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
       "short" : "Rencontre associée à l'acte",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0"]
       }]
     },
     {

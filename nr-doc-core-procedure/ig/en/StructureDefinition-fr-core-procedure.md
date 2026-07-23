@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-07-22T12:55:33+00:00",
+  "date" : "2026-07-23T09:09:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -159,7 +159,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
       "short" : "Rencontre associée à l'acte",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0"]
       }]
     },
     {
