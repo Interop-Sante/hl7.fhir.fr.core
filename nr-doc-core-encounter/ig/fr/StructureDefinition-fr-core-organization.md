@@ -149,7 +149,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-07-21T12:00:27+00:00",
+  "date" : "2026-07-27T13:17:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
