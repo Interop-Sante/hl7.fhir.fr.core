@@ -14,6 +14,7 @@
 ## Checklist
 
 - [ ] `sushi-config.yaml` : `releaseLabel` est bien `ci-build` pour une version en développement | `releaseLabel` is `ci-build` for a version in development
+- [ ] `input/pagecontent/change_notes.md` mis à jour (si Release) | `input/pagecontent/change_notes.md` updated (if Release)
 - [ ] La branche est à jour avec `main` | The branch is up to date with `main`
 
 ## Preview
