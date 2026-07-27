@@ -37,7 +37,7 @@ the French Address Insee Codes
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-22T12:21:07+00:00",
+  "date" : "2026-07-27T15:02:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,6 +66,10 @@ the French Address Insee Codes
     "include" : [{
       "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
       "version" : "20260505120000"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+      "version" : "20250328120000"
     }]
   }
 }
