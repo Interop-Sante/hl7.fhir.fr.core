@@ -90,7 +90,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 * hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
 
-* hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
 * hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre."
 
 * location ^short = "Lieu d'exécution"
