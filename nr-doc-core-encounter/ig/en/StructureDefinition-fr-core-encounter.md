@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T13:23:52+00:00",
+  "date" : "2026-07-27T13:42:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -245,8 +245,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.period",
       "path" : "Encounter.period",
-      "short" : "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative.",
-      "min" : 1
+      "short" : "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
     },
     {
       "id" : "Encounter.account",
@@ -312,11 +311,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.hospitalization.admitSource",
       "path" : "Encounter.hospitalization.admitSource",
-      "short" : "Modalité d'entrée du patient lors de la rencontre",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043"
-      }
+      "short" : "Modalité d'entrée du patient lors de la rencontre"
     },
     {
       "id" : "Encounter.hospitalization.reAdmission",

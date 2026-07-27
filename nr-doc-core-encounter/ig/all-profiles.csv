@@ -547,7 +547,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "fr-core-encounter","Encounter.appointment","Encounter.appointment","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0]]}
 ","The appointment that scheduled this encounter","The appointment that scheduled this encounter.","","","","","","","","","",,,,,"",,,,"Encounter.appointment",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"fr-core-encounter","Encounter.period","Encounter.period","","","",1,1,"","","","Period {[]} {[]}
+"fr-core-encounter","Encounter.period","Encounter.period","","","",0,1,"","","","Period {[]} {[]}
 ","Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative.","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.length","Encounter.length","","","",0,1,"","","","Duration {[]} {[]}
@@ -637,7 +637,7 @@ Le namespace est défini à partir de la racine d'identification (gérée par l'
 ","The location/organization from which the patient came before admission","The location/organization from which the patient came before admission.","","","","","","","","","",,,,,"",,,,"Encounter.hospitalization.origin",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.hospitalization.admitSource","Encounter.hospitalization.admitSource","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Modalité d'entrée du patient lors de la rencontre","From where patient was admitted (physician referral, transfer).","","","","","","","","","",,"required","","https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043","",,,,"Encounter.hospitalization.admitSource",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Modalité d'entrée du patient lors de la rencontre","From where patient was admitted (physician referral, transfer).","","","","","","","","","",,"preferred","From where the patient was admitted.","http://hl7.org/fhir/ValueSet/encounter-admit-source|4.0.1","",,,,"Encounter.hospitalization.admitSource",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "fr-core-encounter","Encounter.hospitalization.reAdmission","Encounter.hospitalization.reAdmission","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient.","Whether this hospitalization is a readmission and why if known.","","","","","","","","","",,"example","The reason for re-admission of this hospitalization encounter.","http://terminology.hl7.org/ValueSet/v2-0092|3.0.0","",,,,"Encounter.hospitalization.reAdmission",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

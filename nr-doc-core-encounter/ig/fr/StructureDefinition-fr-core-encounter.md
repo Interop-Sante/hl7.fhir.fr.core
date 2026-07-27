@@ -39,7 +39,7 @@ Cette structure est dérivée de [Encounter](http://hl7.org/fhir/R4/encounter.ht
 
 ** Résumé **
 
-Obligatoire : 5 éléments(3 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
  Fixe : 1 élément
 
 **Structures**
@@ -90,7 +90,7 @@ Cette structure est dérivée de [Encounter](http://hl7.org/fhir/R4/encounter.ht
 
 ** Résumé **
 
-Obligatoire : 5 éléments(3 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
  Fixe : 1 élément
 
 **Structures**
@@ -136,7 +136,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T13:23:52+00:00",
+  "date" : "2026-07-27T13:42:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -347,8 +347,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
     {
       "id" : "Encounter.period",
       "path" : "Encounter.period",
-      "short" : "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative.",
-      "min" : 1
+      "short" : "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
     },
     {
       "id" : "Encounter.account",
@@ -414,11 +413,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
     {
       "id" : "Encounter.hospitalization.admitSource",
       "path" : "Encounter.hospitalization.admitSource",
-      "short" : "Modalité d'entrée du patient lors de la rencontre",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis|20260619134043"
-      }
+      "short" : "Modalité d'entrée du patient lors de la rencontre"
     },
     {
       "id" : "Encounter.hospitalization.reAdmission",

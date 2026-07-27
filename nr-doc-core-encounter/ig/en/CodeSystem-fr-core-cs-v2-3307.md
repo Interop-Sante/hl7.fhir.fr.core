@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-27T13:23:52+00:00",
+  "date" : "2026-07-27T13:42:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
