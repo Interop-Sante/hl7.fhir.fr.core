@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-27T13:17:31+00:00",
+  "date" : "2026-07-27T13:23:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

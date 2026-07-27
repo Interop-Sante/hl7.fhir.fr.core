@@ -136,7 +136,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T13:17:31+00:00",
+  "date" : "2026-07-27T13:23:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -313,11 +313,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
       }
     },
     {
-      "id" : "Encounter.priority",
-      "path" : "Encounter.priority",
-      "short" : "Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni."
-    },
-    {
       "id" : "Encounter.subject",
       "path" : "Encounter.subject",
       "type" : [{
@@ -329,7 +324,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
     {
       "id" : "Encounter.participant",
       "path" : "Encounter.participant",
-      "short" : "Liste des participants impliqués dans la rencontre"
+      "short" : "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
     },
     {
       "id" : "Encounter.participant.individual",

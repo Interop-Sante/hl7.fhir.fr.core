@@ -150,7 +150,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Specific type of service","Broad categorization of the service that is to be provided (e.g. cardiology).","","","","","","","","","",,"example","Broad categorization of the service that is to be provided.","http://hl7.org/fhir/ValueSet/service-type|4.0.1","",,,,"Encounter.serviceType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","n/a","PV1-10"
 "Encounter.priority","Encounter.priority","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni.","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Indicates the urgency of the encounter","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".priorityCode","FiveWs.grade","PV2-25"
 "Encounter.subject","Encounter.subject","","patient
 ","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group|4.0.1]]}
@@ -164,7 +164,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The ServiceRequest that initiated this encounter","The request this encounter satisfies (e.g. incoming referral or procedure request).","","","","","","","","","",,,,,"",,,,"Encounter.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".reason.ClinicalDocument"
 "Encounter.participant","Encounter.participant","","","",0,*,"","","Y","BackboneElement {[]} {[]}
-","Liste des participants impliqués dans la rencontre","The list of people responsible for providing the service.","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre","The list of people responsible for providing the service.","","","","","","","","","",,,,,"",,,,"Encounter.participant",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=PFM]","ROL"
 "Encounter.participant.id","Encounter.participant.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
