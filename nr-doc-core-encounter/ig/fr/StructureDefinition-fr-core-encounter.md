@@ -136,7 +136,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T13:52:49+00:00",
+  "date" : "2026-07-27T13:55:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -441,8 +441,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
     {
       "id" : "Encounter.location",
       "path" : "Encounter.location",
-      "short" : "Lieu d'exécution",
-      "max" : "1"
+      "short" : "Lieu d'exécution"
     },
     {
       "id" : "Encounter.location.location",
