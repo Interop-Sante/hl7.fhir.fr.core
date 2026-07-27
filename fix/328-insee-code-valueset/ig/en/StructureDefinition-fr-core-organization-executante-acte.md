@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationExecutanteActeExtension",
   "title" : "FR Core Organization Extension - Exécutante d'acte",
   "status" : "active",
-  "date" : "2026-07-27T07:22:22+00:00",
+  "date" : "2026-07-27T07:26:01+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
