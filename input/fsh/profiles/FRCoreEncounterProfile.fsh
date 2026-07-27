@@ -85,7 +85,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * hospitalization.origin only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
 
 * hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
-* hospitalization.admitSource from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis (required) // Contrainte ajoutée uniquement par IG Document Core
 
 * hospitalization.reAdmission ^short = "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
 
@@ -93,7 +92,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 * hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
 * hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet"
-// * hospitalization.dischargeDisposition from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis (preferred) // Doc Core — conflict avec le binding FRCoreValueSetEncounterDischargeDisposition (example) existant ; à arbitrer
 
 * location 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * location ^short = "Lieu d'exécution"
