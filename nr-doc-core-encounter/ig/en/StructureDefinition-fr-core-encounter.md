@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T13:42:38+00:00",
+  "date" : "2026-07-27T13:52:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -330,7 +330,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
     {
       "id" : "Encounter.hospitalization.dischargeDisposition",
       "path" : "Encounter.hospitalization.dischargeDisposition",
-      "short" : "Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet",
+      "short" : "Modalité de sortie du patient lors de la rencontre.",
       "binding" : {
         "strength" : "example",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition|2.2.0"
