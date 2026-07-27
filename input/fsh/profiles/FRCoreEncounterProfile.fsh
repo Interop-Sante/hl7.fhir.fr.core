@@ -55,14 +55,11 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
 
-* priority ^short = "Si la rencontre est prévue non confirmée et qu'une confirmation est attendue : code='CS', display='callback for scheduling'. Sinon, l'élément 'priority' n'est pas fourni."
-
 * subject only Reference(FRCorePatientProfile or Group)
 // * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : retire Group, ajoute FRCorePatientINSProfile — non appliqué (FRCoreEncounterProfile contraint déjà : Reference(FRCorePatientProfile or Group))
 
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
 * participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
-* participant ^short = "Liste des participants impliqués dans la rencontre"
 
 * appointment only Reference(FRCoreAppointmentProfile)
 
