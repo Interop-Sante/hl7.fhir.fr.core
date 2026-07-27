@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-07-27T13:55:37+00:00",
+  "date" : "2026-07-27T16:09:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1041,22 +1041,6 @@
       },
       "name" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
       "description" : "Champ d'activité clinique de l'organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-fr-core-cs-circonstances-sortie.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/fr-core-cs-circonstances-sortie"
-      },
-      "name" : "FR Core CodeSystem Circonstances Sortie",
-      "description" : "Discharge Disposition",
       "exampleBoolean" : false
     },
     {
@@ -2497,22 +2481,6 @@
       },
       "name" : "FR Core ValueSet Email type",
       "description" : "The type of email",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-encounter-discharge-disposition.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-encounter-discharge-disposition"
-      },
-      "name" : "FR Core ValueSet Encounter discharge disposition",
-      "description" : "Circonstances de sortie de l'hôpital.\r\nThis value set defines a set of codes that can be used to where the patient left the hospital",
       "exampleBoolean" : false
     },
     {
