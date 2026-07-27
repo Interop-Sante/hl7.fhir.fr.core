@@ -91,7 +91,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
 
 * hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
-* hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre : valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique au volet"
+* hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre."
 
 * location 0..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 * location ^short = "Lieu d'exécution"
