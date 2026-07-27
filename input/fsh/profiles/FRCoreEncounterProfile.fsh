@@ -63,7 +63,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 * appointment only Reference(FRCoreAppointmentProfile)
 
-* period 1..
 * period ^short = "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
 
 * account ..1
