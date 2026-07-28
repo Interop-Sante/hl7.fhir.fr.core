@@ -40,7 +40,7 @@ Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie
   "title" : "FR Core ValueSet BodyStructure location",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-28T08:49:31+00:00",
+  "date" : "2026-07-28T09:03:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

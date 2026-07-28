@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-body-stru
   "name" : "FRCoreBodyStructureProfile",
   "title" : "FR Core BodyStructure Profile",
   "status" : "active",
-  "date" : "2026-07-28T08:49:31+00:00",
+  "date" : "2026-07-28T09:03:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -89,18 +89,33 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-body-stru
       "path" : "BodyStructure"
     },
     {
-      "id" : "BodyStructure.location",
-      "path" : "BodyStructure.location",
-      "short" : "Localisation anatomique ou voie d'abord",
+      "id" : "BodyStructure.extension:includedStructure",
+      "path" : "BodyStructure.extension",
+      "sliceName" : "includedStructure"
+    },
+    {
+      "id" : "BodyStructure.extension:includedStructure.extension:structure",
+      "path" : "BodyStructure.extension.extension",
+      "sliceName" : "structure",
+      "short" : "Localisation anatomique ou voie d'abord"
+    },
+    {
+      "id" : "BodyStructure.extension:includedStructure.extension:structure.value[x]",
+      "path" : "BodyStructure.extension.extension.value[x]",
       "binding" : {
         "strength" : "extensible",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-structure-location|2.2.0"
       }
     },
     {
-      "id" : "BodyStructure.locationQualifier",
-      "path" : "BodyStructure.locationQualifier",
-      "short" : "Modificateurs topographiques",
+      "id" : "BodyStructure.extension:includedStructure.extension:qualifier",
+      "path" : "BodyStructure.extension.extension",
+      "sliceName" : "qualifier",
+      "short" : "Modificateurs topographiques"
+    },
+    {
+      "id" : "BodyStructure.extension:includedStructure.extension:qualifier.value[x]",
+      "path" : "BodyStructure.extension.extension.value[x]",
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042"
