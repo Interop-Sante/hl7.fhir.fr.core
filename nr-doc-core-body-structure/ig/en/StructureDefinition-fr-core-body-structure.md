@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-body-stru
   "name" : "FRCoreBodyStructureProfile",
   "title" : "FR Core BodyStructure Profile",
   "status" : "active",
-  "date" : "2026-07-21T12:10:10+00:00",
+  "date" : "2026-07-28T08:49:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -81,7 +81,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-body-stru
   "kind" : "resource",
   "abstract" : false,
   "type" : "BodyStructure",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/BodyStructure|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/bodyStructure-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

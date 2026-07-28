@@ -25,7 +25,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 #### Contraintes
 
-Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystructure.html) 
+Cette structure est dérivée de [BodyStructureEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-bodyStructure-eu-core.html) 
 
 #### Bindings terminologiques (différentiel)
 
@@ -33,7 +33,7 @@ Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystru
 
 #### Contraintes
 
-Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystructure.html) 
+Cette structure est dérivée de [BodyStructureEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-bodyStructure-eu-core.html) 
 
 ** Résumé **
 
@@ -45,7 +45,7 @@ Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystru
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystructure.html) 
+Cette structure est dérivée de [BodyStructureEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-bodyStructure-eu-core.html) 
 
 #### Bindings terminologiques (différentiel)
 
@@ -55,7 +55,7 @@ Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystru
 
 #### Contraintes
 
-Cette structure est dérivée de [BodyStructure](http://hl7.org/fhir/R4/bodystructure.html) 
+Cette structure est dérivée de [BodyStructureEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-bodyStructure-eu-core.html) 
 
 ** Résumé **
 
@@ -76,7 +76,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-body-st
   "name" : "FRCoreBodyStructureProfile",
   "title" : "FR Core BodyStructure Profile",
   "status" : "active",
-  "date" : "2026-07-21T12:10:10+00:00",
+  "date" : "2026-07-28T08:49:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -125,7 +125,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-body-st
   "kind" : "resource",
   "abstract" : false,
   "type" : "BodyStructure",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/BodyStructure|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/bodyStructure-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

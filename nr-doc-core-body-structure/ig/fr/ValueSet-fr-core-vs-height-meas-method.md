@@ -36,7 +36,7 @@ SELECT SNOMED CT code system values that describe how the height/length was meas
   "title" : "Height Length Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T12:10:10+00:00",
+  "date" : "2026-07-28T08:49:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
