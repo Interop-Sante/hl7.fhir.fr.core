@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-lunar-dat
   "name" : "FRCoreLunarDateExtension",
   "title" : "FR Core Lunar Date Extension",
   "status" : "active",
-  "date" : "2026-07-27T16:09:25+00:00",
+  "date" : "2026-07-28T08:44:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationSAECategorieExtension",
   "title" : "FR Core Organization Extension - Catetgorie SAE",
   "status" : "active",
-  "date" : "2026-07-27T16:09:25+00:00",
+  "date" : "2026-07-28T08:44:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

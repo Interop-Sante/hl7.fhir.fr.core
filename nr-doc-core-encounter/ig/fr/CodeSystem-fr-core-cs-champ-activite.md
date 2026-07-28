@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-27T16:09:25+00:00",
+  "date" : "2026-07-28T08:44:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

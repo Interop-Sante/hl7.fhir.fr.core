@@ -47,6 +47,7 @@ Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
 Cette structure fait référence à ces autres structures:
 
 * [FR Core Organization Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0)](StructureDefinition-fr-core-organization.md)
+* [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 * [Group (http://hl7.org/fhir/StructureDefinition/Group|4.0.1)](http://hl7.org/fhir/R4/group.html)
 * [RelatedPerson (http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)](http://hl7.org/fhir/R4/relatedperson.html)
@@ -98,6 +99,7 @@ Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
 Cette structure fait référence à ces autres structures:
 
 * [FR Core Organization Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0)](StructureDefinition-fr-core-organization.md)
+* [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 * [Group (http://hl7.org/fhir/StructureDefinition/Group|4.0.1)](http://hl7.org/fhir/R4/group.html)
 * [RelatedPerson (http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)](http://hl7.org/fhir/R4/relatedperson.html)
@@ -136,7 +138,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T16:09:25+00:00",
+  "date" : "2026-07-28T08:44:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -317,7 +319,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
       "path" : "Encounter.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/Group|4.0.1"]
       }]
     },

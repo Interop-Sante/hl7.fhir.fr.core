@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-27T16:09:25+00:00",
+  "date" : "2026-07-28T08:44:28+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -215,7 +215,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
       "path" : "Encounter.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
         "http://hl7.org/fhir/StructureDefinition/Group|4.0.1"]
       }]
     },
