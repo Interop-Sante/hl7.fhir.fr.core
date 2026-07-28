@@ -55,8 +55,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
 
-* subject only Reference(FRCorePatientProfile or Group)
-// * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : retire Group, ajoute FRCorePatientINSProfile — non appliqué (FRCoreEncounterProfile contraint déjà : Reference(FRCorePatientProfile or Group))
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile or Group)
 
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
 * participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
@@ -94,7 +93,6 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 * location ^short = "Lieu d'exécution"
 * location.location only Reference(FRCoreLocationProfile)
-// * location.location only Reference(FRLocationDocument) // Doc Core — FRCoreEncounterProfile contraint déjà : only Reference(FRCoreLocationProfile) ; FRLocationDocument à remplacer par un profil FRCore équivalent
 
 * location.physicalType from FRCoreValueSetLocationType (example)
 
