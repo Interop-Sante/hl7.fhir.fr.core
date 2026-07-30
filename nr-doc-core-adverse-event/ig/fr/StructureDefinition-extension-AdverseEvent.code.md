@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-extension-Adver
   "name" : "FRCoreAdverseEventCodeExtension",
   "title" : "FR Core AdverseEvent Extension - Code (backport R5→R4)",
   "status" : "active",
-  "date" : "2026-07-30T14:18:46+00:00",
+  "date" : "2026-07-30T14:33:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
