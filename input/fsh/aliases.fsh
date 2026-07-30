@@ -56,6 +56,7 @@ Alias: $JDV-J245-Civilite-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J245-Civili
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0007 = http://terminology.hl7.org/CodeSystem/v2-0007
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $adverse-event-category = http://terminology.hl7.org/CodeSystem/adverse-event-category
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
 Alias: $bmi = http://hl7.org/fhir/StructureDefinition/bmi
 Alias: $bodytemp = http://hl7.org/fhir/StructureDefinition/bodytemp
