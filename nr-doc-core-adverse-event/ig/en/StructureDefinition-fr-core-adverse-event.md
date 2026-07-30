@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-30T14:45:27+00:00",
+  "date" : "2026-07-30T14:49:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -198,7 +198,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
       "short" : "Médicament, substance incriminée, posologie",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Immunization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Substance|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/MedicationStatement|4.0.1"]
       }]
     },
     {
