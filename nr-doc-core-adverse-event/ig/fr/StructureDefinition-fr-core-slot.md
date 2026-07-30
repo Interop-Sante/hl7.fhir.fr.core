@@ -102,7 +102,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-slot.cs
   "name" : "FRCoreSlotProfile",
   "title" : "FR Core Slot Profile",
   "status" : "active",
-  "date" : "2026-07-30T09:44:31+00:00",
+  "date" : "2026-07-30T14:18:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

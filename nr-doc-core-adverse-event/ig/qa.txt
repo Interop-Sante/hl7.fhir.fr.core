@@ -1,9 +1,9 @@
 FRCore : Validation Results
 =========================================
 
-err = 7, warn = 187, info = 4289
+err = 12, warn = 189, info = 4319
 IG Publisher Version: 2.2.11
-Generated Thu Jul 30 09:49:43 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0 (canonical = https://hl7.fr/ig/fhir/core)
+Generated Thu Jul 30 14:24:03 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#2.2.0 (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 0 / 1 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-champ-activite : 0 / 2 / 3
@@ -69,9 +69,11 @@ Generated Thu Jul 30 09:49:43 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/RelatedPerson-FRCoreRelatedPersonExample : 0 / 1 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Schedule-FRCoreScheduleExample : 0 / 1 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Slot-FRCoreSlotExample : 0 / 1 / 2
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-extension-AdverseEvent.code : 3 / 1 / 10
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-extension-AdverseEvent.outcome : 3 / 1 / 10
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-address : 0 / 0 / 41
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-address-insee-code : 0 / 0 / 10
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-adverse-event : 1 / 1 / 62
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-adverse-event : 0 / 1 / 73
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-appointment : 0 / 0 / 84
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-appointment-operator : 0 / 0 / 17
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-comment : 0 / 0 / 8
@@ -153,7 +155,7 @@ Generated Thu Jul 30 09:49:43 UTC 2026. FHIR version 4.0.1 for hl7.fhir.fr.core#
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-height-meas-method : 0 / 1 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-identity-method-collection : 0 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-identity-reliability : 0 / 2 / 4
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-insee-code : 0 / 2 / 7
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-insee-code : 0 / 2 / 8
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-location-position-lit : 0 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-location-type : 0 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-location-type-chambre : 0 / 2 / 4
@@ -332,42 +334,42 @@ WARNING: Encounter/FRCoreEncounterExample: Encounter.identifier[0].system: No de
 INFORMATION: HealthcareService/svc-cardiologie-1: HealthcareService.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: HealthcareService/svc-cardiologie-1: HealthcareService.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.1.1.1'
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core.json ==
-INFORMATION: ImplementationGuide.definition.resource[136].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[137].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[138].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[140].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[141].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[142].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[143].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[144].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[145].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[146].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[147].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[148].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[149].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[150].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[151].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[152].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[153].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[154].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[155].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[156].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[157].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[161].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[162].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[163].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[164].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[165].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[138].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[139].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[140].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[142].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[143].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[144].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[145].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[146].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[147].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[148].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[149].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[150].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[151].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[152].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[153].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[154].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[155].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[156].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[157].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[158].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[159].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[163].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[164].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[165].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[166].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[167].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[167].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[168].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[169].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[170].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[171].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[172].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[173].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[174].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[170].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[171].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[172].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[173].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[174].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[175].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[176].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[177].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
 INFORMATION: Resource: The resource ImplementationGuide/hl7.fhir.fr.core could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Location-hopitaltest-endocrino-ch04.json ==
 INFORMATION: Location/hopitaltest-endocrino-ch04: Location.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -497,6 +499,34 @@ WARNING: Schedule/FRCoreScheduleExample: Schedule.identifier[0].system: No defin
 == fsh-generated/resources/Slot-FRCoreSlotExample.json ==
 INFORMATION: Slot/FRCoreSlotExample: Slot.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Slot/FRCoreSlotExample: Slot.identifier[0].system: No definition could be found for URL value 'http://slot-identifier-system.org'
+== fsh-generated/resources/StructureDefinition-extension-AdverseEvent.code.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code'): Conformance resource /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-extension-AdverseEvent.code.json - the canonical URL (https://hl7.fr/ig/fhir/core/StructureDefinition/extension-AdverseEvent.code) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis to 20260619134042
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis to 20260619134042
+ERROR: StructureDefinition/extension-AdverseEvent.code: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: Resource: The resource StructureDefinition/extension-AdverseEvent.code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code'): The Implementation Guide contains no examples for this extension
+ERROR: /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-extension-AdverseEvent.code: URL Mismatch https://hl7.fr/ig/fhir/core/StructureDefinition/extension-AdverseEvent.code vs http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code
+== fsh-generated/resources/StructureDefinition-extension-AdverseEvent.outcome.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome'): Conformance resource /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-extension-AdverseEvent.outcome.json - the canonical URL (https://hl7.fr/ig/fhir/core/StructureDefinition/extension-AdverseEvent.outcome) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis to 20260619134042
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis to 20260619134042
+ERROR: StructureDefinition/extension-AdverseEvent.outcome: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+INFORMATION: Resource: The resource StructureDefinition/extension-AdverseEvent.outcome could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome'): The Implementation Guide contains no examples for this extension
+ERROR: /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-extension-AdverseEvent.outcome: URL Mismatch https://hl7.fr/ig/fhir/core/StructureDefinition/extension-AdverseEvent.outcome vs http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome
 == fsh-generated/resources/StructureDefinition-fr-core-address.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/Address-eu to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -549,7 +579,6 @@ INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned th
 INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code to 2.2.0
 INFORMATION: Resource: The resource StructureDefinition/fr-core-address-insee-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-fr-core-adverse-event.json ==
-ERROR: FR Core AdverseEvent Profile.AdverseEvent.outcome: Binding https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis is not a subset of binding http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1 because The codes '1352007006,1339036001,405535005,MED-1281,1335890004,261665006,1336140009,MED-1282' are not in the base valueset
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/AdverseEvent to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
@@ -563,52 +592,63 @@ INFORMATION: StructureDefinition.snapshot.element[4].binding.extension[0].value[
 INFORMATION: StructureDefinition.snapshot.element[5].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[7].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[7].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[8].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[8].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[9].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code to 2.2.0
+INFORMATION: StructureDefinition.snapshot.element[9].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome to 2.2.0
 INFORMATION: StructureDefinition.snapshot.element[10].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[10].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[11].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[11].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis to 20260619134042
 INFORMATION: StructureDefinition.snapshot.element[12].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[18].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[20].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis to 20260619134042
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis to 20260619134042
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[27].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[28].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[32].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[33].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis to 20260619134042
 INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[34].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis to 20260619134042
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[1].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis to 20260619134042
-INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis to 20260619134042
-INFORMATION: StructureDefinition.differential.element[5].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis to 20260619134042
-INFORMATION: StructureDefinition.differential.element[7].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
-INFORMATION: StructureDefinition.differential.element[9].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis to 20260619134042
+INFORMATION: StructureDefinition.snapshot.element[40].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[42].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[45].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[47].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis to 20260619134042
+INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code to 2.2.0
+INFORMATION: StructureDefinition.differential.element[3].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome to 2.2.0
+INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis to 20260619134042
+INFORMATION: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
+INFORMATION: StructureDefinition.differential.element[15].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis to 20260619134042
 INFORMATION: StructureDefinition/fr-core-adverse-event: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 INFORMATION: Resource: The resource StructureDefinition/fr-core-adverse-event could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-adverse-event'): The Implementation Guide contains no examples for this profile
@@ -4655,6 +4695,7 @@ WARNING: ValueSet/fr-core-vs-identity-reliability: ValueSet: Resource has a lang
 WARNING: Resource: The resource ValueSet/fr-core-vs-identity-reliability should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-fr-core-vs-insee-code.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM to 20260505120000
+INFORMATION: ValueSet.compose.include[1]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays to 20250328120000
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 WARNING: ValueSet/fr-core-vs-insee-code: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-insee-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

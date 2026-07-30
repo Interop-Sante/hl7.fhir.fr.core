@@ -37,13 +37,21 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
+ Interdit : 2 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
 * [MedicationAdministration (http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1)](http://hl7.org/fhir/R4/medicationadministration.html)
+
+**Extensions**
+
+Cette structure fait référence à ces extensions:
+
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0](StructureDefinition-extension-AdverseEvent.code.md)
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0](StructureDefinition-extension-AdverseEvent.outcome.md)
 
  **Vue des éléments clés** 
 
@@ -67,13 +75,21 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
+ Interdit : 2 éléments
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
 * [MedicationAdministration (http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1)](http://hl7.org/fhir/R4/medicationadministration.html)
+
+**Extensions**
+
+Cette structure fait référence à ces extensions:
+
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0](StructureDefinition-extension-AdverseEvent.code.md)
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0](StructureDefinition-extension-AdverseEvent.outcome.md)
 
  
 
@@ -92,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-30T09:44:31+00:00",
+  "date" : "2026-07-30T14:18:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -139,15 +155,63 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "path" : "AdverseEvent"
     },
     {
-      "id" : "AdverseEvent.category",
-      "path" : "AdverseEvent.category",
-      "short" : "Type d'effet indésirable",
+      "id" : "AdverseEvent.extension",
+      "path" : "AdverseEvent.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "AdverseEvent.extension:code",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "code",
+      "short" : "Origine de l'effet indésirable (backport R5→R4)",
       "min" : 1,
       "max" : "1",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis|20260619134042"
-      }
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:outcome",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "outcome",
+      "short" : "Évolution de l'effet indésirable (backport R5→R4)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.category",
+      "path" : "AdverseEvent.category",
+      "short" : "Type d'effet indésirable — fixé à medication-mishap (code R5)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "AdverseEvent.category.coding.system",
+      "path" : "AdverseEvent.category.coding.system",
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/adverse-event-category"
+    },
+    {
+      "id" : "AdverseEvent.category.coding.code",
+      "path" : "AdverseEvent.category.coding.code",
+      "patternCode" : "medication-mishap"
+    },
+    {
+      "id" : "AdverseEvent.event",
+      "path" : "AdverseEvent.event",
+      "max" : "0"
     },
     {
       "id" : "AdverseEvent.date",
@@ -172,11 +236,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
     {
       "id" : "AdverseEvent.outcome",
       "path" : "AdverseEvent.outcome",
-      "short" : "Évolution de l'effet indésirable",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260619134042"
-      }
+      "max" : "0"
     },
     {
       "id" : "AdverseEvent.suspectEntity",

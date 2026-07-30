@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-address-i
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-07-30T09:44:31+00:00",
+  "date" : "2026-07-30T14:18:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-address-i
         "code" : "Coding"
       }],
       "binding" : {
-        "strength" : "extensible",
+        "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.2.0"
       }
     }]

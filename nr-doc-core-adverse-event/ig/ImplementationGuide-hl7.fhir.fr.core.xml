@@ -13,7 +13,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-07-30T09:44:31+00:00"/>
+  <date value="2026-07-30T14:18:46+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -721,6 +721,28 @@
       </reference>
       <name value="FR Core Address Profile"/>
       <description value="Profil du type de données Address pour la France, ce profil ajoute le code insee à l'adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.&#xD;&#xA;French profile of Address datatype"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-AdverseEvent.code"/>
+      </reference>
+      <name value="FR Core AdverseEvent Extension - Code (backport R5→R4)"/>
+      <description value="Mime AdverseEvent.code (R5, renommage de AdverseEvent.event en R4) — non couvert par l'IG cross-version xver-r5.r4. Porte l'origine de l'effet indésirable (jdv-origine-effet-indesirable-cisis)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-AdverseEvent.outcome"/>
+      </reference>
+      <name value="FR Core AdverseEvent Extension - Outcome (backport R5→R4)"/>
+      <description value="Mime AdverseEvent.outcome (R5, binding Example) — en R4 outcome a un binding Required qui interdit tout re-binding vers jdv-evolution-cisis. Non couvert par l'IG cross-version xver-r5.r4."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

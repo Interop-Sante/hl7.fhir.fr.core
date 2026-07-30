@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-30T09:44:31+00:00",
+  "date" : "2026-07-30T14:18:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -79,15 +79,63 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
       "path" : "AdverseEvent"
     },
     {
-      "id" : "AdverseEvent.category",
-      "path" : "AdverseEvent.category",
-      "short" : "Type d'effet indésirable",
+      "id" : "AdverseEvent.extension",
+      "path" : "AdverseEvent.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "AdverseEvent.extension:code",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "code",
+      "short" : "Origine de l'effet indésirable (backport R5→R4)",
       "min" : 1,
       "max" : "1",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis|20260619134042"
-      }
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:outcome",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "outcome",
+      "short" : "Évolution de l'effet indésirable (backport R5→R4)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.category",
+      "path" : "AdverseEvent.category",
+      "short" : "Type d'effet indésirable — fixé à medication-mishap (code R5)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "AdverseEvent.category.coding.system",
+      "path" : "AdverseEvent.category.coding.system",
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/adverse-event-category"
+    },
+    {
+      "id" : "AdverseEvent.category.coding.code",
+      "path" : "AdverseEvent.category.coding.code",
+      "patternCode" : "medication-mishap"
+    },
+    {
+      "id" : "AdverseEvent.event",
+      "path" : "AdverseEvent.event",
+      "max" : "0"
     },
     {
       "id" : "AdverseEvent.date",
@@ -112,11 +160,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
     {
       "id" : "AdverseEvent.outcome",
       "path" : "AdverseEvent.outcome",
-      "short" : "Évolution de l'effet indésirable",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260619134042"
-      }
+      "max" : "0"
     },
     {
       "id" : "AdverseEvent.suspectEntity",
