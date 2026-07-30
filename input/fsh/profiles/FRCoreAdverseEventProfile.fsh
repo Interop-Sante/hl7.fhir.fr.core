@@ -15,11 +15,7 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 
 // date de début de l'effet indésirable
 // la date de fin de l'effet indésirable est à renseigner dans resultingCondition.abatementDateTime
-* date 1.. // Contrainte ajoutée uniquement par IG Document Core — ⚠ élément FHIR R4 (renommé occurrence[x] en R5, R4 base : 0..1)
 * date ^short = "Date de début de l'effet indésirable"
-
-* detected 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
-* detected ^short = "Date de détection de l'effet indésirable"
 
 * suspectEntity 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 
