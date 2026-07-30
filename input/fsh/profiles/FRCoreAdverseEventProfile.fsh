@@ -51,9 +51,13 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 // event (R4 natif, binding Example SNOMED CT) neutralisé : remplacé par l'extension "code" qui reprend le rôle de AdverseEvent.code (R5, renommage de event) pour porter le JDV d'origine.
 * event 0..0
 
-// date de début de l'effet indésirable
-// la date de fin de l'effet indésirable est à renseigner dans resultingCondition.abatementDateTime
+// date de début de l'effet indésirable ; la période complète (début + fin) peut aussi être portée par l'extension "occurrence" ci-dessous (backport officiel xver de AdverseEvent.occurrence[x], Period), en alternative à resultingCondition.abatementDateTime pour la date de fin.
 * date ^short = "Date de début de l'effet indésirable"
+
+// Extension officielle xver-r5.r4 (http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence) backportant AdverseEvent.occurrence[x] (R5) ; restreinte à Period pour porter la période complète de l'effet indésirable.
+* extension contains $adverse-event-occurrence-r5 named occurrence 0..1
+* extension[occurrence].value[x] only Period
+* extension[occurrence] ^short = "Période de l'effet indésirable (backport R5 occurrence[x], Period)"
 
 * suspectEntity 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
 
