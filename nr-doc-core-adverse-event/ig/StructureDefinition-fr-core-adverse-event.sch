@@ -14,6 +14,7 @@
     <sch:rule context="f:AdverseEvent">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
@@ -21,6 +22,15 @@
       <sch:assert test="count(f:seriousness) &gt;= 1">seriousness: minimum cardinality of 'seriousness' is 1</sch:assert>
       <sch:assert test="count(f:outcome) &lt;= 0">outcome: maximum cardinality of 'outcome' is 0</sch:assert>
       <sch:assert test="count(f:suspectEntity) &gt;= 1">suspectEntity: minimum cardinality of 'suspectEntity' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:AdverseEvent/f:extension</sch:title>
+    <sch:rule context="f:AdverseEvent/f:extension">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
+      <sch:assert test="count(f:value[x]) &lt;= 1">value[x]: maximum cardinality of 'value[x]' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

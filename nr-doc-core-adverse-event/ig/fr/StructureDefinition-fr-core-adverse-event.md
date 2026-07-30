@@ -38,7 +38,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 ** Résumé **
 
 Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
- Interdit : 2 éléments
+ Interdit : 3 éléments
 
 **Structures**
 
@@ -51,6 +51,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0](StructureDefinition-extension-AdverseEvent.code.md)
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-AdverseEvent.occurrence.html)
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0](StructureDefinition-extension-AdverseEvent.outcome.md)
 
  **Vue des éléments clés** 
@@ -76,7 +77,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 ** Résumé **
 
 Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
- Interdit : 2 éléments
+ Interdit : 3 éléments
 
 **Structures**
 
@@ -89,6 +90,7 @@ Cette structure fait référence à ces autres structures:
 Cette structure fait référence à ces extensions:
 
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0](StructureDefinition-extension-AdverseEvent.code.md)
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-AdverseEvent.occurrence.html)
 * [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0](StructureDefinition-extension-AdverseEvent.outcome.md)
 
  
@@ -108,7 +110,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-30T14:33:32+00:00",
+  "date" : "2026-07-30T14:45:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -177,6 +179,30 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|2.2.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:occurrence",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "occurrence",
+      "short" : "Période de l'effet indésirable (backport R5 occurrence[x], Period)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence|0.1.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:occurrence.extension",
+      "path" : "AdverseEvent.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "AdverseEvent.extension:occurrence.value[x]",
+      "path" : "AdverseEvent.extension.value[x]",
+      "type" : [{
+        "code" : "Period"
       }]
     },
     {

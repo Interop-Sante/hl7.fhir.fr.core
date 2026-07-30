@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-extension-Adverse
   "name" : "FRCoreAdverseEventOutcomeExtension",
   "title" : "FR Core AdverseEvent Extension - Outcome (backport R5→R4)",
   "status" : "active",
-  "date" : "2026-07-30T14:33:32+00:00",
+  "date" : "2026-07-30T14:45:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

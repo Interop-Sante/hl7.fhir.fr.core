@@ -168,6 +168,22 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Origine de l'effet indésirable (backport R5→R4)","Mime AdverseEvent.code (R5, renommage de AdverseEvent.event en R4) — non couvert par l'IG cross-version xver-r5.r4. Porte l'origine de l'effet indésirable (jdv-origine-effet-indesirable-cisis).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"fr-core-adverse-event","AdverseEvent.extension:occurrence","AdverseEvent.extension","occurrence","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence|0.1.0]]} {[]}
+","Période de l'effet indésirable (backport R5 occurrence[x], Period)","R5: `AdverseEvent.occurrence[x]` additional types (Period, Timing)","Element `AdverseEvent.occurrence[x]` is mapped to FHIR R4 element `AdverseEvent.date` as `SourceIsBroaderThanTarget`.
+The mappings for `AdverseEvent.occurrence[x]` do not cover the following types: Period, Timing.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"fr-core-adverse-event","AdverseEvent.extension:occurrence.id","AdverseEvent.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"fr-core-adverse-event","AdverseEvent.extension:occurrence.extension","AdverseEvent.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"fr-core-adverse-event","AdverseEvent.extension:occurrence.url","AdverseEvent.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"fr-core-adverse-event","AdverseEvent.extension:occurrence.value[x]","AdverseEvent.extension.value[x]","","","",0,1,"","","","Period {[]} {[]}
+","When the event occurred","The date (and perhaps time) when the adverse event occurred.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "fr-core-adverse-event","AdverseEvent.extension:outcome","AdverseEvent.extension","outcome","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|2.2.0]]} {[]}
 ","Évolution de l'effet indésirable (backport R5→R4)","Mime AdverseEvent.outcome (R5, binding Example) — en R4 outcome a un binding Required qui interdit tout re-binding vers jdv-evolution-cisis. Non couvert par l'IG cross-version xver-r5.r4.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

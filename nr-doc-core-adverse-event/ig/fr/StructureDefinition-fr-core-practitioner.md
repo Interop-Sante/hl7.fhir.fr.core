@@ -135,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-practit
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-07-30T14:33:32+00:00",
+  "date" : "2026-07-30T14:45:27+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
