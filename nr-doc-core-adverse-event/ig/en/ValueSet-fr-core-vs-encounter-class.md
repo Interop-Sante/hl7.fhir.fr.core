@@ -49,7 +49,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "FR Core ValueSet Encounter class",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T12:27:37+00:00",
+  "date" : "2026-07-30T09:44:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -77,7 +77,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "version" : "10.0.0",
+      "version" : "11.0.0",
       "concept" : [{
         "code" : "ACUTE",
         "display" : "Inpatient acute"

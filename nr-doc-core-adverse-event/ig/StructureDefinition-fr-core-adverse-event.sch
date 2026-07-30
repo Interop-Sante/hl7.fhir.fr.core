@@ -14,8 +14,6 @@
     <sch:rule context="f:AdverseEvent">
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
-      <sch:assert test="count(f:detected) &gt;= 1">detected: minimum cardinality of 'detected' is 1</sch:assert>
       <sch:assert test="count(f:seriousness) &gt;= 1">seriousness: minimum cardinality of 'seriousness' is 1</sch:assert>
       <sch:assert test="count(f:suspectEntity) &gt;= 1">suspectEntity: minimum cardinality of 'suspectEntity' is 1</sch:assert>
     </sch:rule>

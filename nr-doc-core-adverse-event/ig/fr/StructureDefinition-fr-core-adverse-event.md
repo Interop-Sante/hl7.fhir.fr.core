@@ -37,7 +37,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -67,7 +67,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -92,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-21T12:27:37+00:00",
+  "date" : "2026-07-30T09:44:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -152,14 +152,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
     {
       "id" : "AdverseEvent.date",
       "path" : "AdverseEvent.date",
-      "short" : "Date de début de l'effet indésirable",
-      "min" : 1
-    },
-    {
-      "id" : "AdverseEvent.detected",
-      "path" : "AdverseEvent.detected",
-      "short" : "Date de détection de l'effet indésirable",
-      "min" : 1
+      "short" : "Date de début de l'effet indésirable"
     },
     {
       "id" : "AdverseEvent.resultingCondition",

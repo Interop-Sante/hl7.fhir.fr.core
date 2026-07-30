@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Type Admission",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-21T12:27:37+00:00",
+  "date" : "2026-07-30T09:44:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

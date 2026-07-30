@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-21T12:27:37+00:00",
+  "date" : "2026-07-30T09:44:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -92,14 +92,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
     {
       "id" : "AdverseEvent.date",
       "path" : "AdverseEvent.date",
-      "short" : "Date de début de l'effet indésirable",
-      "min" : 1
-    },
-    {
-      "id" : "AdverseEvent.detected",
-      "path" : "AdverseEvent.detected",
-      "short" : "Date de détection de l'effet indésirable",
-      "min" : 1
+      "short" : "Date de début de l'effet indésirable"
     },
     {
       "id" : "AdverseEvent.resultingCondition",

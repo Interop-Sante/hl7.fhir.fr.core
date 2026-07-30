@@ -50,11 +50,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "AdverseEvent.encounter","AdverseEvent.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}
 ","Encounter created as part of","The Encounter during which AdverseEvent was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.  For example, if a medication administration was considered an adverse event because it resulted in a rash, then the encounter when the medication administration was given is the context.  If the patient reports the AdverseEvent during a second encounter, that second encounter is not the context.","","","","","","","","",,,,,"",,,,"AdverseEvent.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.context"
-"AdverseEvent.date","AdverseEvent.date","","","",1,1,"","","Y","dateTime {[]} {[]}
+"AdverseEvent.date","AdverseEvent.date","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","Date de début de l'effet indésirable","The date (and perhaps time) when the adverse event occurred.","","","","","","","","","",,,,,"",,,,"AdverseEvent.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.init"
-"AdverseEvent.detected","AdverseEvent.detected","","","",1,1,"","","Y","dateTime {[]} {[]}
-","Date de détection de l'effet indésirable","Estimated or actual date the AdverseEvent began, in the opinion of the reporter.","","","","","","","","","",,,,,"",,,,"AdverseEvent.detected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"AdverseEvent.detected","AdverseEvent.detected","","","",0,1,"","","Y","dateTime {[]} {[]}
+","When the event was detected","Estimated or actual date the AdverseEvent began, in the opinion of the reporter.","","","","","","","","","",,,,,"",,,,"AdverseEvent.detected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "AdverseEvent.recordedDate","AdverseEvent.recordedDate","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","When the event was recorded","The date on which the existence of the AdverseEvent was first recorded.","The recordedDate represents the date when this particular AdverseEvent record was created in the system, not the date of the most recent update.  The date of the last record modification can be retrieved from the resource metadata.","","","","","","","","",,,,,"",,,,"AdverseEvent.recordedDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
