@@ -11,6 +11,7 @@ Extension permettant d’indiquer la méthode utilisée : techniques biologiques
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core ServiceRequest Profile](StructureDefinition-fr-core-service-request.md)
+* Exemples pour ce/t/te Extension: [ServiceRequest/FRCoreServiceRequestExample](ServiceRequest-FRCoreServiceRequestExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-method-extension)
 
@@ -72,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-method-
   "name" : "FRCoreMethodExtension",
   "title" : "FR Core Method Extension",
   "status" : "active",
-  "date" : "2026-07-31T09:43:50+00:00",
+  "date" : "2026-07-31T14:55:35+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

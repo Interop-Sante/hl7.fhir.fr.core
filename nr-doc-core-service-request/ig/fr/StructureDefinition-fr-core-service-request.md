@@ -7,7 +7,7 @@ FRCoreServiceRequestProfile profil permet de porter des demandes d’examens (an
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [ServiceRequest/FRCoreServiceRequestExample](ServiceRequest-FRCoreServiceRequestExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-service-request)
 
@@ -116,7 +116,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-07-31T09:43:50+00:00",
+  "date" : "2026-07-31T14:55:35+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
