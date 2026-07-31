@@ -31,21 +31,13 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie.
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "language" : "fr-FR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "informative"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1
-  }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-substance",
   "version" : "2.2.0",
   "name" : "FRCoreValueSetAllergySubstance",
   "title" : "FR Core ValueSet Allergy Substance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:13:23+00:00",
+  "date" : "2026-07-31T13:21:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -45,7 +45,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Allergy Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:13:23+00:00",
+  "date" : "2026-07-31T13:21:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
