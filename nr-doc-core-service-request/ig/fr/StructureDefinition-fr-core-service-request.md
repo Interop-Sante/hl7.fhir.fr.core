@@ -116,7 +116,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-service
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-07-23T10:00:41+00:00",
+  "date" : "2026-07-31T09:43:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
