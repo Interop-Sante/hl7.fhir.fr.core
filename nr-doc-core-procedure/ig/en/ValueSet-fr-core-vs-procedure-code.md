@@ -20,6 +20,8 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
 
 ### Expansion
 
+No Expansion for this valueset (Unsupported Code System Version)
+
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -41,7 +43,8 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
   "name" : "FRCoreValueSetProcedureCode",
   "title" : "FR Core ValueSet Procedure code",
   "status" : "active",
-  "date" : "2026-07-23T09:09:32+00:00",
+  "experimental" : false,
+  "date" : "2026-07-31T15:05:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

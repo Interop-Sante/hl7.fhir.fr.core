@@ -36,7 +36,7 @@ SELECT SNOMED CT code system values the position in which the individual was in 
   "title" : "Body Position value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-23T09:09:32+00:00",
+  "date" : "2026-07-31T15:05:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

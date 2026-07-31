@@ -11,6 +11,7 @@ Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte
 **Usages:**
 
 * Use this Extension: [FR Core Procedure Profile](StructureDefinition-fr-core-procedure.md)
+* Examples for this Extension: [Procedure/FRCoreProcedureExample](Procedure-FRCoreProcedureExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-procedure-difficulty-extension.json)
 
@@ -35,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
   "name" : "FRCoreProcedureDifficultyExtension",
   "title" : "FR Core Procedure Difficulty Extension",
   "status" : "active",
-  "date" : "2026-07-23T09:09:32+00:00",
+  "date" : "2026-07-31T15:05:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
