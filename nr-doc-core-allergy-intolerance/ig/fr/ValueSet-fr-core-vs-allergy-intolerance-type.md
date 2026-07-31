@@ -31,21 +31,13 @@ Jeu de valeurs contenant les codes autorisés pour les types d’allergies et d�
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "language" : "fr-FR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "informative"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1
-  }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-intolerance-type",
   "version" : "2.2.0",
   "name" : "FRCoreValueSetAllergyIntoleranceType",
   "title" : "FR Core ValueSet Allergy Intolerance Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:11:22+00:00",
+  "date" : "2026-07-31T13:13:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
