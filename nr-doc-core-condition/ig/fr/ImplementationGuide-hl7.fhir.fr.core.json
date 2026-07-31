@@ -11,7 +11,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-07-21T08:10:44+00:00",
+  "date" : "2026-07-31T14:40:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -47,7 +47,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -2535,6 +2535,18 @@
       "name" : "FRCoreAppointmentExample",
       "description" : "Exemple de ressource Appointment pour décrire un état de rendez-vous médical",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/FRCoreConditionExample"
+      },
+      "name" : "FRCoreConditionExample",
+      "description" : "Exemple de ressource Condition : asthme chronique actif chez un patient identifié par son INS",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition|2.2.0"
     },
     {
       "extension" : [{

@@ -7,7 +7,7 @@ FRCoreConditionProfile est un profil utilisé pour décrire un problème du pati
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-condition)
 
@@ -94,7 +94,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-conditi
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-07-21T08:10:44+00:00",
+  "date" : "2026-07-31T14:40:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

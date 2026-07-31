@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T08:10:44+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-31T14:40:09+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -67,7 +67,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.2.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
   ], [
      fhir:index 1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
@@ -2927,6 +2927,23 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Condition/FRCoreConditionExample> ;
+         fhir:Reference.reference [ fhir:value "Condition/FRCoreConditionExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreConditionExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource Condition : asthme chronique actif chez un patient identifié par son INS" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition|2.2.0" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition|2.2.0>
+       ]
+     ], [
+       fhir:index 139 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -2940,7 +2957,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter|2.2.0>
        ]
      ], [
-       fhir:index 139 ;
+       fhir:index 140 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2957,7 +2974,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0>
        ]
      ], [
-       fhir:index 140 ;
+       fhir:index 141 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2971,7 +2988,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource Location pour décrire la localisation du centre de radiologie de l'hôpital Z" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 141 ;
+       fhir:index 142 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2988,7 +3005,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen|2.2.0>
        ]
      ], [
-       fhir:index 142 ;
+       fhir:index 143 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3005,7 +3022,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi|2.2.0>
        ]
      ], [
-       fhir:index 143 ;
+       fhir:index 144 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3022,7 +3039,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height|2.2.0>
        ]
      ], [
-       fhir:index 144 ;
+       fhir:index 145 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3039,7 +3056,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature|2.2.0>
        ]
      ], [
-       fhir:index 145 ;
+       fhir:index 146 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3056,7 +3073,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight|2.2.0>
        ]
      ], [
-       fhir:index 146 ;
+       fhir:index 147 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3073,7 +3090,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp|2.2.0>
        ]
      ], [
-       fhir:index 147 ;
+       fhir:index 148 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3090,7 +3107,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum|2.2.0>
        ]
      ], [
-       fhir:index 148 ;
+       fhir:index 149 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3107,7 +3124,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate|2.2.0>
        ]
      ], [
-       fhir:index 149 ;
+       fhir:index 150 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3124,7 +3141,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen|2.2.0>
        ]
      ], [
-       fhir:index 150 ;
+       fhir:index 151 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3141,7 +3158,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate|2.2.0>
        ]
      ], [
-       fhir:index 151 ;
+       fhir:index 152 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3158,7 +3175,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 152 ;
+       fhir:index 153 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3175,7 +3192,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0>
        ]
      ], [
-       fhir:index 153 ;
+       fhir:index 154 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3192,7 +3209,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0>
        ]
      ], [
-       fhir:index 154 ;
+       fhir:index 155 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3209,7 +3226,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0>
        ]
      ], [
-       fhir:index 155 ;
+       fhir:index 156 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3226,7 +3243,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0>
        ]
      ], [
-       fhir:index 156 ;
+       fhir:index 157 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3243,7 +3260,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.2.0>
        ]
      ], [
-       fhir:index 157 ;
+       fhir:index 158 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3260,7 +3277,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule|2.2.0>
        ]
      ], [
-       fhir:index 158 ;
+       fhir:index 159 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3277,7 +3294,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot|2.2.0>
        ]
      ], [
-       fhir:index 159 ;
+       fhir:index 160 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3291,7 +3308,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe where on the body the heart rate was measured." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 160 ;
+       fhir:index 161 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3305,7 +3322,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe how the heart rate was measured." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 161 ;
+       fhir:index 162 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3319,7 +3336,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe how the height/length was measured." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 162 ;
+       fhir:index 163 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3336,7 +3353,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 163 ;
+       fhir:index 164 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3353,7 +3370,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0>
        ]
      ], [
-       fhir:index 164 ;
+       fhir:index 165 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3370,7 +3387,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement|2.2.0>
        ]
      ], [
-       fhir:index 165 ;
+       fhir:index 166 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3387,7 +3404,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 166 ;
+       fhir:index 167 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3404,7 +3421,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 167 ;
+       fhir:index 168 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3421,7 +3438,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 168 ;
+       fhir:index 169 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3438,7 +3455,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 169 ;
+       fhir:index 170 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3455,7 +3472,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0>
        ]
      ], [
-       fhir:index 170 ;
+       fhir:index 171 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3472,7 +3489,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 171 ;
+       fhir:index 172 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3489,7 +3506,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0>
        ]
      ], [
-       fhir:index 172 ;
+       fhir:index 173 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3506,7 +3523,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0>
        ]
      ], [
-       fhir:index 173 ;
+       fhir:index 174 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3523,7 +3540,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac|2.2.0>
        ]
      ], [
-       fhir:index 174 ;
+       fhir:index 175 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3540,7 +3557,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
      ], [
-       fhir:index 175 ;
+       fhir:index 176 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3557,7 +3574,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
      ], [
-       fhir:index 176 ;
+       fhir:index 177 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3574,7 +3591,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf|2.2.0>
        ]
      ], [
-       fhir:index 177 ;
+       fhir:index 178 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -3588,7 +3605,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 178 ;
+       fhir:index 179 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T08:10:44+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-31T14:40:09+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -67,7 +67,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.2.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
   ], [
      fhir:index -1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
@@ -2921,6 +2921,23 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0" ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Condition/FRCoreConditionExample> ;
+         fhir:Reference.reference [ fhir:value "Condition/FRCoreConditionExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreConditionExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource Condition : asthme chronique actif chez un patient identifié par son INS" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition|2.2.0" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition|2.2.0>
        ]
      ], [
        fhir:index -1 ;
