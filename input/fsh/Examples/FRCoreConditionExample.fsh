@@ -8,7 +8,7 @@ Description: "Exemple de ressource Condition : asthme chronique actif chez un pa
 
 * category = $SCT#64572001 "maladie"
 
-* severity = $SCT#24484000 "Severe"
+* severity = $SCT#24484000 "gravité sévère"
 
 * code = https://smt.esante.gouv.fr/terminologie-cim-10#J45.9 "Asthme, sans précision"
 
@@ -18,6 +18,6 @@ Description: "Exemple de ressource Condition : asthme chronique actif chez un pa
 * onsetDateTime = "2023-06-01"
 * recordedDate = "2023-06-05"
 
-* bodySite = $SCT#39607008 "Lung structure"
+* bodySite = $SCT#39607008 "poumon"
 
 * stage.summary = $SCT#27624003 "maladie chronique"
