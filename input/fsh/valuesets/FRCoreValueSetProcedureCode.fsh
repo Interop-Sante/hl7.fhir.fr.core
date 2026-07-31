@@ -21,3 +21,6 @@ Si aucun code approprié n'est disponible, l'acte peut être décrit en texte li
 
 // CISIS absent/unknown
 * include codes from valueset https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis
+
+// SVS profile
+* ^experimental = false
