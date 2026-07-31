@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/AllergyIntolerance/FRCoreAllergyIntoleranceExample> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCoreAllergyIntoleranceExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : IntoléranceAllergique FRCoreAllergyIntoleranceExample</b></p><a name=\"FRCoreAllergyIntoleranceExample\"> </a><a name=\"hcFRCoreAllergyIntoleranceExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-allergy-intolerance.html\">FR Core AllergyIntolerance Profile</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-sms 100000090270}\">Paracetamol</span></p><p><b>patient</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>onset</b>: 2024-03-15</p><p><b>recordedDate</b>: 2024-03-20</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-sms 100000090270}\">Paracetamol</span></td><td><span title=\"Codes :{http://snomed.info/sct 271807003}\">éruption cutanée</span></td><td>2024-03-15</td><td>Moderate</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance FRCoreAllergyIntoleranceExample</b></p><a name=\"en-FRCoreAllergyIntoleranceExample\"> </a><a name=\"en-hcFRCoreAllergyIntoleranceExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-allergy-intolerance.html\">FR Core AllergyIntolerance Profile</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/terminologie-sms 100000090270}\">Paracetamol</span></p><p><b>patient</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>onset</b>: 2024-03-15</p><p><b>recordedDate</b>: 2024-03-20</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://smt.esante.gouv.fr/terminologie-sms 100000090270}\">Paracetamol</span></td><td><span title=\"Codes:{http://snomed.info/sct 271807003}\">éruption cutanée</span></td><td>2024-03-15</td><td>Moderate</td></tr></table></div></div>"
+  ] ;
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ] ;
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ] ;
+       fhir:Coding.code [ fhir:value "confirmed" ] ;
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"] ;
+  fhir:AllergyIntolerance.criticality [ fhir:value "low"] ;
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-sms" ] ;
+       fhir:Coding.code [ fhir:value "100000090270" ] ;
+       fhir:Coding.display [ fhir:value "Paracetamol" ]
+     ]
+  ] ;
+  fhir:AllergyIntolerance.patient [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FRCorePatientINSExample" ] ;
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ] ;
+  fhir:AllergyIntolerance.onsetDateTime [ fhir:value "2024-03-15"^^xsd:date] ;
+  fhir:AllergyIntolerance.recordedDate [ fhir:value "2024-03-20"^^xsd:date] ;
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0 ;
+     fhir:AllergyIntolerance.reaction.substance [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-sms" ] ;
+         fhir:Coding.code [ fhir:value "100000090270" ] ;
+         fhir:Coding.display [ fhir:value "Paracetamol" ]
+       ]
+     ] ;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:271807003 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "271807003" ] ;
+         fhir:Coding.display [ fhir:value "éruption cutanée" ]
+       ]
+     ] ;
+     fhir:AllergyIntolerance.reaction.onset [ fhir:value "2024-03-15"^^xsd:date ] ;
+     fhir:AllergyIntolerance.reaction.severity [ fhir:value "moderate" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/AllergyIntolerance/FRCoreAllergyIntoleranceExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

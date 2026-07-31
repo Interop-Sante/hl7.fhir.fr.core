@@ -1,10 +1,11 @@
 FRCore : Validation Results
 =========================================
 
-err = 6, warn = 198, info = 4320
+err = 6, warn = 198, info = 4324
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/AllergyIntolerance-FRCoreAllergyIntoleranceExample : 0 / 1 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 0 / 1 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-champ-activite : 0 / 2 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 2 / 3
@@ -34,7 +35,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-v2-3311 : 0 / 2 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Encounter-FRCoreEncounterExample : 0 / 1 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/HealthcareService-svc-cardiologie-1 : 0 / 1 / 2
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core : 0 / 0 / 38
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core : 0 / 0 / 39
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Location-hopitaltest-endocrino-ch04 : 0 / 0 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Location-hopitaltest-endocrino-ch04-litF : 0 / 0 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Location-hopitaltest-infectio-ch02-prsn-ngtv : 0 / 0 / 2
@@ -71,7 +72,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Slot-FRCoreSlotExample : 0 / 1 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-address : 0 / 0 / 41
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-address-insee-code : 0 / 0 / 10
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-allergy-intolerance : 0 / 4 / 80
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-allergy-intolerance : 0 / 3 / 80
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-appointment : 0 / 0 / 84
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-appointment-operator : 0 / 0 / 17
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-comment : 0 / 0 / 8
@@ -221,6 +222,11 @@ ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, col
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 262, column 8: The link 'examples.ttl.zip' for "XML Exemples (zip)" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'definitions.ttl.zip' for "Turtle Définitions" cannot be resolved
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AllergyIntolerance-FRCoreAllergyIntoleranceExample.json ==
+WARNING: AllergyIntolerance/FRCoreAllergyIntoleranceExample: AllergyIntolerance.code.coding[0].system: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-sms' version 'null' could not be found, so the code cannot be validated. Valid versions: 2026-07
+INFORMATION: AllergyIntolerance/FRCoreAllergyIntoleranceExample: AllergyIntolerance.code: None of the codings provided are in the value set 'eHDSI Allergen No Drug' (http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug|0.2.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = https://smt.esante.gouv.fr/terminologie-sms#100000090270)
+INFORMATION: AllergyIntolerance/FRCoreAllergyIntoleranceExample: AllergyIntolerance.code: None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|1.1.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = https://smt.esante.gouv.fr/terminologie-sms#100000090270)
+INFORMATION: AllergyIntolerance/FRCoreAllergyIntoleranceExample: AllergyIntolerance.reaction[0].manifestation[0]: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips|2.0.0
 == fsh-generated/resources/Appointment-FRCoreAppointmentExample.json ==
 INFORMATION: Appointment/FRCoreAppointmentExample: Appointment.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Appointment/FRCoreAppointmentExample: Appointment.identifier[0].system: No definition could be found for URL value 'http://appointment-identifier-system.org'
@@ -335,42 +341,43 @@ WARNING: Encounter/FRCoreEncounterExample: Encounter.identifier[0].system: No de
 INFORMATION: HealthcareService/svc-cardiologie-1: HealthcareService.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: HealthcareService/svc-cardiologie-1: HealthcareService.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.1.1.1'
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core.json ==
-INFORMATION: ImplementationGuide.definition.resource[139].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[140].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[141].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[143].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[144].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[145].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[146].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[147].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[148].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[149].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[150].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[151].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[152].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[153].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[154].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[155].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[156].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[157].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[158].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[159].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[160].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[164].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[165].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[139].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[140].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[141].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[142].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[144].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[145].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[146].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[147].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[148].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[149].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[150].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[151].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[152].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[153].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[154].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[155].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[156].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[157].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[158].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[159].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[160].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[161].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[165].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[166].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[167].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[167].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[168].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[169].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[170].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[171].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[172].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[170].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[171].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[172].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[173].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[174].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[174].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[175].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
-INFORMATION: ImplementationGuide.definition.resource[176].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[176].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[177].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[178].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
+INFORMATION: ImplementationGuide.definition.resource[179].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf to 2.2.0
 INFORMATION: Resource: The resource ImplementationGuide/hl7.fhir.fr.core could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Location-hopitaltest-endocrino-ch04.json ==
 INFORMATION: Location/hopitaltest-endocrino-ch04: Location.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -634,7 +641,6 @@ WARNING: StructureDefinition/fr-core-allergy-intolerance: StructureDefinition.sn
 WARNING: StructureDefinition/fr-core-allergy-intolerance: StructureDefinition.snapshot.element[29].binding.extension[1]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 WARNING: StructureDefinition/fr-core-allergy-intolerance: StructureDefinition.snapshot.element[54].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 INFORMATION: Resource: The resource StructureDefinition/fr-core-allergy-intolerance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-core-appointment.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Appointment to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Appointment to 4.0.1
@@ -4381,7 +4387,7 @@ WARNING: ValueSet/fr-core-vs-allergy-code: ValueSet.compose.include[1].system: N
 WARNING: ValueSet/fr-core-vs-allergy-code: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-allergy-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-core-vs-allergy-code'): Error from https://smt.esante.gouv.fr/fhir: Error: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-cip_ucd' version '2026-07' could not be found, so the value set cannot be expanded. Valid versions: 2026-07
-Information: X-Request-Id: ee23ed5c-a218-4b01-bcb1-542e4432fe11
+Information: X-Request-Id: f7b8be13-5721-4641-abeb-e3180a499c41
 == fsh-generated/resources/ValueSet-fr-core-vs-allergy-intolerance-type.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://hl7.org/fhir/allergy-intolerance-type to 4.0.1
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1

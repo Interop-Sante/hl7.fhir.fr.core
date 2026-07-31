@@ -37,7 +37,7 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie.
   "title" : "FR Core ValueSet Allergy Substance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:21:46+00:00",
+  "date" : "2026-07-31T13:27:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

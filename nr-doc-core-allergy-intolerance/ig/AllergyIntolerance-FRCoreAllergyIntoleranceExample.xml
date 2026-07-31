@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="FRCoreAllergyIntoleranceExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : IntoléranceAllergique FRCoreAllergyIntoleranceExample</b></p><a name="FRCoreAllergyIntoleranceExample"> </a><a name="hcFRCoreAllergyIntoleranceExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-allergy-intolerance.html">FR Core AllergyIntolerance Profile</a></p></div><p><b>clinicalStatus</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title="Codes :{https://smt.esante.gouv.fr/terminologie-sms 100000090270}">Paracetamol</span></p><p><b>patient</b>: <a href="Patient-FRCorePatientINSExample.html">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>onset</b>: 2024-03-15</p><p><b>recordedDate</b>: 2024-03-20</p><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{https://smt.esante.gouv.fr/terminologie-sms 100000090270}">Paracetamol</span></td><td><span title="Codes :{http://snomed.info/sct 271807003}">éruption cutanée</span></td><td>2024-03-15</td><td>Moderate</td></tr></table></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance FRCoreAllergyIntoleranceExample</b></p><a name="en-FRCoreAllergyIntoleranceExample"> </a><a name="en-hcFRCoreAllergyIntoleranceExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fr-core-allergy-intolerance.html">FR Core AllergyIntolerance Profile</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: Allergy</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title="Codes:{https://smt.esante.gouv.fr/terminologie-sms 100000090270}">Paracetamol</span></p><p><b>patient</b>: <a href="Patient-FRCorePatientINSExample.html">Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>onset</b>: 2024-03-15</p><p><b>recordedDate</b>: 2024-03-20</p><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://smt.esante.gouv.fr/terminologie-sms 100000090270}">Paracetamol</span></td><td><span title="Codes:{http://snomed.info/sct 271807003}">éruption cutanée</span></td><td>2024-03-15</td><td>Moderate</td></tr></table></div></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+      <code value="100000090270"/>
+      <display value="Paracetamol"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/FRCorePatientINSExample"/>
+    <type value="Patient"/>
+  </patient>
+  <onsetDateTime value="2024-03-15"/>
+  <recordedDate value="2024-03-20"/>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="https://smt.esante.gouv.fr/terminologie-sms"/>
+        <code value="100000090270"/>
+        <display value="Paracetamol"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271807003"/>
+        <display value="éruption cutanée"/>
+      </coding>
+    </manifestation>
+    <onset value="2024-03-15"/>
+    <severity value="moderate"/>
+  </reaction>
+</AllergyIntolerance>

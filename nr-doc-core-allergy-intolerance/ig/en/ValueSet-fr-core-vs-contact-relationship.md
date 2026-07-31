@@ -53,7 +53,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:21:46+00:00",
+  "date" : "2026-07-31T13:27:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -7,7 +7,7 @@ FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [AllergyIntolerance/FRCoreAllergyIntoleranceExample](AllergyIntolerance-FRCoreAllergyIntoleranceExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-allergy-intolerance.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-allergy-i
   "name" : "FRCoreAllergyIntoleranceProfile",
   "title" : "FR Core AllergyIntolerance Profile",
   "status" : "active",
-  "date" : "2026-07-31T13:21:46+00:00",
+  "date" : "2026-07-31T13:27:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
