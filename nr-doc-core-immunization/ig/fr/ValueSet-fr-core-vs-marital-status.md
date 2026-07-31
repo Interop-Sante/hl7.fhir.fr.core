@@ -37,7 +37,7 @@ Patient Marital Status
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T07:54:03+00:00",
+  "date" : "2026-07-31T16:55:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -69,7 +69,7 @@ Patient Marital Status
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-      "version" : "4.0.0"
+      "version" : "5.0.0"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",

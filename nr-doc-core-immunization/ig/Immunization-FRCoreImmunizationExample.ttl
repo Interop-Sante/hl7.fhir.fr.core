@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Immunization/FRCoreImmunizationExample> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCoreImmunizationExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-immunization" ;
+       fhir:index 0 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-immunization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Immunisation FRCoreImmunizationExample</b></p><a name=\"FRCoreImmunizationExample\"> </a><a name=\"hcFRCoreImmunizationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-immunization.html\">FR Core Immunization Profile</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-bdpm 61402736}\">VAXIGRIPTETRA, suspension injectable en seringue préremplie. Vaccin grippal quadrivalent (inactivé, à virion fragmenté)</span></p><p><b>patient</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>occurrence</b>: 2024-10-15</p><p><b>lotNumber</b>: K123AB</p><p><b>expirationDate</b>: 2025-06-30</p><p><b>site</b>: <span title=\"Codes :{http://snomed.info/sct 16217661000119109}\">deltoïde droit</span></p><p><b>route</b>: <span title=\"Codes :{https://smt.esante.gouv.fr/terminologie-standardterms 20035000}\">Voie intramusculaire</span></p><p><b>doseQuantity</b>: 0.5 mL<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmL = 'mL')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>IMMUNIZ</td><td>1</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Immunization FRCoreImmunizationExample</b></p><a name=\"en-FRCoreImmunizationExample\"> </a><a name=\"en-hcFRCoreImmunizationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-immunization.html\">FR Core Immunization Profile</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/terminologie-bdpm 61402736}\">VAXIGRIPTETRA, suspension injectable en seringue préremplie. Vaccin grippal quadrivalent (inactivé, à virion fragmenté)</span></p><p><b>patient</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>occurrence</b>: 2024-10-15</p><p><b>lotNumber</b>: K123AB</p><p><b>expirationDate</b>: 2025-06-30</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 16217661000119109}\">deltoïde droit</span></p><p><b>route</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/terminologie-standardterms 20035000}\">Voie intramusculaire</span></p><p><b>doseQuantity</b>: 0.5 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>IMMUNIZ</td><td>1</td></tr></table></div></div>"
+  ] ;
+  fhir:Immunization.status [ fhir:value "completed"] ;
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-bdpm" ] ;
+       fhir:Coding.code [ fhir:value "61402736" ] ;
+       fhir:Coding.display [ fhir:value "VAXIGRIPTETRA, suspension injectable en seringue préremplie. Vaccin grippal quadrivalent (inactivé, à virion fragmenté)" ]
+     ]
+  ] ;
+  fhir:Immunization.patient [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FRCorePatientINSExample" ]
+  ] ;
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2024-10-15"^^xsd:date] ;
+  fhir:Immunization.lotNumber [ fhir:value "K123AB"] ;
+  fhir:Immunization.expirationDate [ fhir:value "2025-06-30"^^xsd:date] ;
+  fhir:Immunization.site [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:16217661000119109 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "16217661000119109" ] ;
+       fhir:Coding.display [ fhir:value "deltoïde droit" ]
+     ]
+  ] ;
+  fhir:Immunization.route [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-standardterms" ] ;
+       fhir:Coding.code [ fhir:value "20035000" ] ;
+       fhir:Coding.display [ fhir:value "Voie intramusculaire" ]
+     ]
+  ] ;
+  fhir:Immunization.doseQuantity [
+     fhir:Quantity.value [ fhir:value "0.5"^^xsd:decimal ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "mL" ]
+  ] ;
+  fhir:Immunization.protocolApplied [
+     fhir:index 0 ;
+     fhir:Immunization.protocolApplied.series [ fhir:value "IMMUNIZ" ] ;
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Immunization/FRCoreImmunizationExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

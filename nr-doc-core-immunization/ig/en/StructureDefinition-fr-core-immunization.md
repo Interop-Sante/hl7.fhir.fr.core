@@ -7,7 +7,7 @@ FRCoreImmunizationProfile permet de décrire l’administration d’un vaccin. I
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Immunization/FRCoreImmunizationExample](Immunization-FRCoreImmunizationExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-immunization.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-07-21T07:54:03+00:00",
+  "date" : "2026-07-31T16:55:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -219,6 +219,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
         "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis|2.2.0"
       }
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding:cis.system",
+      "path" : "Immunization.vaccineCode.coding.system",
+      "min" : 1,
+      "patternUri" : "https://smt.esante.gouv.fr/terminologie-bdpm"
     },
     {
       "id" : "Immunization.occurrence[x]",

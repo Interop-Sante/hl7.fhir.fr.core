@@ -7,7 +7,7 @@ FRCoreImmunizationProfile permet de décrire l’administration d’un vaccin. I
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Immunization/FRCoreImmunizationExample](Immunization-FRCoreImmunizationExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-immunization)
 
@@ -37,7 +37,7 @@ Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.
 
 ** Résumé **
 
-Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
  Interdit : 2 éléments
 
 **Structures**
@@ -84,7 +84,7 @@ Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.
 
 ** Résumé **
 
-Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
  Interdit : 2 éléments
 
 **Structures**
@@ -126,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-07-21T07:54:03+00:00",
+  "date" : "2026-07-31T16:55:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -313,6 +313,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
         "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis|2.2.0"
       }
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding:cis.system",
+      "path" : "Immunization.vaccineCode.coding.system",
+      "min" : 1,
+      "patternUri" : "https://smt.esante.gouv.fr/terminologie-bdpm"
     },
     {
       "id" : "Immunization.occurrence[x]",

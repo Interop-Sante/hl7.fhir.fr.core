@@ -15,7 +15,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
+No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
@@ -39,7 +39,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T07:54:03+00:00",
+  "date" : "2026-07-31T16:55:52+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
