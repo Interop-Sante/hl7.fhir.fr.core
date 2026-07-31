@@ -3,9 +3,10 @@
 //
 // Profil EU Core (héritage direct) : non disponible
 // ─────────────────────────────────────────────────────────────────────────────
-/* Ce DataType existe déjà côté HL7.
-Lors de la publication de la version HL7 correspondante, remplacer
-ce profil par la version officielle.*/
+/* 
+Ce DataType existe déjà côté HL7. Lors de la publication de la version HL7 correspondante, remplacer ce profil par la version officielle.
+https://build.fhir.org/ig/hl7-eu/imaging-r5/en/StructureDefinition-AccessionNumberIdentifierEuImaging.html
+*/
 Profile: FRCoreAccessionNumberIdentifierProfile
 Parent: Identifier
 Id: fr-core-accession-number-identifier
