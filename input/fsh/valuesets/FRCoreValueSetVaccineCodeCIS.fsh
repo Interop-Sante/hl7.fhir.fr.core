@@ -6,3 +6,6 @@ Description: "Codes issus de la Base de Données Publique des Médicaments (BDPM
 * insert SetValueset
 
 * include codes from system https://smt.esante.gouv.fr/terminologie-bdpm
+
+// SVS profile
+* ^experimental = false

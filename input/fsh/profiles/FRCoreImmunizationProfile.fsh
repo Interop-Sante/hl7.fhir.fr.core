@@ -27,6 +27,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode.coding ^slicing.discriminator.path = "system"
 * vaccineCode.coding ^slicing.rules = #open
 * vaccineCode.coding contains cis 1..1
+* vaccineCode.coding[cis].system = "https://smt.esante.gouv.fr/terminologie-bdpm"
 * vaccineCode.coding[cis] from FRCoreValueSetVaccineCodeCIS (required)
 * vaccineCode ^binding.extension[+].extension[0].url = "key"
 * vaccineCode ^binding.extension[=].extension[=].valueId = "fr-core-immunization-vaccinecode-translation"
