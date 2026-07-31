@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-allergy-i
   "name" : "FRCoreAllergyIntoleranceProfile",
   "title" : "FR Core AllergyIntolerance Profile",
   "status" : "active",
-  "date" : "2026-07-20T15:52:32+00:00",
+  "date" : "2026-07-31T13:08:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -96,9 +96,42 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-allergy-i
     {
       "id" : "AllergyIntolerance.type",
       "path" : "AllergyIntolerance.type",
-      "short" : "Type d'allergie ou d'intolérance",
+      "short" : "Type d'allergie ou d'intolérance"
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension",
+      "path" : "AllergyIntolerance.type.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension:type",
+      "path" : "AllergyIntolerance.type.extension",
+      "sliceName" : "type",
+      "short" : "Type d'allergie ou d'intolérance étendu (backport R5 : idiosyncrasie, hypersensibilité non allergique)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type|0.1.0"]
+      }]
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension:type.extension",
+      "path" : "AllergyIntolerance.type.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension:type.value[x]",
+      "path" : "AllergyIntolerance.type.extension.value[x]",
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-intolerance-type|2.2.0"
       }
     },

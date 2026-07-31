@@ -38,6 +38,7 @@ Cette structure est dérivée de [AllergyIntoleranceEuCore](http://hl7.eu/fhir/b
 ** Résumé **
 
 Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ Interdit : 1 élément
 
 **Structures**
 
@@ -45,6 +46,12 @@ Cette structure fait référence à ces autres structures:
 
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
+
+**Extensions**
+
+Cette structure fait référence à ces extensions:
+
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-AllergyIntolerance.type.html)
 
  **Vue des éléments clés** 
 
@@ -69,6 +76,7 @@ Cette structure est dérivée de [AllergyIntoleranceEuCore](http://hl7.eu/fhir/b
 ** Résumé **
 
 Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ Interdit : 1 élément
 
 **Structures**
 
@@ -76,6 +84,12 @@ Cette structure fait référence à ces autres structures:
 
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
+
+**Extensions**
+
+Cette structure fait référence à ces extensions:
+
+* [http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-AllergyIntolerance.type.html)
 
  
 
@@ -94,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-allergy
   "name" : "FRCoreAllergyIntoleranceProfile",
   "title" : "FR Core AllergyIntolerance Profile",
   "status" : "active",
-  "date" : "2026-07-20T15:52:32+00:00",
+  "date" : "2026-07-31T13:08:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -158,9 +172,42 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-allergy
     {
       "id" : "AllergyIntolerance.type",
       "path" : "AllergyIntolerance.type",
-      "short" : "Type d'allergie ou d'intolérance",
+      "short" : "Type d'allergie ou d'intolérance"
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension",
+      "path" : "AllergyIntolerance.type.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension:type",
+      "path" : "AllergyIntolerance.type.extension",
+      "sliceName" : "type",
+      "short" : "Type d'allergie ou d'intolérance étendu (backport R5 : idiosyncrasie, hypersensibilité non allergique)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type|0.1.0"]
+      }]
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension:type.extension",
+      "path" : "AllergyIntolerance.type.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "AllergyIntolerance.type.extension:type.value[x]",
+      "path" : "AllergyIntolerance.type.extension.value[x]",
       "binding" : {
-        "strength" : "required",
+        "strength" : "preferred",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-intolerance-type|2.2.0"
       }
     },

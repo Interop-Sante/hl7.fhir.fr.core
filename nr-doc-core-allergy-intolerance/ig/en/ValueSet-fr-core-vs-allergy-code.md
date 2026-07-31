@@ -21,7 +21,7 @@ Jeu de valeurs permettant de coder l’agent responsable d’une allergie :
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
+No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
@@ -53,7 +53,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Allergy Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-20T15:52:32+00:00",
+  "date" : "2026-07-31T13:08:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
