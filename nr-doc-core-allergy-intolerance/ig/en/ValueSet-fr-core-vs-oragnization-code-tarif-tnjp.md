@@ -37,7 +37,7 @@ Valeurs permettant de coder les codes TNJP (Tarification nationale journalière 
   "title" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:08:50+00:00",
+  "date" : "2026-07-31T13:11:22+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

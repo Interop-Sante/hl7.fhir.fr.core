@@ -45,7 +45,7 @@ Jeu de valeurs contenant les codes autorisés pour les types d’allergies et d�
   "title" : "FR Core ValueSet Allergy Intolerance Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T13:08:50+00:00",
+  "date" : "2026-07-31T13:11:22+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -72,18 +72,6 @@ Jeu de valeurs contenant les codes autorisés pour les types d’allergies et d�
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/allergy-intolerance-type",
-      "version" : "4.0.1",
-      "concept" : [{
-        "code" : "allergy",
-        "display" : "allergie"
-      },
-      {
-        "code" : "intolerance",
-        "display" : "intolerance"
-      }]
-    },
-    {
       "system" : "http://snomed.info/sct",
       "concept" : [{
         "code" : "56840009",
