@@ -9,11 +9,6 @@ Description: """Jeu de valeurs permettant de coder l'agent responsable d'une all
 - Allergènes pouvant induire une contre-indication vaccinale : jdv-allergie-vaccin-cisis"""
 * insert SetValueset
 
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #informative
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 1
-
 // Médicaments : code CIP
 * include codes from system https://smt.esante.gouv.fr/terminologie-bdpm
 // Médicaments : code UCD
