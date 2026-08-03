@@ -32,7 +32,7 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrir
 * clinicalStatus ^short = "Statut clinique"
 
 * patient ^short = "Patient concerné par l'allergie ou intolérance"
-* patient only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
+* patient only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
 * reaction ^short = "Réaction observée"
 
