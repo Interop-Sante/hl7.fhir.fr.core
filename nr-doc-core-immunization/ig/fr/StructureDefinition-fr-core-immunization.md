@@ -126,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-07-31T16:55:52+00:00",
+  "date" : "2026-08-03T09:04:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -250,16 +250,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
       "binding" : {
         "extension" : [{
           "extension" : [{
-            "url" : "key",
+            "url" : "purpose",
             "valueCode" : "preferred"
           },
           {
-            "url" : "purpose",
-            "valueCode" : "extensible"
+            "url" : "valueSet",
+            "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips|1.1.0"
           },
           {
-            "url" : "valueSet",
-            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
+            "url" : "documentation",
+            "valueMarkdown" : "Additional conformance binding to a vaccines value set from the WHO ATC code system for use in specific jurisdictional or other contexts where use of the ATC terminology is preferred."
           },
           {
             "url" : "shortDoco",
@@ -283,6 +283,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immuniz
           {
             "url" : "shortDoco",
             "valueString" : "For EU cross-border use"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "key",
+            "valueId" : "fr-core-immunization-vaccinecode-translation"
+          },
+          {
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
           }],
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
         }],

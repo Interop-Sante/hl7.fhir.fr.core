@@ -1,7 +1,7 @@
 FRCore : Validation Results
 =========================================
 
-err = 11, warn = 199, info = 4390
+err = 6, warn = 200, info = 4391
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
@@ -83,7 +83,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-human-name : 0 / 0 / 19
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-human-name-assembly-order : 0 / 1 / 8
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-identity-reliability : 0 / 0 / 39
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-immunization : 5 / 4 / 152
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-immunization : 0 / 5 / 153
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-location : 0 / 0 / 72
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-location-position-lit : 0 / 0 / 10
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/StructureDefinition-fr-core-location-type-chambre : 0 / 0 / 10
@@ -1039,9 +1039,6 @@ INFORMATION: StructureDefinition.differential.element[12].binding.valueSet: Pinn
 INFORMATION: StructureDefinition.differential.element[20].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity to 2.2.0
 INFORMATION: Resource: The resource StructureDefinition/fr-core-identity-reliability could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-fr-core-immunization.json ==
-ERROR: StructureDefinition.differential.element[7].binding.extension[0].extension[0]: Unrecognized property 'valueId'
-ERROR: StructureDefinition.differential.element[7].binding.extension[0].extension[1]: Unrecognized property 'valueCode'
-ERROR: StructureDefinition.differential.element[7].binding.extension[0].extension[2]: Unrecognized property 'valueCanonical'
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
@@ -1186,7 +1183,8 @@ INFORMATION: StructureDefinition.differential.element[3].type[0].targetProfile[0
 INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct to 0.1.0
 INFORMATION: StructureDefinition.differential.element[7].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Medication to 4.0.1
 INFORMATION: StructureDefinition.differential.element[8].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips to 1.1.0
-INFORMATION: StructureDefinition.differential.element[8].binding.additional[0].valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation to 2.2.0
+INFORMATION: StructureDefinition.differential.element[8].binding.additional[0].valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips to 1.1.0
+INFORMATION: StructureDefinition.differential.element[8].binding.additional[2].valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation to 2.2.0
 INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis to 2.2.0
 INFORMATION: StructureDefinition.differential.element[15].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis to 20260619134041
 INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis to 20260619134042
@@ -1194,9 +1192,8 @@ INFORMATION: StructureDefinition.differential.element[18].type[0].targetProfile[
 INFORMATION: StructureDefinition.differential.element[19].binding.valueSet: Pinned the version of https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis to 20260619134043
 WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[77].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[77].binding.extension[1]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
-ERROR: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[77].binding.extension[2].extension[0].value.ofType(code): The Profile 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding|1.1.2' definition allows for the type id but found type code
 WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.snapshot.element[157].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
-ERROR: StructureDefinition/fr-core-immunization: StructureDefinition.differential.element[8].binding.extension[0].extension[0].value.ofType(code): The Profile 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding|1.1.2' definition allows for the type id but found type code
+WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.differential.element[8].binding.extension[0]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 WARNING: StructureDefinition/fr-core-immunization: StructureDefinition.differential.element[8].binding.extension[1]: Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained. (extension.where(url='key').exists())'
 INFORMATION: Resource: The resource StructureDefinition/fr-core-immunization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-fr-core-location.json ==
@@ -4798,7 +4795,7 @@ WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet.compose.include[4]
 WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-medication-translation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'fr-core-vs-medication-translation'): Error from https://smt.esante.gouv.fr/fhir: Error: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-cip_ucd' version '2026-07' could not be found, so the value set cannot be expanded. Valid versions: 2026-07
-Information: X-Request-Id: 102f3fce-68f9-4ab3-b91d-606e2ddcaaf9
+Information: X-Request-Id: 4066630c-6a11-4684-ac24-7d1d98094d5e
 == fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity to 2.2.0
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
