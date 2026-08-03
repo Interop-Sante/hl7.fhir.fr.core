@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-07-31T15:05:17+00:00",
+  "date" : "2026-08-03T08:32:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -232,7 +232,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
     {
       "id" : "Procedure.subject",
       "path" : "Procedure.subject",
-      "short" : "Patient concerné",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0",

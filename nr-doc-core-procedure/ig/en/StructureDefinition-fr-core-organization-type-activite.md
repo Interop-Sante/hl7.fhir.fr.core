@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationTypeActiviteExtension",
   "title" : "FR Core Organization Extension - Type d'activité",
   "status" : "active",
-  "date" : "2026-07-31T15:05:17+00:00",
+  "date" : "2026-08-03T08:32:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
