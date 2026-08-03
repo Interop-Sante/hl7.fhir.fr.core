@@ -11,7 +11,6 @@ Title: "FR Core Procedure Profile"
 Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
 
 * partOf ^short = "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l'acte (ex. produit administré lors d'un acte d'imagerie)."
-// Contrainte relâchée dans FRCore — en Doc Core : Reference(Observation or FRMedicationAdministrationDocument or FRProcedureDocument)
 
 * status ^short = "Statut de l'acte"
 
@@ -29,14 +28,10 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 // Condition EU Core non re-resserré vers FRCoreConditionProfile : pas encore mergé sur main (branche nr-doc-core-condition)
 
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
-// EU Core : Reference(Patient EU Core) — FRCorePatientProfile/FRCorePatientINSProfile héritent directement de patient-eu-core
-// Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
-* subject ^short = "Patient concerné"
 
 * performed[x] ^short = "Date de l'acte"
 
 * performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or RelatedPerson or FRCoreOrganizationProfile)
-// EU Core : Reference(PractitionerRole EU Core or Practitioner EU Core or Device or Patient EU Core or RelatedPerson or Organization EU Core)
 * performer.onBehalfOf only Reference(FRCoreOrganizationProfile) // EU Core : Reference(Organization EU Core)
 
 * extension contains FRCoreProcedurePriorityExtension named priority 0..1
