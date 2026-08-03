@@ -29,13 +29,13 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode.coding contains cis 1..1
 * vaccineCode.coding[cis].system = "https://smt.esante.gouv.fr/terminologie-bdpm"
 * vaccineCode.coding[cis] from FRCoreValueSetVaccineCodeCIS (required)
-* vaccineCode ^binding.extension[+].extension[0].url = "key"
-* vaccineCode ^binding.extension[=].extension[=].valueId = "fr-core-immunization-vaccinecode-translation"
-* vaccineCode ^binding.extension[=].extension[+].url = "purpose"
-* vaccineCode ^binding.extension[=].extension[=].valueCode = #extensible
-* vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
-* vaccineCode ^binding.extension[=].extension[=].valueCanonical = Canonical(FRCoreValueSetMedicationTranslation)
-* vaccineCode ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* vaccineCode ^binding.extension[2].url = $additional-binding
+* vaccineCode ^binding.extension[2].extension[0].url = "key"
+* vaccineCode ^binding.extension[2].extension[0].valueId = "fr-core-immunization-vaccinecode-translation"
+* vaccineCode ^binding.extension[2].extension[1].url = "purpose"
+* vaccineCode ^binding.extension[2].extension[1].valueCode = #extensible
+* vaccineCode ^binding.extension[2].extension[2].url = "valueSet"
+* vaccineCode ^binding.extension[2].extension[2].valueCanonical = Canonical(FRCoreValueSetMedicationTranslation)
 
 * lotNumber ^short = "Numéro de lot." // Doc Core
 * expirationDate ^short = "Date d'expiration du produit" // Doc Core
