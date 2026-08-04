@@ -33,16 +33,16 @@ Description: "Précision sur le degré de fiabilité de l'identité du patient (
 
 * extension[identityStatus] ^short = "Statut de confiance de l’identité au sens du RNIV (EXI SI 07) : PROV | RECUP | VALI | QUAL. Ces 4 statuts sont exclusifs les uns des autres."
 * extension[identityStatus].value[x] only Coding
-* extension[identityStatus].value[x] from FRCoreValueSetIdentityReliabilityINSStatus (required)
+* extension[identityStatus].value[x] from FRCoreValueSetIdentityReliability (required)
 
 * extension[comment] ^short = "Annotations complémentaires sur l’identité : attributs RNIV (homonyme, douteux, fictif) et codes de gestion (doublon, collision, désactivé…). Plusieurs annotations peuvent coexister."
 * extension[comment].value[x] only Coding
-* extension[comment].value[x] from FRCoreValueSetIdentityReliabilityStatus (extensible)
+* extension[comment].value[x] from FRCoreValueSetIdentityReliabilitySupplement (extensible)
 
 * extension[validationDate] ^short = "Date de vérification de l'identité"
 * extension[validationDate].value[x] only date
 
-* extension[validationMode] ^short = "Spécifie le type de document qui a été contrôlé par l'agent d'admission pour justifier le statut de l'identité. Seuls certains types de pièces définis dans le RNIV permettent de valider une identité (CN | PA | CS | ... )"
+* extension[validationMode] ^short = "Spécifie le type de document qui a été contrôlé par l'agent d'admission pour justifier le statut de l'identité. Seuls certains types de pièces définis dans le RNIV permettent de valider une identité (CN | PA | CS | ... )"
 * extension[validationMode].value[x] only Coding
 * extension[validationMode].value[x] from fr-core-vs-mode-validation-identity (required)
 

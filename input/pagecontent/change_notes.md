@@ -16,9 +16,11 @@
     * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
 * **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : restructuration de l'extension `fr-core-identity-reliability` pour modéliser les 4 statuts de confiance de l'identité [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
-#### Nouveaux codes dans le CodeSystem `fr-core-cs-v2-0445`
+#### **[BREAKING CHANGE]** Remplacement du CodeSystem `fr-core-cs-v2-0445` par deux CodeSystems dédiés
 
-Deux codes ajoutés pour couvrir les 4 statuts RNIV :
+Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem `fr-core-cs-fiabilite-identite` (doublon inutilisé du précédent) sont **supprimés**, remplacés par deux CodeSystems au périmètre explicite :
+
+* `fr-core-cs-identity-reliability` : les 4 statuts de confiance RNIV.
 
 | Code | Statut RNIV | INSi (I) | Contrôle (C) |
 |------|-------------|----------|--------------|
@@ -27,11 +29,15 @@ Deux codes ajoutés pour couvrir les 4 statuts RNIV :
 | `VALI` | Identité validée | − | + |
 | `QUAL` _(nouveau)_ | Identité qualifiée | + | + |
 
-#### Nouveau ValueSet restreint `fr-core-vs-identity-reliability-ins-status`
+* `fr-core-cs-identity-reliability-supplement` _(nouveau)_ : les 19 autres codes de l'ancien `fr-core-cs-v2-0445` (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension `comment`.
 
-Un nouveau ValueSet limité aux 4 statuts RNIV est créé. Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (4 valeurs uniquement).
+**Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l'un de ces deux nouveaux CodeSystems selon le code utilisé.
 
-**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`.
+#### ValueSets `identityStatus` et `comment`
+
+Le ValueSet `fr-core-vs-identity-reliability` (`FRCoreValueSetIdentityReliabilityStatus`) est réduit aux 4 statuts RNIV (`fr-core-cs-identity-reliability`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
+
+**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`, désormais bindée en `extensible` sur le nouveau ValueSet `fr-core-vs-identity-reliability-supplement`.
 
 Dans les versions précédentes, les annotations complémentaires pouvaient être portées dans `identityStatus` :
 
@@ -51,7 +57,7 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 {
   "url": "comment",
   "valueCoding": {
-    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement",
     "code": "DOUB"
   }
 }

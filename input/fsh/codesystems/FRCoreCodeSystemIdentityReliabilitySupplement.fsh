@@ -1,15 +1,15 @@
-CodeSystem: FRCoreCodeSystemv2_0445
-Id: fr-core-cs-v2-0445
-Title: "FR Core CodeSystem v2-0445"
-Description: "HL7 v2 - Table 0445"
+CodeSystem: FRCoreCodeSystemIdentityReliabilitySupplement
+Id: fr-core-cs-identity-reliability-supplement
+Title: "FR Core CodeSystem Identity Reliability Supplement"
+Description: "CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability."
 * insert SetCodesystem
 
-* ^status = #draft
+* ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.12.445"
+
 * ^caseSensitive = true
 * ^content = #complete
 * #VIDE "Identité non encore qualifiée" "Identité non encore qualifiée"
-* #PROV "Identité provisoire" "Identité provisoire"
-* #VALI "Identité validée" "Identité validée"
 * #DOUB "Doublon" "Doublon"
 * #DESA "Identité désactivée" "Identité désactivée"
 * #DPOT "Doublon potentiel" "Doublon potentiel"
@@ -24,12 +24,10 @@ Description: "HL7 v2 - Table 0445"
 * #IDRA "Identité rapprochée dans un autre domaine" "Identité rapprochée dans un autre domaine"
 * #USUR "Identité usurpée" "Identité usurpée"
 * #HOMD "Homonyme détecté" "Homonyme détecté"
-* #HOMA "Homonyme avéré" "Homonyme avéré"
 * #INVA "Identité invalidée" "Identité invalidée"
-* #FICT "Identité fictive (Attribut d’identité « fictive »)" "Identité fictive (Attribut d’identité « fictive »)"
-* #DOUT "Identité douteuse (Attribut d’identité « douteuse »)" "Identité douteuse (Attribut d’identité « douteuse »)"
-* #RECUP "Identité récupérée" "Identité récupérée"
-* #QUAL "Identité qualifiée" "Identité qualifiée"
+* #HOMA "Homonyme avéré (attribut d'identité homonyme)" "Homonyme avéré (attribut d'identité homonyme)"
+* #FICT "Identité fictive (attribut d'identité fictive)" "Identité fictive (attribut d'identité fictive)"
+* #DOUT "Identité douteuse (attribut d'identité douteuse)" "Identité douteuse (attribut d'identité douteuse)"
 
 // SCS profile
 * ^experimental = false
