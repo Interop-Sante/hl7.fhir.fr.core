@@ -31,7 +31,7 @@ L’unité fonctionnelle est définie par plusieurs caractéristiques permettant
 | | | | |
 | :--- | :--- | :--- | :--- |
 | Champ d’activité | **✘** | Permet de classer de façon macro une UF : MCO, HAD, PSY | [fr-core-vs-organization-champ-activite](ValueSet-fr-core-vs-organization-champ-activite.md) |
-| Type d’activité | **✔** | Permet de définir une catégorie de haut niveau d’une UF. Elle permet par exemple d’indiquer si l’UF propose une hospitalisation complète ou partielle. | [fr-core-vs-organization-type-activite](ValueSet-fr-core-vs-organtization-type-activite.md) |
+| Type d’activité | **✔** | Permet de définir une catégorie de haut niveau d’une UF. Elle permet par exemple d’indiquer si l’UF propose une hospitalisation complète ou partielle. | [fr-core-vs-organization-type-activite](ValueSet-fr-core-vs-organization-type-activite.md) |
 | Discipline d’équipement | **✔** | Permet définir la spécialité médicale ou médico-technique d’une UF, par exemple Neurochirurgie pour une activé médicale ou Radiologie vasculaire pour une UF médico-techique | [fr-core-vs-organization-discipline-equipement](ValueSet-fr-core-vs-organization-discipline-equipement.md) |
 | Indicateurs | **✔** | Permet de définir si l’UF est de type Hébergement, Médicale, etc. | [fr-core-vs-organization-uf-indicateur](ValueSet-fr-core-vs-organization-uf-indicateur.md) |
 | UF Externe | **✘** | Permet de définir si une UF est externe à l’organisation. Cette notion est utilisée pour identifier des données en provenance ou à destination d’organisation tierce, comme la délegation de prestation à une structure extérieure | [fr-core-organization-uf-externe](StructureDefinition-fr-core-organization-uf-externe.md) |
@@ -149,7 +149,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationUFProfile",
   "title" : "FR Core Organization UF Profile",
   "status" : "active",
-  "date" : "2026-08-04T12:22:31+00:00",
+  "date" : "2026-08-04T12:29:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
