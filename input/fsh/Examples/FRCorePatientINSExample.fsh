@@ -1,4 +1,3 @@
-gt
 Instance: FRCorePatientINSExample
 InstanceOf: fr-core-patient-ins
 Usage: #example
