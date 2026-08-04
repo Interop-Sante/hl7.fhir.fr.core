@@ -12,7 +12,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-08-04T12:27:17+00:00"/>
+  <date value="2026-08-04T15:42:07+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -826,10 +826,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/fr-core-cs-fiabilite-identite"/>
+        <reference value="CodeSystem/fr-core-cs-identity-reliability"/>
       </reference>
       <name value="FR Core CodeSystem Fiabilité Identité"/>
-      <description value="French Identity reliabilty codes"/>
+      <description value="CodeSystem permettant d'indiquer la fiabilité d'une identité."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -841,6 +841,17 @@
       </reference>
       <name value="FR Core CodeSystem Identifier Type"/>
       <description value="Identifier type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/fr-core-cs-identity-reliability-supplement"/>
+      </reference>
+      <name value="FR Core CodeSystem Identity Reliability Supplement"/>
+      <description value="CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1006,17 +1017,6 @@
       </reference>
       <name value="FR Core CodeSystem v2-0203"/>
       <description value="HL7 v2 - Identifier type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/fr-core-cs-v2-0445"/>
-      </reference>
-      <name value="FR Core CodeSystem v2-0445"/>
-      <description value="HL7 v2 - Table 0445"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1830,7 +1830,7 @@
         <reference value="ValueSet/fr-core-vs-identity-reliability"/>
       </reference>
       <name value="FR Core ValueSet Identity reliability"/>
-      <description value="The reliability of the identity."/>
+      <description value="Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1838,10 +1838,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-identity-reliability-ins-status"/>
+        <reference value="ValueSet/git"/>
       </reference>
-      <name value="FR Core ValueSet Identity Reliability INS Status"/>
-      <description value="Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres."/>
+      <name value="FR Core ValueSet Identity Reliability Supplement"/>
+      <description value="ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

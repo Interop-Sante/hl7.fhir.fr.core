@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-04T12:27:17+00:00",
+  "date" : "2026-08-04T15:42:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1130,13 +1130,13 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-fr-core-cs-fiabilite-identite.html"
+        "valueUri" : "CodeSystem-fr-core-cs-identity-reliability.html"
       }],
       "reference" : {
-        "reference" : "CodeSystem/fr-core-cs-fiabilite-identite"
+        "reference" : "CodeSystem/fr-core-cs-identity-reliability"
       },
       "name" : "FR Core CodeSystem Fiabilité Identité",
-      "description" : "French Identity reliabilty codes",
+      "description" : "CodeSystem permettant d'indiquer la fiabilité d'une identité.",
       "exampleBoolean" : false
     },
     {
@@ -1153,6 +1153,22 @@
       },
       "name" : "FR Core CodeSystem Identifier Type",
       "description" : "Identifier type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-identity-reliability-supplement.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fr-core-cs-identity-reliability-supplement"
+      },
+      "name" : "FR Core CodeSystem Identity Reliability Supplement",
+      "description" : "CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability.",
       "exampleBoolean" : false
     },
     {
@@ -1393,22 +1409,6 @@
       },
       "name" : "FR Core CodeSystem v2-0203",
       "description" : "HL7 v2 - Identifier type",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-fr-core-cs-v2-0445.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/fr-core-cs-v2-0445"
-      },
-      "name" : "FR Core CodeSystem v2-0445",
-      "description" : "HL7 v2 - Table 0445",
       "exampleBoolean" : false
     },
     {
@@ -2592,7 +2592,7 @@
         "reference" : "ValueSet/fr-core-vs-identity-reliability"
       },
       "name" : "FR Core ValueSet Identity reliability",
-      "description" : "The reliability of the identity.",
+      "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.",
       "exampleBoolean" : false
     },
     {
@@ -2602,13 +2602,13 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-identity-reliability-ins-status.html"
+        "valueUri" : "ValueSet-git.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-identity-reliability-ins-status"
+        "reference" : "ValueSet/git"
       },
-      "name" : "FR Core ValueSet Identity Reliability INS Status",
-      "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.",
+      "name" : "FR Core ValueSet Identity Reliability Supplement",
+      "description" : "ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability.",
       "exampleBoolean" : false
     },
     {

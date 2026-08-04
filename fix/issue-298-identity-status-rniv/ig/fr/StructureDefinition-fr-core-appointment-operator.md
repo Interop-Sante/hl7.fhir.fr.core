@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-appoint
   "name" : "FRCoreAppointmentOperatorExtension",
   "title" : "FR Core Appointment Operator Extension",
   "status" : "active",
-  "date" : "2026-08-04T12:27:17+00:00",
+  "date" : "2026-08-04T15:42:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

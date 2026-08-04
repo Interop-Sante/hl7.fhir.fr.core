@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-04T12:27:17+00:00",
+  "date" : "2026-08-04T15:42:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability-ins-status|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability|2.2.0"
       }
     },
     {
@@ -196,7 +196,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/git|2.2.0"
       }
     },
     {
@@ -228,7 +228,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       "id" : "Extension.extension:validationMode",
       "path" : "Extension.extension",
       "sliceName" : "validationMode",
-      "short" : "Spécifie le type de document qui a été contrôlé par l'agent d'admission pour justifier le statut de l'identité. Seuls certains types de pièces définis dans le RNIV permettent de valider une identité (CN | PA | CS | ... )",
+      "short" : "Spécifie le type de document qui a été contrôlé par l'agent d'admission pour justifier le statut de l'identité. Seuls certains types de pièces définis dans le RNIV permettent de valider une identité (CN | PA | CS | ... )",
       "min" : 0,
       "max" : "1"
     },

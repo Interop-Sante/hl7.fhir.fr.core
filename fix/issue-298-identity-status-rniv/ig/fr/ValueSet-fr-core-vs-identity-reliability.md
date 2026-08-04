@@ -3,7 +3,7 @@
 ## ValueSet: FR Core ValueSet Identity reliability 
 
  
-The reliability of the identity. 
+Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres. 
 
  **References** 
 
@@ -33,11 +33,11 @@ The reliability of the identity.
   "language" : "fr-FR",
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability",
   "version" : "2.2.0",
-  "name" : "FRCoreValueSetIdentityReliabilityStatus",
+  "name" : "FRCoreValueSetIdentityReliability",
   "title" : "FR Core ValueSet Identity reliability",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-04T12:27:17+00:00",
+  "date" : "2026-08-04T15:42:07+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -54,7 +54,7 @@ The reliability of the identity.
       "use" : "work"
     }]
   }],
-  "description" : "The reliability of the identity.",
+  "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -64,7 +64,7 @@ The reliability of the identity.
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability",
       "version" : "2.2.0"
     }]
   }

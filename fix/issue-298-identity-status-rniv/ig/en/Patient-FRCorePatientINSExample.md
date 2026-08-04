@@ -29,7 +29,7 @@ Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif (use: official
  | | |
 | [FR Core Patient Birthdate Update Indicator Extension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md) | false | | |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Ambléon | | |
-| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](CodeSystem-fr-core-cs-v2-0445.md#fr-core-cs-v2-0445-VALI) (Identité validée)
+| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem Fiabilité Identité: QUAL](CodeSystem-fr-core-cs-identity-reliability.md#fr-core-cs-identity-reliability-QUAL) (Identité qualifiée)
  | | |
 
 
@@ -60,8 +60,8 @@ Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif (use: official
     "extension" : [{
       "url" : "identityStatus",
       "valueCoding" : {
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
-        "code" : "VALI"
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability",
+        "code" : "QUAL"
       }
     }],
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
