@@ -16,18 +16,23 @@ status: active
 version: 2.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: trial-use
+releaseLabel: ci-build
 jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
   ans.fr.terminologies: latest
-  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.xver-r5.r4: latest
+  hl7.fhir.eu.base: 2.0.0
 
 #La liste des paramètres ainsi que leur explication est disponible ici : https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
 parameters: 
   shownav: 'true'
   path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
-  i18n-default-lang: fr-FR # Default language
+  i18n-default-lang: fr # Default language
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
   pin-canonicals: pin-all # Avoid raising many warnings when there are no version for URLs. "pin-multiples": pinning the canonical reference will only happen if there is multiple versions found in the package dependencies
   path-pages:
     - input/pagecontent
@@ -68,8 +73,10 @@ pages:
         title: Contraintes sur les profils
     structure_nomenclatures.md:
         title: Nomenclatures
-    structure_ref_loi.md: 
+    structure_ref_loi.md:
         title: Références
+    translationinfo.md:
+        title: Informations sur la traduction
 
 menu:
     Accueil: index.html

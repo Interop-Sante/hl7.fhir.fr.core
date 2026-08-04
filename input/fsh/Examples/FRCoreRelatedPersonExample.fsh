@@ -2,7 +2,7 @@ Instance: FRCoreRelatedPersonExample
 InstanceOf: fr-core-related-person
 Usage: #example
 Description: "Exemple de ressource RelatedPerson pour décrire la mère d'un patient"
-* extension[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#FR "France (la)"
+* extension[patient-nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#FR "France (la)"
 * identifier.system = "urn:oid:1.2.250.1.213.1.4.8"
 * identifier.value = "P98765"
 * patient = Reference(FRCorePatientINSExample)
