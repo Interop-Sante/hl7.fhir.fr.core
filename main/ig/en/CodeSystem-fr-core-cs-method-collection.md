@@ -1,6 +1,6 @@
-# FR Core CodeSystem Mode Validation Identite - Guide d'implémentation FR Core v2.2.0
+# FR Core CodeSystem Method Collection - Guide d'implémentation FR Core v2.2.0
 
-## CodeSystem: FR Core CodeSystem Mode Validation Identite 
+## CodeSystem: FR Core CodeSystem Method Collection 
 
  
 Méthode de collection de l’identité 
@@ -28,10 +28,10 @@ This Code system is referenced in the definition of the following value sets:
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection",
   "version" : "2.2.0",
   "name" : "FRCoreCodeSystemMethodCollection",
-  "title" : "FR Core CodeSystem Mode Validation Identite",
+  "title" : "FR Core CodeSystem Method Collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-03T12:52:25+00:00",
+  "date" : "2026-08-04T12:22:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-03T12:52:25+00:00",
+  "date" : "2026-08-04T12:22:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1231,7 +1231,7 @@
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-method-collection"
       },
-      "name" : "FR Core CodeSystem Mode Validation Identite",
+      "name" : "FR Core CodeSystem Method Collection",
       "description" : "Méthode de collection de l'identité",
       "exampleBoolean" : false
     },
