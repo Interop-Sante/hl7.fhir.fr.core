@@ -1,6 +1,6 @@
 CodeSystem: FRCoreCodeSystemMethodCollection
 Id: fr-core-cs-method-collection
-Title: "FR Core CodeSystem Mode Validation Identite"
+Title: "FR Core CodeSystem Method Collection"
 Description: "Méthode de collection de l'identité"
 * insert SetCodesystem
 
