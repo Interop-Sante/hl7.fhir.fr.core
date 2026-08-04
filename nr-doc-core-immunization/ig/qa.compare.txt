@@ -1,7 +1,7 @@
 FRCore : Validation Results
 =========================================
 
-err = 6, warn = 200, info = 4391
+err = 6, warn = 202, info = 4390
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 29 / 3 / 0
@@ -34,7 +34,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-v2-3311 : 0 / 2 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Encounter-FRCoreEncounterExample : 0 / 1 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/HealthcareService-svc-cardiologie-1 : 0 / 1 / 2
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Immunization-FRCoreImmunizationExample : 0 / 1 / 4
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Immunization-FRCoreImmunizationExample : 0 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core : 0 / 0 / 39
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Location-hopitaltest-endocrino-ch04 : 0 / 0 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Location-hopitaltest-endocrino-ch04-litF : 0 / 0 / 2
@@ -185,7 +185,7 @@ Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-schedule-unavailability-reason : 0 / 2 / 6
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-spo2-body-location : 0 / 1 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-title : 0 / 2 / 4
- /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-vaccine-code-cis : 0 / 2 / 7
+ /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vs-vaccine-code-cis : 0 / 5 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/ValueSet-fr-core-vsbody-temp-meas-body-location : 0 / 1 / 4
 </table>
 == n/a ==
@@ -338,7 +338,8 @@ WARNING: HealthcareService/svc-cardiologie-1: HealthcareService.identifier[0].sy
 INFORMATION: Immunization/FRCoreImmunizationExample: Immunization.vaccineCode: None of the codings provided are in the value set 'Vaccines - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips|1.1.0), and a coding is recommended to come from this value set (codes = https://smt.esante.gouv.fr/terminologie-bdpm#61402736)
 INFORMATION: Immunization/FRCoreImmunizationExample: Immunization.vaccineCode: None of the codings provided are in the value set 'Vaccines WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips|1.1.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = https://smt.esante.gouv.fr/terminologie-bdpm#61402736)
 INFORMATION: Immunization/FRCoreImmunizationExample: Immunization.vaccineCode: None of the codings provided are in the value set 'eHDSI Vaccine' (http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine|0.2.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = https://smt.esante.gouv.fr/terminologie-bdpm#61402736)
-WARNING: Immunization/FRCoreImmunizationExample: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-bdpm' version 'null' could not be found, so the code cannot be validated. Valid versions: 2026-07
+WARNING: Immunization/FRCoreImmunizationExample: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-bdpm' version '2026-07-01' could not be found, so the code cannot be validated. Valid versions: 2026-08-02
+WARNING: Immunization/FRCoreImmunizationExample: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-bdpm' could not be found, so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core.json ==
 INFORMATION: ImplementationGuide.definition.resource[138].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment to 2.2.0
 INFORMATION: ImplementationGuide.definition.resource[139].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter to 2.2.0
@@ -4794,8 +4795,8 @@ WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet.compose.include[3]
 WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet.compose.include[4].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-nuva/'
 WARNING: ValueSet/fr-core-vs-medication-translation: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-medication-translation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'fr-core-vs-medication-translation'): Error from https://smt.esante.gouv.fr/fhir: Error: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-cip_ucd' version '2026-07' could not be found, so the value set cannot be expanded. Valid versions: 2026-07
-Information: X-Request-Id: 4066630c-6a11-4684-ac24-7d1d98094d5e
+WARNING: ValueSet.where(id = 'fr-core-vs-medication-translation'): Error from https://smt.esante.gouv.fr/fhir: Error: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-bdpm' version '2026-07-01' could not be found, so the value set cannot be expanded. Valid versions: 2026-08-02
+Information: X-Request-Id: d837136e-3280-424a-a70f-1f6d7adbc224
 == fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity to 2.2.0
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
@@ -4994,7 +4995,8 @@ INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://smt.esan
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 WARNING: ValueSet/fr-core-vs-vaccine-code-cis: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-vaccine-code-cis should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: ValueSet.where(id = 'fr-core-vs-vaccine-code-cis'): The value set expansion is too large, and only a subset has been displayed
+WARNING: ValueSet.where(id = 'fr-core-vs-vaccine-code-cis'): Error from https://smt.esante.gouv.fr/fhir: Error: A definition for CodeSystem 'https://smt.esante.gouv.fr/terminologie-bdpm' version '2026-07-01' could not be found, so the value set cannot be expanded. Valid versions: 2026-08-02
+Information: X-Request-Id: d837136e-3280-424a-a70f-1f6d7adbc224
 == fsh-generated/resources/ValueSet-fr-core-vsbody-temp-meas-body-location.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 INFORMATION: ValueSet/fr-core-vsbody-temp-meas-body-location: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)

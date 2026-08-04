@@ -15,6 +15,8 @@ Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identif
 
 ### Expansion
 
+No Expansion for this valueset (Unsupported Code System Version)
+
 -------
 
  [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -37,7 +39,7 @@ Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identif
   "title" : "FR Core ValueSet Vaccine code CIS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-03T09:04:08+00:00",
+  "date" : "2026-08-04T12:14:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
