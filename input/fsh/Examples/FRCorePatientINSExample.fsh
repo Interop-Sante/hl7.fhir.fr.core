@@ -4,7 +4,7 @@ Usage: #example
 Description: "Exemple de ressource Patient (cas d'usage INS)"
 
 // identityReliability
-* extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability#QUAL
+* extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status#QUAL
 
 // birthPlace
 * extension[birthPlace].valueAddress.extension[inseeCode].valueCoding = https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM#01006
