@@ -8,6 +8,25 @@ Reliabilility of the patient’s identity
 
 **Context of Use**
 
+### Usage
+
+Cette extension composite, positionnée sur `Patient`, permet de documenter le degré de confiance accordé à l’identité d’un patient ainsi que les éléments qui ont permis d’établir ce degré de confiance (mode d’obtention de l’INS, contrôle de cohérence, justificatif utilisé…).
+
+Elle regroupe 6 sous-extensions :
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| `methodCollection` | 0..1 | Mode d’obtention de l’INS (SM, CV, INSi…) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
+| `dateCollection` | 0..1 | Date d’interrogation du téléservice INSi | `date` |
+| `identityStatus` | 0..1 | Statut de confiance de l’identité au sens du RNIV (`PROV`,`RECUP`,`VALI`,`QUAL`) | [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md) |
+| `comment` | 0..* | Annotations complémentaires sur l’identité (attributs RNIV, codes de gestion) | [fr-core-vs-identity-status-comment](ValueSet-fr-core-vs-identity-status-comment.md) |
+| `validationDate` | 0..1 | Date de vérification de l’identité | `date` |
+| `validationMode` | 0..1 | Type de document contrôlé pour justifier le statut de l’identité (CN, PA, CS…) | [fr-core-vs-mode-validation-identity](ValueSet-fr-core-vs-mode-validation-identity.md) |
+
+### Statut de confiance de l’identité
+
+Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) portés par la sous-extension `identityStatus` est décrit sur la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md).
+
 **Usage info**
 
 **Usages:**
@@ -38,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-07T08:58:25+00:00",
+  "date" : "2026-08-07T11:55:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
