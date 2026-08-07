@@ -37,7 +37,7 @@ the French Address Insee Codes
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-07T08:01:10+00:00",
+  "date" : "2026-08-07T08:58:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

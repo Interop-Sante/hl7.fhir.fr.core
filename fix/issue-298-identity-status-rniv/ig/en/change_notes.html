@@ -288,7 +288,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Le CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-fiabilite-identite</code> (doublon inutilisé du précédent) sont <strong>supprimés</strong>, remplacés par deux CodeSystems au périmètre explicite :</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-reliability</code> : les 4 statuts de confiance RNIV.</li>
+  <li><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-status</code> (<code class="language-plaintext highlighter-rouge">FRCoreCodeSystemIdentityStatus</code>) : les 4 statuts de confiance RNIV.</li>
 </ul>
 
 <table>
@@ -329,16 +329,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-reliability-supplement</code> <em>(nouveau)</em> : les 19 autres codes de l’ancien <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension <code class="language-plaintext highlighter-rouge">comment</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-status-comment</code> (<code class="language-plaintext highlighter-rouge">FRCoreCodeSystemIdentityStatusComment</code>) <em>(nouveau)</em> : les 19 autres codes de l’ancien <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension <code class="language-plaintext highlighter-rouge">comment</code>.</li>
 </ul>
 
 <p><strong>Impact pour les implémenteurs</strong> : toute référence à <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> ou <code class="language-plaintext highlighter-rouge">fr-core-cs-fiabilite-identite</code> doit être mise à jour vers l’un de ces deux nouveaux CodeSystems selon le code utilisé.</p>
 
 <h4 id="valuesets-identitystatus-et-comment">ValueSets <code class="language-plaintext highlighter-rouge">identityStatus</code> et <code class="language-plaintext highlighter-rouge">comment</code></h4>
 
-<p>Le ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-reliability</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityReliabilityStatus</code>) est réduit aux 4 statuts RNIV (<code class="language-plaintext highlighter-rouge">fr-core-cs-identity-reliability</code>). Le binding de la sous-extension <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">extensible</code> (tous les codes <code class="language-plaintext highlighter-rouge">v2-0445</code>) à <code class="language-plaintext highlighter-rouge">required</code> (ces 4 valeurs uniquement).</p>
+<p>Le ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityStatus</code>) est réduit aux 4 statuts RNIV (<code class="language-plaintext highlighter-rouge">fr-core-cs-identity-status</code>). Le binding de la sous-extension <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">extensible</code> (tous les codes <code class="language-plaintext highlighter-rouge">v2-0445</code>) à <code class="language-plaintext highlighter-rouge">required</code> (ces 4 valeurs uniquement).</p>
 
-<p><strong>Impact pour les implémenteurs</strong> : les ressources utilisant des codes autres que <code class="language-plaintext highlighter-rouge">PROV</code>, <code class="language-plaintext highlighter-rouge">RECUP</code>, <code class="language-plaintext highlighter-rouge">VALI</code> ou <code class="language-plaintext highlighter-rouge">QUAL</code> dans <code class="language-plaintext highlighter-rouge">identityStatus</code> (ex. <code class="language-plaintext highlighter-rouge">DOUB</code>, <code class="language-plaintext highlighter-rouge">FICT</code>, <code class="language-plaintext highlighter-rouge">DOUT</code>…) doivent migrer ces valeurs vers la nouvelle sous-extension <code class="language-plaintext highlighter-rouge">comment</code>, désormais bindée en <code class="language-plaintext highlighter-rouge">extensible</code> sur le nouveau ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-reliability-supplement</code>.</p>
+<p><strong>Impact pour les implémenteurs</strong> : les ressources utilisant des codes autres que <code class="language-plaintext highlighter-rouge">PROV</code>, <code class="language-plaintext highlighter-rouge">RECUP</code>, <code class="language-plaintext highlighter-rouge">VALI</code> ou <code class="language-plaintext highlighter-rouge">QUAL</code> dans <code class="language-plaintext highlighter-rouge">identityStatus</code> (ex. <code class="language-plaintext highlighter-rouge">DOUB</code>, <code class="language-plaintext highlighter-rouge">FICT</code>, <code class="language-plaintext highlighter-rouge">DOUT</code>…) doivent migrer ces valeurs vers la nouvelle sous-extension <code class="language-plaintext highlighter-rouge">comment</code>, désormais bindée en <code class="language-plaintext highlighter-rouge">extensible</code> sur le nouveau ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status-comment</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityStatusComment</code>).</p>
 
 <p>Dans les versions précédentes, les annotations complémentaires pouvaient être portées dans <code class="language-plaintext highlighter-rouge">identityStatus</code> :</p>
 
@@ -356,7 +356,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"comment"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"valueCoding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DOUB"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -376,42 +376,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La cardinalité de <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">0..1</code> à <code class="language-plaintext highlighter-rouge">1..1</code> dans le profil Patient INS pour satisfaire EXI SI 07.</p>
 
-<h4 id="breaking-change-renommage-des-artefacts-identityreliability-en-identitystatus"><strong>[BREAKING CHANGE]</strong> Renommage des artefacts <code class="language-plaintext highlighter-rouge">IdentityReliability</code> en <code class="language-plaintext highlighter-rouge">IdentityStatus</code></h4>
-
-<p>Le RNIV parle de « statut de confiance » / « statut de l’identité », jamais de « fiabilité », et l’extension utilise déjà <code class="language-plaintext highlighter-rouge">identityStatus</code> pour désigner la sous-extension concernée. Le CodeSystem et les ValueSets des 4 statuts sont renommés en conséquence :</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Ancien nom</th>
-      <th>Nouveau nom</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-reliability</code> (<code class="language-plaintext highlighter-rouge">FRCoreCodeSystemIdentityReliability</code>)</td>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-status</code> (<code class="language-plaintext highlighter-rouge">FRCoreCodeSystemIdentityStatus</code>)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-reliability-supplement</code> (<code class="language-plaintext highlighter-rouge">FRCoreCodeSystemIdentityReliabilitySupplement</code>)</td>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-cs-identity-status-comment</code> (<code class="language-plaintext highlighter-rouge">FRCoreCodeSystemIdentityStatusComment</code>)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-vs-identity-reliability</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityReliability</code>)</td>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityStatus</code>)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-vs-identity-reliability-supplement</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityReliabilitySupplement</code>)</td>
-      <td><code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status-comment</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityStatusComment</code>)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>L’extension elle-même (<code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code> / <code class="language-plaintext highlighter-rouge">FRCorePatientIdentityReliabilityExtension</code>) n’est pas renommée.</p>
-
-<p><strong>Impact pour les implémenteurs</strong> : toute référence à l’une des anciennes URLs canoniques ci-dessus (bindings, <code class="language-plaintext highlighter-rouge">system</code> de <code class="language-plaintext highlighter-rouge">Coding</code>) doit être mise à jour vers le nouveau nom correspondant.</p>
-
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1150">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1029">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -669,7 +634,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2215">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2094">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -690,7 +655,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2298">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2177">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -698,7 +663,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2316">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2195">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -809,7 +774,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-07 08:01:00 +0000">
+  <span title="2026-08-07 08:58:00 +0000">
     2026-08-07
   </span>
 

@@ -20,7 +20,7 @@
 
 Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem `fr-core-cs-fiabilite-identite` (doublon inutilisé du précédent) sont **supprimés**, remplacés par deux CodeSystems au périmètre explicite :
 
-* `fr-core-cs-identity-reliability` : les 4 statuts de confiance RNIV.
+* `fr-core-cs-identity-status` (`FRCoreCodeSystemIdentityStatus`) : les 4 statuts de confiance RNIV.
 
 | Code | Statut RNIV | INSi (I) | Contrôle (C) |
 |------|-------------|----------|--------------|
@@ -29,15 +29,15 @@ Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant stat
 | `VALI` | Identité validée | − | + |
 | `QUAL` _(nouveau)_ | Identité qualifiée | + | + |
 
-* `fr-core-cs-identity-reliability-supplement` _(nouveau)_ : les 19 autres codes de l'ancien `fr-core-cs-v2-0445` (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension `comment`.
+* `fr-core-cs-identity-status-comment` (`FRCoreCodeSystemIdentityStatusComment`) _(nouveau)_ : les 19 autres codes de l'ancien `fr-core-cs-v2-0445` (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension `comment`.
 
 **Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l'un de ces deux nouveaux CodeSystems selon le code utilisé.
 
 #### ValueSets `identityStatus` et `comment`
 
-Le ValueSet `fr-core-vs-identity-reliability` (`FRCoreValueSetIdentityReliabilityStatus`) est réduit aux 4 statuts RNIV (`fr-core-cs-identity-reliability`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
+Le ValueSet `fr-core-vs-identity-status` (`FRCoreValueSetIdentityStatus`) est réduit aux 4 statuts RNIV (`fr-core-cs-identity-status`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
 
-**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`, désormais bindée en `extensible` sur le nouveau ValueSet `fr-core-vs-identity-reliability-supplement`.
+**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`, désormais bindée en `extensible` sur le nouveau ValueSet `fr-core-vs-identity-status-comment` (`FRCoreValueSetIdentityStatusComment`).
 
 Dans les versions précédentes, les annotations complémentaires pouvaient être portées dans `identityStatus` :
 
@@ -57,7 +57,7 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 {
   "url": "comment",
   "valueCoding": {
-    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement",
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
     "code": "DOUB"
   }
 }
@@ -74,21 +74,6 @@ Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent 
 #### `identityStatus` obligatoire dans `FRCorePatientINSProfile`
 
 La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
-
-#### **[BREAKING CHANGE]** Renommage des artefacts `IdentityReliability` en `IdentityStatus`
-
-Le RNIV parle de « statut de confiance » / « statut de l'identité », jamais de « fiabilité », et l'extension utilise déjà `identityStatus` pour désigner la sous-extension concernée. Le CodeSystem et les ValueSets des 4 statuts sont renommés en conséquence :
-
-| Ancien nom | Nouveau nom |
-|---|---|
-| `fr-core-cs-identity-reliability` (`FRCoreCodeSystemIdentityReliability`) | `fr-core-cs-identity-status` (`FRCoreCodeSystemIdentityStatus`) |
-| `fr-core-cs-identity-reliability-supplement` (`FRCoreCodeSystemIdentityReliabilitySupplement`) | `fr-core-cs-identity-status-comment` (`FRCoreCodeSystemIdentityStatusComment`) |
-| `fr-core-vs-identity-reliability` (`FRCoreValueSetIdentityReliability`) | `fr-core-vs-identity-status` (`FRCoreValueSetIdentityStatus`) |
-| `fr-core-vs-identity-reliability-supplement` (`FRCoreValueSetIdentityReliabilitySupplement`) | `fr-core-vs-identity-status-comment` (`FRCoreValueSetIdentityStatusComment`) |
-
-L'extension elle-même (`fr-core-identity-reliability` / `FRCorePatientIdentityReliabilityExtension`) n'est pas renommée.
-
-**Impact pour les implémenteurs** : toute référence à l'une des anciennes URLs canoniques ci-dessus (bindings, `system` de `Coding`) doit être mise à jour vers le nouveau nom correspondant.
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
