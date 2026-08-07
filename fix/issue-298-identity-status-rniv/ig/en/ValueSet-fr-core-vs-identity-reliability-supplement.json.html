@@ -10,7 +10,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FR Core ValueSet Identity Reliability Supplement - TTL Representation - Guide d&#39;implémentation FR Core v2.2.0</title>
+    <title>FR Core ValueSet Identity Reliability Supplement - JSON Representation - Guide d&#39;implémentation FR Core v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -183,7 +183,7 @@
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
     <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
 
-    <div><a href="../fr/ValueSet-git.ttl.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+    <div><a href="../fr/ValueSet-fr-core-vs-identity-reliability-supplement.json.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
 
   </div>
 </div>
@@ -203,11 +203,11 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="ValueSet-git.json.html">&lt; prev</a> | 
+            <a href="ValueSet-fr-core-vs-identity-reliability-supplement.xml.html">&lt; prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ValueSet-fr-core-vs-insee-code.html">next &gt;</a>
+          | <a href="ValueSet-fr-core-vs-identity-reliability-supplement.ttl.html">next &gt;</a>
 
           </span>
 
@@ -222,7 +222,7 @@
           <div class="inner-wrapper">
 
 <!-- layouts\layout-instance-format -->
-<div style="counter-reset: section 9" class="col-12">
+<div style="counter-reset: section 8" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hl7.fr/ig/fhir/core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
@@ -238,28 +238,28 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-git.html">Narrative Content</a>
+    <a href="ValueSet-fr-core-vs-identity-reliability-supplement.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ValueSet-git.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-git.json.html">JSON</a>
+      <a href="ValueSet-fr-core-vs-identity-reliability-supplement.xml.html">XML</a>
     </li>
   
 
 
   
     <li class="active">
-      <a href="#">TTL</a>
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-fr-core-vs-identity-reliability-supplement.ttl.html">TTL</a>
     </li>
   
 
@@ -283,7 +283,7 @@
           
 
             as of 
-2026-08-04
+2026-08-07
 
           
         
@@ -293,88 +293,76 @@
   </table>
 
 
-<p><a href="ValueSet-git.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-git.ttl" download>Download</a></p>
+<p><a href="ValueSet-fr-core-vs-identity-reliability-supplement.json" no-download="true">Raw json</a> | <a href="ValueSet-fr-core-vs-identity-reliability-supplement.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/git&gt; a fhir:ValueSet ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;git&quot;] ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1&quot; ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1&gt;
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet git&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;en-git\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;en-hcgit\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Language: fr-FR&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt; version: 4.0.1&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-fr-core-cs-identity-reliability-supplement.html\&quot;&gt;&lt;code&gt;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is explicitly stated to be 2.2.0\&quot;&gt; version ?2.2.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://hl7.fr/ig/fhir/core/ValueSet/git&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.2.0&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FRCoreValueSetIdentityReliabilitySupplement&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FR Core ValueSet Identity Reliability Supplement&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:ValueSet.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-08-04T15:42:07+00:00&quot;^^xsd:dateTime] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Interop'Santé&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Interop'Santé&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://interopsante.org&quot; ]
-     ]
-  ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;InteropSanté&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhir@interopsante.org&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">fhir:ContactPoint.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;work&quot; ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability.&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">fhir:ValueSet.jurisdiction</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;FR&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;France (la)&quot; ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">fhir:ValueSet.compose.include.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.2.0&quot; ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/git.ttl&gt; a owl:Ontology ;
-  owl:imports fhir:fhir.ttl ;
-  owl:versionIRI &lt;http://build.fhir.org/ValueSet/git.ttl&gt; .
-
-</code></pre>
-
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "fr-core-vs-identity-reliability-supplement",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="http://hl7.org/fhir/R4/shareablevalueset.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.language">language</a>" : "en",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet fr-core-vs-identity-reliability-supplement&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;en-fr-core-vs-identity-reliability-supplement\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;en-hcfr-core-vs-identity-reliability-supplement\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Language: fr-FR&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt; version: 4.0.1&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-fr-core-cs-identity-reliability-supplement.html\&quot;&gt;&lt;code&gt;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is explicitly stated to be 2.2.0\&quot;&gt; version &amp;#x1F4CD;2.2.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability-supplement",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.2.0",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "FRCoreValueSetIdentityReliabilitySupplement",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "FR Core ValueSet Identity Reliability Supplement",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2026-08-07T07:47:42+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Interop'Santé",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Interop'Santé",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://interopsante.org"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "InteropSanté",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "fhir@interopsante.org",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "FR",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "France (la)"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-supplement",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">version</a>" : "2.2.0"
+      }
+    ]
+  }
+}</code></pre>
 
 
   <!-- insert notes if present -->
@@ -405,7 +393,7 @@
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="ValueSet-git.json.html">&lt; prev</a>
+                <a href="ValueSet-fr-core-vs-identity-reliability-supplement.xml.html">&lt; prev</a>
 
               </td>
               <td style="text-align:center">
@@ -413,7 +401,7 @@
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="ValueSet-fr-core-vs-insee-code.html">next ></a>
+                <a href="ValueSet-fr-core-vs-identity-reliability-supplement.ttl.html">next ></a>
 
               </td>
             </tr>
@@ -429,8 +417,8 @@
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-04 15:42:00 +0000">
-    2026-08-04
+  <span title="2026-08-07 07:47:00 +0000">
+    2026-08-07
   </span>
 
           <br/>

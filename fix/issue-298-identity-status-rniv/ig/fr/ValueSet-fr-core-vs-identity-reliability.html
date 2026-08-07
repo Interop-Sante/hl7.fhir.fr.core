@@ -299,7 +299,7 @@
           
 
             à partir de 
-2026-08-04
+2026-08-07
 
           
         
@@ -335,6 +335,70 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Ce ValueSet définit les <strong>4 statuts de confiance</strong> de l’identité imposés par le Référentiel National d’Identitovigilance (RNIV) [EXI SI 07] :</p>
+
+<blockquote>
+  <p>« Tout système d’information en santé doit permettre d’attribuer un des 4 statuts de confiance à chaque identité numérique stockée. »</p>
+</blockquote>
+
+<p>Ces statuts sont <strong>exclusifs les uns des autres</strong>. Ils résultent du croisement de deux axes indépendants :</p>
+
+<ul>
+  <li><strong>I</strong> : les traits d’identité ont été récupérés via le téléservice INSi (+) ou non (−)</li>
+  <li><strong>C</strong> : un contrôle de cohérence a été effectué avec un dispositif d’identification à haut niveau de confiance (+) ou non (−)</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Statut RNIV</th>
+      <th>INSi (I)</th>
+      <th>Contrôle (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PROV</code></td>
+      <td>Identité provisoire</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RECUP</code></td>
+      <td>Identité récupérée</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">VALI</code></td>
+      <td>Identité validée</td>
+      <td>−</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">QUAL</code></td>
+      <td>Identité qualifiée</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Seul le statut <strong>Identité qualifiée</strong> (<code class="language-plaintext highlighter-rouge">QUAL</code>) autorise le référencement des données de santé échangées avec le matricule INS [EXI SI 08].</p>
+
+<p>Ce ValueSet est utilisé avec un binding <code class="language-plaintext highlighter-rouge">required</code> dans la sous-extension <code class="language-plaintext highlighter-rouge">identityStatus</code> de l’extension <a href="StructureDefinition-fr-core-identity-reliability.html">FR Core Patient Identity Reliability</a>.</p>
+
+
+</div>
+
+
+
+
   <a name="definition"> </a>
 
 <!-- Content Logical Definition heading in the fragment -->
@@ -347,7 +411,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur <a href="CodeSystem-fr-core-cs-identity-reliability.html">codesystem FR Core CodeSystem Fiabilité Identité v2.2.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 4 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>Système</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage (fr-FR)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-PROV"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-PROV">PROV</a></td><td>Identité provisoire</td><td>Identité provisoire</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;PROV&quot;, &quot;display&quot;: &quot;Identité provisoire&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;PROV&quot;&gt;&lt;display value=&quot;Identité provisoire&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-VALI"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-VALI">VALI</a></td><td>Identité validée</td><td>Identité validée</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;VALI&quot;, &quot;display&quot;: &quot;Identité validée&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;VALI&quot;&gt;&lt;display value=&quot;Identité validée&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-RECUP"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-RECUP">RECUP</a></td><td>Identité récupérée</td><td>Identité récupérée</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;RECUP&quot;, &quot;display&quot;: &quot;Identité récupérée&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;RECUP&quot;&gt;&lt;display value=&quot;Identité récupérée&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-QUAL"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-QUAL">QUAL</a></td><td>Identité qualifiée</td><td>Identité qualifiée</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;QUAL&quot;, &quot;display&quot;: &quot;Identité qualifiée&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;QUAL&quot;&gt;&lt;display value=&quot;Identité qualifiée&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur <a href="CodeSystem-fr-core-cs-identity-reliability.html">codesystem FR Core CodeSystem Fiabilité Identité v2.2.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability|2.2.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 4 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>Système</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage (fr-FR)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-PROV"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-PROV">PROV</a></td><td>Identité provisoire</td><td>Statut d'une identité locale qui n'a pas été récupérée sur le téléservice INSi et qui n'a pas encore fait l'objet d'un contrôle de cohérence avec les traits portés par un dispositif d'identification à haut niveau de confiance ou son équivalent.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;PROV&quot;, &quot;display&quot;: &quot;Identité provisoire&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;PROV&quot;&gt;&lt;display value=&quot;Identité provisoire&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-VALI"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-VALI">VALI</a></td><td>Identité validée</td><td>Statut d'une identité qui n'a pas été récupérée sur le téléservice INSi mais qui a fait l'objet d'un contrôle de cohérence avec le jeu de traits portés par un dispositif d'identification à haut niveau de confiance, ce qui garantit l'absence d'erreur dans l'enregistrement des traits d'identité d'un usager.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;VALI&quot;, &quot;display&quot;: &quot;Identité validée&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;VALI&quot;&gt;&lt;display value=&quot;Identité validée&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-RECUP"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-RECUP">RECUP</a></td><td>Identité récupérée</td><td>Statut d'une identité locale qui a été récupérée sur le téléservice INSi après avoir été comparée avec succès aux traits de la personne physique mais qui n'a pas encore pu être contrôlée à partir d'un document d'identification à haut niveau de confiance.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;RECUP&quot;, &quot;display&quot;: &quot;Identité récupérée&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;RECUP&quot;&gt;&lt;display value=&quot;Identité récupérée&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability-QUAL"> </a><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability</code></td><td style="white-space:nowrap">  <a href="CodeSystem-fr-core-cs-identity-reliability.html#fr-core-cs-identity-reliability-QUAL">QUAL</a></td><td>Identité qualifiée</td><td>Statut d'une identité locale qui a été récupérée via le téléservice INSi, puis comparée avec succès aux traits de la personne physique prise en charge portés par un dispositif d'identification à haut niveau de confiance ou son équivalent.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;, &quot;version&quot;: &quot;2.2.0&quot;, &quot;code&quot;: &quot;QUAL&quot;, &quot;display&quot;: &quot;Identité qualifiée&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-reliability&quot;&gt;&lt;version value=&quot;2.2.0&quot;&gt;&lt;code value=&quot;QUAL&quot;&gt;&lt;display value=&quot;Identité qualifiée&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button></span></td></tr></table></div>
 
   <hr/>
   <p>
@@ -410,8 +474,8 @@
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-08-04 15:42:00 +0000">
-    2026-08-04
+  <span title="2026-08-07 07:47:00 +0000">
+    2026-08-07
   </span>
 
           <br/>

@@ -75,7 +75,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-04T15:42:07+00:00",
+  "date" : "2026-08-07T07:47:42+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -233,7 +233,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       }],
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/git|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability-supplement|2.2.0"
       }
     },
     {

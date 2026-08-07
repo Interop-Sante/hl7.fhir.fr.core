@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-08-04T15:42:07+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-08-07T07:47:42+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -1209,7 +1209,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/fr-core-cs-identity-reliability" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core CodeSystem Fiabilité Identité" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem permettant d'indiquer la fiabilité d'une identité." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem définissant les 4 statuts de confiance de l'identité imposés par le référentiel national d'identitovigilance (RNIV) [EXI SI 07] : « Tout système d'information en santé doit permettre d'attribuer un des 4 statuts de confiance à chaque identité numérique stockée. » Ces statuts sont exclusifs les uns des autres et résultent du croisement de deux critères indépendants : la récupération ou non des traits d'identité via le téléservice INSi, et la réalisation ou non d'un contrôle de cohérence avec un dispositif d'identification à haut niveau de confiance." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -2493,8 +2493,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/git> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/git" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-reliability-supplement> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-identity-reliability-supplement" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet Identity Reliability Supplement" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability." ] ;

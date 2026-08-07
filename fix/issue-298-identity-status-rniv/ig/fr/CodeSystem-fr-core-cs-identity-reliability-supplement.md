@@ -7,7 +7,7 @@ CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetIdentityReliabilitySupplement](ValueSet-git.md)
+* [FRCoreValueSetIdentityReliabilitySupplement](ValueSet-fr-core-vs-identity-reliability-supplement.md)
 
 -------
 
@@ -35,7 +35,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Identity Reliability Supplement",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-04T15:42:07+00:00",
+  "date" : "2026-08-07T07:47:42+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
