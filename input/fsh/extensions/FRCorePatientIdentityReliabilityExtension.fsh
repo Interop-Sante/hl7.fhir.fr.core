@@ -1,4 +1,4 @@
-Extension: FRCorePatientIdentityReliabilityExtension //TODO : meilleur nom?
+Extension: FRCorePatientIdentityReliabilityExtension
 Id: fr-core-identity-reliability
 Title: "FR Core Patient Ident Reliability Extension"
 Description: "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity"
