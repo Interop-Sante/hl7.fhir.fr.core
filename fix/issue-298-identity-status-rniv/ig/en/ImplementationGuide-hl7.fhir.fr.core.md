@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-07T07:47:42+00:00",
+  "date" : "2026-08-07T08:01:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1130,10 +1130,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-fr-core-cs-identity-reliability.html"
+        "valueUri" : "CodeSystem-fr-core-cs-identity-status.html"
       }],
       "reference" : {
-        "reference" : "CodeSystem/fr-core-cs-identity-reliability"
+        "reference" : "CodeSystem/fr-core-cs-identity-status"
       },
       "name" : "FR Core CodeSystem Fiabilité Identité",
       "description" : "CodeSystem définissant les 4 statuts de confiance de l'identité imposés par le référentiel national d'identitovigilance (RNIV) [EXI SI 07] : « Tout système d'information en santé doit permettre d'attribuer un des 4 statuts de confiance à chaque identité numérique stockée. » Ces statuts sont exclusifs les uns des autres et résultent du croisement de deux critères indépendants : la récupération ou non des traits d'identité via le téléservice INSi, et la réalisation ou non d'un contrôle de cohérence avec un dispositif d'identification à haut niveau de confiance.",
@@ -1162,12 +1162,12 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-fr-core-cs-identity-reliability-supplement.html"
+        "valueUri" : "CodeSystem-fr-core-cs-identity-status-comment.html"
       }],
       "reference" : {
-        "reference" : "CodeSystem/fr-core-cs-identity-reliability-supplement"
+        "reference" : "CodeSystem/fr-core-cs-identity-status-comment"
       },
-      "name" : "FR Core CodeSystem Identity Reliability Supplement",
+      "name" : "FR Core CodeSystem Identity Status Comment",
       "description" : "CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability.",
       "exampleBoolean" : false
     },
@@ -2586,12 +2586,12 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-identity-reliability.html"
+        "valueUri" : "ValueSet-fr-core-vs-identity-status.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-identity-reliability"
+        "reference" : "ValueSet/fr-core-vs-identity-status"
       },
-      "name" : "FR Core ValueSet Identity reliability",
+      "name" : "FR Core ValueSet Identity Status",
       "description" : "Les 4 statuts de confiance de l'identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres.",
       "exampleBoolean" : false
     },
@@ -2602,12 +2602,12 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-identity-reliability-supplement.html"
+        "valueUri" : "ValueSet-fr-core-vs-identity-status-comment.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-identity-reliability-supplement"
+        "reference" : "ValueSet/fr-core-vs-identity-status-comment"
       },
-      "name" : "FR Core ValueSet Identity Reliability Supplement",
+      "name" : "FR Core ValueSet Identity Status Comment",
       "description" : "ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability.",
       "exampleBoolean" : false
     },

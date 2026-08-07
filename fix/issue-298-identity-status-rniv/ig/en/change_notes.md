@@ -87,6 +87,21 @@ Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent 
 
 La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
 
+#### [BREAKING CHANGE] Renommage des artefacts IdentityReliability en IdentityStatus
+
+Le RNIV parle de « statut de confiance » / « statut de l’identité », jamais de « fiabilité », et l’extension utilise déjà `identityStatus` pour désigner la sous-extension concernée. Le CodeSystem et les ValueSets des 4 statuts sont renommés en conséquence :
+
+| | |
+| :--- | :--- |
+| `fr-core-cs-identity-reliability`(`FRCoreCodeSystemIdentityReliability`) | `fr-core-cs-identity-status`(`FRCoreCodeSystemIdentityStatus`) |
+| `fr-core-cs-identity-reliability-supplement`(`FRCoreCodeSystemIdentityReliabilitySupplement`) | `fr-core-cs-identity-status-comment`(`FRCoreCodeSystemIdentityStatusComment`) |
+| `fr-core-vs-identity-reliability`(`FRCoreValueSetIdentityReliability`) | `fr-core-vs-identity-status`(`FRCoreValueSetIdentityStatus`) |
+| `fr-core-vs-identity-reliability-supplement`(`FRCoreValueSetIdentityReliabilitySupplement`) | `fr-core-vs-identity-status-comment`(`FRCoreValueSetIdentityStatusComment`) |
+
+L’extension elle-même (`fr-core-identity-reliability` / `FRCorePatientIdentityReliabilityExtension`) n’est pas renommée.
+
+**Impact pour les implémenteurs** : toute référence à l’une des anciennes URLs canoniques ci-dessus (bindings, `system` de `Coding`) doit être mise à jour vers le nouveau nom correspondant.
+
 ### Release 2.2.0 de l’Implementation Guide FRCore
 
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :

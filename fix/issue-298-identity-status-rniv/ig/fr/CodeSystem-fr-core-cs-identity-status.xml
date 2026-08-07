@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fr-core-cs-identity-status"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"/>
+  </meta>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : CodeSystem fr-core-cs-identity-status</b></p><a name="fr-core-cs-identity-status"> </a><a name="hcfr-core-cs-identity-status"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr-FR</p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablecodesystem.html">Shareable CodeSystem</a> version : 4.0.1</p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style="white-space:nowrap">PROV<a name="fr-core-cs-identity-status-PROV"> </a></td><td>Identité provisoire</td><td>Statut d'une identité locale qui n'a pas été récupérée sur le téléservice INSi et qui n'a pas encore fait l'objet d'un contrôle de cohérence avec les traits portés par un dispositif d'identification à haut niveau de confiance ou son équivalent.</td></tr><tr><td style="white-space:nowrap">VALI<a name="fr-core-cs-identity-status-VALI"> </a></td><td>Identité validée</td><td>Statut d'une identité qui n'a pas été récupérée sur le téléservice INSi mais qui a fait l'objet d'un contrôle de cohérence avec le jeu de traits portés par un dispositif d'identification à haut niveau de confiance, ce qui garantit l'absence d'erreur dans l'enregistrement des traits d'identité d'un usager.</td></tr><tr><td style="white-space:nowrap">RECUP<a name="fr-core-cs-identity-status-RECUP"> </a></td><td>Identité récupérée</td><td>Statut d'une identité locale qui a été récupérée sur le téléservice INSi après avoir été comparée avec succès aux traits de la personne physique mais qui n'a pas encore pu être contrôlée à partir d'un document d'identification à haut niveau de confiance.</td></tr><tr><td style="white-space:nowrap">QUAL<a name="fr-core-cs-identity-status-QUAL"> </a></td><td>Identité qualifiée</td><td>Statut d'une identité locale qui a été récupérée via le téléservice INSi, puis comparée avec succès aux traits de la personne physique prise en charge portés par un dispositif d'identification à haut niveau de confiance ou son équivalent.</td></tr></table></div>
+  </text>
+  <url value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status"/>
+  <version value="2.2.0"/>
+  <name value="FRCoreCodeSystemIdentityStatus"/>
+  <title value="FR Core CodeSystem Fiabilité Identité"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-07T08:01:10+00:00"/>
+  <publisher value="Interop'Santé"/>
+  <contact>
+    <name value="Interop'Santé"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://interopsante.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="InteropSanté"/>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@interopsante.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem définissant les 4 statuts de confiance de l'identité imposés par le référentiel national d'identitovigilance (RNIV) [EXI SI 07] : « Tout système d'information en santé doit permettre d'attribuer un des 4 statuts de confiance à chaque identité numérique stockée. » Ces statuts sont exclusifs les uns des autres et résultent du croisement de deux critères indépendants : la récupération ou non des traits d'identité via le téléservice INSi, et la réalisation ou non d'un contrôle de cohérence avec un dispositif d'identification à haut niveau de confiance."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="PROV"/>
+    <display value="Identité provisoire"/>
+    <definition value="Statut d'une identité locale qui n'a pas été récupérée sur le téléservice INSi et qui n'a pas encore fait l'objet d'un contrôle de cohérence avec les traits portés par un dispositif d'identification à haut niveau de confiance ou son équivalent."/>
+  </concept>
+  <concept>
+    <code value="VALI"/>
+    <display value="Identité validée"/>
+    <definition value="Statut d'une identité qui n'a pas été récupérée sur le téléservice INSi mais qui a fait l'objet d'un contrôle de cohérence avec le jeu de traits portés par un dispositif d'identification à haut niveau de confiance, ce qui garantit l'absence d'erreur dans l'enregistrement des traits d'identité d'un usager."/>
+  </concept>
+  <concept>
+    <code value="RECUP"/>
+    <display value="Identité récupérée"/>
+    <definition value="Statut d'une identité locale qui a été récupérée sur le téléservice INSi après avoir été comparée avec succès aux traits de la personne physique mais qui n'a pas encore pu être contrôlée à partir d'un document d'identification à haut niveau de confiance."/>
+  </concept>
+  <concept>
+    <code value="QUAL"/>
+    <display value="Identité qualifiée"/>
+    <definition value="Statut d'une identité locale qui a été récupérée via le téléservice INSi, puis comparée avec succès aux traits de la personne physique prise en charge portés par un dispositif d'identification à haut niveau de confiance ou son équivalent."/>
+  </concept>
+</CodeSystem>
