@@ -1422,7 +1422,7 @@ Information Source:           <a href="https://annuaire.sante.fr">https://annuai
           Package hl7.fhir.fr.core#2.2.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Generated 
-            <span title="2026-08-10 14:29:00 +0000">
+            <span title="2026-08-10 16:19:00 +0000">
     2026-08-10
   </span>
 
@@ -3203,8 +3203,8 @@ Corrections QA : code système nationality (              <code class="language-
         </td>
         <td>
           <strong>[BREAKING CHANGE]</strong>
- Conformité RNIV EXI SI 07 : restructuration de l’extension           <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code>
- pour modéliser les 4 statuts de confiance de l’identité           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
+ Conformité RNIV EXI SI 07 : refonte de l’extension           <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code>
+ (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
         </td>
       </tr>
       <tr>
@@ -3215,16 +3215,17 @@ Corrections QA : code système nationality (              <code class="language-
           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334">github.com</a>
         </td>
         <td>
-Clarification de la sous-extension           <code class="language-plaintext highlighter-rouge">methodCollection</code>
- : ajout d’un           <code class="language-plaintext highlighter-rouge">^definition</code>
- précisant qu’il s’agit du canal technique d’obtention des traits d’identité ou du matricule INS (RNIV           <span class="fhir-conformance">
-4.3), distinct du statut de confiance (            <code class="language-plaintext highlighter-rouge">identityStatus</code>
+La sous-extension           <code class="language-plaintext highlighter-rouge">methodCollection</code>
+ documente le canal par lequel les traits d’identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV           <span class="fhir-conformance">
+4.3), distincte du statut de confiance résultant (            <code class="language-plaintext highlighter-rouge">identityStatus</code>
 ) et de la pièce justificative contrôlée (            <code class="language-plaintext highlighter-rouge">validationMode</code>
-). Ajout du code             <code class="language-plaintext highlighter-rouge">AV</code>
- (Application carte Vitale) au CodeSystem             <code class="language-plaintext highlighter-rouge">fr-core-cs-method-collection</code>
+). Un             <code class="language-plaintext highlighter-rouge">^definition</code>
+ a été ajouté pour préciser cette portée, et le code             <code class="language-plaintext highlighter-rouge">AV</code>
+ (Application carte Vitale) a été ajouté au CodeSystem             <code class="language-plaintext highlighter-rouge">fr-core-cs-method-collection</code>
 , pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV 
           </span>
 4.3.4)           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334">#334</a>
+.
         </td>
       </tr>
       <tr>
@@ -3235,14 +3236,15 @@ Clarification de la sous-extension           <code class="language-plaintext hig
           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">github.com</a>
         </td>
         <td>
-Correction de la sous-extension           <code class="language-plaintext highlighter-rouge">dateCollection</code>
- : le           <code class="language-plaintext highlighter-rouge">^short</code>
+La sous-extension           <code class="language-plaintext highlighter-rouge">dateCollection</code>
+ documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son           <code class="language-plaintext highlighter-rouge">^short</code>
 /          <code class="language-plaintext highlighter-rouge">^definition</code>
- faisait à tort référence à la seule date d’interrogation du téléservice INSi, alors que la collecte peut se faire par d’autres canaux (          <code class="language-plaintext highlighter-rouge">methodCollection</code>
-). Le champ documente désormais la date de collecte au sens large, distincte de la date de vérification (          <code class="language-plaintext highlighter-rouge">validationDate</code>
+ faisaient auparavant à tort référence à la seule date d’interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de           <code class="language-plaintext highlighter-rouge">methodCollection</code>
+, et pour ne pas être confondus avec la date de vérification de l’identité (          <code class="language-plaintext highlighter-rouge">validationDate</code>
 ), dont le           <code class="language-plaintext highlighter-rouge">^short</code>
 /          <code class="language-plaintext highlighter-rouge">^definition</code>
- a également été complété en conséquence           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
+ ont également été complétés en conséquence           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
+.
         </td>
       </tr>
       <tr>
@@ -3253,13 +3255,13 @@ Correction de la sous-extension           <code class="language-plaintext highli
           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">github.com</a>
         </td>
         <td>
-Passage de la sous-extension           <code class="language-plaintext highlighter-rouge">comment</code>
- de           <code class="language-plaintext highlighter-rouge">Coding</code>
- à           <code class="language-plaintext highlighter-rouge">CodeableConcept</code>
- : le           <code class="language-plaintext highlighter-rouge">CodeableConcept</code>
- a été autorisé afin de permettre de saisir du texte libre (          <code class="language-plaintext highlighter-rouge">.text</code>
-) en complément ou à la place d’un code du ValueSet           <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status-comment</code>
-           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
+La sous-extension           <code class="language-plaintext highlighter-rouge">comment</code>
+ n’acceptait qu’un           <code class="language-plaintext highlighter-rouge">Coding</code>
+ du ValueSet           <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status-comment</code>
+. Elle accepte désormais un           <code class="language-plaintext highlighter-rouge">CodeableConcept</code>
+, ce qui permet de saisir du texte libre (          <code class="language-plaintext highlighter-rouge">.text</code>
+) en complément ou à la place d’un code de ce ValueSet           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
+.
         </td>
       </tr>
       <tr>
@@ -3270,7 +3272,7 @@ Passage de la sous-extension           <code class="language-plaintext highlight
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l1104">​</a>
+          <a name="l1120">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -3963,7 +3965,7 @@ Mise à jour de l’identifier type du rpps rang (INTRN → RPPS)           <a h
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2169">​</a>
+          <a name="l2185">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4142,7 +4144,7 @@ Ajout d’une intro note pour le profil Patient INS           <a href="https://g
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fr</a>
         </td>
         <td>
-          <a name="l2252">​</a>
+          <a name="l2268">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4178,7 +4180,7 @@ Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2270">​</a>
+          <a name="l2286">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5023,7 +5025,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           Le package hl7.fhir.fr.core#2.2.0 est basé sur           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Date de génération : 
-            <span title="2026-08-10 14:29:00 +0000">
+            <span title="2026-08-10 16:19:00 +0000">
     2026-08-10
   </span>
 
@@ -5065,7 +5067,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l1098">​</a>
+          <a name="l1114">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5078,7 +5080,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2163">​</a>
+          <a name="l2179">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5091,7 +5093,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fr</a>
         </td>
         <td>
-          <a name="l2246">​</a>
+          <a name="l2262">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5104,7 +5106,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2264">​</a>
+          <a name="l2280">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a>
  de l’Implementation Guide FRCore
         </td>

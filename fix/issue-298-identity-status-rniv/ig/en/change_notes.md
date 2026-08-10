@@ -24,10 +24,7 @@ There is no translation page available for the current page, so it has been rend
 * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
 * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
  
-* **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : restructuration de l’extension `fr-core-identity-reliability` pour modéliser les 4 statuts de confiance de l’identité [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
-* Clarification de la sous-extension `methodCollection` : ajout d’un `^definition` précisant qu’il s’agit du canal technique d’obtention des traits d’identité ou du matricule INS (RNIV §4.3), distinct du statut de confiance (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Ajout du code `AV` (Application carte Vitale) au CodeSystem `fr-core-cs-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334)
-* Correction de la sous-extension `dateCollection` : le `^short`/`^definition` faisait à tort référence à la seule date d’interrogation du téléservice INSi, alors que la collecte peut se faire par d’autres canaux (`methodCollection`). Le champ documente désormais la date de collecte au sens large, distincte de la date de vérification (`validationDate`), dont le `^short`/`^definition` a également été complété en conséquence [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
-* Passage de la sous-extension `comment` de `Coding` à `CodeableConcept` : le `CodeableConcept` a été autorisé afin de permettre de saisir du texte libre (`.text`) en complément ou à la place d’un code du ValueSet `fr-core-vs-identity-status-comment` [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+* **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : refonte de l’extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
 #### [BREAKING CHANGE] Remplacement du CodeSystem fr-core-cs-v2-0445 par deux CodeSystems dédiés
 
@@ -77,6 +74,16 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 }
 
 ```
+
+#### Canal et date de collecte : sous-extensions methodCollection et dateCollection
+
+La sous-extension `methodCollection` documente le canal par lequel les traits d’identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Un `^definition` a été ajouté pour préciser cette portée, et le code `AV` (Application carte Vitale) a été ajouté au CodeSystem `fr-core-cs-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334).
+
+La sous-extension `dateCollection` documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son `^short`/`^definition` faisaient auparavant à tort référence à la seule date d’interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de `methodCollection`, et pour ne pas être confondus avec la date de vérification de l’identité (`validationDate`), dont le `^short`/`^definition` ont également été complétés en conséquence [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
+
+#### Annotations complémentaires : comment passe en CodeableConcept
+
+La sous-extension `comment` n’acceptait qu’un `Coding` du ValueSet `fr-core-vs-identity-status-comment`. Elle accepte désormais un `CodeableConcept`, ce qui permet de saisir du texte libre (`.text`) en complément ou à la place d’un code de ce ValueSet [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
 
 #### Correction des invariants fr-core-1, fr-core-2, fr-core-3
 

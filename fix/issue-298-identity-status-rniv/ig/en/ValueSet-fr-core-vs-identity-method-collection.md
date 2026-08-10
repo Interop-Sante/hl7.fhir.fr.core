@@ -16,7 +16,7 @@
 
 ### Introduction
 
-Ce ValueSet définit les **canaux techniques** par lesquels les traits d’identité d’un patient ou son matricule INS ont été obtenus, conformément au chapitre 4.3 « Récupération de l’INS » du Référentiel National d’Identitovigilance (RNIV 1 - Principes communs, v2.0, décembre 2024).
+Ce ValueSet définit les **canaux** par lesquels les traits d’identité d’un patient ou son matricule INS ont été obtenus, conformément au chapitre 4.3 « Récupération de l’INS » du Référentiel National d’Identitovigilance (RNIV 1 - Principes communs, v2.0, décembre 2024).
 
 Il s’agit d’une information de **traçabilité du canal de capture**, distincte du statut de confiance résultant (voir la sous-extension `identityStatus` et sa page [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md)) et de la pièce justificative contrôlée (voir la sous-extension `validationMode`).
 
@@ -61,7 +61,7 @@ Ce ValueSet est utilisé avec un binding `extensible` dans la sous-extension `me
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T14:29:18+00:00",
+  "date" : "2026-08-10T16:19:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
