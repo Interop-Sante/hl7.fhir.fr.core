@@ -26,7 +26,9 @@ There is no translation page available for the current page, so it has been rend
  
 * **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : refonte de l’extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
-#### [BREAKING CHANGE] Remplacement du CodeSystem fr-core-cs-v2-0445 par deux CodeSystems dédiés
+#### Refonte de l’extension fr-core-identity-reliability (RNIV EXI SI 07)
+
+##### [BREAKING CHANGE] Remplacement du CodeSystem fr-core-cs-v2-0445 par deux CodeSystems dédiés
 
 Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem `fr-core-cs-fiabilite-identite` (doublon inutilisé du précédent) sont **supprimés**, remplacés par deux CodeSystems au périmètre explicite :
 
@@ -43,7 +45,7 @@ Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant stat
 
 **Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l’un de ces deux nouveaux CodeSystems selon le code utilisé.
 
-#### ValueSets identityStatus et comment
+##### ValueSets identityStatus et comment
 
 Le ValueSet `fr-core-vs-identity-status` (`FRCoreValueSetIdentityStatus`) est réduit aux 4 statuts RNIV (`fr-core-cs-identity-status`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
 
@@ -75,17 +77,17 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 
 ```
 
-#### Canal et date de collecte : sous-extensions methodCollection et dateCollection
+##### Canal et date de collecte : sous-extensions methodCollection et dateCollection
 
 La sous-extension `methodCollection` documente le canal par lequel les traits d’identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Un `^definition` a été ajouté pour préciser cette portée, et le code `AV` (Application carte Vitale) a été ajouté au CodeSystem `fr-core-cs-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334).
 
 La sous-extension `dateCollection` documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son `^short`/`^definition` faisaient auparavant à tort référence à la seule date d’interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de `methodCollection`, et pour ne pas être confondus avec la date de vérification de l’identité (`validationDate`), dont le `^short`/`^definition` ont également été complétés en conséquence [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
 
-#### Annotations complémentaires : comment passe en CodeableConcept
+##### Annotations complémentaires : comment passe en CodeableConcept
 
 La sous-extension `comment` n’acceptait qu’un `Coding` du ValueSet `fr-core-vs-identity-status-comment`. Elle accepte désormais un `CodeableConcept`, ce qui permet de saisir du texte libre (`.text`) en complément ou à la place d’un code de ce ValueSet [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
 
-#### Correction des invariants fr-core-1, fr-core-2, fr-core-3
+##### Correction des invariants fr-core-1, fr-core-2, fr-core-3
 
 Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`, conformément à l’exigence EXI SI 08 :
 
@@ -93,7 +95,7 @@ Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent 
 
 **Impact pour les implémenteurs** : une ressource `FRCorePatientINS` portant un matricule INS doit avoir le statut `QUAL` (et non `VALI`). Les instances existantes au statut `VALI` avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en `QUAL`.
 
-#### identityStatus obligatoire dans FRCorePatientINSProfile
+##### identityStatus obligatoire dans FRCorePatientINSProfile
 
 La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
 

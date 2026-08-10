@@ -276,7 +276,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>[BREAKING CHANGE]</strong> Conformité RNIV EXI SI 07 : refonte de l’extension <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code> (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a></li>
 </ul>
 
-<h4 id="breaking-change-remplacement-du-codesystem-fr-core-cs-v2-0445-par-deux-codesystems-dédiés"><strong>[BREAKING CHANGE]</strong> Remplacement du CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> par deux CodeSystems dédiés</h4>
+<h4 id="refonte-de-lextension-fr-core-identity-reliability-rniv-exi-si-07">Refonte de l’extension <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code> (RNIV EXI SI 07)</h4>
+
+<h5 id="breaking-change-remplacement-du-codesystem-fr-core-cs-v2-0445-par-deux-codesystems-dédiés"><strong>[BREAKING CHANGE]</strong> Remplacement du CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> par deux CodeSystems dédiés</h5>
 
 <p>Le CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-fiabilite-identite</code> (doublon inutilisé du précédent) sont <strong>supprimés</strong>, remplacés par deux CodeSystems au périmètre explicite :</p>
 
@@ -327,7 +329,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Impact pour les implémenteurs</strong> : toute référence à <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> ou <code class="language-plaintext highlighter-rouge">fr-core-cs-fiabilite-identite</code> doit être mise à jour vers l’un de ces deux nouveaux CodeSystems selon le code utilisé.</p>
 
-<h4 id="valuesets-identitystatus-et-comment">ValueSets <code class="language-plaintext highlighter-rouge">identityStatus</code> et <code class="language-plaintext highlighter-rouge">comment</code></h4>
+<h5 id="valuesets-identitystatus-et-comment">ValueSets <code class="language-plaintext highlighter-rouge">identityStatus</code> et <code class="language-plaintext highlighter-rouge">comment</code></h5>
 
 <p>Le ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status</code> (<code class="language-plaintext highlighter-rouge">FRCoreValueSetIdentityStatus</code>) est réduit aux 4 statuts RNIV (<code class="language-plaintext highlighter-rouge">fr-core-cs-identity-status</code>). Le binding de la sous-extension <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">extensible</code> (tous les codes <code class="language-plaintext highlighter-rouge">v2-0445</code>) à <code class="language-plaintext highlighter-rouge">required</code> (ces 4 valeurs uniquement).</p>
 
@@ -355,17 +357,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h4 id="canal-et-date-de-collecte--sous-extensions-methodcollection-et-datecollection">Canal et date de collecte : sous-extensions <code class="language-plaintext highlighter-rouge">methodCollection</code> et <code class="language-plaintext highlighter-rouge">dateCollection</code></h4>
+<h5 id="canal-et-date-de-collecte--sous-extensions-methodcollection-et-datecollection">Canal et date de collecte : sous-extensions <code class="language-plaintext highlighter-rouge">methodCollection</code> et <code class="language-plaintext highlighter-rouge">dateCollection</code></h5>
 
 <p>La sous-extension <code class="language-plaintext highlighter-rouge">methodCollection</code> documente le canal par lequel les traits d’identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV <span class="fhir-conformance">4.3), distincte du statut de confiance résultant (<code class="language-plaintext highlighter-rouge">identityStatus</code>) et de la pièce justificative contrôlée (<code class="language-plaintext highlighter-rouge">validationMode</code>). Un <code class="language-plaintext highlighter-rouge">^definition</code> a été ajouté pour préciser cette portée, et le code <code class="language-plaintext highlighter-rouge">AV</code> (Application carte Vitale) a été ajouté au CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-method-collection</code>, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV </span>4.3.4) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334">#334</a>.</p>
 
 <p>La sous-extension <code class="language-plaintext highlighter-rouge">dateCollection</code> documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son <code class="language-plaintext highlighter-rouge">^short</code>/<code class="language-plaintext highlighter-rouge">^definition</code> faisaient auparavant à tort référence à la seule date d’interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de <code class="language-plaintext highlighter-rouge">methodCollection</code>, et pour ne pas être confondus avec la date de vérification de l’identité (<code class="language-plaintext highlighter-rouge">validationDate</code>), dont le <code class="language-plaintext highlighter-rouge">^short</code>/<code class="language-plaintext highlighter-rouge">^definition</code> ont également été complétés en conséquence <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>.</p>
 
-<h4 id="annotations-complémentaires--comment-passe-en-codeableconcept">Annotations complémentaires : <code class="language-plaintext highlighter-rouge">comment</code> passe en <code class="language-plaintext highlighter-rouge">CodeableConcept</code></h4>
+<h5 id="annotations-complémentaires--comment-passe-en-codeableconcept">Annotations complémentaires : <code class="language-plaintext highlighter-rouge">comment</code> passe en <code class="language-plaintext highlighter-rouge">CodeableConcept</code></h5>
 
 <p>La sous-extension <code class="language-plaintext highlighter-rouge">comment</code> n’acceptait qu’un <code class="language-plaintext highlighter-rouge">Coding</code> du ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status-comment</code>. Elle accepte désormais un <code class="language-plaintext highlighter-rouge">CodeableConcept</code>, ce qui permet de saisir du texte libre (<code class="language-plaintext highlighter-rouge">.text</code>) en complément ou à la place d’un code de ce ValueSet <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>.</p>
 
-<h4 id="correction-des-invariants-fr-core-1-fr-core-2-fr-core-3">Correction des invariants <code class="language-plaintext highlighter-rouge">fr-core-1</code>, <code class="language-plaintext highlighter-rouge">fr-core-2</code>, <code class="language-plaintext highlighter-rouge">fr-core-3</code></h4>
+<h5 id="correction-des-invariants-fr-core-1-fr-core-2-fr-core-3">Correction des invariants <code class="language-plaintext highlighter-rouge">fr-core-1</code>, <code class="language-plaintext highlighter-rouge">fr-core-2</code>, <code class="language-plaintext highlighter-rouge">fr-core-3</code></h5>
 
 <p>Les invariants conditionnaient leur vérification au statut <code class="language-plaintext highlighter-rouge">VALI</code>. Ils ciblent désormais <code class="language-plaintext highlighter-rouge">QUAL</code>, conformément à l’exigence EXI SI 08 :</p>
 
@@ -375,11 +377,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Impact pour les implémenteurs</strong> : une ressource <code class="language-plaintext highlighter-rouge">FRCorePatientINS</code> portant un matricule INS doit avoir le statut <code class="language-plaintext highlighter-rouge">QUAL</code> (et non <code class="language-plaintext highlighter-rouge">VALI</code>). Les instances existantes au statut <code class="language-plaintext highlighter-rouge">VALI</code> avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en <code class="language-plaintext highlighter-rouge">QUAL</code>.</p>
 
-<h4 id="identitystatus-obligatoire-dans-frcorepatientinsprofile"><code class="language-plaintext highlighter-rouge">identityStatus</code> obligatoire dans <code class="language-plaintext highlighter-rouge">FRCorePatientINSProfile</code></h4>
+<h5 id="identitystatus-obligatoire-dans-frcorepatientinsprofile"><code class="language-plaintext highlighter-rouge">identityStatus</code> obligatoire dans <code class="language-plaintext highlighter-rouge">FRCorePatientINSProfile</code></h5>
 
 <p>La cardinalité de <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">0..1</code> à <code class="language-plaintext highlighter-rouge">1..1</code> dans le profil Patient INS pour satisfaire EXI SI 07.</p>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1114">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1120">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -637,7 +639,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2179">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2185">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -658,7 +660,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2262">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2268">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -666,7 +668,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2280">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2286">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -777,7 +779,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-08-10 16:19:00 +0000">
+  <span title="2026-08-10 16:22:00 +0000">
     2026-08-10
   </span>
 
