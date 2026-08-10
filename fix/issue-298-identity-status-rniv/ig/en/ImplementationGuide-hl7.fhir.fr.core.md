@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-10T13:14:57+00:00",
+  "date" : "2026-08-10T13:29:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2576,7 +2576,7 @@
         "reference" : "ValueSet/fr-core-vs-identity-method-collection"
       },
       "name" : "FR Core ValueSet Identity method collection",
-      "description" : "The validation mode of the identity.",
+      "description" : "Le canal technique par lequel les traits d'identité ou l'INS ont été obtenus | The channel used to collect the identity traits or the INS",
       "exampleBoolean" : false
     },
     {

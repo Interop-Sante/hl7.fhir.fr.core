@@ -3,7 +3,7 @@
 ","Reliabilility of the identity | Fiabilité de l'identité","Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.
 Reliabilility of the patient's identity","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}fr-core-comment-requires-prov:If identityStatus is RECUP, VALI or QUAL, then comment SHALL NOT contain DOUT (identité douteuse) or FICT (identité fictive), conformément au RNIV : ces deux attributs ne peuvent être associés qu'au statut Identité provisoire. {extension('identityStatus').value.exists(code = 'RECUP' or code = 'VALI' or code = 'QUAL') implies extension('comment').value.exists(code = 'DOUT' or code = 'FICT').not()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Extension.extension","Extension.extension","","extensions
@@ -12,7 +12,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Extension.extension:methodCollection","Extension.extension","methodCollection","","",0,1,"","","","Extension {[]} {[]}
-","The way the INS identity is collected | Mode d'obtention de l'INS (SM, CV, INSI, ...)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Channel used to collect the identity traits or the INS | Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV)","Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.extension:methodCollection.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

@@ -15,6 +15,7 @@
     * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
     * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
 * **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : restructuration de l'extension `fr-core-identity-reliability` pour modéliser les 4 statuts de confiance de l'identité [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+* Clarification de la sous-extension `methodCollection` : ajout d'un `^definition` précisant qu'il s'agit du canal technique d'obtention des traits d'identité ou de l'INS (RNIV §4.3), distinct du statut de confiance (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Ajout du code `AV` (Application carte Vitale) au CodeSystem `fr-core-cs-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334)
 
 #### **[BREAKING CHANGE]** Remplacement du CodeSystem `fr-core-cs-v2-0445` par deux CodeSystems dédiés
 

@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Method Collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:14:57+00:00",
+  "date" : "2026-08-10T13:29:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -58,31 +58,36 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 5,
+  "count" : 6,
   "concept" : [{
     "code" : "SM",
     "display" : "Saisie manuelle",
-    "definition" : "Saisie manuelle"
+    "definition" : "Saisie manuelle des traits d'identité, sans lecture de la carte Vitale ni interrogation du téléservice INSi (RNIV §4.3.3)."
   },
   {
     "code" : "CV",
-    "display" : "Carte vitale",
-    "definition" : "Carte vitale"
+    "display" : "Carte Vitale",
+    "definition" : "Lecture de la carte Vitale physique de l'usager, permettant l'interrogation du téléservice INSi par ce canal (RNIV §4.3.2)."
   },
   {
     "code" : "INSI",
-    "display" : "Téléservice INSI",
-    "definition" : "Téléservice INSI"
+    "display" : "Téléservice INSi",
+    "definition" : "Interrogation directe du téléservice INSi par saisie des traits d'identité, sans lecture de la carte Vitale (RNIV §4.3.3)."
   },
   {
     "code" : "CB",
     "display" : "Code à barre",
-    "definition" : "Code à barre"
+    "definition" : "Import de l'identité par scan du Datamatrix INS figurant sur un document de santé déjà porteur d'une identité qualifiée (Guide d'implémentation INS, EXI REC 02)."
   },
   {
     "code" : "RFID",
     "display" : "Puce RFID",
-    "definition" : "Puce RFID"
+    "definition" : "Lecture d'une puce RFID (ex. bracelet patient) ; canal local de traçabilité, non défini par le RNIV."
+  },
+  {
+    "code" : "AV",
+    "display" : "Application carte Vitale",
+    "definition" : "Obtention directe de l'INS par scan du QR code ou lecture NFC de l'Application carte Vitale (RNIV §4.3.4) ; l'identité ainsi obtenue est considérée comme qualifiée."
   }]
 }
 

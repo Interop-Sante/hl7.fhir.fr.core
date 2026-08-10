@@ -59,7 +59,7 @@ Ce ValueSet est utilisé avec un binding `required` dans la sous-extension `iden
   "title" : "FR Core ValueSet Identity Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:14:57+00:00",
+  "date" : "2026-08-10T13:29:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "FRCorePatientINSProfile"] ;
   fhir:StructureDefinition.title [ fhir:value "FR Core Patient INS Profile"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-10T13:14:57+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-08-10T13:29:34+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Interop'Santé"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
@@ -2813,8 +2813,8 @@
        fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:methodCollection" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "methodCollection" ] ;
-       fhir:ElementDefinition.short [ fhir:value "The way the INS identity is collected | Mode d'obtention de l'INS (SM, CV, INSI, ...)" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Channel used to collect the identity traits or the INS | Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [

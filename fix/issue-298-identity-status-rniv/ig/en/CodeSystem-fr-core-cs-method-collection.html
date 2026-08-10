@@ -341,19 +341,22 @@
 <table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
 <tr><td style="white-space:nowrap">SM<a name="fr-core-cs-method-collection-SM"> </a></td>
 <td>Saisie manuelle</td>
-<td>Saisie manuelle</td></tr>
+<td>Saisie manuelle des traits d'identité, sans lecture de la carte Vitale ni interrogation du téléservice INSi (RNIV &sect;4.3.3).</td></tr>
 <tr><td style="white-space:nowrap">CV<a name="fr-core-cs-method-collection-CV"> </a></td>
-<td>Carte vitale</td>
-<td>Carte vitale</td></tr>
+<td>Carte Vitale</td>
+<td>Lecture de la carte Vitale physique de l'usager, permettant l'interrogation du téléservice INSi par ce canal (RNIV &sect;4.3.2).</td></tr>
 <tr><td style="white-space:nowrap">INSI<a name="fr-core-cs-method-collection-INSI"> </a></td>
-<td>Téléservice INSI</td>
-<td>Téléservice INSI</td></tr>
+<td>Téléservice INSi</td>
+<td>Interrogation directe du téléservice INSi par saisie des traits d'identité, sans lecture de la carte Vitale (RNIV &sect;4.3.3).</td></tr>
 <tr><td style="white-space:nowrap">CB<a name="fr-core-cs-method-collection-CB"> </a></td>
 <td>Code à barre</td>
-<td>Code à barre</td></tr>
+<td>Import de l'identité par scan du Datamatrix INS figurant sur un document de santé déjà porteur d'une identité qualifiée (Guide d'implémentation INS, EXI REC 02).</td></tr>
 <tr><td style="white-space:nowrap">RFID<a name="fr-core-cs-method-collection-RFID"> </a></td>
 <td>Puce RFID</td>
-<td>Puce RFID</td></tr></table></div>
+<td>Lecture d'une puce RFID (ex. bracelet patient) ; canal local de traçabilité, non défini par le RNIV.</td></tr>
+<tr><td style="white-space:nowrap">AV<a name="fr-core-cs-method-collection-AV"> </a></td>
+<td>Application carte Vitale</td>
+<td>Obtention directe de l'INS par scan du QR code ou lecture NFC de l'Application carte Vitale (RNIV &sect;4.3.4) ; l'identité ainsi obtenue est considérée comme qualifiée.</td></tr></table></div>
 
   <hr/>
   <p>
@@ -415,7 +418,7 @@
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-10 13:14:00 +0000">
+  <span title="2026-08-10 13:29:00 +0000">
     2026-08-10
   </span>
 

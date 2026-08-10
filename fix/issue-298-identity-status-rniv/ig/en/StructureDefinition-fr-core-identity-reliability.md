@@ -16,7 +16,7 @@ Elle regroupe 6 sous-extensions :
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| `methodCollection` | 0..1 | Mode d’obtention de l’INS (SM, CV, INSi…) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
+| `methodCollection` | 0..1 | Canal d’obtention des traits d’identité ou de l’INS (saisie manuelle, carte Vitale, INSi, code à barre, RFID, Application carte Vitale) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
 | `dateCollection` | 0..1 | Date d’interrogation du téléservice INSi | `date` |
 | `identityStatus` | 0..1 | Statut de confiance de l’identité au sens du RNIV (`PROV`,`RECUP`,`VALI`,`QUAL`) | [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md) |
 | `comment` | 0..* | Annotations complémentaires sur l’identité (attributs RNIV, codes de gestion) | [fr-core-vs-identity-status-comment](ValueSet-fr-core-vs-identity-status-comment.md) |
@@ -26,6 +26,14 @@ Elle regroupe 6 sous-extensions :
 ### Statut de confiance de l’identité
 
 Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) portés par la sous-extension `identityStatus` est décrit sur la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md).
+
+### À ne pas confondre : canal de capture, statut de confiance et pièce justificative
+
+Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
+
+* `methodCollection` documente le **canal technique** par lequel les traits d’identité ou l’INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
+* `identityStatus` documente le **statut de confiance** résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md).
+* `validationMode` documente la **pièce justificative à haut niveau de confiance** contrôlée pour l’axe C± (carte nationale d’identité, passeport, Application carte Vitale…).
 
 **Usage info**
 
@@ -57,7 +65,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-10T13:14:57+00:00",
+  "date" : "2026-08-10T13:29:34+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -103,20 +111,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Reliabilility of the identity | Fiabilité de l'identité",
-      "definition" : "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity",
-      "constraint" : [{
-        "key" : "fr-core-comment-requires-prov",
-        "severity" : "error",
-        "human" : "If identityStatus is RECUP, VALI or QUAL, then comment SHALL NOT contain DOUT (identité douteuse) or FICT (identité fictive), conformément au RNIV : ces deux attributs ne peuvent être associés qu'au statut Identité provisoire.",
-        "expression" : "extension('identityStatus').value.exists(code = 'RECUP' or code = 'VALI' or code = 'QUAL') implies extension('comment').value.exists(code = 'DOUT' or code = 'FICT').not()",
-        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0"
-      }]
+      "definition" : "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity"
     },
     {
       "id" : "Extension.extension:methodCollection",
       "path" : "Extension.extension",
       "sliceName" : "methodCollection",
-      "short" : "The way the INS identity is collected | Mode d'obtention de l'INS (SM, CV, INSI, ...)",
+      "short" : "Channel used to collect the identity traits or the INS | Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV)",
+      "definition" : "Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`).",
       "min" : 0,
       "max" : "1"
     },
