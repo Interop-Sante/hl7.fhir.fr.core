@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "FRCorePatientINSProfile"] ;
   fhir:StructureDefinition.title [ fhir:value "FR Core Patient INS Profile"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-10T14:12:55+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-08-10T14:29:18+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Interop'Santé"] ;
   fhir:StructureDefinition.contact [
      fhir:index -1 ;
@@ -2683,7 +2683,7 @@
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "identityReliability" ] ;
        fhir:ElementDefinition.short [ fhir:value "FR Core Patient Identity Reliability Extension" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -2814,8 +2814,8 @@
        fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:methodCollection" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "methodCollection" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Précise le canal par lequel les traits d'identité ou l'INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)." ] ;
+       fhir:ElementDefinition.short [ fhir:value "Canal d'obtention des traits d'identité ou du matricule INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS identifier" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Précise le canal par lequel les traits d'identité ou le matricule INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -3019,8 +3019,8 @@
        fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateCollection" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "dateCollection" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Date d'obtention des traits d'identité ou de l'INS | Date the identity traits or the INS were collected" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Date à laquelle les traits d'identité ou l'INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)." ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date d'obtention des traits d'identité ou du matricule INS | Date the identity traits or the INS identifier were collected" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date à laquelle les traits d'identité ou le matricule INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS identifier were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [

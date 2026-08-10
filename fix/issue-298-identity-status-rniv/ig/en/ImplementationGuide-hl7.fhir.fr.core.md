@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-10T14:12:55+00:00",
+  "date" : "2026-08-10T14:29:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2208,7 +2208,7 @@
         "reference" : "StructureDefinition/fr-core-identity-reliability"
       },
       "name" : "FR Core Patient Identity Reliability Extension",
-      "description" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations.",
+      "description" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.",
       "exampleBoolean" : false
     },
     {
@@ -2576,7 +2576,7 @@
         "reference" : "ValueSet/fr-core-vs-identity-method-collection"
       },
       "name" : "FR Core ValueSet Identity method collection",
-      "description" : "Le canal par lequel les traits d'identité ou l'INS ont été obtenus | The channel used to collect the identity traits or the INS",
+      "description" : "Le canal par lequel les traits d'identité ou le matricule INS ont été obtenus | The channel used to collect the identity traits or the INS identifier",
       "exampleBoolean" : false
     },
     {

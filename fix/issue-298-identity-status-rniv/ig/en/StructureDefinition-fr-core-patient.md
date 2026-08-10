@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient.c
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-08-10T14:12:55+00:00",
+  "date" : "2026-08-10T14:29:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

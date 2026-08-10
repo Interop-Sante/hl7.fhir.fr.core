@@ -37,7 +37,7 @@ Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ce
   "title" : "FR Core ValueSet Identity Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T14:12:55+00:00",
+  "date" : "2026-08-10T14:29:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

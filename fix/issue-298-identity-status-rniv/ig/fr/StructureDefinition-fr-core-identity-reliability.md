@@ -2,7 +2,7 @@
 
 ## Extension: FR Core Patient Identity Reliability Extension 
 
-Extension composite précisant le degré de confiance de l’identité du patient au sens du Référentiel National d’Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d’obtention des traits d’identité ou de l’INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient’s identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations.
+Extension composite précisant le degré de confiance de l’identité du patient au sens du Référentiel National d’Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d’obtention des traits d’identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient’s identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.
 
 **Context of Use**
 
@@ -14,8 +14,8 @@ Elle regroupe 6 sous-extensions :
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| `methodCollection` | 0..1 | Canal d’obtention des traits d’identité ou de l’INS (saisie manuelle, carte Vitale, INSi, code à barre, RFID, Application carte Vitale) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
-| `dateCollection` | 0..1 | Date d’interrogation du téléservice INSi | `date` |
+| `methodCollection` | 0..1 | Canal d’obtention des traits d’identité ou du matricule INS (saisie manuelle, carte Vitale, INSi, code à barre, RFID, Application carte Vitale) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
+| `dateCollection` | 0..1 | Date d’obtention des traits d’identité ou du matricule INS | `date` |
 | `identityStatus` | 0..1 | Statut de confiance de l’identité au sens du RNIV (`PROV`,`RECUP`,`VALI`,`QUAL`) | [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md) |
 | `comment` | 0..* | Annotations complémentaires sur l’identité (attributs RNIV, codes de gestion) | [fr-core-vs-identity-status-comment](ValueSet-fr-core-vs-identity-status-comment.md) |
 | `validationDate` | 0..1 | Date de vérification de l’identité | `date` |
@@ -29,7 +29,7 @@ Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) por
 
 Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
 
-* `methodCollection` documente le **canal de capture** par lequel les traits d’identité ou l’INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
+* `methodCollection` documente le **canal de capture** par lequel les traits d’identité ou le matricule INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
 * `identityStatus` documente le **statut de confiance** résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md).
 * `validationMode` documente la **pièce justificative à haut niveau de confiance** contrôlée pour l’axe C± (carte nationale d’identité, passeport, Application carte Vitale…).
 
@@ -63,7 +63,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 ** Résumé **
 
-Extension complexe: Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations.
+Extension complexe: Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.
 
  **Vue différentielleDifferential View** 
 
@@ -81,7 +81,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 ** Résumé **
 
-Extension complexe: Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations.
+Extension complexe: Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.
 
  
 
@@ -100,7 +100,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-10T14:12:55+00:00",
+  "date" : "2026-08-10T14:29:18+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -117,7 +117,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       "use" : "work"
     }]
   }],
-  "description" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations.",
+  "description" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -146,14 +146,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       "id" : "Extension",
       "path" : "Extension",
       "short" : "FR Core Patient Identity Reliability Extension",
-      "definition" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations."
+      "definition" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations."
     },
     {
       "id" : "Extension.extension:methodCollection",
       "path" : "Extension.extension",
       "sliceName" : "methodCollection",
-      "short" : "Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS",
-      "definition" : "Précise le canal par lequel les traits d'identité ou l'INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`).",
+      "short" : "Canal d'obtention des traits d'identité ou du matricule INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS identifier",
+      "definition" : "Précise le canal par lequel les traits d'identité ou le matricule INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`).",
       "min" : 0,
       "max" : "1"
     },
@@ -182,8 +182,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       "id" : "Extension.extension:dateCollection",
       "path" : "Extension.extension",
       "sliceName" : "dateCollection",
-      "short" : "Date d'obtention des traits d'identité ou de l'INS | Date the identity traits or the INS were collected",
-      "definition" : "Date à laquelle les traits d'identité ou l'INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension).",
+      "short" : "Date d'obtention des traits d'identité ou du matricule INS | Date the identity traits or the INS identifier were collected",
+      "definition" : "Date à laquelle les traits d'identité ou le matricule INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS identifier were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension).",
       "min" : 0,
       "max" : "1"
     },
