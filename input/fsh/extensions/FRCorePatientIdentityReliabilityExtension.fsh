@@ -1,14 +1,12 @@
 Extension: FRCorePatientIdentityReliabilityExtension
 Id: fr-core-identity-reliability
 Title: "FR Core Patient Identity Reliability Extension"
-Description: "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity"
+Description: "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou de l'INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS, validation evidence, related dates and additional annotations."
 
-* ^purpose = "Permet de préciser le degré de fiabilité de l'identité du patient\r\nReliabilility of the patient's identity"
+* ^purpose = "Permet de documenter le degré de confiance de l'identité d'un patient conformément au RNIV, ainsi que les éléments ayant permis de l'établir (canal de collecte, statut, justificatif de contrôle, annotations).\r\nDocuments the confidence level of a patient's identity per the RNIV, along with the elements used to establish it (collection channel, status, validation evidence, annotations)."
 
 * ^context.type = #element
 * ^context.expression = "Patient"
-
-* . ^short = "Reliabilility of the identity | Fiabilité de l'identité"
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
