@@ -23,8 +23,9 @@ Description: "Précision sur le degré de fiabilité de l'identité du patient (
 
 // Concertation : cardinalité à revoir ?
 
-* extension[methodCollection] ^short = "Channel used to collect the identity traits or the INS | Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV)"
-* extension[methodCollection] ^definition = "Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)."
+* extension[methodCollection] ^short = "Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS"
+// Référence : RNIV 1 - Principes communs, v2.0 (décembre 2024), chapitre 4.3
+* extension[methodCollection] ^definition = "Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)."
 * extension[methodCollection].value[x] only Coding
 * extension[methodCollection].valueCoding from FRCoreValueSetIdentityMethodCollection (extensible)
 
