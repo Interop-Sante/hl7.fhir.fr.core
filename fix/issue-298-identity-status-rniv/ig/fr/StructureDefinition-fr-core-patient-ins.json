@@ -11,7 +11,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-08-10T13:54:17+00:00",
+  "date" : "2026-08-10T14:12:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2397,8 +2397,8 @@
       "id" : "Patient.extension:identityReliability.extension:dateCollection",
       "path" : "Patient.extension.extension",
       "sliceName" : "dateCollection",
-      "short" : "INS collection date| date d'interrogation du téléservice INSi",
-      "definition" : "INS collection date| date d'interrogation du téléservice INSi",
+      "short" : "Date d'obtention des traits d'identité ou de l'INS | Date the identity traits or the INS were collected",
+      "definition" : "Date à laquelle les traits d'identité ou l'INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension).",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -2869,7 +2869,7 @@
         "max" : "1"
       },
       "type" : [{
-        "code" : "Coding"
+        "code" : "CodeableConcept"
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2894,8 +2894,8 @@
       "id" : "Patient.extension:identityReliability.extension:validationDate",
       "path" : "Patient.extension.extension",
       "sliceName" : "validationDate",
-      "short" : "Date de vérification de l'identité",
-      "definition" : "An Extension",
+      "short" : "Date de vérification de l'identité | Identity verification date",
+      "definition" : "Date à laquelle l'identité a été vérifiée sur la base de la pièce justificative contrôlée (cf. sous-extension `validationMode`). | Date at which the identity was verified based on the checked supporting document (see the `validationMode` sub-extension).",
       "min" : 0,
       "max" : "1",
       "base" : {

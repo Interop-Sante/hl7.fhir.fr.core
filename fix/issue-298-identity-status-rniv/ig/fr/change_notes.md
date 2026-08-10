@@ -23,6 +23,8 @@
  
 * **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : restructuration de l’extension `fr-core-identity-reliability` pour modéliser les 4 statuts de confiance de l’identité [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 * Clarification de la sous-extension `methodCollection` : ajout d’un `^definition` précisant qu’il s’agit du canal technique d’obtention des traits d’identité ou de l’INS (RNIV §4.3), distinct du statut de confiance (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Ajout du code `AV` (Application carte Vitale) au CodeSystem `fr-core-cs-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334)
+* Correction de la sous-extension `dateCollection` : le `^short`/`^definition` faisait à tort référence à la seule date d’interrogation du téléservice INSi, alors que la collecte peut se faire par d’autres canaux (`methodCollection`). Le champ documente désormais la date de collecte au sens large, distincte de la date de vérification (`validationDate`), dont le `^short`/`^definition` a également été complété en conséquence [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+* Passage de la sous-extension `comment` de `Coding` à `CodeableConcept` : le `CodeableConcept` a été autorisé afin de permettre de saisir du texte libre (`.text`) en complément ou à la place d’un code du ValueSet `fr-core-vs-identity-status-comment` [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
 #### [BREAKING CHANGE] Remplacement du CodeSystem fr-core-cs-v2-0445 par deux CodeSystems dédiés
 

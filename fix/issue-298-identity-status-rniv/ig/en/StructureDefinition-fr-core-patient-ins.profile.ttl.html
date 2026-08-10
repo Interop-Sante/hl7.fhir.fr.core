@@ -357,7 +357,7 @@ TTL Profile
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FRCorePatientINSProfile&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FR Core Patient INS Profile&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-08-10T13:54:17+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-08-10T14:12:55+00:00&quot;^^xsd:dateTime] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:StructureDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Interop'Santé&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:StructureDefinition.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -3358,8 +3358,8 @@ TTL Profile
        <a href="http://hl7.org/fhir/R4/datatypes.html#Element#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient.extension:identityReliability.extension:dateCollection&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient.extension.extension&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;dateCollection&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;INS collection date| date d'interrogation du téléservice INSi&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;INS collection date| date d'interrogation du téléservice INSi&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Date d'obtention des traits d'identité ou de l'INS | Date the identity traits or the INS were collected&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Date à laquelle les traits d'identité ou l'INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension).&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
@@ -3933,7 +3933,7 @@ TTL Profile
        ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;Coding&quot; ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;CodeableConcept&quot; ]
        ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">fhir:ElementDefinition.constraint</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -3966,8 +3966,8 @@ TTL Profile
        <a href="http://hl7.org/fhir/R4/datatypes.html#Element#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient.extension:identityReliability.extension:validationDate&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient.extension.extension&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;validationDate&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Date de vérification de l'identité&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;An Extension&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Date de vérification de l'identité | Identity verification date&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Date à laquelle l'identité a été vérifiée sur la base de la pièce justificative contrôlée (cf. sous-extension `validationMode`). | Date at which the identity was verified based on the checked supporting document (see the `validationMode` sub-extension).&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
@@ -13569,7 +13569,7 @@ TTL Profile
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-10 13:54:00 +0000">
+  <span title="2026-08-10 14:12:00 +0000">
     2026-08-10
   </span>
 
