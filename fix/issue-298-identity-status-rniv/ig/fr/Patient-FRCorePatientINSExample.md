@@ -29,7 +29,7 @@ Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (
  | | |
 | [FR Core Patient Birthdate Update Indicator Extension](StructureDefinition-fr-core-patient-birthdate-update-indicator.md) | false | | |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Ambléon | | |
-| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem Fiabilité Identité: QUAL](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-QUAL) (Identité qualifiée)
+| FR Core Patient Identity Reliability Extension: | * identityStatus: [FR Core CodeSystem Fiabilité Identité: QUAL](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-QUAL) (Identité qualifiée)
  | | |
 
 

@@ -7,7 +7,7 @@ Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ce
 
  **References** 
 
-* [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
+* [FR Core Patient Identity Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
 
 ### Introduction
 
@@ -59,7 +59,7 @@ Ce ValueSet est utilisé avec un binding `required` dans la sous-extension `iden
   "title" : "FR Core ValueSet Identity Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-07T11:55:57+00:00",
+  "date" : "2026-08-10T12:42:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -75,7 +75,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-schedul
   "name" : "FRCoreScheduleAvailabilityTimeExtension",
   "title" : "FR Core Schedule availability time Extension",
   "status" : "active",
-  "date" : "2026-08-07T11:55:57+00:00",
+  "date" : "2026-08-10T12:42:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

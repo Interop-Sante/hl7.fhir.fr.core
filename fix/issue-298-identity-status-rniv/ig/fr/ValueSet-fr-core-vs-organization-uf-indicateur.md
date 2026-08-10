@@ -37,7 +37,7 @@ Indicateur d’une unité fonctionnelle.
   "title" : "FR Core ValueSet Organization UF Indicateur",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-07T11:55:57+00:00",
+  "date" : "2026-08-10T12:42:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-07T11:55:57+00:00",
+  "date" : "2026-08-10T12:42:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2207,7 +2207,7 @@
       "reference" : {
         "reference" : "StructureDefinition/fr-core-identity-reliability"
       },
-      "name" : "FR Core Patient Ident Reliability Extension",
+      "name" : "FR Core Patient Identity Reliability Extension",
       "description" : "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity",
       "exampleBoolean" : false
     },

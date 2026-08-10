@@ -1,6 +1,6 @@
-# FR Core Patient Ident Reliability Extension - Guide d'implémentation FR Core v2.2.0
+# FR Core Patient Identity Reliability Extension - Guide d'implémentation FR Core v2.2.0
 
-## Extension: FR Core Patient Ident Reliability Extension 
+## Extension: FR Core Patient Identity Reliability Extension 
 
 Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
 
@@ -55,9 +55,9 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability",
   "version" : "2.2.0",
   "name" : "FRCorePatientIdentityReliabilityExtension",
-  "title" : "FR Core Patient Ident Reliability Extension",
+  "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-07T11:55:57+00:00",
+  "date" : "2026-08-10T12:42:53+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
