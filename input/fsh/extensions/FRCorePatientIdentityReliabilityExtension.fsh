@@ -27,8 +27,8 @@ Description: "Extension composite précisant le degré de confiance de l'identit
 * extension[methodCollection].value[x] only Coding
 * extension[methodCollection].valueCoding from FRCoreValueSetIdentityMethodCollection (extensible)
 
-* extension[dateCollection] ^short = "INS collection date| date d'interrogation du téléservice INSi"
-* extension[dateCollection] ^definition = "INS collection date| date d'interrogation du téléservice INSi"
+* extension[dateCollection] ^short = "Date d'obtention des traits d'identité ou de l'INS | Date the identity traits or the INS were collected"
+* extension[dateCollection] ^definition = "Date à laquelle les traits d'identité ou l'INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)."
 * extension[dateCollection].value[x] only date
 
 * extension[identityStatus] ^short = "Statut de confiance de l’identité au sens du RNIV (EXI SI 07) : PROV | RECUP | VALI | QUAL. Ces 4 statuts sont exclusifs les uns des autres."
@@ -36,10 +36,11 @@ Description: "Extension composite précisant le degré de confiance de l'identit
 * extension[identityStatus].value[x] from FRCoreValueSetIdentityStatus (required)
 
 * extension[comment] ^short = "Annotations complémentaires sur l’identité : attributs RNIV (homonyme, douteux, fictif) et codes de gestion (doublon, collision, désactivé…). Plusieurs annotations peuvent coexister."
-* extension[comment].value[x] only Coding
+* extension[comment].value[x] only CodeableConcept
 * extension[comment].value[x] from FRCoreValueSetIdentityStatusComment (extensible)
 
-* extension[validationDate] ^short = "Date de vérification de l'identité"
+* extension[validationDate] ^short = "Date de vérification de l'identité | Identity verification date"
+* extension[validationDate] ^definition = "Date à laquelle l'identité a été vérifiée sur la base de la pièce justificative contrôlée (cf. sous-extension `validationMode`). | Date at which the identity was verified based on the checked supporting document (see the `validationMode` sub-extension)."
 * extension[validationDate].value[x] only date
 
 * extension[validationMode] ^short = "Spécifie le type de document qui a été contrôlé par l'agent d'admission pour justifier le statut de l'identité. Seuls certains types de pièces définis dans le RNIV permettent de valider une identité (CN | PA | CS | ... )"
