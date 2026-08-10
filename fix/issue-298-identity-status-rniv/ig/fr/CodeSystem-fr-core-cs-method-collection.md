@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Method Collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:29:34+00:00",
+  "date" : "2026-08-10T13:33:35+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -62,22 +62,22 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "concept" : [{
     "code" : "SM",
     "display" : "Saisie manuelle",
-    "definition" : "Saisie manuelle des traits d'identité, sans lecture de la carte Vitale ni interrogation du téléservice INSi (RNIV §4.3.3)."
+    "definition" : "Saisie manuelle des traits d'identité, sans lecture de la carte Vitale ni interrogation du téléservice INSi."
   },
   {
     "code" : "CV",
     "display" : "Carte Vitale",
-    "definition" : "Lecture de la carte Vitale physique de l'usager, permettant l'interrogation du téléservice INSi par ce canal (RNIV §4.3.2)."
+    "definition" : "Lecture de la carte Vitale physique de l'usager, permettant l'interrogation du téléservice INSi par ce canal."
   },
   {
     "code" : "INSI",
     "display" : "Téléservice INSi",
-    "definition" : "Interrogation directe du téléservice INSi par saisie des traits d'identité, sans lecture de la carte Vitale (RNIV §4.3.3)."
+    "definition" : "Interrogation directe du téléservice INSi par saisie des traits d'identité, sans lecture de la carte Vitale."
   },
   {
     "code" : "CB",
     "display" : "Code à barre",
-    "definition" : "Import de l'identité par scan du Datamatrix INS figurant sur un document de santé déjà porteur d'une identité qualifiée (Guide d'implémentation INS, EXI REC 02)."
+    "definition" : "Import de l'identité par scan du Datamatrix INS figurant sur un document de santé déjà porteur d'une identité qualifiée."
   },
   {
     "code" : "RFID",
@@ -87,7 +87,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "AV",
     "display" : "Application carte Vitale",
-    "definition" : "Obtention directe de l'INS par scan du QR code ou lecture NFC de l'Application carte Vitale (RNIV §4.3.4) ; l'identité ainsi obtenue est considérée comme qualifiée."
+    "definition" : "Obtention directe de l'INS par scan du QR code ou lecture NFC de l'Application carte Vitale ; l'identité ainsi obtenue est considérée comme qualifiée."
   }]
 }
 

@@ -65,7 +65,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-10T13:29:34+00:00",
+  "date" : "2026-08-10T13:33:35+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -117,8 +117,8 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       "id" : "Extension.extension:methodCollection",
       "path" : "Extension.extension",
       "sliceName" : "methodCollection",
-      "short" : "Channel used to collect the identity traits or the INS | Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV)",
-      "definition" : "Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`).",
+      "short" : "Canal d'obtention des traits d'identité ou de l'INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS",
+      "definition" : "Précise le canal technique par lequel les traits d'identité ou l'INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`).",
       "min" : 0,
       "max" : "1"
     },
