@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationRaisonSocialeExtension",
   "title" : "FR Core Organization Raison Sociale Extension",
   "status" : "active",
-  "date" : "2026-08-10T13:33:35+00:00",
+  "date" : "2026-08-10T13:39:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

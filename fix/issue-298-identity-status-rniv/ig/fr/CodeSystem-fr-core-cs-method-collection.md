@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Method Collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:33:35+00:00",
+  "date" : "2026-08-10T13:39:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -82,7 +82,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "RFID",
     "display" : "Puce RFID",
-    "definition" : "Lecture d'une puce RFID (ex. bracelet patient) ; canal local de traçabilité, non défini par le RNIV."
+    "definition" : "Lecture d'une puce RFID (ex. bracelet patient)"
   },
   {
     "code" : "AV",
