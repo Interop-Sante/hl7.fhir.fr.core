@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-10T12:42:53+00:00",
+  "date" : "2026-08-10T13:14:57+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -103,7 +103,14 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Reliabilility of the identity | Fiabilité de l'identité",
-      "definition" : "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity"
+      "definition" : "Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.\n\rReliabilility of the patient's identity",
+      "constraint" : [{
+        "key" : "fr-core-comment-requires-prov",
+        "severity" : "error",
+        "human" : "If identityStatus is RECUP, VALI or QUAL, then comment SHALL NOT contain DOUT (identité douteuse) or FICT (identité fictive), conformément au RNIV : ces deux attributs ne peuvent être associés qu'au statut Identité provisoire.",
+        "expression" : "extension('identityStatus').value.exists(code = 'RECUP' or code = 'VALI' or code = 'QUAL') implies extension('comment').value.exists(code = 'DOUT' or code = 'FICT').not()",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0"
+      }]
     },
     {
       "id" : "Extension.extension:methodCollection",
