@@ -8,8 +8,6 @@ Description: "Précision sur le degré de fiabilité de l'identité du patient (
 * ^context.type = #element
 * ^context.expression = "Patient"
 
-* obeys fr-core-comment-requires-prov
-
 * . ^short = "Reliabilility of the identity | Fiabilité de l'identité"
 
 * extension ^slicing.discriminator.type = #value
@@ -47,10 +45,5 @@ Description: "Précision sur le degré de fiabilité de l'identité du patient (
 * extension[validationMode] ^short = "Spécifie le type de document qui a été contrôlé par l'agent d'admission pour justifier le statut de l'identité. Seuls certains types de pièces définis dans le RNIV permettent de valider une identité (CN | PA | CS | ... )"
 * extension[validationMode].value[x] only Coding
 * extension[validationMode].value[x] from fr-core-vs-mode-validation-identity (required)
-
-Invariant:   fr-core-comment-requires-prov
-Description: "If identityStatus is RECUP, VALI or QUAL, then comment SHALL NOT contain DOUT (identité douteuse) or FICT (identité fictive), conformément au RNIV : ces deux attributs ne peuvent être associés qu'au statut Identité provisoire."
-* severity = #error
-* expression = "extension('identityStatus').value.exists(code = 'RECUP' or code = 'VALI' or code = 'QUAL') implies extension('comment').value.exists(code = 'DOUT' or code = 'FICT').not()"
 
 
