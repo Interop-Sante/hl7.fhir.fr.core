@@ -19,8 +19,6 @@ Description: "Extension composite précisant le degré de confiance de l'identit
     validationDate 0..1 and
     validationMode 0..1
 
-// Concertation : cardinalité à revoir ?
-
 * extension[methodCollection] ^short = "Canal d'obtention des traits d'identité ou du matricule INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS identifier"
 // Référence : RNIV 1 - Principes communs, v2.0 (décembre 2024), chapitre 4.3
 * extension[methodCollection] ^definition = "Précise le canal par lequel les traits d'identité ou le matricule INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)."
