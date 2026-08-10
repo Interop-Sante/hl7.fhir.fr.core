@@ -6,7 +6,7 @@
 
 | | |
 | :--- | :--- |
-| Le canal technique par lequel les traits d’identité ou l’INS ont été obtenus | The channel used to collect the identity traits or the INS |
+| Le canal par lequel les traits d’identité ou l’INS ont été obtenus | The channel used to collect the identity traits or the INS |
 
  
 
@@ -61,7 +61,7 @@ Ce ValueSet est utilisé avec un binding `extensible` dans la sous-extension `me
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:45:29+00:00",
+  "date" : "2026-08-10T13:54:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -78,7 +78,7 @@ Ce ValueSet est utilisé avec un binding `extensible` dans la sous-extension `me
       "use" : "work"
     }]
   }],
-  "description" : "Le canal technique par lequel les traits d'identité ou l'INS ont été obtenus | The channel used to collect the identity traits or the INS",
+  "description" : "Le canal par lequel les traits d'identité ou l'INS ont été obtenus | The channel used to collect the identity traits or the INS",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

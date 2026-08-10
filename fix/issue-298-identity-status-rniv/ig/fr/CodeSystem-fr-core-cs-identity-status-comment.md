@@ -35,7 +35,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Identity Status Comment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:45:29+00:00",
+  "date" : "2026-08-10T13:54:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

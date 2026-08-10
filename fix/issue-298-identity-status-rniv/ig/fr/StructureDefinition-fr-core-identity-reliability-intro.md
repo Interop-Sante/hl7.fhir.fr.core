@@ -22,6 +22,6 @@ Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) por
 
 Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
 
-- `methodCollection` documente le **canal technique** par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) — c'est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
+- `methodCollection` documente le **canal de capture** par lequel les traits d'identité ou l'INS ont été obtenus (RNIV §4.3) — c'est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
 - `identityStatus` documente le **statut de confiance** résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.html).
 - `validationMode` documente la **pièce justificative à haut niveau de confiance** contrôlée pour l'axe C± (carte nationale d'identité, passeport, Application carte Vitale...).
