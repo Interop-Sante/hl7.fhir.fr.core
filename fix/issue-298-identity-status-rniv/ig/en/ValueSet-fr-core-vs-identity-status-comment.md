@@ -37,7 +37,7 @@ ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d
   "title" : "FR Core ValueSet Identity Status Comment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T13:42:57+00:00",
+  "date" : "2026-08-10T13:45:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
