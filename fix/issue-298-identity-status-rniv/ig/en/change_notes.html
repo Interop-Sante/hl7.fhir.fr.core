@@ -280,12 +280,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Corrections QA : code système nationality (<code class="language-plaintext highlighter-rouge">urn:iso:std:iso:3166</code>), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems <code class="language-plaintext highlighter-rouge">v2-3307</code>, <code class="language-plaintext highlighter-rouge">TypeChambre</code>, <code class="language-plaintext highlighter-rouge">PositionLit</code></li>
     </ul>
   </li>
-  <li><strong>[BREAKING CHANGE]</strong> Conformité RNIV EXI SI 07 : refonte de l’extension <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code> (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a></li>
 </ul>
 
 <h4 id="refonte-de-lextension-fr-core-identity-reliability-rniv-exi-si-07">Refonte de l’extension <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code> (RNIV EXI SI 07)</h4>
 
-<h5 id="breaking-change-remplacement-du-codesystem-fr-core-cs-v2-0445-par-deux-codesystems-dédiés"><strong>[BREAKING CHANGE]</strong> Remplacement du CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> par deux CodeSystems dédiés</h5>
+<p><strong>[BREAKING CHANGE]</strong> Conformité RNIV EXI SI 07 : refonte de l’extension <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code> (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a></p>
+
+<h5 id="remplacement-du-codesystem-fr-core-cs-v2-0445-par-deux-codesystems-dédiés">Remplacement du CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> par deux CodeSystems dédiés</h5>
 
 <p>Le CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-v2-0445</code> (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-fiabilite-identite</code> (doublon inutilisé du précédent) sont <strong>supprimés</strong>, remplacés par deux CodeSystems au périmètre explicite :</p>
 
@@ -388,7 +389,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La cardinalité de <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">0..1</code> à <code class="language-plaintext highlighter-rouge">1..1</code> dans le profil Patient INS pour satisfaire EXI SI 07.</p>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1126">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1124">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -646,7 +647,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2191">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2189">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -667,7 +668,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2274">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2272">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -675,7 +676,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2292">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2290">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -786,7 +787,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-10 16:22:00 +0000">
+  <span title="2026-08-10 16:46:00 +0000">
     2026-08-10
   </span>
 

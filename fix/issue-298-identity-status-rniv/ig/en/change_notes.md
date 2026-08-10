@@ -24,11 +24,12 @@ There is no translation page available for the current page, so it has been rend
 * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
 * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
  
-* **[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : refonte de l’extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
 #### Refonte de l’extension fr-core-identity-reliability (RNIV EXI SI 07)
 
-##### [BREAKING CHANGE] Remplacement du CodeSystem fr-core-cs-v2-0445 par deux CodeSystems dédiés
+**[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : refonte de l’extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+
+##### Remplacement du CodeSystem fr-core-cs-v2-0445 par deux CodeSystems dédiés
 
 Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem `fr-core-cs-fiabilite-identite` (doublon inutilisé du précédent) sont **supprimés**, remplacés par deux CodeSystems au périmètre explicite :
 
