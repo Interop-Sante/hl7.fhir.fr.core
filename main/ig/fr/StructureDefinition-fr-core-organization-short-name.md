@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationShortNameExtension",
   "title" : "FR Core Organization Short Name Extension",
   "status" : "active",
-  "date" : "2026-08-04T12:29:23+00:00",
+  "date" : "2026-08-10T16:34:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

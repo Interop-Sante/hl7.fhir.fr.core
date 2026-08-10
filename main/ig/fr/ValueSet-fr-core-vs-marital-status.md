@@ -37,7 +37,7 @@ Patient Marital Status
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-04T12:29:23+00:00",
+  "date" : "2026-08-10T16:34:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
