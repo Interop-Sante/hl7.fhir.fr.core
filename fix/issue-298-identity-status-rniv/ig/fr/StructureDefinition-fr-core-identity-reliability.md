@@ -15,7 +15,7 @@ Elle regroupe 6 sous-extensions :
 | | | | |
 | :--- | :--- | :--- | :--- |
 | `methodCollection` | 0..1 | Canal d’obtention des traits d’identité ou du matricule INS (saisie manuelle, carte Vitale, INSi, code à barre, RFID, Application carte Vitale) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
-| `dateCollection` | 0..1 | Date d’obtention des traits d’identité ou du matricule INS | `date` |
+| `dateInterrogationINSi` | 0..1 | Date d’interrogation du téléservice INSi | `date` |
 | `identityStatus` | 0..1 | Statut de confiance de l’identité au sens du RNIV (`PROV`,`RECUP`,`VALI`,`QUAL`) | [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md) |
 | `comment` | 0..* | Annotations complémentaires sur l’identité (attributs RNIV, codes de gestion) | [fr-core-vs-identity-status-comment](ValueSet-fr-core-vs-identity-status-comment.md) |
 | `validationDate` | 0..1 | Date de vérification de l’identité | `date` |
@@ -29,7 +29,8 @@ Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) por
 
 Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
 
-* `methodCollection` documente le **canal de capture** par lequel les traits d’identité ou le matricule INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
+* `methodCollection` documente le **canal de capture** par lequel les traits d’identité ou le matricule INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant. 
+* `dateInterrogationINSi` documente la **date d’interrogation du téléservice INSi** — renseignée chaque fois que le téléservice INSi est appelé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits, sauf pour les usagers de l’Application carte Vitale et leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel.
 * `identityStatus` documente le **statut de confiance** résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md).
 * `validationMode` documente la **pièce justificative à haut niveau de confiance** contrôlée pour l’axe C± (carte nationale d’identité, passeport, Application carte Vitale…).
 
@@ -100,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-11T07:24:13+00:00",
+  "date" : "2026-08-11T10:04:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -179,26 +180,26 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       }
     },
     {
-      "id" : "Extension.extension:dateCollection",
+      "id" : "Extension.extension:dateInterrogationINSi",
       "path" : "Extension.extension",
-      "sliceName" : "dateCollection",
-      "short" : "Date d'obtention des traits d'identité ou du matricule INS | Date the identity traits or the INS identifier were collected",
-      "definition" : "Date à laquelle les traits d'identité ou le matricule INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS identifier were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension).",
+      "sliceName" : "dateInterrogationINSi",
+      "short" : "Date d'interrogation du téléservice INSi | Date the INSi teleservice was queried",
+      "definition" : "Date à laquelle le téléservice INSi a été appelé. Ce champ est renseigné chaque fois que le téléservice INSi est interrogé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits d'identité (cf. sous-extension `methodCollection`), à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement l'appel au téléservice. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the INSi teleservice was queried. This field is populated whenever the INSi teleservice is queried, whether via Vitale card reading or direct entry of identity traits (see the `methodCollection` sub-extension), except for Appli carte Vitale users and their dependents, for whom the RNIV explicitly excludes the teleservice call. This date must not be confused with the identity verification date (see the `validationDate` sub-extension).",
       "min" : 0,
       "max" : "1"
     },
     {
-      "id" : "Extension.extension:dateCollection.extension",
+      "id" : "Extension.extension:dateInterrogationINSi.extension",
       "path" : "Extension.extension.extension",
       "max" : "0"
     },
     {
-      "id" : "Extension.extension:dateCollection.url",
+      "id" : "Extension.extension:dateInterrogationINSi.url",
       "path" : "Extension.extension.url",
-      "fixedUri" : "dateCollection"
+      "fixedUri" : "dateInterrogationINSi"
     },
     {
-      "id" : "Extension.extension:dateCollection.value[x]",
+      "id" : "Extension.extension:dateInterrogationINSi.value[x]",
       "path" : "Extension.extension.value[x]",
       "type" : [{
         "code" : "date"

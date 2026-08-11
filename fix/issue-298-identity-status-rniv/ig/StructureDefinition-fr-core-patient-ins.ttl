@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "FRCorePatientINSProfile"] ;
   fhir:StructureDefinition.title [ fhir:value "FR Core Patient INS Profile"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-11T07:24:13+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-08-11T10:04:20+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Interop'Santé"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
@@ -3015,11 +3015,11 @@
        ]
      ], [
        fhir:index 64 ;
-       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateCollection" ] ;
+       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateInterrogationINSi" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension" ] ;
-       fhir:ElementDefinition.sliceName [ fhir:value "dateCollection" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Date d'obtention des traits d'identité ou du matricule INS | Date the identity traits or the INS identifier were collected" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Date à laquelle les traits d'identité ou le matricule INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS identifier were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)." ] ;
+       fhir:ElementDefinition.sliceName [ fhir:value "dateInterrogationINSi" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date d'interrogation du téléservice INSi | Date the INSi teleservice was queried" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date à laquelle le téléservice INSi a été appelé. Ce champ est renseigné chaque fois que le téléservice INSi est interrogé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits d'identité (cf. sous-extension `methodCollection`), à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement l'appel au téléservice. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the INSi teleservice was queried. This field is populated whenever the INSi teleservice is queried, whether via Vitale card reading or direct entry of identity traits (see the `methodCollection` sub-extension), except for Appli carte Vitale users and their dependents, for whom the RNIV explicitly excludes the teleservice call. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -3058,7 +3058,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 65 ;
-       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateCollection.id" ] ;
+       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateInterrogationINSi.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension.id" ] ;
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr" ;
@@ -3091,7 +3091,7 @@
        ]
      ], [
        fhir:index 66 ;
-       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateCollection.extension" ] ;
+       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateInterrogationINSi.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension.extension" ] ;
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -3142,7 +3142,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 67 ;
-       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateCollection.url" ] ;
+       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateInterrogationINSi.url" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension.url" ] ;
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr" ;
@@ -3167,7 +3167,7 @@
          ] ;
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ] ;
-       fhir:ElementDefinition.fixedUri [ fhir:value "dateCollection" ] ;
+       fhir:ElementDefinition.fixedUri [ fhir:value "dateInterrogationINSi" ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.mapping [
@@ -3177,7 +3177,7 @@
        ]
      ], [
        fhir:index 68 ;
-       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateCollection.value[x]" ] ;
+       fhir:Element.id [ fhir:value "Patient.extension:identityReliability.extension:dateInterrogationINSi.value[x]" ] ;
        fhir:ElementDefinition.path [ fhir:value "Patient.extension.extension.value[x]" ] ;
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ] ;
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ] ;

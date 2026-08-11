@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationMemberExtension",
   "title" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
   "status" : "active",
-  "date" : "2026-08-11T07:24:13+00:00",
+  "date" : "2026-08-11T10:04:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

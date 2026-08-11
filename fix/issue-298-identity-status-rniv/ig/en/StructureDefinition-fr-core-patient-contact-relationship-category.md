@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient-c
   "name" : "FRCorePatientContactRelationshipCategoryExtension",
   "title" : "FR Core Patient Contact Relationship Category Extension",
   "status" : "active",
-  "date" : "2026-08-11T07:24:13+00:00",
+  "date" : "2026-08-11T10:04:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

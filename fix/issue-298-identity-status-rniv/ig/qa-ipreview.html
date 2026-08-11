@@ -1422,7 +1422,7 @@ Information Source:           <a href="https://annuaire.sante.fr">https://annuai
           Package hl7.fhir.fr.core#2.2.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Generated 
-            <span title="2026-08-11 07:24:00 +0000">
+            <span title="2026-08-11 10:04:00 +0000">
     2026-08-11
   </span>
 
@@ -3233,17 +3233,19 @@ La sous-extension           <code class="language-plaintext highlighter-rouge">m
           <a href="en/change_notes.html">web</a>
         </td>
         <td>
-          <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">github.com</a>
+          <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336">github.com</a>
         </td>
         <td>
-La sous-extension           <code class="language-plaintext highlighter-rouge">dateCollection</code>
- documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son           <code class="language-plaintext highlighter-rouge">^short</code>
-/          <code class="language-plaintext highlighter-rouge">^definition</code>
- faisaient auparavant à tort référence à la seule date d’interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de           <code class="language-plaintext highlighter-rouge">methodCollection</code>
-, et pour ne pas être confondus avec la date de vérification de l’identité (          <code class="language-plaintext highlighter-rouge">validationDate</code>
-), dont le           <code class="language-plaintext highlighter-rouge">^short</code>
-/          <code class="language-plaintext highlighter-rouge">^definition</code>
- ont également été complétés en conséquence           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>
+          <strong>[BREAKING CHANGE]</strong>
+ La sous-extension           <code class="language-plaintext highlighter-rouge">dateCollection</code>
+ est renommée           <code class="language-plaintext highlighter-rouge">dateInterrogationINSi</code>
+, pour l’aligner sur le champ           <code class="language-plaintext highlighter-rouge">ZFD-6</code>
+ “Date d’interrogation du téléservice INSi” d’IHE PAM France (v2.11.1,           <span class="fhir-conformance">
+6.18.6). Son             <code class="language-plaintext highlighter-rouge">^definition</code>
+ précise qu’elle est renseignée chaque fois que le téléservice INSi est appelé — par lecture de la carte Vitale ou par saisie directe des traits (RNIV 
+          </span>
+4.3.1-4.3.3) — à l’exception des usagers de l’Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel (&sect;4.1). Elle ne doit pas être confondue avec la date de vérification de l’identité (          <code class="language-plaintext highlighter-rouge">validationDate</code>
+)           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336">#336</a>
 .
         </td>
       </tr>
@@ -3272,7 +3274,7 @@ La sous-extension           <code class="language-plaintext highlighter-rouge">c
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l1124">​</a>
+          <a name="l1134">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -3965,7 +3967,7 @@ Mise à jour de l’identifier type du rpps rang (INTRN → RPPS)           <a h
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2189">​</a>
+          <a name="l2199">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4144,7 +4146,7 @@ Ajout d’une intro note pour le profil Patient INS           <a href="https://g
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fr</a>
         </td>
         <td>
-          <a name="l2272">​</a>
+          <a name="l2282">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4180,7 +4182,7 @@ Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2290">​</a>
+          <a name="l2300">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5025,7 +5027,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           Le package hl7.fhir.fr.core#2.2.0 est basé sur           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Date de génération : 
-            <span title="2026-08-11 07:24:00 +0000">
+            <span title="2026-08-11 10:04:00 +0000">
     2026-08-11
   </span>
 
@@ -5067,7 +5069,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l1118">​</a>
+          <a name="l1128">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5080,7 +5082,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2183">​</a>
+          <a name="l2193">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5093,7 +5095,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fr</a>
         </td>
         <td>
-          <a name="l2266">​</a>
+          <a name="l2276">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5106,7 +5108,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2284">​</a>
+          <a name="l2294">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a>
  de l’Implementation Guide FRCore
         </td>

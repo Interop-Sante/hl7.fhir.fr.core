@@ -70,7 +70,7 @@
   <name value="FRCorePatientINSProfile"/>
   <title value="FR Core Patient INS Profile"/>
   <status value="active"/>
-  <date value="2026-08-11T07:24:13+00:00"/>
+  <date value="2026-08-11T10:04:20+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -2363,11 +2363,11 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.extension:identityReliability.extension:dateCollection">
+    <element id="Patient.extension:identityReliability.extension:dateInterrogationINSi">
       <path value="Patient.extension.extension"/>
-      <sliceName value="dateCollection"/>
-      <short value="Date d'obtention des traits d'identité ou du matricule INS | Date the identity traits or the INS identifier were collected"/>
-      <definition value="Date à laquelle les traits d'identité ou le matricule INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS identifier were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)."/>
+      <sliceName value="dateInterrogationINSi"/>
+      <short value="Date d'interrogation du téléservice INSi | Date the INSi teleservice was queried"/>
+      <definition value="Date à laquelle le téléservice INSi a été appelé. Ce champ est renseigné chaque fois que le téléservice INSi est interrogé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits d'identité (cf. sous-extension `methodCollection`), à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement l'appel au téléservice. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the INSi teleservice was queried. This field is populated whenever the INSi teleservice is queried, whether via Vitale card reading or direct entry of identity traits (see the `methodCollection` sub-extension), except for Appli carte Vitale users and their dependents, for whom the RNIV explicitly excludes the teleservice call. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2397,7 +2397,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient.extension:identityReliability.extension:dateCollection.id">
+    <element id="Patient.extension:identityReliability.extension:dateInterrogationINSi.id">
       <path value="Patient.extension.extension.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
@@ -2422,7 +2422,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient.extension:identityReliability.extension:dateCollection.extension">
+    <element id="Patient.extension:identityReliability.extension:dateInterrogationINSi.extension">
       <path value="Patient.extension.extension.extension"/>
       <slicing>
         <discriminator>
@@ -2463,7 +2463,7 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Patient.extension:identityReliability.extension:dateCollection.url">
+    <element id="Patient.extension:identityReliability.extension:dateInterrogationINSi.url">
       <path value="Patient.extension.extension.url"/>
       <representation value="xmlAttr"/>
       <short value="identifies the meaning of the extension"/>
@@ -2482,7 +2482,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
-      <fixedUri value="dateCollection"/>
+      <fixedUri value="dateInterrogationINSi"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -2490,7 +2490,7 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Patient.extension:identityReliability.extension:dateCollection.value[x]">
+    <element id="Patient.extension:identityReliability.extension:dateInterrogationINSi.value[x]">
       <path value="Patient.extension.extension.value[x]"/>
       <short value="Value of extension"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)."/>

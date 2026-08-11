@@ -358,11 +358,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h5 id="canal-et-date-de-collecte--sous-extensions-methodcollection-et-datecollection">Canal et date de collecte : sous-extensions <code class="language-plaintext highlighter-rouge">methodCollection</code> et <code class="language-plaintext highlighter-rouge">dateCollection</code></h5>
+<h5 id="canal-dobtention-et-date-dinterrogation-du-téléservice-insi--sous-extensions-methodcollection-et-dateinterrogationinsi">Canal d’obtention et date d’interrogation du téléservice INSi : sous-extensions <code class="language-plaintext highlighter-rouge">methodCollection</code> et <code class="language-plaintext highlighter-rouge">dateInterrogationINSi</code></h5>
 
 <p>La sous-extension <code class="language-plaintext highlighter-rouge">methodCollection</code> documente le canal par lequel les traits d’identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV <span class="fhir-conformance">4.3), distincte du statut de confiance résultant (<code class="language-plaintext highlighter-rouge">identityStatus</code>) et de la pièce justificative contrôlée (<code class="language-plaintext highlighter-rouge">validationMode</code>). Un <code class="language-plaintext highlighter-rouge">^definition</code> a été ajouté pour préciser cette portée, et le code <code class="language-plaintext highlighter-rouge">AV</code> (Application carte Vitale) a été ajouté au CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-method-collection</code>, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV </span>4.3.4) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334">#334</a>.</p>
 
-<p>La sous-extension <code class="language-plaintext highlighter-rouge">dateCollection</code> documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son <code class="language-plaintext highlighter-rouge">^short</code>/<code class="language-plaintext highlighter-rouge">^definition</code> faisaient auparavant à tort référence à la seule date d’interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de <code class="language-plaintext highlighter-rouge">methodCollection</code>, et pour ne pas être confondus avec la date de vérification de l’identité (<code class="language-plaintext highlighter-rouge">validationDate</code>), dont le <code class="language-plaintext highlighter-rouge">^short</code>/<code class="language-plaintext highlighter-rouge">^definition</code> ont également été complétés en conséquence <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>.</p>
+<p><strong>[BREAKING CHANGE]</strong> La sous-extension <code class="language-plaintext highlighter-rouge">dateCollection</code> est renommée <code class="language-plaintext highlighter-rouge">dateInterrogationINSi</code>, pour l’aligner sur le champ <code class="language-plaintext highlighter-rouge">ZFD-6</code> “Date d’interrogation du téléservice INSi” d’IHE PAM France (v2.11.1, <span class="fhir-conformance">6.18.6). Son <code class="language-plaintext highlighter-rouge">^definition</code> précise qu’elle est renseignée chaque fois que le téléservice INSi est appelé — par lecture de la carte Vitale ou par saisie directe des traits (RNIV </span>4.3.1-4.3.3) — à l’exception des usagers de l’Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel (&sect;4.1). Elle ne doit pas être confondue avec la date de vérification de l’identité (<code class="language-plaintext highlighter-rouge">validationDate</code>) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336">#336</a>.</p>
+
+<p><strong>Impact pour les implémenteurs</strong> : les ressources utilisant la sous-extension à l’URL <code class="language-plaintext highlighter-rouge">dateCollection</code> doivent être mises à jour vers <code class="language-plaintext highlighter-rouge">dateInterrogationINSi</code>.</p>
 
 <h5 id="annotations-complémentaires--comment-passe-en-codeableconcept">Annotations complémentaires : <code class="language-plaintext highlighter-rouge">comment</code> passe en <code class="language-plaintext highlighter-rouge">CodeableConcept</code></h5>
 
@@ -382,7 +384,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La cardinalité de <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">0..1</code> à <code class="language-plaintext highlighter-rouge">1..1</code> dans le profil Patient INS pour satisfaire EXI SI 07.</p>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1118">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1128">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -640,7 +642,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2183">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2193">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -661,7 +663,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2266">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2276">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -669,7 +671,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2284">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2294">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -780,7 +782,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-08-11 07:24:00 +0000">
+  <span title="2026-08-11 10:04:00 +0000">
     2026-08-11
   </span>
 
