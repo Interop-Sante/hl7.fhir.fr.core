@@ -72,6 +72,12 @@ La sous-extension `methodCollection` documente le canal par lequel les traits d'
 
 La sous-extension `dateCollection` documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son `^short`/`^definition` faisaient auparavant à tort référence à la seule date d'interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de `methodCollection`, et pour ne pas être confondus avec la date de vérification de l'identité (`validationDate`), dont le `^short`/`^definition` ont également été complétés en conséquence [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
 
+##### **[BREAKING CHANGE]** Renommage de `dateCollection` en `dateInterrogationINSi`
+
+Après vérification auprès du référentiel IHE PAM France (v2.11.1, segment ZFD) et du RNIV, le libellé générique introduit ci-dessus pour `dateCollection` ne correspond en réalité à aucun champ métier normé : le segment ZFD ne définit pas de "date de collecte tous canaux", mais une **date d'interrogation du téléservice INSi** (`ZFD-6`, §6.18.6). La sous-extension est donc renommée `dateInterrogationINSi` et son `^definition` précise qu'elle est renseignée chaque fois que le téléservice INSi est appelé — par lecture de la carte Vitale ou par saisie directe des traits (RNIV §4.3.1-4.3.3) — à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel (§4.1) [#XXX](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/XXX).
+
+**Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l'URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
+
 ##### Annotations complémentaires : `comment` passe en `CodeableConcept`
 
 La sous-extension `comment` n'acceptait qu'un `Coding` du ValueSet `fr-core-vs-identity-status-comment`. Elle accepte désormais un `CodeableConcept`, ce qui permet de saisir du texte libre (`.text`) en complément ou à la place d'un code de ce ValueSet [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).

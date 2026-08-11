@@ -13,7 +13,7 @@ Description: "Extension composite précisant le degré de confiance de l'identit
 * extension ^slicing.rules = #open
 * extension contains
     methodCollection 0..1 and
-    dateCollection 0..1 and
+    dateInterrogationINSi 0..1 and
     identityStatus 0..1 and
     comment 0..* and
     validationDate 0..1 and
@@ -25,9 +25,10 @@ Description: "Extension composite précisant le degré de confiance de l'identit
 * extension[methodCollection].value[x] only Coding
 * extension[methodCollection].valueCoding from FRCoreValueSetIdentityMethodCollection (extensible)
 
-* extension[dateCollection] ^short = "Date d'obtention des traits d'identité ou du matricule INS | Date the identity traits or the INS identifier were collected"
-* extension[dateCollection] ^definition = "Date à laquelle les traits d'identité ou le matricule INS ont été obtenus, quel que soit le canal utilisé (cf. sous-extension `methodCollection`) : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the identity traits or the INS identifier were obtained, regardless of the channel used (see the `methodCollection` sub-extension): manual entry, Vitale card reading, direct query of the INSi teleservice, barcode/Datamatrix scan, RFID reading. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)."
-* extension[dateCollection].value[x] only date
+* extension[dateInterrogationINSi] ^short = "Date d'interrogation du téléservice INSi | Date the INSi teleservice was queried"
+// Référence : IHE PAM France v2.11.1, ZFD-6 (§6.18.6) ; RNIV 1 - Principes communs, v2.0, §4.1 et §4.3.1
+* extension[dateInterrogationINSi] ^definition = "Date à laquelle le téléservice INSi a été appelé. Ce champ est renseigné chaque fois que le téléservice INSi est interrogé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits d'identité (cf. sous-extension `methodCollection`), à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement l'appel au téléservice. Cette date ne doit pas être confondue avec la date de vérification de l'identité (cf. sous-extension `validationDate`). | Date at which the INSi teleservice was queried. This field is populated whenever the INSi teleservice is queried, whether via Vitale card reading or direct entry of identity traits (see the `methodCollection` sub-extension), except for Appli carte Vitale users and their dependents, for whom the RNIV explicitly excludes the teleservice call. This date must not be confused with the identity verification date (see the `validationDate` sub-extension)."
+* extension[dateInterrogationINSi].value[x] only date
 
 * extension[identityStatus] ^short = "Statut de confiance de l’identité au sens du RNIV (EXI SI 07) : PROV | RECUP | VALI | QUAL. Ces 4 statuts sont exclusifs les uns des autres."
 * extension[identityStatus].value[x] only Coding
