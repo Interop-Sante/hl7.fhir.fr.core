@@ -17,7 +17,7 @@
 
 #### Refonte de l'extension `fr-core-identity-reliability` (RNIV EXI SI 07)
 
-**[BREAKING CHANGE]** Conformité RNIV EXI SI 07 : refonte de l'extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+**[BREAKING CHANGE]** Conformité au référentiel d'identitovigilance et au référentiel INS : refonte de l'extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
 ##### Remplacement du CodeSystem `fr-core-cs-v2-0445` par deux CodeSystems dédiés
 
