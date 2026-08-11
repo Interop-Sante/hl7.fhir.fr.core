@@ -23,6 +23,7 @@ Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) por
 Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
 
 - `methodCollection` documente le **canal de capture** par lequel les traits d'identité ou le matricule INS ont été obtenus (RNIV §4.3) — c'est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
-- `dateInterrogationINSi` documente la **date d'interrogation du téléservice INSi** (IHE PAM France ZFD-6) — renseignée chaque fois que le téléservice INSi est appelé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits (RNIV §4.3.1-4.3.3), sauf pour les usagers de l'Application carte Vitale et leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel (§4.1).
+<!-- Référence : IHE PAM France v2.11.1, ZFD-6 (§6.18.6) ; RNIV 1 - Principes communs, v2.0, §4.1 et §4.3.1-4.3.3 -->
+- `dateInterrogationINSi` documente la **date d'interrogation du téléservice INSi** — renseignée chaque fois que le téléservice INSi est appelé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits, sauf pour les usagers de l'Application carte Vitale et leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel.
 - `identityStatus` documente le **statut de confiance** résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.html).
 - `validationMode` documente la **pièce justificative à haut niveau de confiance** contrôlée pour l'axe C± (carte nationale d'identité, passeport, Application carte Vitale...).
