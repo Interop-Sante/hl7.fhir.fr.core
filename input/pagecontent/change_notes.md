@@ -66,11 +66,13 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 }
 ```
 
-##### Canal et date de collecte : sous-extensions `methodCollection` et `dateCollection`
+##### Canal d'obtention et date d'interrogation du téléservice INSi : sous-extensions `methodCollection` et `dateInterrogationINSi`
 
 La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Un `^definition` a été ajouté pour préciser cette portée, et le code `AV` (Application carte Vitale) a été ajouté au CodeSystem `fr-core-cs-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334).
 
-La sous-extension `dateCollection` documente la date à laquelle ces traits ou ce matricule ont été obtenus, quel que soit le canal utilisé. Son `^short`/`^definition` faisaient auparavant à tort référence à la seule date d'interrogation du téléservice INSi ; ils ont été corrigés pour couvrir tous les canaux de `methodCollection`, et pour ne pas être confondus avec la date de vérification de l'identité (`validationDate`), dont le `^short`/`^definition` ont également été complétés en conséquence [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
+**[BREAKING CHANGE]** La sous-extension `dateCollection` est renommée `dateInterrogationINSi`, pour l'aligner sur le champ `ZFD-6` "Date d'interrogation du téléservice INSi" d'IHE PAM France (v2.11.1, §6.18.6). Son `^definition` précise qu'elle est renseignée chaque fois que le téléservice INSi est appelé — par lecture de la carte Vitale ou par saisie directe des traits (RNIV §4.3.1-4.3.3) — à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel (§4.1). Elle ne doit pas être confondue avec la date de vérification de l'identité (`validationDate`) [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336).
+
+**Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l'URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
 
 ##### Annotations complémentaires : `comment` passe en `CodeableConcept`
 
