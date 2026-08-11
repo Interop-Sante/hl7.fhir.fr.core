@@ -16,11 +16,7 @@ Description: "Méthode de collection de l'identité"
 * #AV	"Application carte Vitale" "Obtention directe de l'INS par scan du QR code ou lecture NFC de l'Application carte Vitale ; l'identité ainsi obtenue est considérée comme qualifiée." // RNIV 1 v2.0, §4.3.4
 
 // Citation du RNIV : 
-// Remarque : Considérant que le principal risque lors de la qualification de l’identité réside dans
-// l’attribution d’une mauvaise INS ne correspondant pas à l’usager ; et que la procédure de rattachement
-// d'un ayant droit à un ouvrant droit élimine ce risque, alors le ministère de la Santé et de l’accès aux soins
-// considère l'identité des ayants droit, lorsqu'elle est obtenue à partir de l'Appli carte vitale, comme étant
-// au statut qualifié.
+// Remarque : Considérant que le principal risque lors de la qualification de l’identité réside dans l’attribution d’une mauvaise INS ne correspondant pas à l’usager ; et que la procédure de rattachement d'un ayant droit à un ouvrant droit élimine ce risque, alors le ministère de la Santé et de l’accès aux soins considère l'identité des ayants droit, lorsqu'elle est obtenue à partir de l'Appli carte vitale, comme étant au statut qualifié.
 
 // SCS profile
 * ^experimental = false
