@@ -39,7 +39,7 @@ Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas 
 **Usages:**
 
 * Use this Extension: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
-* Examples for this Extension: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md)
+* Examples for this Extension: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md) and [Patient/FRCorePatientINSExampleRNIV](Patient-FRCorePatientINSExampleRNIV.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-identity-reliability.json)
 
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-11T11:39:02+00:00",
+  "date" : "2026-08-12T13:53:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

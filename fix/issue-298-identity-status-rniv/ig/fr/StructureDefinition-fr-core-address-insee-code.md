@@ -11,7 +11,7 @@ Extension d’ajout du code insee (5 chiffres) à l’adresse postale. Dans le c
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Core Address Profile](StructureDefinition-fr-core-address.md)
-* Exemples pour ce/t/te Extension: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md)
+* Exemples pour ce/t/te Extension: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md) and [Patient/FRCorePatientINSExampleRNIV](Patient-FRCorePatientINSExampleRNIV.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-address-insee-code)
 
@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-address
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-08-11T11:39:02+00:00",
+  "date" : "2026-08-12T13:53:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

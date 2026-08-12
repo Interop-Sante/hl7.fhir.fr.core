@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-11T11:39:02+00:00",
+  "date" : "2026-08-12T13:53:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -3329,6 +3329,22 @@
       },
       "name" : "FRCorePatientINSExample",
       "description" : "Exemple de ressource Patient (cas d'usage INS)",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FRCorePatientINSExampleRNIV.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/FRCorePatientINSExampleRNIV"
+      },
+      "name" : "FRCorePatientINSExampleRNIV",
+      "description" : "Exemple de ressource Patient (cas d'usage INS) — jeu de données de référence RNIV, identité qualifiée",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
     },
     {

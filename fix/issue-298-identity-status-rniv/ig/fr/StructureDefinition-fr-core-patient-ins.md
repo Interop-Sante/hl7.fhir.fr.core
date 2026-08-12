@@ -25,7 +25,7 @@ Pour plus d’informations sur le contexte du patient INS, consultez le référe
 
 **Utilisations:**
 
-* Exemples pour ce/t/te Profil: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md)
+* Exemples pour ce/t/te Profil: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md) and [Patient/FRCorePatientINSExampleRNIV](Patient-FRCorePatientINSExampleRNIV.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-ins)
 
@@ -104,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-08-11T11:39:02+00:00",
+  "date" : "2026-08-12T13:53:29+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
