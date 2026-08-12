@@ -64,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-08-12T13:53:29+00:00",
+  "date" : "2026-08-12T14:08:44+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -110,7 +110,21 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
       "id" : "Extension",
       "path" : "Extension",
       "short" : "FR Core Patient Identity Reliability Extension",
-      "definition" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations."
+      "definition" : "Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.\r\nComposite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.",
+      "constraint" : [{
+        "key" : "fr-core-identity-reliability-1",
+        "severity" : "error",
+        "human" : "Une identité comportant l'attribut Identité douteuse (DOUT) ou Identité fictive (FICT) dans `comment` doit avoir un statut de confiance (`identityStatus`) égal à Identité provisoire (PROV) [EXI SI 09]",
+        "expression" : "extension('comment').value.coding.exists(code = 'DOUT' or code = 'FICT') implies extension('identityStatus').value.exists(code = 'PROV')",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0"
+      },
+      {
+        "key" : "fr-core-identity-reliability-2",
+        "severity" : "error",
+        "human" : "Les attributs Identité fictive (FICT) et Identité douteuse (DOUT) ne peuvent être cumulés dans `comment` sur une même identité",
+        "expression" : "extension('comment').value.coding.where(code = 'FICT').exists() implies extension('comment').value.coding.where(code = 'DOUT').empty()",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0"
+      }]
     },
     {
       "id" : "Extension.extension:methodCollection",

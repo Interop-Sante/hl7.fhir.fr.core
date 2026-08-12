@@ -86,6 +86,10 @@ Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent 
 
 **Impact pour les implémenteurs** : une ressource `FRCorePatientINS` portant un matricule INS doit avoir le statut `QUAL` (et non `VALI`). Les instances existantes au statut `VALI` avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en `QUAL`.
 
+##### Invariants sur les attributs "douteux" et "fictif" (RNIV EXI SI 09)
+
+Ajout de 2 invariants sur `fr-core-identity-reliability`, pour rendre conforme le profil au volet statut de l'exigence [EXI SI 09] du RNIV (§3.2.3) : une identité portant l'attribut `comment` "Identité douteuse" (`DOUT`) ou "Identité fictive" (`FICT`) doit avoir un statut de confiance (`identityStatus`) égal à "Identité provisoire" (`PROV`). Un second invariant interdit le cumul des attributs "Identité fictive" et "Identité douteuse" sur une même identité [#335](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/335).
+
 ##### `identityStatus` obligatoire dans `FRCorePatientINSProfile`
 
 La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
