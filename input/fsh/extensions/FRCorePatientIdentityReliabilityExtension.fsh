@@ -19,6 +19,16 @@ Description: "Extension composite précisant le degré de confiance de l'identit
     validationDate 0..1 and
     validationMode 0..1
 
+// Référence : RNIV 1 - Principes communs, v2.0 (décembre 2024), §3.2.3 "Attributs de l'identité", p.11-12/34 [EXI SI 09]
+// Citation du RNIV :
+// « Pour les identités comportant un attribut Identité douteuse ou Identité fictive, il doit être
+// informatiquement rendu impossible : d'attribuer un statut autre que celui d'Identité provisoire ;
+// de faire appel au téléservice INSi. [EXI SI 09] »
+// « Seuls les attributs douteux et homonymes peuvent être utilisés simultanément, les attributs
+// fictifs et douteux ne peuvent être cumulés »
+* obeys fr-core-identity-reliability-1
+* obeys fr-core-identity-reliability-2
+
 * extension[methodCollection] ^short = "Canal d'obtention des traits d'identité ou du matricule INS (SM, CV, INSi, CB, RFID, AV) | Channel used to collect the identity traits or the INS identifier"
 // Référence : RNIV 1 - Principes communs, v2.0 (décembre 2024), chapitre 4.3
 * extension[methodCollection] ^definition = "Précise le canal par lequel les traits d'identité ou le matricule INS ont été obtenus : saisie manuelle, lecture de la carte Vitale, interrogation directe du téléservice INSi, scan d'un code à barre/Datamatrix, lecture RFID ou Application carte Vitale. Ce champ ne porte pas le statut de confiance résultant (cf. sous-extension `identityStatus`) ni la pièce justificative contrôlée (cf. sous-extension `validationMode`)."
@@ -46,4 +56,13 @@ Description: "Extension composite précisant le degré de confiance de l'identit
 * extension[validationMode].value[x] only Coding
 * extension[validationMode].value[x] from fr-core-vs-mode-validation-identity (required)
 
+Invariant:   fr-core-identity-reliability-1
+Description: "Une identité comportant l'attribut Identité douteuse (DOUT) ou Identité fictive (FICT) dans `comment` doit avoir un statut de confiance (`identityStatus`) égal à Identité provisoire (PROV) [EXI SI 09]"
+* severity = #error
+* expression = "extension('comment').value.coding.exists(code = 'DOUT' or code = 'FICT') implies extension('identityStatus').value.exists(code = 'PROV')"
+
+Invariant:   fr-core-identity-reliability-2
+Description: "Les attributs Identité fictive (FICT) et Identité douteuse (DOUT) ne peuvent être cumulés dans `comment` sur une même identité"
+* severity = #error
+* expression = "extension('comment').value.coding.where(code = 'FICT').exists() implies extension('comment').value.coding.where(code = 'DOUT').empty()"
 
