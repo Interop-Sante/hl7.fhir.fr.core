@@ -48,5 +48,3 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 
 * reasonReference only Reference(Condition or Observation) // * reasonReference only Reference(FRCoreConditionProfile or Observation)
 * reasonReference ^short = "Motif du traitement"
-
-* note ^short = "Conditions préalables à l'utilisation du médicament."
