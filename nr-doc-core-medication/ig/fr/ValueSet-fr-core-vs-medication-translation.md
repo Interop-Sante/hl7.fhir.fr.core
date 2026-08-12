@@ -15,7 +15,7 @@ Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
+No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
@@ -38,7 +38,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRCoreValueSetMedicationTranslation",
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
-  "date" : "2026-07-20T14:23:22+00:00",
+  "date" : "2026-08-12T15:16:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

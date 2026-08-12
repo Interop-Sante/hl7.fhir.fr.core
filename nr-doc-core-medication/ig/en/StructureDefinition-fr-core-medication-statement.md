@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationStatementProfile",
   "title" : "FR Core MedicationStatement Profile",
   "status" : "active",
-  "date" : "2026-07-20T14:23:22+00:00",
+  "date" : "2026-08-12T15:16:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -145,11 +145,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
         "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1"]
       }]
-    },
-    {
-      "id" : "MedicationStatement.note",
-      "path" : "MedicationStatement.note",
-      "short" : "Conditions préalables à l'utilisation du médicament."
     },
     {
       "id" : "MedicationStatement.dosage.sequence",

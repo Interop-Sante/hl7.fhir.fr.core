@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-07-20T14:23:22+00:00",
+  "date" : "2026-08-12T15:16:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -899,6 +899,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-bp-meas-body-location.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-bp-meas-body-location"
@@ -911,6 +915,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-bp-meas-method.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-bp-meas-method"
@@ -923,6 +931,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-body-position.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-body-position"
@@ -935,6 +947,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vsbody-temp-meas-body-location.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vsbody-temp-meas-body-location"
@@ -947,6 +963,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-additional-when-values.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-additional-when-values"
@@ -959,6 +979,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-address-insee-code.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-address-insee-code"
@@ -971,6 +995,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-address.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-address"
@@ -983,6 +1011,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-appointment-operator.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-appointment-operator"
@@ -995,6 +1027,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-appointment.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-appointment"
@@ -1007,6 +1043,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-human-name-assembly-order.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-human-name-assembly-order"
@@ -1019,6 +1059,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-additional-when-codes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-additional-when-codes"
@@ -1031,6 +1075,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-champ-activite.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-champ-activite"
@@ -1043,6 +1091,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-circonstances-sortie.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-circonstances-sortie"
@@ -1055,6 +1107,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-code-tarif-tnjp.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-code-tarif-tnjp"
@@ -1067,6 +1123,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-contact-relationship.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-contact-relationship"
@@ -1079,6 +1139,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-discipline-equipement.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-discipline-equipement"
@@ -1091,6 +1155,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-discipline-prestation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-discipline-prestation"
@@ -1103,6 +1171,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-fiabilite-identite.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-fiabilite-identite"
@@ -1115,6 +1187,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-identifier-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-identifier-type"
@@ -1127,6 +1203,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-location-identifier-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-identifier-type"
@@ -1139,6 +1219,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-location-physical-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-physical-type"
@@ -1151,6 +1235,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-location-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-type"
@@ -1163,6 +1251,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-marital-status.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-marital-status"
@@ -1175,6 +1267,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-method-collection.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-method-collection"
@@ -1187,6 +1283,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-mode-validation-identity.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-mode-validation-identity"
@@ -1199,6 +1299,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-type-organisation.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-type-organisation"
@@ -1211,6 +1315,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-patient-contact-relationship-category.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-patient-contact-relationship-category"
@@ -1223,6 +1331,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-location-position-lit.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-position-lit"
@@ -1235,6 +1347,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-schedule-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-schedule-type"
@@ -1247,6 +1363,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-type-admission.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-type-admission"
@@ -1259,6 +1379,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-location-type-chambre.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-location-type-chambre"
@@ -1271,6 +1395,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-type-activite.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-type-activite"
@@ -1283,6 +1411,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-uf-indicateur.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-uf-indicateur"
@@ -1295,6 +1427,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-v2-0203.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-v2-0203"
@@ -1307,6 +1443,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-v2-0445.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-v2-0445"
@@ -1319,6 +1459,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-v2-3307.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-v2-3307"
@@ -1331,6 +1475,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fr-core-cs-v2-3311.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/fr-core-cs-v2-3311"
@@ -1343,6 +1491,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-comment.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-comment"
@@ -1355,6 +1507,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-contact-point-email-type.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-contact-point-email-type"
@@ -1367,6 +1523,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-contact-point.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-contact-point"
@@ -1379,6 +1539,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-estimated-discharge-date.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-estimated-discharge-date"
@@ -1391,6 +1555,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-encounter.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-encounter"
@@ -1403,6 +1571,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-healthcare-service.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-healthcare-service"
@@ -1415,6 +1587,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-human-name.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-human-name"
@@ -1427,6 +1603,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-location-position-lit.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-location-position-lit"
@@ -1439,6 +1619,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-location-type-chambre.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-location-type-chambre"
@@ -1451,6 +1635,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-location.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-location"
@@ -1463,6 +1651,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-lunar-date.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-lunar-date"
@@ -1475,6 +1667,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication-administration-inhaled-oxygen"
@@ -1487,6 +1683,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication-administration-sequence.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication-administration-sequence"
@@ -1499,6 +1699,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication"
@@ -1511,6 +1715,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication-administration.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication-administration"
@@ -1523,6 +1731,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication-dispense.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication-dispense"
@@ -1535,6 +1747,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication-request.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication-request"
@@ -1547,6 +1763,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-treatment-intent.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-treatment-intent"
@@ -1559,6 +1779,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-medication-statement.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-medication-statement"
@@ -1571,6 +1795,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-not-covered.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-not-covered"
@@ -1583,6 +1811,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-ald.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-ald"
@@ -1595,6 +1827,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-bp.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-bp"
@@ -1607,6 +1843,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-bmi.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-bmi"
@@ -1619,6 +1859,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-body-height.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-body-height"
@@ -1631,6 +1875,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-body-position-ext.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-body-position-ext"
@@ -1643,6 +1891,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-body-temperature.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-body-temperature"
@@ -1655,6 +1907,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-body-weight.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-body-weight"
@@ -1667,6 +1923,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-head-circum.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-head-circum"
@@ -1679,6 +1939,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-heartrate.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-heartrate"
@@ -1691,6 +1955,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-height-body-position.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-height-body-position"
@@ -1703,6 +1971,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-level-of-exertion.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-level-of-exertion"
@@ -1715,6 +1987,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-saturation-oxygen.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-saturation-oxygen"
@@ -1727,6 +2003,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-prevention.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-prevention"
@@ -1739,6 +2019,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-resp-rate.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-resp-rate"
@@ -1751,6 +2035,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-etablissement.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-etablissement"
@@ -1763,6 +2051,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-sae-categorie.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-sae-categorie"
@@ -1775,6 +2067,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-champ-activite.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-champ-activite"
@@ -1787,6 +2083,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-demandeuse-acte.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-demandeuse-acte"
@@ -1799,6 +2099,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-discipline-equipement.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-discipline-equipement"
@@ -1811,6 +2115,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-discipline-prestation.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-discipline-prestation"
@@ -1823,6 +2131,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-executante-acte.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-executante-acte"
@@ -1835,6 +2147,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-uf-indicateur.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-uf-indicateur"
@@ -1847,6 +2163,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-place-hebergement-theorique.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-place-hebergement-theorique"
@@ -1859,6 +2179,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-member.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-member"
@@ -1871,6 +2195,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-tarif.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-tarif"
@@ -1883,6 +2211,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-type-activite.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-type-activite"
@@ -1895,6 +2227,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-uf-externe.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-uf-externe"
@@ -1907,6 +2243,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization"
@@ -1919,6 +2259,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-raison-sociale.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-raison-sociale"
@@ -1931,6 +2275,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-short-name.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-short-name"
@@ -1943,6 +2291,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-uac.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-uac"
@@ -1955,6 +2307,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-organization-uf.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-organization-uf"
@@ -1967,6 +2323,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient-birth-list-given-name.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-birth-list-given-name"
@@ -1979,6 +2339,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient-birthdate-update-indicator.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-birthdate-update-indicator"
@@ -1991,6 +2355,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient-contact-identifier.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-contact-identifier"
@@ -2003,6 +2371,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient-contact-relationship-category.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-contact-relationship-category"
@@ -2015,6 +2387,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient-death-place.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-death-place"
@@ -2027,6 +2403,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-identity-reliability.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-identity-reliability"
@@ -2039,6 +2419,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient-ins.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient-ins"
@@ -2051,6 +2435,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-patient.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-patient"
@@ -2063,6 +2451,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-practitioner.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-practitioner"
@@ -2075,6 +2467,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-practitioner-role.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-practitioner-role"
@@ -2087,6 +2483,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-practitioner-specialty.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-practitioner-specialty"
@@ -2099,6 +2499,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-related-person.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-related-person"
@@ -2111,6 +2515,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-schedule-availability-time.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-schedule-availability-time"
@@ -2123,6 +2531,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-schedule.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-schedule"
@@ -2135,6 +2547,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-service-type-duration.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-service-type-duration"
@@ -2147,6 +2563,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-slot.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-slot"
@@ -2159,6 +2579,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-additional-when-codes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-additional-when-codes"
@@ -2171,6 +2595,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-availability-time-rule.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-availability-time-rule"
@@ -2183,6 +2611,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-height-body-position.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-height-body-position"
@@ -2195,6 +2627,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-bp-method.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-bp-method"
@@ -2207,6 +2643,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-categorie-sae-etablissement.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-categorie-sae-etablissement"
@@ -2219,6 +2659,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-oragnization-code-tarif-tnjp"
@@ -2231,6 +2675,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-cog-commune-pays.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-cog-commune-pays"
@@ -2243,6 +2691,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-contact-relationship.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-contact-relationship"
@@ -2255,6 +2707,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-edqm.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-edqm"
@@ -2267,6 +2723,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-email-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-email-type"
@@ -2279,6 +2739,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-encounter-class.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-encounter-class"
@@ -2291,6 +2755,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-encounter-discharge-disposition.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-encounter-discharge-disposition"
@@ -2303,6 +2771,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-encounter-identifier-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-encounter-identifier-type"
@@ -2315,6 +2787,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-encounter-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-encounter-type"
@@ -2327,6 +2803,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-identity-method-collection.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-identity-method-collection"
@@ -2339,6 +2819,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-identity-reliability.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-identity-reliability"
@@ -2351,6 +2835,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-insee-code.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-insee-code"
@@ -2363,6 +2851,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-location-position-lit.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-location-position-lit"
@@ -2375,6 +2867,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-location-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-location-type"
@@ -2387,6 +2883,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-location-type-chambre.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-location-type-chambre"
@@ -2399,6 +2899,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-marital-status.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-marital-status"
@@ -2411,6 +2915,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-medication-translation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-medication-translation"
@@ -2423,6 +2931,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-mode-validation-identity.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-mode-validation-identity"
@@ -2435,6 +2947,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-mode-validation-identity-ins.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-mode-validation-identity-ins"
@@ -2447,6 +2963,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-organization-champ-activite.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-champ-activite"
@@ -2459,6 +2979,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-organization-discipline-equipement.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-discipline-equipement"
@@ -2471,6 +2995,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-discipline-prestation.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-discipline-prestation"
@@ -2483,6 +3011,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-organization-etablissement-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-etablissement-type"
@@ -2495,6 +3027,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-organization-identifier-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-identifier-type"
@@ -2507,6 +3043,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-organization-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-type"
@@ -2519,6 +3059,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-oragnization-type-activite.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-oragnization-type-activite"
@@ -2531,6 +3075,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-organization-uf-indicateur.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-organization-uf-indicateur"
@@ -2543,6 +3091,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-patient-contact-relationship-category.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-contact-relationship-category"
@@ -2555,6 +3107,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-patient-contact-role.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-contact-role"
@@ -2567,6 +3123,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-patient-gender.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-gender"
@@ -2579,6 +3139,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-patient-identifier-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-identifier-type"
@@ -2591,6 +3155,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-patient-identifier-use-ins.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-identifier-use-ins"
@@ -2603,6 +3171,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-patient-identifier-use-pi.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-patient-identifier-use-pi"
@@ -2615,6 +3187,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-practitioner-identifier-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-practitioner-identifier-type"
@@ -2627,6 +3203,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-practitioner-specialty.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-practitioner-specialty"
@@ -2639,6 +3219,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-practitioner-role-exercice.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-practitioner-role-exercice"
@@ -2651,6 +3235,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-relation-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-relation-type"
@@ -2663,6 +3251,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-schedule-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-schedule-type"
@@ -2675,6 +3267,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-title.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-title"
@@ -2687,6 +3283,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-treatment-intent.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-treatment-intent"
@@ -2699,6 +3299,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-schedule-unavailability-reason.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-schedule-unavailability-reason"
@@ -2711,6 +3315,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Appointment"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Appointment-FRCoreAppointmentExample.html"
       }],
       "reference" : {
         "reference" : "Appointment/FRCoreAppointmentExample"
@@ -2723,6 +3331,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-FRCoreEncounterExample.html"
       }],
       "reference" : {
         "reference" : "Encounter/FRCoreEncounterExample"
@@ -2735,6 +3347,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "HealthcareService"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "HealthcareService-svc-cardiologie-1.html"
       }],
       "reference" : {
         "reference" : "HealthcareService/svc-cardiologie-1"
@@ -2747,6 +3363,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Location-loc-radiologie-z.html"
       }],
       "reference" : {
         "reference" : "Location/loc-radiologie-z"
@@ -2759,6 +3379,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationAdministration"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.html"
       }],
       "reference" : {
         "reference" : "MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample"
@@ -2771,6 +3395,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationBMIExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationBMIExample"
@@ -2783,6 +3411,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationBodyHeightExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationBodyHeightExample"
@@ -2795,6 +3427,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationBodyTemperatureExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationBodyTemperatureExample"
@@ -2807,6 +3443,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationBodyWeightExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationBodyWeightExample"
@@ -2819,6 +3459,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationBPExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationBPExample"
@@ -2831,6 +3475,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationHeadCircumExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationHeadCircumExample"
@@ -2843,6 +3491,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationHeartRateExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationHeartRateExample"
@@ -2855,6 +3507,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationOxygenSaturationExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationOxygenSaturationExample"
@@ -2867,6 +3523,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FRCoreObservationRespRateExample.html"
       }],
       "reference" : {
         "reference" : "Observation/FRCoreObservationRespRateExample"
@@ -2879,6 +3539,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-FRCoreOrganizationExample.html"
       }],
       "reference" : {
         "reference" : "Organization/FRCoreOrganizationExample"
@@ -2891,6 +3555,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FRCorePatientDeceasedExample.html"
       }],
       "reference" : {
         "reference" : "Patient/FRCorePatientDeceasedExample"
@@ -2903,6 +3571,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FRCorePatientINSExample.html"
       }],
       "reference" : {
         "reference" : "Patient/FRCorePatientINSExample"
@@ -2915,6 +3587,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-FRCorePractitionerExample.html"
       }],
       "reference" : {
         "reference" : "Practitioner/FRCorePractitionerExample"
@@ -2927,6 +3603,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-FRCorePractitionerRoleExample.html"
       }],
       "reference" : {
         "reference" : "PractitionerRole/FRCorePractitionerRoleExample"
@@ -2939,6 +3619,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "RelatedPerson"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "RelatedPerson-FRCoreRelatedPersonExample.html"
       }],
       "reference" : {
         "reference" : "RelatedPerson/FRCoreRelatedPersonExample"
@@ -2951,6 +3635,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Schedule"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Schedule-FRCoreScheduleExample.html"
       }],
       "reference" : {
         "reference" : "Schedule/FRCoreScheduleExample"
@@ -2963,6 +3651,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Slot"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Slot-FRCoreSlotExample.html"
       }],
       "reference" : {
         "reference" : "Slot/FRCoreSlotExample"
@@ -2975,6 +3667,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-heartrate-body-location.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-heartrate-body-location"
@@ -2987,6 +3683,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-heartrate-measurement-method.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-heartrate-measurement-method"
@@ -2999,6 +3699,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-height-meas-method.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-height-meas-method"
@@ -3011,6 +3715,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-dept-11003-endocrino.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-dept-11003-endocrino"
@@ -3023,6 +3731,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-eg-4-members.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-eg-4-members"
@@ -3035,6 +3747,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-ej-350005179.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-ej-350005179"
@@ -3047,6 +3763,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Location-hopitaltest-endocrino-ch04.html"
       }],
       "reference" : {
         "reference" : "Location/hopitaltest-endocrino-ch04"
@@ -3059,6 +3779,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Location-hopitaltest-endocrino-ch04-litF.html"
       }],
       "reference" : {
         "reference" : "Location/hopitaltest-endocrino-ch04-litF"
@@ -3071,6 +3795,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Location-hopitaltest-infectio-ch02-prsn-ngtv.html"
       }],
       "reference" : {
         "reference" : "Location/hopitaltest-infectio-ch02-prsn-ngtv"
@@ -3083,6 +3811,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-pole-1150-med-spe.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-pole-1150-med-spe"
@@ -3095,6 +3827,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Location-hopitaltest-salle-examen-01.html"
       }],
       "reference" : {
         "reference" : "Location/hopitaltest-salle-examen-01"
@@ -3107,6 +3843,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-service-11006-endocrino-diabo.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-service-11006-endocrino-diabo"
@@ -3119,6 +3859,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-service-11007-dietetique.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-service-11007-dietetique"
@@ -3131,6 +3875,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-uac-4420-uac-01.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-uac-4420-uac-01"
@@ -3143,6 +3891,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-uac-4420-uac-02.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-uac-4420-uac-02"
@@ -3155,6 +3907,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-uf-4420-dialyse.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-uf-4420-dialyse"
@@ -3167,6 +3923,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-uf-4701-endocrino-diab.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-uf-4701-endocrino-diab"
@@ -3179,6 +3939,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-hopitaltest-uf-4705-nutrition.html"
       }],
       "reference" : {
         "reference" : "Organization/hopitaltest-uf-4705-nutrition"
@@ -3191,6 +3955,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-observation-work-related-accident.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fr-core-observation-work-related-accident"
@@ -3203,6 +3971,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-spo2-body-location.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-spo2-body-location"
@@ -3215,6 +3987,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-respiratory-rate-meas-method.html"
       }],
       "reference" : {
         "reference" : "ValueSet/fr-core-vs-respiratory-rate-meas-method"
