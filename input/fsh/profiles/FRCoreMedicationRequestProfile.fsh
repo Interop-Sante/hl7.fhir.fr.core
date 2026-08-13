@@ -50,7 +50,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 * instantiatesUri ^short = "Référence de la prescription" // Doc Core
 
-* basedOn 0..1 // Doc Core
 * basedOn ^short = "Référence à un item du plan de traitement."
 * basedOn only Reference(FRCoreMedicationRequestProfile or CarePlan or ServiceRequest or ImmunizationRecommendation) // Doc Core : Reference(FRMedicationRequestDocument or FRCarePlanDocument or FRServiceRequestDocument or FRImmunizationRecommendationDocument)
 
