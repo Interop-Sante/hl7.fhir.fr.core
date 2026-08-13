@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-08-13T08:33:40+00:00",
+  "date" : "2026-08-13T08:58:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -86,7 +86,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "kind" : "resource",
   "abstract" : false,
   "type" : "MedicationRequest",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -94,28 +94,10 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "path" : "MedicationRequest"
     },
     {
-      "id" : "MedicationRequest.extension",
-      "path" : "MedicationRequest.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
       "id" : "MedicationRequest.extension:renderedDosageInstruction",
       "path" : "MedicationRequest.extension",
       "sliceName" : "renderedDosageInstruction",
-      "short" : "Représentation lisible de la posologie",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction|0.1.0"]
-      }]
+      "short" : "Représentation lisible de la posologie"
     },
     {
       "id" : "MedicationRequest.extension:treatmentIntent",
@@ -130,16 +112,36 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       }]
     },
     {
-      "id" : "MedicationRequest.extension:horsAMM",
+      "id" : "MedicationRequest.extension:offLabelUse",
       "path" : "MedicationRequest.extension",
-      "sliceName" : "horsAMM",
-      "short" : "Hors Autorisation de mise sur le marché",
+      "sliceName" : "offLabelUse",
+      "short" : "Usage hors Autorisation de Mise sur le Marché (hors AMM)",
       "min" : 0,
-      "max" : "*",
+      "max" : "1",
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel|1.0.0-comment-2"]
       }]
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:isOffLabelUse",
+      "path" : "MedicationRequest.extension.extension",
+      "sliceName" : "isOffLabelUse"
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:isOffLabelUse.value[x]",
+      "path" : "MedicationRequest.extension.extension.value[x]",
+      "short" : "Indicateur hors AMM (doit être renseigné si l'extension est présente)"
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:reason",
+      "path" : "MedicationRequest.extension.extension",
+      "sliceName" : "reason"
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:reason.value[x]",
+      "path" : "MedicationRequest.extension.extension.value[x]",
+      "short" : "Motif du hors AMM"
     },
     {
       "id" : "MedicationRequest.extension:notCovered",
@@ -188,14 +190,20 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
     {
       "id" : "MedicationRequest.authoredOn",
       "path" : "MedicationRequest.authoredOn",
-      "short" : "Date de prescription",
-      "min" : 1
+      "short" : "Date de prescription"
     },
     {
       "id" : "MedicationRequest.requester",
       "path" : "MedicationRequest.requester",
       "short" : "Prescripteur",
-      "min" : 1
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
+      }]
     },
     {
       "id" : "MedicationRequest.reasonReference",
@@ -321,18 +329,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "short" : "Méthode d'administration"
     },
     {
-      "id" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-      "path" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
       "id" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",
       "path" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
       "sliceName" : "doseRange",
@@ -400,18 +396,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "id" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
       "path" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
       "min" : 1
-    },
-    {
-      "id" : "MedicationRequest.dispenseRequest.extension",
-      "path" : "MedicationRequest.dispenseRequest.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
     },
     {
       "id" : "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5",

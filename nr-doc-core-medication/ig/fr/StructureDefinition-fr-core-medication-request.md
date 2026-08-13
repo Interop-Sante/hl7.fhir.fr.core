@@ -25,7 +25,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 #### Contraintes
 
-Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) 
+Cette structure est dérivée de [MedicationRequestEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationRequest-eu-core.html) 
 
 #### Bindings terminologiques (différentiel)
 
@@ -33,11 +33,11 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 #### Contraintes
 
-Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) 
+Cette structure est dérivée de [MedicationRequestEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationRequest-eu-core.html) 
 
 ** Résumé **
 
-Obligatoire : 3 éléments(7 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 1 élément(7 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -47,6 +47,10 @@ Cette structure fait référence à ces autres structures:
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
+* [FR Core Practitioner Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0)](StructureDefinition-fr-core-practitioner.md)
+* [FR Core Practitioner Role (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0)](StructureDefinition-fr-core-practitioner-role.md)
+* [FR Core Organization Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0)](StructureDefinition-fr-core-organization.md)
+* [RelatedPerson (http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)](http://hl7.org/fhir/R4/relatedperson.html)
 * [Observation (http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)](http://hl7.org/fhir/R4/observation.html)
 * [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
 * [FR Core Observation Prevention (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention|2.2.0)](StructureDefinition-fr-core-observation-prevention.md)
@@ -61,7 +65,6 @@ Cette structure fait référence à ces autres structures:
 
 Cette structure fait référence à ces extensions:
 
-* [http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-MedicationRequest.renderedDosageInstruction.html)
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent|2.2.0](StructureDefinition-fr-core-treatment-intent.md)
 * [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-offLabel.html)
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0](StructureDefinition-fr-core-not-covered.md)
@@ -73,7 +76,6 @@ Cette structure fait référence à ces extensions:
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.timing.repeat.bounds[x]
-* The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.rate[x]
 * The element 1 is sliced based on the value of MedicationRequest.substitution.allowed[x]
 
@@ -85,7 +87,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) 
+Cette structure est dérivée de [MedicationRequestEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationRequest-eu-core.html) 
 
 #### Bindings terminologiques (différentiel)
 
@@ -95,11 +97,11 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 #### Contraintes
 
-Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) 
+Cette structure est dérivée de [MedicationRequestEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationRequest-eu-core.html) 
 
 ** Résumé **
 
-Obligatoire : 3 éléments(7 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 1 élément(7 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -109,6 +111,10 @@ Cette structure fait référence à ces autres structures:
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
+* [FR Core Practitioner Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0)](StructureDefinition-fr-core-practitioner.md)
+* [FR Core Practitioner Role (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0)](StructureDefinition-fr-core-practitioner-role.md)
+* [FR Core Organization Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0)](StructureDefinition-fr-core-organization.md)
+* [RelatedPerson (http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1)](http://hl7.org/fhir/R4/relatedperson.html)
 * [Observation (http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)](http://hl7.org/fhir/R4/observation.html)
 * [Condition (http://hl7.org/fhir/StructureDefinition/Condition|4.0.1)](http://hl7.org/fhir/R4/condition.html)
 * [FR Core Observation Prevention (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-prevention|2.2.0)](StructureDefinition-fr-core-observation-prevention.md)
@@ -123,7 +129,6 @@ Cette structure fait référence à ces autres structures:
 
 Cette structure fait référence à ces extensions:
 
-* [http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction|0.1.0](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-ext-R5-MedicationRequest.renderedDosageInstruction.html)
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent|2.2.0](StructureDefinition-fr-core-treatment-intent.md)
 * [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-offLabel.html)
 * [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0](StructureDefinition-fr-core-not-covered.md)
@@ -135,7 +140,6 @@ Cette structure fait référence à ces extensions:
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.timing.repeat.bounds[x]
-* The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * The element 1 is sliced based on the value of MedicationRequest.dosageInstruction.doseAndRate.rate[x]
 * The element 1 is sliced based on the value of MedicationRequest.substitution.allowed[x]
 
@@ -156,7 +160,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-08-13T08:33:40+00:00",
+  "date" : "2026-08-13T08:58:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -210,7 +214,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "kind" : "resource",
   "abstract" : false,
   "type" : "MedicationRequest",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -218,28 +222,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "path" : "MedicationRequest"
     },
     {
-      "id" : "MedicationRequest.extension",
-      "path" : "MedicationRequest.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
       "id" : "MedicationRequest.extension:renderedDosageInstruction",
       "path" : "MedicationRequest.extension",
       "sliceName" : "renderedDosageInstruction",
-      "short" : "Représentation lisible de la posologie",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction|0.1.0"]
-      }]
+      "short" : "Représentation lisible de la posologie"
     },
     {
       "id" : "MedicationRequest.extension:treatmentIntent",
@@ -254,16 +240,36 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       }]
     },
     {
-      "id" : "MedicationRequest.extension:horsAMM",
+      "id" : "MedicationRequest.extension:offLabelUse",
       "path" : "MedicationRequest.extension",
-      "sliceName" : "horsAMM",
-      "short" : "Hors Autorisation de mise sur le marché",
+      "sliceName" : "offLabelUse",
+      "short" : "Usage hors Autorisation de Mise sur le Marché (hors AMM)",
       "min" : 0,
-      "max" : "*",
+      "max" : "1",
       "type" : [{
         "code" : "Extension",
         "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel|1.0.0-comment-2"]
       }]
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:isOffLabelUse",
+      "path" : "MedicationRequest.extension.extension",
+      "sliceName" : "isOffLabelUse"
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:isOffLabelUse.value[x]",
+      "path" : "MedicationRequest.extension.extension.value[x]",
+      "short" : "Indicateur hors AMM (doit être renseigné si l'extension est présente)"
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:reason",
+      "path" : "MedicationRequest.extension.extension",
+      "sliceName" : "reason"
+    },
+    {
+      "id" : "MedicationRequest.extension:offLabelUse.extension:reason.value[x]",
+      "path" : "MedicationRequest.extension.extension.value[x]",
+      "short" : "Motif du hors AMM"
     },
     {
       "id" : "MedicationRequest.extension:notCovered",
@@ -312,14 +318,20 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationRequest.authoredOn",
       "path" : "MedicationRequest.authoredOn",
-      "short" : "Date de prescription",
-      "min" : 1
+      "short" : "Date de prescription"
     },
     {
       "id" : "MedicationRequest.requester",
       "path" : "MedicationRequest.requester",
       "short" : "Prescripteur",
-      "min" : 1
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.2.0",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
+      }]
     },
     {
       "id" : "MedicationRequest.reasonReference",
@@ -445,18 +457,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "short" : "Méthode d'administration"
     },
     {
-      "id" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-      "path" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
       "id" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",
       "path" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
       "sliceName" : "doseRange",
@@ -524,18 +524,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "id" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
       "path" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
       "min" : 1
-    },
-    {
-      "id" : "MedicationRequest.dispenseRequest.extension",
-      "path" : "MedicationRequest.dispenseRequest.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
     },
     {
       "id" : "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5",

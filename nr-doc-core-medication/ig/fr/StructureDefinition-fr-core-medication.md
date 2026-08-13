@@ -25,7 +25,7 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 #### Contraintes
 
-Cette structure est dérivée de [Medication](http://hl7.org/fhir/R4/medication.html) 
+Cette structure est dérivée de [MedicationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html) 
 
 #### Bindings terminologiques (différentiel)
 
@@ -33,7 +33,7 @@ Cette structure est dérivée de [Medication](http://hl7.org/fhir/R4/medication.
 
 #### Contraintes
 
-Cette structure est dérivée de [Medication](http://hl7.org/fhir/R4/medication.html) 
+Cette structure est dérivée de [MedicationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html) 
 
 ** Résumé **
 
@@ -44,20 +44,6 @@ Obligatoire : 3 éléments(2 éléments obligatoire(s) imbriqué(s))
 Cette structure fait référence à ces autres structures:
 
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
-
-**Extensions**
-
-Cette structure fait référence à ces extensions:
-
-* [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-medication-productname.html)
-* [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-medication-classification.html)
-* [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-characteristic|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-medication-characteristic.html)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Medication.ingredient.item[x]
 
  **Vue des éléments clés** 
 
@@ -67,7 +53,7 @@ Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slic
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [Medication](http://hl7.org/fhir/R4/medication.html) 
+Cette structure est dérivée de [MedicationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html) 
 
 #### Bindings terminologiques (différentiel)
 
@@ -77,7 +63,7 @@ Cette structure est dérivée de [Medication](http://hl7.org/fhir/R4/medication.
 
 #### Contraintes
 
-Cette structure est dérivée de [Medication](http://hl7.org/fhir/R4/medication.html) 
+Cette structure est dérivée de [MedicationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html) 
 
 ** Résumé **
 
@@ -88,20 +74,6 @@ Obligatoire : 3 éléments(2 éléments obligatoire(s) imbriqué(s))
 Cette structure fait référence à ces autres structures:
 
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
-
-**Extensions**
-
-Cette structure fait référence à ces extensions:
-
-* [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-medication-productname.html)
-* [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-medication-classification.html)
-* [https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-characteristic|1.0.0-comment-2](https://profiles.ihe.net/PHARM/MPD/1.0.0-comment-2/StructureDefinition-ihe-ext-medication-characteristic.html)
-
-**Slices**
-
-Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
-
-* The element 1 is sliced based on the value of Medication.ingredient.item[x]
 
  
 
@@ -120,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationProfile",
   "title" : "FR Core Medication Profile",
   "status" : "active",
-  "date" : "2026-08-13T08:33:40+00:00",
+  "date" : "2026-08-13T08:58:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -169,7 +141,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "kind" : "resource",
   "abstract" : false,
   "type" : "Medication",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core|2.0.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -179,14 +151,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "Medication.extension",
       "path" : "Medication.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
       "min" : 1
     },
     {
@@ -194,36 +158,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "path" : "Medication.extension",
       "sliceName" : "productName",
       "short" : "Nom de marque du produit.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname|1.0.0-comment-2"]
-      }]
+      "min" : 1
     },
     {
       "id" : "Medication.extension:classification",
       "path" : "Medication.extension",
       "sliceName" : "classification",
-      "short" : "Classification ATC.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification|1.0.0-comment-2"]
-      }]
+      "short" : "Classification ATC."
     },
     {
-      "id" : "Medication.extension:conditionnement",
+      "id" : "Medication.extension:characteristic",
       "path" : "Medication.extension",
-      "sliceName" : "conditionnement",
-      "short" : "Présentation / conditionnement.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-characteristic|1.0.0-comment-2"]
-      }]
+      "sliceName" : "characteristic",
+      "short" : "Présentation / conditionnement."
     },
     {
       "id" : "Medication.code",
@@ -249,24 +196,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       }
     },
     {
-      "id" : "Medication.ingredient.item[x]",
+      "id" : "Medication.ingredient.item[x]:itemReference",
       "path" : "Medication.ingredient.item[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      }
+      "sliceName" : "itemReference",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0"]
+      }]
     },
     {
       "id" : "Medication.ingredient.item[x]:itemCodeableConcept",
       "path" : "Medication.ingredient.item[x]",
       "sliceName" : "itemCodeableConcept",
       "short" : "Code SMS de la substance active",
-      "min" : 0,
-      "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -279,17 +221,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "id" : "Medication.ingredient.item[x]:itemCodeableConcept.text",
       "path" : "Medication.ingredient.item[x].text",
       "short" : "Nom de la substance"
-    },
-    {
-      "id" : "Medication.ingredient.item[x]:itemReference",
-      "path" : "Medication.ingredient.item[x]",
-      "sliceName" : "itemReference",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0"]
-      }]
     },
     {
       "id" : "Medication.ingredient.strength",
