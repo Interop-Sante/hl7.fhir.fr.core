@@ -2,8 +2,8 @@ Profile: FRCoreObservationPrevention
 Parent: Observation
 Id: fr-core-observation-prevention
 Title: "FR Core Observation Prevention"
-Description: "French profile for prevention observation.\r\n
-Profil français pour l'observation en rapport avec la prevention"
+Description: "French profile for a prevention observation, used notably as the reason for a prescribed treatment.\r\n
+Profil français pour l'observation en rapport avec la prévention, utilisée notamment comme motif d'un traitement prescrit."
 
 * code ^short = "Type de l'observation"
 * code MS
