@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-12T15:16:17+00:00",
+  "date" : "2026-08-13T08:08:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

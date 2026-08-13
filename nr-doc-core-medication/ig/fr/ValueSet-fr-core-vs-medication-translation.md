@@ -38,7 +38,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "name" : "FRCoreValueSetMedicationTranslation",
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
-  "date" : "2026-08-12T15:16:17+00:00",
+  "date" : "2026-08-13T08:08:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

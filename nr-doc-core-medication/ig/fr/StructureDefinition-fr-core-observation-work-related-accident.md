@@ -79,7 +79,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationWorkRelatedAccident",
   "title" : "Observation - FR Core Observation Work Related Accident",
   "status" : "active",
-  "date" : "2026-08-12T15:16:17+00:00",
+  "date" : "2026-08-13T08:08:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

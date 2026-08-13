@@ -37,7 +37,7 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 ** Résumé **
 
-Obligatoire : 4 éléments(7 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(7 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -99,7 +99,7 @@ Cette structure est dérivée de [MedicationRequest](http://hl7.org/fhir/R4/medi
 
 ** Résumé **
 
-Obligatoire : 4 éléments(7 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(7 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
 **Structures**
@@ -156,7 +156,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-08-12T15:16:17+00:00",
+  "date" : "2026-08-13T08:08:00+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -577,8 +577,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationRequest.substitution",
       "path" : "MedicationRequest.substitution",
-      "short" : "Autorisation de substitution",
-      "min" : 1
+      "short" : "Autorisation de substitution"
     },
     {
       "id" : "MedicationRequest.substitution.allowed[x]",

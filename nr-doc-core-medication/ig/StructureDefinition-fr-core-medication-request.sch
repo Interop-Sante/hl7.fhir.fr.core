@@ -19,7 +19,6 @@
       <sch:assert test="count(f:requester) &gt;= 1">requester: minimum cardinality of 'requester' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:dosageInstruction) &gt;= 1">dosageInstruction: minimum cardinality of 'dosageInstruction' is 1</sch:assert>
-      <sch:assert test="count(f:substitution) &gt;= 1">substitution: minimum cardinality of 'substitution' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
