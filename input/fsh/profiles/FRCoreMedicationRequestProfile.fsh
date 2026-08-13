@@ -46,7 +46,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 // Motif du traitement
 
-* reasonReference only Reference(Observation or Condition or FRCoreObservationPrevention or FRCoreObservationALD or FRCoreObservationWorkRelatedAccident ) // * reasonReference only Reference(Observation or FRCoreConditionProfile or FRCoreObservationPrevention or FRCoreObservationALD or FRCoreObservationWorkRelatedAccident)
+* reasonReference only Reference(Observation or Condition or FRCoreObservationPrevention or FRCoreObservationALD or FRCoreObservationWorkRelatedAccident) 
 
 * instantiatesUri ^short = "Référence de la prescription" // Doc Core
 
