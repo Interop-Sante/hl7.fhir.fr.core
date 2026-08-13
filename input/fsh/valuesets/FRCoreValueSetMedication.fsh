@@ -1,6 +1,6 @@
 // Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetMedicationTranslationDocument.fsh
-ValueSet: FRCoreValueSetMedicationTranslation
-Id: fr-core-vs-medication-translation
+ValueSet: FRCoreValueSetMedication
+Id: fr-core-vs-medication
 Title: "FR Core ValueSet Medication translation"
 Description: "Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (médicament virtuel) et NUVA (vaccins)."
 * insert SetValueset
