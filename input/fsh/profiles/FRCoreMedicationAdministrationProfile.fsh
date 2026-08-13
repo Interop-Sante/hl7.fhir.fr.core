@@ -12,9 +12,8 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 
 * category ^short = "Acte ou situation" // Doc Core
 
-* status 1..1 // FHIR R4 base : 1..1 — cardinalité identique
 * status ^short = "Statut" // Doc Core
-// Doc Core : status = #completed — FRCore : valeur fixe supprimée (cohérence avec MedicationRequest)
+
 * effective[x] only Period // Doc Core
 * effectivePeriod ^short = "Durée du traitement" // Doc Core
 
