@@ -56,6 +56,9 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 // Posologie — 1..* requis (ePrescription : 1..)
 * dosageInstruction 1..* // ePrescription : 1.. (FHIR R4 base : 0..*)
 
+// Cet attribut a été interdit pour éviter la difficulté d'avoir à choisir entre patientInstruction et additionalInstruction.
+* dosageInstruction.patientInstruction ..0
+
 // ePrescription : dosageInstruction.patientInstruction ..0 — FRCore ne restrict pas
 * dosageInstruction.sequence ^short = "Séquence (dosages progressifs/fractionnés)" // Doc Core
 * dosageInstruction.timing ^short = "Durée du traitement et fréquence d'administration." // Doc Core
