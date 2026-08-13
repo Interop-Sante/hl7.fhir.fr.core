@@ -47,6 +47,5 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * ingredient.itemCodeableConcept.text ^short = "Nom de la substance"
 * ingredient.itemReference only Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
 * ingredient.strength ^short = "Quantité de substance présente dans le médicament" // Doc Core
-* ingredient.strength.numerator 1..1 // Doc Core (FHIR R4 base : 0..1)
-* ingredient.strength.denominator 1..1 // Doc Core (FHIR R4 base : 0..1)
+
 // ePrescription : ingredient.strength only FrRatioMedication — type ePrescription-spécifique (UCUM/EDQM), non porté dans FRCore
