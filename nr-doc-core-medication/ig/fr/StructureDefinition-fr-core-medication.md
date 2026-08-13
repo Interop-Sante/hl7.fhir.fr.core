@@ -37,7 +37,7 @@ Cette structure est dérivée de [MedicationEuCore](http://hl7.eu/fhir/base/2.0.
 
 ** Résumé **
 
-Obligatoire : 3 éléments(2 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments
 
 **Structures**
 
@@ -67,7 +67,7 @@ Cette structure est dérivée de [MedicationEuCore](http://hl7.eu/fhir/base/2.0.
 
 ** Résumé **
 
-Obligatoire : 3 éléments(2 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments
 
 **Structures**
 
@@ -92,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationProfile",
   "title" : "FR Core Medication Profile",
   "status" : "active",
-  "date" : "2026-08-13T08:58:16+00:00",
+  "date" : "2026-08-13T09:15:12+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -176,11 +176,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "id" : "Medication.code",
       "path" : "Medication.code",
       "short" : "Code du produit de santé",
-      "min" : 1
-    },
-    {
-      "id" : "Medication.code.coding",
-      "path" : "Medication.code.coding",
+      "min" : 1,
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
@@ -226,16 +222,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "id" : "Medication.ingredient.strength",
       "path" : "Medication.ingredient.strength",
       "short" : "Quantité de substance présente dans le médicament"
-    },
-    {
-      "id" : "Medication.ingredient.strength.numerator",
-      "path" : "Medication.ingredient.strength.numerator",
-      "min" : 1
-    },
-    {
-      "id" : "Medication.ingredient.strength.denominator",
-      "path" : "Medication.ingredient.strength.denominator",
-      "min" : 1
     },
     {
       "id" : "Medication.batch.lotNumber",
