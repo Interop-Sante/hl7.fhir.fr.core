@@ -37,7 +37,7 @@ The exercice(s) of the practitioner.
   "title" : "FR Core ValueSet PractitionerRole Exercice",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T09:15:12+00:00",
+  "date" : "2026-08-13T09:41:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

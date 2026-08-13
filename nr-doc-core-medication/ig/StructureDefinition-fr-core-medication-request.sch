@@ -17,7 +17,6 @@
       <sch:assert test="count(f:extension[@url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent|2.2.0']) &lt;= 1">extension with URL = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel']) &lt;= 1">extension with URL = 'https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0']) &lt;= 1">extension with URL = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:dosageInstruction) &gt;= 1">dosageInstruction: minimum cardinality of 'dosageInstruction' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -46,33 +45,15 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:MedicationRequest/f:dosageInstruction</sch:title>
+    <sch:rule context="f:MedicationRequest/f:dosageInstruction">
+      <sch:assert test="count(f:patientInstruction) &lt;= 0">patientInstruction: maximum cardinality of 'patientInstruction' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:MedicationRequest/f:dosageInstruction/f:timing/f:repeat</sch:title>
     <sch:rule context="f:MedicationRequest/f:dosageInstruction/f:timing/f:repeat">
       <sch:assert test="count(f:extension[@url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values|2.2.0']) &lt;= 1">extension with URL = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values|2.2.0': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:MedicationRequest/f:dosageInstruction/f:doseAndRate/f:dose[x] 1</sch:title>
-    <sch:rule context="f:MedicationRequest/f:dosageInstruction/f:doseAndRate/f:dose[x]">
-      <sch:assert test="count(f:low) &gt;= 1">low: minimum cardinality of 'low' is 1</sch:assert>
-      <sch:assert test="count(f:high) &gt;= 1">high: minimum cardinality of 'high' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:MedicationRequest/f:dosageInstruction/f:doseAndRate/f:rate[x] 1</sch:title>
-    <sch:rule context="f:MedicationRequest/f:dosageInstruction/f:doseAndRate/f:rate[x]">
-      <sch:assert test="count(f:low) &gt;= 1">low: minimum cardinality of 'low' is 1</sch:assert>
-      <sch:assert test="count(f:high) &gt;= 1">high: minimum cardinality of 'high' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:MedicationRequest/f:dosageInstruction/f:maxDosePerPeriod</sch:title>
-    <sch:rule context="f:MedicationRequest/f:dosageInstruction/f:maxDosePerPeriod">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:numerator) &gt;= 1">numerator: minimum cardinality of 'numerator' is 1</sch:assert>
-      <sch:assert test="count(f:numerator) &lt;= 1">numerator: maximum cardinality of 'numerator' is 1</sch:assert>
-      <sch:assert test="count(f:denominator) &gt;= 1">denominator: minimum cardinality of 'denominator' is 1</sch:assert>
-      <sch:assert test="count(f:denominator) &lt;= 1">denominator: maximum cardinality of 'denominator' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

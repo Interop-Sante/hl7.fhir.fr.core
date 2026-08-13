@@ -71,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2026-08-13T09:15:12+00:00",
+  "date" : "2026-08-13T09:41:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

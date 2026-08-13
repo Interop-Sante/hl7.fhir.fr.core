@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-08-13T09:15:12+00:00",
+  "date" : "2026-08-13T09:41:50+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -226,7 +226,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "id" : "MedicationRequest.basedOn",
       "path" : "MedicationRequest.basedOn",
       "short" : "Référence à un item du plan de traitement.",
-      "max" : "1",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0",
@@ -249,6 +248,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "id" : "MedicationRequest.dosageInstruction.additionalInstruction",
       "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
       "short" : "Informations supplémentaires utilisables pour instructions au Patien ou pércondition préalables à l'utilisation du médicament"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.patientInstruction",
+      "path" : "MedicationRequest.dosageInstruction.patientInstruction",
+      "max" : "0"
     },
     {
       "id" : "MedicationRequest.dosageInstruction.timing",
@@ -340,16 +344,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       }]
     },
     {
-      "id" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low",
-      "path" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low",
-      "min" : 1
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high",
-      "path" : "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high",
-      "min" : 1
-    },
-    {
       "id" : "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
       "path" : "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
       "slicing" : {
@@ -373,29 +367,9 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       }]
     },
     {
-      "id" : "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.low",
-      "path" : "MedicationRequest.dosageInstruction.doseAndRate.rate[x].low",
-      "min" : 1
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.high",
-      "path" : "MedicationRequest.dosageInstruction.doseAndRate.rate[x].high",
-      "min" : 1
-    },
-    {
       "id" : "MedicationRequest.dosageInstruction.maxDosePerPeriod",
       "path" : "MedicationRequest.dosageInstruction.maxDosePerPeriod",
       "short" : "Dose maximale"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.numerator",
-      "path" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.numerator",
-      "min" : 1
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
-      "path" : "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
-      "min" : 1
     },
     {
       "id" : "MedicationRequest.dispenseRequest.extension:dispenserInstructionR5",
