@@ -38,4 +38,3 @@ Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement d
 
 * substitution ^short = "Acte de substitution" // Doc Core
 * substitution.type 1..1 // Doc Core (FHIR R4 base : 0..1)
-* substitution.type = #G "Substitution autorisée par un produit générique" // Doc Core
