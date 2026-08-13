@@ -10,7 +10,6 @@ Id: fr-core-medication-dispense
 Title: "FR Core MedicationDispense Profile"
 Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription."
 
-* type 1..1 // Doc Core (FHIR R4 base : 0..1)
 * type ^short = "Complétude de la dispensation" // Doc Core
 * type.coding from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis (extensible) // Doc Core
 
@@ -27,14 +26,8 @@ Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement d
 * authorizingPrescription only Reference(FRCoreMedicationRequestProfile)
 * authorizingPrescription ^short = "Référence de la prescription"
 
-// Posologie — Doc Core : Reference(FRMedicationAdministrationDocument) — FRCore : FRCoreMedicationAdministrationProfile
-* supportingInformation 0..1 // Doc Core
-* supportingInformation only Reference(FRCoreMedicationAdministrationProfile)
-* supportingInformation ^short = "Posologie"
-
 * dosageInstruction.patientInstruction ^short = "Instructions au patient" // Doc Core
 * dosageInstruction.additionalInstruction ^short = "Instruction au patient sous forme codée" // Doc Core
 * dosageInstruction.text ^short = "Instructions au dispensateur" // Doc Core
 
 * substitution ^short = "Acte de substitution" // Doc Core
-* substitution.type 1..1 // Doc Core (FHIR R4 base : 0..1)
