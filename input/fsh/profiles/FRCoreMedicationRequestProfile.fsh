@@ -96,7 +96,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dispenseRequest.validityPeriod ^short = "Période de validité" // Doc Core
 * dispenseRequest.numberOfRepeatsAllowed ^short = "Nombre de renouvellement(s) possible(s)" // Doc Core
 
-* substitution 1..1 // Doc Core (FHIR R4 base : 0..1, EU Core : 0..1)
 * substitution ^short = "Autorisation de substitution"
 * substitution.allowedCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis // Doc Core
 * substitution.reason.text ^short = "Motif de non substitution (Marge thérapeutique étroite, Enfant forme galénique, Contre-indication formelle)." // Doc Core
