@@ -1,9 +1,5 @@
 // Source (IG Document Core) :
 //   https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationStatementDocument.fsh
-//
-// Profil EU Core disponible :
-//   https://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core
-// Pas de profil ePrescription équivalent pour MedicationStatement
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationStatementProfile
 Parent: MedicationStatement
@@ -22,7 +18,6 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * category ^short = "Acte ou situation" // Doc Core
 
 * status ^short = "Statut" // Doc Core
-// Doc Core : status = #completed — FRCore : valeur fixe supprimée (cohérence avec MedicationRequest)
 
 * effective[x] only Period // Doc Core
 * effectivePeriod ^short = "Durée du traitement" // Doc Core
