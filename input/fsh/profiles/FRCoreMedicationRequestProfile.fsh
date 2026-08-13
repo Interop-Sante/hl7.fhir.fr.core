@@ -18,11 +18,12 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 // Doc Core : status = #completed — INCOMPATIBILITÉ avec ePrescription qui ne fixe pas la valeur
 // FRCore : valeur fixe supprimée ; le statut peut être active, completed, stopped, on-hold, etc.
 
-* authoredOn 1..1 // ePrescription : 1.. (FHIR R4 base : 0..1)
 * authoredOn ^short = "Date de prescription"
+// Proposition authoredOn: surcontraindre IG Document Core et ePrescription pour rendre ce champs obligatoire
 
-* requester 1..1 // ePrescription : 1.. (FHIR R4 base : 0..1)
 * requester ^short = "Prescripteur"
+// Proposition requester : surcontraindre IG Document Core et ePrescription pour rendre ce champs obligatoire
+
 // Doc Core : Reference(FRPractitionerRoleDocument or FRPractitionerDocument)
 // ePrescription : Reference($FrCorePractitioner) uniquement
 // EU Core : Reference(patient|practitioner|practitionerRole|organization-eu-core or RelatedPerson) — pas de Device
