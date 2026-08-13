@@ -76,14 +76,8 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible) // Doc Core
 * dosageInstruction.site ^short = "Région anatomique d'administration"
 * dosageInstruction.doseAndRate.doseRange ^short = "Dose à administrer" // Doc Core
-* dosageInstruction.doseAndRate.doseRange.low 1..1 // Doc Core (FHIR R4 base : 0..1)
-* dosageInstruction.doseAndRate.doseRange.high 1..1 // Doc Core (FHIR R4 base : 0..1)
 * dosageInstruction.doseAndRate.rateRange ^short = "Rythme d'administration" // Doc Core
-* dosageInstruction.doseAndRate.rateRange.low 1..1 // Doc Core (FHIR R4 base : 0..1)
-* dosageInstruction.doseAndRate.rateRange.high 1..1 // Doc Core (FHIR R4 base : 0..1)
 * dosageInstruction.maxDosePerPeriod ^short = "Dose maximale" // Doc Core
-* dosageInstruction.maxDosePerPeriod.numerator 1..1 // Doc Core (FHIR R4 base : 0..1)
-* dosageInstruction.maxDosePerPeriod.denominator 1..1 // Doc Core (FHIR R4 base : 0..1)
 // ePrescription : doseAndRate.* only FrRatioMedication/FrSimpleQuantityMedication/FrRangeMedication — types ePrescription-spécifiques, non portés dans FRCore
 
 // Instructions au patient et préconditions (Doc Core)
