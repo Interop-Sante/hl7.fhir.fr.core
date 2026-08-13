@@ -4,7 +4,11 @@ En tant qu'affilié français d'HL7 International, InteropSanté a la responsabi
 
 FRCore suit le [cycle de vie des guides d'implémentation FHIR](https://interop.esante.gouv.fr/ig/doctrine/cycle-de-vie.html) défini dans la doctrine du CI-SIS. La correspondance entre les statuts du cycle de vie et le paramétrage des fichiers de configuration est documentée dans les [bonnes pratiques de release d'un IG FHIR](https://ansforge.github.io/IG-documentation/nr-clarify-release-fields/ig/mod_bonnes_pratiques.html#release-dun-ig-fhir).
 
-Les évolutions à venir — héritage des profils européens, synchronisation avec l'IG Document Core, et migration vers FHIR R6 — impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut `final-text`.
+<blockquote class="stu-note">
+<p>
+Les évolutions à venir (héritage des profils européens, synchronisation avec l'IG Document Core, migration vers FHIR R6) impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut <code>final-text</code>.
+</p>
+</blockquote>
 
 ### Comment contribuer ?
 
@@ -28,7 +32,7 @@ Pour rappel, l'adhésion à InteropSanté permet de bénéficier de tarifs avant
 
 ### Auteurs et contributeurs du guide d'implémentation FRCore
 
-L'ensemble des contributeurs au code source peuvent être vus sur [GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors)
+L'ensemble des contributeurs au code source peuvent être consultés sur [GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors)
 
 #### Version 2.2.0
 

@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-additio
   "name" : "FRCoreAdditionalWhenValuesExtension",
   "title" : "FR Core Additional When Values Extension",
   "status" : "active",
-  "date" : "2026-08-13T08:08:00+00:00",
+  "date" : "2026-08-13T08:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationAdministrationProfile",
   "title" : "FR Core MedicationAdministration Profile",
   "status" : "active",
-  "date" : "2026-08-13T08:08:00+00:00",
+  "date" : "2026-08-13T08:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
