@@ -2,8 +2,8 @@ Profile: FRCoreObservationWorkRelatedAccident
 Parent: Observation
 Id: fr-core-observation-work-related-accident
 Title: "Observation - FR Core Observation Work Related Accident"
-Description: "French profile for work related accident observation.\r\n
-Profil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle"
+Description: "French profile for a work-related accident or occupational disease observation, used notably as the reason for a prescribed treatment.\r\n
+Profil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle, utilisée notamment comme motif d'un traitement prescrit."
 
 * code ^short = "Type de l'observation"
 * code MS
