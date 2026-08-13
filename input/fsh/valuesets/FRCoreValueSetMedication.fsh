@@ -1,4 +1,4 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetMedicationTranslationDocument.fsh
+// Source : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetMedicationTranslationDocument.fsh
 ValueSet: FRCoreValueSetMedication
 Id: fr-core-vs-medication
 Title: "FR Core ValueSet Medication translation"

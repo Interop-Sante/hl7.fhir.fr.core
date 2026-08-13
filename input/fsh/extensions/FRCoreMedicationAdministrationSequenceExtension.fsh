@@ -1,4 +1,4 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRMedicationAdministrationSequenceExtension.fsh
+// Source : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRMedicationAdministrationSequenceExtension.fsh
 Extension: FRCoreMedicationAdministrationSequenceExtension
 Id: fr-core-medication-administration-sequence
 Title: "FR Core Medication Administration Sequence Extension"

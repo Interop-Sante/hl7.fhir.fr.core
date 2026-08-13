@@ -1,5 +1,5 @@
 // Source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationDispenseDocument.fsh
+//   https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationDispenseDocument.fsh
 //
 // Profil EU Core : non disponible
 // Pas de profil ePrescription équivalent pour MedicationDispense

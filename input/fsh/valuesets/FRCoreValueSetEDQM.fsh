@@ -1,4 +1,4 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetEDQMDocument.fsh
+// Source : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetEDQMDocument.fsh
 ValueSet: FRCoreValueSetEDQM
 Id: fr-core-vs-edqm
 Title: "FR Core ValueSet EDQM"

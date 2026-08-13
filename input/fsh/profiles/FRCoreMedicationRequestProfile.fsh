@@ -1,5 +1,5 @@
 // Sources :
-//   Doc Core      : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationRequestDocument.fsh
+//   Doc Core      : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationRequestDocument.fsh
 //   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedicationRequest.fsh
 //                   https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrInpatientMedicationRequest.fsh
 // ─────────────────────────────────────────────────────────────────────────────

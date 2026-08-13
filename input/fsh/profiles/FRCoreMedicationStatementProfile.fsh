@@ -1,5 +1,5 @@
 // Source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationStatementDocument.fsh
+//   https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationStatementDocument.fsh
 //
 // Profil EU Core disponible :
 //   https://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core

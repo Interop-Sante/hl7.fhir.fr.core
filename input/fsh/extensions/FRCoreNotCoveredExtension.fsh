@@ -1,4 +1,4 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRNotCoveredExtension.fsh
+// Source : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRNotCoveredExtension.fsh
 Extension: FRCoreNotCoveredExtension
 Id: fr-core-not-covered
 Title: "FR Core Not Covered Extension"
