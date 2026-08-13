@@ -2,12 +2,8 @@
 //   Doc Core      : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationRequestDocument.fsh
 //   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedicationRequest.fsh
 //                   https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrInpatientMedicationRequest.fsh
-//
-// Parent : profil EU Core https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
-//   La slice d'extension renderedDosageInstruction (backport R5) est déjà posée par EU Core.
-//   EU Core restreint requester à (Patient|Practitioner|PractitionerRole|Organization)-eu-core ou
-//   RelatedPerson : pas de Device — FRCore narrowe donc vers ses propres profils dérivés.
 // ─────────────────────────────────────────────────────────────────────────────
+
 Profile: FRCoreMedicationRequestProfile
 Parent: MedicationRequestEuCore
 Id: fr-core-medication-request
@@ -15,8 +11,6 @@ Title: "FR Core MedicationRequest Profile"
 Description: "FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."
 
 * status ^short = "Statut"
-// Doc Core : status = #completed — INCOMPATIBILITÉ avec ePrescription qui ne fixe pas la valeur
-// FRCore : valeur fixe supprimée ; le statut peut être active, completed, stopped, on-hold, etc.
 
 * authoredOn ^short = "Date de prescription"
 // Proposition authoredOn: surcontraindre IG Document Core et ePrescription pour rendre ce champs obligatoire
@@ -62,6 +56,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 // Posologie — 1..* requis (ePrescription : 1..)
 * dosageInstruction 1..* // ePrescription : 1.. (FHIR R4 base : 0..*)
+
 // ePrescription : dosageInstruction.patientInstruction ..0 — FRCore ne restrict pas
 * dosageInstruction.sequence ^short = "Séquence (dosages progressifs/fractionnés)" // Doc Core
 * dosageInstruction.timing ^short = "Durée du traitement et fréquence d'administration." // Doc Core
@@ -73,6 +68,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.asNeeded[x] ^short = "Dosage conditionnel" // Doc Core
 * dosageInstruction.route from FRCoreValueSetEDQM (extensible) // Doc Core
 * dosageInstruction.route ^short = "Voie d'administration"
+
 // ePrescription : from FrRouteOfAdministration (extensible) — même base EDQM, convergence
 * dosageInstruction.method ^short = "Méthode d'administration" // ePrescription (FrMethodOfAdministration = codes from EDQM)
 * dosageInstruction.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible) // Doc Core
