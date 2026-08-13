@@ -2,15 +2,13 @@
 //   Doc Core      : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationDocument.fsh
 //   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedication.fsh
 //
-// Profil EU Core disponible :
-//   https://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
-//
-// Héritage IHE MPD : non établi — les extensions IHE MPD sont utilisées mais Parent reste Medication.
-//   À décider : faut-il imposer le profil IHE MPD via $imposeProfile ?
-//   //* ^extension[$imposeProfile].valueCanonical = Canonical(IHEMedication)
+// Parent : profil EU Core https://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
+//   Les slices d'extensions IHE MPD (productName, classification, characteristic, sizeOfItem,
+//   unitOfPresentation, packageType, device) sont déjà posées par EU Core ; FRCore ne fait que
+//   les narrower ou les traduire, sans les redéfinir en doublon.
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationProfile
-Parent: Medication
+Parent: MedicationEuCore
 Id: fr-core-medication
 Title: "FR Core Medication Profile"
 Description: "FRCoreMedicationProfile permet de décrire un médicament ou un vaccin."
@@ -23,7 +21,8 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * code.coding from FRCoreValueSetMedicationTranslation (required)
 
 // Nom de marque : Extension IHE MPD (Doc Core)
-* extension contains $ihe-ext-medication-productname named productName 1..1 // Doc Core : 1..1 (FHIR R4 base : absent)
+// Slice déjà posée par EU Core (0..1) : pas de "contains", on resserre juste la cardinalité et le ^short
+* extension[productName] 1..1 // Doc Core : 1..1 (FHIR R4 base : absent, EU Core : 0..1)
 * extension[productName] ^short = "Nom de marque du produit."
 
 * form from FRCoreValueSetEDQM (required) // Doc Core
@@ -35,10 +34,9 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * batch.expirationDate ^short = "Date d'expiration du produit" // Doc Core
 
 // Classification ATC et conditionnement : Extensions IHE MPD (Doc Core)
-* extension contains $ihe-ext-medication-classification named classification 0..*
+// Slices déjà posées par EU Core (mêmes cardinalités) : pas de "contains", juste la traduction du ^short
 * extension[classification] ^short = "Classification ATC."
-* extension contains $ihe-ext-medication-characteristic named conditionnement 0..*
-* extension[conditionnement] ^short = "Présentation / conditionnement."
+* extension[characteristic] ^short = "Présentation / conditionnement."
 
 // Composants du médicament
 // Doc Core : itemCodeableConcept from SMT-SMS ; itemReference only Reference(FRMedicationDocument)

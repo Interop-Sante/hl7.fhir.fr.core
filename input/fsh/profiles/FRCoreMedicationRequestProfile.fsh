@@ -3,11 +3,13 @@
 //   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedicationRequest.fsh
 //                   https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrInpatientMedicationRequest.fsh
 //
-// Profil EU Core disponible :
-//   https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
+// Parent : profil EU Core https://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core
+//   La slice d'extension renderedDosageInstruction (backport R5) est déjà posée par EU Core.
+//   EU Core restreint requester à (Patient|Practitioner|PractitionerRole|Organization)-eu-core ou
+//   RelatedPerson : pas de Device — FRCore narrowe donc vers ses propres profils dérivés.
 // ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationRequestProfile
-Parent: MedicationRequest
+Parent: MedicationRequestEuCore
 Id: fr-core-medication-request
 Title: "FR Core MedicationRequest Profile"
 Description: "FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."
@@ -23,10 +25,11 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * requester ^short = "Prescripteur"
 // Doc Core : Reference(FRPractitionerRoleDocument or FRPractitionerDocument)
 // ePrescription : Reference($FrCorePractitioner) uniquement
-* requester only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device) // * requester only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile)
+// EU Core : Reference(patient|practitioner|practitionerRole|organization-eu-core or RelatedPerson) — pas de Device
+* requester only Reference(FRCorePractitionerProfile or FRCorePractitionerRoleProfile or FRCoreOrganizationProfile or FRCorePatientProfile or RelatedPerson)
 
 // Extension R5 backport : représentation lisible de la posologie (ePrescription)
-* extension contains $medicationrequest-rendereddosageinstruction-r5 named renderedDosageInstruction 0..1
+// Slice déjà posée par EU Core (même cardinalité 0..1) : pas de "contains", juste la traduction du ^short
 * extension[renderedDosageInstruction] ^short = "Représentation lisible de la posologie"
 
 // Extension intention globale du traitement (ePrescription)
@@ -44,7 +47,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * subject ^short = "Patient"
 
 // Doc Core : Reference(FREncounterCareDocument) — ePrescription : Reference($FrCoreEncounter)
-* encounter only Reference(Encounter) // * encounter only Reference(FRCoreEncounterProfile)
 * encounter ^short = "Contexte de soin"
 
 // Motif du traitement
@@ -100,9 +102,12 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * substitution.allowedCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis // Doc Core
 * substitution.reason.text ^short = "Motif de non substitution (Marge thérapeutique étroite, Enfant forme galénique, Contre-indication formelle)." // Doc Core
 
-// Extensions métier (Doc Core)
-* extension contains $ihe-ext-offLabel named horsAMM 0..*
-* extension[horsAMM] ^short = "Hors Autorisation de mise sur le marché"
+// Extension hors AMM : nommage aligné sur hl7.fhir.eu.mpd (MedicationRequest-eu-mpd), qui slice
+// la même extension IHE MPD sous le nom "offLabelUse" en 0..1 (PR #315, revue nriss)
+* extension contains $ihe-ext-offLabel named offLabelUse 0..1
+* extension[offLabelUse] ^short = "Usage hors Autorisation de Mise sur le Marché (hors AMM)"
+* extension[offLabelUse].extension[isOffLabelUse].valueBoolean ^short = "Indicateur hors AMM (doit être renseigné si l'extension est présente)"
+* extension[offLabelUse].extension[reason].valueCodeableConcept ^short = "Motif du hors AMM"
 
 // Doc Core : FRNotCoveredExtension
 * extension contains FRCoreNotCoveredExtension named notCovered 0..1
