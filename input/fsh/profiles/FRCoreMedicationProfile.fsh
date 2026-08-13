@@ -29,7 +29,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * form ^short = "Forme pharmaceutique (EDQM)"
 
 // Doc Core : batch.lotNumber et batch.expirationDate documentés
-// ePrescription : batch ..0 — INCOMPATIBILITÉ (voir PR) — FRCore ne contraint pas batch
 * batch.lotNumber ^short = "Numéro de lot" // Doc Core
 * batch.expirationDate ^short = "Date d'expiration du produit" // Doc Core
 
@@ -39,9 +38,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * extension[characteristic] ^short = "Présentation / conditionnement."
 
 // Composants du médicament
-// Doc Core : itemCodeableConcept from SMT-SMS ; itemReference only Reference(FRMedicationDocument)
-// ePrescription : ingredient.item[x] only CodeableConcept — INCOMPATIBILITÉ (voir PR)
-// FRCore : CodeableConcept et Reference tous deux autorisés (médicament composé pouvant référencer un autre Medication)
 * ingredient.itemCodeableConcept from https://smt.esante.gouv.fr/terminologie-sms?vs // Doc Core
 * ingredient.itemCodeableConcept ^short = "Code SMS de la substance active"
 * ingredient.itemCodeableConcept.text ^short = "Nom de la substance"
