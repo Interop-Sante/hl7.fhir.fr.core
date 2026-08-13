@@ -3,8 +3,8 @@
 ## Resource Profile: FR Core Observation Prevention 
 
  
-French profile for prevention observation. 
-Profil français pour l’observation en rapport avec la prevention 
+French profile for a prevention observation, used notably as the reason for a prescribed treatment. 
+Profil français pour l’observation en rapport avec la prévention, utilisée notamment comme motif d’un traitement prescrit. 
 
 **Usages:**
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationPrevention",
   "title" : "FR Core Observation Prevention",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
       "use" : "work"
     }]
   }],
-  "description" : "French profile for prevention observation.\r\n\nProfil français pour l'observation en rapport avec la prevention",
+  "description" : "French profile for a prevention observation, used notably as the reason for a prescribed treatment.\r\n\nProfil français pour l'observation en rapport avec la prévention, utilisée notamment comme motif d'un traitement prescrit.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

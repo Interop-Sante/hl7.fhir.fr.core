@@ -7,7 +7,7 @@ FRCoreMedicationAdministrationProfile permet de décrire les modalités d’admi
 
 **Usages:**
 
-* Refer to this Profile: [FR Core MedicationDispense Profile](StructureDefinition-fr-core-medication-dispense.md) and [FR Core MedicationStatement Profile](StructureDefinition-fr-core-medication-statement.md)
+* Refer to this Profile: [FR Core MedicationStatement Profile](StructureDefinition-fr-core-medication-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-medication-administration.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationAdministrationProfile",
   "title" : "FR Core MedicationAdministration Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

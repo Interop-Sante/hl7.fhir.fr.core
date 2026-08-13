@@ -37,14 +37,13 @@ Cette structure est dérivée de [MedicationDispense](http://hl7.org/fhir/R4/med
 
 ** Résumé **
 
-Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 1 élément
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
-* [FR Core MedicationAdministration Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration|2.2.0)](StructureDefinition-fr-core-medication-administration.md)
 * [FR Core MedicationRequest Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0)](StructureDefinition-fr-core-medication-request.md)
 
  **Vue des éléments clés** 
@@ -69,14 +68,13 @@ Cette structure est dérivée de [MedicationDispense](http://hl7.org/fhir/R4/med
 
 ** Résumé **
 
-Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 1 élément
 
 **Structures**
 
 Cette structure fait référence à ces autres structures:
 
 * [FR Core Medication Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0)](StructureDefinition-fr-core-medication.md)
-* [FR Core MedicationAdministration Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration|2.2.0)](StructureDefinition-fr-core-medication-administration.md)
 * [FR Core MedicationRequest Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0)](StructureDefinition-fr-core-medication-request.md)
 
  
@@ -96,7 +94,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationDispenseProfile",
   "title" : "FR Core MedicationDispense Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -170,16 +168,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       }]
     },
     {
-      "id" : "MedicationDispense.supportingInformation",
-      "path" : "MedicationDispense.supportingInformation",
-      "short" : "Posologie",
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration|2.2.0"]
-      }]
-    },
-    {
       "id" : "MedicationDispense.authorizingPrescription",
       "path" : "MedicationDispense.authorizingPrescription",
       "short" : "Référence de la prescription",
@@ -192,8 +180,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationDispense.type",
       "path" : "MedicationDispense.type",
-      "short" : "Complétude de la dispensation",
-      "min" : 1
+      "short" : "Complétude de la dispensation"
     },
     {
       "id" : "MedicationDispense.type.coding",
@@ -236,17 +223,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "id" : "MedicationDispense.substitution",
       "path" : "MedicationDispense.substitution",
       "short" : "Acte de substitution"
-    },
-    {
-      "id" : "MedicationDispense.substitution.type",
-      "path" : "MedicationDispense.substitution.type",
-      "min" : 1,
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "code" : "G",
-          "display" : "Substitution autorisée par un produit générique"
-        }]
-      }
     }]
   }
 }

@@ -33,7 +33,7 @@ Cette page contient la liste des profils définis dans le cadre du guide d’imp
 | | |
 | :--- | :--- |
 | Titre du profil | Description |
-| [FRCoreObservationALD](StructureDefinition-fr-core-observation-ald.md) | French profile for ALD observation.Profil français pour l'observation ALD |
+| [FRCoreObservationALD](StructureDefinition-fr-core-observation-ald.md) | French profile for an ALD (long-term condition) observation, used notably as the reason for a prescribed treatment.Profil français pour l'observation ALD (affection de longue durée), utilisée notamment comme motif d'un traitement prescrit. |
 | [FRCoreObservationBmiProfile](StructureDefinition-fr-core-observation-bmi.md) | French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI |
 | [FRCoreObservationBodyHeightProfile](StructureDefinition-fr-core-observation-body-height.md) | French profile for body height.Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7 |
 | [FRCoreObservationBodyTemperatureProfile](StructureDefinition-fr-core-observation-body-temperature.md) | French profile for body temperature.Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7 |
@@ -41,7 +41,7 @@ Cette page contient la liste des profils définis dans le cadre du guide d’imp
 | [FRCoreObservationBpProfile](StructureDefinition-fr-core-observation-bp.md) | French profile for blood pressure.Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7 |
 | [FRCoreObservationHeadCircumProfile](StructureDefinition-fr-core-observation-head-circum.md) | French profile for Occipital-frontal circumference.Profil HL7 Vital Signs Circonférence de la tête |
 | [FRCoreObservationHeartRateProfile](StructureDefinition-fr-core-observation-heartrate.md) | French profile for the FHIR Vital Sign Heart Rate Profile.Profilage français du profil Vital Signs Heart rate |
-| [FRCoreObservationPrevention](StructureDefinition-fr-core-observation-prevention.md) | French profile for prevention observation.Profil français pour l'observation en rapport avec la prevention |
+| [FRCoreObservationPrevention](StructureDefinition-fr-core-observation-prevention.md) | French profile for a prevention observation, used notably as the reason for a prescribed treatment.Profil français pour l'observation en rapport avec la prévention, utilisée notamment comme motif d'un traitement prescrit. |
 | [FRCoreObservationRespRateProfile](StructureDefinition-fr-core-observation-resp-rate.md) | French profile for the ObservationResprate profile for France.Profil de la fréquence resporatoire pour l'usage en France |
 | [FRCoreObservationOxygenSaturationProfile](StructureDefinition-fr-core-observation-saturation-oxygen.md) | French profile for Oxygen saturation in Arterial blood.Profil de la saturation en oxygène du sang artériel. |
 

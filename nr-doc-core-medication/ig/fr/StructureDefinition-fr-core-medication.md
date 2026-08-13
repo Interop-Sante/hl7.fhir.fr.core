@@ -92,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationProfile",
   "title" : "FR Core Medication Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -179,7 +179,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication|2.2.0"
       }
     },
     {

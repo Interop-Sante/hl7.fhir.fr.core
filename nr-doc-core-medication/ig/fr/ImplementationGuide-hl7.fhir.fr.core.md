@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -1820,7 +1820,7 @@
         "reference" : "StructureDefinition/fr-core-observation-ald"
       },
       "name" : "FR Core Observation ALD",
-      "description" : "French profile for ALD observation.\r\n\nProfil français pour l'observation ALD",
+      "description" : "French profile for an ALD (long-term condition) observation, used notably as the reason for a prescribed treatment.\r\n\nProfil français pour l'observation ALD (affection de longue durée), utilisée notamment comme motif d'un traitement prescrit.",
       "exampleBoolean" : false
     },
     {
@@ -2012,7 +2012,7 @@
         "reference" : "StructureDefinition/fr-core-observation-prevention"
       },
       "name" : "FR Core Observation Prevention",
-      "description" : "French profile for prevention observation.\r\n\nProfil français pour l'observation en rapport avec la prevention",
+      "description" : "French profile for a prevention observation, used notably as the reason for a prescribed treatment.\r\n\nProfil français pour l'observation en rapport avec la prévention, utilisée notamment comme motif d'un traitement prescrit.",
       "exampleBoolean" : false
     },
     {
@@ -2918,10 +2918,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-medication-translation.html"
+        "valueUri" : "ValueSet-fr-core-vs-medication.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-medication-translation"
+        "reference" : "ValueSet/fr-core-vs-medication"
       },
       "name" : "FR Core ValueSet Medication translation",
       "description" : "Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (médicament virtuel) et NUVA (vaccins).",
@@ -3964,7 +3964,7 @@
         "reference" : "StructureDefinition/fr-core-observation-work-related-accident"
       },
       "name" : "Observation - FR Core Observation Work Related Accident",
-      "description" : "French profile for work related accident observation.\r\n\nProfil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle",
+      "description" : "French profile for a work-related accident or occupational disease observation, used notably as the reason for a prescribed treatment.\r\n\nProfil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle, utilisée notamment comme motif d'un traitement prescrit.",
       "exampleBoolean" : false
     },
     {

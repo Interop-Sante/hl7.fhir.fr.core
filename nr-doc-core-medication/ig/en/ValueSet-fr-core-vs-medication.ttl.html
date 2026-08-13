@@ -7,7 +7,7 @@
 
 
 
-<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>FR Core ValueSet Medication translation - TTL Representation - Guide d&#39;implémentation FR Core v2.2.0</title>
@@ -73,7 +73,7 @@
 
 
 
-  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+  <img alt="France (la) flag" src="../assets/images/fra.svg" height="16" title="France (la)"/>
 
 
             </span>
@@ -177,13 +177,13 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-fr.png"/>Français</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag fr" src="assets/images/lang-fr.png"/>Français</div>
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
 
-    <div><a href="../en/ValueSet-fr-core-vs-medication-translation.ttl.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+    <div><a href="../fr/ValueSet-fr-core-vs-medication.ttl.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
 
   </div>
 </div>
@@ -199,15 +199,15 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>FR Core ValueSet Medication translation</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>FR Core ValueSet Medication translation</b></li>
 
           <span style="float: var(--ig-right);">
 
-            <a href="ValueSet-fr-core-vs-medication-translation.json.html">&lt; précédent</a> | 
+            <a href="ValueSet-fr-core-vs-medication.json.html">&lt; prev</a> | 
 
-            <a href="#bottom">bas de page</a>
+            <a href="#bottom">bottom</a>
 
-          | <a href="ValueSet-fr-core-vs-mode-validation-identity.html">suivant &gt;</a>
+          | <a href="ValueSet-fr-core-vs-mode-validation-identity.html">next &gt;</a>
 
           </span>
 
@@ -223,7 +223,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - version de développement local (intégration continue v2.2.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://hl7.fr/ig/fhir/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hl7.fr/ig/fhir/core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -238,21 +238,21 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-fr-core-vs-medication-translation.html">Contenu narratif</a>
+    <a href="ValueSet-fr-core-vs-medication.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="ValueSet-fr-core-vs-medication-translation.xml.html">XML</a>
+      <a href="ValueSet-fr-core-vs-medication.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-fr-core-vs-medication-translation.json.html">JSON</a>
+      <a href="ValueSet-fr-core-vs-medication.json.html">JSON</a>
     </li>
   
 
@@ -282,7 +282,7 @@
           Active
           
 
-            à partir de 
+            as of 
 2026-08-13
 
           
@@ -293,7 +293,7 @@
   </table>
 
 
-<p><a href="ValueSet-fr-core-vs-medication-translation.ttl" no-download="true">Brut ttl</a> | <a href="ValueSet-fr-core-vs-medication-translation.ttl" download>Télécharger</a></p>
+<p><a href="ValueSet-fr-core-vs-medication.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-fr-core-vs-medication.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -308,9 +308,9 @@
 
 # - resource -------------------------------------------------------------------
 
-&lt;http://hl7.org/fhir/ValueSet/fr-core-vs-medication-translation&gt; a fhir:ValueSet ;
+&lt;http://hl7.org/fhir/ValueSet/fr-core-vs-medication&gt; a fhir:ValueSet ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fr-core-vs-medication-translation&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fr-core-vs-medication&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1&quot; ;
@@ -318,17 +318,17 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1&gt;
      ]
   ] ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;fr&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xml:lang=\&quot;fr\&quot; lang=\&quot;fr\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;French&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs fr-core-vs-medication-translation&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fr-core-vs-medication-translation\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfr-core-vs-medication-translation\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Langue : fr-FR&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt; version : 4.0.1&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-bdpm.html\&quot;&gt;&lt;code&gt;https://smt.esante.gouv.fr/terminologie-bdpm&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version est explicitement indiquée comme étant 2026-07-01\&quot;&gt; version ?2026-07-01&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;code&gt;https://smt.esante.gouv.fr/terminologie-cip_ucd&lt;/code&gt;&lt;span title=\&quot;La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\&quot;&gt; version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-atc.html\&quot;&gt;&lt;code&gt;https://smt.esante.gouv.fr/terminologie-atc&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version est explicitement indiquée comme étant 2026-02\&quot;&gt; version ?2026-02&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;code&gt;https://smt.esante.gouv.fr/terminologie-medicabase&lt;/code&gt;&lt;span title=\&quot;La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\&quot;&gt; version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;code&gt;https://smt.esante.gouv.fr/terminologie-nuva/&lt;/code&gt;&lt;span title=\&quot;La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\&quot;&gt; version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet fr-core-vs-medication&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;en-fr-core-vs-medication\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;en-hcfr-core-vs-medication\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Language: fr-FR&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablevalueset.html\&quot;&gt;Shareable ValueSet&lt;/a&gt; version: 4.0.1&lt;/p&gt;&lt;/div&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-bdpm.html\&quot;&gt;&lt;code&gt;https://smt.esante.gouv.fr/terminologie-bdpm&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is explicitly stated to be 2026-07-01\&quot;&gt; version ?2026-07-01&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;https://smt.esante.gouv.fr/terminologie-cip_ucd&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-atc.html\&quot;&gt;&lt;code&gt;https://smt.esante.gouv.fr/terminologie-atc&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is explicitly stated to be 2026-02\&quot;&gt; version ?2026-02&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;https://smt.esante.gouv.fr/terminologie-medicabase&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;https://smt.esante.gouv.fr/terminologie-nuva/&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.2.0&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FRCoreValueSetMedicationTranslation&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FRCoreValueSetMedication&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FR Core ValueSet Medication translation&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-08-13T12:00:16+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-08-13T12:31:13+00:00&quot;^^xsd:dateTime] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Interop'Santé&quot;] ;
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -381,9 +381,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-&lt;http://hl7.org/fhir/ValueSet/fr-core-vs-medication-translation.ttl&gt; a owl:Ontology ;
+&lt;http://hl7.org/fhir/ValueSet/fr-core-vs-medication.ttl&gt; a owl:Ontology ;
   owl:imports fhir:fhir.ttl ;
-  owl:versionIRI &lt;http://build.fhir.org/ValueSet/fr-core-vs-medication-translation.ttl&gt; .
+  owl:versionIRI &lt;http://build.fhir.org/ValueSet/fr-core-vs-medication.ttl&gt; .
 
 </code></pre>
 
@@ -417,15 +417,15 @@
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="ValueSet-fr-core-vs-medication-translation.json.html">&lt; précédent</a>
+                <a href="ValueSet-fr-core-vs-medication.json.html">&lt; prev</a>
 
               </td>
               <td style="text-align:center">
-                <a href="#top">haut</a>
+                <a href="#top">top</a>
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="ValueSet-fr-core-vs-mode-validation-identity.html">suivant ></a>
+                <a href="ValueSet-fr-core-vs-mode-validation-identity.html">next ></a>
 
               </td>
             </tr>
@@ -439,9 +439,9 @@
 
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
-          Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Date de génération : 
-  <span title="2026-08-13 12:00:00 +0000">
+          Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-08-13 12:31:00 +0000">
     2026-08-13
   </span>
 

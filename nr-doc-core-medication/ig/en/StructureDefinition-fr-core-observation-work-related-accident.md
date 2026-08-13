@@ -3,8 +3,8 @@
 ## Resource Profile: Observation - FR Core Observation Work Related Accident 
 
  
-French profile for work related accident observation. 
-Profil français pour l’observation en rapport avec un accident du travail ou une maladie professionnelle 
+French profile for a work-related accident or occupational disease observation, used notably as the reason for a prescribed treatment. 
+Profil français pour l’observation en rapport avec un accident du travail ou une maladie professionnelle, utilisée notamment comme motif d’un traitement prescrit. 
 
 **Usages:**
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationWorkRelatedAccident",
   "title" : "Observation - FR Core Observation Work Related Accident",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
       "use" : "work"
     }]
   }],
-  "description" : "French profile for work related accident observation.\r\n\nProfil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle",
+  "description" : "French profile for a work-related accident or occupational disease observation, used notably as the reason for a prescribed treatment.\r\n\nProfil français pour l'observation en rapport avec un accident du travail ou une maladie professionnelle, utilisée notamment comme motif d'un traitement prescrit.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

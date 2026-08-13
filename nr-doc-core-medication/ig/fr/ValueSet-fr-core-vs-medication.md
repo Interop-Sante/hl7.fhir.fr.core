@@ -9,7 +9,7 @@ Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (
 
 * [FR Core Medication Profile](StructureDefinition-fr-core-medication.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
  
 
@@ -19,7 +19,7 @@ No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
- [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
 
 
 
@@ -28,17 +28,17 @@ No Expansion for this valueset (Unsupported Code System Version)
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "fr-core-vs-medication-translation",
+  "id" : "fr-core-vs-medication",
   "meta" : {
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
   },
   "language" : "fr-FR",
-  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication-translation",
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication",
   "version" : "2.2.0",
-  "name" : "FRCoreValueSetMedicationTranslation",
+  "name" : "FRCoreValueSetMedication",
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

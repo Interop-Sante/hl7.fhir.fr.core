@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationDispenseProfile",
   "title" : "FR Core MedicationDispense Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:00:16+00:00",
+  "date" : "2026-08-13T12:31:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -106,16 +106,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       }]
     },
     {
-      "id" : "MedicationDispense.supportingInformation",
-      "path" : "MedicationDispense.supportingInformation",
-      "short" : "Posologie",
-      "max" : "1",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration|2.2.0"]
-      }]
-    },
-    {
       "id" : "MedicationDispense.authorizingPrescription",
       "path" : "MedicationDispense.authorizingPrescription",
       "short" : "Référence de la prescription",
@@ -128,8 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
     {
       "id" : "MedicationDispense.type",
       "path" : "MedicationDispense.type",
-      "short" : "Complétude de la dispensation",
-      "min" : 1
+      "short" : "Complétude de la dispensation"
     },
     {
       "id" : "MedicationDispense.type.coding",
@@ -172,17 +161,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "id" : "MedicationDispense.substitution",
       "path" : "MedicationDispense.substitution",
       "short" : "Acte de substitution"
-    },
-    {
-      "id" : "MedicationDispense.substitution.type",
-      "path" : "MedicationDispense.substitution.type",
-      "min" : 1,
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "code" : "G",
-          "display" : "Substitution autorisée par un produit générique"
-        }]
-      }
     }]
   }
 }
