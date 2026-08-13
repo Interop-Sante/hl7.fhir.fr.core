@@ -53,7 +53,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T09:41:50+00:00",
+  "date" : "2026-08-13T12:00:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
