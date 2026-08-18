@@ -1,3 +1,9 @@
+// Pas de profil EU Core disponible pour cette ressource
+// Profil source (IG Document Core) :
+//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
+//
+// Profil EU Core (héritage direct) : non disponible
+// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
@@ -40,17 +46,27 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.value 1..
 * identifier.assigner only Reference(FRCoreOrganizationProfile)
 
-* class.system 1..
-* class.code 1..
+* status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
+
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)"
+* class from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis (extensible)
+
 * type from FRCoreValueSetEncounterType (example)
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
-* subject only Reference(FRCorePatientProfile or Group)
+
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile or Group)
+
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
 * participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
+
 * appointment only Reference(FRCoreAppointmentProfile)
-* period 1..
+
+* period ^short = "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
+
 * account ..1
+
+* hospitalization ^short = "Informations sur l'hospitalisation associée à la rencontre"
 * hospitalization.preAdmissionIdentifier ^short = "Pre-admission identifier | Identifiant de pré-admission"
 
 * hospitalization.preAdmissionIdentifier.type 1..
@@ -64,10 +80,18 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * hospitalization.preAdmissionIdentifier.system ^definition = "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre , concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France"
 * hospitalization.preAdmissionIdentifier.value 1..
 * hospitalization.preAdmissionIdentifier.assigner only Reference(FRCoreOrganizationProfile)
+
 * hospitalization.origin only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
+
+* hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
+
 * hospitalization.reAdmission ^short = "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
+
 * hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
-* hospitalization.dischargeDisposition from FRCoreValueSetEncounterDischargeDisposition (example)
+
+* hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre."
+
+* location ^short = "Lieu d'exécution"
 * location.location only Reference(FRCoreLocationProfile)
 
 * location.physicalType from FRCoreValueSetLocationType (example)
