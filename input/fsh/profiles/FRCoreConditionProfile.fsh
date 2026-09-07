@@ -36,5 +36,11 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 
 // * evidence.detail only Reference(FRDocumentReferenceDocument) // Commenté : profil FRDocumentReferenceDocument inexistant — à créer
 
-* stage.summary ^short = "Statut clinique du patient"
-* stage.summary from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis (required)
+* stage ^slicing.discriminator.type = #pattern
+* stage ^slicing.discriminator.path = "type"
+* stage ^slicing.rules = #open
+* stage contains clinicalStatus 0..1
+
+* stage[clinicalStatus].type = $SCT#260998006 "Clinical staging (qualifier value)"
+* stage[clinicalStatus].summary ^short = "Statut clinique du patient"
+* stage[clinicalStatus].summary from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis (required)
