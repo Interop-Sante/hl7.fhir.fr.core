@@ -7,7 +7,7 @@ Identifier type
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetEncounterIdentifierType](ValueSet-fr-core-vs-encounter-identifier-type.md)
+* [FR Core ValueSet Encounter identifier type](ValueSet-fr-core-vs-encounter-identifier-type.md)
 
 -------
 
@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

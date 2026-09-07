@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -305,7 +305,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
       "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS|20260223120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS|20260730120000"
       }
     },
     {
@@ -391,7 +391,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
       "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20251222120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20260730120000"
       }
     }]
   }

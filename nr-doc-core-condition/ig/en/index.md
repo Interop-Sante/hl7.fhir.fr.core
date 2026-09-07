@@ -96,12 +96,12 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * [CC BY-NC-ND 3.0 IGO](https://creativecommons.org/licenses/by-nc-nd/3.0/igo/legalcode) 
 
-* [Classification internationale des maladies et des problèmes de santé connexes - 10ème révision - Version française à usage PMSI (Programme Médicalisé des Systèmes d'Information)](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-cim-10.html): [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md), [FRCoreConditionProfile](StructureDefinition-fr-core-condition.md) and [FRCoreValueSetConditionCode](ValueSet-fr-core-vs-condition-code.md)
+* [Classification internationale des maladies et des problèmes de santé connexes - 10ème révision - Version française à usage PMSI (Programme Médicalisé des Systèmes d'Information)](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-cim-10.html): [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md), [FRCoreConditionProfile](StructureDefinition-fr-core-condition.md) and [FRCoreValueSetConditionCode](ValueSet-fr-core-vs-condition-code.md)
 
 
 * [CC BY-ND 3.0 IGO](https://creativecommons.org/licenses/by-nd/3.0/igo/legalcode) 
 
-* [Classification internationale des maladies et des problèmes de santé connexes - 11ème révision](https://interop.esante.gouv.fr/terminologies/1.11.1/CodeSystem-terminologie-cim11-mms.html): [FRCoreConditionProfile](StructureDefinition-fr-core-condition.md) and [FRCoreValueSetConditionCode](ValueSet-fr-core-vs-condition-code.md)
+* [Classification internationale des maladies et des problèmes de santé connexes - 11ème révision](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-cim11-mms.html): [FRCoreConditionProfile](StructureDefinition-fr-core-condition.md) and [FRCoreValueSetConditionCode](ValueSet-fr-core-vs-condition-code.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
@@ -126,8 +126,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Condition Clinical Status Codes](http://terminology.hl7.org/7.3.0/CodeSystem-condition-clinical.html): [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md)
-* [ConditionVerificationStatus](http://terminology.hl7.org/7.3.0/CodeSystem-condition-ver-status.html): [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md)
+* [Condition Clinical Status Codes](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-condition-clinical.html): [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md)
+* [ConditionVerificationStatus](https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-condition-ver-status.html): [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md)
 * [Discharge disposition](http://terminology.hl7.org/7.3.0/CodeSystem-discharge-disposition.html): [FRCoreEncounterProfile](StructureDefinition-fr-core-encounter.md) and [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
 * [HumanNameAssemblyOrder](http://terminology.hl7.org/7.3.0/CodeSystem-name-assembly-order.html): [FRCoreAssemblyOrderExtension](StructureDefinition-fr-core-human-name-assembly-order.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.3.0/CodeSystem-observation-category.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md), [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)... Show 7 more, [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md), [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md), [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md), [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md), [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md), [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md) and [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)

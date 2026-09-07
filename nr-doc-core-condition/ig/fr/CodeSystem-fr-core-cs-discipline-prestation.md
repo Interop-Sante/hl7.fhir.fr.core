@@ -7,7 +7,7 @@ La nomenclature des discipline de prestation.
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetDisciplinePrestation](ValueSet-fr-core-vs-discipline-prestation.md)
+* [FR Core ValueSet Organization Discipline de prestation - nomenclature SAE](ValueSet-fr-core-vs-discipline-prestation.md)
 
 -------
 
@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Discipline de prestation - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

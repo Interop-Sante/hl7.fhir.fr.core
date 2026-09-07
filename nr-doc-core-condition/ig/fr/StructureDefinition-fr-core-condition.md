@@ -37,7 +37,7 @@ Cette structure est dérivée de [ConditionEuCore](http://hl7.eu/fhir/base/2.0.0
 
 ** Résumé **
 
-Obligatoire : 2 éléments
+Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -45,6 +45,12 @@ Cette structure fait référence à ces autres structures:
 
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
+
+**Slices**
+
+Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+
+* The element 1 is sliced based on the value of Condition.stage
 
  **Vue des éléments clés** 
 
@@ -68,7 +74,7 @@ Cette structure est dérivée de [ConditionEuCore](http://hl7.eu/fhir/base/2.0.0
 
 ** Résumé **
 
-Obligatoire : 2 éléments
+Obligatoire : 2 éléments(1 élément obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -76,6 +82,12 @@ Cette structure fait référence à ces autres structures:
 
 * [FR Core Patient INS Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0)](StructureDefinition-fr-core-patient-ins.md)
 * [FR Core Patient Profile (https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0)](StructureDefinition-fr-core-patient.md)
+
+**Slices**
+
+Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
+
+* The element 1 is sliced based on the value of Condition.stage
 
  
 
@@ -94,7 +106,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-conditi
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -176,7 +188,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-conditi
       "path" : "Condition.category",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260716085853"
       }
     },
     {
@@ -223,12 +235,42 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-conditi
       }]
     },
     {
-      "id" : "Condition.stage.summary",
+      "id" : "Condition.stage",
+      "path" : "Condition.stage",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Condition.stage:clinicalStatus",
+      "path" : "Condition.stage",
+      "sliceName" : "clinicalStatus",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.stage:clinicalStatus.summary",
       "path" : "Condition.stage.summary",
       "short" : "Statut clinique du patient",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260716085852"
+      }
+    },
+    {
+      "id" : "Condition.stage:clinicalStatus.type",
+      "path" : "Condition.stage.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260998006",
+          "display" : "Clinical staging (qualifier value)"
+        }]
       }
     }]
   }

@@ -7,7 +7,7 @@ La nomenclature des types d’activité de la terminologie SAE (Statistique Annu
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetOrganizationTypeActivite](ValueSet-fr-core-vs-oragnization-type-activite.md)
+* [FR Core ValueSet Organization Type Activité - nomenclature SAE](ValueSet-fr-core-vs-oragnization-type-activite.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

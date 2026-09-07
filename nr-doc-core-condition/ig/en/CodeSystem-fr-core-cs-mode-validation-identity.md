@@ -7,8 +7,8 @@ Mode de validation de l’identité
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetModeValidationIdentity](ValueSet-fr-core-vs-mode-validation-identity.md)
-* [FRCoreValueSetModeValidationIdentityINS](ValueSet-fr-core-vs-mode-validation-identity-ins.md)
+* [FR Core ValueSet Mode validation identity](ValueSet-fr-core-vs-mode-validation-identity.md)
+* [FR Core ValueSet Mode validation identity INS](ValueSet-fr-core-vs-mode-validation-identity-ins.md)
 
 -------
 
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -7,7 +7,7 @@ La nomenclature de disciplines d’équipement est utilisée pour ventiler l’a
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetOrganizationDisciplineEquipement](ValueSet-fr-core-vs-organization-discipline-equipement.md)
+* [FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE](ValueSet-fr-core-vs-organization-discipline-equipement.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -7,8 +7,8 @@ Schedule type
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md)
-* [FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
+* [FR Core ValueSet Schedule type](ValueSet-fr-core-vs-schedule-type.md)
+* [FR Core ValueSet Unavailability Reason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
 
 -------
 
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-condition
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-07-31T14:40:09+00:00",
+  "date" : "2026-09-07T15:17:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -114,7 +114,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-condition
       "path" : "Condition.category",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260716085853"
       }
     },
     {
@@ -161,12 +161,42 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-condition
       }]
     },
     {
-      "id" : "Condition.stage.summary",
+      "id" : "Condition.stage",
+      "path" : "Condition.stage",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "type"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Condition.stage:clinicalStatus",
+      "path" : "Condition.stage",
+      "sliceName" : "clinicalStatus",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.stage:clinicalStatus.summary",
       "path" : "Condition.stage.summary",
       "short" : "Statut clinique du patient",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260716085852"
+      }
+    },
+    {
+      "id" : "Condition.stage:clinicalStatus.type",
+      "path" : "Condition.stage.type",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "260998006",
+          "display" : "Clinical staging (qualifier value)"
+        }]
       }
     }]
   }
