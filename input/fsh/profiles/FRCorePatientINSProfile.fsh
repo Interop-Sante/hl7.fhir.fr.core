@@ -13,6 +13,7 @@ Profil FR Core Patient surspécifié pour être conforme aux exigences du réfé
     fr-ins-canonical 0..1
 * meta.profile[fr-ins-canonical] = Canonical(fr-core-patient-ins)
 
+* extension[identityReliability].extension[identityStatus] 1..1
 * extension[identityReliability].extension[validationMode].value[x] from fr-core-vs-mode-validation-identity-ins (required)
 
 
@@ -88,17 +89,17 @@ Profil FR Core Patient surspécifié pour être conforme aux exigences du réfé
 * name[officialName].extension[birth-list-given-name] 1..1 MS
 
 Invariant:   fr-core-1
-Description: "If identityReliability status = 'VALI', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present"
+Description: "If identityReliability status = 'QUAL', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present"
 * severity = #error
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official' and type.coding.exists(code = 'INS-NIR')).exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'QUAL')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official' and type.coding.exists(code = 'INS-NIR')).exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
 
 Invariant:   fr-core-2
-Description: "If identityReliability status = 'VALI', then only one identifier of type official SHALL be present"
+Description: "If identityReliability status = 'QUAL', then only one identifier of type official SHALL be present"
 * severity = #error
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies (identifier.where(use = 'official').count() = 1)"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'QUAL')) implies (identifier.where(use = 'official').count() = 1)"
 
 
 Invariant:   fr-core-3
-Description: "If identityReliability status = 'VALI', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service."
+Description: "If identityReliability status = 'QUAL', then the municipality of birth COG code cannot be 99999 because this code cannot be sent by the INSI online service."
 * severity = #warning
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'VALI')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999'"
+* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'QUAL')) implies extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value.extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code').value.code != '99999'"

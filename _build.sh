@@ -98,7 +98,9 @@ function run_publisher() {
   local extra_flags=("$@")
   if [ "$jar_location" != "not_found" ]; then
     echo "jar_location is: $jar_location"
-    export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF-8"
+    if [[ "$JAVA_TOOL_OPTIONS" != *"-Dfile.encoding=UTF-8"* ]]; then
+      export JAVA_TOOL_OPTIONS+=" -Dfile.encoding=UTF-8"
+    fi
     java $JAVA_OPTS -jar "$jar_location" -ig . "${extra_flags[@]}"
   else
     echo "IG Publisher NOT FOUND in input-cache or parent folder. Please run update. Aborting..."
