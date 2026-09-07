@@ -1,5 +1,5 @@
-CodeSystem: FRCoreCodeSystemMethodCollection
-Id: fr-core-cs-method-collection
+CodeSystem: FRCoreCodeSystemIdentityMethodCollection
+Id: fr-core-cs-identity-method-collection
 Title: "FR Core CodeSystem Method Collection"
 Description: "Méthode de collection de l'identité"
 * insert SetCodesystem

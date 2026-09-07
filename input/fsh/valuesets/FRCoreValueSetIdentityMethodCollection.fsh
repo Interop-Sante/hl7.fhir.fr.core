@@ -5,7 +5,7 @@ Description: "Le canal par lequel les traits d'identité ou le matricule INS ont
 * insert SetValueset
 
 * ^immutable = true
-* include codes from system FRCoreCodeSystemMethodCollection
+* include codes from system FRCoreCodeSystemIdentityMethodCollection
 
 // SVS profile
 * ^experimental = false
