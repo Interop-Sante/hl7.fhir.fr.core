@@ -3,7 +3,7 @@
 ## ValueSet: FR Core ValueSet Condition Code 
 
  
-Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), DRC (SFMG) 
+Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG), ORPHAcode (Orphanet) 
 
  **References** 
 
@@ -39,7 +39,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Condition Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-07T15:17:25+00:00",
+  "date" : "2026-09-14T12:24:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -56,7 +56,7 @@ No Expansion for this valueset (Unknown Code System)
       "use" : "work"
     }]
   }],
-  "description" : "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), DRC (SFMG)",
+  "description" : "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG), ORPHAcode (Orphanet)",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -82,7 +82,13 @@ No Expansion for this valueset (Unknown Code System)
       "system" : "http://hl7.org/fhir/sid/icpc-2"
     },
     {
+      "system" : "http://terminology.hl7.org/CodeSystem/ICPC-3"
+    },
+    {
       "system" : "https://www.sfmg.fr"
+    },
+    {
+      "system" : "https://www.orpha.net"
     }]
   }
 }

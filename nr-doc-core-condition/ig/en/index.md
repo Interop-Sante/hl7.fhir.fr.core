@@ -114,6 +114,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [Unified Code for Units of Measure (UCUM)](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html): [MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample](MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.md), [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md)... Show 8 more, [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md), [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md), [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md), [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md), [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md), [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md), [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md) and [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)
 
 
+* The copyright of ICPC-3, both in electronic form and hard copy, is owned by WONCA.WONCA offers three levels of licensing for: 
+*  
+High-income countries 
+ 
+*  
+Middle-income countries 
+ 
+*  
+Low-income countries 
+ Country Income Level according to GNI per capita of World Bank (Atlas Method)Licensing includes a package of an Official License and support by the ICPC Foundation. For more information see the contacts below.Within all three forms of licensing the ICPC-3 is free to be used by any party under a Creative Commons License BY-ND. This includes the free use of ICPC-3 by commercial parties.A Research License is required in case a Research Institute or University resides in a country without an official License. The Research License can be obtained for free under the condition that, as soon as the ICPC-3 is embedded in information systems for other purposes then research an Official License needs to be in place.For more information, see [[https://icpc-3.info](https://icpc-3.info)](https://icpc-3.info) 
+
+* [International Classification of Primary Care - Third Revision](http://terminology.hl7.org/6.3.0/CodeSystem-ICPC3.html): [FRCoreConditionProfile](StructureDefinition-fr-core-condition.md) and [FRCoreValueSetConditionCode](ValueSet-fr-core-vs-condition-code.md)
+
+
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
 * [LOINC](http://terminology.hl7.org/6.3.0/CodeSystem-v3-loinc.html): [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md), [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)... Show 7 more, [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md), [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md), [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md), [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md), [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md), [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md) and [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)

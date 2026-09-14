@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-07T15:17:25+00:00",
+  "date" : "2026-09-14T12:24:46+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2496,7 +2496,7 @@
         "reference" : "ValueSet/fr-core-vs-condition-code"
       },
       "name" : "FR Core ValueSet Condition Code",
-      "description" : "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), DRC (SFMG)",
+      "description" : "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG), ORPHAcode (Orphanet)",
       "exampleBoolean" : false
     },
     {
