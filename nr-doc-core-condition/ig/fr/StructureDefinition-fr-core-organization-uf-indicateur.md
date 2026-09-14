@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationUFIndicateurExtension",
   "title" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
   "status" : "active",
-  "date" : "2026-09-14T12:24:46+00:00",
+  "date" : "2026-09-14T12:47:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

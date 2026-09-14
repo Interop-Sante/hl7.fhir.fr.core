@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-14T12:24:46+00:00",
+  "date" : "2026-09-14T12:47:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2490,13 +2490,61 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-condition-code.html"
+        "valueUri" : "ValueSet-fr-core-vs-condition-code-allergie.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-condition-code"
+        "reference" : "ValueSet/fr-core-vs-condition-code-allergie"
       },
-      "name" : "FR Core ValueSet Condition Code",
-      "description" : "Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG), ORPHAcode (Orphanet)",
+      "name" : "FR Core ValueSet Condition Code - Allergie",
+      "description" : "CIM-11 (Chapitre 04) : réactions allergiques ou d'hypersensibilité, terminologie absente de la CIM-10",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-condition-code-defaut.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-condition-code-defaut"
+      },
+      "name" : "FR Core ValueSet Condition Code - Défaut",
+      "description" : "CIM-10 : terminologie par défaut pour coder les problèmes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-condition-code-maladie-rare.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-condition-code-maladie-rare"
+      },
+      "name" : "FR Core ValueSet Condition Code - Maladie rare",
+      "description" : "ORPHAcode (Orphanet) : codage des maladies rares",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-condition-code-medecine-ville.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-condition-code-medecine-ville"
+      },
+      "name" : "FR Core ValueSet Condition Code - Médecine de ville",
+      "description" : "CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG) : code problème en médecine de ville",
       "exampleBoolean" : false
     },
     {

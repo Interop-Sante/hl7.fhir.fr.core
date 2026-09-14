@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-core-vs-condition-code-allergie",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-condition-code-allergie</b></p><a name=\"en-fr-core-vs-condition-code-allergie\"> </a><a name=\"en-hcfr-core-vs-condition-code-allergie\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-FR</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version: 4.0.1</p></div><ul><li>Include codes from<a href=\"https://interop.esante.gouv.fr/terminologies/1.13.0/CodeSystem-terminologie-cim11-mms.html\"><code>https://smt.esante.gouv.fr/terminologie-cim11-mms</code></a><span title=\"Version is explicitly stated to be 2026-02\"> version &#x1F4CD;2026-02</span> where concept  is-a 04 (Maladies du système immunitaire)</li></ul></div>"
+  },
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-allergie",
+  "version" : "2.2.0",
+  "name" : "FRCoreValueSetConditionCodeAllergie",
+  "title" : "FR Core ValueSet Condition Code - Allergie",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-14T12:47:40+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CIM-11 (Chapitre 04) : réactions allergiques ou d'hypersensibilité, terminologie absente de la CIM-10",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://smt.esante.gouv.fr/terminologie-cim11-mms",
+      "version" : "2026-02",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "04"
+      }]
+    }]
+  }
+}

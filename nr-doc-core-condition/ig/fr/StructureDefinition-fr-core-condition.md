@@ -106,7 +106,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-conditi
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-09-14T12:24:46+00:00",
+  "date" : "2026-09-14T12:47:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -197,8 +197,65 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-conditi
       "short" : "Identification de la condition, du problème ou du diagnostic",
       "definition" : "CIM-10 pour les pathologies et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' display='Causes inconnues et non précisées de morbidité' system='https://smt.esante.gouv.fr/terminologie-cim-10' et décrire le problème sous forme de texte libre.\r\n\nRéaction allergique : CIM-11 / Chapitre 04 Maladies du système immunitaire / Bloc Affections allergiques ou d'hyper-sensibilité.\r\n\nMaladie rare : ORPHAcode (Orphanet) - system='https://www.orpha.net'.\r\n\nSi pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-problem-cisis",
       "binding" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-allergie|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "CIM-11 (Chapitre 04) : utilisé uniquement pour les réactions allergiques ou d'hypersensibilité, terminologie absente de la CIM-10."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Réaction allergique / hypersensibilité"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-medecine-ville|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "CISP-2 (ICPC-2), CISP-3 (ICPC-3) et DRC (SFMG) : code problème en médecine de ville."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Code problème médecine de ville"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-maladie-rare|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "ORPHAcode (Orphanet) : codage des maladies rares."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Maladie rare"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        }],
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-defaut|2.2.0"
       }
     },
     {

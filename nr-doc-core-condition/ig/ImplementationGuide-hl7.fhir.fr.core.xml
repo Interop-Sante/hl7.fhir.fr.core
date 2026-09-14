@@ -13,7 +13,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-09-14T12:24:46+00:00"/>
+  <date value="2026-09-14T12:47:40+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1762,10 +1762,43 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-condition-code"/>
+        <reference value="ValueSet/fr-core-vs-condition-code-allergie"/>
       </reference>
-      <name value="FR Core ValueSet Condition Code"/>
-      <description value="Identification de la condition, du problème ou du diagnostic : CIM-10, CIM-11 (Chapitre 04), CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG), ORPHAcode (Orphanet)"/>
+      <name value="FR Core ValueSet Condition Code - Allergie"/>
+      <description value="CIM-11 (Chapitre 04) : réactions allergiques ou d'hypersensibilité, terminologie absente de la CIM-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-condition-code-defaut"/>
+      </reference>
+      <name value="FR Core ValueSet Condition Code - Défaut"/>
+      <description value="CIM-10 : terminologie par défaut pour coder les problèmes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-condition-code-maladie-rare"/>
+      </reference>
+      <name value="FR Core ValueSet Condition Code - Maladie rare"/>
+      <description value="ORPHAcode (Orphanet) : codage des maladies rares"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-condition-code-medecine-ville"/>
+      </reference>
+      <name value="FR Core ValueSet Condition Code - Médecine de ville"/>
+      <description value="CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG) : code problème en médecine de ville"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
