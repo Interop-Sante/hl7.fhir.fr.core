@@ -26,12 +26,13 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 """
 
 // Additional binding - SNOMED CT : demande d'acte ou report d'actes à des fins internationales (en cours de validation en Europe)
+// Référence directe au ValueSet IPS procedures-uv-ips, identique à celui utilisé par le parent EU Core procedure-eu-core
 * code ^binding.extension[+].extension[0].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #extensible
 * code ^binding.extension[=].extension[+].url = "valueSet"
-* code ^binding.extension[=].extension[=].valueCanonical = Canonical(FRCoreValueSetProcedureCodeSnomed)
+* code ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"
 * code ^binding.extension[=].extension[+].url = "documentation"
-* code ^binding.extension[=].extension[=].valueMarkdown = "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core)."
+* code ^binding.extension[=].extension[=].valueMarkdown = "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. ValueSet IPS procedures-uv-ips, identique à celui utilisé par le parent EU Core."
 * code ^binding.extension[=].extension[+].url = "shortDoco"
 * code ^binding.extension[=].extension[=].valueString = "Demande / report d'acte à des fins internationales"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
