@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-16T08:14:25+00:00",
+  "date" : "2026-09-16T15:45:09+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2481,22 +2481,6 @@
       },
       "name" : "FR Core ValueSet COG commune pays",
       "description" : "Value set town and country COG",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-condition-code-allergie.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-condition-code-allergie"
-      },
-      "name" : "FR Core ValueSet Condition Code - Allergie",
-      "description" : "CIM-11 (Chapitre 04) : réactions allergiques ou d'hypersensibilité, terminologie absente de la CIM-10",
       "exampleBoolean" : false
     },
     {
