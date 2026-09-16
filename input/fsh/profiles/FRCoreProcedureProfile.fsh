@@ -14,7 +14,7 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 
 * status ^short = "Statut de l'acte"
 
-* code ^short = "Code d'acte"
+* code ^short = "Code d'acte : CCAM (facturante), SNOMED CT (international, additional binding) ou CISIS 'Autre acte'/absent-unknown"
 * code from FRCoreValueSetProcedureCode (preferred) // EU Core : binding preferred identique (ValueSet différent : procedures-uv-ips, remplacé par CCAM/CISIS + additional bindings SNOMED CT/Autre acte)
 * code ^comment = """
 Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.
