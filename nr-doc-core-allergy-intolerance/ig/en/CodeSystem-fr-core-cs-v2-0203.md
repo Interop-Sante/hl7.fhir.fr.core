@@ -7,9 +7,9 @@ HL7 v2 - Identifier type
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md)
-* [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md)
-* [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md)
+* [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md)
+* [FR Core ValueSet Patient identifier type](ValueSet-fr-core-vs-patient-identifier-type.md)
+* [FR Core ValueSet Practitioner identifier type](ValueSet-fr-core-vs-practitioner-identifier-type.md)
 
 -------
 
@@ -33,7 +33,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-03T09:32:19+00:00",
+  "date" : "2026-09-16T08:22:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

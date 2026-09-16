@@ -15,6 +15,8 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie.
 
 ### Expansion
 
+No Expansion for this valueset (Unsupported Code System Version)
+
 -------
 
  [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -37,7 +39,7 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie.
   "title" : "FR Core ValueSet Allergy Substance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-03T09:32:19+00:00",
+  "date" : "2026-09-16T08:22:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -65,7 +67,7 @@ Jeu de valeurs permettant de coder la substance responsable d’une allergie.
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-sms",
-      "version" : "2026-07"
+      "version" : "2026-08"
     }]
   }
 }

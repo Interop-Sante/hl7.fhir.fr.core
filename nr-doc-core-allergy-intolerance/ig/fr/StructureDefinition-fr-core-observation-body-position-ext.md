@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationBodyPositionExtExtension",
   "title" : "FR Core Observation Body Position Ext Extension",
   "status" : "active",
-  "date" : "2026-08-03T09:32:19+00:00",
+  "date" : "2026-09-16T08:22:23+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
