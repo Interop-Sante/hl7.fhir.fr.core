@@ -11,7 +11,7 @@ Profile: FRCoreAccessionNumberIdentifierProfile
 Parent: Identifier
 Id: fr-core-accession-number-identifier
 Title: "FR Core Accession Number Identifier Profile"
-Description: "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen."
+Description: "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen d'imagerie."
 
 * type 1..1
 * type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
