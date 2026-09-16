@@ -13,7 +13,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-09-16T08:22:23+00:00"/>
+  <date value="2026-09-16T15:48:58+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1729,6 +1729,50 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie"/>
+      </reference>
+      <name value="FR Core ValueSet AllergyIntolerance Manifestation - Allergie"/>
+      <description value="Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = allergie : Chapitre 04 Maladies du système immunitaire, Bloc Affections allergiques ou d'hypersensibilité."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite"/>
+      </reference>
+      <name value="FR Core ValueSet AllergyIntolerance Manifestation - Hypersensibilité non allergique"/>
+      <description value="Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = hypersensibilité non allergique : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie"/>
+      </reference>
+      <name value="FR Core ValueSet AllergyIntolerance Manifestation - Idiosyncrasie"/>
+      <description value="Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = idiosyncrasie : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance"/>
+      </reference>
+      <name value="FR Core ValueSet AllergyIntolerance Manifestation - Intolérance"/>
+      <description value="Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = intolérance : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-availability-time-rule"/>
       </reference>
       <name value="FR Core ValueSet Availability Schedule"/>
@@ -2195,6 +2239,39 @@
       </reference>
       <name value="FRCoreAllergyIntoleranceExample"/>
       <description value="Exemple de ressource AllergyIntolerance : allergie médicamenteuse au paracétamol avec réaction cutanée"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/FRCoreAllergyIntoleranceExampleHypersensibilite"/>
+      </reference>
+      <name value="FRCoreAllergyIntoleranceExampleHypersensibilite"/>
+      <description value="Exemple de ressource AllergyIntolerance : hypersensibilité non allergique au paracétamol"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/FRCoreAllergyIntoleranceExampleIdiosyncrasie"/>
+      </reference>
+      <name value="FRCoreAllergyIntoleranceExampleIdiosyncrasie"/>
+      <description value="Exemple de ressource AllergyIntolerance : réaction idiosyncrasique au paracétamol"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/FRCoreAllergyIntoleranceExampleIntolerance"/>
+      </reference>
+      <name value="FRCoreAllergyIntoleranceExampleIntolerance"/>
+      <description value="Exemple de ressource AllergyIntolerance : intolérance au paracétamol"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"/>
     </resource>
     <resource>

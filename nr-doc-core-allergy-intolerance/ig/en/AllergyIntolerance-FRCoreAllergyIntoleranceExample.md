@@ -86,6 +86,11 @@ Profile: [FR Core AllergyIntolerance Profile](StructureDefinition-fr-core-allerg
         "system" : "http://snomed.info/sct",
         "code" : "271807003",
         "display" : "éruption cutanée"
+      },
+      {
+        "system" : "https://smt.esante.gouv.fr/terminologie-cim11-mms",
+        "code" : "4A82",
+        "display" : "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
       }]
     }],
     "onset" : "2024-03-15",

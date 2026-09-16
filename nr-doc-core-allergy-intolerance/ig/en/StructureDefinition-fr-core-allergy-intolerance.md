@@ -7,7 +7,7 @@ FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie
 
 **Usages:**
 
-* Examples for this Profile: [AllergyIntolerance/FRCoreAllergyIntoleranceExample](AllergyIntolerance-FRCoreAllergyIntoleranceExample.md)
+* Examples for this Profile: [AllergyIntolerance/FRCoreAllergyIntoleranceExample](AllergyIntolerance-FRCoreAllergyIntoleranceExample.md), [AllergyIntolerance/FRCoreAllergyIntoleranceExampleHypersensibilite](AllergyIntolerance-FRCoreAllergyIntoleranceExampleHypersensibilite.md), [AllergyIntolerance/FRCoreAllergyIntoleranceExampleIdiosyncrasie](AllergyIntolerance-FRCoreAllergyIntoleranceExampleIdiosyncrasie.md) and [AllergyIntolerance/FRCoreAllergyIntoleranceExampleIntolerance](AllergyIntolerance-FRCoreAllergyIntoleranceExampleIntolerance.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-allergy-intolerance.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-allergy-i
   "name" : "FRCoreAllergyIntoleranceProfile",
   "title" : "FR Core AllergyIntolerance Profile",
   "status" : "active",
-  "date" : "2026-09-16T08:22:23+00:00",
+  "date" : "2026-09-16T15:48:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -81,7 +81,35 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-allergy-i
   "differential" : {
     "element" : [{
       "id" : "AllergyIntolerance",
-      "path" : "AllergyIntolerance"
+      "path" : "AllergyIntolerance",
+      "constraint" : [{
+        "key" : "fr-core-allergy-intolerance-1",
+        "severity" : "warning",
+        "human" : "Si type = allergie, les manifestations doivent être codées avec le ValueSet CIM-11 Chapitre 04, Bloc Affections allergiques ou d'hypersensibilité (fr-core-vs-allergyintolerance-manifestation-allergie).",
+        "expression" : "type = 'allergy' implies reaction.manifestation.all(memberOf('https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie'))",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+      },
+      {
+        "key" : "fr-core-allergy-intolerance-2",
+        "severity" : "warning",
+        "human" : "Si type = hypersensibilité non allergique, les manifestations doivent être codées avec le ValueSet CIM-11 Chapitre 21 (fr-core-vs-allergyintolerance-manifestation-hypersensibilite).",
+        "expression" : "type.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type').value.coding.exists(system = 'http://snomed.info/sct' and code = '609396006') implies reaction.manifestation.all(memberOf('https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite'))",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+      },
+      {
+        "key" : "fr-core-allergy-intolerance-3",
+        "severity" : "warning",
+        "human" : "Si type = intolérance, les manifestations doivent être codées avec le ValueSet CIM-11 Chapitre 21 (fr-core-vs-allergyintolerance-manifestation-intolerance).",
+        "expression" : "type = 'intolerance' implies reaction.manifestation.all(memberOf('https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance'))",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+      },
+      {
+        "key" : "fr-core-allergy-intolerance-4",
+        "severity" : "warning",
+        "human" : "Si type = idiosyncrasie, les manifestations doivent être codées avec le ValueSet CIM-11 Chapitre 21 (fr-core-vs-allergyintolerance-manifestation-idiosyncrasie).",
+        "expression" : "type.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type').value.coding.exists(system = 'http://snomed.info/sct' and code = '56840009') implies reaction.manifestation.all(memberOf('https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie'))",
+        "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+      }]
     },
     {
       "id" : "AllergyIntolerance.clinicalStatus",
@@ -197,7 +225,88 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-allergy-i
     {
       "id" : "AllergyIntolerance.reaction.manifestation",
       "path" : "AllergyIntolerance.reaction.manifestation",
-      "short" : "Symptômes/signes cliniques associés à l'événement"
+      "short" : "Symptômes/signes cliniques associés à l'événement",
+      "binding" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Si type = allergie : CIM-11 Chapitre 04, Bloc Affections allergiques ou d'hypersensibilité."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Allergie"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Si type = hypersensibilité non allergique : CIM-11 Chapitre 21, Symptômes, signes ou résultats d'examen clinique, non classés ailleurs."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Hypersensibilité non allergique"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Si type = intolérance : CIM-11 Chapitre 21, Symptômes, signes ou résultats d'examen clinique, non classés ailleurs."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Intolérance"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Si type = idiosyncrasie : CIM-11 Chapitre 21, Symptômes, signes ou résultats d'examen clinique, non classés ailleurs."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Idiosyncrasie"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        }],
+        "strength" : "preferred",
+        "description" : "Type of allergy or intolerance reaction expected to be used in MyHealth@EU",
+        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"
+      }
     },
     {
       "id" : "AllergyIntolerance.reaction.onset",

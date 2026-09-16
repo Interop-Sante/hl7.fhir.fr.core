@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-16T08:22:23+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-16T15:48:58+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -2353,6 +2353,62 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet AllergyIntolerance Manifestation - Allergie" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = allergie : Chapitre 04 Maladies du système immunitaire, Bloc Affections allergiques ou d'hypersensibilité." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet AllergyIntolerance Manifestation - Hypersensibilité non allergique" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = hypersensibilité non allergique : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet AllergyIntolerance Manifestation - Idiosyncrasie" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = idiosyncrasie : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet AllergyIntolerance Manifestation - Intolérance" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = intolérance : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule> ;
          fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-availability-time-rule" ]
        ] ;
@@ -2946,6 +3002,57 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreAllergyIntoleranceExample" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource AllergyIntolerance : allergie médicamenteuse au paracétamol avec réaction cutanée" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/AllergyIntolerance/FRCoreAllergyIntoleranceExampleHypersensibilite> ;
+         fhir:Reference.reference [ fhir:value "AllergyIntolerance/FRCoreAllergyIntoleranceExampleHypersensibilite" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreAllergyIntoleranceExampleHypersensibilite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource AllergyIntolerance : hypersensibilité non allergique au paracétamol" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/AllergyIntolerance/FRCoreAllergyIntoleranceExampleIdiosyncrasie> ;
+         fhir:Reference.reference [ fhir:value "AllergyIntolerance/FRCoreAllergyIntoleranceExampleIdiosyncrasie" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreAllergyIntoleranceExampleIdiosyncrasie" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource AllergyIntolerance : réaction idiosyncrasique au paracétamol" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/AllergyIntolerance/FRCoreAllergyIntoleranceExampleIntolerance> ;
+         fhir:Reference.reference [ fhir:value "AllergyIntolerance/FRCoreAllergyIntoleranceExampleIntolerance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreAllergyIntoleranceExampleIntolerance" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource AllergyIntolerance : intolérance au paracétamol" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0" ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0>

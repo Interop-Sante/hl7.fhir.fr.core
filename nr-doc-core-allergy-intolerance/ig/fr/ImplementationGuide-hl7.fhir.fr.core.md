@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-16T08:22:23+00:00",
+  "date" : "2026-09-16T15:48:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2442,6 +2442,70 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-allergyintolerance-manifestation-allergie.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie"
+      },
+      "name" : "FR Core ValueSet AllergyIntolerance Manifestation - Allergie",
+      "description" : "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = allergie : Chapitre 04 Maladies du système immunitaire, Bloc Affections allergiques ou d'hypersensibilité.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-allergyintolerance-manifestation-hypersensibilite.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite"
+      },
+      "name" : "FR Core ValueSet AllergyIntolerance Manifestation - Hypersensibilité non allergique",
+      "description" : "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = hypersensibilité non allergique : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-allergyintolerance-manifestation-idiosyncrasie.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie"
+      },
+      "name" : "FR Core ValueSet AllergyIntolerance Manifestation - Idiosyncrasie",
+      "description" : "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = idiosyncrasie : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-allergyintolerance-manifestation-intolerance.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance"
+      },
+      "name" : "FR Core ValueSet AllergyIntolerance Manifestation - Intolérance",
+      "description" : "Codes CIM-11 autorisés pour coder la manifestation d'une réaction lorsque AllergyIntolerance.type = intolérance : Chapitre 21 Symptômes, signes ou résultats d'examen clinique, non classés ailleurs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-fr-core-vs-availability-time-rule.html"
       }],
       "reference" : {
@@ -3121,6 +3185,54 @@
       },
       "name" : "FRCoreAllergyIntoleranceExample",
       "description" : "Exemple de ressource AllergyIntolerance : allergie médicamenteuse au paracétamol avec réaction cutanée",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "AllergyIntolerance-FRCoreAllergyIntoleranceExampleHypersensibilite.html"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/FRCoreAllergyIntoleranceExampleHypersensibilite"
+      },
+      "name" : "FRCoreAllergyIntoleranceExampleHypersensibilite",
+      "description" : "Exemple de ressource AllergyIntolerance : hypersensibilité non allergique au paracétamol",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "AllergyIntolerance-FRCoreAllergyIntoleranceExampleIdiosyncrasie.html"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/FRCoreAllergyIntoleranceExampleIdiosyncrasie"
+      },
+      "name" : "FRCoreAllergyIntoleranceExampleIdiosyncrasie",
+      "description" : "Exemple de ressource AllergyIntolerance : réaction idiosyncrasique au paracétamol",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "AllergyIntolerance-FRCoreAllergyIntoleranceExampleIntolerance.html"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/FRCoreAllergyIntoleranceExampleIntolerance"
+      },
+      "name" : "FRCoreAllergyIntoleranceExampleIntolerance",
+      "description" : "Exemple de ressource AllergyIntolerance : intolérance au paracétamol",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance|2.2.0"
     },
     {
