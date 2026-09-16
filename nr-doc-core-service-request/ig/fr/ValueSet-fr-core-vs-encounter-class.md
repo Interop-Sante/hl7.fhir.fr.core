@@ -49,7 +49,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet Encounter class",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-31T14:55:35+00:00",
+  "date" : "2026-09-16T07:37:42+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

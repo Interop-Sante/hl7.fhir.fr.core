@@ -3,7 +3,7 @@
 ## Data Type Profile: FR Core Accession Number Identifier Profile 
 
  
-DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen. 
+DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen d’imagerie. 
 
 **Usages:**
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-accession
   "name" : "FRCoreAccessionNumberIdentifierProfile",
   "title" : "FR Core Accession Number Identifier Profile",
   "status" : "active",
-  "date" : "2026-07-31T14:55:35+00:00",
+  "date" : "2026-09-16T07:37:42+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-accession
       "use" : "work"
     }]
   }],
-  "description" : "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen.",
+  "description" : "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen d'imagerie.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

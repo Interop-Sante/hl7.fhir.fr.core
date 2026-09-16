@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Table - Guide d&#39;implémentation FR Core v2.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7fr.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17"}
+    h3,h4,h5,h6{--heading-prefix:"17"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+  <a id="hl7-logo" data-no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
+</div>
+
+<div id="family-nav">
+  <a id="family-logo" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
+            <br/>
+            <span style="display:inline-block;">2.2.0 - ci-build
+
+
+
+  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="profile_list.html">Liste des profils</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="bonnes_pratiques.html">Bonnes pratiques</a>
+  </li>
+  <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
+    <a href="change_notes.html">Historique</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="a_propos.html">A propos</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-fr.png"/>Français</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag fr" src="assets/images/lang-fr.png"/>Français</div>
+
+    <div><a href="../en/artifacts-table.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Table</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="Organization-hopitaltest-uf-4705-nutrition.ttl.html">&lt; précédent</a> | 
+
+            <a href="#bottom">bas de page</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - version de développement local (intégration continue v2.2.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://hl7.fr/ig/fhir/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Table</h2>
+  
+  
+  
+  
+  
+
+
+
+
+
+<link rel="stylesheet" href="assets/css/dataTables.min.css"/>
+<link rel="stylesheet" href="assets/css/dataTables.rowGroup.min.css"/>
+<style>
+  /* Group header */
+  #artifactsTable tr.dtrg-group td.artifacts-group-header {
+    background:rgba(0,0,0,0.08);
+    border-top:1px solid rgba(0,0,0,0.15);
+    border-bottom:1px solid rgba(0,0,0,0.15);
+    padding:.6em .9em;
+  }
+  #artifactsTable .artifacts-group-name { font-weight:700; font-size:1.1em; }
+  #artifactsTable .artifacts-group-desc { font-weight:normal; font-size:.92em; margin-top:.3em; opacity:.75; }
+  #artifactsTable .artifacts-group-desc p:last-child { margin-bottom:0; }
+
+  /* Body markdown spacing */
+  #artifactsTable tbody td p { margin:0 0 .25em 0; }
+  #artifactsTable tbody td p:last-child { margin-bottom:0; }
+  #artifactsTable tbody td.artifacts-id { font-family:monospace; font-size:.9em; white-space:nowrap; }
+
+  /* Per-column filter row */
+  #artifactsTable thead tr.filters th { padding:.25em .5em; background:rgba(0,0,0,0.03); }
+  #artifactsTable thead tr.filters input { width:100%; box-sizing:border-box; padding:.25em .5em; border:1px solid rgba(0,0,0,0.2); border-radius:3px; font-weight:normal; font-size:.9em; background:#fff; }
+  #artifactsTable thead tr.filters th.sorting,
+  #artifactsTable thead tr.filters th.sorting_asc,
+  #artifactsTable thead tr.filters th.sorting_desc { background-image:none !important; cursor:default; }
+  /* Active text filter — funnel icon + tinted background */
+  #artifactsTable thead tr.filters input[type=text]:not(:placeholder-shown) {
+    background-color:rgba(0,0,0,0.06);
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='black' fill-opacity='0.55' d='M1 2h14l-5 7v5l-4-1V9z'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right .4em center;
+    background-size:.95em;
+    padding-right:1.7em;
+    border-color:rgba(0,0,0,0.45);
+    font-weight:600;
+  }
+
+  /* Active-filter indicator on column header */
+  #artifactsTable thead tr:first-child th { position:relative; }
+  #artifactsTable thead tr:first-child th.has-filter {
+    font-weight:700;
+    background:rgba(0,0,0,0.12);
+    box-shadow:inset 0 -3px 0 rgba(0,0,0,0.55);
+  }
+  #artifactsTable thead tr:first-child th.has-filter::after {
+    content:"⏷";
+    position:absolute;
+    top:50%;
+    right:1.6em;     /* leave room for the sort arrows */
+    transform:translateY(-50%);
+    font-size:.8em;
+    opacity:.6;
+  }
+
+  /* Multi-select popup */
+  .dt-filter-popup { display:inline-block; position:relative; margin:0 .5em; }
+  /* When the popup is inline inside a filter <th>, fill the cell width */
+  #artifactsTable thead tr.filters th .dt-filter-popup { display:block; margin:0; }
+  #artifactsTable thead tr.filters th .dt-filter-trigger { width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; }
+
+  .dt-filter-trigger {
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    padding:.3em .65em;
+    font-size:.9em;
+    cursor:pointer;
+    color:inherit;
+    line-height:1.2;
+  }
+  .dt-filter-trigger.has-filter {
+    background:rgba(0,0,0,0.08);
+    border-color:rgba(0,0,0,0.35);
+    font-weight:600;
+  }
+  .dt-filter-trigger .caret { margin-left:.35em; opacity:.6; font-size:.7em; }
+
+  /* Selected-value chips — shown below the trigger, grow the cell vertically */
+  .dt-filter-selected { display:flex; flex-wrap:wrap; gap:.25em; margin-top:.35em; }
+  .dt-filter-selected:empty { display:none; }
+  .dt-filter-chip {
+    display:inline-flex; align-items:center; gap:4px;
+    background:rgba(0,0,0,0.08);
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:2px;
+    padding:1px 4px 1px 6px;
+    line-height:1.4;
+    font-size:.8em;
+    white-space:nowrap;
+    max-width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .dt-filter-chip-remove {
+    background:none; border:none; padding:0;
+    font-size:1.1em; line-height:1; cursor:pointer; opacity:.55;
+    color:inherit;
+  }
+  .dt-filter-chip-remove:hover { opacity:1; }
+  .dt-filter-menu {
+    position:absolute;
+    top:calc(100% + 4px);
+    left:0;
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.25);
+    border-radius:3px;
+    padding:.25em 0;
+    z-index:1000;
+    min-width:16em;
+    max-height:26em;
+    overflow:auto;
+    box-shadow:0 2px 8px rgba(0,0,0,0.18);
+  }
+  #artifactsTable thead tr.filters th .dt-filter-menu { left:0; right:auto; }
+  .dt-filter-menu[hidden] { display:none; }
+  .dt-filter-menu-header {
+    display:flex; justify-content:space-between; align-items:center; gap:.5em;
+    padding:.25em .75em .35em .75em;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    margin-bottom:.25em;
+    font-size:.85em;
+  }
+  .dt-filter-menu-clear { background:none; border:none; padding:0; font-size:inherit; cursor:pointer; opacity:.7; color:inherit; }
+  .dt-filter-menu-clear:hover { opacity:1; text-decoration:underline; }
+  .dt-filter-menu { text-align:left !important; direction:ltr !important; }
+  .dt-filter-menu label {
+    display:block !important;
+    padding:.3em .75em !important;
+    margin:0 !important;
+    cursor:pointer;
+    font-weight:normal !important;
+    text-align:left !important;
+    white-space:nowrap;
+    user-select:none;
+  }
+  .dt-filter-menu label:hover { background:rgba(0,0,0,0.05); }
+  .dt-filter-menu label input[type="checkbox"] {
+    display:inline-block !important;
+    vertical-align:middle !important;
+    margin:0 .5em 0 0 !important;
+    width:auto !important;
+    float:none !important;
+    cursor:pointer;
+  }
+  .dt-filter-menu label span {
+    display:inline !important;
+    vertical-align:middle !important;
+    float:none !important;
+  }
+  /* Grouping toggle row inside the Category menu */
+  .dt-filter-menu .dt-grouping-row { background:rgba(0,0,0,0.04); font-style:italic; padding:.4em .75em; }
+  .dt-filter-menu .dt-menu-divider { border-top:1px solid rgba(0,0,0,0.1); margin:.25em 0; }
+
+  /* Intro paragraph */
+  .artifacts-table-intro { margin:.25em 0 1em 0; }
+
+  /* Top/bottom controls — neutral */
+  .dt-container .dt-layout-row { padding:.4em 0; align-items:center; }
+  .dt-container .dt-length select {
+    padding:.3em .5em;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:3px;
+    background:#fff;
+    font-size:.9em;
+  }
+  .dt-container .dt-length label { font-weight:normal; opacity:.75; }
+  .dt-container .dt-info { opacity:.75; font-size:.9em; }
+  .dt-container .dt-paging .dt-paging-button {
+    border:1px solid rgba(0,0,0,0.2) !important;
+    background:#fff !important;
+    padding:.25em .65em !important;
+    margin:0 2px !important;
+    border-radius:3px !important;
+    font-size:.9em !important;
+    cursor:pointer;
+  }
+  .dt-container .dt-paging .dt-paging-button.current,
+  .dt-container .dt-paging .dt-paging-button.current:hover {
+    background:rgba(0,0,0,0.12) !important;
+    border-color:rgba(0,0,0,0.3) !important;
+    font-weight:bold;
+  }
+  .dt-container .dt-paging .dt-paging-button:hover:not(.current):not(.disabled) {
+    background:rgba(0,0,0,0.05) !important;
+  }
+  .dt-container .dt-paging .dt-paging-button.disabled,
+  .dt-container .dt-paging .dt-paging-button.disabled:hover {
+    opacity:.4; cursor:default; background:#fff !important;
+  }
+</style><p class="artifacts-table-intro">This page provides a tabular view of the FHIR artifacts defined as part of this implementation guide.</p>
+
+<table id="artifactsTable" class="display" style="width:100%" data-fhir="generated">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Grouping</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+    <tr class="filters">
+      <th></th>
+      <th></th>
+      <th><input type="text" data-col="n" placeholder="Search title"/></th>
+      <th><input type="text" data-col="i" placeholder="Search id"/></th>
+      <th id="filterCellType"></th>
+      <th><input type="text" data-col="d" placeholder="Search description"/></th>
+    </tr>
+  </thead>
+</table>
+
+<script defer src="assets/js/dataTables.min.js"></script>
+<script defer src="assets/js/dataTables.rowGroup.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var data = [{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Appointment Profile", "i":"fr-core-appointment", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-appointment.html", "r":"StructureDefinition/fr-core-appointment", "d":"<p>Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.</p>\n\n<p>Profil de la ressource Appointment pour la France. Ce profil ajoute l’opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Encounter Profile", "i":"fr-core-encounter", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-encounter.html", "r":"StructureDefinition/fr-core-encounter", "d":"<p>This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.</p>\n\n<p>Ce profil de la ressource Encounter sert à la fois à définir la venue dans l’établissement et à représenter les mouvements du patient qui découpent cette venue.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Healthcare Service Profile", "i":"fr-core-healthcare-service", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-healthcare-service.html", "r":"StructureDefinition/fr-core-healthcare-service", "d":"<p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).</p>\n\n<p>Profil de la ressource HealthcareService pour l’usage en France. Ce profil ajoute l’élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror).</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Location Profile", "i":"fr-core-location", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-location.html", "r":"StructureDefinition/fr-core-location", "d":"<p>Ressource Location adaptée au contexte français. \nCette ressource est utilisée pour représenter un lieu physique, telle qu’une salle d’examen, \nun lit d’hôpital ou une chambre d’hôpital.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Medication Administration Inhaled Oxygen Profile", "i":"fr-core-medication-administration-inhaled-oxygen", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html", "r":"StructureDefinition/fr-core-medication-administration-inhaled-oxygen", "d":"<p>Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.</p>\n\n<p>Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d’oxygène via une ventilation mécanique.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Blood Pressure Profile", "i":"fr-core-observation-bp", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-bp.html", "r":"StructureDefinition/fr-core-observation-bp", "d":"<p>French profile for blood pressure.</p>\n\n<p>Profil français de la pression artérielle. Profil basé sur le profil bp d’HL7</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Bmi Profile", "i":"fr-core-observation-bmi", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-bmi.html", "r":"StructureDefinition/fr-core-observation-bmi", "d":"<p>French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].</p>\n\n<p>Profil français de l’indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Body Height Profile", "i":"fr-core-observation-body-height", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-body-height.html", "r":"StructureDefinition/fr-core-observation-body-height", "d":"<p>French profile for body height.</p>\n\n<p>Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d’HL7</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Body Temperature Profile", "i":"fr-core-observation-body-temperature", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-body-temperature.html", "r":"StructureDefinition/fr-core-observation-body-temperature", "d":"<p>French profile for body temperature.</p>\n\n<p>Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Body Weight Profile", "i":"fr-core-observation-body-weight", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-body-weight.html", "r":"StructureDefinition/fr-core-observation-body-weight", "d":"<p>French profile of body weight based on the FHIR profil BodyWeightMeas.</p>\n\n<p>Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Head Circum Profile", "i":"fr-core-observation-head-circum", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-head-circum.html", "r":"StructureDefinition/fr-core-observation-head-circum", "d":"<p>French profile for Occipital-frontal circumference.</p>\n\n<p>Profil HL7 Vital Signs Circonférence de la tête</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Heart Rate Profile", "i":"fr-core-observation-heartrate", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-heartrate.html", "r":"StructureDefinition/fr-core-observation-heartrate", "d":"<p>French profile for the FHIR Vital Sign Heart Rate Profile.</p>\n\n<p>Profilage français du profil Vital Signs Heart rate</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Oxygen Saturation Profile", "i":"fr-core-observation-saturation-oxygen", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-saturation-oxygen.html", "r":"StructureDefinition/fr-core-observation-saturation-oxygen", "d":"<p>French profile for Oxygen saturation in Arterial blood.</p>\n\n<p>Profil de la saturation en oxygène du sang artériel.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Observation Respiratory Rate Profile", "i":"fr-core-observation-resp-rate", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-resp-rate.html", "r":"StructureDefinition/fr-core-observation-resp-rate", "d":"<p>French profile for the ObservationResprate profile for France.</p>\n\n<p>Profil de la fréquence resporatoire pour l’usage en France</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Organization Etablissement Profile", "i":"fr-core-organization-etablissement", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-etablissement.html", "r":"StructureDefinition/fr-core-organization-etablissement", "d":"<p>Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Organization Profile", "i":"fr-core-organization", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization.html", "r":"StructureDefinition/fr-core-organization", "d":"<p>Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Organization UAC Profile", "i":"fr-core-organization-uac", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-uac.html", "r":"StructureDefinition/fr-core-organization-uac", "d":"<p>Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Organization UF Profile", "i":"fr-core-organization-uf", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-uf.html", "r":"StructureDefinition/fr-core-organization-uf", "d":"<p>Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Patient INS Profile", "i":"fr-core-patient-ins", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient-ins.html", "r":"StructureDefinition/fr-core-patient-ins", "d":"<p>FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.</p>\n\n<p>Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Patient Profile", "i":"fr-core-patient", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient.html", "r":"StructureDefinition/fr-core-patient", "d":"<p>Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.</p>\n\n<p>Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Practitioner Profile", "i":"fr-core-practitioner", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-practitioner.html", "r":"StructureDefinition/fr-core-practitioner", "d":"<p>Profil de la ressource Practitionner pour la France.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Practitioner Role", "i":"fr-core-practitioner-role", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-practitioner-role.html", "r":"StructureDefinition/fr-core-practitioner-role", "d":"<p>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</p>\n\n<p>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Related Person Profile", "i":"fr-core-related-person", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-related-person.html", "r":"StructureDefinition/fr-core-related-person", "d":"<p>Profile of the RelatedPerson resource for France.</p>\n\n<p>Profil de la ressource RelatedPerson pour l’usage en France</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Schedule Profile", "i":"fr-core-schedule", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-schedule.html", "r":"StructureDefinition/fr-core-schedule", "d":"<p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule</p>\n\n<p>Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l’élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core ServiceRequest Profile", "i":"fr-core-service-request", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-service-request.html", "r":"StructureDefinition/fr-core-service-request", "d":"<p>FRCoreServiceRequestProfile profil permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins.</p>" },{ "p":1, "gid":"-str-profile", "g":"Structures: Profils de ressources", "n":"FR Core Slot Profile", "i":"fr-core-slot", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-slot.html", "r":"StructureDefinition/fr-core-slot", "d":"<p>Profil of the Slot resource for France.</p>\n\n<p>Profil de la ressource Slot pour la France</p>" },{ "p":2, "gid":"-str-datatype", "g":"Structures: Profils de types de données", "n":"FR Core Accession Number Identifier Profile", "i":"fr-core-accession-number-identifier", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-accession-number-identifier.html", "r":"StructureDefinition/fr-core-accession-number-identifier", "d":"<p>DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen d’imagerie.</p>" },{ "p":2, "gid":"-str-datatype", "g":"Structures: Profils de types de données", "n":"FR Core Address Profile", "i":"fr-core-address", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-address.html", "r":"StructureDefinition/fr-core-address", "d":"<p>Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.\nFrench profile of Address datatype</p>" },{ "p":2, "gid":"-str-datatype", "g":"Structures: Profils de types de données", "n":"FR Core Contact Point Profile", "i":"fr-core-contact-point", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-contact-point.html", "r":"StructureDefinition/fr-core-contact-point", "d":"<p>Profil du type de données ContactPoint pour la France, ce profil ajoute le type d’e-mail tel que la bal mss.\nFrench profile of ContactPoint datatype</p>" },{ "p":2, "gid":"-str-datatype", "g":"Structures: Profils de types de données", "n":"FR Core Human Name Profile", "i":"fr-core-human-name", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-human-name.html", "r":"StructureDefinition/fr-core-human-name", "d":"<p>Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix\n.French profile of datatype HumanName with constraints on prefix and suffix</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Address Insee Code Extension", "i":"fr-core-address-insee-code", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-address-insee-code.html", "r":"StructureDefinition/fr-core-address-insee-code", "d":"<p>Extension d’ajout du code insee (5 chiffres) à l’adresse postale. Dans le cas d’une ville étrangère, le code département devient “99” et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d’identitovigilance (RNIV).\nThis extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes “99”, and the municipality code is populated with the country code.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Appointment Operator Extension", "i":"fr-core-appointment-operator", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-appointment-operator.html", "r":"StructureDefinition/fr-core-appointment-operator", "d":"<p>Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). \nThis extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Assembly Order Extension", "i":"fr-core-human-name-assembly-order", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-human-name-assembly-order.html", "r":"StructureDefinition/fr-core-human-name-assembly-order", "d":"<p>A code that represents the preferred display order of the components of this human name.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Comment Extension", "i":"fr-core-comment", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-comment.html", "r":"StructureDefinition/fr-core-comment", "d":"<p>Ajout d’un commentaire sur un dataElement d’une ressource.\nAdd a comment on a dataElement  of a resource</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Contact Point Email Type Extension", "i":"fr-core-contact-point-email-type", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-contact-point-email-type.html", "r":"StructureDefinition/fr-core-contact-point-email-type", "d":"<p>Extension permettant d’indiquer le type d’adresse email d’un ContactPoint.</p>\n\n<p>This extension allows to specify the type of mail used to contact the person.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Encounter Estimated Discharge Date Extension", "i":"fr-core-estimated-discharge-date", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-estimated-discharge-date.html", "r":"StructureDefinition/fr-core-estimated-discharge-date", "d":"<p>This extension is used to specify the estimated discharge date of the patient</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Location Extension - Position du lit", "i":"fr-core-location-position-lit", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-location-position-lit.html", "r":"StructureDefinition/fr-core-location-position-lit", "d":"<p>Position du lit dans la chambre</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Location Extension - Type de chambre", "i":"fr-core-location-type-chambre", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-location-type-chambre.html", "r":"StructureDefinition/fr-core-location-type-chambre", "d":"<p>Type de chambre</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Lunar Date Extension", "i":"fr-core-lunar-date", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-lunar-date.html", "r":"StructureDefinition/fr-core-lunar-date", "d":"<p>Date de naissance approximative du patient.\nApproximate birthdate of the patient</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Method Extension", "i":"fr-core-method-extension", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-method-extension.html", "r":"StructureDefinition/fr-core-method-extension", "d":"<p>Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Observation Body Position Ext Extension", "i":"fr-core-observation-body-position-ext", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-body-position-ext.html", "r":"StructureDefinition/fr-core-observation-body-position-ext", "d":"<p>Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.\nCIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Observation Height Body Position Extension", "i":"fr-core-observation-height-body-position", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-height-body-position.html", "r":"StructureDefinition/fr-core-observation-height-body-position", "d":"<p>Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing).\nExtension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Observation Level Of Exertion Extension", "i":"fr-core-observation-level-of-exertion", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-observation-level-of-exertion.html", "r":"StructureDefinition/fr-core-observation-level-of-exertion", "d":"<p>Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort).\nFrench extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Catetgorie SAE", "i":"fr-core-organization-sae-categorie", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-sae-categorie.html", "r":"StructureDefinition/fr-core-organization-sae-categorie", "d":"<p>Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement)</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Champ d'activité", "i":"fr-core-organization-champ-activite", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-champ-activite.html", "r":"StructureDefinition/fr-core-organization-champ-activite", "d":"<p>Champ d’activité d’une UF</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Demandeuse d'acte", "i":"fr-core-organization-demandeuse-acte", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-demandeuse-acte.html", "r":"StructureDefinition/fr-core-organization-demandeuse-acte", "d":"<p>Indicateur permettant de définir si une UF peut demander des actes</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Discipline Prestation", "i":"fr-core-organization-discipline-prestation", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-discipline-prestation.html", "r":"StructureDefinition/fr-core-organization-discipline-prestation", "d":"<p>Discipline de prestation d’une UAC</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Discipline d'équipement", "i":"fr-core-organization-discipline-equipement", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-discipline-equipement.html", "r":"StructureDefinition/fr-core-organization-discipline-equipement", "d":"<p>Discipline d’équipement</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Exécutante d'acte", "i":"fr-core-organization-executante-acte", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-executante-acte.html", "r":"StructureDefinition/fr-core-organization-executante-acte", "d":"<p>Indicateur permettant de définir si une UF peut exécuter des actes</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Indicateur d'une unité fonctionnelle", "i":"fr-core-organization-uf-indicateur", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-uf-indicateur.html", "r":"StructureDefinition/fr-core-organization-uf-indicateur", "d":"<p>Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Nombre total de places d'hébergement théoriques", "i":"fr-core-organization-place-hebergement-theorique", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-place-hebergement-theorique.html", "r":"StructureDefinition/fr-core-organization-place-hebergement-theorique", "d":"<p>Nombre total de places d’hébergement théoriques</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Tarif Soin", "i":"fr-core-organization-tarif", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-tarif.html", "r":"StructureDefinition/fr-core-organization-tarif", "d":"<p>Tarif de soin associé à l’unité d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - Type d'activité", "i":"fr-core-organization-type-activite", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-type-activite.html", "r":"StructureDefinition/fr-core-organization-type-activite", "d":"<p>Type d’activité d’une UF</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - UF Externe", "i":"fr-core-organization-uf-externe", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-uf-externe.html", "r":"StructureDefinition/fr-core-organization-uf-externe", "d":"<p>Indicateur permettant de définir si une UF est externe à l’établissement</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation", "i":"fr-core-organization-member", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-member.html", "r":"StructureDefinition/fr-core-organization-member", "d":"<p>Extension permettant de définir des membres d’une organisation. Les membres sont des organisations filles de la ressources. C’est la relation inverse de partOf.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Raison Sociale Extension", "i":"fr-core-organization-raison-sociale", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-raison-sociale.html", "r":"StructureDefinition/fr-core-organization-raison-sociale", "d":"<p>Raison Sociale l’organisation</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Organization Short Name Extension", "i":"fr-core-organization-short-name", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-organization-short-name.html", "r":"StructureDefinition/fr-core-organization-short-name", "d":"<p>Libellé court de l’organisation</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Patient Birth List Given name Extension", "i":"fr-core-patient-birth-list-given-name", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient-birth-list-given-name.html", "r":"StructureDefinition/fr-core-patient-birth-list-given-name", "d":"<p>Prénoms de l’acte de naissance</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Patient Birthdate Update Indicator Extension", "i":"fr-core-patient-birthdate-update-indicator", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient-birthdate-update-indicator.html", "r":"StructureDefinition/fr-core-patient-birthdate-update-indicator", "d":"<p>Indicateur booléen de mise à jour de la date de naissance</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Patient Contact Identifier Extension", "i":"fr-core-patient-contact-identifier", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient-contact-identifier.html", "r":"StructureDefinition/fr-core-patient-contact-identifier", "d":"<p>Identifiant de contact dans la ressource Patient</p>\n\n<p>This extension carries the contact identifier in the patient resource</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Patient Contact Relationship Category Extension", "i":"fr-core-patient-contact-relationship-category", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient-contact-relationship-category.html", "r":"StructureDefinition/fr-core-patient-contact-relationship-category", "d":"<p>Catégorie de la relation du contact patient : indique si le CodeableConcept représente un rôle (ex : personne à prévenir) ou un type de relation (ex : mère)</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Patient Death Place Extension", "i":"fr-core-patient-death-place", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-patient-death-place.html", "r":"StructureDefinition/fr-core-patient-death-place", "d":"<p>Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).</p>\n\n<p>Carries the death place of the patient</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Patient Ident Reliability Extension", "i":"fr-core-identity-reliability", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-identity-reliability.html", "r":"StructureDefinition/fr-core-identity-reliability", "d":"<p>Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.</p>\n\n<p>Reliabilility of the patient’s identity</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Practitioner Specialty Extension", "i":"fr-core-practitioner-specialty", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-practitioner-specialty.html", "r":"StructureDefinition/fr-core-practitioner-specialty", "d":"<p>This extension adds the element “specialty” to the FHIR Practitioner resource.</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Schedule availability time Extension", "i":"fr-core-schedule-availability-time", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-schedule-availability-time.html", "r":"StructureDefinition/fr-core-schedule-availability-time", "d":"<p>Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.</p>\n\n<p>This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period</p>" },{ "p":3, "gid":"-str-extension", "g":"Structures: Définitions de l'extension", "n":"FR Core Service Type Duration Extension", "i":"fr-core-service-type-duration", "t":"StructureDefinition", "u":"StructureDefinition-fr-core-service-type-duration.html", "r":"StructureDefinition/fr-core-service-type-duration", "d":"<p>Cette extension française permet d’associer le type de service avec la durée de ce service.</p>\n\n<p>This French extension allows to associate the type of service with the duration of this service</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Blood Pressure Measurement Body Location Precoordinated value set", "i":"fr-core-vs-bp-meas-body-location", "t":"ValueSet", "u":"ValueSet-fr-core-vs-bp-meas-body-location.html", "r":"ValueSet/fr-core-vs-bp-meas-body-location", "d":"<p>SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Blood Pressure Measurement Method value set", "i":"fr-core-vs-bp-meas-method", "t":"ValueSet", "u":"ValueSet-fr-core-vs-bp-meas-method.html", "r":"ValueSet/fr-core-vs-bp-meas-method", "d":"<p>SELECT SNOMED CT code system values that describe how a blood pressure was measured.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Body Position value set", "i":"fr-core-vs-body-position", "t":"ValueSet", "u":"ValueSet-fr-core-vs-body-position.html", "r":"ValueSet/fr-core-vs-body-position", "d":"<p>SELECT SNOMED CT code system values the position in which the individual was in during a measurement.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Body Temperature Measurement Body Location value set", "i":"fr-core-vsbody-temp-meas-body-location", "t":"ValueSet", "u":"ValueSet-fr-core-vsbody-temp-meas-body-location.html", "r":"ValueSet/fr-core-vsbody-temp-meas-body-location", "d":"<p>SELECT SNOMED CT code system values that describe where on the body the temperature was measured.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Availability Schedule", "i":"fr-core-vs-availability-time-rule", "t":"ValueSet", "u":"ValueSet-fr-core-vs-availability-time-rule.html", "r":"ValueSet/fr-core-vs-availability-time-rule", "d":"<p>Spécifications des périodes récurrentes.\nSpecification of the recurrent periods</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet BP measurement method", "i":"fr-core-vs-bp-method", "t":"ValueSet", "u":"ValueSet-fr-core-vs-bp-method.html", "r":"ValueSet/fr-core-vs-bp-method", "d":"<p>A coded type for the blood pressure measurement method</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet BodyPosition", "i":"fr-core-vs-height-body-position", "t":"ValueSet", "u":"ValueSet-fr-core-vs-height-body-position.html", "r":"ValueSet/fr-core-vs-height-body-position", "d":"<p>ValueSet Body Position</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet COG commune pays", "i":"fr-core-vs-cog-commune-pays", "t":"ValueSet", "u":"ValueSet-fr-core-vs-cog-commune-pays.html", "r":"ValueSet/fr-core-vs-cog-commune-pays", "d":"<p>Value set town and country COG</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Categorie SAE Etablissement", "i":"fr-core-vs-categorie-sae-etablissement", "t":"ValueSet", "u":"ValueSet-fr-core-vs-categorie-sae-etablissement.html", "r":"ValueSet/fr-core-vs-categorie-sae-etablissement", "d":"<p>Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Codes Tarifs - nomenclature TNJP", "i":"fr-core-vs-oragnization-code-tarif-tnjp", "t":"ValueSet", "u":"ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.html", "r":"ValueSet/fr-core-vs-oragnization-code-tarif-tnjp", "d":"<p>Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Contact relationship", "i":"fr-core-vs-contact-relationship", "t":"ValueSet", "u":"ValueSet-fr-core-vs-contact-relationship.html", "r":"ValueSet/fr-core-vs-contact-relationship", "d":"<p>A set of codes that can be used to indicate the relationship between a Patient and a Related Person.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Email type", "i":"fr-core-vs-email-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-email-type.html", "r":"ValueSet/fr-core-vs-email-type", "d":"<p>The type of email</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Encounter class", "i":"fr-core-vs-encounter-class", "t":"ValueSet", "u":"ValueSet-fr-core-vs-encounter-class.html", "r":"ValueSet/fr-core-vs-encounter-class", "d":"<p>A set of codes that can be used to indicate the class of the encounter.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Encounter discharge disposition", "i":"fr-core-vs-encounter-discharge-disposition", "t":"ValueSet", "u":"ValueSet-fr-core-vs-encounter-discharge-disposition.html", "r":"ValueSet/fr-core-vs-encounter-discharge-disposition", "d":"<p>Circonstances de sortie de l’hôpital.\nThis value set defines a set of codes that can be used to where the patient left the hospital</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Encounter identifier type", "i":"fr-core-vs-encounter-identifier-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-encounter-identifier-type.html", "r":"ValueSet/fr-core-vs-encounter-identifier-type", "d":"<p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Encounters).</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Encounter type", "i":"fr-core-vs-encounter-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-encounter-type.html", "r":"ValueSet/fr-core-vs-encounter-type", "d":"<p>Jeu de valeurs des types de rencontre.\nA coded type for an encounter</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet INSEE code", "i":"fr-core-vs-insee-code", "t":"ValueSet", "u":"ValueSet-fr-core-vs-insee-code.html", "r":"ValueSet/fr-core-vs-insee-code", "d":"<p>the French Address Insee Codes</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Identity method collection", "i":"fr-core-vs-identity-method-collection", "t":"ValueSet", "u":"ValueSet-fr-core-vs-identity-method-collection.html", "r":"ValueSet/fr-core-vs-identity-method-collection", "d":"<p>The validation mode of the identity.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Identity reliability", "i":"fr-core-vs-identity-reliability", "t":"ValueSet", "u":"ValueSet-fr-core-vs-identity-reliability.html", "r":"ValueSet/fr-core-vs-identity-reliability", "d":"<p>The reliability of the identity.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Location Position Lit", "i":"fr-core-vs-location-position-lit", "t":"ValueSet", "u":"ValueSet-fr-core-vs-location-position-lit.html", "r":"ValueSet/fr-core-vs-location-position-lit", "d":"<p>Position du lit dans la chambre</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Location Type Chambre", "i":"fr-core-vs-location-type-chambre", "t":"ValueSet", "u":"ValueSet-fr-core-vs-location-type-chambre.html", "r":"ValueSet/fr-core-vs-location-type-chambre", "d":"<p>Type de chambre</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Location type", "i":"fr-core-vs-location-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-location-type.html", "r":"ValueSet/fr-core-vs-location-type", "d":"<p>Jeu de valeurs du rôle joué par un lieu.</p>\n\n<p>A role for a location</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Marital Status ValueSet", "i":"fr-core-vs-marital-status", "t":"ValueSet", "u":"ValueSet-fr-core-vs-marital-status.html", "r":"ValueSet/fr-core-vs-marital-status", "d":"<p>Patient Marital Status</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Mode validation identity", "i":"fr-core-vs-mode-validation-identity", "t":"ValueSet", "u":"ValueSet-fr-core-vs-mode-validation-identity.html", "r":"ValueSet/fr-core-vs-mode-validation-identity", "d":"<p>The validation mode of the identity.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Mode validation identity INS", "i":"fr-core-vs-mode-validation-identity-ins", "t":"ValueSet", "u":"ValueSet-fr-core-vs-mode-validation-identity-ins.html", "r":"ValueSet/fr-core-vs-mode-validation-identity-ins", "d":"<p>The validation mode of the identity authorized for INS</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF", "i":"fr-core-vs-organization-champ-activite", "t":"ValueSet", "u":"ValueSet-fr-core-vs-organization-champ-activite.html", "r":"ValueSet/fr-core-vs-organization-champ-activite", "d":"<p>Champ d’activité d’une organisation type UF.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE", "i":"fr-core-vs-organization-discipline-equipement", "t":"ValueSet", "u":"ValueSet-fr-core-vs-organization-discipline-equipement.html", "r":"ValueSet/fr-core-vs-organization-discipline-equipement", "d":"<p>Valeurs permettant de coder les disciplines d’équipement.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization Discipline de prestation - nomenclature SAE", "i":"fr-core-vs-discipline-prestation", "t":"ValueSet", "u":"ValueSet-fr-core-vs-discipline-prestation.html", "r":"ValueSet/fr-core-vs-discipline-prestation", "d":"<p>Valeurs permettant de coder les disciplines de prestation.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization Etablisement type", "i":"fr-core-vs-organization-etablissement-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-organization-etablissement-type.html", "r":"ValueSet/fr-core-vs-organization-etablissement-type", "d":"<p>Types d’organisation représentant des établissements.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization Type Activité - nomenclature SAE", "i":"fr-core-vs-oragnization-type-activite", "t":"ValueSet", "u":"ValueSet-fr-core-vs-oragnization-type-activite.html", "r":"ValueSet/fr-core-vs-oragnization-type-activite", "d":"<p>Valeurs permettant de coder les types d’activité.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization UF Indicateur", "i":"fr-core-vs-organization-uf-indicateur", "t":"ValueSet", "u":"ValueSet-fr-core-vs-organization-uf-indicateur.html", "r":"ValueSet/fr-core-vs-organization-uf-indicateur", "d":"<p>Indicateur d’une unité fonctionnelle.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization identifier type", "i":"fr-core-vs-organization-identifier-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-organization-identifier-type.html", "r":"ValueSet/fr-core-vs-organization-identifier-type", "d":"<p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations).</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Organization type", "i":"fr-core-vs-organization-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-organization-type.html", "r":"ValueSet/fr-core-vs-organization-type", "d":"<p>Types de structures</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Patient Contact Relationship Category", "i":"fr-core-vs-patient-contact-relationship-category", "t":"ValueSet", "u":"ValueSet-fr-core-vs-patient-contact-relationship-category.html", "r":"ValueSet/fr-core-vs-patient-contact-relationship-category", "d":"<p>Catégorie de la relation du contact patient : rôle ou type de relation</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Patient contact role", "i":"fr-core-vs-patient-contact-role", "t":"ValueSet", "u":"ValueSet-fr-core-vs-patient-contact-role.html", "r":"ValueSet/fr-core-vs-patient-contact-role", "d":"<p>ValueSet patient contact role</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Patient gender", "i":"fr-core-vs-patient-gender", "t":"ValueSet", "u":"ValueSet-fr-core-vs-patient-gender.html", "r":"ValueSet/fr-core-vs-patient-gender", "d":"<p>Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide.\nPermitted genders for French Patient gender.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Patient identifier type", "i":"fr-core-vs-patient-identifier-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-patient-identifier-type.html", "r":"ValueSet/fr-core-vs-patient-identifier-type", "d":"<p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient).</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Patient identifier use INS", "i":"fr-core-vs-patient-identifier-use-ins", "t":"ValueSet", "u":"ValueSet-fr-core-vs-patient-identifier-use-ins.html", "r":"ValueSet/fr-core-vs-patient-identifier-use-ins", "d":"<p>Use autorisés pour l’identifiant national de santé.\nAuthorized use for INS identifier.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Patient identifier use PI", "i":"fr-core-vs-patient-identifier-use-pi", "t":"ValueSet", "u":"ValueSet-fr-core-vs-patient-identifier-use-pi.html", "r":"ValueSet/fr-core-vs-patient-identifier-use-pi", "d":"<p>Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).\nAuthorized use for PI identifier.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Practitioner identifier type", "i":"fr-core-vs-practitioner-identifier-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-practitioner-identifier-type.html", "r":"ValueSet/fr-core-vs-practitioner-identifier-type", "d":"<p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Practitioner specialty", "i":"fr-core-vs-practitioner-specialty", "t":"ValueSet", "u":"ValueSet-fr-core-vs-practitioner-specialty.html", "r":"ValueSet/fr-core-vs-practitioner-specialty", "d":"<p>The modalities of exercice of the practitioner, registered by an official organization for a period of time.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet PractitionerRole Exercice", "i":"fr-core-vs-practitioner-role-exercice", "t":"ValueSet", "u":"ValueSet-fr-core-vs-practitioner-role-exercice.html", "r":"ValueSet/fr-core-vs-practitioner-role-exercice", "d":"<p>The exercice(s) of the practitioner.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Schedule type", "i":"fr-core-vs-schedule-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-schedule-type.html", "r":"ValueSet/fr-core-vs-schedule-type", "d":"<p>Jeu de valeurs des types de Schedule.\nA Schedule type</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Title", "i":"fr-core-vs-title", "t":"ValueSet", "u":"ValueSet-fr-core-vs-title.html", "r":"ValueSet/fr-core-vs-title", "d":"<p>The Patient or person civility</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet Unavailability Reason", "i":"fr-core-vs-schedule-unavailability-reason", "t":"ValueSet", "u":"ValueSet-fr-core-vs-schedule-unavailability-reason.html", "r":"ValueSet/fr-core-vs-schedule-unavailability-reason", "d":"<p>Raison d’indisponibilité</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"FR Core ValueSet relation type", "i":"fr-core-vs-relation-type", "t":"ValueSet", "u":"ValueSet-fr-core-vs-relation-type.html", "r":"ValueSet/fr-core-vs-relation-type", "d":"<p>ValueSet relation type</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Heart Rate Measurement Body Location Precoordinated value set", "i":"fr-core-vs-heartrate-body-location", "t":"ValueSet", "u":"ValueSet-fr-core-vs-heartrate-body-location.html", "r":"ValueSet/fr-core-vs-heartrate-body-location", "d":"<p>SELECT SNOMED CT code system values that describe where on the body the heart rate was measured.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Heart Rate Measurement Method value set", "i":"fr-core-vs-heartrate-measurement-method", "t":"ValueSet", "u":"ValueSet-fr-core-vs-heartrate-measurement-method.html", "r":"ValueSet/fr-core-vs-heartrate-measurement-method", "d":"<p>SELECT SNOMED CT code system values that describe how the heart rate was measured.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Height Length Measurement Method value set", "i":"fr-core-vs-height-meas-method", "t":"ValueSet", "u":"ValueSet-fr-core-vs-height-meas-method.html", "r":"ValueSet/fr-core-vs-height-meas-method", "d":"<p>SELECT SNOMED CT code system values that describe how the height/length was measured.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Oxygen Saturation Body Location value set", "i":"fr-core-vs-spo2-body-location", "t":"ValueSet", "u":"ValueSet-fr-core-vs-spo2-body-location.html", "r":"ValueSet/fr-core-vs-spo2-body-location", "d":"<p>Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.</p>" },{ "p":4, "gid":"-term-valueset", "g":"Terminologie: Jeux de valeurs (ValueSets)", "n":"Respiratory Rate Measurement Method value set", "i":"fr-core-vs-respiratory-rate-meas-method", "t":"ValueSet", "u":"ValueSet-fr-core-vs-respiratory-rate-meas-method.html", "r":"ValueSet/fr-core-vs-respiratory-rate-meas-method", "d":"<p>SELECT SNOMED CT code system values that describe how the respiratory rate was measured.</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Champ Activite - Codes du champ d'activité", "i":"fr-core-cs-champ-activite", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-champ-activite.html", "r":"CodeSystem/fr-core-cs-champ-activite", "d":"<p>Champ d’activité clinique de l’organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS.</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Circonstances Sortie", "i":"fr-core-cs-circonstances-sortie", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-circonstances-sortie.html", "r":"CodeSystem/fr-core-cs-circonstances-sortie", "d":"<p>Discharge Disposition</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Codes Tarifs - nomenclature TNJP", "i":"fr-core-cs-code-tarif-tnjp", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-code-tarif-tnjp.html", "r":"CodeSystem/fr-core-cs-code-tarif-tnjp", "d":"<p>La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Contact Relationship", "i":"fr-core-cs-contact-relationship", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-contact-relationship.html", "r":"CodeSystem/fr-core-cs-contact-relationship", "d":"<p>Relationship type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Discipline d'Equipement - nomenclature SAE", "i":"fr-core-cs-discipline-equipement", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-discipline-equipement.html", "r":"CodeSystem/fr-core-cs-discipline-equipement", "d":"<p>La nomenclature de disciplines d’équipement est utilisée pour ventiler l’activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline ‘administration, services hôteliers et techniques’. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n’apparaissent pas, car elles ne font pas partie du champ de la SAE.</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Discipline de prestation - nomenclature SAE", "i":"fr-core-cs-discipline-prestation", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-discipline-prestation.html", "r":"CodeSystem/fr-core-cs-discipline-prestation", "d":"<p>La nomenclature des discipline de prestation.</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Fiabilité Identité", "i":"fr-core-cs-fiabilite-identite", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-fiabilite-identite.html", "r":"CodeSystem/fr-core-cs-fiabilite-identite", "d":"<p>French Identity reliabilty codes</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Identifier Type", "i":"fr-core-cs-identifier-type", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-identifier-type.html", "r":"CodeSystem/fr-core-cs-identifier-type", "d":"<p>Identifier type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Location Identifier Type", "i":"fr-core-cs-location-identifier-type", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-location-identifier-type.html", "r":"CodeSystem/fr-core-cs-location-identifier-type", "d":"<p>Location identifier type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Location Physical Type", "i":"fr-core-cs-location-physical-type", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-location-physical-type.html", "r":"CodeSystem/fr-core-cs-location-physical-type", "d":"<p>Location physical type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Location Type", "i":"fr-core-cs-location-type", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-location-type.html", "r":"CodeSystem/fr-core-cs-location-type", "d":"<p>Location type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Marital Status", "i":"fr-core-cs-marital-status", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-marital-status.html", "r":"CodeSystem/fr-core-cs-marital-status", "d":"<p>Marital status</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Mode Validation Identite", "i":"fr-core-cs-method-collection", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-method-collection.html", "r":"CodeSystem/fr-core-cs-method-collection", "d":"<p>Méthode de collection de l’identité</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Mode Validation Identite", "i":"fr-core-cs-mode-validation-identity", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-mode-validation-identity.html", "r":"CodeSystem/fr-core-cs-mode-validation-identity", "d":"<p>Mode de validation de l’identité</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Organization Type", "i":"fr-core-cs-type-organisation", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-type-organisation.html", "r":"CodeSystem/fr-core-cs-type-organisation", "d":"<p>Organization type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Patient Contact Relationship Category", "i":"fr-core-cs-patient-contact-relationship-category", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-patient-contact-relationship-category.html", "r":"CodeSystem/fr-core-cs-patient-contact-relationship-category", "d":"<p>Catégorie de la relation du contact patient : rôle ou type de relation</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Position du lit", "i":"fr-core-cs-location-position-lit", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-location-position-lit.html", "r":"CodeSystem/fr-core-cs-location-position-lit", "d":"<p>Position du lit dans la chambre</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Schedule Type", "i":"fr-core-cs-schedule-type", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-schedule-type.html", "r":"CodeSystem/fr-core-cs-schedule-type", "d":"<p>Schedule type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Type Admission", "i":"fr-core-cs-type-admission", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-type-admission.html", "r":"CodeSystem/fr-core-cs-type-admission", "d":"<p>Admission type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Type Chambre", "i":"fr-core-cs-location-type-chambre", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-location-type-chambre.html", "r":"CodeSystem/fr-core-cs-location-type-chambre", "d":"<p>Type de chambre</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem Type d'activité - nomenclature SAE", "i":"fr-core-cs-type-activite", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-type-activite.html", "r":"CodeSystem/fr-core-cs-type-activite", "d":"<p>La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle", "i":"fr-core-cs-uf-indicateur", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-uf-indicateur.html", "r":"CodeSystem/fr-core-cs-uf-indicateur", "d":"<p>Système de codage permettant de définir les indicateurs d’une unité fonctionnelle.</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem v2-0203", "i":"fr-core-cs-v2-0203", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-v2-0203.html", "r":"CodeSystem/fr-core-cs-v2-0203", "d":"<p>HL7 v2 - Identifier type</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem v2-0445", "i":"fr-core-cs-v2-0445", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-v2-0445.html", "r":"CodeSystem/fr-core-cs-v2-0445", "d":"<p>HL7 v2 - Table 0445</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem v2-3307", "i":"fr-core-cs-v2-3307", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-v2-3307.html", "r":"CodeSystem/fr-core-cs-v2-3307", "d":"<p>HL7 v2 - Table 3307</p>" },{ "p":5, "gid":"-term-codesystem", "g":"Terminologie: Systèmes de codes (CodeSystems)", "n":"FR Core CodeSystem v2-3311", "i":"fr-core-cs-v2-3311", "t":"CodeSystem", "u":"CodeSystem-fr-core-cs-v2-3311.html", "r":"CodeSystem/fr-core-cs-v2-3311", "d":"<p>HL7 v2 - Table 3311</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreAppointmentExample", "i":"FRCoreAppointmentExample", "t":"Appointment", "u":"Appointment-FRCoreAppointmentExample.html", "r":"Appointment/FRCoreAppointmentExample", "d":"<p>Exemple de ressource Appointment pour décrire un état de rendez-vous médical</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreEncounterExample", "i":"FRCoreEncounterExample", "t":"Encounter", "u":"Encounter-FRCoreEncounterExample.html", "r":"Encounter/FRCoreEncounterExample", "d":"<p>Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreHealthcareServiceExample", "i":"svc-cardiologie-1", "t":"HealthcareService", "u":"HealthcareService-svc-cardiologie-1.html", "r":"HealthcareService/svc-cardiologie-1", "d":"<p>Exemple de ressource HealthcareService pour décrire le service de cardiologie de l’hôpital X</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreLocationExample", "i":"loc-radiologie-z", "t":"Location", "u":"Location-loc-radiologie-z.html", "r":"Location/loc-radiologie-z", "d":"<p>Exemple de ressource Location pour décrire la localisation du centre de radiologie de l’hôpital Z</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreMedicationAdministrationInhaledOxygenExample", "i":"FRCoreMedicationAdministrationInhaledOxygenExample", "t":"MedicationAdministration", "u":"MedicationAdministration-FRCoreMedicationAdministrationInhaledOxygenExample.html", "r":"MedicationAdministration/FRCoreMedicationAdministrationInhaledOxygenExample", "d":"<p>Exemple de ressource MedicationAdministration pour décrire l’administration d’oxygène inhalé</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationBMIExample", "i":"FRCoreObservationBMIExample", "t":"Observation", "u":"Observation-FRCoreObservationBMIExample.html", "r":"Observation/FRCoreObservationBMIExample", "d":"<p>Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationBPExample", "i":"FRCoreObservationBPExample", "t":"Observation", "u":"Observation-FRCoreObservationBPExample.html", "r":"Observation/FRCoreObservationBPExample", "d":"<p>Exemple de ressource Observation Pression artérielle</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationBodyHeightExample", "i":"FRCoreObservationBodyHeightExample", "t":"Observation", "u":"Observation-FRCoreObservationBodyHeightExample.html", "r":"Observation/FRCoreObservationBodyHeightExample", "d":"<p>Exemple de ressource Observation pour décrire la taille du patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationBodyTemperatureExample", "i":"FRCoreObservationBodyTemperatureExample", "t":"Observation", "u":"Observation-FRCoreObservationBodyTemperatureExample.html", "r":"Observation/FRCoreObservationBodyTemperatureExample", "d":"<p>Exemple de ressource Observation pour décrire la température du patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationBodyWeightExample", "i":"FRCoreObservationBodyWeightExample", "t":"Observation", "u":"Observation-FRCoreObservationBodyWeightExample.html", "r":"Observation/FRCoreObservationBodyWeightExample", "d":"<p>Exemple de ressource Observation pour décrire le poids du patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationHeadCircumExample", "i":"FRCoreObservationHeadCircumExample", "t":"Observation", "u":"Observation-FRCoreObservationHeadCircumExample.html", "r":"Observation/FRCoreObservationHeadCircumExample", "d":"<p>Exemple de ressource Observation pour décrire le périmètre cranien d’un patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationHeartRateExample", "i":"FRCoreObservationHeartRateExample", "t":"Observation", "u":"Observation-FRCoreObservationHeartRateExample.html", "r":"Observation/FRCoreObservationHeartRateExample", "d":"<p>Exemple de ressource Observation pour décrire la fréquence cardiaque d’un patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationOxygenSaturationExample", "i":"FRCoreObservationOxygenSaturationExample", "t":"Observation", "u":"Observation-FRCoreObservationOxygenSaturationExample.html", "r":"Observation/FRCoreObservationOxygenSaturationExample", "d":"<p>Exemple de ressource Observation pour décrire la saturation en oxygène d’un patient sous oxygénothérapie</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreObservationRespRateExample", "i":"FRCoreObservationRespRateExample", "t":"Observation", "u":"Observation-FRCoreObservationRespRateExample.html", "r":"Observation/FRCoreObservationRespRateExample", "d":"<p>Exemple de ressource Observation pour décrire la fréquence respiratoire d’un patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreOrganizationExample", "i":"FRCoreOrganizationExample", "t":"Organization", "u":"Organization-FRCoreOrganizationExample.html", "r":"Organization/FRCoreOrganizationExample", "d":"<p>Exemple de ressource Organization pour décrire un hôpital</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCorePatientDeceasedExample", "i":"FRCorePatientDeceasedExample", "t":"Patient", "u":"Patient-FRCorePatientDeceasedExample.html", "r":"Patient/FRCorePatientDeceasedExample", "d":"<p>Exemple de ressource Patient décédé illustrant les extensions deathPlace, lunarDate et assemblyOrder</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCorePatientINSExample", "i":"FRCorePatientINSExample", "t":"Patient", "u":"Patient-FRCorePatientINSExample.html", "r":"Patient/FRCorePatientINSExample", "d":"<p>Exemple de ressource Patient (cas d’usage INS)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCorePractitionerExample", "i":"FRCorePractitionerExample", "t":"Practitioner", "u":"Practitioner-FRCorePractitionerExample.html", "r":"Practitioner/FRCorePractitionerExample", "d":"<p>Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l’ordre.</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCorePractitionerRoleExample", "i":"FRCorePractitionerRoleExample", "t":"PractitionerRole", "u":"PractitionerRole-FRCorePractitionerRoleExample.html", "r":"PractitionerRole/FRCorePractitionerRoleExample", "d":"<p>Exemple de ressource PractitionerRole pour décrire le rôle d’un practitien (situation d’exercice)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreRelatedPersonExample", "i":"FRCoreRelatedPersonExample", "t":"RelatedPerson", "u":"RelatedPerson-FRCoreRelatedPersonExample.html", "r":"RelatedPerson/FRCoreRelatedPersonExample", "d":"<p>Exemple de ressource RelatedPerson pour décrire la mère d’un patient</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreScheduleExample", "i":"FRCoreScheduleExample", "t":"Schedule", "u":"Schedule-FRCoreScheduleExample.html", "r":"Schedule/FRCoreScheduleExample", "d":"<p>Exemple de ressource Schedule pour décrire un agenda.</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreServiceRequestExample", "i":"FRCoreServiceRequestExample", "t":"ServiceRequest", "u":"ServiceRequest-FRCoreServiceRequestExample.html", "r":"ServiceRequest/FRCoreServiceRequestExample", "d":"<p>Exemple de ressource ServiceRequest : demande d’échographie abdominale</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"FRCoreSlotExample", "i":"FRCoreSlotExample", "t":"Slot", "u":"Slot-FRCoreSlotExample.html", "r":"Slot/FRCoreSlotExample", "d":"<p>Exemple de ressource Slot.</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-dept-11003-endocrino", "i":"hopitaltest-dept-11003-endocrino", "t":"Organization", "u":"Organization-hopitaltest-dept-11003-endocrino.html", "r":"Organization/hopitaltest-dept-11003-endocrino", "d":"<p>Exemple de département d’endocrinologie (Organisation de type département)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-eg-4-members", "i":"hopitaltest-eg-4-members", "t":"Organization", "u":"Organization-hopitaltest-eg-4-members.html", "r":"Organization/hopitaltest-eg-4-members", "d":"<p>Exemple d’établissement géographique regroupant 4 entités membres</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-ej-350005179", "i":"hopitaltest-ej-350005179", "t":"Organization", "u":"Organization-hopitaltest-ej-350005179.html", "r":"Organization/hopitaltest-ej-350005179", "d":"<p>Exemple d’entité juridique d’un établissement de santé (FINESS 350005179)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-endocrino-ch04", "i":"hopitaltest-endocrino-ch04", "t":"Location", "u":"Location-hopitaltest-endocrino-ch04.html", "r":"Location/hopitaltest-endocrino-ch04", "d":"<p>Exemple de chambre d’hospitalisation (chambre 04 du service d’endocrinologie)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-endocrino-ch04-litF", "i":"hopitaltest-endocrino-ch04-litF", "t":"Location", "u":"Location-hopitaltest-endocrino-ch04-litF.html", "r":"Location/hopitaltest-endocrino-ch04-litF", "d":"<p>Exemple de lit d’hospitalisation (lit F de la chambre 04 du service d’endocrinologie)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-infectio-ch02-prsn-ngtv", "i":"hopitaltest-infectio-ch02-prsn-ngtv", "t":"Location", "u":"Location-hopitaltest-infectio-ch02-prsn-ngtv.html", "r":"Location/hopitaltest-infectio-ch02-prsn-ngtv", "d":"<p>Exemple de chambre en pression négative (service d’infectiologie) illustrant l’extension typeChambre</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-pole-1150-med-spe", "i":"hopitaltest-pole-1150-med-spe", "t":"Organization", "u":"Organization-hopitaltest-pole-1150-med-spe.html", "r":"Organization/hopitaltest-pole-1150-med-spe", "d":"<p>Exemple de pôle de médecine spécialisée (Organisation de type pôle)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-salle-examen-01", "i":"hopitaltest-salle-examen-01", "t":"Location", "u":"Location-hopitaltest-salle-examen-01.html", "r":"Location/hopitaltest-salle-examen-01", "d":"<p>Exemple de salle d’examen (Location de type salle d’examen)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-service-11006-endocrino-diabo", "i":"hopitaltest-service-11006-endocrino-diabo", "t":"Organization", "u":"Organization-hopitaltest-service-11006-endocrino-diabo.html", "r":"Organization/hopitaltest-service-11006-endocrino-diabo", "d":"<p>Exemple de service d’endocrinologie-diabétologie (Organisation de type service)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-service-11007-dietetique", "i":"hopitaltest-service-11007-dietetique", "t":"Organization", "u":"Organization-hopitaltest-service-11007-dietetique.html", "r":"Organization/hopitaltest-service-11007-dietetique", "d":"<p>Exemple de service de diététique (Organisation de type service)</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-uac-4420-uac-01", "i":"hopitaltest-uac-4420-uac-01", "t":"Organization", "u":"Organization-hopitaltest-uac-4420-uac-01.html", "r":"Organization/hopitaltest-uac-4420-uac-01", "d":"<p>Exemple d’unité d’activité clinique (UAC) de dialyse - UAC 01</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-uac-4420-uac-02", "i":"hopitaltest-uac-4420-uac-02", "t":"Organization", "u":"Organization-hopitaltest-uac-4420-uac-02.html", "r":"Organization/hopitaltest-uac-4420-uac-02", "d":"<p>Exemple d’unité d’activité clinique (UAC) de dialyse - UAC 02</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-uf-4420-dialyse", "i":"hopitaltest-uf-4420-dialyse", "t":"Organization", "u":"Organization-hopitaltest-uf-4420-dialyse.html", "r":"Organization/hopitaltest-uf-4420-dialyse", "d":"<p>Exemple d’unité fonctionnelle (UF) de dialyse</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-uf-4701-endocrino-diab", "i":"hopitaltest-uf-4701-endocrino-diab", "t":"Organization", "u":"Organization-hopitaltest-uf-4701-endocrino-diab.html", "r":"Organization/hopitaltest-uf-4701-endocrino-diab", "d":"<p>Exemple d’unité fonctionnelle (UF) d’endocrinologie-diabétologie</p>" },{ "p":6, "gid":"-ex-example", "g":"Exemple: Exemples d'instances", "n":"hopitaltest-uf-4705-nutrition", "i":"hopitaltest-uf-4705-nutrition", "t":"Organization", "u":"Organization-hopitaltest-uf-4705-nutrition.html", "r":"Organization/hopitaltest-uf-4705-nutrition", "d":"<p>Exemple d’unité fonctionnelle (UF) de nutrition</p>" }
+  ];
+
+  var groupDescriptions = {};
+  groupDescriptions["-str-profile"] = "<p>Ils définissent les contraintes sur les ressources FHIR pour les systèmes conformes à ce guide d’implémentation.</p>\n";
+  groupDescriptions["-str-datatype"] = "<p>Ils définissent des contraintes sur les types de données FHIR pour les systèmes conformes à ce guide d’implémentation.</p>\n";
+  groupDescriptions["-str-extension"] = "<p>Ils définissent des contraintes sur les types de données FHIR pour les systèmes conformes à ce guide d’implémentation.</p>\n";
+  groupDescriptions["-term-valueset"] = "<p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d’implémentation.</p>\n";
+  groupDescriptions["-term-codesystem"] = "<p>Ils définissent les nouveaux systèmes de codes utilisés par les systèmes conformes au présent guide d’implémentation.</p>\n";
+  groupDescriptions["-ex-example"] = "<p>Il s’agit d’exemples d’instances qui montrent à quoi peuvent ressembler les données produites et consommées par des systèmes conformes au présent guide d’implémentation.</p>\n";
+
+  function escapeHtml(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  }); }
+  function htmlToText(s){ return jQuery('<div/>').html(s || '').text(); }
+  function regexEscape(s){ return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  function buildSearchPattern(values){ return values.length ? '^(' + values.map(regexEscape).join('|') + ')$' : ''; }
+
+  var useGroupingLabel = "Use grouping";
+  var typeLabel        = "Type";
+  var categoryLabel    = "Category";
+  var clearAllLabel    = "Clear all";
+
+  // Column model. Data keys: p=grouping position, g=grouping label, n=title, i=id, t=type, d=description.
+  var columnDefs = [
+    { data: 'p', visible: false, searchable: false },
+    { data: 'g', visible: false },
+    { data: 'n', render: function(d, t, row){
+        if (t === 'display') {
+          return '<a href="' + encodeURI(row.u) + '" title="' + escapeHtml(row.r) + '">' + escapeHtml(d) + '</a>';
+        }
+        return d;
+      }
+    },
+    { data: 'i', className: 'artifacts-id', render: function(d, t){
+        return t === 'display' ? escapeHtml(d) : d;
+      }
+    },
+    { data: 't' },
+    { data: 'd', render: function(d, t){
+        if (t === 'display') return d;
+        return htmlToText(d);
+      }
+    }
+  ];
+  var TEXT_FILTER_KEYS = ['n', 'i', 'd'];
+  var TYPE_COL = 4, CATEGORY_COL = 1, TITLE_COL = 2;
+  var VISIBLE_COLS = columnDefs.filter(function(c){ return c.visible !== false; }).length;
+  function colIndex(key){
+    for (var i = 0; i < columnDefs.length; i++) if (columnDefs[i].data === key) return i;
+    return -1;
+  }
+
+  var uniqueTypes = (function(){
+    var s = new Set(), out = [];
+    data.forEach(function(r){ if (r.t && !s.has(r.t)) { s.add(r.t); out.push(r.t); } });
+    return out.sort();
+  })();
+  var uniqueCategories = (function(){
+    var s = new Set(), out = [];
+    data.slice().sort(function(a,b){ return a.p - b.p; }).forEach(function(r){
+      if (r.g && !s.has(r.g)) { s.add(r.g); out.push(r.g); }
+    });
+    return out;
+  })();
+
+  // ----- View state -----
+  var grouping = true;
+  var selectedTypes = [];
+  var selectedCategories = [];
+  // Per-column text filters keyed by data key (plain substring, case-insensitive)
+  var colTextFilters = {};
+  var pageLength = 200;
+
+  // ----- Persisted view state (localStorage, per page) -----
+  // Stores filters, grouping, sort order, page length and the current page so that a visitor
+  // returning to this page gets the same view back.
+  var storageKey = 'artifactsTable:' + window.location.pathname;
+  function loadState(){
+    try {
+      var s = window.localStorage.getItem(storageKey);
+      var st = s ? JSON.parse(s) : null;
+      return (st && typeof st === 'object') ? st : {};
+    } catch(e) { return {}; }
+  }
+  function saveState(){
+    if (!table) return;
+    var info = table.page.info();
+    pageLength = info.length;
+    var st = {
+      grouping:   grouping,
+      types:      selectedTypes,
+      categories: selectedCategories,
+      text:       colTextFilters,
+      start:      info.start,
+      length:     info.length,
+      order:      table.order()
+    };
+    try { window.localStorage.setItem(storageKey, JSON.stringify(st)); } catch(e) {}
+  }
+  function validOrder(o){
+    if (!Array.isArray(o) || !o.length) return null;
+    for (var i = 0; i < o.length; i++) {
+      var e = o[i];
+      if (!Array.isArray(e) || e.length < 2) return null;
+      if (typeof e[0] !== 'number' || e[0] < 0 || e[0] >= columnDefs.length) return null;
+      if (e[1] !== 'asc' && e[1] !== 'desc') return null;
+    }
+    return o.map(function(e){ return [e[0], e[1]]; });
+  }
+
+  var saved = loadState();
+  if (typeof saved.grouping === 'boolean') grouping = saved.grouping;
+  if (Array.isArray(saved.types)) {
+    selectedTypes = saved.types.filter(function(v){ return uniqueTypes.indexOf(v) !== -1; });
+  }
+  if (Array.isArray(saved.categories)) {
+    selectedCategories = saved.categories.filter(function(v){ return uniqueCategories.indexOf(v) !== -1; });
+  }
+  if (saved.text && typeof saved.text === 'object') {
+    TEXT_FILTER_KEYS.forEach(function(k){
+      if (typeof saved.text[k] === 'string' && saved.text[k]) colTextFilters[k] = saved.text[k];
+    });
+  }
+  if (typeof saved.length === 'number' && saved.length > 0) pageLength = saved.length;
+  var initialView = {
+    start: (typeof saved.start === 'number' && saved.start > 0) ? saved.start : 0,
+    order: validOrder(saved.order)
+  };
+
+  // Custom row filter — registered once globally
+  if (!jQuery.fn.dataTable.ext.__artifactsTextFilterRegistered) {
+    jQuery.fn.dataTable.ext.__artifactsTextFilterRegistered = true;
+    jQuery.fn.dataTable.ext.search.push(function(settings, dataArr, dataIndex){
+      if (settings.nTable.id !== 'artifactsTable') return true;
+      var row = settings.aoData[dataIndex]._aData;
+      for (var key in colTextFilters) {
+        var needle = colTextFilters[key];
+        if (!needle) continue;
+        var cell = String(row[key] == null ? '' : row[key]).replace(/<[^>]*>/g, '');
+        if (cell.toLowerCase().indexOf(needle.toLowerCase()) === -1) return false;
+      }
+      return true;
+    });
+  }
+
+  function chipHtml(v){
+    return '<span class="dt-filter-chip"><span>' + escapeHtml(v) + '</span>' +
+           '<button type="button" class="dt-filter-chip-remove" data-value="' + escapeHtml(v) + '" aria-label="Remove">×</button></span>';
+  }
+
+  // Plain multi-select popup (used for Type, dropped into filter cell)
+  function makeFilterPopup(id, label, values, selected){
+    var wrap = document.createElement('div');
+    wrap.className = 'dt-filter-popup';
+    wrap.setAttribute('data-id', id);
+    wrap.innerHTML =
+      '<button type="button" class="dt-filter-trigger' + (selected.length ? ' has-filter' : '') + '" aria-expanded="false">' +
+        '<span>' + escapeHtml(label) + '</span>' +
+        '<span class="caret">▾</span>' +
+      '</button>' +
+      '<div class="dt-filter-selected">' + selected.map(chipHtml).join('') + '</div>' +
+      '<div class="dt-filter-menu" hidden>' +
+        '<div class="dt-filter-menu-header"><span>' + escapeHtml(label) + '</span><button type="button" class="dt-filter-menu-clear">' + escapeHtml(clearAllLabel) + '</button></div>' +
+        values.map(function(v){
+          return '<label><input type="checkbox" value="' + escapeHtml(v) + '"' + (selected.indexOf(v) !== -1 ? ' checked' : '') + '/><span>' + escapeHtml(v) + '</span></label>';
+        }).join('') +
+      '</div>';
+    return wrap;
+  }
+
+  // Category popup — same shape, plus a grouping-toggle row pinned at top
+  function makeCategoryPopup(){
+    var wrap = document.createElement('div');
+    wrap.className = 'dt-filter-popup';
+    wrap.setAttribute('data-id', 'category');
+    wrap.innerHTML =
+      '<button type="button" class="dt-filter-trigger' + (selectedCategories.length ? ' has-filter' : '') + '" aria-expanded="false">' +
+        '<span>' + escapeHtml(categoryLabel) + '</span>' +
+        '<span class="caret">▾</span>' +
+      '</button>' +
+      '<div class="dt-filter-selected">' + selectedCategories.map(chipHtml).join('') + '</div>' +
+      '<div class="dt-filter-menu" hidden>' +
+        '<div class="dt-filter-menu-header"><span>' + escapeHtml(categoryLabel) + '</span><button type="button" class="dt-filter-menu-clear">' + escapeHtml(clearAllLabel) + '</button></div>' +
+        '<label class="dt-grouping-row"><input type="checkbox" id="artifactsGroupToggle"' + (grouping ? ' checked' : '') + '/><span>' + escapeHtml(useGroupingLabel) + '</span></label>' +
+        '<div class="dt-menu-divider"></div>' +
+        uniqueCategories.map(function(v){
+          return '<label><input type="checkbox" value="' + escapeHtml(v) + '"' + (selectedCategories.indexOf(v) !== -1 ? ' checked' : '') + '/><span>' + escapeHtml(v) + '</span></label>';
+        }).join('') +
+      '</div>';
+    return wrap;
+  }
+
+  // Register Category popup as a layout feature
+  if (!jQuery.fn.dataTable.feature.__artifactsToolsRegistered) {
+    jQuery.fn.dataTable.feature.__artifactsToolsRegistered = true;
+    jQuery.fn.dataTable.feature.register('filterByCategory', makeCategoryPopup);
+  }
+
+  function setHeaderFilterMark(colIdx, active){
+    if (!table) return;
+    // Use the visible column index so we target the TITLE row's <th>, not the filter row's
+    var visIdx = table.column(colIdx).index('visible');
+    jQuery('#artifactsTable thead tr:first-child th').eq(visIdx).toggleClass('has-filter', active);
+  }
+
+  // Apply the Type / Category multi-select to the table. doRedraw === false only updates the
+  // search state and popup chrome (used while (re)building the table).
+  function applyFilter(id, doRedraw){
+    var colIdx = (id === 'type') ? TYPE_COL : CATEGORY_COL;
+    var values = (id === 'type') ? selectedTypes : selectedCategories;
+    if (values.length === 0) {
+      table.column(colIdx).search('');
+    } else {
+      table.column(colIdx).search(buildSearchPattern(values), true, false);
+    }
+    var $popup = jQuery('.dt-filter-popup[data-id="' + id + '"]');
+    // Re-render selected chips
+    $popup.find('.dt-filter-selected').html(values.map(chipHtml).join(''));
+    if (values.length) {
+      $popup.find('.dt-filter-trigger').addClass('has-filter');
+    } else {
+      $popup.find('.dt-filter-trigger').removeClass('has-filter');
+    }
+    // Mark visible column header (only for type — category column is hidden)
+    if (id === 'type') setHeaderFilterMark(colIdx, values.length > 0);
+    if (doRedraw !== false) table.column(colIdx).draw();
+  }
+
+  function buildConfig(grouping, view){
+    var cfg = {
+      orderCellsTop: true,
+      layout: {
+        topStart: ['filterByCategory'],
+        topEnd: ['paging', 'pageLength'],
+        bottomStart: 'info',
+        bottomEnd: 'paging'
+      },
+      data: data,
+      columns: columnDefs,
+      order: view.order || (grouping ? [[0, 'asc']] : [[TITLE_COL, 'asc']]),
+      pageLength: pageLength,
+      lengthMenu: [[10, 25, 50, 100, 200, 500, 1000], [10, 25, 50, 100, 200, 500, 1000]]
+    };
+    if (grouping) {
+      cfg.orderFixed = [[0, 'asc']];
+      cfg.rowGroup = {
+        dataSrc: 'g',
+        startRender: function(rows, group){
+          var first = rows.data().toArray()[0];
+          var desc = first && groupDescriptions[first.gid];
+          var $header = jQuery('<tr/>').append(
+            jQuery('<td/>').attr('colspan', VISIBLE_COLS).addClass('artifacts-group-header')
+          );
+          var $cell = $header.find('td');
+          jQuery('<div/>').addClass('artifacts-group-name').text(group).appendTo($cell);
+          if (desc) {
+            jQuery('<div/>').addClass('artifacts-group-desc').html(desc).appendTo($cell);
+          }
+          return $header;
+        }
+      };
+    }
+    return cfg;
+  }
+
+  var table;
+  // view: { start, order } — the page offset and sort order to restore (both optional)
+  function renderTable(grouping, view){
+    view = view || {};
+    if (table) table.destroy();
+    table = jQuery('#artifactsTable').DataTable(buildConfig(grouping, view));
+
+    // Drop the Type multi-select into its column's filter cell
+    var typeCell = document.getElementById('filterCellType');
+    typeCell.innerHTML = '';
+    typeCell.appendChild(makeFilterPopup('type', typeLabel, uniqueTypes, selectedTypes));
+
+    // Wire text inputs for Title / Id / Description — use the custom row filter.
+    // Also push the current (possibly restored) filter values into the inputs and header marks.
+    jQuery('#artifactsTable thead tr.filters input[type=text]').each(function(){
+      var key = this.getAttribute('data-col');
+      this.value = colTextFilters[key] || '';
+      setHeaderFilterMark(colIndex(key), !!this.value);
+    }).off('.artifactsFilter').on('input.artifactsFilter change.artifactsFilter', function(){
+      var key = this.getAttribute('data-col');
+      colTextFilters[key] = this.value;
+      table.draw();
+      setHeaderFilterMark(colIndex(key), !!this.value);
+    }).on('click.artifactsFilter', function(e){ e.stopPropagation(); });
+
+    // Re-apply multi-select state (table was destroyed; popup DOM was rebuilt), then draw once
+    applyFilter('type',     false);
+    applyFilter('category', false);
+    table.draw(false);
+
+    // Restore the page the visitor was on, if it still exists after filtering
+    if (view.start) {
+      var len = table.page.len();
+      var pages = table.page.info().pages;
+      var pg = len > 0 ? Math.floor(view.start / len) : 0;
+      if (pg > 0 && pg < pages) table.page(pg).draw(false);
+    }
+  }
+
+  // Persist the view after every draw (page change, sort, length change, filter)
+  jQuery(document).on('draw.dt', '#artifactsTable', saveState);
+
+  renderTable(grouping, initialView);
+
+  // ----- Document-delegated handlers (survive table rebuilds) -----
+
+  // Grouping checkbox (lives inside the Category menu now)
+  jQuery(document).on('change', '#artifactsGroupToggle', function(e){
+    e.stopPropagation();
+    grouping = this.checked;
+    // Sort semantics differ between grouped and flat views, so fall back to the default order and first page
+    renderTable(grouping, {});
+  });
+
+  // Open/close popup
+  jQuery(document).on('click', '.dt-filter-trigger', function(e){
+    e.stopPropagation();
+    var $popup = jQuery(this).closest('.dt-filter-popup');
+    var $menu  = $popup.find('.dt-filter-menu');
+    var wasOpen = !$menu.prop('hidden');
+    jQuery('.dt-filter-menu').prop('hidden', true);
+    jQuery('.dt-filter-trigger').attr('aria-expanded', 'false');
+    if (!wasOpen) { $menu.prop('hidden', false); jQuery(this).attr('aria-expanded', 'true'); }
+  });
+  jQuery(document).on('click', '.dt-filter-menu', function(e){ e.stopPropagation(); });
+  jQuery(document).on('click', function(){
+    jQuery('.dt-filter-menu').prop('hidden', true);
+    jQuery('.dt-filter-trigger').attr('aria-expanded', 'false');
+  });
+
+  // Category/Type checkboxes inside menus (skip the grouping toggle — handled above)
+  jQuery(document).on('change', '.dt-filter-menu input[type=checkbox]:not(#artifactsGroupToggle)', function(){
+    var $popup = jQuery(this).closest('.dt-filter-popup');
+    var id = $popup.attr('data-id');
+    var values = $popup.find('input[type=checkbox]:not(#artifactsGroupToggle):checked').map(function(){ return this.value; }).get();
+    if (id === 'type') selectedTypes = values; else selectedCategories = values;
+    applyFilter(id);
+  });
+
+  // Clear-all
+  jQuery(document).on('click', '.dt-filter-menu-clear', function(e){
+    e.stopPropagation();
+    var $popup = jQuery(this).closest('.dt-filter-popup');
+    var id = $popup.attr('data-id');
+    $popup.find('input[type=checkbox]:not(#artifactsGroupToggle)').prop('checked', false);
+    if (id === 'type') selectedTypes = []; else selectedCategories = [];
+    applyFilter(id);
+  });
+
+  // Remove a single chip
+  jQuery(document).on('click', '.dt-filter-chip-remove', function(e){
+    e.stopPropagation();
+    var $popup = jQuery(this).closest('.dt-filter-popup');
+    var id = $popup.attr('data-id');
+    var value = jQuery(this).attr('data-value');
+    // Uncheck the corresponding menu checkbox
+    $popup.find('input[type=checkbox]:not(#artifactsGroupToggle)').each(function(){
+      if (this.value === value) this.checked = false;
+    });
+    if (id === 'type') selectedTypes = selectedTypes.filter(function(v){ return v !== value; });
+    else                selectedCategories = selectedCategories.filter(function(v){ return v !== value; });
+    applyFilter(id);
+  });
+});
+</script>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="Organization-hopitaltest-uf-4705-nutrition.ttl.html">&lt; précédent</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">haut</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <span style="visibility:hidden">suivant ></span>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
+          Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-09-16 07:37:00 +0000">
+    2026-09-16
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA </a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://hl7.fr/ig/fhir/core/history.html">Historique des versions </a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/new">Issue</a>
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
