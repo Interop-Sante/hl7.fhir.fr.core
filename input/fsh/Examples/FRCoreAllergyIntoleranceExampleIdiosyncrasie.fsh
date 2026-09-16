@@ -1,11 +1,11 @@
-Instance: FRCoreAllergyIntoleranceExample
+Instance: FRCoreAllergyIntoleranceExampleIdiosyncrasie
 InstanceOf: fr-core-allergy-intolerance
 Usage: #example
-Description: "Exemple de ressource AllergyIntolerance : allergie médicamenteuse au paracétamol avec réaction cutanée"
+Description: "Exemple de ressource AllergyIntolerance : réaction idiosyncrasique au paracétamol"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
-* type = #allergy
+* type.extension[type].valueCodeableConcept = $SCT#56840009 "idiosyncrasie"
 * criticality = #low
 
 * code = https://smt.esante.gouv.fr/terminologie-sms#100000090270 "Paracetamol"
@@ -13,12 +13,11 @@ Description: "Exemple de ressource AllergyIntolerance : allergie médicamenteuse
 * patient = Reference(FRCorePatientINSExample)
   * type = "Patient"
 
-* onsetDateTime = "2024-03-15"
-* recordedDate = "2024-03-20"
+* onsetDateTime = "2024-06-01"
+* recordedDate = "2024-06-03"
 
 * reaction
   * substance = https://smt.esante.gouv.fr/terminologie-sms#100000090270 "Paracetamol"
-  * manifestation.coding[0] = $SCT#271807003 "éruption cutanée"
-  * manifestation.coding[+] = https://smt.esante.gouv.fr/terminologie-cim11-mms#4A82 "Troubles allergiques ou d'hypersensibilité de la peau ou des muqueuses"
-  * severity = #moderate
-  * onset = "2024-03-15"
+  * manifestation = https://smt.esante.gouv.fr/terminologie-cim11-mms#MG22 "Asthénie"
+  * severity = #mild
+  * onset = "2024-06-01"
