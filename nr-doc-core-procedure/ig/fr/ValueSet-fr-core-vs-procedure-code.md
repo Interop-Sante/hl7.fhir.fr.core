@@ -3,10 +3,13 @@
 ## ValueSet: FR Core ValueSet Procedure code 
 
  
-Codes autorisés pour indiquer un acte. Inclut : 
-* Terminologie CCAM
-* NCIT (code C25218 : ‘Intervention’) si l’acte n’est pas trouvé dans CCAM
+Codes autorisés par défaut pour indiquer un acte. Inclut : 
+* CCAM : terminologie facturante pour la production d’actes.
 * CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.
+ 
+Deux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut : 
+* fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d’acte ou de report d’actes à des fins internationales (en cours de validation en Europe).
+* fr-core-vs-procedure-code-autre (CISIS “Autre acte”) si l’acte n’est pas trouvé dans CCAM ni SNOMED CT.
  
 Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre. 
 
@@ -19,8 +22,6 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
  
 
 ### Expansion
-
-No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
@@ -44,7 +45,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Procedure code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -61,7 +62,7 @@ No Expansion for this valueset (Unsupported Code System Version)
       "use" : "work"
     }]
   }],
-  "description" : "Codes autorisés pour indiquer un acte.\nInclut :\n- Terminologie CCAM\n- NCIT (code C25218 : 'Intervention') si l'acte n'est pas trouvé dans CCAM\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
+  "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -72,16 +73,10 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-ccam",
-      "version" : "v83.00"
+      "version" : "v84.00"
     },
     {
-      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-      "concept" : [{
-        "code" : "C25218"
-      }]
-    },
-    {
-      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis|20260619134042"]
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis|20260716085852"]
     }]
   }
 }

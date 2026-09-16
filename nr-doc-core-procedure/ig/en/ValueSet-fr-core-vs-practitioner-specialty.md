@@ -54,7 +54,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -83,7 +83,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "compose" : {
     "include" : [{
       "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
-      "version" : "20240531120000"
+      "version" : "20260730120000"
     }]
   }
 }

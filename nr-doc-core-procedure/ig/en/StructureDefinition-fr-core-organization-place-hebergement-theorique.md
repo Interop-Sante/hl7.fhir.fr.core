@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationPlaceHebergementTheoriqueExtension",
   "title" : "FR Core Organization Extension - Nombre total de places d'hébergement théoriques",
   "status" : "active",
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

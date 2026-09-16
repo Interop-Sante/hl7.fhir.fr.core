@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fr-core-vs-procedure-code-snomed"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet fr-core-vs-procedure-code-snomed</b></p><a name="en-fr-core-vs-procedure-code-snomed"> </a><a name="en-hcfr-core-vs-procedure-code-snomed"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr-FR</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a> version: 4.0.1</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  descends from 71388002 (procédure)</li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 14734007 (procédure administrative)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 59524001 (blood bank procedure)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 389067005 (intervention en santé communautaire)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 442006003 (Determination of information related to transfusion)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 225288009 (intervention liée à la gestion de l'environnement)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 308335008 (technique d'entrevue avec le patient)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 710135002 (Promotion)</li><li>Exclude codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 389084004 (acte lié au personnel)</li></ul></div>
+  </text>
+  <url value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code-snomed"/>
+  <version value="2.2.0"/>
+  <name value="FRCoreValueSetProcedureCodeSnomed"/>
+  <title value="FR Core ValueSet Procedure code - SNOMED CT"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-16T15:06:55+00:00"/>
+  <publisher value="Interop'Santé"/>
+  <contact>
+    <name value="Interop'Santé"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://interopsante.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="InteropSanté"/>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@interopsante.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Terminologie SNOMED CT pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe). Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core procedure-eu-core)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="71388002"/>
+      </filter>
+    </include>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="14734007"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="59524001"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="389067005"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="442006003"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="225288009"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="308335008"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="710135002"/>
+      </filter>
+    </exclude>
+    <exclude>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="389084004"/>
+      </filter>
+    </exclude>
+  </compose>
+</ValueSet>

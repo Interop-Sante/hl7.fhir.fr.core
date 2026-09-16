@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
   "name" : "FRCoreProcedureDifficultyExtension",
   "title" : "FR Core Procedure Difficulty Extension",
   "status" : "active",
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -139,7 +139,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
       }],
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-difficulte-cisis|20260420150251"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-difficulte-cisis|20260716085853"
       }
     }]
   }

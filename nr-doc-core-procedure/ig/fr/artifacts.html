@@ -1661,15 +1661,44 @@ Authorized use for PI identifier.</p>
                </a>
             </td>
             <td>
-<p>Codes autorisés pour indiquer un acte.
+<p>Codes autorisés par défaut pour indiquer un acte.
 Inclut :</p>
 <ul>
-  <li>Terminologie CCAM</li>
-  <li>NCIT (code C25218 : ‘Intervention’) si l’acte n’est pas trouvé dans CCAM</li>
+  <li>CCAM : terminologie facturante pour la production d’actes.</li>
   <li>CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.</li>
 </ul>
 
+<p>Deux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :</p>
+<ul>
+  <li>fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d’acte ou de report d’actes à des fins internationales (en cours de validation en Europe).</li>
+  <li>fr-core-vs-procedure-code-autre (CISIS “Autre acte”) si l’acte n’est pas trouvé dans CCAM ni SNOMED CT.</li>
+</ul>
+
 <p>Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-procedure-code-autre.html"
+                  title="ValueSet/fr-core-vs-procedure-code-autre">
+                  <span title="ValueSet/fr-core-vs-procedure-code-autre">FR Core ValueSet Procedure code - Autre acte
+</span>
+               </a>
+            </td>
+            <td>
+<p>Code CISIS à utiliser si l’acte n’est pas trouvé dans CCAM ni SNOMED CT.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-procedure-code-snomed.html"
+                  title="ValueSet/fr-core-vs-procedure-code-snomed">
+                  <span title="ValueSet/fr-core-vs-procedure-code-snomed">FR Core ValueSet Procedure code - SNOMED CT
+</span>
+               </a>
+            </td>
+            <td>
+<p>Terminologie SNOMED CT pour la demande d’acte ou de report d’actes à des fins internationales (en cours de validation en Europe). Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core procedure-eu-core).</p>
 </td>
          </tr>
          <tr>
@@ -2613,8 +2642,8 @@ A Schedule type</p>
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-08-03 08:32:00 +0000">
-    2026-08-03
+  <span title="2026-09-16 15:06:00 +0000">
+    2026-09-16
   </span>
 
           <br/>

@@ -7,7 +7,7 @@ Admission type
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetEncounterType](ValueSet-fr-core-vs-encounter-type.md)
+* [FR Core ValueSet Encounter type](ValueSet-fr-core-vs-encounter-type.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Type Admission",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

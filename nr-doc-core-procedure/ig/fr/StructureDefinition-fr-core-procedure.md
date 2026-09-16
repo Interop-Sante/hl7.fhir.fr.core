@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -223,8 +223,46 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
       "id" : "Procedure.code",
       "path" : "Procedure.code",
       "short" : "Code d'acte",
-      "comment" : "Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.\nSi l'acte n'est pas trouvé dans CCAM, utiliser le code NCIT 'C25218' (Intervention)\net décrire l'acte en texte libre dans la partie narrative.\nPour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-cisis.",
+      "comment" : "Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.\nCCAM : terminologie facturante pour la production d'actes.\nSNOMED CT (additional binding) : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe.\nSi l'acte n'est pas trouvé dans CCAM ni SNOMED CT, utiliser le code CISIS 'GEN-092.04.13' (Autre acte, additional binding)\net décrire l'acte en texte libre dans la partie narrative.\nPour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-cisis.",
       "binding" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code-snomed|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core)."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Demande / report d'acte à des fins internationales"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code-autre|2.2.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "CISIS GEN-092.04.13 'Autre acte' : à utiliser si l'acte n'est pas trouvé dans CCAM ni SNOMED CT."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "Autre acte"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        }],
         "strength" : "preferred",
         "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code|2.2.0"
       }

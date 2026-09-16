@@ -76,7 +76,9 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Procedure.code","Procedure.code","","type
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Code d'acte","Identification of the procedure or recording of ""absence of relevant procedures"" or of ""procedures unknown"".","Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.
-Si l'acte n'est pas trouvé dans CCAM, utiliser le code NCIT 'C25218' (Intervention)
+CCAM : terminologie facturante pour la production d'actes.
+SNOMED CT (additional binding) : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe.
+Si l'acte n'est pas trouvé dans CCAM ni SNOMED CT, utiliser le code CISIS 'GEN-092.04.13' (Autre acte, additional binding)
 et décrire l'acte en texte libre dans la partie narrative.
 Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-cisis.","0..1 to account for primarily narrative only resources.","","","","","","","",,"preferred","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code|2.2.0","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.what[x]","OBR-44/OBR-45"

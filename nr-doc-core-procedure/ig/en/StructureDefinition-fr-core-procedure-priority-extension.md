@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
   "name" : "FRCoreProcedurePriorityExtension",
   "title" : "FR Core Procedure Priority Extension",
   "status" : "active",
-  "date" : "2026-08-03T08:32:23+00:00",
+  "date" : "2026-09-16T15:06:55+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActPriority-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActPriority-cisis|20260716085852"
       }
     }]
   }
