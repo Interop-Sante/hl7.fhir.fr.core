@@ -3,21 +3,21 @@ ValueSet: FRCoreValueSetProcedureCode
 Id: fr-core-vs-procedure-code
 Title: "FR Core ValueSet Procedure code"
 Description: """
-Codes autorisés pour indiquer un acte.
+Codes autorisés par défaut pour indiquer un acte.
 Inclut :
-- Terminologie CCAM
-- NCIT (code C25218 : 'Intervention') si l'acte n'est pas trouvé dans CCAM
+- CCAM : terminologie facturante pour la production d'actes.
 - CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.
+
+Deux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :
+- fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).
+- fr-core-vs-procedure-code-autre (CISIS "Autre acte") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.
 
 Si aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.
 """
 * insert SetValueset
 
-// CCAM
+// CCAM - terminologie facturante pour la production d'actes
 * include codes from system https://smt.esante.gouv.fr/terminologie-ccam
-
-// NCIT (Intervention)
-* http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25218
 
 // CISIS absent/unknown
 * include codes from valueset https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis

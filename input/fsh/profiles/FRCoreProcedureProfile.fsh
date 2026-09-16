@@ -15,13 +15,37 @@ Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un act
 * status ^short = "Statut de l'acte"
 
 * code ^short = "Code d'acte"
-* code from FRCoreValueSetProcedureCode (preferred) // EU Core : binding preferred identique (ValueSet différent : procedures-uv-ips, remplacé par CCAM/NCIT/CISIS)
+* code from FRCoreValueSetProcedureCode (preferred) // EU Core : binding preferred identique (ValueSet différent : procedures-uv-ips, remplacé par CCAM/CISIS + additional bindings SNOMED CT/Autre acte)
 * code ^comment = """
 Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.
-Si l'acte n'est pas trouvé dans CCAM, utiliser le code NCIT 'C25218' (Intervention)
+CCAM : terminologie facturante pour la production d'actes.
+SNOMED CT (additional binding) : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe.
+Si l'acte n'est pas trouvé dans CCAM ni SNOMED CT, utiliser le code CISIS 'GEN-092.04.13' (Autre acte, additional binding)
 et décrire l'acte en texte libre dans la partie narrative.
 Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-cisis.
 """
+
+// Additional binding - SNOMED CT : demande d'acte ou report d'actes à des fins internationales (en cours de validation en Europe)
+* code ^binding.extension[+].extension[0].url = "purpose"
+* code ^binding.extension[=].extension[=].valueCode = #extensible
+* code ^binding.extension[=].extension[+].url = "valueSet"
+* code ^binding.extension[=].extension[=].valueCanonical = Canonical(FRCoreValueSetProcedureCodeSnomed)
+* code ^binding.extension[=].extension[+].url = "documentation"
+* code ^binding.extension[=].extension[=].valueMarkdown = "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core)."
+* code ^binding.extension[=].extension[+].url = "shortDoco"
+* code ^binding.extension[=].extension[=].valueString = "Demande / report d'acte à des fins internationales"
+* code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+
+// Additional binding - CISIS "Autre acte" : repli si l'acte n'est pas trouvé dans CCAM ni SNOMED CT
+* code ^binding.extension[+].extension[0].url = "purpose"
+* code ^binding.extension[=].extension[=].valueCode = #extensible
+* code ^binding.extension[=].extension[+].url = "valueSet"
+* code ^binding.extension[=].extension[=].valueCanonical = Canonical(FRCoreValueSetProcedureCodeAutre)
+* code ^binding.extension[=].extension[+].url = "documentation"
+* code ^binding.extension[=].extension[=].valueMarkdown = "CISIS GEN-092.04.13 'Autre acte' : à utiliser si l'acte n'est pas trouvé dans CCAM ni SNOMED CT."
+* code ^binding.extension[=].extension[+].url = "shortDoco"
+* code ^binding.extension[=].extension[=].valueString = "Autre acte"
+* code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
 // Cible héritée de procedure-eu-core : Reference(Condition EU Core or Observation or Procedure EU Core or DiagnosticReport or DocumentReference)
