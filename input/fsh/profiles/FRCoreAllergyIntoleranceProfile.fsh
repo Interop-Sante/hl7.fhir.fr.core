@@ -18,7 +18,6 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrir
 * type.extension[type].valueCodeableConcept from FRCoreValueSetAllergyIntoleranceType (preferred)
 * type.extension[type] ^short = "Type d'allergie ou d'intolérance étendu (backport R5 : idiosyncrasie, hypersensibilité non allergique)"
 
-* code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code ^short = "agent allergique"
 * code from FRCoreValueSetAllergyCode (extensible)
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
