@@ -17,7 +17,6 @@ Description: "FRCoreConditionProfile est un profil utilisé pour décrire un pro
 
 * category from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis
 
-* code 1..1 // EU Core : 1..1 (FHIR R5 base : 0..1)
 * code from FRCoreValueSetConditionCodeDefaut (extensible)
 * code ^short = "Identification de la condition, du problème ou du diagnostic"
 * code ^definition = """CIM-10 pour les pathologies et réactions à une vaccination : Si le problème observé n'est pas trouvé dans la terminologie CIM-10, utiliser le code='R69' display='Causes inconnues et non précisées de morbidité' system='https://smt.esante.gouv.fr/terminologie-cim-10' et décrire le problème sous forme de texte libre.\r\n
