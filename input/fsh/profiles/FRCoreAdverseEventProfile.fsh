@@ -59,8 +59,6 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * extension[occurrence].value[x] only Period
 * extension[occurrence] ^short = "Période de l'effet indésirable (backport R5 occurrence[x], Period)"
 
-* suspectEntity 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
-
 * suspectEntity ^short = "Agent soupçonné d'être à l'origine de l'événement indésirable"
 * suspectEntity.instance only Reference(Immunization or Substance or Medication or MedicationAdministration or MedicationStatement) // * suspectEntity.instance only Reference(FRCoreImmunizationProfile or FRCoreSubstanceProfile or FRCoreMedicationProfile or FRCoreMedicationAdministrationProfile or FRCoreMedicationStatementProfile)
 * suspectEntity.instance ^short = "Médicament, substance incriminée, posologie"
