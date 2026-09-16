@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-09-16T15:10:32+00:00",
+  "date" : "2026-09-16T15:30:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -222,7 +222,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
     {
       "id" : "Procedure.code",
       "path" : "Procedure.code",
-      "short" : "Code d'acte",
+      "short" : "Code d'acte : CCAM (facturante), SNOMED CT (international, additional binding) ou CISIS 'Autre acte'/absent-unknown",
       "comment" : "Aussi utilisé pour indiquer qu'il n'y a pas d'acte ou qu'on ne sait pas s'il y en a.\nCCAM : terminologie facturante pour la production d'actes.\nSNOMED CT (additional binding) : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe.\nSi l'acte n'est pas trouvé dans CCAM ni SNOMED CT, utiliser le code CISIS 'GEN-092.04.13' (Autre acte, additional binding)\net décrire l'acte en texte libre dans la partie narrative.\nPour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-cisis.",
       "binding" : {
         "extension" : [{
@@ -240,7 +240,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-procedu
           },
           {
             "url" : "shortDoco",
-            "valueString" : "Demande / report d'acte à des fins internationales"
+            "valueString" : "Demande d'acte ou transmission d'acte à des fins internationales"
           }],
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
         },
