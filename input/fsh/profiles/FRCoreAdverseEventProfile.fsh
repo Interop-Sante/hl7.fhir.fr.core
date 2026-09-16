@@ -73,7 +73,6 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * suspectEntity.causality.assessment from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis (required)
 * suspectEntity.causality.assessment ^short = "Niveau d'imputabilité"
 
-* seriousness 1.. // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 * seriousness from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis (required)
 * seriousness ^short = "Gravité de l'effet indésirable"
 
