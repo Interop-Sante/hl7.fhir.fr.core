@@ -21,7 +21,6 @@
       <sch:assert test="count(f:event) &lt;= 0">event: maximum cardinality of 'event' is 0</sch:assert>
       <sch:assert test="count(f:seriousness) &gt;= 1">seriousness: minimum cardinality of 'seriousness' is 1</sch:assert>
       <sch:assert test="count(f:outcome) &lt;= 0">outcome: maximum cardinality of 'outcome' is 0</sch:assert>
-      <sch:assert test="count(f:suspectEntity) &gt;= 1">suspectEntity: minimum cardinality of 'suspectEntity' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

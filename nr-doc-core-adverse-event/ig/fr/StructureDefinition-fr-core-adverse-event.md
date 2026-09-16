@@ -37,7 +37,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 4 éléments(1 élément obligatoire(s) imbriqué(s))
  Interdit : 3 éléments
 
 **Structures**
@@ -80,7 +80,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 5 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 4 éléments(1 élément obligatoire(s) imbriqué(s))
  Interdit : 3 éléments
 
 **Structures**
@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-30T14:49:16+00:00",
+  "date" : "2026-09-16T12:34:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -264,7 +264,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260716085852"
       }
     },
     {
@@ -275,8 +275,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
     {
       "id" : "AdverseEvent.suspectEntity",
       "path" : "AdverseEvent.suspectEntity",
-      "short" : "Agent soupçonné d'être à l'origine de l'événement indésirable",
-      "min" : 1
+      "short" : "Agent soupçonné d'être à l'origine de l'événement indésirable"
     },
     {
       "id" : "AdverseEvent.suspectEntity.instance",
@@ -304,7 +303,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260716085851"
       }
     }]
   }

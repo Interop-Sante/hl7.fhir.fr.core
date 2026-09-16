@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-extension-Adver
   "name" : "FRCoreAdverseEventOutcomeExtension",
   "title" : "FR Core AdverseEvent Extension - Outcome (backport R5→R4)",
   "status" : "active",
-  "date" : "2026-07-30T14:49:16+00:00",
+  "date" : "2026-09-16T12:34:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -139,7 +139,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-extension-Adver
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis|20260716085852"
       }
     }]
   }

@@ -7,7 +7,7 @@ Location type
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetLocationType](ValueSet-fr-core-vs-location-type.md)
+* [FR Core ValueSet Location type](ValueSet-fr-core-vs-location-type.md)
 
 -------
 
@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Location Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-30T14:49:16+00:00",
+  "date" : "2026-09-16T12:34:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

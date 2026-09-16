@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-07-30T14:49:16+00:00",
+  "date" : "2026-09-16T12:34:54+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -178,7 +178,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260716085852"
       }
     },
     {
@@ -189,8 +189,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
     {
       "id" : "AdverseEvent.suspectEntity",
       "path" : "AdverseEvent.suspectEntity",
-      "short" : "Agent soupçonné d'être à l'origine de l'événement indésirable",
-      "min" : 1
+      "short" : "Agent soupçonné d'être à l'origine de l'événement indésirable"
     },
     {
       "id" : "AdverseEvent.suspectEntity.instance",
@@ -218,7 +217,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260716085851"
       }
     }]
   }
