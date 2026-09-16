@@ -34,7 +34,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * code ^binding.extension[=].extension[+].url = "documentation"
 * code ^binding.extension[=].extension[=].valueMarkdown = "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. ValueSet IPS procedures-uv-ips, identique à celui utilisé par le parent EU Core."
 * code ^binding.extension[=].extension[+].url = "shortDoco"
-* code ^binding.extension[=].extension[=].valueString = "Demande / report d'acte à des fins internationales"
+* code ^binding.extension[=].extension[=].valueString = "Demande d'acte ou transmission d'acte à des fins internationales"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 
 // Additional binding - CISIS "Autre acte" : repli si l'acte n'est pas trouvé dans CCAM ni SNOMED CT
