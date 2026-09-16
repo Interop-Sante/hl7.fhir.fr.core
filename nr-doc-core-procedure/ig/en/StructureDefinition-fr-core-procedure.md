@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
   "name" : "FRCoreProcedureProfile",
   "title" : "FR Core Procedure Profile",
   "status" : "active",
-  "date" : "2026-09-16T15:06:55+00:00",
+  "date" : "2026-09-16T15:10:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -146,11 +146,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-procedure
           },
           {
             "url" : "valueSet",
-            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code-snomed|2.2.0"
+            "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips|1.1.0"
           },
           {
             "url" : "documentation",
-            "valueMarkdown" : "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core)."
+            "valueMarkdown" : "SNOMED CT : terminologie pour la demande d'acte ou de report d'actes à des fins internationales, en cours de validation en Europe. ValueSet IPS procedures-uv-ips, identique à celui utilisé par le parent EU Core."
           },
           {
             "url" : "shortDoco",

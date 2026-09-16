@@ -8,7 +8,7 @@ Codes autorisés par défaut pour indiquer un acte. Inclut :
 * CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.
  
 Deux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut : 
-* fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d’acte ou de report d’actes à des fins internationales (en cours de validation en Europe).
+* ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d’acte ou de report d’actes à des fins internationales (en cours de validation en Europe).
 * fr-core-vs-procedure-code-autre (CISIS “Autre acte”) si l’acte n’est pas trouvé dans CCAM ni SNOMED CT.
  
 Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre. 
@@ -45,7 +45,7 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
   "title" : "FR Core ValueSet Procedure code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-16T15:06:55+00:00",
+  "date" : "2026-09-16T15:10:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -62,7 +62,7 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
       "use" : "work"
     }]
   }],
-  "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
+  "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

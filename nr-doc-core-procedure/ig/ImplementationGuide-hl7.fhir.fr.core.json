@@ -11,7 +11,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-16T15:06:55+00:00",
+  "date" : "2026-09-16T15:10:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -2497,7 +2497,7 @@
         "reference" : "ValueSet/fr-core-vs-procedure-code"
       },
       "name" : "FR Core ValueSet Procedure code",
-      "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- fr-core-vs-procedure-code-snomed (SNOMED CT) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
+      "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
       "exampleBoolean" : false
     },
     {
@@ -2510,18 +2510,6 @@
       },
       "name" : "FR Core ValueSet Procedure code - Autre acte",
       "description" : "Code CISIS à utiliser si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-core-vs-procedure-code-snomed"
-      },
-      "name" : "FR Core ValueSet Procedure code - SNOMED CT",
-      "description" : "Terminologie SNOMED CT pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe). Périmètre repris du ValueSet IPS procedures-uv-ips (parent EU Core procedure-eu-core).",
       "exampleBoolean" : false
     },
     {

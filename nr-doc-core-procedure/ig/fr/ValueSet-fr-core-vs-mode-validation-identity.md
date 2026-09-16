@@ -37,7 +37,7 @@ The validation mode of the identity.
   "title" : "FR Core ValueSet Mode validation identity",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-16T15:06:55+00:00",
+  "date" : "2026-09-16T15:10:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
