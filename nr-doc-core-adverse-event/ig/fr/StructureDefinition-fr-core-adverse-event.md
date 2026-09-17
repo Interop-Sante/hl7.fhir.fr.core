@@ -37,7 +37,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 4 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
  Interdit : 3 éléments
 
 **Structures**
@@ -80,7 +80,7 @@ Cette structure est dérivée de [AdverseEvent](http://hl7.org/fhir/R4/adverseev
 
 ** Résumé **
 
-Obligatoire : 4 éléments(1 élément obligatoire(s) imbriqué(s))
+Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
  Interdit : 3 éléments
 
 **Structures**
@@ -118,7 +118,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-09-16T12:34:54+00:00",
+  "date" : "2026-09-17T13:13:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -261,7 +261,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-adverse
       "id" : "AdverseEvent.seriousness",
       "path" : "AdverseEvent.seriousness",
       "short" : "Gravité de l'effet indésirable",
-      "min" : 1,
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260716085852"

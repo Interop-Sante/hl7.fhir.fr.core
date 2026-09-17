@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Location Physical Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-16T12:34:54+00:00",
+  "date" : "2026-09-17T13:13:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

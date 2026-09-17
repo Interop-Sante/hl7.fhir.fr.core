@@ -19,7 +19,6 @@
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:event) &lt;= 0">event: maximum cardinality of 'event' is 0</sch:assert>
-      <sch:assert test="count(f:seriousness) &gt;= 1">seriousness: minimum cardinality of 'seriousness' is 1</sch:assert>
       <sch:assert test="count(f:outcome) &lt;= 0">outcome: maximum cardinality of 'outcome' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
   "name" : "FRCoreAdverseEventProfile",
   "title" : "FR Core AdverseEvent Profile",
   "status" : "active",
-  "date" : "2026-09-16T12:34:54+00:00",
+  "date" : "2026-09-17T13:13:16+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -175,7 +175,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-e
       "id" : "AdverseEvent.seriousness",
       "path" : "AdverseEvent.seriousness",
       "short" : "Gravité de l'effet indésirable",
-      "min" : 1,
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260716085852"
