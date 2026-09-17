@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-service-r
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-09-16T07:37:42+00:00",
+  "date" : "2026-09-17T12:36:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -138,7 +138,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-service-r
       "max" : "1",
       "type" : [{
         "code" : "Identifier",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-accession-number-identifier|2.2.0"]
+        "profile" : ["http://hl7.eu/fhir/imaging/StructureDefinition/AccessionNumberIdentifierEuImaging|1.0.0-ballot"]
       }]
     },
     {

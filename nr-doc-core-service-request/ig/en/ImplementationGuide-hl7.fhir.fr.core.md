@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-16T07:37:42+00:00",
+  "date" : "2026-09-17T12:36:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -79,6 +79,12 @@
     "uri" : "http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base",
     "packageId" : "hl7.fhir.eu.base",
     "version" : "2.0.0"
+  },
+  {
+    "id" : "hl7_fhir_eu_imaging",
+    "uri" : "http://hl7.eu/fhir/imaging/ImplementationGuide/hl7.fhir.eu.imaging",
+    "packageId" : "hl7.fhir.eu.imaging",
+    "version" : "1.0.0-ballot"
   }],
   "definition" : {
     "extension" : [{
@@ -945,22 +951,6 @@
       },
       "name" : "Body Temperature Measurement Body Location value set",
       "description" : "SELECT SNOMED CT code system values that describe where on the body the temperature was measured.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-fr-core-accession-number-identifier.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-core-accession-number-identifier"
-      },
-      "name" : "FR Core Accession Number Identifier Profile",
-      "description" : "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen d'imagerie.",
       "exampleBoolean" : false
     },
     {

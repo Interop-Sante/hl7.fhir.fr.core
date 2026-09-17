@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-16T07:37:42+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-17T12:36:37+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -109,6 +109,15 @@
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.eu.base" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_eu_imaging" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.eu/fhir/imaging/ImplementationGuide/hl7.fhir.eu.imaging" ;
+       fhir:link <http://hl7.eu/fhir/imaging/ImplementationGuide/hl7.fhir.eu.imaging>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.eu.imaging" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0-ballot" ]
   ] ;
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -1042,20 +1051,6 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Temperature Measurement Body Location value set" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SELECT SNOMED CT code system values that describe where on the body the temperature was measured." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-accession-number-identifier> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-accession-number-identifier" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Accession Number Identifier Profile" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DataType définissant l'Accession Number d'une demande d'examen. Il s'agit d'un identifiant unique attribué à chaque demande d'examen d'imagerie." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
