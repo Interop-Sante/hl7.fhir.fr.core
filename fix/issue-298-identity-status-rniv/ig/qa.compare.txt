@@ -1,10 +1,10 @@
 FRCore : Validation Results
 =========================================
 
-err = 5, warn = 189, info = 4121
+err = 5, warn = 188, info = 4121
 $--
 Generated $--. FHIR version $-- for hl7.fhir.fr.core#$-- (canonical = https://hl7.fr/ig/fhir/core)
- Build Errors : 28 / 3 / 4
+ Build Errors : 28 / 2 / 4
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/Appointment-FRCoreAppointmentExample : 0 / 1 / 2
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-champ-activite : 0 / 2 / 3
  /__w/hl7.fhir.fr.core/hl7.fhir.fr.core/igSource/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 2 / 3
@@ -221,7 +221,6 @@ ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, col
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'definitions.xml.zip' for "XML Definitions (zip)" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 262, column 8: The link 'examples.ttl.zip' for "XML Exemples (zip)" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'definitions.ttl.zip' for "Turtle Définitions" cannot be resolved
-WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Appointment-FRCoreAppointmentExample.json ==
 INFORMATION: Appointment/FRCoreAppointmentExample: Appointment.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Appointment/FRCoreAppointmentExample: Appointment.identifier[0].system: No definition could be found for URL value 'http://appointment-identifier-system.org'
@@ -4311,7 +4310,7 @@ WARNING: ValueSet/fr-core-vs-availability-time-rule: ValueSet.compose.include[0]
 INFORMATION: ValueSet/fr-core-vs-availability-time-rule: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system 'https://www.ietf.org/rfc/rfc2445' is not known, and no terminology service supports it
 WARNING: ValueSet/fr-core-vs-availability-time-rule: ValueSet: Resource has a language (fr-FR), and the XHTML has a lang (fr), but they differ
 WARNING: Resource: The resource ValueSet/fr-core-vs-availability-time-rule should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-WARNING: ValueSet.where(id = 'fr-core-vs-availability-time-rule'): Error from https://tx.fhir.org/r4: 502 Bad Gateway 502 Bad Gateway nginx
+WARNING: ValueSet.where(id = 'fr-core-vs-availability-time-rule'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://www.ietf.org/rfc/rfc2445' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-fr-core-vs-body-position.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 INFORMATION: ValueSet/fr-core-vs-body-position: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)
