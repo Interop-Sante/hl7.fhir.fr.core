@@ -6,7 +6,7 @@ FRCore suit le [cycle de vie des guides d'implémentation FHIR](https://interop.
 
 <blockquote class="stu-note">
 <p>
-Les évolutions à venir (héritage des profils européens, synchronisation avec l'IG Document Core, migration vers FHIR R6) impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut <code>final-text</code>.
+Les évolutions à venir (héritage des profils européens, synchronisation avec l'IG Document Core, une possible migration vers FHIR R6) impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut <code>final-text</code>.
 </p>
 </blockquote>
 
@@ -32,7 +32,7 @@ Pour rappel, l'adhésion à InteropSanté permet de bénéficier de tarifs avant
 
 ### Auteurs et contributeurs du guide d'implémentation FRCore
 
-L'ensemble des contributeurs au code source peuvent être vus sur [GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors)
+L'ensemble des contributeurs au code source peuvent être consultés sur [GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors)
 
 #### Version 2.2.0
 

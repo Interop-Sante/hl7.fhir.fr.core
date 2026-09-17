@@ -1,0 +1,186 @@
+/* Group header */
+#artifactsTable tr.dtrg-group td.artifacts-group-header {
+  background:rgba(0,0,0,0.08);
+  border-top:1px solid rgba(0,0,0,0.15);
+  border-bottom:1px solid rgba(0,0,0,0.15);
+  padding:.6em .9em;
+}
+#artifactsTable .artifacts-group-name { font-weight:700; font-size:1.1em; }
+#artifactsTable .artifacts-group-desc { font-weight:normal; font-size:.92em; margin-top:.3em; opacity:.75; }
+#artifactsTable .artifacts-group-desc p:last-child { margin-bottom:0; }
+
+/* Body markdown spacing */
+#artifactsTable tbody td p { margin:0 0 .25em 0; }
+#artifactsTable tbody td p:last-child { margin-bottom:0; }
+#artifactsTable tbody td.artifacts-id { font-family:monospace; font-size:.9em; white-space:nowrap; }
+
+/* Per-column filter row */
+#artifactsTable thead tr.filters th { padding:.25em .5em; background:rgba(0,0,0,0.03); }
+#artifactsTable thead tr.filters input { width:100%; box-sizing:border-box; padding:.25em .5em; border:1px solid rgba(0,0,0,0.2); border-radius:3px; font-weight:normal; font-size:.9em; background:#fff; }
+#artifactsTable thead tr.filters th.sorting,
+#artifactsTable thead tr.filters th.sorting_asc,
+#artifactsTable thead tr.filters th.sorting_desc { background-image:none !important; cursor:default; }
+/* Active text filter — funnel icon + tinted background */
+#artifactsTable thead tr.filters input[type=text]:not(:placeholder-shown) {
+  background-color:rgba(0,0,0,0.06);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='black' fill-opacity='0.55' d='M1 2h14l-5 7v5l-4-1V9z'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right .4em center;
+  background-size:.95em;
+  padding-right:1.7em;
+  border-color:rgba(0,0,0,0.45);
+  font-weight:600;
+}
+
+/* Active-filter indicator on column header */
+#artifactsTable thead tr:first-child th { position:relative; }
+#artifactsTable thead tr:first-child th.has-filter {
+  font-weight:700;
+  background:rgba(0,0,0,0.12);
+  box-shadow:inset 0 -3px 0 rgba(0,0,0,0.55);
+}
+#artifactsTable thead tr:first-child th.has-filter::after {
+  content:"⏷";
+  position:absolute;
+  top:50%;
+  right:1.6em;     /* leave room for the sort arrows */
+  transform:translateY(-50%);
+  font-size:.8em;
+  opacity:.6;
+}
+
+/* Multi-select popup */
+.dt-filter-popup { display:inline-block; position:relative; margin:0 .5em; }
+/* When the popup is inline inside a filter <th>, fill the cell width */
+#artifactsTable thead tr.filters th .dt-filter-popup { display:block; margin:0; }
+#artifactsTable thead tr.filters th .dt-filter-trigger { width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; }
+
+.dt-filter-trigger {
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:3px;
+  padding:.3em .65em;
+  font-size:.9em;
+  cursor:pointer;
+  color:inherit;
+  line-height:1.2;
+}
+.dt-filter-trigger.has-filter {
+  background:rgba(0,0,0,0.08);
+  border-color:rgba(0,0,0,0.35);
+  font-weight:600;
+}
+.dt-filter-trigger .caret { margin-left:.35em; opacity:.6; font-size:.7em; }
+
+/* Selected-value chips — shown below the trigger, grow the cell vertically */
+.dt-filter-selected { display:flex; flex-wrap:wrap; gap:.25em; margin-top:.35em; }
+.dt-filter-selected:empty { display:none; }
+.dt-filter-chip {
+  display:inline-flex; align-items:center; gap:4px;
+  background:rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:2px;
+  padding:1px 4px 1px 6px;
+  line-height:1.4;
+  font-size:.8em;
+  white-space:nowrap;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.dt-filter-chip-remove {
+  background:none; border:none; padding:0;
+  font-size:1.1em; line-height:1; cursor:pointer; opacity:.55;
+  color:inherit;
+}
+.dt-filter-chip-remove:hover { opacity:1; }
+.dt-filter-menu {
+  position:absolute;
+  top:calc(100% + 4px);
+  left:0;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.25);
+  border-radius:3px;
+  padding:.25em 0;
+  z-index:1000;
+  min-width:16em;
+  max-height:26em;
+  overflow:auto;
+  box-shadow:0 2px 8px rgba(0,0,0,0.18);
+}
+#artifactsTable thead tr.filters th .dt-filter-menu { left:0; right:auto; }
+.dt-filter-menu[hidden] { display:none; }
+.dt-filter-menu-header {
+  display:flex; justify-content:space-between; align-items:center; gap:.5em;
+  padding:.25em .75em .35em .75em;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  margin-bottom:.25em;
+  font-size:.85em;
+}
+.dt-filter-menu-clear { background:none; border:none; padding:0; font-size:inherit; cursor:pointer; opacity:.7; color:inherit; }
+.dt-filter-menu-clear:hover { opacity:1; text-decoration:underline; }
+.dt-filter-menu { text-align:left !important; direction:ltr !important; }
+.dt-filter-menu label {
+  display:block !important;
+  padding:.3em .75em !important;
+  margin:0 !important;
+  cursor:pointer;
+  font-weight:normal !important;
+  text-align:left !important;
+  white-space:nowrap;
+  user-select:none;
+}
+.dt-filter-menu label:hover { background:rgba(0,0,0,0.05); }
+.dt-filter-menu label input[type="checkbox"] {
+  display:inline-block !important;
+  vertical-align:middle !important;
+  margin:0 .5em 0 0 !important;
+  width:auto !important;
+  float:none !important;
+  cursor:pointer;
+}
+.dt-filter-menu label span {
+  display:inline !important;
+  vertical-align:middle !important;
+  float:none !important;
+}
+/* Grouping toggle row inside the Category menu */
+.dt-filter-menu .dt-grouping-row { background:rgba(0,0,0,0.04); font-style:italic; padding:.4em .75em; }
+.dt-filter-menu .dt-menu-divider { border-top:1px solid rgba(0,0,0,0.1); margin:.25em 0; }
+
+/* Intro paragraph */
+.artifacts-table-intro { margin:.25em 0 1em 0; }
+
+/* Top/bottom controls — neutral */
+.dt-container .dt-layout-row { padding:.4em 0; align-items:center; }
+.dt-container .dt-length select {
+  padding:.3em .5em;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:3px;
+  background:#fff;
+  font-size:.9em;
+}
+.dt-container .dt-length label { font-weight:normal; opacity:.75; }
+.dt-container .dt-info { opacity:.75; font-size:.9em; }
+.dt-container .dt-paging .dt-paging-button {
+  border:1px solid rgba(0,0,0,0.2) !important;
+  background:#fff !important;
+  padding:.25em .65em !important;
+  margin:0 2px !important;
+  border-radius:3px !important;
+  font-size:.9em !important;
+  cursor:pointer;
+}
+.dt-container .dt-paging .dt-paging-button.current,
+.dt-container .dt-paging .dt-paging-button.current:hover {
+  background:rgba(0,0,0,0.12) !important;
+  border-color:rgba(0,0,0,0.3) !important;
+  font-weight:bold;
+}
+.dt-container .dt-paging .dt-paging-button:hover:not(.current):not(.disabled) {
+  background:rgba(0,0,0,0.05) !important;
+}
+.dt-container .dt-paging .dt-paging-button.disabled,
+.dt-container .dt-paging .dt-paging-button.disabled:hover {
+  opacity:.4; cursor:default; background:#fff !important;
+}

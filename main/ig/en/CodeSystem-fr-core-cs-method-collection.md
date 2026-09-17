@@ -7,7 +7,7 @@ Méthode de collection de l’identité
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetIdentityMethodCollection](ValueSet-fr-core-vs-identity-method-collection.md)
+* [FR Core ValueSet Identity method collection](ValueSet-fr-core-vs-identity-method-collection.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Method Collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-10T16:34:41+00:00",
+  "date" : "2026-09-17T13:31:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -88,7 +88,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-human-n
   "name" : "FRCoreHumanNameProfile",
   "title" : "FR Core Human Name Profile",
   "status" : "active",
-  "date" : "2026-08-10T16:34:41+00:00",
+  "date" : "2026-09-17T13:31:08+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
