@@ -1,0 +1,92 @@
+name: Clean gh-pages (remove stale branch deployments)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  clean-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Remove stale branch deployments
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+
+          # Folders that are never deleted regardless of activity
+          PROTECTED="main"
+
+          CUTOFF_TS=$(date -d "30 days ago" +%s)
+          DELETED=0
+
+          # Collect branches with an open PR (up to 100)
+          OPEN_PR_BRANCHES=$(gh api "repos/$REPO/pulls?state=open&per_page=100" -q '.[].head.ref' 2>/dev/null || true)
+
+          for dir in */; do
+            dir="${dir%/}"
+
+            # Skip protected folders
+            if echo "$PROTECTED" | grep -qw "$dir"; then
+              echo "KEEP   $dir  (protected)"
+              continue
+            fi
+
+            # Skip if an open PR targets this branch
+            if echo "$OPEN_PR_BRANCHES" | grep -qx "$dir"; then
+              echo "KEEP   $dir  (open PR)"
+              continue
+            fi
+
+            # URL-encode the folder name for the GitHub API
+            # Note: branch names containing '/' are not supported (gh-pages folders cannot contain '/')
+            ENCODED=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1], safe=''))" "$dir")
+
+            # Check if the corresponding branch still exists
+            if ! gh api "repos/$REPO/branches/$ENCODED" > /dev/null 2>&1; then
+              echo "DELETE $dir  (branch not found)"
+              rm -rf "$dir"
+              DELETED=$((DELETED + 1))
+              continue
+            fi
+
+            # Check date of the last commit on that branch
+            LAST_COMMIT_DATE=$(gh api "repos/$REPO/commits?sha=$ENCODED&per_page=1" -q '.[0].commit.committer.date' 2>/dev/null || true)
+
+            if [ -z "$LAST_COMMIT_DATE" ]; then
+              echo "KEEP   $dir  (could not determine last commit date)"
+              continue
+            fi
+
+            LAST_COMMIT_TS=$(date -d "$LAST_COMMIT_DATE" +%s)
+
+            if [ "$LAST_COMMIT_TS" -lt "$CUTOFF_TS" ]; then
+              echo "DELETE $dir  (no activity since $LAST_COMMIT_DATE)"
+              rm -rf "$dir"
+              DELETED=$((DELETED + 1))
+            else
+              echo "KEEP   $dir  (last commit: $LAST_COMMIT_DATE)"
+            fi
+          done
+
+          if [ "$DELETED" -gt 0 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: remove $DELETED stale branch deployment(s) from gh-pages"
+            git pull --rebase origin gh-pages
+            git push
+          else
+            echo "Nothing to clean."
+          fi
