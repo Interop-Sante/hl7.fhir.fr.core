@@ -6,7 +6,7 @@ FRCore suit le [cycle de vie des guides d'implémentation FHIR](https://interop.
 
 <blockquote class="stu-note">
 <p>
-Les évolutions à venir (héritage des profils européens, synchronisation avec l'IG Document Core, migration vers FHIR R6) impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut <code>final-text</code>.
+Les évolutions à venir (héritage des profils européens, synchronisation avec l'IG Document Core, une possible migration vers FHIR R6) impliquent des changements structurels qui ne permettent pas, à ce stade, un passage au statut <code>final-text</code>.
 </p>
 </blockquote>
 
