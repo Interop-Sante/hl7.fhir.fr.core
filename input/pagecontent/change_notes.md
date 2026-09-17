@@ -15,6 +15,85 @@
     * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
     * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
 
+#### Refonte de l'extension `fr-core-identity-reliability` (RNIV EXI SI 07)
+
+**[BREAKING CHANGE]** Conformité au référentiel d'identitovigilance et au référentiel INS : refonte de l'extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+
+##### Remplacement du CodeSystem `fr-core-cs-v2-0445` par deux CodeSystems dédiés
+
+Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem `fr-core-cs-fiabilite-identite` (doublon inutilisé du précédent) sont **supprimés**, remplacés par deux CodeSystems au périmètre explicite :
+
+* `fr-core-cs-identity-status` (`FRCoreCodeSystemIdentityStatus`) : les 4 statuts de confiance RNIV.
+
+| Code | Statut RNIV | INSi (I) | Contrôle (C) |
+|------|-------------|----------|--------------|
+| `PROV` | Identité provisoire | − | − |
+| `RECUP` _(nouveau)_ | Identité récupérée | + | − |
+| `VALI` | Identité validée | − | + |
+| `QUAL` _(nouveau)_ | Identité qualifiée | + | + |
+
+* `fr-core-cs-identity-status-comment` (`FRCoreCodeSystemIdentityStatusComment`) _(nouveau)_ : les 19 autres codes de l'ancien `fr-core-cs-v2-0445` (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension `comment`.
+
+**Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l'un de ces deux nouveaux CodeSystems selon le code utilisé.
+
+##### ValueSets `identityStatus` et `comment`
+
+Le ValueSet `fr-core-vs-identity-status` (`FRCoreValueSetIdentityStatus`) est réduit aux 4 statuts RNIV (`fr-core-cs-identity-status`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
+
+**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`, désormais bindée en `extensible` sur le nouveau ValueSet `fr-core-vs-identity-status-comment` (`FRCoreValueSetIdentityStatusComment`).
+
+Dans les versions précédentes, les annotations complémentaires pouvaient être portées dans `identityStatus` :
+
+```json
+{
+  "url": "identityStatus",
+  "valueCoding": {
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+    "code": "DOUB"
+  }
+}
+```
+
+À partir de cette version, elles doivent être portées dans `comment` :
+
+```json
+{
+  "url": "comment",
+  "valueCoding": {
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
+    "code": "DOUB"
+  }
+}
+```
+
+##### Canal d'obtention et date d'interrogation du téléservice INSi : sous-extensions `methodCollection` et `dateInterrogationINSi`
+
+La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Un `^definition` a été ajouté pour préciser cette portée, et le code `AV` (Application carte Vitale) a été ajouté au CodeSystem `fr-core-cs-identity-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334).
+
+**[BREAKING CHANGE]** La sous-extension `dateCollection` est renommée `dateInterrogationINSi`, pour l'aligner sur le champ `ZFD-6` "Date d'interrogation du téléservice INSi" d'IHE PAM France (v2.11.1, §6.18.6). Son `^definition` précise qu'elle est renseignée chaque fois que le téléservice INSi est appelé — par lecture de la carte Vitale ou par saisie directe des traits (RNIV §4.3.1-4.3.3) — à l'exception des usagers de l'Application carte Vitale et de leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel (§4.1). Elle ne doit pas être confondue avec la date de vérification de l'identité (`validationDate`) [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336).
+
+**Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l'URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
+
+##### Annotations complémentaires : `comment` passe en `CodeableConcept`
+
+La sous-extension `comment` n'acceptait qu'un `Coding` du ValueSet `fr-core-vs-identity-status-comment`. Elle accepte désormais un `CodeableConcept`, ce qui permet de saisir du texte libre (`.text`) en complément ou à la place d'un code de ce ValueSet [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
+
+##### Correction des invariants `fr-core-1`, `fr-core-2`, `fr-core-3`
+
+Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`, conformément à l'exigence EXI SI 08 :
+
+> « Seul le statut Identité qualifiée permet le référencement des données de santé échangées avec le matricule INS. »
+
+**Impact pour les implémenteurs** : une ressource `FRCorePatientINS` portant un matricule INS doit avoir le statut `QUAL` (et non `VALI`). Les instances existantes au statut `VALI` avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en `QUAL`.
+
+##### Invariants sur les attributs "douteux" et "fictif" (RNIV EXI SI 09)
+
+Ajout de 2 invariants sur `fr-core-identity-reliability`, pour rendre conforme le profil au volet statut de l'exigence [EXI SI 09] du RNIV (§3.2.3) : une identité portant l'attribut `comment` "Identité douteuse" (`DOUT`) ou "Identité fictive" (`FICT`) doit avoir un statut de confiance (`identityStatus`) égal à "Identité provisoire" (`PROV`). Un second invariant interdit le cumul des attributs "Identité fictive" et "Identité douteuse" sur une même identité [#335](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/335).
+
+##### `identityStatus` obligatoire dans `FRCorePatientINSProfile`
+
+La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
+
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
