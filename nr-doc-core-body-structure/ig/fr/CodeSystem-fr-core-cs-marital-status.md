@@ -7,7 +7,7 @@ Marital status
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetMaritalStatus](ValueSet-fr-core-vs-marital-status.md)
+* [FR Core ValueSet Marital Status ValueSet](ValueSet-fr-core-vs-marital-status.md)
 
 -------
 
@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Marital Status",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T09:03:50+00:00",
+  "date" : "2026-09-17T13:25:30+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

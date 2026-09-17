@@ -7,8 +7,8 @@ HL7 v2 - Table 3307
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md)
-* [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md)
+* [FR Core ValueSet Organization Etablisement type](ValueSet-fr-core-vs-organization-etablissement-type.md)
+* [FR Core ValueSet Organization type](ValueSet-fr-core-vs-organization-type.md)
 
 -------
 
@@ -32,7 +32,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T09:03:50+00:00",
+  "date" : "2026-09-17T13:25:30+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

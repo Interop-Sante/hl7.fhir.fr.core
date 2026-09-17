@@ -7,7 +7,7 @@ Discharge Disposition
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetEncounterDischargeDisposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
+* [FR Core ValueSet Encounter discharge disposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Circonstances Sortie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T09:03:50+00:00",
+  "date" : "2026-09-17T13:25:30+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

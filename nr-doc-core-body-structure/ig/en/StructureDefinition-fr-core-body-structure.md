@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-body-stru
   "name" : "FRCoreBodyStructureProfile",
   "title" : "FR Core BodyStructure Profile",
   "status" : "active",
-  "date" : "2026-07-28T09:03:50+00:00",
+  "date" : "2026-09-17T13:25:30+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -118,7 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-body-stru
       "path" : "BodyStructure.extension.extension.value[x]",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis|20260716085851"
       }
     }]
   }
