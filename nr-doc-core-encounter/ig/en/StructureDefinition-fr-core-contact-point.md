@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-contact-p
   "name" : "FRCoreContactPointProfile",
   "title" : "FR Core Contact Point Profile",
   "status" : "active",
-  "date" : "2026-07-28T08:44:28+00:00",
+  "date" : "2026-09-17T13:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

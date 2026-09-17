@@ -37,7 +37,7 @@ Type de chambre
   "title" : "FR Core ValueSet Location Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-28T08:44:28+00:00",
+  "date" : "2026-09-17T13:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

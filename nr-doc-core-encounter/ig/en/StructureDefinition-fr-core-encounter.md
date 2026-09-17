@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-07-28T08:44:28+00:00",
+  "date" : "2026-09-17T13:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -195,7 +195,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
       "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis|20260716085852"
       }
     },
     {

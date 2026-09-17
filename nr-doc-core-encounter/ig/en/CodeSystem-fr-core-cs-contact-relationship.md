@@ -7,7 +7,7 @@ Relationship type
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetContactRelationship](ValueSet-fr-core-vs-contact-relationship.md)
+* [FR Core ValueSet Contact relationship](ValueSet-fr-core-vs-contact-relationship.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Contact Relationship",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-28T08:44:28+00:00",
+  "date" : "2026-09-17T13:01:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
