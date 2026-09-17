@@ -6,4 +6,4 @@ Description: """Extension d'ajout du code insee (5 chiffres) à l'adresse postal
 * ^context.type = #element
 * ^context.expression = "Address"
 * value[x] only Coding
-* value[x] from FRCoreValueSetINSEECode (extensible) //R13
+* value[x] from FRCoreValueSetINSEECode (required)
