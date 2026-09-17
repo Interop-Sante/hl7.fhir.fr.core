@@ -17,7 +17,9 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * identifier ^slicing.ordered = false
 
 * identifier contains accessionNumber 0..1
-* identifier[accessionNumber] only FRCoreAccessionNumberIdentifierProfile
+// Utilisation directe du DataType profile EU : https://hl7.eu/fhir/imaging/StructureDefinition/AccessionNumberIdentifierEuImaging
+// (type 1..1 avec slice v2-0203-coding 1..1 pattern ACSN et slice dcm 0..1 DICOM 121022, system 1..1, value 1..1)
+* identifier[accessionNumber] only AccessionNumberIdentifierEuImaging
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
 * code 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
