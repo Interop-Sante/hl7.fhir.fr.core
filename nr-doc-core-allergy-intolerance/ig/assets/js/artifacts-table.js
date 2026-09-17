@@ -1,5 +1,5 @@
 /*
- * Artifacts table (DataTables) — behaviour for includes/artifacts-table.xml.
+ * Artifacts table (DataTables) — behaviour for includes/fragment-artifacts-table.html.
  *
  * Reads its data from window.artifactsTableData (assets/js/artifacts-table-data.js, rendered by Jekyll
  * with one block per language) and picks the block matching the page's <html lang="..."> attribute.
