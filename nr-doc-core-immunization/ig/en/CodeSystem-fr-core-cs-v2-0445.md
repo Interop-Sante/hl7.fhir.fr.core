@@ -7,7 +7,7 @@ HL7 v2 - Table 0445
 
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetIdentityReliabilityStatus](ValueSet-fr-core-vs-identity-reliability.md)
+* [FR Core ValueSet Identity reliability](ValueSet-fr-core-vs-identity-reliability.md)
 
 -------
 
@@ -31,7 +31,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-04T12:14:39+00:00",
+  "date" : "2026-09-17T13:19:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

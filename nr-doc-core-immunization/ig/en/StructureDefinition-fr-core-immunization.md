@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-08-04T12:14:39+00:00",
+  "date" : "2026-09-17T13:19:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -265,7 +265,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260619134041"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260716085851"
       }
     },
     {
@@ -274,7 +274,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "short" : "Voie d'administration",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260716085852"
       }
     },
     {
@@ -297,7 +297,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "short" : "Type de vaccination : BOOSTER (Rappel de vaccin) | IMMUNIZ (Vaccination sans autre précision) | INITIMMUNIZ (1ère série vaccinante)",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260619134043"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260716085853"
       }
     },
     {

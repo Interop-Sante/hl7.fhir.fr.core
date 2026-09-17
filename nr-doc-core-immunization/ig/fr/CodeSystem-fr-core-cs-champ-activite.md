@@ -7,7 +7,7 @@ Champ d’activité clinique de l’organisation type UF, tel que cité dans les
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetOrganizationChampActivite](ValueSet-fr-core-vs-organization-champ-activite.md)
+* [FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF](ValueSet-fr-core-vs-organization-champ-activite.md)
 
 -------
 
@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-04T12:14:39+00:00",
+  "date" : "2026-09-17T13:19:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

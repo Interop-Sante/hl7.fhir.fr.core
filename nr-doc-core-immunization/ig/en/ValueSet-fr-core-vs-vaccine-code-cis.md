@@ -39,7 +39,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Vaccine code CIS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-04T12:14:39+00:00",
+  "date" : "2026-09-17T13:19:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -67,7 +67,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
-      "version" : "2026-07-01"
+      "version" : "2026-08-02"
     }]
   }
 }
