@@ -48,7 +48,9 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 
 * status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
 
-* class 1..
+// Class déjà rendu obligatoire par FHIR R4, on rajoute l'obligation d'avoir un system et un code.
+* class.system 1..
+* class.code 1..
 * class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)"
 * class from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis (extensible)
 
