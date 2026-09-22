@@ -41,7 +41,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Practitioner identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:01:59+00:00",
+  "date" : "2026-09-22T12:10:06+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

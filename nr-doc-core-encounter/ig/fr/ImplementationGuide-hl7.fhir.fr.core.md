@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-17T13:01:59+00:00",
+  "date" : "2026-09-22T12:10:06+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
