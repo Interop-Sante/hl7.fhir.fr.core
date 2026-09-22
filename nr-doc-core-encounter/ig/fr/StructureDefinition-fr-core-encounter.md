@@ -39,7 +39,7 @@ Cette structure est dérivée de [Encounter](http://hl7.org/fhir/R4/encounter.ht
 
 ** Résumé **
 
-Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 6 éléments(3 éléments obligatoire(s) imbriqué(s))
  Fixe : 1 élément
 
 **Structures**
@@ -91,7 +91,7 @@ Cette structure est dérivée de [Encounter](http://hl7.org/fhir/R4/encounter.ht
 
 ** Résumé **
 
-Obligatoire : 4 éléments(3 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 6 éléments(3 éléments obligatoire(s) imbriqué(s))
  Fixe : 1 élément
 
 **Structures**
@@ -138,7 +138,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-09-22T12:10:06+00:00",
+  "date" : "2026-09-22T12:23:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -301,6 +301,16 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
         "strength" : "extensible",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis|20260716085852"
       }
+    },
+    {
+      "id" : "Encounter.class.system",
+      "path" : "Encounter.class.system",
+      "min" : 1
+    },
+    {
+      "id" : "Encounter.class.code",
+      "path" : "Encounter.class.code",
+      "min" : 1
     },
     {
       "id" : "Encounter.type",

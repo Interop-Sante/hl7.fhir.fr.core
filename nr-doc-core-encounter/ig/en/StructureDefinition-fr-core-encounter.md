@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-09-22T12:10:06+00:00",
+  "date" : "2026-09-22T12:23:37+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -197,6 +197,16 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-encounter
         "strength" : "extensible",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis|20260716085852"
       }
+    },
+    {
+      "id" : "Encounter.class.system",
+      "path" : "Encounter.class.system",
+      "min" : 1
+    },
+    {
+      "id" : "Encounter.class.code",
+      "path" : "Encounter.class.code",
+      "min" : 1
     },
     {
       "id" : "Encounter.type",
