@@ -24,7 +24,7 @@ Il s’agit d’une information de **traçabilité du canal de capture**, distin
 | :--- | :--- | :--- |
 | `SM` | Saisie manuelle | Saisie des traits sans lecture de carte Vitale ni interrogation INSi (§4.3.3) |
 | `CV` | Carte Vitale | Lecture de la carte Vitale physique, déclenchant l’interrogation du téléservice INSi (§4.3.2) |
-| `INSI` | Téléservice INSi | Interrogation directe du téléservice INSi par saisie des traits, sans carte Vitale (§4.3.3) |
+| `INSI` | Téléservice INSi | Saisie manuelle des traits d’identité suivie de l’interrogation du téléservice INSi (ex. portail de préadmission, saisie par le secrétariat) (§4.3.3) |
 | `CB` | Code à barre | Scan du Datamatrix INS d’un document de santé déjà porteur d’une identité qualifiée (Guide d’implémentation de l’INS, v3.0, décembre 2024, EXI REC 02) |
 | `RFID` | Puce RFID | Lecture d’une puce RFID (ex. bracelet patient) ; canal local, non défini par le RNIV |
 | `AV` | Application carte Vitale | Obtention directe de l’INS par scan du QR code ou lecture NFC de l’Application carte Vitale (§4.3.4) ; l’identité ainsi obtenue est considérée comme qualifiée |
@@ -61,7 +61,7 @@ Ce ValueSet est utilisé avec un binding `extensible` dans la sous-extension `me
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T14:29:01+00:00",
+  "date" : "2026-09-28T14:57:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

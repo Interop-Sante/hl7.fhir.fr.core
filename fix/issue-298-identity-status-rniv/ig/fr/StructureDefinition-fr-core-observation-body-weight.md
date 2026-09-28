@@ -127,7 +127,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationBodyWeightProfile",
   "title" : "FR Core Observation Body Weight Profile",
   "status" : "active",
-  "date" : "2026-09-28T14:29:01+00:00",
+  "date" : "2026-09-28T14:57:10+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
