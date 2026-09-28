@@ -31,7 +31,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Method Collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T14:15:25+00:00",
+  "date" : "2026-09-28T14:29:01+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -72,7 +72,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "INSI",
     "display" : "Téléservice INSi",
-    "definition" : "Interrogation directe du téléservice INSi par saisie des traits d'identité, sans lecture de la carte Vitale."
+    "definition" : "Saisie manuelle des traits + interrogation du téléservice INSi (ex : patient qui inscrit son identité dans un portail de préadmission, secrétaire qui tape l’identité, …)."
   },
   {
     "code" : "CB",

@@ -37,7 +37,7 @@ Valeurs permettant de coder les disciplines de prestation.
   "title" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T14:15:25+00:00",
+  "date" : "2026-09-28T14:29:01+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
