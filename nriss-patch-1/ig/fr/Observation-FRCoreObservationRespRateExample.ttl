@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationRespRateExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCoreObservationRespRateExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Observation FRCoreObservationRespRateExample</b></p><a name=\"FRCoreObservationRespRateExample\"> </a><a name=\"hcFRCoreObservationRespRateExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-observation-resp-rate.html\">FR Core Observation Respiratory Rate Profile</a></p></div><p><b>FR Core Observation Body Position Ext Extension</b>: <span title=\"Codes :{http://snomed.info/sct 33586001}\">position assise</span></p><p><b>FR Core Observation Level Of Exertion Extension</b>: <span title=\"Codes :\">Au repos</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 9279-1}\">Respiratory rate</span></p><p><b>subject</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>effective</b>: 2022-11-06</p><p><b>performer</b>: <a href=\"Practitioner-FRCorePractitionerExample.html\">Practitioner Leclerc Sophie</a></p><p><b>value</b>: 16 respirations/minute<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUM/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes :{http://snomed.info/sct 32750006}\">examen visuel</span></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a sct:33586001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "33586001" ] ;
+         fhir:Coding.display [ fhir:value "position assise" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Au repos" ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a loinc:9279-1 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "9279-1" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FRCorePatientINSExample" ] ;
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-11-06"^^xsd:date] ;
+  fhir:Observation.performer [
+     fhir:index -1 ;
+     fhir:link <https://hl7.fr/ig/fhir/core/Practitioner/FRCorePractitionerExample> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/FRCorePractitionerExample" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "16"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "respirations/minute" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "/min" ]
+  ] ;
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:32750006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "32750006" ] ;
+       fhir:Coding.display [ fhir:value "examen visuel" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationRespRateExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
