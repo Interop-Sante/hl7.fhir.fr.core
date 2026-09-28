@@ -10,14 +10,16 @@
 
 Profil: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
 
-Jeanne Dark (official) Female, Date de Naissance :1960-05-30 ( NIR définitif (use: official, ))
+Jeanne Dark (official) Female, Date de Naissance :1960-05-30 ( Patient internal identifier: IPP-260-058 (use: usual, ))
 
 -------
 
 | | |
 | :--- | :--- |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Domrémy-la-Pucelle |
-| FR Core Patient Identity Reliability Extension: | * identityStatus: [FR Core CodeSystem Fiabilité Identité: QUAL](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-QUAL) (Identité qualifiée)
+| FR Core Patient Identity Reliability Extension: | * identityStatus: [FR Core CodeSystem Fiabilité Identité: PROV](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-PROV) (Identité provisoire)
+* comment: Identité non encore qualifiée
+* comment: Identité vérifiée par le patient
  |
 
 
@@ -49,21 +51,42 @@ Jeanne Dark (official) Female, Date de Naissance :1960-05-30 ( NIR définitif (
       "url" : "identityStatus",
       "valueCoding" : {
         "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status",
-        "code" : "QUAL"
+        "code" : "PROV"
+      }
+    },
+    {
+      "url" : "comment",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
+          "code" : "VIDE",
+          "display" : "Identité non encore qualifiée"
+        }]
+      }
+    },
+    {
+      "url" : "comment",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
+          "code" : "IDVER",
+          "display" : "Identité vérifiée par le patient"
+        }]
       }
     }],
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
   }],
   "identifier" : [{
-    "use" : "official",
+    "use" : "usual",
     "type" : {
       "coding" : [{
-        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
-        "code" : "INS-NIR"
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PI",
+        "display" : "Patient internal identifier"
       }]
     },
-    "system" : "urn:oid:1.2.250.1.213.1.4.8",
-    "value" : "260058815400233"
+    "system" : "http://hopital.fr/namingsystem/ipp",
+    "value" : "IPP-260-058"
   }],
   "name" : [{
     "extension" : [{
