@@ -17,7 +17,8 @@ Jeanne Dark (official) Female, Date de Naissance :1960-05-30 ( Patient internal 
 | | |
 | :--- | :--- |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Domrémy-la-Pucelle |
-| FR Core Patient Identity Reliability Extension: | * identityStatus: [FR Core CodeSystem Fiabilité Identité: PROV](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-PROV) (Identité provisoire)
+| FR Core Patient Identity Reliability Extension: | * lastUpdated: 2025-01-15 09:30:00+0100
+* identityStatus: [FR Core CodeSystem Fiabilité Identité: PROV](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-PROV) (Identité provisoire)
 * comment: Identité non encore qualifiée
 * comment: Identité vérifiée par le patient
  |
@@ -48,6 +49,10 @@ Jeanne Dark (official) Female, Date de Naissance :1960-05-30 ( Patient internal 
   },
   {
     "extension" : [{
+      "url" : "lastUpdated",
+      "valueDateTime" : "2025-01-15T09:30:00+01:00"
+    },
+    {
       "url" : "identityStatus",
       "valueCoding" : {
         "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status",

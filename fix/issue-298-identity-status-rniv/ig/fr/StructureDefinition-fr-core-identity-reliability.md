@@ -105,7 +105,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-09-28T13:01:57+00:00",
+  "date" : "2026-09-28T14:15:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -165,6 +165,37 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
         "human" : "Les attributs Identité fictive (FICT) et Identité douteuse (DOUT) ne peuvent être cumulés dans `comment` sur une même identité",
         "expression" : "extension('comment').value.coding.where(code = 'FICT').exists() implies extension('comment').value.coding.where(code = 'DOUT').empty()",
         "source" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Extension.extension:lastUpdated",
+      "path" : "Extension.extension",
+      "sliceName" : "lastUpdated",
+      "short" : "Date de dernière mise à jour de cette instance de l'extension, permettant d'ordonner un historique de plusieurs instances de identityReliability sur une même ressource | Date of the last update of this extension instance, used to order the history when several identityReliability instances are present on the same resource",
+      "definition" : "Horodatage de la dernière mise à jour de cette instance de l'extension composite identityReliability. Dès lors que plusieurs instances de l'extension identityReliability coexistent sur la même ressource (afin de conserver un historique des statuts de confiance successifs), ce champ permet de les ordonner chronologiquement. | Timestamp of the last update of this identityReliability composite extension instance. When several identityReliability instances coexist on the same resource (to keep a history of successive trust statuses), this field allows them to be ordered chronologically.",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:lastUpdated.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:lastUpdated.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "lastUpdated"
+    },
+    {
+      "id" : "Extension.extension:lastUpdated.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "dateTime"
       }]
     },
     {
@@ -285,7 +316,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       "id" : "Extension.extension:validationDate",
       "path" : "Extension.extension",
       "sliceName" : "validationDate",
-      "short" : "Date de vérification de l'identité | Identity verification date",
+      "short" : "Date du contrôle de cohérence à partir des traits portés par un dispositif d'identification à haut niveau de confiance | Date of the consistency check performed against the identity traits carried by a high-level-of-confidence identification device",
       "definition" : "Date à laquelle l'identité a été vérifiée sur la base de la pièce justificative contrôlée (cf. sous-extension `validationMode`). | Date at which the identity was verified based on the checked supporting document (see the `validationMode` sub-extension).",
       "min" : 0,
       "max" : "1"

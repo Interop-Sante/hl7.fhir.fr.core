@@ -57,7 +57,7 @@ Cette structure est dérivée de [FRCorePatientProfile](StructureDefinition-fr-c
 
 ** Résumé **
 
-Obligatoire : 9 éléments(18 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 9 éléments(17 éléments obligatoire(s) imbriqué(s))
  Must-Support : 7 éléments
 
  **Vue des éléments clés** 
@@ -84,7 +84,7 @@ Cette structure est dérivée de [FRCorePatientProfile](StructureDefinition-fr-c
 
 ** Résumé **
 
-Obligatoire : 9 éléments(18 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 9 éléments(17 éléments obligatoire(s) imbriqué(s))
  Must-Support : 7 éléments
 
  
@@ -104,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-09-28T13:01:57+00:00",
+  "date" : "2026-09-28T14:15:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -225,7 +225,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
     {
       "id" : "Patient.extension:identityReliability.extension",
       "path" : "Patient.extension.extension",
-      "min" : 1
+      "min" : 2
     },
     {
       "id" : "Patient.extension:identityReliability.extension:identityStatus",

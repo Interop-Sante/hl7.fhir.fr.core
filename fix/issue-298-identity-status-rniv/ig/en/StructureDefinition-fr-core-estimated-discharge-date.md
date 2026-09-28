@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-estimated
   "name" : "FRCoreEncounterEstimatedDischargeDateExtension",
   "title" : "FR Core Encounter Estimated Discharge Date Extension",
   "status" : "active",
-  "date" : "2026-09-28T13:01:57+00:00",
+  "date" : "2026-09-28T14:15:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

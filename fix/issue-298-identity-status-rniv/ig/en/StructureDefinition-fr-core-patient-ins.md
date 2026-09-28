@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient-i
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-09-28T13:01:57+00:00",
+  "date" : "2026-09-28T14:15:25+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -171,7 +171,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient-i
     {
       "id" : "Patient.extension:identityReliability.extension",
       "path" : "Patient.extension.extension",
-      "min" : 1
+      "min" : 2
     },
     {
       "id" : "Patient.extension:identityReliability.extension:identityStatus",
