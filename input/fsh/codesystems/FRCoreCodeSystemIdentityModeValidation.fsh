@@ -16,7 +16,7 @@ Description: "Mode de validation de l'identité"
 * #AN "Extrait d'acte de naissance" "Extrait d'acte de naissance"
 * #LEP "Livret de famille des parents" "Livret de famille des parents"
 * #CC "Carnet de circulation" "Carnet de circulation pour étranger mineur"
-# #CIMS "Carte d'identité professionnelle multiservices (CIMS)" "Carte d'identité professionnelle multiservices (CIMS)"
+* #CIMS "Carte d'identité professionnelle multiservices (CIMS)" "Carte d'identité professionnelle multiservices (CIMS)"
 * #ANCV "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie" "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie"
 
 
