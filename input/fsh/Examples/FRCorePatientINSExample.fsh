@@ -4,6 +4,7 @@ Usage: #example
 Description: "Exemple de ressource Patient (cas d'usage INS)"
 
 // identityReliability
+* extension[identityReliability].extension[lastUpdated].valueDateTime = "2025-01-15T09:30:00+01:00"
 * extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status#QUAL
 
 // birthPlace

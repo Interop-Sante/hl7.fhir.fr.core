@@ -4,6 +4,7 @@ Usage: #example
 Description: "Exemple de ressource Patient (cas d'usage INS) — jeu de données de référence RNIV, identité provisoire"
 
 // identityReliability
+* extension[identityReliability].extension[lastUpdated].valueDateTime = "2025-01-15T09:30:00+01:00"
 * extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status#PROV
 * extension[identityReliability].extension[comment][0].valueCodeableConcept = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment#VIDE "Identité non encore qualifiée"
 * extension[identityReliability].extension[comment][+].valueCodeableConcept = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment#IDVER "Identité vérifiée par le patient"
