@@ -16,11 +16,12 @@ Jeanne Dark (official) Female, DoB: 1960-05-30 ( Patient internal identifier: IP
 
 | | |
 | :--- | :--- |
+| Active: | false |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Domrémy-la-Pucelle |
 | FR Core Patient Identity Reliability Extension: | * lastUpdated: 2025-01-15 09:30:00+0100
 * identityStatus: [FR Core CodeSystem Fiabilité Identité: PROV](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-PROV) (Identité provisoire)
-* comment: Identité non encore qualifiée
-* comment: Identité vérifiée par le patient
+* comment: Doublon avéré
+* comment: Identité désactivée
  |
 
 
@@ -64,8 +65,8 @@ Jeanne Dark (official) Female, DoB: 1960-05-30 ( Patient internal identifier: IP
       "valueCodeableConcept" : {
         "coding" : [{
           "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
-          "code" : "VIDE",
-          "display" : "Identité non encore qualifiée"
+          "code" : "DOUA",
+          "display" : "Doublon avéré"
         }]
       }
     },
@@ -74,8 +75,8 @@ Jeanne Dark (official) Female, DoB: 1960-05-30 ( Patient internal identifier: IP
       "valueCodeableConcept" : {
         "coding" : [{
           "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
-          "code" : "IDVER",
-          "display" : "Identité vérifiée par le patient"
+          "code" : "DESA",
+          "display" : "Identité désactivée"
         }]
       }
     }],
@@ -93,6 +94,7 @@ Jeanne Dark (official) Female, DoB: 1960-05-30 ( Patient internal identifier: IP
     "system" : "http://hopital.fr/namingsystem/ipp",
     "value" : "IPP-260-058"
   }],
+  "active" : false,
   "name" : [{
     "extension" : [{
       "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",

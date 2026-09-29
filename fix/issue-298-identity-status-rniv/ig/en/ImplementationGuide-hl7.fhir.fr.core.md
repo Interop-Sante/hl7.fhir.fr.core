@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-28T14:57:10+00:00",
+  "date" : "2026-09-29T08:00:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,7 +66,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.13.0"
+    "version" : "1.14.0"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -3344,7 +3344,7 @@
         "reference" : "Patient/FRCorePatientINSExampleRNIV"
       },
       "name" : "FRCorePatientINSExampleRNIV",
-      "description" : "Exemple de ressource Patient (cas d'usage INS) — jeu de données de référence RNIV, identité provisoire",
+      "description" : "Exemple de ressource Patient (cas d'usage INS) — jeu de données de référence RNIV, identité provisoire identifiée a posteriori comme doublon avéré et désactivée",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.2.0"
     },
     {

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-09-28T14:57:10+00:00",
+  "date" : "2026-09-29T08:00:45+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -391,7 +391,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
       "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20260730120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20260928120000"
       }
     }]
   }
