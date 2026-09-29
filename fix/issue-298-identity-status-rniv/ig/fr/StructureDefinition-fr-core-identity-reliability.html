@@ -366,7 +366,7 @@ ID d'élément:     <code>
 
 <p>Cette extension composite, positionnée sur <code class="language-plaintext highlighter-rouge">Patient</code>, permet de documenter le degré de confiance accordé à l’identité d’un patient ainsi que les éléments qui ont permis d’établir ce degré de confiance (mode d’obtention de l’INS, contrôle de cohérence, justificatif utilisé…).</p>
 
-<p>Elle regroupe 6 sous-extensions :</p>
+<p>Elle regroupe 7 sous-extensions :</p>
 
 <table class="table-is table-striped">
   <thead>
@@ -378,6 +378,12 @@ ID d'élément:     <code>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lastUpdated</code></td>
+      <td>1..1</td>
+      <td>Horodatage de la dernière mise à jour de cette instance de l’extension, permettant d’ordonner un historique lorsque plusieurs instances de <code class="language-plaintext highlighter-rouge">identityReliability</code> coexistent sur une même ressource</td>
+      <td><code class="language-plaintext highlighter-rouge">dateTime</code></td>
+    </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">methodCollection</code></td>
       <td>0..1</td>
@@ -423,7 +429,7 @@ ID d'élément:     <code>
 
 <h3 id="à-ne-pas-confondre--canal-de-capture-statut-de-confiance-et-pièce-justificative">À ne pas confondre : canal de capture, statut de confiance et pièce justificative</h3>
 
-<p>Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :</p>
+<p>Ces quatre sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">methodCollection</code> documente le <strong>canal de capture</strong> par lequel les traits d’identité ou le matricule INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant.
@@ -432,6 +438,17 @@ ID d'élément:     <code>
   <li><code class="language-plaintext highlighter-rouge">identityStatus</code> documente le <strong>statut de confiance</strong> résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet <a href="ValueSet-fr-core-vs-identity-status.html">fr-core-vs-identity-status</a>.</li>
   <li><code class="language-plaintext highlighter-rouge">validationMode</code> documente la <strong>pièce justificative à haut niveau de confiance</strong> contrôlée pour l’axe C± (carte nationale d’identité, passeport, Application carte Vitale…).</li>
 </ul>
+
+<h3 id="règles-de-cohérence-entre-identitystatus-et-comment-rniv-exi-si-09">Règles de cohérence entre <code class="language-plaintext highlighter-rouge">identityStatus</code> et <code class="language-plaintext highlighter-rouge">comment</code> (RNIV EXI SI 09)</h3>
+
+<p>Deux règles de cohérence s’appliquent entre le statut de confiance (<code class="language-plaintext highlighter-rouge">identityStatus</code>) et les attributs RNIV portés par <code class="language-plaintext highlighter-rouge">comment</code> :</p>
+
+<ul>
+  <li>Une identité comportant l’attribut Identité douteuse (<code class="language-plaintext highlighter-rouge">DOUT</code>) ou Identité fictive (<code class="language-plaintext highlighter-rouge">FICT</code>) dans <code class="language-plaintext highlighter-rouge">comment</code> doit obligatoirement avoir le statut de confiance <code class="language-plaintext highlighter-rouge">PROV</code> (Identité provisoire) — il est interdit de lui attribuer un autre statut ou d’interroger le téléservice INSi pour cette identité.</li>
+  <li>Les attributs Identité fictive (<code class="language-plaintext highlighter-rouge">FICT</code>) et Identité douteuse (<code class="language-plaintext highlighter-rouge">DOUT</code>) ne peuvent pas être cumulés dans <code class="language-plaintext highlighter-rouge">comment</code> sur une même identité.</li>
+</ul>
+
+<!-- Référence : RNIV 1 - Principes communs, v2.0 (décembre 2024), §3.2.3 "Attributs de l'identité", p.11-12/34 [EXI SI 09] -->
 
 
 </div>
@@ -659,7 +676,7 @@ Composite extension specifying the confidence level of a patient's identity per 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Value of extension</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b9009c7b-1323-4c61-8b55-d7940d9acab6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bdf6126a-7b7f-4a05-8eb5-c353502e634f
 document.getElementById('cbfr-core-identity-reliabilityD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-identity-reliabilityD'), 'binding', document.getElementById('cbfr-core-identity-reliabilityD-binding').checked, document.getElementById('ppfr-core-identity-reliabilityD'));
 document.getElementById('cbfr-core-identity-reliabilityD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -999,7 +1016,7 @@ Composite extension specifying the confidence level of a patient's identity per 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b9009c7b-1323-4c61-8b55-d7940d9acab6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bdf6126a-7b7f-4a05-8eb5-c353502e634f
 document.getElementById('cbfr-core-identity-reliabilityS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-identity-reliabilityS'), 'binding', document.getElementById('cbfr-core-identity-reliabilityS-binding').checked, document.getElementById('ppfr-core-identity-reliabilityS'));
 document.getElementById('cbfr-core-identity-reliabilityS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1423,7 +1440,7 @@ Composite extension specifying the confidence level of a patient's identity per 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Value of extension</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b9009c7b-1323-4c61-8b55-d7940d9acab6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bdf6126a-7b7f-4a05-8eb5-c353502e634f
 document.getElementById('cbfr-core-identity-reliabilityDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-identity-reliabilityDA'), 'binding', document.getElementById('cbfr-core-identity-reliabilityDA-binding').checked, document.getElementById('ppfr-core-identity-reliabilityDA'));
 document.getElementById('cbfr-core-identity-reliabilityDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1759,7 +1776,7 @@ Composite extension specifying the confidence level of a patient's identity per 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b9009c7b-1323-4c61-8b55-d7940d9acab6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // bdf6126a-7b7f-4a05-8eb5-c353502e634f
 document.getElementById('cbfr-core-identity-reliabilitySA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-identity-reliabilitySA'), 'binding', document.getElementById('cbfr-core-identity-reliabilitySA-binding').checked, document.getElementById('ppfr-core-identity-reliabilitySA'));
 document.getElementById('cbfr-core-identity-reliabilitySA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2060,7 +2077,7 @@ Composite extension specifying the confidence level of a patient's identity per 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-09-29 08:00:00 +0000">
+  <span title="2026-09-29 11:55:00 +0000">
     2026-09-29
   </span>
 

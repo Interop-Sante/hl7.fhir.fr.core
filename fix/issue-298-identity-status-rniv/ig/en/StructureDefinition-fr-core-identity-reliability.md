@@ -10,10 +10,11 @@ Extension composite précisant le degré de confiance de l’identité du patien
 
 Cette extension composite, positionnée sur `Patient`, permet de documenter le degré de confiance accordé à l’identité d’un patient ainsi que les éléments qui ont permis d’établir ce degré de confiance (mode d’obtention de l’INS, contrôle de cohérence, justificatif utilisé…).
 
-Elle regroupe 6 sous-extensions :
+Elle regroupe 7 sous-extensions :
 
 | | | | |
 | :--- | :--- | :--- | :--- |
+| `lastUpdated` | 1..1 | Horodatage de la dernière mise à jour de cette instance de l’extension, permettant d’ordonner un historique lorsque plusieurs instances de`identityReliability`coexistent sur une même ressource | `dateTime` |
 | `methodCollection` | 0..1 | Canal d’obtention des traits d’identité ou du matricule INS (saisie manuelle, carte Vitale, INSi, code à barre, RFID, Application carte Vitale) | [fr-core-vs-identity-method-collection](ValueSet-fr-core-vs-identity-method-collection.md) |
 | `dateInterrogationINSi` | 0..1 | Date d’interrogation du téléservice INSi | `date` |
 | `identityStatus` | 0..1 | Statut de confiance de l’identité au sens du RNIV (`PROV`,`RECUP`,`VALI`,`QUAL`) | [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md) |
@@ -27,12 +28,19 @@ Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) por
 
 ### À ne pas confondre : canal de capture, statut de confiance et pièce justificative
 
-Ces trois sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
+Ces quatre sous-extensions couvrent des axes distincts du RNIV et ne doivent pas être confondues :
 
 * `methodCollection` documente le **canal de capture** par lequel les traits d’identité ou le matricule INS ont été obtenus (RNIV §4.3) — c’est une information de traçabilité, elle ne détermine pas à elle seule le statut de confiance résultant. 
 * `dateInterrogationINSi` documente la **date d’interrogation du téléservice INSi** — renseignée chaque fois que le téléservice INSi est appelé, que ce soit par lecture de la carte Vitale ou par saisie directe des traits, sauf pour les usagers de l’Application carte Vitale et leurs ayants droit, pour lesquels le RNIV exclut explicitement cet appel.
 * `identityStatus` documente le **statut de confiance** résultant (RNIV EXI SI 07), croisement des axes I± (récupération INSi) et C± (contrôle de cohérence) — voir la page du ValueSet [fr-core-vs-identity-status](ValueSet-fr-core-vs-identity-status.md).
 * `validationMode` documente la **pièce justificative à haut niveau de confiance** contrôlée pour l’axe C± (carte nationale d’identité, passeport, Application carte Vitale…).
+
+### Règles de cohérence entre identityStatus et comment (RNIV EXI SI 09)
+
+Deux règles de cohérence s’appliquent entre le statut de confiance (`identityStatus`) et les attributs RNIV portés par `comment` :
+
+* Une identité comportant l’attribut Identité douteuse (`DOUT`) ou Identité fictive (`FICT`) dans `comment` doit obligatoirement avoir le statut de confiance `PROV` (Identité provisoire) — il est interdit de lui attribuer un autre statut ou d’interroger le téléservice INSi pour cette identité.
+* Les attributs Identité fictive (`FICT`) et Identité douteuse (`DOUT`) ne peuvent pas être cumulés dans `comment` sur une même identité.
 
 **Usage info**
 
@@ -64,7 +72,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-09-29T08:00:45+00:00",
+  "date" : "2026-09-29T11:55:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

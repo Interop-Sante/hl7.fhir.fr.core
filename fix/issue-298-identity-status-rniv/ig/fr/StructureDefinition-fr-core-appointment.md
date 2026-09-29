@@ -128,7 +128,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-appoint
   "name" : "FRCoreAppointmentProfile",
   "title" : "FR Core Appointment Profile",
   "status" : "active",
-  "date" : "2026-09-29T08:00:45+00:00",
+  "date" : "2026-09-29T11:55:38+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
