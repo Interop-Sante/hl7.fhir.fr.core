@@ -94,6 +94,12 @@ Ajout de 2 invariants sur `fr-core-identity-reliability`, pour rendre conforme l
 
 La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
 
+##### `identityReliability` obligatoire dans `FRCorePatientProfile`
+
+**[BREAKING CHANGE]** La cardinalité de la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` dans le profil de base `FRCorePatientProfile`, ce qui la rend obligatoire pour tous les profils qui en héritent (y compris `FRCorePatientINSProfile`) [#298](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298). Les attributs Identité douteuse (`DOUT`) et Identité fictive (`FICT`) de `comment`, combinés au statut `PROV` imposé par les invariants `fr-core-identity-reliability-1`/`-2`, permettent de qualifier les cas où le défaut de vérification n'est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s'identifier...) : aucune situation d'identitovigilance ne reste donc sans représentation possible malgré ce caractère désormais obligatoire.
+
+**Impact pour les implémenteurs** : toute ressource `Patient` (ou `FRCorePatientINS`) sans instance de `identityReliability` doit être mise à jour pour en porter au moins une (au minimum la sous-extension `lastUpdated`, déjà obligatoire au sein de l'extension).
+
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
 
