@@ -15,7 +15,7 @@ Description: "The validation mode of the identity authorized for INS"
 * fr-core-cs-mode-validation-identity#AV
 * fr-core-cs-mode-validation-identity#LECV
 * fr-core-cs-mode-validation-identity#AN
-* fr-core-cs-mode-validation-identity#LEP
+* fr-core-cs-mode-validation-identity#LE
 * fr-core-cs-mode-validation-identity#CC
 * fr-core-cs-mode-validation-identity#CIMS
 * fr-core-cs-mode-validation-identity#ANCV
