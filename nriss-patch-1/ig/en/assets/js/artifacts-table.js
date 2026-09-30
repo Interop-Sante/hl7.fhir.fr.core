@@ -1,3 +1,4 @@
+
 /*
  * Artifacts table (DataTables) — behaviour for includes/fragment-artifacts-table.html.
  *

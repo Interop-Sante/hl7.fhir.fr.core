@@ -37,7 +37,7 @@ The validation mode of the identity authorized for INS
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T15:04:56+00:00",
+  "date" : "2026-09-30T14:05:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -91,7 +91,7 @@ The validation mode of the identity authorized for INS
         "code" : "AN"
       },
       {
-        "code" : "LEP"
+        "code" : "LE"
       },
       {
         "code" : "CC"

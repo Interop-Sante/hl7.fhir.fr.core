@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T15:04:56+00:00",
+  "date" : "2026-09-30T14:05:20+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -59,7 +59,7 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 12,
+  "count" : 15,
   "concept" : [{
     "code" : "CN",
     "display" : "Carte nationale d'identité",
@@ -101,7 +101,7 @@ This Code system is referenced in the definition of the following value sets:
     "definition" : "Extrait d'acte de naissance"
   },
   {
-    "code" : "LEP",
+    "code" : "LE",
     "display" : "Livret de famille des parents",
     "definition" : "Livret de famille des parents"
   },
@@ -119,6 +119,21 @@ This Code system is referenced in the definition of the following value sets:
     "code" : "ANCV",
     "display" : "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie",
     "definition" : "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie"
+  },
+  {
+    "code" : "IE",
+    "display" : "Identification électronique EIDAS",
+    "definition" : "Identification électronique EIDAS"
+  },
+  {
+    "code" : "CM",
+    "display" : "Carte militaire",
+    "definition" : "Carte militaire"
+  },
+  {
+    "code" : "PC",
+    "display" : "Permis de conduire",
+    "definition" : "Permis de conduire"
   }]
 }
 
