@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Encounter type 
 
- 
-Jeu de valeurs des types de rencontre. A coded type for an encounter 
-
  **References** 
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
@@ -53,7 +50,7 @@ Jeu de valeurs des types de rencontre. A coded type for an encounter
   "title" : "FR Core ValueSet Encounter type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

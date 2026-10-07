@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Extension - Discipline Prestation 
 
-Discipline de prestation d’une UAC
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationDisciplinePrestationExtension",
   "title" : "FR Core Organization Extension - Discipline Prestation",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## Data Type Profile: FR Core Address Profile 
 
- 
-Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée. French profile of Address datatype 
-
 **Usages:**
 
 * Use this DataType Profile: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Death Place Extension](StructureDefinition-fr-core-patient-death-place.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md) and [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-address.c
   "name" : "FRCoreAddressProfile",
   "title" : "FR Core Address Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Patient Identity Reliability Extension 
 
-Extension composite précisant le degré de confiance de l’identité du patient au sens du Référentiel National d’Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d’obtention des traits d’identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient’s identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.
-
 **Context of Use**
 
 ### Usage
@@ -42,7 +40,7 @@ Deux règles de cohérence s’appliquent entre le statut de confiance (`identit
 * Une identité comportant l’attribut Identité douteuse (`DOUT`) ou Identité fictive (`FICT`) dans `comment` doit obligatoirement avoir le statut de confiance `PROV` (Identité provisoire) — il est interdit de lui attribuer un autre statut ou d’interroger le téléservice INSi pour cette identité.
 * Les attributs Identité fictive (`FICT`) et Identité douteuse (`DOUT`) ne peuvent pas être cumulés dans `comment` sur une même identité.
 
-Le statut `PROV` seul ne signale qu’une identité pas encore vérifiée, sans en préciser la cause. Les attributs `DOUT`/`FICT` permettent de qualifier les situations où ce défaut de vérification n’est pas une simple attente mais un problème identifié — identité douteuse (homonymie non résolue, incohérence des traits), identité fictive (patient anonyme, refusant de s’identifier, identité de test) : toute situation d’identitovigilance reste ainsi représentable, ce qui justifie le caractère désormais obligatoire de l’extension `identityReliability` sur `Patient`.
+Le statut `PROV` seul ne signale qu’une identité pas encore vérifiée, sans en préciser la cause. Les attributs `DOUT`/`FICT` permettent d’indiquer les situations où ce défaut de vérification n’est pas une simple attente mais un problème identifié — identité douteuse (homonymie non résolue, incohérence des traits), identité fictive (patient anonyme, refusant de s’identifier, identité de test) : toute situation d’identitovigilance reste ainsi représentable, ce qui justifie le caractère désormais obligatoire de l’extension `identityReliability` sur `Patient`.
 
 **Usage info**
 
@@ -78,7 +76,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension complexe: Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires. Composite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -115,7 +113,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Identity Reliability Extension",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -298,7 +296,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-identit
       "path" : "Extension.extension",
       "sliceName" : "comment",
       "short" : "Annotations complémentaires sur l’identité : attributs RNIV (homonyme, douteux, fictif) et codes de gestion (doublon, collision, désactivé…). Plusieurs annotations peuvent coexister.",
-      "definition" : "En particulier, les attributs Identité douteuse (DOUT) et Identité fictive (FICT), combinés au statut Identité provisoire (PROV) imposé par les invariants ci-dessous, permettent de qualifier les cas où l'absence de vérification n'est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s'identifier...) : toute situation d'identitovigilance reste ainsi représentable. | In particular, the Doubtful identity (DOUT) and Fictitious identity (FICT) attributes, combined with the mandatory Provisional identity (PROV) status required by the invariants below, make it possible to qualify cases where the lack of verification is not a mere pending state but an identified issue (unresolved homonymy, fictitious or anonymous identity, patient refusing to be identified...): every identity vigilance situation remains representable this way.",
+      "definition" : "En particulier, les attributs Identité douteuse (DOUT) et Identité fictive (FICT), combinés au statut Identité provisoire (PROV) imposé par les invariants ci-dessous, permettent d'indiquer les cas où l'absence de vérification n'est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s'identifier...) : toute situation d'identitovigilance reste ainsi représentable. | In particular, the Doubtful identity (DOUT) and Fictitious identity (FICT) attributes, combined with the mandatory Provisional identity (PROV) status required by the invariants below, make it possible to indicate cases where the lack of verification is not a mere pending state but an identified issue (unresolved homonymy, fictitious or anonymous identity, patient refusing to be identified...): every identity vigilance situation remains representable this way.",
       "min" : 0,
       "max" : "*"
     },

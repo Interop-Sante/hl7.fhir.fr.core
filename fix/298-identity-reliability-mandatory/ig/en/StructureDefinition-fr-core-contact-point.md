@@ -2,9 +2,6 @@
 
 ## Data Type Profile: FR Core Contact Point Profile 
 
- 
-Profil du type de données ContactPoint pour la France, ce profil ajoute le type d’e-mail tel que la bal mss. French profile of ContactPoint datatype 
-
 **Usages:**
 
 * Use this DataType Profile: [FR Core Healthcare Service Profile](StructureDefinition-fr-core-healthcare-service.md), [FR Core Organization Profile](StructureDefinition-fr-core-organization.md), [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)... Show 2 more, [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md) and [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-contact-p
   "name" : "FRCoreContactPointProfile",
   "title" : "FR Core Contact Point Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

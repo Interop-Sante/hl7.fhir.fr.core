@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Location Extension - Position du lit 
 
-Position du lit dans la chambre
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +36,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type Coding : Position du lit dans la chambre
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -73,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-locatio
   "name" : "FRCoreLocationPositionLitExtension",
   "title" : "FR Core Location Extension - Position du lit",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

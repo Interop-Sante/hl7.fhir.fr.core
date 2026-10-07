@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Medication Administration Inhaled Oxygen Profile 
 
- 
-Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation. 
-Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d’oxygène via une ventilation mécanique. 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
@@ -112,7 +108,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationAdministrationInhaledOxygenProfile",
   "title" : "FR Core Medication Administration Inhaled Oxygen Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

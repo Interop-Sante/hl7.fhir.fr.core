@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Marital Status ValueSet 
 
- 
-Patient Marital Status 
-
  **References** 
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
@@ -37,7 +34,7 @@ Patient Marital Status
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

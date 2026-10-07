@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Appointment Operator Extension 
 
-Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-appointme
   "name" : "FRCoreAppointmentOperatorExtension",
   "title" : "FR Core Appointment Operator Extension",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

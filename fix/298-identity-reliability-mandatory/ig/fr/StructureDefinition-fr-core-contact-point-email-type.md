@@ -2,10 +2,6 @@
 
 ## Extension: FR Core Contact Point Email Type Extension 
 
-Extension permettant d’indiquer le type d’adresse email d’un ContactPoint.
-
-This extension allows to specify the type of mail used to contact the person.
-
 **Context of Use**
 
 **Usage info**
@@ -42,7 +38,7 @@ Extension simple avec le type Coding : Extension permettant d'indiquer le type d
 
 This extension allows to specify the type of mail used to contact the person.
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -79,7 +75,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-contact
   "name" : "FRCoreContactPointEmailTypeExtension",
   "title" : "FR Core Contact Point Email Type Extension",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

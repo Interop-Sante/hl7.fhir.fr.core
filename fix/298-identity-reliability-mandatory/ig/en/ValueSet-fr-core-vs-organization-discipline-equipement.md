@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE 
 
- 
-Valeurs permettant de coder les disciplines d’équipement. 
-
  **References** 
 
 * [FR Core Organization Extension - Discipline d'équipement](StructureDefinition-fr-core-organization-discipline-equipement.md)
@@ -37,7 +34,7 @@ Valeurs permettant de coder les disciplines d’équipement.
   "title" : "FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

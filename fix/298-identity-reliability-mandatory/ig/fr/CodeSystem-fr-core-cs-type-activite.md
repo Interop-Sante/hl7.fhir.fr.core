@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Type d'activité - nomenclature SAE 
 
- 
-La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES. 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
 * [FR Core ValueSet Organization Type Activité - nomenclature SAE](ValueSet-fr-core-vs-oragnization-type-activite.md)
@@ -31,7 +28,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Type d'activité - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

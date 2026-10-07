@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem v2-3311 
 
- 
-HL7 v2 - Table 3311 
-
 This Code system is referenced in the definition of the following value sets:
 
 * This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-3311",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,14 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Identity method collection 
 
- 
-
-| | |
-| :--- | :--- |
-| Le canal par lequel les traits d’identité ou le matricule INS ont été obtenus | The channel used to collect the identity traits or the INS identifier |
-
- 
-
  **References** 
 
 * [FR Core Patient Identity Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
@@ -61,7 +53,7 @@ Ce ValueSet est utilisé avec un binding `extensible` dans la sous-extension `me
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

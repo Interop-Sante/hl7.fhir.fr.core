@@ -22,9 +22,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -175,7 +175,7 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+    <div><img class="flag" alt="flag English" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
@@ -338,7 +338,7 @@ FR Core Practitioner Role
           
 
             as of 
-2026-09-29
+2026-10-07
 
           
         
@@ -354,12 +354,12 @@ FR Core Practitioner Role
 
   </table>
 
-<p>
+<div data-fhir="generated">
 <p>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</p>
 
 <p>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation.</p>
 
-</p>
+</div>
 
 
 <!-- insert intro if present -->
@@ -507,7 +507,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-core-contact-point.html" title="ContactPoint">FRCoreContactPointProfile(2.2.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Details of a Technology mediated contact point | Coordonnées électroniques détaillées<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ff23b59f-f3ac-4289-8286-31a6c9b30c41
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5fb1af70-50d1-4cec-8aaf-37b28afc2c40
 document.getElementById('cbfr-core-practitioner-roleK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-practitioner-roleK'), 'binding', document.getElementById('cbfr-core-practitioner-roleK-binding').checked, document.getElementById('ppfr-core-practitioner-roleK'));
 document.getElementById('cbfr-core-practitioner-roleK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -681,7 +681,9 @@ filterDesc(document.getElementById('fr-core-practitioner-roleK'), 'obligation', 
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
-        <p></p>
+        <p>This structure is derived from 
+  <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-practitionerRole-eu-core.html">PractitionerRoleEuCore</a>
+</p>
         <div id="tbl-diff-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="fr-core-practitioner-roleD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('fr-core-practitioner-roleD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('fr-core-practitioner-roleD'), document.getElementById('ppfr-core-practitioner-roleD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppfr-core-practitioner-roleD">Bindings <input onClick="filterDesc(document.getElementById('fr-core-practitioner-roleD'), 'binding',event.target.checked, document.getElementById('ppfr-core-practitioner-roleD'))" size="1" name="binding" checked="true" id="cbfr-core-practitioner-roleD-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('fr-core-practitioner-roleD'), 'constraint',event.target.checked, document.getElementById('ppfr-core-practitioner-roleD'))" size="1" name="constraint" checked="true" id="cbfr-core-practitioner-roleD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('fr-core-practitioner-roleD'), 'obligation',event.target.checked, document.getElementById('ppfr-core-practitioner-roleD'))" size="1" name="obligation" checked="true" id="cbfr-core-practitioner-roleD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-practitioner-role-definitions.html#PractitionerRole" data-no-external="true">PractitionerRole</a><a name="PractitionerRole"> </a></td>
@@ -764,7 +766,7 @@ filterDesc(document.getElementById('fr-core-practitioner-roleK'), 'obligation', 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-core-contact-point.html" title="ContactPoint">FRCoreContactPointProfile(2.2.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Details of a Technology mediated contact point | Coordonnées électroniques détaillées</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ff23b59f-f3ac-4289-8286-31a6c9b30c41
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5fb1af70-50d1-4cec-8aaf-37b28afc2c40
 document.getElementById('cbfr-core-practitioner-roleD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-practitioner-roleD'), 'binding', document.getElementById('cbfr-core-practitioner-roleD-binding').checked, document.getElementById('ppfr-core-practitioner-roleD'));
 document.getElementById('cbfr-core-practitioner-roleD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1118,7 +1120,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Technical endpoints providing access to services operated for the practitioner with this role<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ff23b59f-f3ac-4289-8286-31a6c9b30c41
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5fb1af70-50d1-4cec-8aaf-37b28afc2c40
 document.getElementById('cbfr-core-practitioner-roleS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-practitioner-roleS'), 'binding', document.getElementById('cbfr-core-practitioner-roleS-binding').checked, document.getElementById('ppfr-core-practitioner-roleS'));
 document.getElementById('cbfr-core-practitioner-roleS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1468,7 +1470,9 @@ Not handled yet: complex extension 'Not handled yet: complex extension https://h
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
       <div id="tbl-summ">
-        <p></p>
+        <p>This structure is derived from 
+  <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-practitionerRole-eu-core.html">PractitionerRoleEuCore</a>
+</p>
         <div id="tbl-summ-inner">
           <a name="summary"> </a>
           <a name="s-summary"> </a>
@@ -1596,7 +1600,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-core-contact-point.html" title="ContactPoint">FRCoreContactPointProfile(2.2.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Details of a Technology mediated contact point | Coordonnées électroniques détaillées<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ff23b59f-f3ac-4289-8286-31a6c9b30c41
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5fb1af70-50d1-4cec-8aaf-37b28afc2c40
 document.getElementById('cbfr-core-practitioner-roleKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-practitioner-roleKA'), 'binding', document.getElementById('cbfr-core-practitioner-roleKA-binding').checked, document.getElementById('ppfr-core-practitioner-roleKA'));
 document.getElementById('cbfr-core-practitioner-roleKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1769,7 +1773,9 @@ filterDesc(document.getElementById('fr-core-practitioner-roleKA'), 'obligation',
         <p>
           <b>Differential View</b>
         </p>
-        <p></p>
+        <p>This structure is derived from 
+  <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-practitionerRole-eu-core.html">PractitionerRoleEuCore</a>
+</p>
         <div id="all-tbl-diff-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="fr-core-practitioner-roleDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('fr-core-practitioner-roleDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('fr-core-practitioner-roleDA'), document.getElementById('ppfr-core-practitioner-roleDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppfr-core-practitioner-roleDA">Bindings <input onClick="filterDesc(document.getElementById('fr-core-practitioner-roleDA'), 'binding',event.target.checked, document.getElementById('ppfr-core-practitioner-roleDA'))" size="1" name="binding" checked="true" id="cbfr-core-practitioner-roleDA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('fr-core-practitioner-roleDA'), 'constraint',event.target.checked, document.getElementById('ppfr-core-practitioner-roleDA'))" size="1" name="constraint" checked="true" id="cbfr-core-practitioner-roleDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('fr-core-practitioner-roleDA'), 'obligation',event.target.checked, document.getElementById('ppfr-core-practitioner-roleDA'))" size="1" name="obligation" checked="true" id="cbfr-core-practitioner-roleDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-core-practitioner-role-definitions.html#PractitionerRole" data-no-external="true">PractitionerRole</a><a name="a-PractitionerRole"> </a></td>
@@ -1852,7 +1858,7 @@ filterDesc(document.getElementById('fr-core-practitioner-roleKA'), 'obligation',
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-core-contact-point.html" title="ContactPoint">FRCoreContactPointProfile(2.2.0)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Details of a Technology mediated contact point | Coordonnées électroniques détaillées</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ff23b59f-f3ac-4289-8286-31a6c9b30c41
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5fb1af70-50d1-4cec-8aaf-37b28afc2c40
 document.getElementById('cbfr-core-practitioner-roleDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-practitioner-roleDA'), 'binding', document.getElementById('cbfr-core-practitioner-roleDA-binding').checked, document.getElementById('ppfr-core-practitioner-roleDA'));
 document.getElementById('cbfr-core-practitioner-roleDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2203,7 +2209,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Technical endpoints providing access to services operated for the practitioner with this role<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ff23b59f-f3ac-4289-8286-31a6c9b30c41
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5fb1af70-50d1-4cec-8aaf-37b28afc2c40
 document.getElementById('cbfr-core-practitioner-roleSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-core-practitioner-roleSA'), 'binding', document.getElementById('cbfr-core-practitioner-roleSA-binding').checked, document.getElementById('ppfr-core-practitioner-roleSA'));
 document.getElementById('cbfr-core-practitioner-roleSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2548,7 +2554,9 @@ Not handled yet: complex extension 'Not handled yet: complex extension https://h
       </div>-->
 
       <div id="all-summ">
-        <p></p>
+        <p>This structure is derived from 
+  <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-practitionerRole-eu-core.html">PractitionerRoleEuCore</a>
+</p>
         <div id="all-summ-inner">
           <a name="a-summary"> </a>
 <p><b>
@@ -2647,8 +2655,8 @@ Summary
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-29 12:37:00 +0000">
-    2026-09-29
+  <span title="2026-10-07 07:07:00 +0000">
+    2026-10-07
   </span>
 
           <br/>

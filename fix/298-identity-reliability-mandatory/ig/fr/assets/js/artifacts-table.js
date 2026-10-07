@@ -1,3 +1,4 @@
+
 /*
  * Artifacts table (DataTables) — behaviour for includes/fragment-artifacts-table.html.
  *
@@ -30,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function(){
   var typeLabel        = labels.type        || 'Type';
   var categoryLabel    = labels.category    || 'Category';
   var clearAllLabel    = labels.clearAll    || 'Clear all';
+  var linkLabel        = labels.linkToSection || 'Link to this section';
+
+  // Chain-link glyph for the group self-links; drawn in currentColor so it follows the header text.
+  var LINK_ICON =
+    '<svg class="artifacts-link-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">' +
+    '<path fill="currentColor" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"/>' +
+    '</svg>';
 
   // Column model. Data keys: p=grouping position, g=grouping label, n=title, i=id, t=type, d=description.
   var columnDefs = [
@@ -70,6 +78,15 @@ document.addEventListener('DOMContentLoaded', function(){
     var s = new Set(), out = [];
     data.slice().sort(function(a,b){ return a.p - b.p; }).forEach(function(r){
       if (r.g && !s.has(r.g)) { s.add(r.g); out.push(r.g); }
+    });
+    return out;
+  })();
+
+  // Grouping ids, in table order — these are the section anchors used by artifacts.html#<groupingId>
+  var groupIds = (function(){
+    var s = new Set(), out = [];
+    data.slice().sort(function(a,b){ return a.p - b.p; }).forEach(function(r){
+      if (r.gid && !s.has(r.gid)) { s.add(r.gid); out.push(r.gid); }
     });
     return out;
   })();
@@ -258,12 +275,25 @@ document.addEventListener('DOMContentLoaded', function(){
         dataSrc: 'g',
         startRender: function(rows, group){
           var first = rows.data().toArray()[0];
+          var gid = first && first.gid;
           var desc = first && groupDescriptions[first.gid];
           var $header = jQuery('<tr/>').append(
             jQuery('<td/>').attr('colspan', VISIBLE_COLS).addClass('artifacts-group-header')
           );
           var $cell = $header.find('td');
-          jQuery('<div/>').addClass('artifacts-group-name').text(group).appendTo($cell);
+          // The grouping id doubles as the section anchor, so artifacts.html#<groupingId>
+          // links to this section the same way the stock artifacts page does.
+          if (gid) $header.attr('id', gid);
+          var $name = jQuery('<div/>').addClass('artifacts-group-name').text(group).appendTo($cell);
+          if (gid) {
+            var anchor = document.createElement('a');
+            anchor.className = 'artifacts-group-anchor';
+            anchor.setAttribute('href', '#' + encodeURIComponent(gid));
+            anchor.setAttribute('title', linkLabel);
+            anchor.setAttribute('aria-label', linkLabel);
+            anchor.innerHTML = LINK_ICON;
+            $name[0].appendChild(anchor);
+          }
           if (desc) {
             jQuery('<div/>').addClass('artifacts-group-desc').html(desc).appendTo($cell);
           }
@@ -317,6 +347,67 @@ document.addEventListener('DOMContentLoaded', function(){
   jQuery(document).on('draw.dt', '#artifactsTable', saveState);
 
   renderTable(grouping, initialView);
+
+  // ----- Deep links: artifacts.html#<groupingId> -----
+  // Resolve a URL fragment to a grouping id (exact match first, then case-insensitive).
+  function resolveGroupId(hash){
+    var h = String(hash || '').replace(/^#/, '');
+    if (!h) return null;
+    try { h = decodeURIComponent(h); } catch(e) {}
+    if (groupIds.indexOf(h) !== -1) return h;
+    var lower = h.toLowerCase();
+    for (var i = 0; i < groupIds.length; i++) {
+      if (groupIds[i].toLowerCase() === lower) return groupIds[i];
+    }
+    return null;
+  }
+
+  function scrollToGroup(gid){
+    var el = document.getElementById(gid);
+    if (!el) return false;
+    var top = el.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 12;
+    window.scrollTo(0, top > 0 ? top : 0);
+    jQuery(el).addClass('artifacts-group-target');
+    window.setTimeout(function(){ jQuery(el).removeClass('artifacts-group-target'); }, 2500);
+    return true;
+  }
+
+  function hasActiveFilter(){
+    if (selectedTypes.length || selectedCategories.length) return true;
+    for (var i = 0; i < TEXT_FILTER_KEYS.length; i++) {
+      if (colTextFilters[TEXT_FILTER_KEYS[i]]) return true;
+    }
+    return false;
+  }
+
+  // Show the requested section: a filtered or ungrouped view may not contain it, so clear the
+  // filters and switch grouping back on, then page to the group's first row and scroll to it.
+  function goToGroup(gid){
+    if (!grouping || hasActiveFilter()) {
+      grouping = true;
+      selectedTypes = [];
+      selectedCategories = [];
+      TEXT_FILTER_KEYS.forEach(function(k){ delete colTextFilters[k]; });
+      renderTable(grouping, {});
+    }
+    var idxs = table.rows({ order: 'applied', search: 'applied' }).indexes().toArray();
+    var pos = -1;
+    for (var i = 0; i < idxs.length; i++) {
+      if (table.row(idxs[i]).data().gid === gid) { pos = i; break; }
+    }
+    if (pos === -1) return false;
+    var len = table.page.len();
+    var pg = (len > 0) ? Math.floor(pos / len) : 0;
+    if (pg !== table.page.info().page) table.page(pg).draw(false);
+    return scrollToGroup(gid);
+  }
+
+  function handleHash(){
+    var gid = resolveGroupId(window.location.hash);
+    if (gid) goToGroup(gid);
+  }
+  handleHash();
+  jQuery(window).on('hashchange', handleHash);
 
   // ----- Document-delegated handlers (survive table rebuilds) -----
 

@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Identity Status Comment 
 
- 
-CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d’une identité. Ces codes sont destinés à être utilisés dans l’élément identityReliabilityComment de l’extension FRCoreExtensionIdentityReliability. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Identity Status Comment](ValueSet-fr-core-vs-identity-status-comment.md)
@@ -35,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Identity Status Comment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

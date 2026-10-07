@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Short Name Extension 
 
-Libellé court de l’organisation
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationShortNameExtension",
   "title" : "FR Core Organization Short Name Extension",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

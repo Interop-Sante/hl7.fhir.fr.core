@@ -2,9 +2,6 @@
 
 ## ValueSet: Respiratory Rate Measurement Method value set 
 
- 
-SELECT SNOMED CT code system values that describe how the respiratory rate was measured. 
-
  **References** 
 
 * [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md)
@@ -36,7 +33,7 @@ SELECT SNOMED CT code system values that describe how the respiratory rate was m
   "title" : "Respiratory Rate Measurement Method value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Patient Profile 
 
- 
-Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
-Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) 
-
 **Utilisations:**
 
 * Dérivé de ce Profil: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
@@ -149,7 +145,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

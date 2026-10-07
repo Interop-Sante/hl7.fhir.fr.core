@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Extension - Indicateur d'une unité fonctionnelle 
 
-Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +36,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type base64Binary, boolean, canonical, code, date, dateTime, decimal, id, instant, integer, markdown, oid, positiveInt, string, time, unsignedInt, uri, url, uuid, Address, Age, Annotation, Attachment, CodeableConcept, Coding, ContactPoint, Count, Distance, Duration, HumanName, Identifier, Money, Period, Quantity, Range, Ratio, Reference, SampledData, Signature, Timing, ContactDetail, Contributor, DataRequirement, Expression, ParameterDefinition, RelatedArtifact, TriggerDefinition, UsageContext, Dosage, Meta : Indicateur permettant de définir si une UF est d'hébergement, médicale, administrative ou de magasin.
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -73,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationUFIndicateurExtension",
   "title" : "FR Core Organization Extension - Indicateur d'une unité fonctionnelle",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

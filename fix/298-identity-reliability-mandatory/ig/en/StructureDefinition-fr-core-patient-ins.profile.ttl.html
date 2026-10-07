@@ -26,9 +26,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -179,7 +179,7 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+    <div><img class="flag" alt="flag English" src="assets/images/lang-en.png"/>English</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
@@ -316,7 +316,7 @@ TTL Profile
           
 
             as of 
-2026-09-29
+2026-10-07
 
           
         
@@ -357,7 +357,7 @@ TTL Profile
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FRCorePatientINSProfile&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FR Core Patient INS Profile&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-09-29T12:37:34+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-10-07T07:07:43+00:00&quot;^^xsd:dateTime] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:StructureDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Interop'Santé&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:StructureDefinition.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -3960,7 +3960,7 @@ TTL Profile
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient.extension.extension&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;comment&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Annotations complémentaires sur l’identité : attributs RNIV (homonyme, douteux, fictif) et codes de gestion (doublon, collision, désactivé…). Plusieurs annotations peuvent coexister.&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;En particulier, les attributs Identité douteuse (DOUT) et Identité fictive (FICT), combinés au statut Identité provisoire (PROV) imposé par les invariants ci-dessous, permettent de qualifier les cas où l'absence de vérification n'est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s'identifier...) : toute situation d'identitovigilance reste ainsi représentable. | In particular, the Doubtful identity (DOUT) and Fictitious identity (FICT) attributes, combined with the mandatory Provisional identity (PROV) status required by the invariants below, make it possible to qualify cases where the lack of verification is not a mere pending state but an identified issue (unresolved homonymy, fictitious or anonymous identity, patient refusing to be identified...): every identity vigilance situation remains representable this way.&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;En particulier, les attributs Identité douteuse (DOUT) et Identité fictive (FICT), combinés au statut Identité provisoire (PROV) imposé par les invariants ci-dessous, permettent d'indiquer les cas où l'absence de vérification n'est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s'identifier...) : toute situation d'identitovigilance reste ainsi représentable. | In particular, the Doubtful identity (DOUT) and Fictitious identity (FICT) attributes, combined with the mandatory Provisional identity (PROV) status required by the invariants below, make it possible to indicate cases where the lack of verification is not a mere pending state but an identified issue (unresolved homonymy, fictitious or anonymous identity, patient refusing to be identified...): every identity vigilance situation remains representable this way.&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;*&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
@@ -13767,8 +13767,8 @@ TTL Profile
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-29 12:37:00 +0000">
-    2026-09-29
+  <span title="2026-10-07 07:07:00 +0000">
+    2026-10-07
   </span>
 
           <br/>

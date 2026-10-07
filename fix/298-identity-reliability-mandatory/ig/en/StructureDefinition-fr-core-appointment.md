@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Appointment Profile 
 
- 
-Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment. 
-Profil de la ressource Appointment pour la France. Ce profil ajoute l’opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV. 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
@@ -34,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-appointme
   "name" : "FRCoreAppointmentProfile",
   "title" : "FR Core Appointment Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

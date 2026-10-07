@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Identity Status 
 
- 
-Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ces statuts sont exclusifs les uns des autres. 
-
  **References** 
 
 * [FR Core Patient Identity Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
@@ -37,7 +34,7 @@ Les 4 statuts de confiance de l’identité définis par le RNIV [EXI SI 07]. Ce
   "title" : "FR Core ValueSet Identity Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

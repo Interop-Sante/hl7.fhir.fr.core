@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem v2-0203 
 
- 
-HL7 v2 - Identifier type 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
 * [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md)
@@ -33,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

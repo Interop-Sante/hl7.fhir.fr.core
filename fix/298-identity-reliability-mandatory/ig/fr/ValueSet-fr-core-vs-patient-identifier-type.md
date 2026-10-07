@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Patient identifier type 
 
- 
-A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (identification of a patient). 
-
  **References** 
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
@@ -37,7 +34,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Patient identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

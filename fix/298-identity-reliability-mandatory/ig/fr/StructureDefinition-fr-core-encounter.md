@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Encounter Profile 
 
- 
-This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. 
-Ce profil de la ressource Encounter sert à la fois à définir la venue dans l’établissement et à représenter les mouvements du patient qui découpent cette venue. 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md), [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md)... Show 6 more, [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
@@ -136,7 +132,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

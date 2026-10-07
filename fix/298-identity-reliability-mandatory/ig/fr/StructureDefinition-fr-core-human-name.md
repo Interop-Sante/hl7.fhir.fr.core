@@ -2,9 +2,6 @@
 
 ## Profil du type de données: FR Core Human Name Profile 
 
- 
-Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix .French profile of datatype HumanName with constraints on prefix and suffix 
-
 **Utilisations:**
 
 * Utilise ce/t/te profil de type de données: [FR Core Patient Profile](StructureDefinition-fr-core-patient.md), [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md) and [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md)
@@ -88,7 +85,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-human-n
   "name" : "FRCoreHumanNameProfile",
   "title" : "FR Core Human Name Profile",
   "status" : "active",
-  "date" : "2026-09-29T12:37:34+00:00",
+  "date" : "2026-10-07T07:07:43+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
