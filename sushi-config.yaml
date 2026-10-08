@@ -13,10 +13,10 @@ contact:
         value: fhir@interopsante.org
         use: work
 status: active
-version: 2.2.0
+version: 3.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: ci-build
+releaseLabel: ballot
 jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
@@ -49,12 +49,8 @@ parameters:
 pages:
     index.md:
       title: Accueil
-    profile_list.md:
-      title: Liste des profils
     bonnes_pratiques.md:
       title: Bonnes pratiques d'usage du guide d'implémentation
-    known_problems.md:
-      title: Problématiques connues
     autres_ressources.md:
       title: Autres Ressources
     downloads.md:
@@ -87,11 +83,9 @@ menu:
         Contraintes: structure_contraintes.html
         Nomenclatures: structure_nomenclatures.html
         Références: structure_ref_loi.html
-    Liste des profils: profile_list.html
     Ressources de conformité: artifacts.html
     
     Bonnes pratiques: bonnes_pratiques.html
-    Problématiques connues: known_problems.html
     Historique: change_notes.html
     Autres ressources:
         Téléchargements et usage: downloads.html
@@ -105,3 +99,51 @@ menu:
 instanceOptions:
   setMetaProfile: always # Determines for which types of Instances SUSHI will automatically set meta.profile if InstanceOf references a profile
   setId: always # Determines for which types of Instances SUSHI will automatically set id if InstanceOf references a profile
+
+groups:
+  structures-etablissements:
+    name: "Structures: Profils des structures des établissements"
+    description: Profils relatifs aux structures, sites et unités organisationnelles des établissements de santé.
+    resources:
+      - FRCoreLocationProfile
+      - FRCoreOrganizationProfile
+      - FRCoreOrganizationEtablissementProfile
+      - FRCoreOrganizationUACProfile
+      - FRCoreOrganizationUFProfile
+  profils-administratifs:
+    name: "Structures: Profils administratifs"
+    description: Profils relatifs aux acteurs, patients et structures de prise en charge.
+    resources:
+      - FRCorePatientProfile
+      - FRCorePatientINSProfile
+      - FRCorePractitionerProfile
+      - FRCorePractitionerRoleProfile
+      - FRCoreRelatedPersonProfile
+      - FRCoreEncounterProfile
+      - FRCoreHealthcareServiceProfile
+  mesures-sante:
+    name: "Structures: Profils des mesures de santé (vital signs)"
+    description: Profils de mesures physiologiques et signes vitaux.
+    resources:
+      - FRCoreObservationBpProfile
+      - FRCoreObservationBmiProfile
+      - FRCoreObservationBodyHeightProfile
+      - FRCoreObservationBodyTemperatureProfile
+      - FRCoreObservationBodyWeightProfile
+      - FRCoreObservationHeadCircumProfile
+      - FRCoreObservationHeartRateProfile
+      - FRCoreObservationOxygenSaturationProfile
+      - FRCoreObservationRespRateProfile
+  profils-agenda:
+    name: "Structures: Profils agenda"
+    description: Profils relatifs à la prise de rendez-vous.
+    resources:
+      - FRCoreScheduleProfile
+      - FRCoreSlotProfile
+      - FRCoreAppointmentProfile
+  autres-profils:
+    name: "Structures: Autres profils"
+    description: Profils de ressources ne relevant pas des autres catégories.
+    resources:
+      - FRCoreConsentProfile
+      - FRCoreMedicationAdministrationInhaledOxygenProfile

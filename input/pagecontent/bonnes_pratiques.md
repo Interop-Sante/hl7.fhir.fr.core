@@ -75,3 +75,12 @@ Sauf exception, l'ensemble des ressources de conformité de ce guide sont modél
 ### Plus d'informations
 
 Vous trouverez davantage d'informations autour des pratiques d'implémentation et de modélisation des guides d'implémentation sur l'[IG Documentation](https://interop.esante.gouv.fr/ig/documentation) de l'Agence du Numérique en Santé.
+
+### Problématiques connues
+
+Les problématiques connues nécessitent le retour de l'écosystème, n'hésitez pas à remonter de nouvelles problématiques ou à faire des retours sur ces problématiques [sur GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues).
+
+* Le guide contient un grand nombre d'extensions, il est probable qu'un certain nombre d'entre elles puissent être supprimées pour être remplacées par : d'autres ressources, des attributs ajoutés dans R5/R6, d'autres champs natifs ...
+* Relicats historiques d'OID qui doivent être remplacés par des URL canoniques
+* Certains profils et extensions n'ont pas d'exemples associés
+* Les artifacts terminologiques ne sont pas uniformisés parmi tous les standards d'InteropSanté
