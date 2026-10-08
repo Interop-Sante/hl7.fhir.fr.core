@@ -11,5 +11,5 @@ Description: "Exemple de ressource Observation pour décrire un indice de masse 
 * valueQuantity.code = #kg/m2
 * valueQuantity.unit = "Kg/m2"
 * valueQuantity.system = $UCUM
-* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "Anormalement haut"
 
