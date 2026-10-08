@@ -123,7 +123,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationBmiProfile",
   "title" : "FR Core Observation Bmi Profile",
   "status" : "active",
-  "date" : "2026-10-08T12:38:27+00:00",
+  "date" : "2026-10-08T12:57:02+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

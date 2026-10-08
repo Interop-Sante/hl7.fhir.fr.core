@@ -52,7 +52,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Availability Schedule",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-08T12:38:27+00:00",
+  "date" : "2026-10-08T12:57:02+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
