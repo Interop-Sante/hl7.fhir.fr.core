@@ -14,6 +14,7 @@
     * Ajout de 5 nouveaux exemples : `FRCorePatientDeceasedExample`, `FRCoreRelatedPersonExample`, `FRCoreObservationRespRateExample`, `FRCoreMedicationAdministrationInhaledOxygenExample`, `FRCoreObservationOxygenSaturationExample`
     * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
     * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
+* Ajout du profil `FRCoreConsentProfile` (`fr-core-consent`) et de l'exemple `FRCoreConsentExample` [#347](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/347)
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
