@@ -1,0 +1,70 @@
+# FR Core ValueSet Organization Type Activité - nomenclature SAE - Guide d'implémentation FR Core v3.0.0-ballot
+
+## ValueSet: FR Core ValueSet Organization Type Activité - nomenclature SAE 
+
+ **References** 
+
+* [FR Core Organization Extension - Type d'activité](StructureDefinition-fr-core-organization-type-activite.md)
+
+### Définition logique (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-core-vs-oragnization-type-activite",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+  },
+  "language" : "fr-FR",
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-oragnization-type-activite",
+  "version" : "3.0.0-ballot",
+  "name" : "FRCoreValueSetOrganizationTypeActivite",
+  "title" : "FR Core ValueSet Organization Type Activité - nomenclature SAE",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-08T15:58:11+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Valeurs permettant de coder les types d'activité.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite",
+      "version" : "3.0.0-ballot"
+    }]
+  }
+}
+
+```
