@@ -12,7 +12,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-10-08T15:58:11+00:00"/>
+  <date value="2026-10-08T18:40:11+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -656,6 +656,26 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="structures-etablissements">
+      <name value="Les profils structures des établissements"/>
+      <description value="Profils relatifs aux structures, sites et unités organisationnelles des établissements de santé."/>
+    </grouping>
+    <grouping id="profils-administratifs">
+      <name value="Les profils administratifs"/>
+      <description value="Profils relatifs aux acteurs, patients et structures de prise en charge."/>
+    </grouping>
+    <grouping id="mesures-sante">
+      <name value="Les profils mesures de santé (vital signs)"/>
+      <description value="Profils de mesures physiologiques et signes vitaux."/>
+    </grouping>
+    <grouping id="profils-agenda">
+      <name value="Les profils agenda"/>
+      <description value="Profils relatifs à la prise de rendez-vous."/>
+    </grouping>
+    <grouping id="autres-profils">
+      <name value="Les autres profils"/>
+      <description value="Profils de ressources ne relevant pas des autres catégories."/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
@@ -743,6 +763,7 @@
       <name value="FR Core Appointment Profile"/>
       <description value="Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.&#xD;&#xA;&#xA;Profil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-agenda"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1062,6 +1083,7 @@
       <name value="FR Core Consent Profile"/>
       <description value="Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.&#xD;&#xA;&#xA;Profil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données."/>
       <exampleBoolean value="false"/>
+      <groupingId value="autres-profils"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1106,6 +1128,7 @@
       <name value="FR Core Encounter Profile"/>
       <description value="This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.&#xD;&#xA;&#xA;Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1117,6 +1140,7 @@
       <name value="FR Core Healthcare Service Profile"/>
       <description value="Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).&#xD;&#xA;&#xA;Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror)."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1161,6 +1185,7 @@
       <name value="FR Core Location Profile"/>
       <description value="Ressource Location adaptée au contexte français. &#xA;Cette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, &#xA;un lit d'hôpital ou une chambre d'hôpital."/>
       <exampleBoolean value="false"/>
+      <groupingId value="structures-etablissements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1183,6 +1208,7 @@
       <name value="FR Core Medication Administration Inhaled Oxygen Profile"/>
       <description value="Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.&#xD;&#xA;&#xA;Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique."/>
       <exampleBoolean value="false"/>
+      <groupingId value="autres-profils"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1194,6 +1220,7 @@
       <name value="FR Core Observation Blood Pressure Profile"/>
       <description value="French profile for blood pressure.&#xD;&#xA;&#xA;Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1205,6 +1232,7 @@
       <name value="FR Core Observation Bmi Profile"/>
       <description value="French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].&#xD;&#xA;&#xA;Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1216,6 +1244,7 @@
       <name value="FR Core Observation Body Height Profile"/>
       <description value="French profile for body height.&#xD;&#xA;&#xA;Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1238,6 +1267,7 @@
       <name value="FR Core Observation Body Temperature Profile"/>
       <description value="French profile for body temperature.&#xD;&#xA;&#xA;Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1249,6 +1279,7 @@
       <name value="FR Core Observation Body Weight Profile"/>
       <description value="French profile of body weight based on the FHIR profil BodyWeightMeas.&#xD;&#xA;&#xA;Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1260,6 +1291,7 @@
       <name value="FR Core Observation Head Circum Profile"/>
       <description value="French profile for Occipital-frontal circumference.&#xD;&#xA;&#xA;Profil HL7 Vital Signs Circonférence de la tête"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1271,6 +1303,7 @@
       <name value="FR Core Observation Heart Rate Profile"/>
       <description value="French profile for the FHIR Vital Sign Heart Rate Profile.&#xD;&#xA;&#xA;Profilage français du profil Vital Signs Heart rate"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1304,6 +1337,7 @@
       <name value="FR Core Observation Oxygen Saturation Profile"/>
       <description value="French profile for Oxygen saturation in Arterial blood.&#xD;&#xA;&#xA;Profil de la saturation en oxygène du sang artériel."/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1315,6 +1349,7 @@
       <name value="FR Core Observation Respiratory Rate Profile"/>
       <description value="French profile for the ObservationResprate profile for France.&#xD;&#xA;&#xA;Profil de la fréquence resporatoire pour l'usage en France"/>
       <exampleBoolean value="false"/>
+      <groupingId value="mesures-sante"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1326,6 +1361,7 @@
       <name value="FR Core Organization Etablissement Profile"/>
       <description value="Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux."/>
       <exampleBoolean value="false"/>
+      <groupingId value="structures-etablissements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1469,6 +1505,7 @@
       <name value="FR Core Organization Profile"/>
       <description value="Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France."/>
       <exampleBoolean value="false"/>
+      <groupingId value="structures-etablissements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1502,6 +1539,7 @@
       <name value="FR Core Organization UAC Profile"/>
       <description value="Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation."/>
       <exampleBoolean value="false"/>
+      <groupingId value="structures-etablissements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1513,6 +1551,7 @@
       <name value="FR Core Organization UF Profile"/>
       <description value="Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement."/>
       <exampleBoolean value="false"/>
+      <groupingId value="structures-etablissements"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1590,6 +1629,7 @@
       <name value="FR Core Patient INS Profile"/>
       <description value="FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.&#xD;&#xA;&#xA;Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1601,6 +1641,7 @@
       <name value="FR Core Patient Profile"/>
       <description value="Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.&#xD;&#xA;&#xA;Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1612,6 +1653,7 @@
       <name value="FR Core Practitioner Profile"/>
       <description value="Profil de la ressource Practitionner pour la France."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1623,6 +1665,7 @@
       <name value="FR Core Practitioner Role"/>
       <description value="Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization&#xD;&#xA;&#xA;Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1645,6 +1688,7 @@
       <name value="FR Core Related Person Profile"/>
       <description value="Profile of the RelatedPerson resource for France.&#xD;&#xA;&#xA;Profil de la ressource RelatedPerson pour l'usage en France"/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-administratifs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1667,6 +1711,7 @@
       <name value="FR Core Schedule Profile"/>
       <description value="Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule&#xD;&#xA;&#xA;Profil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation."/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-agenda"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1689,6 +1734,7 @@
       <name value="FR Core Slot Profile"/>
       <description value="Profil of the Slot resource for France.&#xD;&#xA;&#xA;Profil de la ressource Slot pour la France"/>
       <exampleBoolean value="false"/>
+      <groupingId value="profils-agenda"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2638,14 +2684,6 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Accueil"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="profile_list.html"/>
-        </extension>
-        <nameUrl value="profile_list.html"/>
-        <title value="Liste des profils"/>
         <generation value="markdown"/>
       </page>
       <page>

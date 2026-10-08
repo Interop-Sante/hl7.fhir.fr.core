@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -121,9 +121,6 @@
         <a href="structure_ref_loi.html">Références</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="profile_list.html">Liste des profils</a>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
@@ -250,7 +247,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="release-300-de-limplementation-guide-frcore"><a name="l436">​</a><a href="https://hl7.fr/ig/fhir/core/3.0.0">Release 3.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-300-de-limplementation-guide-frcore"><a name="l430">​</a><a href="https://hl7.fr/ig/fhir/core/3.0.0">Release 3.0.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1">Modifications apportées dans la release 3.0.0</a> :</p>
 
 <ul>
@@ -275,7 +272,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Mise à jour des modes de validation de l’identité : ajout des codes <code class="language-plaintext highlighter-rouge">AV</code> (Application Carte Vitale), <code class="language-plaintext highlighter-rouge">eCN</code> (e-carte d’identité), <code class="language-plaintext highlighter-rouge">IN</code> (Identité Numérique La Poste), <code class="language-plaintext highlighter-rouge">LECV</code>, <code class="language-plaintext highlighter-rouge">LEP</code>, <code class="language-plaintext highlighter-rouge">CIMS</code> ; suppression des codes <code class="language-plaintext highlighter-rouge">DC</code>, <code class="language-plaintext highlighter-rouge">TC</code>, <code class="language-plaintext highlighter-rouge">CE</code> ; renommage de <code class="language-plaintext highlighter-rouge">AN</code> en <code class="language-plaintext highlighter-rouge">ANCV</code> ; bascule des codes <code class="language-plaintext highlighter-rouge">IE</code>, <code class="language-plaintext highlighter-rouge">CM</code>, <code class="language-plaintext highlighter-rouge">PC</code> vers la catégorie “Autres modes de validation” <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/301">#301</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/343">#343</a></li>
   <li>Page à propos : ajout d’une section “Cycle de vie” conforme à la doctrine CI-SIS (avec la note sur les évolutions à venir empêchant le passage au statut <code class="language-plaintext highlighter-rouge">final-text</code> mise en valeur dans un encadré dédié), correction du statut dans <code class="language-plaintext highlighter-rouge">publication-request.json</code> (<code class="language-plaintext highlighter-rouge">trial-use</code> → <code class="language-plaintext highlighter-rouge">trial-implementation</code>), et ajout d’une bonne pratique sur l’indication de version dans <code class="language-plaintext highlighter-rouge">meta.profile</code> (<code class="language-plaintext highlighter-rouge">url|version</code>) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/308">#308</a> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/318">#318</a></li>
   <li>Passage au nouveau template HL7 (<code class="language-plaintext highlighter-rouge">fhir2.base.template</code>), avec gestion anglais/français et traductions améliorées <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/304">#304</a></li>
-  <li>Mise en cohérence du profil <code class="language-plaintext highlighter-rouge">FRCoreMedicationRequest</code> (suppression du slicing sur <code class="language-plaintext highlighter-rouge">reasonReference</code>, élargissement des références autorisées pour <code class="language-plaintext highlighter-rouge">reasonReference</code> et <code class="language-plaintext highlighter-rouge">basedOn</code>, simplification de <code class="language-plaintext highlighter-rouge">dosageInstruction.additionalInstruction</code>) et ajout des profils <code class="language-plaintext highlighter-rouge">FRCoreObservationALD</code>, <code class="language-plaintext highlighter-rouge">FRCoreObservationPrevention</code>, <code class="language-plaintext highlighter-rouge">FRCoreObservationWorkRelatedAccident</code> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/322">#322</a></li>
   <li>Correction du titre dupliqué du CodeSystem <code class="language-plaintext highlighter-rouge">fr-core-cs-method-collection</code> (copié-collé du titre de <code class="language-plaintext highlighter-rouge">fr-core-cs-mode-validation-identity</code>) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/331">#331</a></li>
   <li><strong>[BREAKING CHANGE]</strong> Renommage de la sous-extension <code class="language-plaintext highlighter-rouge">dateCollection</code> en <code class="language-plaintext highlighter-rouge">dateInterrogationINSi</code> dans <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability</code>, avec alignement sur IHE PAM France v2.11.1 et RNIV 1 - Principes communs v2.0 <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336">#336</a></li>
   <li>Correction des displays invalides sur les exemples <code class="language-plaintext highlighter-rouge">FRCoreObservationBMIExample</code>, <code class="language-plaintext highlighter-rouge">FRCoreObservationBPExample</code> et <code class="language-plaintext highlighter-rouge">FRCoreObservationOxygenSaturationExample</code> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/348">#348</a></li>
@@ -284,7 +280,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout du profil <code class="language-plaintext highlighter-rouge">FRCoreConsentProfile</code> (<code class="language-plaintext highlighter-rouge">fr-core-consent</code>) et de l’exemple <code class="language-plaintext highlighter-rouge">FRCoreConsentExample</code> <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/347">#347</a></li>
 </ul>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l829">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l794">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -542,7 +538,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1894">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l1859">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -563,7 +559,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1977">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l1942">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -571,7 +567,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1995">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l1960">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -682,7 +678,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Le package hl7.fhir.fr.core#3.0.0-ballot est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-08 15:58:00 +0000">
+  <span title="2026-10-08 18:40:00 +0000">
     2026-10-08
   </span>
 

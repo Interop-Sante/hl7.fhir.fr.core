@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-10-08T15:58:11+00:00",
+  "date" : "2026-10-08T18:40:11+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -883,6 +883,31 @@
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
+    "grouping" : [{
+      "id" : "structures-etablissements",
+      "name" : "Les profils structures des établissements",
+      "description" : "Profils relatifs aux structures, sites et unités organisationnelles des établissements de santé."
+    },
+    {
+      "id" : "profils-administratifs",
+      "name" : "Les profils administratifs",
+      "description" : "Profils relatifs aux acteurs, patients et structures de prise en charge."
+    },
+    {
+      "id" : "mesures-sante",
+      "name" : "Les profils mesures de santé (vital signs)",
+      "description" : "Profils de mesures physiologiques et signes vitaux."
+    },
+    {
+      "id" : "profils-agenda",
+      "name" : "Les profils agenda",
+      "description" : "Profils relatifs à la prise de rendez-vous."
+    },
+    {
+      "id" : "autres-profils",
+      "name" : "Les autres profils",
+      "description" : "Profils de ressources ne relevant pas des autres catégories."
+    }],
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -1009,7 +1034,8 @@
       },
       "name" : "FR Core Appointment Profile",
       "description" : "Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.\r\n\nProfil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-agenda"
     },
     {
       "extension" : [{
@@ -1473,7 +1499,8 @@
       },
       "name" : "FR Core Consent Profile",
       "description" : "Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.\r\n\nProfil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "autres-profils"
     },
     {
       "extension" : [{
@@ -1537,7 +1564,8 @@
       },
       "name" : "FR Core Encounter Profile",
       "description" : "This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.\r\n\nCe profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -1553,7 +1581,8 @@
       },
       "name" : "FR Core Healthcare Service Profile",
       "description" : "Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).\r\n\nProfil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror).",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -1617,7 +1646,8 @@
       },
       "name" : "FR Core Location Profile",
       "description" : "Ressource Location adaptée au contexte français. \nCette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, \nun lit d'hôpital ou une chambre d'hôpital.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "structures-etablissements"
     },
     {
       "extension" : [{
@@ -1649,7 +1679,8 @@
       },
       "name" : "FR Core Medication Administration Inhaled Oxygen Profile",
       "description" : "Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.\r\n\nProfil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "autres-profils"
     },
     {
       "extension" : [{
@@ -1665,7 +1696,8 @@
       },
       "name" : "FR Core Observation Blood Pressure Profile",
       "description" : "French profile for blood pressure.\r\n\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1681,7 +1713,8 @@
       },
       "name" : "FR Core Observation Bmi Profile",
       "description" : "French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].\r\n\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1697,7 +1730,8 @@
       },
       "name" : "FR Core Observation Body Height Profile",
       "description" : "French profile for body height.\r\n\nProfil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1729,7 +1763,8 @@
       },
       "name" : "FR Core Observation Body Temperature Profile",
       "description" : "French profile for body temperature.\r\n\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1745,7 +1780,8 @@
       },
       "name" : "FR Core Observation Body Weight Profile",
       "description" : "French profile of body weight based on the FHIR profil BodyWeightMeas.\r\n\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1761,7 +1797,8 @@
       },
       "name" : "FR Core Observation Head Circum Profile",
       "description" : "French profile for Occipital-frontal circumference.\r\n\nProfil HL7 Vital Signs Circonférence de la tête",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1777,7 +1814,8 @@
       },
       "name" : "FR Core Observation Heart Rate Profile",
       "description" : "French profile for the FHIR Vital Sign Heart Rate Profile.\r\n\nProfilage français du profil Vital Signs Heart rate",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1825,7 +1863,8 @@
       },
       "name" : "FR Core Observation Oxygen Saturation Profile",
       "description" : "French profile for Oxygen saturation in Arterial blood.\r\n\nProfil de la saturation en oxygène du sang artériel.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1841,7 +1880,8 @@
       },
       "name" : "FR Core Observation Respiratory Rate Profile",
       "description" : "French profile for the ObservationResprate profile for France.\r\n\nProfil de la fréquence resporatoire pour l'usage en France",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "mesures-sante"
     },
     {
       "extension" : [{
@@ -1857,7 +1897,8 @@
       },
       "name" : "FR Core Organization Etablissement Profile",
       "description" : "Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "structures-etablissements"
     },
     {
       "extension" : [{
@@ -2065,7 +2106,8 @@
       },
       "name" : "FR Core Organization Profile",
       "description" : "Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "structures-etablissements"
     },
     {
       "extension" : [{
@@ -2113,7 +2155,8 @@
       },
       "name" : "FR Core Organization UAC Profile",
       "description" : "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "structures-etablissements"
     },
     {
       "extension" : [{
@@ -2129,7 +2172,8 @@
       },
       "name" : "FR Core Organization UF Profile",
       "description" : "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "structures-etablissements"
     },
     {
       "extension" : [{
@@ -2241,7 +2285,8 @@
       },
       "name" : "FR Core Patient INS Profile",
       "description" : "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -2257,7 +2302,8 @@
       },
       "name" : "FR Core Patient Profile",
       "description" : "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\r\n\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -2273,7 +2319,8 @@
       },
       "name" : "FR Core Practitioner Profile",
       "description" : "Profil de la ressource Practitionner pour la France.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -2289,7 +2336,8 @@
       },
       "name" : "FR Core Practitioner Role",
       "description" : "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization\r\n\nSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -2321,7 +2369,8 @@
       },
       "name" : "FR Core Related Person Profile",
       "description" : "Profile of the RelatedPerson resource for France.\r\n\nProfil de la ressource RelatedPerson pour l'usage en France",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-administratifs"
     },
     {
       "extension" : [{
@@ -2353,7 +2402,8 @@
       },
       "name" : "FR Core Schedule Profile",
       "description" : "Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule\r\n\nProfil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-agenda"
     },
     {
       "extension" : [{
@@ -2385,7 +2435,8 @@
       },
       "name" : "FR Core Slot Profile",
       "description" : "Profil of the Slot resource for France.\r\n\nProfil de la ressource Slot pour la France",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "profils-agenda"
     },
     {
       "extension" : [{
@@ -3762,15 +3813,6 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Accueil",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "profile_list.html"
-        }],
-        "nameUrl" : "profile_list.html",
-        "title" : "Liste des profils",
         "generation" : "markdown"
       },
       {

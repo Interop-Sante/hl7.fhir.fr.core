@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-10-08T15:58:11+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-08T18:40:11+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -987,6 +987,32 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ] ;
+     fhir:ImplementationGuide.definition.grouping [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "structures-etablissements" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Les profils structures des établissements" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profils relatifs aux structures, sites et unités organisationnelles des établissements de santé." ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "profils-administratifs" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Les profils administratifs" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profils relatifs aux acteurs, patients et structures de prise en charge." ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "mesures-sante" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Les profils mesures de santé (vital signs)" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profils de mesures physiologiques et signes vitaux." ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "profils-agenda" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Les profils agenda" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profils relatifs à la prise de rendez-vous." ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "autres-profils" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Les autres profils" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profils de ressources ne relevant pas des autres catégories." ]
+     ] ;
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0 ;
        fhir:Element.extension [
@@ -1098,7 +1124,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Appointment Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.\r\n\nProfil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-agenda" ]
      ], [
        fhir:index 8 ;
        fhir:Element.extension [
@@ -1504,7 +1531,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Consent Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.\r\n\nProfil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "autres-profils" ]
      ], [
        fhir:index 37 ;
        fhir:Element.extension [
@@ -1560,7 +1588,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Encounter Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.\r\n\nCe profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 41 ;
        fhir:Element.extension [
@@ -1574,7 +1603,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Healthcare Service Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).\r\n\nProfil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 42 ;
        fhir:Element.extension [
@@ -1630,7 +1660,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Location Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ressource Location adaptée au contexte français. \nCette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen, \nun lit d'hôpital ou une chambre d'hôpital." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "structures-etablissements" ]
      ], [
        fhir:index 46 ;
        fhir:Element.extension [
@@ -1658,7 +1689,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Medication Administration Inhaled Oxygen Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.\r\n\nProfil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "autres-profils" ]
      ], [
        fhir:index 48 ;
        fhir:Element.extension [
@@ -1672,7 +1704,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Blood Pressure Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for blood pressure.\r\n\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 49 ;
        fhir:Element.extension [
@@ -1686,7 +1719,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Bmi Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].\r\n\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 50 ;
        fhir:Element.extension [
@@ -1700,7 +1734,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Body Height Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for body height.\r\n\nProfil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 51 ;
        fhir:Element.extension [
@@ -1728,7 +1763,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Body Temperature Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for body temperature.\r\n\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 53 ;
        fhir:Element.extension [
@@ -1742,7 +1778,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Body Weight Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile of body weight based on the FHIR profil BodyWeightMeas.\r\n\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 54 ;
        fhir:Element.extension [
@@ -1756,7 +1793,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Head Circum Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for Occipital-frontal circumference.\r\n\nProfil HL7 Vital Signs Circonférence de la tête" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 55 ;
        fhir:Element.extension [
@@ -1770,7 +1808,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Heart Rate Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for the FHIR Vital Sign Heart Rate Profile.\r\n\nProfilage français du profil Vital Signs Heart rate" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 56 ;
        fhir:Element.extension [
@@ -1812,7 +1851,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Oxygen Saturation Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for Oxygen saturation in Arterial blood.\r\n\nProfil de la saturation en oxygène du sang artériel." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 59 ;
        fhir:Element.extension [
@@ -1826,7 +1866,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Observation Respiratory Rate Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "French profile for the ObservationResprate profile for France.\r\n\nProfil de la fréquence resporatoire pour l'usage en France" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "mesures-sante" ]
      ], [
        fhir:index 60 ;
        fhir:Element.extension [
@@ -1840,7 +1881,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Organization Etablissement Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "structures-etablissements" ]
      ], [
        fhir:index 61 ;
        fhir:Element.extension [
@@ -2022,7 +2064,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Organization Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "structures-etablissements" ]
      ], [
        fhir:index 74 ;
        fhir:Element.extension [
@@ -2064,7 +2107,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Organization UAC Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "structures-etablissements" ]
      ], [
        fhir:index 77 ;
        fhir:Element.extension [
@@ -2078,7 +2122,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Organization UF Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "structures-etablissements" ]
      ], [
        fhir:index 78 ;
        fhir:Element.extension [
@@ -2176,7 +2221,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Patient INS Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.\r\n\nProfil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 85 ;
        fhir:Element.extension [
@@ -2190,7 +2236,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Patient Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\r\n\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 86 ;
        fhir:Element.extension [
@@ -2204,7 +2251,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Practitioner Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil de la ressource Practitionner pour la France." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 87 ;
        fhir:Element.extension [
@@ -2218,7 +2266,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Practitioner Role" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization\r\n\nSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 88 ;
        fhir:Element.extension [
@@ -2246,7 +2295,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Related Person Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the RelatedPerson resource for France.\r\n\nProfil de la ressource RelatedPerson pour l'usage en France" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-administratifs" ]
      ], [
        fhir:index 90 ;
        fhir:Element.extension [
@@ -2274,7 +2324,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Schedule Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule\r\n\nProfil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-agenda" ]
      ], [
        fhir:index 92 ;
        fhir:Element.extension [
@@ -2302,7 +2353,8 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Slot Profile" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil of the Slot resource for France.\r\n\nProfil de la ressource Slot pour la France" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "profils-agenda" ]
      ], [
        fhir:index 94 ;
        fhir:Element.extension [
@@ -3629,23 +3681,13 @@
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "profile_list.html" ]
-         ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profile_list.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Liste des profils" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 2 ;
-         fhir:Element.extension [
-           fhir:index 0 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
            fhir:Extension.valueUrl [ fhir:value "bonnes_pratiques.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "bonnes_pratiques.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Bonnes pratiques d'usage du guide d'implémentation" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 3 ;
+         fhir:index 2 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3655,7 +3697,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Problématiques connues" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 4 ;
+         fhir:index 3 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3665,7 +3707,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Autres Ressources" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5 ;
+         fhir:index 4 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3675,7 +3717,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Téléchargements et usages" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 6 ;
+         fhir:index 5 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3685,7 +3727,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "A propos" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 7 ;
+         fhir:index 6 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3695,7 +3737,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Historique des changements" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8 ;
+         fhir:index 7 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3705,7 +3747,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Introduction" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9 ;
+         fhir:index 8 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3715,7 +3757,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Entités" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 10 ;
+         fhir:index 9 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3725,7 +3767,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Relations entre entités" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 11 ;
+         fhir:index 10 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3735,7 +3777,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Contraintes sur les profils" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 12 ;
+         fhir:index 11 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3745,7 +3787,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Nomenclatures" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 13 ;
+         fhir:index 12 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
@@ -3755,7 +3797,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Références" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 14 ;
+         fhir:index 13 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
