@@ -1,0 +1,188 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCorePatientINSExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient FRCorePatientINSExample</b></p><a name=\"en-FRCorePatientINSExample\"> </a><a name=\"en-hcFRCorePatientINSExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-patient-ins.html\">FR Core Patient INS Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 01 23 24 67 89(Home)</li><li>ph: 01 99 88 77 66(Work)</li><li>ph: 06 80 55 34 33(Mobile)</li><li>367 rue Troussier, 45100 Orléans, France(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact:</td><td colspan=\"3\"><ul><li>Marie Durand </li><li>Relationships:<span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">personne à prévenir en cas d'urgence</span>, <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode MTH}\">Mère</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:{urn:iso:std:iso:3166 FR}\">France (la)</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Indicateur booléen de mise à jour de la date de naissance\"><a href=\"StructureDefinition-fr-core-patient-birthdate-update-indicator.html\">FR Core Patient Birthdate Update Indicator Extension</a></td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Ambléon </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) accompagné de la méthode de collection.#xA;#xD;Reliabilility of the patient's identity\">FR Core Patient Ident Reliability Extension:</td><td colspan=\"3\"><ul><li>identityStatus: <a href=\"CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">FR Core CodeSystem v2-0445: VALI</a> (Identité validée)</li></ul></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM" ] ;
+           fhir:Coding.code [ fhir:value "01006" ]
+         ]
+       ] ;
+       fhir:Address.city [ fhir:value "Ambléon" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "identityStatus" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445" ] ;
+         fhir:Coding.code [ fhir:value "VALI" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "code" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+           fhir:Coding.code [ fhir:value "FR" ] ;
+           fhir:Coding.display [ fhir:value "France (la)" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-nationality" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "INS-NIR" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.1.4.8" ] ;
+     fhir:Identifier.value [ fhir:value "123456789012244" ]
+  ] ;
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name" ] ;
+       fhir:Extension.valueString [ fhir:value "Pierre Yves" ]
+     ] ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Durand" ] ;
+     fhir:HumanName.given [
+       fhir:value "Pierre" ;
+       fhir:index -1
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "01 23 24 67 89" ] ;
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "01 99 88 77 66" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ] ;
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "06 80 55 34 33" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ] ;
+     fhir:ContactPoint.rank [ fhir:value "2"^^xsd:positiveInteger ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "male"] ;
+  fhir:Patient.birthDate [ fhir:value "1974-12-25"^^xsd:date] ;
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Patient.address [
+     fhir:index -1 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.text [ fhir:value "367 rue Troussier, 45100 Orléans, France" ] ;
+     fhir:Address.line [
+       fhir:value "367 rue Troussier" ;
+       fhir:index -1
+     ] ;
+     fhir:Address.city [ fhir:value "Orléans" ] ;
+     fhir:Address.postalCode [ fhir:value "45100" ] ;
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "2018-06-01"^^xsd:date ]
+     ]
+  ] ;
+  fhir:Patient.contact [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment" ] ;
+       fhir:Extension.valueString [ fhir:value "Mère du patient, à contacter en priorité" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier" ] ;
+       fhir:Extension.valueIdentifier [
+         fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.1.4.8" ] ;
+         fhir:Identifier.value [ fhir:value "C98765" ]
+       ]
+     ] ;
+     fhir:Patient.contact.relationship [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ] ;
+         fhir:Extension.valueCode [ fhir:value "role" ]
+       ] ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass" ] ;
+         fhir:Coding.code [ fhir:value "ECON" ] ;
+         fhir:Coding.display [ fhir:value "personne à prévenir en cas d'urgence" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category" ] ;
+         fhir:Extension.valueCode [ fhir:value "relationType" ]
+       ] ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode" ] ;
+         fhir:Coding.code [ fhir:value "MTH" ] ;
+         fhir:Coding.display [ fhir:value "Mère" ]
+       ]
+     ] ;
+     fhir:Patient.contact.name [
+       fhir:HumanName.family [ fhir:value "Durand" ] ;
+       fhir:HumanName.given [
+         fhir:value "Marie" ;
+         fhir:index -1
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
