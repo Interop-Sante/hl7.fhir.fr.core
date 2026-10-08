@@ -49,8 +49,6 @@ parameters:
 pages:
     index.md:
       title: Accueil
-    profile_list.md:
-      title: Liste des profils
     bonnes_pratiques.md:
       title: Bonnes pratiques d'usage du guide d'implémentation
     known_problems.md:
@@ -87,7 +85,6 @@ menu:
         Contraintes: structure_contraintes.html
         Nomenclatures: structure_nomenclatures.html
         Références: structure_ref_loi.html
-    Liste des profils: profile_list.html
     Ressources de conformité: artifacts.html
     
     Bonnes pratiques: bonnes_pratiques.html
@@ -105,3 +102,51 @@ menu:
 instanceOptions:
   setMetaProfile: always # Determines for which types of Instances SUSHI will automatically set meta.profile if InstanceOf references a profile
   setId: always # Determines for which types of Instances SUSHI will automatically set id if InstanceOf references a profile
+
+groups:
+  structures-etablissements:
+    name: Les profils structures des établissements
+    description: Profils relatifs aux structures, sites et unités organisationnelles des établissements de santé.
+    resources:
+      - FRCoreLocationProfile
+      - FRCoreOrganizationProfile
+      - FRCoreOrganizationEtablissementProfile
+      - FRCoreOrganizationUACProfile
+      - FRCoreOrganizationUFProfile
+  profils-administratifs:
+    name: Les profils administratifs
+    description: Profils relatifs aux acteurs, patients et structures de prise en charge.
+    resources:
+      - FRCorePatientProfile
+      - FRCorePatientINSProfile
+      - FRCorePractitionerProfile
+      - FRCorePractitionerRoleProfile
+      - FRCoreRelatedPersonProfile
+      - FRCoreEncounterProfile
+      - FRCoreHealthcareServiceProfile
+  mesures-sante:
+    name: Les profils mesures de santé (vital signs)
+    description: Profils de mesures physiologiques et signes vitaux.
+    resources:
+      - FRCoreObservationBpProfile
+      - FRCoreObservationBmiProfile
+      - FRCoreObservationBodyHeightProfile
+      - FRCoreObservationBodyTemperatureProfile
+      - FRCoreObservationBodyWeightProfile
+      - FRCoreObservationHeadCircumProfile
+      - FRCoreObservationHeartRateProfile
+      - FRCoreObservationOxygenSaturationProfile
+      - FRCoreObservationRespRateProfile
+  profils-agenda:
+    name: Les profils agenda
+    description: Profils relatifs à la prise de rendez-vous.
+    resources:
+      - FRCoreScheduleProfile
+      - FRCoreSlotProfile
+      - FRCoreAppointmentProfile
+  autres-profils:
+    name: Les autres profils
+    description: Profils de ressources ne relevant pas des autres catégories.
+    resources:
+      - FRCoreConsentProfile
+      - FRCoreMedicationAdministrationInhaledOxygenProfile
