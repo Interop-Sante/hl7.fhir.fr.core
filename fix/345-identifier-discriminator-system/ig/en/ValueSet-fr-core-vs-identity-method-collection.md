@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Identity method collection 
 
- 
-The validation mode of the identity. 
-
  **References** 
 
 * [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
@@ -37,7 +34,7 @@ The validation mode of the identity.
   "title" : "FR Core ValueSet Identity method collection",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

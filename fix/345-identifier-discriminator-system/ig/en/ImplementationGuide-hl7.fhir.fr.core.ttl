@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-10-02T08:11:03+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-08T14:27:32+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -1496,6 +1496,20 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-core-consent" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core Consent Profile" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.\r\n\nProfil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -2893,6 +2907,23 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0" ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Consent" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Consent/FRCoreConsentExample> ;
+         fhir:Reference.reference [ fhir:value "Consent/FRCoreConsentExample" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FRCoreConsentExample" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple de ressource Consent pour indiquer le consentement d'alimentation du DMP" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent|2.2.0" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent|2.2.0>
        ]
      ], [
        fhir:index -1 ;

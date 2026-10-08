@@ -2,9 +2,6 @@
 
 ## ValueSet: Blood Pressure Measurement Body Location Precoordinated value set 
 
- 
-SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured. 
-
  **References** 
 
 Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
@@ -36,7 +33,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "Blood Pressure Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

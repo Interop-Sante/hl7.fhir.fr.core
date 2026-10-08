@@ -2,13 +2,9 @@
 
 ## Profil de ressource: FR Core Related Person Profile 
 
- 
-Profile of the RelatedPerson resource for France. 
-Profil de la ressource RelatedPerson pour l’usage en France 
-
 **Utilisations:**
 
-* Référence ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Référence ce Profil: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Consent Profile](StructureDefinition-fr-core-consent.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md)... Show 2 more, [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 * Exemples pour ce/t/te Profil: [RelatedPerson/FRCoreRelatedPersonExample](RelatedPerson-FRCoreRelatedPersonExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-related-person)
@@ -114,7 +110,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-related
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

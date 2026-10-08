@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Patient identifier use INS 
 
- 
-Use autorisés pour l’identifiant national de santé. Authorized use for INS identifier. 
-
  **References** 
 
 * [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
@@ -37,7 +34,7 @@ Use autorisés pour l’identifiant national de santé. Authorized use for INS i
   "title" : "FR Core ValueSet Patient identifier use INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization Etablisement type 
 
- 
-Types d’organisation représentant des établissements. 
-
  **References** 
 
 * [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
@@ -37,7 +34,7 @@ Types d’organisation représentant des établissements.
   "title" : "FR Core ValueSet Organization Etablisement type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

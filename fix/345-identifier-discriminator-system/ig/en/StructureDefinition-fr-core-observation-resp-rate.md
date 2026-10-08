@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation Respiratory Rate Profile 
 
- 
-French profile for the ObservationResprate profile for France. 
-Profil de la fréquence resporatoire pour l’usage en France 
-
 **Usages:**
 
 * Examples for this Profile: [Observation/FRCoreObservationRespRateExample](Observation-FRCoreObservationRespRateExample.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationRespRateProfile",
   "title" : "FR Core Observation Respiratory Rate Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

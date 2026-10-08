@@ -13,7 +13,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-10-02T08:11:03+00:00"/>
+  <date value="2026-10-08T14:27:32+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1051,6 +1051,17 @@
       </reference>
       <name value="FR Core Comment Extension"/>
       <description value="Ajout d'un commentaire sur un dataElement d'une ressource.&#xD;&#xA;Add a comment on a dataElement  of a resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-consent"/>
+      </reference>
+      <name value="FR Core Consent Profile"/>
+      <description value="Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.&#xD;&#xA;&#xA;Profil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2152,6 +2163,17 @@
       <name value="FRCoreAppointmentExample"/>
       <description value="Exemple de ressource Appointment pour décrire un état de rendez-vous médical"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/FRCoreConsentExample"/>
+      </reference>
+      <name value="FRCoreConsentExample"/>
+      <description value="Exemple de ressource Consent pour indiquer le consentement d'alimentation du DMP"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent|2.2.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

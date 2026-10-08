@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet relation type 
 
- 
-ValueSet relation type 
-
  **References** 
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
@@ -42,7 +39,7 @@ ValueSet relation type
   "title" : "FR Core ValueSet relation type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

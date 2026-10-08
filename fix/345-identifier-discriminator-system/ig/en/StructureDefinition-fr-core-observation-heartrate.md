@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation Heart Rate Profile 
 
- 
-French profile for the FHIR Vital Sign Heart Rate Profile. 
-Profilage français du profil Vital Signs Heart rate 
-
 **Usages:**
 
 * Examples for this Profile: [Observation/FRCoreObservationHeartRateExample](Observation-FRCoreObservationHeartRateExample.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationHeartRateProfile",
   "title" : "FR Core Observation Heart Rate Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

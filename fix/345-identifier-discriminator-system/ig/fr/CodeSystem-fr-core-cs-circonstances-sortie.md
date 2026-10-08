@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Circonstances Sortie 
 
- 
-Discharge Disposition 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
 * [FR Core ValueSet Encounter discharge disposition](ValueSet-fr-core-vs-encounter-discharge-disposition.md)
@@ -31,7 +28,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Circonstances Sortie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## Profil de ressource: FR Core Organization Etablissement Profile 
 
- 
-Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux. 
-
 ### Usage
 
 Le profil Etablissement permet de représenter un établissement qu’il soit géographique ou juridique. Un établissement juridique (ou entité juridique) correspond à l’entité institutionnelle dotée de la personnalité morale. Un établissement géographique (ou entité géographique) désigne un site de production de soins, c’est-à-dire un lieu physique où sont réalisées les activités sanitaires ou médico-sociales. Une même entité juridique peut regrouper plusieurs établissements géographiques si elle possède plusieurs implantations ou budgets distincts.
@@ -133,7 +130,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationEtablissementProfile",
   "title" : "FR Core Organization Etablissement Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

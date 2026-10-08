@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Patient gender 
 
- 
-Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide. Permitted genders for French Patient gender. 
-
  **References** 
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
@@ -37,7 +34,7 @@ Genres autorisés dans le cadre du genre administratif du Patient en France. Pou
   "title" : "FR Core ValueSet Patient gender",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

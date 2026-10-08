@@ -1,5 +1,17 @@
 {
   "codeSystems" : [{
+    "url" : "http://dicom.nema.org/resources/ontology/DCM",
+    "version" : "01",
+    "status" : "active",
+    "name" : "DICOM Controlled Terminology Definitions",
+    "title" : null,
+    "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+    "oids" : ["1.2.840.10008.2.16.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
     "url" : "http://hl7.org/fhir/address-type",
     "version" : "4.0.1",
     "status" : "active",
@@ -47,6 +59,42 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-data-meaning",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentDataMeaning",
+    "title" : "ConsentDataMeaning",
+    "description" : "How a resource reference is interpreted when testing consent restrictions.",
+    "oids" : ["2.16.840.1.113883.4.642.4.760"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-data-meaning.html" : "ConsentDataMeaning"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-provision-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentProvisionType",
+    "title" : "ConsentProvisionType",
+    "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+    "oids" : ["2.16.840.1.113883.4.642.4.758"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-provision-type.html" : "ConsentProvisionType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-state-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentState",
+    "title" : "ConsentState",
+    "description" : "Indicates the state of the consent.",
+    "oids" : ["2.16.840.1.113883.4.642.4.756"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-state-codes.html" : "ConsentState"
   },
   {
     "url" : "http://hl7.org/fhir/contact-point-system",
@@ -226,6 +274,7 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
     "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
   },
   {
@@ -250,7 +299,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs"
+    "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
+    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -262,26 +313,26 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-fr-core-vs-body-position.html" : "Body Position value set",
-    "ValueSet-fr-core-vs-spo2-body-location.html" : "Oxygen Saturation Body Location value set",
-    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "ValueSet-fr-core-vs-bp-meas-body-location.html" : "Blood Pressure Measurement Body Location Precoordinated value set",
-    "ValueSet-fr-core-vs-height-body-position.html" : "FR Core ValueSet BodyPosition",
     "ValueSet-fr-core-vs-bp-meas-method.html" : "Blood Pressure Measurement Method value set",
-    "ValueSet-fr-core-vs-height-meas-method.html" : "Height Length Measurement Method value set",
-    "ValueSet-fr-core-vs-heartrate-body-location.html" : "Heart Rate Measurement Body Location Precoordinated value set",
-    "ValueSet-fr-core-vs-bp-method.html" : "FR Core ValueSet BP measurement method",
     "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "ValueSet-fr-core-vsbody-temp-meas-body-location.html" : "Body Temperature Measurement Body Location value set",
+    "ValueSet-fr-core-vs-body-position.html" : "Body Position value set",
     "ValueSet-fr-core-vs-heartrate-measurement-method.html" : "Heart Rate Measurement Method value set",
-    "ValueSet-fr-core-vs-respiratory-rate-meas-method.html" : "Respiratory Rate Measurement Method value set"
+    "ValueSet-fr-core-vs-bp-meas-body-location.html" : "Blood Pressure Measurement Body Location Precoordinated value set",
+    "ValueSet-fr-core-vs-height-meas-method.html" : "Height Length Measurement Method value set",
+    "ValueSet-fr-core-vs-spo2-body-location.html" : "Oxygen Saturation Body Location value set",
+    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+    "ValueSet-fr-core-vs-bp-method.html" : "FR Core ValueSet BP measurement method",
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "ValueSet-fr-core-vs-heartrate-body-location.html" : "Heart Rate Measurement Body Location Precoordinated value set",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "ValueSet-fr-core-vs-respiratory-rate-meas-method.html" : "Respiratory Rate Measurement Method value set",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "ValueSet-fr-core-vs-height-body-position.html" : "FR Core ValueSet BodyPosition",
+    "ValueSet-fr-core-vsbody-temp-meas-body-location.html" : "Body Temperature Measurement Body Location value set"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -320,6 +371,54 @@
     "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ConsentActionCodes",
+    "title" : "Consent Action Codes",
+    "description" : "This value set includes sample Consent Action codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1227"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-action.html" : "Consent Action Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ConsentCategoryCodes",
+    "title" : "Consent Category Codes",
+    "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+    "oids" : ["2.16.840.1.113883.4.642.1.1226"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "ConsentPolicyRuleCodes",
+    "title" : "Consent PolicyRule Codes",
+    "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1229"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-policy.html" : "Consent PolicyRule Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentscope",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConsentScopeCodes",
+    "title" : "Consent Scope Codes",
+    "description" : "This value set includes the four Consent scope codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1228"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-scope.html" : "Consent Scope Codes"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
     "version" : "2.0.0",
     "status" : "active",
@@ -330,6 +429,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ContractSignerTypeCodes",
+    "title" : "Contract Signer Type Codes",
+    "description" : "This value set includes sample Contract Signer Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1201"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -390,6 +501,17 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SecurityRoleType",
+    "title" : "Security Role Type",
+    "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -605,10 +727,10 @@
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
-    "ValueSet-fr-core-vs-contact-relationship.html" : "FR Core ValueSet Contact relationship",
     "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-    "ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
+    "ValueSet-fr-core-vs-contact-relationship.html" : "FR Core ValueSet Contact relationship",
+    "ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -620,8 +742,8 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
     "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
+    "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
     "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type"
   },
   {
@@ -674,6 +796,18 @@
     "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActPriority.html" : "ActPriority"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ActReason",
+    "title" : "ActReason",
+    "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+    "oids" : ["2.16.840.1.113883.5.8"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
     "version" : "4.0.0",
     "status" : "active",
@@ -707,9 +841,9 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
+    "http://hl7.org/fhir/R4/valueset-name-assembly-order.html" : "HumanNameAssemblyOrder",
     "ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Marital Status ValueSet",
-    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-    "http://hl7.org/fhir/R4/valueset-name-assembly-order.html" : "HumanNameAssemblyOrder"
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -724,6 +858,18 @@
     "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ParticipationFunction",
+    "title" : "ParticipationFunction",
+    "description" : "This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).",
+    "oids" : ["2.16.840.1.113883.5.88"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
     "version" : "7.0.0",
     "status" : "active",
@@ -733,7 +879,20 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "version" : "6.0.0",
+    "status" : "active",
+    "name" : "RoleClass",
+    "title" : "RoleClass",
+    "description" : "Codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+    "oids" : ["2.16.840.1.113883.5.110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -745,6 +904,7 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
     "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
   },
   {
@@ -757,8 +917,8 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
-    "http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html" : "Body Temperature Units",
     "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
+    "http://hl7.org/fhir/R4/valueset-ucum-bodytemp.html" : "Body Temperature Units",
     "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units"
   },
   {
@@ -971,8 +1131,8 @@
     "uses" : {
     },
     "ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
-    "ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type",
-    "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type"
+    "ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type",
+    "ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
@@ -1104,8 +1264,8 @@
     "oids" : ["1.2.250.1.213.2.23"],
     "uses" : {
     },
-    "ValueSet-fr-core-vs-cog-commune-pays.html" : "FR Core ValueSet COG commune pays",
-    "ValueSet-fr-core-vs-insee-code.html" : "FR Core ValueSet INSEE code"
+    "ValueSet-fr-core-vs-insee-code.html" : "FR Core ValueSet INSEE code",
+    "ValueSet-fr-core-vs-cog-commune-pays.html" : "FR Core ValueSet COG commune pays"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome",
@@ -1129,8 +1289,8 @@
     "oids" : ["1.2.250.1.213.2.24"],
     "uses" : {
     },
-    "ValueSet-fr-core-vs-cog-commune-pays.html" : "FR Core ValueSet COG commune pays",
-    "ValueSet-fr-core-vs-insee-code.html" : "FR Core ValueSet INSEE code"
+    "ValueSet-fr-core-vs-insee-code.html" : "FR Core ValueSet INSEE code",
+    "ValueSet-fr-core-vs-cog-commune-pays.html" : "FR Core ValueSet COG commune pays"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",

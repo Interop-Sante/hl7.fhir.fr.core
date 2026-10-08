@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Address Insee Code Extension 
 
-Extension d’ajout du code insee (5 chiffres) à l’adresse postale. Dans le cas d’une ville étrangère, le code département devient “99” et le code commune est renseigné avec le code pays. Pour plus de détails, consultez le référentiel national d’identitovigilance (RNIV). This extension adds the insee code (5 digits) to the address. In the case of a foreign city, the department code becomes “99”, and the municipality code is populated with the country code.
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-address-i
   "name" : "FRCoreAddressInseeCodeExtension",
   "title" : "FR Core Address Insee Code Extension",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

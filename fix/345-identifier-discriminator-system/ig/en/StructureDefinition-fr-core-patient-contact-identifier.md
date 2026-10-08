@@ -2,10 +2,6 @@
 
 ## Extension: FR Core Patient Contact Identifier Extension 
 
-Identifiant de contact dans la ressource Patient
-
-This extension carries the contact identifier in the patient resource
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient-c
   "name" : "FRCorePatientContactIdentifierExtension",
   "title" : "FR Core Patient Contact Identifier Extension",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

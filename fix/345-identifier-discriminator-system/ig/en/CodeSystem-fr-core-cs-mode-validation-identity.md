@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Mode Validation Identite 
 
- 
-Mode de validation de l’identité 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Mode validation identity](ValueSet-fr-core-vs-mode-validation-identity.md)
@@ -32,7 +29,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -59,31 +56,11 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 14,
+  "count" : 15,
   "concept" : [{
-    "code" : "AN",
-    "display" : "Extrait d'acte de naissance",
-    "definition" : "Extrait d'acte de naissance"
-  },
-  {
-    "code" : "CC",
-    "display" : "Carnet de circulation",
-    "definition" : "Carnet de circulation"
-  },
-  {
-    "code" : "CE",
-    "display" : "Carte Européenne",
-    "definition" : "Carte Européenne"
-  },
-  {
     "code" : "CN",
     "display" : "Carte nationale d'identité",
     "definition" : "Carte nationale d'identité"
-  },
-  {
-    "code" : "LE",
-    "display" : "Livret de famille",
-    "definition" : "Livret de famille"
   },
   {
     "code" : "PA",
@@ -91,19 +68,19 @@ This Code system is referenced in the definition of the following value sets:
     "definition" : "Passeport"
   },
   {
-    "code" : "PC",
-    "display" : "Permis de conduire",
-    "definition" : "Permis de conduire"
+    "code" : "CS",
+    "display" : "Carte de séjour",
+    "definition" : "Carte de séjour ou titre de séjour"
   },
   {
-    "code" : "TC",
-    "display" : "Tiers de confiance",
-    "definition" : "Tiers de confiance"
+    "code" : "eCN",
+    "display" : "e-carte d'identité",
+    "definition" : "e-carte d'identité"
   },
   {
-    "code" : "AC",
-    "display" : "Acte de naissance + Carte vitale avec photo",
-    "definition" : "Acte de naissance + Carte vitale avec photo"
+    "code" : "IN",
+    "display" : "Identité Numérique La Poste",
+    "definition" : "Identité Numérique La Poste"
   },
   {
     "code" : "AV",
@@ -111,9 +88,34 @@ This Code system is referenced in the definition of the following value sets:
     "definition" : "Application Carte Vitale"
   },
   {
-    "code" : "CS",
-    "display" : "Carte de séjour",
-    "definition" : "Carte de séjour ou titre de séjour"
+    "code" : "LECV",
+    "display" : "Livret de famille, accompagné de la carte Vitale avec photographie",
+    "definition" : "Livret de famille, accompagné de la carte Vitale avec photographie"
+  },
+  {
+    "code" : "AN",
+    "display" : "Extrait d'acte de naissance",
+    "definition" : "Extrait d'acte de naissance"
+  },
+  {
+    "code" : "LE",
+    "display" : "Livret de famille des parents",
+    "definition" : "Livret de famille des parents"
+  },
+  {
+    "code" : "CC",
+    "display" : "Carnet de circulation",
+    "definition" : "Carnet de circulation pour étranger mineur"
+  },
+  {
+    "code" : "CIMS",
+    "display" : "Carte d'identité professionnelle multiservices (CIMS)",
+    "definition" : "Carte d'identité professionnelle multiservices (CIMS)"
+  },
+  {
+    "code" : "ANCV",
+    "display" : "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie",
+    "definition" : "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie"
   },
   {
     "code" : "IE",
@@ -121,14 +123,14 @@ This Code system is referenced in the definition of the following value sets:
     "definition" : "Identification électronique EIDAS"
   },
   {
-    "code" : "DC",
-    "display" : "Document de Circulation pour étranger mineur",
-    "definition" : "Document de Circulation pour étranger mineur"
-  },
-  {
     "code" : "CM",
     "display" : "Carte militaire",
     "definition" : "Carte militaire"
+  },
+  {
+    "code" : "PC",
+    "display" : "Permis de conduire",
+    "definition" : "Permis de conduire"
   }]
 }
 

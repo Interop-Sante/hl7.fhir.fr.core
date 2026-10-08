@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Schedule Profile 
 
- 
-Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule 
-Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l’élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation. 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Slot Profile](StructureDefinition-fr-core-slot.md)
@@ -132,7 +128,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-schedul
   "name" : "FRCoreScheduleProfile",
   "title" : "FR Core Schedule Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

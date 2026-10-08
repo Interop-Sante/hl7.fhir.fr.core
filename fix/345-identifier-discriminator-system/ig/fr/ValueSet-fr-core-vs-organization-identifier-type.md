@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization identifier type 
 
- 
-A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (Organizations). 
-
  **References** 
 
 * [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
@@ -41,7 +38,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Organization identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

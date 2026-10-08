@@ -66,7 +66,7 @@ Profil: [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
       "code" : "L",
-      "display" : "low"
+      "display" : "Anormalement bas"
     }],
     "text" : "Below low normal"
   }],
@@ -118,7 +118,7 @@ Profil: [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
         "code" : "L",
-        "display" : "low"
+        "display" : "Anormalement bas"
       }],
       "text" : "En dessous de la normale"
     }]

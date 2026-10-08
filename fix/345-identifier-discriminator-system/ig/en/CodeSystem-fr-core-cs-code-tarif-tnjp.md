@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Codes Tarifs - nomenclature TNJP 
 
- 
-La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Codes Tarifs - nomenclature TNJP](ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Codes Tarifs - nomenclature TNJP",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

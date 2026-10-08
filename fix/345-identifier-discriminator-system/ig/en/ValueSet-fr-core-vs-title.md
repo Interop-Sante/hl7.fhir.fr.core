@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Title 
 
- 
-The Patient or person civility 
-
  **References** 
 
 This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
@@ -49,7 +46,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "FR Core ValueSet Title",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

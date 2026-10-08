@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core Location Profile 
 
- 
-Ressource Location adaptée au contexte français. Cette ressource est utilisée pour représenter un lieu physique, telle qu’une salle d’examen, un lit d’hôpital ou une chambre d’hôpital. 
-
 ### Usage
 
 La ressource Location est utilisée pour représenter chaque élément physique d’un établissement.
@@ -46,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-location.
   "name" : "FRCoreLocationProfile",
   "title" : "FR Core Location Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

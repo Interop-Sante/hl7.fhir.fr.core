@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Comment Extension 
 
-Ajout d’un commentaire sur un dataElement d’une ressource. Add a comment on a dataElement of a resource
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Extension simple avec le type string : Ajout d'un commentaire sur un dataElement
 
 **[Maturité](http://hl7.org/fhir/versions.html#maturity)**: 1
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -77,7 +75,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-comment
   "name" : "FRCoreCommentExtension",
   "title" : "FR Core Comment Extension",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

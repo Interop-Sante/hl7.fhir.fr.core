@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Observation Head Circum Profile 
 
- 
-French profile for Occipital-frontal circumference. 
-Profil HL7 Vital Signs Circonférence de la tête 
-
 **Utilisations:**
 
 * Exemples pour ce/t/te Profil: [Observation/FRCoreObservationHeadCircumExample](Observation-FRCoreObservationHeadCircumExample.md)
@@ -129,7 +125,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationHeadCircumProfile",
   "title" : "FR Core Observation Head Circum Profile",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

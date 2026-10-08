@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Extension - Champ d'activité 
 
-Champ d’activité d’une UF
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +36,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type Coding : Champ d'activité d'une UF
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -73,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationChampActiviteExtension",
   "title" : "FR Core Organization Extension - Champ d'activité",
   "status" : "active",
-  "date" : "2026-10-02T08:11:03+00:00",
+  "date" : "2026-10-08T14:27:32+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

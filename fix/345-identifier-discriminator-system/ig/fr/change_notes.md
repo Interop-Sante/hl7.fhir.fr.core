@@ -22,6 +22,7 @@
 * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
  
 * Correction du slicing `identifier` de `FRCorePatient` : ajout d’un discriminator sur `system` en complément de `type`, pour lever l’ambiguïté entre les slices `NSS-NIR` et `NSS-NIA` (qui partagent le même `type` `NH` depuis leur séparation en 2.2.0) [#346](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/346)
+* Ajout du profil `FRCoreConsentProfile` (`fr-core-consent`) et de l’exemple `FRCoreConsentExample` [#347](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/347)
 
 ### Release 2.2.0 de l’Implementation Guide FRCore
 
