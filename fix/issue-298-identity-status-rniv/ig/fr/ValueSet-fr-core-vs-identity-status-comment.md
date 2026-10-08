@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Identity Status Comment 
 
- 
-ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d’une identité. Ces codes sont destinés à être utilisés dans l’élément identityReliabilityComment de l’extension FRCoreExtensionIdentityReliability. 
-
  **References** 
 
 * [FR Core Patient Identity Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
@@ -37,7 +34,7 @@ ValueSet permettant de commenter / de rajouter des attributs sur la fiabilité d
   "title" : "FR Core ValueSet Identity Status Comment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

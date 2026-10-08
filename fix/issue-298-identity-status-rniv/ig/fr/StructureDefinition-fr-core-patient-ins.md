@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Patient INS Profile 
 
- 
-FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile. 
-Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. 
-
 ### Usage
 
 Le profil hérite de FRCorePatient enrichi de l’identité INS récupérée par le téléservice INSi et potentiellement qualifiée.
@@ -57,7 +53,7 @@ Cette structure est dérivée de [FRCorePatientProfile](StructureDefinition-fr-c
 
 ** Résumé **
 
-Obligatoire : 9 éléments(17 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 9 éléments(16 éléments obligatoire(s) imbriqué(s))
  Must-Support : 7 éléments
 
  **Vue des éléments clés** 
@@ -84,7 +80,7 @@ Cette structure est dérivée de [FRCorePatientProfile](StructureDefinition-fr-c
 
 ** Résumé **
 
-Obligatoire : 9 éléments(17 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 9 éléments(16 éléments obligatoire(s) imbriqué(s))
  Must-Support : 7 éléments
 
  
@@ -104,7 +100,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -197,7 +193,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
     {
       "id" : "Patient.extension",
       "path" : "Patient.extension",
-      "min" : 1
+      "min" : 2
     },
     {
       "id" : "Patient.extension:birthPlace",

@@ -2,9 +2,6 @@
 
 ## ValueSet: Heart Rate Measurement Body Location Precoordinated value set 
 
- 
-SELECT SNOMED CT code system values that describe where on the body the heart rate was measured. 
-
  **References** 
 
 * [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md)
@@ -36,7 +33,7 @@ SELECT SNOMED CT code system values that describe where on the body the heart ra
   "title" : "Heart Rate Measurement Body Location Precoordinated value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Healthcare Service Profile 
 
- 
-Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror). 
-Profil de la ressource HealthcareService pour l’usage en France. Ce profil ajoute l’élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror). 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
@@ -34,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-healthcar
   "name" : "FRCoreHealthcareServiceProfile",
   "title" : "FR Core Healthcare Service Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

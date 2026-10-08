@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Assembly Order Extension 
 
-A code that represents the preferred display order of the components of this human name.
-
 **Context of Use**
 
 **Usage info**
@@ -43,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-human-nam
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

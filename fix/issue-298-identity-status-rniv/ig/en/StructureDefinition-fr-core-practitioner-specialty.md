@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Practitioner Specialty Extension 
 
-This extension adds the element “specialty” to the FHIR Practitioner resource.
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
   "name" : "FRCorePractitionerSpecialtyExtension",
   "title" : "FR Core Practitioner Specialty Extension",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Patient identifier use PI 
 
- 
-Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP). Authorized use for PI identifier. 
-
  **References** 
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
@@ -37,7 +34,7 @@ Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP)
   "title" : "FR Core ValueSet Patient identifier use PI",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

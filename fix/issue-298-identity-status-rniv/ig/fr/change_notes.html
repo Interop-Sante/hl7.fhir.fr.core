@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/liquid.css"/>
     <link rel="stylesheet" href="assets/css/project.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+  	  <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/hl7fr.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
@@ -170,13 +170,13 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
-    <div><img src="assets/images/lang-fr.png" alt="flag en" class="flag"/>Français</div>
+    <div><img src="assets/images/lang-fr.png" alt="drapeau English" class="flag"/>Français</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
-    <div><img src="assets/images/lang-fr.png" alt="flag fr" class="flag"/>Français</div>
+    <div><img src="assets/images/lang-fr.png" alt="drapeau fr" class="flag"/>Français</div>
 
-    <div><a href="../en/change_notes.html"><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</a></div>
+    <div><a href="../en/change_notes.html"><img src="assets/images/lang-en.png" alt="drapeau en" class="flag"/>English</a></div>
 
   </div>
 </div>
@@ -388,7 +388,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>La cardinalité de <code class="language-plaintext highlighter-rouge">identityStatus</code> passe de <code class="language-plaintext highlighter-rouge">0..1</code> à <code class="language-plaintext highlighter-rouge">1..1</code> dans le profil Patient INS pour satisfaire EXI SI 07.</p>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1155">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h5 id="identityreliability-obligatoire-dans-frcorepatientprofile"><code class="language-plaintext highlighter-rouge">identityReliability</code> obligatoire dans <code class="language-plaintext highlighter-rouge">FRCorePatientProfile</code></h5>
+
+<p><strong>[BREAKING CHANGE]</strong> La cardinalité de la slice <code class="language-plaintext highlighter-rouge">identityReliability</code> sur <code class="language-plaintext highlighter-rouge">Patient.extension</code> passe de <code class="language-plaintext highlighter-rouge">0..*</code> à <code class="language-plaintext highlighter-rouge">1..*</code> dans le profil de base <code class="language-plaintext highlighter-rouge">FRCorePatientProfile</code>, ce qui la rend obligatoire pour tous les profils qui en héritent (y compris <code class="language-plaintext highlighter-rouge">FRCorePatientINSProfile</code>) <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298">#298</a>. Les attributs Identité douteuse (<code class="language-plaintext highlighter-rouge">DOUT</code>) et Identité fictive (<code class="language-plaintext highlighter-rouge">FICT</code>) de <code class="language-plaintext highlighter-rouge">comment</code>, combinés au statut <code class="language-plaintext highlighter-rouge">PROV</code> imposé par les invariants <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability-1</code>/<code class="language-plaintext highlighter-rouge">-2</code>, permettent de qualifier les cas où le défaut de vérification n’est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s’identifier…) : aucune situation d’identitovigilance ne reste donc sans représentation possible malgré ce caractère désormais obligatoire.</p>
+
+<p><strong>Impact pour les implémenteurs</strong> : toute ressource <code class="language-plaintext highlighter-rouge">Patient</code> (ou <code class="language-plaintext highlighter-rouge">FRCorePatientINS</code>) sans instance de <code class="language-plaintext highlighter-rouge">identityReliability</code> doit être mise à jour pour en porter au moins une (au minimum la sous-extension <code class="language-plaintext highlighter-rouge">lastUpdated</code>, déjà obligatoire au sein de l’extension).</p>
+
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1223">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -646,7 +652,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2220">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2288">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -667,7 +673,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2303">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2371">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -675,7 +681,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2321">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2389">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -786,8 +792,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-09-29 11:55:00 +0000">
-    2026-09-29
+  <span title="2026-10-08 14:23:00 +0000">
+    2026-10-08
   </span>
 
           <br/>

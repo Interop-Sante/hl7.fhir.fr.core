@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem v2-0203 
 
- 
-HL7 v2 - Identifier type 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md)
@@ -33,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

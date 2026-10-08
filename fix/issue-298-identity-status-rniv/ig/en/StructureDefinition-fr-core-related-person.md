@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Related Person Profile 
 
- 
-Profile of the RelatedPerson resource for France. 
-Profil de la ressource RelatedPerson pour l’usage en France 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
@@ -34,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-related-p
   "name" : "FRCoreRelatedPersonProfile",
   "title" : "FR Core Related Person Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

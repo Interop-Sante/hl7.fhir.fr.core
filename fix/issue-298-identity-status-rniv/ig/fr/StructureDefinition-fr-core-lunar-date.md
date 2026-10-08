@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Lunar Date Extension 
 
-Date de naissance approximative du patient. Approximate birthdate of the patient
-
 **Context of Use**
 
 **Usage info**
@@ -33,7 +31,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type string : Date de naissance approximative du patient. Approximate birthdate of the patient
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -64,7 +62,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-lunar-d
   "name" : "FRCoreLunarDateExtension",
   "title" : "FR Core Lunar Date Extension",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

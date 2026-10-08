@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization Discipline de prestation - nomenclature SAE 
 
- 
-Valeurs permettant de coder les disciplines de prestation. 
-
  **References** 
 
 * [FR Core Organization Extension - Discipline Prestation](StructureDefinition-fr-core-organization-discipline-prestation.md)
@@ -37,7 +34,7 @@ Valeurs permettant de coder les disciplines de prestation.
   "title" : "FR Core ValueSet Organization Discipline de prestation - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

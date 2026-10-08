@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Fiabilité Identité 
 
- 
-CodeSystem définissant les 4 statuts de confiance de l’identité imposés par le référentiel national d’identitovigilance (RNIV) [EXI SI 07] : « Tout système d’information en santé doit permettre d’attribuer un des 4 statuts de confiance à chaque identité numérique stockée. » Ces statuts sont exclusifs les uns des autres et résultent du croisement de deux critères indépendants : la récupération ou non des traits d’identité via le téléservice INSi, et la réalisation ou non d’un contrôle de cohérence avec un dispositif d’identification à haut niveau de confiance. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Identity Status](ValueSet-fr-core-vs-identity-status.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Fiabilité Identité",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

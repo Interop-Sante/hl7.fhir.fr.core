@@ -2,9 +2,6 @@
 
 ## ValueSet: Body Temperature Measurement Body Location value set 
 
- 
-SELECT SNOMED CT code system values that describe where on the body the temperature was measured. 
-
  **References** 
 
 * [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md)
@@ -36,7 +33,7 @@ SELECT SNOMED CT code system values that describe where on the body the temperat
   "title" : "Body Temperature Measurement Body Location value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

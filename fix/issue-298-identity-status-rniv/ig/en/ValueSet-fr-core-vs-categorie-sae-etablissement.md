@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Categorie SAE Etablissement 
 
- 
-Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024 
-
  **References** 
 
 * [FR Core Organization Extension - Catetgorie SAE](StructureDefinition-fr-core-organization-sae-categorie.md)

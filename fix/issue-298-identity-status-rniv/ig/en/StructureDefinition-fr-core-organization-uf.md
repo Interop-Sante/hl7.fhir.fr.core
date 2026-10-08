@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core Organization UF Profile 
 
- 
-Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement. 
-
 ### Usage
 
 Une Unité Fonctionnelle (UF) peut matérialiser une organisation prenant en charge ou non des patients. Elle peut également indiquer une responsabilité médicale. L’association d’une UF avec un responsable peut alors porter cette notion de responsabilité vis-à-vis d’un patient.
@@ -79,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationUFProfile",
   "title" : "FR Core Organization UF Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

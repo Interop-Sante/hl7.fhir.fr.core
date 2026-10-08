@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation Bmi Profile 
 
- 
-French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio]. 
-Profil français de l’indice de masse corporelle basé sur le profil HL7 Vital Sign BMI 
-
 **Usages:**
 
 * Examples for this Profile: [Observation/FRCoreObservationBMIExample](Observation-FRCoreObservationBMIExample.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationBmiProfile",
   "title" : "FR Core Observation Bmi Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

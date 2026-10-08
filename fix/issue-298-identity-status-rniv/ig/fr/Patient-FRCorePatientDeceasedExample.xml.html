@@ -24,9 +24,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -177,13 +177,13 @@
 
 <div style="float: var(--ig-right);padding: 8px 0px;" id="language">
   <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag en" src="assets/images/lang-fr.png"/>Français</div>
+    <div><img class="flag" alt="drapeau English" src="assets/images/lang-fr.png"/>Français</div>
   </div>
   <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
  	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
-    <div><img class="flag" alt="flag fr" src="assets/images/lang-fr.png"/>Français</div>
+    <div><img class="flag" alt="drapeau fr" src="assets/images/lang-fr.png"/>Français</div>
 
-    <div><a href="../en/Patient-FRCorePatientDeceasedExample.xml.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+    <div><a href="../en/Patient-FRCorePatientDeceasedExample.xml.html"><img class="flag" src="assets/images/lang-en.png" alt="drapeau en"/>English</a></div>
 
   </div>
 </div>
@@ -275,7 +275,7 @@
 <h2 id="root">: FRCorePatientDeceasedExample</h2>
 
 
-<p><a href="Patient-FRCorePatientDeceasedExample.xml" no-download="true">Brut xml</a> | <a href="Patient-FRCorePatientDeceasedExample.xml" download>Télécharger</a></p>
+<p><a href="Patient-FRCorePatientDeceasedExample.xml" no-download="true">xml brut</a> | <a href="Patient-FRCorePatientDeceasedExample.xml" download>Télécharger</a></p>
 
   <!-- insert intro if present -->
   
@@ -293,9 +293,23 @@
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xml:lang=&quot;fr&quot; lang=&quot;fr&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;French&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : Patient FRCorePatientDeceasedExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;FRCorePatientDeceasedExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcFRCorePatientDeceasedExample&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profil: &lt;a href=&quot;StructureDefinition-fr-core-patient.html&quot;&gt;FR Core Patient Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Jean Martin (official) Male, Date de Naissance :1950-03-10 ( Patient internal identifier: IPP-999-001 (use: usual, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;L'enregistrement est actif&quot;&gt;Actif :&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Statut connu du patient&quot;&gt;Décédé :&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;2024-01-15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Date de naissance approximative du patient.
-Approximate birthdate of the patient&quot;&gt;&lt;a href=&quot;StructureDefinition-fr-core-lunar-date.html&quot;&gt;FR Core Lunar Date Extension&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;1950-03-10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
+Approximate birthdate of the patient&quot;&gt;&lt;a href=&quot;StructureDefinition-fr-core-lunar-date.html&quot;&gt;FR Core Lunar Date Extension&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;1950-03-10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Extension composite précisant le degré de confiance de l'identité du patient au sens du Référentiel National d'Identitovigilance (RNIV) : statut de confiance (provisoire, récupérée, validée, qualifiée), canal d'obtention des traits d'identité ou du matricule INS, pièce justificative contrôlée, dates associées et annotations complémentaires.
+Composite extension specifying the confidence level of a patient's identity per the French National Identity Vigilance Framework (RNIV): trust status (provisional, recovered, validated, qualified), channel used to collect the identity traits or the INS identifier, validation evidence, related dates and additional annotations.&quot;&gt;FR Core Patient Identity Reliability Extension:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;lastUpdated: 2024-01-10 08:00:00+0100&lt;/li&gt;&lt;li&gt;identityStatus: &lt;a href=&quot;CodeSystem-fr-core-cs-identity-status.html#fr-core-cs-identity-status-PROV&quot;&gt;FR Core CodeSystem Fiabilité Identité: PROV&lt;/a&gt; (Identité provisoire)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
 Carries the death place of the patient&quot;&gt;&lt;a href=&quot;StructureDefinition-fr-core-patient-death-place.html&quot;&gt;FR Core Patient Death Place Extension&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;CHU de Paris, Paris, France&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;lastUpdated&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-01-10T08:00:00+01:00&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;identityStatus&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PROV&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueAddress</a>&gt;
@@ -384,8 +398,8 @@ Approximate birthdate of the patient&quot;&gt;&lt;a href=&quot;StructureDefiniti
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-09-29 11:55:00 +0000">
-    2026-09-29
+  <span title="2026-10-08 14:23:00 +0000">
+    2026-10-08
   </span>
 
           <br/>

@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Patient Profile 
 
- 
-Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
-Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) 
-
 **Usages:**
 
 * Derived from this Profile: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
@@ -35,7 +31,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient.c
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -117,6 +113,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient.c
       "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
     },
     {
+      "id" : "Patient.extension",
+      "path" : "Patient.extension",
+      "min" : 1
+    },
+    {
       "id" : "Patient.extension:birthPlace",
       "path" : "Patient.extension",
       "sliceName" : "birthPlace"
@@ -133,7 +134,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient.c
       "id" : "Patient.extension:identityReliability",
       "path" : "Patient.extension",
       "sliceName" : "identityReliability",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "Extension",

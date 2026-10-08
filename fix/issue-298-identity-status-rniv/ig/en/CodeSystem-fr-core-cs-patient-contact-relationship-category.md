@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Patient Contact Relationship Category 
 
- 
-Catégorie de la relation du contact patient : rôle ou type de relation 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Patient Contact Relationship Category](ValueSet-fr-core-vs-patient-contact-relationship-category.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Patient Contact Relationship Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

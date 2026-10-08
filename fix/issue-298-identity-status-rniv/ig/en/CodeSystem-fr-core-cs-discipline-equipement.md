@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Discipline d'Equipement - nomenclature SAE 
 
- 
-La nomenclature de disciplines d’équipement est utilisée pour ventiler l’activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline ‘administration, services hôteliers et techniques’. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n’apparaissent pas, car elles ne font pas partie du champ de la SAE. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE](ValueSet-fr-core-vs-organization-discipline-equipement.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Discipline d'Equipement - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

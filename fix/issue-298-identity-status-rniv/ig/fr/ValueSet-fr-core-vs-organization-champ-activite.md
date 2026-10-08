@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF 
 
- 
-Champ d’activité d’une organisation type UF. 
-
  **References** 
 
 * [FR Core Organization Extension - Champ d'activité](StructureDefinition-fr-core-organization-champ-activite.md)
@@ -37,7 +34,7 @@ Champ d’activité d’une organisation type UF.
   "title" : "FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

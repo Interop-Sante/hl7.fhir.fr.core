@@ -6,6 +6,29 @@
   padding:.6em .9em;
 }
 #artifactsTable .artifacts-group-name { font-weight:700; font-size:1.1em; }
+/* Section self-link (artifacts.html#<groupingId>) — revealed on hover, like the heading anchors */
+#artifactsTable .artifacts-group-anchor {
+  display:inline-block;
+  margin-left:.45em;
+  line-height:1;
+  color:inherit;
+  text-decoration:none;
+  opacity:0;
+  transition:opacity .15s ease-in-out;
+}
+#artifactsTable .artifacts-link-icon {
+  width:.8em;
+  height:.8em;
+  vertical-align:baseline;
+}
+#artifactsTable tr.dtrg-group:hover .artifacts-group-anchor,
+#artifactsTable .artifacts-group-anchor:focus { opacity:.6; }
+#artifactsTable .artifacts-group-anchor:hover { opacity:1; text-decoration:none; }
+/* Flash the section a visitor has just been linked to */
+#artifactsTable tr.dtrg-group.artifacts-group-target td.artifacts-group-header {
+  background:rgba(255,220,100,0.55);
+  transition:background 1.2s ease-out;
+}
 #artifactsTable .artifacts-group-desc { font-weight:normal; font-size:.92em; margin-top:.3em; opacity:.75; }
 #artifactsTable .artifacts-group-desc p:last-child { margin-bottom:0; }
 

@@ -18,6 +18,9 @@ Jean Martin (official) Male, Date de Naissance :1950-03-10 ( Patient internal id
 | :--- | :--- | :--- | :--- |
 | Actif : | false | Décédé : | 2024-01-15 |
 | [FR Core Lunar Date Extension](StructureDefinition-fr-core-lunar-date.md) | 1950-03-10 | | |
+| FR Core Patient Identity Reliability Extension: | * lastUpdated: 2024-01-10 08:00:00+0100
+* identityStatus: [FR Core CodeSystem Fiabilité Identité: PROV](CodeSystem-fr-core-cs-identity-status.md#fr-core-cs-identity-status-PROV) (Identité provisoire)
+ | | |
 | [FR Core Patient Death Place Extension](StructureDefinition-fr-core-patient-death-place.md) | CHU de Paris, Paris, France | | |
 
 
@@ -32,6 +35,20 @@ Jean Martin (official) Male, Date de Naissance :1950-03-10 ( Patient internal id
     "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"]
   },
   "extension" : [{
+    "extension" : [{
+      "url" : "lastUpdated",
+      "valueDateTime" : "2024-01-10T08:00:00+01:00"
+    },
+    {
+      "url" : "identityStatus",
+      "valueCoding" : {
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status",
+        "code" : "PROV"
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+  },
+  {
     "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
     "valueAddress" : {
       "text" : "CHU de Paris, Paris, France",

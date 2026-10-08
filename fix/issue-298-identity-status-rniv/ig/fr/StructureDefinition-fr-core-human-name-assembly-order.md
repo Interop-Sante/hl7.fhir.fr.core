@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Assembly Order Extension 
 
-A code that represents the preferred display order of the components of this human name.
-
 **Context of Use**
 
 **Usage info**
@@ -39,7 +37,7 @@ Extension simple avec le type code : A code that represents the preferred displa
 
 **[Maturité](http://hl7.org/fhir/versions.html#maturity)**: 1
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -84,7 +82,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-human-n
   "name" : "FRCoreAssemblyOrderExtension",
   "title" : "FR Core Assembly Order Extension",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

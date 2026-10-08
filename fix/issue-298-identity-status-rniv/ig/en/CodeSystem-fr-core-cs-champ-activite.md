@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Champ Activite - Codes du champ d'activité 
 
- 
-Champ d’activité clinique de l’organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF](ValueSet-fr-core-vs-organization-champ-activite.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Champ Activite - Codes du champ d'activité",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

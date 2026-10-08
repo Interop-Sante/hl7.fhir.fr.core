@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Practitioner Role 
 
- 
-Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization 
-Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation. 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
@@ -128,7 +124,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-practit
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

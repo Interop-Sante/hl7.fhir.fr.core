@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation 
 
-Extension permettant de définir des membres d’une organisation. Les membres sont des organisations filles de la ressources. C’est la relation inverse de partOf.
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationMemberExtension",
   "title" : "FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

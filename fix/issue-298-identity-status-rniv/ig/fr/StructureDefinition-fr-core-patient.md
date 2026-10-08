@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Patient Profile 
 
- 
-Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
-Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) 
-
 **Utilisations:**
 
 * Dérivé de ce Profil: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
@@ -40,7 +36,7 @@ Cette structure est dérivée de [PatientEuCore](http://hl7.eu/fhir/base/2.0.0/S
 
 ** Résumé **
 
-Obligatoire : 0 élément(32 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 2 éléments(32 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -97,7 +93,7 @@ Cette structure est dérivée de [PatientEuCore](http://hl7.eu/fhir/base/2.0.0/S
 
 ** Résumé **
 
-Obligatoire : 0 élément(32 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 2 éléments(32 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -149,7 +145,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -231,6 +227,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
       "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
     },
     {
+      "id" : "Patient.extension",
+      "path" : "Patient.extension",
+      "min" : 1
+    },
+    {
       "id" : "Patient.extension:birthPlace",
       "path" : "Patient.extension",
       "sliceName" : "birthPlace"
@@ -247,7 +248,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
       "id" : "Patient.extension:identityReliability",
       "path" : "Patient.extension",
       "sliceName" : "identityReliability",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "Extension",

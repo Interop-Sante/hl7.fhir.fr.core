@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Observation Body Weight Profile 
 
- 
-French profile of body weight based on the FHIR profil BodyWeightMeas. 
-Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs. 
-
 **Utilisations:**
 
 * Exemples pour ce/t/te Profil: [Observation/FRCoreObservationBodyWeightExample](Observation-FRCoreObservationBodyWeightExample.md)
@@ -127,7 +123,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationBodyWeightProfile",
   "title" : "FR Core Observation Body Weight Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

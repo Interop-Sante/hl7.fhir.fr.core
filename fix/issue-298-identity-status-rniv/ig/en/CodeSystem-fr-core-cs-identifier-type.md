@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Identifier Type 
 
- 
-Identifier type 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Encounter identifier type](ValueSet-fr-core-vs-encounter-identifier-type.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Identifier Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation Body Temperature Profile 
 
- 
-French profile for body temperature. 
-Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7 
-
 **Usages:**
 
 * Examples for this Profile: [Observation/FRCoreObservationBodyTemperatureExample](Observation-FRCoreObservationBodyTemperatureExample.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationBodyTemperatureProfile",
   "title" : "FR Core Observation Body Temperature Profile",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

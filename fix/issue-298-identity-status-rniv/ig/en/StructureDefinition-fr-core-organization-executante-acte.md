@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Extension - Exécutante d'acte 
 
-Indicateur permettant de définir si une UF peut exécuter des actes
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationExecutanteActeExtension",
   "title" : "FR Core Organization Extension - Exécutante d'acte",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

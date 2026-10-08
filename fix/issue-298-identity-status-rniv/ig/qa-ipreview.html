@@ -347,7 +347,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
           Le package hl7.fhir.fr.core#2.2.0 est basé sur FHIR 4.0.1.
           Date de génération : 
   
-    2026-09-29
+    2026-10-08
   
 
           
@@ -371,7 +371,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
           Package hl7.fhir.fr.core#2.2.0 based on FHIR 4.0.1.
           Generated 
   
-    2026-09-29
+    2026-10-08
   
 
           
@@ -390,7 +390,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           Guide d'implémentation FR Core  &reg;&copy; HL7 |
              
-                CC0
+                Creative Commons 0
          (        <a href="searchform.html">src</a>
 )
       </li>
@@ -1426,8 +1426,8 @@ Information Source:           <a href="https://annuaire.sante.fr">https://annuai
           Package hl7.fhir.fr.core#2.2.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Generated 
-            <span title="2026-09-29 11:55:00 +0000">
-    2026-09-29
+            <span title="2026-10-08 14:23:00 +0000">
+    2026-10-08
   </span>
 
 
@@ -3328,10 +3328,35 @@ Ajout de 2 invariants sur           <code class="language-plaintext highlighter-
           <a href="en/change_notes.html">web</a>
         </td>
         <td>
+          <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298">github.com</a>
+        </td>
+        <td>
+          <strong>[BREAKING CHANGE]</strong>
+ La cardinalité de la slice           <code class="language-plaintext highlighter-rouge">identityReliability</code>
+ sur           <code class="language-plaintext highlighter-rouge">Patient.extension</code>
+ passe de           <code class="language-plaintext highlighter-rouge">0..*</code>
+ à           <code class="language-plaintext highlighter-rouge">1..*</code>
+ dans le profil de base           <code class="language-plaintext highlighter-rouge">FRCorePatientProfile</code>
+, ce qui la rend obligatoire pour tous les profils qui en héritent (y compris           <code class="language-plaintext highlighter-rouge">FRCorePatientINSProfile</code>
+)           <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298">#298</a>
+. Les attributs Identité douteuse (          <code class="language-plaintext highlighter-rouge">DOUT</code>
+) et Identité fictive (          <code class="language-plaintext highlighter-rouge">FICT</code>
+) de           <code class="language-plaintext highlighter-rouge">comment</code>
+, combinés au statut           <code class="language-plaintext highlighter-rouge">PROV</code>
+ imposé par les invariants           <code class="language-plaintext highlighter-rouge">fr-core-identity-reliability-1</code>
+/          <code class="language-plaintext highlighter-rouge">-2</code>
+, permettent de qualifier les cas où le défaut de vérification n’est pas une simple attente mais un problème identifié (homonymie non résolue, identité fictive ou anonyme, patient refusant de s’identifier…) : aucune situation d’identitovigilance ne reste donc sans représentation possible malgré ce caractère désormais obligatoire.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/change_notes.html">web</a>
+        </td>
+        <td>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l1161">​</a>
+          <a name="l1229">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4024,7 +4049,7 @@ Mise à jour de l’identifier type du rpps rang (INTRN → RPPS)           <a h
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2226">​</a>
+          <a name="l2294">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4203,7 +4228,7 @@ Ajout d’une intro note pour le profil Patient INS           <a href="https://g
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fr</a>
         </td>
         <td>
-          <a name="l2309">​</a>
+          <a name="l2377">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a>
  de l’Implementation Guide FRCore
         </td>
@@ -4239,7 +4264,7 @@ Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2327">​</a>
+          <a name="l2395">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5084,8 +5109,8 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           Le package hl7.fhir.fr.core#2.2.0 est basé sur           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Date de génération : 
-            <span title="2026-09-29 11:55:00 +0000">
-    2026-09-29
+            <span title="2026-10-08 14:23:00 +0000">
+    2026-10-08
   </span>
 
 
@@ -5126,7 +5151,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l1155">​</a>
+          <a name="l1223">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5139,7 +5164,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2220">​</a>
+          <a name="l2288">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5152,7 +5177,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fr</a>
         </td>
         <td>
-          <a name="l2303">​</a>
+          <a name="l2371">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a>
  de l’Implementation Guide FRCore
         </td>
@@ -5165,7 +5190,7 @@ Les nomenclatures utilisées pour ce recueil sont définies dans le document    
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">hl7.fr</a>
         </td>
         <td>
-          <a name="l2321">​</a>
+          <a name="l2389">​</a>
           <a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a>
  de l’Implementation Guide FRCore
         </td>

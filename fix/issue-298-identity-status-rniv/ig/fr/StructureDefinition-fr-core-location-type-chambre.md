@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Location Extension - Type de chambre 
 
-Type de chambre
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +36,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type Coding : Type de chambre
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -73,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-locatio
   "name" : "FRCoreLocationTypeChambreExtension",
   "title" : "FR Core Location Extension - Type de chambre",
   "status" : "active",
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

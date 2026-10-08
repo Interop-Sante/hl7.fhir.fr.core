@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Mode validation identity INS 
 
- 
-The validation mode of the identity authorized for INS 
-
  **References** 
 
 * [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
@@ -37,7 +34,7 @@ The validation mode of the identity authorized for INS
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T11:55:38+00:00",
+  "date" : "2026-10-08T14:23:41+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
