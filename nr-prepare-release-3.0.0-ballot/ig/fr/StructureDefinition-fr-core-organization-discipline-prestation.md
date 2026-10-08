@@ -71,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-organiz
   "name" : "FRCoreOrganizationDisciplinePrestationExtension",
   "title" : "FR Core Organization Extension - Discipline Prestation",
   "status" : "active",
-  "date" : "2026-10-08T18:40:11+00:00",
+  "date" : "2026-10-08T19:08:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

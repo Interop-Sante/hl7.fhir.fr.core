@@ -34,7 +34,7 @@
   "title" : "FR Core ValueSet Marital Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-08T18:40:11+00:00",
+  "date" : "2026-10-08T19:08:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
