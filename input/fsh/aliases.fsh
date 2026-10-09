@@ -68,6 +68,7 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $organization-description-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description
+Alias: $allergy-intolerance-type-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type
 
 
 // ###############
