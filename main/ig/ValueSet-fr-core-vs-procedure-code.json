@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-core-vs-procedure-code",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+  },
+  "language" : "fr-FR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-procedure-code</b></p><a name=\"fr-core-vs-procedure-code\"> </a><a name=\"hcfr-core-vs-procedure-code\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version : 4.0.1</p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-ccam.html\"><code>https://smt.esante.gouv.fr/terminologie-ccam</code></a><span title=\"La version est explicitement indiquée comme étant v84.00\"> version &#x1F4CD;v84.00</span></li><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-absent-or-unknown-procedure-cisis.html\">JDV Absent Or Unknown Procedure CISIS</a></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-procedure-code</b></p><a name=\"en-fr-core-vs-procedure-code\"> </a><a name=\"en-hcfr-core-vs-procedure-code\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-FR</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version: 4.0.1</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-ccam.html\"><code>https://smt.esante.gouv.fr/terminologie-ccam</code></a><span title=\"Version is explicitly stated to be v84.00\"> version &#x1F4CD;v84.00</span></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-absent-or-unknown-procedure-cisis.html\">JDV Absent Or Unknown Procedure CISIS</a></li></ul></div></div>"
+  },
+  "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code",
+  "version" : "2.2.0",
+  "name" : "FRCoreValueSetProcedureCode",
+  "title" : "FR Core ValueSet Procedure code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-12T16:02:48+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://smt.esante.gouv.fr/terminologie-ccam",
+      "version" : "v84.00"
+    },
+    {
+      "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis|20260916095454"]
+    }]
+  }
+}

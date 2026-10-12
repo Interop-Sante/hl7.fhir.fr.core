@@ -2,14 +2,10 @@
 
 ## Resource Profile: FR Core Patient Profile 
 
- 
-Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions. 
-Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.) 
-
 **Usages:**
 
 * Derived from this Profile: [FR Core Patient INS Profile](StructureDefinition-fr-core-patient-ins.md)
-* Refer to this Profile: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md)... Show 11 more, [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md), [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md), [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Refer to this Profile: [FR Core Appointment Operator Extension](StructureDefinition-fr-core-appointment-operator.md), [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md), [FR Core Consent Profile](StructureDefinition-fr-core-consent.md), [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)... Show 13 more, [FR Core Medication Administration Inhaled Oxygen Profile](StructureDefinition-fr-core-medication-administration-inhaled-oxygen.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md), [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md), [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md), [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md), [FR Core Procedure Profile](StructureDefinition-fr-core-procedure.md), [FR Core Related Person Profile](StructureDefinition-fr-core-related-person.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 * Examples for this Profile: [Patient/FRCorePatientDeceasedExample](Patient-FRCorePatientDeceasedExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-patient.json)
@@ -35,7 +31,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient.c
   "name" : "FRCorePatientProfile",
   "title" : "FR Core Patient Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -169,8 +165,12 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient.c
         "discriminator" : [{
           "type" : "value",
           "path" : "type"
+        },
+        {
+          "type" : "value",
+          "path" : "system"
         }],
-        "description" : "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)",
+        "description" : "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.) et le system, nécessaire pour distinguer NSS-NIR de NSS-NIA qui partagent le même type (NH)",
         "rules" : "open"
       },
       "short" : "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS."

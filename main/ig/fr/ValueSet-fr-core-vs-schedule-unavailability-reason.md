@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Unavailability Reason 
 
- 
-Raison d’indisponibilité 
-
  **References** 
 
 * [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
@@ -53,7 +50,7 @@ Raison d’indisponibilité
   "title" : "FR Core ValueSet Unavailability Reason",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

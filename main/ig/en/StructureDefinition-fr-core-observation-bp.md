@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation Blood Pressure Profile 
 
- 
-French profile for blood pressure. 
-Profil français de la pression artérielle. Profil basé sur le profil bp d’HL7 
-
 **Usages:**
 
 * Examples for this Profile: [Observation/FRCoreObservationBPExample](Observation-FRCoreObservationBPExample.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationBpProfile",
   "title" : "FR Core Observation Blood Pressure Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

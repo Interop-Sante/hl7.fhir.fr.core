@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization type 
 
- 
-Types de structures 
-
  **References** 
 
 * [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
@@ -37,7 +34,7 @@ Types de structures
   "title" : "FR Core ValueSet Organization type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

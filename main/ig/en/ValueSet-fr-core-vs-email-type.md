@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Email type 
 
- 
-The type of email 
-
  **References** 
 
 * [FR Core Contact Point Email Type Extension](StructureDefinition-fr-core-contact-point-email-type.md)
@@ -49,7 +46,7 @@ The type of email
   "title" : "FR Core ValueSet Email type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

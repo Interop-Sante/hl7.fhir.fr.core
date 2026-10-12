@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Location Type Chambre 
 
- 
-Type de chambre 
-
  **References** 
 
 * [FR Core Location Extension - Type de chambre](StructureDefinition-fr-core-location-type-chambre.md)
@@ -37,7 +34,7 @@ Type de chambre
   "title" : "FR Core ValueSet Location Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -66,7 +66,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.13.0"
+    "version" : "1.14.0"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -1462,6 +1462,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-consent.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-consent"
+      },
+      "name" : "FR Core Consent Profile",
+      "description" : "Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.\r\n\nProfil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -2294,6 +2310,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-procedure-difficulty-extension.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-procedure-difficulty-extension"
+      },
+      "name" : "FR Core Procedure Difficulty Extension",
+      "description" : "Extension permettant d'indiquer la difficulté perçue ou mesurée d'un acte.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-procedure-priority-extension.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-procedure-priority-extension"
+      },
+      "name" : "FR Core Procedure Priority Extension",
+      "description" : "Extension permettant d'indiquer la priorité clinique de l'acte.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fr-core-procedure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fr-core-procedure"
+      },
+      "name" : "FR Core Procedure Profile",
+      "description" : "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -2986,6 +3050,38 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-procedure-code.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-procedure-code"
+      },
+      "name" : "FR Core ValueSet Procedure code",
+      "description" : "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-procedure-code-autre.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-procedure-code-autre"
+      },
+      "name" : "FR Core ValueSet Procedure code - Autre acte",
+      "description" : "Code CISIS à utiliser si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-fr-core-vs-relation-type.html"
       }],
       "reference" : {
@@ -3058,6 +3154,22 @@
       "name" : "FRCoreAppointmentExample",
       "description" : "Exemple de ressource Appointment pour décrire un état de rendez-vous médical",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-FRCoreConsentExample.html"
+      }],
+      "reference" : {
+        "reference" : "Consent/FRCoreConsentExample"
+      },
+      "name" : "FRCoreConsentExample",
+      "description" : "Exemple de ressource Consent pour indiquer le consentement d'alimentation du DMP",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent|2.2.0"
     },
     {
       "extension" : [{
@@ -3346,6 +3458,22 @@
       "name" : "FRCorePractitionerRoleExample",
       "description" : "Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)",
       "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Procedure-FRCoreProcedureExample.html"
+      }],
+      "reference" : {
+        "reference" : "Procedure/FRCoreProcedureExample"
+      },
+      "name" : "FRCoreProcedureExample",
+      "description" : "Exemple de ressource Procedure : appendicectomie réalisée en urgence",
+      "exampleCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure|2.2.0"
     },
     {
       "extension" : [{

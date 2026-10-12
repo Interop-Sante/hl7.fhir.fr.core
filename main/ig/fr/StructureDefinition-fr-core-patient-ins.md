@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Patient INS Profile 
 
- 
-FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile. 
-Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient. 
-
 ### Usage
 
 Le profil hérite de FRCorePatient enrichi de l’identité INS récupérée par le téléservice INSi et potentiellement qualifiée.
@@ -25,6 +21,7 @@ Pour plus d’informations sur le contexte du patient INS, consultez le référe
 
 **Utilisations:**
 
+* Référence ce Profil: [FR Core Procedure Profile](StructureDefinition-fr-core-procedure.md)
 * Exemples pour ce/t/te Profil: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-ins)
@@ -104,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

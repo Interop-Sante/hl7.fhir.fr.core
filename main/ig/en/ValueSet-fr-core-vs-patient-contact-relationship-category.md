@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Patient Contact Relationship Category 
 
- 
-Catégorie de la relation du contact patient : rôle ou type de relation 
-
  **References** 
 
 * [FR Core Patient Contact Relationship Category Extension](StructureDefinition-fr-core-patient-contact-relationship-category.md)
@@ -37,7 +34,7 @@ Catégorie de la relation du contact patient : rôle ou type de relation
   "title" : "FR Core ValueSet Patient Contact Relationship Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

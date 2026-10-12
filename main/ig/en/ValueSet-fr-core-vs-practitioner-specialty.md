@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Practitioner specialty 
 
- 
-The modalities of exercice of the practitioner, registered by an official organization for a period of time. 
-
  **References** 
 
 * [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
@@ -54,7 +51,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "title" : "FR Core ValueSet Practitioner specialty",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:31:08+00:00",
+  "date" : "2026-10-12T16:02:48+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -83,7 +80,7 @@ The modalities of exercice of the practitioner, registered by an official organi
   "compose" : {
     "include" : [{
       "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
-      "version" : "20260730120000"
+      "version" : "20260928120000"
     }]
   }
 }
