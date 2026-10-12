@@ -22,7 +22,7 @@ Il n’est pas toujours évident de déterminer sur quelle version d’un profil
 ```
 "meta": {
   "profile": [
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.2.0"
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|3.0.0"
   ]
 }
 
