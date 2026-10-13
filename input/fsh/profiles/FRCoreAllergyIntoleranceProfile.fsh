@@ -8,7 +8,7 @@ Profile: FRCoreAllergyIntoleranceProfile
 Parent: allergyIntolerance-eu-core
 Id: fr-core-allergy-intolerance
 Title: "FR Core AllergyIntolerance Profile"
-Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
+Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
 
 * type ^short = "Type d'allergie ou d'intolérance"
 // Binding required R4 natif inchangé (allergy | intolerance uniquement) : FRCoreValueSetAllergyIntoleranceType contient des codes (idiosyncrasie, hypersensibilité non allergique) interdits par ce binding en R4. En R5 le binding passe à preferred (https://hl7.org/fhir/R5/allergyintolerance.html) : ces codes sont donc portés via l'extension backport ci-dessous plutôt que sur l'élément natif.
