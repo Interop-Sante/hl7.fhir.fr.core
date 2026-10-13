@@ -10,7 +10,7 @@
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-10-13T09:01:17+00:00",
+  "date" : "2026-10-13T11:52:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -3387,8 +3387,12 @@
         "discriminator" : [{
           "type" : "value",
           "path" : "type"
+        },
+        {
+          "type" : "value",
+          "path" : "system"
         }],
-        "description" : "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)",
+        "description" : "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.) et le system, nécessaire pour distinguer NSS-NIR de NSS-NIA qui partagent le même type (NH)",
         "rules" : "open"
       },
       "short" : "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS.",

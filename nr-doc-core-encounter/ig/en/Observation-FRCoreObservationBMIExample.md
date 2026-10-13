@@ -24,7 +24,7 @@ Profile: [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observati
 
 **value**: 28 Kg/m2 (Details: UCUM codekg/m2 = 'kg/m2')
 
-**interpretation**: High
+**interpretation**: Anormalement haut
 
 
 
@@ -68,7 +68,7 @@ Profile: [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observati
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
       "code" : "H",
-      "display" : "High"
+      "display" : "Anormalement haut"
     }]
   }]
 }

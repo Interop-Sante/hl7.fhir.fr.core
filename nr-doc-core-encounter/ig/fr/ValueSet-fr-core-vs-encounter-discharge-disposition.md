@@ -52,7 +52,7 @@ Expansions are not generated for retired value sets
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "retired",
   "experimental" : false,
-  "date" : "2026-10-13T09:01:17+00:00",
+  "date" : "2026-10-13T11:52:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

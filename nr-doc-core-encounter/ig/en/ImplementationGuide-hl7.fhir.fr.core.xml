@@ -12,7 +12,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-10-13T09:01:17+00:00"/>
+  <date value="2026-10-13T11:52:39+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -1054,6 +1054,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-consent"/>
+      </reference>
+      <name value="FR Core Consent Profile"/>
+      <description value="Profile of the Consent resource for France. A record of a healthcare consumer's choices, which permits or denies identified recipients or recipient roles to perform one or more actions within a given policy context, for specific purposes and periods of time.&#xD;&#xA;&#xA;Profil de la ressource Consent pour la France. Enregistrement des choix d'une personne qui autorise ou refuse à des destinataires ou rôles identifiés d'effectuer une ou plusieurs actions dans un contexte de politique donné, pour des finalités et des périodes données."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1626,6 +1637,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-procedure-difficulty-extension"/>
+      </reference>
+      <name value="FR Core Procedure Difficulty Extension"/>
+      <description value="Extension permettant d'indiquer la difficulté perçue ou mesurée d'un acte."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-procedure-priority-extension"/>
+      </reference>
+      <name value="FR Core Procedure Priority Extension"/>
+      <description value="Extension permettant d'indiquer la priorité clinique de l'acte."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-procedure"/>
+      </reference>
+      <name value="FR Core Procedure Profile"/>
+      <description value="FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -2102,6 +2146,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-procedure-code"/>
+      </reference>
+      <name value="FR Core ValueSet Procedure code"/>
+      <description value="Codes autorisés par défaut pour indiquer un acte.&#xA;Inclut :&#xA;- CCAM : terminologie facturante pour la production d'actes.&#xA;- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.&#xA;&#xA;Deux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :&#xA;- ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).&#xA;- fr-core-vs-procedure-code-autre (CISIS &quot;Autre acte&quot;) si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.&#xA;&#xA;Si aucun code approprié n'est disponible, l'acte peut être décrit en texte libre."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-procedure-code-autre"/>
+      </reference>
+      <name value="FR Core ValueSet Procedure code - Autre acte"/>
+      <description value="Code CISIS à utiliser si l'acte n'est pas trouvé dans CCAM ni SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-relation-type"/>
       </reference>
       <name value="FR Core ValueSet relation type"/>
@@ -2151,6 +2217,17 @@
       <name value="FRCoreAppointmentExample"/>
       <description value="Exemple de ressource Appointment pour décrire un état de rendez-vous médical"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/FRCoreConsentExample"/>
+      </reference>
+      <name value="FRCoreConsentExample"/>
+      <description value="Exemple de ressource Consent pour indiquer le consentement d'alimentation du DMP"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent|2.2.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2349,6 +2426,17 @@
       <name value="FRCorePractitionerRoleExample"/>
       <description value="Exemple de ressource PractitionerRole pour décrire le rôle d'un practitien (situation d'exercice)"/>
       <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role|2.2.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/FRCoreProcedureExample"/>
+      </reference>
+      <name value="FRCoreProcedureExample"/>
+      <description value="Exemple de ressource Procedure : appendicectomie réalisée en urgence"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure|2.2.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -4,7 +4,7 @@
 
 **Usages:**
 
-* Refer to this Profile: [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
+* Refer to this Profile: [FR Core Consent Profile](StructureDefinition-fr-core-consent.md), [FR Core Procedure Profile](StructureDefinition-fr-core-procedure.md) and [FR Core Schedule Profile](StructureDefinition-fr-core-schedule.md)
 * Examples for this Profile: [PractitionerRole/FRCorePractitionerRoleExample](PractitionerRole-FRCorePractitionerRoleExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-practitioner-role.json)
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
   "name" : "FRCorePractitionerRoleProfile",
   "title" : "FR Core Practitioner Role",
   "status" : "active",
-  "date" : "2026-10-13T09:01:17+00:00",
+  "date" : "2026-10-13T11:52:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

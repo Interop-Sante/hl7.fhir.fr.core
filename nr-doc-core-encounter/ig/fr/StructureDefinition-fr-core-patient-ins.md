@@ -21,7 +21,7 @@ Pour plus d’informations sur le contexte du patient INS, consultez le référe
 
 **Utilisations:**
 
-* Référence ce Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
+* Référence ce Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md) and [FR Core Procedure Profile](StructureDefinition-fr-core-procedure.md)
 * Exemples pour ce/t/te Profil: [Patient/FRCorePatientINSExample](Patient-FRCorePatientINSExample.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-patient-ins)
@@ -101,7 +101,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientINSProfile",
   "title" : "FR Core Patient INS Profile",
   "status" : "active",
-  "date" : "2026-10-13T09:01:17+00:00",
+  "date" : "2026-10-13T11:52:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

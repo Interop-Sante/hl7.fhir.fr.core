@@ -34,7 +34,7 @@
   "title" : "FR Core ValueSet Mode validation identity INS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T09:01:17+00:00",
+  "date" : "2026-10-13T11:52:39+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -64,16 +64,40 @@
       "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity",
       "version" : "2.2.0",
       "concept" : [{
+        "code" : "CN"
+      },
+      {
         "code" : "PA"
       },
       {
-        "code" : "CN"
+        "code" : "CS"
+      },
+      {
+        "code" : "eCN"
+      },
+      {
+        "code" : "IN"
+      },
+      {
+        "code" : "AV"
+      },
+      {
+        "code" : "LECV"
       },
       {
         "code" : "AN"
       },
       {
         "code" : "LE"
+      },
+      {
+        "code" : "CC"
+      },
+      {
+        "code" : "CIMS"
+      },
+      {
+        "code" : "ANCV"
       }]
     }]
   }

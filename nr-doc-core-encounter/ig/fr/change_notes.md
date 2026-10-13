@@ -21,6 +21,8 @@
 * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
 * Corrections QA : code système nationality (`urn:iso:std:iso:3166`), display names SNOMED CT et TRE-R38, définitions manquantes dans les CodeSystems `v2-3307`, `TypeChambre`, `PositionLit`
  
+* Correction du slicing `identifier` de `FRCorePatient` : ajout d’un discriminator sur `system` en complément de `type`, pour lever l’ambiguïté entre les slices `NSS-NIR` et `NSS-NIA` (qui partagent le même `type` `NH` depuis leur séparation en 2.2.0) [#346](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/346)
+* Ajout du profil `FRCoreConsentProfile` (`fr-core-consent`) et de l’exemple `FRCoreConsentExample` [#347](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/347)
 * Retrait des bindings `Encounter.class` et `Encounter.hospitalization.dischargeDisposition` vers `FRCoreValueSetEncounterClass` / `FRCoreValueSetEncounterDischargeDisposition` (codes ambigus/cumulables, en attente d’un travail complémentaire au GT IHE PAM FHIR) ; passage de ces ValueSets et du CodeSystem `FRCoreCodeSystemCirconstancesSortie` au statut `retired` (conservés pour compatibilité, non supprimés) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
 * Assouplissement de `Encounter.period` : suppression de la contrainte de cardinalité minimale (`1..`), qui retombe sur le `0..1` de base FHIR R4 — une rencontre proposée/non confirmée peut ne pas avoir de dates [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
 

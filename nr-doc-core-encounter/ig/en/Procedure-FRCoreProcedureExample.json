@@ -1,0 +1,59 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "FRCoreProcedureExample",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Procedure FRCoreProcedureExample</b></p><a name=\"en-FRCoreProcedureExample\"> </a><a name=\"en-hcFRCoreProcedureExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-procedure.html\">FR Core Procedure Profile</a></p></div><p><b>FR Core Procedure Priority Extension</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActPriority EM}\">Très urgent</span></p><p><b>FR Core Procedure Difficulty Extension</b>: <span title=\"Codes:{http://snomed.info/sct 52925006}\">difficile</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://smt.esante.gouv.fr/terminologie-ccam HHFA011}\">Appendicectomie, par laparotomie</span></p><p><b>subject</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>encounter</b>: <a href=\"Encounter-FRCoreEncounterExample.html\">Encounter: extension = 2019-01-02; identifier = Visit Number; status = in-progress; class = ambulatory (ActCode#AMB); period = 2019-01-02 --&gt; 2019-02-02</a></p><p><b>performed</b>: 2024-05-12</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-FRCorePractitionerRoleExample.html\">PractitionerRole Activité de soin et de pharmacie</a></td></tr></table><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 66754008}\">appendice vermiforme</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure-priority-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+        "code" : "EM",
+        "display" : "Très urgent"
+      }]
+    }
+  },
+  {
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure-difficulty-extension",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "52925006",
+        "display" : "difficile"
+      }]
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "https://smt.esante.gouv.fr/terminologie-ccam",
+      "code" : "HHFA011",
+      "display" : "Appendicectomie, par laparotomie"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/FRCorePatientINSExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/FRCoreEncounterExample"
+  },
+  "performedDateTime" : "2024-05-12",
+  "performer" : [{
+    "actor" : {
+      "reference" : "PractitionerRole/FRCorePractitionerRoleExample"
+    }
+  }],
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "66754008",
+      "display" : "appendice vermiforme"
+    }]
+  }]
+}
