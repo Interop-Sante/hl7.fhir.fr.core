@@ -76,7 +76,7 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 
 ##### Canal d'obtention et date d'interrogation du téléservice INSi : sous-extensions `methodCollection` et `dateInterrogationINSi`
 
-La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`). Un `^definition` a été ajouté pour préciser cette portée, et le code `AV` (Application carte Vitale) a été ajouté au CodeSystem `fr-core-cs-identity-method-collection`, pour distinguer explicitement la carte Vitale physique de sa version dématérialisée (RNIV §4.3.4) [#334](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/334).
+La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`).
 
 **[BREAKING CHANGE]** Le CodeSystem est également renommé de `fr-core-cs-method-collection` (`FRCoreCodeSystemMethodCollection`) vers `fr-core-cs-identity-method-collection` (`FRCoreCodeSystemIdentityMethodCollection`), par cohérence avec le nommage des autres CodeSystems `identity-*` introduits dans cette release.
 
