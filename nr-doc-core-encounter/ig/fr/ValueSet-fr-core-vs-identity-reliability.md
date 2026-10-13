@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Identity reliability 
 
- 
-The reliability of the identity. 
-
  **References** 
 
 * [FR Core Patient Ident Reliability Extension](StructureDefinition-fr-core-identity-reliability.md)
@@ -37,7 +34,7 @@ The reliability of the identity.
   "title" : "FR Core ValueSet Identity reliability",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

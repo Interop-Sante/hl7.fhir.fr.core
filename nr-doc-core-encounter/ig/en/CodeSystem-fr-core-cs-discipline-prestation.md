@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Discipline de prestation - nomenclature SAE 
 
- 
-La nomenclature des discipline de prestation. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Organization Discipline de prestation - nomenclature SAE](ValueSet-fr-core-vs-discipline-prestation.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Discipline de prestation - nomenclature SAE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

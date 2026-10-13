@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Organization Raison Sociale Extension 
 
-Raison Sociale l’organisation
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationRaisonSocialeExtension",
   "title" : "FR Core Organization Raison Sociale Extension",
   "status" : "active",
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

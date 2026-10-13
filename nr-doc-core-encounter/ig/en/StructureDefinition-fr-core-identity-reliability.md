@@ -2,10 +2,6 @@
 
 ## Extension: FR Core Patient Ident Reliability Extension 
 
-Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
-
-Reliabilility of the patient’s identity
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-identity-
   "name" : "FRCorePatientIdentityReliabilityExtension",
   "title" : "FR Core Patient Ident Reliability Extension",
   "status" : "active",
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

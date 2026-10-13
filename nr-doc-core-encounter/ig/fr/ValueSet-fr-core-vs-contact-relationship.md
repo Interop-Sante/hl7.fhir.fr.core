@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Contact relationship 
 
- 
-A set of codes that can be used to indicate the relationship between a Patient and a Related Person. 
-
  **References** 
 
 Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
@@ -53,7 +50,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet Contact relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

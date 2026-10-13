@@ -2,10 +2,6 @@
 
 ## Extension: FR Core Service Type Duration Extension 
 
-Cette extension française permet d’associer le type de service avec la durée de ce service.
-
-This French extension allows to associate the type of service with the duration of this service
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-service-t
   "name" : "FRCoreServiceTypeDurationExtension",
   "title" : "FR Core Service Type Duration Extension",
   "status" : "active",
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

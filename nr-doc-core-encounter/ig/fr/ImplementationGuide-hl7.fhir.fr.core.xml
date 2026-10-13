@@ -12,7 +12,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-09-22T12:23:37+00:00"/>
+  <date value="2026-10-13T09:01:17+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -59,7 +59,7 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.13.0"/>
+    <version value="1.14.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_xver_r5_r4">
     <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
@@ -764,6 +764,17 @@
       </reference>
       <name value="FR Core CodeSystem Champ Activite - Codes du champ d'activité"/>
       <description value="Champ d'activité clinique de l'organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/fr-core-cs-circonstances-sortie"/>
+      </reference>
+      <name value="FR Core CodeSystem Circonstances Sortie"/>
+      <description value="Discharge Disposition"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1754,6 +1765,28 @@
       </reference>
       <name value="FR Core ValueSet Email type"/>
       <description value="The type of email"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-encounter-class"/>
+      </reference>
+      <name value="FR Core ValueSet Encounter class"/>
+      <description value="A set of codes that can be used to indicate the class of the encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-encounter-discharge-disposition"/>
+      </reference>
+      <name value="FR Core ValueSet Encounter discharge disposition"/>
+      <description value="Circonstances de sortie de l'hôpital.&#xD;&#xA;This value set defines a set of codes that can be used to where the patient left the hospital"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

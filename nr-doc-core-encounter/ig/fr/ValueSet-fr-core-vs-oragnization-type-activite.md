@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization Type Activité - nomenclature SAE 
 
- 
-Valeurs permettant de coder les types d’activité. 
-
  **References** 
 
 * [FR Core Organization Extension - Type d'activité](StructureDefinition-fr-core-organization-type-activite.md)
@@ -37,7 +34,7 @@ Valeurs permettant de coder les types d’activité.
   "title" : "FR Core ValueSet Organization Type Activité - nomenclature SAE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

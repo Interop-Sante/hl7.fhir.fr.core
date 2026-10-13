@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Encounter Profile 
 
- 
-This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. 
-Ce profil de la ressource Encounter sert à la fois à définir la venue dans l’établissement et à représenter les mouvements du patient qui découpent cette venue. 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md), [FR Core Observation Bmi Profile](StructureDefinition-fr-core-observation-bmi.md), [FR Core Observation Body Height Profile](StructureDefinition-fr-core-observation-body-height.md), [FR Core Observation Body Temperature Profile](StructureDefinition-fr-core-observation-body-temperature.md)... Show 6 more, [FR Core Observation Body Weight Profile](StructureDefinition-fr-core-observation-body-weight.md), [FR Core Observation Blood Pressure Profile](StructureDefinition-fr-core-observation-bp.md), [FR Core Observation Head Circum Profile](StructureDefinition-fr-core-observation-head-circum.md), [FR Core Observation Heart Rate Profile](StructureDefinition-fr-core-observation-heartrate.md), [FR Core Observation Respiratory Rate Profile](StructureDefinition-fr-core-observation-resp-rate.md) and [FR Core Observation Oxygen Saturation Profile](StructureDefinition-fr-core-observation-saturation-oxygen.md)
@@ -138,7 +134,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
   "name" : "FRCoreEncounterProfile",
   "title" : "FR Core Encounter Profile",
   "status" : "active",
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -299,7 +295,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-encount
       "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques aux cas d'usages) — exemples les plus courants (v3-ActCode) : ACUTE (Inpatient acute), NONAC (Inpatient non acute), PRENC (Pre-admission), SS (Short stay), VR (Virtual)",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis|20260716085852"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis|20260916095454"
       }
     },
     {

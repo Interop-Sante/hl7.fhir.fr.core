@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Mode Validation Identite 
 
- 
-Mode de validation de l’identité 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
 * [FR Core ValueSet Mode validation identity](ValueSet-fr-core-vs-mode-validation-identity.md)
@@ -32,7 +29,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

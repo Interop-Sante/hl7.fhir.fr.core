@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Location Type 
 
- 
-Location type 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Location type](ValueSet-fr-core-vs-location-type.md)
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Location Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-22T12:23:37+00:00",
+  "date" : "2026-10-13T09:01:17+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
