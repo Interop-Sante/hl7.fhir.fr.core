@@ -98,10 +98,6 @@ La sous-extension `methodCollection` documente le canal par lequel les traits d�
 
 **Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l’URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
 
-##### Annotations complémentaires : comment passe en CodeableConcept
-
-La sous-extension `comment` n’acceptait qu’un `Coding` du ValueSet `fr-core-vs-identity-status-comment`. Elle accepte désormais un `CodeableConcept`, ce qui permet de saisir du texte libre (`.text`) en complément ou à la place d’un code de ce ValueSet [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306).
-
 ##### Correction des invariants fr-core-1, fr-core-2, fr-core-3
 
 Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`, conformément à l’exigence EXI SI 08 :

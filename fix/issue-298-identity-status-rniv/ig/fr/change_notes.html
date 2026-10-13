@@ -378,10 +378,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Impact pour les implémenteurs</strong> : les ressources utilisant la sous-extension à l’URL <code class="language-plaintext highlighter-rouge">dateCollection</code> doivent être mises à jour vers <code class="language-plaintext highlighter-rouge">dateInterrogationINSi</code>.</p>
 
-<h5 id="annotations-complémentaires--comment-passe-en-codeableconcept">Annotations complémentaires : <code class="language-plaintext highlighter-rouge">comment</code> passe en <code class="language-plaintext highlighter-rouge">CodeableConcept</code></h5>
-
-<p>La sous-extension <code class="language-plaintext highlighter-rouge">comment</code> n’acceptait qu’un <code class="language-plaintext highlighter-rouge">Coding</code> du ValueSet <code class="language-plaintext highlighter-rouge">fr-core-vs-identity-status-comment</code>. Elle accepte désormais un <code class="language-plaintext highlighter-rouge">CodeableConcept</code>, ce qui permet de saisir du texte libre (<code class="language-plaintext highlighter-rouge">.text</code>) en complément ou à la place d’un code de ce ValueSet <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306">#306</a>.</p>
-
 <h5 id="correction-des-invariants-fr-core-1-fr-core-2-fr-core-3">Correction des invariants <code class="language-plaintext highlighter-rouge">fr-core-1</code>, <code class="language-plaintext highlighter-rouge">fr-core-2</code>, <code class="language-plaintext highlighter-rouge">fr-core-3</code></h5>
 
 <p>Les invariants conditionnaient leur vérification au statut <code class="language-plaintext highlighter-rouge">VALI</code>. Ils ciblent désormais <code class="language-plaintext highlighter-rouge">QUAL</code>, conformément à l’exigence EXI SI 08 :</p>
@@ -406,7 +402,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Impact pour les implémenteurs</strong> : toute ressource <code class="language-plaintext highlighter-rouge">Patient</code> (ou <code class="language-plaintext highlighter-rouge">FRCorePatientINS</code>) sans instance de <code class="language-plaintext highlighter-rouge">identityReliability</code> doit être mise à jour pour en porter au moins une (au minimum la sous-extension <code class="language-plaintext highlighter-rouge">lastUpdated</code>, déjà obligatoire au sein de l’extension).</p>
 
-<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1325">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-220-de-limplementation-guide-frcore"><a name="l1296">​</a><a href="https://hl7.fr/ig/fhir/core/2.2.0">Release 2.2.0</a> de l’Implementation Guide FRCore</h3>
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1">Modifications apportées dans la release 2.2.0</a> :</p>
 
 <ul>
@@ -664,7 +660,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>[FIX] Discriminateur Patient.contact.relationship via extension de catégorie <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/293">#293</a></li>
 </ul>
 
-<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2390">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-210-de-limplementation-guide-frcore"><a name="l2361">​</a><a href="https://hl7.fr/ig/fhir/core/2.1.0">Release 2.1.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/9?closed=1">Modifications apportées dans la release 2.1.0</a> :</p>
 
@@ -685,7 +681,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Ajout d’une intro note pour le profil Patient INS <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/169">#169</a></li>
 </ul>
 
-<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2473">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-201-de-limplementation-guide-frcore"><a name="l2444">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.1">Release 2.0.1</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/11?closed=1">Modifications apportées dans la release 2.0.1</a> :</p>
 
@@ -693,7 +689,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des urls interopsante.org au profit de hl7.fr pour FrPractitioner et FrOrganization <a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/152">#152</a></li>
 </ul>
 
-<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2491">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
+<h3 id="release-200-de-limplementation-guide-frcore"><a name="l2462">​</a><a href="https://hl7.fr/ig/fhir/core/2.0.0">Release 2.0.0</a> de l’Implementation Guide FRCore</h3>
 
 <p><a href="https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/6?closed=1">Modifications apportées dans la release 2.0.0</a> :</p>
 
@@ -804,7 +800,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop'Santé</a>.  
           Le package hl7.fhir.fr.core#2.2.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-13 07:30:00 +0000">
+  <span title="2026-10-13 07:53:00 +0000">
     2026-10-13
   </span>
 
