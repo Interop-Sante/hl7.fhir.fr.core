@@ -13,8 +13,8 @@ Description: """Jeu de valeurs permettant de coder l'agent responsable d'une all
 * include codes from system https://smt.esante.gouv.fr/terminologie-bdpm
 // Médicaments : code UCD
 * include codes from system https://smt.esante.gouv.fr/terminologie-cip_ucd
-// Aliments ou agents environnementaux/physiques : CIM-11 Chapitre X Extensions
-* include codes from system http://id.who.int/icd/release/11/mms
+// Aliments ou agents environnementaux/physiques : CIM-11 Chapitre X Extensions, bloc "Substances, essentiellement non médicinales"
+* include codes from system https://smt.esante.gouv.fr/terminologie-cim11-mms where concept is-a #XM9N55
 // Allergènes pouvant induire une contre-indication vaccinale
 * include codes from valueset https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis
 // Substances : code SMS
