@@ -36,6 +36,10 @@ Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, 23 codes mélangeant stat
 
 **Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l'un de ces deux nouveaux CodeSystems selon le code utilisé.
 
+**Attention, le code `VALI` change de sens** : dans l'ancien CodeSystem `fr-core-cs-v2-0445`, `VALI` ("identité validée") désignait toute identité ayant fait l'objet d'un contrôle de cohérence, que l'INS ait ou non été récupéré via le téléservice INSi — c'est d'ailleurs ce statut unique que les invariants de `FRCorePatientINSProfile` imposant la présence d'un identifiant INS référençaient. Avec l'introduction du critère « récupération INSi » comme axe indépendant, ce statut se scinde en deux : `VALI` ne désigne plus que les identités contrôlées **sans** INS récupéré ; les identités contrôlées **avec** INS récupéré portent désormais le nouveau code `QUAL` (ce sont d'ailleurs les invariants ci-dessus qui référencent maintenant `QUAL`, et non plus `VALI`).
+
+**Impact pour les implémenteurs** : il ne s'agit pas d'un simple renommage. Les ressources taguées `VALI` sous l'ancien CodeSystem doivent être réévaluées individuellement : si l'identité porte également un identifiant INS (NIR/NIA) obtenu via le téléservice INSi, elle doit être recodée en `QUAL` ; sinon elle conserve le code `VALI`.
+
 ##### ValueSets `identityStatus` et `comment`
 
 Le ValueSet `fr-core-vs-identity-status` (`FRCoreValueSetIdentityStatus`) est réduit aux 4 statuts RNIV (`fr-core-cs-identity-status`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
