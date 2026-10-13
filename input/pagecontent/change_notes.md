@@ -59,9 +59,13 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 ```json
 {
   "url": "comment",
-  "valueCoding": {
-    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
-    "code": "DOUB"
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
+        "code": "DOUB"
+      }
+    ]
   }
 }
 ```
