@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Condition Code - Médecine de ville 
 
- 
-CISP-2 (ICPC-2), CISP-3 (ICPC-3), DRC (SFMG) : code problème en médecine de ville 
-
  **References** 
 
 Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
@@ -39,7 +36,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR Core ValueSet Condition Code - Médecine de ville",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

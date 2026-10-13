@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Patient contact role 
 
- 
-ValueSet patient contact role 
-
  **References** 
 
 * [FR Core Patient Profile](StructureDefinition-fr-core-patient.md)
@@ -42,7 +39,7 @@ ValueSet patient contact role
   "title" : "FR Core ValueSet Patient contact role",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

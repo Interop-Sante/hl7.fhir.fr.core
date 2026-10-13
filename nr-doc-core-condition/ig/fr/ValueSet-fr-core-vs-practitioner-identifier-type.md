@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Practitioner identifier type 
 
- 
-A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification) 
-
  **References** 
 
 * [FR Core Practitioner Profile](StructureDefinition-fr-core-practitioner.md)
@@ -41,7 +38,7 @@ A coded type for an identifier that can be used to determine which identifier to
   "title" : "FR Core ValueSet Practitioner identifier type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

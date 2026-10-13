@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Encounter Estimated Discharge Date Extension 
 
-This extension is used to specify the estimated discharge date of the patient
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-estimated
   "name" : "FRCoreEncounterEstimatedDischargeDateExtension",
   "title" : "FR Core Encounter Estimated Discharge Date Extension",
   "status" : "active",
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

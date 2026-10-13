@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Patient Birth List Given name Extension 
 
-Prénoms de l’acte de naissance
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient-b
   "name" : "FRCorePatientBirthListGivenName",
   "title" : "FR Core Patient Birth List Given name Extension",
   "status" : "active",
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

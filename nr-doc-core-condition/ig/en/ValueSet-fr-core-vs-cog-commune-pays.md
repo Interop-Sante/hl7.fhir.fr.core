@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet COG commune pays 
 
- 
-Value set town and country COG 
-
  **References** 
 
 This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
@@ -41,7 +38,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "FR Core ValueSet COG commune pays",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

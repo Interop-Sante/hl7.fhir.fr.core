@@ -30,10 +30,10 @@ Profile: [FR Core Condition Profile](StructureDefinition-fr-core-condition.md)
 
 ### Stages
 
-| | |
-| :--- | :--- |
-| - | **Summary** |
-| * | maladie chronique |
+| | | |
+| :--- | :--- | :--- |
+| - | **Summary** | **Type** |
+| * | maladie chronique | Clinical staging (qualifier value) |
 
 
 
@@ -100,6 +100,13 @@ Profile: [FR Core Condition Profile](StructureDefinition-fr-core-condition.md)
         "system" : "http://snomed.info/sct",
         "code" : "27624003",
         "display" : "maladie chronique"
+      }]
+    },
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
       }]
     }
   }]

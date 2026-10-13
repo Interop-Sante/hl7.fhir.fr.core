@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core Practitioner Profile 
 
- 
-Profil de la ressource Practitionner pour la France. 
-
 ### Usage
 
 French profile of the Practitioner resource. This profile specifies the types of identifiers for practitioners in France. Profil de la ressource Practitionner pour la France. Ce profil contraint les types d’identifiants du professionnel de santé en France.
@@ -41,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
   "name" : "FRCorePractitionerProfile",
   "title" : "FR Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -391,7 +388,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-practitio
       "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20260730120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS|20260928120000"
       }
     }]
   }

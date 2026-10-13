@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem v2-0445 
 
- 
-HL7 v2 - Table 0445 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
 * [FR Core ValueSet Identity reliability](ValueSet-fr-core-vs-identity-reliability.md)
@@ -31,7 +28,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem v2-0445",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

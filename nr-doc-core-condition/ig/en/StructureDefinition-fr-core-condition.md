@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core Condition Profile 
 
- 
-FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple). 
-
 **Usages:**
 
 * Examples for this Profile: [Condition/FRCoreConditionExample](Condition-FRCoreConditionExample.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-condition
   "name" : "FRCoreConditionProfile",
   "title" : "FR Core Condition Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:23:37+00:00",
+  "date" : "2026-10-13T12:11:49+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -114,7 +111,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-condition
       "path" : "Condition.category",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260716085853"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-probleme-cisis|20260916095457"
       }
     },
     {
@@ -222,7 +219,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-condition
       "short" : "Statut clinique du patient",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260716085852"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis|20260916095455"
       }
     },
     {
