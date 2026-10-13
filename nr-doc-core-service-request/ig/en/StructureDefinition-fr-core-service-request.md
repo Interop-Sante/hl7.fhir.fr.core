@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core ServiceRequest Profile 
 
- 
-FRCoreServiceRequestProfile profil permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. 
-
 **Usages:**
 
 * Examples for this Profile: [ServiceRequest/FRCoreServiceRequestExample](ServiceRequest-FRCoreServiceRequestExample.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-service-r
   "name" : "FRCoreServiceRequestProfile",
   "title" : "FR Core ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:03:48+00:00",
+  "date" : "2026-10-13T08:40:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Schedule type 
 
- 
-Jeu de valeurs des types de Schedule. A Schedule type 
-
  **References** 
 
 * [FR Core Schedule availability time Extension](StructureDefinition-fr-core-schedule-availability-time.md)
@@ -53,7 +50,7 @@ Jeu de valeurs des types de Schedule. A Schedule type
   "title" : "FR Core ValueSet Schedule type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:03:48+00:00",
+  "date" : "2026-10-13T08:40:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

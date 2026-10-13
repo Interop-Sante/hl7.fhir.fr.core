@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation Body Height Profile 
 
- 
-French profile for body height. 
-Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d’HL7 
-
 **Usages:**
 
 * Examples for this Profile: [Observation/FRCoreObservationBodyHeightExample](Observation-FRCoreObservationBodyHeightExample.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationBodyHeightProfile",
   "title" : "FR Core Observation Body Height Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:03:48+00:00",
+  "date" : "2026-10-13T08:40:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

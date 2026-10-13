@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Method Extension 
 
-Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.
-
 **Context of Use**
 
 **Usage info**
@@ -36,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-method-ex
   "name" : "FRCoreMethodExtension",
   "title" : "FR Core Method Extension",
   "status" : "active",
-  "date" : "2026-09-17T13:03:48+00:00",
+  "date" : "2026-10-13T08:40:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -71,10 +69,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-method-ex
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "FamilyMemberHistory"
-  },
-  {
-    "type" : "element",
     "expression" : "ServiceRequest"
   }],
   "type" : "Extension",
@@ -106,7 +100,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-method-ex
       }],
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260716085851"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationMethod-cisis|20260916095453"
       }
     }]
   }

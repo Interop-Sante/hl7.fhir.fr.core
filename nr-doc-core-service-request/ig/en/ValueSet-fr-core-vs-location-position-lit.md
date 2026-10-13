@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Location Position Lit 
 
- 
-Position du lit dans la chambre 
-
  **References** 
 
 * [FR Core Location Extension - Position du lit](StructureDefinition-fr-core-location-position-lit.md)
@@ -37,7 +34,7 @@ Position du lit dans la chambre
   "title" : "FR Core ValueSet Location Position Lit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:03:48+00:00",
+  "date" : "2026-10-13T08:40:59+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
