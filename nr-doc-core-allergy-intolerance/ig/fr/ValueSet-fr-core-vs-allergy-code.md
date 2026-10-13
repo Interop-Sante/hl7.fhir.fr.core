@@ -36,7 +36,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Allergy Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T15:20:13+00:00",
+  "date" : "2026-10-13T15:41:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -70,7 +70,13 @@ No Expansion for this valueset (Unsupported Code System Version)
       "system" : "https://smt.esante.gouv.fr/terminologie-cip_ucd"
     },
     {
-      "system" : "http://id.who.int/icd/release/11/mms"
+      "system" : "https://smt.esante.gouv.fr/terminologie-cim11-mms",
+      "version" : "2026-02",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "XM9N55"
+      }]
     },
     {
       "valueSet" : ["https://smt.esante.gouv.fr/fhir/ValueSet/jdv-allergie-vaccin-cisis|20260916095456"]

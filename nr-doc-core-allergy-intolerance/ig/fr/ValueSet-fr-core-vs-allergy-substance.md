@@ -36,7 +36,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Allergy Substance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-13T15:20:13+00:00",
+  "date" : "2026-10-13T15:41:31+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
