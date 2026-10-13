@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Allergy Substance 
 
- 
-Jeu de valeurs permettant de coder la substance responsable d’une allergie. 
-
  **References** 
 
 * [FR Core AllergyIntolerance Profile](StructureDefinition-fr-core-allergy-intolerance.md)
@@ -39,7 +36,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Allergy Substance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:27:58+00:00",
+  "date" : "2026-10-13T15:20:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -67,7 +64,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-sms",
-      "version" : "2026-08"
+      "version" : "2026-09"
     }]
   }
 }

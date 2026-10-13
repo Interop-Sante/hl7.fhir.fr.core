@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet AllergyIntolerance Manifestation - Intolérance 
 
- 
-Codes CIM-11 autorisés pour coder la manifestation d’une réaction lorsque AllergyIntolerance.type = intolérance : Chapitre 21 Symptômes, signes ou résultats d’examen clinique, non classés ailleurs. 
-
  **References** 
 
 This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
@@ -37,7 +34,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "FR Core ValueSet AllergyIntolerance Manifestation - Intolérance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:27:58+00:00",
+  "date" : "2026-10-13T15:20:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

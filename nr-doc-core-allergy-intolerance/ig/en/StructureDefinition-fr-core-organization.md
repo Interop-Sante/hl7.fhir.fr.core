@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core Organization Profile 
 
- 
-Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France. 
-
 ### Usage
 
 La ressource Organization est utilisée pour représenter une entité organisationnelle, partie de la structure de l’organisation de santé. En particulier, elle est adaptée pour représentée
@@ -55,7 +52,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-organizat
   "name" : "FRCoreOrganizationProfile",
   "title" : "FR Core Organization Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:27:58+00:00",
+  "date" : "2026-10-13T15:20:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

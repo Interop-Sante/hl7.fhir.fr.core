@@ -2,9 +2,6 @@
 
 ## Profil de ressource: FR Core AllergyIntolerance Profile 
 
- 
-FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie. 
-
 **Utilisations:**
 
 * Exemples pour ce/t/te Profil: [AllergyIntolerance/FRCoreAllergyIntoleranceExample](AllergyIntolerance-FRCoreAllergyIntoleranceExample.md), [AllergyIntolerance/FRCoreAllergyIntoleranceExampleHypersensibilite](AllergyIntolerance-FRCoreAllergyIntoleranceExampleHypersensibilite.md), [AllergyIntolerance/FRCoreAllergyIntoleranceExampleIdiosyncrasie](AllergyIntolerance-FRCoreAllergyIntoleranceExampleIdiosyncrasie.md) and [AllergyIntolerance/FRCoreAllergyIntoleranceExampleIntolerance](AllergyIntolerance-FRCoreAllergyIntoleranceExampleIntolerance.md)
@@ -112,7 +109,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-allergy
   "name" : "FRCoreAllergyIntoleranceProfile",
   "title" : "FR Core AllergyIntolerance Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:27:58+00:00",
+  "date" : "2026-10-13T15:20:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -129,7 +126,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-allergy
       "use" : "work"
     }]
   }],
-  "description" : "FRCoreAllergyIntoleranceProfile est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie.",
+  "description" : "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

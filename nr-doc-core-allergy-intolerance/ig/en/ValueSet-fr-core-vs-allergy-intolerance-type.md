@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Allergy Intolerance Type 
 
- 
-Jeu de valeurs contenant les codes autorisés pour les types d’allergies et d’intolérances. 
-
  **References** 
 
 * [FR Core AllergyIntolerance Profile](StructureDefinition-fr-core-allergy-intolerance.md)
@@ -37,7 +34,7 @@ Jeu de valeurs contenant les codes autorisés pour les types d’allergies et d�
   "title" : "FR Core ValueSet Allergy Intolerance Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:27:58+00:00",
+  "date" : "2026-10-13T15:20:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

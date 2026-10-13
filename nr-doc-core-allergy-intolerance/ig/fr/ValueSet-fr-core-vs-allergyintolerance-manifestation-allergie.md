@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet AllergyIntolerance Manifestation - Allergie 
 
- 
-Codes CIM-11 autorisés pour coder la manifestation d’une réaction lorsque AllergyIntolerance.type = allergie : Chapitre 04 Maladies du système immunitaire, Bloc Affections allergiques ou d’hypersensibilité. 
-
  **References** 
 
 Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
@@ -37,7 +34,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "FR Core ValueSet AllergyIntolerance Manifestation - Allergie",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:27:58+00:00",
+  "date" : "2026-10-13T15:20:13+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
