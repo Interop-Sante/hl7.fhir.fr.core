@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core Immunization Profile 
 
- 
-FRCoreImmunizationProfile permet de décrire l’administration d’un vaccin. Il permet également de décrire pourquoi un vaccin n’a pas été réalisé. 
-
 **Usages:**
 
 * Examples for this Profile: [Immunization/FRCoreImmunizationExample](Immunization-FRCoreImmunizationExample.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
   "name" : "FRCoreImmunizationProfile",
   "title" : "FR Core Immunization Profile",
   "status" : "active",
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -265,7 +262,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260716085851"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260916095452"
       }
     },
     {
@@ -274,7 +271,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "short" : "Voie d'administration",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260716085852"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260916095454"
       }
     },
     {
@@ -297,7 +294,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-immunizat
       "short" : "Type de vaccination : BOOSTER (Rappel de vaccin) | IMMUNIZ (Vaccination sans autre précision) | INITIMMUNIZ (1ère série vaccinante)",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260716085853"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260916095457"
       }
     },
     {

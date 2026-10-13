@@ -2,10 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Location type 
 
- 
-Jeu de valeurs du rôle joué par un lieu. 
-A role for a location 
-
  **References** 
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
@@ -39,7 +35,7 @@ A role for a location
   "title" : "FR Core ValueSet Location type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

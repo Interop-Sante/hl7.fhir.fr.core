@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Type Chambre 
 
- 
-Type de chambre 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
 * [FR Core ValueSet Location Type Chambre](ValueSet-fr-core-vs-location-type-chambre.md)
@@ -31,7 +28,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Type Chambre",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

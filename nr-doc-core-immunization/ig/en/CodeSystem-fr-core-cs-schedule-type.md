@@ -2,9 +2,6 @@
 
 ## CodeSystem: FR Core CodeSystem Schedule Type 
 
- 
-Schedule type 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [FR Core ValueSet Schedule type](ValueSet-fr-core-vs-schedule-type.md)
@@ -32,7 +29,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

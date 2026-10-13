@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Vaccine code CIS 
 
- 
-Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identifier les vaccins par leur code CIS (Code Identifiant de Spécialité). 
-
  **References** 
 
 * [FR Core Immunization Profile](StructureDefinition-fr-core-immunization.md)
@@ -39,7 +36,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "title" : "FR Core ValueSet Vaccine code CIS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -67,7 +64,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
-      "version" : "2026-08-02"
+      "version" : "2026-09-01"
     }]
   }
 }

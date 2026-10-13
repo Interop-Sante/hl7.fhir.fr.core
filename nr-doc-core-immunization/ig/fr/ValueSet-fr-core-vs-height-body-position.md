@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet BodyPosition 
 
- 
-ValueSet Body Position 
-
  **References** 
 
 * [FR Core Observation Height Body Position Extension](StructureDefinition-fr-core-observation-height-body-position.md)
@@ -37,7 +34,7 @@ ValueSet Body Position
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

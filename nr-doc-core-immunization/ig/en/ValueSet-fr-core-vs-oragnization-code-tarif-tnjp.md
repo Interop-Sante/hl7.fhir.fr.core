@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Codes Tarifs - nomenclature TNJP 
 
- 
-Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations). 
-
  **References** 
 
 * [FR Core Organization Extension - Tarif Soin](StructureDefinition-fr-core-organization-tarif.md)
@@ -37,7 +34,7 @@ Valeurs permettant de coder les codes TNJP (Tarification nationale journalière 
   "title" : "FR Core ValueSet Codes Tarifs - nomenclature TNJP",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## ValueSet: Body Position value set 
 
- 
-SELECT SNOMED CT code system values the position in which the individual was in during a measurement. 
-
  **References** 
 
 * [FR Core Observation Body Position Ext Extension](StructureDefinition-fr-core-observation-body-position-ext.md)
@@ -36,7 +33,7 @@ SELECT SNOMED CT code system values the position in which the individual was in 
   "title" : "Body Position value set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T13:19:58+00:00",
+  "date" : "2026-10-13T08:18:58+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
