@@ -20,4 +20,5 @@ Description: "Exemple de ressource Condition : asthme chronique actif chez un pa
 
 * bodySite = $SCT#39607008 "poumon"
 
-* stage.summary = $SCT#27624003 "maladie chronique"
+* stage[clinicalStatus].type = $SCT#260998006 "Clinical staging (qualifier value)"
+* stage[clinicalStatus].summary = $SCT#27624003 "maladie chronique"
