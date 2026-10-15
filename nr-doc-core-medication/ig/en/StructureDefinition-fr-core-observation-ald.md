@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Observation ALD 
 
- 
-French profile for an ALD (long-term condition) observation, used notably as the reason for a prescribed treatment. 
-Profil français pour l’observation ALD (affection de longue durée), utilisée notamment comme motif d’un traitement prescrit. 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core MedicationRequest Profile](StructureDefinition-fr-core-medication-request.md)
@@ -33,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-observati
   "name" : "FRCoreObservationALD",
   "title" : "FR Core Observation ALD",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

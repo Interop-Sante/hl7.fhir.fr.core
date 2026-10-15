@@ -2,10 +2,6 @@
 
 ## Profil de ressource: FR Core Observation Oxygen Saturation Profile 
 
- 
-French profile for Oxygen saturation in Arterial blood. 
-Profil de la saturation en oxygène du sang artériel. 
-
 **Utilisations:**
 
 * Exemples pour ce/t/te Profil: [Observation/FRCoreObservationOxygenSaturationExample](Observation-FRCoreObservationOxygenSaturationExample.md)
@@ -139,7 +135,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-observa
   "name" : "FRCoreObservationOxygenSaturationProfile",
   "title" : "FR Core Observation Oxygen Saturation Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core MedicationRequest Profile 
 
- 
-FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core MedicationAdministration Profile](StructureDefinition-fr-core-medication-administration.md), [FR Core MedicationDispense Profile](StructureDefinition-fr-core-medication-dispense.md), [FR Core MedicationRequest Profile](StructureDefinition-fr-core-medication-request.md) and [FR Core MedicationStatement Profile](StructureDefinition-fr-core-medication-statement.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationRequestProfile",
   "title" : "FR Core MedicationRequest Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -315,7 +312,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260619134041"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260916095453"
       }
     },
     {
@@ -324,7 +321,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "short" : "Voie d'administration",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-route|2.2.0"
       }
     },
     {
@@ -436,7 +433,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis|20260619134042"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis|20260916095455"
       }
     },
     {

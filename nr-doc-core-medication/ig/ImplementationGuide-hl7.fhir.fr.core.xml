@@ -13,7 +13,7 @@
   <name value="FRCore"/>
   <title value="Guide d'implémentation FR Core"/>
   <status value="active"/>
-  <date value="2026-08-13T12:31:13+00:00"/>
+  <date value="2026-10-15T15:33:40+00:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -47,7 +47,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.3.0"/>
+    <version value="7.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -60,7 +60,7 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.11.1"/>
+    <version value="1.14.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_xver_r5_r4">
     <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
@@ -213,7 +213,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -221,7 +221,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -509,7 +509,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueCode value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -517,7 +517,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueCode value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -1915,10 +1915,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-edqm"/>
+        <reference value="ValueSet/fr-core-vs-edqm-form"/>
       </reference>
-      <name value="FR Core ValueSet EDQM"/>
-      <description value="Formes galéniques issues du CodeSystem EDQM fourni par le SMT (classe PDF)."/>
+      <name value="FR Core ValueSet EDQM Form"/>
+      <description value="Formes pharmaceutiques (EDQM Standard Terms, classes PDF, BDF et CDF) utilisées pour coder la forme galénique d'un médicament (Medication.form)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-core-vs-edqm-route"/>
+      </reference>
+      <name value="FR Core ValueSet EDQM Route"/>
+      <description value="Voies d'administration (EDQM Standard Terms, classe ROA) utilisées pour coder la voie d'administration d'un médicament (dosage.route)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

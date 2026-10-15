@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Medication translation 
 
- 
-Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (médicament virtuel) et NUVA (vaccins). 
-
  **References** 
 
 * [FR Core Medication Profile](StructureDefinition-fr-core-medication.md)
@@ -38,7 +35,8 @@ No Expansion for this valueset (Unsupported Code System Version)
   "name" : "FRCoreValueSetMedication",
   "title" : "FR Core ValueSet Medication translation",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "experimental" : false,
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -66,7 +64,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "compose" : {
     "include" : [{
       "system" : "https://smt.esante.gouv.fr/terminologie-bdpm",
-      "version" : "2026-07-01"
+      "version" : "2026-09-01"
     },
     {
       "system" : "https://smt.esante.gouv.fr/terminologie-cip_ucd"

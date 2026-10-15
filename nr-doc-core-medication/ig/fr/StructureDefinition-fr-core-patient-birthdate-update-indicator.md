@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Patient Birthdate Update Indicator Extension 
 
-Indicateur booléen de mise à jour de la date de naissance
-
 **Context of Use**
 
 **Usage info**
@@ -34,7 +32,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type boolean : Indicateur booléen de mise à jour de la date de naissance
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -65,7 +63,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-patient
   "name" : "FRCorePatientBirthDateUpdateIndicatorExtension",
   "title" : "FR Core Patient Birthdate Update Indicator Extension",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

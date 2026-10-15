@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Additional When Values Extension 
 
-Codes additionnels pour l’élément Dosage.timing.repeat.when, issus de PN13.
-
 **Context of Use**
 
 **Usage info**
@@ -37,7 +35,7 @@ Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibilit
 
 Extension simple avec le type code : Codes additionnels pour l'élément Dosage.timing.repeat.when, issus de PN13.
 
- **Vue différentielleDifferential View** 
+ **Vue différentielle** 
 
 Cette structure est dérivée de [Extension](http://hl7.org/fhir/R4/extensibility.html#Extension) 
 
@@ -72,7 +70,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-additio
   "name" : "FRCoreAdditionalWhenValuesExtension",
   "title" : "FR Core Additional When Values Extension",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

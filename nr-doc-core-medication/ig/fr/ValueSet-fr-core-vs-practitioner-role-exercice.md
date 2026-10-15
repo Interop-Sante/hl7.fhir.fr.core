@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet PractitionerRole Exercice 
 
- 
-The exercice(s) of the practitioner. 
-
  **References** 
 
 * [FR Core Practitioner Role](StructureDefinition-fr-core-practitioner-role.md)
@@ -37,7 +34,7 @@ The exercice(s) of the practitioner.
   "title" : "FR Core ValueSet PractitionerRole Exercice",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

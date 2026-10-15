@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core MedicationStatement Profile 
 
- 
-FRCoreMedicationStatementProfile permet de décrire les modalités d’administration d’un médicament au patient (médicament déclaré, mode d’administration, quantité, durée et fréquence). Couvre les bilans médicamenteux et conciliations médicamenteuses. 
-
 **Usages:**
 
 * This Profile is not used by any profiles in this Specification
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationStatementProfile",
   "title" : "FR Core MedicationStatement Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -177,7 +174,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260619134041"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260916095453"
       }
     },
     {
@@ -187,7 +184,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "binding" : {
         "strength" : "extensible",
         "description" : "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-route|2.2.0"
       }
     },
     {

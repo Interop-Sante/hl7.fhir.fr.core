@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet INSEE code 
 
- 
-the French Address Insee Codes 
-
  **References** 
 
 * [FR Core Address Insee Code Extension](StructureDefinition-fr-core-address-insee-code.md)
@@ -37,7 +34,7 @@ the French Address Insee Codes
   "title" : "FR Core ValueSet INSEE code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

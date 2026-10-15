@@ -2,10 +2,6 @@
 
 ## Extension: FR Core Patient Death Place Extension 
 
-Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
-
-Carries the death place of the patient
-
 **Context of Use**
 
 **Usage info**
@@ -38,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-patient-d
   "name" : "FRCorePatientDeathPlaceExtension",
   "title" : "FR Core Patient Death Place Extension",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

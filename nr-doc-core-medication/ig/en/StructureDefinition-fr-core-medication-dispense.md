@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core MedicationDispense Profile 
 
- 
-FRCoreMedicationDispenseProfile permet de décrire un traitement dispensé avec notamment le médicament dispensé, la quantité et la référence de la prescription. 
-
 **Usages:**
 
 * This Profile is not used by any profiles in this Specification
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationDispenseProfile",
   "title" : "FR Core MedicationDispense Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -125,7 +122,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "path" : "MedicationDispense.type.coding",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis|20260619134041"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-completude-dispensation-cisis|20260916095452"
       }
     },
     {
@@ -133,14 +130,6 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "path" : "MedicationDispense.quantity",
       "short" : "Quantité : Unité issue de EDQM Packaging / classe CON (Récipient)",
       "min" : 1
-    },
-    {
-      "id" : "MedicationDispense.quantity.unit",
-      "path" : "MedicationDispense.quantity.unit",
-      "binding" : {
-        "strength" : "extensible",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
-      }
     },
     {
       "id" : "MedicationDispense.dosageInstruction.text",

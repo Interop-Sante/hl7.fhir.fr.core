@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Additional When Codes 
 
- 
-Jeu de valeurs à utiliser pour coder des périodes d’occurrence qui ne sont pas dans le jeu de valeurs http://hl7.org/fhir/ValueSet/event-timing. 
-
  **References** 
 
 * [FR Core Additional When Values Extension](StructureDefinition-fr-core-additional-when-values.md)
@@ -37,7 +34,7 @@ Jeu de valeurs à utiliser pour coder des périodes d’occurrence qui ne sont p
   "title" : "FR Core ValueSet Additional When Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

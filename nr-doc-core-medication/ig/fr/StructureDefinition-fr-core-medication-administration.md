@@ -2,9 +2,6 @@
 
 ## Profil de ressource: FR Core MedicationAdministration Profile 
 
- 
-FRCoreMedicationAdministrationProfile permet de décrire les modalités d’administration d’un médicament au patient (médicament, mode d’administration, quantité, durée et fréquence). 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core MedicationStatement Profile](StructureDefinition-fr-core-medication-statement.md)
@@ -60,6 +57,7 @@ Cette structure fait référence à ces extensions:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
+* The element 1 is sliced based on the value of MedicationAdministration.medication[x]
 * The element 1 is sliced based on the value of MedicationAdministration.dosage.rate[x]
 
  **Vue des éléments clés** 
@@ -107,6 +105,7 @@ Cette structure fait référence à ces extensions:
 
 Cette structure définit les [slices](http://hl7.org/fhir/R4/profiling.html#slices) suivantes:
 
+* The element 1 is sliced based on the value of MedicationAdministration.medication[x]
 * The element 1 is sliced based on the value of MedicationAdministration.dosage.rate[x]
 
  
@@ -126,7 +125,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationAdministrationProfile",
   "title" : "FR Core MedicationAdministration Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -229,7 +228,22 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
     {
       "id" : "MedicationAdministration.medication[x]",
       "path" : "MedicationAdministration.medication[x]",
-      "short" : "Médicament administré",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "short" : "Médicament administré"
+    },
+    {
+      "id" : "MedicationAdministration.medication[x]:medicationReference",
+      "path" : "MedicationAdministration.medication[x]",
+      "sliceName" : "medicationReference",
+      "min" : 0,
+      "max" : "1",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0"]
@@ -301,7 +315,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260619134041"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260916095453"
       }
     },
     {
@@ -311,7 +325,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "binding" : {
         "strength" : "extensible",
         "description" : "EDQM - Standard terms / classe ROA",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-route|2.2.0"
       }
     },
     {

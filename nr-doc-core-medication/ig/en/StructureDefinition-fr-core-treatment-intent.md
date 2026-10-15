@@ -2,8 +2,6 @@
 
 ## Extension: FR Core MedicationRequest Treatment Intent Extension 
 
-Intention globale du traitement.
-
 **Context of Use**
 
 **Usage info**
@@ -35,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-treatment
   "name" : "FRCoreTreatmentIntentExtension",
   "title" : "FR Core MedicationRequest Treatment Intent Extension",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

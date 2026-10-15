@@ -2,12 +2,9 @@
 
 ## CodeSystem: FR Core CodeSystem Additional When Codes 
 
- 
-Codes additionnels pour des périodes d’occurrence qui ne sont pas définies dans FHIR. 
-
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetAdditionalWhenCodes](ValueSet-fr-core-vs-additional-when-codes.md)
+* [FR Core ValueSet Additional When Codes](ValueSet-fr-core-vs-additional-when-codes.md)
 
 -------
 
@@ -31,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem Additional When Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

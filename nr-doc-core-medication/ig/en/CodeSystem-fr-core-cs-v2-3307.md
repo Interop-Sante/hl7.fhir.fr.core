@@ -2,13 +2,10 @@
 
 ## CodeSystem: FR Core CodeSystem v2-3307 
 
- 
-HL7 v2 - Table 3307 
-
 This Code system is referenced in the definition of the following value sets:
 
-* [FRCoreValueSetOrganizationEtablissementType](ValueSet-fr-core-vs-organization-etablissement-type.md)
-* [FRCoreValueSetOrganizationType](ValueSet-fr-core-vs-organization-type.md)
+* [FR Core ValueSet Organization Etablisement type](ValueSet-fr-core-vs-organization-etablissement-type.md)
+* [FR Core ValueSet Organization type](ValueSet-fr-core-vs-organization-type.md)
 
 -------
 
@@ -32,7 +29,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "FR Core CodeSystem v2-3307",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

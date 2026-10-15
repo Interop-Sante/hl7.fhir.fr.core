@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Organization UF Indicateur 
 
- 
-Indicateur d’une unité fonctionnelle. 
-
  **References** 
 
 * [FR Core Organization Extension - Indicateur d'une unité fonctionnelle](StructureDefinition-fr-core-organization-uf-indicateur.md)
@@ -37,7 +34,7 @@ Indicateur d’une unité fonctionnelle.
   "title" : "FR Core ValueSet Organization UF Indicateur",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

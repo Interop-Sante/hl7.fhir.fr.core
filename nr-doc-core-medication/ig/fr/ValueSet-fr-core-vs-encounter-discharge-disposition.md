@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Encounter discharge disposition 
 
- 
-Circonstances de sortie de l’hôpital. This value set defines a set of codes that can be used to where the patient left the hospital 
-
  **References** 
 
 * [FR Core Encounter Profile](StructureDefinition-fr-core-encounter.md)
@@ -53,7 +50,7 @@ Circonstances de sortie de l’hôpital. This value set defines a set of codes t
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

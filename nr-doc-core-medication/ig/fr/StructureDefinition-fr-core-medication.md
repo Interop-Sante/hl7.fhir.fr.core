@@ -2,9 +2,6 @@
 
 ## Profil de ressource: FR Core Medication Profile 
 
- 
-FRCoreMedicationProfile permet de décrire un médicament ou un vaccin. 
-
 **Utilisations:**
 
 * Référence ce Profil: [FR Core MedicationAdministration Profile](StructureDefinition-fr-core-medication-administration.md), [FR Core MedicationDispense Profile](StructureDefinition-fr-core-medication-dispense.md), [FR Core MedicationRequest Profile](StructureDefinition-fr-core-medication-request.md), [FR Core MedicationStatement Profile](StructureDefinition-fr-core-medication-statement.md) and [FR Core Medication Profile](StructureDefinition-fr-core-medication.md)
@@ -92,7 +89,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
   "name" : "FRCoreMedicationProfile",
   "title" : "FR Core Medication Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -188,7 +185,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-fr-core-medicat
       "short" : "Forme pharmaceutique (EDQM)",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-form|2.2.0"
       }
     },
     {

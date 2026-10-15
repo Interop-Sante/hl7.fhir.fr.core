@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FRCore"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guide d'implémentation FR Core"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-08-13T12:31:13+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-15T15:33:40+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Interop'Santé"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -67,7 +67,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.4.0" ]
   ], [
      fhir:index -1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
@@ -90,7 +90,7 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.11.1" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.14.0" ]
   ], [
      fhir:index -1 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_xver_r5_r4" ] ;
@@ -326,7 +326,7 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -338,7 +338,7 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -769,7 +769,7 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -781,7 +781,7 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -2595,11 +2595,25 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-edqm" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-form> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-edqm-form" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet EDQM" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formes galéniques issues du CodeSystem EDQM fourni par le SMT (classe PDF)." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet EDQM Form" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formes pharmaceutiques (EDQM Standard Terms, classes PDF, BDF et CDF) utilisées pour coder la forme galénique d'un médicament (Medication.form)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-route> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/fr-core-vs-edqm-route" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FR Core ValueSet EDQM Route" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Voies d'administration (EDQM Standard Terms, classe ROA) utilisées pour coder la voie d'administration d'un médicament (dosage.route)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;

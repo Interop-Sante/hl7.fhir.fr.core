@@ -2,13 +2,10 @@
 
 ## CodeSystem: FR Core CodeSystem Schedule Type 
 
- 
-Schedule type 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetScheduleType](ValueSet-fr-core-vs-schedule-type.md)
-* [FRCoreValueSetUnavailabilityReason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
+* [FR Core ValueSet Schedule type](ValueSet-fr-core-vs-schedule-type.md)
+* [FR Core ValueSet Unavailability Reason](ValueSet-fr-core-vs-schedule-unavailability-reason.md)
 
 -------
 
@@ -32,7 +29,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem Schedule Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

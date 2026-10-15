@@ -2,14 +2,11 @@
 
 ## CodeSystem: FR Core CodeSystem v2-0203 
 
- 
-HL7 v2 - Identifier type 
-
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [FRCoreValueSetOrganizationIdentifierType](ValueSet-fr-core-vs-organization-identifier-type.md)
-* [FRCoreValueSetPatientIdentifierType](ValueSet-fr-core-vs-patient-identifier-type.md)
-* [FRCoreValueSetPractitionerIdentifierType](ValueSet-fr-core-vs-practitioner-identifier-type.md)
+* [FR Core ValueSet Organization identifier type](ValueSet-fr-core-vs-organization-identifier-type.md)
+* [FR Core ValueSet Patient identifier type](ValueSet-fr-core-vs-patient-identifier-type.md)
+* [FR Core ValueSet Practitioner identifier type](ValueSet-fr-core-vs-practitioner-identifier-type.md)
 
 -------
 
@@ -33,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "FR Core CodeSystem v2-0203",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

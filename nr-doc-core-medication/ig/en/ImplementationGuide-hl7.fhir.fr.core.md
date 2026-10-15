@@ -14,7 +14,7 @@
   "name" : "FRCore",
   "title" : "Guide d'implémentation FR Core",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -66,7 +66,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.11.1"
+    "version" : "1.14.0"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -272,7 +272,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueString" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -283,7 +283,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueString" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -678,7 +678,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-liquid"
+        "valueCode" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -689,7 +689,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-liquid"
+        "valueCode" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -2710,13 +2710,29 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-fr-core-vs-edqm.html"
+        "valueUri" : "ValueSet-fr-core-vs-edqm-form.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-core-vs-edqm"
+        "reference" : "ValueSet/fr-core-vs-edqm-form"
       },
-      "name" : "FR Core ValueSet EDQM",
-      "description" : "Formes galéniques issues du CodeSystem EDQM fourni par le SMT (classe PDF).",
+      "name" : "FR Core ValueSet EDQM Form",
+      "description" : "Formes pharmaceutiques (EDQM Standard Terms, classes PDF, BDF et CDF) utilisées pour coder la forme galénique d'un médicament (Medication.form).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fr-core-vs-edqm-route.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-core-vs-edqm-route"
+      },
+      "name" : "FR Core ValueSet EDQM Route",
+      "description" : "Voies d'administration (EDQM Standard Terms, classe ROA) utilisées pour coder la voie d'administration d'un médicament (dosage.route).",
       "exampleBoolean" : false
     },
     {

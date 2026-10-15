@@ -2,10 +2,6 @@
 
 ## Resource Profile: FR Core Slot Profile 
 
- 
-Profil of the Slot resource for France. 
-Profil de la ressource Slot pour la France 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core Appointment Profile](StructureDefinition-fr-core-appointment.md)
@@ -34,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-slot.csv)
   "name" : "FRCoreSlotProfile",
   "title" : "FR Core Slot Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

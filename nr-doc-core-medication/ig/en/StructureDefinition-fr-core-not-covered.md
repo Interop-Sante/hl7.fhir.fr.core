@@ -2,8 +2,6 @@
 
 ## Extension: FR Core Not Covered Extension 
 
-Extension permettant d’indiquer si le traitement est non remboursable.
-
 **Context of Use**
 
 **Usage info**
@@ -35,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-not-cover
   "name" : "FRCoreNotCoveredExtension",
   "title" : "FR Core Not Covered Extension",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

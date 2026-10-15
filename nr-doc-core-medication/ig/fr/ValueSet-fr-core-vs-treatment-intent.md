@@ -2,9 +2,6 @@
 
 ## ValueSet: FR Core ValueSet Treatment Intent 
 
- 
-Jeu de valeurs SNOMED CT pour l’intention globale du traitement (MedicationRequest). 
-
  **References** 
 
 * [FR Core MedicationRequest Treatment Intent Extension](StructureDefinition-fr-core-treatment-intent.md)
@@ -36,7 +33,8 @@ Jeu de valeurs SNOMED CT pour l’intention globale du traitement (MedicationReq
   "name" : "FRCoreValueSetTreatmentIntent",
   "title" : "FR Core ValueSet Treatment Intent",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "experimental" : false,
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

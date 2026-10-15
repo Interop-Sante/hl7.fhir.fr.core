@@ -2,9 +2,6 @@
 
 ## Resource Profile: FR Core MedicationAdministration Profile 
 
- 
-FRCoreMedicationAdministrationProfile permet de décrire les modalités d’administration d’un médicament au patient (médicament, mode d’administration, quantité, durée et fréquence). 
-
 **Usages:**
 
 * Refer to this Profile: [FR Core MedicationStatement Profile](StructureDefinition-fr-core-medication-statement.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
   "name" : "FRCoreMedicationAdministrationProfile",
   "title" : "FR Core MedicationAdministration Profile",
   "status" : "active",
-  "date" : "2026-08-13T12:31:13+00:00",
+  "date" : "2026-10-15T15:33:40+00:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
@@ -135,7 +132,22 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
     {
       "id" : "MedicationAdministration.medication[x]",
       "path" : "MedicationAdministration.medication[x]",
-      "short" : "Médicament administré",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "short" : "Médicament administré"
+    },
+    {
+      "id" : "MedicationAdministration.medication[x]:medicationReference",
+      "path" : "MedicationAdministration.medication[x]",
+      "sliceName" : "medicationReference",
+      "min" : 0,
+      "max" : "1",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0"]
@@ -207,7 +219,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "short" : "Région anatomique d'administration",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260619134041"
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis|20260916095453"
       }
     },
     {
@@ -217,7 +229,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-core-medicatio
       "binding" : {
         "strength" : "extensible",
         "description" : "EDQM - Standard terms / classe ROA",
-        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm|2.2.0"
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-route|2.2.0"
       }
     },
     {
