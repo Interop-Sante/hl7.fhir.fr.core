@@ -25,7 +25,7 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * extension[productName] 1..1 // Doc Core : 1..1 (FHIR R4 base : absent, EU Core : 0..1)
 * extension[productName] ^short = "Nom de marque du produit."
 
-* form from FRCoreValueSetEDQM (required) // Doc Core
+* form from FRCoreValueSetEDQMForm (required) // Doc Core
 * form ^short = "Forme pharmaceutique (EDQM)"
 
 // Doc Core : batch.lotNumber et batch.expirationDate documentés
