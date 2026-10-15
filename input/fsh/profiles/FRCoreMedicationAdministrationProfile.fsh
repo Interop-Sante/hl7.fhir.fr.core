@@ -36,7 +36,7 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 * dosage.text ^short = "Instruction au patient" // Doc Core
 
 // Médicament — Doc Core : Reference(FRMedicationDocument) — FRCore : FRCoreMedicationProfile
-* medication[x] only Reference(FRCoreMedicationProfile)
+* medicationReference only Reference(FRCoreMedicationProfile)
 * medication[x] ^short = "Médicament administré"
 
 * reasonReference only Reference(Condition or Observation) // * reasonReference only Reference(FRCoreConditionProfile or Observation)
