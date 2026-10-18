@@ -2,6 +2,8 @@ name: Clean gh-pages (remove stale branch deployments)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 4 1 * *' # 04:00 UTC le 1er de chaque mois
 
 permissions:
   contents: write
