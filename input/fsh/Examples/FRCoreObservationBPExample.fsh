@@ -7,7 +7,7 @@ Description: "Exemple de ressource Observation Pression artérielle"
   * type = "Patient"
 * effectiveDateTime = "2012-09-17"
 * performer = Reference(FRCorePractitionerExample)
-* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "Anormalement bas"
 * interpretation.text = "Below low normal"
 * bodySite = $SCT#17137000	"artère humérale"
 
@@ -21,5 +21,5 @@ Description: "Exemple de ressource Observation Pression artérielle"
 // Diastolic BP
 * component[DiastolicBP].code = http://loinc.org#8462-4 "Diastolic blood pressure"
 * component[DiastolicBP].valueQuantity = 60 'mm[Hg]' "mm[Hg]"
-* component[DiastolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "low"
+* component[DiastolicBP].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#L "Anormalement bas"
 * component[DiastolicBP].interpretation.text = "En dessous de la normale"

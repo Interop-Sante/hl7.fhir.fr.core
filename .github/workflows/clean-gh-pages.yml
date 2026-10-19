@@ -2,6 +2,8 @@ name: Clean gh-pages (remove stale branch deployments)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 4 1 * *' # 04:00 UTC le 1er de chaque mois
 
 permissions:
   contents: write
@@ -34,9 +36,23 @@ jobs:
           # Collect branches with an open PR (up to 100)
           OPEN_PR_BRANCHES=$(gh api "repos/$REPO/pulls?state=open&per_page=100" -q '.[].head.ref' 2>/dev/null || true)
 
-          for dir in */; do
-            dir="${dir%/}"
+          # Branch deployments live under their full branch name, which can contain "/" (nested
+          # folders, e.g. "fix/my-fix") — a leaf is any directory containing an "ig" subfolder,
+          # same marker generate-branch-index.py's find_branches() uses to identify a branch.
+          mapfile -t DIRS < <(python3 -c "
+          import os
+          leaves = []
+          for root, dirs, files in os.walk('.'):
+              dirs[:] = [d for d in dirs if d != '.git']
+              if root == '.':
+                  continue
+              if 'ig' in dirs:
+                  leaves.append(os.path.normpath(root))
+                  dirs[:] = []
+          print(chr(10).join(sorted(leaves)))
+          ")
 
+          for dir in "${DIRS[@]}"; do
             # Skip protected folders
             if echo "$PROTECTED" | grep -qw "$dir"; then
               echo "KEEP   $dir  (protected)"
@@ -49,8 +65,7 @@ jobs:
               continue
             fi
 
-            # URL-encode the folder name for the GitHub API
-            # Note: branch names containing '/' are not supported (gh-pages folders cannot contain '/')
+            # URL-encode the folder name for the GitHub API (branch names may contain "/")
             ENCODED=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1], safe=''))" "$dir")
 
             # Check if the corresponding branch still exists
