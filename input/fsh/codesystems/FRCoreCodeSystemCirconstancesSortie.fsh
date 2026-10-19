@@ -4,7 +4,7 @@ Title: "FR Core CodeSystem Circonstances Sortie"
 Description: "Discharge Disposition"
 * insert SetCodesystem
 
-* ^status = #draft
+* ^status = #retired
 * ^caseSensitive = true
 * ^content = #complete
 * #2 "Mesure disciplinaire" "Mesure disciplinaire"
