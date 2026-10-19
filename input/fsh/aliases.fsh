@@ -87,7 +87,6 @@ Alias: $fr-location-type = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-loc
 Alias: $fr-core-v2-0203 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203
 Alias: $fr-core-v2-3311 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311
 Alias: $fr-core-v2-3307 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307
-Alias: $fr-core-v2-0445 = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445
 Alias: $FRCoreValueSetOrganizationUFType = https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-type
 Alias: $fr-core-cs-uf-indicateur = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur
 Alias: $fr-core-cs-discipline-equipement = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement
