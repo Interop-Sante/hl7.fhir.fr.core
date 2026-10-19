@@ -25,9 +25,11 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 
 * identifier.type from $fr-core-patient-identifier-type (extensible)
 
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.description = "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.)"
+* identifier ^slicing.discriminator[0].type = #value
+* identifier ^slicing.discriminator[0].path = "type"
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "system"
+* identifier ^slicing.description = "Slicing de l'identifiant Patient sur le type d'identifiant (IPP, INS-NIR, INS-NIA, etc.) et le system, nécessaire pour distinguer NSS-NIR de NSS-NIA qui partagent le même type (NH)"
 * identifier ^slicing.rules = #open
 * identifier ^short = "An identifier for this patient | Identifiant patient. Pour modéliser un patient avec une INS au statut qualifié, il est nécessaire de respecter la conformité au profil FRCorePatientINS. Les identifiants NIR et NIA ne sont définis que dans le cas du FRCorePatientINS."
 
