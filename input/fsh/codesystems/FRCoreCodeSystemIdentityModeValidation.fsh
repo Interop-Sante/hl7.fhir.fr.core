@@ -30,6 +30,7 @@ Description: "Mode de validation de l'identité"
 * #IE "Identification électronique EIDAS" "Identification électronique EIDAS"
 * #CM "Carte militaire" "Carte militaire"
 * #PC "Permis de conduire" "Permis de conduire"
+* #TC "Tiers de confiance" "Tiers de confiance"
 
 
 
