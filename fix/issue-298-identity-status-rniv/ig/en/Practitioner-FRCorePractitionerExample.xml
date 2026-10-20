@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="FRCorePractitionerExample"/>
+  <meta>
+    <lastUpdated value="2025-04-28T18:19:26.335+02:00"/>
+    <source value="https://annuaire.sante.fr"/>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Practitioner FRCorePractitionerExample</b></p><a name="en-FRCorePractitionerExample"> </a><a name="en-hcFRCorePractitionerExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2025-04-28 18:19:26+0200; Language: fr; </p><p style="margin-bottom: 0px">Information Source: <a href="https://annuaire.sante.fr">https://annuaire.sante.fr</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fr-core-practitioner.html">FR Core Practitioner Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Leclerc Sophie (Identifiant National de Professionnel de Santé: 810101201234 (use: official))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">N° RPPS/10101201234 (use: official)</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Practitioner">Contact Detail</td><td colspan="3"><a href="mailto:sophie.leclerc@mssante.fr">sophie.leclerc@mssante.fr</a></td></tr><tr><td style="background-color: #f3f5da" title="Certification, licensure, or training pertaining to the provision of care">Qualification:</td><td colspan="3"><span title="Codes:{https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome DE}, {https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais DE11}">Diplôme d'Etat français</span></td></tr><tr><td style="background-color: #f3f5da" title="Certification, licensure, or training pertaining to the provision of care">Qualification:</td><td colspan="3"><span title="Codes:{https://mos.esante.gouv.fr/NOS/TRE_R09-CategorieProfessionnelle/FHIR/TRE-R09-CategorieProfessionnelle C}, {https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 70}">Civil</span></td></tr><tr><td style="background-color: #f3f5da" title="This extension adds the element &quot;specialty&quot; to the FHIR Practitioner resource."><a href="StructureDefinition-fr-core-practitioner-specialty.html">FR Core Practitioner Specialty Extension</a></td><td colspan="3"><a href="https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html#TRE-R38-SpecialiteOrdinale-SM54">TRE_R38_SpecialiteOrdinale: SM54</a> (Médecine générale (SM))</td></tr></table></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty">
+    <valueCoding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"/>
+      <code value="SM54"/>
+      <display value="Médecine générale (SM)"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+        <code value="IDNPS"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.250.1.71.4.2.1"/>
+    <value value="810101201234"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+        <code value="RPPS"/>
+      </coding>
+    </type>
+    <system value="https://rpps.esante.gouv.fr"/>
+    <value value="10101201234"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Leclerc Sophie"/>
+    <family value="Leclerc"/>
+    <given value="Sophie"/>
+    <prefix value="MME"/>
+    <suffix value="DR"/>
+  </name>
+  <telecom>
+    <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type">
+      <valueCoding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie"/>
+        <code value="MSSANTE"/>
+        <display value="MSSANTE"/>
+      </valueCoding>
+    </extension>
+    <system value="email"/>
+    <value value="sophie.leclerc@mssante.fr"/>
+    <use value="work"/>
+  </telecom>
+  <qualification>
+    <code>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome"/>
+        <code value="DE"/>
+      </coding>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R48-DiplomeEtatFrancais/FHIR/TRE-R48-DiplomeEtatFrancais"/>
+        <code value="DE11"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <code>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_R09-CategorieProfessionnelle/FHIR/TRE-R09-CategorieProfessionnelle"/>
+        <code value="C"/>
+      </coding>
+      <coding>
+        <system value="https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"/>
+        <code value="70"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

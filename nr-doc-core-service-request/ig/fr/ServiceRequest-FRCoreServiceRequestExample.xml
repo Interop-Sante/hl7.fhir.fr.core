@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="FRCoreServiceRequestExample"/>
+  <meta>
+    <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-request"/>
+  </meta>
+  <language value="fr"/>
+  <text>
+    <status value="extensions"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : DemandeService FRCoreServiceRequestExample</b></p><a name="FRCoreServiceRequestExample"> </a><a name="hcFRCoreServiceRequestExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-core-service-request.html">FR Core ServiceRequest Profile</a></p></div><p><b>FR Core Method Extension</b>: <span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationMethod 0012}">Ultrasonographie</span></p><p><b>identifier</b>: Accession ID/AN-2024-00456</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes :{http://snomed.info/sct 363679005}">imagerie</span></p><p><b>code</b>: <span title="Codes :{http://snomed.info/sct 45036003}">échographie de l'abdomen</span></p><p><b>subject</b>: <a href="Patient-FRCorePatientINSExample.html">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>occurrence</b>: 2024-09-10</p><p><b>bodySite</b>: <span title="Codes :{http://snomed.info/sct 818983003}">abdomen</span></p><p><b>note</b>: </p><blockquote><div><p>Recherche de calculs biliaires, patient symptomatique.</p>
+</div></blockquote></div>
+  </text>
+  <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationMethod"/>
+        <code value="0012"/>
+        <display value="Ultrasonographie"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="ACSN"/>
+        <display value="Accession ID"/>
+      </coding>
+    </type>
+    <system value="http://servicerequest-accession-number-system.org"/>
+    <value value="AN-2024-00456"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363679005"/>
+      <display value="imagerie"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="45036003"/>
+      <display value="échographie de l'abdomen"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FRCorePatientINSExample"/>
+    <type value="Patient"/>
+  </subject>
+  <occurrenceDateTime value="2024-09-10"/>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="818983003"/>
+      <display value="abdomen"/>
+    </coding>
+  </bodySite>
+  <note>
+    <text value="Recherche de calculs biliaires, patient symptomatique."/>
+  </note>
+</ServiceRequest>
