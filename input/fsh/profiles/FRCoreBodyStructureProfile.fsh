@@ -16,5 +16,5 @@ Description: "FRCoreBodyStructureProfile est un profil FRCore utilisé pour pré
 * extension[includedStructure].extension[qualifier] ^short = "Modificateurs topographiques"
 * extension[includedStructure].extension[qualifier].value[x] from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis (required)
 
-
+* extension[includedStructure].extension[laterality] ^short = "Latéralité de la structure anatomique"
 * extension[includedStructure].extension[laterality].value[x] from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-lateralite-cisis (required)
