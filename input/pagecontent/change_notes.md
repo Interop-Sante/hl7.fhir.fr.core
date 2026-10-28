@@ -20,6 +20,13 @@
 * Retrait du binding de `Encounter.hospitalization.dischargeDisposition` vers `FRCoreValueSetEncounterDischargeDisposition` (codes ambigus/cumulables, en attente d'un travail complémentaire au GT IHE PAM FHIR) ; ce ValueSet et le CodeSystem `FRCoreCodeSystemCirconstancesSortie` passent au statut `retired` (conservés pour compatibilité, non supprimés) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
 * Élargissement de `Encounter.subject` à `FRCorePatientINSProfile` (en plus de `FRCorePatientProfile` et `Group`) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
 * Assouplissement de `Encounter.period` : suppression de la contrainte de cardinalité minimale (`1..`), qui retombe sur le `0..1` de base FHIR R4 — une rencontre proposée/non confirmée peut ne pas avoir de dates [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
+* Mise à jour des modes de validation de l'identité (CodeSystem `FRCoreCodeSystemIdentityModeValidation` et ValueSet `FRCoreValueSetModeValidationIdentityINS`) [#353](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/353) ; modifications par rapport à la 2.2.0 :
+    * CodeSystem `FRCoreCodeSystemIdentityModeValidation` :
+        - Ajout des codes `eCN` (e-carte d'identité), `IN` (Identité Numérique La Poste), `AV` (Application Carte Vitale), `LECV` (Livret de famille, accompagné de la carte Vitale avec photographie) et `CIMS` (Carte d'identité professionnelle multiservices)
+        - Code `AC` : libellé modifié de « Acte de naissance + Carte vitale avec photo » en « Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie »
+        - Précision des définitions : `CS` (« Carte de séjour ou titre de séjour »), `CC` (« Carnet de circulation pour étranger mineur »), `LE` (libellé « Livret de famille des parents »)
+        - Réorganisation en deux blocs : modes de validation officiels INS d'une part, autres modes de validation (`IE`, `CM`, `PC`, `TC` Tiers de confiance, `DC`, `CE`) d'autre part. Les codes `TC`, `DC` et `CE` de la 2.2.0 sont conservés.
+    * ValueSet `FRCoreValueSetModeValidationIdentityINS` : passage de 4 codes (`PA`, `CN`, `AN`, `LE`) à 12 codes (ajout de `CS`, `eCN`, `IN`, `AV`, `LECV`, `CC`, `CIMS`, `AC`)
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :

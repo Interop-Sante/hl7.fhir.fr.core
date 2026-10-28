@@ -21,7 +21,7 @@ Description: "Mode de validation de l'identité"
 * #LE "Livret de famille des parents" "Livret de famille des parents"
 * #CC "Carnet de circulation" "Carnet de circulation pour étranger mineur"
 * #CIMS "Carte d'identité professionnelle multiservices (CIMS)" "Carte d'identité professionnelle multiservices (CIMS)"
-* #ANCV "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie" "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie"
+* #AC "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie" "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie"
 
 
 // ##############################
@@ -30,6 +30,10 @@ Description: "Mode de validation de l'identité"
 * #IE "Identification électronique EIDAS" "Identification électronique EIDAS"
 * #CM "Carte militaire" "Carte militaire"
 * #PC "Permis de conduire" "Permis de conduire"
+* #TC "Tiers de confiance" "Tiers de confiance"
+* #DC "Document de Circulation pour étranger mineur" "Document de Circulation pour étranger mineur"
+* #CE "Carte Européenne" "Carte Européenne"
+
 
 
 
