@@ -49,8 +49,8 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * code ^binding.extension[=].extension[=].valueString = "Autre acte"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 
+* reasonReference only Reference(FRCoreConditionProfile or condition-eu-core or Observation or FRCoreProcedureProfile or procedure-eu-core or DiagnosticReport or DocumentReference)
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
-// Cible héritée de procedure-eu-core : Reference(Condition EU Core or Observation or Procedure EU Core or DiagnosticReport or DocumentReference)
 
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
