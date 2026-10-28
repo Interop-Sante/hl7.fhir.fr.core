@@ -14,10 +14,6 @@ Profil se basant sur la ressource Medication Administration pour indiquer l'oxyg
 
 * medication[x] only CodeableConcept
 * medication[x].coding 1..1
-* medication[x].coding.system 1..
-* medication[x].coding.system = "http://snomed.info/sct" (exactly)
-* medication[x].coding.code 1..
-* medication[x].coding.code = #767111007 (exactly)
-* medication[x].coding.code ^short = "Product containing oxygen (medicinal product) | Administration d'oxygène"
+* medicationCodeableConcept = http://snomed.info/sct#767111007 (exactly)
 * subject only Reference(FRCorePatientProfile)
 * performer.actor only Reference(FRCoreRelatedPersonProfile or RelatedPerson or Device or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCorePatientProfile)
