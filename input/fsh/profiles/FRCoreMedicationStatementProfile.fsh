@@ -38,5 +38,5 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)
 * medication[x] ^short = "Médicament"
 
-* reasonReference only Reference(Condition or Observation) // * reasonReference only Reference(FRCoreConditionProfile or Observation)
+* reasonReference only Reference(FRCoreConditionProfile or Condition or Observation)
 * reasonReference ^short = "Motif du traitement"

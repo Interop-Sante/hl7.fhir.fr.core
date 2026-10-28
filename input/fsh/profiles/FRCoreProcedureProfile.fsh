@@ -50,7 +50,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 * performed[x] ^short = "Date de l'acte"
 
-* performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or RelatedPerson or FRCoreOrganizationProfile)
+* performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or FRCoreRelatedPersonProfile or RelatedPerson or FRCoreOrganizationProfile)
 * performer.onBehalfOf only Reference(FRCoreOrganizationProfile) // EU Core : Reference(Organization EU Core)
 
 * extension contains FRCoreProcedurePriorityExtension named priority 0..1
@@ -59,7 +59,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * extension contains
     http://hl7.org/fhir/StructureDefinition/procedure-approachBodyStructure named approachBodySite 0..*
 * extension[approachBodySite] ^short = "Voie d'abord"
-* extension[approachBodySite].valueReference only Reference(BodyStructure) // * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile)
+* extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile or BodyStructure)
 
 * bodySite ^short = "Localisation anatomique"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible) // FRCore plus stricte que le binding preferred hérité de procedure-eu-core (même ValueSet)

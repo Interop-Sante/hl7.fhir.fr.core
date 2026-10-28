@@ -29,7 +29,7 @@ Profil de la saturation en oxygène du sang artériel."
 * partOf.reference ^mustSupport = false
 * subject only Reference(Patient or FRCorePatientProfile)
 * encounter only Reference(Encounter or FRCoreEncounterProfile)
-* performer only Reference(CareTeam or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile)
 
 * bodySite from FRCoreValueSetSPO2BodyLocation (example)
 

@@ -24,7 +24,7 @@ Profil de la fréquence resporatoire pour l'usage en France"""
 
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
+* performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
 
 * method from FRCoreValueSetRespiratoryRateMeasurementMethod (example)
 

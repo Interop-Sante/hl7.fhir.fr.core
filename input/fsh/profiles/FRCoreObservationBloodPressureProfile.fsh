@@ -25,7 +25,7 @@ Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7
 * effective[x] only dateTime or Period
 * effective[x] ^short = "Often just a dateTime for Vital Signs"
 * effective[x] ^definition = "Often just a dateTime for Vital Signs"
-* performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
+* performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
 
 * value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * value[x] ..0

@@ -37,7 +37,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
 * extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
-* extension[basedOnRequestR5].valueReference only Reference(MedicationRequest) // * extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile)
+* extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile or MedicationRequest)
 * extension[basedOnRequestR5] ^short = "Prescription"
 
 // Type de vaccination
@@ -46,10 +46,10 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 // Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
 
-* reasonReference only Reference(Condition) // * reasonReference only Reference(FRCoreConditionProfile)
+* reasonReference only Reference(FRCoreConditionProfile or Condition)
 * reasonReference ^short = "Réaction observée suite au vaccin"
 
 // Dose d'antigène
 * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
 * extension[ImmunizationAdministeredProductR5] ^short = "Dose d'antigène administrée"
-* extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(Medication) // * extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile) — à activer une fois FRCoreMedicationProfile créé
+* extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile or Medication)

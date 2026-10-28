@@ -168,5 +168,5 @@ Ce profil spécifie les identifiants de patient utilisés en France. Il utilise 
 
 * contact.name only FRCoreHumanNameProfile
 * contact.telecom only FRCoreContactPointProfile
-* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or PractitionerRole)
+* generalPractitioner only Reference(FRCorePractitionerProfile or FRCoreOrganizationProfile or FRCorePractitionerRoleProfile or PractitionerRole)
 * managingOrganization only Reference(FRCoreOrganizationProfile or Organization)

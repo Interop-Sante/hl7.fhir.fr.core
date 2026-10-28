@@ -55,7 +55,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile or Group)
 
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
-* participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
+* participant.individual only Reference(FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole)
 
 * appointment only Reference(FRCoreAppointmentProfile)
 

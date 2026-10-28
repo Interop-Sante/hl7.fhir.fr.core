@@ -19,7 +19,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 // ePrescription : Reference($FrCorePractitioner) uniquement
 // EU Core : Reference(patient|practitioner|practitionerRole|organization-eu-core or RelatedPerson) — pas de Device
-* requester only Reference(FRCorePractitionerProfile or FRCorePractitionerRoleProfile or FRCoreOrganizationProfile or FRCorePatientProfile or RelatedPerson)
+* requester only Reference(FRCorePractitionerProfile or FRCorePractitionerRoleProfile or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile or RelatedPerson)
 
 // Extension R5 backport : représentation lisible de la posologie (ePrescription)
 // Slice déjà posée par EU Core (même cardinalité 0..1) : pas de "contains", juste la traduction du ^short
@@ -42,12 +42,12 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 // Motif du traitement
 
-* reasonReference only Reference(Observation or Condition)
+* reasonReference only Reference(Observation or FRCoreConditionProfile or Condition)
 
 * instantiatesUri ^short = "Référence de la prescription"
 
 * basedOn ^short = "Référence à un item du plan de traitement."
-* basedOn only Reference(FRCoreMedicationRequestProfile or CarePlan or ServiceRequest or ImmunizationRecommendation)
+* basedOn only Reference(FRCoreMedicationRequestProfile or CarePlan or FRCoreServiceRequestProfile or ServiceRequest or ImmunizationRecommendation)
 
 // Posologie — 1..* requis (ePrescription : 1..)
 * dosageInstruction 1..* // ePrescription : 1.. (FHIR R4 base : 0..*)

@@ -32,7 +32,7 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 * medicationReference only Reference(FRCoreMedicationProfile)
 * medication[x] ^short = "Médicament administré"
 
-* reasonReference only Reference(Condition or Observation) // * reasonReference only Reference(FRCoreConditionProfile or Observation)
+* reasonReference only Reference(FRCoreConditionProfile or Condition or Observation)
 * reasonReference ^short = "Motif du traitement"
 
 // Prescription — Doc Core : Reference(FRMedicationRequestDocument) — FRCore : FRCoreMedicationRequestProfile

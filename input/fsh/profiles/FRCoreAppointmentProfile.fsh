@@ -24,4 +24,4 @@ Profil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur
 
 * slot only Reference(FRCoreSlotProfile)
 
-* participant.actor only Reference(Device or PractitionerRole or FRCoreRelatedPersonProfile or FRCoreHealthcareServiceProfile or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreLocationProfile)
+* participant.actor only Reference(Device or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreRelatedPersonProfile or FRCoreHealthcareServiceProfile or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreLocationProfile)

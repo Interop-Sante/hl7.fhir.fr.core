@@ -54,10 +54,10 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * extension[occurrence] ^short = "Période de l'effet indésirable (backport R5 occurrence[x], Period)"
 
 * suspectEntity ^short = "Agent soupçonné d'être à l'origine de l'événement indésirable"
-* suspectEntity.instance only Reference(Immunization or Substance or Medication or MedicationAdministration or MedicationStatement) // * suspectEntity.instance only Reference(FRCoreImmunizationProfile or FRCoreSubstanceProfile or FRCoreMedicationProfile or FRCoreMedicationAdministrationProfile or FRCoreMedicationStatementProfile)
+* suspectEntity.instance only Reference(FRCoreImmunizationProfile or Immunization or Substance or FRCoreMedicationProfile or Medication or FRCoreMedicationAdministrationProfile or MedicationAdministration or FRCoreMedicationStatementProfile or MedicationStatement)
 * suspectEntity.instance ^short = "Médicament, substance incriminée, posologie"
 
-* resultingCondition only Reference(Condition) // * resultingCondition only Reference(FRCoreConditionProfile)
+* resultingCondition only Reference(FRCoreConditionProfile or Condition)
 * resultingCondition ^short = "Réaction observée"
 
 * suspectEntity.causality 0..1 // Application de la cardinalité de FHIR R5 base : passage à 0..1

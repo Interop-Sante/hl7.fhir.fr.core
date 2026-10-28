@@ -20,4 +20,4 @@ Profil se basant sur la ressource Medication Administration pour indiquer l'oxyg
 * medication[x].coding.code = #767111007 (exactly)
 * medication[x].coding.code ^short = "Product containing oxygen (medicinal product) | Administration d'oxygène"
 * subject only Reference(FRCorePatientProfile)
-* performer.actor only Reference(RelatedPerson or Device or FRCorePractitionerProfile or PractitionerRole or FRCorePatientProfile)
+* performer.actor only Reference(FRCoreRelatedPersonProfile or RelatedPerson or Device or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCorePatientProfile)
