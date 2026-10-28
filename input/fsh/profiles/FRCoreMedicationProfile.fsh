@@ -22,8 +22,9 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 
 // Nom de marque : Extension IHE MPD (Doc Core)
 // Slice déjà posée par EU Core (0..1) : pas de "contains", on resserre juste la cardinalité et le ^short
-* extension[productName] 1..1 // Doc Core : 1..1 (FHIR R4 base : absent, EU Core : 0..1)
+* extension[productName] 0..1 // Doc Core : 1..1 (FHIR R4 base : absent, EU Core : 0..1)
 * extension[productName] ^short = "Nom de marque du produit."
+// L'extension productName pourra être passée en 1..1 si cela s'avère nécessaire dans les prochaines releases de FRCore (feedback needed)
 
 * form from FRCoreValueSetEDQMForm (required) // Doc Core
 * form ^short = "Forme pharmaceutique (EDQM)"
