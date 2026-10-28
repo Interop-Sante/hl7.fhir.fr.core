@@ -1,8 +1,4 @@
-// Sources :
-//   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedication.fsh
-//
-// Parent : profil EU Core https://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
-//   Les slices d'extensions IHE MPD (productName, classification, characteristic, sizeOfItem,
+// Les slices d'extensions IHE MPD (productName, classification, characteristic, sizeOfItem,
 //   unitOfPresentation, packageType, device) sont déjà posées par EU Core ; FRCore ne fait que
 //   les narrower ou les traduire, sans les redéfinir en doublon.
 // ─────────────────────────────────────────────────────────────────────────────
