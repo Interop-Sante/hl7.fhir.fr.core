@@ -6,22 +6,30 @@ Description: "Mode de validation de l'identité"
 
 * ^caseSensitive = true
 * ^content = #complete
-* #AN "Extrait d'acte de naissance" "Extrait d'acte de naissance"
-* #CC "Carnet de circulation" "Carnet de circulation"
-* #CE "Carte Européenne" "Carte Européenne"
+
+// #####################################
+// # Modes de validation officiels INS #
+// #####################################
 * #CN "Carte nationale d'identité" "Carte nationale d'identité"
-* #LE "Livret de famille" "Livret de famille"
 * #PA "Passeport" "Passeport"
-* #PC "Permis de conduire" "Permis de conduire"
-* #TC "Tiers de confiance" "Tiers de confiance"
-* #AC "Acte de naissance + Carte vitale avec photo" "Acte de naissance + Carte vitale avec photo"
-* #AV "Application Carte Vitale" "Application Carte Vitale"
 * #CS "Carte de séjour" "Carte de séjour ou titre de séjour"
+* #eCN "e-carte d'identité" "e-carte d'identité"
+* #IN "Identité Numérique La Poste" "Identité Numérique La Poste"
+* #AV "Application Carte Vitale" "Application Carte Vitale"
+* #LECV "Livret de famille, accompagné de la carte Vitale avec photographie" "Livret de famille, accompagné de la carte Vitale avec photographie"
+* #AN "Extrait d'acte de naissance" "Extrait d'acte de naissance"
+* #LE "Livret de famille des parents" "Livret de famille des parents"
+* #CC "Carnet de circulation" "Carnet de circulation pour étranger mineur"
+* #CIMS "Carte d'identité professionnelle multiservices (CIMS)" "Carte d'identité professionnelle multiservices (CIMS)"
+* #ANCV "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie" "Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie"
+
+
+// ##############################
+// # Autres modes de validation #
+// ##############################
 * #IE "Identification électronique EIDAS" "Identification électronique EIDAS"
-* #DC "Document de Circulation pour étranger mineur" "Document de Circulation pour étranger mineur"
 * #CM "Carte militaire" "Carte militaire"
-
-
+* #PC "Permis de conduire" "Permis de conduire"
 
 
 

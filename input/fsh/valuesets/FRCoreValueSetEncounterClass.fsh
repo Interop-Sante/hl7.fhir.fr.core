@@ -4,6 +4,8 @@ Title: "FR Core ValueSet Encounter class"
 Description: "A set of codes that can be used to indicate the class of the encounter."
 * insert SetValueset
 
+* ^status = #retired
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #informative
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"

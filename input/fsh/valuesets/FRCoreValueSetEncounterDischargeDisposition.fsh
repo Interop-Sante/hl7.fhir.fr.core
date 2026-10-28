@@ -4,6 +4,8 @@ Title: "FR Core ValueSet Encounter discharge disposition"
 Description: "Circonstances de sortie de l'hôpital.\r\nThis value set defines a set of codes that can be used to where the patient left the hospital"
 * insert SetValueset
 
+* ^status = #retired
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-warning"
 * ^extension[=].valueMarkdown = "Types are for general categories of identifiers. See [the identifier registry](identifier-registry.h     tml) for a list of common identifier systems"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
