@@ -28,6 +28,13 @@
     * Ajout de 4 extensions : `FRCoreMedicationAdministrationSequenceExtension`, `FRCoreNotCoveredExtension`, `FRCoreTreatmentIntentExtension`, `FRCoreAdditionalWhenValuesExtension`
     * Ajout de 1 CodeSystem (`FRCoreCodeSystemAdditionalWhenCodes`) et de 5 ValueSets (`FRCoreValueSetMedication`, `FRCoreValueSetEDQMForm`, `FRCoreValueSetEDQMRoute`, `FRCoreValueSetTreatmentIntent`, `FRCoreValueSetAdditionalWhenCodes`)
     * Ajout des dépendances `hl7.fhir.eu.mpd: 1.0.0` et `ihe.pharm.mpd.r4: 1.0.0-comment-2` pour les extensions IHE MPD
+* Mise à jour des modes de validation de l'identité (CodeSystem `FRCoreCodeSystemIdentityModeValidation` et ValueSet `FRCoreValueSetModeValidationIdentityINS`) [#353](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/353) ; modifications par rapport à la 2.2.0 :
+    * CodeSystem `FRCoreCodeSystemIdentityModeValidation` :
+        - Ajout des codes `eCN` (e-carte d'identité), `IN` (Identité Numérique La Poste), `AV` (Application Carte Vitale), `LECV` (Livret de famille, accompagné de la carte Vitale avec photographie) et `CIMS` (Carte d'identité professionnelle multiservices)
+        - Code `AC` : libellé modifié de « Acte de naissance + Carte vitale avec photo » en « Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie »
+        - Précision des définitions : `CS` (« Carte de séjour ou titre de séjour »), `CC` (« Carnet de circulation pour étranger mineur »), `LE` (libellé « Livret de famille des parents »)
+        - Réorganisation en deux blocs : modes de validation officiels INS d'une part, autres modes de validation (`IE`, `CM`, `PC`, `TC` Tiers de confiance, `DC`, `CE`) d'autre part. Les codes `TC`, `DC` et `CE` de la 2.2.0 sont conservés.
+    * ValueSet `FRCoreValueSetModeValidationIdentityINS` : passage de 4 codes (`PA`, `CN`, `AN`, `LE`) à 12 codes (ajout de `CS`, `eCN`, `IN`, `AV`, `LECV`, `CC`, `CIMS`, `AC`)
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
