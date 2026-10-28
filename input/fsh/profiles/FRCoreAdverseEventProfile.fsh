@@ -32,8 +32,8 @@ Id: fr-core-adverse-event
 Title: "FR Core AdverseEvent Profile"
 Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable prévisible lié à un médicament"
 
-* category 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
-// Fixé à medication-mishap : ce code vient de la révision R5 du CodeSystem terminology.hl7.org/CodeSystem/adverse-event-category (partagé R4/R5, binding extensible dès R4) — FRCore/Doc Core AdverseEvent ne couvre que les effets indésirables médicamenteux (cf. https://www.hl7.org/fhir/adverseevent.html). Le binding JDV d'origine (jdv-origine-effet-indesirable-cisis) est déplacé vers l'extension "code" (backport R5→R4, voir en tête de fichier).
+* category 1..1
+// Fixé à medication-mishap (code R5 du CodeSystem adverse-event-category, binding extensible dès R4) : FRCore ne couvre que les effets indésirables médicamenteux. Le binding JDV d'origine (jdv-origine-effet-indesirable-cisis) est déplacé vers l'extension "code" (voir en tête de fichier).
 * category.coding.system = $adverse-event-category
 * category.coding.code = #medication-mishap
 * category ^short = "Type d'effet indésirable — fixé à medication-mishap (code R5)"
@@ -45,7 +45,7 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 // event (R4 natif, binding Example SNOMED CT) neutralisé : remplacé par l'extension "code" qui reprend le rôle de AdverseEvent.code (R5, renommage de event) pour porter le JDV d'origine.
 * event 0..0
 
-// date de début de l'effet indésirable ; la période complète (début + fin) peut aussi être portée par l'extension "occurrence" ci-dessous (backport officiel xver de AdverseEvent.occurrence[x], Period), en alternative à resultingCondition.abatementDateTime pour la date de fin.
+// date de début de l'effet indésirable.
 * date ^short = "Date de début de l'effet indésirable"
 
 // Extension officielle xver-r5.r4 (http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence) backportant AdverseEvent.occurrence[x] (R5) ; restreinte à Period pour porter la période complète de l'effet indésirable.

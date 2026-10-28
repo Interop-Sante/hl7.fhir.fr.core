@@ -36,7 +36,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
-* extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
+* extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente
 * extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile or MedicationRequest)
 * extension[basedOnRequestR5] ^short = "Prescription"
 

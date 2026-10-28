@@ -43,7 +43,7 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * subject ^short = "Patient concerné"
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
-* onset[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* onset[x] 1..1
 
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
 

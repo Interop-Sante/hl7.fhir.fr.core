@@ -17,11 +17,11 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * identifier[accessionNumber] only AccessionNumberIdentifierEuImaging
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
-* code 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* code 1..1
 * code ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
 //Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
 //* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d'examen ou de suivi"
-* occurrence[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* occurrence[x] 1..1
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
 // Informations complémentaires sur la demande d'acte (exemple : INR cible)
 * orderDetail ^short = "informations complémentaires sur la demande d'acte, exemple : INR cible"
