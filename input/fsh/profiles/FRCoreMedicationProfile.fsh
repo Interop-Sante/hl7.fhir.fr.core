@@ -1,5 +1,4 @@
 // Sources :
-//   Doc Core      : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationDocument.fsh
 //   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedication.fsh
 //
 // Parent : profil EU Core https://hl7.eu/fhir/base/StructureDefinition/medication-eu-core
@@ -13,25 +12,23 @@ Id: fr-core-medication
 Title: "FR Core Medication Profile"
 Description: "FRCoreMedicationProfile permet de décrire un médicament ou un vaccin."
 
-* code 1..1 // Doc Core (FHIR R4 base : 0..1, EU Core : 0..1)
+* code 1..1
 * code ^short = "Code du produit de santé"
-// Doc Core : FRValueSetMedicationTranslationDocument
 // ePrescription : from fr-medication-code (required) — UCD, SMS, ANSM
 // FRCore : aligne sur Doc Core ; harmonisation terminologique avec ePrescription à prévoir
 * code from FRCoreValueSetMedication (required)
 
 // Nom de marque : Extension IHE MPD (Doc Core)
 // Slice déjà posée par EU Core (0..1) : pas de "contains", on resserre juste la cardinalité et le ^short
-* extension[productName] 0..1 // Doc Core : 1..1 (FHIR R4 base : absent, EU Core : 0..1)
+* extension[productName] 0..1
 * extension[productName] ^short = "Nom de marque du produit."
 // L'extension productName pourra être passée en 1..1 si cela s'avère nécessaire dans les prochaines releases de FRCore (feedback needed)
 
-* form from FRCoreValueSetEDQMForm (required) // Doc Core
+* form from FRCoreValueSetEDQMForm (required)
 * form ^short = "Forme pharmaceutique (EDQM)"
 
-// Doc Core : batch.lotNumber et batch.expirationDate documentés
-* batch.lotNumber ^short = "Numéro de lot" // Doc Core
-* batch.expirationDate ^short = "Date d'expiration du produit" // Doc Core
+* batch.lotNumber ^short = "Numéro de lot"
+* batch.expirationDate ^short = "Date d'expiration du produit"
 
 // Classification ATC et conditionnement : Extensions IHE MPD (Doc Core)
 // Slices déjà posées par EU Core (mêmes cardinalités) : pas de "contains", juste la traduction du ^short
@@ -39,10 +36,10 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * extension[characteristic] ^short = "Présentation / conditionnement."
 
 // Composants du médicament
-* ingredient.itemCodeableConcept from https://smt.esante.gouv.fr/terminologie-sms?vs // Doc Core
+* ingredient.itemCodeableConcept from https://smt.esante.gouv.fr/terminologie-sms?vs
 * ingredient.itemCodeableConcept ^short = "Code SMS de la substance active"
 * ingredient.itemCodeableConcept.text ^short = "Nom de la substance"
 * ingredient.itemReference only Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
-* ingredient.strength ^short = "Quantité de substance présente dans le médicament" // Doc Core
+* ingredient.strength ^short = "Quantité de substance présente dans le médicament"
 
 // ePrescription : ingredient.strength only FrRatioMedication — type ePrescription-spécifique (UCUM/EDQM), non porté dans FRCore

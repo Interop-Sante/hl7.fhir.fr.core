@@ -1,9 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRBodyStructureDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/bodyStructure-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreBodyStructureProfile
 Parent: bodyStructure-eu-core
 Id: fr-core-body-structure

@@ -1,9 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAdverseEventDocument.fsh
-//
-// Profil EU Core (héritage direct) : non disponible
-// ─────────────────────────────────────────────────────────────────────────────
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Extensions locales (backport R5→R4) : AdverseEvent.code et AdverseEvent.outcome n'ont pas d'extension cross-version officielle dans l'IG xver R5→R4 (https://hl7.org/fhir/uv/xver-r5.r4/0.1.0/artifacts.html ne couvre pas AdverseEvent.code ni AdverseEvent.outcome), contrairement au pattern habituel $xxx-r5 (alias vers http://hl7.org/fhir/5.0/StructureDefinition/extension-...). Elles sont donc définies ici et leur ^url fixé au format officiel des backports R5→R4 (http://hl7.org/fhir/5.0/StructureDefinition/extension-<Resource>.<Element>, ex. extension-AdverseEvent.contributingFactor), même si HL7 ne publie pas lui-même de définition à cette adresse pour code/outcome (vérifié absente de hl7.fhir.uv.xver-r5.r4, hl7.fhir.uv.extensions et 404 sur hl7.org).
 // ─────────────────────────────────────────────────────────────────────────────

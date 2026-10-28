@@ -1,9 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAllergyIntoleranceDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreAllergyIntoleranceProfile
 Parent: allergyIntolerance-eu-core
 Id: fr-core-allergy-intolerance

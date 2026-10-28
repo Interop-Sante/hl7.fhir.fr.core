@@ -1,9 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRImmunizationDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreImmunizationProfile
 Parent: immunization-eu-core
 Id: fr-core-immunization
@@ -37,8 +31,8 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode ^binding.extension[2].extension[2].url = "valueSet"
 * vaccineCode ^binding.extension[2].extension[2].valueCanonical = Canonical(FRCoreValueSetMedicationTranslation)
 
-* lotNumber ^short = "Numéro de lot." // Doc Core
-* expirationDate ^short = "Date d'expiration du produit" // Doc Core
+* lotNumber ^short = "Numéro de lot."
+* expirationDate ^short = "Date d'expiration du produit"
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1

@@ -1,6 +1,3 @@
-// Source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetLocationBodyStructureDocument.fsh
-// ─────────────────────────────────────────────────────────────────────────────
 ValueSet: FRCoreValueSetBodyStructureLocation
 Id: fr-core-vs-body-structure-location
 Title: "FR Core ValueSet BodyStructure location"

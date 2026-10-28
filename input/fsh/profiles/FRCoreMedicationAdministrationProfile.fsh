@@ -1,39 +1,32 @@
-// Source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationAdministrationDocument.fsh
-//
-// Profil EU Core : non disponible
-// Pas de profil ePrescription équivalent pour MedicationAdministration
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationAdministrationProfile
 Parent: MedicationAdministration
 Id: fr-core-medication-administration
 Title: "FR Core MedicationAdministration Profile"
 Description: "FRCoreMedicationAdministrationProfile permet de décrire les modalités d'administration d'un médicament au patient (médicament, mode d'administration, quantité, durée et fréquence)."
 
-* category ^short = "Acte ou situation" // Doc Core
+* category ^short = "Acte ou situation"
 
-* status ^short = "Statut" // Doc Core
+* status ^short = "Statut"
 
-* effective[x] only Period // Doc Core
-* effectivePeriod ^short = "Durée du traitement" // Doc Core
+* effective[x] only Period
+* effectivePeriod ^short = "Durée du traitement"
 
 // Backport R5 — fréquence d'administration (Doc Core)
 * extension contains $medicationAdministration-occurence-r5 named occurenceR5 0..1
-* extension[occurenceR5].valueTiming 1..1 // Doc Core — sous-élément obligatoire si extension présente
+* extension[occurenceR5].valueTiming 1..1
 * extension[occurenceR5] ^short = "Fréquence d'administration"
 
 // Dosage
-// Doc Core : FRMedicationAdministrationSequenceExtension
 * dosage.extension contains FRCoreMedicationAdministrationSequenceExtension named sequence 0..* // dosages progressifs/fractionnés
-* dosage.route from FRCoreValueSetEDQMRoute (extensible) // Doc Core
+* dosage.route from FRCoreValueSetEDQMRoute (extensible)
 * dosage.route ^short = "Voie d'administration"
 * dosage.route ^binding.description = "EDQM - Standard terms / classe ROA"
-* dosage.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible) // Doc Core
+* dosage.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible)
 * dosage.site ^short = "Région anatomique d'administration"
-* dosage.dose ^short = "Dose à administrer" // Doc Core
-* dosage.rateRatio ^short = "Dose maximale" // Doc Core
-* dosage.rateQuantity ^short = "Rythme d'administration" // Doc Core
-* dosage.text ^short = "Instruction au patient" // Doc Core
+* dosage.dose ^short = "Dose à administrer"
+* dosage.rateRatio ^short = "Dose maximale"
+* dosage.rateQuantity ^short = "Rythme d'administration"
+* dosage.text ^short = "Instruction au patient"
 
 // Médicament — Doc Core : Reference(FRMedicationDocument) — FRCore : FRCoreMedicationProfile
 * medicationReference only Reference(FRCoreMedicationProfile)

@@ -1,9 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRProcedureDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreProcedureProfile
 Parent: procedure-eu-core
 Id: fr-core-procedure

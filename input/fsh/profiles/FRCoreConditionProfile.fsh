@@ -1,9 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRConditionDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreConditionProfile
 Parent: condition-eu-core
 Id: fr-core-condition
@@ -47,7 +41,7 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * code ^binding.extension[=].extension[=].valueString = "Maladie rare"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * subject ^short = "Patient concerné"
-* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
 * onset[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
 
