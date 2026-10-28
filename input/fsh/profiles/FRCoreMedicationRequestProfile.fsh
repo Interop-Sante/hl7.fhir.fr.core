@@ -1,8 +1,3 @@
-// Sources :
-//   ePrescription : https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrMedicationRequest.fsh
-//                   https://github.com/ansforge/interop-ig-fhir-ePrescription/blob/main/input/fsh/profiles/FrInpatientMedicationRequest.fsh
-// ─────────────────────────────────────────────────────────────────────────────
-
 Profile: FRCoreMedicationRequestProfile
 Parent: MedicationRequestEuCore
 Id: fr-core-medication-request
