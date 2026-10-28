@@ -18,7 +18,6 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 * effective[x] only Period
 * effectivePeriod ^short = "Durée du traitement"
 
-// Backport R5 — fréquence d'administration (Doc Core)
 * extension contains $medicationAdministration-occurence-r5 named occurenceR5 0..1
 * extension[occurenceR5].valueTiming 1..1
 * extension[occurenceR5] ^short = "Fréquence d'administration"

@@ -17,7 +17,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 // FRCore : aligne sur Doc Core ; harmonisation terminologique avec ePrescription à prévoir
 * code from FRCoreValueSetMedication (required)
 
-// Nom de marque : Extension IHE MPD (Doc Core)
 // Slice déjà posée par EU Core (0..1) : pas de "contains", on resserre juste la cardinalité et le ^short
 * extension[productName] 0..1
 * extension[productName] ^short = "Nom de marque du produit."
@@ -29,7 +28,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * batch.lotNumber ^short = "Numéro de lot"
 * batch.expirationDate ^short = "Date d'expiration du produit"
 
-// Classification ATC et conditionnement : Extensions IHE MPD (Doc Core)
 // Slices déjà posées par EU Core (mêmes cardinalités) : pas de "contains", juste la traduction du ^short
 * extension[classification] ^short = "Classification ATC."
 * extension[characteristic] ^short = "Présentation / conditionnement."

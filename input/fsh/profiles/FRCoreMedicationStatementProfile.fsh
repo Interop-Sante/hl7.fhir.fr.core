@@ -24,7 +24,6 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * effective[x] only Period
 * effectivePeriod ^short = "Durée du traitement"
 
-// Posologie (Doc Core)
 * dosage.timing ^short = "Fréquence d'administration"
 * dosage.sequence ^short = "Séquence (dosages progressifs/fractionnés)"
 * dosage.asNeeded[x] ^short = "Dosage conditionnel"

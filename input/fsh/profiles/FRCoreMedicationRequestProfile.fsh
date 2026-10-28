@@ -78,10 +78,8 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.maxDosePerPeriod ^short = "Dose maximale"
 // ePrescription : doseAndRate.* only FrRatioMedication/FrSimpleQuantityMedication/FrRangeMedication — types ePrescription-spécifiques, non portés dans FRCore
 
-// Instructions au patient et préconditions (Doc Core)
 * dosageInstruction.additionalInstruction ^short = "Informations supplémentaires utilisables pour instructions au Patien ou pércondition préalables à l'utilisation du médicament"
 
-// Dispensation (Doc Core)
 * dispenseRequest.extension contains $medicationRequest-dispenseRequest-dispenserInstruction-r5 named dispenserInstructionR5 0..1
 * dispenseRequest.extension[dispenserInstructionR5].valueAnnotation 1..1
 * dispenseRequest.extension[dispenserInstructionR5].valueAnnotation ^short = "Instructions au dispensateur"
