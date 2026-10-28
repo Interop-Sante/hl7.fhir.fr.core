@@ -4,6 +4,13 @@ Id: fr-core-service-request
 Title: "FR Core ServiceRequest Profile"
 Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d'examens (analyses biologiques, évaluations, étude d'imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d'un plan de soins."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-service-request)
+
 * category ^short = "Catégorie de la demande"
 
 * identifier ^slicing.discriminator.type = #value

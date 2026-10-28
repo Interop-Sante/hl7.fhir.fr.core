@@ -4,6 +4,13 @@ Id: fr-core-body-structure
 Title: "FR Core BodyStructure Profile"
 Description: "FRCoreBodyStructureProfile est un profil FRCore utilisé pour préciser les modificateurs topographiques associés à une localisation anatomique."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-body-structure)
+
 * extension[includedStructure].extension[structure] ^short = "Localisation anatomique ou voie d'abord"
 * extension[includedStructure].extension[structure].value[x] from FRCoreValueSetBodyStructureLocation (extensible)
 

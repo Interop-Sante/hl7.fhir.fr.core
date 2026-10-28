@@ -4,6 +4,13 @@ Id: fr-core-allergy-intolerance
 Title: "FR Core AllergyIntolerance Profile"
 Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-allergy-intolerance)
+
 * type ^short = "Type d'allergie ou d'intolérance"
 // Binding required R4 natif inchangé (allergy | intolerance uniquement) : FRCoreValueSetAllergyIntoleranceType contient des codes (idiosyncrasie, hypersensibilité non allergique) interdits par ce binding en R4. En R5 le binding passe à preferred (https://hl7.org/fhir/R5/allergyintolerance.html) : ces codes sont donc portés via l'extension backport ci-dessous plutôt que sur l'élément natif.
 

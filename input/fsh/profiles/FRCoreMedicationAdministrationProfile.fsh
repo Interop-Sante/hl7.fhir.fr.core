@@ -4,6 +4,13 @@ Id: fr-core-medication-administration
 Title: "FR Core MedicationAdministration Profile"
 Description: "FRCoreMedicationAdministrationProfile permet de décrire les modalités d'administration d'un médicament au patient (médicament, mode d'administration, quantité, durée et fréquence)."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-medication-administration)
+
 * category ^short = "Acte ou situation"
 
 * status ^short = "Statut"

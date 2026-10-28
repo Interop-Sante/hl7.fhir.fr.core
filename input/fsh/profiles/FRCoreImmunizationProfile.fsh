@@ -4,6 +4,13 @@ Id: fr-core-immunization
 Title: "FR Core Immunization Profile"
 Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin. Il permet également de décrire pourquoi un vaccin n'a pas été réalisé."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-immunization)
+
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
 

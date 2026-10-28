@@ -12,6 +12,13 @@ Id: fr-core-medication
 Title: "FR Core Medication Profile"
 Description: "FRCoreMedicationProfile permet de décrire un médicament ou un vaccin."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-medication)
+
 * code 1..1
 * code ^short = "Code du produit de santé"
 // ePrescription : from fr-medication-code (required) — UCD, SMS, ANSM

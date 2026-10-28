@@ -9,6 +9,13 @@ Id: fr-core-medication-request
 Title: "FR Core MedicationRequest Profile"
 Description: "FRCoreMedicationRequestProfile permet de décrire un traitement prescrit avec notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-medication-request)
+
 * status ^short = "Statut"
 
 * authoredOn ^short = "Date de prescription"

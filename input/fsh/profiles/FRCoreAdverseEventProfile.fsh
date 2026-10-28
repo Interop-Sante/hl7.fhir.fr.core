@@ -32,6 +32,13 @@ Id: fr-core-adverse-event
 Title: "FR Core AdverseEvent Profile"
 Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable prévisible lié à un médicament"
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-adverse-event)
+
 * category 1..1
 // Fixé à medication-mishap (code R5 du CodeSystem adverse-event-category, binding extensible dès R4) : FRCore ne couvre que les effets indésirables médicamenteux. Le binding JDV d'origine (jdv-origine-effet-indesirable-cisis) est déplacé vers l'extension "code" (voir en tête de fichier).
 * category.coding.system = $adverse-event-category

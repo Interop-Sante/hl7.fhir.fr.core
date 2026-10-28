@@ -4,6 +4,13 @@ Id: fr-core-procedure
 Title: "FR Core Procedure Profile"
 Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
 
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-procedure)
+
 * partOf ^short = "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l'acte (ex. produit administré lors d'un acte d'imagerie)."
 
 * status ^short = "Statut de l'acte"

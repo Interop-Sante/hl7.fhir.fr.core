@@ -4,6 +4,9 @@ Id: fr-core-organization-uac
 Title: "FR Core Organization UAC Profile"
 Description: """Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation."""
 
+* meta.profile contains fr-uac-canonical 0..1
+* meta.profile[fr-uac-canonical] = Canonical(fr-core-organization-uac)
+
 * extension contains
     FRCoreOrganizationDisciplinePrestationExtension named disciplinePrestation 0..1 and
     FRCoreOrganizationTarifExtension named tarif 0..1 

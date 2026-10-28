@@ -4,7 +4,14 @@ Id: fr-core-condition
 Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
 
-* clinicalStatus 1..1 // FHIR R5 base : 1..1 — cardinalité identique
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-condition)
+
+* clinicalStatus 1..1 // Alignement à FHIR R5 base : 1..1
 * clinicalStatus ^short = "Statut clinique du problème"
 
 * verificationStatus ^short = "Certitude"

@@ -5,6 +5,13 @@ Title: "FR Core MedicationStatement Profile"
 Description: "FRCoreMedicationStatementProfile permet de décrire les modalités d'administration d'un médicament au patient (médicament déclaré, mode d'administration, quantité, durée et fréquence). Couvre les bilans médicamenteux et conciliations médicamenteuses."
 
 // Prescription — Doc Core : Reference(FRMedicationRequestDocument) — FRCore : FRCoreMedicationRequestProfile
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-medication-statement)
+
 * basedOn only Reference(FRCoreMedicationRequestProfile)
 * basedOn ^short = "Prescription"
 
