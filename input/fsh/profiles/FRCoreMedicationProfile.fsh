@@ -14,7 +14,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * code 1..1
 * code ^short = "Code du produit de santé"
 // ePrescription : from fr-medication-code (required) — UCD, SMS, ANSM
-// FRCore : aligne sur Doc Core ; harmonisation terminologique avec ePrescription à prévoir
 * code from FRCoreValueSetMedication (required)
 
 // Slice déjà posée par EU Core (0..1) : pas de "contains", on resserre juste la cardinalité et le ^short

@@ -14,10 +14,8 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * status ^short = "Statut"
 
 * authoredOn ^short = "Date de prescription"
-// Proposition authoredOn: surcontraindre IG Document Core et ePrescription pour rendre ce champs obligatoire
 
 * requester ^short = "Prescripteur"
-// Proposition requester : surcontraindre IG Document Core et ePrescription pour rendre ce champs obligatoire
 
 // ePrescription : Reference($FrCorePractitioner) uniquement
 // EU Core : Reference(patient|practitioner|practitionerRole|organization-eu-core or RelatedPerson) — pas de Device
