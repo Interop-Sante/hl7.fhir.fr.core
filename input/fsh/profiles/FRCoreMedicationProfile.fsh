@@ -1,7 +1,3 @@
-// Les slices d'extensions IHE MPD (productName, classification, characteristic, sizeOfItem,
-//   unitOfPresentation, packageType, device) sont déjà posées par EU Core ; FRCore ne fait que
-//   les narrower ou les traduire, sans les redéfinir en doublon.
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationProfile
 Parent: MedicationEuCore
 Id: fr-core-medication
