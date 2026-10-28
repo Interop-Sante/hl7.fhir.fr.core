@@ -1,6 +1,16 @@
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
-Alias: $SCT = http://snomed.info/sct 
+Alias: $SCT = http://snomed.info/sct
+
+// CISIS JDVs (immunization)
+Alias: $jdv-immunization-route-code-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis
+
+// R5 backport extensions (immunization)
+Alias: $immunization-basedOn-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn
+Alias: $immunization-administeredProduct-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct
+
+// Tooling extensions (additional bindings)
+Alias: $additional-binding = http://hl7.org/fhir/tools/StructureDefinition/additional-binding
 
 // ANS
 Alias: $TRE-G08-TypeIdentifiantPersonne = https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne
@@ -54,8 +64,10 @@ Alias: $JDV-J245-Civilite-CISIS = https://mos.esante.gouv.fr/NOS/JDV_J245-Civili
 
 // HL7
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
 Alias: $v2-0007 = http://terminology.hl7.org/CodeSystem/v2-0007
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $adverse-event-category = http://terminology.hl7.org/CodeSystem/adverse-event-category
 Alias: $shareablevalueset = http://hl7.org/fhir/StructureDefinition/shareablevalueset
 Alias: $bmi = http://hl7.org/fhir/StructureDefinition/bmi
 Alias: $bodytemp = http://hl7.org/fhir/StructureDefinition/bodytemp
@@ -68,6 +80,8 @@ Alias: $humanname-assembly-order = http://hl7.org/fhir/StructureDefinition/human
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $ServiceType = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $organization-description-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description
+Alias: $adverse-event-occurrence-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence
+Alias: $allergy-intolerance-type-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type
 
 
 // ###############
