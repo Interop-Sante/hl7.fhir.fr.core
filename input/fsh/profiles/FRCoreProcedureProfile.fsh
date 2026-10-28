@@ -51,7 +51,6 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
 // Cible héritée de procedure-eu-core : Reference(Condition EU Core or Observation or Procedure EU Core or DiagnosticReport or DocumentReference)
-// Condition EU Core non re-resserré vers FRCoreConditionProfile : pas encore mergé sur main (branche nr-doc-core-condition)
 
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
