@@ -10,7 +10,7 @@ Alias: $ihe-ext-medication-characteristic = https://profiles.ihe.net/PHARM/MPD/S
 Alias: $ihe-ext-offLabel = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel
 
 // Médicament - Backports R5 (Doc Core)
-Alias: $medicationAdministration-occurence-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence[x]
+Alias: $medicationAdministration-occurence-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence
 Alias: $medicationRequest-dispenseRequest-dispenserInstruction-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction
 
 // Médicament - Backport R5 (ePrescription)
