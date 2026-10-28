@@ -31,6 +31,9 @@ Description: "Mode de validation de l'identité"
 * #CM "Carte militaire" "Carte militaire"
 * #PC "Permis de conduire" "Permis de conduire"
 * #TC "Tiers de confiance" "Tiers de confiance"
+* #DC "Document de Circulation pour étranger mineur" "Document de Circulation pour étranger mineur"
+* #CE "Carte Européenne" "Carte Européenne"
+
 
 
 
