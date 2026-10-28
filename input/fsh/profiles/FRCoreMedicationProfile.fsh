@@ -13,10 +13,8 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 
 * code 1..1
 * code ^short = "Code du produit de santé"
-// ePrescription : from fr-medication-code (required) — UCD, SMS, ANSM
 * code from FRCoreValueSetMedication (required)
 
-// Slice déjà posée par EU Core (0..1) : pas de "contains", on resserre juste la cardinalité et le ^short
 * extension[productName] 0..1
 * extension[productName] ^short = "Nom de marque du produit."
 // L'extension productName pourra être passée en 1..1 si cela s'avère nécessaire dans les prochaines releases de FRCore (feedback needed)
@@ -27,7 +25,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * batch.lotNumber ^short = "Numéro de lot"
 * batch.expirationDate ^short = "Date d'expiration du produit"
 
-// Slices déjà posées par EU Core (mêmes cardinalités) : pas de "contains", juste la traduction du ^short
 * extension[classification] ^short = "Classification ATC."
 * extension[characteristic] ^short = "Présentation / conditionnement."
 

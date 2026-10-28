@@ -17,12 +17,9 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 * requester ^short = "Prescripteur"
 
-// ePrescription : Reference($FrCorePractitioner) uniquement
-// EU Core : Reference(patient|practitioner|practitionerRole|organization-eu-core or RelatedPerson) — pas de Device
 * requester only Reference(FRCorePractitionerProfile or FRCorePractitionerRoleProfile or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile or RelatedPerson)
 
 // Extension R5 backport : représentation lisible de la posologie (ePrescription)
-// Slice déjà posée par EU Core (même cardinalité 0..1) : pas de "contains", juste la traduction du ^short
 * extension[renderedDosageInstruction] ^short = "Représentation lisible de la posologie"
 
 // Extension intention globale du traitement (ePrescription)
