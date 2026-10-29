@@ -36,7 +36,7 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode ^binding.extension[2].extension[1].url = "purpose"
 * vaccineCode ^binding.extension[2].extension[1].valueCode = #extensible
 * vaccineCode ^binding.extension[2].extension[2].url = "valueSet"
-* vaccineCode ^binding.extension[2].extension[2].valueCanonical = Canonical(FRCoreValueSetMedicationTranslation)
+* vaccineCode ^binding.extension[2].extension[2].valueCanonical = Canonical(FRCoreValueSetMedication)
 
 * lotNumber ^short = "Numéro de lot."
 * expirationDate ^short = "Date d'expiration du produit"
