@@ -64,6 +64,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * stage ^slicing.rules = #open
 * stage contains clinicalStatus 0..1
 
-* stage[clinicalStatus].type = $SCT#260998006 "stadification clinique"
+* stage[clinicalStatus].type = $SCT#260998006
 * stage[clinicalStatus].summary ^short = "Statut clinique du patient"
 * stage[clinicalStatus].summary from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis (required)
