@@ -3,6 +3,10 @@ InstanceOf: fr-core-patient
 Usage: #example
 Description: "Exemple de ressource Patient décédé illustrant les extensions deathPlace, lunarDate et assemblyOrder"
 
+// identityReliability
+* extension[identityReliability].extension[lastUpdated].valueDateTime = "2024-01-10T08:00:00+01:00"
+* extension[identityReliability].extension[identityStatus].valueCoding = https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status#PROV
+
 // deathPlace
 * extension[deathPlace].valueAddress.text = "CHU de Paris, Paris, France"
 * extension[deathPlace].valueAddress.city = "Paris"
