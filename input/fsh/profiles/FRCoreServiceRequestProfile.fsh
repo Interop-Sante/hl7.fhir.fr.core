@@ -21,6 +21,7 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * identifier contains accessionNumber 0..1
 // Utilisation directe du DataType profile EU : https://hl7.eu/fhir/imaging/StructureDefinition/AccessionNumberIdentifierEuImaging
 * identifier[accessionNumber] only AccessionNumberIdentifierEuImaging
+* identifier[accessionNumber].type = $v2-0203#ACSN
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
 * code 1..1

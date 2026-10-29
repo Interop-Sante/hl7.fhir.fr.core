@@ -19,3 +19,6 @@ Description: "FRCoreBodyStructureProfile est un profil FRCore utilisé pour pré
 
 
 * extension[includedStructure].extension[laterality].value[x] from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-lateralite-cisis (required)
+
+// Correction d'une incohérence de l'extension xver R5→R4 : la slice _datatype est 1..1 alors que le parent de slice est 0..*
+* extension[includedStructure].extension[bodyLandmarkOrientation].extension[distanceFromLandmark].extension[device].extension 1..*
