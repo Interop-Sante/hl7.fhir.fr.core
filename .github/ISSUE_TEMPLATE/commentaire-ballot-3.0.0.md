@@ -32,11 +32,3 @@ assignees: ''
 
 
 # Solution proposée | Proposed resolution
-
-
-# Informations sur le contributeur | Contributor information
-
-<!-- Facultatif | Optional -->
-
-- Organisation | Organization :
-- Rôle (éditeur, industriel, établissement, autre) | Role (vendor, healthcare organization, other) :
