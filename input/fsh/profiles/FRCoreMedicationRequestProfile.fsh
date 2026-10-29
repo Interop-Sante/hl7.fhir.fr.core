@@ -27,9 +27,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * extension[treatmentIntent] ^short = "Intention globale du traitement"
 
 // Médicament
-// ePrescription : from fr-medication-code (required) + medicationReference only fr-medication-non/compound
-// FRCore : Reference vers FRCoreMedicationProfile sans binding strict sur CodeableConcept
-* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
+* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or MedicationEuCore) // FRCore (remplace Reference(FRMedicationDocument))
 * medication[x] ^short = "Produit de santé"
 
 * subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile)
@@ -71,7 +69,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * dosageInstruction.doseAndRate.doseRange ^short = "Dose à administrer"
 * dosageInstruction.doseAndRate.rateRange ^short = "Rythme d'administration"
 * dosageInstruction.maxDosePerPeriod ^short = "Dose maximale"
-// ePrescription : doseAndRate.* only FrRatioMedication/FrSimpleQuantityMedication/FrRangeMedication — types ePrescription-spécifiques, non portés dans FRCore
 
 * dosageInstruction.additionalInstruction ^short = "Informations supplémentaires utilisables pour instructions au Patien ou pércondition préalables à l'utilisation du médicament"
 
@@ -86,8 +83,6 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * substitution.allowedCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis
 * substitution.reason.text ^short = "Motif de non substitution (Marge thérapeutique étroite, Enfant forme galénique, Contre-indication formelle)."
 
-// Extension hors AMM : nommage aligné sur hl7.fhir.eu.mpd (MedicationRequest-eu-mpd), qui slice
-// la même extension IHE MPD sous le nom "offLabelUse" en 0..1 (PR #315, revue nriss)
 * extension contains $ihe-ext-offLabel named offLabelUse 0..1
 * extension[offLabelUse] ^short = "Usage hors Autorisation de Mise sur le Marché (hors AMM)"
 * extension[offLabelUse].extension[isOffLabelUse].valueBoolean ^short = "Indicateur hors AMM (doit être renseigné si l'extension est présente)"

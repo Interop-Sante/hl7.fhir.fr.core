@@ -34,7 +34,7 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 * dosage.rateQuantity ^short = "Rythme d'administration"
 * dosage.text ^short = "Instruction au patient"
 
-* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)
+* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or Medication)
 * medication[x] ^short = "Médicament administré"
 
 * reasonReference only Reference(FRCoreConditionProfile or Condition or Observation)

@@ -17,7 +17,7 @@ Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement d
 * quantity 1..1
 * quantity ^short = "Quantité : Unité issue de EDQM Packaging / classe CON (Récipient)"
 
-* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)
+* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or Medication)
 * medication[x] ^short = "Médicament délivré"
 
 * authorizingPrescription 0..1

@@ -38,7 +38,7 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * dosage.additionalInstruction ^short = "Instructions au patient (codé)"
 * dosage.additionalInstruction.text ^short = "Instruction au patient (texte libre)"
 
-* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)
+* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or Medication)
 * medication[x] ^short = "Médicament"
 
 * reasonReference only Reference(FRCoreConditionProfile or Condition or Observation)
