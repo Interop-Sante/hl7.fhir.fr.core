@@ -2,7 +2,7 @@
 name: Commentaire sur la version 3.0.0-ballot | Comment on version 3.0.0-ballot
 about: Remonter un commentaire sur la version 3.0.0-ballot de FRCore | Submit a comment on FRCore version 3.0.0-ballot
 title: '[3.0.0-ballot] '
-labels: ballot-3.0.0
+labels: 3.0.0-ballot
 assignees: ''
 
 ---
