@@ -14,6 +14,6 @@ Profil se basant sur la ressource Medication Administration pour indiquer l'oxyg
 
 * medication[x] only CodeableConcept
 * medication[x].coding 1..1
-* medicationCodeableConcept = http://snomed.info/sct#767111007 (exactly)
+* medicationCodeableConcept = http://snomed.info/sct#767111007
 * subject only Reference(FRCorePatientProfile)
 * performer.actor only Reference(FRCoreRelatedPersonProfile or RelatedPerson or Device or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCorePatientProfile)
