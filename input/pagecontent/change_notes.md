@@ -22,6 +22,25 @@
 * **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability` [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
 * Correction du slicing `identifier` de `FRCorePatient` : ajout d'un discriminator sur `system` en complément de `type`, pour lever l'ambiguïté entre les slices `NSS-NIR` et `NSS-NIA` (qui partagent le même `type` `NH` depuis leur séparation en 2.2.0) [#346](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/346)
 * Ajout du profil `FRCoreConsentProfile` (`fr-core-consent`) et de l'exemple `FRCoreConsentExample` [#347](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/347)
+* Ajout d'un binding `extensible` sur `Encounter.class` vers le JDV CISIS `jdv-hl7-v3-ActEncounterCode-cisis` ; `FRCoreValueSetEncounterClass` passe au statut `retired` (conservé pour compatibilité, non supprimé) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
+* Retrait du binding de `Encounter.hospitalization.dischargeDisposition` vers `FRCoreValueSetEncounterDischargeDisposition` (codes ambigus/cumulables, en attente d'un travail complémentaire au GT IHE PAM FHIR) ; ce ValueSet et le CodeSystem `FRCoreCodeSystemCirconstancesSortie` passent au statut `retired` (conservés pour compatibilité, non supprimés) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
+* Élargissement de `Encounter.subject` à `FRCorePatientINSProfile` (en plus de `FRCorePatientProfile` et `Group`) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
+* Assouplissement de `Encounter.period` : suppression de la contrainte de cardinalité minimale (`1..`), qui retombe sur le `0..1` de base FHIR R4 — une rencontre proposée/non confirmée peut ne pas avoir de dates [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
+* Ajout de 5 profils Medication : `FRCoreMedicationProfile`, `FRCoreMedicationRequestProfile`, `FRCoreMedicationAdministrationProfile`, `FRCoreMedicationDispenseProfile`, `FRCoreMedicationStatementProfile` [#315](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/315)
+    * `FRCoreMedicationProfile` et `FRCoreMedicationRequestProfile` héritent des profils EU Core (`medication-eu-core`, `medicationrequest-eu-core`) ; les trois autres profils héritent directement de la base FHIR R4 (pas d'équivalent EU Core)
+    * `FRCoreMedicationRequestProfile` : `authoredOn` et `requester` en `0..1`, `dosageInstruction` en `1..*`, extensions `renderedDosageInstruction` (backport R5), `treatmentIntent` (intention globale du traitement) et `AdditionalWhenValues` (codes supplémentaires pour `when`)
+    * `Medication.batch` : conservé sans contrainte
+    * Terminologies fixées : code médicament (CIP, UCD, ATC, MV, NUVA) et formes galéniques / voies d'administration (EDQM)
+    * Ajout de 4 extensions : `FRCoreMedicationAdministrationSequenceExtension`, `FRCoreNotCoveredExtension`, `FRCoreTreatmentIntentExtension`, `FRCoreAdditionalWhenValuesExtension`
+    * Ajout de 1 CodeSystem (`FRCoreCodeSystemAdditionalWhenCodes`) et de 5 ValueSets (`FRCoreValueSetMedication`, `FRCoreValueSetEDQMForm`, `FRCoreValueSetEDQMRoute`, `FRCoreValueSetTreatmentIntent`, `FRCoreValueSetAdditionalWhenCodes`)
+    * Ajout des dépendances `hl7.fhir.eu.mpd: 1.0.0` et `ihe.pharm.mpd.r4: 1.0.0-comment-2` pour les extensions IHE MPD
+* Mise à jour des modes de validation de l'identité (CodeSystem `FRCoreCodeSystemIdentityModeValidation` et ValueSet `FRCoreValueSetModeValidationIdentityINS`) [#353](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/353) ; modifications par rapport à la 2.2.0 :
+    * CodeSystem `FRCoreCodeSystemIdentityModeValidation` :
+        - Ajout des codes `eCN` (e-carte d'identité), `IN` (Identité Numérique La Poste), `AV` (Application Carte Vitale), `LECV` (Livret de famille, accompagné de la carte Vitale avec photographie) et `CIMS` (Carte d'identité professionnelle multiservices)
+        - Code `AC` : libellé modifié de « Acte de naissance + Carte vitale avec photo » en « Extrait d'acte de naissance, accompagné de la carte Vitale avec photographie »
+        - Précision des définitions : `CS` (« Carte de séjour ou titre de séjour »), `CC` (« Carnet de circulation pour étranger mineur »), `LE` (libellé « Livret de famille des parents »)
+        - Réorganisation en deux blocs : modes de validation officiels INS d'une part, autres modes de validation (`IE`, `CM`, `PC`, `TC` Tiers de confiance, `DC`, `CE`) d'autre part. Les codes `TC`, `DC` et `CE` de la 2.2.0 sont conservés.
+    * ValueSet `FRCoreValueSetModeValidationIdentityINS` : passage de 4 codes (`PA`, `CN`, `AN`, `LE`) à 12 codes (ajout de `CS`, `eCN`, `IN`, `AV`, `LECV`, `CC`, `CIMS`, `AC`)
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
