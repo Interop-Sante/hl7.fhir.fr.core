@@ -27,7 +27,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * extension[treatmentIntent] ^short = "Intention globale du traitement"
 
 // Médicament
-* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or MedicationEuCore) // FRCore (remplace Reference(FRMedicationDocument))
+* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or MedicationEuCore)
 * medication[x] ^short = "Produit de santé"
 
 * subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile)

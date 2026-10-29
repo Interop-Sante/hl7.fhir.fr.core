@@ -34,6 +34,6 @@ Description: "FRCoreMedicationProfile permet de décrire un médicament ou un va
 * ingredient.itemCodeableConcept from https://smt.esante.gouv.fr/terminologie-sms?vs
 * ingredient.itemCodeableConcept ^short = "Code SMS de la substance active"
 * ingredient.itemCodeableConcept.text ^short = "Nom de la substance"
-* ingredient.itemReference only Reference(FRCoreMedicationProfile) // FRCore (remplace Reference(FRMedicationDocument))
+* ingredient.itemReference only Reference(FRCoreMedicationProfile or MedicationEuCore)
 * ingredient.strength ^short = "Quantité de substance présente dans le médicament"
 
