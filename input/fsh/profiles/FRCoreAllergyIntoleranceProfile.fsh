@@ -37,7 +37,7 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décri
 * reaction ^short = "Réaction observée"
 
 * reaction.substance ^short = "Substance responsable de la réaction"
-* reaction.substance from FRCoreValueSetAllergySubstance (required)
+* reaction.substance from https://smt.esante.gouv.fr/terminologie-sms?vs (required)
 
 * reaction.manifestation ^short = "Symptômes/signes cliniques associés à l'événement"
 
