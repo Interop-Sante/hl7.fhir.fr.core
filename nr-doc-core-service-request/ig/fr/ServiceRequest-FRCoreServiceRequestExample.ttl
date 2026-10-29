@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ServiceRequest/FRCoreServiceRequestExample> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FRCoreServiceRequestExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-request" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-request>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : DemandeService FRCoreServiceRequestExample</b></p><a name=\"FRCoreServiceRequestExample\"> </a><a name=\"hcFRCoreServiceRequestExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-service-request.html\">FR Core ServiceRequest Profile</a></p></div><p><b>FR Core Method Extension</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/v3-ObservationMethod 0012}\">Ultrasonographie</span></p><p><b>identifier</b>: Accession ID/AN-2024-00456</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes :{http://snomed.info/sct 363679005}\">imagerie</span></p><p><b>code</b>: <span title=\"Codes :{http://snomed.info/sct 45036003}\">échographie de l'abdomen</span></p><p><b>subject</b>: <a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif (use: official, ))</a></p><p><b>occurrence</b>: 2024-09-10</p><p><b>bodySite</b>: <span title=\"Codes :{http://snomed.info/sct 818983003}\">abdomen</span></p><p><b>note</b>: </p><blockquote><div><p>Recherche de calculs biliaires, patient symptomatique.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod" ] ;
+         fhir:Coding.code [ fhir:value "0012" ] ;
+         fhir:Coding.display [ fhir:value "Ultrasonographie" ]
+       ]
+     ]
+  ] ;
+  fhir:ServiceRequest.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "ACSN" ] ;
+         fhir:Coding.display [ fhir:value "Accession ID" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://servicerequest-accession-number-system.org" ] ;
+     fhir:Identifier.value [ fhir:value "AN-2024-00456" ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "active"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:363679005 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "363679005" ] ;
+       fhir:Coding.display [ fhir:value "imagerie" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:45036003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "45036003" ] ;
+       fhir:Coding.display [ fhir:value "échographie de l'abdomen" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:link <https://hl7.fr/ig/fhir/core/Patient/FRCorePatientINSExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FRCorePatientINSExample" ] ;
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ] ;
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2024-09-10"^^xsd:date] ;
+  fhir:ServiceRequest.bodySite [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:818983003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "818983003" ] ;
+       fhir:Coding.display [ fhir:value "abdomen" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.note [
+     fhir:index -1 ;
+     fhir:Annotation.text [ fhir:value "Recherche de calculs biliaires, patient symptomatique." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ServiceRequest/FRCoreServiceRequestExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

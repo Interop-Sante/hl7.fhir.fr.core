@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fr-core-vs-procedure-code"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr-FR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-procedure-code</b></p><a name=\"fr-core-vs-procedure-code\"> </a><a name=\"hcfr-core-vs-procedure-code\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version : 4.0.1</p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-ccam.html\"><code>https://smt.esante.gouv.fr/terminologie-ccam</code></a><span title=\"La version est explicitement indiquée comme étant v84.00\"> version ?v84.00</span></li><li>Importe tous les codes contenu dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-absent-or-unknown-procedure-cisis.html\">JDV Absent Or Unknown Procedure CISIS</a></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-procedure-code</b></p><a name=\"en-fr-core-vs-procedure-code\"> </a><a name=\"en-hcfr-core-vs-procedure-code\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-FR</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a> version: 4.0.1</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/CodeSystem-terminologie-ccam.html\"><code>https://smt.esante.gouv.fr/terminologie-ccam</code></a><span title=\"Version is explicitly stated to be v84.00\"> version ?v84.00</span></li><li>Import all the codes that are contained in <a href=\"https://interop.esante.gouv.fr/terminologies/1.14.0/ValueSet-jdv-absent-or-unknown-procedure-cisis.html\">JDV Absent Or Unknown Procedure CISIS</a></li></ul></div></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "FRCoreValueSetProcedureCode"] ;
+  fhir:ValueSet.title [ fhir:value "FR Core ValueSet Procedure code"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-28T13:35:54+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Interop'Santé"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Interop'Santé" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://interopsante.org" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "InteropSanté" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "fhir@interopsante.org" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Codes autorisés par défaut pour indiquer un acte.\nInclut :\n- CCAM : terminologie facturante pour la production d'actes.\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nDeux additional bindings extensibles, portés par FRCoreProcedureProfile.code, complètent ce binding par défaut :\n- ValueSet IPS procedures-uv-ips (SNOMED CT, identique au parent EU Core) pour la demande d'acte ou de report d'actes à des fins internationales (en cours de validation en Europe).\n- fr-core-vs-procedure-code-autre (CISIS \"Autre acte\") si l'acte n'est pas trouvé dans CCAM ni SNOMED CT.\n\nSi aucun code approprié n'est disponible, l'acte peut être décrit en texte libre."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://smt.esante.gouv.fr/terminologie-ccam" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "v84.00" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.valueSet [
+         fhir:value "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis|20260916095454" ;
+         fhir:index 0 ;
+         fhir:link <https://smt.esante.gouv.fr/fhir/ValueSet/jdv-absent-or-unknown-procedure-cisis|20260916095454>
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

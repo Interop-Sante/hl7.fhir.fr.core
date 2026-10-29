@@ -1,0 +1,720 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FR Core AdverseEvent Profile - Guide d&#39;implémentation FR Core v2.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7fr.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"16.1"}
+    h3,h4,h5,h6{--heading-prefix:"16.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+  <a id="hl7-logo" data-no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
+</div>
+
+<div id="family-nav">
+  <a id="family-logo" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
+            <br/>
+            <span style="display:inline-block;">2.2.0 - ci-build
+
+
+
+  <img alt="France (la) flag" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="profile_list.html">Liste des profils</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="bonnes_pratiques.html">Bonnes pratiques</a>
+  </li>
+  <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
+    <a href="change_notes.html">Historique</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="a_propos.html">A propos</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag English" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../fr/StructureDefinition-fr-core-adverse-event-mappings.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>FR Core AdverseEvent Profile</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="StructureDefinition-fr-core-adverse-event-definitions.html">&lt; prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-fr-core-adverse-event-testing.html">next &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-profile-mappings -->
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guide d'implémentation FR Core - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://hl7.fr/ig/fhir/core/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-fr-core-adverse-event.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-fr-core-adverse-event-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-fr-core-adverse-event.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-fr-core-adverse-event.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-fr-core-adverse-event.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+<h2 id="root">Resource Profile: FR Core AdverseEvent Profile - Mappings</h2>
+
+  <table class="colsi" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+
+            as of 
+2026-10-28
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <p>Mappings for the fr-core-adverse-event resource profile.</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <h3>Mappings to Structures in this Implementation Guide</h3>
+<p>No Mappings Found</p>
+<h3>Mappings to other Structures</h3>
+<p>No Mappings Found</p>
+<h3>Other Mappings</h3>
+<table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="fr-core-adverse-eventMo" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/fivews" title="http://hl7.org/fhir/fivews">FiveWs Pattern Mapping</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/v3" title="http://hl7.org/v3">RIM Mapping</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="o-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent" title="Actual or  potential/avoided event causing unintended physical injury resulting from or contributed to by medical care, a research study or other healthcare setting factors that requires additional monitoring, treatment, or hospitalization, or that results in death.">AdverseEvent</a><a name="o-AdverseEvent"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div><ul><li>Entity. Role</li><li> or Act</li></ul></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a0." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.">id</a><a name="o-AdverseEvent.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a1." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.meta" title="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.">meta</a><a name="o-AdverseEvent.meta"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a2." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.">implicitRules</a><a name="o-AdverseEvent.implicitRules"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a3." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.language" title="The base language in which the resource is written.">language</a><a name="o-AdverseEvent.language"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a4." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.">text</a><a name="o-AdverseEvent.text"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>Act.text?</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a5." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.">contained</a><a name="o-AdverseEvent.contained"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>N/A</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck13.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension" title="An Extension">Slices for extension</a><a name="o-AdverseEvent.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck134.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="" style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:code" title="Slice code: Mime AdverseEvent.code (R5, renommage de AdverseEvent.event en R4) — non couvert par l'IG cross-version xver-r5.r4. Porte l'origine de l'effet indésirable (jdv-origine-effet-indesirable-cisis).">extension:code</a><a name="o-AdverseEvent.extension:code"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.b" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck135.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_slicer-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:occurrence" title="Slice occurrence: R5: `AdverseEvent.occurrence[x]` additional types (Period, Timing)">extension:occurrence</a><a name="o-AdverseEvent.extension:occurrence"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.ba" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / extension:occurrence / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:occurrence.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="o-AdverseEvent.extension:occurrence.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.bb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1352.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / extension:occurrence / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:occurrence.extension" title="An Extension">extension</a><a name="o-AdverseEvent.extension:occurrence.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.bc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / extension:occurrence / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:occurrence.url" title="Source of the definition for the extension code - a logical name or a URL.">url</a><a name="o-AdverseEvent.extension:occurrence.url"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>N/A</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.bd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1340.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / extension:occurrence / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:occurrence.value[x]" title="The date (and perhaps time) when the adverse event occurred.">value[x]</a><a name="o-AdverseEvent.extension:occurrence.value_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>N/A</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a6.c" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck124.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="" style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / Slices for extension / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.extension:outcome" title="Slice outcome: Mime AdverseEvent.outcome (R5, binding Example) — en R4 outcome a un binding Required qui interdit tout re-binding vers jdv-evolution-cisis. Non couvert par l'IG cross-version xver-r5.r4.">extension:outcome</a><a name="o-AdverseEvent.extension:outcome"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a7." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_modifier_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).">modifierExtension</a><a name="o-AdverseEvent.modifierExtension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>N/A</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a8." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.identifier" title="Business identifiers assigned to this adverse event by the performer or other systems which remain constant as the resource is updated and propagates from server to server.">identifier</a><a name="o-AdverseEvent.identifier"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a9." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.actuality" title="Whether the event actually happened, or just had the potential to. Note that this is independent of whether anyone was affected or harmed or how severely.">actuality</a><a name="o-AdverseEvent.actuality"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.class</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category" title="The overall type of event, intended for search and filtering purposes.">category</a><a name="o-AdverseEvent.category"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.class</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.a" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="o-AdverseEvent.category.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.b" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck112.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a><a name="o-AdverseEvent.category.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.c" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding" title="A reference to a code defined by a terminology system.">coding</a><a name="o-AdverseEvent.category.coding"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div><ul><li>union(.</li><li> ./translation)</li></ul></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.ca" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="o-AdverseEvent.category.coding.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.cb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1112.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a><a name="o-AdverseEvent.category.coding.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.cc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.system" title="The identification of the code system that defines the meaning of the symbol in the code.">system</a><a name="o-AdverseEvent.category.coding.system"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>./codeSystem</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.cd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.version" title="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.">version</a><a name="o-AdverseEvent.category.coding.version"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>./codeSystemVersion</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.ce" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).">code</a><a name="o-AdverseEvent.category.coding.code"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>./code</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.cf" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.display" title="A representation of the meaning of the code in the system, following the rules of the system.">display</a><a name="o-AdverseEvent.category.coding.display"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>CV.displayName</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.cg" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / coding / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.coding.userSelected" title="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).">userSelected</a><a name="o-AdverseEvent.category.coding.userSelected"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>CD.codingRationale</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a10.d" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / category / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.category.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.">text</a><a name="o-AdverseEvent.category.text"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>./originalText[mediaType/code="text/plain"]/data</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a11." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.event" title="This element defines the specific type of event that occurred or that was prevented from occurring.">event</a><a name="o-AdverseEvent.event"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.what[x]</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a12." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.subject" title="This subject or group impacted by the event.">subject</a><a name="o-AdverseEvent.subject"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.who</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a13." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.encounter" title="The Encounter during which AdverseEvent was created or to which the creation of this record is tightly associated.">encounter</a><a name="o-AdverseEvent.encounter"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.context</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a14." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.date" title="The date (and perhaps time) when the adverse event occurred.">date</a><a name="o-AdverseEvent.date"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.init</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a15." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.detected" title="Estimated or actual date the AdverseEvent began, in the opinion of the reporter.">detected</a><a name="o-AdverseEvent.detected"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a16." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.recordedDate" title="The date on which the existence of the AdverseEvent was first recorded.">recordedDate</a><a name="o-AdverseEvent.recordedDate"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.recorded</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a17." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.resultingCondition" title="Includes information about the reaction that occurred as a result of exposure to a substance (for example, a drug or a chemical).">resultingCondition</a><a name="o-AdverseEvent.resultingCondition"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a18." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.location" title="The information about where the adverse event occurred.">location</a><a name="o-AdverseEvent.location"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a19." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.seriousness" title="Assessment whether this event was of real importance.">seriousness</a><a name="o-AdverseEvent.seriousness"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a20." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.severity" title="Describes the severity of the adverse event, in relation to the subject. Contrast to AdverseEvent.seriousness - a severe rash might not be serious, but a mild heart problem is.">severity</a><a name="o-AdverseEvent.severity"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a21." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.outcome" title="Describes the type of outcome from the adverse event.">outcome</a><a name="o-AdverseEvent.outcome"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a22." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.recorder" title="Information on who recorded the adverse event.  May be the patient or a practitioner.">recorder</a><a name="o-AdverseEvent.recorder"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>FiveWs.author</div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a23." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.contributor" title="Parties that may or should contribute or have contributed information to the adverse event, which can consist of one or more activities.  Such information includes information leading to the decision to perform the activity and how to perform the activity (e.g. consultant), information that the activity itself seeks to reveal (e.g. informant of clinical history), or information about what activity was performed (e.g. informant witness).">contributor</a><a name="o-AdverseEvent.contributor"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity" title="Describes the entity that is suspected to have caused the adverse event.">suspectEntity</a><a name="o-AdverseEvent.suspectEntity"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="o-AdverseEvent.suspectEntity.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.b" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a><a name="o-AdverseEvent.suspectEntity.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.c" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_modifier_extension_simple.png" alt="" style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).">modifierExtension</a><a name="o-AdverseEvent.suspectEntity.modifierExtension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>N/A</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.d" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.instance" title="Identifies the actual instance of what caused the adverse event.  May be a substance, medication, medication administration, medication statement or a device.">instance</a><a name="o-AdverseEvent.suspectEntity.instance"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.e" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality" title="Information on the possible cause of the event.">causality</a><a name="o-AdverseEvent.suspectEntity.causality"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.ea" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="o-AdverseEvent.suspectEntity.causality.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.eb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a><a name="o-AdverseEvent.suspectEntity.causality.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.ec" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_modifier_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).">modifierExtension</a><a name="o-AdverseEvent.suspectEntity.causality.modifierExtension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>N/A</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.ed" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.assessment" title="Assessment of if the entity caused the event.">assessment</a><a name="o-AdverseEvent.suspectEntity.causality.assessment"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.ee" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.productRelatedness" title="AdverseEvent.suspectEntity.causalityProductRelatedness.">productRelatedness</a><a name="o-AdverseEvent.suspectEntity.causality.productRelatedness"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.ef" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.author" title="AdverseEvent.suspectEntity.causalityAuthor.">author</a><a name="o-AdverseEvent.suspectEntity.causality.author"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a24.eg" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / suspectEntity / causality / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.suspectEntity.causality.method" title="ProbabilityScale | Bayesian | Checklist.">method</a><a name="o-AdverseEvent.suspectEntity.causality.method"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a25." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.subjectMedicalHistory" title="AdverseEvent.subjectMedicalHistory.">subjectMedicalHistory</a><a name="o-AdverseEvent.subjectMedicalHistory"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a26." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.referenceDocument" title="AdverseEvent.referenceDocument.">referenceDocument</a><a name="o-AdverseEvent.referenceDocument"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-a27." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">AdverseEvent / </span><a href="StructureDefinition-fr-core-adverse-event-definitions.html#AdverseEvent.study" title="AdverseEvent.study.">study</a><a name="o-AdverseEvent.study"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="3" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="StructureDefinition-fr-core-adverse-event-definitions.html">&lt; prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="StructureDefinition-fr-core-adverse-event-testing.html">next ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  
+          Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-10-28 16:10:00 +0000">
+    2026-10-28
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA </a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://hl7.fr/ig/fhir/core/history.html">Historique des versions </a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/new">Issue</a>
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

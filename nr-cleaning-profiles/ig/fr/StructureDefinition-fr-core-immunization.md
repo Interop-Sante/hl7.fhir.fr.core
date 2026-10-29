@@ -1,0 +1,390 @@
+# FR Core Immunization Profile - Guide d'implémentation FR Core v2.2.0
+
+## Profil de ressource: FR Core Immunization Profile 
+
+**Utilisations:**
+
+* Référence ce Profil: [FR Core AdverseEvent Profile](StructureDefinition-fr-core-adverse-event.md)
+* Exemples pour ce/t/te Profil: [Immunization/FRCoreImmunizationExample](Immunization-FRCoreImmunizationExample.md)
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.fr.core|current/StructureDefinition/fr-core-immunization)
+
+### Vues formelles du contenu du profil
+
+ [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Tableau des éléments clés](#tabs-key) 
+*  [Tableau différentiel (differential)](#tabs-diff) 
+*  [Tableau récapitulatif (snapshot)](#tabs-snap) 
+*  [Statistiques/Références](#tabs-summ) 
+*  [Tous](#tabs-all) 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html) 
+
+#### Bindings terminologiques (différentiel)
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html) 
+
+ **Vue des éléments clés** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+ **Vue différentielle** 
+
+Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html) 
+
+#### Bindings terminologiques (différentiel)
+
+ **Vue d'ensembleView** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [ImmunizationEuCore](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html) 
+
+ 
+
+Autres représentations du profil : [CSV](../StructureDefinition-fr-core-immunization.csv), [Excel](../StructureDefinition-fr-core-immunization.xlsx), [Schematron](../StructureDefinition-fr-core-immunization.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-core-immunization",
+  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-immunization",
+  "version" : "2.2.0",
+  "name" : "FRCoreImmunizationProfile",
+  "title" : "FR Core Immunization Profile",
+  "status" : "active",
+  "date" : "2026-10-29T11:02:58+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin. Il permet également de décrire pourquoi un vaccin n'a pas été réalisé.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Immunization",
+  "baseDefinition" : "http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core|2.0.0",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Immunization",
+      "path" : "Immunization"
+    },
+    {
+      "id" : "Immunization.meta.profile",
+      "path" : "Immunization.meta.profile",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "$this"
+        }],
+        "description" : "Slice based on the canonical url value",
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Immunization.meta.profile:fr-canonical",
+      "path" : "Immunization.meta.profile",
+      "sliceName" : "fr-canonical",
+      "min" : 0,
+      "max" : "1",
+      "patternCanonical" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-immunization|2.2.0"
+    },
+    {
+      "id" : "Immunization.extension:basedOnRequestR5",
+      "path" : "Immunization.extension",
+      "sliceName" : "basedOnRequestR5",
+      "short" : "Prescription",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:basedOnRequestR5.extension",
+      "path" : "Immunization.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Immunization.extension:basedOnRequestR5.value[x]",
+      "path" : "Immunization.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5",
+      "path" : "Immunization.extension",
+      "sliceName" : "ImmunizationAdministeredProductR5",
+      "short" : "Dose d'antigène administrée",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct|0.1.0"]
+      }]
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference",
+      "path" : "Immunization.extension.extension",
+      "sliceName" : "reference"
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference.extension",
+      "path" : "Immunization.extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Immunization.extension:ImmunizationAdministeredProductR5.extension:reference.value[x]",
+      "path" : "Immunization.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Immunization.vaccineCode",
+      "path" : "Immunization.vaccineCode",
+      "short" : "Vaccin. Code du produit de santé",
+      "binding" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "preferred"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips|2.0.0"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Additional conformance binding to a vaccines value set from the WHO ATC code system for use in specific jurisdictional or other contexts where use of the ATC terminology is preferred."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "For when WHO ATC code system is preferred"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "purpose",
+            "valueCode" : "preferred"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine"
+          },
+          {
+            "url" : "documentation",
+            "valueMarkdown" : "Additional conformance binding to the cross-border vaccines value set."
+          },
+          {
+            "url" : "shortDoco",
+            "valueString" : "For EU cross-border use"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        },
+        {
+          "extension" : [{
+            "url" : "key",
+            "valueId" : "fr-core-immunization-vaccinecode-translation"
+          },
+          {
+            "url" : "purpose",
+            "valueCode" : "extensible"
+          },
+          {
+            "url" : "valueSet",
+            "valueCanonical" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication|2.2.0"
+          }],
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+        }],
+        "strength" : "preferred",
+        "description" : "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization.",
+        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips|2.0.0"
+      }
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding",
+      "path" : "Immunization.vaccineCode.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding:cis",
+      "path" : "Immunization.vaccineCode.coding",
+      "sliceName" : "cis",
+      "min" : 1,
+      "max" : "1",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis|2.2.0"
+      }
+    },
+    {
+      "id" : "Immunization.vaccineCode.coding:cis.system",
+      "path" : "Immunization.vaccineCode.coding.system",
+      "min" : 1,
+      "patternUri" : "https://smt.esante.gouv.fr/terminologie-bdpm"
+    },
+    {
+      "id" : "Immunization.occurrence[x]",
+      "path" : "Immunization.occurrence[x]",
+      "short" : "Date de la vaccination",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "Immunization.lotNumber",
+      "path" : "Immunization.lotNumber",
+      "short" : "Numéro de lot."
+    },
+    {
+      "id" : "Immunization.expirationDate",
+      "path" : "Immunization.expirationDate",
+      "short" : "Date d'expiration du produit"
+    },
+    {
+      "id" : "Immunization.site",
+      "path" : "Immunization.site",
+      "short" : "Région anatomique d'administration",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-approach-site-code-cisis|20260916095452"
+      }
+    },
+    {
+      "id" : "Immunization.route",
+      "path" : "Immunization.route",
+      "short" : "Voie d'administration",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis|20260916095454"
+      }
+    },
+    {
+      "id" : "Immunization.doseQuantity",
+      "path" : "Immunization.doseQuantity",
+      "short" : "Dose administrée"
+    },
+    {
+      "id" : "Immunization.reasonReference",
+      "path" : "Immunization.reasonReference",
+      "short" : "Réaction observée suite au vaccin",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition|2.2.0",
+        "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Immunization.protocolApplied.series",
+      "path" : "Immunization.protocolApplied.series",
+      "short" : "Type de vaccination : BOOSTER (Rappel de vaccin) | IMMUNIZ (Vaccination sans autre précision) | INITIMMUNIZ (1ère série vaccinante)",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis|20260916095457"
+      }
+    },
+    {
+      "id" : "Immunization.protocolApplied.doseNumber[x]",
+      "path" : "Immunization.protocolApplied.doseNumber[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Immunization.protocolApplied.doseNumber[x]:doseNumberPositiveInt",
+      "path" : "Immunization.protocolApplied.doseNumber[x]",
+      "sliceName" : "doseNumberPositiveInt",
+      "short" : "Rang de la vaccination",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }]
+    }]
+  }
+}
+
+```

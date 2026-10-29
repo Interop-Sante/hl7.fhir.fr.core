@@ -1,0 +1,222 @@
+# FR Core AdverseEvent Profile - Guide d'implémentation FR Core v3.0.0-ballot
+
+## Resource Profile: FR Core AdverseEvent Profile 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.fr.core|current/StructureDefinition/StructureDefinition-fr-core-adverse-event.json)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-fr-core-adverse-event.csv), [Excel](../StructureDefinition-fr-core-adverse-event.xlsx), [Schematron](../StructureDefinition-fr-core-adverse-event.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fr-core-adverse-event",
+  "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-adverse-event",
+  "version" : "3.0.0-ballot",
+  "name" : "FRCoreAdverseEventProfile",
+  "title" : "FR Core AdverseEvent Profile",
+  "status" : "active",
+  "date" : "2026-10-29T12:51:27+00:00",
+  "publisher" : "Interop'Santé",
+  "contact" : [{
+    "name" : "Interop'Santé",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://interopsante.org"
+    }]
+  },
+  {
+    "name" : "InteropSanté",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "fhir@interopsante.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "FRCoreAdverseEventProfile permet de décrire un effet indésirable prévisible lié à un médicament",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "AdverseEvent",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/AdverseEvent|4.0.1",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "AdverseEvent",
+      "path" : "AdverseEvent"
+    },
+    {
+      "id" : "AdverseEvent.extension",
+      "path" : "AdverseEvent.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "AdverseEvent.extension:code",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "code",
+      "short" : "Origine de l'effet indésirable (backport R5→R4)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code|3.0.0-ballot"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:occurrence",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "occurrence",
+      "short" : "Période de l'effet indésirable (backport R5 occurrence[x], Period)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence|0.1.0"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:occurrence.extension",
+      "path" : "AdverseEvent.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "AdverseEvent.extension:occurrence.value[x]",
+      "path" : "AdverseEvent.extension.value[x]",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "AdverseEvent.extension:outcome",
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "outcome",
+      "short" : "Évolution de l'effet indésirable (backport R5→R4)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome|3.0.0-ballot"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.category",
+      "path" : "AdverseEvent.category",
+      "short" : "Type d'effet indésirable — fixé à medication-mishap (code R5)",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "AdverseEvent.category.coding.system",
+      "path" : "AdverseEvent.category.coding.system",
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/adverse-event-category"
+    },
+    {
+      "id" : "AdverseEvent.category.coding.code",
+      "path" : "AdverseEvent.category.coding.code",
+      "patternCode" : "medication-mishap"
+    },
+    {
+      "id" : "AdverseEvent.event",
+      "path" : "AdverseEvent.event",
+      "max" : "0"
+    },
+    {
+      "id" : "AdverseEvent.date",
+      "path" : "AdverseEvent.date",
+      "short" : "Date de début de l'effet indésirable"
+    },
+    {
+      "id" : "AdverseEvent.resultingCondition",
+      "path" : "AdverseEvent.resultingCondition",
+      "short" : "Réaction observée"
+    },
+    {
+      "id" : "AdverseEvent.seriousness",
+      "path" : "AdverseEvent.seriousness",
+      "short" : "Gravité de l'effet indésirable",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis|20260916095454"
+      }
+    },
+    {
+      "id" : "AdverseEvent.outcome",
+      "path" : "AdverseEvent.outcome",
+      "max" : "0"
+    },
+    {
+      "id" : "AdverseEvent.suspectEntity",
+      "path" : "AdverseEvent.suspectEntity",
+      "short" : "Agent soupçonné d'être à l'origine de l'événement indésirable"
+    },
+    {
+      "id" : "AdverseEvent.suspectEntity.instance",
+      "path" : "AdverseEvent.suspectEntity.instance",
+      "short" : "Médicament, substance incriminée, posologie",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Immunization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Substance|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/MedicationStatement|4.0.1"]
+      }]
+    },
+    {
+      "id" : "AdverseEvent.suspectEntity.causality",
+      "path" : "AdverseEvent.suspectEntity.causality",
+      "short" : "Imputabilité",
+      "max" : "1"
+    },
+    {
+      "id" : "AdverseEvent.suspectEntity.causality.assessment",
+      "path" : "AdverseEvent.suspectEntity.causality.assessment",
+      "short" : "Niveau d'imputabilité",
+      "min" : 1,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis|20260716085851"
+      }
+    }]
+  }
+}
+
+```

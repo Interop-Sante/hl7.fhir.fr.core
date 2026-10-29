@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4701-endocrino-diab> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hopitaltest-uf-4701-endocrino-diab"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Organisation hopitaltest-uf-4701-endocrino-diab</b></p><a name=\"hopitaltest-uf-4701-endocrino-diab\"> </a><a name=\"hchopitaltest-uf-4701-endocrino-diab\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization-uf.html\">FR Core Organization UF Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">UF Endocrino Diabeto (Unité fonctionnelle) (http://hopitalTest.fr/namingsystem/organization#4701 (use: official))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The kind(s) of organization that this is\">Type:</td><td colspan=\"3\"><span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 UF}\">Unité fonctionnelle</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the organization\">Coordonnées</td><td colspan=\"3\"><ul><li>ph: 84701(Work)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Indicateur permettant de définir si une UF est d'hébergement, médicale, administrative ou de magasin.\"><a href=\"StructureDefinition-fr-core-organization-uf-indicateur.html\">FR Core Organization Extension - Indicateur d'une unité fonctionnelle</a></td><td colspan=\"3\"><span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur HEB}\">Hébergement</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The date range that this organization should be considered available.\"><a href=\"http://hl7.org/fhir/extensions/5.4.0/StructureDefinition-organization-period.html\">Organization Period</a></td><td colspan=\"3\">2023-01-01 00:00:00+0100 --&gt; (en cours)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Libellé court de l'organisation\"><a href=\"StructureDefinition-fr-core-organization-short-name.html\">FR Core Organization Short Name Extension</a></td><td colspan=\"3\">UF Endocrino Diabeto</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name" ] ;
+     fhir:Extension.valueString [ fhir:value "UF Endocrino Diabeto" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/organization-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2023-01-01T00:00:00+01:00"^^xsd:dateTime ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur" ] ;
+         fhir:Coding.code [ fhir:value "HEB" ]
+       ]
+     ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://hopitalTest.fr/namingsystem/organization" ] ;
+     fhir:Identifier.value [ fhir:value "4701" ]
+  ] ;
+  fhir:Organization.type [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307" ] ;
+       fhir:Coding.code [ fhir:value "UF" ]
+     ]
+  ] ;
+  fhir:Organization.name [ fhir:value "UF Endocrino Diabeto"] ;
+  fhir:Organization.contact [
+     fhir:index -1 ;
+     fhir:Organization.contact.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "84701" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/hopitaltest-uf-4701-endocrino-diab.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

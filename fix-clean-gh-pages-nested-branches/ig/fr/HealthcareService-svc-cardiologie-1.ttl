@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/HealthcareService/svc-cardiologie-1> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "svc-cardiologie-1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ServiceDeSanté svc-cardiologie-1</b></p><a name=\"svc-cardiologie-1\"> </a><a name=\"hcsvc-cardiologie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-healthcare-service.html\">FR Core Healthcare Service Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Service de cardiologie by HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G (Entité légale, Secteur non défini) (Identification nationale de structure définie par l’ANS dans le CI_SIS: 2264403106 (use: official)) (urn:oid:1.2.250.1.1.1.1#HOSP-X-CARDIO (use: official))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"L'enregistrement est actif\">Actif :</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Whether an appointment is required to access this service\">Appointment Required:</td><td>true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization that provides this service\">Provided By:</td><td colspan=\"3\"><a href=\"Organization-FRCoreOrganizationExample.html\">HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G (Entité légale, Secteur non défini) (Identification nationale de structure définie par l’ANS dans le CI_SIS: 2264403106 (use: official))</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Broad category of service being performed or delivered\">Category:</td><td colspan=\"3\"><span title=\"Codes :{http://terminology.hl7.org/CodeSystem/service-category 2}\">Aged Care</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The specialties of the services that are provided\">Specialty:</td><td colspan=\"3\"><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM04}\">Cardio et Maladies vasculaires</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Additional description and/or any specific issues not covered elsewhere\">Comment:</td><td colspan=\"3\">Ce service prend en charge les pathologies cardiaques.</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to make contact\">Coordonnées</td><td colspan=\"3\"><a href=\"mailto:cardio@hosp-x.fr\">cardio@hosp-x.fr</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"When the service is (and is not) available\">Availability:</td><td colspan=\"3\"><ul><li>Monday, Tuesday, Wednesday, Thursday, Friday: 08:00:00 - 17:30:00</li><li>Saturday: 09:00:00 - 12:00:00</li><li>Not available: Fermeture annuelle (2025-08-01 --&gt; 2025-08-31)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Cette extension française permet d'associer le type de service avec la durée de ce service.#xA;#xD;This French extension allows to associate the type of service with the duration of this service\">FR Core Service Type Duration Extension:</td><td colspan=\"3\"><ul><li>serviceType: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM04}\">Cardio et Maladies vasculaires</span></li><li>duration: 30 min<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmin = 'min')</span></li></ul></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "serviceType" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale" ] ;
+           fhir:Coding.code [ fhir:value "SM04" ] ;
+           fhir:Coding.display [ fhir:value "Cardio et Maladies vasculaires" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "duration" ] ;
+       fhir:Extension.valueDuration [
+         fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "min" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "min" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration" ]
+  ] ;
+  fhir:HealthcareService.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.1.1.1" ] ;
+     fhir:Identifier.value [ fhir:value "HOSP-X-CARDIO" ]
+  ] ;
+  fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:HealthcareService.providedBy [
+     fhir:link <https://hl7.fr/ig/fhir/core/Organization/FRCoreOrganizationExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/FRCoreOrganizationExample" ]
+  ] ;
+  fhir:HealthcareService.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/service-category" ] ;
+       fhir:Coding.code [ fhir:value "2" ] ;
+       fhir:Coding.display [ fhir:value "Aged Care" ]
+     ]
+  ] ;
+  fhir:HealthcareService.specialty [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale" ] ;
+       fhir:Coding.code [ fhir:value "SM04" ] ;
+       fhir:Coding.display [ fhir:value "Cardio et Maladies vasculaires" ]
+     ]
+  ] ;
+  fhir:HealthcareService.name [ fhir:value "Service de cardiologie"] ;
+  fhir:HealthcareService.comment [ fhir:value "Ce service prend en charge les pathologies cardiaques."] ;
+  fhir:HealthcareService.telecom [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "cardio@hosp-x.fr" ]
+  ] ;
+  fhir:HealthcareService.appointmentRequired [ fhir:value "true"^^xsd:boolean] ;
+  fhir:HealthcareService.availableTime [
+     fhir:index -1 ;
+     fhir:HealthcareService.availableTime.daysOfWeek [
+       fhir:value "mon" ;
+       fhir:index -1
+     ], [
+       fhir:value "tue" ;
+       fhir:index -1
+     ], [
+       fhir:value "wed" ;
+       fhir:index -1
+     ], [
+       fhir:value "thu" ;
+       fhir:index -1
+     ], [
+       fhir:value "fri" ;
+       fhir:index -1
+     ] ;
+     fhir:HealthcareService.availableTime.allDay [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:HealthcareService.availableTime.availableStartTime [ fhir:value "08:00:00"^^xsd:time ] ;
+     fhir:HealthcareService.availableTime.availableEndTime [ fhir:value "17:30:00"^^xsd:time ]
+  ], [
+     fhir:index -1 ;
+     fhir:HealthcareService.availableTime.daysOfWeek [
+       fhir:value "sat" ;
+       fhir:index -1
+     ] ;
+     fhir:HealthcareService.availableTime.allDay [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:HealthcareService.availableTime.availableStartTime [ fhir:value "09:00:00"^^xsd:time ] ;
+     fhir:HealthcareService.availableTime.availableEndTime [ fhir:value "12:00:00"^^xsd:time ]
+  ] ;
+  fhir:HealthcareService.notAvailable [
+     fhir:index -1 ;
+     fhir:HealthcareService.notAvailable.description [ fhir:value "Fermeture annuelle" ] ;
+     fhir:HealthcareService.notAvailable.during [
+       fhir:Period.start [ fhir:value "2025-08-01"^^xsd:date ] ;
+       fhir:Period.end [ fhir:value "2025-08-31"^^xsd:date ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/HealthcareService/svc-cardiologie-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
