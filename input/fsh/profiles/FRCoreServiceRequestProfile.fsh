@@ -20,20 +20,15 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 
 * identifier contains accessionNumber 0..1
 // Utilisation directe du DataType profile EU : https://hl7.eu/fhir/imaging/StructureDefinition/AccessionNumberIdentifierEuImaging
-// (type 1..1 avec slice v2-0203-coding 1..1 pattern ACSN et slice dcm 0..1 DICOM 121022, system 1..1, value 1..1)
 * identifier[accessionNumber] only AccessionNumberIdentifierEuImaging
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
 * code 1..1
 * code ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
-//Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
-//* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d'examen ou de suivi"
 * occurrence[x] 1..1
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
 // Informations complémentaires sur la demande d'acte (exemple : INR cible)
 * orderDetail ^short = "informations complémentaires sur la demande d'acte, exemple : INR cible"
-// * supportingInfo ^short = "Résultat de la demande"
-// * supportingInfo only Reference(Observation)
 
 * bodySite ^short = "Cible"
 * bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)

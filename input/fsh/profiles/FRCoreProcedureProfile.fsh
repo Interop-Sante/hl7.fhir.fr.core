@@ -68,9 +68,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile or BodyStructure)
 
 * bodySite ^short = "Localisation anatomique"
-* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible) // FRCore plus stricte que le binding preferred hérité de procedure-eu-core (même ValueSet)
-// Hérités de procedure-eu-core : bodySite.extension (http://hl7.org/fhir/StructureDefinition/bodySite) ciblant BodyStructure EU Core
-// et l'invariant eu-bodysite-1 (code OU référence à une BodyStructure, jamais les deux)
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"
