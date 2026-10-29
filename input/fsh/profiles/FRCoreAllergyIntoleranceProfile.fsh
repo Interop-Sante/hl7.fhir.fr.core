@@ -1,14 +1,15 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAllergyIntoleranceDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreAllergyIntoleranceProfile
 Parent: allergyIntolerance-eu-core
 Id: fr-core-allergy-intolerance
 Title: "FR Core AllergyIntolerance Profile"
 Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie."
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-allergy-intolerance)
 
 * type ^short = "Type d'allergie ou d'intolérance"
 // Binding required R4 natif inchangé (allergy | intolerance uniquement) : FRCoreValueSetAllergyIntoleranceType contient des codes (idiosyncrasie, hypersensibilité non allergique) interdits par ce binding en R4. En R5 le binding passe à preferred (https://hl7.org/fhir/R5/allergyintolerance.html) : ces codes sont donc portés via l'extension backport ci-dessous plutôt que sur l'élément natif.
@@ -22,7 +23,7 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décri
 * code from FRCoreValueSetAllergyCode (extensible)
 * onset[x] ^short = "Date d'identification d'allergie ou d'intolérance"
 * onsetPeriod ^short = "Dates de début et de fin"
-* onsetPeriod.start 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* onsetPeriod.start 1..1
 
 * criticality ^short = "Criticité"
 
@@ -36,7 +37,7 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décri
 * reaction ^short = "Réaction observée"
 
 * reaction.substance ^short = "Substance responsable de la réaction"
-* reaction.substance from FRCoreValueSetAllergySubstance (required)
+* reaction.substance from https://smt.esante.gouv.fr/terminologie-sms?vs (required)
 
 * reaction.manifestation ^short = "Symptômes/signes cliniques associés à l'événement"
 

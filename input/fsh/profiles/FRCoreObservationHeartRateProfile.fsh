@@ -24,7 +24,7 @@ Profilage français du profil Vital Signs Heart rate"
 
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)
+* performer only Reference(CareTeam or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)
 
 * bodySite from FRCoreValueSetHeartRateMeasurementBodyLocation (example)
 

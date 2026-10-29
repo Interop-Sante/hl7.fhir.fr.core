@@ -1,8 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRProcedureDifficultyExtension.fsh
-//
-// Profil EU Core (héritage direct) : non disponible
-// ─────────────────────────────────────────────────────────────────────────────
 Extension: FRCoreProcedureDifficultyExtension
 Id: fr-core-procedure-difficulty-extension
 Title: "FR Core Procedure Difficulty Extension"

@@ -1,8 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRMethodExtension.fsh
-//
-// Profil EU Core (héritage direct) : non disponible
-// ─────────────────────────────────────────────────────────────────────────────
 Extension: FRCoreMethodExtension
 Id: fr-core-method-extension
 Title: "FR Core Method Extension"

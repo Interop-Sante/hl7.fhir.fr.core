@@ -1,11 +1,5 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRAdverseEventDocument.fsh
-//
-// Profil EU Core (héritage direct) : non disponible
 // ─────────────────────────────────────────────────────────────────────────────
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Extensions locales (backport R5→R4) : AdverseEvent.code et AdverseEvent.outcome n'ont pas d'extension cross-version officielle dans l'IG xver R5→R4 (https://hl7.org/fhir/uv/xver-r5.r4/0.1.0/artifacts.html ne couvre pas AdverseEvent.code ni AdverseEvent.outcome), contrairement au pattern habituel $xxx-r5 (alias vers http://hl7.org/fhir/5.0/StructureDefinition/extension-...). Elles sont donc définies ici et leur ^url fixé au format officiel des backports R5→R4 (http://hl7.org/fhir/5.0/StructureDefinition/extension-<Resource>.<Element>, ex. extension-AdverseEvent.contributingFactor), même si HL7 ne publie pas lui-même de définition à cette adresse pour code/outcome (vérifié absente de hl7.fhir.uv.xver-r5.r4, hl7.fhir.uv.extensions et 404 sur hl7.org).
+// Extensions locales (backport R5→R4) : AdverseEvent.code et AdverseEvent.outcome n'ont pas d'extension cross-version officielle dans l'IG xver R5→R4 (https://hl7.org/fhir/uv/xver-r5.r4/0.1.0/artifacts.html). Elles sont donc définies ici, avec une ^url au format officiel des backports (http://hl7.org/fhir/5.0/StructureDefinition/extension-<Resource>.<Element>), bien que HL7 ne publie aucune définition à cette adresse pour code/outcome.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Mime AdverseEvent.code (R5) — renommage de AdverseEvent.event (R4, binding Example SNOMED CT) sans équivalent bindable en R4 pour le JDV français.
@@ -38,8 +32,15 @@ Id: fr-core-adverse-event
 Title: "FR Core AdverseEvent Profile"
 Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable prévisible lié à un médicament"
 
-* category 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..*)
-// Fixé à medication-mishap : ce code vient de la révision R5 du CodeSystem terminology.hl7.org/CodeSystem/adverse-event-category (partagé R4/R5, binding extensible dès R4) — FRCore/Doc Core AdverseEvent ne couvre que les effets indésirables médicamenteux (cf. https://www.hl7.org/fhir/adverseevent.html). Le binding JDV d'origine (jdv-origine-effet-indesirable-cisis) est déplacé vers l'extension "code" (backport R5→R4, voir en tête de fichier).
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-adverse-event)
+
+* category 1..1
+// Fixé à medication-mishap (code R5 du CodeSystem adverse-event-category, binding extensible dès R4) : FRCore ne couvre que les effets indésirables médicamenteux. Le binding JDV d'origine (jdv-origine-effet-indesirable-cisis) est déplacé vers l'extension "code" (voir en tête de fichier).
 * category.coding.system = $adverse-event-category
 * category.coding.code = #medication-mishap
 * category ^short = "Type d'effet indésirable — fixé à medication-mishap (code R5)"
@@ -51,7 +52,7 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 // event (R4 natif, binding Example SNOMED CT) neutralisé : remplacé par l'extension "code" qui reprend le rôle de AdverseEvent.code (R5, renommage de event) pour porter le JDV d'origine.
 * event 0..0
 
-// date de début de l'effet indésirable ; la période complète (début + fin) peut aussi être portée par l'extension "occurrence" ci-dessous (backport officiel xver de AdverseEvent.occurrence[x], Period), en alternative à resultingCondition.abatementDateTime pour la date de fin.
+// date de début de l'effet indésirable.
 * date ^short = "Date de début de l'effet indésirable"
 
 // Extension officielle xver-r5.r4 (http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence) backportant AdverseEvent.occurrence[x] (R5) ; restreinte à Period pour porter la période complète de l'effet indésirable.
@@ -60,10 +61,10 @@ Description: "FRCoreAdverseEventProfile permet de décrire un effet indésirable
 * extension[occurrence] ^short = "Période de l'effet indésirable (backport R5 occurrence[x], Period)"
 
 * suspectEntity ^short = "Agent soupçonné d'être à l'origine de l'événement indésirable"
-* suspectEntity.instance only Reference(Immunization or Substance or Medication or MedicationAdministration or MedicationStatement) // * suspectEntity.instance only Reference(FRCoreImmunizationProfile or FRCoreSubstanceProfile or FRCoreMedicationProfile or FRCoreMedicationAdministrationProfile or FRCoreMedicationStatementProfile)
+* suspectEntity.instance only Reference(FRCoreImmunizationProfile or Immunization or Substance or FRCoreMedicationProfile or Medication or FRCoreMedicationAdministrationProfile or MedicationAdministration or FRCoreMedicationStatementProfile or MedicationStatement)
 * suspectEntity.instance ^short = "Médicament, substance incriminée, posologie"
 
-* resultingCondition only Reference(Condition) // * resultingCondition only Reference(FRCoreConditionProfile)
+* resultingCondition only Reference(FRCoreConditionProfile or Condition)
 * resultingCondition ^short = "Réaction observée"
 
 * suspectEntity.causality 0..1 // Application de la cardinalité de FHIR R5 base : passage à 0..1

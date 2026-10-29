@@ -21,6 +21,6 @@ Profil HL7 Vital Signs Circonférence de la tête"
 
 * subject only Reference(FRCorePatientProfile)
 * encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or PractitionerRole or FRCorePatientProfile or FRCoreOrganizationProfile)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCorePatientProfile or FRCoreOrganizationProfile)
 
 * value[x] ^slicing.rules = #open

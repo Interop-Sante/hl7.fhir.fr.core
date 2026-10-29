@@ -1,16 +1,17 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRConditionDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/condition-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreConditionProfile
 Parent: condition-eu-core
 Id: fr-core-condition
 Title: "FR Core Condition Profile"
 Description: "FRCoreConditionProfile est un profil utilisé pour décrire un problème du patient (une pathologie par exemple)."
 
-* clinicalStatus 1..1 // FHIR R5 base : 1..1 — cardinalité identique
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-condition)
+
+* clinicalStatus 1..1 // Alignement à FHIR R5 base : 1..1
 * clinicalStatus ^short = "Statut clinique du problème"
 
 * verificationStatus ^short = "Certitude"
@@ -47,9 +48,9 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * code ^binding.extension[=].extension[=].valueString = "Maladie rare"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * subject ^short = "Patient concerné"
-* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile) // Doc Core : Reference(FRPatientINSDocument or FRPatientDocument)
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
-* onset[x] 1..1 // Contrainte ajoutée uniquement par IG Document Core (FHIR R5 base : 0..1)
+* onset[x] 1..1
 
 * abatementDateTime ^short = "Date de fin du problème (si applicable)"
 
@@ -63,6 +64,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * stage ^slicing.rules = #open
 * stage contains clinicalStatus 0..1
 
-* stage[clinicalStatus].type = $SCT#260998006 "Clinical staging (qualifier value)"
+* stage[clinicalStatus].type = $SCT#260998006
 * stage[clinicalStatus].summary ^short = "Statut clinique du patient"
 * stage[clinicalStatus].summary from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-health-status-code-cisis (required)

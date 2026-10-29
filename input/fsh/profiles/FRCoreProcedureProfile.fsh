@@ -1,14 +1,15 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRProcedureDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/procedure-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreProcedureProfile
 Parent: procedure-eu-core
 Id: fr-core-procedure
 Title: "FR Core Procedure Profile"
 Description: "FRCoreProcedureProfile est un profil utilisé pour décrire un acte planifié ou réalisé."
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-procedure)
 
 * partOf ^short = "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l'acte (ex. produit administré lors d'un acte d'imagerie)."
 
@@ -48,15 +49,14 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * code ^binding.extension[=].extension[=].valueString = "Autre acte"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 
+* reasonReference only Reference(FRCoreConditionProfile or condition-eu-core or Observation or FRCoreProcedureProfile or procedure-eu-core or DiagnosticReport or DocumentReference)
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
-// Cible héritée de procedure-eu-core : Reference(Condition EU Core or Observation or Procedure EU Core or DiagnosticReport or DocumentReference)
-// Condition EU Core non re-resserré vers FRCoreConditionProfile : pas encore mergé sur main (branche nr-doc-core-condition)
 
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
 * performed[x] ^short = "Date de l'acte"
 
-* performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or RelatedPerson or FRCoreOrganizationProfile)
+* performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or FRCoreRelatedPersonProfile or RelatedPerson or FRCoreOrganizationProfile)
 * performer.onBehalfOf only Reference(FRCoreOrganizationProfile) // EU Core : Reference(Organization EU Core)
 
 * extension contains FRCoreProcedurePriorityExtension named priority 0..1
@@ -65,12 +65,10 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * extension contains
     http://hl7.org/fhir/StructureDefinition/procedure-approachBodyStructure named approachBodySite 0..*
 * extension[approachBodySite] ^short = "Voie d'abord"
-* extension[approachBodySite].valueReference only Reference(BodyStructure) // * extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile)
+* extension[approachBodySite].valueReference only Reference(FRCoreBodyStructureProfile or BodyStructure)
 
 * bodySite ^short = "Localisation anatomique"
-* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible) // FRCore plus stricte que le binding preferred hérité de procedure-eu-core (même ValueSet)
-// Hérités de procedure-eu-core : bodySite.extension (http://hl7.org/fhir/StructureDefinition/bodySite) ciblant BodyStructure EU Core
-// et l'invariant eu-bodysite-1 (code OU référence à une BodyStructure, jamais les deux)
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"

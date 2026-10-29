@@ -1,45 +1,45 @@
-// Source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRMedicationStatementDocument.fsh
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreMedicationStatementProfile
 Parent: MedicationStatement
 Id: fr-core-medication-statement
 Title: "FR Core MedicationStatement Profile"
 Description: "FRCoreMedicationStatementProfile permet de décrire les modalités d'administration d'un médicament au patient (médicament déclaré, mode d'administration, quantité, durée et fréquence). Couvre les bilans médicamenteux et conciliations médicamenteuses."
 
-// Prescription — Doc Core : Reference(FRMedicationRequestDocument) — FRCore : FRCoreMedicationRequestProfile
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-medication-statement)
+
 * basedOn only Reference(FRCoreMedicationRequestProfile)
 * basedOn ^short = "Prescription"
 
-// Administration — Doc Core : Reference(FRMedicationAdministrationDocument) — FRCore : FRCoreMedicationAdministrationProfile
 * partOf only Reference(FRCoreMedicationAdministrationProfile)
 * partOf ^short = "Administration associée"
 
-* category ^short = "Acte ou situation" // Doc Core
+* category ^short = "Acte ou situation"
 
-* status ^short = "Statut" // Doc Core
+* status ^short = "Statut"
 
-* effective[x] only Period // Doc Core
-* effectivePeriod ^short = "Durée du traitement" // Doc Core
+* effective[x] only Period
+* effectivePeriod ^short = "Durée du traitement"
 
-// Posologie (Doc Core)
 * dosage.timing ^short = "Fréquence d'administration"
 * dosage.sequence ^short = "Séquence (dosages progressifs/fractionnés)"
 * dosage.asNeeded[x] ^short = "Dosage conditionnel"
-* dosage.route from FRCoreValueSetEDQMRoute (extensible) // Doc Core
+* dosage.route from FRCoreValueSetEDQMRoute (extensible)
 * dosage.route ^short = "Voie d'administration"
 * dosage.route ^binding.description = "EDQM - Standard terms / classe ROA (0.4.0.127.0.16.1.1.2.1)"
-* dosage.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible) // Doc Core
+* dosage.site from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-human-substance-administration-site-cisis (extensible)
 * dosage.site ^short = "Région anatomique d'administration"
-* dosage.doseAndRate.doseQuantity ^short = "Dose déclarée" // Doc Core
-* dosage.maxDosePerPeriod ^short = "Dose maximale" // Doc Core
-* dosage.doseAndRate.rateQuantity ^short = "Rythme d'administration" // Doc Core
-* dosage.additionalInstruction ^short = "Instructions au patient (codé)" // Doc Core
-* dosage.additionalInstruction.text ^short = "Instruction au patient (texte libre)" // Doc Core
+* dosage.doseAndRate.doseQuantity ^short = "Dose déclarée"
+* dosage.maxDosePerPeriod ^short = "Dose maximale"
+* dosage.doseAndRate.rateQuantity ^short = "Rythme d'administration"
+* dosage.additionalInstruction ^short = "Instructions au patient (codé)"
+* dosage.additionalInstruction.text ^short = "Instruction au patient (texte libre)"
 
-// Médicament — Doc Core : CodeableConcept or Reference(FRMedicationDocument) — FRCore : FRCoreMedicationProfile
-* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile)
+* medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or Medication)
 * medication[x] ^short = "Médicament"
 
-* reasonReference only Reference(Condition or Observation) // * reasonReference only Reference(FRCoreConditionProfile or Observation)
+* reasonReference only Reference(FRCoreConditionProfile or Condition or Observation)
 * reasonReference ^short = "Motif du traitement"

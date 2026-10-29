@@ -1,4 +1,3 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetProcedureCodeDocument.fsh
 ValueSet: FRCoreValueSetProcedureCode
 Id: fr-core-vs-procedure-code
 Title: "FR Core ValueSet Procedure code"

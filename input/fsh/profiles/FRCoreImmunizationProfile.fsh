@@ -1,14 +1,15 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FRImmunizationDocument.fsh
-//
-// Profil EU Core (héritage direct) :
-//   https://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreImmunizationProfile
 Parent: immunization-eu-core
 Id: fr-core-immunization
 Title: "FR Core Immunization Profile"
 Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un vaccin. Il permet également de décrire pourquoi un vaccin n'a pas été réalisé."
+
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile ^slicing.description = "Slice based on the canonical url value"
+* meta.profile contains fr-canonical 0..1
+* meta.profile[fr-canonical] = Canonical(fr-core-immunization)
 
 * occurrence[x] only dateTime
 * occurrence[x] ^short = "Date de la vaccination"
@@ -35,15 +36,15 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 * vaccineCode ^binding.extension[2].extension[1].url = "purpose"
 * vaccineCode ^binding.extension[2].extension[1].valueCode = #extensible
 * vaccineCode ^binding.extension[2].extension[2].url = "valueSet"
-* vaccineCode ^binding.extension[2].extension[2].valueCanonical = Canonical(FRCoreValueSetMedicationTranslation)
+* vaccineCode ^binding.extension[2].extension[2].valueCanonical = Canonical(FRCoreValueSetMedication)
 
-* lotNumber ^short = "Numéro de lot." // Doc Core
-* expirationDate ^short = "Date d'expiration du produit" // Doc Core
+* lotNumber ^short = "Numéro de lot."
+* expirationDate ^short = "Date d'expiration du produit"
 
 //Prescription
 * extension contains $immunization-basedOn-r5 named basedOnRequestR5 0..1
-* extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente — contrainte ajoutée par IG Document Core
-* extension[basedOnRequestR5].valueReference only Reference(MedicationRequest) // * extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile)
+* extension[basedOnRequestR5].valueReference 1..1 // Sous-élément d'extension obligatoire si l'extension est présente
+* extension[basedOnRequestR5].valueReference only Reference(FRCoreMedicationRequestProfile or MedicationRequest)
 * extension[basedOnRequestR5] ^short = "Prescription"
 
 // Type de vaccination
@@ -52,10 +53,10 @@ Description: "FRCoreImmunizationProfile permet de décrire l'administration d'un
 // Rang de la vaccination
 * protocolApplied.doseNumberPositiveInt ^short = "Rang de la vaccination"
 
-* reasonReference only Reference(Condition) // * reasonReference only Reference(FRCoreConditionProfile)
+* reasonReference only Reference(FRCoreConditionProfile or Condition)
 * reasonReference ^short = "Réaction observée suite au vaccin"
 
 // Dose d'antigène
 * extension contains $immunization-administeredProduct-r5 named ImmunizationAdministeredProductR5 0..*
 * extension[ImmunizationAdministeredProductR5] ^short = "Dose d'antigène administrée"
-* extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(Medication) // * extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile) — à activer une fois FRCoreMedicationProfile créé
+* extension[ImmunizationAdministeredProductR5].extension[reference].valueReference only Reference(FRCoreMedicationProfile or Medication)
