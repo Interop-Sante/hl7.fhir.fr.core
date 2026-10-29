@@ -1,6 +1,6 @@
 ValueSet: FRCoreValueSetMedication
 Id: fr-core-vs-medication
-Title: "FR Core ValueSet Medication translation"
+Title: "FR Core ValueSet Medication"
 Description: "Systèmes de codification autorisés pour les médicaments : CIP, UCD, ATC, MV (médicament virtuel) et NUVA (vaccins)."
 * insert SetValueset
 * ^experimental = false
