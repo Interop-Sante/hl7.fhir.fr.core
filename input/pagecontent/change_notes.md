@@ -41,6 +41,7 @@
         - Précision des définitions : `CS` (« Carte de séjour ou titre de séjour »), `CC` (« Carnet de circulation pour étranger mineur »), `LE` (libellé « Livret de famille des parents »)
         - Réorganisation en deux blocs : modes de validation officiels INS d'une part, autres modes de validation (`IE`, `CM`, `PC`, `TC` Tiers de confiance, `DC`, `CE`) d'autre part. Les codes `TC`, `DC` et `CE` de la 2.2.0 sont conservés.
     * ValueSet `FRCoreValueSetModeValidationIdentityINS` : passage de 4 codes (`PA`, `CN`, `AN`, `LE`) à 12 codes (ajout de `CS`, `eCN`, `IN`, `AV`, `LECV`, `CC`, `CIMS`, `AC`)
+* Page Artifacts : tous les artifacts (profils, extensions, jeux de valeurs, systèmes de codes, exemples) sont rattachés à un groupe défini dans `sushi-config.yaml`, avec des libellés homogènes (`Profils : …`, `Terminologies : …`, `Extensions`, `Exemples`) ; ajout des groupes `Profils : médicaments`, `Profils : données cliniques` et `Profils : types de données`, suppression du groupe « Autres profils » (Consent rattaché aux profils administratifs).
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
