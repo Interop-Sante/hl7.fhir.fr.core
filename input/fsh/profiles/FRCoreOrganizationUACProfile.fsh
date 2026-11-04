@@ -13,4 +13,5 @@ Description: """Ce profil permet de représenter les unités d'activité (UAC, p
 
 * type = $fr-core-v2-3307#UAC (exactly) 
 
+// Organization (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * partOf only Reference(FRCoreOrganizationUFProfile)

@@ -30,7 +30,9 @@ Spécification du profil de la ressource PractitionerRole pour un usage en Franc
 
 
 
+// Practitioner (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * practitioner only Reference(FRCorePractitionerProfile)
+// Organization (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * organization only Reference(FRCoreOrganizationProfile)
 
 
@@ -40,8 +42,8 @@ Spécification du profil de la ressource PractitionerRole pour un usage en Franc
 
 * specialty from $fr-practitioner-specialty (required)
 * specialty ^short = "Specific specialty associated with the organization | spécialité ordinale du professionnel de santé au sein de l'organisation"
-* location only Reference(FRCoreLocationProfile)
-* healthcareService only Reference(FRCoreHealthcareServiceProfile)
+* location only Reference(FRCoreLocationProfile or Location)
+* healthcareService only Reference(FRCoreHealthcareServiceProfile or HealthcareService)
 
 * telecom only FRCoreContactPointProfile
 * telecom ^short = "Details of a Technology mediated contact point | Coordonnées électroniques détaillées"

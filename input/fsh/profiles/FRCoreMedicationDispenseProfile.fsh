@@ -21,7 +21,7 @@ Description: "FRCoreMedicationDispenseProfile permet de décrire un traitement d
 * medication[x] ^short = "Médicament délivré"
 
 * authorizingPrescription 0..1
-* authorizingPrescription only Reference(FRCoreMedicationRequestProfile)
+* authorizingPrescription only Reference(FRCoreMedicationRequestProfile or MedicationRequest)
 * authorizingPrescription ^short = "Référence de la prescription"
 
 * dosageInstruction.patientInstruction ^short = "Instructions au patient"

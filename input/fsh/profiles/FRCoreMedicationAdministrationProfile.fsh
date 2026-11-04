@@ -40,7 +40,7 @@ Description: "FRCoreMedicationAdministrationProfile permet de décrire les modal
 * reasonReference only Reference(FRCoreConditionProfile or Condition or Observation)
 * reasonReference ^short = "Motif du traitement"
 
-* request only Reference(FRCoreMedicationRequestProfile)
+* request only Reference(FRCoreMedicationRequestProfile or MedicationRequest)
 * request ^short = "Prescription"
 
 * note ^short = "Conditions préalables à l'utilisation du médicament."

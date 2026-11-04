@@ -48,6 +48,7 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * code ^binding.extension[=].extension[=].valueString = "Maladie rare"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * subject ^short = "Patient concerné"
+// Patient (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
 * onset[x] 1..1

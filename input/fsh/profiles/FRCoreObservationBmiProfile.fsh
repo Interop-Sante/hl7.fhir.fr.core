@@ -19,9 +19,9 @@ Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital S
 
 * code.coding 1..
 
-* subject only Reference(FRCorePatientProfile)
-* encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
+* subject only Reference(FRCorePatientProfile or Patient)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or Organization or FRCorePatientProfile or Patient)
 
 * value[x] ^slicing.description = "sclicing description"
 * value[x] ^slicing.rules = #open

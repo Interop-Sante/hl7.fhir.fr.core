@@ -17,6 +17,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 
 * requester ^short = "Prescripteur"
 
+// Practitioner (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * requester only Reference(FRCorePractitionerProfile or FRCorePractitionerRoleProfile or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile or RelatedPerson)
 
 // Extension R5 backport : représentation lisible de la posologie (ePrescription)
@@ -27,9 +28,11 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * extension[treatmentIntent] ^short = "Intention globale du traitement"
 
 // Médicament
+// Medication (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * medication[x] only CodeableConcept or Reference(FRCoreMedicationProfile or MedicationEuCore)
 * medication[x] ^short = "Produit de santé"
 
+// Patient (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * subject only Reference(FRCorePatientProfile or FRCorePatientINSProfile)
 * subject ^short = "Patient"
 
@@ -42,7 +45,7 @@ Description: "FRCoreMedicationRequestProfile permet de décrire un traitement pr
 * instantiatesUri ^short = "Référence de la prescription"
 
 * basedOn ^short = "Référence à un item du plan de traitement."
-* basedOn only Reference(FRCoreMedicationRequestProfile or CarePlan or FRCoreServiceRequestProfile or ServiceRequest or ImmunizationRecommendation)
+* basedOn only Reference(FRCoreMedicationRequestProfile or MedicationRequest or CarePlan or FRCoreServiceRequestProfile or ServiceRequest or ImmunizationRecommendation)
 
 // Posologie — 1..* requis (ePrescription : 1..)
 * dosageInstruction 1..* // ePrescription : 1.. (FHIR R4 base : 0..*)

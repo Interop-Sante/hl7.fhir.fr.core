@@ -32,6 +32,7 @@ Description: "FRCoreAllergyIntoleranceProfile est un profil utilisé pour décri
 * clinicalStatus ^short = "Statut clinique"
 
 * patient ^short = "Patient concerné par l'allergie ou intolérance"
+// Patient (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * patient only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
 * reaction ^short = "Réaction observée"

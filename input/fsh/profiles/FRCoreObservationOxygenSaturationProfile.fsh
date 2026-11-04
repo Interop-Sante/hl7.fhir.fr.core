@@ -23,13 +23,13 @@ Profil de la saturation en oxygène du sang artériel."
 * code.coding 1..
 
 * partOf ..1 MS
-* partOf only Reference(FRCoreMedicationAdministrationInhaledOxygenProfile)
+* partOf only Reference(FRCoreMedicationAdministrationInhaledOxygenProfile or MedicationAdministration)
 * partOf ^definition = "A larger event of which this particular Observation is a component or step.  For example,  an observation as part of a MedicationAdministration. This observation can be related to a inhaled oxygen administration. The mesaurement of the oxygen satuation can't be done without knowing the administration of oxygen. [ Dans le cas où la mesure de la saturation en oxygène intervient en même temps que l'administration d'oxygène, cette mesure est liée dans un évènement plus large qui est l'administration de l'oxygène, via la relation partOf. Cet élément partOf doit être supporté par les implémentations."
 
 * partOf.reference ^mustSupport = false
 * subject only Reference(Patient or FRCorePatientProfile)
 * encounter only Reference(Encounter or FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePatientProfile or Patient or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or Organization)
 
 * bodySite from FRCoreValueSetSPO2BodyLocation (example)
 

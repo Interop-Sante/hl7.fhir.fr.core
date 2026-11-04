@@ -49,14 +49,18 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * code ^binding.extension[=].extension[=].valueString = "Autre acte"
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 
+// Condition (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * reasonReference only Reference(FRCoreConditionProfile or condition-eu-core or Observation or FRCoreProcedureProfile or procedure-eu-core or DiagnosticReport or DocumentReference)
 * reasonReference ^short = "Motif de l'acte / Justification de la réalisation de l'acte"
 
+// Patient (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile)
 
 * performed[x] ^short = "Date de l'acte"
 
+// PractitionerRole (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * performer.actor only Reference(FRCorePractitionerRoleProfile or FRCorePractitionerProfile or Device or FRCorePatientProfile or FRCoreRelatedPersonProfile or RelatedPerson or FRCoreOrganizationProfile)
+// Organization (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * performer.onBehalfOf only Reference(FRCoreOrganizationProfile) // EU Core : Reference(Organization EU Core)
 
 * extension contains FRCoreProcedurePriorityExtension named priority 0..1
@@ -72,7 +76,7 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 
 // Rencontre associée à l'acte
 * encounter ^short = "Rencontre associée à l'acte"
-* encounter only Reference(FRCoreEncounterProfile)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
 
 // Difficulté de l'acte
 * extension contains FRCoreProcedureDifficultyExtension named difficulte 0..1

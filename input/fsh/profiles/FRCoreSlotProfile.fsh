@@ -15,5 +15,5 @@ Profil de la ressource Slot pour la France"""
 * identifier.use from IdentifierUse (required)
 * serviceCategory ..1
 * specialty from FRCoreValueSetPractitionerSpecialty (required)
-* schedule only Reference(FRCoreScheduleProfile)
+* schedule only Reference(FRCoreScheduleProfile or Schedule)
 * status from SlotStatus (required)

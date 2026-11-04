@@ -19,8 +19,8 @@ Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Sig
 
 * code.coding 1..
 
-* subject only Reference(FRCorePatientProfile)
-* encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile)
+* subject only Reference(FRCorePatientProfile or Patient)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or Organization or FRCorePatientProfile or Patient)
 
 * value[x] ^slicing.rules = #open

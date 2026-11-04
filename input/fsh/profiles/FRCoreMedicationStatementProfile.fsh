@@ -11,10 +11,10 @@ Description: "FRCoreMedicationStatementProfile permet de décrire les modalités
 * meta.profile contains fr-canonical 0..1
 * meta.profile[fr-canonical] = Canonical(fr-core-medication-statement)
 
-* basedOn only Reference(FRCoreMedicationRequestProfile)
+* basedOn only Reference(FRCoreMedicationRequestProfile or MedicationRequest)
 * basedOn ^short = "Prescription"
 
-* partOf only Reference(FRCoreMedicationAdministrationProfile)
+* partOf only Reference(FRCoreMedicationAdministrationProfile or MedicationAdministration)
 * partOf ^short = "Administration associée"
 
 * category ^short = "Acte ou situation"

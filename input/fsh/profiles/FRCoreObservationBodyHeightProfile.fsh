@@ -22,9 +22,9 @@ Title: "FR Core Observation Body Height Profile"
 
 * code.coding 1..
 
-* subject only Reference(FRCorePatientProfile)
-* encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePatientProfile or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile)
+* subject only Reference(FRCorePatientProfile or Patient)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePatientProfile or Patient or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or Organization)
 * method from FRCoreValueSetHeightMeasurementMethod (example)
 
 * value[x] ^slicing.rules = #open

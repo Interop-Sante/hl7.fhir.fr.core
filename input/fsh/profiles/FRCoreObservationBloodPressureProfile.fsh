@@ -20,12 +20,12 @@ Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7
 
 * code.coding 1..
 
-* encounter only Reference(FRCoreEncounterProfile)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
 * effective[x] 1..
 * effective[x] only dateTime or Period
 * effective[x] ^short = "Often just a dateTime for Vital Signs"
 * effective[x] ^definition = "Often just a dateTime for Vital Signs"
-* performer only Reference(CareTeam or FRCorePatientProfile or FRCorePractitionerProfile or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or FRCoreRelatedPersonProfile)
+* performer only Reference(CareTeam or FRCorePatientProfile or Patient or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or Organization or FRCoreRelatedPersonProfile or RelatedPerson)
 
 * value[x] ^slicing.rules = #open // Added to resolve "error Observation.value[x] ^slicing.rules: Missing required value"
 * value[x] ..0

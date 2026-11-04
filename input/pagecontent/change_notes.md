@@ -38,6 +38,7 @@
 * **[BREAKING CHANGE]** Correction de la typo `oragnization` dans les Id de deux ValueSets, ce qui modifie leur URL canonique [#354](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/354)
     * `fr-core-vs-oragnization-type-activite` devient `fr-core-vs-organization-type-activite`
     * `fr-core-vs-oragnization-code-tarif-tnjp` devient `fr-core-vs-organization-code-tarif-tnjp`
+* Contraintes `Reference(...)` : ajout de la ressource FHIR standard à côté de chaque profil FRCore cité (ex. `Procedure.encounter` : `FRCoreEncounterProfile or Encounter`), afin de ne pas rejeter des références vers des ressources conformes à un autre profil. Les cibles dont le profil parent EU Core restreint les types autorisés (ex. `Patient`, `Organization`, `Practitioner`, `Medication` dans les profils héritant d'EU Core) ne sont pas élargies, FHIR interdisant d'élargir les cibles d'un profil parent.
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
