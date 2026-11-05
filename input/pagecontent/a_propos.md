@@ -36,11 +36,11 @@ L'ensemble des contributeurs au code source peuvent être consultés sur [GitHub
 
 #### Version 2.2.0
 
-Chair : Nicolas Riss
+Chair : Nicolas Riss, Yohann Poiron
 
 * Delphine Bayle (TECHNIDATA)
 * Matisse Bornard (CHU de Toulouse)
-* Georges-Alexandre (CHASTIN ENOVACOM)
+* Georges-Alexandre CHASTIN (ENOVACOM)
 * Lucas  Miralles (CHU de Toulouse)
 * Yohann Poiron (ANS)
 * Nicolas Riss (ANS / Chair HL7 France)
