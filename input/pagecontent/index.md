@@ -21,7 +21,7 @@ Profiles, extensions, value sets, code systems and implementation guides standar
 <div style="width: 65%">
 <blockquote class="stu-note">
 <p>
-  <b>Attention !</b> Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse http://hl7.fr/ig/fhir/core</b>
+  <b>Attention !</b> Cette version du guide d'implémentation est en concertation. La version officielle est accessible à l'adresse <a href="http://hl7.fr/ig/fhir/core">http://hl7.fr/ig/fhir/core</a>.
 </p>
 </blockquote>
 </div>
