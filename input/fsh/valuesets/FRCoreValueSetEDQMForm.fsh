@@ -1,5 +1,3 @@
-// Source : https://github.com/ansforge/interop-IG-fhir-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetEDQMFormDocument.fsh
-// FRCore filtre en plus sur les classes BDF et CDF, en complément de PDF (plus complet que Doc Core)
 ValueSet: FRCoreValueSetEDQMForm
 Id: fr-core-vs-edqm-form
 Title: "FR Core ValueSet EDQM Form"

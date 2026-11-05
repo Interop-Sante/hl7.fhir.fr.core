@@ -4,4 +4,4 @@ Title: "FR Core Organization Extension - quelles sont les entités qui font part
 Description: "Extension permettant de définir des membres d'une organisation. Les membres sont des organisations filles de la ressources. C'est la relation inverse de partOf."
 Context: Organization
 
-* valueReference only Reference(FRCoreOrganizationProfile)
+* valueReference only Reference(FRCoreOrganizationProfile or Organization)

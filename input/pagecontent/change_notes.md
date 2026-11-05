@@ -41,6 +41,10 @@
         - Précision des définitions : `CS` (« Carte de séjour ou titre de séjour »), `CC` (« Carnet de circulation pour étranger mineur »), `LE` (libellé « Livret de famille des parents »)
         - Réorganisation en deux blocs : modes de validation officiels INS d'une part, autres modes de validation (`IE`, `CM`, `PC`, `TC` Tiers de confiance, `DC`, `CE`) d'autre part. Les codes `TC`, `DC` et `CE` de la 2.2.0 sont conservés.
     * ValueSet `FRCoreValueSetModeValidationIdentityINS` : passage de 4 codes (`PA`, `CN`, `AN`, `LE`) à 12 codes (ajout de `CS`, `eCN`, `IN`, `AV`, `LECV`, `CC`, `CIMS`, `AC`)
+* **[BREAKING CHANGE]** Correction de la typo `oragnization` dans les Id de deux ValueSets, ce qui modifie leur URL canonique [#354](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/354)
+    * `fr-core-vs-oragnization-type-activite` devient `fr-core-vs-organization-type-activite`
+    * `fr-core-vs-oragnization-code-tarif-tnjp` devient `fr-core-vs-organization-code-tarif-tnjp`
+* Contraintes `Reference(...)` : ajout de la ressource FHIR standard à côté de chaque profil FRCore cité (ex. `Procedure.encounter` : `FRCoreEncounterProfile or Encounter`), afin de ne pas rejeter des références vers des ressources conformes à un autre profil. Les cibles dont le profil parent EU Core restreint les types autorisés (ex. `Patient`, `Organization`, `Practitioner`, `Medication` dans les profils héritant d'EU Core) ne sont pas élargies, FHIR interdisant d'élargir les cibles d'un profil parent.
 * Page Artifacts : tous les artifacts (profils, extensions, jeux de valeurs, systèmes de codes, exemples) sont rattachés à un groupe défini dans `sushi-config.yaml`, avec des libellés homogènes (`Profils : …`, `Terminologies : …`, `Extensions`, `Exemples`) ; ajout des groupes `Profils : médicaments`, `Profils : données cliniques` et `Profils : types de données`, suppression du groupe « Autres profils » (Consent rattaché aux profils administratifs).
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore

@@ -1,4 +1,3 @@
-// FRCore filtre sur la classe EDQM ROA (Route of Administration), contrairement à Doc Core/ePrescription qui reprennent tout l'EDQM sans filtre
 ValueSet: FRCoreValueSetEDQMRoute
 Id: fr-core-vs-edqm-route
 Title: "FR Core ValueSet EDQM Route"

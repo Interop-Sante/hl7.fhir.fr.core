@@ -13,7 +13,7 @@ Profil de la ressource RelatedPerson pour l'usage en France"""
 * meta.profile[fr-canonical] = Canonical(fr-core-related-person)
 
 * identifier 1..1
-* patient only Reference(FRCorePatientProfile)
+* patient only Reference(FRCorePatientProfile or Patient)
 
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "coding.system"

@@ -22,9 +22,9 @@ Profilage français du profil Vital Signs Heart rate"
 
 * code.coding 1..
 
-* subject only Reference(FRCorePatientProfile)
-* encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or FRCorePractitionerProfile or PractitionerRole or FRCoreOrganizationProfile or FRCorePatientProfile or FRCoreRelatedPersonProfile)
+* subject only Reference(FRCorePatientProfile or Patient)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
+* performer only Reference(CareTeam or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreOrganizationProfile or Organization or FRCorePatientProfile or Patient or FRCoreRelatedPersonProfile or RelatedPerson)
 
 * bodySite from FRCoreValueSetHeartRateMeasurementBodyLocation (example)
 

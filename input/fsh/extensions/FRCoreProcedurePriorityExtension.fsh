@@ -1,8 +1,3 @@
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/extensions/FRProcedurePriorityExtension.fsh
-//
-// Profil EU Core (héritage direct) : non disponible
-// ─────────────────────────────────────────────────────────────────────────────
 Extension: FRCoreProcedurePriorityExtension
 Id: fr-core-procedure-priority-extension
 Title: "FR Core Procedure Priority Extension"
