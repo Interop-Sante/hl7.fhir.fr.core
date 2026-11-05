@@ -23,4 +23,4 @@ Profil de la ressource Schedule pour l'usage en France. Ce profil red√©finit l'√
 * serviceType ..0
 * specialty from FRCoreValueSetPractitionerSpecialty (required)
 
-* actor only Reference(Device or FRCorePractitionerRoleProfile or FRCoreRelatedPersonProfile or FRCoreHealthcareServiceProfile or FRCoreLocationProfile or FRCorePatientProfile or FRCorePractitionerProfile)
+* actor only Reference(Device or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreRelatedPersonProfile or RelatedPerson or FRCoreHealthcareServiceProfile or HealthcareService or FRCoreLocationProfile or Location or FRCorePatientProfile or Patient or FRCorePractitionerProfile or Practitioner)

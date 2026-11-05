@@ -5,6 +5,9 @@ Title: "FR Core Organization UF Profile"
 Description: "Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement."
 
 
+* meta.profile contains fr-uf-canonical 0..1
+* meta.profile[fr-uf-canonical] = Canonical(fr-core-organization-uf)
+
 * extension contains
     FRCoreOrganizationDisciplineEquipementExtension named discplineEquipement 0..1 and
     FRCoreOrganizationTypeActiviteExtension named typeActivite 0..1 and

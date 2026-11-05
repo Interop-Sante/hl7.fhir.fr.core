@@ -20,13 +20,13 @@ Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajout
 
 * identifier.use from IdentifierUse (required)
 
-* providedBy only Reference(FRCoreOrganizationProfile)
+* providedBy only Reference(FRCoreOrganizationProfile or Organization)
 * category ..1
 
 * specialty from FRCoreValueSetPractitionerSpecialty (preferred)
 // TODO - Une étude approfondie doit être faite sur les spécialités médicales : R38, R211, R266, R01 ...
 // La TRE à privilégier semble être la TRE R211 utilisée par le ROR
 
-* location only Reference(FRCoreLocationProfile)
+* location only Reference(FRCoreLocationProfile or Location)
 * telecom only FRCoreContactPointProfile
-* coverageArea only Reference(FRCoreLocationProfile)
+* coverageArea only Reference(FRCoreLocationProfile or Location)

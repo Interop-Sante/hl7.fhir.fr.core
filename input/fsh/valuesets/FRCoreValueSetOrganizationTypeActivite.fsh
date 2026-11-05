@@ -1,5 +1,5 @@
 ValueSet: FRCoreValueSetOrganizationTypeActivite
-Id: fr-core-vs-oragnization-type-activite
+Id: fr-core-vs-organization-type-activite
 Title: "FR Core ValueSet Organization Type Activité - nomenclature SAE"
 Description: "Valeurs permettant de coder les types d'activité."
 * insert SetValueset
