@@ -3,16 +3,15 @@
 
 * **[BREAKING CHANGE]** Renommage de la sous-extension `dateCollection` en `dateInterrogationINSi` dans `fr-core-identity-reliability`, avec alignement sur IHE PAM France v2.11.1 et RNIV 1 - Principes communs v2.0 [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336)
 * **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability` [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
-* Correction de la typo `oragnization` dans les Id de deux ValueSets, ce qui modifie leur URL canonique [#354](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/354)
-    * `fr-core-vs-oragnization-type-activite` devient `fr-core-vs-organization-type-activite`
-    * `fr-core-vs-oragnization-code-tarif-tnjp` devient `fr-core-vs-organization-code-tarif-tnjp`
-* Mise à jour de la dépendance vers EU Core 2.0.0 (ajout de `hl7.fhir.eu.base: 2.0.0`) : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
+* **[BREAKING CHANGE]** Mise à jour de la dépendance vers EU Core 2.0.0 (ajout de `hl7.fhir.eu.base: 2.0.0`) : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
     * FRCoreOrganization : `name` devient obligatoire
-    * **[BREAKING CHANGE]** FRCorePatient et FRCorePatientINS : suppression de la slice `nationality` référençant l'extension FR Core `fr-core-patient-nationality` au profit de l'extension internationale héritée via EU Core. Les ressources utilisant l'URL `https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality` doivent être mises à jour.
+    * FRCorePatient et FRCorePatientINS : suppression de la slice `nationality` référençant l'extension FR Core `fr-core-patient-nationality` au profit de l'extension internationale héritée via EU Core. Les ressources utilisant l'URL `https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality` doivent être mises à jour.
     * FRCorePractitioner : obligation d'avoir un `identifier` ou un `name`
     * FRCoreAddress : ajout des extensions internationales `streetName`, `houseNumber`, `postBox`, `countryCode` (déjà utilisées dans le cadre de l'AS)
     * Possibilité d'utiliser l'extension `data-absent-reason` si un attribut obligatoire ne peut pas être renseigné, documentée par une nouvelle section dans les bonnes pratiques
-* Mise à jour des participants aux groupes de travail [#295](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/295)
+* Correction de la typo `oragnization` dans les Id de deux ValueSets, ce qui modifie leur URL canonique [#354](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/354)
+    * `fr-core-vs-oragnization-type-activite` devient `fr-core-vs-organization-type-activite`
+    * `fr-core-vs-oragnization-code-tarif-tnjp` devient `fr-core-vs-organization-code-tarif-tnjp`
 * Ajout d'exemples et corrections QA [#296](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/296)
     * Ajout de 5 nouveaux exemples : `FRCorePatientDeceasedExample`, `FRCoreRelatedPersonExample`, `FRCoreObservationRespRateExample`, `FRCoreMedicationAdministrationInhaledOxygenExample`, `FRCoreObservationOxygenSaturationExample`
     * Enrichissement de `FRCorePatientINSExample` (renommé depuis `FRCorePatientExample`) et `FRCorePractitionerExample`
@@ -31,10 +30,11 @@
 * Correction des displays invalides sur les exemples `FRCoreObservationBMIExample`, `FRCoreObservationBPExample` et `FRCoreObservationOxygenSaturationExample` [#348](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/348)
 * Correction du slicing `identifier` de `FRCorePatient` : ajout d'un discriminator sur `system` en complément de `type`, pour lever l'ambiguïté entre les slices `NSS-NIR` et `NSS-NIA` (qui partagent le même `type` `NH` depuis leur séparation en 2.2.0) [#346](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/346)
 * Ajout du profil `FRCoreConsentProfile` (`fr-core-consent`) et de l'exemple `FRCoreConsentExample` [#347](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/347)
-* Ajout d'un binding `extensible` sur `Encounter.class` vers le JDV CISIS `jdv-hl7-v3-ActEncounterCode-cisis` ; `FRCoreValueSetEncounterClass` passe au statut `retired` (conservé pour compatibilité, non supprimé) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
-* Retrait du binding de `Encounter.hospitalization.dischargeDisposition` vers `FRCoreValueSetEncounterDischargeDisposition` (codes ambigus/cumulables, en attente d'un travail complémentaire au GT IHE PAM FHIR) ; ce ValueSet et le CodeSystem `FRCoreCodeSystemCirconstancesSortie` passent au statut `retired` (conservés pour compatibilité, non supprimés) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
-* Élargissement de `Encounter.subject` à `FRCorePatientINSProfile` (en plus de `FRCorePatientProfile` et `Group`) [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
-* Assouplissement de `Encounter.period` : suppression de la contrainte de cardinalité minimale (`1..`), qui retombe sur le `0..1` de base FHIR R4 — une rencontre proposée/non confirmée peut ne pas avoir de dates [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313)
+* Évolutions du profil `FRCoreEncounterProfile` [#313](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/313) :
+    * Ajout d'un binding `extensible` sur `Encounter.class` vers le JDV CISIS `jdv-hl7-v3-ActEncounterCode-cisis` ; `FRCoreValueSetEncounterClass` passe au statut `retired` (conservé pour compatibilité, non supprimé)
+    * Retrait du binding de `Encounter.hospitalization.dischargeDisposition` vers `FRCoreValueSetEncounterDischargeDisposition` (codes ambigus/cumulables, en attente d'un travail complémentaire au GT IHE PAM FHIR) ; ce ValueSet et le CodeSystem `FRCoreCodeSystemCirconstancesSortie` passent au statut `retired` (conservés pour compatibilité, non supprimés)
+    * Élargissement de `Encounter.subject` à `FRCorePatientINSProfile` (en plus de `FRCorePatientProfile` et `Group`)
+    * Assouplissement de `Encounter.period` : suppression de la contrainte de cardinalité minimale (`1..`), qui retombe sur le `0..1` de base FHIR R4 — une rencontre proposée/non confirmée peut ne pas avoir de dates
 * Ajout de 5 profils Medication : `FRCoreMedicationProfile`, `FRCoreMedicationRequestProfile`, `FRCoreMedicationAdministrationProfile`, `FRCoreMedicationDispenseProfile`, `FRCoreMedicationStatementProfile` [#315](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/315)
     * `FRCoreMedicationProfile` et `FRCoreMedicationRequestProfile` héritent des profils EU Core (`medication-eu-core`, `medicationrequest-eu-core`) ; les trois autres profils héritent directement de la base FHIR R4 (pas d'équivalent EU Core)
     * `FRCoreMedicationRequestProfile` : `authoredOn` et `requester` en `0..1`, `dosageInstruction` en `1..*`, extensions `renderedDosageInstruction` (backport R5), `treatmentIntent` (intention globale du traitement) et `AdditionalWhenValues` (codes supplémentaires pour `when`)
@@ -45,6 +45,7 @@
     * Ajout des dépendances `hl7.fhir.eu.mpd: 1.0.0` et `ihe.pharm.mpd.r4: 1.0.0-comment-2` pour les extensions IHE MPD
 * Contraintes `Reference(...)` : ajout de la ressource FHIR standard à côté de chaque profil FRCore cité (ex. `Procedure.encounter` : `FRCoreEncounterProfile or Encounter`), afin de ne pas rejeter des références vers des ressources conformes à un autre profil. Les cibles dont le profil parent EU Core restreint les types autorisés (ex. `Patient`, `Organization`, `Practitioner`, `Medication` dans les profils héritant d'EU Core) ne sont pas élargies, FHIR interdisant d'élargir les cibles d'un profil parent.
 * Page Artifacts : tous les artifacts (profils, extensions, jeux de valeurs, systèmes de codes, exemples) sont rattachés à un groupe défini dans `sushi-config.yaml`, avec des libellés homogènes (`Profils : …`, `Terminologies : …`, `Extensions`, `Exemples`) ; ajout des groupes `Profils : médicaments`, `Profils : données cliniques` et `Profils : types de données`, suppression du groupe « Autres profils » (Consent rattaché aux profils administratifs).
+* Mise à jour des participants aux groupes de travail [#295](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/295)
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
