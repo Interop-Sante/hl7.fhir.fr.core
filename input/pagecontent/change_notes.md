@@ -47,7 +47,7 @@
 * Page Artifacts : tous les artifacts (profils, extensions, jeux de valeurs, systèmes de codes, exemples) sont rattachés à un groupe défini dans `sushi-config.yaml`, avec des libellés homogènes (`Profils : …`, `Terminologies : …`, `Extensions`, `Exemples`) ; ajout des groupes `Profils : médicaments`, `Profils : données cliniques` et `Profils : types de données`, suppression du groupe « Autres profils » (Consent rattaché aux profils administratifs).
 * Mise à jour des participants aux groupes de travail [#295](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/295)
 
-#### Refonte de l'extension `fr-core-identity-reliability` (RNIV EXI SI 07)
+#### Refonte de l'extension `fr-core-identity-reliability`
 
 **[BREAKING CHANGE]** Conformité au référentiel d'identitovigilance et au référentiel INS : refonte de l'extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
 
