@@ -2,7 +2,7 @@
 [Modifications apportées dans la release 3.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1) :
 
 * **[BREAKING CHANGE]** Renommage de la sous-extension `dateCollection` en `dateInterrogationINSi` dans `fr-core-identity-reliability`, avec alignement sur IHE PAM France v2.11.1 et RNIV 1 - Principes communs v2.0 [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336)
-* **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability` [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
+* **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability`, et la sous-extension `identityStatus` devient obligatoire (`0..1` → `1..1`) dans cette extension [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
 * **[BREAKING CHANGE]** Mise à jour de la dépendance vers EU Core 2.0.0 (ajout de `hl7.fhir.eu.base: 2.0.0`) : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
     * FRCoreOrganization : `name` devient obligatoire
     * FRCorePatient et FRCorePatientINS : suppression de la slice `nationality` référençant l'extension FR Core `fr-core-patient-nationality` au profit de l'extension internationale héritée via EU Core. Les ressources utilisant l'URL `https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality` doivent être mises à jour.
@@ -46,6 +46,93 @@
 * Contraintes `Reference(...)` : ajout de la ressource FHIR standard à côté de chaque profil FRCore cité (ex. `Procedure.encounter` : `FRCoreEncounterProfile or Encounter`), afin de ne pas rejeter des références vers des ressources conformes à un autre profil. Les cibles dont le profil parent EU Core restreint les types autorisés (ex. `Patient`, `Organization`, `Practitioner`, `Medication` dans les profils héritant d'EU Core) ne sont pas élargies, FHIR interdisant d'élargir les cibles d'un profil parent.
 * Page Artifacts : tous les artifacts (profils, extensions, jeux de valeurs, systèmes de codes, exemples) sont rattachés à un groupe défini dans `sushi-config.yaml`, avec des libellés homogènes (`Profils : …`, `Terminologies : …`, `Extensions`, `Exemples`) ; ajout des groupes `Profils : médicaments`, `Profils : données cliniques` et `Profils : types de données`, suppression du groupe « Autres profils » (Consent rattaché aux profils administratifs).
 * Mise à jour des participants aux groupes de travail [#295](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/295)
+
+#### Refonte de l'extension `fr-core-identity-reliability`
+
+**[BREAKING CHANGE]** Conformité au référentiel d'identitovigilance et au référentiel INS : refonte de l'extension `fr-core-identity-reliability` (statuts de confiance, canal et date de collecte, annotations complémentaires) — voir détail ci-dessous [#306](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/306)
+
+##### Remplacement du CodeSystem `fr-core-cs-v2-0445` par deux CodeSystems dédiés
+
+Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, mélangeant statuts et attributs complémentaires) ainsi que le CodeSystem `fr-core-cs-fiabilite-identite` (doublon inutilisé du précédent) sont **supprimés**, remplacés par deux CodeSystems au périmètre explicite :
+
+* `fr-core-cs-identity-status` (`FRCoreCodeSystemIdentityStatus`) : les 4 statuts de confiance RNIV.
+
+| Code | Statut RNIV | INSi (I) | Contrôle (C) |
+|------|-------------|----------|--------------|
+| `PROV` | Identité provisoire | − | − |
+| `RECUP` _(nouveau)_ | Identité récupérée | + | − |
+| `VALI` | Identité validée | − | + |
+| `QUAL` _(nouveau)_ | Identité qualifiée | + | + |
+
+* `fr-core-cs-identity-status-comment` (`FRCoreCodeSystemIdentityStatusComment`) _(nouveau)_ : les 19 autres codes de l'ancien `fr-core-cs-v2-0445` (attributs RNIV — homonyme, fictif, douteux — et codes de gestion — doublon, désactivé, collision…), destinés à la sous-extension `comment`.
+
+**Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l'un de ces deux nouveaux CodeSystems selon le code utilisé.
+
+**Attention, le code `VALI` change de sens** : dans l'ancien CodeSystem `fr-core-cs-v2-0445`, `VALI` ("identité validée") désignait toute identité ayant fait l'objet d'un contrôle de cohérence, que l'INS ait ou non été récupéré via le téléservice INSi — c'est d'ailleurs ce statut unique que les invariants de `FRCorePatientINSProfile` imposant la présence d'un identifiant INS référençaient. Avec l'introduction du critère « récupération INSi » comme axe indépendant, ce statut se scinde en deux : `VALI` ne désigne plus que les identités contrôlées **sans** INS récupéré ; les identités contrôlées **avec** INS récupéré portent désormais le nouveau code `QUAL` (ce sont d'ailleurs les invariants `fr-core-1`, `fr-core-2` et `fr-core-3` (voir plus bas) qui référencent maintenant `QUAL`, et non plus `VALI`).
+
+**Impact pour les implémenteurs** : il ne s'agit pas d'un simple renommage. Les ressources taguées `VALI` sous l'ancien CodeSystem doivent être réévaluées individuellement : si l'identité porte également un identifiant INS (NIR/NIA) obtenu via le téléservice INSi, elle doit être recodée en `QUAL` ; sinon elle conserve le code `VALI`.
+
+##### ValueSets `identityStatus` et `comment`
+
+Le ValueSet `fr-core-vs-identity-reliability` (`FRCoreValueSetIdentityReliabilityStatus`), qui incluait tous les codes de `fr-core-cs-v2-0445`, est **supprimé**, remplacé par le nouveau ValueSet `fr-core-vs-identity-status` (`FRCoreValueSetIdentityStatus`), limité aux 4 statuts RNIV (`fr-core-cs-identity-status`). Le binding de la sous-extension `identityStatus` passe de `extensible` (tous les codes `v2-0445`) à `required` (ces 4 valeurs uniquement).
+
+**Impact pour les implémenteurs** : les ressources utilisant des codes autres que `PROV`, `RECUP`, `VALI` ou `QUAL` dans `identityStatus` (ex. `DOUB`, `FICT`, `DOUT`…) doivent migrer ces valeurs vers la nouvelle sous-extension `comment`, désormais bindée en `extensible` sur le nouveau ValueSet `fr-core-vs-identity-status-comment` (`FRCoreValueSetIdentityStatusComment`).
+
+Dans les versions précédentes, les annotations complémentaires pouvaient être portées dans `identityStatus` :
+
+```json
+{
+  "url": "identityStatus",
+  "valueCoding": {
+    "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+    "code": "DOUB"
+  }
+}
+```
+
+À partir de cette version, elles doivent être portées dans `comment` :
+
+```json
+{
+  "url": "comment",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment",
+        "code": "DOUB"
+      }
+    ]
+  }
+}
+```
+
+##### Canal d'obtention et date d'interrogation du téléservice INSi : sous-extensions `methodCollection` et `dateInterrogationINSi`
+
+La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`).
+
+La sous-extension `dateCollection` est renommée `dateInterrogationINSi`, pour l'aligner sur le champ `ZFD-6` "Date d'interrogation du téléservice INSi" d'IHE PAM France (v2.11.1, §6.18.6) [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336).
+
+**Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l'URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
+
+##### Correction des invariants `fr-core-1`, `fr-core-2`, `fr-core-3`
+
+Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`. De plus, `fr-core-1` devient une équivalence : le statut est `QUAL` si et seulement si un identifiant INS (`INS-NIR`, `INS-NIA`, `INS-NIR-TEST` ou `INS-NIR-DEMO`) est présent. Un identifiant INS n'est donc plus accepté sans le statut `QUAL`.
+
+**Impact pour les implémenteurs** : une ressource `FRCorePatientINS` portant un matricule INS doit avoir le statut `QUAL` (et non `VALI`). Les instances existantes au statut `VALI` avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en `QUAL`.
+
+##### Invariants sur les attributs "douteux" et "fictif" (RNIV EXI SI 09)
+
+Ajout de 2 invariants sur `fr-core-identity-reliability`, pour rendre conforme le profil au volet statut de l'exigence [EXI SI 09] du RNIV (§3.2.3) : une identité portant l'attribut `comment` "Identité douteuse" (`DOUT`) ou "Identité fictive" (`FICT`) doit avoir un statut de confiance (`identityStatus`) égal à "Identité provisoire" (`PROV`). Un second invariant interdit le cumul des attributs "Identité fictive" et "Identité douteuse" sur une même identité [#335](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/335).
+
+##### `identityStatus` obligatoire dans l'extension `fr-core-identity-reliability`
+
+La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans l'extension `fr-core-identity-reliability`, et donc dans tous les profils Patient qui l'utilisent (`FRCorePatientProfile`, `FRCorePatientINSProfile`), pour satisfaire EXI SI 07.
+
+##### `identityReliability` obligatoire dans `FRCorePatientProfile`
+
+**[BREAKING CHANGE]** La cardinalité de la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` dans le profil de base `FRCorePatientProfile`, ce qui la rend obligatoire pour tous les profils qui en héritent (y compris `FRCorePatientINSProfile`) [#298](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298). Une nouvelle sous-extension `lastUpdated` (`dateTime`, `1..1`) est ajoutée, permettant d'horodater et d'ordonner chronologiquement plusieurs instances successives de `identityReliability` sur une même ressource.
+
+**Impact pour les implémenteurs** : toute ressource `Patient` (ou `FRCorePatientINS`) sans instance de `identityReliability` doit être mise à jour pour en porter au moins une, avec a minima la nouvelle sous-extension obligatoire `lastUpdated` et la sous-extension `identityStatus` (désormais `1..1`) renseignées. Si l'identité n'a pas encore été vérifiée, le statut `PROV` (Identité provisoire) peut être utilisé : l'obligation impose de renseigner le niveau de confiance, pas de qualifier l'identité.
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :
