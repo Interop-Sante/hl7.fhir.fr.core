@@ -132,7 +132,7 @@ La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans l'extension `
 
 **[BREAKING CHANGE]** La cardinalité de la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` dans le profil de base `FRCorePatientProfile`, ce qui la rend obligatoire pour tous les profils qui en héritent (y compris `FRCorePatientINSProfile`) [#298](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298). Une nouvelle sous-extension `lastUpdated` (`dateTime`, `1..1`) est ajoutée, permettant d'horodater et d'ordonner chronologiquement plusieurs instances successives de `identityReliability` sur une même ressource.
 
-**Impact pour les implémenteurs** : toute ressource `Patient` (ou `FRCorePatientINS`) sans instance de `identityReliability` doit être mise à jour pour en porter au moins une, avec a minima la nouvelle sous-extension obligatoire `lastUpdated` et la sous-extension `identityStatus` (désormais `1..1`) renseignées.
+**Impact pour les implémenteurs** : toute ressource `Patient` (ou `FRCorePatientINS`) sans instance de `identityReliability` doit être mise à jour pour en porter au moins une, avec a minima la nouvelle sous-extension obligatoire `lastUpdated` et la sous-extension `identityStatus` (désormais `1..1`) renseignées. Si l'identité n'a pas encore été vérifiée, le statut `PROV` (Identité provisoire) peut être utilisé : l'obligation impose de renseigner le niveau de confiance, pas de qualifier l'identité.
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :

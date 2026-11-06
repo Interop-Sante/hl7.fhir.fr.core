@@ -21,6 +21,8 @@ Le détail des 4 statuts de confiance RNIV (`PROV`, `RECUP`, `VALI`, `QUAL`) por
 
 **Le statut `RECUP` ne doit pas être véhiculé** dans les échanges. Il est porté en FHIR à l'attention de ceux qui souhaitent stocker ce statut en FHIR.
 
+L'extension étant obligatoire, un `Patient` dont l'identité n'a pas encore été vérifiée porte le statut `PROV` (Identité provisoire) : l'obligation n'impose pas de qualifier l'identité, seulement de renseigner son niveau de confiance, y compris le plus bas.
+
 Les statuts sont portés d'une manière différente d'IHE PAM, où la combinaison de `VALI` + matricule INS est considérée comme `QUAL`.
 
 ### À ne pas confondre : canal de capture, statut de confiance et pièce justificative
