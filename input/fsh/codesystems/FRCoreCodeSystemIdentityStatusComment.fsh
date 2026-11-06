@@ -1,7 +1,7 @@
 CodeSystem: FRCoreCodeSystemIdentityStatusComment
 Id: fr-core-cs-identity-status-comment
 Title: "FR Core CodeSystem Identity Status Comment"
-Description: "CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans l'élément identityReliabilityComment de l'extension FRCoreExtensionIdentityReliability."
+Description: "CodeSystem permettant de commenter / de rajouter des attributs sur la fiabilité d'une identité. Ces codes sont destinés à être utilisés dans la sous-extension `comment` de l'extension `fr-core-identity-reliability`."
 * insert SetCodesystem
 
 * ^identifier.system = "http://terminology.hl7.org/CodeSystem/v2-tables"

@@ -68,7 +68,7 @@ Le CodeSystem `fr-core-cs-v2-0445` (table HL7 v2 0445, mélangeant statuts et at
 
 **Impact pour les implémenteurs** : toute référence à `fr-core-cs-v2-0445` ou `fr-core-cs-fiabilite-identite` doit être mise à jour vers l'un de ces deux nouveaux CodeSystems selon le code utilisé.
 
-**Attention, le code `VALI` change de sens** : dans l'ancien CodeSystem `fr-core-cs-v2-0445`, `VALI` ("identité validée") désignait toute identité ayant fait l'objet d'un contrôle de cohérence, que l'INS ait ou non été récupéré via le téléservice INSi — c'est d'ailleurs ce statut unique que les invariants de `FRCorePatientINSProfile` imposant la présence d'un identifiant INS référençaient. Avec l'introduction du critère « récupération INSi » comme axe indépendant, ce statut se scinde en deux : `VALI` ne désigne plus que les identités contrôlées **sans** INS récupéré ; les identités contrôlées **avec** INS récupéré portent désormais le nouveau code `QUAL` (ce sont d'ailleurs les invariants ci-dessus qui référencent maintenant `QUAL`, et non plus `VALI`).
+**Attention, le code `VALI` change de sens** : dans l'ancien CodeSystem `fr-core-cs-v2-0445`, `VALI` ("identité validée") désignait toute identité ayant fait l'objet d'un contrôle de cohérence, que l'INS ait ou non été récupéré via le téléservice INSi — c'est d'ailleurs ce statut unique que les invariants de `FRCorePatientINSProfile` imposant la présence d'un identifiant INS référençaient. Avec l'introduction du critère « récupération INSi » comme axe indépendant, ce statut se scinde en deux : `VALI` ne désigne plus que les identités contrôlées **sans** INS récupéré ; les identités contrôlées **avec** INS récupéré portent désormais le nouveau code `QUAL` (ce sont d'ailleurs les invariants `fr-core-1`, `fr-core-2` et `fr-core-3` (voir plus bas) qui référencent maintenant `QUAL`, et non plus `VALI`).
 
 **Impact pour les implémenteurs** : il ne s'agit pas d'un simple renommage. Les ressources taguées `VALI` sous l'ancien CodeSystem doivent être réévaluées individuellement : si l'identité porte également un identifiant INS (NIR/NIA) obtenu via le téléservice INSi, elle doit être recodée en `QUAL` ; sinon elle conserve le code `VALI`.
 
@@ -110,13 +110,13 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 
 La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`).
 
-**[BREAKING CHANGE]** La sous-extension `dateCollection` est renommée `dateInterrogationINSi`, pour l'aligner sur le champ `ZFD-6` "Date d'interrogation du téléservice INSi" d'IHE PAM France (v2.11.1, §6.18.6) [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336).
+La sous-extension `dateCollection` est renommée `dateInterrogationINSi`, pour l'aligner sur le champ `ZFD-6` "Date d'interrogation du téléservice INSi" d'IHE PAM France (v2.11.1, §6.18.6) [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336).
 
 **Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l'URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
 
 ##### Correction des invariants `fr-core-1`, `fr-core-2`, `fr-core-3`
 
-Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`.
+Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent désormais `QUAL`. De plus, `fr-core-1` devient une équivalence : le statut est `QUAL` si et seulement si un identifiant INS (`INS-NIR`, `INS-NIA`, `INS-NIR-TEST` ou `INS-NIR-DEMO`) est présent. Un identifiant INS n'est donc plus accepté sans le statut `QUAL`.
 
 **Impact pour les implémenteurs** : une ressource `FRCorePatientINS` portant un matricule INS doit avoir le statut `QUAL` (et non `VALI`). Les instances existantes au statut `VALI` avec un matricule INS présent ne passeront plus la validation — le statut doit être mis à jour en `QUAL`.
 
@@ -124,9 +124,9 @@ Les invariants conditionnaient leur vérification au statut `VALI`. Ils ciblent 
 
 Ajout de 2 invariants sur `fr-core-identity-reliability`, pour rendre conforme le profil au volet statut de l'exigence [EXI SI 09] du RNIV (§3.2.3) : une identité portant l'attribut `comment` "Identité douteuse" (`DOUT`) ou "Identité fictive" (`FICT`) doit avoir un statut de confiance (`identityStatus`) égal à "Identité provisoire" (`PROV`). Un second invariant interdit le cumul des attributs "Identité fictive" et "Identité douteuse" sur une même identité [#335](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/335).
 
-##### `identityStatus` obligatoire dans `FRCorePatientINSProfile`
+##### `identityStatus` obligatoire dans l'extension `fr-core-identity-reliability`
 
-La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Patient INS pour satisfaire EXI SI 07.
+La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans l'extension `fr-core-identity-reliability`, et donc dans tous les profils Patient qui l'utilisent (`FRCorePatientProfile`, `FRCorePatientINSProfile`), pour satisfaire EXI SI 07.
 
 ##### `identityReliability` obligatoire dans `FRCorePatientProfile`
 

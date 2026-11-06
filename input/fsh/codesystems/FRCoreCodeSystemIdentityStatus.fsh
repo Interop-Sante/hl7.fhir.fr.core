@@ -1,6 +1,6 @@
 CodeSystem: FRCoreCodeSystemIdentityStatus
 Id: fr-core-cs-identity-status
-Title: "FR Core CodeSystem Fiabilité Identité"
+Title: "FR Core CodeSystem Identity Status"
 Description: "CodeSystem définissant les 4 statuts de confiance de l'identité imposés par le référentiel national d'identitovigilance (RNIV) [EXI SI 07] : « Tout système d'information en santé doit permettre d'attribuer un des 4 statuts de confiance à chaque identité numérique stockée. » Ces statuts sont exclusifs les uns des autres et résultent du croisement de deux critères indépendants : la récupération ou non des traits d'identité via le téléservice INSi, et la réalisation ou non d'un contrôle de cohérence avec un dispositif d'identification à haut niveau de confiance."
 * insert SetCodesystem
 

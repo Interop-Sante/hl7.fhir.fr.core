@@ -89,9 +89,9 @@ Profil FR Core Patient surspécifié pour être conforme aux exigences du réfé
 * name[officialName].extension[birth-list-given-name] 1..1 MS
 
 Invariant:   fr-core-1
-Description: "If identityReliability status = 'QUAL', then at least Patient.identifier[INS-NIR] or Patient.identifier[INS-NIA] or Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] SHALL be present"
+Description: "The identityReliability status is 'QUAL' if and only if at least one of Patient.identifier[INS-NIR], Patient.identifier[INS-NIA], Patient.identifier[INS-NIR-TEST] or Patient.identifier[INS-NIR-DEMO] is present (the INS identifier can only be conveyed for a qualified identity)"
 * severity = #error
-* expression = "(extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'QUAL')) implies (identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official' and type.coding.exists(code = 'INS-NIR')).exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists())"
+* expression = "(identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.8' and use = 'official' and type.coding.exists(code = 'INS-NIR')).exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.9' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.10' and use = 'official').exists() or identifier.where(system = 'urn:oid:1.2.250.1.213.1.4.11' and use = 'official').exists()) = (extension('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability').extension('identityStatus').value.exists(code = 'QUAL'))"
 
 Invariant:   fr-core-2
 Description: "If identityReliability status = 'QUAL', then only one identifier of type official SHALL be present"
