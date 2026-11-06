@@ -2,7 +2,7 @@
 [Modifications apportées dans la release 3.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1) :
 
 * **[BREAKING CHANGE]** Renommage de la sous-extension `dateCollection` en `dateInterrogationINSi` dans `fr-core-identity-reliability`, avec alignement sur IHE PAM France v2.11.1 et RNIV 1 - Principes communs v2.0 [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336)
-* **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability` [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
+* **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability`, et la sous-extension `identityStatus` devient obligatoire (`0..1` → `1..1`) dans cette extension [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
 * **[BREAKING CHANGE]** Mise à jour de la dépendance vers EU Core 2.0.0 (ajout de `hl7.fhir.eu.base: 2.0.0`) : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
     * FRCoreOrganization : `name` devient obligatoire
     * FRCorePatient et FRCorePatientINS : suppression de la slice `nationality` référençant l'extension FR Core `fr-core-patient-nationality` au profit de l'extension internationale héritée via EU Core. Les ressources utilisant l'URL `https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality` doivent être mises à jour.
@@ -136,7 +136,7 @@ La cardinalité de `identityStatus` passe de `0..1` à `1..1` dans le profil Pat
 
 **[BREAKING CHANGE]** La cardinalité de la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` dans le profil de base `FRCorePatientProfile`, ce qui la rend obligatoire pour tous les profils qui en héritent (y compris `FRCorePatientINSProfile`) [#298](https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/298). Une nouvelle sous-extension `lastUpdated` (`dateTime`, `1..1`) est ajoutée, permettant d'horodater et d'ordonner chronologiquement plusieurs instances successives de `identityReliability` sur une même ressource.
 
-**Impact pour les implémenteurs** : toute ressource `Patient` (ou `FRCorePatientINS`) sans instance de `identityReliability` doit être mise à jour pour en porter au moins une, avec a minima la nouvelle sous-extension obligatoire `lastUpdated` renseignée.
+**Impact pour les implémenteurs** : toute ressource `Patient` (ou `FRCorePatientINS`) sans instance de `identityReliability` doit être mise à jour pour en porter au moins une, avec a minima la nouvelle sous-extension obligatoire `lastUpdated` et la sous-extension `identityStatus` (désormais `1..1`) renseignées.
 
 ### [Release 2.2.0](https://hl7.fr/ig/fhir/core/2.2.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 2.2.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/10?closed=1) :

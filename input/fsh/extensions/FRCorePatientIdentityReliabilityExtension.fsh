@@ -15,7 +15,7 @@ Description: "Extension composite précisant le degré de confiance de l'identit
     lastUpdated 1..1 and
     methodCollection 0..1 and
     dateInterrogationINSi 0..1 and
-    identityStatus 0..1 and
+    identityStatus 1..1 and
     comment 0..* and
     validationDate 0..1 and
     validationMode 0..1
