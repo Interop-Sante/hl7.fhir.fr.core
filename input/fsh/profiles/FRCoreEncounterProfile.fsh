@@ -1,9 +1,3 @@
-// Pas de profil EU Core disponible pour cette ressource
-// Profil source (IG Document Core) :
-//   https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/profils/FREncounterDocument.fsh
-//
-// Profil EU Core (héritage direct) : non disponible
-// ─────────────────────────────────────────────────────────────────────────────
 Profile: FRCoreEncounterProfile
 Parent: Encounter
 Id: fr-core-encounter
@@ -44,7 +38,7 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * identifier.system ^example[+].label = "autre solution, utilisation d'une URL"
 * identifier.system ^example[=].valueUri = "http://encounter-identifier-system.org"
 * identifier.value 1..
-* identifier.assigner only Reference(FRCoreOrganizationProfile)
+* identifier.assigner only Reference(FRCoreOrganizationProfile or Organization)
 
 * status ^short = "Statut de la rencontre (finished | planned | proposed | ...)"
 
@@ -58,12 +52,12 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "EncounterType"
 
-* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile or Group)
+* subject only Reference(FRCorePatientINSProfile or FRCorePatientProfile or Patient or Group)
 
 * participant ^short = "List of participants involved in the encounter | Liste des personnes impliquées dans la rencontre"
-* participant.individual only Reference(RelatedPerson or FRCorePractitionerProfile or PractitionerRole)
+* participant.individual only Reference(FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or Practitioner or FRCorePractitionerRoleProfile or PractitionerRole)
 
-* appointment only Reference(FRCoreAppointmentProfile)
+* appointment only Reference(FRCoreAppointmentProfile or Appointment)
 
 * period ^short = "Date début et fin de la rencontre. Si la rencontre est réalisée ou planifiée : la date est obligatoire. Si la rencontre est prévue non confirmée : la date est facultative."
 
@@ -82,23 +76,23 @@ Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'
 * hospitalization.preAdmissionIdentifier.system = "1.2.250.1.71.4.2.2+.n°FINESS" (exactly)
 * hospitalization.preAdmissionIdentifier.system ^definition = "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.\r\nLe namespace est défini à partir de la racine d'identification (gérée par l'ANS) de l'organisation où a lieu la rencontre , concaténée avec par exemple le FINESS de l'établissent (ou FINEJ ou SIRET ou SIREN), cf annexe française des types de données HL7 en France"
 * hospitalization.preAdmissionIdentifier.value 1..
-* hospitalization.preAdmissionIdentifier.assigner only Reference(FRCoreOrganizationProfile)
+* hospitalization.preAdmissionIdentifier.assigner only Reference(FRCoreOrganizationProfile or Organization)
 
-* hospitalization.origin only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
+* hospitalization.origin only Reference(FRCoreLocationProfile or Location or FRCoreOrganizationProfile or Organization)
 
 * hospitalization.admitSource ^short = "Modalité d'entrée du patient lors de la rencontre"
 
 * hospitalization.reAdmission ^short = "the resaon of re-admission of this hospitalization encounter | Raison de la ré-admission du patient."
 
-* hospitalization.destination only Reference(FRCoreLocationProfile or FRCoreOrganizationProfile)
+* hospitalization.destination only Reference(FRCoreLocationProfile or Location or FRCoreOrganizationProfile or Organization)
 
 * hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre."
 
 * location ^short = "Lieu d'exécution"
-* location.location only Reference(FRCoreLocationProfile)
+* location.location only Reference(FRCoreLocationProfile or Location)
 
 * location.physicalType from FRCoreValueSetLocationType (example)
 
-* serviceProvider only Reference(FRCoreOrganizationProfile)
+* serviceProvider only Reference(FRCoreOrganizationProfile or Organization)
 
-* partOf only Reference(FRCoreEncounterProfile)
+* partOf only Reference(FRCoreEncounterProfile or Encounter)

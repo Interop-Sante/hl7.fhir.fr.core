@@ -1,4 +1,3 @@
-// Source : https://github.com/ansforge/interop-IG-document-core/blob/main/input/fsh/RessourcesFHIRCorps/valueSets/FRValueSetVaccineCodeCISDocument.fsh
 ValueSet: FRCoreValueSetVaccineCodeCIS
 Id: fr-core-vs-vaccine-code-cis
 Title: "FR Core ValueSet Vaccine code CIS"

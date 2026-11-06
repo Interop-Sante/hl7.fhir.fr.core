@@ -3,14 +3,12 @@ Alias: $rfc2445 = https://www.ietf.org/rfc/rfc2445
 Alias: $SCT = http://snomed.info/sct
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
-// Médicament - Extensions IHE MPD (Doc Core)
 Alias: $ihe-ext-medication-productname = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname
 Alias: $ihe-ext-medication-classification = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification
 Alias: $ihe-ext-medication-characteristic = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-characteristic
 Alias: $ihe-ext-offLabel = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel
 
-// Médicament - Backports R5 (Doc Core)
-Alias: $medicationAdministration-occurence-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence[x]
+Alias: $medicationAdministration-occurence-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.occurence
 Alias: $medicationRequest-dispenseRequest-dispenserInstruction-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction
 
 // Médicament - Backport R5 (ePrescription)

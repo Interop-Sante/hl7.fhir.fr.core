@@ -24,6 +24,7 @@ Description: """Profil de la ressource Organization pour la France. Il s'agit du
 * type  from FRCoreValueSetOrganizationType (example)
 * telecom only FRCoreContactPointProfile
 * address only FRCoreAddressProfile
+// Organization (ressource standard) non ajouté : le profil parent EU Core restreint les cibles et FHIR interdit de les élargir
 * partOf only Reference(FRCoreOrganizationProfile or FRCoreOrganizationEtablissementProfile)
 * partOf.type from FRCoreValueSetOrganizationType (extensible)
 * contact.telecom only FRCoreContactPointProfile

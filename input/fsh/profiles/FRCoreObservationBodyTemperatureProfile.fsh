@@ -21,9 +21,9 @@ Profil français de la mesure de la température. Profil basé sur le profil Vit
 
 * code.coding 1..
 
-* subject only Reference(FRCorePatientProfile)
-* encounter only Reference(FRCoreEncounterProfile)
-* performer only Reference(CareTeam or RelatedPerson or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreOrganizationProfile or PractitionerRole)
+* subject only Reference(FRCorePatientProfile or Patient)
+* encounter only Reference(FRCoreEncounterProfile or Encounter)
+* performer only Reference(CareTeam or FRCoreRelatedPersonProfile or RelatedPerson or FRCorePractitionerProfile or Practitioner or FRCorePatientProfile or Patient or FRCoreOrganizationProfile or Organization or FRCorePractitionerRoleProfile or PractitionerRole)
 * bodySite from FRCoreValueSetBodyTemperatureMeasurementBodyLocation (example)
 
 * value[x] ^slicing.rules = #open

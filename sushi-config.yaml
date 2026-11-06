@@ -13,10 +13,10 @@ contact:
         value: fhir@interopsante.org
         use: work
 status: active
-version: 2.2.0
+version: 3.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2023+
-releaseLabel: ci-build
+releaseLabel: ballot
 jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
@@ -42,6 +42,9 @@ parameters:
     - input/intro-notes
   apply-contact: true
   apply-jurisdiction: true
+  special-url:
+    - http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code
+    - http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome
   logging:
     - tx #tx: Messages describing the use of the terminology server (for debugging)
     - html #html: Log when validating an html page (troubleshooting only - leave off)
@@ -52,23 +55,9 @@ parameters:
 pages:
     index.md:
       title: Accueil
-    profile_list.md:
-      title: Liste des profils
-    bonnes_pratiques.md:
-      title: Bonnes pratiques d'usage du guide d'implémentation
-    known_problems.md:
-      title: Problématiques connues
-    autres_ressources.md:
-      title: Autres Ressources
-    downloads.md:
-      title: Téléchargements et usages
-    a_propos.md:
-      title: A propos
-    change_notes.md:
-      title: Historique des changements
-    structure_intro.md: 
+    structure_intro.md:
         title: Introduction
-    structure_entites.md: 
+    structure_entites.md:
         title: Entités
     structure_relations.md:
         title: "Relations entre entités"
@@ -78,6 +67,16 @@ pages:
         title: Nomenclatures
     structure_ref_loi.md:
         title: Références
+    bonnes_pratiques.md:
+      title: Bonnes pratiques d'usage du guide d'implémentation
+    change_notes.md:
+      title: Historique des changements
+    downloads.md:
+      title: Téléchargements et usages
+    a_propos.md:
+      title: A propos
+    autres_ressources.md:
+      title: Autres Ressources
     translationinfo.md:
         title: Informations sur la traduction
 
@@ -90,11 +89,9 @@ menu:
         Contraintes: structure_contraintes.html
         Nomenclatures: structure_nomenclatures.html
         Références: structure_ref_loi.html
-    Liste des profils: profile_list.html
     Ressources de conformité: artifacts.html
     
     Bonnes pratiques: bonnes_pratiques.html
-    Problématiques connues: known_problems.html
     Historique: change_notes.html
     Autres ressources:
         Téléchargements et usage: downloads.html
@@ -108,3 +105,276 @@ menu:
 instanceOptions:
   setMetaProfile: always # Determines for which types of Instances SUSHI will automatically set meta.profile if InstanceOf references a profile
   setId: always # Determines for which types of Instances SUSHI will automatically set id if InstanceOf references a profile
+
+groups:
+  structures-etablissements:
+    name: "Profils : structures des établissements"
+    description: "Profils relatifs aux structures, sites et unités organisationnelles des établissements de santé."
+    resources:
+      - FRCoreLocationProfile
+      - FRCoreOrganizationProfile
+      - FRCoreOrganizationEtablissementProfile
+      - FRCoreOrganizationUACProfile
+      - FRCoreOrganizationUFProfile
+  profils-administratifs:
+    name: "Profils : administratifs"
+    description: "Profils relatifs aux acteurs, patients, structures de prise en charge et consentements."
+    resources:
+      - FRCorePatientProfile
+      - FRCorePatientINSProfile
+      - FRCorePractitionerProfile
+      - FRCorePractitionerRoleProfile
+      - FRCoreRelatedPersonProfile
+      - FRCoreEncounterProfile
+      - FRCoreHealthcareServiceProfile
+      - FRCoreConsentProfile
+  mesures-sante:
+    name: "Profils : mesures de santé"
+    description: "Profils de mesures physiologiques et signes vitaux."
+    resources:
+      - FRCoreObservationBpProfile
+      - FRCoreObservationBmiProfile
+      - FRCoreObservationBodyHeightProfile
+      - FRCoreObservationBodyTemperatureProfile
+      - FRCoreObservationBodyWeightProfile
+      - FRCoreObservationHeadCircumProfile
+      - FRCoreObservationHeartRateProfile
+      - FRCoreObservationOxygenSaturationProfile
+      - FRCoreObservationRespRateProfile
+  profils-agenda:
+    name: "Profils : agenda"
+    description: "Profils relatifs à la prise de rendez-vous."
+    resources:
+      - FRCoreScheduleProfile
+      - FRCoreSlotProfile
+      - FRCoreAppointmentProfile
+  profils-medicaments:
+    name: "Profils : médicaments"
+    description: "Profils relatifs au médicament et à son circuit (prescription, dispensation, administration, déclaration)."
+    resources:
+      - FRCoreMedicationProfile
+      - FRCoreMedicationRequestProfile
+      - FRCoreMedicationAdministrationProfile
+      - FRCoreMedicationAdministrationInhaledOxygenProfile
+      - FRCoreMedicationDispenseProfile
+      - FRCoreMedicationStatementProfile
+  profils-donnees-cliniques:
+    name: "Profils : données cliniques"
+    description: "Profils relatifs aux données cliniques (problèmes, allergies, vaccinations, événements indésirables, actes, demandes d'examen)."
+    resources:
+      - FRCoreConditionProfile
+      - FRCoreAllergyIntoleranceProfile
+      - FRCoreImmunizationProfile
+      - FRCoreAdverseEventProfile
+      - FRCoreProcedureProfile
+      - FRCoreBodyStructureProfile
+      - FRCoreServiceRequestProfile
+  profils-types-donnees:
+    name: "Profils : types de données"
+    description: "Profils de types de données (adresse, nom, point de contact)."
+    resources:
+      - FRCoreAddressProfile
+      - FRCoreContactPointProfile
+      - FRCoreHumanNameProfile
+  extensions:
+    name: "Extensions"
+    description: "Extensions définies par FRCore."
+    resources:
+      - FRCoreAdditionalWhenValuesExtension
+      - FRCoreAddressInseeCodeExtension
+      - FRCoreAdverseEventCodeExtension
+      - FRCoreAdverseEventOutcomeExtension
+      - FRCoreAppointmentOperatorExtension
+      - FRCoreAssemblyOrderExtension
+      - FRCoreCommentExtension
+      - FRCoreContactPointEmailTypeExtension
+      - FRCoreEncounterEstimatedDischargeDateExtension
+      - FRCoreLocationPositionLitExtension
+      - FRCoreLocationTypeChambreExtension
+      - FRCoreLunarDateExtension
+      - FRCoreMedicationAdministrationSequenceExtension
+      - FRCoreMethodExtension
+      - FRCoreNotCoveredExtension
+      - FRCoreObservationBodyPositionExtExtension
+      - FRCoreObservationHeightBodyPositionExtension
+      - FRCoreObservationLevelOfExertionExtension
+      - FRCoreOrganizationChampActiviteExtension
+      - FRCoreOrganizationDemandeuseActeExtension
+      - FRCoreOrganizationDisciplineEquipementExtension
+      - FRCoreOrganizationDisciplinePrestationExtension
+      - FRCoreOrganizationExecutanteActeExtension
+      - FRCoreOrganizationMemberExtension
+      - FRCoreOrganizationPlaceHebergementTheoriqueExtension
+      - FRCoreOrganizationRaisonSocialeExtension
+      - FRCoreOrganizationSAECategorieExtension
+      - FRCoreOrganizationShortNameExtension
+      - FRCoreOrganizationTarifExtension
+      - FRCoreOrganizationTypeActiviteExtension
+      - FRCoreOrganizationUFExterneExtension
+      - FRCoreOrganizationUFIndicateurExtension
+      - FRCorePatientBirthDateUpdateIndicatorExtension
+      - FRCorePatientBirthListGivenName
+      - FRCorePatientContactIdentifierExtension
+      - FRCorePatientContactRelationshipCategoryExtension
+      - FRCorePatientDeathPlaceExtension
+      - FRCorePatientIdentityReliabilityExtension
+      - FRCorePractitionerSpecialtyExtension
+      - FRCoreProcedureDifficultyExtension
+      - FRCoreProcedurePriorityExtension
+      - FRCoreScheduleAvailabilityTimeExtension
+      - FRCoreServiceTypeDurationExtension
+      - FRCoreTreatmentIntentExtension
+  valuesets:
+    name: "Terminologies : jeux de valeurs (ValueSet)"
+    description: "Jeux de valeurs (ValueSet) définis par FRCore."
+    resources:
+      - FRCoreValueSetAdditionalWhenCodes
+      - FRCoreValueSetAllergyCode
+      - FRCoreValueSetAllergyIntoleranceManifestationAllergie
+      - FRCoreValueSetAllergyIntoleranceManifestationHypersensibilite
+      - FRCoreValueSetAllergyIntoleranceManifestationIdiosyncrasie
+      - FRCoreValueSetAllergyIntoleranceManifestationIntolerance
+      - FRCoreValueSetAllergyIntoleranceType
+      - FRCoreValueSetAvailabilityTimeRule
+      - FRCoreValueSetBPMeasurementMethod
+      - FRCoreValueSetBloodPressureMeasurementBodyLocation
+      - FRCoreValueSetBloodPressureMeasurementMethod
+      - FRCoreValueSetBodyPosition
+      - FRCoreValueSetBodyStructureLocation
+      - FRCoreValueSetBodyTemperatureMeasurementBodyLocation
+      - FRCoreValueSetCOGCommunePays
+      - FRCoreValueSetCategorieSAEEtablissement
+      - FRCoreValueSetConditionCodeDefaut
+      - FRCoreValueSetConditionCodeMaladieRare
+      - FRCoreValueSetConditionCodeMedecineVille
+      - FRCoreValueSetContactRelationship
+      - FRCoreValueSetDisciplinePrestation
+      - FRCoreValueSetEDQMForm
+      - FRCoreValueSetEDQMRoute
+      - FRCoreValueSetEmailType
+      - FRCoreValueSetEncounterClass
+      - FRCoreValueSetEncounterDischargeDisposition
+      - FRCoreValueSetEncounterIdentifierType
+      - FRCoreValueSetEncounterType
+      - FRCoreValueSetHeartRateMeasurementBodyLocation
+      - FRCoreValueSetHeartRateMeasurementMethod
+      - FRCoreValueSetHeightBodyPosition
+      - FRCoreValueSetHeightMeasurementMethod
+      - FRCoreValueSetINSEECode
+      - FRCoreValueSetIdentityMethodCollection
+      - FRCoreValueSetIdentityReliabilityStatus
+      - FRCoreValueSetLocationPositionLit
+      - FRCoreValueSetLocationType
+      - FRCoreValueSetLocationTypeChambre
+      - FRCoreValueSetMaritalStatus
+      - FRCoreValueSetMedication
+      - FRCoreValueSetModeValidationIdentity
+      - FRCoreValueSetModeValidationIdentityINS
+      - FRCoreValueSetOrganizationChampActivite
+      - FRCoreValueSetOrganizationCodeTarifTNJP
+      - FRCoreValueSetOrganizationDisciplineEquipement
+      - FRCoreValueSetOrganizationEtablissementType
+      - FRCoreValueSetOrganizationIdentifierType
+      - FRCoreValueSetOrganizationType
+      - FRCoreValueSetOrganizationTypeActivite
+      - FRCoreValueSetOrganizationUFIndicateur
+      - FRCoreValueSetPatientContactRelationshipCategory
+      - FRCoreValueSetPatientContactRole
+      - FRCoreValueSetPatientGender
+      - FRCoreValueSetPatientIdentifierType
+      - FRCoreValueSetPatientIdentifierUseINS
+      - FRCoreValueSetPatientIdentifierUsePI
+      - FRCoreValueSetPatientRelationType
+      - FRCoreValueSetPractitionerIdentifierType
+      - FRCoreValueSetPractitionerRoleExercice
+      - FRCoreValueSetPractitionerSpecialty
+      - FRCoreValueSetProcedureCode
+      - FRCoreValueSetProcedureCodeAutre
+      - FRCoreValueSetRespiratoryRateMeasurementMethod
+      - FRCoreValueSetSPO2BodyLocation
+      - FRCoreValueSetScheduleType
+      - FRCoreValueSetTitle
+      - FRCoreValueSetTreatmentIntent
+      - FRCoreValueSetUnavailabilityReason
+      - FRCoreValueSetVaccineCodeCIS
+  codesystems:
+    name: "Terminologies : systèmes de codes (CodeSystem)"
+    description: "Systèmes de codes (CodeSystem) définis par FRCore."
+    resources:
+      - FRCoreCodeSystemAdditionalWhenCodes
+      - FRCoreCodeSystemChampActivite
+      - FRCoreCodeSystemCirconstancesSortie
+      - FRCoreCodeSystemCodeTarifTNJP
+      - FRCoreCodeSystemContactRelationship
+      - FRCoreCodeSystemDisciplineEquipement
+      - FRCoreCodeSystemDisciplinePrestation
+      - FRCoreCodeSystemIdentifierType
+      - FRCoreCodeSystemLocationIdentifierType
+      - FRCoreCodeSystemLocationPhysicalType
+      - FRCoreCodeSystemLocationType
+      - FRCoreCodeSystemMaritalStatus
+      - FRCoreCodeSystemMethodCollection
+      - FRCoreCodeSystemModeValidationIdentite
+      - FRCoreCodeSystemPatientContactRelationshipCategory
+      - FRCoreCodeSystemPositionLit
+      - FRCoreCodeSystemReliabilityIdentity
+      - FRCoreCodeSystemScheduleType
+      - FRCoreCodeSystemTypeActivite
+      - FRCoreCodeSystemTypeAdmission
+      - FRCoreCodeSystemTypeChambre
+      - FRCoreCodeSystemTypesOrganisations
+      - FRCoreCodeSystemUFIndicateur
+      - FRCoreCodeSystemv2_0203
+      - FRCoreCodeSystemv2_0445
+      - FRCoreCodeSystemv2_3307
+      - FRCoreCodeSystemv2_3311
+  exemples:
+    name: "Exemples"
+    description: "Instances d'exemple illustrant les profils FRCore."
+    resources:
+      - FRCoreAllergyIntoleranceExample
+      - FRCoreAllergyIntoleranceExampleHypersensibilite
+      - FRCoreAllergyIntoleranceExampleIdiosyncrasie
+      - FRCoreAllergyIntoleranceExampleIntolerance
+      - FRCoreAppointmentExample
+      - FRCoreConditionExample
+      - FRCoreConsentExample
+      - FRCoreEncounterExample
+      - FRCoreHealthcareServiceExample
+      - FRCoreImmunizationExample
+      - FRCoreLocationExample
+      - FRCoreMedicationAdministrationInhaledOxygenExample
+      - FRCoreObservationBMIExample
+      - FRCoreObservationBPExample
+      - FRCoreObservationBodyHeightExample
+      - FRCoreObservationBodyTemperatureExample
+      - FRCoreObservationBodyWeightExample
+      - FRCoreObservationHeadCircumExample
+      - FRCoreObservationHeartRateExample
+      - FRCoreObservationOxygenSaturationExample
+      - FRCoreObservationRespRateExample
+      - FRCoreOrganizationExample
+      - FRCorePatientDeceasedExample
+      - FRCorePatientINSExample
+      - FRCorePractitionerExample
+      - FRCorePractitionerRoleExample
+      - FRCoreProcedureExample
+      - FRCoreRelatedPersonExample
+      - FRCoreScheduleExample
+      - FRCoreServiceRequestExample
+      - FRCoreSlotExample
+      - hopitaltest-dept-11003-endocrino
+      - hopitaltest-eg-4-members
+      - hopitaltest-ej-350005179
+      - hopitaltest-endocrino-ch04
+      - hopitaltest-endocrino-ch04-litF
+      - hopitaltest-infectio-ch02-prsn-ngtv
+      - hopitaltest-pole-1150-med-spe
+      - hopitaltest-salle-examen-01
+      - hopitaltest-service-11006-endocrino-diabo
+      - hopitaltest-service-11007-dietetique
+      - hopitaltest-uac-4420-uac-01
+      - hopitaltest-uac-4420-uac-02
+      - hopitaltest-uf-4420-dialyse
+      - hopitaltest-uf-4701-endocrino-diab
+      - hopitaltest-uf-4705-nutrition

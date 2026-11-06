@@ -34,16 +34,46 @@ Pour rappel, l'adhésion à InteropSanté permet de bénéficier de tarifs avant
 
 L'ensemble des contributeurs au code source peuvent être consultés sur [GitHub](https://github.com/Interop-Sante/hl7.fhir.fr.core/graphs/contributors)
 
+#### Version 3.0.0
+
+Chair : Nicolas Riss, Yohann Poiron
+
+* Manuel Metz (Lifen)
+* Laurent Dubor (Numih France)
+* Georges-Alexandre CHASTIN (ENOVACOM)
+* Frédéric Déchanet (Maincare)
+* Diane BILLARD (SIHLEX)
+* Sylvain GARNIER ANS (projet ROR))
+* Pascale Ranger (CHU de Toulouse)
+* Nicolas GRIFFON (AP-HP)
+* Lucas  Miralles (CHU de Toulouse)
+* Jean-François LAHAYE (CHU de LILLE)
+* Eric Marchand (Maincare)
+* Dinan BRISSON (Kereval)
+* David Ouagne (AP-HP)
+* Clotaire DELANCHY (GCS e-Santé Bretagne)
+* Xavier Coubez (Institut Strauss)
+* William AZIS (ANS)
+* Tristan RIEU (AP-HP)
+* Sylvain Demey (ANS)
+* Stéphane UMHANG (Dedalus)
+* Sam FOROUTAN (Numih France)
+* Paul Ortega (CHU de Toulouse)
+* Matisse Bornard (CHU de Toulouse)
+* Lucas  Mazel (Numih France)
+* Ingrid Sida-Cally (DEDALUS)
+* Guillaume Arras (PHAST)
+* Frédéric LAURENT (CHU Rennes)
+* Alexandre Grosbois (Health-Comm)
+
 #### Version 2.2.0
 
-Chair : Nicolas Riss
+Chair : Nicolas Riss, Yohann Poiron
 
 * Delphine Bayle (TECHNIDATA)
 * Matisse Bornard (CHU de Toulouse)
-* Georges-Alexandre (CHASTIN ENOVACOM)
+* Georges-Alexandre CHASTIN (ENOVACOM)
 * Lucas  Miralles (CHU de Toulouse)
-* Yohann Poiron (ANS)
-* Nicolas Riss (ANS / Chair HL7 France)
 * Guillaume Arras (PHAST)
 * Frédéric Déchanet (Maincare)
 * Sylvain Demey (ANS)

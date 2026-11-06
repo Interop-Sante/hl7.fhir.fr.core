@@ -22,6 +22,6 @@ Profil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur
 * specialty ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * specialty ^binding.extension.valueString = "specialty"
 
-* slot only Reference(FRCoreSlotProfile)
+* slot only Reference(FRCoreSlotProfile or Slot)
 
-* participant.actor only Reference(Device or PractitionerRole or FRCoreRelatedPersonProfile or FRCoreHealthcareServiceProfile or FRCorePractitionerProfile or FRCorePatientProfile or FRCoreLocationProfile)
+* participant.actor only Reference(Device or FRCorePractitionerRoleProfile or PractitionerRole or FRCoreRelatedPersonProfile or RelatedPerson or FRCoreHealthcareServiceProfile or HealthcareService or FRCorePractitionerProfile or Practitioner or FRCorePatientProfile or Patient or FRCoreLocationProfile or Location)

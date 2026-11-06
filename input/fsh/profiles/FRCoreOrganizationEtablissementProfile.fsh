@@ -5,6 +5,9 @@ Title: "FR Core Organization Etablissement Profile"
 Description: """Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux."""
 
 
+* meta.profile contains fr-etablissement-canonical 0..1
+* meta.profile[fr-etablissement-canonical] = Canonical(fr-core-organization-etablissement)
+
 * extension contains
     FRCoreOrganizationSAECategorieExtension named sae 0..1 and
     FRCoreOrganizationRaisonSocialeExtension named raisonSociale 0..1
