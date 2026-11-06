@@ -110,10 +110,6 @@ Dans les versions précédentes, les annotations complémentaires pouvaient êtr
 
 La sous-extension `methodCollection` documente le canal par lequel les traits d'identité ou le matricule INS ont été obtenus (saisie manuelle, carte Vitale, téléservice INSi, code à barre/Datamatrix, puce RFID, Application carte Vitale) — une information de traçabilité (RNIV §4.3), distincte du statut de confiance résultant (`identityStatus`) et de la pièce justificative contrôlée (`validationMode`).
 
-**[BREAKING CHANGE]** Le CodeSystem est également renommé de `fr-core-cs-method-collection` (`FRCoreCodeSystemMethodCollection`) vers `fr-core-cs-identity-method-collection` (`FRCoreCodeSystemIdentityMethodCollection`), par cohérence avec le nommage des autres CodeSystems `identity-*` introduits dans cette release.
-
-**Impact pour les implémenteurs** : toute référence à l'URL `https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection` doit être mise à jour vers `https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-method-collection`.
-
 **[BREAKING CHANGE]** La sous-extension `dateCollection` est renommée `dateInterrogationINSi`, pour l'aligner sur le champ `ZFD-6` "Date d'interrogation du téléservice INSi" d'IHE PAM France (v2.11.1, §6.18.6) [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336).
 
 **Impact pour les implémenteurs** : les ressources utilisant la sous-extension à l'URL `dateCollection` doivent être mises à jour vers `dateInterrogationINSi`.
