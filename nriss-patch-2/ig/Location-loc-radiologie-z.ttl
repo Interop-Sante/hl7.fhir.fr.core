@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/loc-radiologie-z> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "loc-radiologie-z"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Localisation loc-radiologie-z</b></p><a name=\"loc-radiologie-z\"> </a><a name=\"hcloc-radiologie-z\"> </a><p><b>identifier</b>: <code>urn:oid:1.2.250.1.1.1.2</code>/HOSPZ-RADIO (utilisation : official, )</p><p><b>status</b>: Active</p><p><b>name</b>: Centre de radiologie Hôpital Z</p><p><b>description</b>: Imagerie médicale, radiographies, scanners, IRM</p><p><b>mode</b>: Instance</p><p><b>telecom</b>: <a href=\"mailto:radiologie@hosp-z.fr\">radiologie@hosp-z.fr</a></p><p><b>address</b>: 10 rue de la Santé Paris 75014 FRA </p><p><b>physicalType</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type BTMNT}\">Bâtiment</span></p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td><td><b>Altitude</b></td></tr><tr><td style=\"display: none\">*</td><td>2.3333</td><td>48.8333</td><td>35</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-FRCoreOrganizationExample.html\">Organization HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.250.1.1.1.2"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.250.1.1.1.2>
+     ] ;
+     fhir:value [ fhir:v "HOSPZ-RADIO" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Centre de radiologie Hôpital Z"] ; # 
+  fhir:description [ fhir:v "Imagerie médicale, radiographies, scanners, IRM"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "radiologie@hosp-z.fr" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "10 rue de la Santé" ] ) ;
+     fhir:city [ fhir:v "Paris" ] ;
+     fhir:district [ fhir:v "14e arrondissement" ] ;
+     fhir:postalCode [ fhir:v "75014" ] ;
+     fhir:country [ fhir:v "FRA" ]
+  ] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type>
+       ] ;
+       fhir:code [ fhir:v "BTMNT" ] ;
+       fhir:display [ fhir:v "Bâtiment" ]
+     ] )
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v 2.3333 ] ;
+     fhir:latitude [ fhir:v 48.8333 ] ;
+     fhir:altitude [ fhir:v "35"^^xsd:decimal ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:l <https://hl7.fr/ig/fhir/core/Organization/FRCoreOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/FRCoreOrganizationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

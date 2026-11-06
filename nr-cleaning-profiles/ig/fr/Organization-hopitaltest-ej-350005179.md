@@ -1,0 +1,73 @@
+# hopitaltest-ej-350005179 - Guide d'implémentation FR Core v2.2.0
+
+## Exemple Organization: hopitaltest-ej-350005179
+
+-------
+
+**French**
+
+-------
+
+Profil: [FR Core Organization Etablissement Profile](StructureDefinition-fr-core-organization-etablissement.md)
+
+CHRU RENNES (Etablissement Juridique) (FINESS d'entité juridique: 350005179 (use: official))
+
+-------
+
+| | |
+| :--- | :--- |
+| Type: | Etablissement Juridique |
+| Autre identifiant : | Identification de l'organisation au SIREN/263500076 (utilisation : official) |
+| [FR Core Organization Raison Sociale Extension](StructureDefinition-fr-core-organization-raison-sociale.md) | CHRU RENNES |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Organization",
+  "id" : "hopitaltest-ej-350005179",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement"]
+  },
+  "extension" : [{
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
+    "valueString" : "CHRU RENNES"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "FINEJ",
+        "display" : "FINESS d'entité juridique"
+      }]
+    },
+    "system" : "https://finess.esante.gouv.fr",
+    "value" : "350005179"
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "SIREN",
+        "display" : "Identification de l'organisation au SIREN"
+      }]
+    },
+    "system" : "https://sirene.fr",
+    "value" : "263500076"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "LEGAL-ENTITY",
+      "display" : "Entité légale"
+    }],
+    "text" : "Etablissement Juridique"
+  }],
+  "name" : "CHRU RENNES"
+}
+
+```
