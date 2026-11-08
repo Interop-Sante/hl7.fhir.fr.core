@@ -18,6 +18,9 @@ Alias: $medicationrequest-rendereddosageinstruction-r5 = http://hl7.org/fhir/5.0
 Alias: $fr-treatment-intent = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent
 Alias: $fr-additional-when-values = https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values
 
+// HealthcareService
+Alias: $R5HealthcareServiceOfferedIn = http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.offeredIn
+
 // CISIS JDVs (immunization)
 Alias: $jdv-immunization-route-code-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-immunization-route-code-cisis
 
