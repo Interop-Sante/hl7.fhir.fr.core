@@ -19,3 +19,7 @@ Description: "Location type"
 * #PNT_LVRSN "Point de livraison" "Point de livraison"
 * #SL_EXM "Salle d'examen" "Salle d'examen"
 * #SL_CONS "Salle de consultation" "Salle de consultation"
+* #BE "Bureau des entrées" "Bureau des entrées"
+* #HALL "Hall d'accueil" "Hall d'accueil"
+
+
