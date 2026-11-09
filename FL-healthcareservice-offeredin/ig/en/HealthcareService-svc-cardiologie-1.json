@@ -1,0 +1,87 @@
+{
+  "resourceType" : "HealthcareService",
+  "id" : "svc-cardiologie-1",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService svc-cardiologie-1</b></p><a name=\"en-svc-cardiologie-1\"> </a><a name=\"en-hcsvc-cardiologie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-healthcare-service.html\">FR Core Healthcare Service Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Service de cardiologie by HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G (Entité légale, Secteur non défini) (Identification nationale de structure définie par l’ANS dans le CI_SIS: 2264403106\u00a0(use:\u00a0official)) (urn:oid:1.2.250.1.1.1.1#HOSP-X-CARDIO\u00a0(use:\u00a0official))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Whether an appointment is required to access this service\">Appointment Required:</td><td>true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization that provides this service\">Provided By:</td><td colspan=\"3\"><a href=\"Organization-FRCoreOrganizationExample.html\">HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G (Entité légale, Secteur non défini) (Identification nationale de structure définie par l’ANS dans le CI_SIS: 2264403106\u00a0(use:\u00a0official))</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Broad category of service being performed or delivered\">Category:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/service-category 2}\">Aged Care</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The specialties of the services that are provided\">Specialty:</td><td colspan=\"3\"><span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM04}\">Cardio et Maladies vasculaires</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Additional description and/or any specific issues not covered elsewhere\">Comment:</td><td colspan=\"3\">Ce service prend en charge les pathologies cardiaques.</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to make contact\">Contact Detail</td><td colspan=\"3\"><a href=\"mailto:cardio@hosp-x.fr\">cardio@hosp-x.fr</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"When the service is (and is not) available\">Availability:</td><td colspan=\"3\"><ul><li>Monday, Tuesday, Wednesday, Thursday, Friday: 08:00:00 - 17:30:00</li><li>Saturday: 09:00:00 - 12:00:00</li><li>Not available: Fermeture annuelle (2025-08-01 --&gt; 2025-08-31)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Cette extension française permet d'associer le type de service avec la durée de ce service.\n\rThis French extension allows to associate the type of service with the duration of this service\">FR Core Service Type Duration Extension:</td><td colspan=\"3\"><ul><li>serviceType: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale SM04}\">Cardio et Maladies vasculaires</span></li><li>duration: 30 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "serviceType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+          "code" : "SM04",
+          "display" : "Cardio et Maladies vasculaires"
+        }]
+      }
+    },
+    {
+      "url" : "duration",
+      "valueDuration" : {
+        "value" : 30,
+        "unit" : "min",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "min"
+      }
+    }],
+    "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.250.1.1.1.1",
+    "value" : "HOSP-X-CARDIO"
+  }],
+  "active" : true,
+  "providedBy" : {
+    "reference" : "Organization/FRCoreOrganizationExample"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/service-category",
+      "code" : "2",
+      "display" : "Aged Care"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+      "code" : "SM04",
+      "display" : "Cardio et Maladies vasculaires"
+    }]
+  }],
+  "name" : "Service de cardiologie",
+  "comment" : "Ce service prend en charge les pathologies cardiaques.",
+  "telecom" : [{
+    "system" : "email",
+    "value" : "cardio@hosp-x.fr"
+  }],
+  "appointmentRequired" : true,
+  "availableTime" : [{
+    "daysOfWeek" : ["mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri"],
+    "allDay" : false,
+    "availableStartTime" : "08:00:00",
+    "availableEndTime" : "17:30:00"
+  },
+  {
+    "daysOfWeek" : ["sat"],
+    "allDay" : false,
+    "availableStartTime" : "09:00:00",
+    "availableEndTime" : "12:00:00"
+  }],
+  "notAvailable" : [{
+    "description" : "Fermeture annuelle",
+    "during" : {
+      "start" : "2025-08-01",
+      "end" : "2025-08-31"
+    }
+  }]
+}

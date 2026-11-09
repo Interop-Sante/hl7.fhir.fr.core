@@ -1,0 +1,61 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "FRCoreRelatedPersonExample",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : PersonneEnRelation FRCoreRelatedPersonExample</b></p><a name=\"FRCoreRelatedPersonExample\"> </a><a name=\"hcFRCoreRelatedPersonExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-related-person.html\">FR Core Related Person Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Marie Durand (official) - Personne à prévenir en cas d'urgence, Mère (urn:oid:1.2.250.1.213.1.4.8#P98765)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient this person is related to\">Patient:</td><td colspan=\"3\"><a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif: 123456789012244\u00a0(use:\u00a0official))</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nature of the relationship between the patient and the related person\">Relationship:</td><td colspan=\"3\"><ul><li><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Personne à prévenir en cas d'urgence</span></li><li><span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode MTH}\">Mère</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Related Person\">Coordonnées</td><td colspan=\"3\"><ul><li>ph: 06 12 34 56 78(Mobile)</li><li>12 rue des Lilas Paris 75020 (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes :{urn:iso:std:iso:3166 FR}\">France (la)</span></li></ul></td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson FRCoreRelatedPersonExample</b></p><a name=\"en-FRCoreRelatedPersonExample\"> </a><a name=\"en-hcFRCoreRelatedPersonExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fr-core-related-person.html\">FR Core Related Person Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Marie Durand (official) - Personne à prévenir en cas d'urgence, Mère (urn:oid:1.2.250.1.213.1.4.8#P98765)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient this person is related to\">Patient:</td><td colspan=\"3\"><a href=\"Patient-FRCorePatientINSExample.html\">Pierre Durand (official) Male, DoB: 1974-12-25 ( NIR définitif: 123456789012244\u00a0(use:\u00a0official))</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nature of the relationship between the patient and the related person\">Relationship:</td><td colspan=\"3\"><ul><li><span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Personne à prévenir en cas d'urgence</span></li><li><span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode MTH}\">Mère</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Related Person\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 06 12 34 56 78(Mobile)</li><li>12 rue des Lilas Paris 75020 (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:{urn:iso:std:iso:3166 FR}\">France (la)</span></li></ul></td></tr></table></div></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+  }],
+  "identifier" : [{
+    "system" : "urn:oid:1.2.250.1.213.1.4.8",
+    "value" : "P98765"
+  }],
+  "patient" : {
+    "reference" : "Patient/FRCorePatientINSExample"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+      "code" : "ECON",
+      "display" : "Personne à prévenir en cas d'urgence"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+      "code" : "MTH",
+      "display" : "Mère"
+    }]
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Durand",
+    "given" : ["Marie"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "06 12 34 56 78",
+    "use" : "mobile"
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["12 rue des Lilas"],
+    "city" : "Paris",
+    "postalCode" : "75020"
+  }]
+}
