@@ -15,8 +15,10 @@ Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajout
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension contains FRCoreServiceTypeDurationExtension named serviceTypeDuration 0..*
 
+* extension contains
+    FRCoreServiceTypeDurationExtension named serviceTypeDuration 0..*
+    and $R5HealthcareServiceOfferedIn named offeredIn 0..*
 
 * identifier.use from IdentifierUse (required)
 
