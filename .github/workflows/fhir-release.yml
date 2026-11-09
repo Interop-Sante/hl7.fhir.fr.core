@@ -1,0 +1,27 @@
+name: Release IG to IG-website-release
+on:
+  workflow_dispatch:
+jobs:
+  run-release:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ansforge/fhir-ig-builder:latest
+    concurrency:
+      group: gh-pages-${{ github.repository }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: igSource
+      - uses: ansforge/IG-workflows@main
+        with:
+          repo_ig: "./igSource"
+          github_page: "true"
+          github_page_token: ${{ secrets.GITHUB_TOKEN }}
+          bake: "false"
+          validator_cli: "false"
+          generate_testscript: "false"
+          generate_plantuml: "false"
+          publish_repo: "Interop-Sante/IG-website-release"
+          publish_repo_token: ${{ secrets.IG_WEBSITE_RELEASE_TOKEN }}
+          publish_path_outpout: "./IG-website-release/www/ig/fhir"
