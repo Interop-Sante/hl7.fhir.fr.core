@@ -65,6 +65,8 @@ Chair : Nicolas Riss, Yohann Poiron
 * Guillaume Arras (PHAST)
 * Frédéric LAURENT (CHU Rennes)
 * Alexandre Grosbois (Health-Comm)
+* Haoura TROUDI (Aptineo)
+* Souad BEN MUSTAPHA (Aptineo)
 
 #### Version 2.2.0
 
