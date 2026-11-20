@@ -1,0 +1,48 @@
+# hopitaltest-service-11006-endocrino-diabo - Guide d'implémentation FR Core v2.2.0
+
+## Exemple Organization: hopitaltest-service-11006-endocrino-diabo
+
+-------
+
+**French**
+
+-------
+
+Profil: [FR Core Organization Profile](StructureDefinition-fr-core-organization.md)
+
+Service Endocrino Diabeto (SERVICE) (http://hopitalTest.fr/namingsystem/organization#11006 (use: official))
+
+-------
+
+| | |
+| :--- | :--- |
+| Type: | SERVICE |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Organization",
+  "id" : "hopitaltest-service-11006-endocrino-diabo",
+  "meta" : {
+    "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"]
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://hopitalTest.fr/namingsystem/organization",
+    "value" : "11006"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "SERVICE",
+      "display" : "Service"
+    }],
+    "text" : "SERVICE"
+  }],
+  "name" : "Service Endocrino Diabeto"
+}
+
+```
