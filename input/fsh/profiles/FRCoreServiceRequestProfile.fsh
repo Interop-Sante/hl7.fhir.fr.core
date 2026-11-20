@@ -25,6 +25,7 @@ Description: "FRCoreServiceRequestProfile profil permet de porter des demandes d
 * identifier[accessionNumber] ^short = "Accession Number de la demande d'examen d'imagerie"
 
 * code 1..1
+* code from http://hl7.org/fhir/ValueSet/procedure-code (preferred)
 * code ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d'examen ou de suivi'"
 * occurrence[x] 1..1
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
