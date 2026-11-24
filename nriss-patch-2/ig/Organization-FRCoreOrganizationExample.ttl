@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Organization/FRCoreOrganizationExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FRCoreOrganizationExample"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2025-04-28T19:35:45.507+02:00"^^xsd:dateTime ] ;
+     fhir:source [
+       fhir:v "https://annuaire.sante.fr"^^xsd:anyURI ;
+       fhir:l <https://annuaire.sante.fr>
+     ] ;
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "fr"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : Organisation FRCoreOrganizationExample</b></p><a name=\"FRCoreOrganizationExample\"> </a><a name=\"hcFRCoreOrganizationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version : 1; Dernière mise à jour : 2025-04-28 19:35:45+0200; Langue : fr; </p><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://annuaire.sante.fr\">https://annuaire.sante.fr</a></p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-core-organization.html\">FR Core Organization Profile</a></p></div><p><b>identifier</b>: Identification nationale de structure définie par l’ANS dans le CI_SIS/2264403106 (utilisation : official, ), Identification de l'organisation au SIREN/264403106 (utilisation : official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 LEGAL-ENTITY}\">Entité légale</span>, <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite SA43}\">Secteur non défini</span></p><p><b>name</b>: HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ;
+           fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203>
+         ] ;
+         fhir:code [ fhir:v "IDNST" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.250.1.71.4.2.2"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.250.1.71.4.2.2>
+     ] ;
+     fhir:value [ fhir:v "2264403106" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ;
+           fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203>
+         ] ;
+         fhir:code [ fhir:v "SIREN" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://sirene.fr"^^xsd:anyURI ;
+       fhir:l <https://sirene.fr>
+     ] ;
+     fhir:value [ fhir:v "264403106" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ;
+         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307>
+       ] ;
+       fhir:code [ fhir:v "LEGAL-ENTITY" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite>
+       ] ;
+       fhir:code [ fhir:v "SA43" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G"] . # 
+
+# -------------------------------------------------------------------------------------
+

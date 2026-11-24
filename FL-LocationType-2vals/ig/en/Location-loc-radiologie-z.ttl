@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/loc-radiologie-z> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "loc-radiologie-z"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Location loc-radiologie-z</b></p><a name=\"en-loc-radiologie-z\"> </a><a name=\"en-hcloc-radiologie-z\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Centre de radiologie Hôpital Z (urn:oid:1.2.250.1.1.1.2#HOSPZ-RADIO (use: official))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The status of the location\">Status:</td><td>Active</td><td style=\"background-color: #f3f5da\" title=\"Whether this describes a specific location, or a class of locations\">Mode:</td><td>Instance</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The physical form of the location (e.g. building, room, vehicle, road)\">Form:</td><td colspan=\"3\"><span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type BTMNT}\">Bâtiment</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Additional details about the location that could be displayed as further information to identify it\">Description:</td><td colspan=\"3\">Imagerie médicale, radiographies, scanners, IRM</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Physical location\">Address:</td><td colspan=\"3\">10 rue de la Santé Paris 75014 FRA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to make contact with the location\">Contact Detail</td><td colspan=\"3\"><a href=\"mailto:radiologie@hosp-z.fr\">radiologie@hosp-z.fr</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The latitude and longitude of the location (WGS84)\">Position:</td><td colspan=\"3\">48.8333, 2.3333 (altitude 35)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization responsible for the provisioning and upkeep of the location\">Managed By:</td><td colspan=\"3\"><a href=\"Organization-FRCoreOrganizationExample.html\">HOPITAL INTERCOMMUNAL DE LA PRESQU'ILE G (Entité légale, Secteur non défini) (Identification nationale de structure définie par l’ANS dans le CI_SIS: 2264403106 (use: official))</a></td></tr></table></div>"
+  ] ;
+  fhir:Location.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.1.1.2" ] ;
+     fhir:Identifier.value [ fhir:value "HOSPZ-RADIO" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Centre de radiologie Hôpital Z"] ;
+  fhir:Location.description [ fhir:value "Imagerie médicale, radiographies, scanners, IRM"] ;
+  fhir:Location.mode [ fhir:value "instance"] ;
+  fhir:Location.telecom [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "radiologie@hosp-z.fr" ]
+  ] ;
+  fhir:Location.address [
+     fhir:Address.line [
+       fhir:value "10 rue de la Santé" ;
+       fhir:index -1
+     ] ;
+     fhir:Address.city [ fhir:value "Paris" ] ;
+     fhir:Address.district [ fhir:value "14e arrondissement" ] ;
+     fhir:Address.postalCode [ fhir:value "75014" ] ;
+     fhir:Address.country [ fhir:value "FRA" ]
+  ] ;
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type" ] ;
+       fhir:Coding.code [ fhir:value "BTMNT" ] ;
+       fhir:Coding.display [ fhir:value "Bâtiment" ]
+     ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "2.3333"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "48.8333"^^xsd:decimal ] ;
+     fhir:Location.position.altitude [ fhir:value "35"^^xsd:decimal ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://hl7.fr/ig/fhir/core/Organization/FRCoreOrganizationExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/FRCoreOrganizationExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fr/ig/fhir/core/Location/loc-radiologie-z.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

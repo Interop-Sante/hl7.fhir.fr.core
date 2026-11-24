@@ -1,0 +1,957 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Guide d'implémentation FR Core : Dependent IGs Analysis</title>
+  <link href="fhir.css" rel="stylesheet"/>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Dependent IGs Analysis for Guide d'implémentation FR Core</h1>
+ <p>Generated Tue Nov 24 17:37:27 UTC 2026 for hl7.fhir.fr.core</p>
+ <h2>Summary:</h2>
+<table class="grid"><tr><td>id</td><td>published</td><td>ballot</td><td>current</td></tr><tr><td><a href="#ans.document.fr.core">ans.document.fr.core</a></td><td><a style="color: maroon" href="https://interop.esante.gouv.fr/ig/document/core/0.1.0-snapshot">2.1.0</span></td><td></td><td><span style="color: maroon">??</span></td></tr><tr><td><a href="#ans.fhir.fr.pdsm">ans.fhir.fr.pdsm</a></td><td><a style="color: maroon" href="https://interop.esante.gouv.fr/ig/fhir/pdsm/3.1.1">2.1.0</span></td><td></td><td><span style="color: maroon">??</span></td></tr><tr><td><a href="#ans.fhir.fr.tddui">ans.fhir.fr.tddui</a></td><td><a style="color: maroon" href="https://interop.esante.gouv.fr/ig/fhir/tddui/2.4.0">2.1.0</span></td><td></td><td><span style="color: maroon">??</span></td></tr></table>
+ <h2>Details By IG</h2>
+<a name="ans.document.fr.core"> </a><br/><h2><a href="https://interop.esante.gouv.fr/ig/document/core/0.1.0-snapshot">ans.document.fr.core#2.1.0</a></h3>
+<p><b>Derived profiles</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="StructureDefinition-fr-core-human-name.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name">FR Core Human Name Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name">FR Human Name Document</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-location.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location">FR Core Location Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location">FR Location Document</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-related-person.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">FR RelatedPerson Document</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-patient.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">FR Core Patient Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">FR Patient Document</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-encounter.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter">FR Core Encounter Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter">FR Encounter Care Document</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-patient-ins.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins">FR Patient INS Document</a>
+  </td>
+ </tr>
+</table><a name="ans.fhir.fr.pdsm"> </a><br/><h2><a href="https://interop.esante.gouv.fr/ig/fhir/pdsm/3.1.1">ans.fhir.fr.pdsm#2.1.0</a></h3>
+<p><b>Used profiles</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="StructureDefinition-fr-core-related-person.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">PDSm Simplified Publish Document Reference</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-patient.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">FR Core Patient Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">PDSm Comprehensive DocumentReference</a>
+<br/>  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">PDSm Folder Comprehensive</a>
+<br/>  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">PDSm Simplified Publish Document Reference</a>
+<br/>  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">PDSm SubmissionSet Comprehensive</a>
+  </td>
+ </tr>
+</table><a name="ans.fhir.fr.tddui"> </a><br/><h2><a href="https://interop.esante.gouv.fr/ig/fhir/tddui/2.4.0">ans.fhir.fr.tddui#2.1.0</a></h3>
+<p><b>CodeSystems used in ValueSets</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="CodeSystem-fr-core-cs-v2-0203.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203">FR Core CodeSystem v2-0203</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203">TDDUI Patient Identifier</a>
+  </td>
+ </tr>
+</table><p><b>ValueSets used in profiles</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-encounter-discharge-disposition.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition">FR Core ValueSet Encounter discharge disposition</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition">TDDUI Encounter Evenement</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-encounter-identifier-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type">FR Core ValueSet Encounter identifier type</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type">TDDUI Encounter Evenement</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="ValueSet-fr-core-vs-organization-identifier-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type">FR Core ValueSet Organization identifier type</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type">TDDUI Organization</a>
+  </td>
+ </tr>
+</table><p><b>Derived profiles</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="StructureDefinition-fr-core-slot.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot">FR Core Slot Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot">TDDUI Slot Presence Absence</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-schedule.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule">FR Core Schedule Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule">TDDUI Schedule</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-human-name.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name">FR Core Human Name Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name">TDDUI Human Name DataType</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-related-person.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">TDDUI RelatedPerson Contact</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-patient.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">FR Core Patient Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">TDDUI Patient</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-practitioner.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner">FR Core Practitioner Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner">TDDUI Practitioner</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-patient-ins.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins">TDDUI Patient INS</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-practitioner-role.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role">FR Core Practitioner Role</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role">TDDUI Practitioner Role</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-organization.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization">FR Core Organization Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization">TDDUI Organization</a>
+  </td>
+ </tr>
+</table><p><b>Used profiles</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="StructureDefinition-fr-core-location.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location">FR Core Location Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location">TDDUI Encounter Evenement</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-appointment.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment">FR Core Appointment Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment">TDDUI Encounter Evenement</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-related-person.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">TDDUI DocumentReference</a>
+  </td>
+ </tr>
+ <tr>
+  <td><a href="StructureDefinition-fr-core-organization.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization">FR Core Organization Profile</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization">TDDUI Encounter Evenement</a>
+  </td>
+ </tr>
+</table><p><b>Used Extensions</b></p>
+<table class="grid">
+ <tr>
+  <td><a href="StructureDefinition-fr-core-estimated-discharge-date.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date">FR Core Encounter Estimated Discharge Date Extension</a></td>
+  <td>
+  <a href="??" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date">TDDUI Encounter Evenement</a>
+  </td>
+ </tr>
+</table>
+ <h2>Details By Resource</h2>
+<h3>CodeSystems</h3>
+<table class="grid"><tr>  <td><a href="CodeSystem-fr-core-cs-additional-when-codes.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-additional-when-codes">FR Core CodeSystem Additional When Codes</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-champ-activite.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-champ-activite">FR Core CodeSystem Champ Activite - Codes du champ d'activité</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-circonstances-sortie.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie">FR Core CodeSystem Circonstances Sortie</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-code-tarif-tnjp.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-code-tarif-tnjp">FR Core CodeSystem Codes Tarifs - nomenclature TNJP</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-contact-relationship.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship">FR Core CodeSystem Contact Relationship</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-discipline-equipement.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-equipement">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-discipline-prestation.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-discipline-prestation">FR Core CodeSystem Discipline de prestation - nomenclature SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-identifier-type.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identifier-type">FR Core CodeSystem Identifier Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-identity-status.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status">FR Core CodeSystem Identity Status</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-identity-status-comment.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-identity-status-comment">FR Core CodeSystem Identity Status Comment</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-location-identifier-type.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-identifier-type">FR Core CodeSystem Location Identifier Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-location-physical-type.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-physical-type">FR Core CodeSystem Location Physical Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-location-position-lit.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-lit">FR Core CodeSystem Position du lit</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-location-type.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type">FR Core CodeSystem Location Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-location-type-chambre.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-type-chambre">FR Core CodeSystem Type Chambre</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-marital-status.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status">FR Core CodeSystem Marital Status</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-method-collection.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection">FR Core CodeSystem Method Collection</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-mode-validation-identity.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity">FR Core CodeSystem Mode Validation Identite</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-patient-contact-relationship-category.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-patient-contact-relationship-category">FR Core CodeSystem Patient Contact Relationship Category</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-schedule-type.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-schedule-type">FR Core CodeSystem Schedule Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-type-activite.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-activite">FR Core CodeSystem Type d'activité - nomenclature SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-type-admission.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-admission">FR Core CodeSystem Type Admission</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-type-organisation.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-type-organisation">FR Core CodeSystem Organization Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-uf-indicateur.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-uf-indicateur">FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-v2-0203.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203">FR Core CodeSystem v2-0203</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/ValueSet/tddui-patient-identifier">Used In TDDUI Patient Identifier</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-v2-3307.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307">FR Core CodeSystem v2-3307</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="CodeSystem-fr-core-cs-v2-3311.html" title="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3311">FR Core CodeSystem v2-3311</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+</table><h3>ValueSets</h3>
+<table class="grid"><tr>  <td><a href="ValueSet-fr-core-vs-additional-when-codes.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-additional-when-codes">FR Core ValueSet Additional When Codes</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-allergy-code.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-code">FR Core ValueSet Allergy Code</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-allergy-intolerance-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergy-intolerance-type">FR Core ValueSet Allergy Intolerance Type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-allergyintolerance-manifestation-allergie.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-allergie">FR Core ValueSet AllergyIntolerance Manifestation - Allergie</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-allergyintolerance-manifestation-hypersensibilite.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-hypersensibilite">FR Core ValueSet AllergyIntolerance Manifestation - Hypersensibilité non allergique</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-allergyintolerance-manifestation-idiosyncrasie.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-idiosyncrasie">FR Core ValueSet AllergyIntolerance Manifestation - Idiosyncrasie</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-allergyintolerance-manifestation-intolerance.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-allergyintolerance-manifestation-intolerance">FR Core ValueSet AllergyIntolerance Manifestation - Intolérance</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-availability-time-rule.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-availability-time-rule">FR Core ValueSet Availability Schedule</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-body-position.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-position">Body Position value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-body-structure-location.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-body-structure-location">FR Core ValueSet BodyStructure location</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-bp-meas-body-location.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-body-location">Blood Pressure Measurement Body Location Precoordinated value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-bp-meas-method.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-meas-method">Blood Pressure Measurement Method value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-bp-method.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-method">FR Core ValueSet BP measurement method</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-categorie-sae-etablissement.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-categorie-sae-etablissement">FR Core ValueSet Categorie SAE Etablissement</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-cog-commune-pays.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-cog-commune-pays">FR Core ValueSet COG commune pays</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-condition-code-defaut.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-defaut">FR Core ValueSet Condition Code - Défaut</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-condition-code-maladie-rare.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-maladie-rare">FR Core ValueSet Condition Code - Maladie rare</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-condition-code-medecine-ville.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-condition-code-medecine-ville">FR Core ValueSet Condition Code - Médecine de ville</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-contact-relationship.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-contact-relationship">FR Core ValueSet Contact relationship</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-discipline-prestation.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-discipline-prestation">FR Core ValueSet Organization Discipline de prestation - nomenclature SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-edqm-form.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-form">FR Core ValueSet EDQM Form</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-edqm-route.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-edqm-route">FR Core ValueSet EDQM Route</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-email-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-email-type">FR Core ValueSet Email type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-encounter-class.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-class">FR Core ValueSet Encounter class</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-encounter-discharge-disposition.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition">FR Core ValueSet Encounter discharge disposition</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement">Bound In TDDUI Encounter Evenement</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-encounter-identifier-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type">FR Core ValueSet Encounter identifier type</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement">Bound In TDDUI Encounter Evenement</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-encounter-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-type">FR Core ValueSet Encounter type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-heartrate-body-location.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-body-location">Heart Rate Measurement Body Location Precoordinated value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-heartrate-measurement-method.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heartrate-measurement-method">Heart Rate Measurement Method value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-height-body-position.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position">FR Core ValueSet BodyPosition</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-height-meas-method.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-meas-method">Height Length Measurement Method value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-identity-method-collection.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-method-collection">FR Core ValueSet Identity method collection</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-identity-status.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-status">FR Core ValueSet Identity Status</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-identity-status-comment.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-identity-status-comment">FR Core ValueSet Identity Status Comment</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-insee-code.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code">FR Core ValueSet INSEE code</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-location-position-lit.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-lit">FR Core ValueSet Location Position Lit</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-location-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type">FR Core ValueSet Location type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-location-type-chambre.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-type-chambre">FR Core ValueSet Location Type Chambre</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-marital-status.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status">FR Core ValueSet Marital Status ValueSet</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-medication.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-medication">FR Core ValueSet Medication</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-mode-validation-identity.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity">FR Core ValueSet Mode validation identity</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-mode-validation-identity-ins.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-mode-validation-identity-ins">FR Core ValueSet Mode validation identity INS</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-champ-activite.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-champ-activite">FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-code-tarif-tnjp.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-code-tarif-tnjp">FR Core ValueSet Codes Tarifs - nomenclature TNJP</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-discipline-equipement.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-discipline-equipement">FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-etablissement-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-etablissement-type">FR Core ValueSet Organization Etablisement type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-identifier-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type">FR Core ValueSet Organization identifier type</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization">Bound In TDDUI Organization</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type">FR Core ValueSet Organization type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-type-activite.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type-activite">FR Core ValueSet Organization Type Activité - nomenclature SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-organization-uf-indicateur.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-uf-indicateur">FR Core ValueSet Organization UF Indicateur</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-patient-contact-relationship-category.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-relationship-category">FR Core ValueSet Patient Contact Relationship Category</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-patient-contact-role.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role">FR Core ValueSet Patient contact role</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-patient-gender.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-gender">FR Core ValueSet Patient gender</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-patient-identifier-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-type">FR Core ValueSet Patient identifier type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-patient-identifier-use-ins.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-ins">FR Core ValueSet Patient identifier use INS</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-patient-identifier-use-pi.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-identifier-use-pi">FR Core ValueSet Patient identifier use PI</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-practitioner-identifier-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-identifier-type">FR Core ValueSet Practitioner identifier type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-practitioner-role-exercice.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-exercice">FR Core ValueSet PractitionerRole Exercice</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-practitioner-specialty.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-specialty">FR Core ValueSet Practitioner specialty</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-procedure-code.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code">FR Core ValueSet Procedure code</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-procedure-code-autre.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-procedure-code-autre">FR Core ValueSet Procedure code - Autre acte</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-relation-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type">FR Core ValueSet relation type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-respiratory-rate-meas-method.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-respiratory-rate-meas-method">Respiratory Rate Measurement Method value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-schedule-type.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-type">FR Core ValueSet Schedule type</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-schedule-unavailability-reason.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-schedule-unavailability-reason">FR Core ValueSet Unavailability Reason</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-spo2-body-location.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-spo2-body-location">Oxygen Saturation Body Location value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-title.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-title">FR Core ValueSet Title</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-treatment-intent.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-treatment-intent">FR Core ValueSet Treatment Intent</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vs-vaccine-code-cis.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-vaccine-code-cis">FR Core ValueSet Vaccine code CIS</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="ValueSet-fr-core-vsbody-temp-meas-body-location.html" title="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vsbody-temp-meas-body-location">Body Temperature Measurement Body Location value set</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+</table><h3>Profiles</h3>
+<table class="grid"><tr>  <td><a href="StructureDefinition-fr-core-address.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address">FR Core Address Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-adverse-event.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-adverse-event">FR Core AdverseEvent Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-allergy-intolerance.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-allergy-intolerance">FR Core AllergyIntolerance Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-appointment.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment">FR Core Appointment Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement">Used In TDDUI Encounter Evenement</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-body-structure.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-body-structure">FR Core BodyStructure Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-condition.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-condition">FR Core Condition Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-consent.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-consent">FR Core Consent Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-contact-point.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point">FR Core Contact Point Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-encounter.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter">FR Core Encounter Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-care-document">Constrained In FR Encounter Care Document</a> (ans.document.fr.core)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-healthcare-service.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-healthcare-service">FR Core Healthcare Service Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-human-name.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name">FR Core Human Name Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-human-name-document">Constrained In FR Human Name Document</a> (ans.document.fr.core)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-human-name">Constrained In TDDUI Human Name DataType</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-immunization.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-immunization">FR Core Immunization Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-location.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location">FR Core Location Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-location-document">Constrained In FR Location Document</a> (ans.document.fr.core)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement">Used In TDDUI Encounter Evenement</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication">FR Core Medication Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication-administration.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration">FR Core MedicationAdministration Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-inhaled-oxygen">FR Core Medication Administration Inhaled Oxygen Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication-dispense.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-dispense">FR Core MedicationDispense Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication-request.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-request">FR Core MedicationRequest Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication-statement.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-statement">FR Core MedicationStatement Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-bmi.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi">FR Core Observation Bmi Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-body-height.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height">FR Core Observation Body Height Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-body-temperature.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature">FR Core Observation Body Temperature Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-body-weight.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight">FR Core Observation Body Weight Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-bp.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp">FR Core Observation Blood Pressure Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-head-circum.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum">FR Core Observation Head Circum Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-heartrate.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate">FR Core Observation Heart Rate Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-resp-rate.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate">FR Core Observation Respiratory Rate Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-saturation-oxygen.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen">FR Core Observation Oxygen Saturation Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization">FR Core Organization Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-organization">Constrained In TDDUI Organization</a> (ans.fhir.fr.tddui)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement">Used In TDDUI Encounter Evenement</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-etablissement.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement">FR Core Organization Etablissement Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-uac.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac">FR Core Organization UAC Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-uf.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf">FR Core Organization UF Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient">FR Core Patient Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document">Constrained In FR Patient Document</a> (ans.document.fr.core)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-comprehensive-document-reference">Used In PDSm Comprehensive DocumentReference</a> (ans.fhir.fr.pdsm)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-folder-comprehensive">Used In PDSm Folder Comprehensive</a> (ans.fhir.fr.pdsm)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish">Used In PDSm Simplified Publish Document Reference</a> (ans.fhir.fr.pdsm)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-submissionset-comprehensive">Used In PDSm SubmissionSet Comprehensive</a> (ans.fhir.fr.pdsm)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient">Constrained In TDDUI Patient</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient-ins.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document">Constrained In FR Patient INS Document</a> (ans.document.fr.core)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-patient-ins">Constrained In TDDUI Patient INS</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-practitioner.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner">FR Core Practitioner Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner">Constrained In TDDUI Practitioner</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-practitioner-role.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role">FR Core Practitioner Role</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-practitioner-role">Constrained In TDDUI Practitioner Role</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-procedure.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure">FR Core Procedure Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-related-person.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person">FR Core Related Person Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document">Constrained In FR RelatedPerson Document</a> (ans.document.fr.core)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/pdsm/StructureDefinition/pdsm-simplified-publish">Used In PDSm Simplified Publish Document Reference</a> (ans.fhir.fr.pdsm)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-related-person-contact">Constrained In TDDUI RelatedPerson Contact</a> (ans.fhir.fr.tddui)
+<br/><a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-document-reference">Used In TDDUI DocumentReference</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-schedule.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule">FR Core Schedule Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-schedule">Constrained In TDDUI Schedule</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-service-request.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-request">FR Core ServiceRequest Profile</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-slot.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot">FR Core Slot Profile</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-slot-presence-absence">Constrained In TDDUI Slot Presence Absence</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+</table><h3>Extensions</h3>
+<table class="grid"><tr>  <td><a href="StructureDefinition-extension-AdverseEvent.code.html" title="http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.code">FR Core AdverseEvent Extension - Code (backport R5→R4)</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-extension-AdverseEvent.outcome.html" title="http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.outcome">FR Core AdverseEvent Extension - Outcome (backport R5→R4)</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-additional-when-values.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-additional-when-values">FR Core Additional When Values Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-address-insee-code.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">FR Core Address Insee Code Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-appointment-operator.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator">FR Core Appointment Operator Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-comment.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment">FR Core Comment Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-contact-point-email-type.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type">FR Core Contact Point Email Type Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-estimated-discharge-date.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date">FR Core Encounter Estimated Discharge Date Extension</a></td>
+  <td>
+<a href="??" title="https://interop.esante.gouv.fr/ig/fhir/tddui/StructureDefinition/tddui-encounter-evenement">Used In TDDUI Encounter Evenement</a> (ans.fhir.fr.tddui)
+  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-human-name-assembly-order.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name-assembly-order">FR Core Assembly Order Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-identity-reliability.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">FR Core Patient Identity Reliability Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-location-position-lit.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit">FR Core Location Extension - Position du lit</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-location-type-chambre.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre">FR Core Location Extension - Type de chambre</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-lunar-date.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-lunar-date">FR Core Lunar Date Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-medication-administration-sequence.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-medication-administration-sequence">FR Core Medication Administration Sequence Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-method-extension.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-method-extension">FR Core Method Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-not-covered.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-not-covered">FR Core Not Covered Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-body-position-ext.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext">FR Core Observation Body Position Ext Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-height-body-position.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position">FR Core Observation Height Body Position Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-observation-level-of-exertion.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion">FR Core Observation Level Of Exertion Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-champ-activite.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite">FR Core Organization Extension - Champ d'activité</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-demandeuse-acte.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte">FR Core Organization Extension - Demandeuse d'acte</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-discipline-equipement.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement">FR Core Organization Extension - Discipline d'équipement</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-discipline-prestation.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation">FR Core Organization Extension - Discipline Prestation</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-executante-acte.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte">FR Core Organization Extension - Exécutante d'acte</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-member.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member">FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-place-hebergement-theorique.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique">FR Core Organization Extension - Nombre total de places d'hébergement théoriques</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-raison-sociale.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale">FR Core Organization Raison Sociale Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-sae-categorie.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie">FR Core Organization Extension - Catetgorie SAE</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-short-name.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name">FR Core Organization Short Name Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-tarif.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif">FR Core Organization Extension - Tarif Soin</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-type-activite.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite">FR Core Organization Extension - Type d'activité</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-uf-externe.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe">FR Core Organization Extension - UF Externe</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-organization-uf-indicateur.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur">FR Core Organization Extension - Indicateur d'une unité fonctionnelle</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient-birth-list-given-name.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name">FR Core Patient Birth List Given name Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient-birthdate-update-indicator.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator">FR Core Patient Birthdate Update Indicator Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient-contact-identifier.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier">FR Core Patient Contact Identifier Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient-contact-relationship-category.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category">FR Core Patient Contact Relationship Category Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-patient-death-place.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place">FR Core Patient Death Place Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-practitioner-specialty.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty">FR Core Practitioner Specialty Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-procedure-difficulty-extension.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure-difficulty-extension">FR Core Procedure Difficulty Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-procedure-priority-extension.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-procedure-priority-extension">FR Core Procedure Priority Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-schedule-availability-time.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time">FR Core Schedule availability time Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-service-type-duration.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration">FR Core Service Type Duration Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+<tr>  <td><a href="StructureDefinition-fr-core-treatment-intent.html" title="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-treatment-intent">FR Core MedicationRequest Treatment Intent Extension</a></td>
+  <td>
+(not used)  </td>
+ </tr>
+</table>
+ <h2>Errors</h2>
+<pre>
+</pre>
+</body>
+</html>

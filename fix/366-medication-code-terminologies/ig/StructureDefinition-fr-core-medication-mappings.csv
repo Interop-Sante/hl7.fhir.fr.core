@@ -1,0 +1,72 @@
+"Id","script10.6","rim","w5","v2"
+"","","","",""
+"Medication","NewRx/MedicationPrescribed-or-RxFill/MedicationDispensed-or-RxHistoryResponse/MedicationDispensed-or-RxHistoryResponse/MedicationPrescribed","Entity. Role, or Act
+ManufacturedProduct[classCode=ADMM]","",""
+"Medication.id","","","",""
+"Medication.meta","","","",""
+"Medication.meta.id","","n/a","",""
+"Medication.meta.extension","","n/a","",""
+"Medication.meta.versionId","","","",""
+"Medication.meta.lastUpdated","","","",""
+"Medication.meta.source","","","",""
+"Medication.meta.profile","","","",""
+"Medication.meta.profile:fr-canonical","","","",""
+"Medication.meta.security","","","",""
+"Medication.meta.tag","","","",""
+"Medication.implicitRules","","","",""
+"Medication.language","","","",""
+"Medication.text","","Act.text?","",""
+"Medication.contained","","N/A","",""
+"Medication.extension","","","",""
+"Medication.extension:productName","","","",""
+"Medication.extension:classification","","","",""
+"Medication.extension:sizeOfItem","","","",""
+"Medication.extension:characteristic","","","",""
+"Medication.extension:unitOfPresentation","","","",""
+"Medication.extension:packageType","","","",""
+"Medication.extension:device","","","",""
+"Medication.extension:device.id","","n/a","",""
+"Medication.extension:device.extension","","","",""
+"Medication.extension:device.extension:device","","","",""
+"Medication.extension:device.extension:device.id","","n/a","",""
+"Medication.extension:device.extension:device.extension","","","",""
+"Medication.extension:device.extension:device.url","","N/A","",""
+"Medication.extension:device.extension:device.value[x]","","N/A","",""
+"Medication.extension:device.extension:quantity","","","",""
+"Medication.extension:device.extension:quantity.id","","n/a","",""
+"Medication.extension:device.extension:quantity.extension","","","",""
+"Medication.extension:device.extension:quantity.url","","N/A","",""
+"Medication.extension:device.extension:quantity.value[x]","","N/A","",""
+"Medication.extension:device.url","","N/A","",""
+"Medication.extension:device.value[x]","","N/A","",""
+"Medication.modifierExtension","","N/A","",""
+"Medication.identifier","",".id","FiveWs.identifier",""
+"Medication.code","coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription",".code","FiveWs.class","RXO-1.1-Requested Give Code.code / RXE-2.1-Give Code.code / RXD-2.1-Dispense/Give Code.code / RXG-4.1-Give Code.code /RXA-5.1-Administered Code.code / RXC-2.1 Component Code"
+"Medication.status","",".statusCode","",""
+"Medication.manufacturer","no mapping",".player.scopingRole[typeCode=MANU].scoper","FiveWs.actor","RXD-20-Substance Manufacturer Name / RXG-21-Substance Manufacturer Name / RXA-17-Substance Manufacturer Name"
+"Medication.form","coding.code =  //element(*,DrugCodedType)/FormCodecoding.system = //element(*,DrugCodedType)/FormSourceCode",".formCode","","RXO-5-Requested Dosage Form / RXE-6-Give Dosage Form / RXD-6-Actual Dosage Form / RXG-8-Give Dosage Form / RXA-8-Administered Dosage Form"
+"Medication.amount","",".quantity","",""
+"Medication.ingredient","",".scopesRole[typeCode=INGR]","",""
+"Medication.ingredient.id","","n/a","",""
+"Medication.ingredient.extension","","n/a","",""
+"Medication.ingredient.modifierExtension","","N/A","",""
+"Medication.ingredient.item[x]","coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription",".player","","RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"
+"Medication.ingredient.item[x]:itemReference","coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription",".player","","RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"
+"Medication.ingredient.item[x]:itemCodeableConcept","coding.code = //element(*,MedicationType)/DrugCoded/ProductCodecoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifiercoding.display = //element(*,MedicationType)/DrugDescription",".player","","RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"
+"Medication.ingredient.item[x]:itemCodeableConcept.id","","n/a","",""
+"Medication.ingredient.item[x]:itemCodeableConcept.extension","","n/a","",""
+"Medication.ingredient.item[x]:itemCodeableConcept.coding","","union(., ./translation)","","C*E.1-8, C*E.10-22"
+"Medication.ingredient.item[x]:itemCodeableConcept.text","","./originalText[mediaType/code=""text/plain""]/data","","C*E.9. But note many systems use C*E.2 for this"
+"Medication.ingredient.isActive","","NA","",""
+"Medication.ingredient.strength","//element(*,DrugCodedType)/Strength",".quantity","","RXC-3-Component Amount & RXC-4-Component Units  if medication: RXO-2-Requested Give Amount - Minimum & RXO-4-Requested Give Units / RXO-3-Requested Give Amount - Maximum & RXO-4-Requested Give Units / RXO-11-Requested Dispense Amount & RXO-12-Requested Dispense Units / RXE-3-Give Amount - Minimum & RXE-5-Give Units / RXE-4-Give Amount - Maximum & RXE-5-Give Units / RXE-10-Dispense Amount & RXE-10-Dispense Units"
+"Medication.ingredient.strength.id","","n/a","",""
+"Medication.ingredient.strength.extension","","n/a","",""
+"Medication.ingredient.strength.extension:basisOfStrengthSubstance","","","",""
+"Medication.ingredient.strength.numerator","",".numerator","",""
+"Medication.ingredient.strength.denominator","",".denominator","",""
+"Medication.batch","no mapping",".player[classCode=CONT]","",""
+"Medication.batch.id","","n/a","",""
+"Medication.batch.extension","","n/a","",""
+"Medication.batch.modifierExtension","","N/A","",""
+"Medication.batch.lotNumber","no mapping",".id","","RXA-15 Substance Lot Number / RXG-19 Substance Lot Number"
+"Medication.batch.expirationDate","no mapping","participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].expirationTime","","RXA-16 Substance Expiration Date / RXG-20 Substance Expiration Date"
