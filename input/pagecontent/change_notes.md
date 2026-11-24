@@ -1,6 +1,7 @@
 ### [Release 3.0.0](https://hl7.fr/ig/fhir/core/3.0.0) de l'Implementation Guide FRCore
 [Modifications apportées dans la release 3.0.0](https://github.com/Interop-Sante/hl7.fhir.fr.core/milestone/12?closed=1) :
 
+* `FRCoreValueSetMedication` : ajout de la terminologie SMS et précision que la BDPM couvre les codes CIP et CIS, pour `Medication.code` [#367](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/367)
 * **[BREAKING CHANGE]** Renommage de la sous-extension `dateCollection` en `dateInterrogationINSi` dans `fr-core-identity-reliability`, avec alignement sur IHE PAM France v2.11.1 et RNIV 1 - Principes communs v2.0 [#336](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/336)
 * **[BREAKING CHANGE]** `FRCorePatientProfile` et `FRCorePatientINSProfile` : la slice `identityReliability` sur `Patient.extension` passe de `0..*` à `1..*` — toute ressource `Patient` doit désormais porter au moins une instance de `fr-core-identity-reliability`, et la sous-extension `identityStatus` devient obligatoire (`0..1` → `1..1`) dans cette extension [#344](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/344)
 * **[BREAKING CHANGE]** Mise à jour de la dépendance vers EU Core 2.0.0 (ajout de `hl7.fhir.eu.base: 2.0.0`) : les profils FRCoreOrganization, FRCorePatient, FRCorePatientINS, FRCorePractitioner, FRCorePractitionerRole, FRCoreLocation héritent des profils EU Core correspondants, et FRCoreAddress hérite du profil Address (EU) [#300](https://github.com/Interop-Sante/hl7.fhir.fr.core/pull/300)
